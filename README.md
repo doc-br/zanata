@@ -3,8 +3,8 @@
 
 It's preferable to use Zanata interface to translate documents.
 
-If you want to translate documents through another tool, use always the .po
-files, ignore .pot files, they are used only for Zanata.
+If you want to translate documents through another tool, use always the `.po`
+files, ignore `.pot` files, they are used only for Zanata.
 
 
 # For Zanata administrators
@@ -36,9 +36,15 @@ translate_zanata_org.key=YOUR_KEY
 
 Main commands to push and pull translations:
 
-`zanata-cli push --push-type both  --locales pt-BR`
+#### Initial push or used when the document in English was updated.
+
+`zanata-cli push --push-type both --locales pt-BR`
+
+#### Push translations when the `.po` file was updated through another tool.
+
 `zanata-cli push --push-type trans --locales pt-BR`
 
+More info `zanata-cli push --help`:
 ```
  --push-type TYPE                   : Type of push to perform on the server:
                                         "source" (default) pushes source documents only.
@@ -46,9 +52,12 @@ Main commands to push and pull translations:
                                         "both" pushes both source and translation documents.
 ```
 
-`zanata-cli pull`
-`zanata-cli pull --pull-type trans --locales pt-BR`
+#### Pull translations.
 
+`zanata-cli pull --locales pt-BR`
+
+
+More info `zanata-cli pull --help`:
 ```
  --pull-type TYPE               : Type of pull to perform from the server: "source" pulls source documents only.
                                   "trans" (default) pulls translation documents only.
