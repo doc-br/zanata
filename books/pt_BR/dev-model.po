@@ -1,0 +1,1990 @@
+#$FreeBSD$
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-08-12 22:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: info/title
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:33
+#: book.translate.xml:2292
+msgid "A project model for the FreeBSD Project"
+msgstr ""
+
+#. (itstool) path: info/author
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:35
+#: book.translate.xml:2287
+msgid "<personname><firstname>Niklas</firstname><surname>Saers</surname></personname>"
+msgstr ""
+
+#. (itstool) path: info/copyright
+#: book.translate.xml:36
+msgid "<year>2002-2005</year> <holder>Niklas Saers</holder>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:41
+msgid "<revnumber>1.5</revnumber> <date>October, 2014</date> <revremark>Remove mention of GNATS which is no longer used by the project.</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:47
+msgid "<revnumber>1.4</revnumber> <date>September, 2013</date> <revremark>Remove mention of CVS and CVSup which are no longer used by the project.</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:53
+msgid "<revnumber>1.3</revnumber> <date>October, 2012</date> <revremark>Remove hats held by specific people, these are documented elsewhere.</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:59
+msgid "<revnumber>1.2</revnumber> <date>April, 2005</date> <revremark>Update one year of changes, replace statistics with those of 2004</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:64
+msgid "<revnumber>1.1</revnumber> <date>July, 2004</date> <revremark>First update within the FreeBSD tree</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:69
+msgid "<revnumber>1.0</revnumber> <date>December 4th, 2003</date> <revremark>Ready for commit to FreeBSD Documentation</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:74
+msgid "<revnumber>0.7</revnumber> <date>April 7th, 2003</date> <revremark>Release for review by the Documentation team</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:79
+msgid "<revnumber>0.6</revnumber> <date>March 1st, 2003</date> <revremark>Incorporated corrections noted by interviewees and reviewers</revremark>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: book.translate.xml:85
+msgid "<revnumber>0.5</revnumber> <date>February 1st, 2003</date> <revremark>Initial review by interviewees</revremark>"
+msgstr ""
+
+#. (itstool) path: info/releaseinfo
+#: book.translate.xml:92
+msgid "$FreeBSD: head/en_US.ISO8859-1/books/dev-model/book.xml 51969 2018-07-05 20:36:13Z jrm $"
+msgstr ""
+
+#. (itstool) path: preface/title
+#: book.translate.xml:96
+msgid "Foreword"
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:103
+msgid "This goes hand-in-hand with Brooks' law that <quote>adding another person to a late project will make it later</quote> since it will increase the communication needs <xref linkend=\"brooks\"/>. A project model is a tool to reduce the communication needs."
+msgstr ""
+
+#. (itstool) path: preface/para
+#: book.translate.xml:97
+msgid "Up until now, the FreeBSD project has released a number of described techniques to do different parts of work. However, a project model summarising how the project is structured is needed because of the increasing amount of project members. <_:footnote-1/> This paper will provide such a project model and is donated to the FreeBSD Documentation project where it can evolve together with the project so that it can at any point in time reflect the way the project works. It is based on <citation><xref linkend=\"thesis\"/></citation>."
+msgstr ""
+
+#. (itstool) path: preface/para
+#: book.translate.xml:118
+msgid "I would like to thank the following people for taking the time to explain things that were unclear to me and for proofreading the document."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:123
+msgid "Andrey A. Chernov <email>ache@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:124
+msgid "Bruce A. Mah <email>bmah@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:125
+msgid "Dag-Erling Smørgrav <email>des@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:126
+msgid "Giorgos Keramidas<email>keramida@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:127
+msgid "Ingvil Hovig <email>ingvil.hovig@skatteetaten.no</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:128
+msgid "Jesper Holck<email>jeh.inf@cbs.dk</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:129
+msgid "John Baldwin <email>jhb@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:130
+msgid "John Polstra <email>jdp@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:131
+msgid "Kirk McKusick <email>mckusick@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:132
+msgid "Mark Linimon <email>linimon@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:133
+msgid "Marleen Devos"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:134
+msgid "Niels Jørgenssen<email>nielsj@ruc.dk</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:135
+msgid "Nik Clayton <email>nik@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:136
+msgid "Poul-Henning Kamp <email>phk@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:137
+msgid "Simon L. Nielsen <email>simon@freebsd.org</email>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:143
+msgid "Overview"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:146
+msgid "A project model is a means to reduce the communications overhead in a project. As shown by <citation><xref linkend=\"brooks\"/></citation>, increasing the number of project participants increases the communication in the project exponentionally. FreeBSD has during the past few years increased both its mass of active users and committers, and the communication in the project has risen accordingly. This project model will serve to reduce this overhead by providing an up-to-date description of the project."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:157
+msgid "During the Core elections in 2002, Mark Murray stated <quote>I am opposed to a long rule-book, as that satisfies lawyer-tendencies, and is counter to the technocentricity that the project so badly needs.</quote> <citation><xref linkend=\"bsd-election2002\"/></citation>. This project model is not meant to be a tool to justify creating impositions for developers, but as a tool to facilitate coordination. It is meant as a description of the project, with an overview of how the different processes are executed. It is an introduction to how the FreeBSD project works."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:175
+msgid "The FreeBSD project model will be described as of July 1st, 2004. It is based on the Niels Jørgensen's paper <citation><xref linkend=\"jorgensen2001\"/></citation>, FreeBSD's official documents, discussions on FreeBSD mailing lists and interviews with developers."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:184
+msgid "After providing definitions of terms used, this document will outline the organisational structure (including role descriptions and communication lines), discuss the methodology model and after presenting the tools used for process control, it will present the defined processes. Finally it will outline major sub-projects of the FreeBSD project."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:194
+msgid "<citation><xref linkend=\"freebsd-developer-handbook\"/>, Section 1.2 and 1.3</citation> give the vision and the architectural guidelines for the project. The vision is <quote>To produce the best UNIX-like operating system package possible, with due respect to the original software tools ideology as well as usability, performance and stability.</quote> The architectural guidelines help determine whether a problem that someone wants to be solved is within the scope of the project"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:207
+msgid "Definitions"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:210
+msgid "Activity"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:212
+msgid "An <quote>activity</quote> is an element of work performed during the course of a project <citation><xref linkend=\"ref-pmbok\"/></citation>. It has an output and leads towards an outcome. Such an output can either be an input to another activity or a part of the process' delivery."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:225
+msgid "Process"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:227
+msgid "A <quote>process</quote> is a series of activities that lead towards a particular outcome. A process can consist of one or more sub-processes. An example of a process is software design."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:237
+msgid "Hat"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:239
+msgid "A <quote>hat</quote> is synonymous with role. A hat has certain responsibilities in a process and for the process outcome. The hat executes activities. It is well defined what issues the hat should be contacted about by the project members and people outside the project."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:250
+msgid "Outcome"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:252
+msgid "An <quote>outcome</quote> is the final output of the process. This is synonymous with deliverable, that is defined as <quote>any measurable, tangible, verifiable outcome, result or item that must be produced to complete a project or part of a project. Often used more narrowly in reference to an external deliverable, which is a deliverable that is subject to approval by the project sponsor or customer</quote> by <citation><xref linkend=\"ref-pmbok\"/></citation>. Examples of outcomes are a piece of software, a decision made or a report written."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:269
+msgid "FreeBSD"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:271
+msgid "When saying <quote>FreeBSD</quote> we will mean the BSD derivative UNIX-like operating system FreeBSD, whereas when saying <quote>the FreeBSD Project</quote> we will mean the project organisation."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:281
+msgid "Organisational structure"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:283
+msgid "While no-one takes ownership of FreeBSD, the FreeBSD organisation is divided into core, committers and contributors and is part of the FreeBSD community that lives around it."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:291
+msgid "The FreeBSD Project's structure"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:292
+msgctxt "_"
+msgid "external ref='orghierarchy' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:296
+msgid "Number of committers has been determined by going through CVS logs from January 1st, 2004 to December 31st, 2004 and contributors by going through the list of contributions and problem reports."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:303
+msgid "The main resource in the FreeBSD community is its developers: the committers and contributors. It is with their contributions that the project can move forward. Regular developers are referred to as contributors. As by January 1st, 2003, there are an estimated 5500 contributors on the project."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:316
+msgid "Committers are developers with the privilege of being able to commit changes. These are usually the most active developers who are willing to spend their time not only integrating their own code but integrating code submitted by the developers who do not have this privilege. They are also the developers who elect the core team, and they have access to closed discussions."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:326
+msgid "The project can be grouped into four distinct separate parts, and most developers will focus their involvement in one part of FreeBSD. The four parts are kernel development, userland development, ports and documentation. When referring to the base system, both kernel and userland is meant."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:344
+msgid "This split changes our triangle to look like this:"
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:349
+msgid "The FreeBSD Project's structure with committers in categories"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:350
+msgctxt "_"
+msgid "external ref='orghierarchy2' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:353
+msgid "Number of committers per area has been determined by going through CVS logs from January 1st, 2004 to December 31st, 2004. Note that many committers work in multiple areas, making the total number higher than the real number of committers. The total number of committers at that time was 269."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:362
+msgid "Committers fall into three groups: committers who are only concerned with one area of the project (for instance file systems), committers who are involved only with one sub-project and committers who commit to different parts of the code, including sub-projects. Because some committers work on different parts, the total number in the committers section of the triangle is higher than in the above triangle."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:374
+msgid "The kernel is the main building block of FreeBSD. While the userland applications are protected against faults in other userland applications, the entire system is vulnerable to errors in the kernel. This, combined with the vast amount of dependencies in the kernel and that it is not easy to see all the consequences of a kernel change, demands developers with a relative full understanding of the kernel. Multiple development efforts in the kernel also requires a closer coordination than userland applications do."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:386
+msgid "The core utilities, known as userland, provide the interface that identifies FreeBSD, both user interface, shared libraries and external interfaces to connecting clients. Currently, 162 people are involved in userland development and maintenance, many being maintainers for their own part of the code. Maintainership will be discussed in the <xref linkend=\"role-maintainer\"/> section."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:396
+msgid "Documentation is handled by <xref linkend=\"sub-project-documentation\"/> and includes all documents surrounding the FreeBSD project, including the web pages. There were during 2004 101 people making commits to the FreeBSD Documentation Project."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:413
+msgid "Statistics are generated by counting the number of entries in the file fetched by portsdb by April 1st, 2005. portsdb is a part of the port sysutils/portupgrade."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:403
+msgid "Ports is the collection of meta-data that is needed to make software packages build correctly on FreeBSD. An example of a port is the port for the web-browser Mozilla. It contains information about where to fetch the source, what patches to apply and how, and how the package should be installed on the system. This allows automated tools to fetch, build and install the package. As of this writing, there are more than 12600 ports available. <_:footnote-1/> , ranging from web servers to games, programming languages and most of the application types that are in use on modern computers. Ports will be discussed further in the section <xref linkend=\"sub-project-ports\"/>."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:431
+msgid "Methodology model"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:433
+msgid "Development model"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:435
+msgid "There is no defined model for how people write code in FreeBSD. However, Niels Jørgenssen has suggested a model of how written code is integrated into the project."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:443
+#: book.translate.xml:1709
+msgid "Jørgenssen's model for change integration"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:444
+#: book.translate.xml:1710
+msgctxt "_"
+msgid "external ref='maintenance' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:448
+msgid "The <quote>development release</quote> is the FreeBSD-CURRENT (\"-CURRENT\") branch and the <quote>production release</quote> is the FreeBSD-STABLE branch (\"-STABLE\") <citation><xref linkend=\"jorgensen2001\"/></citation>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:455
+msgid "This is a model for one change, and shows that after coding, developers seek community review and try integrating it with their own systems. After integrating the change into the development release, called FreeBSD-CURRENT, it is tested by many users and developers in the FreeBSD community. After it has gone through enough testing, it is merged into the production release, called FreeBSD-STABLE. Unless each stage is finished successfully, the developer needs to go back and make modifications in the code and restart the process. To integrate a change with either -CURRENT or -STABLE is called making a commit."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:468
+msgid "Jørgensen found that most FreeBSD developers work individually, meaning that this model is used in parallel by many developers on the different ongoing development efforts. A developer can also be working on multiple changes, so that while he is waiting for review or people to test one or more of his changes, he may be writing another change."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:482
+msgid "The period from January 1st, 2004 to December 31st, 2004 was examined to find this number."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:477
+msgid "As each commit represents an increment, this is a massively incremental model. The commits are in fact so frequent that during one year <_:footnote-1/> , 85427 commits were made, making a daily average of 233 commits."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:491
+msgid "Within the <quote>code</quote> bracket in Jørgensen's figure, each programmer has his own working style and follows his own development models. The bracket could very well have been called <quote>development</quote> as it includes requirements gathering and analysis, system and detailed design, implementation and verification. However, the only output from these stages is the source code or system documentation."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:502
+msgid "From a stepwise model's perspective (such as the waterfall model), the other brackets can be seen as further verification and system integration. This system integration is also important to see if a change is accepted by the community. Up until the code is committed, the developer is free to choose how much to communicate about it to the rest of the project. In order for -CURRENT to work as a buffer (so that bright ideas that had some undiscovered drawbacks can be backed out) the minimum time a commit should be in -CURRENT before merging it to -STABLE is 3 days. Such a merge is referred to as an MFC (Merge From Current)."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:515
+msgid "It is important to notice the word <quote>change</quote>. Most commits do not contain radical new features, but are maintenance updates."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:521
+msgid "The only exceptions from this model are security fixes and changes to features that are deprecated in the -CURRENT branch. In these cases, changes can be committed directly to the -STABLE branch."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:534
+msgid "For instance, the development of the Bluetooth stack started as a sub-project until it was deemed stable enough to be merged into the -CURRENT branch. Now it is a part of the core FreeBSD system."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:527
+msgid "In addition to many people working on the project, there are many related projects to the FreeBSD Project. These are either projects developing brand new features, sub-projects or projects whose outcome is incorporated into FreeBSD <_:footnote-1/>. These projects fit into the FreeBSD Project just like regular development efforts: they produce code that is integrated with the FreeBSD Project. However, some of them (like Ports and Documentation) have the privilege of being applicable to both branches or commit directly to both -CURRENT and -STABLE."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:553
+msgid "According to Kirk McKusick, after 20 years of developing UNIX operating systems, the interfaces are for the most part figured out. There is therefore no need for much design. However, new applications of the system and new hardware leads to some implementations being more beneficial than those that used to be preferred. One example is the introduction of web browsing that made the normal TCP/IP connection a short burst of data rather than a steady stream over a longer period of time."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:548
+msgid "There is no standards to how design should be done, nor is design collected in a centralised repository. The main design is that of 4.4BSD. <_:footnote-1/> As design is a part of the <quote>Code</quote> bracket in Jørgenssen's model, it is up to every developer or sub-project how this should be done. Even if the design should be stored in a central repository, the output from the design stages would be of limited use as the differences of methodologies would make them poorly if at all interoperable. For the overall design of the project, the project relies on the sub-projects to negotiate fit interfaces between each other rather than to dictate interfacing."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:582
+msgid "Release branches"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:584
+msgid "The releases of FreeBSD is best illustrated by a tree with many branches where each major branch represents a major version. Minor versions are represented by branches of the major branches."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:591
+msgid "In the following release tree, arrows that follow one-another in a particular direction represent a branch. Boxes with full lines and diamonds represent official releases. Boxes with dotted lines represent the development branch at that time. Security branches are represented by ovals. Diamonds differ from boxes in that they represent a fork, meaning a place where a branch splits into two branches where one of the branches becomes a sub-branch. For example, at 4.0-RELEASE the 4.0-CURRENT branch split into 4-STABLE and 5.0-CURRENT. At 4.5-RELEASE, the branch forked off a security branch called RELENG_4_5."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:608
+msgid "The FreeBSD release tree"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:609
+msgctxt "_"
+msgid "external ref='branches' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:612
+msgid "The latest -CURRENT version is always referred to as -CURRENT, while the latest -STABLE release is always referred to as -STABLE. In this figure, -STABLE refers to 4-STABLE while -CURRENT refers to 5.0-CURRENT following 5.0-RELEASE. <citation><xref linkend=\"freebsd-releng\"/></citation>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:621
+msgid "A <quote>major release</quote> is always made from the -CURRENT branch. However, the -CURRENT branch does not need to fork at that point in time, but can focus on stabilising. An example of this is that following 3.0-RELEASE, 3.1-RELEASE was also a continuation of the -CURRENT-branch, and -CURRENT did not become a true development branch until this version was released and the 3-STABLE branch was forked. When -CURRENT returns to becoming a development branch, it can only be followed by a major release. 5-STABLE is predicted to be forked off 5.0-CURRENT at around 5.3-RELEASE. It is not until 5-STABLE is forked that the development branch will be branded 6.0-CURRENT."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:635
+msgid "A <quote>minor release</quote> is made from the -CURRENT branch following a major release, or from the -STABLE branch."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:642
+msgid "The first release this actually happened for was 4.5-RELEASE, but security branches were at the same time created for 4.3-RELEASE and 4.4-RELEASE."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:653
+msgid "There is a terminology overlap with respect to the word \"stable\", which leads to some confusion. The -STABLE branch is still a development branch, whose goal is to be useful for most people. If it is never acceptable for a system to get changes that are not announced at the time it is deployed, that system should run a security branch."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:640
+msgid "Following and including, 4.3-RELEASE<_:footnote-1/>, when a minor release has been made, it becomes a <quote>security branch</quote>. This is meant for organisations that do not want to follow the -STABLE branch and the potential new/changed features it offers, but instead require an absolutely stable environment, only updating to implement security updates. <_:footnote-2/>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:666
+msgid "Each update to a security branch is called a <quote>patchlevel</quote>. For every security enhancement that is done, the patchlevel number is increased, making it easy for people tracking the branch to see what security enhancements they have implemented. In cases where there have been especially serious security flaws, an entire new release can be made from a security branch. An example of this is 4.6.2-RELEASE."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:680
+msgid "Model summary"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:682
+msgid "To summarise, the development model of FreeBSD can be seen as the following tree:"
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:689
+msgid "The overall development model"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:690
+msgctxt "_"
+msgid "external ref='freebsd-code-model' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:693
+msgid "The tree of the FreeBSD development with ongoing development efforts and continuous integration."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:699
+msgid "The tree symbolises the release versions with major versions spawning new main branches and minor versions being versions of the main branch. The top branch is the -CURRENT branch where all new development is integrated, and the -STABLE branch is the branch directly below it."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:707
+msgid "Clouds of development efforts hang over the project where developers use the development models they see fit. The product of their work is then integrated into -CURRENT where it undergoes parallel debugging and is finally merged from -CURRENT into -STABLE. Security fixes are merged from -STABLE to the security branches."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:720
+msgid "Hats"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:722
+msgid "Many committers have a special area of responsibility. These roles are called hats. These hats can be either project roles, such as public relations officer, or maintainer for a certain area of the code. Because this is a project where people give voluntarily of their spare time, people with assigned hats are not always available. They must therefore appoint a deputy that can perform the hat's role in his or her absence. The other option is to have the role held by a group."
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:735
+msgid "Many of these hats are not formalised. Formalised hats have a charter stating the exact purpose of the hat along with its privileges and responsibilities. The writing of such charters is a new part of the project, and has thus yet to be completed for all hats. These hat descriptions are not such a formalisation, rather a summary of the role with links to the charter where available and contact addresses."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:748
+msgid "General Hats"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:751
+msgid "Contributor"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:752
+msgid "A Contributor contributes to the FreeBSD project either as a developer, as an author, by sending problem reports, or in other ways contributing to the progress of the project. A contributor has no special privileges in the FreeBSD project. <citation><xref linkend=\"freebsd-contributors\"/></citation>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:762
+msgid "Committer"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:763
+msgid "A person who has the required privileges to add his code or documentation to the repository. A committer has made a commit within the past 12 months. <citation><xref linkend=\"freebsd-bylaws\"/></citation> An active committer is a committer who has made an average of one commit per month during that time."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:777
+msgid "It is worth noting that there are no technical barriers to prevent someone, once having gained commit privileges to the main- or a sub-project, to make commits in parts of that project's source the committer did not specifically get permission to modify. However, when wanting to make modifications to parts a committer has not been involved in before, he/she should read the logs to see what has happened in this area before, and also read the MAINTAINER file to see if the maintainer of this part has any special requests on how changes in the code should be made"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:800
+msgid "Core Team"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:803
+msgid "The core team is elected by the committers from the pool of committers and serves as the board of directors of the FreeBSD project. It promotes active contributors to committers, assigns people to well-defined hats, and is the final arbiter of decisions involving which way the project should be heading. As by July 1st, 2004, core consisted of 9 members. Elections are held every two years."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:817
+msgid "Maintainership"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:819
+msgid "Maintainership means that that person is responsible for what is allowed to go into that area of the code and has the final say should disagreements over the code occur. This involves proactive work aimed at stimulating contributions and reactive work in reviewing commits."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:827
+msgid "With the FreeBSD source comes the MAINTAINERS file that contains a one-line summary of how each maintainer would like contributions to be made. Having this notice and contact information enables developers to focus on the development effort rather than being stuck in a slow correspondence should the maintainer be unavailable for some time."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:837
+msgid "If the maintainer is unavailable for an unreasonably long period of time, and other people do a significant amount of work, maintainership may be switched without the maintainer's approval. This is based on the stance that maintainership should be demonstrated, not declared."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:845
+msgid "Maintainership of a particular piece of code is a hat that is not held as a group."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:857
+msgid "Official Hats"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:859
+msgid "The official hats in the FreeBSD Project are hats that are more or less formalised and mainly administrative roles. They have the authority and responsibility for their area. The following illustration shows the responsibility lines. After this follows a description of each hat, including who it is held by."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:869
+msgid "Overview of official hats"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:870
+msgctxt "_"
+msgid "external ref='hats-overview' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:874
+msgid "All boxes consist of groups of committers, except for the dotted boxes where the holders are not necessarily committers. The flattened circles are sub-projects and consist of both committers and non-committers of the main project."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:884
+msgid "Documentation project manager"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:885
+msgid "<xref linkend=\"sub-project-documentation\"/> architect is responsible for defining and following up documentation goals for the committers in the Documentation project."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:892
+msgid "Hat held by: The DocEng team <email>doceng@FreeBSD.org</email>. The <link xlink:href=\"https://www.freebsd.org/internal/doceng.html\"> DocEng Charter</link>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:902
+msgid "Postmaster"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:903
+msgid "The Postmaster is responsible for mail being correctly delivered to the committers' email address. He is also responsible for ensuring that the mailing lists work and should take measures against possible disruptions of mail such as having troll-, spam- and virus-filters."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:910
+msgid "Hat currently held by: the Postmaster Team <email>postmaster@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:917
+msgid "Release Coordination"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:922
+msgid "Setting, publishing and following a release schedule for official releases"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:926
+msgid "Documenting and formalising release engineering procedures"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:929
+msgid "Creation and maintenance of code branches"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:932
+msgid "Coordinating with the Ports and Documentation teams to have an updated set of packages and documentation released with the new releases"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:937
+msgid "Coordinating with the Security team so that pending releases are not affected by recently disclosed vulnerabilities."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:919
+msgid "The responsibilities of the Release Engineering Team are <_:itemizedlist-1/> Further information about the development process is available in the <xref linkend=\"process-release-engineering\"/> section."
+msgstr ""
+
+#. (itstool) path: section/para
+#. (itstool) id: book.translate.xml#role-releng
+#: book.translate.xml:947
+msgid "Hat held by: the Release Engineering team <email>re@FreeBSD.org</email>. The <link xlink:href=\"https://www.freebsd.org/releng/charter.html\"> Release Engineering Charter</link>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:957
+msgid "Public Relations &amp; Corporate Liaison"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:962
+msgid "Making press statements when happenings that are important to the FreeBSD Project happen."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:966
+msgid "Being the official contact person for corporations that are working close with the FreeBSD Project."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:970
+msgid "Take steps to promote FreeBSD within both the Open Source community and the corporate world."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:974
+msgid "Handle the <quote>freebsd-advocacy</quote> mailing list."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:958
+msgid "The Public Relations &amp; Corporate Liaison's responsibilities are: <_:itemizedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:980
+msgid "This hat is currently not occupied."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:986
+msgid "Security Officer"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:987
+msgid "The Security Officer's main responsibility is to coordinate information exchange with others in the security community and in the FreeBSD project. The Security Officer is also responsible for taking action when security problems are reported and promoting proactive development behavior when it comes to security."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:996
+msgid "Because of the fear that information about vulnerabilities may leak out to people with malicious intent before a patch is available, only the Security Officer, consisting of an officer, a deputy and two <xref linkend=\"role-core\"/> members, receive sensitive information about security issues. However, to create or implement a patch, the Security Officer has the Security Officer Team <email>security-team@FreeBSD.org</email> to help do the work."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1010
+msgid "Source Repository Manager"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1011
+msgid "The Source Repository Manager is the only one who is allowed to directly modify the repository without using the <xref linkend=\"tool-svn\"/> tool. It is his/her responsibility to ensure that technical problems that arise in the repository are resolved quickly. The source repository manager has the authority to back out commits if this is necessary to resolve a SVN technical problem."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1021
+msgid "Hat held by: the Source Repository Manager <email>clusteradm@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1028
+msgid "Election Manager"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1029
+msgid "The Election Manager is responsible for the <xref linkend=\"process-core-election\"/> process. The manager is responsible for running and maintaining the election system, and is the final authority should minor unforeseen events happen in the election process. Major unforeseen events have to be discussed with the <xref linkend=\"role-core\"/>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1037
+msgid "Hat held only during elections."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1043
+msgid "Web site Management"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1044
+msgid "The Web site Management hat is responsible for coordinating the rollout of updated web pages on mirrors around the world, for the overall structure of the primary web site and the system it is running upon. The management needs to coordinate the content with <xref linkend=\"sub-project-documentation\"/> and acts as maintainer for the <quote>www</quote> tree."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1054
+msgid "Hat held by: the FreeBSD Webmasters <email>www@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1061
+msgid "Ports Manager"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1062
+msgid "The Ports Manager acts as a liaison between <xref linkend=\"sub-project-ports\"/> and the core project, and all requests from the project should go to the ports manager."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1070
+msgid "Hat held by: the Ports Management Team <email>portmgr@FreeBSD.org</email>. The <link xlink:href=\"https://www.freebsd.org/portmgr/charter.html\"> Portmgr charter</link>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1080
+msgid "Standards"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1081
+msgid "The Standards hat is responsible for ensuring that FreeBSD complies with the standards it is committed to , keeping up to date on the development of these standards and notifying FreeBSD developers of important changes that allows them to take a proactive role and decrease the time between a standards update and FreeBSD's compliancy."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1091
+msgid "Hat currently held by: Garrett Wollman <email>wollman@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1098
+msgid "Core Secretary"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1099
+msgid "The Core Secretary's main responsibility is to write drafts to and publish the final Core Reports. The secretary also keeps the core agenda, thus ensuring that no balls are dropped unresolved."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1105
+msgid "Hat currently held by: Joseph Mingrone <email>jrm@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1111
+msgid "Bugmeister"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1112
+msgid "The Bugmeister is responsible for ensuring that the maintenance database is in working order, that the entries are correctly categorised and that there are no invalid entries."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1117
+msgid "Hat currently held by: the Bugmeister Team <email>bugmeister@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1124
+msgid "Donations Liaison Officer"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1125
+msgid "The task of the donations liaison officer is to match the developers with needs with people or organisations willing to make a donation. The Donations Liaison Charter is available <link xlink:href=\"https://www.freebsd.org/donations/\">here</link>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1134
+msgid "Hat held by: the Donations Liaison Office <email>donations@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1141
+msgid "Admin"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1142
+msgid "(Also called <quote>FreeBSD Cluster Admin</quote>)"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1146
+msgid "The admin team consists of the people responsible for administrating the computers that the project relies on for its distributed work and communication to be synchronised. It consists mainly of those people who have physical access to the servers."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1156
+msgid "Hat held by: the Admin team <email>admin@FreeBSD.org</email>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1168
+msgid "Process dependent hats"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1171
+msgid "Report originator"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1172
+msgid "The person originally responsible for filing a Problem Report."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1180
+msgid "Bugbuster"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1181
+msgid "A person who will either find the right person to solve the problem, or close the PR if it is a duplicate or otherwise not an interesting one."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1190
+msgid "Mentor"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1191
+msgid "A mentor is a committer who takes it upon him/her to introduce a new committer to the project, both in terms of ensuring the new committers setup is valid, that the new committer knows the available tools required in his/her work and that the new committer knows what is expected of him/her in terms of behavior."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1202
+msgid "Vendor"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1203
+msgid "The person(s) or organisation whom external code comes from and whom patches are sent to."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1210
+msgid "Reviewers"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1211
+msgid "People on the mailing list where the request for review is posted."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:1222
+msgid "Processes"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:1224
+msgid "The following section will describe the defined project processes. Issues that are not handled by these processes happen on an ad-hoc basis based on what has been customary to do in similar cases."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1232
+msgid "Adding new and removing old committers"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1234
+msgid "The Core team has the responsibility of giving and removing commit privileges to contributors. This can only be done through a vote on the core mailing list. The ports and documentation sub-projects can give commit privileges to people working on these projects, but have to date not removed such privileges."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1244
+msgid "Normally a contributor is recommended to core by a committer. For contributors or outsiders to contact core asking to be a committer is not well thought of and is usually rejected."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1252
+msgid "If the area of particular interest for the developer potentially overlaps with other committers' area of maintainership, the opinion of those maintainers is sought. However, it is frequently this committer that recommends the developer."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1260
+msgid "When a contributor is given committer status, he is assigned a mentor. The committer who recommended the new committer will, in the general case, take it upon himself to be the new committers mentor."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1268
+msgid "When a contributor is given his commit bit, a <xref linkend=\"tool-pgp\"/>-signed email is sent from either <xref linkend=\"role-core-secretary\"/>, <xref linkend=\"role-ports-manager\"/> or nik@freebsd.org to both admins@freebsd.org, the assigned mentor, the new committer and core confirming the approval of a new account. The mentor then gathers a password line, <xref linkend=\"tool-ssh2\"/> public key and PGP key from the new committer and sends them to <xref linkend=\"role-admin\"/>. When the new account is created, the mentor activates the commit bit and guides the new committer through the rest of the initial process."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1282
+msgid "Process summary: adding a new committer"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1283
+msgctxt "_"
+msgid "external ref='proc-add-committer' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1287
+msgid "When a contributor sends a piece of code, the receiving committer may choose to recommend that the contributor is given commit privileges. If he recommends this to core, they will vote on this recommendation. If they vote in favour, a mentor is assigned the new committer and the new committer has to email his details to the administrators for an account to be created. After this, the new committer is all set to make his first commit. By tradition, this is by adding his name to the committers list."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1299
+msgid "Recall that a committer is considered to be someone who has committed code during the past 12 months. However, it is not until after 18 months of inactivity have passed that commit privileges are eligible to be revoked. <citation><xref linkend=\"freebsd-expiration-policy\"/></citation> There are, however, no automatic procedures for doing this. For reactions concerning commit privileges not triggered by time, see <link linkend=\"process-reactions\">section 1.5.8</link>."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1314
+msgid "Process summary: removing a committer"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1315
+msgctxt "_"
+msgid "external ref='proc-rm-committer' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1319
+msgid "When Core decides to clean up the committers list, they check who has not made a commit for the past 18 months. Committers who have not done so have their commit bits revoked."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1326
+msgid "It is also possible for committers to request that their commit bit be retired if for some reason they are no longer going to be actively committing to the project. In this case, it can also be restored at a later time by core, should the committer ask."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1333
+msgid "Roles in this process: <_:orderedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1364
+msgid "Committing code"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1366
+msgid "The committing of new or modified code is one of the most frequent processes in the FreeBSD project and will usually happen many times a day. Committing of code can only be done by a <quote>committer</quote>. Committers commit either code written by themselves, code submitted to them or code submitted through a <link linkend=\"model-pr\">problem report</link>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1376
+msgid "When code is written by the developer that is non-trivial, he should seek a code review from the community. This is done by sending mail to the relevant list asking for review. Before submitting the code for review, he should ensure it compiles correctly with the entire tree and that all relevant tests run. This is called <quote>pre-commit test</quote>. When contributed code is received, it should be reviewed by the committer and tested the same way."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1387
+msgid "When a change is committed to a part of the source that has been contributed from an outside <xref linkend=\"role-vendor\"/>, the maintainer should ensure that the patch is contributed back to the vendor. This is in line with the open source philosophy and makes it easier to stay in sync with outside projects as the patches do not have to be reapplied every time a new release is made."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1400
+msgid "After the code has been available for review and no further changes are necessary, the code is committed into the development branch, -CURRENT. If the change applies for the -STABLE branch or the other branches as well, a <quote>Merge From Current</quote> (\"MFC\") countdown is set by the committer. After the number of days the committer chose when setting the MFC have passed, an email will automatically be sent to the committer reminding him to commit it to the -STABLE branch (and possibly security branches as well). Only security critical changes should be merged to security branches."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1415
+msgid "Delaying the commit to -STABLE and other branches allows for <quote>parallel debugging</quote> where the committed code is tested on a wide range of configurations. This makes changes to -STABLE to contain fewer faults and thus giving the branch its name."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1425
+msgid "Process summary: A committer commits code"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1426
+msgctxt "_"
+msgid "external ref='proc-commit' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1430
+msgid "When a committer has written a piece of code and wants to commit it, he first needs to determine if it is trivial enough to go in without prior review or if it should first be reviewed by the developer community. If the code is trivial or has been reviewed and the committer is not the maintainer, he should consult the maintainer before proceeding. If the code is contributed by an outside vendor, the maintainer should create a patch that is sent back to the vendor. The code is then committed and the deployed by the users. Should they find problems with the code, this will be reported and the committer can go back to writing a patch. If a vendor is affected, he can choose to implement or ignore the patch."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1449
+msgid "Process summary: A contributor commits code"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1450
+msgctxt "_"
+msgid "external ref='proc-contrib' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1454
+msgid "The difference when a contributor makes a code contribution is that he submits the code through the Bugzilla interface. This report is picked up by the maintainer who reviews the code and commits it."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1461
+msgid "Hats included in this process are: <_:orderedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1487
+msgid "Core election"
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:1492
+msgid "The first Core election was held September 2000"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1489
+msgid "Core elections are held at least every two years. <_:footnote-1/> Nine core members are elected. New elections are held if the number of core members drops below seven. New elections can also be held should at least 1/3 of the active committers demand this."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1499
+msgid "When an election is to take place, core announces this at least 6 weeks in advance, and appoints an election manager to run the elections."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1506
+msgid "Only committers can be elected into core. The candidates need to submit their candidacy at least one week before the election starts, but can refine their statements until the voting starts. They are presented in the <link xlink:href=\"http://election.uk.freebsd.org/candidates.html\">candidates list</link>. When writing their election statements, the candidates must answer a few standard questions submitted by the election manager."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1516
+msgid "During elections, the rule that a committer must have committed during the 12 past months is followed strictly. Only these committers are eligible to vote."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1523
+msgid "When voting, the committer may vote once in support of up to nine nominees. The voting is done over a period of four weeks with reminders being posted on <quote>developers</quote> mailing list that is available to all committers."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1530
+msgid "The election results are released one week after the election ends, and the new core team takes office one week after the results have been posted."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1536
+msgid "Should there be a voting tie, this will be resolved by the new, unambiguously elected core members."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1541
+msgid "Votes and candidate statements are archived, but the archives are not publicly available."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1548
+msgid "Process summary: Core elections"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1549
+msgctxt "_"
+msgid "external ref='proc-elections' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1553
+msgid "Core announces the election and selects an election manager. He prepares the elections, and when ready, candidates can announce their candidacies through submitting their statements. The committers then vote. After the vote is over, the election results are announced and the new core team takes office."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1562
+msgid "Hats in core elections are: <_:itemizedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1588
+msgid "Development of new features"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1590
+msgid "Within the project there are sub-projects that are working on new features. These projects are generally done by one person <citation><xref linkend=\"jorgensen2001\"/></citation>. Every project is free to organise development as it sees fit. However, when the project is merged to the -CURRENT branch it must follow the project guidelines. When the code has been well tested in the -CURRENT branch and deemed stable enough and relevant to the -STABLE branch, it is merged to the -STABLE branch."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1602
+msgid "The requirements of the project are given by developer wishes, requests from the community in terms of direct requests by mail, Problem Reports, commercial funding for the development of features, or contributions by the scientific community. The wishes that come within the responsibility of a developer are given to that developer who prioritises his time between the request and his wishes. A common way to do this is maintain a TODO-list maintained by the project. Items that do not come within someone's responsibility are collected on TODO-lists unless someone volunteers to take the responsibility. All requests, their distribution and follow-up are handled by the <xref linkend=\"tool-bugzilla\"/> tool."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1617
+msgid "Requirements analysis happens in two ways. The requests that come in are discussed on mailing lists, both within the main project and in the sub-project that the request belongs to or is spawned by the request. Furthermore, individual developers on the sub-project will evaluate the feasibility of the requests and determine the prioritisation between them. Other than archives of the discussions that have taken place, no outcome is created by this phase that is merged into the main project."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1628
+msgid "As the requests are prioritised by the individual developers on the basis of doing what they find interesting, necessary or are funded to do, there is no overall strategy or prioritisation of what requests to regard as requirements and following up their correct implementation. However, most developers have some shared vision of what issues are more important, and they can ask for guidelines from the release engineering team."
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:1656
+msgid "More and more tests are however performed when building the system (<quote>make world</quote>). These tests are however a very new addition and no systematic framework for these tests have yet been created."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1641
+msgid "The verification phase of the project is two-fold. Before committing code to the current-branch, developers request their code to be reviewed by their peers. This review is for the most part done by functional testing, but also code review is important. When the code is committed to the branch, a broader functional testing will happen, that may trigger further code review and debugging should the code not behave as expected. This second verification form may be regarded as structural verification. Although the sub-projects themselves may write formal tests such as unit tests, these are usually not collected by the main project and are usually removed before the code is committed to the current branch. <_:footnote-1/>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1671
+msgid "Maintenance"
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:1687
+msgid "sendmail and named are examples of code that has been merged from other platforms."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1673
+msgid "It is an advantage to the project to for each area of the source have at least one person that knows this area well. Some parts of the code have designated maintainers. Others have de-facto maintainers, and some parts of the system do not have maintainers. The maintainer is usually a person from the sub-project that wrote and integrated the code, or someone who has ported it from the platform it was written for. <_:footnote-1/> The maintainer's job is to make sure the code is in sync with the project the code comes from if it is contributed code, and apply patches submitted by the community or write fixes to issues that are discovered."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1700
+msgid "The main bulk of work that is put into the FreeBSD project is maintenance. <citation><xref linkend=\"jorgensen2001\"/></citation> has made a figure showing the life cycle of changes."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1714
+msgid "Here <quote>development release</quote> refers to the -CURRENT branch while <quote>production release</quote> refers to the -STABLE branch. The <quote>pre-commit test</quote> is the functional testing by peer developers when asked to do so or trying out the code to determine the status of the sub-project. <quote>Parallel debugging</quote> is the functional testing that can trigger more review, and debugging when the code is included in the -CURRENT branch."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1727
+msgid "As of this writing, there were 269 committers in the project. When they commit a change to a branch, that constitutes a new release. It is very common for users in the community to track a particular branch. The immediate existence of a new release makes the changes widely available right away and allows for rapid feedback from the community. This also gives the community the response time they expect on issues that are of importance to them. This makes the community more engaged, and thus allows for more and better feedback that again spurs more maintenance and ultimately should create a better product."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1740
+msgid "Before making changes to code in parts of the tree that has a history unknown to the committer, the committer is required to read the commit logs to see why certain features are implemented the way they are in order not to make mistakes that have previously either been thought through or resolved."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1753
+msgid "Problem reporting"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1755
+msgid "Before FreeBSD 10, FreeBSD included a problem reporting tool called <command>send-pr</command>. Problems include bug reports, feature requests, feature enhancements and notices of new versions of external software that are included in the project. Although <command>send-pr</command> is available, users and developers are encouraged to submit issues using our <link xlink:href=\"https://bugs.freebsd.org/submit/\"> problem report form</link>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1765
+msgid "Problem reports are sent to an email address where it is inserted into the Problem Reports maintenance database. A <xref linkend=\"role-bugbuster\"/> classifies the problem and sends it to the correct group or maintainer within the project. After someone has taken responsibility for the report, the report is being analysed. This analysis includes verifying the problem and thinking out a solution for the problem. Often feedback is required from the report originator or even from the FreeBSD community. Once a patch for the problem is made, the originator may be asked to try it out. Finally, the working patch is integrated into the project, and documented if applicable. It there goes through the regular maintenance cycle as described in section <xref linkend=\"model-maintenance\"/>. These are the states a problem report can be in: open, analyzed, feedback, patched, suspended and closed. The suspended state is for when further progress is not possible due to the lack of information or for when the task would require so much work that nobody is working on it at the moment."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:1789
+msgid "Process summary: problem reporting"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:1790
+msgctxt "_"
+msgid "external ref='proc-pr' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1794
+msgid "A problem is reported by the report originator. It is then classified by a bugbuster and handed to the correct maintainer. He verifies the problem and discusses the problem with the originator until he has enough information to create a working patch. This patch is then committed and the problem report is closed."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1804
+msgid "The roles included in this process are: <_:orderedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1819
+msgid "<citation><xref linkend=\"freebsd-handle-pr\"/></citation>. <citation><xref linkend=\"freebsd-send-pr\"/></citation>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1827
+msgid "Reacting to misbehavior"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1838
+msgid "Committing during code freezes without the approval of the Release Engineering team - 2 days"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1842
+msgid "Committing to a security branch without approval - 2 days"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1845
+msgid "Commit wars - 5 days to all participating parties"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1848
+msgid "Impolite or inappropriate behavior - 5 days"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1829
+msgid "<citation><xref linkend=\"freebsd-committer\"/></citation> has a number of rules that committers should follow. However, it happens that these rules are broken. The following rules exist in order to be able to react to misbehavior. They specify what actions will result in how long a suspension the committer's commit privileges. <_:itemizedlist-1/> <citation><xref linkend=\"ref-freebsd-trenches\"/></citation>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1856
+msgid "For the suspensions to be efficient, any single core member can implement a suspension before discussing it on the <quote>core</quote> mailing list. Repeat offenders can, with a 2/3 vote by core, receive harsher penalties, including permanent removal of commit privileges. (However, the latter is always viewed as a last resort, due to its inherent tendency to create controversy). All suspensions are posted to the <quote>developers</quote> mailing list, a list available to committers only."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1868
+msgid "It is important that you cannot be suspended for making technical errors. All penalties come from breaking social etiquette."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1873
+msgid "Hats involved in this process: <_:itemizedlist-1/>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:1888
+msgid "Release engineering"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1890
+msgid "The FreeBSD project has a Release Engineering team with a principal release engineer that is responsible for creating releases of FreeBSD that can be brought out to the user community via the net or sold in retail outlets. Since FreeBSD is available on multiple platforms and releases for the different architectures are made available at the same time, the team has one person in charge of each architecture. Also, there are roles in the team responsible for coordinating quality assurance efforts, building a package set and for having an updated set of documents. When referring to the release engineer, a representative for the release engineering team is meant."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1905
+msgid "When a release is coming, the FreeBSD project changes shape somewhat. A release schedule is made containing feature- and code-freezes, release of interim releases and the final release. A feature-freeze means no new features are allowed to be committed to the branch without the release engineers' explicit consent. Code-freeze means no changes to the code (like bugs-fixes) are allowed to be committed without the release engineers explicit consent. This feature- and code-freeze is known as stabilising. During the release process, the release engineer has the full authority to revert to older versions of code and thus \"back out\" changes should he find that the changes are not suitable to be included in the release."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1923
+msgid ".0 releases are the first release of a major version. These are branched of the -CURRENT branch and have a significantly longer release engineering cycle due to the unstable nature of the -CURRENT branch"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1929
+msgid ".X releases are releases of the -STABLE branch. They are scheduled to come out every 4 months."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: book.translate.xml:1933
+msgid ".X.Y releases are security releases that follow the .X branch. These come out only when sufficient security fixes have been merged since the last release on that branch. New features are rarely included, and the security team is far more involved in these than in regular releases."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1920
+msgid "There are three different kinds of releases: <_:orderedlist-1/>"
+msgstr ""
+
+#. (itstool) path: footnote/para
+#: book.translate.xml:1970
+msgid "Many commercial vendors use these images to create CD-ROMs that are sold in retail outlets."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1946
+msgid "For releases of the -STABLE-branch, the release process starts 45 days before the anticipated release date. During the first phase, the first 15 days, the developers merge what changes they have had in -CURRENT that they want to have in the release to the release branch. When this period is over, the code enters a 15 day code freeze in which only bug fixes, documentation updates, security-related fixes and minor device driver changes are allowed. These changes must be approved by the release engineer in advance. At the beginning of the last 15 day period a release candidate is created for widespread testing. Updates are less likely to be allowed during this period, except for important bug fixes and security updates. In this final period, all releases are considered release candidates. At the end of the release process, a release is created with the new version number, including binary distributions on web sites and the creation of a CD-ROM images. However, the release is not considered \"really released\" until a <xref linkend=\"tool-pgp\"/>-signed message stating exactly that, is sent to the mailing list freebsd-announce; anything labelled as a \"release\" before that may well be in-process and subject to change before the PGP-signed message is sent. <_:footnote-1/>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1979
+msgid "The releases of the -CURRENT-branch (that is, all releases that end with <quote>.0</quote>) are very similar, but with twice as long timeframe. It starts 8 weeks prior to the release with announcement of the release time line. Two weeks into the release process, the feature freeze is initiated and performance tweaks should be kept to a minimum. Four weeks prior to the release, an official beta version is made available. Two weeks prior to release, the code is officially branched into a new version. This version is given release candidate status, and as with the release engineering of -STABLE, the code freeze of the release candidate is hardened. However, development on the main development branch can continue. Other than these differences, the release engineering processes are alike."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:1997
+msgid ".0 releases go into their own branch and are aimed mainly at early adopters. The branch then goes through a period of stabilisation, and it is not until the <xref linkend=\"role-releng\"/> decides the demands to stability have been satisfied that the branch becomes -STABLE and -CURRENT targets the next major version. While this for the majority has been with .1 versions, this is not a demand."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2007
+msgid "Most releases are made when a given date that has been deemed a long enough time since the previous release comes. A target is set for having major releases every 18 months and minor releases every 4 months. The user community has made it very clear that security and stability cannot be sacrificed by self-imposed deadlines and target release dates. For slips of time not to become too long with regards to security and stability issues, extra discipline is required when committing changes to -STABLE."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:2026
+msgid "Process summary: release engineering"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:2027
+msgctxt "_"
+msgid "external ref='proc-releng' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2031
+msgid "These are the stages in the release engineering process. Multiple release candidates may be created until the release is deemed stable enough to be released."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:2051
+msgid "Tools"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:2053
+msgid "The major support tools for supporting the development process are Bugzilla, Mailman, and OpenSSH. These are externally developed tools and are commonly used in the open source world."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2060
+msgid "Subversion (SVN)"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2061
+msgid "Subversion (<quote>SVN</quote>) is a system to handle multiple versions of text files and tracking who committed what changes and why. A project lives within a <quote>repository</quote> and different versions are considered different <quote>branches</quote>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2070
+msgid "Bugzilla"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2071
+msgid "Bugzilla is a maintenance database consisting of a set of tools to track bugs at a central site. It supports the bug tracking process for sending and handling bugs as well as querying and updating the database and editing bug reports. The project uses its web interface to send <quote>Problem Reports</quote> to the projects central Bugzilla server. The committers also have web and command-line clients."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2084
+msgid "Mailman"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2085
+msgid "Mailman is a program that automates the management of mailing lists. The FreeBSD Project uses it to run 16 general lists, 60 technical lists, 4 limited lists and 5 lists with CVS commit logs. It is also used for many mailing lists set up and used by other people and projects in the FreeBSD community. General lists are lists for the general public, technical lists are mainly for the development of specific areas of interest, and closed lists are for internal communication not intended for the general public. The majority of all the communication in the project goes through these 85 lists <citation><xref linkend=\"ref-bsd-handbook\"/>, Appendix C</citation>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2103
+msgid "Pretty Good Privacy"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2104
+msgid "Pretty Good Privacy, better known as PGP, is a cryptosystem using a public key architecture to allow people to digitally sign and/or encrypt information in order to ensure secure communication between two parties. A signature is used when sending information out many recipients, enabling them to verify that the information has not been tampered with before they received it. In the FreeBSD Project this is the primary means of ensuring that information has been written by the person who claims to have written it, and not altered in transit."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2118
+msgid "Secure Shell"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2119
+msgid "Secure Shell is a standard for securely logging into a remote system and for executing commands on the remote system. It allows other connections, called tunnels, to be established and protected between the two involved systems. This standard exists in two primary versions, and only version two is used for the FreeBSD Project. The most common implementation of the standard is OpenSSH that is a part of the project's main distribution. Since its source is updated more often than FreeBSD releases, the latest version is also available in the ports tree."
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: book.translate.xml:2135
+msgid "Sub-projects"
+msgstr ""
+
+#. (itstool) path: chapter/para
+#: book.translate.xml:2137
+msgid "Sub-projects are formed to reduce the amount of communication needed to coordinate the group of developers. When a problem area is sufficiently isolated, most communication would be within the group focusing on the problem, requiring less communication with the groups they communicate with than were the group not isolated."
+msgstr ""
+
+#. (itstool) path: section/title
+#: book.translate.xml:2148
+msgid "The Ports Subproject"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2150
+msgid "A <quote>port</quote> is a set of meta-data and patches that are needed to fetch, compile and install correctly an external piece of software on a FreeBSD system. The amount of ports have grown at a tremendous rate, as shown by the following figure."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: book.translate.xml:2159
+msgid "Number of ports added between 1996 and 2005"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: book.translate.xml:2160
+msgctxt "_"
+msgid "external ref='portsstatus' md5='__failed__'"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2164
+msgid "<xref linkend=\"fig-ports\"/> is taken from <link xlink:href=\"https://www.freebsd.org/ports/growth/status.png\"> the FreeBSD web site</link>. It shows the number of ports available to FreeBSD in the period 1995 to 2005. It looks like the curve has first grown exponentionally, and then since the middle of 2001 grown linearly."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2173
+msgid "As the external software described by the port often is under continued development, the amount of work required to maintain the ports is already large, and increasing. This has led to the ports part of the FreeBSD project gaining a more empowered structure, and is more and more becoming a sub-project of the FreeBSD project."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2182
+msgid "Ports has its own core team with the <xref linkend=\"role-ports-manager\"/> as its leader, and this team can appoint committers without FreeBSD Core's approval. Unlike in the FreeBSD Project, where a lot of maintenance frequently is rewarded with a commit bit, the ports sub-project contains many active maintainers that are not committers."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2191
+msgid "Unlike the main project, the ports tree is not branched. Every release of FreeBSD follows the current ports collection and has thus available updated information on where to find programs and how to build them. This, however, means that a port that makes dependencies on the system may need to have variations depending on what version of FreeBSD it runs on."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2200
+msgid "With an unbranched ports repository it is not possible to guarantee that any port will run on anything other than -CURRENT and -STABLE, in particular older, minor releases. There is neither the infrastructure nor volunteer time needed to guarantee this."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2208
+msgid "For efficiency of communication, teams depending on Ports, such as the release engineering team, have their own ports liaisons."
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) path: publisher/publishername
+#: book.translate.xml:2218
+#: book.translate.xml:2366
+#: book.translate.xml:2380
+#: book.translate.xml:2391
+#: book.translate.xml:2407
+#: book.translate.xml:2426
+#: book.translate.xml:2472
+msgid "The FreeBSD Documentation Project"
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2220
+msgid "The FreeBSD Documentation project was started January 1995. From the initial group of a project leader, four team leaders and 16 members, they are now a total of 44 committers. The documentation mailing list has just under 300 members, indicating that there is quite a large community around it."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2230
+msgid "The goal of the Documentation project is to provide good and useful documentation of the FreeBSD project, thus making it easier for new users to get familiar with the system and detailing advanced features for the users."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2237
+msgid "The main tasks in the Documentation project are to work on current projects in the <quote>FreeBSD Documentation Set</quote>, and translate the documentation to other languages."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2243
+msgid "Like the FreeBSD Project, documentation is split in the same branches. This is done so that there is always an updated version of the documentation for each version. Only documentation errors are corrected in the security branches."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2250
+msgid "Like the ports sub-project, the Documentation project can appoint documentation committers without FreeBSD Core's approval. <citation><xref linkend=\"freebsd-doceng-charter\"/></citation>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: book.translate.xml:2256
+msgid "The Documentation project has a primer. This is used both to introduce new project members to the standard tools and syntaxes and acts as a reference when working on the project."
+msgstr ""
+
+#. (itstool) path: bibliography/title
+#: book.translate.xml:2268
+msgid "References"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2272
+msgid "<personname><firstname>Frederick P.</firstname><surname>Brooks</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2274
+msgid "<year>1975</year><year>1995</year> <holder>Pearson Education Limited</holder>"
+msgstr ""
+
+#. (itstool) path: biblioentry/biblioid
+#: book.translate.xml:2277
+msgid "0201835959"
+msgstr ""
+
+#. (itstool) path: publisher/publishername
+#: book.translate.xml:2279
+msgid "Addison-Wesley Pub Co"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2281
+msgid "The Mythical Man-Month"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2282
+msgid "Essays on Software Engineering, Anniversary Edition (2nd Edition)"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2289
+msgid "<year>2003</year>"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2293
+msgid "Candidatus Scientiarum thesis"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2294
+msgid "http://niklas.saers.com/thesis"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2300
+msgid "<personname><firstname>Niels</firstname><surname>Jørgensen</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2302
+msgid "<year>2001</year>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2305
+msgid "Putting it All in the Trunk"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2306
+msgid "Incremental Software Development in the FreeBSD Open Source Project"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2307
+msgid "http://www.dat.ruc.dk/~nielsj/research/papers/freebsd.pdf"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2312
+msgid "<personname><surname>Project Management Institute</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2314
+msgid "<year>1996</year><year>2000</year> <holder>Project Management Institute</holder>"
+msgstr ""
+
+#. (itstool) path: biblioentry/biblioid
+#: book.translate.xml:2317
+msgid "1-880410-23-0"
+msgstr ""
+
+#. (itstool) path: publisher/publishername
+#: book.translate.xml:2319
+msgid "Project Management Institute"
+msgstr ""
+
+#. (itstool) path: publisher/address
+#: book.translate.xml:2320
+#, no-wrap
+msgid ""
+"\n"
+"                    <street>Newtown Square</street>\n"
+"                    <city>Pennsylvania</city>\n"
+"                    <country>USA</country>\n"
+"                "
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2326
+msgid "PMBOK Guide"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2327
+msgid "A Guide to the Project Management Body of Knowledge, 2000 Edition"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2334
+#: book.translate.xml:2350
+#: book.translate.xml:2433
+#: book.translate.xml:2444
+#: book.translate.xml:2456
+msgid "<year>2002</year> <holder>The FreeBSD Project</holder>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2337
+msgid "Core Bylaws"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2338
+msgid "https://www.freebsd.org/internal/bylaws.html"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2342
+#: book.translate.xml:2362
+#: book.translate.xml:2376
+#: book.translate.xml:2402
+#: book.translate.xml:2422
+#: book.translate.xml:2468
+msgid "<year>2002</year> <holder>The FreeBSD Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2345
+msgid "FreeBSD Developer's Handbook"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2346
+msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/books/developers-handbook/"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2353
+msgid "Core team election 2002"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2354
+msgid "http://election.uk.freebsd.org/candidates.html"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2359
+#: book.translate.xml:2374
+msgid "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></personname>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2360
+msgid "<personname><firstname>Hiten</firstname><surname>Pandya</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2368
+msgid "Problem Report Handling Guidelines"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2369
+msgid "https://www.freebsd.org/doc/en/articles/pr-guidelines/article.html"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2382
+msgid "Writing FreeBSD Problem Reports"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2383
+msgid "https://www.freebsd.org/doc/en/articles/problem-reports/article.html"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2387
+msgid "<year>2001</year> <holder>The FreeBSD Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2394
+msgid "Committers Guide"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2395
+msgid "https://www.freebsd.org/doc/en/articles/committers-guide/article.html"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2400
+msgid "<personname><firstname>Murray</firstname><surname>Stokely</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2409
+msgid "FreeBSD Release Engineering"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2410
+msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/articles/releng/article.html"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2415
+msgid "<personname><surname>The FreeBSD Documentation Project</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2417
+msgid "FreeBSD Handbook"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2418
+msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2428
+msgid "Contributors to FreeBSD"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2429
+msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributors/article.html"
+msgstr ""
+
+#. (itstool) path: publisher/publishername
+#: book.translate.xml:2437
+#: book.translate.xml:2448
+#: book.translate.xml:2460
+msgid "The FreeBSD Project"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2439
+msgid "Core team elections 2002"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2440
+msgid "http://election.uk.freebsd.org"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2450
+msgid "Commit Bit Expiration Policy"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2451
+msgid "2002/04/06 15:35:30"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2452
+msgid "https://www.freebsd.org/internal/expire-bits.html"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2462
+msgid "New Account Creation Procedure"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2463
+msgid "2002/08/19 17:11:27"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2464
+msgid "https://www.freebsd.org/internal/new-account.html"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2474
+msgid "FreeBSD DocEng Team Charter"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2475
+msgid "2003/03/16 12:17"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2476
+msgid "https://www.freebsd.org/internal/doceng.html"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: book.translate.xml:2481
+msgid "<personname><firstname>Greg</firstname><surname>Lehey</surname></personname>"
+msgstr ""
+
+#. (itstool) path: biblioentry/copyright
+#: book.translate.xml:2483
+msgid "<year>2002</year> <holder>Greg Lehey</holder>"
+msgstr ""
+
+#. (itstool) path: publisher/publishername
+#: book.translate.xml:2487
+msgid "Greg Lehey"
+msgstr ""
+
+#. (itstool) path: biblioentry/citetitle
+#: book.translate.xml:2489
+msgid "Two years in the trenches"
+msgstr ""
+
+#. (itstool) path: biblioentry/subtitle
+#: book.translate.xml:2490
+msgid "The evolution of a software project"
+msgstr ""
+
+#. (itstool) path: biblioentry/bibliomisc
+#: book.translate.xml:2491
+msgid "http://www.lemis.com/grog/In-the-trenches.pdf"
+msgstr ""
+

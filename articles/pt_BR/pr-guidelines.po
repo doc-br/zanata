@@ -1,0 +1,1154 @@
+#$FreeBSD$
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: info/title
+#: article.translate.xml:5
+msgid "Problem Report Handling Guidelines"
+msgstr ""
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:9
+msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr ""
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:11
+msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgstr ""
+
+#. (itstool) path: info/pubdate
+#. (itstool) path: info/releaseinfo
+#: article.translate.xml:19
+#: article.translate.xml:21
+msgid "$FreeBSD: head/en_US.ISO8859-1/articles/pr-guidelines/article.xml 51348 2017-12-30 22:56:56Z eadler $"
+msgstr ""
+
+#. (itstool) path: abstract/para
+#: article.translate.xml:24
+msgid "These guidelines describe recommended handling practices for FreeBSD Problem Reports (PRs). Whilst developed for the FreeBSD PR Database Maintenance Team <email>freebsd-bugbusters@FreeBSD.org</email>, these guidelines should be followed by anyone working with FreeBSD PRs."
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:33
+msgid "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></personname>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:35
+msgid "<personname><firstname>Hiten</firstname><surname>Pandya</surname></personname>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:41
+msgid "Introduction"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:43
+msgid "Bugzilla is an issue management system used by the FreeBSD Project. As accurate tracking of outstanding software defects is important to FreeBSD's quality, the correct use of the software is essential to the forward progress of the Project."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:49
+msgid "Access to Bugzilla is available to the entire FreeBSD community. In order to maintain consistency within the database and provide a consistent user experience, guidelines have been established covering common aspects of bug management such as presenting followup, handling close requests, and so forth."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:58
+msgid "Problem Report Life-cycle"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:62
+msgid "The Reporter submits a bug report on the website. The bug is in the <literal>Needs Triage</literal> state."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:67
+msgid "Jane Random BugBuster confirms that the bug report has sufficient information to be reproducible. If not, she goes back and forth with the reporter to obtain the needed information. At this point the bug is set to the <literal>Open</literal> state."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:75
+msgid "Joe Random Committer takes interest in the PR and assigns it to himself, or Jane Random BugBuster decides that Joe is best suited to handle it and assigns it to him. The bug should be set to the <literal>In Discussion</literal> state."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:83
+msgid "Joe has a brief exchange with the originator (making sure it all goes into the audit trail) and determines the cause of the problem."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:89
+msgid "Joe pulls an all-nighter and whips up a patch that he thinks fixes the problem, and submits it in a follow-up, asking the originator to test it. He then sets the PRs state to <literal>Patch Ready</literal>."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:96
+msgid "A couple of iterations later, both Joe and the originator are satisfied with the patch, and Joe commits it to <literal>-CURRENT</literal> (or directly to <literal>-STABLE</literal> if the problem does not exist in <literal>-CURRENT</literal>), making sure to reference the Problem Report in his commit log (and credit the originator if they submitted all or part of the patch) and, if appropriate, start an MFC countdown. The bug is set to the <literal>Needs MFC</literal> state."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:108
+msgid "If the patch does not need MFCing, Joe then closes the PR as <literal>Issue Resolved</literal>."
+msgstr ""
+
+#. (itstool) path: note/para
+#: article.translate.xml:115
+msgid "Many PRs are submitted with very little information about the problem, and some are either very complex to solve, or just scratch the surface of a larger problem; in these cases, it is very important to obtain all the necessary information needed to solve the problem. If the problem contained within cannot be solved, or has occurred again, it is necessary to re-open the PR."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:126
+msgid "Problem Report State"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:128
+msgid "It is important to update the state of a PR when certain actions are taken. The state should accurately reflect the current state of work on the PR."
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:133
+msgid "A small example on when to change PR state"
+msgstr ""
+
+#. (itstool) path: example/para
+#: article.translate.xml:135
+msgid "When a PR has been worked on and the developer(s) responsible feel comfortable about the fix, they will submit a followup to the PR and change its state to <quote>feedback</quote>. At this point, the originator should evaluate the fix in their context and respond indicating whether the defect has indeed been remedied."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:143
+msgid "A Problem Report may be in one of the following states:"
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:148
+msgid "open"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:150
+msgid "Initial state; the problem has been pointed out and it needs reviewing."
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:156
+msgid "analyzed"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:158
+msgid "The problem has been reviewed and a solution is being sought."
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:164
+msgid "feedback"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:166
+msgid "Further work requires additional information from the originator or the community; possibly information regarding the proposed solution."
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:173
+msgid "patched"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:175
+msgid "A patch has been committed, but something (MFC, or maybe confirmation from originator) is still pending."
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:181
+msgid "suspended"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:183
+msgid "The problem is not being worked on, due to lack of information or resources. This is a prime candidate for somebody who is looking for a project to take on. If the problem cannot be solved at all, it will be closed, rather than suspended. The documentation project uses <quote>suspended</quote> for <quote>wish-list</quote> items that entail a significant amount of work which no one currently has time for."
+msgstr ""
+
+#. (itstool) path: glossentry/glossterm
+#: article.translate.xml:195
+msgid "closed"
+msgstr ""
+
+#. (itstool) path: glossdef/para
+#: article.translate.xml:197
+msgid "A problem report is closed when any changes have been integrated, documented, and tested, or when fixing the problem is abandoned."
+msgstr ""
+
+#. (itstool) path: note/para
+#: article.translate.xml:205
+msgid "The <quote>patched</quote> state is directly related to feedback, so you may go directly to <quote>closed</quote> state if the originator cannot test the patch, and it works in your own testing."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:212
+msgid "Types of Problem Reports"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:214
+msgid "While handling problem reports, either as a developer who has direct access to the Problem Reports database or as a contributor who browses the database and submits followups with patches, comments, suggestions or change requests, you will come across several different types of PRs."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:222
+msgid "<link linkend=\"pr-unassigned\">PRs not yet assigned to anyone.</link>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:225
+msgid "<link linkend=\"pr-assigned\">PRs already assigned to someone.</link>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:228
+msgid "<link linkend=\"pr-dups\">Duplicates of existing PRs.</link>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:231
+msgid "<link linkend=\"pr-stale\">Stale PRs</link>"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:234
+msgid "<link linkend=\"pr-misfiled-notpr\">Non-Bug PRs</link>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:238
+msgid "The following sections describe what each different type of PRs is used for, when a PR belongs to one of these types, and what treatment each different type receives."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:243
+msgid "Unassigned PRs"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:245
+msgid "When PRs arrive, they are initially assigned to a generic (placeholder) assignee. These are always prepended with <literal>freebsd-</literal>. The exact value for this default depends on the category; in most cases, it corresponds to a specific FreeBSD mailing list. Here is the current list, with the most common ones listed first:"
+msgstr ""
+
+#. (itstool) path: table/title
+#: article.translate.xml:253
+msgid "Default Assignees — most common"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:257
+#: article.translate.xml:302
+#: article.translate.xml:376
+#: article.translate.xml:554
+#: article.translate.xml:718
+msgid "Type"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:258
+#: article.translate.xml:303
+msgid "Categories"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:259
+#: article.translate.xml:304
+msgid "Default Assignee"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:265
+msgid "base system"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:266
+msgid "bin, conf, gnu, kern, misc"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:267
+msgid "freebsd-bugs"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:271
+msgid "architecture-specific"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:272
+msgid "alpha, amd64, arm, i386, ia64, powerpc, sparc64"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:273
+msgid "freebsd-<replaceable>arch</replaceable>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:277
+msgid "ports collection"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:278
+#: article.translate.xml:565
+#: article.translate.xml:572
+#: article.translate.xml:579
+#: article.translate.xml:586
+#: article.translate.xml:593
+#: article.translate.xml:600
+#: article.translate.xml:607
+#: article.translate.xml:614
+#: article.translate.xml:621
+#: article.translate.xml:628
+#: article.translate.xml:635
+#: article.translate.xml:642
+#: article.translate.xml:650
+#: article.translate.xml:657
+#: article.translate.xml:664
+#: article.translate.xml:671
+#: article.translate.xml:678
+#: article.translate.xml:685
+#: article.translate.xml:692
+msgid "ports"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:279
+msgid "freebsd-ports-bugs"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:283
+msgid "documentation shipped with the system"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:284
+msgid "docs"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:285
+msgid "freebsd-doc"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:289
+msgid "FreeBSD web pages (not including docs)"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:290
+msgid "Website"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:291
+msgid "freebsd-www"
+msgstr ""
+
+#. (itstool) path: table/title
+#: article.translate.xml:298
+msgid "Default Assignees — other"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:310
+msgid "advocacy efforts"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:311
+msgid "advocacy"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:312
+msgid "freebsd-advocacy"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:316
+msgid "<trademark>Java Virtual Machine</trademark> problems"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:317
+msgid "java"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:318
+#: article.translate.xml:629
+msgid "freebsd-java"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:322
+msgid "standards compliance"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:323
+msgid "standards"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:324
+msgid "freebsd-standards"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:328
+msgid "threading libraries"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:329
+msgid "threads"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:330
+msgid "freebsd-threads"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:334
+msgid "<citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:335
+msgid "usb"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:336
+msgid "freebsd-usb"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:342
+msgid "Do not be surprised to find that the submitter of the PR has assigned it to the wrong category. If you fix the category, do not forget to fix the assignment as well. (In particular, our submitters seem to have a hard time understanding that just because their problem manifested on an i386 system, that it might be generic to all of FreeBSD, and thus be more appropriate for <literal>kern</literal>. The converse is also true, of course.)"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:351
+msgid "Certain PRs may be reassigned away from these generic assignees by anyone. There are several types of assignees: specialized mailing lists; mail aliases (used for certain limited-interest items); and individuals."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:356
+msgid "For assignees which are mailing lists, please use the long form when making the assignment (e.g., <literal>freebsd-foo</literal> instead of <literal>foo</literal>); this will avoid duplicate emails sent to the mailing list."
+msgstr ""
+
+#. (itstool) path: note/para
+#: article.translate.xml:362
+msgid "Since the list of individuals who have volunteered to be the default assignee for certain types of PRs changes so often, it is much more suitable for <link xlink:href=\"https://wiki.freebsd.org/AssigningPRs\">the FreeBSD wiki</link>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:368
+msgid "Here is a sample list of such entities; it is probably not complete."
+msgstr ""
+
+#. (itstool) path: table/title
+#: article.translate.xml:372
+msgid "Common Assignees — base system"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:377
+#: article.translate.xml:555
+#: article.translate.xml:719
+msgid "Suggested Category"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:378
+#: article.translate.xml:556
+#: article.translate.xml:720
+msgid "Suggested Assignee"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:379
+#: article.translate.xml:557
+#: article.translate.xml:721
+msgid "Assignee Type"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:385
+msgid "problem specific to the <trademark class=\"registered\">ARM</trademark> architecture"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:386
+msgid "arm"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:387
+msgid "freebsd-arm"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:388
+#: article.translate.xml:395
+#: article.translate.xml:402
+#: article.translate.xml:410
+#: article.translate.xml:418
+#: article.translate.xml:426
+#: article.translate.xml:433
+#: article.translate.xml:440
+#: article.translate.xml:447
+#: article.translate.xml:454
+#: article.translate.xml:462
+#: article.translate.xml:469
+#: article.translate.xml:476
+#: article.translate.xml:483
+#: article.translate.xml:490
+#: article.translate.xml:497
+#: article.translate.xml:504
+#: article.translate.xml:512
+#: article.translate.xml:520
+#: article.translate.xml:528
+#: article.translate.xml:536
+#: article.translate.xml:543
+#: article.translate.xml:574
+#: article.translate.xml:595
+#: article.translate.xml:602
+#: article.translate.xml:609
+#: article.translate.xml:630
+#: article.translate.xml:637
+#: article.translate.xml:644
+#: article.translate.xml:652
+#: article.translate.xml:659
+#: article.translate.xml:666
+#: article.translate.xml:673
+#: article.translate.xml:694
+msgid "mailing list"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:392
+msgid "problem specific to the <trademark class=\"registered\">MIPS</trademark> architecture"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:393
+#: article.translate.xml:400
+#: article.translate.xml:408
+#: article.translate.xml:416
+#: article.translate.xml:424
+#: article.translate.xml:431
+#: article.translate.xml:438
+#: article.translate.xml:445
+#: article.translate.xml:452
+#: article.translate.xml:460
+#: article.translate.xml:467
+#: article.translate.xml:474
+#: article.translate.xml:481
+#: article.translate.xml:488
+#: article.translate.xml:495
+#: article.translate.xml:502
+#: article.translate.xml:510
+#: article.translate.xml:526
+#: article.translate.xml:534
+#: article.translate.xml:541
+msgid "kern"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:394
+msgid "freebsd-mips"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:399
+msgid "problem specific to the <trademark class=\"registered\">PowerPC</trademark> architecture"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:401
+msgid "freebsd-ppc"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:406
+msgid "problem with Advanced Configuration and Power Management (<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry>)"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:409
+msgid "freebsd-acpi"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:414
+msgid "problem with Asynchronous Transfer Mode (ATM) drivers"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:417
+msgid "freebsd-atm"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:422
+msgid "problem with embedded or small-footprint FreeBSD systems (e.g., NanoBSD/PicoBSD/FreeBSD-arm)"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:425
+msgid "freebsd-embedded"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:430
+msgid "problem with <trademark class=\"registered\">FireWire</trademark> drivers"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:432
+msgid "freebsd-firewire"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:437
+msgid "problem with the filesystem code"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:439
+msgid "freebsd-fs"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:444
+msgid "problem with the <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:446
+msgid "freebsd-geom"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:451
+msgid "problem with the <citerefentry><refentrytitle>ipfw</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:453
+msgid "freebsd-ipfw"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:458
+msgid "problem with Integrated Services Digital Network (ISDN) drivers"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:461
+msgid "freebsd-isdn"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:466
+msgid "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:468
+msgid "freebsd-jail"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:473
+msgid "problem with <trademark class=\"registered\">Linux</trademark> or SVR4 emulation"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:475
+msgid "freebsd-emulation"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:480
+msgid "problem with the networking stack"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:482
+msgid "freebsd-net"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:487
+msgid "problem with the <citerefentry><refentrytitle>pf</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:489
+msgid "freebsd-pf"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:494
+msgid "problem with the <citerefentry><refentrytitle>scsi</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:496
+msgid "freebsd-scsi"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:501
+msgid "problem with the <citerefentry><refentrytitle>sound</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:503
+msgid "freebsd-multimedia"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:508
+msgid "problems with the <citerefentry><refentrytitle>wlan</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem and wireless drivers"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:511
+msgid "freebsd-wireless"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:516
+msgid "problem with <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> or <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:518
+#: article.translate.xml:728
+msgid "bin"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:519
+msgid "freebsd-sysinstall"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:524
+msgid "problem with the system startup scripts (<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>)"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:527
+msgid "freebsd-rc"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:532
+msgid "problem with VIMAGE or VNET functionality and related code"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:535
+msgid "freebsd-virtualization"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:540
+msgid "problem with Xen emulation"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:542
+msgid "freebsd-xen"
+msgstr ""
+
+#. (itstool) path: table/title
+#: article.translate.xml:550
+msgid "Common Assignees — Ports Collection"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:563
+msgid "problem with the ports framework (<emphasis>not</emphasis> with an individual port!)"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:566
+msgid "portmgr"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:567
+#: article.translate.xml:581
+#: article.translate.xml:588
+#: article.translate.xml:616
+#: article.translate.xml:623
+#: article.translate.xml:680
+#: article.translate.xml:687
+#: article.translate.xml:730
+#: article.translate.xml:737
+msgid "alias"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:571
+msgid "port which is maintained by apache@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:573
+msgid "apache"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:578
+msgid "port which is maintained by autotools@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:580
+msgid "autotools"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:585
+msgid "port which is maintained by doceng@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:587
+msgid "doceng"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:592
+msgid "port which is maintained by eclipse@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:594
+msgid "freebsd-eclipse"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:599
+msgid "port which is maintained by gecko@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:601
+msgid "gecko"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:606
+msgid "port which is maintained by gnome@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:608
+msgid "gnome"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:613
+msgid "port which is maintained by hamradio@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:615
+msgid "hamradio"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:620
+msgid "port which is maintained by haskell@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:622
+msgid "haskell"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:627
+msgid "port which is maintained by java@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:634
+msgid "port which is maintained by kde@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:636
+msgid "kde"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:641
+msgid "port which is maintained by mono@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:643
+msgid "mono"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:648
+msgid "port which is maintained by office@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:651
+msgid "freebsd-office"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:656
+msgid "port which is maintained by perl@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:658
+msgid "perl"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:663
+msgid "port which is maintained by python@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:665
+msgid "freebsd-python"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:670
+msgid "port which is maintained by ruby@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:672
+msgid "freebsd-ruby"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:677
+msgid "port which is maintained by secteam@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:679
+msgid "secteam"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:684
+msgid "port which is maintained by vbox@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:686
+msgid "vbox"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:691
+msgid "port which is maintained by x11@FreeBSD.org"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:693
+msgid "freebsd-x11"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:700
+msgid "Ports PRs which have a maintainer who is a ports committer may be reassigned by anyone (but note that not every FreeBSD committer is necessarily a ports committer, so you cannot simply go by the email address alone.)"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:706
+msgid "For other PRs, please do not reassign them to individuals (other than yourself) unless you are certain that the assignee really wants to track the PR. This will help to avoid the case where no one looks at fixing a particular problem because everyone assumes that the assignee is already working on it."
+msgstr ""
+
+#. (itstool) path: table/title
+#: article.translate.xml:714
+msgid "Common Assignees — Other"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:727
+msgid "problem with PR database"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:729
+#: article.translate.xml:736
+msgid "bugmeister"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:734
+msgid "problem with Bugzilla <link xlink:href=\"https://bugs.freebsd.org/submit/\">web form</link>."
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:735
+msgid "doc"
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:746
+msgid "Assigned PRs"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:748
+msgid "If a PR has the <literal>responsible</literal> field set to the username of a FreeBSD developer, it means that the PR has been handed over to that particular person for further work."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:753
+msgid "Assigned PRs should not be touched by anyone but the assignee or bugmeister. If you have comments, submit a followup. If for some reason you think the PR should change state or be reassigned, send a message to the assignee. If the assignee does not respond within two weeks, unassign the PR and do as you please."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:762
+msgid "Duplicate PRs"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:764
+msgid "If you find more than one PR that describe the same issue, choose the one that contains the largest amount of useful information and close the others, stating clearly the number of the superseding PR. If several PRs contain non-overlapping useful information, submit all the missing information to one in a followup, including references to the others; then close the other PRs (which are now completely superseded)."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:774
+msgid "Stale PRs"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:776
+msgid "A PR is considered stale if it has not been modified in more than six months. Apply the following procedure to deal with stale PRs:"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:782
+msgid "If the PR contains sufficient detail, try to reproduce the problem in <literal>-CURRENT</literal> and <literal>-STABLE</literal>. If you succeed, submit a followup detailing your findings and try to find someone to assign it to. Set the state to <quote>analyzed</quote> if appropriate."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:791
+msgid "If the PR describes an issue which you know is the result of a usage error (incorrect configuration or otherwise), submit a followup explaining what the originator did wrong, then close the PR with the reason <quote>User error</quote> or <quote>Configuration error</quote>."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:800
+msgid "If the PR describes an error which you know has been corrected in both <literal>-CURRENT</literal> and <literal>-STABLE</literal>, close it with a message stating when it was fixed in each branch."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:807
+msgid "If the PR describes an error which you know has been corrected in <literal>-CURRENT</literal>, but not in <literal>-STABLE</literal>, try to find out when the person who corrected it is planning to MFC it, or try to find someone else (maybe yourself?) to do it. Set the state to <quote>patched</quote> and assign it to whomever will do the MFC."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:817
+msgid "In other cases, ask the originator to confirm if the problem still exists in newer versions. If the originator does not reply within a month, close the PR with the notation <quote>Feedback timeout</quote>."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:826
+msgid "Non-Bug PRs"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:828
+msgid "Developers that come across PRs that look like they should have been posted to <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">freebsd-bugs</link> or some other list should close the PR, informing the submitter in a comment why this is not really a PR and where the message should be posted."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:833
+msgid "The email addresses that Bugzilla listens to for incoming PRs have been published as part of the FreeBSD documentation, have been announced and listed on the web-site. This means that spammers found them."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:838
+msgid "Whenever you close one of these PRs, please do the following:"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:843
+msgid "Set the component to <literal>junk</literal> (under <literal>Supporting Services</literal>."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:848
+msgid "Set Responsible to <literal>nobody@FreeBSD.org</literal>."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:852
+msgid "Set State to <literal>Issue Resolved</literal>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:856
+msgid "Setting the category to <literal>junk</literal> makes it obvious that there is no useful content within the PR, and helps to reduce the clutter within the main categories."
+msgstr ""
+
+#. (itstool) path: section/title
+#: article.translate.xml:863
+msgid "Further Reading"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:865
+msgid "This is a list of resources relevant to the proper writing and processing of problem reports. It is by no means complete."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:870
+msgid "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html\">How to Write FreeBSD Problem Reports</link>—guidelines for PR originators."
+msgstr ""
+
