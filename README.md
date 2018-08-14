@@ -6,6 +6,8 @@ It's preferable to use Zanata interface to translate documents.
 If you want to translate documents through another tool, use always the `.po`
 files, ignore `.pot` files, they are used only for Zanata.
 
+[More information about pt_BR translation](https://github.com/doc-br/zanata/blob/master/README-pt_BR.md)
+
 
 # For Zanata administrators
 
