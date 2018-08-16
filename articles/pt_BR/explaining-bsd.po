@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-15 11:47+0000\n"
+"PO-Revision-Date: 2018-08-16 11:26+0000\n"
 "Last-Translator: RAFAEL MENTZ AQUINO <rafael@lk6.com.br>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -47,6 +47,9 @@ msgid ""
 "AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, "
 "Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
 msgstr ""
+"AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, "
+"Élan, Opteron, and PCnet são marcas registradas de Advanced Micro Devices, "
+"Inc."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:19
@@ -128,6 +131,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Muitas das designações utilizadas pelos fabricantes e comercializadoras para "
+"distinguir seus produtos são reivindicadas como marcas registradas. O "
+"Projeto FreeBSD está ciente destas reivindicações e sempre que estas "
+"designações aparecerem neste documento serão precedidas pelos símbolos "
+"<quote>™</quote> ou <quote>®</quote>."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -137,6 +145,8 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 51926 "
 "2018-06-29 07:33:14Z eadler $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/explaining-bsd/article.xml 51926 "
+"2018-06-29 07:33:14Z eadler $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:59
@@ -145,6 +155,10 @@ msgid ""
 "with <quote>Operating System</quote>, but it is not the only open source "
 "<trademark class=\"registered\">UNIX</trademark> operating system."
 msgstr ""
+"No mundo do código aberto, a palavra <quote>Linux</quote> é praticamente "
+"sinônimo de <quote>Sistema Operacional</quote>, mas não é o único sistema "
+"operacional <trademark class=\"registered\">UNIX</trademark> de código "
+"aberto."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:63
@@ -152,6 +166,8 @@ msgid ""
 "So what is the secret? Why is BSD not better known? This white paper "
 "addresses these and other questions."
 msgstr ""
+"Então qual é o segredo? Por que o BSD não é mais conhecido? Este document "
+"(white paper) aborda esta e outras questões."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:66
@@ -159,11 +175,13 @@ msgid ""
 "Throughout this paper, differences between BSD and Linux will be noted "
 "<emphasis>like this</emphasis>."
 msgstr ""
+"Neste documento as diferenças entre BSD e Linux serão destacadas "
+"<emphasis>assim</emphasis>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:72
 msgid "What is BSD?"
-msgstr ""
+msgstr "O que é BSD?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
@@ -336,6 +354,20 @@ msgid ""
 "and the <emphasis>vi</emphasis> editor. Collectively, these enhancements "
 "were known as the <emphasis>Berkeley Extensions</emphasis>."
 msgstr ""
+"Durante a década de 80 surgiram muitas empresas produtoras de estações de "
+"trabalho. A maioria preferiu licenciar o <trademark class="
+"\"registered\">UNIX</trademark> ao invés de desenvolver seus próprios "
+"sistemas operacionais. Em particular, a Sun Microsystems licenciou o "
+"<trademark class=\"registered\">UNIX</trademark> e implementou uma versão do "
+"4.2BSD, a qual eles chamaram de <trademark>SunOS</trademark>. Quanto a "
+"própria  AT&amp;T começou a comercializar o <trademark class="
+"\"registered\">UNIX</trademark>, eles começaram com uma implementação de "
+"certa forma simples chamada de System III, que logo transformou-se no System "
+"V. O código base do System V não possuía comunicação em rede, então todas as "
+"implementações incluíram software adicional do BSD, inclusive o  software "
+"TCP/IP, e também utilitários como o shell <emphasis>csh</emphasis> e o "
+"editor <emphasis>vi</emphasis>. Estes aprimoramentos ficaram conhecidos como "
+"<emphasis>Berkeley Extensions</emphasis>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:170
@@ -355,6 +387,21 @@ msgid ""
 "bsdi.com/\">BSD/386</link>, which was based on the same sources. The name of "
 "the operating system was later changed to BSD/OS."
 msgstr ""
+"As fitas do BSD continham código fonte da AT&amp;T, portanto necessitavam da "
+"licença dos fontes do <trademark class=\"registered\">UNIX</trademark>. Por "
+"volta de 1990, os recursos do CSRG's estavam acabando, e foi encerrado. "
+"Alguns membros do grupo decidiram liberar o código do BSD, que era código "
+"aberto, sem o código proprietário da AT&amp;T. Isso ocorreu na fita "
+"<emphasis>Networking Tape 2</emphasis>, também conhecida como <emphasis>Net/"
+"2</emphasis>. Net/2 não era um sistema operacional completo: cerca de 20% do "
+"código do kernel estavam faltando. Um dos membros do CSRG, William F. "
+"Jolitz, escreveu o código restante e liberou no início de 1992 como "
+"<emphasis>386BSD</emphasis>. Ao mesmo tempo outro grupo de ex integrantes do "
+"CSRG formaram uma empresa comercial chamada <link xlink:href=\"http://www."
+"bsdi.com/\">Berkeley Software Design Inc.</link> e liberaram uma versão beta "
+"de um sistema operacional chamado <link xlink:href=\"http://www.bsdi.com/"
+"\">BSD/386</link>, baseado nos mesmos fontes. Mais tarde o nome do sistema "
+"operacional foi alterado para BSD/OS."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:187
@@ -372,16 +419,28 @@ msgid ""
 "xlink:href=\"http://www.dragonflybsd.org/\">DragonFlyBSD</link> split off "
 "from FreeBSD."
 msgstr ""
+"O 386BSD nunca chegou a ser um sistema operacional estável. Ao invés disso, "
+"dois outros projetos surgiram a partir dele em 1993: <link xlink:href=\"http:"
+"//www.NetBSD.org/\">NetBSD</link> e <link xlink:href=\"@@URL_RELPREFIX@@/"
+"index.html\">FreeBSD</link>. Este dois projetos divergiam originalmente na "
+"questão da espera pelas melhorias no 386BSD: o pessoal do NetBSD iniciou no "
+"começo daquele ano, e a primeira versão do FreeBSD não estava pronta antes "
+"do final do ano. Neste meio tempo o código base ficou diferente um do outro "
+"o suficiente para tornar difícil sua fusão. Além disso, os projetos tinham "
+"diferentes objetivos, como veremos adiante. Em 1996, o <link xlink:href="
+"\"http://www.OpenBSD.org/\">OpenBSD</link> surgiu a partir do NetBSD, e em "
+"2003, o <link xlink:href=\"http://www.dragonflybsd.org/\">DragonFlyBSD</"
+"link> surgiu a partir do FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:201
 msgid "Why is BSD not better known?"
-msgstr ""
+msgstr "Por que o BSD não é mais conhecido?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:203
 msgid "For a number of reasons, BSD is relatively unknown:"
-msgstr ""
+msgstr "Por uma série de razões, o BSD é relativamente desconhecido:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:207
@@ -389,6 +448,8 @@ msgid ""
 "The BSD developers are often more interested in polishing their code than "
 "marketing it."
 msgstr ""
+"Os desenvolvedores do BSD estão mais interessados em aprimorar seu código do "
+"que no marketing."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:212
@@ -397,6 +458,10 @@ msgid ""
 "such as the press, and to companies formed to provide Linux services. Until "
 "recently, the open source BSDs had no such proponents."
 msgstr ""
+"Boa parte da popularidade do Linux se deve a fatores externos ao projeto "
+"Linux, como a mídia e empresas que foram criados para prover serviços Linux. "
+"Até pouco tempo atrás os BSD de código aberto não tinham este tipo de "
+"proposta."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:219
@@ -408,6 +473,12 @@ msgid ""
 "published on the web claimed that the court case had been <quote>recently "
 "settled</quote>."
 msgstr ""
+"Em 1992 a AT&amp;T processou a <link xlink:href=\"http://www.bsdi.com/"
+"\">BSDI</link>, que comercializava o  BSD/386, alegando que o produto "
+"continha código protegido por direitos autorais da AT&amp;T. O caso foi "
+"encerrado fora dos tribunais em 1994, mas o fantasma do litígio continua "
+"assombrando. Em março de 2000 um artigo publicado na web afirma que o caso "
+"foi <quote>recentemente encerrado</quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:227
@@ -420,11 +491,18 @@ msgid ""
 "class=\"registered\">UNIX</trademark> operating system</quote> and "
 "<quote>the 4.4BSD operating system</quote>."
 msgstr ""
+"Um detalhe que o processo civil não deixa claro refere-se ao nome: nos anos "
+"80 o BSD era conhecido como <quote>BSD <trademark class=\"registered\">UNIX</"
+"trademark></quote>. Com a eliminação dos últimos vestígios do código da "
+"AT&amp;T code do BSD, it also lost the right to the name <trademark class="
+"\"registered\">UNIX</trademark>. Thus you will see references in book titles "
+"to <quote>the 4.3BSD <trademark class=\"registered\">UNIX</trademark> "
+"operating system</quote> and <quote>the 4.4BSD operating system</quote>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:239
 msgid "Comparing BSD and Linux"
-msgstr ""
+msgstr "Comparando BSD e Linux"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:241

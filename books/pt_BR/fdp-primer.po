@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-14 10:52+0000\n"
+"PO-Revision-Date: 2018-08-16 12:46+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -601,6 +601,9 @@ msgid ""
 "Edit the documentation files that require changes. If a file needs major "
 "changes, consult the mailing list for input."
 msgstr ""
+"Edite os arquivos de documentação que precisam de alterações. Se um arquivo "
+"precisar de grandes mudanças, consulte a lista de discussão para obter "
+"informações."
 
 #. (itstool) path: step/para
 #: book.translate.xml:452
@@ -608,11 +611,13 @@ msgid ""
 "References to tag and entity usage can be found in <xref linkend=\"xhtml-"
 "markup\"/> and <xref linkend=\"docbook-markup\"/>."
 msgstr ""
+"Referencias pra uso de tag e entidade podem ser encontradas em <xref linkend="
+"\"xhtml-markup\"/> and <xref linkend=\"docbook-markup\"/>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:458
 msgid "After editing, check for problems by running:"
-msgstr ""
+msgstr "Após a edição, cheque por eventuais problemas rodando"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:460
@@ -620,6 +625,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>igor -R filename.xml | less -RS</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>igor -R filename.xml | less -RS</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:462
@@ -628,6 +634,9 @@ msgid ""
 "the command to find any remaining problems. Repeat until all of the errors "
 "are resolved."
 msgstr ""
+"Revise a saída e edite o arquivo para corrigir os problemas informados e, em "
+"seguida, execute novamente o comando para verificar os problemas restantes. "
+"Repita até que todos os erros sejam resolvidos."
 
 #. (itstool) path: step/para
 #: book.translate.xml:469
@@ -639,12 +648,20 @@ msgid ""
 "<acronym>HTML</acronym>, run <command>make</command> in the <filename>en_US."
 "ISO8859-1/books/handbook/</filename> directory."
 msgstr ""
+"<emphasis>Sempre</emphasis> realize testes de compilação antes de submeter "
+"algo. Execute <userinput>make</userinput> no diretório de nível superior da "
+"documentação alterada e assim será gerado a documentação no formato HTML com "
+"divisões. Por exemplo, pra compilar a versão Inglês do Handbook em "
+"<acronym>HTML</acronym>, execute <command>make</command> no diretório "
+"<filename>en_US.ISO8859-1/books/handbook/</filename> directory."
 
 #. (itstool) path: step/para
 #: book.translate.xml:480
 msgid ""
 "When changes are complete and tested, generate a <quote>diff file</quote>:"
 msgstr ""
+"Quando as alterações estiverem completas e testadas, gere um <quote>arquivo "
+"diff</quote>:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:483
@@ -654,6 +671,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>bsdinstall</"
 "replaceable>.diff.txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ~/doc</userinput>\n"
+"<prompt>%</prompt> <userinput>svn diff &gt; <replaceable>bsdinstall</"
+"replaceable>.diff.txt</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:486
@@ -661,6 +681,8 @@ msgid ""
 "Give the diff file a descriptive name. In the example above, changes have "
 "been made to the <filename>bsdinstall</filename> portion of the Handbook."
 msgstr ""
+"Dê ao arquivo diff um nome. No exemplo acima, foram feitas alterações na "
+"parte <filename>bsdinstall</filename> do Handbook."
 
 #. (itstool) path: step/para
 #: book.translate.xml:493
@@ -675,11 +697,21 @@ msgid ""
 "the diff file. Finally, use the <guibutton>[ Submit Bug ]</guibutton> button "
 "to submit your diff to the problem report system."
 msgstr ""
+"Submeta o arquivo diff file pela web no sistema <link xlink:href=\"https://"
+"bugs.FreeBSD.org/bugzilla/enter_bug.cgi?product=Documentation\">Problem "
+"Report</link>. Se estiver usando o formulário da web, insira um Resumo do "
+"<emphasis>[patch] <replaceable>descrição curta do problema</replaceable></"
+"emphasis>. Selecione o Componente <literal>Documentation</literal>. No campo "
+"de Descrição, insira uma breve descrição das alterações e quaisquer detalhes "
+"importantes sobre elas. Use o botão <guibutton>[ Add an attachment ]</"
+"guibutton> para anexar o arquivo diff. Finalmente, pressione o botão "
+"<guibutton>[ Submit Bug ]</guibutton> para enviar seu diff para o sistema de "
+"relatório de problemas."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:509
 msgid "The FreeBSD Documentation Set"
-msgstr ""
+msgstr "O conjunto de documentação do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:511
@@ -687,6 +719,8 @@ msgid ""
 "The <acronym>FDP</acronym> is responsible for four categories of FreeBSD "
 "documentation."
 msgstr ""
+"O <acronym>FDP</acronym> é responsável por quatro categorias de documentação "
+"do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:516
@@ -694,6 +728,8 @@ msgid ""
 "<emphasis>Handbook</emphasis>: The Handbook is the comprehensive online "
 "resource and reference for FreeBSD users."
 msgstr ""
+"<emphasis>Handbook</emphasis>: O Handbook é o recurso online abrangente e "
+"referência para usuários do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:522
@@ -703,6 +739,10 @@ msgid ""
 "various mailing lists and forums devoted to FreeBSD. This format does not "
 "permit long and comprehensive answers."
 msgstr ""
+"<emphasis>FAQ</emphasis>: O <acronym>FAQ</acronym> utiliza um formato curto "
+"de pergunta e resposta para abordar dúvidas que são frequentemente "
+"realizadas nas listas de discussão e fóruns dedicados ao FreeBSD. Este "
+"formato não permite respostas longas e abrangentes."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:530
@@ -712,6 +752,11 @@ msgid ""
 "the base system. However, the <acronym>FDP</acronym> can reword parts of "
 "existing manual pages to make them clearer or to correct inaccuracies."
 msgstr ""
+"<emphasis>Páginas de Manual</emphasis>: As páginas de manual do sistema de "
+"língua inglesa geralmente não são escritas pelo <acronym>FDP</acronym>, pois "
+"fazem parte do sistema base. Contudo, o <acronym>FDP</acronym> pode "
+"reformular partes de páginas de manual existentes para torná-las mais claras "
+"ou para corrigir imprecisões."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:539
@@ -721,6 +766,10 @@ msgid ""
 "www.FreeBSD.org/</link> and many mirrors around the world. The web site is "
 "typically a new user's first exposure to FreeBSD."
 msgstr ""
+"<emphasis>Web site</emphasis>: Esta é a presença principal do FreeBSD na "
+"web, visite <link xlink:href=\"https://www.freebsd.org/index.html\"> https://"
+"www.FreeBSD.org/</link> e muitos mirrors ao redor do mundo. O site é "
+"tipicamente o primeiro contato de um usuário novo no FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:547
@@ -728,6 +777,8 @@ msgid ""
 "Translation teams are responsible for translating the Handbook and web site "
 "into different languages. Manual pages are not translated at present."
 msgstr ""
+"As equipes de tradução são responsáveis por traduzir o manual e o site para "
+"diferentes idiomas. As páginas do manual não são traduzidas no momento."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:551
@@ -736,6 +787,9 @@ msgid ""
 "acronym> is available in the documentation repository at <literal>https://"
 "svn.FreeBSD.org/doc/</literal>."
 msgstr ""
+"Código fonte do site do FreeBSD, Handbook, e <acronym>FAQ</acronym> estão "
+"disponíveis no repositório de documentação em <literal>https://svn.FreeBSD."
+"org/doc/</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:556
@@ -743,6 +797,8 @@ msgid ""
 "Source for manual pages is available in a separate source repository located "
 "at <literal>https://svn.FreeBSD.org/base/</literal>."
 msgstr ""
+"Código fonte das páginas de manual estão disponíveis em um diferente "
+"repositório localizado em <literal>https://svn.FreeBSD.org/base/</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:560
@@ -752,6 +808,10 @@ msgid ""
 "org/mailman/listinfo/svn-doc-all\"> http://lists.FreeBSD.org/mailman/"
 "listinfo/svn-doc-all</uri>."
 msgstr ""
+"As mensagens de commit de documentação podem ser visualizadas com "
+"<command>svn log</command>. Mensagens de Commit são também arquivadas em "
+"<uri xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all\"> "
+"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all</uri>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:565
@@ -760,6 +820,9 @@ msgid ""
 "href=\"https://svnweb.FreeBSD.org/doc/\"/> and <link xlink:href=\"https://"
 "svnweb.FreeBSD.org/base/\"/>."
 msgstr ""
+"Endereço web para ambos os repositórios disponíveis em<link xlink:href="
+"\"https://svnweb.FreeBSD.org/doc/\"/> and <link xlink:href=\"https://svnweb."
+"FreeBSD.org/base/\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:569
@@ -770,11 +833,16 @@ msgid ""
 "acronym> endeavors to provide links to as much of this external "
 "documentation as possible."
 msgstr ""
+"Muitas pessoas tem escrito tutoriais e artigos how-to sobre FreeBSD. Alguns "
+"são armazenados como parte dos arquivos <acronym>FDP</acronym>. Em outros "
+"casos, o autor decidiu manter a documentação separada. O <acronym>FDP</"
+"acronym> esforça-se para fornecer links para o máximo possível dessas "
+"documentações externas."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:610
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:612
@@ -785,11 +853,16 @@ msgid ""
 "chapters. Some are optional, adding capabilities or making the job of "
 "creating documentation less demanding."
 msgstr ""
+"Várias ferramentas são utilizadas para gerenciar a documentação do FreeBSD e "
+"renderizá-la para diferentes formatos. Algumas dessas ferramentas são "
+"necessárias e devem ser instaladas antes de trabalhar com os exemplos nos "
+"capítulos a seguir. Algumas são opcionais, adicionando recursos ou tornando "
+"a tarefa de criar documentação mais simples."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:620
 msgid "Required Tools"
-msgstr ""
+msgstr "Ferramentas Necessárias"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:622
@@ -799,11 +872,15 @@ msgid ""
 "useful work with the FreeBSD documentation. Some further notes on particular "
 "components are given below."
 msgstr ""
+"Instale o <package>textproc/docproj</package> pela coleção de Portas. Este "
+"<emphasis>meta-port</emphasis> instala todos os aplicativos necessários para "
+"trabalhar com a documentação do FreeBSD. Informações adicionais específicas "
+"de alguns componentes serão informadas abaixo."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:630
 msgid "<acronym>DTD</acronym>s and <acronym>Entities</acronym>"
-msgstr ""
+msgstr "<acronym>DTD</acronym>s e <acronym>Entidades</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:633
@@ -812,6 +889,9 @@ msgid ""
 "acronym>s) and sets of <acronym>XML</acronym> entities. These are all "
 "installed by the <package>textproc/docproj</package> port."
 msgstr ""
+"A documentação FreeBSD utiliza diversas Definições de Tipos de Documento "
+"(<acronym>DTD</acronym>s) e conjuntos de entidades <acronym>XML</acronym>. "
+"Estes são todos instalados pelo <package>textproc/docproj</package> port."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:641
@@ -819,6 +899,8 @@ msgid ""
 "<acronym>XHTML</acronym> <acronym>DTD</acronym> (<package>textproc/xhtml</"
 "package>)"
 msgstr ""
+"<acronym>XHTML</acronym> <acronym>DTD</acronym> (<package>textproc/xhtml</"
+"package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:645
@@ -826,12 +908,15 @@ msgid ""
 "<acronym>XHTML</acronym> is the markup language of choice for the World Wide "
 "Web, and is used throughout the FreeBSD web site."
 msgstr ""
+"<acronym>XHTML</acronym> é a linguagem markup escolhida pela Web, e é "
+"utilizada em todo o site do FreeBSD."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:652
 msgid ""
 "DocBook <acronym>DTD</acronym> (<package>textproc/docbook-xml</package>)"
 msgstr ""
+"DocBook <acronym>DTD</acronym> (<package>textproc/docbook-xml</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:655
@@ -839,11 +924,13 @@ msgid ""
 "DocBook is designed for marking up technical documentation. Most of the "
 "FreeBSD documentation is written in DocBook."
 msgstr ""
+"O DocBook é projetado para escrever documentação técnica. A maior parte da "
+"documentação do FreeBSD é escrita no DocBook."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:662
 msgid "ISO 8879 entities (<package>textproc/iso8879</package>)"
-msgstr ""
+msgstr "ISO 8879 entities (<package>textproc/iso8879</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:666
@@ -853,11 +940,15 @@ msgid ""
 "characters in the Latin character set (accents, diacriticals, and so on), "
 "and Greek symbols."
 msgstr ""
+"Entidades do padrão ISO 8879:1986 utilizado por muitos <acronym>DTD</"
+"acronym>s. Inclui símbolos matemáticos nomeados, caracteres adicionais no "
+"conjunto de caracteres latinos (acentos, diacríticos e assim por diante) e "
+"símbolos Gregos."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:678
 msgid "Optional Tools"
-msgstr ""
+msgstr "Ferramentas Opcionais"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:680
@@ -865,16 +956,18 @@ msgid ""
 "These applications are not required, but can make working on the "
 "documentation easier or add capabilities."
 msgstr ""
+"Essas ferramentas não são necessárias, mas podem facilitar o trabalho na "
+"documentação ou adicionar recursos."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:684
 msgid "Software"
-msgstr ""
+msgstr "Software"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:689
 msgid "<application>Vim</application> (<package>editors/vim</package>)"
-msgstr ""
+msgstr "<application>Vim</application> (<package>editors/vim</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:693
@@ -882,6 +975,8 @@ msgid ""
 "A popular editor for working with <acronym>XML</acronym> and derived "
 "documents, like DocBook <acronym>XML</acronym>."
 msgstr ""
+"Um editor de texto popular que trabalha com <acronym>XML</acronym> and "
+"documentos derivados, como DocBook <acronym>XML</acronym>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:700
@@ -889,6 +984,8 @@ msgid ""
 "<application>Emacs</application> or <application>XEmacs</application> "
 "(<package>editors/emacs</package> or <package>editors/xemacs</package>)"
 msgstr ""
+"<application>Emacs</application> ou <application>XEmacs</application> "
+"(<package>editors/emacs</package> ou <package>editors/xemacs</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:706
@@ -898,11 +995,15 @@ msgid ""
 "includes commands to reduce the amount of typing needed, and help reduce the "
 "possibility of errors."
 msgstr ""
+"Ambos editores incluem um modo especial para editar documentos marcados como "
+"<acronym>XML</acronym> <acronym>DTD</acronym>. Esse modo inclui comandos "
+"para reduzir a quantidade de digitação necessária e ajudar a reduzir a "
+"possibilidade de erros."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:748
 msgid "The Working Copy"
-msgstr ""
+msgstr "A Área de Trabalho"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:750
@@ -912,6 +1013,10 @@ msgid ""
 "the local working copy, tested, and then submitted as patches to be "
 "committed to the main repository."
 msgstr ""
+"A <emphasis>área de trabalho</emphasis> é uma cópia da árvore de "
+"documentação do repositório do FreeBSD baixada no computador local. As "
+"alterações são feitas na cópia de trabalho local, testadas e enviadas como "
+"patches para serem submetidas no repositório principal."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:756
@@ -920,6 +1025,9 @@ msgid ""
 " Allow for a full gigabyte of space to have room for temporary files and "
 "test versions of various output formats."
 msgstr ""
+"Uma cópia completa da árvore de documentação pode ocupar 700 megabytes de "
+"espaço em disco. Tenha um gigabyte de espaço total para ter sobra para "
+"arquivos temporários e versões de teste dos diversos formatos de saída."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:761
@@ -929,17 +1037,21 @@ msgid ""
 "FreeBSD documentation files. It is obtained by installing the "
 "<application>Subversion</application> package:"
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn."
+"html\"><application>Subversion</application></link> é utilizado para "
+"gerenciador os arquivos de documentação do FreeBSD. É obtido pela instalação "
+"do pacote <application>Subversion</application>:"
 
 #. (itstool) path: chapter/screen
 #: book.translate.xml:764
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:767
 msgid "Documentation and Manual Pages"
-msgstr ""
+msgstr "Documentação e Páginas de Manual"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:769
