@@ -7,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-16 03:11+0000\n"
-"Last-Translator: Edson Brandi <edson.brandi@gmail.com>\n"
+"PO-Revision-Date: 2018-08-17 03:02+0000\n"
+"Last-Translator: Alexandre Vasconcelos <alex.vasconcelos@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.0\n"
@@ -1429,6 +1429,10 @@ msgid ""
 "application>. See <link linkend=\"resources\">resources</link> for more "
 "information."
 msgstr ""
+"Tenha certeza de que as dependências de seu port estejam completas. A "
+"maneira recomendada de fazer iss é instalando seus próprios ports com "
+"<application>tinderbox</application>. Veja em <link linkend="
+"\"resources\">recursos</link> para mais informações."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
@@ -1436,6 +1440,8 @@ msgid ""
 "Check that the packing list is up to date. This involves adding in any new "
 "files and directories and removing unused entries."
 msgstr ""
+"Verifique se a lista de pacotes está atualizada. Isto envolve adicionar "
+"novos arquivos e diretórios e remover as entradas sem uso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:742
@@ -1445,6 +1451,11 @@ msgid ""
 "citerefentry> as a guide. See <link linkend=\"resources\">resources</link> "
 "for important information about using <application>portlint</application>."
 msgstr ""
+"Verifique seu port usando o <citerefentry vendor="
+"\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> como um guia. Veja em <link linkend=\"resources\">recursos</"
+"link> para informações importantes sobre o uso do <application>portlint</"
+"application>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:749
@@ -1459,12 +1470,21 @@ msgid ""
 "\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Considere se as mudanças no seu port podem fazer com que outros ports tenham "
+"problemas. Se este for o caso, coordene as mudanças com os mantenedores "
+"dests ports. Isto é especialmente importante se a sua atualização modifica a "
+"versão da biblioteca; neste caso, pelo menos, o port dependente precisará "
+"obter um sacudida do <varname>PORTREVISION</varname> para que possa ser "
+"atualizado automaticamente por ferramentas automatizadas como o "
+"<application>portmaster</application> ou <citerefentry vendor="
+"\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:765
 #: article.translate.xml:915
 msgid "Submit changes"
-msgstr ""
+msgstr "Enviar alterações"
 
 #. (itstool) path: step/para
 #: article.translate.xml:767
@@ -1652,7 +1672,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:905
 msgid "Investigate and find a solution"
-msgstr ""
+msgstr "Investigue e encontre uma solução"
 
 #. (itstool) path: step/para
 #: article.translate.xml:907
@@ -1674,7 +1694,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:924
 msgid "Send patches to upstream authors"
-msgstr ""
+msgstr "Envie as correções para os autores upstream"
 
 #. (itstool) path: step/para
 #: article.translate.xml:926
@@ -1689,12 +1709,12 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:940
 msgid "Investigate bug reports and PRs related to your port"
-msgstr ""
+msgstr "Investigue relatórios de bugs e PRs relacionados ao seu port"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:943
 msgid "This section is about discovering and fixing bugs."
-msgstr ""
+msgstr "Esta seção é sobre como descobrir e corrigir bugs."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:946
@@ -1711,11 +1731,13 @@ msgid ""
 "These are the tasks you need to perform to ensure your port continues to "
 "work as intended:"
 msgstr ""
+"Estas são as tarefas que você precisa executar para garantir que o seu port "
+"continuará funcionando como pretendido:"
 
 #. (itstool) path: step/title
 #: article.translate.xml:957
 msgid "Respond to bug reports"
-msgstr ""
+msgstr "Responda a relatórios de bugs"
 
 #. (itstool) path: step/para
 #: article.translate.xml:959
@@ -1746,6 +1768,8 @@ msgid ""
 "If the person reporting the bug has not also provided a fix, you need to "
 "collect the information that will allow you to generate one."
 msgstr ""
+"Se a pessoa que reportou o bug não tiver fornecido uma correção, você "
+"precisará coletar as informações que permitirão gerar uma."
 
 #. (itstool) path: step/para
 #: article.translate.xml:983
@@ -1754,6 +1778,9 @@ msgid ""
 "yourself. If not, ask the person who reported the bug to collect the "
 "information for you, such as:"
 msgstr ""
+"Se o bug for reproduzível, você poderá coletar a maior parte das informações "
+"necessárias você mesmo. Caso contrário, peça à pessoa que relatou o bug para "
+"coletar as informações para você, tais como:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:990
@@ -1761,11 +1788,13 @@ msgid ""
 "A detailed description of their actions, expected program behavior and "
 "actual behavior"
 msgstr ""
+"Uma descrição detalhada das suas ações, comportamento esperado e "
+"comportamento real do aplicativo"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:995
 msgid "Copies of input data used to trigger the bug"
-msgstr ""
+msgstr "Cópias dos dados de entrada usados para acionar o bug"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1000
@@ -1779,7 +1808,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:1006
 msgid "Core dumps"
-msgstr ""
+msgstr "Core dumps"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1010
