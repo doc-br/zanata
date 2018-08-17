@@ -15,6 +15,7 @@ fi
 for article in $(find "$1/articles/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$article"
 	pwd
+	echo "make tran"
 	make tran
 	cd -
 done
@@ -22,6 +23,7 @@ done
 for book in $(find "$1/books/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$book"
 	pwd
+	echo "make tran"
 	make tran
 	cd -
 done
