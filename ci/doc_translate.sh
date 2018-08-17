@@ -14,12 +14,14 @@ fi
 
 for article in $(find "$1/articles/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$article"
+	pwd
 	make tran
 	cd -
 done
 
 for book in $(find "$1/books/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$book"
+	pwd
 	make tran
 	cd -
 done
