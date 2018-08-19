@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-08-12 23:29+0000\n"
-"PO-Revision-Date: 2018-08-19 10:43-0300\n"
+"PO-Revision-Date: 2018-08-19 12:26-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -132,7 +132,7 @@ msgstr "No FreeBSD, qualquer um pode enviar uma novo port ou ser voluntário par
 #. (itstool) path: chapter/title
 #: book.translate.xml:166
 msgid "Making a New Port"
-msgstr "Fazendo um novo port"
+msgstr "Criando um novo port"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:168
@@ -216,7 +216,7 @@ msgstr "Esta configuração permite que o <quote>Modo de desenvolvedor</quote> q
 #. (itstool) path: sect1/title
 #: book.translate.xml:243
 msgid "Writing the <filename>Makefile</filename>"
-msgstr "Escrevendo o<filename>Makefile</filename>"
+msgstr "Escrevendo o <filename>Makefile</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:245
@@ -595,7 +595,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:519
 msgid "Checking the Port with <command>portlint</command>"
-msgstr "Verificando o port com<command>portlint</command>"
+msgstr "Verificando o port com <command>portlint</command>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:522
@@ -664,7 +664,7 @@ msgid ""
 msgstr ""
 "<prompt>%</prompt> <userinput>svn add .</userinput>\n"
 "<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
-"<prompt>%</prompt> <userinput>svn diff <replaceable>games/oneko</replaceable> > <replaceable>oneko.diff</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>svn diff <replaceable>games/oneko</replaceable> &gt; <replaceable>oneko.diff</replaceable></userinput>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:575
@@ -689,7 +689,7 @@ msgid ""
 "<prompt>%</prompt> <userinput>shar `find <replaceable>oneko</replaceable>` &gt; <replaceable>oneko</replaceable>.shar</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd ..</userinput>\n"
-"<prompt>%</prompt> <userinput>shar `find <replaceable>oneko</replaceable>` > <replaceable>oneko</replaceable>.shar</userinput>"
+"<prompt>%</prompt> <userinput>shar `find <replaceable>oneko</replaceable>` &gt; <replaceable>oneko</replaceable>.shar</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:594
@@ -1159,7 +1159,7 @@ msgstr ""
 #, no-wrap
 #| msgid "<literal>@sample</literal> <replaceable>file</replaceable> [<replaceable>file</replaceable>]"
 msgid "<prompt>%</prompt> <userinput>diff -u <replaceable>file</replaceable>.orig <replaceable>file</replaceable> &gt; patch-<replaceable>pathname-file</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>diff -u <replaceable>file</replaceable>.orig <replaceable>file</replaceable> > patch-<replaceable>pathname-file</replaceable></userinput>"
+msgstr "<prompt>%</prompt> <userinput>diff -u <replaceable>file</replaceable>.orig <replaceable>file</replaceable> &gt; patch-<replaceable>pathname-file</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1004
@@ -1174,7 +1174,7 @@ msgstr ""
 #: book.translate.xml:1009
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u -N <replaceable>newfile</replaceable>.orig <replaceable>newfile</replaceable> &gt; patch-<replaceable>pathname-newfile</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>diff -u -N <replaceable>newfile</replaceable>.orig <replaceable>newfile</replaceable> > patch-<replaceable>pathname-newfile</replaceable></userinput>"
+msgstr "<prompt>%</prompt> <userinput>diff -u -N <replaceable>newfile</replaceable>.orig <replaceable>newfile</replaceable> &gt; patch-<replaceable>pathname-newfile</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1011
@@ -1340,7 +1340,7 @@ msgstr ""
 ".include &lt;bsd.port.options.mk&gt;\n"
 "\n"
 "# Patch in the iconv const qualifier before this\n"
-".if ${OPSYS} == FreeBSD &amp;&amp; ${OSVERSION} < 1100069\n"
+".if ${OPSYS} == FreeBSD &amp;&amp; ${OSVERSION} &lt; 1100069\n"
 "EXTRA_PATCHES=\t${PATCHDIR}/extra-patch-fbsd10\n"
 ".endif\n"
 "\n"
@@ -1583,7 +1583,7 @@ msgid ""
 "<command>pkg version -t</command> takes two versions as arguments, it will respond with <literal>&lt;</literal>, <literal>=</literal> or <literal>&gt;</literal> if the first version is less, equal, or more than the second "
 "version, respectively."
 msgstr ""
-"<command>pkg version -t</command> toma duas versões como argumentos, responderá com<literal><</literal>, <literal>=</literal> ou <literal>></literal>se a primeira versão for menor, igual ou maior que a segunda versão, "
+"<command>pkg version -t</command> toma duas versões como argumentos, responderá com<literal>&lt;</literal>, <literal>=</literal> ou <literal>&gt;</literal>se a primeira versão for menor, igual ou maior que a segunda versão, "
 "respectivamente."
 
 #. (itstool) path: example/screen
@@ -1604,17 +1604,17 @@ msgid ""
 "&lt; <co xml:id=\"makefile-versions-tip-co6\"/>"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.3</userinput>\n"
-"< <co xml:id=\"makefile-versions-tip-co1\"/>\n"
+"&lt; <co xml:id=\"makefile-versions-tip-co1\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2</userinput>\n"
 "= <co xml:id=\"makefile-versions-tip-co2\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.0</userinput>\n"
 "= <co xml:id=\"makefile-versions-tip-co3\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.p1</userinput>\n"
-"> <co xml:id=\"makefile-versions-tip-co4\"/>\n"
+"&gt; <co xml:id=\"makefile-versions-tip-co4\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2.a1 1.2.b1</userinput>\n"
-"< <co xml:id=\"makefile-versions-tip-co5\"/>\n"
+"&lt; <co xml:id=\"makefile-versions-tip-co5\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p1</userinput>\n"
-"< <co xml:id=\"makefile-versions-tip-co6\"/>"
+"&lt; <co xml:id=\"makefile-versions-tip-co6\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1316
@@ -1876,7 +1876,7 @@ msgid ""
 "&lt;"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2.p4 1.2</userinput>\n"
-"<"
+"&lt;"
 
 #. (itstool) path: example/title
 #: book.translate.xml:1490
@@ -1921,9 +1921,9 @@ msgid ""
 "&lt; <co xml:id=\"makefile-versions-ex4-co2\"/>"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.p4</userinput>\n"
-"> <co xml:id=\"makefile-versions-ex4-co1\"/>\n"
+"&gt; <co xml:id=\"makefile-versions-ex4-co1\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p4</userinput>\n"
-"< <co xml:id=\"makefile-versions-ex4-co2\"/>"
+"&lt; <co xml:id=\"makefile-versions-ex4-co2\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1515
@@ -2094,7 +2094,7 @@ msgid ""
 "&gt;"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 0.031 0.29</userinput>\n"
-">"
+"&gt;"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1675
@@ -4053,9 +4053,9 @@ msgid ""
 "&lt; <co xml:id=\"distversion-ex1-lt\"/>"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 9.9.9 9.9.9.p1</userinput>\n"
-"> <co xml:id=\"distversion-ex1-gt\"/>\n"
+"&gt; <co xml:id=\"distversion-ex1-gt\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 9.9.9 9.9.9p1</userinput>\n"
-"< <co xml:id=\"distversion-ex1-lt\"/>"
+"&lt; <co xml:id=\"distversion-ex1-lt\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3122
@@ -4948,7 +4948,7 @@ msgid ""
 "&lt;"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t g20140411 0</userinput>\n"
-"<"
+"&lt;"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3744
@@ -5051,9 +5051,9 @@ msgid ""
 "&lt;"
 msgstr ""
 "<prompt>%</prompt> <userinput>pkg version -t 0.7.3 0.7.3.14</userinput>\n"
-"<\n"
+"&lt;\n"
 "<prompt>%</prompt> <userinput>pkg version -t 0.7.3.14 0.7.4</userinput>\n"
-"<"
+"&lt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3816
@@ -11591,9 +11591,8 @@ msgstr "Das versões de 2.0 até 2.4.1_2, <package role=\"port\">deskutils/gnoti
 
 #. (itstool) path: example/para
 #: book.translate.xml:8798
-#, fuzzy
 msgid "To reflect this past, the <filename>Makefile</filename> of <package role=\"port\">databases/qof</package> contains:"
-msgstr "Para refletir este passado, o<filename>Makefile</filename> do <package role=\"port\">bases de dados/qof</package>contém: "
+msgstr "Para refletir este passado, o<filename>Makefile</filename> do <package role=\"port\">database/qof</package>contém: "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:8801
@@ -12301,7 +12300,7 @@ msgid ""
 "  -rwxr-xr-x  1 nobody  nobody     15 Aug  3 11:24 libfoo.so.42*"
 msgstr ""
 "<prompt>%</prompt> <userinput>ls -lF ${STAGEDIR}${PREFIX}/lib</userinput>\n"
-"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 libfoo.so@ -> libfoo.so.42\n"
+"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 libfoo.so@ -&gt; libfoo.so.42\n"
 "  -rwxr-xr-x  1 nobody  nobody     15 Aug  3 11:24 libfoo.so.42*"
 
 #. (itstool) path: example/para
@@ -12328,7 +12327,7 @@ msgid ""
 "  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 bar@ -&gt; ../libexec/foo/bar"
 msgstr ""
 "<prompt>%</prompt> <userinput>ls -lF ${STAGEDIR}${PREFIX}/bin</userinput>\n"
-"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 bar@ -> ../libexec/foo/bar"
+"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 bar@ -&gt; ../libexec/foo/bar"
 
 #. (itstool) path: example/title
 #: book.translate.xml:9332
@@ -12356,7 +12355,7 @@ msgid ""
 "  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 foo@ -&gt; /var/cache/foo"
 msgstr ""
 "<prompt>%</prompt> <userinput>ls -lF ${STAGEDIRDIR}${PREFIX}/share</userinput>\n"
-"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 foo@ -> /var/cache/foo"
+"  lrwxr-xr-x  1 nobody  nobody    181 Aug  3 11:27 foo@ -&gt; /var/cache/foo"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9351
@@ -13533,8 +13532,8 @@ msgid ""
 "Aaronepower-tokei-v7.0.2_GH0.tar.gz                     45 kB  239 kBps 00m00s"
 msgstr ""
 "<prompt>%</prompt> <userinput>make makesum</userinput>\n"
-"=> Aaronepower-tokei-v7.0.2_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=> Attempting to fetch https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz\n"
+"=&gt; Aaronepower-tokei-v7.0.2_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz\n"
 "fetch: https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz: size of remote file is not known\n"
 "Aaronepower-tokei-v7.0.2_GH0.tar.gz                     45 kB  239 kBps 00m00s"
 
@@ -13646,19 +13645,19 @@ msgid ""
 "[...]"
 msgstr ""
 "<prompt>%</prompt> <userinput>make makesum</userinput>\n"
-"=> rust/crates/aho-corasick-0.6.4.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=> Attempting to fetch https://crates.io/api/v1/crates/aho-corasick/0.6.4/download?dummy=/rust/crates/aho-corasick-0.6.4.tar.gz\n"
+"=&gt; rust/crates/aho-corasick-0.6.4.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://crates.io/api/v1/crates/aho-corasick/0.6.4/download?dummy=/rust/crates/aho-corasick-0.6.4.tar.gz\n"
 "rust/crates/aho-corasick-0.6.4.tar.gz         100% of   24 kB 6139 kBps 00m00s\n"
-"=> rust/crates/ansi_term-0.11.0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=> Attempting to fetch https://crates.io/api/v1/crates/ansi_term/0.11.0/download?dummy=/rust/crates/ansi_term-0.11.0.tar.gz\n"
+"=&gt; rust/crates/ansi_term-0.11.0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://crates.io/api/v1/crates/ansi_term/0.11.0/download?dummy=/rust/crates/ansi_term-0.11.0.tar.gz\n"
 "rust/crates/ansi_term-0.11.0.tar.gz           100% of   16 kB   21 MBps 00m00s\n"
-"=> rust/crates/arrayvec-0.4.7.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=> Attempting to fetch https://crates.io/api/v1/crates/arrayvec/0.4.7/download?dummy=/rust/crates/arrayvec-0.4.7.tar.gz\n"
+"=&gt; rust/crates/arrayvec-0.4.7.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://crates.io/api/v1/crates/arrayvec/0.4.7/download?dummy=/rust/crates/arrayvec-0.4.7.tar.gz\n"
 "rust/crates/arrayvec-0.4.7.tar.gz             100% of   22 kB 3237 kBps 00m00s\n"
-"=> rust/crates/atty-0.2.9.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=> Attempting to fetch https://crates.io/api/v1/crates/atty/0.2.9/download?dummy=/rust/crates/atty-0.2.9.tar.gz\n"
+"=&gt; rust/crates/atty-0.2.9.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://crates.io/api/v1/crates/atty/0.2.9/download?dummy=/rust/crates/atty-0.2.9.tar.gz\n"
 "rust/crates/atty-0.2.9.tar.gz                 100% of 5898  B   81 MBps 00m00s\n"
-"=> rust/crates/bitflags-1.0.1.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
+"=&gt; rust/crates/bitflags-1.0.1.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
 "[...]"
 
 #. (itstool) path: example/para
@@ -13679,7 +13678,7 @@ msgid ""
 "===&gt; Cleaning for tokei-7.0.2"
 msgstr ""
 "<prompt>%</prompt> <userinput>make clean</userinput>\n"
-"===> Cleaning for tokei-7.0.2"
+"===&gt; Cleaning for tokei-7.0.2"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10321
@@ -22717,7 +22716,7 @@ msgid ""
 "EOD"
 msgstr ""
 "actions: [dirrmtry]\n"
-"post-deinstall: <&lt;EOD\n"
+"post-deinstall: &lt;&lt;EOD\n"
 "  echo \"Directory %D/%@ removed.\"\n"
 "EOD"
 
@@ -22787,7 +22786,7 @@ msgid ""
 msgstr ""
 "actions: [file(1)]\n"
 "arguments: true\n"
-"post-install: <&lt;EOD\n"
+"post-install: &lt;&lt;EOD\n"
 "  case \"%1\" in\n"
 "  /*) sample_file=\"%1\" ;;\n"
 "  *) sample_file=\"%D/%1\" ;;\n"
@@ -22806,7 +22805,7 @@ msgstr ""
 "      /bin/chmod u+w \"${target_file}\"\n"
 "  fi\n"
 "EOD\n"
-"pre-deinstall: <&lt;EOD\n"
+"pre-deinstall: &lt;&lt;EOD\n"
 "  case \"%1\" in\n"
 "  /*) sample_file=\"%1\" ;;\n"
 "  *) sample_file=\"%D/%1\" ;;\n"
@@ -24047,15 +24046,15 @@ msgid ""
 msgstr ""
 "<prompt>#</prompt> <userinput>poudriere testport -j 111Ramd64 -p development -I -o www/firefox</userinput>\n"
 "[...]\n"
-"====>> Installing local Pkg repository to /usr/local/etc/pkg/repos\n"
-"====>> Leaving jail 111Ramd64-development-n running, mounted at /poudriere/data/.m/111Ramd64-development/ref for interactive run testing\n"
-"====>> To enter jail: jexec 111Ramd64-development-n env -i TERM=$TERM /usr/bin/login -fp root\n"
-"====>> To stop jail: poudriere jail -k -j 111Ramd64 -p development\n"
+"====&gt;&gt; Installing local Pkg repository to /usr/local/etc/pkg/repos\n"
+"====&gt;&gt; Leaving jail 111Ramd64-development-n running, mounted at /poudriere/data/.m/111Ramd64-development/ref for interactive run testing\n"
+"====&gt;&gt; To enter jail: jexec 111Ramd64-development-n env -i TERM=$TERM /usr/bin/login -fp root\n"
+"====&gt;&gt; To stop jail: poudriere jail -k -j 111Ramd64 -p development\n"
 "<prompt>#</prompt> <userinput>jexec 111Ramd64-development-n env -i TERM=$TERM /usr/bin/login -fp root</userinput>\n"
 "<prompt>#</prompt> <userinput><replaceable>[do some stuff in the jail]</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>exit</userinput>\n"
 "<prompt>#</prompt> <userinput>poudriere jail -k -j 111Ramd64 -p development</userinput>\n"
-"====>> Umounting file systems"
+"====&gt;&gt; Umounting file systems"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17376
@@ -24434,7 +24433,7 @@ msgstr ""
 #: book.translate.xml:17684
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u <replaceable>something</replaceable>.orig <replaceable>something</replaceable> &gt; something.diff</userinput>"
-msgstr "<prompt>%</prompt> <userinput>diff -u <replaceable>something</replaceable>.orig <replaceable>something</replaceable> > something.diff</userinput>"
+msgstr "<prompt>%</prompt> <userinput>diff -u <replaceable>something</replaceable>.orig <replaceable>something</replaceable> &gt; something.diff</userinput>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:17687
@@ -24699,7 +24698,7 @@ msgstr "O último passo é fazer um unificado<citerefentry><refentrytitle>diff</
 #: book.translate.xml:17878
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn diff &gt; ../`make -VPKGNAME`.diff</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn diff > ../`make -VPKGNAME`.diff</userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn diff &gt; ../`make -VPKGNAME`.diff</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:17881
@@ -25533,8 +25532,8 @@ msgid ""
 "#  endif\n"
 "#endif"
 msgstr ""
-"#if __FreeBSD__ >= 9\n"
-"#  if __FreeBSD_version >= 901000\n"
+"#if __FreeBSD__ &gt;= 9\n"
+"#  if __FreeBSD_version &gt;= 901000\n"
 "\t /* 9.1+ release specific code here */\n"
 "#  endif\n"
 "#endif"
@@ -25665,7 +25664,7 @@ msgid ""
 ".endif"
 msgstr ""
 "# no need to compile lang/perl5 if perl5 is already in system\n"
-".if ${OSVERSION} > 300003\n"
+".if ${OSVERSION} &gt; 300003\n"
 "BROKEN=\tperl is in system\n"
 ".endif"
 
@@ -26169,13 +26168,13 @@ msgstr "resultando nesta saída de<command>make descrever</command>: "
 #: book.translate.xml:19004
 #, no-wrap
 msgid "===&gt;  foobar-0.1 is marked as broken: fails to link with base -lcrypto."
-msgstr "===>  foobar-0.1 é marcado como quebrado: falha para linkar com a base -lcrypto."
+msgstr "===&gt;  foobar-0.1 é marcado como quebrado: falha para linkar com a base -lcrypto."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19006
 #, no-wrap
 msgid "===&gt;  foobar-0.1 is unsupported on recent versions."
-msgstr "===>  foobar-0.1 ão é suportado em versões recentes."
+msgstr "===&gt;  foobar-0.1 ão é suportado em versões recentes."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19011
@@ -33186,9 +33185,8 @@ msgstr "30 de junho de 2014"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24131
-#, fuzzy
 msgid "11.0-CURRENT after <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry> library update to add <quote>&gt;</quote> and <quote>&lt;</quote> delimiters."
-msgstr "11.0-CURRENT posterior <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry>atualização da biblioteca para adicionar<quote>></quote> e <quote><</quote>delimitadores \""
+msgstr "11.0-CURRENT posterior <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry>atualização da biblioteca para adicionar<quote>&gt;</quote> e <quote>&lt;</quote>delimitadores "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24137
@@ -37371,9 +37369,8 @@ msgstr "<revnumber>269484</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25966
-#, fuzzy
 msgid "10-STABLE after <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry> library update to add <quote>&gt;</quote> and <quote>&lt;</quote> delimiters."
-msgstr "10-STABLE depois <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry>atualização da biblioteca para adicionar<quote>></quote> e <quote><</quote>delimitadores \""
+msgstr "10-STABLE depois da atualização da biblioteca <citerefentry><refentrytitle>regex</refentrytitle><manvolnum>3</manvolnum></citerefentry> para adicionar<quote>&gt;</quote> e <quote>&lt;</quote>delimitadores \""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25972
