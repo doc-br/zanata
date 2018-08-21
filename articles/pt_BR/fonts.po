@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-21 01:30+0000\n"
+"PO-Revision-Date: 2018-08-21 03:59+0000\n"
 "Last-Translator: Jonas Ferreira <jonas.h.ferreira@me.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -409,7 +409,7 @@ msgstr ""
 #: article.translate.xml:269
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>vidcontrol VGA_80x60</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>vidcontrol VGA_80x60</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:272
@@ -422,6 +422,13 @@ msgid ""
 "manvolnum></citerefentry>) they will correctly determine the new screen "
 "dimensions."
 msgstr ""
+"Vários programas orientados à tela, como o <citerefentry><refentrytitle>vi</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, devem ser capazes de "
+"determinar a dimensão corrente da tela. Como isso é possível através do "
+"<command>ioctl</command> chama o driver do console (como o "
+"<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>) ele irá determinar corretamente as dimensões da "
+"nova tela."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:278
@@ -430,6 +437,10 @@ msgid ""
 "scripts so it takes place when the system boots. To do this is add this line "
 "to <filename>/etc/rc.conf</filename>"
 msgstr ""
+"Para fazer isso de uma maneira mais integrada, é possível incluir esses "
+"comandos nos scripts de inicialização de modo que ocorra quando o sistema "
+"for iniciado. Para fazer isso basta adicionar essa linha no <filename>/etc/"
+"rc.conf</filename>"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:284
@@ -439,6 +450,9 @@ msgid ""
 "screens\n"
 "\t  "
 msgstr ""
+"allscreens_flags=\"VGA_80x60\"\t# Define esse modo do vidcontrol  para todas "
+"as telas virtuais\n"
+"\t  "
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
@@ -448,11 +462,15 @@ msgid ""
 "<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Referências: <citerefentry><refentrytitle>rc.conf</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:292
 msgid "Using type 1 fonts with <application>X11</application>"
-msgstr ""
+msgstr "Usando fonte tipo 1 com <application>X11</application>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:294
@@ -464,6 +482,13 @@ msgid ""
 "its <application>X11</application> name by the contents of the "
 "<filename>fonts.dir</filename> file in each directory."
 msgstr ""
+"<application>X11</application> pode tanto usar o formato  <filename>.pfa</"
+"filename> quanto o formato <filename>.pfb</filename> de fonte. As fontes do "
+"<application>X11</application> estão localizadas em vários subdiretórios "
+"abaixo do <filename>/usr/X11R6/lib/X11/fonts</filename>. Cada arquivo de "
+"fonte é uma referência cruzada do seu nome <application>X11</application> "
+"com o conteúdo dos arquivos <filename>fonts.dir</filename> em cada diretório."
+""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:301

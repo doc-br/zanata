@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-21 01:14+0000\n"
+"PO-Revision-Date: 2018-08-21 08:51+0000\n"
 "Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -374,9 +374,8 @@ msgstr "Para excluir um usuário, use o comando <command>rmuser</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:159
-#, fuzzy
 msgid "Looking Around"
-msgstr "Descobrindo e aprendendo"
+msgstr "Explorando"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:161
@@ -553,12 +552,11 @@ msgstr "Obtendo ajuda e informações"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:284
-#, fuzzy
 msgid ""
 "Here are some useful sources of help. <replaceable>Text</replaceable> stands "
 "for something of your choice that you type in—usually a command or filename."
 msgstr ""
-"Aqui estão algumas fontes úteis de ajuda.<replaceable>Text</replaceable> é "
+"Aqui estão algumas fontes úteis de ajuda.<replaceable>Texto</replaceable> é "
 "mantido para algo de sua escolha—geralmente um comando ou nome de arquivo."
 
 #. (itstool) path: varlistentry/term
@@ -706,7 +704,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:386
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>periodic daily</userinput>\n"
 "<lineannotation>output omitted</lineannotation>\n"
@@ -1057,6 +1055,18 @@ msgid ""
 "often with <command>:w</command>, and use <command>:q!</command> to get out "
 "and start over (from your last <command>:w</command>) when you need to."
 msgstr ""
+"Pratique com o <command>vi</command> em seu diretório home criando um novo "
+"arquivo com <command>vi <replaceable>filename</replaceable></command> e "
+"adicionando e excluindo texto, salvando o arquivo, e o chamando novamente. O "
+"<command>vi</command> oferece algumas surpresas porque ele realmente é muito "
+"complexo e, às vezes, você irá executar um comando que fará algo que você "
+"não espera. (Algumas pessoas realmente gostam do <command>vi</command>—é "
+"mais poderoso que o DOS EDIT—saiba mais sobre o comando <command>:r</"
+"command>.) Use <keycap>Esc</keycap> uma ou mais vezes para ter certeza de "
+"que você está no modo de comando e prossiga dali quando ele lhe der "
+"problema, salve frequentemente com <command>:w</command>, e use <command>:"
+"q!</command> para sair e começar novamente (do seu último <command>:w</"
+"command>) quando você precisar."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:604
@@ -1070,6 +1080,15 @@ msgid ""
 "wq</command> to write the file to disk and quit. Instantly effective. (You "
 "did not put a space after the comma, did you?)"
 msgstr ""
+"Agora você pode <command>cd</command> em <filename>/etc</filename>, use o "
+"<command>su</command> para logar como <systemitem class=\"username\">root</"
+"systemitem>, use <command>vi</command> para editar o arquivo <filename>/etc/"
+"group</filename>, e adicione um usuário ao grupo <systemitem class="
+"\"groupname\">wheel</systemitem>, assim, o usuário terá privilégios de root. "
+"Basta adicionar uma vírgula e o nome do login do usuário ao final da "
+"primeira linha do arquivo, pressione <keycap>Esc</keycap>, e use <command>:"
+"wq</command>para salvar as alterações no disco e sair. instantaneamente "
+"eficaz. (Você não colocou um espaço após a vírgula, colocou?)"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:616
@@ -1135,6 +1154,10 @@ msgid ""
 "files in <filename>/</filename> and (separately) <filename>/usr</filename> "
 "before I found better ways to find files."
 msgstr ""
+"lista arquivos no diretório atual e em todos os subdiretórios; Eu usei uma "
+"variante, <command>ls -AFR &gt; where.txt</command>, para obter uma lista de "
+"todos os arquivos em <filename>/</filename> e (separadamente) <filename>/"
+"usr</filename> antes de encontrar melhores maneiras de encontrar arquivos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:667
@@ -1192,6 +1215,12 @@ msgid ""
 "filename> instead of <filename>/usr</filename> it will look for the file(s) "
 "on all mounted filesystems, including the CDROM and the DOS partition."
 msgstr ""
+"Você pode usar <literal>*</literal> como um caractere curinga em "
+"<parameter>\"<replaceable>filename</replaceable>\"</parameter> (que deve "
+"estar entre aspas). Se você utilizar o <command>find</command> para procurar "
+"em <filename>/</filename> em vez de <filename>/usr</filename> ele procurará "
+"o(s) arquivo(s) em todos os sistemas de arquivos montados, incluindo o CDROM "
+"e a partição DOS."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:699
@@ -1231,6 +1260,21 @@ msgid ""
 "DESCR</filename>, where the <literal>*</literal>s represent subdirectories "
 "of kinds of programs and program names respectively."
 msgstr ""
+"Agora você deve ter as ferramentas necessárias para explorar e editar "
+"arquivos, para que você possa colocar tudo em funcionamento. Há uma grande "
+"quantidade de informações no manual do FreeBSD (que provavelmente está no "
+"seu disco rígido) e no <link xlink:href=\"@@URL_RELPREFIX@@/index."
+"html\">site oficial do FreeBSD</link>. Uma grande variedade de pacotes e "
+"portas estão no CD-ROM e no site. O manual informa mais sobre como usá-los "
+"(obtenha o pacote, se existir, com <command>pkg_add /cdrom/packages/All/"
+"<replaceable>packagename</replaceable></command>, onde "
+"<replaceable>packagename</replaceable> é o nome do pacote). O CDROM possui "
+"listas de pacotes e portas com descrições breves em <filename>cdrom/packages/"
+"index</filename>, <filename>cdrom/packages/index.txt</filename>, e "
+"<filename>cdrom/ports/index</filename>, e descrições completas em <filename>/"
+"cdrom/ports/*/*/pkg/DESCR</filename>, onde os <literal>*</literal>s "
+"representam subdiretórios de tipos de programas e nomes de programas, "
+"respectivamente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:726
@@ -1239,6 +1283,9 @@ msgid ""
 "command> and all) on installing ports from the CDROM, here is what usually "
 "works:"
 msgstr ""
+"Se você julgar o manual como sendo muito sofisticado (usando <command>lndir</"
+"command> e tudo mais) ao instalar as portas do CDROM, veja a seguir o que "
+"geralmente funciona:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:730
@@ -1248,6 +1295,10 @@ msgid ""
 "local</filename> (a good place for software you add that should be available "
 "to all users) with:"
 msgstr ""
+"Encontre a porta que você deseja e utilize <command>kermit</command>. Haverá "
+"um diretório para ele no CDROM. Copei o subdiretório para <filename>/usr/"
+"local</filename> (este é um bom lugar para softwares que você adicione no "
+"sistema e que devem estar disponíveis para todos) com:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:737
@@ -1256,6 +1307,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cp -R /cdrom/ports/comm/kermit /usr/local</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp -R /cdrom/ports/comm/kermit /usr/local</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:740
@@ -1264,6 +1317,9 @@ msgid ""
 "that has all the files that the <command>kermit</command> subdirectory on "
 "the CDROM has."
 msgstr ""
+"Isto deve resultar em um subdiretório <filename>/usr/local/kermit</filename> "
+"que possui todos os arquivos que o subdiretório <command>kermit</command> no "
+"CDROM possui."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:745
@@ -1275,6 +1331,13 @@ msgid ""
 "filename>; in recent versions you can skip this step, as FreeBSD will do it "
 "for you. In the case of <command>kermit</command>, there is no distfile."
 msgstr ""
+"Em seguida, crie o diretório <filename>/usr/ports/distfiles</filename> se "
+"ele ainda não existir  <command>mkdir</command>. Agora verifique em "
+"<filename>/cdrom/ports/distfiles</filename> um arquivo com um nome que "
+"indique a porta que você deseja. Copie esse arquivo para <filename>/usr/"
+"ports/distfiles</filename>; você pode pular esse passo em versões recentes, "
+"pois o FreeBSD fará isso para você. No caso de <command>kermit</command>, "
+"não há distfile."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:754
@@ -1282,6 +1345,9 @@ msgid ""
 "Then <command>cd</command> to the subdirectory of <filename>/usr/local/"
 "kermit</filename> that has the file <filename>Makefile</filename>. Type"
 msgstr ""
+"Em seguida, use <command>cd</command> para o subdiretório <filename>/usr/"
+"local/kermit</filename> que contém o arquivo <filename>Makefile</filename>. "
+"Digite"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:759
@@ -1304,11 +1370,23 @@ msgid ""
 "<filename>/usr/local/kermit</filename>, find the directory with "
 "<filename>Makefile</filename>, and type <command>make all install</command>."
 msgstr ""
+"Durante este processo, a porta irá usar FTP para obter os arquivos "
+"compactados de que precisa e que não encontrou no CDROM ou no <filename>/usr/"
+"ports/distfiles</filename>. Se você ainda não tem a sua rede em execução e "
+"não havia nenhum arquivo para a porta em <filename>/cdrom/ports/distfiles</"
+"filename>, você terá que pegar o distfile usando outra máquina e copiá-lo "
+"para <filename>/usr/ports/distfiles</filename>. Leia o <filename>Makefile</"
+"filename> (com <command>cat</command> ou <command>more</command> ou "
+"<command>view</command>) para descobrir onde ir (o principal site de "
+"distribuição) para obter o arquivo e o nome dele. (Use transferências "
+"binárias de arquivos!) Em seguida volte para <filename>/usr/local/kermit</"
+"filename>, encontre o diretório com <filename>Makefile</filename>, e digite "
+"<command>make all install</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:780
 msgid "Your Working Environment"
-msgstr ""
+msgstr "Seu ambiente de trabalho"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:782
@@ -1318,6 +1396,11 @@ msgid ""
 "communicates with the rest of the operating system. You can also write shell "
 "scripts a series of commands to be run without intervention."
 msgstr ""
+"Seu shell é a parte mais importante do seu ambiente de trabalho. O shell é o "
+"que interpreta os comandos que você digita na linha de comando e, assim, se "
+"comunica com o restante do sistema operacional. Você também pode escrever "
+"scripts de shell, que consiste em uma série de comandos para serem "
+"executados sem intervenção."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:789
@@ -1328,6 +1411,11 @@ msgid ""
 "command>). You can find out what shell you have by typing <command>echo "
 "$SHELL</command>."
 msgstr ""
+"Dois shells vem instalados com o FreeBSD: <command>csh</command> e "
+"<command>sh</command>. <command>csh</command> é bom para trabalhos com linha "
+"de comando, mas scripts devem ser escritos com o <command>sh</command> (ou "
+"<command>bash</command>). Você pode descobrir qual shell você utiliza "
+"executando o comando <command>echo $SHELL</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:796
@@ -1340,11 +1428,18 @@ msgid ""
 "command>. It is also much easier to alter your prompt with <command>tcsh</"
 "command>. It makes life a lot easier."
 msgstr ""
+"O <command>csh</command> é bom, mas <command>tcsh</command> faz tudo que o "
+"<command>csh</command> faz e ainda mais. Ele permite recuperar comandos com "
+"as teclas de seta e editá-los. Ele tem a chave tab-complete de nomes de "
+"arquivos (<command>csh</command> usa a tecla <keycap>Esc</keycap>), e "
+"permite alternar o diretório em que você estava por último com o comando "
+"<command>cd -</command>. E também é muito mais fácil alterar o seu prompt "
+"com o <command>tcsh</command>. Ele tornar sua vida muito mais fácil."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:806
 msgid "Here are the three steps for installing a new shell:"
-msgstr ""
+msgstr "Aqui estão os três passos para instalar um novo shell:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:810
@@ -1352,6 +1447,8 @@ msgid ""
 "Install the shell as a port or a package, just as you would any other port "
 "or package."
 msgstr ""
+"Instale o shell como uma porta ou um pacote, como faria com qualquer outra "
+"porta ou pacote."
 
 #. (itstool) path: step/para
 #: article.translate.xml:815
@@ -1360,6 +1457,9 @@ msgid ""
 "<command>tcsh</command> permanently, or type <command>tcsh</command> at the "
 "prompt to change your shell without logging in again."
 msgstr ""
+"Use o comando <command>chsh</command> para alterar permanentemente seu shell "
+"para <command>tcsh</command>, ou digite <command>tcsh</command> no prompt "
+"para alterar seu shell sem precisar efetuar login novamente."
 
 #. (itstool) path: note/para
 #: article.translate.xml:823
@@ -1375,12 +1475,23 @@ msgid ""
 "shell is part of the environment. You can make this permanent by adding it "
 "to your <filename>.tcshrc</filename> file as an alias with:"
 msgstr ""
+"Pode ser perigoso alterar o shell do usuário <systemitem class="
+"\"username\">root</systemitem> para outro diferente do <command>sh</command> "
+"ou <command>csh</command> em versões anteriores do FreeBSD e também em "
+"muitas outras versões de <trademark class=\"registered\">UNIX</trademark>; "
+"talvez você não tenha um shell funcional quando o sistema o coloca no modo "
+"de usuário único. A solução é usar <command>su -m</command> para se tornar "
+"<systemitem class=\"username\">root</systemitem>, o que lhe dá o "
+"<command>tcsh</command> como <systemitem class=\"username\">root</"
+"systemitem>, por que o shell faz parte do ambiente. Você pode tornar isso "
+"permanente adicionando-o ao seu arquivo <filename>.tcshrc</filename>como um "
+"alias, para isso, execute:"
 
 #. (itstool) path: note/programlisting
 #: article.translate.xml:832
 #, no-wrap
 msgid "alias su su -m"
-msgstr ""
+msgstr "alias su su -m"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:835
@@ -1393,6 +1504,13 @@ msgid ""
 "do by simply copying <filename>.cshrc</filename> to <filename>.tcshrc</"
 "filename>."
 msgstr ""
+"Quando o <command>tcsh</command> é iniciado, ele lê os arquivos <filename>/"
+"etc/csh.cshrc</filename> e <filename>/etc/csh.login</filename>, assim como o "
+"<command>csh</command>. Ele também lerá o arquivo <filename>.login</"
+"filename> no seu diretório home e o arquivo <filename>.cshrc</filename>, a "
+"menos que você forneça um arquivo <filename>.tcshrc</filename>. Isso você "
+"fazer simplesmente copiando <filename>.cshrc</filename> para <filename>."
+"tcshrc</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:845
@@ -1405,11 +1523,19 @@ msgid ""
 "are an ordinary user and a <literal>#</literal> if you are <systemitem class="
 "\"username\">root</systemitem>, but tsch will do that in any case:"
 msgstr ""
+"Agora que você instalou o <command>tcsh</command>, você pode ajustar o seu "
+"prompt. Você pode encontrar os detalhes na página de manual do "
+"<command>tcsh</command>, mas aqui está uma linha para colocar em seu "
+"<filename>.tcshrc</filename> que informará quantos comandos você digitou, a "
+"que horas ele é, e em qual diretório você está. Ele também produz um "
+"<literal>&gt;</literal> se você for um usuário comum e <literal>#</"
+"literal>se você for <systemitem class=\"username\">root</systemitem>,mas o "
+"tcsh fará isso em qualquer caso:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:854
 msgid "set prompt = \"%h %t %~ %# \""
-msgstr ""
+msgstr "set prompt = \"%h %t %~ %# \""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:856
@@ -1420,6 +1546,11 @@ msgid ""
 "quotes. You can get the <filename>.tcshrc</filename> reread by typing "
 "<command>source .tcshrc</command>."
 msgstr ""
+"Isso deve ser inserido exatamente na linha de prompt que a opção está, ou "
+"abaixo de \"if($?prompt) then\" caso ela não exista. Comente a linha antiga; "
+"você sempre pode voltar a ela se preferir. Não esqueça os espaços e aspas. "
+"Você pode obter a releitura do <filename>.tcshrc</filename> digitando "
+"<command>source .tcshrc</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:863
@@ -1431,11 +1562,17 @@ msgid ""
 "program because the terminal is not capable is <command>setenv TERM vt100</"
 "command>."
 msgstr ""
+"Você pode obter uma listagem de outras variáveis de ambiente que foram "
+"configuradas digitando <command>env</command> no prompt. O resultado "
+"mostrará seu editor padrão, pager e tipo de terminal, entre possivelmente "
+"muitos outros. Um comando útil se você efetuar login de um local remoto e "
+"não puder executar um programa porque o terminal não é capaz é "
+"<command>setenv TERM vt100</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:873
 msgid "Other"
-msgstr ""
+msgstr "Outros"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:875
@@ -1447,6 +1584,13 @@ msgid ""
 "your CDROM drive. The most recent versions of FreeBSD let you mount the "
 "CDROM with just <command>/sbin/mount /cdrom</command>."
 msgstr ""
+"Como <systemitem class=\"username\">root</systemitem>, você pode desmontar o "
+"CDROM com o comando <command>/sbin/umount /cdrom</command>, retire-o da "
+"unidade, insira outro e monte-o com <command>/sbin/mount_cd9660 /dev/cd0a /"
+"cdrom</command> considerando <hardware>cd0a</hardware> é o nome do "
+"dispositivo da sua unidade de CDROM. As versões mais recentes do FreeBSD "
+"permitem montar o CDROM com apenas o comando <command>/sbin/mount /cdrom</"
+"command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:883
@@ -1460,11 +1604,20 @@ msgid ""
 "in <filename>/usr</filename> and its subdirectories, which is where they are "
 "expected to be. Read <command>man lndir</command>."
 msgstr ""
+"Usando os arquivos de sistema live—o segundo dos discos de CDROM do "
+"FreeBSD—é útil se você tiver espaço limitado. O que está no sistema de "
+"arquivos live varia de lançamento para lançamento. Você pode tentar jogar "
+"jogos no CDROM. Isso envolve o uso do <command>lndir</command>, que é "
+"instalado com o X Window System, para informar ao(s) programa(s) onde "
+"encontrar os arquivos necessários, porque eles estão no sistema de arquivos "
+"<filename>/cdrom</filename> em vez de <filename>/usr</filename> e seus "
+"subdiretórios, que é onde eles devem estar. Leia <command>man lndir</"
+"command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:896
 msgid "Comments Welcome"
-msgstr ""
+msgstr "Comentários são bem-vindos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:898
@@ -1474,8 +1627,13 @@ msgid ""
 "helpful. My thanks to Eugene W. Stark, professor of computer science at SUNY-"
 "Stony Brook, and John Fieber for helpful comments."
 msgstr ""
+"Se você usar este guia, eu estaria interessada em saber onde pode não ter "
+"ficado claro e o que foi deixado de fora que você acha que deveria ser "
+"incluído, e também os informar se foi útil para você. Meus agradecimentos a "
+"Eugene W. Stark, professor de ciência da computação na SUNY-Stony Brook, e "
+"John Fieber por comentários úteis."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:904
 msgid "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
-msgstr ""
+msgstr "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
