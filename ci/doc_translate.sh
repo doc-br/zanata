@@ -3,6 +3,13 @@
 # Script to translate .po files into SGML
 #
 
+set -x
+
+echo "Path: $PATH"
+export PATH="$PATH:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/jenkins/bin"
+echo "Path: $PATH"
+
+
 if [ "$1" = "" ]; then
 	echo "Need to inform a FreeBSD doc repository"
 	echo "Example:"
@@ -14,16 +21,12 @@ fi
 
 for article in $(find "$1/articles/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$article"
-	pwd
-	echo "make tran"
 	make tran
 	cd -
 done
 
 for book in $(find "$1/books/" -type d -maxdepth 1 -mindepth 1); do
 	cd "$book"
-	pwd
-	echo "make tran"
 	make tran
 	cd -
 done

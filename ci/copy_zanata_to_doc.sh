@@ -3,6 +3,8 @@
 # Script to copy Zanata .po files into a FreeBSD doc repository 
 #
 
+set -x
+
 if [ "$1" = "" ] || [ "$2" = "" ]; then
 	echo "Need to inform Zanata Directory and a FreeBSD doc repository"
 	echo "Example:"
