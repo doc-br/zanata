@@ -6,9 +6,6 @@
 set -x
 
 echo "Path: $PATH"
-export PATH="$PATH:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/jenkins/bin"
-echo "Path: $PATH"
-
 
 if [ "$1" = "" ]; then
 	echo "Need to inform a FreeBSD doc repository"
