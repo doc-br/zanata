@@ -1,262 +1,480 @@
-#$FreeBSD$
+# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-08-12 23:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.6.0\n"
+"Language: pt_BR\n"
+"PO-Revision-Date: 2018-08-22 03:43+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
 msgid "Problem Report Handling Guidelines"
-msgstr ""
+msgstr "Diretrizes para manuseio de relatórios de problemas"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:9
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD é uma marca registrada da Fundação FreeBSD."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:11
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
+"Muitas das designações usadas pelos fabricantes e vendedores para distinguir "
+"seus produtos são reivindicadas como marcas registradas. Onde essas "
+"designações aparecem neste documento, e o Projeto FreeBSD estava ciente da "
+"reivindicação de marca, as designações foram seguidas pelo símbolo <quote>™</"
+"quote> ou <quote>®</quote>."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:19
 #: article.translate.xml:21
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/pr-guidelines/article.xml 51348 2017-12-30 22:56:56Z eadler $"
-msgstr ""
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/pr-guidelines/article.xml 51348 2017-"
+"12-30 22:56:56Z eadler $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:24
-msgid "These guidelines describe recommended handling practices for FreeBSD Problem Reports (PRs). Whilst developed for the FreeBSD PR Database Maintenance Team <email>freebsd-bugbusters@FreeBSD.org</email>, these guidelines should be followed by anyone working with FreeBSD PRs."
+msgid ""
+"These guidelines describe recommended handling practices for FreeBSD Problem "
+"Reports (PRs). Whilst developed for the FreeBSD PR Database Maintenance Team "
+"<email>freebsd-bugbusters@FreeBSD.org</email>, these guidelines should be "
+"followed by anyone working with FreeBSD PRs."
 msgstr ""
+"Estas diretrizes descrevem as práticas de manuseio recomendadas para os "
+"Relatórios de Problemas do FreeBSD (PRs). Embora desenvolvido para a equipe "
+"de manutenção de banco de dados do FreeBSD PR <email> freebsd-"
+"bugbusters@FreeBSD.org </email>, essas diretrizes devem ser seguidas por "
+"qualquer pessoa que trabalhe com os Relatórios de Problemas do FreeBSD."
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:33
-msgid "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></personname>"
+msgid ""
+"<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></"
+"personname>"
 msgstr ""
+"<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></"
+"personname>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:35
-msgid "<personname><firstname>Hiten</firstname><surname>Pandya</surname></personname>"
+msgid ""
+"<personname><firstname>Hiten</firstname><surname>Pandya</surname></"
+"personname>"
 msgstr ""
+"<personname><firstname>Hiten</firstname><surname>Pandya</surname></"
+"personname>"
 
 #. (itstool) path: section/title
 #: article.translate.xml:41
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #. (itstool) path: section/para
 #: article.translate.xml:43
-msgid "Bugzilla is an issue management system used by the FreeBSD Project. As accurate tracking of outstanding software defects is important to FreeBSD's quality, the correct use of the software is essential to the forward progress of the Project."
+msgid ""
+"Bugzilla is an issue management system used by the FreeBSD Project. As "
+"accurate tracking of outstanding software defects is important to FreeBSD's "
+"quality, the correct use of the software is essential to the forward "
+"progress of the Project."
 msgstr ""
+"O Bugzilla é um sistema de gerenciamento de problemas usado pelo Projeto "
+"FreeBSD. Como o rastreamento preciso de defeitos de software pendentes é "
+"importante para a qualidade do FreeBSD, o uso correto do software é "
+"essencial para o avanço do projeto."
 
 #. (itstool) path: section/para
 #: article.translate.xml:49
-msgid "Access to Bugzilla is available to the entire FreeBSD community. In order to maintain consistency within the database and provide a consistent user experience, guidelines have been established covering common aspects of bug management such as presenting followup, handling close requests, and so forth."
+msgid ""
+"Access to Bugzilla is available to the entire FreeBSD community. In order to "
+"maintain consistency within the database and provide a consistent user "
+"experience, guidelines have been established covering common aspects of bug "
+"management such as presenting followup, handling close requests, and so "
+"forth."
 msgstr ""
+"O acesso ao Bugzilla está disponível para toda a comunidade do FreeBSD. Para "
+"manter a consistência dentro do banco de dados e fornecer uma experiência de "
+"usuário consistente, diretrizes foram estabelecidas cobrindo aspectos comuns "
+"do gerenciamento de erros, como apresentação de acompanhamento, tratamento "
+"de solicitações de fechamento e assim por diante."
 
 #. (itstool) path: section/title
 #: article.translate.xml:58
 msgid "Problem Report Life-cycle"
-msgstr ""
+msgstr "Ciclo de vida de um relatório de problemas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:62
-msgid "The Reporter submits a bug report on the website. The bug is in the <literal>Needs Triage</literal> state."
+msgid ""
+"The Reporter submits a bug report on the website. The bug is in the "
+"<literal>Needs Triage</literal> state."
 msgstr ""
+"O usuário envia um relatório de bug no site. O bug está no estado <literal> "
+"Needs Triage </literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:67
-msgid "Jane Random BugBuster confirms that the bug report has sufficient information to be reproducible. If not, she goes back and forth with the reporter to obtain the needed information. At this point the bug is set to the <literal>Open</literal> state."
+msgid ""
+"Jane Random BugBuster confirms that the bug report has sufficient "
+"information to be reproducible. If not, she goes back and forth with the "
+"reporter to obtain the needed information. At this point the bug is set to "
+"the <literal>Open</literal> state."
 msgstr ""
+"Jane Random BugBuster confirma que o relatório de erros tem informação "
+"suficiente para ser reproduzível. Se não, ela irá interagir repetidamente "
+"com o usuário para obter as informações necessárias. Neste ponto, o bug é "
+"definido para o estado <literal> Open </literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:75
-msgid "Joe Random Committer takes interest in the PR and assigns it to himself, or Jane Random BugBuster decides that Joe is best suited to handle it and assigns it to him. The bug should be set to the <literal>In Discussion</literal> state."
+msgid ""
+"Joe Random Committer takes interest in the PR and assigns it to himself, or "
+"Jane Random BugBuster decides that Joe is best suited to handle it and "
+"assigns it to him. The bug should be set to the <literal>In Discussion</"
+"literal> state."
 msgstr ""
+"Joe Random Committer se interessa pelo PR e o atribui a si mesmo, ou Jane "
+"Random BugBuster decide que Joe é a pessoa mais adequada para lidar com o "
+"problema e atribui o bug a ele. O bug deve ser definido para o estado "
+"<literal> In Discussion </literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:83
-msgid "Joe has a brief exchange with the originator (making sure it all goes into the audit trail) and determines the cause of the problem."
+msgid ""
+"Joe has a brief exchange with the originator (making sure it all goes into "
+"the audit trail) and determines the cause of the problem."
 msgstr ""
+"Joe tem uma breve troca com o usuário que originou o relatório de problema "
+"(certificando-se de que toda a comunicação vai para a trilha de auditoria) e "
+"determina a causa do problema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:89
-msgid "Joe pulls an all-nighter and whips up a patch that he thinks fixes the problem, and submits it in a follow-up, asking the originator to test it. He then sets the PRs state to <literal>Patch Ready</literal>."
+#, fuzzy
+msgid ""
+"Joe pulls an all-nighter and whips up a patch that he thinks fixes the "
+"problem, and submits it in a follow-up, asking the originator to test it. He "
+"then sets the PRs state to <literal>Patch Ready</literal>."
 msgstr ""
+"Joe puxa uma noite toda e levanta um patch que ele acha que corrige o "
+"problema, e envia-o em um follow-up, pedindo ao originador para testá-lo. Em "
+"seguida, ele configura o estado do PRs para <literal> Patch Ready </literal>."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:96
-msgid "A couple of iterations later, both Joe and the originator are satisfied with the patch, and Joe commits it to <literal>-CURRENT</literal> (or directly to <literal>-STABLE</literal> if the problem does not exist in <literal>-CURRENT</literal>), making sure to reference the Problem Report in his commit log (and credit the originator if they submitted all or part of the patch) and, if appropriate, start an MFC countdown. The bug is set to the <literal>Needs MFC</literal> state."
+#, fuzzy
+msgid ""
+"A couple of iterations later, both Joe and the originator are satisfied with "
+"the patch, and Joe commits it to <literal>-CURRENT</literal> (or directly to "
+"<literal>-STABLE</literal> if the problem does not exist in <literal>-"
+"CURRENT</literal>), making sure to reference the Problem Report in his "
+"commit log (and credit the originator if they submitted all or part of the "
+"patch) and, if appropriate, start an MFC countdown. The bug is set to the "
+"<literal>Needs MFC</literal> state."
 msgstr ""
+"Um par de iterações depois, Joe e o originador estão satisfeitos com o "
+"patch, e Joe o envia para <literal> -CURRENT </literal> (ou diretamente para "
+"<literal> -STABLE </literal> se o problema não existir) em <literal> -"
+"CURRENT </literal>), referindo-se ao Relatório de Problemas em seu log de "
+"confirmação (e credite o originador se ele enviou todo ou parte do patch) e, "
+"se apropriado, inicie uma contagem regressiva do MFC. O bug está configurado "
+"para o estado <literal> Needs MFC </literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
-msgid "If the patch does not need MFCing, Joe then closes the PR as <literal>Issue Resolved</literal>."
+#, fuzzy
+msgid ""
+"If the patch does not need MFCing, Joe then closes the PR as <literal>Issue "
+"Resolved</literal>."
 msgstr ""
+"Se o patch não precisar de MFCing, Joe fecha o PR como <literal> Issue "
+"Resolved </literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:115
-msgid "Many PRs are submitted with very little information about the problem, and some are either very complex to solve, or just scratch the surface of a larger problem; in these cases, it is very important to obtain all the necessary information needed to solve the problem. If the problem contained within cannot be solved, or has occurred again, it is necessary to re-open the PR."
+#, fuzzy
+msgid ""
+"Many PRs are submitted with very little information about the problem, and "
+"some are either very complex to solve, or just scratch the surface of a "
+"larger problem; in these cases, it is very important to obtain all the "
+"necessary information needed to solve the problem. If the problem contained "
+"within cannot be solved, or has occurred again, it is necessary to re-open "
+"the PR."
 msgstr ""
+"Muitos PRs são submetidos com muito pouca informação sobre o problema, e "
+"alguns são muito complexos para resolver, ou apenas arranham a superfície de "
+"um problema maior; Nestes casos, é muito importante obter todas as "
+"informações necessárias para resolver o problema. Se o problema contido não "
+"puder ser resolvido ou ocorrer novamente, é necessário reabrir o PR."
 
 #. (itstool) path: section/title
 #: article.translate.xml:126
+#, fuzzy
 msgid "Problem Report State"
-msgstr ""
+msgstr "Estado do relatório de problemas"
 
 #. (itstool) path: section/para
 #: article.translate.xml:128
-msgid "It is important to update the state of a PR when certain actions are taken. The state should accurately reflect the current state of work on the PR."
+#, fuzzy
+msgid ""
+"It is important to update the state of a PR when certain actions are taken. "
+"The state should accurately reflect the current state of work on the PR."
 msgstr ""
+"É importante atualizar o estado de um PR quando determinadas ações são "
+"tomadas. O estado deve refletir com precisão o estado atual do trabalho no "
+"PR."
 
 #. (itstool) path: example/title
 #: article.translate.xml:133
+#, fuzzy
 msgid "A small example on when to change PR state"
-msgstr ""
+msgstr "Um pequeno exemplo sobre quando alterar o estado de RP"
 
 #. (itstool) path: example/para
 #: article.translate.xml:135
-msgid "When a PR has been worked on and the developer(s) responsible feel comfortable about the fix, they will submit a followup to the PR and change its state to <quote>feedback</quote>. At this point, the originator should evaluate the fix in their context and respond indicating whether the defect has indeed been remedied."
+#, fuzzy
+msgid ""
+"When a PR has been worked on and the developer(s) responsible feel "
+"comfortable about the fix, they will submit a followup to the PR and change "
+"its state to <quote>feedback</quote>. At this point, the originator should "
+"evaluate the fix in their context and respond indicating whether the defect "
+"has indeed been remedied."
 msgstr ""
+"Quando um RP foi trabalhado e o (s) desenvolvedor (es) responsável (a) se "
+"sentem à vontade com a correção, ele enviará um acompanhamento para o PR e "
+"mudará seu estado para <quote> feedback </quote>. Neste ponto, o originador "
+"deve avaliar a correção em seu contexto e responder indicando se o defeito "
+"foi de fato remediado."
 
 #. (itstool) path: section/para
 #: article.translate.xml:143
+#, fuzzy
 msgid "A Problem Report may be in one of the following states:"
-msgstr ""
+msgstr "Um Relatório de Problemas pode estar em um dos seguintes estados:"
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:148
+#, fuzzy
 msgid "open"
-msgstr ""
+msgstr "aberto"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:150
-msgid "Initial state; the problem has been pointed out and it needs reviewing."
-msgstr ""
+#, fuzzy
+msgid ""
+"Initial state; the problem has been pointed out and it needs reviewing."
+msgstr "Estado inicial; o problema foi apontado e precisa ser revisto."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:156
+#, fuzzy
 msgid "analyzed"
-msgstr ""
+msgstr "analisado"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:158
+#, fuzzy
 msgid "The problem has been reviewed and a solution is being sought."
-msgstr ""
+msgstr "O problema foi revisto e uma solução está sendo procurada."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:164
+#, fuzzy
 msgid "feedback"
-msgstr ""
+msgstr "comentários"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:166
-msgid "Further work requires additional information from the originator or the community; possibly information regarding the proposed solution."
+#, fuzzy
+msgid ""
+"Further work requires additional information from the originator or the "
+"community; possibly information regarding the proposed solution."
 msgstr ""
+"Trabalhos adicionais requerem informações adicionais do originador ou da "
+"comunidade; possivelmente informações sobre a solução proposta."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:173
+#, fuzzy
 msgid "patched"
-msgstr ""
+msgstr "remendado"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:175
-msgid "A patch has been committed, but something (MFC, or maybe confirmation from originator) is still pending."
+#, fuzzy
+msgid ""
+"A patch has been committed, but something (MFC, or maybe confirmation from "
+"originator) is still pending."
 msgstr ""
+"Um patch foi confirmado, mas algo (MFC, ou talvez confirmação do originador) "
+"ainda está pendente."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:181
+#, fuzzy
 msgid "suspended"
-msgstr ""
+msgstr "suspenso"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:183
-msgid "The problem is not being worked on, due to lack of information or resources. This is a prime candidate for somebody who is looking for a project to take on. If the problem cannot be solved at all, it will be closed, rather than suspended. The documentation project uses <quote>suspended</quote> for <quote>wish-list</quote> items that entail a significant amount of work which no one currently has time for."
+#, fuzzy
+msgid ""
+"The problem is not being worked on, due to lack of information or resources. "
+"This is a prime candidate for somebody who is looking for a project to take "
+"on. If the problem cannot be solved at all, it will be closed, rather than "
+"suspended. The documentation project uses <quote>suspended</quote> for "
+"<quote>wish-list</quote> items that entail a significant amount of work "
+"which no one currently has time for."
 msgstr ""
+"O problema não está sendo trabalhado, devido à falta de informações ou "
+"recursos. Este é um excelente candidato para alguém que está procurando um "
+"projeto para assumir. Se o problema não puder ser resolvido, ele será "
+"fechado, e não suspenso. O projeto de documentação usa <quote> suspenso </"
+"quote> para itens de <quote> lista de desejos </quote> que envolvem uma "
+"quantidade significativa de trabalho para a qual ninguém tem tempo no "
+"momento."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:195
+#, fuzzy
 msgid "closed"
-msgstr ""
+msgstr "fechadas"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:197
-msgid "A problem report is closed when any changes have been integrated, documented, and tested, or when fixing the problem is abandoned."
+#, fuzzy
+msgid ""
+"A problem report is closed when any changes have been integrated, "
+"documented, and tested, or when fixing the problem is abandoned."
 msgstr ""
+"Um relatório de problemas é fechado quando qualquer alteração foi integrada, "
+"documentada e testada ou, ao corrigir o problema, ser abandonada."
 
 #. (itstool) path: note/para
 #: article.translate.xml:205
-msgid "The <quote>patched</quote> state is directly related to feedback, so you may go directly to <quote>closed</quote> state if the originator cannot test the patch, and it works in your own testing."
+#, fuzzy
+msgid ""
+"The <quote>patched</quote> state is directly related to feedback, so you may "
+"go directly to <quote>closed</quote> state if the originator cannot test the "
+"patch, and it works in your own testing."
 msgstr ""
+"O estado <quote> corrigido </quote> está diretamente relacionado ao "
+"feedback, então você pode ir diretamente para o estado <quote> fechado </"
+"quote> se o originador não puder testar o patch, e ele funcionar no seu "
+"próprio teste."
 
 #. (itstool) path: section/title
 #: article.translate.xml:212
+#, fuzzy
 msgid "Types of Problem Reports"
-msgstr ""
+msgstr "Tipos de relatórios de problemas"
 
 #. (itstool) path: section/para
 #: article.translate.xml:214
-msgid "While handling problem reports, either as a developer who has direct access to the Problem Reports database or as a contributor who browses the database and submits followups with patches, comments, suggestions or change requests, you will come across several different types of PRs."
+#, fuzzy
+msgid ""
+"While handling problem reports, either as a developer who has direct access "
+"to the Problem Reports database or as a contributor who browses the database "
+"and submits followups with patches, comments, suggestions or change "
+"requests, you will come across several different types of PRs."
 msgstr ""
+"Ao lidar com relatórios de problemas, seja como um desenvolvedor que tenha "
+"acesso direto ao banco de dados de relatórios de problemas ou como "
+"colaborador que navega no banco de dados e envie acompanhamentos, "
+"comentários, sugestões ou solicitações de alteração, você encontrará "
+"diversos tipos de PRs."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:222
+#, fuzzy
 msgid "<link linkend=\"pr-unassigned\">PRs not yet assigned to anyone.</link>"
 msgstr ""
+"<link linkend = \"pr-unassigned\"> PRs ainda não atribuídos a ninguém. </"
+"link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:225
+#, fuzzy
 msgid "<link linkend=\"pr-assigned\">PRs already assigned to someone.</link>"
-msgstr ""
+msgstr "<link linkend = \"pr-assigned\"> PRs já atribuídos a alguém. </link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:228
+#, fuzzy
 msgid "<link linkend=\"pr-dups\">Duplicates of existing PRs.</link>"
-msgstr ""
+msgstr "<link linkend = \"pr-dups\"> Duplicatas de PRs existentes. </link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:231
+#, fuzzy
 msgid "<link linkend=\"pr-stale\">Stale PRs</link>"
-msgstr ""
+msgstr "<link linkend = \"pr-stale\"> PRs antigos </link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:234
+#, fuzzy
 msgid "<link linkend=\"pr-misfiled-notpr\">Non-Bug PRs</link>"
-msgstr ""
+msgstr "<link linkend = \"pr-misfiled-notpr\"> Non-Bug PRs </link>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:238
-msgid "The following sections describe what each different type of PRs is used for, when a PR belongs to one of these types, and what treatment each different type receives."
+#, fuzzy
+msgid ""
+"The following sections describe what each different type of PRs is used for, "
+"when a PR belongs to one of these types, and what treatment each different "
+"type receives."
 msgstr ""
+"As seções a seguir descrevem para que cada tipo diferente de PRs é usado, "
+"quando um PR pertence a um desses tipos e qual tratamento cada tipo "
+"diferente recebe."
 
 #. (itstool) path: section/title
 #: article.translate.xml:243
+#, fuzzy
 msgid "Unassigned PRs"
-msgstr ""
+msgstr "PRs não atribuídos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:245
-msgid "When PRs arrive, they are initially assigned to a generic (placeholder) assignee. These are always prepended with <literal>freebsd-</literal>. The exact value for this default depends on the category; in most cases, it corresponds to a specific FreeBSD mailing list. Here is the current list, with the most common ones listed first:"
+#, fuzzy
+msgid ""
+"When PRs arrive, they are initially assigned to a generic (placeholder) "
+"assignee. These are always prepended with <literal>freebsd-</literal>. The "
+"exact value for this default depends on the category; in most cases, it "
+"corresponds to a specific FreeBSD mailing list. Here is the current list, "
+"with the most common ones listed first:"
 msgstr ""
+"Quando PRs chegam, eles são inicialmente atribuídos a um cessionário "
+"genérico (placeholder). Estes são sempre prefixados com <literal> freebsd - "
+"</literal>. O valor exato para esse padrão depende da categoria; na maioria "
+"dos casos, corresponde a uma lista de discussão específica do FreeBSD. Aqui "
+"está a lista atual, com os mais comuns listados primeiro:"
 
 #. (itstool) path: table/title
 #: article.translate.xml:253
+#, fuzzy
 msgid "Default Assignees — most common"
-msgstr ""
+msgstr "Responsáveis ​​Padrão - mais comuns"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:257
@@ -264,55 +482,65 @@ msgstr ""
 #: article.translate.xml:376
 #: article.translate.xml:554
 #: article.translate.xml:718
+#, fuzzy
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:258
 #: article.translate.xml:303
+#, fuzzy
 msgid "Categories"
-msgstr ""
+msgstr "Categorias"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:259
 #: article.translate.xml:304
+#, fuzzy
 msgid "Default Assignee"
-msgstr ""
+msgstr "Responsável Padrão"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:265
+#, fuzzy
 msgid "base system"
-msgstr ""
+msgstr "sistema base"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:266
+#, fuzzy
 msgid "bin, conf, gnu, kern, misc"
-msgstr ""
+msgstr "bin, conf, gnu, kern, misc"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:267
+#, fuzzy
 msgid "freebsd-bugs"
-msgstr ""
+msgstr "freebsd-bugs"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:271
+#, fuzzy
 msgid "architecture-specific"
-msgstr ""
+msgstr "arquitetura específica"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:272
+#, fuzzy
 msgid "alpha, amd64, arm, i386, ia64, powerpc, sparc64"
-msgstr ""
+msgstr "alfa, amd64, braço, i386, ia64, powerpc, sparc64"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:273
+#, fuzzy
 msgid "freebsd-<replaceable>arch</replaceable>"
-msgstr ""
+msgstr "freebsd- <replaceable> arch </replaceable>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:277
+#, fuzzy
 msgid "ports collection"
-msgstr ""
+msgstr "Coleção de Ports"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:278
@@ -335,190 +563,271 @@ msgstr ""
 #: article.translate.xml:678
 #: article.translate.xml:685
 #: article.translate.xml:692
+#, fuzzy
 msgid "ports"
-msgstr ""
+msgstr "portas"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:279
+#, fuzzy
 msgid "freebsd-ports-bugs"
-msgstr ""
+msgstr "freebsd-ports-bugs"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:283
+#, fuzzy
 msgid "documentation shipped with the system"
-msgstr ""
+msgstr "documentação enviada com o sistema"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:284
+#, fuzzy
 msgid "docs"
-msgstr ""
+msgstr "docs"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:285
+#, fuzzy
 msgid "freebsd-doc"
-msgstr ""
+msgstr "freebsd-doc"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:289
+#, fuzzy
 msgid "FreeBSD web pages (not including docs)"
-msgstr ""
+msgstr "Páginas web do FreeBSD (não incluindo docs)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:290
+#, fuzzy
 msgid "Website"
-msgstr ""
+msgstr "Local na rede Internet"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:291
+#, fuzzy
 msgid "freebsd-www"
-msgstr ""
+msgstr "freebsd-www"
 
 #. (itstool) path: table/title
 #: article.translate.xml:298
+#, fuzzy
 msgid "Default Assignees — other"
-msgstr ""
+msgstr "Designadores Padrão - outros"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:310
+#, fuzzy
 msgid "advocacy efforts"
-msgstr ""
+msgstr "esforços de defesa"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:311
+#, fuzzy
 msgid "advocacy"
-msgstr ""
+msgstr "advocacia"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:312
+#, fuzzy
 msgid "freebsd-advocacy"
-msgstr ""
+msgstr "advocacia do freebsd"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:316
+#, fuzzy
 msgid "<trademark>Java Virtual Machine</trademark> problems"
-msgstr ""
+msgstr "Problemas com <trademark> Java Virtual Machine </trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:317
+#, fuzzy
 msgid "java"
-msgstr ""
+msgstr "Java"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:318
 #: article.translate.xml:629
+#, fuzzy
 msgid "freebsd-java"
-msgstr ""
+msgstr "freebsd-java"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:322
+#, fuzzy
 msgid "standards compliance"
-msgstr ""
+msgstr "conformidade com padrões"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:323
+#, fuzzy
 msgid "standards"
-msgstr ""
+msgstr "padrões"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:324
+#, fuzzy
 msgid "freebsd-standards"
-msgstr ""
+msgstr "padrões freebsd"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:328
+#, fuzzy
 msgid "threading libraries"
-msgstr ""
+msgstr "bibliotecas de segmentação"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:329
+#, fuzzy
 msgid "threads"
-msgstr ""
+msgstr "tópicos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:330
+#, fuzzy
 msgid "freebsd-threads"
-msgstr ""
+msgstr "freebsd-threads"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:334
-msgid "<citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"<citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> subsystem"
 msgstr ""
+"<citerefentry> <refentrytitle> usb </refentrytitle> <manvolnum> 4 </"
+"manvolnum> </citerefentry> subsistema"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:335
+#, fuzzy
 msgid "usb"
-msgstr ""
+msgstr "USB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:336
+#, fuzzy
 msgid "freebsd-usb"
-msgstr ""
+msgstr "freebsd-usb"
 
 #. (itstool) path: section/para
 #: article.translate.xml:342
-msgid "Do not be surprised to find that the submitter of the PR has assigned it to the wrong category. If you fix the category, do not forget to fix the assignment as well. (In particular, our submitters seem to have a hard time understanding that just because their problem manifested on an i386 system, that it might be generic to all of FreeBSD, and thus be more appropriate for <literal>kern</literal>. The converse is also true, of course.)"
+#, fuzzy
+msgid ""
+"Do not be surprised to find that the submitter of the PR has assigned it to "
+"the wrong category. If you fix the category, do not forget to fix the "
+"assignment as well. (In particular, our submitters seem to have a hard time "
+"understanding that just because their problem manifested on an i386 system, "
+"that it might be generic to all of FreeBSD, and thus be more appropriate for "
+"<literal>kern</literal>. The converse is also true, of course.)"
 msgstr ""
+"Não se surpreenda ao descobrir que o apresentador do PR atribuiu a categoria "
+"errada. Se você corrigir a categoria, não se esqueça de corrigir a tarefa "
+"também. (Em particular, nossos apresentadores parecem ter dificuldade em "
+"entender que apenas porque seu problema se manifesta em um sistema i386, que "
+"ele pode ser genérico para todo o FreeBSD, e assim ser mais apropriado para "
+"o <literal> kern </literal>. converse também é verdade, claro.)"
 
 #. (itstool) path: section/para
 #: article.translate.xml:351
-msgid "Certain PRs may be reassigned away from these generic assignees by anyone. There are several types of assignees: specialized mailing lists; mail aliases (used for certain limited-interest items); and individuals."
+#, fuzzy
+msgid ""
+"Certain PRs may be reassigned away from these generic assignees by anyone. "
+"There are several types of assignees: specialized mailing lists; mail "
+"aliases (used for certain limited-interest items); and individuals."
 msgstr ""
+"Certos PRs podem ser transferidos para longe desses cessionários genéricos "
+"por qualquer pessoa. Existem vários tipos de responsáveis: listas de "
+"discussão especializadas; aliases de correio (usados ​​para determinados "
+"itens de interesse limitado); e indivíduos."
 
 #. (itstool) path: section/para
 #: article.translate.xml:356
-msgid "For assignees which are mailing lists, please use the long form when making the assignment (e.g., <literal>freebsd-foo</literal> instead of <literal>foo</literal>); this will avoid duplicate emails sent to the mailing list."
+#, fuzzy
+msgid ""
+"For assignees which are mailing lists, please use the long form when making "
+"the assignment (e.g., <literal>freebsd-foo</literal> instead of "
+"<literal>foo</literal>); this will avoid duplicate emails sent to the "
+"mailing list."
 msgstr ""
+"Para os responsáveis ​​que são listas de discussão, use o formulário longo "
+"ao fazer a atribuição (por exemplo, <literal> freebsd-foo </literal> em vez "
+"de <literal> foo </literal>); isso evitará emails duplicados enviados para a "
+"lista de discussão."
 
 #. (itstool) path: note/para
 #: article.translate.xml:362
-msgid "Since the list of individuals who have volunteered to be the default assignee for certain types of PRs changes so often, it is much more suitable for <link xlink:href=\"https://wiki.freebsd.org/AssigningPRs\">the FreeBSD wiki</link>."
+#, fuzzy
+msgid ""
+"Since the list of individuals who have volunteered to be the default "
+"assignee for certain types of PRs changes so often, it is much more suitable "
+"for <link xlink:href=\"https://wiki.freebsd.org/AssigningPRs\">the FreeBSD "
+"wiki</link>."
 msgstr ""
+"Como a lista de indivíduos que se voluntariaram para ser o destinatário "
+"padrão para certos tipos de PRs muda com tanta frequência, é muito mais "
+"adequado para o <link xlink:href=\"https://wiki.freebsd.org/"
+"AssigningPRs\">the FreeBSD wiki</link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:368
+#, fuzzy
 msgid "Here is a sample list of such entities; it is probably not complete."
 msgstr ""
+"Aqui está uma lista de exemplo de tais entidades; provavelmente não está "
+"completo."
 
 #. (itstool) path: table/title
 #: article.translate.xml:372
+#, fuzzy
 msgid "Common Assignees — base system"
-msgstr ""
+msgstr "Responsáveis ​​Comuns - sistema básico"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:377
 #: article.translate.xml:555
 #: article.translate.xml:719
+#, fuzzy
 msgid "Suggested Category"
-msgstr ""
+msgstr "Categoria Sugerida"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:378
 #: article.translate.xml:556
 #: article.translate.xml:720
+#, fuzzy
 msgid "Suggested Assignee"
-msgstr ""
+msgstr "Responsável Sugerido"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:379
 #: article.translate.xml:557
 #: article.translate.xml:721
+#, fuzzy
 msgid "Assignee Type"
-msgstr ""
+msgstr "Tipo de Responsável"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:385
-msgid "problem specific to the <trademark class=\"registered\">ARM</trademark> architecture"
+#, fuzzy
+msgid ""
+"problem specific to the <trademark class=\"registered\">ARM</trademark> "
+"architecture"
 msgstr ""
+"problema específico da arquitetura <trademark class=\"registered\"> ARM </"
+"trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:386
+#, fuzzy
 msgid "arm"
-msgstr ""
+msgstr "braço"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:387
+#, fuzzy
 msgid "freebsd-arm"
-msgstr ""
+msgstr "freebsd-arm"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:388
@@ -555,13 +864,19 @@ msgstr ""
 #: article.translate.xml:666
 #: article.translate.xml:673
 #: article.translate.xml:694
+#, fuzzy
 msgid "mailing list"
-msgstr ""
+msgstr "lista de discussão"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:392
-msgid "problem specific to the <trademark class=\"registered\">MIPS</trademark> architecture"
+#, fuzzy
+msgid ""
+"problem specific to the <trademark class=\"registered\">MIPS</trademark> "
+"architecture"
 msgstr ""
+"problema específico da arquitetura <trademark class=\"registered\"> MIPS </"
+"trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:393
@@ -584,234 +899,346 @@ msgstr ""
 #: article.translate.xml:526
 #: article.translate.xml:534
 #: article.translate.xml:541
+#, fuzzy
 msgid "kern"
-msgstr ""
+msgstr "kern"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:394
+#, fuzzy
 msgid "freebsd-mips"
-msgstr ""
+msgstr "freebsd-mips"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:399
-msgid "problem specific to the <trademark class=\"registered\">PowerPC</trademark> architecture"
+#, fuzzy
+msgid ""
+"problem specific to the <trademark class=\"registered\">PowerPC</trademark> "
+"architecture"
 msgstr ""
+"problema específico da arquitetura <trademark class=\"registered\"> PowerPC "
+"</trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:401
+#, fuzzy
 msgid "freebsd-ppc"
-msgstr ""
+msgstr "freebsd-ppc"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:406
-msgid "problem with Advanced Configuration and Power Management (<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry>)"
+#, fuzzy
+msgid ""
+"problem with Advanced Configuration and Power Management "
+"(<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>)"
 msgstr ""
+"problema com Configuração Avançada e Gerenciamento de Energia "
+"(<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:409
+#, fuzzy
 msgid "freebsd-acpi"
-msgstr ""
+msgstr "freebsd-acpi"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:414
+#, fuzzy
 msgid "problem with Asynchronous Transfer Mode (ATM) drivers"
-msgstr ""
+msgstr "problema com drivers de modo de transferência assíncrona (ATM)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:417
+#, fuzzy
 msgid "freebsd-atm"
-msgstr ""
+msgstr "freebsd-atm"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:422
-msgid "problem with embedded or small-footprint FreeBSD systems (e.g., NanoBSD/PicoBSD/FreeBSD-arm)"
+#, fuzzy
+msgid ""
+"problem with embedded or small-footprint FreeBSD systems (e.g., NanoBSD/"
+"PicoBSD/FreeBSD-arm)"
 msgstr ""
+"problema com sistemas FreeBSD incorporados ou com pouca pegada (por exemplo, "
+"NanoBSD / PicoBSD / FreeBSD-arm)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:425
+#, fuzzy
 msgid "freebsd-embedded"
-msgstr ""
+msgstr "freebsd-embedded"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:430
-msgid "problem with <trademark class=\"registered\">FireWire</trademark> drivers"
+#, fuzzy
+msgid ""
+"problem with <trademark class=\"registered\">FireWire</trademark> drivers"
 msgstr ""
+"problema com os drivers <trademark class=\"registered\"> FireWire </"
+"trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:432
+#, fuzzy
 msgid "freebsd-firewire"
-msgstr ""
+msgstr "freebsd-firewire"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:437
+#, fuzzy
 msgid "problem with the filesystem code"
-msgstr ""
+msgstr "problema com o código do sistema de arquivos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:439
+#, fuzzy
 msgid "freebsd-fs"
-msgstr ""
+msgstr "freebsd-fs"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:444
-msgid "problem with the <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"problem with the <citerefentry><refentrytitle>geom</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
 msgstr ""
+"problema com o subsistema <citerefentry><refentrytitle>geom</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:446
+#, fuzzy
 msgid "freebsd-geom"
-msgstr ""
+msgstr "freebsd-geom"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:451
-msgid "problem with the <citerefentry><refentrytitle>ipfw</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"problem with the <citerefentry><refentrytitle>ipfw</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
 msgstr ""
+"problema com o subsistema <citerefentry><refentrytitle>ipfw</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:453
+#, fuzzy
 msgid "freebsd-ipfw"
-msgstr ""
+msgstr "freebsd-ipfw"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:458
+#, fuzzy
 msgid "problem with Integrated Services Digital Network (ISDN) drivers"
-msgstr ""
+msgstr "problema com drivers de rede digital de serviços integrados (ISDN)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:461
+#, fuzzy
 msgid "freebsd-isdn"
-msgstr ""
+msgstr "freebsd-isdn"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:466
-msgid "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> subsystem"
 msgstr ""
+"subsistema <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:468
+#, fuzzy
 msgid "freebsd-jail"
-msgstr ""
+msgstr "prisão freebsd"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:473
-msgid "problem with <trademark class=\"registered\">Linux</trademark> or SVR4 emulation"
+#, fuzzy
+msgid ""
+"problem with <trademark class=\"registered\">Linux</trademark> or SVR4 "
+"emulation"
 msgstr ""
+"problema com a emulação <trademark class=\"registered\">Linux</trademark>  "
+"ou SVR4"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:475
+#, fuzzy
 msgid "freebsd-emulation"
-msgstr ""
+msgstr "freebsd-emulation"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:480
+#, fuzzy
 msgid "problem with the networking stack"
-msgstr ""
+msgstr "problema com a pilha de rede"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:482
+#, fuzzy
 msgid "freebsd-net"
-msgstr ""
+msgstr "freebsd-net"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:487
-msgid "problem with the <citerefentry><refentrytitle>pf</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"problem with the <citerefentry><refentrytitle>pf</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
 msgstr ""
+"problema com o subsistema <citerefentry><refentrytitle>pf</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:489
+#, fuzzy
 msgid "freebsd-pf"
-msgstr ""
+msgstr "freebsd-pf"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:494
-msgid "problem with the <citerefentry><refentrytitle>scsi</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"problem with the <citerefentry><refentrytitle>scsi</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
 msgstr ""
+"problema com o subsistema <citerefentry> <refentrytitle> scsi </"
+"refentrytitle> <manvolnum> 4 </manvolnum> </citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:496
+#, fuzzy
 msgid "freebsd-scsi"
-msgstr ""
+msgstr "freebsd-scsi"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:501
-msgid "problem with the <citerefentry><refentrytitle>sound</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
+#, fuzzy
+msgid ""
+"problem with the <citerefentry><refentrytitle>sound</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem"
 msgstr ""
+"problema com o subsistema <citerefentry> <refentrytitle> sound </"
+"refentrytitle> <manvolnum> 4 </manvolnum> </citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:503
+#, fuzzy
 msgid "freebsd-multimedia"
-msgstr ""
+msgstr "freebsd-multimedia"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:508
-msgid "problems with the <citerefentry><refentrytitle>wlan</refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem and wireless drivers"
+#, fuzzy
+msgid ""
+"problems with the <citerefentry><refentrytitle>wlan</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> subsystem and wireless "
+"drivers"
 msgstr ""
+"problemas com o subsistema <citerefentry> <refentrytitle> wlan </"
+"refentrytitle> <manvolnum> 4 </manvolnum> </citerefentry> e drivers sem fio"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:511
+#, fuzzy
 msgid "freebsd-wireless"
-msgstr ""
+msgstr "freebsd-wireless"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:516
-msgid "problem with <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> or <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#, fuzzy
+msgid ""
+"problem with <citerefentry><refentrytitle>sysinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> or "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
+"problema com <citerefentry> <refentrytitle> sysinstall </refentrytitle> "
+"<manvolnum> 8 </manvolnum> </citerefentry> ou <citerefentry> <refentrytitle> "
+"bsdinstall </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:518
 #: article.translate.xml:728
+#, fuzzy
 msgid "bin"
-msgstr ""
+msgstr "bin"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:519
+#, fuzzy
 msgid "freebsd-sysinstall"
-msgstr ""
+msgstr "freebsd-sysinstall"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:524
-msgid "problem with the system startup scripts (<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>)"
+#, fuzzy
+msgid ""
+"problem with the system startup scripts (<citerefentry><refentrytitle>rc</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>)"
 msgstr ""
+"problema com os scripts de inicialização do sistema (<citerefentry> "
+"<refentrytitle> rc </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"citerefentry>)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:527
+#, fuzzy
 msgid "freebsd-rc"
-msgstr ""
+msgstr "freebsd-rc"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:532
+#, fuzzy
 msgid "problem with VIMAGE or VNET functionality and related code"
-msgstr ""
+msgstr "problema com funcionalidade VIMAGE ou VNET e código relacionado"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:535
+#, fuzzy
 msgid "freebsd-virtualization"
-msgstr ""
+msgstr "virtualização freebsd"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:540
+#, fuzzy
 msgid "problem with Xen emulation"
-msgstr ""
+msgstr "problema com a emulação de Xen"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:542
+#, fuzzy
 msgid "freebsd-xen"
-msgstr ""
+msgstr "freebsd-xen"
 
 #. (itstool) path: table/title
 #: article.translate.xml:550
+#, fuzzy
 msgid "Common Assignees — Ports Collection"
-msgstr ""
+msgstr "Destinatários Comuns - Ports Collection"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:563
-msgid "problem with the ports framework (<emphasis>not</emphasis> with an individual port!)"
+#, fuzzy
+msgid ""
+"problem with the ports framework (<emphasis>not</emphasis> with an "
+"individual port!)"
 msgstr ""
+"problema com o framework ports (<emphasis> não </emphasis> com um port "
+"individual!)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:566
+#, fuzzy
 msgid "portmgr"
-msgstr ""
+msgstr "portmgr"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:567
@@ -823,332 +1250,525 @@ msgstr ""
 #: article.translate.xml:687
 #: article.translate.xml:730
 #: article.translate.xml:737
+#, fuzzy
 msgid "alias"
-msgstr ""
+msgstr "alias"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:571
+#, fuzzy
 msgid "port which is maintained by apache@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por apache@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:573
+#, fuzzy
 msgid "apache"
-msgstr ""
+msgstr "apache"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:578
+#, fuzzy
 msgid "port which is maintained by autotools@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por autotools@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:580
+#, fuzzy
 msgid "autotools"
-msgstr ""
+msgstr "autotools"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:585
+#, fuzzy
 msgid "port which is maintained by doceng@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por doceng@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:587
+#, fuzzy
 msgid "doceng"
-msgstr ""
+msgstr "doceng"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:592
+#, fuzzy
 msgid "port which is maintained by eclipse@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por eclipse@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:594
+#, fuzzy
 msgid "freebsd-eclipse"
-msgstr ""
+msgstr "freebsd-eclipse"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:599
+#, fuzzy
 msgid "port which is maintained by gecko@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por gecko@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:601
+#, fuzzy
 msgid "gecko"
-msgstr ""
+msgstr "lagartixa"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:606
+#, fuzzy
 msgid "port which is maintained by gnome@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por gnome@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:608
+#, fuzzy
 msgid "gnome"
-msgstr ""
+msgstr "gnomo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:613
+#, fuzzy
 msgid "port which is maintained by hamradio@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por hamradio@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:615
+#, fuzzy
 msgid "hamradio"
-msgstr ""
+msgstr "rádio amador"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:620
+#, fuzzy
 msgid "port which is maintained by haskell@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por haskell@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:622
+#, fuzzy
 msgid "haskell"
-msgstr ""
+msgstr "haskell"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:627
+#, fuzzy
 msgid "port which is maintained by java@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por java@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:634
+#, fuzzy
 msgid "port which is maintained by kde@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por kde@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:636
+#, fuzzy
 msgid "kde"
-msgstr ""
+msgstr "kde"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:641
+#, fuzzy
 msgid "port which is maintained by mono@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por mono@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:643
+#, fuzzy
 msgid "mono"
-msgstr ""
+msgstr "mono"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:648
+#, fuzzy
 msgid "port which is maintained by office@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por office@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:651
+#, fuzzy
 msgid "freebsd-office"
-msgstr ""
+msgstr "freebsd-office"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:656
+#, fuzzy
 msgid "port which is maintained by perl@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por perl@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:658
+#, fuzzy
 msgid "perl"
-msgstr ""
+msgstr "perl"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:663
+#, fuzzy
 msgid "port which is maintained by python@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por python@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:665
+#, fuzzy
 msgid "freebsd-python"
-msgstr ""
+msgstr "freebsd-python"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:670
+#, fuzzy
 msgid "port which is maintained by ruby@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por ruby@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:672
+#, fuzzy
 msgid "freebsd-ruby"
-msgstr ""
+msgstr "freebsd-ruby"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:677
+#, fuzzy
 msgid "port which is maintained by secteam@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por secteam@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:679
+#, fuzzy
 msgid "secteam"
-msgstr ""
+msgstr "secteam"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:684
+#, fuzzy
 msgid "port which is maintained by vbox@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por vbox@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:686
+#, fuzzy
 msgid "vbox"
-msgstr ""
+msgstr "vbox"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:691
+#, fuzzy
 msgid "port which is maintained by x11@FreeBSD.org"
-msgstr ""
+msgstr "port que é mantido por x11@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:693
+#, fuzzy
 msgid "freebsd-x11"
-msgstr ""
+msgstr "freebsd-x11"
 
 #. (itstool) path: section/para
 #: article.translate.xml:700
-msgid "Ports PRs which have a maintainer who is a ports committer may be reassigned by anyone (but note that not every FreeBSD committer is necessarily a ports committer, so you cannot simply go by the email address alone.)"
+#, fuzzy
+msgid ""
+"Ports PRs which have a maintainer who is a ports committer may be reassigned "
+"by anyone (but note that not every FreeBSD committer is necessarily a ports "
+"committer, so you cannot simply go by the email address alone.)"
 msgstr ""
+"Port PRsque têm um mantenedor que é um committer de ports podem ser "
+"reatribuídas por qualquer um (mas note que nem todo committer do FreeBSD é "
+"necessariamente um committer de ports, então você não pode simplesmente ir "
+"sozinho pelo endereço de email)."
 
 #. (itstool) path: section/para
 #: article.translate.xml:706
-msgid "For other PRs, please do not reassign them to individuals (other than yourself) unless you are certain that the assignee really wants to track the PR. This will help to avoid the case where no one looks at fixing a particular problem because everyone assumes that the assignee is already working on it."
+#, fuzzy
+msgid ""
+"For other PRs, please do not reassign them to individuals (other than "
+"yourself) unless you are certain that the assignee really wants to track the "
+"PR. This will help to avoid the case where no one looks at fixing a "
+"particular problem because everyone assumes that the assignee is already "
+"working on it."
 msgstr ""
+"Para outros RPs, por favor, não os reatribua aos indivíduos (a não ser "
+"você), a menos que tenha certeza de que o responsável realmente deseja "
+"acompanhar o PR. Isso ajudará a evitar o caso em que ninguém olha para "
+"consertar um problema em particular, porque todos assumem que o destinatário "
+"já está trabalhando nele."
 
 #. (itstool) path: table/title
 #: article.translate.xml:714
+#, fuzzy
 msgid "Common Assignees — Other"
-msgstr ""
+msgstr "Responsáveis ​​Comuns - Outros"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:727
+#, fuzzy
 msgid "problem with PR database"
-msgstr ""
+msgstr "problema com o banco de dados PR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:729
 #: article.translate.xml:736
+#, fuzzy
 msgid "bugmeister"
-msgstr ""
+msgstr "bugmeister"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:734
-msgid "problem with Bugzilla <link xlink:href=\"https://bugs.freebsd.org/submit/\">web form</link>."
+#, fuzzy
+msgid ""
+"problem with Bugzilla <link xlink:href=\"https://bugs.freebsd.org/submit/"
+"\">web form</link>."
 msgstr ""
+"problema com o Bugzilla <link xlink:href=\"https://bugs.freebsd.org/submit/"
+"\"> formulário web </link>."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:735
+#, fuzzy
 msgid "doc"
-msgstr ""
+msgstr "doc"
 
 #. (itstool) path: section/title
 #: article.translate.xml:746
+#, fuzzy
 msgid "Assigned PRs"
-msgstr ""
+msgstr "PRs atribuídos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:748
-msgid "If a PR has the <literal>responsible</literal> field set to the username of a FreeBSD developer, it means that the PR has been handed over to that particular person for further work."
+#, fuzzy
+msgid ""
+"If a PR has the <literal>responsible</literal> field set to the username of "
+"a FreeBSD developer, it means that the PR has been handed over to that "
+"particular person for further work."
 msgstr ""
+"Se um PR tiver o campo <literal> responsável </literal> configurado para o "
+"nome de usuário de um desenvolvedor do FreeBSD, isso significa que o PR foi "
+"entregue a essa pessoa em particular para trabalho adicional."
 
 #. (itstool) path: section/para
 #: article.translate.xml:753
-msgid "Assigned PRs should not be touched by anyone but the assignee or bugmeister. If you have comments, submit a followup. If for some reason you think the PR should change state or be reassigned, send a message to the assignee. If the assignee does not respond within two weeks, unassign the PR and do as you please."
+#, fuzzy
+msgid ""
+"Assigned PRs should not be touched by anyone but the assignee or bugmeister. "
+"If you have comments, submit a followup. If for some reason you think the PR "
+"should change state or be reassigned, send a message to the assignee. If the "
+"assignee does not respond within two weeks, unassign the PR and do as you "
+"please."
 msgstr ""
+"PRs designados não devem ser tocados por ninguém além do cessionário ou do "
+"bugmeister. Se você tiver comentários, envie um acompanhamento. Se, por "
+"algum motivo, você achar que o PR deve mudar de estado ou ser reatribuído, "
+"envie uma mensagem ao responsável. Se o responsável não responder dentro de "
+"duas semanas, cancele a atribuição do RP e faça o que quiser."
 
 #. (itstool) path: section/title
 #: article.translate.xml:762
+#, fuzzy
 msgid "Duplicate PRs"
-msgstr ""
+msgstr "PRs duplicados"
 
 #. (itstool) path: section/para
 #: article.translate.xml:764
-msgid "If you find more than one PR that describe the same issue, choose the one that contains the largest amount of useful information and close the others, stating clearly the number of the superseding PR. If several PRs contain non-overlapping useful information, submit all the missing information to one in a followup, including references to the others; then close the other PRs (which are now completely superseded)."
+#, fuzzy
+msgid ""
+"If you find more than one PR that describe the same issue, choose the one "
+"that contains the largest amount of useful information and close the others, "
+"stating clearly the number of the superseding PR. If several PRs contain non-"
+"overlapping useful information, submit all the missing information to one in "
+"a followup, including references to the others; then close the other PRs "
+"(which are now completely superseded)."
 msgstr ""
+"Se você encontrar mais de um PR que descreva o mesmo problema, escolha "
+"aquele que contém a maior quantidade de informações úteis e feche as outras, "
+"indicando claramente o número do PR substituto. Se vários PRs contiverem "
+"informações úteis que não se sobrepõem, envie todas as informações ausentes "
+"para uma em acompanhamento, incluindo referências às outras; em seguida, "
+"feche os outros PRs (que agora estão completamente substituídos)."
 
 #. (itstool) path: section/title
 #: article.translate.xml:774
+#, fuzzy
 msgid "Stale PRs"
-msgstr ""
+msgstr "PRs obsoletos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:776
-msgid "A PR is considered stale if it has not been modified in more than six months. Apply the following procedure to deal with stale PRs:"
+#, fuzzy
+msgid ""
+"A PR is considered stale if it has not been modified in more than six months."
+" Apply the following procedure to deal with stale PRs:"
 msgstr ""
+"Um PR é considerado obsoleto se não tiver sido modificado em mais de seis "
+"meses. Aplique o seguinte procedimento para lidar com PRs obsoletos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:782
-msgid "If the PR contains sufficient detail, try to reproduce the problem in <literal>-CURRENT</literal> and <literal>-STABLE</literal>. If you succeed, submit a followup detailing your findings and try to find someone to assign it to. Set the state to <quote>analyzed</quote> if appropriate."
+#, fuzzy
+msgid ""
+"If the PR contains sufficient detail, try to reproduce the problem in "
+"<literal>-CURRENT</literal> and <literal>-STABLE</literal>. If you succeed, "
+"submit a followup detailing your findings and try to find someone to assign "
+"it to. Set the state to <quote>analyzed</quote> if appropriate."
 msgstr ""
+"Se o PR contiver detalhes suficientes, tente reproduzir o problema em "
+"<literal> -CURRENT </literal> e <literal> -STABLE </literal>. Se você tiver "
+"sucesso, envie um acompanhamento detalhando suas descobertas e tente "
+"encontrar alguém para atribuí-lo. Defina o estado para <quote> analisado </"
+"quote>, se apropriado."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
-msgid "If the PR describes an issue which you know is the result of a usage error (incorrect configuration or otherwise), submit a followup explaining what the originator did wrong, then close the PR with the reason <quote>User error</quote> or <quote>Configuration error</quote>."
+#, fuzzy
+msgid ""
+"If the PR describes an issue which you know is the result of a usage error "
+"(incorrect configuration or otherwise), submit a followup explaining what "
+"the originator did wrong, then close the PR with the reason <quote>User "
+"error</quote> or <quote>Configuration error</quote>."
 msgstr ""
+"Se o PR descrever um problema que você sabe ser o resultado de um erro de "
+"uso (configuração incorreta ou de outra forma), envie um acompanhamento "
+"explicando o que o originador fez errado e feche o PR com o motivo <quote> "
+"Erro do usuário </quote> ou <quote> Erro de configuração </quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:800
-msgid "If the PR describes an error which you know has been corrected in both <literal>-CURRENT</literal> and <literal>-STABLE</literal>, close it with a message stating when it was fixed in each branch."
+#, fuzzy
+msgid ""
+"If the PR describes an error which you know has been corrected in both "
+"<literal>-CURRENT</literal> and <literal>-STABLE</literal>, close it with a "
+"message stating when it was fixed in each branch."
 msgstr ""
+"Se o PR descreve um erro que você sabe ter sido corrigido em <literal> -"
+"CURRENT </literal> e <literal> -STABLE </literal>, feche-o com uma mensagem "
+"informando quando ele foi corrigido em cada ramificação."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:807
-msgid "If the PR describes an error which you know has been corrected in <literal>-CURRENT</literal>, but not in <literal>-STABLE</literal>, try to find out when the person who corrected it is planning to MFC it, or try to find someone else (maybe yourself?) to do it. Set the state to <quote>patched</quote> and assign it to whomever will do the MFC."
+#, fuzzy
+msgid ""
+"If the PR describes an error which you know has been corrected in <literal>-"
+"CURRENT</literal>, but not in <literal>-STABLE</literal>, try to find out "
+"when the person who corrected it is planning to MFC it, or try to find "
+"someone else (maybe yourself?) to do it. Set the state to <quote>patched</"
+"quote> and assign it to whomever will do the MFC."
 msgstr ""
+"Se o PR descreve um erro que você sabe ter sido corrigido em <literal> -"
+"CURRENT </literal>, mas não em <literal> -STABLE </literal>, tente descobrir "
+"quando a pessoa que o corrigiu está planejando o MFC ou tente encontrar "
+"alguém (talvez você?) para fazê-lo. Defina o estado para <quote> corrigido </"
+"quote> e atribua-o a quem quer que faça o MFC."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:817
-msgid "In other cases, ask the originator to confirm if the problem still exists in newer versions. If the originator does not reply within a month, close the PR with the notation <quote>Feedback timeout</quote>."
+#, fuzzy
+msgid ""
+"In other cases, ask the originator to confirm if the problem still exists in "
+"newer versions. If the originator does not reply within a month, close the "
+"PR with the notation <quote>Feedback timeout</quote>."
 msgstr ""
+"Em outros casos, peça ao originador para confirmar se o problema ainda "
+"existe em versões mais recentes. Se o originador não responder dentro de um "
+"mês, feche o PR com a notação <quote> Tempo limite de feedback </quote>."
 
 #. (itstool) path: section/title
 #: article.translate.xml:826
+#, fuzzy
 msgid "Non-Bug PRs"
-msgstr ""
+msgstr "PRs sem erros"
 
 #. (itstool) path: section/para
 #: article.translate.xml:828
-msgid "Developers that come across PRs that look like they should have been posted to <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">freebsd-bugs</link> or some other list should close the PR, informing the submitter in a comment why this is not really a PR and where the message should be posted."
+#, fuzzy
+msgid ""
+"Developers that come across PRs that look like they should have been posted "
+"to <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"bugs\">freebsd-bugs</link> or some other list should close the PR, informing "
+"the submitter in a comment why this is not really a PR and where the message "
+"should be posted."
 msgstr ""
+"Desenvolvedores que se deparam com PRs que parecem ter sido postados em "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"bugs\">freebsd-bugs</link> ou algum outro lista deve fechar o PR, informando "
+"o apresentador em um comentário porque isso não é realmente um PR e onde a "
+"mensagem deve ser postada."
 
 #. (itstool) path: section/para
 #: article.translate.xml:833
-msgid "The email addresses that Bugzilla listens to for incoming PRs have been published as part of the FreeBSD documentation, have been announced and listed on the web-site. This means that spammers found them."
+#, fuzzy
+msgid ""
+"The email addresses that Bugzilla listens to for incoming PRs have been "
+"published as part of the FreeBSD documentation, have been announced and "
+"listed on the web-site. This means that spammers found them."
 msgstr ""
+"Os endereços de e-mail que o Bugzilla escuta para os PRs recebidos foram "
+"publicados como parte da documentação do FreeBSD, foram anunciados e "
+"listados no site. Isso significa que os spammers os encontraram."
 
 #. (itstool) path: section/para
 #: article.translate.xml:838
+#, fuzzy
 msgid "Whenever you close one of these PRs, please do the following:"
-msgstr ""
+msgstr "Sempre que você fechar um desses PRs, faça o seguinte:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:843
-msgid "Set the component to <literal>junk</literal> (under <literal>Supporting Services</literal>."
+#, fuzzy
+msgid ""
+"Set the component to <literal>junk</literal> (under <literal>Supporting "
+"Services</literal>."
 msgstr ""
+"Defina o componente como <literal> junk </literal> (em <literal> Supporting "
+"Services </literal>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:848
+#, fuzzy
 msgid "Set Responsible to <literal>nobody@FreeBSD.org</literal>."
-msgstr ""
+msgstr "Defina Responsible to <literal> nobody@FreeBSD.org </literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:852
+#, fuzzy
 msgid "Set State to <literal>Issue Resolved</literal>."
-msgstr ""
+msgstr "Defina State como <literal> Issue Resolved </literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:856
-msgid "Setting the category to <literal>junk</literal> makes it obvious that there is no useful content within the PR, and helps to reduce the clutter within the main categories."
+#, fuzzy
+msgid ""
+"Setting the category to <literal>junk</literal> makes it obvious that there "
+"is no useful content within the PR, and helps to reduce the clutter within "
+"the main categories."
 msgstr ""
+"Definir a categoria como <literal> junk </literal> torna óbvio que não há "
+"conteúdo útil dentro do PR e ajuda a reduzir a desordem nas categorias "
+"principais."
 
 #. (itstool) path: section/title
 #: article.translate.xml:863
+#, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "Leitura Adicional"
 
 #. (itstool) path: section/para
 #: article.translate.xml:865
-msgid "This is a list of resources relevant to the proper writing and processing of problem reports. It is by no means complete."
+#, fuzzy
+msgid ""
+"This is a list of resources relevant to the proper writing and processing of "
+"problem reports. It is by no means complete."
 msgstr ""
+"Esta é uma lista de recursos relevantes para a escrita adequada e "
+"processamento de relatórios de problemas. Não é de modo algum completo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:870
-msgid "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html\">How to Write FreeBSD Problem Reports</link>—guidelines for PR originators."
+#, fuzzy
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-"
+"reports/article.html\">How to Write FreeBSD Problem Reports</"
+"link>—guidelines for PR originators."
 msgstr ""
-
+"<link xlink:href =\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/articles/problem-"
+"reports/article.html\"> Como escrever relatórios de problemas do FreeBSD </"
+"link> - diretrizes para os criadores de relações públicas."

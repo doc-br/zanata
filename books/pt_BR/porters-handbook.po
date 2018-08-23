@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-21 10:57+0000\n"
+"PO-Revision-Date: 2018-08-23 03:20+0000\n"
 "Last-Translator: Silvio Ap Silva <alvolivre@live.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr "kanazuchi, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: book.translate.xml:39
@@ -22503,7 +22503,6 @@ msgstr "<varname>USE_KDE</varname>Exemplo"
 
 #. (itstool) path: example/para
 #: book.translate.xml:12315
-#, fuzzy
 msgid ""
 "This is a simple example for a KDE 4 port. <literal>USES= cmake:outsource</"
 "literal> instructs the port to utilize <application>CMake</application>, a "
@@ -22515,16 +22514,16 @@ msgid ""
 "<varname>USE_QT4</varname>. If a port requires some Qt 4 components, specify "
 "them in <varname>USE_QT4</varname>."
 msgstr ""
-"Este é um exemplo simples para um port do KDE 4.<literal>USES = cmake: "
-"outsource</literal>instrui o port a utilizar<application>CMake</"
+"Este é um exemplo simples para um port do KDE 4. <literal>USES=cmake:"
+"outsource</literal> instrui o port a utilizar <application>CMake</"
 "application>, uma ferramenta de configuração amplamente usada pelos projetos "
-"do KDE 4 (veja <xref linkend=\"using-cmake\"/>para uso detalhado)."
-"<varname>USE_KDE</varname>traz dependência nas bibliotecas do KDE e torna o "
-"port usando<command>automoc4</command>no estágio de construção. Componentes "
-"necessários do KDE e outras dependências podem ser determinados através do "
-"log de configuração.<varname>USE_KDE</varname>não implica<varname>USE_QT4</"
-"varname>. Se um port requer alguns componentes do Qt 4, especifique-os "
-"em<varname>USE_QT4</varname>"
+"do KDE 4 (veja <xref linkend=\"using-cmake\"/>para uso detalhado). "
+"<varname>USE_KDE</varname> traz dependência nas bibliotecas do KDE e "
+"constrói o port usando <command>automoc4</command> no estágio de construção. "
+"Componentes necessários do KDE e outras dependências podem ser determinados "
+"através do log de configuração. <varname>USE_KDE</varname> não implica "
+"<varname>USE_QT4</varname>. Se um port requer alguns componentes do Qt 4, "
+"especifique-os em <varname>USE_QT4</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12330
@@ -22545,14 +22544,13 @@ msgstr "Usando o LXQt"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12340
-#, fuzzy
 msgid ""
 "Applications depending on LXQt should set <literal>USES+= lxqt</literal> and "
 "set <varname>USE_LXQT</varname> to the list of required components from the "
 "table below"
 msgstr ""
-"Aplicações dependendo do LXQt devem<literal>USES + = lxqt</literal>E "
-"definir<varname>USE_LXQT</varname>à lista de componentes necessários da "
+"Aplicações dependendo do LXQt devem definir <literal>USES+= lxqt</literal> E "
+"definir <varname>USE_LXQT</varname> à lista de componentes necessários da "
 "tabela abaixo "
 
 #. (itstool) path: table/title
@@ -22604,13 +22602,12 @@ msgstr "<literal>USE_LXQT</literal> Exemplo"
 
 #. (itstool) path: example/para
 #: book.translate.xml:12384
-#, fuzzy
 msgid ""
 "This is a simple example, <literal>USE_LXQT</literal> adds a dependency on "
 "LXQt libraries. Required LXQt components and other dependencies can be "
 "determined from the configure log."
 msgstr ""
-"Este é um exemplo simples,<literal>USE_LXQT</literal>adiciona uma "
+"Este é um exemplo simples, <literal>USE_LXQT</literal> adiciona uma "
 "dependência em bibliotecas LXQt. Os componentes necessários do LXQt e outras "
 "dependências podem ser determinados a partir do log de configuração. "
 
@@ -22638,19 +22635,17 @@ msgstr "Definições Variáveis"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12401
-#, fuzzy
 msgid ""
 "If the port needs a Java™ Development Kit (<acronym>JDK</acronym>™) to "
 "either build, run or even extract the distfile, then define "
 "<varname>USE_JAVA</varname>."
 msgstr ""
-"Se o port precisar de um Java ™ Development Kit (<acronym>JDK</acronym>) "
-"para build, executar ou até mesmo extrair o distfile, "
-"defina<varname>USE_JAVA</varname>"
+"Se o port precisar de um Java ™ Development Kit (<acronym>JDK</acronym>)  "
+"para buildar, executar ou até mesmo extrair o distfile, defina "
+"<varname>USE_JAVA</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12406
-#, fuzzy
 msgid ""
 "There are several <acronym>JDK</acronym>s in the ports collection, from "
 "various vendors, and in several versions. If the port must use a particular "
@@ -22659,16 +22654,15 @@ msgid ""
 "<package role=\"port\">java/openjdk6</package> and <package role="
 "\"port\">java/openjdk7</package> also available."
 msgstr ""
-"Existem vários<acronym>JDKs</acronym>na coleção de ports, de vários "
+"Existem vários <acronym>JDKs</acronym> na coleção de ports, de vários "
 "fornecedores e em várias versões. Se o port precisar usar uma versão "
-"específica, especifique-a usando<varname>JAVA_VERSION</varname>variável. A "
-"versão mais atual é<package role=\"port\">java/openjdk8</package>com<package "
-"role=\"port\">java/openjdk6</package> e <package role=\"port\">java/"
-"openjdk7</package>também disponível."
+"específica, especifique-a usando a variável <varname>JAVA_VERSION</varname>. "
+"A versão mais atual é <package role=\"port\"> \n"
+"java/openjdk8</package> com <package role=\"port\">java/openjdk6</package> e "
+"<package role=\"port\">java/openjdk7</package> também disponível."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12417
-#, fuzzy
 msgid "Variables Which May be Set by Ports That Use Java"
 msgstr "Variáveis ​​que podem ser definidas por ports que usam Java"
 
@@ -22689,15 +22683,14 @@ msgstr "<varname>JAVA_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12437
-#, fuzzy
 msgid ""
 "List of space-separated suitable Java versions for the port. An optional "
 "<literal>\"+\"</literal> allows specifying a range of versions (allowed "
 "values: <literal>1.5[+] 1.6[+] 1.7[+]</literal>)."
 msgstr ""
 "Lista de versões Java adequadas separadas por espaço para o port. Um "
-"opcional<literal>\\ \"+ \"</literal>permite especificar um intervalo de "
-"versões (valores permitidos:<literal>1,5 [+] 1,6 [+] 1,7 [+]</literal>) "
+"opcional <literal>\"+\"</literal> permite especificar um intervalo de "
+"versões (valores permitidos: <literal>1,5 [+] 1,6 [+] 1,7 [+]</literal>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12445
@@ -22706,13 +22699,12 @@ msgstr "<varname>JAVA_OS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12446
-#, fuzzy
 msgid ""
 "List of space-separated suitable <acronym>JDK</acronym> port operating "
 "systems for the port (allowed values: <literal>native linux</literal>)."
 msgstr ""
-"Lista de sistemas operacionais do port<acronym>JDK</acronym>adequados "
-"separados por espaço para o port (valores permitidos:<literal>linux nativo</"
+"Lista de sistemas operacionais adequados do port <acronym>JDK</acronym> "
+"separados por espaço para o port (valores permitidos: <literal>linux nativo</"
 "literal>) "
 
 #. (itstool) path: row/entry
@@ -22722,13 +22714,12 @@ msgstr "<varname>JAVA_VENDOR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12454
-#, fuzzy
 msgid ""
 "List of space-separated suitable <acronym>JDK</acronym> port vendors for the "
 "port (allowed values: <literal>freebsd bsdjava sun openjdk</literal>)."
 msgstr ""
-"Lista de fornecedores de ports<acronym>JDK</acronym>adequados separados por "
-"espaços para o port (valores permitidos:<literal>freebsd bsdjava sol "
+"Lista de fornecedores adequados de ports <acronym>JDK</acronym> separados "
+"por espaços para o port (valores permitidos: <literal>freebsd bsdjava sol "
 "openjdk</literal>) "
 
 #. (itstool) path: row/entry
@@ -22775,13 +22766,12 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12482
-#, fuzzy
 msgid ""
 "Below is the list of all settings a port will receive after setting "
 "<varname>USE_JAVA</varname>:"
 msgstr ""
 "Abaixo está a lista de todas as configurações que um port receberá após a "
-"configuração<varname>USE_JAVA</varname>: "
+"configuração de <varname>USE_JAVA</varname>: "
 
 #. (itstool) path: table/title
 #: book.translate.xml:12486
@@ -22804,7 +22794,6 @@ msgstr "Variáveis ​​fornecidas para ports que usam Java"
 #: book.translate.xml:31439
 #: book.translate.xml:31614
 #: book.translate.xml:31763
-#, fuzzy
 msgid "Value"
 msgstr "Valor"
 
@@ -22815,13 +22804,12 @@ msgstr "<varname>JAVA_PORT</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12499
-#, fuzzy
 msgid ""
 "The name of the <acronym>JDK</acronym> port (for example, <literal>java/"
 "openjdk6</literal>)."
 msgstr ""
-"O nome do port do<acronym>JDK</acronym>(por exemplo,<literal>java/openjdk6</"
-"literal>) "
+"O nome do port do <acronym>JDK</acronym> (por exemplo,<literal>java/"
+"openjdk6</literal>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12504
@@ -22830,16 +22818,15 @@ msgstr "<varname>JAVA_PORT_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12505
-#, fuzzy
 msgid ""
 "The full version of the <acronym>JDK</acronym> port (for example, <literal>1."
 "6.0</literal>). Only the first two digits of this version number are needed, "
 "use <varname>${JAVA_PORT_VERSION:C/^([0-9])\\.([0-9])(.*)$/\\1.\\2/}</"
 "varname>."
 msgstr ""
-"A versão completa do port do<acronym>JDK</acronym>(por exemplo,<literal>1.6."
-"0</literal>). Somente os dois primeiros dígitos deste número de versão são "
-"necessários, use<varname>$ {JAVA_PORT_VERSION: C/^ ([0-9]) \\.([0-9]) (. *) "
+"A versão completa do port do <acronym>JDK</acronym> (por exemplo,<literal>1."
+"6.0</literal>). Somente os dois primeiros dígitos deste número de versão são "
+"necessários, use <varname>$ {JAVA_PORT_VERSION: C/^ ([0-9]) \\.([0-9]) (. *) "
 "$/\\ 1. \\ 2 /}</varname>"
 
 #. (itstool) path: row/entry
@@ -22849,13 +22836,12 @@ msgstr "<varname>JAVA_PORT_OS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12514
-#, fuzzy
 msgid ""
 "The operating system used by the <acronym>JDK</acronym> port (for example, "
 "<literal>'native'</literal>)."
 msgstr ""
-"O sistema operacional usado pela porta do<acronym>JDK</acronym>(por "
-"exemplo,<literal>'nativo'</literal>) "
+"O sistema operacional usado pelo port do <acronym>JDK</acronym> (por "
+"exemplo, <literal>'nativo'</literal>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12520
@@ -22864,12 +22850,11 @@ msgstr "<varname>JAVA_PORT_VENDOR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12521
-#, fuzzy
 msgid ""
 "The vendor of the <acronym>JDK</acronym> port (for example, "
 "<literal>'openjdk'</literal>)."
 msgstr ""
-"O fornecedor do port<acronym>JDK</acronym>(por exemplo,<literal>'openjdk'</"
+"O fornecedor do port <acronym>JDK</acronym> (por exemplo,<literal>'openjdk'</"
 "literal>) "
 
 #. (itstool) path: row/entry
@@ -22879,13 +22864,12 @@ msgstr "<varname>JAVA_PORT_OS_DESCRIPTION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12527
-#, fuzzy
 msgid ""
 "Description of the operating system used by the <acronym>JDK</acronym> port "
 "(for example, <literal>'Native'</literal>)."
 msgstr ""
-"Descrição do sistema operacional usado pela porta<acronym>JDK</acronym>(por "
-"exemplo,<literal>'Nativo'</literal>) "
+"Descrição do sistema operacional usado pelo port <acronym>JDK</acronym> (por "
+"exemplo, <literal>'Nativo'</literal>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12533
@@ -22894,12 +22878,11 @@ msgstr "<varname>JAVA_PORT_VENDOR_DESCRIPTION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12534
-#, fuzzy
 msgid ""
 "Description of the vendor of the <acronym>JDK</acronym> port (for example, "
 "<literal>'OpenJDK BSD Porting Team'</literal>)."
 msgstr ""
-"Descrição do fornecedor do port<acronym>JDK</acronym>(por "
+"Descrição do fornecedor do port <acronym>JDK</acronym> (por "
 "exemplo,<literal>'OpenJDK BSD Porting Team'</literal>) "
 
 #. (itstool) path: row/entry
@@ -22909,13 +22892,12 @@ msgstr "<varname>JAVA_HOME</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12542
-#, fuzzy
 msgid ""
 "Path to the installation directory of the <acronym>JDK</acronym> (for "
 "example, <filename>'/usr/local/openjdk6'</filename>)."
 msgstr ""
-"Caminho para o diretório de instalação do<acronym>JDK</acronym>(por "
-"exemplo,<filename>'/usr/local/openjdk6'</filename>) "
+"Caminho para o diretório de instalação do <acronym>JDK</acronym> (por "
+"exemplo, <filename>'/usr/local/openjdk6'</filename>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12548
@@ -22924,12 +22906,11 @@ msgstr "<varname>JAVAC</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12549
-#, fuzzy
 msgid ""
 "Path to the Java compiler to use (for example, <filename>'/usr/local/"
 "openjdk6/bin/javac'</filename>)."
 msgstr ""
-"Caminho para o compilador Java para usar (por exemplo,<filename>'/usr/local/"
+"Caminho para o compilador Java para usar (por exemplo, <filename>'/usr/local/"
 "openjdk6/bin/javac'</filename>) "
 
 #. (itstool) path: row/entry
@@ -22939,15 +22920,14 @@ msgstr "<varname>JAR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12555
-#, fuzzy
 msgid ""
 "Path to the <command>jar</command> tool to use (for example, <filename>'/usr/"
 "local/openjdk6/bin/jar'</filename> or <filename>'/usr/local/bin/fastjar'</"
 "filename>)."
 msgstr ""
-"Caminho para o<command>pote</command>ferramenta a ser usada (por "
-"exemplo,<filename>'/usr/local/openjdk6/bin/jar'</filename> ou <filename>'/"
-"usr/local/bin/fastjar'</filename>) "
+"Caminho para  ferramenta <command>jar</command> a ser usada (por exemplo, "
+"<filename>'/usr/local/openjdk6/bin/jar'</filename> ou <filename>'/usr/local/"
+"bin/fastjar'</filename>) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12563
@@ -22956,12 +22936,11 @@ msgstr "<varname>APPLETVIEWER</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12564
-#, fuzzy
 msgid ""
 "Path to the <command>appletviewer</command> utility (for example, "
 "<filename>'/usr/local/openjdk6/bin/appletviewer'</filename>)."
 msgstr ""
-"Caminho para o<command>appletviewer</command>utilitário (por "
+"Caminho para o utilitario <command>appletviewer</command> (por "
 "exemplo,<filename>'/usr/local/openjdk6/bin/appletviewer'</filename>) "
 
 #. (itstool) path: row/entry
@@ -22971,13 +22950,12 @@ msgstr "<varname>JAVA</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12571
-#, fuzzy
 msgid ""
 "Path to the <command>java</command> executable. Use this for executing Java "
 "programs (for example, <filename>'/usr/local/openjdk6/bin/java'</filename>)."
 msgstr ""
-"Caminho para o<command>Java</command>executável. Use isto para executar "
-"programas Java (por exemplo,<filename>'/usr/local/openjdk6/bin/java'</"
+"Caminho para o executável <command>Java</command>. Use isto para executar "
+"programas Java (por exemplo, <filename>'/usr/local/openjdk6/bin/java'</"
 "filename>) "
 
 #. (itstool) path: row/entry
@@ -22987,9 +22965,8 @@ msgstr "<varname>JAVADOC</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12578
-#, fuzzy
 msgid "Path to the <command>javadoc</command> utility program."
-msgstr "Caminho para o<command>javadoc</command>programa de utilidade."
+msgstr "Caminho para o programa de utilidade <command>javadoc</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12583
@@ -22998,9 +22975,8 @@ msgstr "<varname>JAVAH</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12584
-#, fuzzy
 msgid "Path to the <command>javah</command> program."
-msgstr "Caminho para o<command>javah</command>programa."
+msgstr "Caminho para o programa <command>javah</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12589
@@ -23009,9 +22985,8 @@ msgstr "<varname>JAVAP</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12590
-#, fuzzy
 msgid "Path to the <command>javap</command> program."
-msgstr "Caminho para o<command>javap</command>programa."
+msgstr "Caminho para o programa <command>javap</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12595
@@ -23020,10 +22995,8 @@ msgstr "<varname>JAVA_KEYTOOL</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12596
-#, fuzzy
 msgid "Path to the <command>keytool</command> utility program."
-msgstr ""
-"Caminho para o<command>ferramenta-chave</command>programa de utilidade."
+msgstr "Caminho para o programa de utilidade <command>keytool</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12601
@@ -23032,9 +23005,8 @@ msgstr "<varname>JAVA_N2A</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12602
-#, fuzzy
 msgid "Path to the <command>native2ascii</command> tool."
-msgstr "Caminho para o<command>native2ascii</command>ferramenta."
+msgstr "Caminho para a ferramenta <command>native2ascii</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12607
@@ -23043,9 +23015,8 @@ msgstr "<varname>JAVA_POLICYTOOL</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12608
-#, fuzzy
 msgid "Path to the <command>policytool</command> program."
-msgstr "Caminho para o<command>policytool</command>programa."
+msgstr "Caminho para o programa <command>policytool</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12613
@@ -23054,9 +23025,8 @@ msgstr "<varname>JAVA_SERIALVER</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12614
-#, fuzzy
 msgid "Path to the <command>serialver</command> utility program."
-msgstr "Caminho para o<command>serialver</command>programa de utilidade."
+msgstr "Caminho para o programa de utilidade <command>serialver</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12619
@@ -23065,9 +23035,8 @@ msgstr "<varname>RMIC</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12620
-#, fuzzy
 msgid "Path to the RMI stub/skeleton generator, <command>rmic</command>."
-msgstr "Caminho para o gerador de stub/esqueleto RMI,<command>rmic</command>"
+msgstr "Caminho para o gerador de stub/skeleton RMI, <command>rmic</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12625
@@ -23076,10 +23045,9 @@ msgstr "<varname>RMIREGISTRY</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12626
-#, fuzzy
 msgid "Path to the RMI registry program, <command>rmiregistry</command>."
 msgstr ""
-"Caminho para o programa de registro RMI,<command>rmiregistry</command>"
+"Caminho para o programa de registro RMI, <command>rmiregistry</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12631
@@ -23088,9 +23056,8 @@ msgstr "<varname>RMID</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12632
-#, fuzzy
 msgid "Path to the RMI daemon program <command>rmid</command>."
-msgstr "Caminho para o programa daemon do RMI<command>rmid</command>"
+msgstr "Caminho para o programa daemon do RMI <command>rmid</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12637
@@ -23099,13 +23066,12 @@ msgstr "<varname>JAVA_CLASSES</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12638
-#, fuzzy
 msgid ""
 "Path to the archive that contains the <acronym>JDK</acronym> class files, "
 "<filename>${JAVA_HOME}/jre/lib/rt.jar</filename>."
 msgstr ""
-"Caminho para o arquivo que contém os arquivos de classe do<acronym>JDK</"
-"acronym>, <filename>$ {JAVA_HOME} /jre/lib/rt.jar</filename>"
+"Caminho para o arquivo que contém os arquivos de classe do <acronym>JDK</"
+"acronym>, <filename>${JAVA_HOME}/jre/lib/rt.jar</filename>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:12646
@@ -23114,7 +23080,6 @@ msgstr "java-debug"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12646
-#, fuzzy
 msgid ""
 "Use the <_:buildtarget-1/> make target to get information for debugging the "
 "port. It will display the value of many of the previously listed variables."
@@ -23148,12 +23113,11 @@ msgstr "<varname>JAVASHAREDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12668
-#, fuzzy
 msgid ""
 "The base directory for everything related to Java. Default: "
 "<filename>${PREFIX}/share/java</filename>."
 msgstr ""
-"O diretório base para tudo relacionado ao Java. Padrão:<filename>$ {PREFIXO}/"
+"O diretório base para tudo relacionado ao Java. Padrão: <filename>${PREFIXO}/"
 "share/java</filename>"
 
 #. (itstool) path: row/entry
@@ -23163,13 +23127,12 @@ msgstr "<varname>JAVAJARDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12675
-#, fuzzy
 msgid ""
 "The directory where JAR files is installed. Default: "
 "<filename>${JAVASHAREDIR}/classes</filename>."
 msgstr ""
-"O diretório onde os arquivos JAR estão instalados. Padrão:<filename>$ "
-"{JAVASHAREDIR}/classes</filename>"
+"O diretório onde os arquivos JAR estão instalados. Padrão: "
+"<filename>${JAVASHAREDIR}/classes</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12681
@@ -23178,25 +23141,22 @@ msgstr "<varname>JAVALIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12682
-#, fuzzy
 msgid ""
 "The directory where JAR files installed by other ports are located. Default: "
 "<filename>${LOCALBASE}/share/java/classes</filename>."
 msgstr ""
-"O diretório onde os arquivos JAR instalados por outras ports estão "
-"localizados. Padrão:<filename>$ {LOCALBASE}/share/java/classes</filename>"
+"O diretório onde os arquivos JAR instalados por outros ports estão "
+"localizados. Padrão: <filename>${LOCALBASE}/share/java/classes</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12690
-#, fuzzy
 msgid ""
 "The related entries are defined in both <varname>PLIST_SUB</varname> "
 "(documented in <xref linkend=\"plist-sub\"/>) and <varname>SUB_LIST</"
 "varname>."
 msgstr ""
-"As entradas relacionadas são definidas em ambos<varname>PLIST_SUB</"
-"varname>(documentado em<xref linkend=\"plist-sub\"/>) e<varname>SUB_LIST</"
-"varname>"
+"As entradas relacionadas são definidas em ambos <varname>PLIST_SUB</varname> "
+"(documentado em <xref linkend=\"plist-sub\"/>) e <varname>SUB_LIST</varname>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12697
@@ -23205,7 +23165,6 @@ msgstr "Construindo com Ant"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12699
-#, fuzzy
 msgid ""
 "When the port is to be built using Apache Ant, it has to define "
 "<varname>USE_ANT</varname>. Ant is thus considered to be the sub-make "
@@ -23215,12 +23174,12 @@ msgid ""
 "similar to the <literal>USES= gmake</literal> mechanism, which is documented "
 "in <xref linkend=\"building\"/>."
 msgstr ""
-"Quando o port deve ser construída usando o Apache Ant, ela deve "
-"definir<varname>USE_ANT</varname>. Ant é, portanto, considerado o comando "
-"sub-make. Quando nenhum destino <_:buildtarget-1/> é definido pela porta, "
-"será definido um padrão que execute Ant de acordo com<varname>MAKE_ENV</"
-"varname>, <varname>MAKE_ARGS</varname> e <varname>ALL_TARGET</varname>. Isso "
-"é semelhante ao<literal>USES = gmake</literal>mecanismo, documentado em<xref "
+"Quando o port deve ser construído usando o Apache Ant, ele deve definir "
+"<varname>USE_ANT</varname>. Ant é, portanto, considerado o comando sub-make. "
+"Quando nenhum destino <_:buildtarget-1/> é definido pelo port, será definido "
+"um padrão que execute Ant de acordo com <varname>MAKE_ENV</varname>, "
+"<varname>MAKE_ARGS</varname> e <varname>ALL_TARGET</varname>. Isso é "
+"semelhante ao mecanismo <literal>USES=gmake</literal>, documentado em <xref "
 "linkend=\"building\"/>"
 
 #. (itstool) path: sect2/title
@@ -23230,7 +23189,6 @@ msgstr "Melhores práticas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12713
-#, fuzzy
 msgid ""
 "When porting a Java library, the port has to install the JAR file(s) in "
 "<filename>${JAVAJARDIR}</filename>, and everything else under "
@@ -23240,13 +23198,14 @@ msgid ""
 "statement (where <filename><replaceable>myport</replaceable>.jar</filename> "
 "is the name of the JAR file installed as part of the port):"
 msgstr ""
-"Ao portar uma biblioteca Java, o port precisa instalar o (s) arquivo (s) JAR "
-"em<filename>$ {JAVAJARDIR}</filename>e tudo mais sob<filename>$ "
-"{JAVASHAREDIR}/$ {PORTNAME}</filename>(exceto para a documentação, veja "
-"abaixo). Para reduzir o tamanho do arquivo de packing, faça referência aos "
-"arquivos JAR diretamente no<filename>Makefile</filename>. Use esta "
-"declaração (onde<filename><replaceable>myport</replaceable>.jar</filename>é "
-"o nome do arquivo JAR instalado como parte do port): "
+"Ao portar uma biblioteca Java, o port precisa instalar o(s) arquivo(s) JAR "
+"em <filename>${JAVAJARDIR}</filename> e tudo mais sob "
+"<filename>${JAVASHAREDIR}/${PORTNAME}</filename> (exceto para a "
+"documentação, veja abaixo). Para reduzir o tamanho do arquivo de packing, "
+"faça referência aos arquivos JAR diretamente no <filename>Makefile</"
+"filename>. Use esta declaração (onde <filename><replaceable>myport</"
+"replaceable>.jar</filename> é o nome do arquivo JAR instalado como parte do "
+"port): "
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12724
@@ -23256,7 +23215,6 @@ msgstr "PLIST_FILES+=\t${JAVAJARDIR}/<replaceable>myport</replaceable>.jar"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12726
-#, fuzzy
 msgid ""
 "When porting a Java application, the port usually installs everything under "
 "a single directory (including its JAR dependencies). The use of "
@@ -23266,15 +23224,14 @@ msgid ""
 "installed ones (from <filename>${JAVAJARDIR}</filename>)."
 msgstr ""
 "Ao portar um aplicativo Java, o port geralmente instala tudo em um único "
-"diretório (incluindo suas dependências JAR). O uso de<filename>$ "
-"{JAVASHAREDIR}/$ {PORTNAME}</filename>é fortemente encorajado a este "
-"respeito. Cabe ao porteiro decidir se o port instala as dependências JAR "
-"adicionais sob esse diretório ou utiliza as já instaladas (de<filename>$ "
+"diretório (incluindo suas dependências JAR). O uso de "
+"<filename>${JAVASHAREDIR}/${PORTNAME}</filename> é fortemente encorajado a "
+"este respeito. Cabe ao porter decidir se o port instala as dependências JAR "
+"adicionais sob esse diretório ou utiliza as já instaladas (de <filename>$ "
 "{JAVAJARDIR}</filename>) "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12736
-#, fuzzy
 msgid ""
 "When porting a <trademark>Java</trademark> application that requires an "
 "application server such as <package role=\"port\">www/tomcat7</package> to "
@@ -23288,17 +23245,17 @@ msgid ""
 "install the files, and lastly add these files to <filename>pkg-plist</"
 "filename>."
 msgstr ""
-"Ao portar um<trademark>Java</trademark>aplicativo que requer um servidor de "
-"aplicativos, como<package role=\"port\">www/tomcat7</package>para executar o "
-"serviço, é bastante comum que um fornecedor distribua um<filename>.guerra</"
-"filename>. UMA<filename>.guerra</filename>é um aplicativo da Web ARchive e é "
-"extraído quando chamado pelo aplicativo. Evite adicionar um<filename>."
-"guerra</filename>para<filename>pkg-plist</filename>. Não é considerado a "
-"melhor prática. Um servidor de aplicativos irá expandir<application>guerra</"
-"application>arquivar, mas não limpá-lo corretamente se o port for removida. "
-"Uma forma mais desejável de trabalhar com este arquivo é extrair o arquivo, "
-"depois instalar os arquivos e, por fim, adicionar esses "
-"arquivos<filename>pkg-plist</filename>"
+"Ao portar um aplicativo <trademark>Java</trademark> que requer um servidor "
+"de aplicativos, como <package role=\"port\">www/tomcat7</package> para "
+"executar o serviço, é bastante comum que um fornecedor distribua um "
+"<filename>.war</filename>. Um <filename>.war</filename> é um aplicativo da "
+"Web ARchive e é extraído quando chamado pelo aplicativo. Evite adiciona  um "
+"<filename>.war</filename> em <filename>pkg-plist</filename>. Não é "
+"considerado a melhor prática. Um servidor de aplicativos irá expandir o "
+"arquivo mas não ira remover se o port for removida. Uma forma mais desejável "
+"de trabalhar com este arquivo é extrair o arquivo, depois instalar os "
+"arquivos e, por fim, adicionar esses arquivos em <filename>pkg-plist</"
+"filename>"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12752
@@ -23334,7 +23291,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12764
-#, fuzzy
 msgid ""
 "Regardless of the type of port (library or application), the additional "
 "documentation is installed in the <link linkend=\"install-"
@@ -23349,22 +23305,21 @@ msgid ""
 "<filename>pkg-plist</filename> advocates for the use of <varname>PORTDOCS</"
 "varname>."
 msgstr ""
-"Independentemente do tipo de porta (biblioteca ou aplicativo), a "
-"documentação adicional é instalada no<link linkend=\"install-"
-"documentation\">mesma localização</link>como para qualquer outra porta. A "
+" Independentemente do tipo de port (biblioteca ou aplicativo), a "
+"documentação adicional é instalada na <link linkend=\"install-"
+"documentation\"> mesma localização </link> como para qualquer outro port. A "
 "ferramenta Javadoc é conhecida por produzir um conjunto diferente de "
-"arquivos, dependendo da versão do<acronym>JDK</acronym>utilizada. Para ports "
-"que não impõem o uso de um determinado<acronym>JDK</acronym>, é uma tarefa "
-"complexa especificar a lista de empacotamento (<filename>pkg-plist</"
-"filename>). Esta é uma razão pela qual os carregadores são fortemente "
-"encorajados a usar<varname>PORTDOCS</varname>. Além disso, mesmo se o "
-"conjunto de arquivos que serão gerados por<command>javadoc</command>pode ser "
-"previsto, o tamanho do resultado<filename>pkg-plist</filename>defensores do "
-"uso de<varname>PORTDOCS</varname>"
+"arquivos, dependendo da versão do <acronym>JDK</acronym> utilizado. Para "
+"ports que não impõem o uso de um determinado <acronym>JDK</acronym>, é uma "
+"tarefa complexa especificar a lista de empacotamento (<filename>pkg-plist</"
+"filename>). Esta é uma razão pela qual os porters são fortemente encorajados "
+"a usar <varname>PORTDOCS</varname>. Além disso, mesmo se o conjunto de "
+"arquivos que serão gerados por <command>javadoc</command> puderem ser "
+"previsto, o tamanho do resultado <filename>pkg-plist</filename> defende o "
+"uso de <varname>PORTDOCS</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12780
-#, fuzzy
 msgid ""
 "The default value for <varname>DATADIR</varname> is <filename>${PREFIX}/"
 "share/${PORTNAME}</filename>. It is a good idea to override "
@@ -23374,17 +23329,16 @@ msgid ""
 "linkend=\"plist-sub\"/>) so use <literal>%%DATADIR%%</literal> directly in "
 "<filename>pkg-plist</filename>."
 msgstr ""
-"O valor padrão para<varname>DATADIR</varname> é <filename>$ {PREFIX}/share/$ "
-"{PORTNAME}</filename>. É uma boa ideia anular<varname>DATADIR</"
-"varname>para<filename>$ {JAVASHAREDIR}/$ {PORTNAME}</filename>para ports "
-"Java. De fato,<varname>DATADIR</varname>é automaticamente adicionado "
-"a<varname>PLIST_SUB</varname>(documentado em<xref linkend=\"plist-sub\"/>) "
-"então use<literal>%% DATADIR %%</literal>diretamente em<filename>pkg-plist</"
-"filename>"
+"O valor padrão para <varname>DATADIR</varname> é <filename>${PREFIX}/share/"
+"${PORTNAME}</filename>. É uma boa ideia sobreescrever <varname>DATADIR</"
+"varname> para <filename>${JAVASHAREDIR}/${PORTNAME}</filename> para ports "
+"Java. De fato, <varname>DATADIR</varname> é automaticamente adicionado a "
+"<varname>PLIST_SUB</varname> (documentado em<xref linkend=\"plist-sub\"/>) "
+"então use <literal>%% DATADIR %%</literal> diretamente em <filename>pkg-"
+"plist</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12790
-#, fuzzy
 msgid ""
 "As for the choice of building Java ports from source or directly installing "
 "them from a binary distribution, there is no defined policy at the time of "
@@ -23392,16 +23346,15 @@ msgid ""
 "java/\">FreeBSD Java Project</link> encourage porters to have their ports "
 "built from source whenever it is a trivial task."
 msgstr ""
-"Quanto à escolha de build ports Java a partir da fonte ou diretamente "
-"instalá-las a partir de uma distribuição binária, não há política definida "
-"no momento da escrita. No entanto, as pessoas do<link xlink:href=\"https://"
-"www.freebsd.org/java/\">Projeto Java do FreeBSD</link>encorajar os "
-"carregadores a terem seus ports construídos a partir da fonte sempre que for "
-"uma tarefa trivial. "
+"Quanto à escolha de buildar ports Java a partir da fonte ou instalar "
+"diretamente a partir de uma distribuição binária, não há política definida "
+"no momento da escrita. No entanto, as pessoas do <link xlink:href=\"https://"
+"www.freebsd.org/java/\">Projeto Java do FreeBSD</link> encorajam os porters "
+"a terem seus ports construídos a partir do codigo fonte sempre que for uma "
+"tarefa trivial. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12798
-#, fuzzy
 msgid ""
 "All the features that have been presented in this section are implemented in "
 "<filename>bsd.java.mk</filename>. If the port needs more sophisticated Java "
@@ -23413,20 +23366,19 @@ msgid ""
 "it on the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-java\">FreeBSD Java Language mailing list</link>."
 msgstr ""
-"Todos os recursos que foram apresentados nesta seção são implementados "
-"em<filename>bsd.java.mk</filename>. Se o port precisar de suporte Java mais "
-"sofisticado, por favor, primeiro dê uma olhada no<link xlink:href=\"http://"
-"svnweb.FreeBSD.org/ports/head/Mk/bsd.java.mk?view=log\">bsd.java."
-"mk<application>Subversion</application>registro</link>como normalmente leva "
-"algum tempo para documentar os recursos mais recentes. Então, se o suporte "
+"Todos os recursos que foram apresentados nesta seção são implementados em "
+"<filename>bsd.java.mk</filename>. Se o port precisar de suporte Java mais "
+"sofisticado, por favor, primeiro dê uma olhada no log do <link xlink:href="
+"\"http://svnweb.FreeBSD.org/ports/head/Mk/bsd.java.mk?view=log\">bsd.java."
+"mk<application>Subversion</application></link> como normalmente leva algum "
+"tempo para documentar os recursos mais recentes. Então, se o suporte "
 "necessário que estiver faltando for benéfico para muitas outras ports Java, "
-"sinta-se à vontade para discuti-lo<link xlink:href=\"http://lists.FreeBSD."
-"org/mailman/listinfo/freebsd-java\">Lista de discussão do FreeBSD Java "
-"Language</link>"
+"sinta-se à vontade para discuti-lo na <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/freebsd-java\">Lista de discussão do FreeBSD "
+"Java Language</link>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12808
-#, fuzzy
 msgid ""
 "Although there is a <literal>java</literal> category for PRs, it refers to "
 "the <acronym>JDK</acronym> porting effort from the FreeBSD Java project. "
@@ -23434,22 +23386,21 @@ msgid ""
 "for any other port, unless the issue is related to either a <acronym>JDK</"
 "acronym> implementation or <filename>bsd.java.mk</filename>."
 msgstr ""
-"Embora haja uma<literal>Java</literal>categoria para PRs, refere-se ao "
-"esforço de portabilidade do<acronym>JDK</acronym>do projeto Java do FreeBSD. "
-"Portanto, envie o port Java no<literal>ports</literal>categoria como para "
-"qualquer outra porta, a menos que o problema esteja relacionado a uma "
-"implementação<acronym>JDK</acronym> ou <filename>bsd.java.mk</filename>"
+"Embora haja uma <literal>Java</literal> categoria para PRs, isso refere-se "
+"ao esforço de portabilidade do <acronym>JDK</acronym> do projeto Java do "
+"FreeBSD. Portanto, envie o port Java na categoria <literal>ports</literal> "
+"como para qualquer outro port, a menos que o problema esteja relacionado a "
+"uma implementação <acronym>JDK</acronym> ou <filename>bsd.java.mk</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12816
-#, fuzzy
 msgid ""
 "Similarly, there is a defined policy regarding the <varname>CATEGORIES</"
 "varname> of a Java port, which is detailed in <xref linkend=\"makefile-"
 "categories\"/>."
 msgstr ""
-"Da mesma forma, existe uma política definida sobre o<varname>CATEGORIES</"
-"varname>de um port Java, que é detalhada em<xref linkend=\"makefile-"
+"Da mesma forma, existe uma política definida sobre o <varname>CATEGORIES</"
+"varname> de um port Java, que é detalhada em <xref linkend=\"makefile-"
 "categories\"/>"
 
 #. (itstool) path: sect1/title
@@ -23474,7 +23425,6 @@ msgstr "<varname>USE_APACHE</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12836
-#, fuzzy
 msgid ""
 "The port requires Apache. Possible values: <literal>yes</literal> (gets any "
 "version), <literal>22</literal>, <literal>24</literal>, <literal>22-24</"
@@ -23483,11 +23433,11 @@ msgid ""
 "apache.mk</filename> and at <link xlink:href=\"https://wiki.freebsd.org/"
 "Apache/\">wiki.freebsd.org/Apache/</link>."
 msgstr ""
-"O port requer o Apache. Valores possíveis:<literal>yes</literal>(obtém "
-"qualquer versão),<literal>22</literal>, <literal>24</literal>, <literal>22 a "
-"24</literal>, <literal>22+</literal>, etc. A versão padrão do APACHE "
-"é<literal>22</literal>. Mais detalhes estão disponíveis em<filename>ports/Mk/"
-"bsd.apache.mk</filename>e em<link xlink:href=\"https://wiki.freebsd.org/"
+"O port requer o Apache. Valores possíveis: <literal>yes</literal> (obtém "
+"qualquer versão), <literal>22</literal>, <literal>24</literal>, <literal>22 "
+"a 24</literal>, <literal>22+</literal>, etc. A versão padrão do APACHE é "
+"<literal>22</literal>. Mais detalhes estão disponíveis em <filename>ports/Mk/"
+"bsd.apache.mk</filename> e em <link xlink:href=\"https://wiki.freebsd.org/"
 "Apache/\">wiki.freebsd.org/Apache/</link>"
 
 #. (itstool) path: row/entry
@@ -23497,13 +23447,12 @@ msgstr "<varname>APXS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12848
-#, fuzzy
 msgid ""
 "Full path to the <command>apxs</command> binary. Can be overridden in the "
 "port."
 msgstr ""
-"Caminho completo para o<command>apxs</command>binário. Pode ser substituído "
-"no port \""
+"Caminho completo para o binário <command>apxs</command>. Pode ser "
+"substituído no port."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12853
@@ -23512,13 +23461,12 @@ msgstr "<varname>HTTPD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12854
-#, fuzzy
 msgid ""
 "Full path to the <command>httpd</command> binary. Can be overridden in the "
 "port."
 msgstr ""
-"Caminho completo para o<command>httpd</command>binário. Pode ser substituído "
-"no port \""
+"Caminho completo para o binário <command>httpd</command>. Pode ser "
+"substituído no port."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12859
@@ -23527,15 +23475,14 @@ msgstr "<varname>APACHE_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12860
-#, fuzzy
 msgid ""
 "The version of present Apache installation (read-only variable). This "
 "variable is only available after inclusion of <filename>bsd.port.pre.mk</"
 "filename>. Possible values: <literal>22</literal>, <literal>24</literal>."
 msgstr ""
 "A versão da instalação atual do Apache (variável somente leitura). Esta "
-"variável só está disponível após a inclusão de<filename>bsd.port.pre.mk</"
-"filename>. Valores possíveis:<literal>22</literal>, <literal>24</literal>"
+"variável só está disponível após a inclusão de <filename>bsd.port.pre.mk</"
+"filename>. Valores possíveis: <literal>22</literal>, <literal>24</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12869
@@ -23544,13 +23491,12 @@ msgstr "<varname>APACHEMODDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12870
-#, fuzzy
 msgid ""
 "Directory for Apache modules. This variable is automatically expanded in "
 "<filename>pkg-plist</filename>."
 msgstr ""
-"Directory for Apache modules. Esta variável é automaticamente expandida "
-"em<filename>pkg-plist</filename>"
+"Directorio para modules Apache. Esta variável é automaticamente expandida em "
+"<filename>pkg-plist</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12876
@@ -23559,13 +23505,12 @@ msgstr "<varname>APACHEINCLUDEDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12877
-#, fuzzy
 msgid ""
 "Directory for Apache headers. This variable is automatically expanded in "
 "<filename>pkg-plist</filename>."
 msgstr ""
 "Diretório para cabeçalhos Apache. Esta variável é automaticamente expandida "
-"em<filename>pkg-plist</filename>"
+"em <filename>pkg-plist</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12883
@@ -23574,17 +23519,15 @@ msgstr "<varname>APACHEETCDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12884
-#, fuzzy
 msgid ""
 "Directory for Apache configuration files. This variable is automatically "
 "expanded in <filename>pkg-plist</filename>."
 msgstr ""
 "Diretório para arquivos de configuração do Apache. Esta variável é "
-"automaticamente expandida em<filename>pkg-plist</filename>"
+"automaticamente expandida em <filename>pkg-plist</filename>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:12893
-#, fuzzy
 msgid "Useful Variables for Porting Apache Modules"
 msgstr "Variáveis ​​úteis para portar módulos do Apache"
 
@@ -23595,13 +23538,12 @@ msgstr "<varname>MODULENAME</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12900
-#, fuzzy
 msgid ""
 "Name of the module. Default value is <varname>PORTNAME</varname>. Example: "
 "<literal>mod_hello</literal>"
 msgstr ""
-"Nome do módulo. O valor padrão é<varname>PORTNAME</varname>. Exemplo:"
-"<literal>mod_hello</literal>"
+"Nome do módulo. O valor padrão é <varname>PORTNAME</varname>. \n"
+" Exemplo: <literal>mod_hello</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12906
@@ -23610,13 +23552,13 @@ msgstr "<varname>SHORTMODNAME</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12907
-#, fuzzy
 msgid ""
 "Short name of the module. Automatically derived from <varname>MODULENAME</"
 "varname>, but can be overridden. Example: <literal>hello</literal>"
 msgstr ""
-"Nome abreviado do módulo. Automaticamente derivado de<varname>NOME DO "
-"MÓDULO</varname>, mas pode ser substituído. Exemplo:<literal>Olá</literal>"
+"Nome abreviado do módulo. Automaticamente derivado de <varname>MODULENAME</"
+"varname>, mas pode ser substituído. Exemplo:\n"
+" <literal>Olá</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12914
@@ -23625,9 +23567,8 @@ msgstr "<varname>AP_FAST_BUILD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12915
-#, fuzzy
 msgid "Use <command>apxs</command> to compile and install the module."
-msgstr "Usar<command>apxs</command>para compilar e instalar o módulo. "
+msgstr "Usar <command>apxs</command> para compilar e instalar o módulo. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12920
@@ -23636,9 +23577,8 @@ msgstr "<varname>AP_GENPLIST</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12921
-#, fuzzy
 msgid "Also automatically creates a <filename>pkg-plist</filename>."
-msgstr "Também cria automaticamente um<filename>pkg-plist</filename>"
+msgstr "Também cria automaticamente um <filename>pkg-plist</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12926
@@ -23657,9 +23597,10 @@ msgstr "<varname>AP_LIB</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12933
-#, fuzzy
 msgid "Adds a directory to a library search path during compilation."
-msgstr "Adds a directory to a library search path during compilation."
+msgstr ""
+"Adiciona um diretório para uma biblioteca de procura de caminho durante a "
+"compilação."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12938
@@ -23668,9 +23609,8 @@ msgstr "<varname>AP_EXTRAS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12939
-#, fuzzy
 msgid "Additional flags to pass to <command>apxs</command>."
-msgstr "Bandeiras adicionais para passar para<command>apxs</command>"
+msgstr "Flags adicionais para passar para <command>apxs</command>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12948
@@ -23679,7 +23619,6 @@ msgstr "Aplicativos da web"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12950
-#, fuzzy
 msgid ""
 "Web applications must be installed into <filename>PREFIX/www/"
 "<replaceable>appname</replaceable></filename>. This path is available both "
@@ -23688,16 +23627,15 @@ msgid ""
 "varname> is available in <filename>Makefile</filename> as "
 "<varname>WWWDIR_REL</varname>."
 msgstr ""
-"Aplicativos da Web devem ser instalados em<filename>PREFIXO/www /"
-"<replaceable>nome do aplicativo</replaceable></filename>. Este caminho está "
-"disponível tanto em<filename>Makefile</filename>e em<filename>pkg-plist</"
-"filename>Como<varname>WWWDIR</varname>e o caminho relativo a<varname>PREFIX</"
-"varname>está disponível em<filename>Makefile</"
-"filename>Como<varname>WWWDIR_REL</varname>"
+"Aplicativos da Web devem ser instalados em <filename>PREFIX/www /"
+"<replaceable> nome do aplicativo</replaceable></filename>. Este caminho está "
+"disponível tanto em <filename>Makefile</filename> e em <filename>pkg-plist</"
+"filename> Como <varname>WWWDIR</varname> e o caminho relativo a "
+"<varname>PREFIX</varname> está disponível em<filename>Makefile</filename> "
+"Como <varname>WWWDIR_REL</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12959
-#, fuzzy
 msgid ""
 "The user and group of web server process are available as <varname>WWWOWN</"
 "varname> and <varname>WWWGRP</varname>, in case the ownership of some files "
@@ -23706,28 +23644,26 @@ msgid ""
 "literal> if the port needs different values. This allows the user to "
 "override them easily."
 msgstr ""
-"O usuário e o grupo do processo do servidor web estão disponíveis "
-"como<varname>WWWOWN</varname> e <varname>WWWGRP</varname>, no caso de a "
+"O usuário e o grupo do processo do servidor web estão disponíveis como "
+"<varname>WWWOWN</varname> e <varname>WWWGRP</varname>, no caso de a "
 "propriedade de alguns arquivos precisar ser alterada. Os valores padrão de "
-"ambos são<literal>www</literal>. Usar<literal>WWWOWN? = Myuser</literal> e "
-"<literal>WWWGRP? = Mygroup</literal>se o port precisar de valores diferentes."
-" Isso permite ao usuário substituí-los facilmente. "
+"ambos são <literal>www</literal>. Usar <literal>WWWOWN?=Myuser</literal> e "
+"<literal>WWWGRP?=Mygroup</literal> se o port precisar de valores diferentes. "
+"Isso permite ao usuário substituí-los facilmente. "
 
 #. (itstool) path: important/para
 #: book.translate.xml:12968
-#, fuzzy
 msgid ""
 "Use <varname>WWWOWN</varname> and <varname>WWWGRP</varname> sparingly. "
 "Remember that every file the web server can write to is a security risk "
 "waiting to happen."
 msgstr ""
-"Usar<varname>WWWOWN</varname> e <varname>WWWGRP</varname>com moderação. "
+"Usar <varname>WWWOWN</varname> e <varname>WWWGRP</varname> com moderação. "
 "Lembre-se de que todos os arquivos para os quais o servidor da Web pode "
 "gravar é um risco de segurança que está prestes a acontecer. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12974
-#, fuzzy
 msgid ""
 "Do not depend on Apache unless the web app explicitly needs Apache. Respect "
 "that users may wish to run a web application on a web server other than "
@@ -23735,13 +23671,12 @@ msgid ""
 msgstr ""
 "Não dependa do Apache, a menos que o aplicativo da Web precise "
 "explicitamente do Apache. Respeite que os usuários podem desejar executar um "
-"aplicativo da Web em um servidor da Web diferente de<application>Apache</"
+"aplicativo da Web em um servidor da Web diferente do <application>Apache</"
 "application>"
 
 # auto translated by TM merge from project: pfSense, version: 2.4, DocId: pfSense
 #. (itstool) path: sect2/title
 #: book.translate.xml:12981
-#, fuzzy
 msgid "PHP"
 msgstr "PHP"
 
@@ -23758,7 +23693,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12989
-#, fuzzy
 msgid "PEAR Modules"
 msgstr "Módulos PEAR"
 
@@ -23769,19 +23703,17 @@ msgstr "Portar módulos PEAR é um processo muito simples."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12993
-#, fuzzy
 msgid ""
 "Add <literal>USES=pear</literal> to the port's <filename>Makefile</filename>."
 " The framework will install the relevant files in the right places and "
 "automatically generate the plist at install time."
 msgstr ""
-"Adicionar<literal>USES=pêra</literal>para o porto<filename>Makefile</"
-"filename>. A estrutura instalará os arquivos relevantes nos lugares certos e "
+"Adicionar <literal>USES=pearl</literal> para o <filename>Makefile</filename> "
+"do port. A estrutura instalará os arquivos relevantes nos lugares certos e "
 "gerará automaticamente a lista no momento da instalação. "
 
 #. (itstool) path: example/title
 #: book.translate.xml:12999
-#, fuzzy
 msgid "Example Makefile for PEAR Class"
 msgstr "Exemplo de Makefile para a classe PEAR"
 
@@ -23824,17 +23756,15 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:13020
-#, fuzzy
 msgid ""
 "If a non default <varname>PEAR_CHANNEL</varname> is used, the build and run-"
 "time dependencies will automatically be added."
 msgstr ""
-"Se um não padrão<varname>PEAR_CHANNEL</varname>for usado, as dependências de "
-"construção e tempo de execução serão automaticamente adicionadas. "
+"Se um <varname>PEAR_CHANNEL</varname> não padrão for usado, as dependências "
+"de construção e tempo de execução serão automaticamente adicionadas. "
 
 #. (itstool) path: important/para
 #: book.translate.xml:13026
-#, fuzzy
 msgid ""
 "PEAR modules do not need to defined <varname>PKGNAMESUFFIX</varname> it is "
 "automatically filled in using <varname>PEAR_PKGNAMEPREFIX</varname>. If a "
@@ -23842,10 +23772,10 @@ msgid ""
 "<varname>PEAR_PKGNAMEPREFIX</varname> to differentiate between different "
 "flavors."
 msgstr ""
-"Módulos PEAR não precisam ser definidos<varname>PKGNAMESUFFIX</varname>é "
-"preenchido automaticamente usando<varname>PEAR_PKGNAMEPREFIX</varname>. Se "
-"um port precisar adicionar<varname>PKGNAMEPREFIX</varname>, também deve "
-"usar<varname>PEAR_PKGNAMEPREFIX</varname>para diferenciar entre diferentes "
+"Módulos PEAR não precisam definir  <varname>PKGNAMESUFFIX</varname>, é "
+"preenchido automaticamente usando <varname>PEAR_PKGNAMEPREFIX</varname>. Se "
+"um port precisar adicionar <varname>PKGNAMEPREFIX</varname>, também deve "
+"usar <varname>PEAR_PKGNAMEPREFIX</varname> para diferenciar entre diferentes "
 "flavores \""
 
 #. (itstool) path: sect3/title
@@ -23855,46 +23785,42 @@ msgstr "<application>Horde</application>módulos"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13037
-#, fuzzy
 msgid ""
 "In the same way, porting <application>Horde</application> modules is a "
 "simple process."
 msgstr ""
-"Da mesma forma, portando<application>Horda</application>módulos é um "
-"processo simples \""
+"Da mesma forma, portar módulos <application>Horde</application> é um "
+"processo simples."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13041
-#, fuzzy
 msgid ""
 "Add <literal>USES=horde</literal> to the port's <filename>Makefile</"
 "filename>. The framework will install the relevant files in the right places "
 "and automatically generate the plist at install time."
 msgstr ""
-"Adicionar<literal>USES=horde</literal>para o porto<filename>Makefile</"
-"filename>. A estrutura instalará os arquivos relevantes nos lugares certos e "
+"Adicionar <literal>USES=horde</literal> para o <filename>Makefile</filename> "
+"do port . A estrutura instalará os arquivos relevantes nos lugares certos e "
 "gerará automaticamente a lista no momento da instalação. "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13046
-#, fuzzy
 msgid ""
 "The <varname>USE_HORDE_BUILD</varname> and <varname>USE_HORDE_RUN</varname> "
 "variables can be used to add buildtime and runtime dependencies on other "
 "<application>Horde</application> modules. See <filename>Mk/Uses/horde.mk</"
 "filename> for a complete list of available modules."
 msgstr ""
-"O<varname>USE_HORDE_BUILD</varname> e <varname>USE_HORDE_RUN</"
-"varname>variáveis ​​podem ser usadas para adicionar dependências de tempo de "
-"execução e tempo de execução em outros<application>Horda</"
-"application>módulos. Veja <filename>Mk/Usos/horde.mk</filename>para uma "
-"lista completa dos módulos disponíveis. "
+"As variáveis <varname>USE_HORDE_BUILD</varname> e <varname>USE_HORDE_RUN</"
+"varname> ​​podem ser usadas para adicionar dependências de tempo de execução "
+"e tempo de execução em outros modulos <application>Horda</application>. Veja "
+"<filename>Mk/Usos/horde.mk</filename> para uma lista completa dos módulos "
+"disponíveis. "
 
 #. (itstool) path: example/title
 #: book.translate.xml:13054
-#, fuzzy
 msgid "Example Makefile for <application>Horde</application> Module"
-msgstr "Exemplo Makefile para<application>Horda</application>Módulo"
+msgstr "Exemplo de Makefile para módulos <application>Horde</application>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13057
@@ -23948,16 +23874,15 @@ msgstr ""
 
 #. (itstool) path: tip/para
 #: book.translate.xml:13082
-#, fuzzy
 msgid ""
 "As <application>Horde</application> modules are also <application>PEAR</"
 "application> modules they will also automatically be flavorized using <link "
 "linkend=\"flavors-auto-php\"><application>PHP</application> flavors</link>."
 msgstr ""
-"Como<application>Horda</application>módulos também são<application>PERA</"
-"application>módulos eles também serão automaticamente aromatizados "
-"usando<link linkend=\"flavors-auto-php\"><application>PHP</"
-"application>flavores</link>"
+"Como modulos <application>Horda</application> também são módulos "
+"<application>PEAR</application> eles também serão automaticamente "
+"aromatizados usando flavors <link linkend=\"flavors-auto-"
+"php\"><application>PHP</application></link>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13092
@@ -23966,7 +23891,6 @@ msgstr "Usando o Python"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13094
-#, fuzzy
 msgid ""
 "The Ports Collection supports parallel installation of multiple Python "
 "versions. Ports must use a correct <command>python</command> interpreter, "
@@ -23975,22 +23899,22 @@ msgid ""
 "executable in scripts with the value of <varname>PYTHON_CMD</varname>."
 msgstr ""
 "O Ports Collection suporta a instalação paralela de várias versões do Python."
-" As ports devem usar um<command>python</command>intérprete, de acordo com o "
-"usuário configurável<varname>PYTHON_VERSION</varname>. Mais "
-"proeminentemente, isso significa substituir o caminho para<command>python</"
-"command>executável em scripts com o valor de<varname>PYTHON_CMD</varname>"
+" Os ports devem usar um interpretador <command>python</command>, de acordo "
+"com o usuário configurável <varname>PYTHON_VERSION</varname>. Mais "
+"proeminentemente, isso significa substituir o caminho para o executavel "
+"<command>python</command> em scripts com o valor de <varname>PYTHON_CMD</"
+"varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13102
-#, fuzzy
 msgid ""
 "Ports that install files under <varname>PYTHON_SITELIBDIR</varname> must use "
 "the <literal>pyXY-</literal> package name prefix, so their package name "
 "embeds the version of Python they are installed into."
 msgstr ""
-"Ports que instalam arquivos sob<varname>PYTHON_SITELIBDIR</varname>deve usar "
-"o<literal>pyXY-</literal>prefixo do nome do pacote, para que o nome do "
-"pacote incorpore a versão do Python em que estão instalados. "
+"Ports que instalam arquivos sob <varname>PYTHON_SITELIBDIR</varname> deve "
+"usar o prefixo <literal>pyXY-</literal> do nome do pacote, para que o nome "
+"do pacote incorpore a versão do Python em que estão instalados. "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:13108
@@ -24000,7 +23924,6 @@ msgstr "PKGNAMEPREFIX=\t${PYTHON_PKGNAMEPREFIX}"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13111
-#, fuzzy
 msgid "Most Useful Variables for Ports That Use Python"
 msgstr "Variáveis ​​mais úteis para ports que usam Python"
 
@@ -24011,7 +23934,6 @@ msgstr "<varname>USES = python</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13117
-#, fuzzy
 msgid ""
 "The port needs Python. The minimal required version can be specified with "
 "values such as <literal>2.7+</literal>. Version ranges can also be specified "
@@ -24019,8 +23941,8 @@ msgid ""
 "literal>"
 msgstr ""
 "O port precisa do Python. A versão mínima necessária pode ser especificada "
-"com valores como<literal>2,7+</literal>. Os intervalos de versão também "
-"podem ser especificados separando dois números de versão com um traço:"
+"com valores como <literal>2.7+</literal>. Os intervalos de versão também "
+"podem ser especificados separando dois números de versão com um traço: "
 "<literal>USES=python: 3.2-3.3</literal>"
 
 #. (itstool) path: row/entry
@@ -24030,7 +23952,6 @@ msgstr "<varname>USE_PYTHON = distutils</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13126
-#, fuzzy
 msgid ""
 "Use Python distutils for configuring, compiling, and installing. This is "
 "required when the port comes with <filename>setup.py</filename>. This "
@@ -24039,10 +23960,10 @@ msgid ""
 "defined. Additionally, it implies <literal>USE_PYTHON=flavors</literal>."
 msgstr ""
 "Use distutils do Python para configurar, compilar e instalar. Isso é "
-"necessário quando o port vem com<filename>setup.py</filename>. Isso "
+"necessário quando o port vem com <filename>setup.py</filename>. Isso "
 "sobrescreve os destinos <_:buildtarget-1/> e <_:buildtarget-2/> e também "
-"pode substituir <_:buildtarget-3/> se<varname>GNU_CONFIGURE</varname>não "
-"está definido. Além disso, isso implica<literal>USE_PYTHON = flavores</"
+"pode substituir <_:buildtarget-3/> se <varname>GNU_CONFIGURE</varname> não "
+"está definido. Além disso, isso implica <literal>USE_PYTHON = flavors</"
 "literal>"
 
 #. (itstool) path: row/entry
@@ -24052,13 +23973,12 @@ msgstr "<varname>USE_PYTHON = lista automática</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13139
-#, fuzzy
 msgid ""
 "Create the packaging list automatically. This also requires "
 "<literal>USE_PYTHON=distutils</literal> to be set."
 msgstr ""
-"Crie a lista de pacotes automaticamente. Isso também "
-"requer<literal>USE_PYTHON = distutils</literal>para ser definido. "
+"Crie a lista de pacotes automaticamente. Isso também requer "
+"<literal>USE_PYTHON=distutils</literal> para ser definido. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13145
@@ -24067,7 +23987,6 @@ msgstr "<varname>USE_PYTHON = concorrente</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13146
-#, fuzzy
 msgid ""
 "The port will use an unique prefix, typically <literal>PYTHON_PKGNAMEPREFIX</"
 "literal> for certain directories, such as <literal>EXAMPLESDIR</literal> and "
@@ -24076,13 +23995,13 @@ msgid ""
 "This allows ports to be installed for different Python versions at the same "
 "time, which otherwise would install conflicting files."
 msgstr ""
-"O port usará um prefixo exclusivo, normalmente<literal>PYTHON_PKGNAMEPREFIX</"
-"literal>para determinados diretórios, como<literal>EXEMPLOSDIR</literal> e "
-"<literal>DOCSDIR</literal>e também irá acrescentar um sufixo, a versão "
-"python de<literal>PYTHON_VER</literal>, para binários e scripts a serem "
-"instalados. Isso permite que os ports sejam instaladas para diferentes "
-"versões do Python ao mesmo tempo, o que de outra forma instalaria arquivos "
-"conflitantes. "
+"O port usará um prefixo exclusivo,  normalmente "
+"<literal>PYTHON_PKGNAMEPREFIX</literal> para determinados diretórios, como "
+"<literal>EXEMPLOSDIR</literal> e <literal>DOCSDIR</literal> e também irá "
+"acrescentar um sufixo, a versão python de <literal>PYTHON_VER</literal>, "
+"para binários e scripts a serem instalados. Isso permite que os ports sejam "
+"instaladas para diferentes versões do Python ao mesmo tempo, o que de outra "
+"forma instalaria arquivos conflitantes. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13158
@@ -24091,16 +24010,15 @@ msgstr "<literal>USE_PYTHON=flavors</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13159
-#, fuzzy
 msgid ""
 "The port does not use distutils but still supports multiple Python versions. "
 "<varname>FLAVORS</varname> will be set to the supported Python versions. See "
 "<xref linkend=\"flavors-auto-python\"/> for more information."
 msgstr ""
 "O port não usa distutils, mas ainda suporta várias versões do Python."
-"<varname>FLAVORES</varname>será definido para as versões suportadas do "
-"Python. Veja <xref linkend=\"flavors-auto-python\"/>Para maiores informações."
-""
+"<varname>FLAVORS</varname> será definido para as versões suportadas do "
+"Python. Veja <xref linkend=\"flavors-auto-python\"/> Para maiores "
+"informações."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13166
@@ -24109,15 +24027,14 @@ msgstr "<literal>USE_PYTHON=optsuffix</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13167
-#, fuzzy
 msgid ""
 "If the current Python version is not the default version, the port will gain "
 "<literal>PKGNAMESUFFIX=${PYTHON_PKGNAMESUFFIX}</literal>. Only useful with "
 "flavors."
 msgstr ""
-"Se a versão atual do Python não for a versão padrão, o port "
-"ganhará<literal>PKGNAMESUFFIX = $ {PYTHON_PKGNAMESUFFIX}</literal>. Útil "
-"apenas com flavores. "
+"Se a versão atual do Python não for a versão padrão, o port ganhará "
+"<literal>PKGNAMESUFFIX=${PYTHON_PKGNAMESUFFIX}</literal>. Útil apenas com "
+"flavores. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13174
@@ -24126,13 +24043,12 @@ msgstr "<varname>PYTHON_PKGNAMEPREFIX</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13175
-#, fuzzy
 msgid ""
 "Used as a <varname>PKGNAMEPREFIX</varname> to distinguish packages for "
 "different Python versions. Example: <literal>py27-</literal>"
 msgstr ""
-"Usado como um<varname>PKGNAMEPREFIX</varname>para distinguir pacotes para "
-"diferentes versões do Python. Exemplo:<literal>py27-</literal>"
+"Usado como um <varname>PKGNAMEPREFIX</varname> para distinguir pacotes para "
+"diferentes versões do Python. Exemplo: <literal>py27-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13181
@@ -24141,7 +24057,6 @@ msgstr "<varname>PYTHON_SITELIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13182
-#, fuzzy
 msgid ""
 "Location of the site-packages tree, that contains installation path of "
 "Python (usually <varname>LOCALBASE</varname>). <varname>PYTHON_SITELIBDIR</"
@@ -24149,7 +24064,7 @@ msgid ""
 msgstr ""
 "Local da árvore de pacotes de sites, que contém o caminho de instalação do "
 "Python (geralmente<varname>LOCALBASE</varname>).<varname>PYTHON_SITELIBDIR</"
-"varname>pode ser muito útil ao instalar módulos Python. "
+"varname> pode ser muito útil ao instalar módulos Python. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13190
@@ -24158,7 +24073,6 @@ msgstr "<varname>PYTHONPREFIX_SITELIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13191
-#, fuzzy
 msgid ""
 "The PREFIX-clean variant of PYTHON_SITELIBDIR. Always use "
 "<literal>%%PYTHON_SITELIBDIR%%</literal> in <filename>pkg-plist</filename> "
@@ -24166,8 +24080,8 @@ msgid ""
 "is <literal>lib/python%%PYTHON_VERSION%%/site-packages</literal>"
 msgstr ""
 "A variante PREFIX-clean do PYTHON_SITELIBDIR. Sempre use<literal>%% "
-"PYTHON_SITELIBDIR %%</literal> dentro <filename>pkg-plist</filename>quando "
-"possivel. O valor padrão de<literal>%% PYTHON_SITELIBDIR %%</literal> é "
+"PYTHON_SITELIBDIR %%</literal> dentro <filename>pkg-plist</filename> quando "
+"possivel. O valor padrão de <literal>%% PYTHON_SITELIBDIR %%</literal> é "
 "<literal>lib/python %% PYTHON_VERSION %%/site-packages</literal>"
 
 #. (itstool) path: row/entry
@@ -24177,16 +24091,14 @@ msgstr "<varname>PYTHON_CMD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13201
-#, fuzzy
 msgid "Python interpreter command line, including version number."
 msgstr ""
 "Linha de comando do interpretador Python, incluindo o número da versão."
 
 #. (itstool) path: table/title
 #: book.translate.xml:13209
-#, fuzzy
 msgid "Python Module Dependency Helpers"
-msgstr "Ajuda do Dependency do Módulo Python"
+msgstr "Ajuda do Módulo de Dependencias do Python "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13214
@@ -24195,7 +24107,6 @@ msgstr "<varname>PYNUMERIC</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13215
-#, fuzzy
 msgid "Dependency line for numeric extension."
 msgstr "Linha de dependência para extensão numérica."
 
@@ -24206,7 +24117,6 @@ msgstr "<varname>PYNUMPY</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13220
-#, fuzzy
 msgid ""
 "Dependency line for the new numeric extension, numpy. (PYNUMERIC is "
 "deprecated by upstream vendor)."
@@ -24221,13 +24131,12 @@ msgstr "<varname>PYXML</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13227
-#, fuzzy
 msgid ""
 "Dependency line for XML extension (not needed for Python 2.0 and higher as "
 "it is also in base distribution)."
 msgstr ""
-"Dependency line for XML extension (não necessária para o Python 2.0 e "
-"superior, pois também está na distribuição base)."
+"Extensão de dependencia em linha para XML (não necessária para o Python 2.0 "
+"e superior, pois também está na distribuição base)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13233
@@ -24236,12 +24145,11 @@ msgstr "<varname>PY_ENUM34</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13234
-#, fuzzy
 msgid ""
 "Conditional dependency on <package>devel/py-enum34</package> depending on "
 "the Python version."
 msgstr ""
-"Dependência condicional em<package>devel/py-enum34</package>dependendo da "
+"Dependência condicional em <package>devel/py-enum34</package> dependendo da "
 "versão do Python. "
 
 #. (itstool) path: row/entry
@@ -24251,13 +24159,12 @@ msgstr "<varname>PY_ENUM_COMPAT</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13241
-#, fuzzy
 msgid ""
 "Conditional dependency on <package>devel/py-enum-compat</package> depending "
 "on the Python version."
 msgstr ""
-"Dependência condicional em<package>devel/py-enum-compat</package>dependendo "
-"da versão do Python. "
+"Dependência condicional em <package>devel/py-enum-compat</package> "
+"dependendo da versão do Python."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13247
@@ -24266,13 +24173,12 @@ msgstr "<varname>PY_PATHLIB</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13248
-#, fuzzy
 msgid ""
 "Conditional dependency on <package>devel/py-pathlib</package> depending on "
 "the Python version."
 msgstr ""
-"Dependência condicional em<package>devel/py-pathlib</package>dependendo da "
-"versão do Python. "
+"Dependência condicional em <package>devel/py-pathlib</package> dependendo da "
+"versão do Python."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13254
@@ -24281,13 +24187,12 @@ msgstr "<varname>PY_IPADDRESS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13255
-#, fuzzy
 msgid ""
 "Conditional dependency on <package>net/py-ipaddress</package> depending on "
 "the Python version."
 msgstr ""
-"Dependência condicional em<package>net/py-ipaddress</package>dependendo da "
-"versão do Python. "
+"Dependência condicional em <package>net/py-ipaddress</package> dependendo da "
+"versão do Python."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13261
@@ -24296,27 +24201,24 @@ msgstr "<varname>PY_FUTURES</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13262
-#, fuzzy
 msgid ""
 "Conditional dependency on <package>devel/py-futures</package> depending on "
 "the Python version."
 msgstr ""
-"Dependência condicional em<package>devel/py-futures</package>dependendo da "
-"versão do Python. "
+"Dependência condicional em <package>devel/py-futures</package> dependendo da "
+"versão do Python."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13270
-#, fuzzy
 msgid ""
 "A complete list of available variables can be found in <filename>/usr/ports/"
 "Mk/Uses/python.mk</filename>."
 msgstr ""
-"Uma lista completa de variáveis ​​disponíveis pode ser encontrada "
-"em<filename>/usr/ports/Mk/Uses/python.mk</filename>"
+"Uma lista completa de variáveis ​​disponíveis pode ser encontrada em "
+"<filename>/usr/ports/Mk/Uses/python.mk</filename>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:13274
-#, fuzzy
 msgid ""
 "All dependencies to <application>Python</application> ports using <link "
 "linkend=\"flavors-auto-python\"><application>Python</application> flavors</"
@@ -24325,18 +24227,17 @@ msgid ""
 "to their origin using <literal>@${PY_FLAVOR}</literal>. See <xref linkend="
 "\"python-Makefile\"/>."
 msgstr ""
-"Todas as dependências para<application>Python</application>ports usando<link "
-"linkend=\"flavors-auto-python\"><application>Python</application>flavores</"
-"link>(quer com<literal>USE_PYTHON = distutils</literal> ou "
-"<literal>USE_PYTHON = flavores</literal>) deve ter o flavor Python anexado à "
-"sua origem usando<literal>@ $ {PY_FLAVOR}</literal>. Veja <xref linkend="
-"\"python-Makefile\"/>"
+"Todas as dependências para ports <application>Python</application>  usando "
+"<link linkend=\"flavors-auto-python\"><application>Python</"
+"application>flavors</link> (quer  com <literal>USE_PYTHON=distutils</"
+"literal> ou <literal>USE_PYTHON=flavors</literal>) deve ter o flavor Python "
+"anexado à sua origem usando <literal>@${PY_FLAVOR}</literal>. Veja <xref "
+"linkend=\"python-Makefile\"/>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:13284
-#, fuzzy
 msgid "Makefile for a Simple <application>Python</application> Module"
-msgstr "Makefile para um simples<application>Python</application>Módulo"
+msgstr "Makefile para um módulo <application>Python</application> simples."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13287
@@ -24372,7 +24273,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13302
-#, fuzzy
 msgid ""
 "Some Python applications claim to have <varname>DESTDIR</varname> support "
 "(which would be required for staging) but it is broken (Mailman up to 2.1."
@@ -24382,12 +24282,12 @@ msgid ""
 "<varname>PYTHONPREFIX_SITELIBDIR</varname> after installation, this solution "
 "can be applied:"
 msgstr ""
-"Alguns aplicativos Python afirmam ter<varname>DESTDIR</varname>suporte (que "
-"seria necessário para o escalonamento), mas está quebrado (Mailman até 2.1."
-"16, por exemplo). Isso pode ser contornado, recompilando os scripts. Isso "
-"pode ser feito, por exemplo, no destino <_:buildtarget-1/>. Assumindo que os "
-"scripts Python devem residir em<varname>PYTHONPREFIX_SITELIBDIR</"
-"varname>após a instalação, esta solução pode ser aplicada: "
+"Alguns aplicativos Python afirmam ter suporte <varname>DESTDIR</varname> "
+"(que seria necessário para o escalonamento), mas está quebrado (Mailman até "
+"2.1.16, por exemplo). Isso pode ser contornado, recompilando os scripts. "
+"Isso pode ser feito, por exemplo, no destino <_:buildtarget-1/>. Assumindo "
+"que os scripts Python devem residir em <varname>PYTHONPREFIX_SITELIBDIR</"
+"varname> após a instalação, esta solução pode ser aplicada: "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:13312
@@ -24403,7 +24303,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13316
-#, fuzzy
 msgid ""
 "This recompiles the sources with a path relative to the stage directory, and "
 "prepends the value of <varname>PREFIX</varname> to the file name recorded in "
@@ -24414,11 +24313,12 @@ msgid ""
 "<varname>PREFIX</varname>."
 msgstr ""
 "Isso recompila as origens com um caminho relativo ao diretório de estágio e "
-"acrescenta o valor de<varname>PREFIX</varname>para o nome do arquivo gravado "
-"no arquivo de saída compilado por byte<literal>-d</literal>.<literal>-f</"
-"literal>é necessário para forçar a recompilação eo<literal>: S; $ {PREFIXO}/"
-";;</literal>tiras prefixos do valor de<varname>PYTHONPREFIX_SITELIBDIR</"
-"varname>para torná-lo em relação a<varname>PREFIX</varname>"
+"acrescenta o valor de <varname>PREFIX</varname> para o nome do arquivo "
+"gravado no arquivo bytecode de saída por <literal>-d</literal>. <literal>-f</"
+"literal> é necessário para forçar a recompilação e o <literal>: S; $ "
+"{PREFIXO}/;;</literal> remove prefixos do valor de "
+"<varname>PYTHONPREFIX_SITELIBDIR</varname> para torná-lo relativo  ao "
+"<varname>PREFIX</varname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13328
@@ -24427,7 +24327,6 @@ msgstr "Usando<application>Tcl/Tk</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13330
-#, fuzzy
 msgid ""
 "The Ports Collection supports parallel installation of multiple "
 "<application>Tcl/Tk</application> versions. Ports should try to support at "
@@ -24436,12 +24335,12 @@ msgid ""
 "of <command>tcl</command> by appending <literal>:<replaceable>xx</"
 "replaceable></literal>, for example, <literal>USES=tcl:85</literal>."
 msgstr ""
-"O Ports Collection suporta a instalação paralela de "
-"múltiplos<application>Tcl/Tk</application>versões. Ports devem tentar "
-"suportar pelo menos o padrão<application>Tcl/Tk</application>versão e "
-"superior com<literal>USES=tcl</literal>. É possível especificar a versão "
-"desejada do<command>tcl</command>anexando<literal>:<replaceable>xx</"
-"replaceable></literal>, por exemplo,<literal>USES=tcl: 85</literal>"
+"O Ports Collection suporta a instalação paralela de múltiplas versões do  "
+"<application>Tcl/Tk</application>. Ports devem tentar suportar pelo menos a "
+"versão  padrão do <application>Tcl/Tk</application> e superior com "
+"<literal>USES=tcl</literal>. É possível especificar a versão desejada do "
+"<command>tcl</command> anexando <literal>:<replaceable>xx</replaceable></"
+"literal>, por exemplo, <literal>USES=tcl: 85</literal>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13340
@@ -24469,9 +24368,8 @@ msgstr "<varname>TCLSH</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13353
-#, fuzzy
 msgid "full path of the <application>Tcl</application> interpreter"
-msgstr "caminho completo do<application>Tcl</application>intérprete"
+msgstr "caminho completo do intérpretador <application>Tcl</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13358
@@ -24480,9 +24378,8 @@ msgstr "<varname>TCL_LIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13359
-#, fuzzy
 msgid "path of the <application>Tcl</application> libraries"
-msgstr "caminho do<application>Tcl</application>bibliotecas "
+msgstr "caminho das bibliotecas <application>Tcl</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13364
@@ -24491,9 +24388,8 @@ msgstr "<varname>TCL_INCLUDEDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13365
-#, fuzzy
 msgid "path of the <application>Tcl</application> C header files"
-msgstr "caminho do<application>Tcl</application>Arquivos de cabeçalho C "
+msgstr "caminho dos Arquivos de cabeçalho C do <application>Tcl</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13370
@@ -24512,9 +24408,8 @@ msgstr "<varname>WISH</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13377
-#, fuzzy
 msgid "full path of the <application>Tk</application> interpreter"
-msgstr "caminho completo do<application>Tk</application>intérprete"
+msgstr "caminho completo do interpretador <application>Tk</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13382
@@ -24523,9 +24418,8 @@ msgstr "<varname>TK_LIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13383
-#, fuzzy
 msgid "path of the <application>Tk</application> libraries"
-msgstr "caminho do<application>Tk</application>bibliotecas "
+msgstr "caminho das bibliotecas <application>Tk</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13388
@@ -24534,13 +24428,11 @@ msgstr "<varname>TK_INCLUDEDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13389
-#, fuzzy
 msgid "path of the <application>Tk</application> C header files"
-msgstr "caminho do<application>Tk</application>Arquivos de cabeçalho C "
+msgstr "caminho dos Arquivos de cabeçalho C do <application>Tk</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13396
-#, fuzzy
 msgid ""
 "See the <link linkend=\"uses-tcl\"><literal>USES=tcl</literal></link> and "
 "<link linkend=\"uses-tk\"><literal>USES=tk</literal></link> of <xref linkend="
@@ -24548,10 +24440,10 @@ msgid ""
 "those variables is available in <filename>/usr/ports/Mk/Uses/tcl.mk</"
 "filename>."
 msgstr ""
-"Veja o<link linkend=\"uses-tcl\"><literal>USES=tcl</literal></link> e <link "
+"Veja o <link linkend=\"uses-tcl\"><literal>USES=tcl</literal></link> e <link "
 "linkend=\"uses-tk\"><literal>USES=tk</literal></link> do <xref linkend="
-"\"uses\"/>para uma descrição completa dessas variáveis. Uma lista completa "
-"dessas variáveis ​​está disponível em<filename>/usr/ports/Mk/Uses/tcl.mk</"
+"\"uses\"/> para uma descrição completa dessas variáveis. Uma lista completa "
+"dessas variáveis ​​está disponível em <filename>/usr/ports/Mk/Uses/tcl.mk</"
 "filename>"
 
 #. (itstool) path: sect1/title
@@ -24561,7 +24453,6 @@ msgstr "Usando Ruby"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13407
-#, fuzzy
 msgid "Useful Variables for Ports That Use Ruby"
 msgstr "Variáveis ​​úteis para ports que usam Ruby"
 
@@ -24582,9 +24473,8 @@ msgstr "<varname>USE_RUBY_EXTCONF</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13424
-#, fuzzy
 msgid "The port uses <filename>extconf.rb</filename> to configure."
-msgstr "O porto usa<filename>extconf.rb</filename>para configurar."
+msgstr "O port usa <filename>extconf.rb</filename> para configurar."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13429
@@ -24593,9 +24483,8 @@ msgstr "<varname>USE_RUBY_SETUP</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13430
-#, fuzzy
 msgid "The port uses <filename>setup.rb</filename> to configure."
-msgstr "O porto usa<filename>setup.rb</filename>para configurar."
+msgstr "O port usa <filename>setup.rb</filename> para configurar."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13435
@@ -24604,17 +24493,15 @@ msgstr "<varname>RUBY_SETUP</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13436
-#, fuzzy
 msgid ""
 "Override the name of the setup script from <filename>setup.rb</filename>. "
 "Another common value is <filename>install.rb</filename>."
 msgstr ""
-"Substituir o nome do script de configuração de<filename>setup.rb</filename>. "
-"Outro valor comum é<filename>install.rb</filename>"
+"Substituir o nome do script de configuração de <filename>setup.rb</filename>."
+" Outro valor comum é <filename>install.rb</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13444
-#, fuzzy
 msgid ""
 "This table shows the selected variables available to port authors via the "
 "ports infrastructure. These variables are used to install files into their "
@@ -24622,16 +24509,15 @@ msgid ""
 "possible. Do not redefine these variables in the port."
 msgstr ""
 "Esta tabela mostra as variáveis ​​selecionadas disponíveis para os autores "
-"das ports através da infraestrutura de ports. Essas variáveis ​​são usadas "
-"para instalar arquivos em seus locais apropriados. Use-os em<filename>pkg-"
-"plist</filename>tanto quanto possível. Não redefina essas variáveis ​​na "
+"dos ports através da infraestrutura de ports. Essas variáveis ​​são usadas "
+"para instalar arquivos em seus locais apropriados. Use-os em <filename>pkg-"
+"plist</filename> tanto quanto possível. Não redefina essas variáveis ​​na "
 "porta. "
 
 #. (itstool) path: table/title
 #: book.translate.xml:13451
-#, fuzzy
 msgid "Selected Read-Only Variables for Ports That Use Ruby"
-msgstr "Variáveis ​​selecionadas somente leitura para ports que usam Ruby"
+msgstr "Variáveis ​​somente leitura selecionadas para ports que usam Ruby"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13459
@@ -24645,12 +24531,11 @@ msgstr "<varname>RUBY_PKGNAMEPREFIX</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13466
-#, fuzzy
 msgid ""
 "Used as a <varname>PKGNAMEPREFIX</varname> to distinguish packages for "
 "different Ruby versions."
 msgstr ""
-"Usado como um<varname>PKGNAMEPREFIX</varname>para distinguir pacotes para "
+"Usado como um <varname>PKGNAMEPREFIX</varname> para distinguir pacotes para "
 "diferentes versões do Ruby. "
 
 #. (itstool) path: row/entry
@@ -24665,9 +24550,8 @@ msgstr "<varname>RUBY_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13474
-#, fuzzy
 msgid "Full version of Ruby in the form of <literal>x.y.z[.p]</literal>."
-msgstr "Versão completa do Ruby na forma de<literal>xyz [.p]</literal>"
+msgstr "Versão completa do Ruby na forma de <literal>xyz [.p]</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13476
@@ -24681,7 +24565,6 @@ msgstr "<varname>RUBY_SITELIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13481
-#, fuzzy
 msgid "Architecture independent libraries installation path."
 msgstr "Caminho de instalação de bibliotecas independentes de arquitetura."
 
@@ -24697,7 +24580,6 @@ msgstr "<varname>RUBY_SITEARCHLIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13488
-#, fuzzy
 msgid "Architecture dependent libraries installation path."
 msgstr "Caminho de instalação das bibliotecas dependentes da arquitetura."
 
@@ -24713,7 +24595,6 @@ msgstr "<varname>RUBY_MODDOCDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13495
-#, fuzzy
 msgid "Module documentation installation path."
 msgstr "Caminho de instalação da documentação do módulo."
 
@@ -24729,7 +24610,6 @@ msgstr "<varname>RUBY_MODEXAMPLESDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13501
-#, fuzzy
 msgid "Module examples installation path."
 msgstr "Caminho de instalação dos exemplos do módulo."
 
@@ -24740,13 +24620,12 @@ msgstr "<literal>/usr/local/share/examples/ruby19/patsy</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13508
-#, fuzzy
 msgid ""
 "A complete list of available variables can be found in <filename>/usr/ports/"
 "Mk/bsd.ruby.mk</filename>."
 msgstr ""
-"Uma lista completa de variáveis ​​disponíveis pode ser encontrada "
-"em<filename>/usr/ports/Mk/bsd.ruby.mk</filename>"
+"Uma lista completa de variáveis ​​disponíveis pode ser encontrada em "
+"<filename>/usr/ports/Mk/bsd.ruby.mk</filename>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13513
@@ -24767,7 +24646,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13520
-#, fuzzy
 msgid "These SDL libraries for version 1.2 are recognized:"
 msgstr "Estas bibliotecas SDL para a versão 1.2 são reconhecidas:"
 
@@ -24793,27 +24671,23 @@ msgstr "image: <package role=\"port\">graphics/sdl_image</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13540
-#, fuzzy
 msgid "mixer: <package role=\"port\">audio/sdl_mixer</package>"
-msgstr "mixer:<package role=\"port\">audio/sdl_mixer</package>"
+msgstr "mixer: <package role=\"port\">audio/sdl_mixer</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13544
-#, fuzzy
 msgid "mm: <package role=\"port\">devel/sdlmm</package>"
-msgstr "milímetros:<package role=\"port\">devel/sdlmm</package>"
+msgstr "mm: <package role=\"port\">devel/sdlmm</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13548
-#, fuzzy
 msgid "net: <package role=\"port\">net/sdl_net</package>"
-msgstr "líquido:<package role=\"port\">net/sdl_net</package>"
+msgstr "net: <package role=\"port\">net/sdl_net</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13552
-#, fuzzy
 msgid "pango: <package role=\"port\">x11-toolkits/sdl_pango</package>"
-msgstr "caverna:<package role=\"port\">x11-toolkits/sdl_pango</package>"
+msgstr "pango: <package role=\"port\">x11-toolkits/sdl_pango</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13556
@@ -24822,15 +24696,13 @@ msgstr "som:<package role=\"port\">audio/sdl_sound</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13560
-#, fuzzy
 msgid "ttf: <package role=\"port\">graphics/sdl_ttf</package>"
-msgstr "ttf:<package role=\"port\">graphics/sdl_ttf</package>"
+msgstr "ttf: <package role=\"port\">graphics/sdl_ttf</package>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13564
-#, fuzzy
 msgid "These SDL libraries for version 2.0 are recognized:"
-msgstr "Estas bibliotecas SDL para a versão 2.0 são reconhecidas:"
+msgstr "Estas são as bibliotecas SDL para a versão 2.0 reconhecidas:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13568
@@ -24849,31 +24721,27 @@ msgstr "image: <package role=\"port\">graphics/sdl2_image</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13580
-#, fuzzy
 msgid "mixer: <package role=\"port\">audio/sdl2_mixer</package>"
-msgstr "mixer:<package role=\"port\">audio/sdl2_mixer</package>"
+msgstr "mixer: <package role=\"port\">audio/sdl2_mixer</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13584
-#, fuzzy
 msgid "net: <package role=\"port\">net/sdl2_net</package>"
-msgstr "líquido:<package role=\"port\">net/sdl2_net</package>"
+msgstr "net: <package role=\"port\">net/sdl2_net</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13588
-#, fuzzy
 msgid "ttf: <package role=\"port\">graphics/sdl2_ttf</package>"
-msgstr "ttf:<package role=\"port\">graphics/sdl2_ttf</package>"
+msgstr "ttf: <package role=\"port\">graphics/sdl2_ttf</package>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13592
-#, fuzzy
 msgid ""
 "Therefore, if a port has a dependency on <package role=\"port\">net/sdl_net</"
 "package> and <package role=\"port\">audio/sdl_mixer</package>, the syntax "
 "will be:"
 msgstr ""
-"Portanto, se um port tiver uma dependência<package role=\"port\">net/"
+"Portanto, se um port tiver uma dependência <package role=\"port\">net/"
 "sdl_net</package> e <package role=\"port\">audio/sdl_mixer</package>, a "
 "sintaxe será: "
 
@@ -24885,86 +24753,78 @@ msgstr "USE_SDL=\tnet mixer"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13599
-#, fuzzy
 msgid ""
 "The dependency <package role=\"port\">devel/sdl12</package>, which is "
 "required by <package role=\"port\">net/sdl_net</package> and <package role="
 "\"port\">audio/sdl_mixer</package>, is automatically added as well."
 msgstr ""
-"A dependência<package role=\"port\">devel/sdl12</package>, que é exigido "
-"por<package role=\"port\">net/sdl_net</package> e <package role="
+"A dependência <package role=\"port\">devel/sdl12</package>, que é exigido "
+"por <package role=\"port\">net/sdl_net</package> e <package role="
 "\"port\">audio/sdl_mixer</package>, é automaticamente adicionado também. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13605
-#, fuzzy
 msgid ""
 "Using <varname>USE_SDL</varname> with entries for SDL 1.2, it will "
 "automatically:"
 msgstr ""
-"Usando<varname>USE_SDL</varname>com entradas para o SDL 1.2, ele irá "
-"automaticamente: "
+"Usando <varname>USE_SDL</varname> com entradas para o SDL 1.2, ele irá "
+"automaticamente:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13610
-#, fuzzy
 msgid ""
 "Add a dependency on <application>sdl12-config</application> to "
 "<varname>BUILD_DEPENDS</varname>"
 msgstr ""
-"Adicionar uma dependência em<application>sdl12-config</"
-"application>para<varname>BUILD_DEPENDS</varname>"
+"Adicionar uma dependência em <application>sdl12-config</application> para "
+"<varname>BUILD_DEPENDS</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13616
-#, fuzzy
 msgid ""
 "Add the variable <varname>SDL_CONFIG</varname> to <varname>CONFIGURE_ENV</"
 "varname>"
 msgstr ""
-"Adicione a variável<varname>SDL_CONFIG</varname>para<varname>CONFIGURE_ENV</"
-"varname>"
+"Adicione a variávelc<varname>SDL_CONFIG</varname>\n"
+" em <varname>CONFIGURE_ENV</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13621
 #: book.translate.xml:13642
-#, fuzzy
 msgid ""
 "Add the dependencies of the selected libraries to <varname>LIB_DEPENDS</"
 "varname>"
 msgstr ""
-"Adicione as dependências das bibliotecas selecionadas "
-"para<varname>LIB_DEPENDS</varname>"
+"Adicione as dependências das bibliotecas selecionadas para "
+"<varname>LIB_DEPENDS</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13626
-#, fuzzy
 msgid ""
 "Using <varname>USE_SDL</varname> with entries for SDL 2.0, it will "
 "automatically:"
 msgstr ""
-"Usando<varname>USE_SDL</varname>com entradas para o SDL 2.0, ele irá "
+"Usando <varname>USE_SDL</varname> com entradas para o SDL 2.0, ele irá "
 "automaticamente: "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13631
-#, fuzzy
 msgid ""
 "Add a dependency on <application>sdl2-config</application> to "
 "<varname>BUILD_DEPENDS</varname>"
 msgstr ""
-"Adicionar uma dependência em<application>sdl2-config</"
-"application>para<varname>BUILD_DEPENDS</varname>"
+"Adicionar uma dependência em <application>sdl2-config</application> para "
+"<varname>BUILD_DEPENDS</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13637
-#, fuzzy
 msgid ""
 "Add the variable <varname>SDL2_CONFIG</varname> to <varname>CONFIGURE_ENV</"
 "varname>"
 msgstr ""
-"Adicione a variável<varname>SDL2_CONFIG</varname>para<varname>CONFIGURE_ENV</"
-"varname>"
+"Adicione a variável <varname>SDL2_CONFIG</varname>\n"
+" em <varname>CONFIGURE_ENV</varname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13649
@@ -24973,33 +24833,29 @@ msgstr "Usando<application>wxWidgets</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13651
-#, fuzzy
 msgid ""
 "This section describes the status of the <application>wxWidgets</"
 "application> libraries in the ports tree and its integration with the ports "
 "system."
 msgstr ""
-"Esta seção descreve o status do<application>wxWidgets</"
-"application>bibliotecas na árvore de ports e sua integração com o sistema de "
-"ports. "
+"Esta seção descreve o status das bibliotecas <application>wxWidgets</"
+"application> na árvore de ports e sua integração com o sistema de ports. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13658
-#, fuzzy
 msgid ""
 "There are many versions of the <application>wxWidgets</application> "
 "libraries which conflict between them (install files under the same name). "
 "In the ports tree this problem has been solved by installing each version "
 "under a different name using version number suffixes."
 msgstr ""
-"Existem muitas versões do<application>wxWidgets</application>bibliotecas que "
-"entram em conflito entre elas (instala arquivos com o mesmo nome). Na árvore "
-"de portes este problema foi resolvido instalando cada versão sob um nome "
-"diferente usando sufixos de número de versão. "
+"Existem muitas versões das bibliotecas do <application>wxWidgets</"
+"application> que entram em conflito entre elas  (instala arquivos com o "
+"mesmo nome). Na árvore de ports este problema foi resolvido instalando cada "
+"versão sob um nome diferente usando sufixos de número de versão. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13665
-#, fuzzy
 msgid ""
 "The obvious disadvantage of this is that each application has to be modified "
 "to find the expected version. Fortunately, most of the applications call the "
@@ -25010,13 +24866,13 @@ msgid ""
 "call. Otherwise they have to be patched."
 msgstr ""
 "A desvantagem óbvia disso é que cada aplicativo precisa ser modificado para "
-"encontrar a versão esperada. Felizmente, a maioria dos aplicativos chama "
-"o<command>wx-config</command>script para determinar os sinalizadores de "
+"encontrar a versão esperada. Felizmente, a maioria dos aplicativos chama o "
+"script <command>wx-config</command> para determinar os sinalizadores de "
 "compilador e vinculador necessários. O script é nomeado de maneira diferente "
 "para cada versão disponível. A maioria dos aplicativos respeita uma variável "
-"de ambiente ou aceita um argumento de configuração para "
-"especificar<command>wx-config</command>script para chamar. Caso contrário, "
-"eles têm que ser corrigidos \""
+"de ambiente ou aceita um argumento de configuração para especificar o script "
+"<command>wx-config</command> para chamar. Caso contrário, eles têm que ser "
+"corrigidos."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13678
@@ -25026,28 +24882,25 @@ msgstr "Seleção de Versão"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13680
-#, fuzzy
 msgid ""
 "To make the port use a specific version of <application>wxWidgets</"
 "application> there are two variables available for defining (if only one is "
 "defined the other will be set to a default value):"
 msgstr ""
-"Para fazer o port usar uma versão específica de<application>wxWidgets</"
-"application>há duas variáveis ​​disponíveis para definir (se apenas uma for "
+"Para fazer o port usar uma versão específica de <application>wxWidgets</"
+"application> há duas variáveis ​​disponíveis para definir (se apenas uma for "
 "definida, a outra será definida como um valor padrão): "
 
 #. (itstool) path: table/title
 #: book.translate.xml:13686
-#, fuzzy
 msgid "Variables to Select <application>wxWidgets</application> Versions"
 msgstr ""
-"Variáveis ​​para Selecionar<application>wxWidgets</application>Versões "
+"Variáveis ​​para Selecionar Versões  do <application>wxWidgets</application>"
 
 # auto translated by TM merge from project: ManageIQ Classic UI, version: fine, DocId: ManageIQ_UI_Classic
 #. (itstool) path: row/entry
 #: book.translate.xml:13694
 #: book.translate.xml:16582
-#, fuzzy
 msgid "Default value"
 msgstr "Valor padrão"
 
@@ -25079,30 +24932,26 @@ msgstr "Lista de versões que o port não pode usar"
 # auto translated by TM merge from project: ManageIQ Service UI, version: gaprindashvili, DocId: manageiq-ui-service
 #. (itstool) path: row/entry
 #: book.translate.xml:13708
-#, fuzzy
 msgid "None"
 msgstr "Nenhum"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13714
-#, fuzzy
 msgid ""
 "The available <application>wxWidgets</application> versions and the "
 "corresponding ports in the tree are:"
 msgstr ""
-"O disponível<application>wxWidgets</application>versões e os ports "
+"As versões disponível do <application>wxWidgets</application> e os ports "
 "correspondentes na árvore são: "
 
 #. (itstool) path: table/title
 #: book.translate.xml:13719
-#, fuzzy
 msgid "Available <application>wxWidgets</application> Versions"
-msgstr "Acessível<application>wxWidgets</application>Versões "
+msgstr "Versões Acessíveis do <application>wxWidgets</application>"
 
 # auto translated by TM merge from project: Halcyon, version: 2.0.0, DocId: messages
 #. (itstool) path: row/entry
 #: book.translate.xml:13725
-#, fuzzy
 msgid "Version"
 msgstr "Versão"
 
@@ -25134,13 +24983,12 @@ msgstr "<package role=\"port\">x11-toolkits/wxgtk30</package>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13744
-#, fuzzy
 msgid ""
 "The variables in <xref linkend=\"wx-ver-sel-table\"/> can be set to one or "
 "more of these combinations separated by spaces:"
 msgstr ""
-"As variáveis ​​em<xref linkend=\"wx-ver-sel-table\"/>pode ser definido para "
-"uma ou mais dessas combinações separadas por espaços: "
+"As variáveis ​​em <xref linkend=\"wx-ver-sel-table\"/> podem ser definidas "
+"para uma ou mais dessas combinações separadas por espaços:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13749
@@ -25150,7 +24998,6 @@ msgstr "<application>wxWidgets</application>Especificações da versão "
 # auto translated by TM merge from project: Centreon, version: 2.8, DocId: https://github.com/centreon/centreon-translations/tree/f708de86aec727ad5671fa47b1ab06474c7df8fb/centreon/pt_BR/LC_MESSAGES/messages
 #. (itstool) path: row/entry
 #: book.translate.xml:13756
-#, fuzzy
 msgid "Example"
 msgstr "Exemplo"
 
@@ -25192,7 +25039,6 @@ msgstr "<literal>2.8-3.0</literal>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13784
-#, fuzzy
 msgid ""
 "There are also some variables to select the preferred versions from the "
 "available ones. They can be set to a list of versions, the first ones will "
@@ -25204,12 +25050,11 @@ msgstr ""
 
 #. (itstool) path: table/title
 #: book.translate.xml:13790
-#, fuzzy
 msgid ""
 "Variables to Select Preferred <application>wxWidgets</application> Versions"
 msgstr ""
-"Variáveis ​​para Selecionar Preferidas<application>wxWidgets</"
-"application>Versões "
+"Variáveis ​​para Selecionar Versões Preferidas do <application>wxWidgets</"
+"application> "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13797
@@ -25238,22 +25083,20 @@ msgstr "o usuário"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13819
-#, fuzzy
 msgid ""
 "There are other applications that, while not being <application>wxWidgets</"
 "application> libraries, are related to them. These applications can be "
 "specified in <varname>WX_COMPS</varname>. These components are available:"
 msgstr ""
-"Existem outras aplicações que, apesar de não serem<application>wxWidgets</"
-"application>bibliotecas, estão relacionadas a eles. Estas aplicações podem "
-"ser especificadas em<varname>WX_COMPS</varname>. Esses componentes estão "
-"disponíveis: "
+"Existem outras aplicações que, apesar de não serem bibliotecas "
+"<application>wxWidgets</application>, estão relacionadas a eles. Estas "
+"aplicações podem ser especificadas em <varname>WX_COMPS</varname>. Esses "
+"componentes estão disponíveis: "
 
 #. (itstool) path: table/title
 #: book.translate.xml:13826
-#, fuzzy
 msgid "Available <application>wxWidgets</application> Components"
-msgstr "Acessível<application>wxWidgets</application>Componentes "
+msgstr "Componentes <application>wxWidgets</application> Acessíveis "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13834
@@ -25306,7 +25149,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13861
-#, fuzzy
 msgid ""
 "The dependency type can be selected for each component by adding a suffix "
 "separated by a semicolon. If not present then a default type will be used "
@@ -25319,9 +25161,8 @@ msgstr ""
 
 #. (itstool) path: table/title
 #: book.translate.xml:13868
-#, fuzzy
 msgid "Available <application>wxWidgets</application> Dependency Types"
-msgstr "Acessível<application>wxWidgets</application>Tipos de Dependência "
+msgstr "Tipos de Dependências <application>wxWidgets</application> Acessíveis"
 
 #. (itstool) path: row/entry
 #. (itstool) path: varlistentry/term
@@ -25332,13 +25173,12 @@ msgstr "<literal>build</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13882
-#, fuzzy
 msgid ""
 "Component is required for building, equivalent to <varname>BUILD_DEPENDS</"
 "varname>"
 msgstr ""
-"Componente é necessário para a construção, equivalente "
-"a<varname>BUILD_DEPENDS</varname>"
+"Componente é necessário para a construção, equivalente a "
+"<varname>BUILD_DEPENDS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13887
@@ -25348,12 +25188,11 @@ msgstr "<literal> run </literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13888
-#, fuzzy
 msgid ""
 "Component is required for running, equivalent to <varname>RUN_DEPENDS</"
 "varname>"
 msgstr ""
-"O componente é necessário para execução, equivalente a<varname>RUN_DEPENDS</"
+"O componente é necessário para execução, equivalente a <varname>RUN_DEPENDS</"
 "varname>"
 
 #. (itstool) path: row/entry
@@ -25367,17 +25206,15 @@ msgstr "<literal>lib</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13894
-#, fuzzy
 msgid ""
 "Component is required for building and running, equivalent to "
 "<varname>LIB_DEPENDS</varname>"
 msgstr ""
-"O componente é necessário para construção e operação, equivalente "
-"a<varname>LIB_DEPENDS</varname>"
+"O componente é necessário para construção e operação, equivalente a "
+"<varname>LIB_DEPENDS</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13901
-#, fuzzy
 msgid "The default values for the components are detailed in this table:"
 msgstr "Os valores padrão para os componentes estão detalhados nesta tabela:"
 
@@ -25405,19 +25242,17 @@ msgstr "<literal>svg</literal>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:13946
-#, fuzzy
 msgid "Selecting <application>wxWidgets</application> Components"
-msgstr "Selecionando<application>wxWidgets</application>Componentes "
+msgstr "Selecionando Componentes <application>wxWidgets</application> "
 
 #. (itstool) path: example/para
 #: book.translate.xml:13949
-#, fuzzy
 msgid ""
 "This fragment corresponds to a port which uses <application>wxWidgets</"
 "application> version <literal>2.4</literal> and its contributed libraries."
 msgstr ""
-"Este fragmento corresponde a um port que usa<application>wxWidgets</"
-"application>versão<literal>2,4</literal>e suas bibliotecas contribuídas \""
+"Este fragmento corresponde a um port que usa <application>wxWidgets</"
+"application>versão<literal>2.4</literal> e suas bibliotecas contribuídas."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13954
@@ -25434,35 +25269,33 @@ msgstr "Detectando Versões Instaladas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13962
-#, fuzzy
 msgid ""
 "To detect an installed version, define <varname>WANT_WX</varname>. If it is "
 "not set to a specific version then the components will have a version suffix."
 " <varname>HAVE_WX</varname> will be filled after detection."
 msgstr ""
-"Para detectar uma versão instalada, defina<varname>WANT_WX</varname>. Se não "
-"estiver definido para uma versão específica, os componentes terão um sufixo "
-"de versão.<varname>HAVE_WX</varname>será preenchido após a detecção. "
+"Para detectar uma versão instalada, defina <varname>WANT_WX</varname>. Se "
+"não estiver definido para uma versão específica, os componentes terão um "
+"sufixo de versão. <varname>HAVE_WX</varname> será preenchido após a detecção."
+" "
 
 #. (itstool) path: example/title
 #: book.translate.xml:13969
-#, fuzzy
 msgid ""
 "Detecting Installed <application>wxWidgets</application> Versions and "
 "Components"
 msgstr ""
-"Detectando Instalado<application>wxWidgets</application>Versões e "
+"Detectando Versões <application>wxWidgets</application> Instaladas e "
 "Componentes "
 
 #. (itstool) path: example/para
 #: book.translate.xml:13973
-#, fuzzy
 msgid ""
 "This fragment can be used in a port that uses <application>wxWidgets</"
 "application> if it is installed, or an option is selected."
 msgstr ""
-"Este fragmento pode ser usado em um port que usa<application>wxWidgets</"
-"application>se estiver instalado ou uma opção estiver selecionada. "
+"Este fragmento pode ser usado em um port que usa <application>wxWidgets</"
+"application> se estiver instalado ou uma opção estiver selecionada. "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13977
@@ -25488,17 +25321,16 @@ msgstr ""
 
 #. (itstool) path: example/para
 #: book.translate.xml:13986
-#, fuzzy
 msgid ""
 "This fragment can be used in a port that enables <application>wxPython</"
 "application> support if it is installed or if an option is selected, in "
 "addition to <application>wxWidgets</application>, both version <literal>2.8</"
 "literal>."
 msgstr ""
-"Este fragmento pode ser usado em um port que permite<application>wxPython</"
-"application>suporte se ele estiver instalado ou se uma opção for "
-"selecionada, além de<application>wxWidgets</application>ambos "
-"versão<literal>2,8</literal>"
+"Este fragmento pode ser usado em um port que permite suporte  ao "
+"<application>wxPython</application> se ele estiver instalado ou se uma opção "
+"for selecionada, além de <application>wxWidgets</application> ambos versão "
+"<literal>2.8</literal>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13992
@@ -25536,21 +25368,19 @@ msgstr "Variáveis ​​Definidas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14008
-#, fuzzy
 msgid ""
 "These variables are available in the port (after defining one from <xref "
 "linkend=\"wx-ver-sel-table\"/>)."
 msgstr ""
-"Estas variáveis ​​estão disponíveis no port (depois de definir uma<xref "
+"Estas variáveis ​​estão disponíveis no port (depois de definir uma de <xref "
 "linkend=\"wx-ver-sel-table\"/>) "
 
 #. (itstool) path: table/title
 #: book.translate.xml:14013
-#, fuzzy
 msgid ""
 "Variables Defined for Ports That Use <application>wxWidgets</application>"
 msgstr ""
-"Variáveis ​​definidas para ports que usam<application>wxWidgets</"
+"Variáveis ​​definidas para ports que usam <application>wxWidgets</"
 "application>"
 
 #. (itstool) path: row/entry
@@ -25560,13 +25390,12 @@ msgstr "<varname>WX_CONFIG</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14027
-#, fuzzy
 msgid ""
 "The path to the <application>wxWidgets</application> <command>wx-config</"
 "command> script (with different name)"
 msgstr ""
-"O caminho para o<application>wxWidgets</application><command>wx-config</"
-"command>roteiro (com nome diferente) "
+"O caminho para o script <application>wxWidgets</application><command>wx-"
+"config</command> (com nome diferente) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14034
@@ -25575,13 +25404,12 @@ msgstr "<varname>WXRC_CMD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14035
-#, fuzzy
 msgid ""
 "The path to the <application>wxWidgets</application> <command>wxrc</command> "
 "program (with different name)"
 msgstr ""
-"O caminho para o<application>wxWidgets</application><command>wxrc</"
-"command>programa (com nome diferente) "
+"O caminho para o programa <application>wxWidgets</application><command>wxrc</"
+"command> (com nome diferente) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14042
@@ -25590,13 +25418,12 @@ msgstr "<varname>WX_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14043
-#, fuzzy
 msgid ""
 "The <application>wxWidgets</application> version that is going to be used "
 "(for example, <literal>2.6</literal>)"
 msgstr ""
-"O<application>wxWidgets</application>versão que será usada (por "
-"exemplo,<literal>2,6</literal>) "
+"A versão do <application>wxWidgets</application> que será usada (por "
+"exemplo,<literal>2.6</literal>) "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14053
@@ -25605,45 +25432,40 @@ msgstr "Processando em<filename>bsd.port.pre.mk</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14056
-#, fuzzy
 msgid ""
 "Define <varname>WX_PREMK</varname> to be able to use the variables right "
 "after including <filename>bsd.port.pre.mk</filename>."
 msgstr ""
-"Definir<varname>WX_PREMK</varname>para ser capaz de usar as variáveis ​​logo "
-"após a inclusão<filename>bsd.port.pre.mk</filename>"
+"Definir <varname>WX_PREMK</varname> para ser capaz de usar as variáveis "
+"​​logo após a inclusão do <filename>bsd.port.pre.mk</filename>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:14061
-#, fuzzy
 msgid ""
 "When defining <varname>WX_PREMK</varname>, then the version, dependencies, "
 "components and defined variables will not change if modifying the "
 "<application>wxWidgets</application> port variables <emphasis>after</"
 "emphasis> including <filename>bsd.port.pre.mk</filename>."
 msgstr ""
-"Ao definir<varname>WX_PREMK</varname>, então a versão, dependências, "
-"componentes e variáveis ​​definidas não serão alteradas se a "
-"modificação<application>wxWidgets</application>variáveis ​​de "
-"porta<emphasis>depois de</emphasis>Incluindo<filename>bsd.port.pre.mk</"
-"filename>"
+"Ao definir <varname>WX_PREMK</varname>, então a versão, dependências, "
+"componentes e variáveis ​​definidas não serão alteradas se a modificação das "
+"variáveis ​​do port <application>wxWidgets</application> <emphasis>depois de "
+"</emphasis> incluir <filename>bsd.port.pre.mk</filename>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:14070
-#, fuzzy
 msgid "Using <application>wxWidgets</application> Variables in Commands"
-msgstr "Usando<application>wxWidgets</application>Variáveis ​​nos Comandos "
+msgstr "Usando Variáveis ​​nos Comandos <application>wxWidgets</application>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:14073
-#, fuzzy
 msgid ""
 "This fragment illustrates the use of <varname>WX_PREMK</varname> by running "
 "the <command>wx-config</command> script to obtain the full version string, "
 "assign it to a variable and pass it to the program."
 msgstr ""
-"Este fragmento ilustra o uso de<varname>WX_PREMK</varname>executando "
-"o<command>wx-config</command>script para obter a string de versão completa, "
+"Este fragmento ilustra o uso de <varname>WX_PREMK</varname> executando o "
+"script <command>wx-config</command> para obter a string de versão completa, "
 "atribuí-lo a uma variável e passá-lo para o programa. "
 
 #. (itstool) path: example/programlisting
@@ -25674,41 +25496,37 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:14092
-#, fuzzy
 msgid ""
 "The <application>wxWidgets</application> variables can be safely used in "
 "commands when they are inside targets without the need of <varname>WX_PREMK</"
 "varname>."
 msgstr ""
-"O<application>wxWidgets</application>variáveis ​​podem ser usadas com "
-"segurança em comandos quando estão dentro de alvos sem a necessidade "
-"de<varname>WX_PREMK</varname>"
+"As variaveis <application>wxWidgets</application> ​​podem ser usadas com "
+"segurança em comandos quando estão dentro de alvos sem a necessidade de "
+"<varname>WX_PREMK</varname>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14099
-#, fuzzy
 msgid "Additional <command>configure</command> Arguments"
-msgstr "Adicional<command>configure</command>Argumentos "
+msgstr "Argumentos <command>configure</command> Adicionais"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14102
-#, fuzzy
 msgid ""
 "Some GNU <command>configure</command> scripts cannot find "
 "<application>wxWidgets</application> with just the <literal>WX_CONFIG</"
 "literal> environment variable set, requiring additional arguments. "
 "<varname>WX_CONF_ARGS</varname> can be used for provide them."
 msgstr ""
-"Alguns GNU<command>configure</command>scripts não podem "
-"encontrar<application>wxWidgets</application>com apenas o<literal>WX_CONFIG</"
-"literal>conjunto de variáveis ​​de ambiente, exigindo argumentos adicionais."
-"<varname>WX_CONF_ARGS</varname>pode ser usado para fornecê-los \""
+"Alguns scripts GNU <command>configure</command> não podem encontrar "
+"<application>wxWidgets</application> com apenas o conjunto de variáveis ​​de "
+"ambiente <literal>WX_CONFIG</literal>, exigindo argumentos adicionais."
+"<varname>WX_CONF_ARGS</varname> pode ser usado para fornecê-los."
 
 #. (itstool) path: table/title
 #: book.translate.xml:14110
-#, fuzzy
 msgid "Legal Values for <varname>WX_CONF_ARGS</varname>"
-msgstr "Valores Legais para<varname>WX_CONF_ARGS</varname>"
+msgstr "Valores Legais para <varname>WX_CONF_ARGS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14116
@@ -25749,32 +25567,29 @@ msgstr "Usando<application>Lua</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14141
-#, fuzzy
 msgid ""
 "This section describes the status of the <application>Lua</application> "
 "libraries in the ports tree and its integration with the ports system."
 msgstr ""
-"Esta seção descreve o status do<application>Lua</application>bibliotecas na "
-"árvore de ports e sua integração com o sistema de ports. "
+"Esta seção descreve o status das bibliotecas <application>Lua</application> "
+"na árvore de ports e sua integração com o sistema de ports."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14148
-#, fuzzy
 msgid ""
 "There are many versions of the <application>Lua</application> libraries and "
 "corresponding interpreters, which conflict between them (install files under "
 "the same name). In the ports tree this problem has been solved by installing "
 "each version under a different name using version number suffixes."
 msgstr ""
-"Existem muitas versões do<application>Lua</application>bibliotecas e "
-"intérpretes correspondentes, que entram em conflito entre eles (instalar "
-"arquivos com o mesmo nome). Na árvore de portes este problema foi resolvido "
+"Existem muitas versões das bibliotecas <application>Lua</application> e "
+"intérpretadores correspondentes, que entram em conflito entre eles (instalar "
+"arquivos com o mesmo nome). Na árvore de ports este problema foi resolvido "
 "instalando cada versão sob um nome diferente usando sufixos de número de "
 "versão. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14155
-#, fuzzy
 msgid ""
 "The obvious disadvantage of this is that each application has to be modified "
 "to find the expected version. But it can be solved by adding some additional "
@@ -25786,11 +25601,10 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14164
-#, fuzzy
 msgid ""
 "A port using <application>Lua</application> only needs to have this line:"
 msgstr ""
-"Um port usando<application>Lua</application>só precisa ter essa linha: "
+"Um port usando <application>Lua</application> só precisa ter essa linha: "
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14167
@@ -25800,15 +25614,14 @@ msgstr "USES=\tlua"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14169
-#, fuzzy
 msgid ""
 "If a specific version of Lua is needed, instructions on how to select it are "
 "given in the <link linkend=\"uses-lua\"><literal>USES=lua</literal></link> "
 "part of <xref linkend=\"uses\"/>."
 msgstr ""
 "Se uma versão específica de Lua for necessária, as instruções sobre como "
-"selecioná-la são fornecidas no<link linkend=\"uses-lua\"><literal>USES = "
-"lua</literal></link>parte de<xref linkend=\"uses\"/>"
+"selecioná-la são fornecidas no <link linkend=\"uses-lua\"><literal>USES = "
+"lua</literal></link> parte de <xref linkend=\"uses\"/>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14177
@@ -25817,10 +25630,9 @@ msgstr "Essas variáveis ​​estão disponíveis na porta."
 
 #. (itstool) path: table/title
 #: book.translate.xml:14180
-#, fuzzy
 msgid "Variables Defined for Ports That Use <application>Lua</application>"
 msgstr ""
-"Variáveis ​​definidas para ports que usam<application>Lua</application>"
+"Variáveis ​​definidas para ports que usam <application>Lua</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14193
@@ -25829,12 +25641,11 @@ msgstr "<varname>LUA_VER</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14194
-#, fuzzy
 msgid ""
 "The <application>Lua</application> version that is going to be used (for "
 "example, <literal>5.1</literal>)"
 msgstr ""
-"O<application>Lua</application>versão que será usada (por "
+"A versão de <application>Lua</application> que será usada (por "
 "exemplo,<literal>5,1</literal>) "
 
 #. (itstool) path: row/entry
@@ -25844,12 +25655,11 @@ msgstr "<varname>LUA_VER_STR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14201
-#, fuzzy
 msgid ""
 "The <application>Lua</application> version without the dots (for example, "
 "<literal>51</literal>)"
 msgstr ""
-"O<application>Lua</application>versão sem os pontos (por "
+"A versão de <application>Lua</application> sem os pontos (por "
 "exemplo,<literal>51</literal>) "
 
 #. (itstool) path: row/entry
@@ -25859,12 +25669,12 @@ msgstr "<varname>LUA_PREFIX</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14208
-#, fuzzy
 msgid ""
 "The prefix where <application>Lua</application> (and components) is "
 "installed"
 msgstr ""
-"O prefixo onde<application>Lua</application>(e componentes) está instalado "
+"O prefixo onde <application>Lua</application> (e componentes) está instalado "
+""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14213
@@ -25873,15 +25683,14 @@ msgstr "<varname>LUA_SUBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14214
-#, fuzzy
 msgid ""
 "The directory under <filename>${PREFIX}/bin</filename>, <filename>${PREFIX}/"
 "share</filename> and <filename>${PREFIX}/lib</filename> where "
 "<application>Lua</application> is installed"
 msgstr ""
-"O diretório sob<filename>$ {PREFIXO}/bin</filename>, <filename>$ {PREFIX}/"
-"share</filename> e <filename>$ {PREFIXO}/lib</filename>Onde<application>Lua</"
-"application>está instalado"
+"O diretório sob <filename>${PREFIXO}/bin</filename>, <filename>${PREFIX}/"
+"share</filename> e <filename>${PREFIX}/lib</filename> Onde <application>Lua</"
+"application> está instalado"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14222
@@ -25890,13 +25699,12 @@ msgstr "<varname>LUA_INCDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14223
-#, fuzzy
 msgid ""
 "The directory where <application>Lua</application> and <application>tolua</"
 "application> header files are installed"
 msgstr ""
-"O diretório onde<application>Lua</application> e <application>tolua</"
-"application>arquivos de cabeçalho são instalados "
+"O diretório onde <application>Lua</application> e arquivos de cabeçalho "
+"<application>tolua</application> são instalados "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14230
@@ -25905,13 +25713,12 @@ msgstr "<varname>LUA_LIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14231
-#, fuzzy
 msgid ""
 "The directory where <application>Lua</application> and <application>tolua</"
 "application> libraries are installed"
 msgstr ""
-"O diretório onde<application>Lua</application> e <application>tolua</"
-"application>bibliotecas estão instaladas "
+"O diretório onde <application>Lua</application> e bibliotecas "
+"<application>tolua</application> estão instaladas "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14238
@@ -25920,13 +25727,12 @@ msgstr "<varname>LUA_MODLIBDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14239
-#, fuzzy
 msgid ""
 "The directory where <application>Lua</application> module libraries "
 "(<filename>.so</filename>) are installed"
 msgstr ""
-"O diretório onde<application>Lua</application>bibliotecas de módulos "
-"(<filename>.assim</filename>) estão instalados "
+"O diretório onde bibliotecas <application>Lua</application> de módulos "
+"(<filename>.so</filename>) estão instalados "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14245
@@ -25935,12 +25741,11 @@ msgstr "<varname>LUA_MODSHAREDIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14246
-#, fuzzy
 msgid ""
 "The directory where <application>Lua</application> modules (<filename>.lua</"
 "filename>) are installed"
 msgstr ""
-"O diretório onde<application>Lua</application>módulos (<filename>.lua</"
+"O diretório onde módulos <application>Lua</application> (<filename>.lua</"
 "filename>) estão instalados "
 
 #. (itstool) path: row/entry
@@ -25950,10 +25755,10 @@ msgstr "<varname>LUA_PKGNAMEPREFIX</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14253
-#, fuzzy
 msgid "The package name prefix used by <application>Lua</application> modules"
 msgstr ""
-"O prefixo do nome do pacote usado por<application>Lua</application>módulos "
+"O prefixo do nome do pacote usado por módulos <application>Lua</application> "
+""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14258
@@ -25962,9 +25767,8 @@ msgstr "<varname>LUA_CMD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14259
-#, fuzzy
 msgid "The path to the <application>Lua</application> interpreter"
-msgstr "O caminho para o<application>Lua</application>intérprete"
+msgstr "O caminho para o intérpretador <application>Lua</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14264
@@ -25973,9 +25777,8 @@ msgstr "<varname>LUAC_CMD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14265
-#, fuzzy
 msgid "The path to the <application>Lua</application> compiler"
-msgstr "O caminho para o<application>Lua</application>compilador"
+msgstr "O caminho para o compilador <application>Lua</application>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:14275
@@ -25984,7 +25787,6 @@ msgstr "Usando<command>iconv</command>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14277
-#, fuzzy
 msgid ""
 "After 2013-10-08 (<revnumber>254273</revnumber>), FreeBSD  10-CURRENT and "
 "newer versions have a native <command>iconv</command> in the operating "
@@ -25992,13 +25794,12 @@ msgid ""
 "package> was used as a dependency."
 msgstr ""
 "Após 2013-10-08 (<revnumber>254273</revnumber>), FreeBSD 10-CURRENT e "
-"versões mais recentes têm um nativo<command>iconv</command>no sistema "
-"operacional. Em versões anteriores,<package role=\"port\">conversores/"
-"libiconv</package>foi usado como uma dependência \""
+"versões mais recentes têm um <command>iconv</command> nativo no sistema "
+"operacional. Em versões anteriores, <package role=\"port\"> converters/"
+"libiconv</package> foi usado como uma dependência."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14283
-#, fuzzy
 msgid ""
 "For software that needs <command>iconv</command>, define <literal>USES="
 "iconv</literal>. FreeBSD versions before 10-CURRENT on 2013-08-13 "
@@ -26006,20 +25807,19 @@ msgid ""
 "command>. On these earlier versions, a dependency on <package role="
 "\"port\">converters/libiconv</package> will be added automatically."
 msgstr ""
-"Para software que precisa<command>iconv</command>, definir<literal>USES="
+"Para software que precisa de <command>iconv</command>, definir <literal>USES="
 "iconv</literal>. Versões do FreeBSD antes de 10-CURRENT em 2013-08-13 "
-"(<revnumber>254273</revnumber>) não tem um nativo<command>iconv</command>. "
-"Nestas versões anteriores, uma dependência de<package role="
-"\"port\">conversores/libiconv</package>será adicionado automaticamente. "
+"(<revnumber>254273</revnumber>) não tem um  <command>iconv</command> nativo. "
+"Nestas versões anteriores, uma dependência de <package role="
+"\"port\">converters/libiconv</package> será adicionado automaticamente. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14291
-#, fuzzy
 msgid ""
 "When a port defines <literal>USES=iconv</literal>, these variables will be "
 "available:"
 msgstr ""
-"Quando um port define<literal>USES=iconv</literal>, estas variáveis "
+"Quando um port define <literal>USES=iconv</literal>, estas variáveis "
 "​​estarão disponíveis: "
 
 #. (itstool) path: row/entry
@@ -26034,19 +25834,17 @@ msgstr "Propósito"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14300
-#, fuzzy
 msgid ""
 "Value before FreeBSD 10-CURRENT <revnumber>254273</revnumber> (2013-08-13)"
 msgstr ""
-"Valor antes do FreeBSD 10-CURRENT<revnumber>254273</revnumber>(2013-08-13) "
+"Valor antes do FreeBSD 10-CURRENT <revnumber>254273</revnumber>(2013-08-13) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14302
-#, fuzzy
 msgid ""
 "Value after FreeBSD 10-CURRENT <revnumber>254273</revnumber> (2013-08-13)"
 msgstr ""
-"Valor após o FreeBSD 10-CURRENT<revnumber>254273</revnumber>(2013-08-13) "
+"Valor após o FreeBSD 10-CURRENT <revnumber>254273</revnumber>(2013-08-13) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14309
@@ -26055,9 +25853,8 @@ msgstr "<varname>ICONV_CMD</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14310
-#, fuzzy
 msgid "Directory where the <command>iconv</command> binary resides"
-msgstr "Diretório onde o<command>iconv</command>binário reside "
+msgstr "Diretório onde o binário <command>iconv</command> reside "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14312
@@ -26095,12 +25892,11 @@ msgstr "<varname>ICONV_PREFIX</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14326
-#, fuzzy
 msgid ""
 "Directory where the <command>iconv</command> implementation resides (useful "
 "for configure scripts)"
 msgstr ""
-"Diretório onde o<command>iconv</command>implementação reside (útil para "
+"Diretório onde a implementação do <command>iconv</command> reside (útil para "
 "configurar scripts) "
 
 #. (itstool) path: row/entry
@@ -26121,10 +25917,9 @@ msgstr "<varname>ICONV_CONFIGURE_ARG</varname>"
 #. (itstool) path: row/entry
 #: book.translate.xml:14335
 #: book.translate.xml:14343
-#, fuzzy
 msgid "Preconstructed configure argument for configure scripts"
 msgstr ""
-"Argumento de configuração pré-configurado para scripts de configuração"
+"Argumento de configuração pré-configurado para scripts de configuração."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14337
@@ -26143,15 +25938,14 @@ msgstr "<literal>--with-libiconv=${LOCALBASE}</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14352
-#, fuzzy
 msgid ""
 "These two examples automatically populate the variables with the correct "
 "value for systems using <package role=\"port\">converters/libiconv</package> "
 "or the native <command>iconv</command> respectively:"
 msgstr ""
 "Esses dois exemplos preenchem automaticamente as variáveis ​​com o valor "
-"correto para sistemas usando<package role=\"port\">conversores/libiconv</"
-"package>ou o nativo<command>iconv</command>respectivamente:"
+"correto para sistemas usando <package role=\"port\">converters/libiconv</"
+"package> ou o <command>iconv</command> nativo respectivamente:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:14358
@@ -26181,27 +25975,25 @@ msgstr "USES=\t\ticonv\n"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14372
-#, fuzzy
 msgid ""
 "As shown above, <varname>ICONV_LIB</varname> is empty when a native "
 "<command>iconv</command> is present. This can be used to detect the native "
 "<command>iconv</command> and respond appropriately."
 msgstr ""
-"Como mostrado acima,<varname>ICONV_LIB</varname>está vazio quando um "
-"nativo<command>iconv</command>é presente. Isso pode ser usado para detectar "
-"o nativo<command>iconv</command>e responder adequadamente. "
+"Como mostrado acima, <varname>ICONV_LIB</varname> está vazio quando um "
+"<command>iconv</command> nativo está presente. Isso pode ser usado para "
+"detectar o <command>iconv</command> nativo e responder adequadamente. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14377
-#, fuzzy
 msgid ""
 "Sometimes a program has an <command>ld</command> argument or search path "
 "hardcoded in a <filename>Makefile</filename> or configure script. This "
 "approach can be used to solve that problem:"
 msgstr ""
-"Às vezes um programa tem um<command>ld</command>argumento ou caminho de "
-"pesquisa codificado em um<filename>Makefile</filename>ou configure o script. "
-"Essa abordagem pode ser usada para resolver esse problema: "
+"Às vezes um programa tem um argumento <command>ld</command> ou caminho de "
+"pesquisa codificado em um <filename>Makefile</filename> ou o script "
+"configure. Essa abordagem pode ser usada para resolver esse problema: "
 
 #. (itstool) path: example/title
 #: book.translate.xml:14383
@@ -26224,7 +26016,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14391
-#, fuzzy
 msgid ""
 "In some cases it is necessary to set alternate values or perform operations "
 "depending on whether there is a native <command>iconv</command>. "
@@ -26232,9 +26023,9 @@ msgid ""
 "value of <varname>ICONV_LIB</varname>:"
 msgstr ""
 "Em alguns casos, é necessário definir valores alternativos ou executar "
-"operações dependendo se há um nativo<command>iconv</command>.<filename>bsd."
-"port.pre.mk</filename>deve ser incluído antes de testar o valor "
-"de<varname>ICONV_LIB</varname>: "
+"operações dependendo se há um <command>iconv</command> nativo.<filename>bsd."
+"port.pre.mk</filename> deve ser incluído antes de testar o valor de "
+"<varname>ICONV_LIB</varname>: "
 
 #. (itstool) path: example/title
 #: book.translate.xml:14398
@@ -26276,33 +26067,30 @@ msgstr "Usando o Xfce"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14418
-#, fuzzy
 msgid ""
 "Ports that need <application>Xfce</application> libraries or applications "
 "set <literal>USES=xfce</literal>."
 msgstr ""
-"Ports que precisam<application>Xfce</application>bibliotecas ou conjunto de "
-"aplicativos<literal>USES=xfce</literal>"
+"Ports que precisam de bibliotecas <application>Xfce</application> ou "
+"conjunto de aplicativos com <literal>USES=xfce</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14421
-#, fuzzy
 msgid ""
 "Specific <application>Xfce</application> library and application "
 "dependencies are set with values assigned to <varname>USE_XFCE</varname>. "
 "They are defined in <filename>/usr/ports/Mk/Uses/xfce.mk</filename>. The "
 "possible values are:"
 msgstr ""
-"Específico<application>Xfce</application>dependências de bibliotecas e "
-"aplicativos são definidas com valores atribuídos a<varname>USE_XFCE</"
-"varname>. Eles são definidos em<filename>/usr/ports/Mk/Uses/xfce.mk</"
+"Dependencias specíficas <application>Xfce</application> de bibliotecas e "
+"aplicativos são definidas com valores atribuídos a <varname>USE_XFCE</"
+"varname>. Eles são definidos em <filename>/usr/ports/Mk/Uses/xfce.mk</"
 "filename>. Os valores possíveis são: "
 
 #. (itstool) path: variablelist/title
 #: book.translate.xml:14428
-#, fuzzy
 msgid "Values of <varname>USE_XFCE</varname>"
-msgstr "Valores de<varname>USE_XFCE</varname>"
+msgstr "Valores de <varname>USE_XFCE</varname>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:14431
@@ -26404,14 +26192,13 @@ msgstr "Usando os próprios widgets GTK3 do Xfce"
 
 #. (itstool) path: example/para
 #: book.translate.xml:14506
-#, fuzzy
 msgid ""
 "In this example, the ported application uses the <application>GTK3</"
 "application>-specific widgets <package role=\"port\">x11/libxfce4menu</"
 "package> and <package role=\"port\">x11/xfce4-conf</package>."
 msgstr ""
-"Neste exemplo, o aplicativo portado usa o<application>GTK3</application>-"
-"específicos específicos<package role=\"port\">x11/libxfce4menu</package> e "
+"Neste exemplo, o aplicativo portado usa os widgets <application>GTK3</"
+"application>-specifics <package role=\"port\">x11/libxfce4menu</package> e "
 "<package role=\"port\">x11/xfce4-conf</package>"
 
 #. (itstool) path: example/programlisting
@@ -26445,13 +26232,12 @@ msgstr "USES=\t\txfce\n"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:14522
-#, fuzzy
 msgid ""
 "There is no need to list the components <package role=\"port\">x11-wm/xfce4-"
 "panel</package> needs itself like this:"
 msgstr ""
-"Não há necessidade de listar os componentes<package role=\"port\">x11-wm/"
-"xfce4-panel</package>precisa assim: "
+"Não há necessidade de listar os componentes necessários <package role="
+"\"port\">x11-wm/xfce4-panel</package> assim: "
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:14525
@@ -26463,39 +26249,35 @@ msgstr "USES=\t\txfce\n"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:14528
-#, fuzzy
 msgid ""
 "However, <application>Xfce</application> components and non-"
 "<application>Xfce</application> dependencies of the port must be included "
 "explicitly. Do not count on an <application>Xfce</application> component to "
 "provide a sub-dependency other than itself for the main port."
 msgstr ""
-"Contudo,<application>Xfce</application>componentes e não<application>Xfce</"
-"application>dependências do port devem ser incluídas explicitamente. Não "
-"conte com um<application>Xfce</application>componente para fornecer uma sub-"
-"dependência diferente de si para o port principal. "
+"Contudo, componentes <application>Xfce</application> e dependências não "
+"<application>Xfce</application> do port devem ser incluídas explicitamente. "
+"Não conte com um componente <application>Xfce</application> para fornecer "
+"uma sub-dependência diferente de si para o port principal. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:14537
-#, fuzzy
 msgid "Using Databases"
 msgstr "Usando bancos de dados"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14539
-#, fuzzy
 msgid ""
 "Use one of the <varname>USES</varname> macros from <xref linkend=\"using-"
 "databases-uses\"/> to add a dependency on a database."
 msgstr ""
-"Use um dos<varname>USES</varname>macros de<xref linkend=\"using-databases-"
-"uses\"/>para adicionar uma dependência em um banco de dados. "
+"Use um dos macros <varname>USES</varname> de <xref linkend=\"using-databases-"
+"uses\"/> para adicionar uma dependência em um banco de dados. "
 
 #. (itstool) path: table/title
 #: book.translate.xml:14544
-#, fuzzy
 msgid "Database <varname>USES</varname> Macros"
-msgstr "Base de dados<varname>USES</varname>Macros "
+msgstr "Macros <varname>USES</varname> de Banco de dados "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14549
@@ -26519,7 +26301,6 @@ msgstr "<link linkend=\"uses-bdb\"><literal>bdb</literal></link>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14561
-#, fuzzy
 msgid "MariaDB, MySQL, Percona"
 msgstr "MariaDB, MySQL, Percona"
 
@@ -26571,11 +26352,10 @@ msgstr "Usando o MySQL"
 
 #. (itstool) path: example/para
 #: book.translate.xml:14590
-#, fuzzy
 msgid ""
 "When a port needs the <application>MySQL</application> client library add"
 msgstr ""
-"Quando um port precisa do<application>MySQL</application>biblioteca do "
+"Quando um port precisa da biblioteca <application>MySQL</application> do "
 "cliente adicionar "
 
 #. (itstool) path: example/programlisting
@@ -26596,13 +26376,12 @@ msgstr "Usando o PostgreSQL"
 
 #. (itstool) path: example/para
 #: book.translate.xml:14602
-#, fuzzy
 msgid ""
 "When a port needs the <application>PostgreSQL</application> server version 9."
 "6 or later add"
 msgstr ""
-"Quando um port precisa do<application>PostgreSQL</application>versão do "
-"servidor 9.6 ou posterior, adicione "
+"Quando um port precisa do servidor <application>PostgreSQL</application> "
+"versão 9.6 ou posterior, adicione "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:14606
@@ -26635,7 +26414,6 @@ msgstr "Veja <xref linkend=\"uses-sqlite\"/>Para maiores informações."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:14624
-#, fuzzy
 msgid "Starting and Stopping Services (<literal>rc</literal> Scripts)"
 msgstr "Iniciando e parando serviços (<literal>rc</literal>Scripts) "
 
@@ -26671,15 +26449,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14639
-#, fuzzy
 msgid ""
 "With a mythical port called <replaceable>doorman</replaceable>, which needs "
 "to start a <replaceable>doormand</replaceable> daemon. Add the following to "
 "the <filename>Makefile</filename>:"
 msgstr ""
-"Com um porto mítico chamado<replaceable>porteiro</replaceable>, que precisa "
-"iniciar um<replaceable>doormand</replaceable>daemon. Adicione o seguinte "
-"ao<filename>Makefile</filename>: "
+"Com um port mítico chamado<replaceable>doorman</replaceable>, que precisa "
+"iniciar um daemon <replaceable>doormand</replaceable>. Adicione o seguinte "
+"ao <filename>Makefile</filename>: "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14644
@@ -26689,7 +26466,6 @@ msgstr "USE_RC_SUBR=\t<replaceable>doormand</replaceable>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14646
-#, fuzzy
 msgid ""
 "Multiple scripts may be listed and will be installed. Scripts must be placed "
 "in the <filename>files</filename> subdirectory and a <literal>.in</literal> "
@@ -26700,37 +26476,34 @@ msgid ""
 "\"using-sub-files\">the relevant section</link>."
 msgstr ""
 "Vários scripts podem ser listados e serão instalados. Scripts devem ser "
-"colocados no<filename>arquivos</filename>subdiretório e um<literal>.dentro</"
-"literal>O sufixo deve ser adicionado ao nome do arquivo. "
-"Padrão<varname>SUB_LIST</varname>as expansões serão executadas neste arquivo."
-" Uso do<literal>%%PREFIXO%%</literal> e <literal>%% LOCALBASE %%</"
-"literal>expansões é fortemente encorajado também. Mais "
-"sobre<varname>SUB_LIST</varname> dentro <link linkend=\"using-sub-files\">a "
-"seção relevante</link>"
+"colocados no subdiretório <filename>files</filename> e um sufixo <literal>."
+"in</literal>  deve ser adicionado ao nome do arquivo. Expansões padrão "
+"<varname>SUB_LIST</varname> serão executadas neste arquivo. Uso da expansões "
+"<literal>%%PREFIX%%</literal> e <literal>%% LOCALBASE %%</literal> é "
+"fortemente encorajado também. Mais sobre <varname>SUB_LIST</varname> dentro "
+"de <link linkend=\"using-sub-files\"> a seção relevante</link>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14657
-#, fuzzy
 msgid ""
 "As of FreeBSD 6.1-RELEASE, local <filename>rc.d</filename> scripts "
 "(including those installed by ports) are included in the overall "
 "<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> of the base system."
 msgstr ""
-"A partir do FreeBSD 6.1-RELEASE, local<filename>rc.d</filename>scripts "
-"(incluindo aqueles instalados por ports) estão incluídos "
-"no<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>do sistema básico \""
+"A partir do FreeBSD 6.1-RELEASE, scripts locais <filename>rc.d</filename>  "
+"(incluindo aqueles instalados por ports) estão incluídos no "
+"<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> do sistema básico."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14662
-#, fuzzy
 msgid ""
 "An example simple <filename>rc.d</filename> script to start the doormand "
 "daemon:"
 msgstr ""
-"Um exemplo simples<filename>rc.d</filename>script para iniciar o daemon do "
-"doormand: "
+"Um exemplo de script simples de <filename>rc.d</filename> para iniciar o "
+"daemon do doormand: "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14665
@@ -26808,13 +26581,12 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14698
-#, fuzzy
 msgid ""
 "Unless there is a very good reason to start the service earlier, or it runs "
 "as a particular user (other than root), all ports scripts must use:"
 msgstr ""
 "A menos que haja uma boa razão para iniciar o serviço mais cedo, ou ele seja "
-"executado como um usuário específico (diferente de root), todos os scripts "
+"executado como um usuário específico (diferente de roott), todos os scripts "
 "de ports devem usar:"
 
 #. (itstool) path: sect1/programlisting
@@ -26825,7 +26597,6 @@ msgstr "REQUIRE: LOGIN"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14704
-#, fuzzy
 msgid ""
 "If the startup script launches a daemon that must be shutdown, the following "
 "will trigger a stop of the service on system shutdown:"
@@ -26841,7 +26612,6 @@ msgstr "KEYWORD: shutdown"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14710
-#, fuzzy
 msgid ""
 "If the script is not starting a persistent service this is not necessary."
 msgstr ""
@@ -26850,7 +26620,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14713
-#, fuzzy
 msgid ""
 "For optional configuration elements the \"=\" style of default variable "
 "assignment is preferable to the \":=\" style here, since the former sets a "
@@ -26858,11 +26627,11 @@ msgid ""
 "variable is unset <emphasis>or</emphasis> null. A user might very well "
 "include something like:"
 msgstr ""
-"Para elementos de configuração opcionais, o estilo \" = \\ \"de atribuição "
-"de variável padrão é preferível ao estilo \": = \\ \"aqui, já que o primeiro "
-"define um valor padrão apenas se a variável não estiver definida, e o "
-"segundo define um se variável está indefinida<emphasis> ou </emphasis>nulo. "
-"Um usuário pode muito bem incluir algo como: "
+"Para elementos de configuração opcionais, o estilo \"=\" de atribuição de "
+"variável padrão é preferível ao estilo \": =\", já que o primeiro define um "
+"valor padrão apenas se a variável não estiver definida, e o segundo define "
+"um se variável está indefinida <emphasis> ou </emphasis> é nula. Um usuário "
+"pode muito bem incluir algo como: "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14720
@@ -26872,21 +26641,19 @@ msgstr "<replaceable>doormand</replaceable>_flags=\"\""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14722
-#, fuzzy
 msgid ""
 "in their <filename>rc.conf.local</filename>, and a variable substitution "
 "using \":=\" would inappropriately override the user's intention. The "
 "<literal>_enable</literal> variable is not optional, and must use the \":\" "
 "for the default."
 msgstr ""
-"na sua<filename>rc.conf.local</filename>e uma substituição de variável "
-"usando \\ \": = \" substituirá inadequadamente a intenção do usuário. "
-"o<literal>_habilitar</literal>variável não é opcional e deve usar o \\ \": "
-"\" para o padrão. "
+"na sua <filename>rc.conf.local</filename> e uma substituição de variável "
+"usando \": =\" substituirá inadequadamente a intenção do usuário. A variável "
+"<literal>_enable</literal> não é opcional e deve usar o \": \" para o padrão."
+" "
 
 #. (itstool) path: important/para
 #: book.translate.xml:14729
-#, fuzzy
 msgid ""
 "Ports <emphasis>must not</emphasis> start and stop their services when "
 "installing and deinstalling. Do not abuse the <filename>plist</filename> "
@@ -26894,11 +26661,11 @@ msgid ""
 "running commands that modify the currently running system, including "
 "starting or stopping services."
 msgstr ""
-"Ports<emphasis>Não deve</emphasis>iniciar e parar seus serviços durante a "
-"instalação e desinstalação. Não abuse do<filename>plist</filename>palavras-"
-"chave descritas em<xref linkend=\"plist-keywords-base-exec\"/>executando "
-"comandos que modificam o sistema atualmente em execução, incluindo iniciar "
-"ou interromper serviços. "
+"Ports <emphasis>não devem</emphasis> iniciar e parar seus serviços durante a "
+"instalação e desinstalação. Não abuse das keywords  <filename>plist</"
+"filename> descritas em <xref linkend=\"plist-keywords-base-exec\"/> "
+"executando comandos que modificam o sistema atualmente em execução, "
+"incluindo iniciar ou interromper serviços. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14737
@@ -26907,49 +26674,44 @@ msgstr "Lista de verificação pré-commit"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14739
-#, fuzzy
 msgid ""
 "Before contributing a port with an <filename>rc.d</filename> script, and "
 "more importantly, before committing one, please consult this checklist to be "
 "sure that it is ready."
 msgstr ""
-"Antes de contribuir com um porto com um<filename>rc.d</filename>script, e "
-"mais importante, antes de cometer um, por favor consulte esta lista de "
-"verificação para ter certeza de que está pronto \""
+"Antes de contribuir com um port com um script <filename>rc.d</filename>, e "
+"mais importante, antes de comitar um, por favor consulte esta lista de "
+"verificação para ter certeza de que está pronto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14744
-#, fuzzy
 msgid ""
 "The <package role=\"port\">devel/rclint</package> port can check for most of "
 "these, but it is not a substitute for proper review."
 msgstr ""
-"O<package role=\"port\">devel/rclint</package>porta pode verificar a maioria "
-"destes, mas não é um substituto para revisão adequada \""
+"O port <package role=\"port\">devel/rclint</package> pode verificar a "
+"maioria destes, mas não é um substituto para revisão adequada."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14750
-#, fuzzy
 msgid ""
 "If this is a new file, does it have a <filename>.sh</filename> extension? If "
 "so, that must be changed to just <filename><replaceable>file</replaceable>."
 "in</filename> since <filename>rc.d</filename> files may not end with that "
 "extension."
 msgstr ""
-"Se este é um novo arquivo, ele tem um<filename>.sh</filename>extensão? Se "
-"assim for, isso deve ser mudado para apenas<filename><replaceable>Arquivo</"
-"replaceable>.dentro</filename>Desde a<filename>rc.d</filename>os arquivos "
-"podem não terminar com essa extensão. "
+"Se este é um novo arquivo, ele tem uma extensão <filename>.sh</filename>? Se "
+"assim for, isso deve ser mudado para apenas <filename><replaceable>file</"
+"replaceable>.in</filename> desde que os arquivos <filename>rc.d</filename> "
+"possam não terminar com essa extensão. "
 
 #. (itstool) path: step/para
 #: book.translate.xml:14759
-#, fuzzy
 msgid "Does the file have a <literal>$FreeBSD$</literal> tag?"
-msgstr "O arquivo tem um<literal>$ FreeBSD $</literal>tag? "
+msgstr "O arquivo tem uma tag <literal>$ FreeBSD $</literal>? "
 
 #. (itstool) path: step/para
 #: book.translate.xml:14764
-#, fuzzy
 msgid ""
 "Do the name of the file (minus <filename>.in</filename>), the "
 "<literal>PROVIDE</literal> line, and <literal>$</literal><replaceable>name</"
@@ -26961,16 +26723,16 @@ msgid ""
 "local]</filename>. It is also a policy for all new scripts, including those "
 "in the base system."
 msgstr ""
-"Faça o nome do arquivo (menos<filename>.dentro</filename>), "
-"a<literal>PROVIDENCIAR</literal>linha e<literal>$</"
-"literal><replaceable>nome</replaceable>todo o jogo? A correspondência do "
-"nome do arquivo<literal>PROVIDENCIAR</literal>facilita a depuração, "
-"especialmente para<citerefentry><refentrytitle>rcorder</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>problemas. Combinando o "
-"nome do arquivo e<literal>$</literal><replaceable>nome</replaceable>torna "
-"mais fácil descobrir quais variáveis ​​são relevantes<filename>rc.conf [."
-"local]</filename>. É também uma política para todos os novos scripts, "
-"incluindo aqueles no sistema básico. "
+"O nome do arquivo (menos<filename>.dentro</filename>), a linha "
+"<literal>PROVIDE</literal> e <literal>$</literal><replaceable>nome</"
+"replaceable> casam? A correspondência do nome do arquivo <literal>PROVIDE</"
+"literal> facilita a depuração, especialmente para problemas "
+"<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Combinando o nome do arquivo e <literal>$</"
+"literal><replaceable>nome</replaceable> torna mais fácil descobrir quais "
+"variáveis ​​são <filename>rc.conf [.local]</filename> relevantes. É também "
+"uma política para todos os novos scripts, incluindo aqueles no sistema "
+"básico. "
 
 #. (itstool) path: step/para
 #: book.translate.xml:14781
@@ -26994,13 +26756,12 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:14792
-#, fuzzy
 msgid ""
 "Does the script start a persistent service? If so, it must have "
 "<literal>KEYWORD: shutdown</literal>."
 msgstr ""
-"O script inicia um serviço persistente? Em caso afirmativo, ele deve "
-"ter<literal>PALAVRA-CHAVE: encerramento</literal>"
+"O script inicia um serviço persistente? Em caso afirmativo, ele deve ter "
+"<literal>KEYWORD: shutdown</literal>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:14798
@@ -27046,33 +26807,30 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:14819
-#, fuzzy
 msgid ""
 "will probably not work properly. See <citerefentry><refentrytitle>service</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information."
 msgstr ""
-"provavelmente não funcionará corretamente. "
-"Consulte<citerefentry><refentrytitle>serviço</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>Para maiores informações."
+"provavelmente não funcionará corretamente. Consulte "
+"<citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> Para maiores informações."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14824
-#, fuzzy
 msgid ""
 "Have all occurrences of <filename>/usr/local</filename> been replaced with "
 "<literal>%%PREFIX%%</literal>?"
 msgstr ""
-"Ter todas as ocorrências de<filename>/usr/local</filename>foi substituído "
-"por<literal>%%PREFIXO%%</literal>"
+"Todas as ocorrências de <filename>/usr/local</filename>foram substituídas "
+"por <literal>%%PREFIXO%%</literal>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:14830
-#, fuzzy
 msgid ""
 "Do the default variable assignments come after <function>load_rc_config</"
 "function>?"
 msgstr ""
-"As atribuições de variáveis ​​padrão vêm depois <function>load_rc_config</"
+"As atribuições de variáveis ​​padrão vêm depois de <function>load_rc_config</"
 "function>"
 
 #. (itstool) path: step/para
@@ -27089,7 +26847,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:14842
-#, fuzzy
 msgid "Are things that are set in variables actually used in the script?"
 msgstr "As coisas são definidas em variáveis ​​realmente usadas no script?"
 
@@ -27204,7 +26961,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14909
-#, fuzzy
 msgid ""
 "Please include a patch against these two files when requiring a new user or "
 "group to be created for the port."
@@ -27214,15 +26970,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14913
-#, fuzzy
 msgid ""
 "Then use <varname>USERS</varname> and <varname>GROUPS</varname> in "
 "<filename>Makefile</filename>, and the user will be automatically created "
 "when installing the port."
 msgstr ""
-"Então use<varname>COMERCIAL</varname> e <varname>GRUPOS</varname> dentro "
-"<filename>Makefile</filename>e o usuário será criado automaticamente ao "
-"instalar o port. "
+"Então use <varname>USERS</varname> e <varname>GROUPS</varname> \n"
+" dentro do <filename>Makefile</filename> e o usuário será criado "
+"automaticamente ao instalar o port. "
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14918
@@ -27234,13 +26989,12 @@ msgstr "USERS=\tpulse\n"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14921
-#, fuzzy
 msgid ""
 "The current list of reserved UIDs and GIDs can be found in <filename>ports/"
 "UIDs</filename> and <filename>ports/GIDs</filename>."
 msgstr ""
-"A lista atual de UIDs e GIDs reservados pode ser encontrada "
-"em<filename>ports/UIDs</filename> e <filename>ports/GIDs</filename>"
+"A lista atual de UIDs e GIDs reservados pode ser encontrada em "
+"<filename>ports/UIDs</filename> e <filename>ports/GIDs</filename>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:14927
@@ -27267,13 +27021,12 @@ msgstr "USES=\tkmod"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14936
-#, fuzzy
 msgid ""
 "Apart from this check, the <literal>kmod</literal> feature takes care of "
 "most items that these ports need to take into account."
 msgstr ""
-"Além desta verificação, o<literal>kmod</literal>O recurso cuida da maioria "
-"dos itens que essas ports precisam levar em consideração. "
+"Além desta verificação, o recurso <literal>kmod</literal> cuida da maioria "
+"dos itens que esses ports precisam levar em consideração."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:14942
@@ -27304,9 +27057,8 @@ msgstr "Ports devem (por ordem de preferência):"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:14955
-#, fuzzy
 msgid "Use vendored dependencies included with the package source."
-msgstr "Use dependências vendorias incluídas na fonte do pacote."
+msgstr "Use dependências fornecidas na fonte do pacote."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:14960
@@ -27456,13 +27208,12 @@ msgstr ""
 
 #. (itstool) path: tip/para
 #: book.translate.xml:15047
-#, fuzzy
 msgid ""
 "It can help simplify the logic of the <filename>Makefile</filename> to also "
 "define <varname>FLAVOR</varname> as:"
 msgstr ""
-"Isso pode ajudar a simplificar a lógica do<filename>Makefile</filename>para "
-"também definir<varname>FLAVOR</varname>Como:"
+"Isso pode ajudar a simplificar a lógica do <filename>Makefile</filename> "
+"para também definir um <varname>FLAVOR</varname> Como:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:15051
@@ -27489,13 +27240,12 @@ msgstr "Uso básico de flavores"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15064
-#, fuzzy
 msgid ""
 "If a port has a <quote>lite</quote> slave port, the slave port can be "
 "removed, and the port can be converted to flavors with:"
 msgstr ""
-"Se um port tiver um<quote>Leve</quote>porta escrava, o port escrava pode ser "
-"removida, e o port pode ser convertida em flavores com: "
+"Se um port tiver um port slave <quote>menor</quote>, o port slave pode ser "
+"removida, e o port pode ser convertida em flavores com:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:15068
@@ -27529,19 +27279,17 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:15084
-#, fuzzy
 msgid "Another Basic Flavors Usage"
-msgstr "Outro uso básico de flavores"
+msgstr "Outro uso básico de flavors"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15086
-#, fuzzy
 msgid ""
 "If a port has a <literal>-nox11</literal> slave port, the slave port can be "
 "removed, and the port can be converted to flavors with:"
 msgstr ""
-"Se um port tiver um<literal>-nox11</literal>porta escrava, o port escrava "
-"pode ser removida, e o port pode ser convertida em flavores com: "
+"Se um port tiver um port slave <literal>-nox11</literal>, o port slave pode "
+"ser removido, e o port pode ser convertida em flavors com: "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:15090
@@ -27654,13 +27402,12 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: book.translate.xml:15136
-#, fuzzy
 msgid ""
 "This port does not use <literal>USE_PYTHON=distutils</literal> but needs "
 "<application>Python</application> flavors anyway."
 msgstr ""
-"Esta porta não usa<literal>USE_PYTHON = distutils</literal>mas "
-"precisa<application>Python</application>flavores de qualquer maneira. "
+"Este port não usa <literal>USE_PYTHON=distutils</literal> mas precisa de "
+"flavor <application>Python</application> de qualquer maneira. "
 
 #. (itstool) path: callout/para
 #: book.translate.xml:15142
@@ -27735,13 +27482,12 @@ msgstr "Ajuda de Flavors"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15183
-#, fuzzy
 msgid ""
 "To make the <filename>Makefile</filename> easier to write, a few flavors "
 "helpers exist."
 msgstr ""
-"Para tornar o<filename>Makefile</filename>mais fácil de escrever, existem "
-"alguns ajudas de flavores. "
+"Para tornar o <filename>Makefile</filename> mais fácil de escrever, existem "
+"alguns flavors para ajudar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15186
@@ -27770,7 +27516,6 @@ msgstr "<varname><replaceable>flavor</replaceable>_DESCR</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15206
-#, fuzzy
 msgid "This list of helpers will append to their variable:"
 msgstr "Esta lista de ajudas será anexada à sua variável:"
 
@@ -27880,7 +27625,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:15281
-#, fuzzy
 msgid ""
 "All the examples assume the currently supported PHP versions are 5.6, 7.0, 7."
 "1, and 7.2."
@@ -27895,7 +27639,6 @@ msgstr "Simples Extenção <literal>USES=php</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15288
-#, fuzzy
 msgid "This will generate package for all the supported versions:"
 msgstr "Isso gerará pacote para todas as versões suportadas:"
 
@@ -27917,7 +27660,6 @@ msgstr ""
 
 #. (itstool) path: example/para
 #: book.translate.xml:15297
-#, fuzzy
 msgid "This will generate package for all the supported versions but 7.2:"
 msgstr "Isto irá gerar o pacote para todas as versões suportadas, mas 7.2:"
 
@@ -27946,7 +27688,6 @@ msgstr "Flavors PHP com aplicativos PHP"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15311
-#, fuzzy
 msgid "PHP applications can also be flavorized."
 msgstr "Aplicações PHP também podem ter flavor."
 
@@ -28051,12 +27792,11 @@ msgstr "USES=\tpython\n"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15365
-#, fuzzy
 msgid ""
 "Will get these flavors: <literal>py27</literal>, and <literal>py36</literal>."
 ""
 msgstr ""
-"Receberá esses flavores:<literal>py27</literal> e <literal>py36</literal>"
+"Receberá esses flavors:<literal>py27</literal> e <literal>py36</literal>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:15368
@@ -28068,12 +27808,11 @@ msgstr "USES=\tpython\n"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15371
-#, fuzzy
 msgid ""
 "Will get these flavors: <literal>py27</literal>, <literal>py34</literal>, "
 "<literal>py35</literal> and <literal>py36</literal>."
 msgstr ""
-"Receberá esses flavores:<literal>py27</literal>, <literal>py34</literal>, "
+"Receberá esses flavors: <literal>py27</literal>, <literal>py34</literal>, "
 "<literal>py35</literal> e <literal>py36</literal>"
 
 #. (itstool) path: example/title
@@ -28104,12 +27843,11 @@ msgstr "USES=\tpython:-3.5\n"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15393
-#, fuzzy
 msgid ""
 "Will get these flavors: <literal>py27</literal>, <literal>py34</literal>, "
 "and <literal>py35</literal>."
 msgstr ""
-"Receberá esses flavores:<literal>py27</literal>, <literal>py34</literal> e "
+"Receberá esses flavores: <literal>py27</literal>, <literal>py34</literal> e "
 "<literal>py35</literal>"
 
 #. (itstool) path: example/programlisting
@@ -28135,12 +27873,11 @@ msgstr "USES=\tpython:3.4+\n"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15404
-#, fuzzy
 msgid ""
 "Will get these flavors: <literal>py34</literal>, <literal>py35</literal>, "
 "and <literal>py36</literal>."
 msgstr ""
-"Receberá esses flavores:<literal>py34</literal>, <literal>py35</literal> e "
+"Receberá esses flavores: <literal>py34</literal>, <literal>py35</literal> e "
 "<literal>py36</literal>"
 
 #. (itstool) path: sect1/para
@@ -28158,19 +27895,17 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:15415
-#, fuzzy
 msgid "For a Port Not Using <literal>distutils</literal>"
-msgstr "Para um port não usando<literal>distutils</literal>"
+msgstr "Para um port que não usa <literal>distutils</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15418
-#, fuzzy
 msgid ""
 "If the default <application>Python</application> 3 version is 3.6, the "
 "following will set <varname>PY_FLAVOR</varname> to <literal>py36</literal>:"
 msgstr ""
-"Se o padrão<application>Python</application>3 versão é 3.6, o seguinte irá "
-"definir<varname>PY_FLAVOR</varname>para<literal>py36</literal>: "
+"Se a versão padrão do <application>Python</application>3 é 3.6, o seguinte "
+"irá definir <varname>PY_FLAVOR</varname> para <literal>py36</literal>: "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:15423
@@ -28188,15 +27923,13 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:15439
-#, fuzzy
 msgid "Advanced <filename>pkg-plist</filename> Practices"
-msgstr "Avançado<filename>pkg-plist</filename>Práticas "
+msgstr "Práticas Avançadas <filename>pkg-plist</filename>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15442
-#, fuzzy
 msgid "Changing <filename>pkg-plist</filename> Based on Make Variables"
-msgstr "Mudando<filename>pkg-plist</filename>Baseado em Make Variables "
+msgstr "Mudando <filename>pkg-plist</filename> Baseado em Variables Make"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15445
@@ -28263,7 +27996,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:15477
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OCTAVE_VERSION=\t${PORTREVISION}\n"
 "PLIST_SUB=\tOCTAVE_VERSION=${OCTAVE_VERSION}"
@@ -28505,13 +28238,12 @@ msgstr "post-install:\n"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15592
-#, fuzzy
 msgid ""
 "Add the directory to <filename>pkg-plist</filename> like any other. For "
 "example:"
 msgstr ""
-"Adicione o diretório para<filename>pkg-plist</filename>como qualquer outro. "
-"Por exemplo:"
+"Adicione o diretório para <filename>pkg-plist</filename> como qualquer outro."
+" Por exemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:15595
@@ -28633,13 +28365,13 @@ msgstr "@sample %%EXAMPLESDIR%%/orbit.conf etc/orbit.conf"
 
 #. (itstool) path: note/para
 #: book.translate.xml:15651
-#, fuzzy
 msgid ""
 "The format is <literal>@sample <replaceable>sample-file</replaceable> "
 "<replaceable>actual-config-file</replaceable></literal>."
 msgstr ""
-"O formato é<literal>@amostra<replaceable>arquivo de amostra</"
-"replaceable><replaceable>arquivo real-config</replaceable></literal>"
+"O formato é <literal>@sample <replaceable>arquivo de exemplo</"
+"replaceable><replaceable>arquivo real de configuração</replaceable></"
+"literal>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15658
@@ -28765,9 +28497,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:15716
-#, fuzzy
 msgid "Expanding <varname>PLIST_SUB</varname> with Regular Expressions"
-msgstr "Expansão<varname>PLIST_SUB</varname>com expressões regulares "
+msgstr "Expansão do <varname>PLIST_SUB</varname> com expressões regulares "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15719
