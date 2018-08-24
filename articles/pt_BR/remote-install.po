@@ -1,15 +1,17 @@
-#$FreeBSD$
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-08-12 23:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-08-24 12:31+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"X-Generator: Zanata 4.6.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -18,48 +20,73 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
-msgid "Remote Installation of the FreeBSD Operating System Without a Remote Console"
+msgid ""
+"Remote Installation of the FreeBSD Operating System Without a Remote Console"
 msgstr ""
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
 #, no-wrap
-msgid ""
-"\n"
+msgid "\n"
 "\t  <email>danger@FreeBSD.org</email>\n"
 "\t"
-msgstr ""
+msgstr "\n"
+"\t  <email>danger@FreeBSD.org</email>\n"
+"\t"
 
 #. (itstool) path: info/author
 #: article.translate.xml:8
-msgid "<personname> <firstname>Daniel</firstname> <surname>Gerzo</surname> </personname> <affiliation> <_:address-1/> </affiliation>"
+msgid ""
+"<personname> <firstname>Daniel</firstname> <surname>Gerzo</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname> <firstname>Daniel</firstname> <surname>Gerzo</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:23
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:31
 msgid "<year>2008</year> <holder>The FreeBSD Documentation Project</holder>"
-msgstr ""
+msgstr "<year>2008</year> <holder>Projeto de Documentação do FreeBSD</holder>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:36
 #: article.translate.xml:38
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/remote-install/article.xml 51348 2017-12-30 22:56:56Z eadler $"
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/remote-install/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/remote-install/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:41
-msgid "This article documents the remote installation of the FreeBSD operating system when the console of the remote system is unavailable. The main idea behind this article is the result of a collaboration with Martin Matuska <email>mm@FreeBSD.org</email> with valuable input provided by Paweł Jakub Dawidek <email>pjd@FreeBSD.org</email>."
+msgid ""
+"This article documents the remote installation of the FreeBSD operating "
+"system when the console of the remote system is unavailable. The main idea "
+"behind this article is the result of a collaboration with Martin Matuska "
+"<email>mm@FreeBSD.org</email> with valuable input provided by Paweł Jakub "
+"Dawidek <email>pjd@FreeBSD.org</email>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -69,17 +96,29 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:52
-msgid "There are many server hosting providers in the world, but very few of them are officially supporting FreeBSD. They usually provide support for a <trademark class=\"registered\">Linux</trademark> distribution to be installed on the servers they offer."
+msgid ""
+"There are many server hosting providers in the world, but very few of them "
+"are officially supporting FreeBSD. They usually provide support for a "
+"<trademark class=\"registered\">Linux</trademark> distribution to be "
+"installed on the servers they offer."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:57
-msgid "In some cases, these companies will install your preferred <trademark class=\"registered\">Linux</trademark> distribution if you request it. Using this option, we will attempt to install FreeBSD. In other cases, they may offer a rescue system which would be used in an emergency. It is possible to use this for our purposes as well."
+msgid ""
+"In some cases, these companies will install your preferred <trademark class="
+"\"registered\">Linux</trademark> distribution if you request it. Using this "
+"option, we will attempt to install FreeBSD. In other cases, they may offer a "
+"rescue system which would be used in an emergency. It is possible to use "
+"this for our purposes as well."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:63
-msgid "This article covers the basic installation and configuration steps required to bootstrap a remote installation of FreeBSD with RAID-1 and <application>ZFS</application> capabilities."
+msgid ""
+"This article covers the basic installation and configuration steps required "
+"to bootstrap a remote installation of FreeBSD with RAID-1 and "
+"<application>ZFS</application> capabilities."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -89,22 +128,40 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:71
-msgid "This section will summarize the purpose of this article and better explain what is covered herein. The instructions included in this article will benefit those using services provided by colocation facilities not supporting FreeBSD."
+msgid ""
+"This section will summarize the purpose of this article and better explain "
+"what is covered herein. The instructions included in this article will "
+"benefit those using services provided by colocation facilities not "
+"supporting FreeBSD."
 msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:78
-msgid "As we have mentioned in the <link linkend=\"background\">Background</link> section, many of the reputable server hosting companies provide some kind of rescue system, which is booted from their <acronym>LAN</acronym> and accessible over <application>SSH</application>. They usually provide this support in order to help their customers fix broken operating systems. As this article will explain, it is possible to install FreeBSD with the help of these rescue systems."
+msgid ""
+"As we have mentioned in the <link linkend=\"background\">Background</link> "
+"section, many of the reputable server hosting companies provide some kind of "
+"rescue system, which is booted from their <acronym>LAN</acronym> and "
+"accessible over <application>SSH</application>. They usually provide this "
+"support in order to help their customers fix broken operating systems. As "
+"this article will explain, it is possible to install FreeBSD with the help "
+"of these rescue systems."
 msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:92
-msgid "The next section of this article will describe how to configure, and build minimalistic FreeBSD on the local machine. That version will eventually be running on the remote machine from a ramdisk, which will allow us to install a complete FreeBSD operating system from an <acronym>FTP</acronym> mirror using the <application>sysinstall</application> utility."
+msgid ""
+"The next section of this article will describe how to configure, and build "
+"minimalistic FreeBSD on the local machine. That version will eventually be "
+"running on the remote machine from a ramdisk, which will allow us to install "
+"a complete FreeBSD operating system from an <acronym>FTP</acronym> mirror "
+"using the <application>sysinstall</application> utility."
 msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:102
-msgid "The rest of this article will describe the installation procedure itself, as well as the configuration of the <application>ZFS</application> file system."
+msgid ""
+"The rest of this article will describe the installation procedure itself, as "
+"well as the configuration of the <application>ZFS</application> file system."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -119,7 +176,9 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:115
-msgid "Have a network accessible operating system with <application>SSH</application> access"
+msgid ""
+"Have a network accessible operating system with <application>SSH</"
+"application> access"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -129,12 +188,16 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:124
-msgid "Be familiar with the <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility"
+msgid ""
+"Be familiar with the <citerefentry><refentrytitle>sysinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> utility"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:128
-msgid "Have the FreeBSD installation <acronym>ISO</acronym> image or <acronym>CD</acronym> handy"
+msgid ""
+"Have the FreeBSD installation <acronym>ISO</acronym> image or <acronym>CD</"
+"acronym> handy"
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -144,31 +207,54 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
-msgid "Before FreeBSD may be installed on the target system, it is necessary to build the minimal FreeBSD operating system image which will boot from the hard drive. This way the new system can be accessed from the network, and the rest of the installation can be done without remote access to the system console."
+msgid ""
+"Before FreeBSD may be installed on the target system, it is necessary to "
+"build the minimal FreeBSD operating system image which will boot from the "
+"hard drive. This way the new system can be accessed from the network, and "
+"the rest of the installation can be done without remote access to the system "
+"console."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:144
-msgid "The <application>mfsBSD</application> tool-set can be used to build a tiny FreeBSD image. As the name of <application>mfsBSD</application> suggests (<quote>mfs</quote> means <quote>memory file system</quote>), the resulting image runs entirely from a ramdisk. Thanks to this feature, the manipulation of hard drives will not be limited, therefore it will be possible to install a complete FreeBSD operating system. The <application>mfsBSD</application> <uri xlink:href=\"http://mfsbsd.vx.sk/\">home page</uri> includes pointers to the latest release of the toolset."
+msgid ""
+"The <application>mfsBSD</application> tool-set can be used to build a tiny "
+"FreeBSD image. As the name of <application>mfsBSD</application> suggests "
+"(<quote>mfs</quote> means <quote>memory file system</quote>), the resulting "
+"image runs entirely from a ramdisk. Thanks to this feature, the manipulation "
+"of hard drives will not be limited, therefore it will be possible to install "
+"a complete FreeBSD operating system. The <application>mfsBSD</application> "
+"<uri xlink:href=\"http://mfsbsd.vx.sk/\">home page</uri> includes pointers "
+"to the latest release of the toolset."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:154
-msgid "Please note that the internals of <application>mfsBSD</application> and how it all fits together is beyond the scope of this article. The interested reader should consult the original documentation of <application>mfsBSD</application> for more details."
+msgid ""
+"Please note that the internals of <application>mfsBSD</application> and how "
+"it all fits together is beyond the scope of this article. The interested "
+"reader should consult the original documentation of <application>mfsBSD</"
+"application> for more details."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:160
-msgid "Download and extract the latest <application>mfsBSD</application> release and change your working directory to the directory where the <application>mfsBSD</application> scripts will reside:"
+msgid ""
+"Download and extract the latest <application>mfsBSD</application> release "
+"and change your working directory to the directory where the "
+"<application>mfsBSD</application> scripts will reside:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:165
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</userinput>"
+"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-"
+"<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>."
+"tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -178,12 +264,22 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:173
-msgid "Before booting <application>mfsBSD</application>, a few important configuration options have to be set. The most important that we have to get right is, naturally, the network setup. The most suitable method to configure networking options depends on whether we know beforehand the type of the network interface we will use, and the network interface driver to be loaded for our hardware. We will see how <application>mfsBSD</application> can be configured in either case."
+msgid ""
+"Before booting <application>mfsBSD</application>, a few important "
+"configuration options have to be set. The most important that we have to get "
+"right is, naturally, the network setup. The most suitable method to "
+"configure networking options depends on whether we know beforehand the type "
+"of the network interface we will use, and the network interface driver to be "
+"loaded for our hardware. We will see how <application>mfsBSD</application> "
+"can be configured in either case."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:183
-msgid "Another important thing to set is the <systemitem class=\"username\">root</systemitem> password. This can be done by editing <filename>conf/loader.conf</filename>. Please see the included comments."
+msgid ""
+"Another important thing to set is the <systemitem class=\"username\">root</"
+"systemitem> password. This can be done by editing <filename>conf/loader."
+"conf</filename>. Please see the included comments."
 msgstr ""
 
 #. (itstool) path: sect3/title
@@ -193,7 +289,12 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:191
-msgid "When the installed network interface card is unknown, it is possible to use the auto-detection features of <application>mfsBSD</application>. The startup scripts of <application>mfsBSD</application> can detect the correct driver to use, based on the MAC address of the interface, if we set the following options in <filename>conf/interfaces.conf</filename>:"
+msgid ""
+"When the installed network interface card is unknown, it is possible to use "
+"the auto-detection features of <application>mfsBSD</application>. The "
+"startup scripts of <application>mfsBSD</application> can detect the correct "
+"driver to use, based on the MAC address of the interface, if we set the "
+"following options in <filename>conf/interfaces.conf</filename>:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
@@ -207,14 +308,15 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:203
-msgid "Do not forget to add the <literal>defaultrouter</literal> information to <filename>conf/rc.conf</filename>:"
+msgid ""
+"Do not forget to add the <literal>defaultrouter</literal> information to "
+"<filename>conf/rc.conf</filename>:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:207
 #, no-wrap
-msgid ""
-"defaultrouter=\"192.168.0.1\""
+msgid "defaultrouter=\"192.168.0.1\""
 msgstr ""
 
 #. (itstool) path: sect3/title
@@ -224,19 +326,27 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:213
-msgid "When the network interface driver is known, it is more convenient to use <filename>conf/rc.conf</filename> for networking options. The syntax of this file is the same as the one used in the standard <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> file of FreeBSD."
+msgid ""
+"When the network interface driver is known, it is more convenient to use "
+"<filename>conf/rc.conf</filename> for networking options. The syntax of this "
+"file is the same as the one used in the standard "
+"<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> file of FreeBSD."
 msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:219
-msgid "For example, if you know that a <citerefentry><refentrytitle>re</refentrytitle><manvolnum>4</manvolnum></citerefentry> network interface is going to be available, you can set the following options in <filename>conf/rc.conf</filename>:"
+msgid ""
+"For example, if you know that a <citerefentry><refentrytitle>re</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> network interface is "
+"going to be available, you can set the following options in <filename>conf/"
+"rc.conf</filename>:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:224
 #, no-wrap
-msgid ""
-"defaultrouter=\"192.168.0.1\"\n"
+msgid "defaultrouter=\"192.168.0.1\"\n"
 "ifconfig_re0=\"inet 192.168.0.2/24\""
 msgstr ""
 
@@ -247,34 +357,50 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:233
-msgid "The process of building an <application>mfsBSD</application> image is pretty straightforward."
+msgid ""
+"The process of building an <application>mfsBSD</application> image is pretty "
+"straightforward."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:237
-msgid "The first step is to mount the FreeBSD installation <acronym>CD</acronym>, or the installation <acronym>ISO</acronym> image to <filename>/cdrom</filename>. For the sake of example, in this article we will assume that you have downloaded the FreeBSD 10.1-RELEASE <acronym>ISO</acronym>. Mounting this ISO image to the <filename>/cdrom</filename> directory is easy with the <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility:"
+msgid ""
+"The first step is to mount the FreeBSD installation <acronym>CD</acronym>, "
+"or the installation <acronym>ISO</acronym> image to <filename>/cdrom</"
+"filename>. For the sake of example, in this article we will assume that you "
+"have downloaded the FreeBSD 10.1-RELEASE <acronym>ISO</acronym>. Mounting "
+"this ISO image to the <filename>/cdrom</filename> directory is easy with the "
+"<citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> utility:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:246
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f <replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f "
+"<replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>mount_cd9660 /dev/md10 /cdrom</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:249
-msgid "Since the recent FreeBSD releases do not contain regular distribution sets, it is required to extract the FreeBSD distribution files from the distribution archives located on the <acronym>ISO</acronym> image:"
+msgid ""
+"Since the recent FreeBSD releases do not contain regular distribution sets, "
+"it is required to extract the FreeBSD distribution files from the "
+"distribution archives located on the <acronym>ISO</acronym> image:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:254
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C <replaceable>DIST</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C "
+"<replaceable>DIST</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C "
+"<replaceable>DIST</replaceable></userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -286,12 +412,16 @@ msgstr ""
 #: article.translate.xml:261
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:264
-msgid "The above <command>make</command> has to be run from the top level of the <application>mfsBSD</application> directory tree, for example <filename>~/mfsbsd-2.1/</filename>."
+msgid ""
+"The above <command>make</command> has to be run from the top level of the "
+"<application>mfsBSD</application> directory tree, for example <filename>~/"
+"mfsbsd-2.1/</filename>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -301,7 +431,11 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:274
-msgid "Now that the <application>mfsBSD</application> image is ready, it must be uploaded to the remote system running a live rescue system or pre-installed <trademark class=\"registered\">Linux</trademark> distribution. The most suitable tool for this task is <application>scp</application>:"
+msgid ""
+"Now that the <application>mfsBSD</application> image is ready, it must be "
+"uploaded to the remote system running a live rescue system or pre-installed "
+"<trademark class=\"registered\">Linux</trademark> distribution. The most "
+"suitable tool for this task is <application>scp</application>:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -313,19 +447,32 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:282
-msgid "To boot <application>mfsBSD</application> image properly, it must be placed on the first (bootable) device of the given machine. This may be accomplished using this example providing that <filename>sda</filename> is the first bootable disk device:"
+msgid ""
+"To boot <application>mfsBSD</application> image properly, it must be placed "
+"on the first (bootable) device of the given machine. This may be "
+"accomplished using this example providing that <filename>sda</filename> is "
+"the first bootable disk device:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:288
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</userinput>"
+"<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:290
-msgid "If all went well, the image should now be in the <acronym>MBR</acronym> of the first device and the machine can be rebooted. Watch for the machine to boot up properly with the <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry> tool. Once it has came back on-line, it should be possible to access it over <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> as user <systemitem class=\"username\">root</systemitem> with the configured password."
+msgid ""
+"If all went well, the image should now be in the <acronym>MBR</acronym> of "
+"the first device and the machine can be rebooted. Watch for the machine to "
+"boot up properly with the <citerefentry><refentrytitle>ping</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> tool. Once it has came "
+"back on-line, it should be possible to access it over "
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> as user <systemitem class=\"username\">root</systemitem> with "
+"the configured password."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -335,7 +482,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:303
-msgid "The <application>mfsBSD</application> has been successfully booted and it should be possible to log in through <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry>. This section will describe how to create and label slices, set up <application>gmirror</application> for RAID-1, and how to use <application>sysinstall</application> to install a minimal distribution of the FreeBSD operating system."
+msgid ""
+"The <application>mfsBSD</application> has been successfully booted and it "
+"should be possible to log in through <citerefentry><refentrytitle>ssh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. This section will "
+"describe how to create and label slices, set up <application>gmirror</"
+"application> for RAID-1, and how to use <application>sysinstall</"
+"application> to install a minimal distribution of the FreeBSD operating "
+"system."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -345,53 +499,99 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:313
-msgid "The first task is to allocate disk space for FreeBSD, i.e.: to create slices and partitions. Obviously, the currently running system is fully loaded in system memory and therefore there will be no problems with manipulating hard drives. To complete this task, it is possible to use either <application>sysinstall</application> or <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry> in conjunction to <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
+msgid ""
+"The first task is to allocate disk space for FreeBSD, i.e.: to create slices "
+"and partitions. Obviously, the currently running system is fully loaded in "
+"system memory and therefore there will be no problems with manipulating hard "
+"drives. To complete this task, it is possible to use either "
+"<application>sysinstall</application> or <citerefentry><refentrytitle>fdisk</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> in conjunction to "
+"<citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:321
-msgid "At the start, mark all system disks as empty. Repeat the following command for each hard drive:"
+msgid ""
+"At the start, mark all system disks as empty. Repeat the following command "
+"for each hard drive:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:324
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</replaceable> count=2</userinput>"
+"<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</"
+"replaceable> count=2</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:326
-msgid "Next, create slices and label them with your preferred tool. While it is considered easier to use <application>sysinstall</application>, a powerful and also probably less buggy method will be to use standard text-based <trademark class=\"registered\">UNIX</trademark> tools, such as <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry> and <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which will also be covered in this section. The former option is well documented in the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/install-steps.html\">Installing FreeBSD</link> chapter of the FreeBSD Handbook. As it was mentioned in the introduction, this article will present how to set up a system with RAID-1 and <application>ZFS</application> capabilities. Our set up will consist of a small <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</manvolnum></citerefentry> mirrored <filename>/</filename> (root), <filename>/usr</filename> and <filename>/var</filename> dataset, and the rest of the disk space will be allocated for a <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry> mirrored <application>ZFS</application> file system. Please note, that the <application>ZFS</application> file system will be configured after the FreeBSD operating system is successfully installed and booted."
+msgid ""
+"Next, create slices and label them with your preferred tool. While it is "
+"considered easier to use <application>sysinstall</application>, a powerful "
+"and also probably less buggy method will be to use standard text-based "
+"<trademark class=\"registered\">UNIX</trademark> tools, such as "
+"<citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> and <citerefentry><refentrytitle>bsdlabel</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, which will also be "
+"covered in this section. The former option is well documented in the <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/install-"
+"steps.html\">Installing FreeBSD</link> chapter of the FreeBSD Handbook. As "
+"it was mentioned in the introduction, this article will present how to set "
+"up a system with RAID-1 and <application>ZFS</application> capabilities. Our "
+"set up will consist of a small <citerefentry><refentrytitle>gmirror</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> mirrored <filename>/</"
+"filename> (root), <filename>/usr</filename> and <filename>/var</filename> "
+"dataset, and the rest of the disk space will be allocated for a "
+"<citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> mirrored <application>ZFS</application> file system. Please "
+"note, that the <application>ZFS</application> file system will be configured "
+"after the FreeBSD operating system is successfully installed and booted."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:346
-msgid "The following example will describe how to create slices and labels, initialize <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</manvolnum></citerefentry> on each partition and how to create a <application>UFS2</application> file system in each mirrored partition:"
+msgid ""
+"The following example will describe how to create slices and labels, "
+"initialize <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> on each partition and how to create a "
+"<application>UFS2</application> file system in each mirrored partition:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:351
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id=\"fdisk\"/>\n"
+"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id="
+"\"fdisk\"/>\n"
 "<prompt>#</prompt> <userinput>fdisk -BI /dev/ad1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-writing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-writing\"/>\n"
 "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad1s1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-editing\"/>\n"
-"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt &amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id=\"bsdlabel-restore\"/>\n"
-"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> <co xml:id=\"gmirror1\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-editing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt "
+"&amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id="
+"\"bsdlabel-restore\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> "
+"<co xml:id=\"gmirror1\"/>\n"
 "<prompt>#</prompt> <userinput>gmirror label var /dev/ad[01]s1d</userinput>\n"
 "<prompt>#</prompt> <userinput>gmirror label usr /dev/ad[01]s1e</userinput>\n"
-"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</userinput> <co xml:id=\"gmirror2\"/>\n"
-"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id=\"newfs\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</"
+"userinput> <co xml:id=\"gmirror2\"/>\n"
+"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id="
+"\"newfs\"/>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/var</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/usr</userinput>"
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:367
-msgid "Create a slice covering the entire disk and initialize the boot code contained in sector 0 of the given disk. Repeat this command for all hard drives in the system."
+msgid ""
+"Create a slice covering the entire disk and initialize the boot code "
+"contained in sector 0 of the given disk. Repeat this command for all hard "
+"drives in the system."
 msgstr ""
 
 #. (itstool) path: callout/para
@@ -401,27 +601,45 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:379
-msgid "Now, manually edit the label of the given disk. Refer to the <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page in order to find out how to create partitions. Create partitions <literal>a</literal> for <filename>/</filename> (root) file system, <literal>b</literal> for swap, <literal>d</literal> for <filename>/var</filename>, <literal>e</literal> for <filename>/usr</filename> and finally <literal>f</literal> which will later be used for <application>ZFS</application>."
+msgid ""
+"Now, manually edit the label of the given disk. Refer to the "
+"<citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> manual page in order to find out how to create "
+"partitions. Create partitions <literal>a</literal> for <filename>/</"
+"filename> (root) file system, <literal>b</literal> for swap, <literal>d</"
+"literal> for <filename>/var</filename>, <literal>e</literal> for <filename>/"
+"usr</filename> and finally <literal>f</literal> which will later be used for "
+"<application>ZFS</application>."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:391
-msgid "Import the recently created label for the second hard drive, so both hard drives will be labeled in the same way."
+msgid ""
+"Import the recently created label for the second hard drive, so both hard "
+"drives will be labeled in the same way."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:397
-msgid "Initialize <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</manvolnum></citerefentry> on each partition."
+msgid ""
+"Initialize <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> on each partition."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:401
-msgid "Note that <option>-F</option> is used for the swap partition. This instructs <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</manvolnum></citerefentry> to assume that the device is in the consistent state after the power/system failure."
+msgid ""
+"Note that <option>-F</option> is used for the swap partition. This instructs "
+"<citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> to assume that the device is in the consistent "
+"state after the power/system failure."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:408
-msgid "Create a <application>UFS2</application> file system on each mirrored partition."
+msgid ""
+"Create a <application>UFS2</application> file system on each mirrored "
+"partition."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -431,7 +649,12 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:417
-msgid "This is the most important part. This section will describe how to actually install the minimal distribution of FreeBSD on the hard drives that we have prepared in the previous section. To accomplish this goal, all file systems need to be mounted so <application>sysinstall</application> may write the contents of FreeBSD to the hard drives:"
+msgid ""
+"This is the most important part. This section will describe how to actually "
+"install the minimal distribution of FreeBSD on the hard drives that we have "
+"prepared in the previous section. To accomplish this goal, all file systems "
+"need to be mounted so <application>sysinstall</application> may write the "
+"contents of FreeBSD to the hard drives:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -446,32 +669,57 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:429
-msgid "When you are done, start <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Select the <guimenuitem>Custom</guimenuitem> installation from the main menu. Select <guimenuitem>Options</guimenuitem> and press <keycap>Enter</keycap>. With the help of arrow keys, move the cursor on the <literal>Install Root</literal> item, press <keycap>Space</keycap> and change it to <filename>/mnt</filename>. Press <keycap>Enter</keycap> to submit your changes and exit the <guimenuitem>Options</guimenuitem> menu by pressing <keycap>q</keycap>."
+msgid ""
+"When you are done, start <citerefentry><refentrytitle>sysinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Select the "
+"<guimenuitem>Custom</guimenuitem> installation from the main menu. Select "
+"<guimenuitem>Options</guimenuitem> and press <keycap>Enter</keycap>. With "
+"the help of arrow keys, move the cursor on the <literal>Install Root</"
+"literal> item, press <keycap>Space</keycap> and change it to <filename>/mnt</"
+"filename>. Press <keycap>Enter</keycap> to submit your changes and exit the "
+"<guimenuitem>Options</guimenuitem> menu by pressing <keycap>q</keycap>."
 msgstr ""
 
 #. (itstool) path: warning/para
 #: article.translate.xml:441
-msgid "Note that this step is very important and if skipped, <application>sysinstall</application> will be unable to install FreeBSD."
+msgid ""
+"Note that this step is very important and if skipped, "
+"<application>sysinstall</application> will be unable to install FreeBSD."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:446
-msgid "Go to the <guimenuitem>Distributions</guimenuitem> menu, move the cursor with the arrow keys to <option>Minimal</option>, and check it by pressing <keycap>Space</keycap>. This article uses the Minimal distribution in order to save network traffic, because the system itself will be installed over <application>ftp</application>. Exit this menu by choosing <option>Exit</option>."
+msgid ""
+"Go to the <guimenuitem>Distributions</guimenuitem> menu, move the cursor "
+"with the arrow keys to <option>Minimal</option>, and check it by pressing "
+"<keycap>Space</keycap>. This article uses the Minimal distribution in order "
+"to save network traffic, because the system itself will be installed over "
+"<application>ftp</application>. Exit this menu by choosing <option>Exit</"
+"option>."
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:456
-msgid "The <guimenuitem>Partition</guimenuitem> and <guimenuitem>Label</guimenuitem> menus will be skipped, as these are useless now."
+msgid ""
+"The <guimenuitem>Partition</guimenuitem> and <guimenuitem>Label</"
+"guimenuitem> menus will be skipped, as these are useless now."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:461
-msgid "In the <guimenuitem>Media</guimenuitem> menu, select <option>FTP</option>. Select the nearest mirror and let <application>sysinstall</application> assume that the network is already configured. You will be returned back to the <guimenuitem>Custom</guimenuitem> menu."
+msgid ""
+"In the <guimenuitem>Media</guimenuitem> menu, select <option>FTP</option>. "
+"Select the nearest mirror and let <application>sysinstall</application> "
+"assume that the network is already configured. You will be returned back to "
+"the <guimenuitem>Custom</guimenuitem> menu."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:467
-msgid "Finally, perform the system installation by selecting the last option, <guimenuitem>Commit</guimenuitem>. Exit <application>sysinstall</application> when it finishes the installation."
+msgid ""
+"Finally, perform the system installation by selecting the last option, "
+"<guimenuitem>Commit</guimenuitem>. Exit <application>sysinstall</"
+"application> when it finishes the installation."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -481,19 +729,26 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:476
-msgid "The FreeBSD operating system should be installed now; however, the process is not finished yet. It is necessary to perform some post installation steps in order to allow FreeBSD to boot in the future and to be able to log in to the system."
+msgid ""
+"The FreeBSD operating system should be installed now; however, the process "
+"is not finished yet. It is necessary to perform some post installation steps "
+"in order to allow FreeBSD to boot in the future and to be able to log in to "
+"the system."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:482
-msgid "You must now <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry> into the freshly installed system in order to finish the installation. Use the following command:"
+msgid ""
+"You must now <citerefentry><refentrytitle>chroot</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> into the freshly "
+"installed system in order to finish the installation. Use the following "
+"command:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:486
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>chroot /mnt</userinput>"
+msgid "<prompt>#</prompt> <userinput>chroot /mnt</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -503,26 +758,35 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
-msgid "Copy the <literal>GENERIC</literal> kernel to the <filename>/boot/kernel</filename> directory:"
+msgid ""
+"Copy the <literal>GENERIC</literal> kernel to the <filename>/boot/kernel</"
+"filename> directory:"
 msgstr ""
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:496
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</userinput>"
+"<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
-msgid "Create the <filename>/etc/rc.conf</filename>, <filename>/etc/resolv.conf</filename> and <filename>/etc/fstab</filename> files. Do not forget to properly set the network information and to enable <application>sshd</application> in <filename>/etc/rc.conf</filename>. The contents of <filename>/etc/fstab</filename> will be similar to the following:"
+msgid ""
+"Create the <filename>/etc/rc.conf</filename>, <filename>/etc/resolv.conf</"
+"filename> and <filename>/etc/fstab</filename> files. Do not forget to "
+"properly set the network information and to enable <application>sshd</"
+"application> in <filename>/etc/rc.conf</filename>. The contents of "
+"<filename>/etc/fstab</filename> will be similar to the following:"
 msgstr ""
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:509
 #, no-wrap
 msgid ""
-"# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
+"# Device                Mountpoint      FStype  Options         Dump    "
+"Pass#\n"
 "/dev/mirror/swap        none            swap    sw              0       0\n"
 "/dev/mirror/root        /               ufs     rw              1       1\n"
 "/dev/mirror/usr         /usr            ufs     rw              2       2\n"
@@ -532,32 +796,40 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:518
-msgid "Create <filename>/boot/loader.conf</filename> with the following contents:"
+msgid ""
+"Create <filename>/boot/loader.conf</filename> with the following contents:"
 msgstr ""
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:521
 #, no-wrap
-msgid ""
-"geom_mirror_load=\"YES\"\n"
+msgid "geom_mirror_load=\"YES\"\n"
 "zfs_load=\"YES\""
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
-msgid "Perform the following command, which will make <application>ZFS</application> available on the next boot:"
+msgid ""
+"Perform the following command, which will make <application>ZFS</"
+"application> available on the next boot:"
 msgstr ""
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:530
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc.conf </userinput>"
+"<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc."
+"conf </userinput>"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:534
-msgid "Add additional users to the system using the <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry> tool. Do not forget to add a user to the <systemitem class=\"groupname\">wheel</systemitem> group so you may obtain root access after the reboot."
+msgid ""
+"Add additional users to the system using the "
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> tool. Do not forget to add a user to the "
+"<systemitem class=\"groupname\">wheel</systemitem> group so you may obtain "
+"root access after the reboot."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -567,7 +839,10 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:545
-msgid "The system should now be ready for the next boot. Use the <citerefentry><refentrytitle>reboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> command to reboot your system."
+msgid ""
+"The system should now be ready for the next boot. Use the "
+"<citerefentry><refentrytitle>reboot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> command to reboot your system."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -577,19 +852,28 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:553
-msgid "If your system survived the reboot, it should now be possible to log in. Welcome to the fresh FreeBSD installation, performed remotely without the use of a remote console!"
+msgid ""
+"If your system survived the reboot, it should now be possible to log in. "
+"Welcome to the fresh FreeBSD installation, performed remotely without the "
+"use of a remote console!"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:557
-msgid "The only remaining step is to configure <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry> and create some <citerefentry><refentrytitle>zfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> file systems. Creating and administering <application>ZFS</application> is very straightforward. First, create a mirrored pool:"
+msgid ""
+"The only remaining step is to configure <citerefentry><refentrytitle>zpool</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> and create some "
+"<citerefentry><refentrytitle>zfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> file systems. Creating and administering <application>ZFS</"
+"application> is very straightforward. First, create a mirrored pool:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:562
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</userinput>"
+"<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -603,14 +887,19 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>zfs create tank/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>zfs create tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</"
+"userinput>\n"
 "<prompt>#</prompt> <userinput>zfs set compression=on tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</userinput>"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:573
-msgid "That is all. If you are interested in more details about <application>ZFS</application> on FreeBSD, please refer to the <link xlink:href=\"https://wiki.freebsd.org/ZFS\">ZFS</link> section of the FreeBSD Wiki."
+msgid ""
+"That is all. If you are interested in more details about <application>ZFS</"
+"application> on FreeBSD, please refer to the <link xlink:href=\"https://wiki."
+"freebsd.org/ZFS\">ZFS</link> section of the FreeBSD Wiki."
 msgstr ""
-

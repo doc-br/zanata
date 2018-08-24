@@ -1,15 +1,17 @@
-#$FreeBSD$
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-08-12 23:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-08-24 12:12+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"X-Generator: Zanata 4.6.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -24,40 +26,72 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:8
 #, no-wrap
-msgid ""
-"<email>manolis@FreeBSD.org</email>"
-msgstr ""
+msgid "<email>manolis@FreeBSD.org</email>"
+msgstr "<email>manolis@FreeBSD.org</email>"
 
 #. (itstool) path: info/author
 #: article.translate.xml:7
-msgid "<personname><firstname>Manolis</firstname><surname>Kiagias</surname></personname><affiliation> <_:address-1/> </affiliation>"
+msgid ""
+"<personname><firstname>Manolis</firstname><surname>Kiagias</surname></"
+"personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname><firstname>Manolis</firstname><surname>Kiagias</surname></"
+"personname><affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:11
-msgid "<year>2008</year> <holder role=\"mailto:manolis@FreeBSD.org\">Manolis Kiagias</holder>"
+msgid ""
+"<year>2008</year> <holder role=\"mailto:manolis@FreeBSD.org\">Manolis "
+"Kiagias</holder>"
 msgstr ""
+"<year>2008</year> <holder role=\"mailto:manolis@FreeBSD.org\">Manolis "
+"Kiagias</holder>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:16
 #: article.translate.xml:18
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/gjournal-desktop/article.xml 51348 2017-12-30 22:56:56Z eadler $"
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/gjournal-desktop/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/gjournal-desktop/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:23
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:32
-msgid "A journaling file system uses a log to record all transactions that take place in the file system, and preserves its integrity in the event of a system crash or power failure. Although it is still possible to lose unsaved changes to files, journaling almost completely eliminates the possibility of file system corruption caused by an unclean shutdown. It also shortens to a minimum the time required for after-failure file system checking. Although the UFS file system employed by FreeBSD does not implement journaling itself, the new journal class of the GEOM framework in FreeBSD 7.<replaceable>X</replaceable> can be used to provide file system independent journaling. This article explains how to implement UFS journaling on a typical desktop PC scenario."
+msgid ""
+"A journaling file system uses a log to record all transactions that take "
+"place in the file system, and preserves its integrity in the event of a "
+"system crash or power failure. Although it is still possible to lose unsaved "
+"changes to files, journaling almost completely eliminates the possibility of "
+"file system corruption caused by an unclean shutdown. It also shortens to a "
+"minimum the time required for after-failure file system checking. Although "
+"the UFS file system employed by FreeBSD does not implement journaling "
+"itself, the new journal class of the GEOM framework in FreeBSD 7."
+"<replaceable>X</replaceable> can be used to provide file system independent "
+"journaling. This article explains how to implement UFS journaling on a "
+"typical desktop PC scenario."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -67,17 +101,33 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
-msgid "While professional servers are usually well protected from unforeseen shutdowns, the typical desktop is at the mercy of power failures, accidental resets, and other user related incidents that can lead to unclean shutdowns. Soft Updates usually protect the file system efficiently in such cases, although most of the times a lengthy background check is required. On rare occasions, file system corruption reaches a point where user intervention is required and data may be lost."
+msgid ""
+"While professional servers are usually well protected from unforeseen "
+"shutdowns, the typical desktop is at the mercy of power failures, accidental "
+"resets, and other user related incidents that can lead to unclean shutdowns. "
+"Soft Updates usually protect the file system efficiently in such cases, "
+"although most of the times a lengthy background check is required. On rare "
+"occasions, file system corruption reaches a point where user intervention is "
+"required and data may be lost."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:59
-msgid "The new journaling capability provided by GEOM can greatly assist in such scenarios, by virtually eliminating the time required for file system checking, and ensuring that the file system is quickly restored to a consistent state."
+msgid ""
+"The new journaling capability provided by GEOM can greatly assist in such "
+"scenarios, by virtually eliminating the time required for file system "
+"checking, and ensuring that the file system is quickly restored to a "
+"consistent state."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:64
-msgid "This article describes a procedure for implementing UFS journaling on a typical desktop PC scenario (one hard disk used for both operating system and data). It should be followed during a fresh installation of FreeBSD. The steps are simple enough and do not require overly complex interaction with the command line."
+msgid ""
+"This article describes a procedure for implementing UFS journaling on a "
+"typical desktop PC scenario (one hard disk used for both operating system "
+"and data). It should be followed during a fresh installation of FreeBSD. The "
+"steps are simple enough and do not require overly complex interaction with "
+"the command line."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -87,17 +137,22 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:74
-msgid "How to reserve space for journaling during a new installation of FreeBSD."
+msgid ""
+"How to reserve space for journaling during a new installation of FreeBSD."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:79
-msgid "How to load and enable the <literal>geom_journal</literal> module (or build support for it in your custom kernel)."
+msgid ""
+"How to load and enable the <literal>geom_journal</literal> module (or build "
+"support for it in your custom kernel)."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:84
-msgid "How to convert your existing file systems to utilize journaling, and what options to use in <filename>/etc/fstab</filename> to mount them."
+msgid ""
+"How to convert your existing file systems to utilize journaling, and what "
+"options to use in <filename>/etc/fstab</filename> to mount them."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -117,17 +172,27 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:103
-msgid "Understand basic <trademark class=\"registered\">UNIX</trademark> and FreeBSD concepts."
+msgid ""
+"Understand basic <trademark class=\"registered\">UNIX</trademark> and "
+"FreeBSD concepts."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
-msgid "Be familiar with the installation procedure of FreeBSD and the <application>sysinstall</application> utility."
+msgid ""
+"Be familiar with the installation procedure of FreeBSD and the "
+"<application>sysinstall</application> utility."
 msgstr ""
 
 #. (itstool) path: warning/para
 #: article.translate.xml:113
-msgid "The procedure described here is intended for preparing a new installation where no actual user data is stored on the disk yet. While it is possible to modify and extend this procedure for systems already in production, you should <emphasis>backup</emphasis> all important data before doing so. Messing around with disks and partitions at a low level can lead to fatal mistakes and data loss."
+msgid ""
+"The procedure described here is intended for preparing a new installation "
+"where no actual user data is stored on the disk yet. While it is possible to "
+"modify and extend this procedure for systems already in production, you "
+"should <emphasis>backup</emphasis> all important data before doing so. "
+"Messing around with disks and partitions at a low level can lead to fatal "
+"mistakes and data loss."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -137,47 +202,92 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
-msgid "The journaling provided by GEOM in FreeBSD 7.<replaceable>X</replaceable> is not file system specific (unlike for example the ext3 file system in <trademark class=\"registered\">Linux</trademark>) but is functioning at the block level. Though this means it can be applied to different file systems, for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
+msgid ""
+"The journaling provided by GEOM in FreeBSD 7.<replaceable>X</replaceable> is "
+"not file system specific (unlike for example the ext3 file system in "
+"<trademark class=\"registered\">Linux</trademark>) but is functioning at the "
+"block level. Though this means it can be applied to different file systems, "
+"for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:132
-msgid "This functionality is provided by loading the <filename>geom_journal.ko</filename> module into the kernel (or building it into a custom kernel) and using the <command>gjournal</command> command to configure the file systems. In general, you would like to journal large file systems, like <filename>/usr</filename>. You will need however (see the following section) to reserve some free disk space."
+msgid ""
+"This functionality is provided by loading the <filename>geom_journal.ko</"
+"filename> module into the kernel (or building it into a custom kernel) and "
+"using the <command>gjournal</command> command to configure the file systems. "
+"In general, you would like to journal large file systems, like <filename>/"
+"usr</filename>. You will need however (see the following section) to reserve "
+"some free disk space."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:140
-msgid "When a file system is journaled, some disk space is needed to keep the journal itself. The disk space that holds the actual data is referred to as the <emphasis>data provider</emphasis>, while the one that holds the journal is referred to as the <emphasis>journal provider</emphasis>. The data and journal providers need to be on different partitions when journaling an existing (non-empty) partition. When journaling a new partition, you have the option to use a single provider for both data and journal. In any case, the <command>gjournal</command> command combines both providers to create the final journaled file system. For example:"
+msgid ""
+"When a file system is journaled, some disk space is needed to keep the "
+"journal itself. The disk space that holds the actual data is referred to as "
+"the <emphasis>data provider</emphasis>, while the one that holds the journal "
+"is referred to as the <emphasis>journal provider</emphasis>. The data and "
+"journal providers need to be on different partitions when journaling an "
+"existing (non-empty) partition. When journaling a new partition, you have "
+"the option to use a single provider for both data and journal. In any case, "
+"the <command>gjournal</command> command combines both providers to create "
+"the final journaled file system. For example:"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:153
-msgid "You wish to journal your <filename>/usr</filename> file system, stored in <filename>/dev/ad0s1f</filename> (which already contains data)."
+msgid ""
+"You wish to journal your <filename>/usr</filename> file system, stored in "
+"<filename>/dev/ad0s1f</filename> (which already contains data)."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:159
-msgid "You reserved some free disk space in a partition in <filename>/dev/ad0s1g</filename>."
+msgid ""
+"You reserved some free disk space in a partition in <filename>/dev/ad0s1g</"
+"filename>."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:164
-msgid "Using <command>gjournal</command>, a new <filename>/dev/ad0s1f.journal</filename> device is created where <filename>/dev/ad0s1f</filename> is the data provider, and <filename>/dev/ad0s1g</filename> is the journal provider. This new device is then used for all subsequent file operations."
+msgid ""
+"Using <command>gjournal</command>, a new <filename>/dev/ad0s1f.journal</"
+"filename> device is created where <filename>/dev/ad0s1f</filename> is the "
+"data provider, and <filename>/dev/ad0s1g</filename> is the journal provider. "
+"This new device is then used for all subsequent file operations."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
-msgid "The amount of disk space you need to reserve for the journal provider depends on the usage load of the file system and not on the size of the data provider. For example on a typical office desktop, a 1 GB journal provider for the <filename>/usr</filename> file system will suffice, while a machine that deals with heavy disk I/O (i.e. video editing) may need more. A kernel panic will occur if the journal space is exhausted before it has a chance to be committed."
+msgid ""
+"The amount of disk space you need to reserve for the journal provider "
+"depends on the usage load of the file system and not on the size of the data "
+"provider. For example on a typical office desktop, a 1 GB journal provider "
+"for the <filename>/usr</filename> file system will suffice, while a machine "
+"that deals with heavy disk I/O (i.e. video editing) may need more. A kernel "
+"panic will occur if the journal space is exhausted before it has a chance to "
+"be committed."
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:182
-msgid "The journal sizes suggested here, are highly unlikely to cause problems in typical desktop use (such as web browsing, word processing and playback of media files). If your workload includes intense disk activity, use the following rule for maximum reliability: Your RAM size should fit in 30% of the journal provider's space. For example, if your system has 1 GB RAM, create an approximately 3.3 GB journal provider. (Multiply your RAM size with 3.3 to obtain the size of the journal)."
+msgid ""
+"The journal sizes suggested here, are highly unlikely to cause problems in "
+"typical desktop use (such as web browsing, word processing and playback of "
+"media files). If your workload includes intense disk activity, use the "
+"following rule for maximum reliability: Your RAM size should fit in 30% of "
+"the journal provider's space. For example, if your system has 1 GB RAM, "
+"create an approximately 3.3 GB journal provider. (Multiply your RAM size "
+"with 3.3 to obtain the size of the journal)."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:192
-msgid "For more information about journaling, please read the manual page of <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
+msgid ""
+"For more information about journaling, please read the manual page of "
+"<citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -192,17 +302,32 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:202
-msgid "A typical desktop machine usually has one hard disk that stores both the OS and user data. Arguably, the default partitioning scheme selected by <application>sysinstall</application> is more or less suitable: A desktop machine does not need a large <filename>/var</filename> partition, while <filename>/usr</filename> is allocated the bulk of the disk space, since user data and a lot of packages are installed into its subdirectories."
+msgid ""
+"A typical desktop machine usually has one hard disk that stores both the OS "
+"and user data. Arguably, the default partitioning scheme selected by "
+"<application>sysinstall</application> is more or less suitable: A desktop "
+"machine does not need a large <filename>/var</filename> partition, while "
+"<filename>/usr</filename> is allocated the bulk of the disk space, since "
+"user data and a lot of packages are installed into its subdirectories."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:210
-msgid "The default partitioning (the one obtained by pressing <keycap>A</keycap> at the FreeBSD partition editor, called <application>Disklabel</application>) does not leave any unallocated space. Each partition that will be journaled, requires another partition for the journal. Since the <filename>/usr</filename> partition is the largest, it makes sense to shrink this partition slightly, to obtain the space required for journaling."
+msgid ""
+"The default partitioning (the one obtained by pressing <keycap>A</keycap> at "
+"the FreeBSD partition editor, called <application>Disklabel</application>) "
+"does not leave any unallocated space. Each partition that will be journaled, "
+"requires another partition for the journal. Since the <filename>/usr</"
+"filename> partition is the largest, it makes sense to shrink this partition "
+"slightly, to obtain the space required for journaling."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:217
-msgid "In our example, an 80 GB disk is used. The following screenshot shows the default partitions created by <application>Disklabel</application> during installation:"
+msgid ""
+"In our example, an 80 GB disk is used. The following screenshot shows the "
+"default partitions created by <application>Disklabel</application> during "
+"installation:"
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -217,37 +342,76 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:227
-msgid "If this is more or less what you need, it is very easy to adjust for journaling. Simply use the arrow keys to move the highlight to the <filename>/usr</filename> partition and press <keycap>D</keycap> to delete it."
+msgid ""
+"If this is more or less what you need, it is very easy to adjust for "
+"journaling. Simply use the arrow keys to move the highlight to the "
+"<filename>/usr</filename> partition and press <keycap>D</keycap> to delete "
+"it."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:233
-msgid "Now, move the highlight to the disk name at the top of the screen and press <keycap>C</keycap> to create a new partition for <filename>/usr</filename>. This new partition should be smaller by 1 GB (if you intend to journal <filename>/usr</filename> only), or 2 GB (if you intend to journal both <filename>/usr</filename> and <filename>/var</filename>). From the pop-up that appears, opt to create a file system, and type <filename>/usr</filename> as the mount point."
+msgid ""
+"Now, move the highlight to the disk name at the top of the screen and press "
+"<keycap>C</keycap> to create a new partition for <filename>/usr</filename>. "
+"This new partition should be smaller by 1 GB (if you intend to journal "
+"<filename>/usr</filename> only), or 2 GB (if you intend to journal both "
+"<filename>/usr</filename> and <filename>/var</filename>). From the pop-up "
+"that appears, opt to create a file system, and type <filename>/usr</"
+"filename> as the mount point."
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:243
-msgid "Should you journal the <filename>/var</filename> partition? Normally, journaling makes sense on quite large partitions. You may decide not to journal <filename>/var</filename>, although doing so on a typical desktop will cause no harm. If the file system is lightly used (quite probable for a desktop) you may wish to allocate less disk space for its journal."
+msgid ""
+"Should you journal the <filename>/var</filename> partition? Normally, "
+"journaling makes sense on quite large partitions. You may decide not to "
+"journal <filename>/var</filename>, although doing so on a typical desktop "
+"will cause no harm. If the file system is lightly used (quite probable for a "
+"desktop) you may wish to allocate less disk space for its journal."
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:250
-msgid "In our example, we journal both <filename>/usr</filename> and <filename>/var</filename>. You may of course adjust the procedure to your own needs."
+msgid ""
+"In our example, we journal both <filename>/usr</filename> and <filename>/"
+"var</filename>. You may of course adjust the procedure to your own needs."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:255
-msgid "To keep things as easy going as possible, we are going to use <application>sysinstall</application> to create the partitions required for journaling. However, during installation, <application>sysinstall</application> insists on asking a mount point for each partition you create. At this point, you do not have any mount points for the partitions that will hold the journals, and in reality you <emphasis>do not even need them</emphasis>. These are not partitions that we are ever going to mount somewhere."
+msgid ""
+"To keep things as easy going as possible, we are going to use "
+"<application>sysinstall</application> to create the partitions required for "
+"journaling. However, during installation, <application>sysinstall</"
+"application> insists on asking a mount point for each partition you create. "
+"At this point, you do not have any mount points for the partitions that will "
+"hold the journals, and in reality you <emphasis>do not even need them</"
+"emphasis>. These are not partitions that we are ever going to mount "
+"somewhere."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:264
-msgid "To avoid these problems with <application>sysinstall</application>, we are going to create the journal partitions as swap space. Swap is never mounted, and <application>sysinstall</application> has no problem creating as many swap partitions as needed. After the first reboot, <filename>/etc/fstab</filename> will have to be edited, and the extra swap space entries removed."
+msgid ""
+"To avoid these problems with <application>sysinstall</application>, we are "
+"going to create the journal partitions as swap space. Swap is never mounted, "
+"and <application>sysinstall</application> has no problem creating as many "
+"swap partitions as needed. After the first reboot, <filename>/etc/fstab</"
+"filename> will have to be edited, and the extra swap space entries removed."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:272
-msgid "To create the swap, again use the arrow keys to move the highlight to the top of <application>Disklabel</application> screen, so that the disk name itself is highlighted. Then press <keycap>N</keycap>, enter the desired size (<replaceable>1024M</replaceable>), and select <quote>swap space</quote> from the pop-up menu that appears. Repeat for every journal you wish to create. In our example, we create two partitions to provide for the journals of <filename>/usr</filename> and <filename>/var</filename>. The final result is shown in the following screenshot:"
+msgid ""
+"To create the swap, again use the arrow keys to move the highlight to the "
+"top of <application>Disklabel</application> screen, so that the disk name "
+"itself is highlighted. Then press <keycap>N</keycap>, enter the desired size "
+"(<replaceable>1024M</replaceable>), and select <quote>swap space</quote> "
+"from the pop-up menu that appears. Repeat for every journal you wish to "
+"create. In our example, we create two partitions to provide for the journals "
+"of <filename>/usr</filename> and <filename>/var</filename>. The final result "
+"is shown in the following screenshot:"
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -262,7 +426,12 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:289
-msgid "When you have completed creating the partitions, we suggest you write down the partition names, and mount points, so you can easily refer to this information during the configuration phase. This will help alleviate mistakes that may damage your installation. The following table shows our notes for the sample configuration:"
+msgid ""
+"When you have completed creating the partitions, we suggest you write down "
+"the partition names, and mount points, so you can easily refer to this "
+"information during the configuration phase. This will help alleviate "
+"mistakes that may damage your installation. The following table shows our "
+"notes for the sample configuration:"
 msgstr ""
 
 #. (itstool) path: table/title
@@ -317,7 +486,10 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:322
-msgid "Continue the installation as you would normally do. We would however suggest you postpone installation of third party software (packages) until you have completely setup journaling."
+msgid ""
+"Continue the installation as you would normally do. We would however suggest "
+"you postpone installation of third party software (packages) until you have "
+"completely setup journaling."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -327,12 +499,18 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:330
-msgid "Your system will come up normally, but you will need to edit <filename>/etc/fstab</filename> and remove the extra swap partitions you created for the journals. Normally, the swap partition you will actually use is the one with the <quote>b</quote> suffix (i.e. ad0s1b in our example). Remove all other swap space entries and reboot so that FreeBSD will stop using them."
+msgid ""
+"Your system will come up normally, but you will need to edit <filename>/etc/"
+"fstab</filename> and remove the extra swap partitions you created for the "
+"journals. Normally, the swap partition you will actually use is the one with "
+"the <quote>b</quote> suffix (i.e. ad0s1b in our example). Remove all other "
+"swap space entries and reboot so that FreeBSD will stop using them."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:337
-msgid "When the system comes up again, we will be ready to configure journaling."
+msgid ""
+"When the system comes up again, we will be ready to configure journaling."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -347,7 +525,10 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:348
-msgid "Having prepared all the required partitions, it is quite easy to configure journaling. We will need to switch to single user mode, so login as <systemitem class=\"username\">root</systemitem> and type:"
+msgid ""
+"Having prepared all the required partitions, it is quite easy to configure "
+"journaling. We will need to switch to single user mode, so login as "
+"<systemitem class=\"username\">root</systemitem> and type:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -355,13 +536,15 @@ msgstr ""
 #: article.translate.xml:352
 #: article.translate.xml:584
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>shutdown now</userinput>"
+msgid "<prompt>#</prompt> <userinput>shutdown now</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:354
-msgid "Press <keycap>Enter</keycap> to get the default shell. We will need to unmount the partitions that will be journaled, in our example <filename>/usr</filename> and <filename>/var</filename>:"
+msgid ""
+"Press <keycap>Enter</keycap> to get the default shell. We will need to "
+"unmount the partitions that will be journaled, in our example <filename>/"
+"usr</filename> and <filename>/var</filename>:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -369,8 +552,7 @@ msgstr ""
 #: article.translate.xml:358
 #: article.translate.xml:588
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>umount /usr /var</userinput>"
+msgid "<prompt>#</prompt> <userinput>umount /usr /var</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -381,13 +563,18 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:362
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>gjournal load</userinput>"
+msgid "<prompt>#</prompt> <userinput>gjournal load</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:364
-msgid "Now, use your notes to determine which partition will be used for each journal. In our example, <filename>/usr</filename> is <filename>ad0s1f</filename> and its journal will be <filename>ad0s1g</filename>, while <filename>/var</filename> is <filename>ad0s1d</filename> and will be journaled to <filename>ad0s1h</filename>. The following commands are required:"
+msgid ""
+"Now, use your notes to determine which partition will be used for each "
+"journal. In our example, <filename>/usr</filename> is <filename>ad0s1f</"
+"filename> and its journal will be <filename>ad0s1g</filename>, while "
+"<filename>/var</filename> is <filename>ad0s1d</filename> and will be "
+"journaled to <filename>ad0s1h</filename>. The following commands are "
+"required:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -407,7 +594,10 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:383
-msgid "If the last sector of either partition is used, <command>gjournal</command> will return an error. You will have to run the command using the <option>-f</option> flag to force an overwrite, i.e.:"
+msgid ""
+"If the last sector of either partition is used, <command>gjournal</command> "
+"will return an error. You will have to run the command using the <option>-f</"
+"option> flag to force an overwrite, i.e.:"
 msgstr ""
 
 #. (itstool) path: note/screen
@@ -419,24 +609,33 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:390
-msgid "Since this is a new installation, it is highly unlikely that anything will be actually overwritten."
+msgid ""
+"Since this is a new installation, it is highly unlikely that anything will "
+"be actually overwritten."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:393
-msgid "At this point, two new devices are created, namely <filename>ad0s1d.journal</filename> and <filename>ad0s1f.journal</filename>. These represent the <filename>/var</filename> and <filename>/usr</filename> partitions we have to mount. Before mounting, we must however set the journal flag on them and clear the Soft Updates flag:"
+msgid ""
+"At this point, two new devices are created, namely <filename>ad0s1d.journal</"
+"filename> and <filename>ad0s1f.journal</filename>. These represent the "
+"<filename>/var</filename> and <filename>/usr</filename> partitions we have "
+"to mount. Before mounting, we must however set the journal flag on them and "
+"clear the Soft Updates flag:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:400
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</"
+"userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared\n"
 "\n"
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</"
+"userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared"
@@ -444,20 +643,26 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:410
-msgid "Now, mount the new devices manually at their respective places (note that we can now use the <option>async</option> mount option):"
+msgid ""
+"Now, mount the new devices manually at their respective places (note that we "
+"can now use the <option>async</option> mount option):"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:414
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</userinput>\n"
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</userinput>"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</"
+"userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:417
-msgid "Edit <filename>/etc/fstab</filename> and update the entries for <filename>/usr</filename> and <filename>/var</filename>:"
+msgid ""
+"Edit <filename>/etc/fstab</filename> and update the entries for <filename>/"
+"usr</filename> and <filename>/var</filename>:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
@@ -470,24 +675,33 @@ msgstr ""
 
 #. (itstool) path: warning/para
 #: article.translate.xml:424
-msgid "Make sure the above entries are correct, or you will have trouble starting up normally after you reboot!"
+msgid ""
+"Make sure the above entries are correct, or you will have trouble starting "
+"up normally after you reboot!"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:428
-msgid "Finally, edit <filename>/boot/loader.conf</filename> and add the following line so the <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</manvolnum></citerefentry> module is loaded at every boot:"
+msgid ""
+"Finally, edit <filename>/boot/loader.conf</filename> and add the following "
+"line so the <citerefentry><refentrytitle>gjournal</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> module is loaded at "
+"every boot:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:432
 #, no-wrap
-msgid ""
-"geom_journal_load=\"YES\""
+msgid "geom_journal_load=\"YES\""
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:434
-msgid "Congratulations! Your system is now set for journaling. You can either type <userinput>exit</userinput> to return to multi-user mode, or reboot to test your configuration (recommended). During the boot you will see messages like the following:"
+msgid ""
+"Congratulations! Your system is now set for journaling. You can either type "
+"<userinput>exit</userinput> to return to multi-user mode, or reboot to test "
+"your configuration (recommended). During the boot you will see messages like "
+"the following:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -511,13 +725,15 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:450
 #, no-wrap
-msgid ""
-"GEOM_JOURNAL: Journal ad0s1d consistent."
+msgid "GEOM_JOURNAL: Journal ad0s1d consistent."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
-msgid "This usually means that <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</manvolnum></citerefentry> used the information in the journal provider to return the file system to a consistent state."
+msgid ""
+"This usually means that <citerefentry><refentrytitle>gjournal</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> used the information "
+"in the journal provider to return the file system to a consistent state."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -527,43 +743,54 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:460
-msgid "While the above procedure is necessary for journaling partitions that already contain data, journaling an empty partition is somewhat easier, since both the data and the journal provider can be stored in the same partition. For example, assume a new disk was installed, and a new partition <filename>/dev/ad1s1d</filename> was created. Creating the journal would be as simple as:"
+msgid ""
+"While the above procedure is necessary for journaling partitions that "
+"already contain data, journaling an empty partition is somewhat easier, "
+"since both the data and the journal provider can be stored in the same "
+"partition. For example, assume a new disk was installed, and a new partition "
+"<filename>/dev/ad1s1d</filename> was created. Creating the journal would be "
+"as simple as:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:467
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>gjournal label ad1s1d</userinput>"
+msgid "<prompt>#</prompt> <userinput>gjournal label ad1s1d</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:469
-msgid "The journal size will be 1 GB by default. You may adjust it by using the <option>-s</option> option. The value can be given in bytes, or appended by <literal>K</literal>, <literal>M</literal> or <literal>G</literal> to denote Kilobytes, Megabytes or Gigabytes respectively. Note that <command>gjournal</command> will not allow you to create unsuitably small journal sizes."
+msgid ""
+"The journal size will be 1 GB by default. You may adjust it by using the "
+"<option>-s</option> option. The value can be given in bytes, or appended by "
+"<literal>K</literal>, <literal>M</literal> or <literal>G</literal> to denote "
+"Kilobytes, Megabytes or Gigabytes respectively. Note that <command>gjournal</"
+"command> will not allow you to create unsuitably small journal sizes."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:476
-msgid "For example, to create a 2 GB journal, you could use the following command:"
+msgid ""
+"For example, to create a 2 GB journal, you could use the following command:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:479
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>gjournal label -s 2G ad1s1d</userinput>"
+msgid "<prompt>#</prompt> <userinput>gjournal label -s 2G ad1s1d</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:481
-msgid "You can then create a file system on your new partition, and enable journaling using the <option>-J</option> option:"
+msgid ""
+"You can then create a file system on your new partition, and enable "
+"journaling using the <option>-J</option> option:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:484
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>newfs -J /dev/ad1s1d.journal</userinput>"
+msgid "<prompt>#</prompt> <userinput>newfs -J /dev/ad1s1d.journal</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -573,7 +800,10 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:490
-msgid "If you do not wish to load <literal>geom_journal</literal> as a module, you can build its functions right into your kernel. Edit your custom kernel configuration file, and make sure it includes these two lines:"
+msgid ""
+"If you do not wish to load <literal>geom_journal</literal> as a module, you "
+"can build its functions right into your kernel. Edit your custom kernel "
+"configuration file, and make sure it includes these two lines:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
@@ -587,12 +817,17 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:499
-msgid "Rebuild and reinstall your kernel following the relevant <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html\">instructions in the FreeBSD Handbook.</link>"
+msgid ""
+"Rebuild and reinstall your kernel following the relevant <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig."
+"html\">instructions in the FreeBSD Handbook.</link>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:503
-msgid "Do not forget to remove the relevant <quote>load</quote> entry from <filename>/boot/loader.conf</filename> if you have previously used it."
+msgid ""
+"Do not forget to remove the relevant <quote>load</quote> entry from "
+"<filename>/boot/loader.conf</filename> if you have previously used it."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -602,39 +837,57 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:512
-msgid "The following section covers frequently asked questions regarding problems related to journaling."
+msgid ""
+"The following section covers frequently asked questions regarding problems "
+"related to journaling."
 msgstr ""
 
 #. (itstool) path: question/para
 #: article.translate.xml:518
-msgid "I am getting kernel panics during periods of high disk activity. How is this related to journaling?"
+msgid ""
+"I am getting kernel panics during periods of high disk activity. How is this "
+"related to journaling?"
 msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:523
-msgid "The journal probably fills up before it has a chance to get committed (flushed) to disk. Keep in mind the size of the journal depends on the usage load, and not the size of the data provider. If your disk activity is high, you need a larger partition for the journal. See the note in the <link linkend=\"understanding-journaling\">Understanding Journaling</link> section."
+msgid ""
+"The journal probably fills up before it has a chance to get committed "
+"(flushed) to disk. Keep in mind the size of the journal depends on the usage "
+"load, and not the size of the data provider. If your disk activity is high, "
+"you need a larger partition for the journal. See the note in the <link "
+"linkend=\"understanding-journaling\">Understanding Journaling</link> section."
+""
 msgstr ""
 
 #. (itstool) path: question/para
 #: article.translate.xml:533
-msgid "I made some mistake during configuration, and I cannot boot normally now. Can this be fixed some way?"
+msgid ""
+"I made some mistake during configuration, and I cannot boot normally now. "
+"Can this be fixed some way?"
 msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:538
-msgid "You either forgot (or misspelled) the entry in <filename>/boot/loader.conf</filename>, or there are errors in your <filename>/etc/fstab</filename> file. These are usually easy to fix. Press <keycap>Enter</keycap> to get to the default single user shell. Then locate the root of the problem:"
+msgid ""
+"You either forgot (or misspelled) the entry in <filename>/boot/loader.conf</"
+"filename>, or there are errors in your <filename>/etc/fstab</filename> file. "
+"These are usually easy to fix. Press <keycap>Enter</keycap> to get to the "
+"default single user shell. Then locate the root of the problem:"
 msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:544
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>cat /boot/loader.conf</userinput>"
+msgid "<prompt>#</prompt> <userinput>cat /boot/loader.conf</userinput>"
 msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:546
-msgid "If the <literal>geom_journal_load</literal> entry is missing or misspelled, the journaled devices are never created. Load the module manually, mount all partitions, and continue with multi-user boot:"
+msgid ""
+"If the <literal>geom_journal_load</literal> entry is missing or misspelled, "
+"the journaled devices are never created. Load the module manually, mount all "
+"partitions, and continue with multi-user boot:"
 msgstr ""
 
 #. (itstool) path: answer/screen
@@ -657,22 +910,33 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:564
-msgid "If, on the other hand, this entry is correct, have a look at <filename>/etc/fstab</filename>. You will probably find a misspelled or missing entry. In this case, mount all remaining partitions by hand and continue with the multi-user boot."
+msgid ""
+"If, on the other hand, this entry is correct, have a look at <filename>/etc/"
+"fstab</filename>. You will probably find a misspelled or missing entry. In "
+"this case, mount all remaining partitions by hand and continue with the "
+"multi-user boot."
 msgstr ""
 
 #. (itstool) path: question/para
 #: article.translate.xml:573
-msgid "Can I remove journaling and return to my standard file system with Soft Updates?"
+msgid ""
+"Can I remove journaling and return to my standard file system with Soft "
+"Updates?"
 msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:578
-msgid "Sure. Use the following procedure, which reverses the changes. The partitions you created for the journal providers can then be used for other purposes, if you so wish."
+msgid ""
+"Sure. Use the following procedure, which reverses the changes. The "
+"partitions you created for the journal providers can then be used for other "
+"purposes, if you so wish."
 msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:582
-msgid "Login as <systemitem class=\"username\">root</systemitem> and switch to single user mode:"
+msgid ""
+"Login as <systemitem class=\"username\">root</systemitem> and switch to "
+"single user mode:"
 msgstr ""
 
 #. (itstool) path: answer/para
@@ -688,8 +952,7 @@ msgstr ""
 #. (itstool) path: answer/screen
 #: article.translate.xml:592
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>gjournal sync</userinput>"
+msgid "<prompt>#</prompt> <userinput>gjournal sync</userinput>"
 msgstr ""
 
 #. (itstool) path: answer/para
@@ -722,7 +985,8 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:606
-msgid "Clear the file system journaling flag, and restore the Soft Updates flag:"
+msgid ""
+"Clear the file system journaling flag, and restore the Soft Updates flag:"
 msgstr ""
 
 #. (itstool) path: answer/screen
@@ -755,7 +1019,8 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:624
-msgid "Edit <filename>/etc/fstab</filename> and restore it to its original state:"
+msgid ""
+"Edit <filename>/etc/fstab</filename> and restore it to its original state:"
 msgstr ""
 
 #. (itstool) path: answer/programlisting
@@ -768,7 +1033,9 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:630
-msgid "Finally, edit <filename>/boot/loader.conf</filename>, remove the entry that loads the <literal>geom_journal</literal> module and reboot."
+msgid ""
+"Finally, edit <filename>/boot/loader.conf</filename>, remove the entry that "
+"loads the <literal>geom_journal</literal> module and reboot."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -778,26 +1045,45 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:642
-msgid "Journaling is a fairly new feature of FreeBSD, and as such, it is not very well documented yet. You may however find the following additional references useful:"
+msgid ""
+"Journaling is a fairly new feature of FreeBSD, and as such, it is not very "
+"well documented yet. You may however find the following additional "
+"references useful:"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:648
-msgid "A <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/geom-gjournal.html\">new section on journaling</link> is now part of the FreeBSD Handbook."
+msgid ""
+"A <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"geom-gjournal.html\">new section on journaling</link> is now part of the "
+"FreeBSD Handbook."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:653
-msgid "<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-current/2006-June/064043.html\">This post</link> in <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-current\">freebsd-current</link> by <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</manvolnum></citerefentry>'s developer, Paweł Jakub Dawidek <email>pjd@FreeBSD.org</email>."
+msgid ""
+"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-current/2006-"
+"June/064043.html\">This post</link> in <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/freebsd-current\">freebsd-current</link> by "
+"<citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>'s developer, Paweł Jakub Dawidek "
+"<email>pjd@FreeBSD.org</email>."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:658
-msgid "<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-questions/2008-April/173501.html\">This post</link> in <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-questions</link> by Ivan Voras <email>ivoras@FreeBSD.org</email>."
+msgid ""
+"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-questions/"
+"2008-April/173501.html\">This post</link> in <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-questions</link> by "
+"Ivan Voras <email>ivoras@FreeBSD.org</email>."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:663
-msgid "The manual pages of <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</manvolnum></citerefentry> and <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
+msgid ""
+"The manual pages of <citerefentry><refentrytitle>gjournal</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> and "
+"<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 msgstr ""
-

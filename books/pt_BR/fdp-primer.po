@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.0\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-22 07:36+0000\n"
+"PO-Revision-Date: 2018-08-23 11:28+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -27,8 +27,7 @@ msgstr "Primer do Projeto de Documentação do FreeBSD para Novos Colaboradores"
 #. (itstool) path: info/author
 #: book.translate.xml:66
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr "<orgname>Projeto de documentação do \n"
-"FreeBSD</orgname>"
+msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:68
@@ -120,7 +119,7 @@ msgid ""
 "Thank you for becoming a part of the FreeBSD Documentation Project. Your "
 "contribution is extremely valuable, and we appreciate it."
 msgstr ""
-"Obrigado por tornar-se parte do Projeto de Documentação do FreeBSD.  A sua "
+"Obrigado por fazer parte do Projeto de Documentação do FreeBSD.  A sua "
 "contribuição é extremamente valiosa."
 
 #. (itstool) path: abstract/para
@@ -250,7 +249,7 @@ msgstr "Saída de um programa na tela do computador."
 #: book.translate.xml:217
 #, no-wrap
 msgid "You have mail."
-msgstr "Você tem email."
+msgstr "You have mail."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:221
@@ -327,8 +326,7 @@ msgstr "Variáveis de ambiente"
 #. (itstool) path: row/entry
 #: book.translate.xml:256
 msgid "<envar>$HOME</envar> is set to the user's home directory."
-msgstr ""
-"<envar>$HOME</envar> está definido para o diretório inicial do usuário."
+msgstr "<envar>$HOME</envar> aponta para o diretório inicial do usuário."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:265
@@ -560,7 +558,7 @@ msgstr "Configure o editor de texto:"
 #. (itstool) path: listitem/para
 #: book.translate.xml:424
 msgid "Word wrap set to 70 characters."
-msgstr "Defina a quebra de palavras para 70 caracteres."
+msgstr "Defina a quebra de linha para 70 caracteres."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:428
@@ -584,7 +582,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:442
 msgid "Update the local working copy:"
-msgstr "Atualize a arvore de trabalho local:"
+msgstr "Atualize a árvore de trabalho local:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:444
@@ -618,7 +616,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:458
 msgid "After editing, check for problems by running:"
-msgstr "Após a edição, cheque por eventuais problemas rodando"
+msgstr "Após alteração, cheque por eventuais problemas rodando"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:460
@@ -654,7 +652,7 @@ msgstr ""
 "documentação alterada e assim será gerado a documentação no formato HTML com "
 "divisões. Por exemplo, pra compilar a versão Inglês do Handbook em "
 "<acronym>HTML</acronym>, execute <command>make</command> no diretório "
-"<filename>en_US.ISO8859-1/books/handbook/</filename> directory."
+"<filename>en_US.ISO8859-1/books/handbook/</filename>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:480
@@ -712,7 +710,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:509
 msgid "The FreeBSD Documentation Set"
-msgstr "O conjunto de documentação do FreeBSD"
+msgstr "Conjunto de Documentação do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:511
@@ -729,8 +727,8 @@ msgid ""
 "<emphasis>Handbook</emphasis>: The Handbook is the comprehensive online "
 "resource and reference for FreeBSD users."
 msgstr ""
-"<emphasis>Handbook</emphasis>: O Handbook é o recurso online abrangente e "
-"referência para usuários do FreeBSD."
+"<emphasis>Handbook</emphasis>: O handbook almeja ser um compreensivo recurso "
+"de referência online para os usuários do FreeBSD"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:522
@@ -743,7 +741,7 @@ msgstr ""
 "<emphasis>FAQ</emphasis>: O <acronym>FAQ</acronym> utiliza um formato curto "
 "de pergunta e resposta para abordar dúvidas que são frequentemente "
 "realizadas nas listas de discussão e fóruns dedicados ao FreeBSD. Este "
-"formato não permite respostas longas e abrangentes."
+"formato não permite respostas longas e detalhadas."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:530
@@ -863,7 +861,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:620
 msgid "Required Tools"
-msgstr "Ferramentas Necessárias"
+msgstr "Ferramentas Obrigatórias"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:622
@@ -1056,7 +1054,6 @@ msgstr "Documentação e Páginas de Manual"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:769
-#, fuzzy
 msgid ""
 "FreeBSD documentation is not just books and articles. Manual pages for all "
 "the commands and configuration files are also part of the documentation, and "
@@ -1068,15 +1065,14 @@ msgid ""
 msgstr ""
 "A documentação do FreeBSD não é apenas livros e artigos. Páginas de manual "
 "para todos os comandos e arquivos de configuração também fazem parte da "
-"documentação e fazem parte do território do <acronym> FDP </acronym>. Dois "
-"repositórios estão envolvidos: <literal> doc </literal> para os livros e "
-"artigos, e <literal> base </literal> para o sistema operacional e páginas de "
-"manual. Para editar páginas de manual, o repositório <literal> base </"
-"literal> deve ser registrado separadamente."
+"documentação e fazem parte do território do <acronym>FDP</acronym>. Dois "
+"repositórios estão envolvidos: <literal>doc</literal> para os livros e "
+"artigos, e <literal>base</literal> para o sistema operacional e páginas de "
+"manual. Para editar páginas de manual, o repositório <literal>base</literal> "
+"deve ser registrado separadamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:778
-#, fuzzy
 msgid ""
 "Repositories may contain multiple versions of documentation and source code. "
 "New modifications are almost always made only to the latest version, called "
@@ -1084,17 +1080,15 @@ msgid ""
 msgstr ""
 "Repositórios podem conter várias versões de documentação e código-fonte. "
 "Novas modificações quase sempre são feitas apenas para a versão mais "
-"recente, chamada <literal> head </literal>."
+"recente, chamada <literal>head</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:784
-#, fuzzy
 msgid "Choosing a Directory"
-msgstr "Escolhendo um diretório"
+msgstr "Escolhendo um Diretório"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:786
-#, fuzzy
 msgid ""
 "FreeBSD documentation is traditionally stored in <filename>/usr/doc/</"
 "filename>, and system source code with manual pages in <filename>/usr/src/</"
@@ -1104,34 +1098,31 @@ msgid ""
 "<filename>~/doc</filename> and <filename>~/src</filename>, both "
 "subdirectories of the user's home directory."
 msgstr ""
-"A documentação do FreeBSD é tradicionalmente armazenada em <filename> / usr /"
-" doc / </filename>, e o código fonte do sistema com páginas de manual em "
-"<filename> / usr / src / </filename>. Essas árvores de diretório são "
-"realocáveis ​​e os usuários podem colocar as cópias de trabalho em outros "
-"locais para evitar interferir nas informações existentes nos diretórios "
-"principais. Os exemplos que seguem usam <filename> ~ / doc </filename> e "
-"<filename> ~ / src </filename>, ambos subdiretórios do diretório pessoal do "
-"usuário."
+"A documentação do FreeBSD é tradicionalmente armazenada em <filename>/usr/"
+"doc/</filename>, e o código fonte do sistema com páginas de manual em "
+"<filename>/usr/src/</filename>. Essas árvores são realocáveis ​​e os "
+"usuários podem armazenar as cópias de trabalho em outros locais para evitar "
+"interferir nas informações existentes nos diretórios principais. Os exemplos "
+"a seguir utilizam <filename>~/doc</filename> e <filename>~/src</filename>, "
+"ambos subdiretórios do diretório pessoal do usuário."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:799
-#, fuzzy
 msgid "Checking Out a Copy"
-msgstr "Verificando uma cópia"
+msgstr "Baixando uma Cópia"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:801
-#, fuzzy
 msgid ""
 "A download of a working copy from the repository is called a "
 "<emphasis>checkout</emphasis>, and done with <command>svn checkout</command>."
 " This example checks out a copy of the latest version (<literal>head</"
 "literal>) of the main documentation tree:"
 msgstr ""
-"Um download de uma cópia de trabalho do repositório é chamado de <emphasis> "
-"checkout </emphasis> e feito com <command> svn checkout </command>. Este "
-"exemplo faz check-out de uma cópia da versão mais recente (<literal> head </"
-"literal>) da árvore de documentação principal:"
+"O processo de download de um repositório é chamado de <emphasis>checkout</"
+"emphasis> e feito com um <command>svn checkout</command>. Este exemplo faz "
+"checkout de um repositório da versão mais recente (<literal>head</literal>) "
+"do repositório de documentação principal:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:809
