@@ -1,4 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -6,22 +7,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-24 12:12+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: Portuguese (Brazil)\n"
-"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.0\n"
+"Language: pt_BR\n"
+"PO-Revision-Date: 2018-08-24 09:46+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
+#, fuzzy
 msgid "Writing a GEOM Class"
-msgstr ""
+msgstr "Escrevendo uma classe GEOM"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
@@ -86,24 +88,31 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:41
+#, fuzzy
 msgid ""
 "This text documents some starting points in developing GEOM classes, and "
 "kernel modules in general. It is assumed that the reader is familiar with C "
 "userland programming."
 msgstr ""
+"Este texto documenta alguns pontos de partida no desenvolvimento de classes "
+"GEOM e módulos do kernel em geral. Supõe-se que o leitor esteja "
+"familiarizado com a programação do usuário C."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:50
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:53
+#, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:55
+#, fuzzy
 msgid ""
 "Documentation on kernel programming is scarce — it is one of few areas where "
 "there is nearly nothing in the way of friendly tutorials, and the phrase "
@@ -111,18 +120,29 @@ msgid ""
 "bits and pieces (some of them seriously outdated) floating around that "
 "should be studied before beginning to code:"
 msgstr ""
+"A documentação sobre programação do kernel é escassa - é uma das poucas "
+"áreas em que quase não há nada como tutoriais amigáveis, e a frase <quote> "
+"usa a fonte! </quote> realmente é verdadeira. No entanto, existem alguns "
+"bits e peças (alguns deles seriamente desatualizados) flutuando que devem "
+"ser estudados antes de começar a codificar:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:64
+#, fuzzy
 msgid ""
 "The <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "developers-handbook/index.html\">FreeBSD Developer's Handbook</link> — part "
 "of the documentation project, it does not contain anything specific to "
 "kernel programming, but rather some general useful information."
 msgstr ""
+"O <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/developers-"
+"handbook/index.html\"> Manual do Desenvolvedor do FreeBSD </link> - parte do "
+"projeto de documentação, ele não contém qualquer coisa específica para a "
+"programação do kernel, mas algumas informações úteis gerais."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:72
+#, fuzzy
 msgid ""
 "The <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-"
 "handbook/index.html\">FreeBSD Architecture Handbook</link> — also from the "
@@ -131,33 +151,52 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-handbook/driverbasics."
 "html\">Writing FreeBSD device drivers</link>."
 msgstr ""
+"O <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-"
+"handbook/index.html\"> Manual de Arquitetura do FreeBSD </link> - também do "
+"projeto de documentação, contém descrições de várias instalações e "
+"procedimentos de baixo nível. O capítulo mais importante é 13, <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-handbook/"
+"driverbasics.html\"> Escrever drivers de dispositivo FreeBSD </link>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:81
+#, fuzzy
 msgid ""
 "The Blueprints section of <link xlink:href=\"http://www.freebsddiary."
 "org\">FreeBSD Diary</link> web site — contains several interesting articles "
 "on kernel facilities."
 msgstr ""
+"A seção Blueprints do site do <link xlink:href=\"http://www.freebsddiary."
+"org\"> Diário do FreeBSD </link> contém vários artigos interessantes sobre "
+"as instalações do kernel."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:88
+#, fuzzy
 msgid ""
 "The man pages in section 9 — for important documentation on kernel functions."
 ""
 msgstr ""
+"As páginas man na seção 9 - para documentação importante sobre as funções do "
+"kernel."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:93
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> man page and <link xlink:href=\"http://phk.freebsd."
 "dk/pubs/\">PHK's GEOM slides</link> — for general introduction of the GEOM "
 "subsystem."
 msgstr ""
+"A página man <citerefentry> <refentrytitle> geom </refentrytitle> "
+"<manvolnum> 4 </manvolnum> </citerefentry> e <link xlink:href=\"http://phk."
+"freebsd.dk/pubs/\"> O GEOM de PHK slides </link> - para introdução geral do "
+"subsistema GEOM."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:99
+#, fuzzy
 msgid ""
 "Man pages <citerefentry><refentrytitle>g_bio</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>g_event</"
@@ -172,23 +211,42 @@ msgid ""
 "manvolnum></citerefentry> &amp; others linked from those, for documentation "
 "on specific functionalities."
 msgstr ""
+"Páginas de manual <citerefentry><refentrytitle>g_bio</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>g_event</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>g_data</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>g_geom</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>g_provider</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> "
+"<citerefentry><refentrytitle>g_consumer</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>g_access</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> &amp; outros ligados a "
+"partir deles, para documentação sobre funcionalidades específicas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>style</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> man page — for documentation on the coding-style "
 "conventions which must be followed for any code which is to be committed to "
 "the FreeBSD Subversion tree."
 msgstr ""
+"A página man do <citerefentry> <refentrytitle> estilo </refentrytitle> "
+"<manvolnum> 9 </manvolnum> </citerefentry> - para documentação sobre as "
+"convenções de estilo de codificação que devem ser seguidas para qualquer "
+"código que esteja comprometido com o FreeBSD Árvore do Subversion."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:117
+#, fuzzy
 msgid "Preliminaries"
-msgstr ""
+msgstr "Preliminares"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:119
+#, fuzzy
 msgid ""
 "The best way to do kernel development is to have (at least) two separate "
 "computers. One of these would contain the development environment and "
@@ -199,9 +257,18 @@ msgid ""
 "not even require a proper display. Instead, it could be connected with a "
 "serial cable or KVM to the first one."
 msgstr ""
+"A melhor maneira de fazer o desenvolvimento do kernel é ter (pelo menos) "
+"dois computadores separados. Um deles conteria o ambiente de desenvolvimento "
+"e as fontes, e o outro seria usado para testar o código recém-escrito por "
+"sistemas de arquivos de inicialização de rede e de montagem de rede do "
+"primeiro. Desta forma, se o novo código contiver erros e travar a máquina, "
+"isso não irá atrapalhar as fontes (e outros dados <quote> ao vivo </quote>). "
+"O segundo sistema nem requer uma exibição adequada. Em vez disso, ele pode "
+"ser conectado com um cabo serial ou KVM ao primeiro."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:130
+#, fuzzy
 msgid ""
 "But, since not everybody has two or more computers handy, there are a few "
 "things that can be done to prepare an otherwise <quote>live</quote> system "
@@ -210,53 +277,74 @@ msgid ""
 "href=\"http://www.qemu.org/\">QEmu</link> virtual machine (the next best "
 "thing after a dedicated development machine)."
 msgstr ""
+"Mas, como nem todo mundo tem dois ou mais computadores à mão, há algumas "
+"coisas que podem ser feitas para preparar um sistema <quote> ao vivo </"
+"quote> para desenvolver código do kernel. Esta configuração também é "
+"aplicável para desenvolvimento em um <link xlink:href=\"http://www.vmware."
+"com/\"> VMWare </link> ou <link xlink:href=\"http://www.qemu.org / \"> QEmu "
+"</link> máquina virtual (a próxima melhor coisa depois de uma máquina de "
+"desenvolvimento dedicada)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:138
+#, fuzzy
 msgid "Modifying a System for Development"
-msgstr ""
+msgstr "Modificando um sistema para desenvolvimento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:140
+#, fuzzy
 msgid ""
 "For any kernel programming a kernel with <option>INVARIANTS</option> enabled "
 "is a must-have. So enter these in your kernel configuration file:"
 msgstr ""
+"Para qualquer programação do kernel, um kernel com <option> INVARIANTS </"
+"option> ativado é obrigatório. Então, digite estes no seu arquivo de "
+"configuração do kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:144
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options INVARIANT_SUPPORT\n"
 "options INVARIANTS"
-msgstr ""
+msgstr "options INVARIANT_SUPPORT\n"
+"options INVARIANTS"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:147
+#, fuzzy
 msgid ""
 "For more debugging you should also include WITNESS support, which will alert "
 "you of mistakes in locking:"
 msgstr ""
+"Para mais depuração, você também deve incluir o suporte do WITNESS, que irá "
+"alertá-lo sobre erros no bloqueio:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:150
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options WITNESS_SUPPORT\n"
 "options WITNESS"
-msgstr ""
+msgstr "options WITNESS_SUPPORT\n"
+"options WITNESS"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:153
+#, fuzzy
 msgid "For debugging crash dumps, a kernel with debug symbols is needed:"
 msgstr ""
+"Para depurar despejos de memória, é necessário um kernel com símbolos de "
+"depuração:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:156
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  makeoptions    DEBUG=-g"
-msgstr ""
+msgstr "  makeoptions DEBUG = -g"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:158
+#, fuzzy
 msgid ""
 "With the usual way of installing the kernel (<command>make installkernel</"
 "command>) the debug kernel will not be automatically installed. It is called "
@@ -264,38 +352,53 @@ msgid ""
 "sys/KERNELNAME/</filename>. For convenience it should be copied to "
 "<filename>/boot/kernel/</filename>."
 msgstr ""
+"Com a maneira usual de instalar o kernel (<command> make installkernel </"
+"command>) o kernel de depuração não será instalado automaticamente. É "
+"chamado <filename> kernel.debug </filename> e localizado em <filename>/usr/"
+"obj/usr/src/sys/KERNELNAME/</filename>. Por conveniência, deve ser copiado "
+"para <filename> / boot / kernel / </filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:166
+#, fuzzy
 msgid ""
 "Another convenience is enabling the kernel debugger so you can examine a "
 "kernel panic when it happens. For this, enter the following lines in your "
 "kernel configuration file:"
 msgstr ""
+"Outra conveniência é habilitar o depurador do kernel para que você possa "
+"examinar o pânico do kernel quando isso acontece. Para isso, insira as "
+"seguintes linhas no seu arquivo de configuração do kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:170
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options KDB\n"
 "options DDB\n"
 "options KDB_TRACE"
-msgstr ""
+msgstr "options KDB\n"
+"options DDB\n"
+"options KDB_TRACE"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:174
+#, fuzzy
 msgid ""
 "For this to work you might need to set a sysctl (if it is not on by default):"
 ""
 msgstr ""
+"Para que isso funcione, você pode precisar definir um sysctl (se ele não "
+"estiver ativado por padrão):"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:177
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  debug.debugger_on_panic=1"
-msgstr ""
+msgstr "  debug.debugger_on_panic = 1"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:179
+#, fuzzy
 msgid ""
 "Kernel panics will happen, so care should be taken with the filesystem cache."
 " In particular, having softupdates might mean the latest file version could "
@@ -306,22 +409,35 @@ msgid ""
 "shortened. There are three sysctl's that are useful for this (best to be set "
 "in <filename>/etc/sysctl.conf</filename>):"
 msgstr ""
+"Kernel pânico acontecerá, portanto, deve-se ter cuidado com o cache do "
+"sistema de arquivos. Em particular, ter softupdates pode significar que a "
+"versão mais recente do arquivo pode ser perdida se um pânico ocorrer antes "
+"de ser confirmado para armazenamento. Desativar softupdates produz um grande "
+"sucesso no desempenho e ainda não garante a consistência dos dados. A "
+"montagem do sistema de arquivos com a opção <quote> sync </quote> é "
+"necessária para isso. Para um compromisso, os atrasos do cache de "
+"softupdates podem ser encurtados. Existem três sysctl's que são úteis para "
+"isso (melhor ser configurado em <filename> /etc/sysctl.conf </filename>):"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:190
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "kern.filedelay=5\n"
 "kern.dirdelay=4\n"
 "kern.metadelay=3"
-msgstr ""
+msgstr "kern.filedelay = 5\n"
+"kern.dirdelay = 4\n"
+"kern.metadelay = 3"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:194
+#, fuzzy
 msgid "The numbers represent seconds."
-msgstr ""
+msgstr "Os números representam segundos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:196
+#, fuzzy
 msgid ""
 "For debugging kernel panics, kernel core dumps are required. Since a kernel "
 "panic might make filesystems unusable, this crash dump is first written to a "
@@ -331,24 +447,39 @@ msgid ""
 "and mounted, and before swap is enabled. This is controlled with two "
 "<filename>/etc/rc.conf</filename> variables:"
 msgstr ""
+"Para depurar os pânicos do kernel, os dumps do núcleo do kernel são "
+"necessários. Como um kernel panic pode tornar os sistemas de arquivos "
+"inutilizáveis, esse despejo de memória é primeiramente gravado em uma "
+"partição bruta. Normalmente, esta é a partição swap. Essa partição deve ser "
+"pelo menos tão grande quanto a RAM física na máquina. Na próxima "
+"inicialização, o despejo é copiado para um arquivo normal. Isso acontece "
+"depois que os sistemas de arquivos são verificados e montados e antes que a "
+"troca esteja ativada. Isto é controlado com duas variáveis ​​<filename> /etc/"
+"rc.conf </filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:206
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "dumpdev=\"/dev/ad0s4b\"\n"
 "dumpdir=\"/usr/core "
-msgstr ""
+msgstr "dumpdev = \"/ dev / ad0s4b\"\n"
+"dumpdir = \"/ usr / core"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:209
+#, fuzzy
 msgid ""
 "The <varname>dumpdev</varname> variable specifies the swap partition and "
 "<varname>dumpdir</varname> tells the system where in the filesystem to "
 "relocate the core dump on reboot."
 msgstr ""
+"A variável <varname> dumpdev </varname> especifica a partição de troca e "
+"<varname> dumpdir </varname> informa ao sistema onde no sistema de arquivos "
+"para realocar o dump principal na reinicialização."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:214
+#, fuzzy
 msgid ""
 "Writing kernel core dumps is slow and takes a long time so if you have lots "
 "of memory (&gt;256M) and lots of panics it could be frustrating to sit and "
@@ -356,99 +487,143 @@ msgid ""
 "it to filesystem). It is convenient then to limit the amount of RAM the "
 "system will use via a <filename>/boot/loader.conf</filename> tunable:"
 msgstr ""
+"A gravação de core dumps é lenta e leva muito tempo, então se você tiver "
+"muita memória (&gt; 256M) e muitos pânicos, pode ser frustrante esperar e "
+"esperar enquanto isso é feito (duas vezes - primeiro para gravar para "
+"trocar, para realocá-lo para o sistema de arquivos). É conveniente limitar a "
+"quantidade de RAM que o sistema usará através de um <filename> /boot/loader."
+"conf </filename> sintonizável:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:222
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  hw.physmem=\"256M\""
-msgstr ""
+msgstr "  hw.physmem = \"256M\""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:224
+#, fuzzy
 msgid ""
 "If the panics are frequent and filesystems large (or you simply do not trust "
 "softupdates+background fsck) it is advisable to turn background fsck off via "
 "<filename>/etc/rc.conf</filename> variable:"
 msgstr ""
+"Se os pânicos são frequentes e os sistemas de arquivos são grandes (ou você "
+"simplesmente não confia em softupdates + background fsck), é aconselhável "
+"desligar o fsck do background através da variável <filename> /etc/rc.conf </"
+"filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:229
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  background_fsck=\"NO\""
-msgstr ""
+msgstr "  background_fsck=\"NO\""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:231
+#, fuzzy
 msgid ""
 "This way, the filesystems will always get checked when needed. Note that "
 "with background fsck, a new panic could happen while it is checking the "
 "disks. Again, the safest way is not to have many local filesystems by using "
 "another computer as an NFS server."
 msgstr ""
+"Dessa forma, os sistemas de arquivos sempre serão verificados quando "
+"necessário. Observe que, com o fsck em segundo plano, um novo pânico pode "
+"acontecer enquanto ele está verificando os discos. Novamente, a maneira mais "
+"segura é não ter muitos sistemas de arquivos locais usando outro computador "
+"como um servidor NFS."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:239
+#, fuzzy
 msgid "Starting the Project"
-msgstr ""
+msgstr "Começando o projeto"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:241
+#, fuzzy
 msgid ""
 "For the purpose of creating a new GEOM class, an empty subdirectory has to "
 "be created under an arbitrary user-accessible directory. You do not have to "
 "create the module directory under <filename>/usr/src</filename>."
 msgstr ""
+"Para o propósito de criar uma nova classe GEOM, um subdiretório vazio deve "
+"ser criado sob um diretório arbitrário acessível pelo usuário. Você não "
+"precisa criar o diretório do módulo em <filename> / usr / src </filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:248
+#, fuzzy
 msgid "The Makefile"
-msgstr ""
+msgstr "O Makefile"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:250
+#, fuzzy
 msgid ""
 "It is good practice to create <filename>Makefile</filename>s for every "
 "nontrivial coding project, which of course includes kernel modules."
 msgstr ""
+"É uma boa prática criar <filename> Makefile </filename> s para cada projeto "
+"de codificação não trivial, o que obviamente inclui módulos do kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:254
+#, fuzzy
 msgid ""
 "Creating the <filename>Makefile</filename> is simple thanks to an extensive "
 "set of helper routines provided by the system. In short, here is how a "
 "minimal <filename>Makefile</filename> looks for a kernel module:"
 msgstr ""
+"Criar o <filename> Makefile </filename> é simples graças a um extenso "
+"conjunto de rotinas auxiliares fornecidas pelo sistema. Resumindo, aqui está "
+"como um Makefile <filename> mínimo </filename> procura por um módulo do "
+"kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:260
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "SRCS=g_journal.c\n"
 "KMOD=geom_journal\n"
 "\n"
 ".include &lt;bsd.kmod.mk&gt;"
 msgstr ""
+"SRCS = g_journal.c\n"
+"KMOD = geom_journal\n"
+"\n"
+".include &lt; bsd.kmod.mk &gt;"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:265
+#, fuzzy
 msgid ""
 "This <filename>Makefile</filename> (with changed filenames) will do for any "
 "kernel module, and a GEOM class can reside in just one kernel module. If "
 "more than one file is required, list it in the <envar>SRCS</envar> variable, "
 "separated with whitespace from other filenames."
 msgstr ""
+"Este <filename> Makefile </filename> (com nomes de arquivos alterados) serve "
+"para qualquer módulo do kernel, e uma classe GEOM pode residir em apenas um "
+"módulo do kernel. Se mais de um arquivo for necessário, liste-o na variável "
+"<envar> SRCS </envar>, separado com espaço em branco de outros nomes de "
+"arquivos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:274
+#, fuzzy
 msgid "On FreeBSD Kernel Programming"
-msgstr ""
+msgstr "Na programação do kernel do FreeBSD"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:277
+#, fuzzy
 msgid "Memory Allocation"
-msgstr ""
+msgstr "Alocação de memória"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:279
+#, fuzzy
 msgid ""
 "See <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>. Basic memory allocation is only slightly "
@@ -456,31 +631,46 @@ msgid ""
 "function>() and <function>free</function>() accept additional parameters as "
 "is described in the man page."
 msgstr ""
+"Veja <citerefentry> <refentrytitle> malloc </refentrytitle> <manvolnum> 9 </"
+"manvolnum> </citerefentry>. A alocação básica de memória é apenas "
+"ligeiramente diferente do seu equivalente em termos de usuário. Mais "
+"notavelmente, <function> malloc </function> () e <function> free </function> "
+"() aceitam parâmetros adicionais conforme descrito na página man."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:285
+#, fuzzy
 msgid ""
 "A <quote>malloc type</quote> must be declared in the declaration section of "
 "a source file, like this:"
 msgstr ""
+"Um <quote> tipo malloc </quote> deve ser declarado na seção de declaração de "
+"um arquivo de origem, assim:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:288
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "  static MALLOC_DEFINE(M_GJOURNAL, \"gjournal data\", \"GEOM_JOURNAL "
 "Data\");"
 msgstr ""
+"  MALLOC_DEFINE estático (M_GJOURNAL, \"gjournal data\", \"GEOM_JOURNAL "
+"Data\");"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:290
+#, fuzzy
 msgid ""
 "To use this macro, <filename>sys/param.h</filename>, <filename>sys/kernel.h</"
 "filename> and <filename>sys/malloc.h</filename> headers must be included."
 msgstr ""
+"Para usar esta macro, os cabeçalhos <filename> sys / param.h </filename>, "
+"<filename> sys / kernel.h </filename> e <filename> sys / malloc.h </"
+"filename> devem ser incluídos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:295
+#, fuzzy
 msgid ""
 "There is another mechanism for allocating memory, the UMA (Universal Memory "
 "Allocator). See <citerefentry><refentrytitle>uma</"
@@ -488,14 +678,22 @@ msgid ""
 "a special type of allocator mainly used for speedy allocation of lists "
 "comprised of same-sized items (for example, dynamic arrays of structs)."
 msgstr ""
+"Existe outro mecanismo para alocar memória, o UMA (Universal Memory "
+"Allocator). Veja <citerefentry> <refentrytitle> uma </refentrytitle> "
+"<manvolnum> 9 </manvolnum> </citerefentry> para detalhes, mas é um tipo "
+"especial de alocador usado principalmente para alocação rápida de listas "
+"compostas de itens do mesmo tamanho (por exemplo, matrizes dinâmicas de "
+"estruturas)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:303
+#, fuzzy
 msgid "Lists and Queues"
-msgstr ""
+msgstr "Listas e filas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:305
+#, fuzzy
 msgid ""
 "See <citerefentry><refentrytitle>queue</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>. There are a LOT of cases when a list of things "
@@ -506,23 +704,38 @@ msgid ""
 "(although the speed variation is on the order of several CPU instructions "
 "more, so it should not be taken seriously)."
 msgstr ""
+"Veja <citerefentry> <refentrytitle> queue </refentrytitle> <manvolnum> 3 </"
+"manvolnum> </citerefentry>. Há MUITOS casos quando uma lista de coisas "
+"precisa ser mantida. Felizmente, essa estrutura de dados é implementada (de "
+"várias maneiras) por macros C incluídas no sistema. O tipo de lista mais "
+"usado é o TAILQ, porque é o mais flexível. É também aquele com os maiores "
+"requisitos de memória (seus elementos são duplamente vinculados) e também o "
+"mais lento (embora a variação de velocidade seja mais da ordem de várias "
+"instruções da CPU, portanto, ela não deve ser levada a sério)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:315
+#, fuzzy
 msgid ""
 "If data retrieval speed is very important, see "
 "<citerefentry><refentrytitle>tree</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> and <citerefentry><refentrytitle>hashinit</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>."
 msgstr ""
+"Se a velocidade de recuperação de dados for muito importante, veja "
+"<citerefentry> <refentrytitle> tree </refentrytitle> <manvolnum> 3 </"
+"manvolnum> </citerefentry> e <citerefentry> <refentrytitle> hashinit </"
+"refentrytitle> <manvolnum> 9 </manvolnum> </citerefentry>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:320
+#, fuzzy
 msgid "BIOs"
-msgstr ""
+msgstr "BIOS"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:322
+#, fuzzy
 msgid ""
 "Structure <varname remap=\"structname\">bio</varname> is used for any and "
 "all Input/Output operations concerning GEOM. It basically contains "
@@ -531,9 +744,16 @@ msgid ""
 "<quote>user-specific</quote> flags and fields that can help implement "
 "various hacks."
 msgstr ""
+"Estrutura <varname remap=\"structname\"> bio </varname> é usada para todas e "
+"quaisquer operações de Entrada / Saída relativas ao GEOM. Ele basicamente "
+"contém informações sobre qual dispositivo ('provedor') deve satisfazer a "
+"solicitação, tipo de pedido, deslocamento, comprimento, ponteiro para um "
+"buffer e um monte de sinalizadores <quote> específicos do usuário </quote> e "
+"campos que podem ajudar a implementar vários hacks."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:330
+#, fuzzy
 msgid ""
 "The important thing here is that <varname remap=\"structname\">bio</"
 "varname>s are handled asynchronously. That means that, in most parts of the "
@@ -544,9 +764,18 @@ msgid ""
 "developer-supplied function is called as a notification when the request "
 "gets completed (or results in error)."
 msgstr ""
+"O importante aqui é que <varname remap=\"structname\">bio</varname>s são "
+"tratados de forma assíncrona. Isso significa que, na maior parte do código, "
+"não há nenhum análogo as chamadas <citerefentry><refentrytitle>read</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry> e "
+"<citerefentry><refentrytitle>write</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> que não retornam até que uma solicitação seja feita. Em vez "
+"disso, uma função fornecida pelo desenvolvedor é chamada como uma "
+"notificação quando a solicitação é concluída (ou resulta em erro)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:338
+#, fuzzy
 msgid ""
 "The asynchronous programming model (also called <quote>event-driven</quote>) "
 "is somewhat harder than the much more used imperative one used in userland "
@@ -557,110 +786,161 @@ msgid ""
 "mutex or the internal mutex held during the <function>.start</function>() "
 "and <function>.stop</function>() functions."
 msgstr ""
+"O modelo de programação assíncrona (também chamado de <quote> orientado a "
+"eventos </quote>) é um pouco mais difícil do que o imperativo muito mais "
+"usado no userland (pelo menos leva um tempo para se acostumar com isso). Em "
+"alguns casos, as rotinas auxiliares <function> g_write_data </function> () e "
+"<function> g_read_data </function> () podem ser usadas, mas <emphasis> nem "
+"sempre </emphasis>. Em particular, eles não podem ser usados ​​quando um "
+"mutex é mantido; por exemplo, o mutex de topologia GEOM ou o mutex interno "
+"mantido durante as funções <function> .start </function> () e <function> ."
+"stop </function> ()."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:353
+#, fuzzy
 msgid "On GEOM Programming"
-msgstr ""
+msgstr "Na programação GEOM"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:356
+#, fuzzy
 msgid "Ggate"
-msgstr ""
+msgstr "Ggate"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:358
+#, fuzzy
 msgid ""
 "If maximum performance is not needed, a much simpler way of making a data "
 "transformation is to implement it in userland via the ggate (GEOM gate) "
 "facility. Unfortunately, there is no easy way to convert between, or even "
 "share code between the two approaches."
 msgstr ""
+"Se o desempenho máximo não for necessário, uma maneira muito mais simples de "
+"fazer uma transformação de dados é implementá-lo na área do usuário por meio "
+"do recurso ggate (GEOM gate). Infelizmente, não existe uma maneira fácil de "
+"converter ou até mesmo compartilhar código entre as duas abordagens."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:366
+#, fuzzy
 msgid "GEOM Class"
-msgstr ""
+msgstr "Classe GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:368
+#, fuzzy
 msgid ""
 "GEOM classes are transformations on the data. These transformations can be "
 "combined in a tree-like fashion. Instances of GEOM classes are called "
 "<emphasis>geoms</emphasis>."
 msgstr ""
+"Classes GEOM são transformações nos dados. Essas transformações podem ser "
+"combinadas em uma forma de árvore. Instâncias de classes GEOM são chamadas "
+"de <emphasis> geoms </emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:373
+#, fuzzy
 msgid ""
 "Each GEOM class has several <quote>class methods</quote> that get called "
 "when there is no geom instance available (or they are simply not bound to a "
 "single instance):"
 msgstr ""
+"Cada classe GEOM possui vários <quote> métodos de classe </quote> que são "
+"chamados quando não há nenhuma instância geom disponível (ou simplesmente "
+"não estão vinculados a uma única instância):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:379
+#, fuzzy
 msgid ""
 "<function>.init</function> is called when GEOM becomes aware of a GEOM class "
 "(when the kernel module gets loaded.)"
 msgstr ""
+"<function> .init </function> é chamado quando o GEOM toma conhecimento de "
+"uma classe GEOM (quando o módulo do kernel é carregado)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:385
+#, fuzzy
 msgid ""
 "<function>.fini</function> gets called when GEOM abandons the class (when "
 "the module gets unloaded)"
 msgstr ""
+"<function> .fini </function> é chamado quando o GEOM abandona a classe "
+"(quando o módulo é descarregado)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:391
+#, fuzzy
 msgid ""
 "<function>.taste</function> is called next, once for each provider the "
 "system has available. If applicable, this function will usually create and "
 "start a geom instance."
 msgstr ""
+"<function> .taste </function> é chamado next, uma vez para cada provedor que "
+"o sistema tiver disponível. Se aplicável, essa função geralmente criará e "
+"iniciará uma instância geom."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:398
+#, fuzzy
 msgid ""
 "<function>.destroy_geom</function> is called when the geom should be "
 "disbanded"
 msgstr ""
+"<function> .destroy_geom </function> é chamado quando o geom deve ser "
+"desfeito"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:403
+#, fuzzy
 msgid ""
 "<function>.ctlconf</function> is called when user requests reconfiguration "
 "of existing geom"
 msgstr ""
+"<function> .ctlconf </function> é chamado quando o usuário solicita a "
+"reconfiguração do geom existente"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:409
+#, fuzzy
 msgid ""
 "Also defined are the GEOM event functions, which will get copied to the geom "
 "instance."
 msgstr ""
+"Também são definidas as funções do evento GEOM, que serão copiadas para a "
+"instância geom."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:412
+#, fuzzy
 msgid ""
 "Field <function>.geom</function> in the <varname remap="
 "\"structname\">g_class</varname> structure is a LIST of geoms instantiated "
 "from the class."
 msgstr ""
+"O campo <function> .geom </function> na estrutura <varname remap="
+"\"structname\"> g_class </varname> é uma LISTA de gemas instanciada da "
+"classe."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:415
+#, fuzzy
 msgid "These functions are called from the g_event kernel thread."
-msgstr ""
+msgstr "Essas funções são chamadas do encadeamento do kernel g_event."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:420
+#, fuzzy
 msgid "Softc"
-msgstr ""
+msgstr "Softc"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:422
+#, fuzzy
 msgid ""
 "The name <quote>softc</quote> is a legacy term for <quote>driver private "
 "data</quote>. The name most probably comes from the archaic term "
@@ -669,199 +949,279 @@ msgid ""
 "hold whatever data is private to the geom instance. Most GEOM classes have "
 "the following members:"
 msgstr ""
+"O nome <quote> softc </quote> é um termo legado para <quote> dados privados "
+"do driver </quote>. O nome provavelmente vem do termo arcaico <quote> block "
+"de controle de software </quote>. No GEOM, é uma estrutura (mais precisa: "
+"ponteiro para uma estrutura) que pode ser anexada a uma instância geom para "
+"armazenar quaisquer dados que sejam privados para a instância geom. A "
+"maioria das classes GEOM possui os seguintes membros:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:433
+#, fuzzy
 msgid ""
 "<varname>struct g_provider *provider</varname> : The <quote>provider</quote> "
 "this geom instantiates"
 msgstr ""
+"<varname> struct g_provider * provedor </varname>: O <quote> provedor </"
+"quote> esta geom instancia"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:439
+#, fuzzy
 msgid ""
 "<varname>uint16_t n_disks</varname> : Number of consumer this geom consumes"
 msgstr ""
+"<varname> uint16_t n_disks </varname>: Número de consumidor que este geom "
+"consome"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:444
+#, fuzzy
 msgid ""
 "<varname>struct g_consumer **disks</varname> : Array of <varname>struct "
 "g_consumer*</varname>. (It is not possible to use just single indirection "
 "because struct g_consumer* are created on our behalf by GEOM)."
 msgstr ""
+"<varname> struct g_consumer ** discos </varname>: Matriz de <varname> struct "
+"g_consumer * </varname>. (Não é possível usar apenas uma única indireta "
+"porque struct g_consumer * são criados em nosso nome pela GEOM)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
+#, fuzzy
 msgid ""
 "The <varname remap=\"structname\">softc</varname> structure contains all the "
 "state of geom instance. Every geom instance has its own softc."
 msgstr ""
+"A estrutura <varname remap=\"structname\"> softc </varname> contém todo o "
+"estado da instância geom. Cada instância geom possui seu próprio softc."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:458
+#, fuzzy
 msgid "Metadata"
-msgstr ""
+msgstr "Metadados"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:460
+#, fuzzy
 msgid ""
 "Format of metadata is more-or-less class-dependent, but MUST start with:"
 msgstr ""
+"O formato dos metadados é mais ou menos dependente da classe, mas DEVE "
+"começar com:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:465
+#, fuzzy
 msgid "16 byte buffer for null-terminated signature (usually the class name)"
 msgstr ""
+"Buffer de 16 bytes para assinatura terminada em nulo (geralmente o nome da "
+"classe)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:470
+#, fuzzy
 msgid "uint32 version ID"
-msgstr ""
+msgstr "ID da versão uint32"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:474
+#, fuzzy
 msgid ""
 "It is assumed that geom classes know how to handle metadata with version "
 "ID's lower than theirs."
 msgstr ""
+"Assume-se que as classes geom sabem como lidar com metadados com ID de "
+"versão menores que os deles."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:477
+#, fuzzy
 msgid ""
 "Metadata is located in the last sector of the provider (and thus must fit in "
 "it)."
 msgstr ""
+"Os metadados estão localizados no último setor do provedor (e, portanto, "
+"devem caber nele)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:480
+#, fuzzy
 msgid ""
 "(All this is implementation-dependent but all existing code works like that, "
 "and it is supported by libraries.)"
 msgstr ""
+"(Tudo isso depende da implementação, mas todo o código existente funciona "
+"assim, e é suportado por bibliotecas.)"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:486
+#, fuzzy
 msgid "Labeling/creating a GEOM"
-msgstr ""
+msgstr "Rotular / criar um GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
+#, fuzzy
 msgid "The sequence of events is:"
-msgstr ""
+msgstr "A sequência de eventos é:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
+#, fuzzy
 msgid ""
 "user calls <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> utility (or one of its hardlinked friends)"
 msgstr ""
+"o usuário chama utilitário <citerefentry><refentrytitle>geom</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> (ou um de seus "
+"equivalentes hardlinked)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:497
+#, fuzzy
 msgid ""
 "the utility figures out which geom class it is supposed to handle and "
 "searches for <filename>geom_<replaceable>CLASSNAME</replaceable>.so</"
 "filename> library (usually in <filename>/lib/geom</filename>)."
 msgstr ""
+"o utilitário descobre qual classe geom é suposta manipular e procura pela "
+"biblioteca <filename> geom_ <replaceable> CLASSNAME </replaceable> .so </"
+"filename> (geralmente em <filename> / lib / geom </filename>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:505
+#, fuzzy
 msgid ""
 "it <citerefentry><refentrytitle>dlopen</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>-s the library, extracts the definitions of command-"
 "line parameters and helper functions."
 msgstr ""
+"ele <citerefentry> <refentrytitle> dlopen </refentrytitle> <manvolnum> 3 </"
+"manvolnum> </citerefentry> -s biblioteca, extrai as definições dos "
+"parâmetros da linha de comandos e funções auxiliares."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:511
+#, fuzzy
 msgid "In the case of creating/labeling a new geom, this is what happens:"
-msgstr ""
+msgstr "No caso de criar / rotular um novo geom, isso é o que acontece:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:516
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> looks in the command-line argument for the command (usually "
 "<option>label</option>), and calls a helper function."
 msgstr ""
+"<citerefentry> <refentrytitle> geom </refentrytitle> <manvolnum> 8 </"
+"manvolnum> </citerefentry> procura no argumento da linha de comando o "
+"comando (geralmente <option> label </option>) e chama uma função auxiliar ."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
+#, fuzzy
 msgid ""
 "The helper function checks parameters and gathers metadata, which it "
 "proceeds to write to all concerned providers."
 msgstr ""
+"A função auxiliar verifica parâmetros e reúne metadados, que são gravados em "
+"todos os provedores envolvidos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:528
+#, fuzzy
 msgid ""
 "This <quote>spoils</quote> existing geoms (if any) and initializes a new "
 "round of <quote>tasting</quote> of the providers. The intended geom class "
 "recognizes the metadata and brings the geom up."
 msgstr ""
+"Este <quote> estraga </quote> geoms existentes (se houver) e inicializa uma "
+"nova rodada de <quote> degustação </quote> dos provedores. A classe "
+"geométrica pretendida reconhece os metadados e traz o geom."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:535
+#, fuzzy
 msgid ""
 "(The above sequence of events is implementation-dependent but all existing "
 "code works like that, and it is supported by libraries.)"
 msgstr ""
+"(A sequência de eventos acima é dependente da implementação, mas todo o "
+"código existente funciona assim, e é suportado pelas bibliotecas.)"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:541
+#, fuzzy
 msgid "GEOM Command Structure"
-msgstr ""
+msgstr "Estrutura do Comando GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:543
+#, fuzzy
 msgid ""
 "The helper <filename>geom_CLASSNAME.so</filename> library exports <varname "
 "remap=\"structname\">class_commands</varname> structure, which is an array "
 "of <varname remap=\"structname\">struct g_command</varname> elements. "
 "Commands are of uniform format and look like:"
 msgstr ""
+"A biblioteca helper <filename> geom_CLASSNAME.so </filename> exporta a "
+"estrutura <varname remap=\"structname\"> class_commands </varname>, que é "
+"uma matriz dos elementos <varname remap=\"structname\"> struct g_command </"
+"varname>. Os comandos são de formato uniforme e se parecem com:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:548
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  verb [-options] geomname [other]"
-msgstr ""
+msgstr "  verb [-options] geomname [outro]"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:550
+#, fuzzy
 msgid "Common verbs are:"
-msgstr ""
+msgstr "Verbos comuns são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:554
+#, fuzzy
 msgid ""
 "label — to write metadata to devices so they can be recognized at tasting "
 "and brought up in geoms"
 msgstr ""
+"label - para gravar metadados em dispositivos para que eles possam ser "
+"reconhecidos em degustação e criados em geoms"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:560
+#, fuzzy
 msgid "destroy — to destroy metadata, so the geoms get destroyed"
-msgstr ""
+msgstr "destroy - para destruir metadados, para que as geoms sejam destruídas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:565
+#, fuzzy
 msgid "Common options are:"
-msgstr ""
+msgstr "Opções comuns são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:569
+#, fuzzy
 msgid "<literal>-v</literal> : be verbose"
-msgstr ""
+msgstr "<literal> -v </literal>: seja detalhado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:573
+#, fuzzy
 msgid "<literal>-f</literal> : force"
-msgstr ""
+msgstr "<literal> -f </literal>: força"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:577
+#, fuzzy
 msgid ""
 "Many actions, such as labeling and destroying metadata can be performed in "
 "userland. For this, <varname remap=\"structname\">struct g_command</varname> "
@@ -870,128 +1230,190 @@ msgid ""
 "<varname>gc_func</varname> is NULL, the command will be passed to kernel "
 "module, to <function>.ctlreq</function> function of the geom class."
 msgstr ""
+"Muitas ações, como rotular e destruir metadados, podem ser executadas na "
+"área do usuário. Para isso, <varname remap=\"structname\"> struct g_command "
+"</varname> fornece o campo <varname> gc_func </varname> que pode ser "
+"definido para uma função (no mesmo <filename> .so </filename>) que será ser "
+"chamado para processar um verbo. Se <varname> gc_func </varname> for NULL, o "
+"comando será passado para o módulo do kernel, para a função <function> ."
+"ctlreq </function> da classe geom."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:588
+#, fuzzy
 msgid "Geoms"
-msgstr ""
+msgstr "Geoms"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:590
+#, fuzzy
 msgid ""
 "Geoms are instances of GEOM classes. They have internal data (a softc "
 "structure) and some functions with which they respond to external events."
 msgstr ""
+"Geoms são instâncias de classes GEOM. Eles possuem dados internos (uma "
+"estrutura softc) e algumas funções com as quais eles respondem a eventos "
+"externos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:594
+#, fuzzy
 msgid "The event functions are:"
-msgstr ""
+msgstr "As funções do evento são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:598
+#, fuzzy
 msgid ""
 "<function>.access</function> : calculates permissions (read/write/exclusive)"
 msgstr ""
+"<function>.acesso </function>: calcula permissões (leitura / escrita / "
+"exclusiva)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:603
+#, fuzzy
 msgid ""
 "<function>.dumpconf</function> : returns XML-formatted information about the "
 "geom"
 msgstr ""
+"<function> .dumpconf </function>: retorna informações formatadas em XML "
+"sobre o geom"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
+#, fuzzy
 msgid ""
 "<function>.orphan</function> : called when some underlying provider gets "
 "disconnected"
 msgstr ""
+"<function> .orphan </function>: chamado quando algum provedor subjacente é "
+"desconectado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:613
+#, fuzzy
 msgid ""
 "<function>.spoiled</function> : called when some underlying provider gets "
 "written to"
 msgstr ""
+"<function> .spoiled </function>: chamado quando algum provedor subjacente é "
+"gravado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:618
+#, fuzzy
 msgid "<function>.start</function> : handles I/O"
-msgstr ""
+msgstr "<function> .start </function>: lida com E / S"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:622
+#, fuzzy
 msgid ""
 "These functions are called from the <function>g_down</function> kernel "
 "thread and there can be no sleeping in this context, (see definition of "
 "sleeping elsewhere) which limits what can be done quite a bit, but forces "
 "the handling to be fast."
 msgstr ""
+"Estas funções são chamadas a partir do encadeamento do kernel <function> "
+"g_down </function> e não pode haver descanso neste contexto (veja a "
+"definição de dormir em outro lugar) que limita o que pode ser feito um "
+"pouco, mas força o manuseio a ser rápido ."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:628
+#, fuzzy
 msgid ""
 "Of these, the most important function for doing actual useful work is the "
 "<function>.start</function>() function, which is called when a BIO request "
 "arrives for a provider managed by a instance of geom class."
 msgstr ""
+"Destes, a função mais importante para fazer trabalho útil real é a função "
+"<function> .start </function> (), que é chamada quando uma requisição BIO "
+"chega para um provedor gerenciado por uma instância da classe geom."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:635
+#, fuzzy
 msgid "GEOM Threads"
-msgstr ""
+msgstr "Roscas GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:637
+#, fuzzy
 msgid "There are three kernel threads created and run by the GEOM framework:"
 msgstr ""
+"Existem três threads de kernel criados e executados pelo framework GEOM:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:642
+#, fuzzy
 msgid ""
 "<literal>g_down</literal> : Handles requests coming from high-level entities "
 "(such as a userland request) on the way to physical devices"
 msgstr ""
+"<literal> g_down </literal>: trata de solicitações provenientes de entidades "
+"de alto nível (como uma solicitação de usuário) no caminho para dispositivos "
+"físicos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:648
+#, fuzzy
 msgid ""
 "<literal>g_up</literal> : Handles responses from device drivers to requests "
 "made by higher-level entities"
 msgstr ""
+"<literal> g_up </literal>: lida com respostas de drivers de dispositivos "
+"para solicitações feitas por entidades de nível superior"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:654
+#, fuzzy
 msgid ""
 "<literal>g_event</literal> : Handles all other cases: creation of geom "
 "instances, access counting, <quote>spoil</quote> events, etc."
 msgstr ""
+"<literal> g_event </literal>: lida com todos os outros casos: criação de "
+"instâncias geométricas, contagem de acessos, eventos <quote> spoil </quote>, "
+"etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:660
+#, fuzzy
 msgid ""
 "When a user process issues <quote>read data X at offset Y of a file</quote> "
 "request, this is what happens:"
 msgstr ""
+"Quando um processo do usuário emite um pedido de <quote> leitura de dados X "
+"no deslocamento Y de um arquivo </quote>, acontece o seguinte:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:665
+#, fuzzy
 msgid ""
 "The filesystem converts the request into a struct bio instance and passes it "
 "to the GEOM subsystem. It knows what geom instance should handle it because "
 "filesystems are hosted directly on a geom instance."
 msgstr ""
+"O sistema de arquivos converte o pedido em uma instância de estrutura e o "
+"transmite para o subsistema GEOM. Ele sabe o que a instância geom deve "
+"manipular porque os sistemas de arquivos são hospedados diretamente em uma "
+"instância geom."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:672
+#, fuzzy
 msgid ""
 "The request ends up as a call to the <function>.start</function>() function "
 "made on the g_down thread and reaches the top-level geom instance."
 msgstr ""
+"A requisição termina como uma chamada para a função <function> .start </"
+"function> () feita no thread g_down e atinge a instância geométrica de nível "
+"superior."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:679
+#, fuzzy
 msgid ""
 "This top-level geom instance (for example the partition slicer) determines "
 "that the request should be routed to a lower-level instance (for example the "
@@ -1001,18 +1423,31 @@ msgid ""
 "provider fields and executes the copy with <function>g_io_request</"
 "function>()"
 msgstr ""
+"Essa instância geométrica de nível superior (por exemplo, o segmentador de "
+"partições) determina que a solicitação deve ser roteada para uma instância "
+"de nível inferior (por exemplo, o driver de disco). Ele faz uma cópia da "
+"solicitação bio (solicitações bio <emphasis> SEMPRE </emphasis> precisam ser "
+"copiadas entre instâncias, com <function> g_clone_bio </function> ()!), "
+"Modifica os campos de dados offset e de provedor de destino e executa a "
+"cópia com <function> g_io_request </function> ()"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:691
+#, fuzzy
 msgid ""
 "The disk driver gets the bio request also as a call to <function>.start</"
 "function>() on the <literal>g_down</literal> thread. It talks to hardware, "
 "gets the data back, and calls <function>g_io_deliver</function>() on the bio."
 ""
 msgstr ""
+"O driver de disco obtém a solicitação bio também como uma chamada para "
+"<function> .start </function> () no encadeamento <literal> g_down </literal>."
+" Ele fala com o hardware, recupera os dados e chama <function> g_io_deliver "
+"</function> () na biografia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:700
+#, fuzzy
 msgid ""
 "Now, the notification of bio completion <quote>bubbles up</quote> in the "
 "<literal>g_up</literal> thread. First the partition slicer gets <function>."
@@ -1022,14 +1457,23 @@ msgid ""
 "function>()) and calls <function>g_io_deliver</function>() on the original "
 "request."
 msgstr ""
+"Agora, a notificação de bio-conclusão <quote>bubbles up</quote> in the "
+"<literal>g_up</literal> thread. Primeiro, o slicer de partição obtém "
+"<function> .done </function>() chamado no thread <literal> g_up </literal>, "
+"ele usa informações armazenadas na biografia para liberar o <varname remap="
+"\"structname\"> clonado </varname> structure (com <function> g_destroy_bio</"
+"function>()) e chama <function> g_io_deliver</function>() no pedido original."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:711
+#, fuzzy
 msgid "The filesystem gets the data and transfers it to userland."
-msgstr ""
+msgstr "O sistema de arquivos obtém os dados e os transfere para o usuário."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:716
+#, fuzzy
 msgid ""
 "See <citerefentry><refentrytitle>g_bio</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> man page for information how the data is passed "
@@ -1037,51 +1481,76 @@ msgid ""
 "(note in particular the <varname>bio_parent</varname> and "
 "<varname>bio_children</varname> fields and how they are handled)."
 msgstr ""
+"Veja a página man <citerefentry> <refentrytitle> g_bio </refentrytitle> "
+"<manvolnum> 9 </manvolnum> </citerefentry> para obter informações sobre como "
+"os dados são passados ​​para frente e para trás no <varname remap="
+"\"structname\"> bio </varname > estrutura (observe em particular os campos "
+"<varname> bio_parent </varname> e <varname> bio_children </varname> e como "
+"eles são manipulados)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:722
+#, fuzzy
 msgid ""
 "One important feature is: <emphasis>THERE CAN BE NO SLEEPING IN G_UP AND "
 "G_DOWN THREADS</emphasis>. This means that none of the following things can "
 "be done in those threads (the list is of course not complete, but only "
 "informative):"
 msgstr ""
+"Uma característica importante é: <emphasis> NÃO PODE DORMIR NO G_UP E NO "
+"G_DOWN THREADS </emphasis>. Isso significa que nenhuma das seguintes coisas "
+"pode ser feita nesses threads (a lista não é completa, mas apenas "
+"informativa):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:730
+#, fuzzy
 msgid ""
 "Calls to <function>msleep</function>() and <function>tsleep</function>(), "
 "obviously."
 msgstr ""
+"Chama para <function> msleep </function> () e <function> tsleep </function> "
+"(), obviamente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
+#, fuzzy
 msgid ""
 "Calls to <function>g_write_data</function>() and <function>g_read_data</"
 "function>(), because these sleep between passing the data to consumers and "
 "returning."
 msgstr ""
+"Chama para <function> g_write_data </function> () e <function> g_read_data </"
+"function> (), porque estes dormem entre passar os dados para os consumidores "
+"e retornar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:743
+#, fuzzy
 msgid "Waiting for I/O."
-msgstr ""
+msgstr "Esperando E / S."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:747
+#, fuzzy
 msgid ""
 "Calls to <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> and <function>uma_zalloc</function>() with "
 "<varname>M_WAITOK</varname> flag set"
 msgstr ""
+"Chama para <citerefentry> <refentrytitle> malloc </refentrytitle> "
+"<manvolnum> 9 </manvolnum> </citerefentry> e <function> uma_zalloc </"
+"function> () com o conjunto de sinalizadores <varname> M_WAITOK </varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:753
+#, fuzzy
 msgid "sx and other sleepable locks"
-msgstr ""
+msgstr "sx e outras fechaduras adormecidas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:757
+#, fuzzy
 msgid ""
 "This restriction is here to stop GEOM code clogging the I/O request path, "
 "since sleeping is usually not time-bound and there can be no guarantees on "
@@ -1090,14 +1559,23 @@ msgid ""
 "example, almost any complex thing requires memory allocation. Fortunately, "
 "there is a way out: creating additional kernel threads."
 msgstr ""
+"Essa restrição está aqui para impedir que o código GEOM obstrua o caminho da "
+"solicitação de E / S, já que dormir normalmente não é limitado pelo tempo e "
+"não pode haver garantias sobre quanto tempo levará (há algumas outras razões "
+"mais técnicas também). Isso também significa que não há muito o que pode ser "
+"feito nesses segmentos; por exemplo, quase qualquer coisa complexa requer "
+"alocação de memória. Felizmente, existe uma saída: criar encadeamentos "
+"adicionais no kernel."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:768
+#, fuzzy
 msgid "Kernel Threads for Use in GEOM Code"
-msgstr ""
+msgstr "Threads de kernel para uso no código GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:770
+#, fuzzy
 msgid ""
 "Kernel threads are created with <citerefentry><refentrytitle>kthread_create</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> function, and they are "
@@ -1106,9 +1584,16 @@ msgid ""
 "<citerefentry><refentrytitle>kthread_exit</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Os encadeamentos do kernel são criados com a função <citerefentry> "
+"<refentrytitle> kthread_create </refentrytitle> <manvolnum> 9 </manvolnum> </"
+"citerefentry>, e eles são semelhantes aos encadeamentos do userland no "
+"comportamento, somente eles não podem retornar ao chamador para significar "
+"terminação, mas deve chamar <citerefentry> <refentrytitle> kthread_exit </"
+"refentrytitle> <manvolnum> 9 </manvolnum> </citerefentry>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:775
+#, fuzzy
 msgid ""
 "In GEOM code, the usual use of threads is to offload processing of requests "
 "from <literal>g_down</literal> thread (the <function>.start</function>() "
@@ -1118,9 +1603,18 @@ msgid ""
 "take the events from the list one by one and process them in a big "
 "<literal>switch</literal>() statement."
 msgstr ""
+"No código GEOM, o uso usual de encadeamentos é descarregar o processamento "
+"de solicitações do encadeamento <literal> g_down </literal> (a função "
+"<function> .start </function>). Esses encadeamentos parecem com <quote> "
+"manipuladores de eventos </quote>: eles têm uma lista encadeada de eventos "
+"associados a eles (nos quais eventos podem ser postados por várias funções "
+"em vários encadeamentos, portanto, devem ser protegidos por um mutex), tomar "
+"os eventos da lista, um por um, e processe-os em uma grande instrução "
+"<literal> switch </literal> ()."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:785
+#, fuzzy
 msgid ""
 "The main benefit of using a thread to handle I/O requests is that it can "
 "sleep when needed. Now, this sounds good, but should be carefully thought "
@@ -1129,9 +1623,17 @@ msgid ""
 "classes probably should do all the work in <function>.start</function>() "
 "function call, taking great care to handle out-of-memory and similar errors."
 msgstr ""
+"A principal vantagem de usar um thread para lidar com solicitações de E / S "
+"é que ele pode dormir quando necessário. Agora, isso parece bom, mas deve "
+"ser cuidadosamente pensado. Dormir é bem e muito conveniente, mas pode muito "
+"efetivamente destruir o desempenho da transformação geométrica. As classes "
+"extremamente sensíveis ao desempenho provavelmente devem fazer todo o "
+"trabalho na chamada de função <function> .start </function> (), tomando "
+"muito cuidado para lidar com erros de falta de memória e similares."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:794
+#, fuzzy
 msgid ""
 "The other benefit of having a event-handler thread like that is to serialize "
 "all the requests and responses coming from different geom threads into one "
@@ -1139,9 +1641,15 @@ msgid ""
 "handling of <function>.done</function>() requests can be left to the "
 "<literal>g_up</literal> thread."
 msgstr ""
+"O outro benefício de ter um thread de manipulador de eventos como esse é "
+"serializar todas as solicitações e respostas provenientes de diferentes "
+"threads geométricas em um thread. Isso também é muito conveniente, mas pode "
+"ser lento. Na maioria dos casos, o tratamento de pedidos <function> .done </"
+"function> () pode ser deixado no thread <literal> g_up </literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:801
+#, fuzzy
 msgid ""
 "Mutexes in FreeBSD kernel (see <citerefentry><refentrytitle>mutex</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>) have one distinction "
@@ -1152,3 +1660,10 @@ msgid ""
 "almost everything in a single thread, you may get away with no mutexes at "
 "all."
 msgstr ""
+"Mutexes no kernel do FreeBSD (veja <citerefentry> <refentrytitle> mutex </"
+"refentrytitle> <manvolnum> 9 </manvolnum> </citerefentry>) têm uma distinção "
+"de seus primos mais comuns - o código não pode dormir enquanto estiver "
+"segurando um mutex). Se o código precisar dormir muito, os bloqueios "
+"<citerefentry> <refentrytitle> sx </refentrytitle> <manvolnum> 9 </"
+"manvolnum> </citerefentry> podem ser mais apropriados. Por outro lado, se "
+"você faz quase tudo em um único thread, você pode se safar sem mutexes."

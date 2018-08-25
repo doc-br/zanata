@@ -1,4 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -6,22 +7,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-24 12:11+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: Portuguese (Brazil)\n"
-"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.0\n"
+"Language: pt_BR\n"
+"PO-Revision-Date: 2018-08-24 10:18+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:8
+#, fuzzy
 msgid "Build Your Own FreeBSD Update Server"
-msgstr ""
+msgstr "Construa seu próprio servidor de atualização do FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:16
@@ -100,6 +102,7 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:51
+#, fuzzy
 msgid ""
 "This article describes building an internal <application>FreeBSD Update "
 "Server</application>. The <link xlink:href=\"https://svnweb.freebsd.org/base/"
@@ -112,26 +115,42 @@ msgid ""
 "providing a local mirror that will allow faster updates for a number of "
 "machines."
 msgstr ""
+"Este artigo descreve a construção de um <application> servidor de "
+"atualizações do FreeBSD </application> interno. O <link xlink:href=\"https://"
+"svnweb.freebsd.org/base/user/cperciva/freebsd-update-build/\"> freebsd-"
+"update-server </link> foi escrito por Colin Percival <email> cperciva @ "
+"FreeBSD.org </email>, Oficial de Segurança Emérito do FreeBSD. Para usuários "
+"que acham conveniente atualizar seus sistemas em um servidor de atualização "
+"oficial, construir seu próprio <application> FreeBSD Update Server </"
+"application> pode ajudar a estender sua funcionalidade suportando versões do "
+"FreeBSD ajustadas manualmente ou fornecendo um espelho local que permitirá "
+"atualizações mais rápidas para várias máquinas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:66
+#, fuzzy
 msgid "Acknowledgments"
-msgstr ""
+msgstr "Agradecimentos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
+#, fuzzy
 msgid ""
 "This article was subsequently printed at <link xlink:href=\"http://bsdmag."
 "org/magazine/1021-bsd-as-a-desktop\">BSD Magazine</link>."
 msgstr ""
+"Este artigo foi posteriormente impresso em <link xlink:href=\"http://bsdmag."
+"org/magazine/1021-bsd-as-a-desktop\"> BSD Magazine </link>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:73
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:75
+#, fuzzy
 msgid ""
 "Experienced users or administrators are often responsible for several "
 "machines or environments. They understand the difficult demands and "
@@ -143,48 +162,75 @@ msgid ""
 "article outlines the steps involved in creating an internal "
 "<application>FreeBSD Update Server</application>."
 msgstr ""
+"Usuários experientes ou administradores são frequentemente responsáveis "
+"​​por várias máquinas ou ambientes. Eles entendem as difíceis demandas e "
+"desafios da manutenção de tal infraestrutura. A execução de um <application> "
+"FreeBSD Update Server </application> facilita a implantação de patches de "
+"segurança e software em máquinas de teste selecionadas antes de implementá-"
+"las na produção. Isso também significa que vários sistemas podem ser "
+"atualizados a partir da rede local, em vez de uma conexão de Internet "
+"potencialmente mais lenta. Este artigo descreve os passos envolvidos na "
+"criação de um <application> servidor de atualização do FreeBSD </"
+"application> interno."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:90
+#, fuzzy
 msgid "Prerequisites"
-msgstr ""
+msgstr "Pré-requisitos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:92
+#, fuzzy
 msgid ""
 "To build an internal <application>FreeBSD Update Server</application> some "
 "requirements should be met."
 msgstr ""
+"Para construir um <application> servidor de atualização do FreeBSD </"
+"application> interno, alguns requisitos devem ser atendidos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:98
+#, fuzzy
 msgid "A running FreeBSD system."
-msgstr ""
+msgstr "Um sistema em execução no FreeBSD."
 
 #. (itstool) path: note/para
 #: article.translate.xml:101
+#, fuzzy
 msgid ""
 "At a minimum, updates require building on a FreeBSD release greater than or "
 "equal to the target release version for distribution."
 msgstr ""
+"No mínimo, as atualizações requerem a criação de uma versão do FreeBSD maior "
+"ou igual à versão de lançamento de destino para distribuição."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
+#, fuzzy
 msgid ""
 "A user account with at least 4 GB of available space. This will allow the "
 "creation of updates for 7.1 and 7.2, but the exact space requirements may "
 "change from version to version."
 msgstr ""
+"Uma conta de usuário com pelo menos 4 GB de espaço disponível. Isso "
+"permitirá a criação de atualizações para 7.1 e 7.2, mas os requisitos de "
+"espaço exatos podem mudar de versão para versão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:115
+#, fuzzy
 msgid ""
 "An <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> account on a remote machine to upload distributed updates."
 msgstr ""
+"Uma conta <citerefentry> <refentrytitle> ssh </refentrytitle> <manvolnum> 1 "
+"</manvolnum> </citerefentry> em uma máquina remota para carregar "
+"atualizações distribuídas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:120
+#, fuzzy
 msgid ""
 "A web server, like <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
 "books/handbook/network-apache.html\">Apache</link>, with over half of the "
@@ -192,54 +238,77 @@ msgid ""
 "consume a total amount of 4 GB, and the webserver space needed to distribute "
 "these updates is 2.6 GB."
 msgstr ""
+"Um servidor web, como <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
+"1/books/handbook/network-apache.html\"> Apache </link>, com mais da metade "
+"do espaço necessário para a construção. Por exemplo, as compilações de teste "
+"para 7.1 e 7.2 consomem uma quantidade total de 4 GB e o espaço do servidor "
+"da web necessário para distribuir essas atualizações é de 2,6 GB."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:129
+#, fuzzy
 msgid ""
 "Basic knowledge of shell scripting with Bourne shell, "
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Conhecimento básico de scripts de shell com shell Bourne, <citerefentry> "
+"<refentrytitle> sh </refentrytitle> <manvolnum> 1 </manvolnum> </"
+"citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
+#, fuzzy
 msgid "Configuration: Installation &amp; Setup"
-msgstr ""
+msgstr "Configuração: instalação &amp; Configuração"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
+#, fuzzy
 msgid ""
 "Download the <link xlink:href=\"https://svnweb.freebsd.org/base/user/"
 "cperciva/freebsd-update-build/\"> freebsd-update-server</link> software by "
 "installing <package>devel/subversion</package> and <package>security/"
 "ca_root_nss</package>, and execute:"
 msgstr ""
+"Faça o download do software <link xlink:href=\"https://svnweb.freebsd.org/"
+"base/user/cperciva/freebsd-update-build/\"> freebsd-update-server </link> "
+"instalando <package> devel / subversion </package> e <package> security / "
+"ca_root_nss </package>, e execute:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:143
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn co https://svn.freebsd.org/base/user/"
 "cperciva/freebsd-update-build freebsd-update-server</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn co https://svn.freebsd.org/base/user/"
+"cperciva/freebsd-update-build freebsd-update-server</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:145
+#, fuzzy
 msgid ""
 "Update <filename>scripts/build.conf</filename> appropriately. It is sourced "
 "during all build operations."
 msgstr ""
+"Atualize <filename> scripts / build.conf </filename> apropriadamente. É "
+"originado durante todas as operações de construção."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:149
+#, fuzzy
 msgid ""
 "Here is the default <filename>build.conf</filename>, which should be "
 "modified to suit your environment."
 msgstr ""
+"Aqui está o <filename> build.conf </filename> padrão, que deve ser "
+"modificado para se adequar ao seu ambiente."
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# Main configuration file for FreeBSD Update builds.  The\n"
 "# release-specific configuration data is lower down in\n"
@@ -265,14 +334,39 @@ msgid ""
 "# Directory into which files are uploaded\n"
 "MASTERDIR=update-master.freebsd.org<co xml:id=\"mstdir-id\"/>"
 msgstr ""
+"# Main configuration file for FreeBSD Update builds.  The\n"
+"# release-specific configuration data is lower down in\n"
+"# the scripts tree.\n"
+"\n"
+"# Location from which to fetch releases\n"
+"export FTP=ftp://ftp2.freebsd.org/pub/FreeBSD/releases<co xml:id=\"ftp-id\"/"
+">\n"
+"\n"
+"# Host platform\n"
+"export HOSTPLATFORM=`uname -m`\n"
+"\n"
+"# Host name to use inside jails\n"
+"export BUILDHOSTNAME=${HOSTPLATFORM}-builder.daemonology.net<co xml:id="
+"\"buildhost-id\"/>\n"
+"\n"
+"# Location of SSH key\n"
+"export SSHKEY=/root/.ssh/id_dsa<co xml:id=\"sshkey-id\"/>\n"
+"\n"
+"# SSH account into which files are uploaded\n"
+"MASTERACCT=builder@wadham.daemonology.net<co xml:id=\"mstacct-id\"/>\n"
+"\n"
+"# Directory into which files are uploaded\n"
+"MASTERDIR=update-master.freebsd.org<co xml:id=\"mstdir-id\"/>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:176
+#, fuzzy
 msgid "Parameters for consideration would be:"
-msgstr ""
+msgstr "Parâmetros para consideração seria:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:180
+#, fuzzy
 msgid ""
 "This is the location where ISO images are downloaded from (by the "
 "<function>fetchiso()</function> subroutine of <filename>scripts/build.subr</"
@@ -281,31 +375,45 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility should work "
 "fine."
 msgstr ""
+"Este é o local onde as imagens ISO são baixadas (pela sub-rotina <function> "
+"fetchiso () </function> do <filename> scripts / build.subr </filename>). A "
+"localização configurada não está limitada a URIs de FTP. Qualquer esquema de "
+"URI suportado pelo utilitário padrão <citerefentry> <refentrytitle> fetch </"
+"refentrytitle> <manvolnum> </manvolnum> </citerefentry> deve funcionar bem."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:187
+#, fuzzy
 msgid ""
 "Customizations to the <function>fetchiso()</function> code can be installed "
 "by copying the default <filename>build.subr</filename> script to the release "
 "and architecture-specific area at <filename>scripts/RELEASE/ARCHITECTURE/"
 "build.subr</filename> and applying local changes."
 msgstr ""
+"Personalizações para o código <function> fetchiso () </function> podem ser "
+"instaladas copiando o script padrão <filename> build.subr </filename> para a "
+"área específica do release e da arquitetura em <filename> scripts / RELEASE /"
+" ARCHITECTURE / build.subr </filename> e aplicando alterações locais."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:196
+#, fuzzy
 msgid ""
 "The name of the build host. This information will be displayed on updated "
 "systems when issuing:"
 msgstr ""
+"O nome do host de construção. Esta informação será exibida em sistemas "
+"atualizados ao emitir:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:199
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>uname -v</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>uname -v</userinput>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:203
+#, fuzzy
 msgid ""
 "The <application>SSH</application> key for uploading files to the update "
 "server. A key pair can be created by typing <command>ssh-keygen -t dsa</"
@@ -313,28 +421,42 @@ msgid ""
 "be used as a fallback authentication method when <literal>SSHKEY</literal> "
 "is not defined."
 msgstr ""
+"A chave <application> SSH </application> para fazer upload de arquivos para "
+"o servidor de atualizações. Um par de chaves pode ser criado digitando "
+"<command> ssh-keygen -t dsa </command>. Este parâmetro é opcional; a "
+"autenticação de senha padrão será usada como um método de autenticação de "
+"fallback quando o <literal> SSHKEY </literal> não estiver definido."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:210
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> manual page has more detailed information about "
 "<application>SSH</application> and the appropriate steps for creating and "
 "using one."
 msgstr ""
+"A página de manual <citerefentry> <refentrytitle> ssh-keygen </"
+"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> contém informações "
+"mais detalhadas sobre o <application> SSH </application> e as etapas "
+"apropriadas para criar e usar um ."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:216
+#, fuzzy
 msgid "Account for uploading files to the update server."
-msgstr ""
+msgstr "Conta para fazer upload de arquivos para o servidor de atualização."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:220
+#, fuzzy
 msgid "Directory on the update server where files are uploaded to."
 msgstr ""
+"Diretório no servidor de atualização para o qual os arquivos são enviados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:225
+#, fuzzy
 msgid ""
 "The default <filename>build.conf</filename> shipped with the "
 "<application>freebsd-update-server</application> sources is suitable for "
@@ -342,31 +464,43 @@ msgid ""
 "server for other architectures, the following steps outline the "
 "configuration changes needed for amd64:"
 msgstr ""
+"O padrão <filename> build.conf </filename> fornecido com o código-fonte "
+"<application> freebsd-update-server </application> é adequado para a criação "
+"de versões i386 do FreeBSD. Como um exemplo de criação de um servidor de "
+"atualização para outras arquiteturas, as etapas a seguir descrevem as "
+"alterações de configuração necessárias para o amd64:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:234
+#, fuzzy
 msgid "Create a build environment for amd64:"
-msgstr ""
+msgstr "Crie um ambiente de construção para o amd64:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:237
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/"
 "scripts/7.2-RELEASE/amd64</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/"
+"scripts/7.2-RELEASE/amd64</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:242
+#, fuzzy
 msgid ""
 "Install a <filename>build.conf</filename> in the newly created build "
 "directory. The build configuration options for FreeBSD 7.2-RELEASE on amd64 "
 "should be similar to:"
 msgstr ""
+"Instale um <filename> build.conf </filename> no diretório de criação recém-"
+"criado. As opções de configuração de compilação para o FreeBSD 7.2-RELEASE "
+"em amd64 devem ser semelhantes a:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:248
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SHA256 hash of RELEASE disc1.iso image.\n"
 "export RELH="
@@ -384,18 +518,39 @@ msgid ""
 "# EOL date\n"
 "export EOL=1275289200<co xml:id=\"eol-id\"/>"
 msgstr ""
+"# SHA256 hash of RELEASE disc1.iso image.\n"
+"export RELH="
+"1ea1f6f652d7c5f5eab7ef9f8edbed50cb664b08ed761850f95f48e86cc71ef5<co xml:id="
+"\"sha256-id\"/>\n"
+"\n"
+"# Components of the world, source, and kernels\n"
+"export WORLDPARTS=\"base catpages dict doc games info manpages proflibs "
+"lib32\"\n"
+"export SOURCEPARTS=\"base bin contrib crypto etc games gnu include krb5  \\\n"
+"                lib libexec release rescue sbin secure share sys tools  \\\n"
+"                ubin usbin cddl\"\n"
+"export KERNELPARTS=\"generic\"\n"
+"\n"
+"# EOL date\n"
+"export EOL=1275289200<co xml:id=\"eol-id\"/>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:264
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> hash key for the desired release, is published "
 "within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
 "\">release announcement</link>."
 msgstr ""
+"A chave hash <citerefentry> <refentrytitle> sha256 </refentrytitle> "
+"<manvolnum> 1 </manvolnum> </citerefentry> para a versão desejada, é "
+"publicada dentro dos respectivos <link xlink:href=\"@@ URL_RELPREFIX @@ / "
+"releases / \"> anúncio de lançamento </link>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:270
+#, fuzzy
 msgid ""
 "To generate the \"End of Life\" number for <filename>build.conf</filename>, "
 "refer to the \"Estimated EOL\" posted on the <link xlink:href="
@@ -404,32 +559,46 @@ msgid ""
 "the web site, using the <citerefentry><refentrytitle>date</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility, for example:"
 msgstr ""
+"Para gerar o número \"End of Life\" para <filename> build.conf </filename>, "
+"consulte o \"EOL estimado\" publicado no <link xlink:href=\"@@ URL_RELPREFIX "
+"@@ / security / security.html\" > Site de Segurança do FreeBSD </link>. O "
+"valor de <literal> EOL </literal> pode ser derivado da data listada no site, "
+"usando o utilitário <citerefentry> <refentrytitle> date </refentrytitle> "
+"<manvolnum> 1 </manvolnum> </citerefentry>, por exemplo:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:278
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>date -j -f '%Y%m%d-%H%M%S' '20090401-000000' "
 "'+%s'</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>date -j -f '%Y%m%d-%H%M%S' '20090401-000000' "
+"'+%s'</userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:286
+#, fuzzy
 msgid "Building Update Code"
-msgstr ""
+msgstr "Código de Atualização do Edifício"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
+#, fuzzy
 msgid ""
 "The first step is to run <filename>scripts/make.sh</filename>. This will "
 "build some binaries, create directories, and generate an RSA signing key "
 "used for approving builds. In this step, a passphrase will have to be "
 "supplied for the final creation of the signing key."
 msgstr ""
+"O primeiro passo é executar o <filename> scripts / make.sh </filename>. Isso "
+"criará alguns binários, criará diretórios e gerará uma chave de assinatura "
+"RSA usada para aprovar compilações. Nesta etapa, uma senha terá que ser "
+"fornecida para a criação final da chave de assinatura."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:294
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh scripts/make.sh</userinput>\n"
 "cc -O2 -fno-strict-aliasing -pipe   findstamps.c  -o findstamps\n"
@@ -453,37 +622,70 @@ msgid ""
 "enter aes-256-cbc encryption password:\n"
 "Verifying - enter aes-256-cbc encryption password:"
 msgstr ""
+"<prompt>#</prompt> <userinput>sh scripts/make.sh</userinput>\n"
+"cc -O2 -fno-strict-aliasing -pipe   findstamps.c  -o findstamps\n"
+"findstamps.c: In function 'usage':\n"
+"findstamps.c:45: warning: incompatible implicit declaration of built-in "
+"function 'exit'\n"
+"cc -O2 -fno-strict-aliasing -pipe   unstamp.c  -o unstamp\n"
+"install findstamps ../bin\n"
+"install unstamp ../bin\n"
+"rm -f findstamps unstamp\n"
+"Generating RSA private key, 4096 bit long modulus\n"
+"............................................................................."
+"...++\n"
+"...................++\n"
+"e is 65537 (0x10001)\n"
+"\n"
+"Public key fingerprint:\n"
+"27ef53e48dc869eea6c3136091cc6ab8589f967559824779e855d58a2294de9e\n"
+"\n"
+"Encrypting signing key for root\n"
+"enter aes-256-cbc encryption password:\n"
+"Verifying - enter aes-256-cbc encryption password:"
 
 #. (itstool) path: note/para
 #: article.translate.xml:315
+#, fuzzy
 msgid ""
 "Keep a note of the generated key fingerprint. This value is required in "
 "<filename>/etc/freebsd-update.conf</filename> for binary updates."
 msgstr ""
+"Mantenha uma nota da impressão digital da chave gerada. Este valor é "
+"necessário em <filename> /etc/freebsd-update.conf </filename> para "
+"atualizações binárias."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:320
+#, fuzzy
 msgid "At this point, we are ready to stage a build."
-msgstr ""
+msgstr "Neste ponto, estamos prontos para montar uma construção."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:323
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
 "userinput>\n"
 "<prompt>#</prompt> <userinput>sh scripts/init.sh <replaceable>amd64 7.2-"
 "RELEASE</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sh scripts/init.sh <replaceable>amd64 7.2-"
+"RELEASE</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:327
+#, fuzzy
 msgid "What follows is a sample of an <emphasis>initial</emphasis> build run."
 msgstr ""
+"O que se segue é uma amostra de uma execução de construção <emphasis> "
+"inicial </emphasis>."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:330
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh scripts/init.sh amd64 7.2-RELEASE</"
 "userinput>\n"
@@ -537,17 +739,76 @@ msgid ""
 "world|base|/usr/lib/libalias_ftp.a\n"
 "..."
 msgstr ""
+"<prompt> # </prompt> <userinput> scripts sh / init.sh amd64 7.2-RELEASE </"
+"userinput>\n"
+"Seg 24 de agosto 16:04:36 PDT 2009 Começando busca para FreeBSD / amd64 7.2-"
+"RELEASE\n"
+"/usr/local/freebsd-update-server/work/7.2-RELE100% de 588 MB 359 kBps 00m00s\n"
+"Seg 24 de agosto 16:32:38 PDT 2009 Verificando o hash do disco 1 para "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 16:32:44 PDT 2009 Extraindo componentes para o FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 16:34:05 PDT 2009 Construindo imagem world + src para "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 16:35:57 PDT 2009 Extraindo mundo + src para FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 23:36:24 UTC 2009 Construindo o mundo para FreeBSD / amd64 "
+"7.2-RELEASE\n"
+"Ter 25 de agosto 00:31:29 UTC 2009 Distribuindo mundo para FreeBSD / amd64 7."
+"2-RELEASE\n"
+"Ter 25 de agosto 00:32:36 UTC 2009 Construindo e distribuindo kernels para o "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Ter 25 de agosto 00:44:44 UTC 2009 Construindo componentes mundiais para o "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Ter 25 de agosto 00:44:56 UTC 2009 Distribuindo fonte para o FreeBSD / amd64 "
+"7.2-RELEASE\n"
+"Mon Aug 24 17:46:18 PDT 2009 Mover componentes para a área de preparação "
+"para o FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 17:46:33 PDT 2009 Identificando documentação extra para o "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 17:47:13 PDT 2009 Extraindo extra docs para o FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 17:47:18 PDT 2009 Lançamento de indexação para FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 17:50:44 PDT 2009 Indexação world0 para FreeBSD / amd64 7.2-"
+"RELEASE\n"
+"\n"
+"Arquivos construídos mas não liberados:\n"
+"Arquivos liberados, mas não criados:\n"
+"Arquivos que diferem em mais do que o conteúdo:\n"
+"Arquivos que diferem entre release e build:\n"
+"kernel | genérico | /GENERIC/hptrr.ko\n"
+"kernel | genérico | / GENERIC / kernel\n"
+"src | sys | /sys/conf/newvers.sh\n"
+"mundo | base | / boot / loader\n"
+"mundo | base | / boot / pxeboot\n"
+"mundo | base | /etc/mail/freebsd.cf\n"
+"mundo | base | /etc/mail/freebsd.submit.cf\n"
+"mundo | base | /etc/mail/sendmail.cf\n"
+"mundo | base | /etc/mail/submit.cf\n"
+"mundo | base | /lib/libcrypto.so.5\n"
+"mundo | base | / usr / bin / ntpq\n"
+"mundo | base | /usr/lib/libalias.a\n"
+"mundo | base | /usr/lib/libalias_cuseeme.a\n"
+"mundo | base | /usr/lib/libalias_dummy.a\n"
+"mundo | base | /usr/lib/libalias_ftp.a\n"
+"..."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:369
+#, fuzzy
 msgid ""
 "Then the build of the world is performed again, with world patches. A more "
 "detailed explanation may be found in <filename>scripts/build.subr</filename>."
 ""
 msgstr ""
+"Então a construção do mundo é executada novamente, com remendos mundiais. "
+"Uma explicação mais detalhada pode ser encontrada em <filename> scripts / "
+"build.subr </filename>."
 
 #. (itstool) path: warning/para
 #: article.translate.xml:374
+#, fuzzy
 msgid ""
 "During this second build cycle, the network time protocol daemon, "
 "<citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></"
@@ -559,10 +820,20 @@ msgid ""
 "to determine which files need to be updated. This timestamp-finding works by "
 "doing two builds 400 days apart and comparing the results.\""
 msgstr ""
+"Durante este segundo ciclo de construção, o daemon de protocolo de tempo de "
+"rede, <citerefentry> <refentrytitle> ntpd </refentrytitle> <manvolnum> 8 </"
+"manvolnum> </citerefentry>, está desativado. Per Colin Percival <email> "
+"cperciva@FreeBSD.org </email>, Oficial de segurança emérito do FreeBSD, \"o "
+"<link xlink:href=\"https://svnweb.freebsd.org/base/user/cperciva/freebsd-"
+"update-build/\">freebsd-update-server</link> código de construção precisa "
+"identificar os timestamps que são armazenados em arquivos para que possam "
+"ser ignorados ao comparar construções para determinar quais arquivos "
+"precisam ser atualizados. dois constrói 400 dias de intervalo e compara os "
+"resultados. \""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:384
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Mon Aug 24 17:54:07 PDT 2009 Extracting world+src for FreeBSD/amd64 7.2-"
 "RELEASE\n"
@@ -611,15 +882,64 @@ msgid ""
 "world|base|/usr/lib/libalias_ftp.a\n"
 "..."
 msgstr ""
+"Seg 24 de agosto 17:54:07 PDT 2009 Extraindo mundo + src para FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Qua 29 Set 00:54:34 UTC 2010 Construindo o mundo para o FreeBSD / amd64 7.2-"
+"RELEASE\n"
+"Qua Set 29 01:49:42 UTC 2010 Distribuindo o mundo para o FreeBSD / amd64 7.2-"
+"RELEASE\n"
+"Wed Sep 29 01:50:50 UTC 2010 Construindo e distribuindo kernels para o "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Wed Sep 29 02:02:56 UTC 2010 Construindo componentes mundiais para o FreeBSD "
+"/ amd64 7.2-RELEASE\n"
+"Wed Sep 29 02:03:08 UTC 2010 Distribuindo fonte para o FreeBSD / amd64 7.2-"
+"RELEASE\n"
+"Ter 28 de setembro às 19:04:31 PDT 2010 Movendo componentes para a área de "
+"preparação para o FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 19:04:46 PDT 2009 Extraindo extra docs para o FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto de 19:04:51 PDT 2009 Indexing world1 para FreeBSD / amd64 7."
+"2-RELEASE\n"
+"Seg 24 de agosto 19:08:04 PDT 2009 Localizando selos de compilação para "
+"FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 19:10:19 PDT 2009 Limpando a área de teste para o FreeBSD / "
+"amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 19:10:19 PDT 2009 Preparando-se para copiar arquivos na "
+"área de preparação para o FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 19:10:20 PDT 2009 Copiando arquivos de dados para a área de "
+"preparação para o FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 12:16:57 PDT 2009 Copiando arquivos de metadados para a "
+"área de preparação para o FreeBSD / amd64 7.2-RELEASE\n"
+"Seg 24 de agosto 12:16:59 PDT 2009 Construindo índice de metadados e tag "
+"para FreeBSD / amd64 7.2-RELEASE\n"
+"\n"
+"Arquivos encontrados que incluem selos de compilação:\n"
+"kernel | genérico | /GENERIC/hptrr.ko\n"
+"kernel | genérico | / GENERIC / kernel\n"
+"mundo | base | / boot / loader\n"
+"mundo | base | / boot / pxeboot\n"
+"mundo | base | /etc/mail/freebsd.cf\n"
+"mundo | base | /etc/mail/freebsd.submit.cf\n"
+"mundo | base | /etc/mail/sendmail.cf\n"
+"mundo | base | /etc/mail/submit.cf\n"
+"mundo | base | /lib/libcrypto.so.5\n"
+"mundo | base | / usr / bin / ntpq\n"
+"mundo | base | /usr/include/osreldate.h\n"
+"mundo | base | /usr/lib/libalias.a\n"
+"mundo | base | /usr/lib/libalias_cuseeme.a\n"
+"mundo | base | /usr/lib/libalias_dummy.a\n"
+"mundo | base | /usr/lib/libalias_ftp.a\n"
+"..."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:418
+#, fuzzy
 msgid "Finally, the build completes."
-msgstr ""
+msgstr "Finalmente, a construção é concluída."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:420
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Values of build stamps, excluding library archive headers:\n"
 "v1.2 (Aug 25 2009 00:40:36)\n"
@@ -654,9 +974,42 @@ msgid ""
 "# sh -e approve.sh amd64 7.2-RELEASE\n"
 "to sign the release."
 msgstr ""
+"Values of build stamps, excluding library archive headers:\n"
+"v1.2 (Aug 25 2009 00:40:36)\n"
+"v1.2 (Aug 25 2009 00:38:22)\n"
+"@(#)FreeBSD 7.2-RELEASE #0: Tue Aug 25 00:38:29 UTC 2009\n"
+"FreeBSD 7.2-RELEASE #0: Tue Aug 25 00:38:29 UTC 2009\n"
+"    root@server.myhost.com:/usr/obj/usr/src/sys/GENERIC\n"
+"7.2-RELEASE\n"
+"Mon Aug 24 23:55:25 UTC 2009\n"
+"Mon Aug 24 23:55:25 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"ntpq 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+" * Copyright (c) 1992-2009 The FreeBSD Project.\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"Mon Aug 24 23:55:40 UTC 2009\n"
+"Aug 25 2009\n"
+"ntpd 4.2.4p5-a Mon Aug 24 23:55:52 UTC 2009 (1)\n"
+"ntpdate 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+"ntpdc 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"\n"
+"FreeBSD/amd64 7.2-RELEASE initialization build complete.  Please\n"
+"review the list of build stamps printed above to confirm that\n"
+"they look sensible, then run\n"
+"# sh -e approve.sh amd64 7.2-RELEASE\n"
+"to sign the release."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:453
+#, fuzzy
 msgid ""
 "Approve the build if everything is correct. More information on determining "
 "this can be found in the distributed source file named <filename>USAGE</"
@@ -664,19 +1017,27 @@ msgid ""
 "This will sign the release, and move components into a staging area suitable "
 "for uploading."
 msgstr ""
+"Aprove a compilação se tudo estiver correto. Mais informações sobre como "
+"determinar isso podem ser encontradas no arquivo de origem distribuído "
+"chamado <filename> USAGE </filename>. Execute <filename> scripts / approve."
+"sh </filename>, conforme indicado. Isso assinará a liberação e moverá os "
+"componentes para uma área de preparação adequada para o upload."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:461
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
 "userinput>\n"
 "<prompt>#</prompt> <userinput>sh scripts/mountkey.sh</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sh scripts/mountkey.sh</userinput>"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:465
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh -e scripts/approve.sh amd64 7.2-RELEASE</"
 "userinput>\n"
@@ -690,43 +1051,71 @@ msgid ""
 "Wed Aug 26 12:50:07 PDT 2009 Cleaning staging area for FreeBSD/amd64 7.2-"
 "RELEASE"
 msgstr ""
+"<prompt>#</prompt> <userinput>sh -e scripts/approve.sh amd64 7.2-RELEASE</"
+"userinput>\n"
+"Wed Aug 26 12:50:06 PDT 2009 Signing build for FreeBSD/amd64 7.2-RELEASE\n"
+"Wed Aug 26 12:50:06 PDT 2009 Copying files to patch source directories for "
+"FreeBSD/amd64 7.2-RELEASE\n"
+"Wed Aug 26 12:50:06 PDT 2009 Copying files to upload staging area for "
+"FreeBSD/amd64 7.2-RELEASE\n"
+"Wed Aug 26 12:50:07 PDT 2009 Updating databases for FreeBSD/amd64 7.2-"
+"RELEASE\n"
+"Wed Aug 26 12:50:07 PDT 2009 Cleaning staging area for FreeBSD/amd64 7.2-"
+"RELEASE"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:472
+#, fuzzy
 msgid ""
 "After the approval process is complete, the upload procedure may be started."
 msgstr ""
+"Após o processo de aprovação ser concluído, o procedimento de upload pode "
+"ser iniciado."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:476
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
 "userinput>\n"
 "<prompt>#</prompt> <userinput>sh scripts/upload.sh <replaceable>amd64 7.2-"
 "RELEASE</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sh scripts/upload.sh <replaceable>amd64 7.2-"
+"RELEASE</replaceable></userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:481
+#, fuzzy
 msgid ""
 "In the event update code needs to be re-uploaded, this may be done by "
 "changing to the public distributions directory for the target release and "
 "updating attributes of the <emphasis>uploaded</emphasis> file."
 msgstr ""
+"No caso de o código de atualização precisar ser reenviado, isso pode ser "
+"feito mudando para o diretório de distribuições públicas para o release de "
+"destino e atualizando os atributos do arquivo <emphasis> carregado </"
+"emphasis>."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:487
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server/pub/"
 "<replaceable>7.2-RELEASE/amd64</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>touch -t <replaceable>200801010101.01</"
 "replaceable> uploaded</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server/pub/"
+"<replaceable>7.2-RELEASE/amd64</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>touch -t <replaceable>200801010101.01</"
+"replaceable> uploaded</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:496
+#, fuzzy
 msgid ""
 "The uploaded files will need to be in the document root of the webserver in "
 "order for updates to be distributed. The exact configuration will vary "
@@ -735,9 +1124,16 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/network-apache.html\">Configuration of Apache "
 "servers</link> section in the Handbook."
 msgstr ""
+"Os arquivos enviados precisarão estar na raiz do documento do servidor da "
+"Web para que as atualizações sejam distribuídas. A configuração exata irá "
+"variar dependendo do servidor da web usado. Para o servidor da web "
+"<application> Apache </application>, consulte a <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-apache."
+"html\"> Configuração de servidores Apache </link> no Manual."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:523
+#, fuzzy
 msgid ""
 "Update client's <literal>KeyPrint</literal> and <literal>ServerName</"
 "literal> in <filename>/etc/freebsd-update.conf</filename>, and perform "
@@ -745,9 +1141,15 @@ msgid ""
 "ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html\">FreeBSD "
 "Update</link> section of the Handbook."
 msgstr ""
+"Atualize o <literal> KeyPrint </literal> e <literal> ServerName </literal> "
+"do cliente em <filename> /etc/freebsd-update.conf </filename>, e execute as "
+"atualizações conforme instruído no <link xlink:href=\" @@ URL_RELPREFIX @@ / "
+"doc / en_US.ISO8859-1 / books / handbook / updates-upgrading-freebsdupdate."
+"html \"> Seção FreeBSD Update </link> do Manual."
 
 #. (itstool) path: important/para
 #: article.translate.xml:539
+#, fuzzy
 msgid ""
 "In order for <application>FreeBSD Update Server</application> to work "
 "properly, updates for both the <emphasis>current</emphasis> release and the "
@@ -757,67 +1159,96 @@ msgid ""
 "updates will need to be built and uploaded to your distribution server for "
 "both versions."
 msgstr ""
+"Para que o <application> FreeBSD Update Server </application> funcione "
+"corretamente, atualizações para o release <emphasis> current </emphasis> e o "
+"release <emphasis> que se deseja atualizar para </emphasis> precisam ser "
+"compilados. Isso é necessário para determinar as diferenças de arquivos "
+"entre as liberações. Por exemplo, ao atualizar um sistema FreeBSD de 7.1-"
+"RELEASE para 7.2-RELEASE, as atualizações precisarão ser construídas e "
+"carregadas em seu servidor de distribuição para ambas as versões."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:550
+#, fuzzy
 msgid ""
 "For reference, the entire run of <link xlink:href=\"init."
 "txt\"><filename>init.sh</filename></link> is attached."
 msgstr ""
+"Para referência, toda a execução do <link xlink:href=\"init."
+"txt\"><filename>init.sh</filename></link> está anexada."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:555
+#, fuzzy
 msgid "Building a Patch"
-msgstr ""
+msgstr "Construindo um Patch"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:557
+#, fuzzy
 msgid ""
 "Every time a <link xlink:href=\"@@URL_RELPREFIX@@/security/advisories."
 "html\">security advisory</link> or <link xlink:href=\"@@URL_RELPREFIX@@/"
 "security/notices.html\">security notice</link> is announced, a patch update "
 "can be built."
 msgstr ""
+"Toda vez que um <link xlink:href=\"@@ URL_RELPREFIX @@ / security / "
+"advisories.html\"> aviso de segurança </link> ou <link xlink:href=\"@@ "
+"URL_RELPREFIX @@ / security / notices.html\"> aviso de segurança </link> é "
+"anunciado, uma atualização de patch pode ser construída."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:562
+#, fuzzy
 msgid "For this example, 7.1-RELEASE will be used."
-msgstr ""
+msgstr "Para este exemplo, o 7.1-RELEASE será usado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:564
+#, fuzzy
 msgid "A couple of assumptions are made for a different release build:"
-msgstr ""
+msgstr "Algumas suposições são feitas para uma versão diferente:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:569
+#, fuzzy
 msgid "Setup the correct directory structure for the initial build."
 msgstr ""
+"Configure a estrutura de diretórios correta para a compilação inicial."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:574
+#, fuzzy
 msgid "Perform an initial build for 7.1-RELEASE."
-msgstr ""
+msgstr "Execute uma compilação inicial para o 7.1-RELEASE."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:578
+#, fuzzy
 msgid ""
 "Create the patch directory of the respective release under <filename>/usr/"
 "local/freebsd-update-server/patches/</filename>."
 msgstr ""
+"Crie o diretório de correção do respectivo release em <filename>/usr/local/"
+"freebsd-update-server/patches/</filename>."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:582
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/"
 "patches/7.1-RELEASE/</userinput>\n"
 "<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7."
 "1-RELEASE</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/"
+"patches/7.1-RELEASE/</userinput>\n"
+"<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7."
+"1-RELEASE</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:586
+#, fuzzy
 msgid ""
 "As an example, take the patch for <citerefentry><refentrytitle>named</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. Read the advisory, "
@@ -827,9 +1258,17 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/security-"
 "advisories.html\">FreeBSD Handbook</link>."
 msgstr ""
+"Como exemplo, pegue o patch para <citerefentry> <refentrytitle> chamado </"
+"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>. Leia o "
+"comunicado, e pegue o arquivo necessário de <link xlink:href=\"@@ "
+"URL_RELPREFIX @@ / security / advisories.html\"> Conselhos de Segurança do "
+"FreeBSD </link>. Mais informações sobre a interpretação do comunicado podem "
+"ser encontradas no <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
+"books/handbook/security-advisories.html\"> Manual do FreeBSD </link> ."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:592
+#, fuzzy
 msgid ""
 "In the <link xlink:href=\"https://security.freebsd.org/advisories/FreeBSD-SA-"
 "09:12.bind.asc\">security brief</link>, this advisory is called <literal>SA-"
@@ -839,65 +1278,96 @@ msgid ""
 "chosen. For this build, let us follow the currently established practice of "
 "FreeBSD and call this <literal>p7</literal>. Rename the file:"
 msgstr ""
+"No <link xlink:href=\"https://security.freebsd.org/advisories/FreeBSD-SA-09:"
+"12.bind.asc\"> resumo de segurança </link>, este comunicado é chamado "
+"<literal> 09: 12.bind </literal>. Depois de baixar o arquivo, é necessário "
+"renomear o arquivo para um nível de correção apropriado. Sugere-se manter "
+"isso consistente com os níveis oficiais de correção do FreeBSD, mas seu nome "
+"pode ser escolhido livremente. Para esta compilação, vamos seguir a prática "
+"atualmente estabelecida do FreeBSD e chamar isso de <literal> p7 </literal>. "
+"Renomeie o arquivo:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:602
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7."
 "1-RELEASE/; mv bind.patch 7-SA-09:12.bind </userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7."
+"1-RELEASE/; mv bind.patch 7-SA-09:12.bind </userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:606
+#, fuzzy
 msgid ""
 "When running a patch level build, it is assumed that previous patches are in "
 "place. When a patch build is run, it will run all patches contained in the "
 "patch directory."
 msgstr ""
+"Ao executar uma compilação no nível do patch, supõe-se que os patches "
+"anteriores estejam no lugar. Quando uma compilação de correção é executada, "
+"ela executará todas as correções contidas no diretório de correção."
 
 #. (itstool) path: note/para
 #: article.translate.xml:610
+#, fuzzy
 msgid ""
 "There can be custom patches added to any build. Use the number zero, or any "
 "other number."
 msgstr ""
+"Pode haver patches personalizados adicionados a qualquer compilação. Use o "
+"número zero ou qualquer outro número."
 
 #. (itstool) path: warning/para
 #: article.translate.xml:615
+#, fuzzy
 msgid ""
 "It is up to the administrator of the <application>FreeBSD Update Server</"
 "application> to take appropriate measures to verify the authenticity of "
 "every patch."
 msgstr ""
+"Cabe ao administrador do <application> FreeBSD Update Server </application> "
+"tomar as medidas apropriadas para verificar a autenticidade de cada patch."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:621
+#, fuzzy
 msgid ""
 "At this point, a <emphasis>diff</emphasis> is ready to be built. The "
 "software checks first to see if a <filename>scripts/init.sh</filename> has "
 "been run on the respective release prior to running the diff build."
 msgstr ""
+"Neste ponto, um <emphasis> diff </emphasis> está pronto para ser construído. "
+"O software verifica primeiro se um <filename> scripts / init.sh </filename> "
+"foi executado na respectiva versão antes de executar a construção do diff."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:627
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
 "userinput>\n"
 "<prompt>#</prompt> <userinput>sh scripts/diff.sh <replaceable>amd64 7.1-"
 "RELEASE 7</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sh scripts/diff.sh <replaceable>amd64 7.1-"
+"RELEASE 7</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:631
+#, fuzzy
 msgid ""
 "What follows is a sample of a <emphasis>differential</emphasis> build run."
 msgstr ""
+"O que se segue é um exemplo de uma execução de construção <emphasis> "
+"diferencial </emphasis>."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:634
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh -e scripts/diff.sh amd64 7.1-RELEASE 7</"
 "userinput>\n"
@@ -995,15 +1465,111 @@ msgid ""
 "Wed Aug 26 17:20:39 UTC 2009\n"
 "..."
 msgstr ""
+"<prompt>#</prompt> <userinput>sh -e scripts/diff.sh amd64 7.1-RELEASE 7</"
+"userinput>\n"
+"Wed Aug 26 10:09:59 PDT 2009 Extracting world+src for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 17:10:25 UTC 2009 Building world for FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 18:05:11 UTC 2009 Distributing world for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 18:06:16 UTC 2009 Building and distributing kernels for FreeBSD/"
+"amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 18:17:50 UTC 2009 Constructing world components for FreeBSD/amd64 "
+"7.1-RELEASE-p7\n"
+"Wed Aug 26 18:18:02 UTC 2009 Distributing source for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 11:19:23 PDT 2009 Moving components into staging area for FreeBSD/"
+"amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 11:19:37 PDT 2009 Extracting extra docs for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 11:19:42 PDT 2009 Indexing world0 for FreeBSD/amd64 7.1-RELEASE-"
+"p7\n"
+"Wed Aug 26 11:23:02 PDT 2009 Extracting world+src for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Thu Sep 30 18:23:29 UTC 2010 Building world for FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Thu Sep 30 19:18:15 UTC 2010 Distributing world for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Thu Sep 30 19:19:18 UTC 2010 Building and distributing kernels for FreeBSD/"
+"amd64 7.1-RELEASE-p7\n"
+"Thu Sep 30 19:30:52 UTC 2010 Constructing world components for FreeBSD/amd64 "
+"7.1-RELEASE-p7\n"
+"Thu Sep 30 19:31:03 UTC 2010 Distributing source for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Thu Sep 30 12:32:25 PDT 2010 Moving components into staging area for FreeBSD/"
+"amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 12:32:39 PDT 2009 Extracting extra docs for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 12:32:43 PDT 2009 Indexing world1 for FreeBSD/amd64 7.1-RELEASE-"
+"p7\n"
+"Wed Aug 26 12:35:54 PDT 2009 Locating build stamps for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 12:36:58 PDT 2009 Reverting changes due to build stamps for "
+"FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 12:37:14 PDT 2009 Cleaning staging area for FreeBSD/amd64 7.1-"
+"RELEASE-p7\n"
+"Wed Aug 26 12:37:14 PDT 2009 Preparing to copy files into staging area for "
+"FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 12:37:15 PDT 2009 Copying data files into staging area for "
+"FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 12:43:23 PDT 2009 Copying metadata files into staging area for "
+"FreeBSD/amd64 7.1-RELEASE-p7\n"
+"Wed Aug 26 12:43:25 PDT 2009 Constructing metadata index and tag for FreeBSD/"
+"amd64 7.1-RELEASE-p7\n"
+"...\n"
+"Files found which include build stamps:\n"
+"kernel|generic|/GENERIC/hptrr.ko\n"
+"kernel|generic|/GENERIC/kernel\n"
+"world|base|/boot/loader\n"
+"world|base|/boot/pxeboot\n"
+"world|base|/etc/mail/freebsd.cf\n"
+"world|base|/etc/mail/freebsd.submit.cf\n"
+"world|base|/etc/mail/sendmail.cf\n"
+"world|base|/etc/mail/submit.cf\n"
+"world|base|/lib/libcrypto.so.5\n"
+"world|base|/usr/bin/ntpq\n"
+"world|base|/usr/include/osreldate.h\n"
+"world|base|/usr/lib/libalias.a\n"
+"world|base|/usr/lib/libalias_cuseeme.a\n"
+"world|base|/usr/lib/libalias_dummy.a\n"
+"world|base|/usr/lib/libalias_ftp.a\n"
+"...\n"
+"Values of build stamps, excluding library archive headers:\n"
+"v1.2 (Aug 26 2009 18:13:46)\n"
+"v1.2 (Aug 26 2009 18:11:44)\n"
+"@(#)FreeBSD 7.1-RELEASE-p7 #0: Wed Aug 26 18:11:50 UTC 2009\n"
+"FreeBSD 7.1-RELEASE-p7 #0: Wed Aug 26 18:11:50 UTC 2009\n"
+"    root@server.myhost.com:/usr/obj/usr/src/sys/GENERIC\n"
+"7.1-RELEASE-p7\n"
+"Wed Aug 26 17:29:15 UTC 2009\n"
+"Wed Aug 26 17:29:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Wed Aug 26 17:49:58 UTC 2009\n"
+"##### built by root@server.myhost.com on Wed Aug 26 17:49:58 UTC 2009\n"
+"##### built by root@server.myhost.com on Wed Aug 26 17:49:58 UTC 2009\n"
+"##### built by root@server.myhost.com on Wed Aug 26 17:49:58 UTC 2009\n"
+"Wed Aug 26 17:20:39 UTC 2009\n"
+"ntpq 4.2.4p5-a Wed Aug 26 17:29:42 UTC 2009 (1)\n"
+" * Copyright (c) 1992-2009 The FreeBSD Project.\n"
+"Wed Aug 26 17:20:39 UTC 2009\n"
+"Wed Aug 26 17:29:30 UTC 2009\n"
+"Aug 26 2009\n"
+"ntpd 4.2.4p5-a Wed Aug 26 17:29:41 UTC 2009 (1)\n"
+"ntpdate 4.2.4p5-a Wed Aug 26 17:29:42 UTC 2009 (1)\n"
+"ntpdc 4.2.4p5-a Wed Aug 26 17:29:42 UTC 2009 (1)\n"
+"Wed Aug 26 17:55:02 UTC 2009\n"
+"Wed Aug 26 17:55:02 UTC 2009\n"
+"Wed Aug 26 17:55:02 UTC 2009\n"
+"Wed Aug 26 17:20:39 UTC 2009\n"
+"..."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:706
+#, fuzzy
 msgid "Updates are printed, and approval is requested."
-msgstr ""
+msgstr "As atualizações são impressas e a aprovação é solicitada."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:708
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "New updates:\n"
 "kernel|generic|/GENERIC/kernel."
@@ -1027,15 +1593,40 @@ msgid ""
 "# sh -e approve.sh amd64 7.1-RELEASE\n"
 "to sign the build."
 msgstr ""
+"Novas atualizações:\n"
+"kernel | genérico | /GENERIC/kernel.symbols | f | 0 | 0 | 0555 | 0 | "
+"7c8dc176763f96ced0a57fc04e7c1b8d793f27e006dd13e0b499e1474ac47e10 |\n"
+"kernel | genérico | / GENERIC / kernel | f | 0 | 0 | 0555 | 0 | "
+"33197e8cf15bbbac263d17f39c153c9d489348c2c534f7ca1120a1183dec67b1 |\n"
+"kernel | genérico | / | d | 0 | 0 | 0755 | 0 ||\n"
+"src | base | / | d | 0 | 0 | 0755 | 0 ||\n"
+"src | bin | / | d | 0 | 0 | 0755 | 0 ||\n"
+"src | cddl | / | d | 0 | 0 | 0755 | 0 ||\n"
+"src | contrib | /contrib/bind9/bin/named/update.c | f | 0 | 10000 | 0644 | 0 "
+"| 4d434abf0983df9bc47435670d307fa882ef4b348ed8ca90928d250f42ea0757 |\n"
+"src | contrib | /contrib/bind9/lib/dns/openssldsa_link.c | f | 0 | 10000 | "
+"0644 | 0 | c6805c39f3da2a06dd3f163f26c314a4692d4cd9a2d929c0acc88d736324f550 "
+"|\n"
+"src | contrib | /contrib/bind9/lib/dns/opensslrsa_link.c | f | 0 | 10000 | "
+"0644 | 0 | fa0f7417ee9da42cc8d0fd96ad24e7a34125e05b5ae075bd6e3238f1c022a712 "
+"|\n"
+"...\n"
+"FreeBSD / amd64 7.1-RELEASE update build complete. Por favor revise\n"
+"a lista de selos impressos acima e a lista de selos atualizados\n"
+"arquivos para confirmar que eles parecem sensatos, em seguida, executar\n"
+"# sh -e approve.sh amd64 7.1-RELEASE\n"
+"para assinar a construção."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:725
+#, fuzzy
 msgid "Follow the same process as noted before for approving a build:"
 msgstr ""
+"Siga o mesmo processo descrito anteriormente para aprovar uma construção:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:728
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh -e scripts/approve.sh amd64 7.1-RELEASE</"
 "userinput>\n"
@@ -1055,36 +1646,65 @@ msgid ""
 "to unmount the decrypted key once you have finished signing all\n"
 "the new builds."
 msgstr ""
+"<prompt> # </prompt> <userinput> sh -e scripts / approve.sh amd64 7.1-"
+"RELEASE </userinput>\n"
+"Wed Aug 26 12:50:06 PDT 2009 Assinando build para FreeBSD / amd64 7.1-"
+"RELEASE\n"
+"Wed Aug 26 12:50:06 PDT 2009 Copiando arquivos para diretórios de patch para "
+"o FreeBSD / amd64 7.1-RELEASE\n"
+"Wed Aug 26 12:50:06 PDT 2009 Copiando arquivos para upload de área de teste "
+"para FreeBSD / amd64 7.1-RELEASE\n"
+"Wed Aug 26 12:50:07 PDT 2009 Atualizando bancos de dados para o FreeBSD / "
+"amd64 7.1-RELEASE\n"
+"Wed Aug 26 12:50:07 PDT 2009 Limpando a área de teste para o FreeBSD / amd64 "
+"7.1-RELEASE\n"
+"\n"
+"A compilação da atualização do FreeBSD / amd64 7.1-RELEASE foi assinada e "
+"está\n"
+"pronto para ser carregado. Lembre-se de correr\n"
+"# sh -e umountkey.sh\n"
+"desmontar a chave descriptografada assim que terminar de assinar todos\n"
+"o novo constrói."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:741
+#, fuzzy
 msgid "After approving the build, upload the software:"
-msgstr ""
+msgstr "Depois de aprovar a compilação, faça o upload do software:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:744
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
 "userinput>\n"
 "<prompt>#</prompt> <userinput>sh scripts/upload.sh <replaceable>amd64 7.1-"
 "RELEASE</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/freebsd-update-server</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sh scripts/upload.sh <replaceable>amd64 7.1-"
+"RELEASE</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:748
+#, fuzzy
 msgid ""
 "For reference, the entire run of <link xlink:href=\"diff."
 "txt\"><filename>diff.sh</filename></link> is attached."
 msgstr ""
+"Para referência, toda a execução do <link xlink:href=\"diff."
+"txt\"><filename>diff.sh</filename></link> está anexada."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:753
+#, fuzzy
 msgid "Tips"
-msgstr ""
+msgstr "Dicas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:774
+#, fuzzy
 msgid ""
 "If a custom release is built using the native <command>make release</"
 "command> <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
@@ -1100,10 +1720,23 @@ msgid ""
 "respective release and architecture and you are ready to build off your "
 "custom release."
 msgstr ""
+"Se uma versão personalizada for criada usando o <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/releng/release-build."
+"html\">procedimento</link> <command> make release </command> nativo, o "
+"<application> freebsd-update-server </application> funcionará a partir do "
+"seu release. Como exemplo, uma versão sem portas ou documentação pode ser "
+"construída pela função de limpeza referente às sub-rotinas de documentação "
+"<function> findextradocs () </function>, <function> addextradocs () </"
+"function> e alterando o local de download em <function> fetchiso () </"
+"function>, respectivamente, em <filename> scripts / build.subr </filename>. "
+"Como último passo, altere o hash <citerefentry> <refentrytitle> sha256 </"
+"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> em <filename> "
+"build.conf </filename> sob sua respectiva versão e arquitetura e você estão "
+"prontos para criar sua versão personalizada."
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:789
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# Compare ${WORKDIR}/release and ${WORKDIR}/$1, identify which parts\n"
 "# of the world|doc subcomponent are missing from the latter, and\n"
@@ -1115,19 +1748,32 @@ msgid ""
 "addextradocs () { \n"
 "}"
 msgstr ""
+"# Compare $ {WORKDIR} / release e $ {WORKDIR} / $ 1, identifique quais "
+"partes\n"
+"# do subcomponente world | doc estão ausentes do último, e\n"
+"# construa um tarball fora deles.\n"
+"findextradocs () {\n"
+"}\n"
+"\n"
+"# Adicione documentos extras a $ {WORKDIR} / $ 1\n"
+"addextradocs () {\n"
+"}"
 
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:802
+#, fuzzy
 msgid "buildworld"
-msgstr ""
+msgstr "buildworld"
 
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:803
+#, fuzzy
 msgid "obj"
-msgstr ""
+msgstr "obj"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:800
+#, fuzzy
 msgid ""
 "Adding <option>-j <replaceable>NUMBER</replaceable></option> flags to <_:"
 "buildtarget-1/> and <_:buildtarget-2/> targets in the <filename>scripts/"
@@ -1135,10 +1781,16 @@ msgid ""
 "hardware used, however it is not necessary. Using these flags in other "
 "targets is not recommended, as it may cause the build to become unreliable."
 msgstr ""
+"Adicionando <option> -j <replaceable> NUMBER </replaceable> </option> "
+"sinalizadores para <_:buildtarget-1/> e <_:buildtarget-2/> destinos no "
+"<filename> scripts/build.subr </filename> script pode acelerar o "
+"processamento, dependendo do hardware usado, no entanto, não é necessário. O "
+"uso desses sinalizadores em outros destinos não é recomendado, pois pode "
+"tornar a construção não confiável."
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:810
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "              # Build the world\n"
 "\t\t   log \"Building world\"\n"
@@ -1151,9 +1803,20 @@ msgid ""
 "\t\t   make -j 2 obj &amp;&amp;\n"
 "\t\t   make ${COMPATFLAGS} release.1 release.2 2&gt;&amp;1"
 msgstr ""
+"              # Build the world\n"
+"\t\t   log \"Building world\"\n"
+"\t\t   cd /usr/src &amp;&amp;\n"
+"\t\t   make -j 2 ${COMPATFLAGS} buildworld 2&gt;&amp;1\n"
+"\n"
+"\t\t# Distribute the world\n"
+"\t\t   log \"Distributing world\"\n"
+"\t\t   cd /usr/src/release &amp;&amp;\n"
+"\t\t   make -j 2 obj &amp;&amp;\n"
+"\t\t   make ${COMPATFLAGS} release.1 release.2 2&gt;&amp;1"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:823
+#, fuzzy
 msgid ""
 "Create an appropriate <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
 "1/books/handbook/network-dns.html\">DNS</link> SRV record for the update "
@@ -1161,12 +1824,19 @@ msgid ""
 "will provide update mirrors, however this tip is not necessary unless you "
 "wish to provide a redundant service."
 msgstr ""
+"Crie um registro SRV apropriado para o servidor de atualizações e coloque "
+"outros. por trás dele com pesos variáveis. O uso desse recurso fornecerá "
+"espelhos de atualização, no entanto, essa dica não é necessária, a menos que "
+"você deseje fornecer um serviço redundante."
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:829
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "_http._tcp.update.myserver.com.\t\tIN SRV   0 2 80   host1.myserver.com.\n"
 "\t\t\t\t\tIN SRV   0 1 80   host2.myserver.com.\n"
 "\t\t\t\t\tIN SRV   0 0 80   host3.myserver.com."
 msgstr ""
+"_http._tcp.update.myserver.com. IN SRV 0 2 80 host1.myserver.com.\n"
+"IN SRV 0 1 80 host2.myserver.com.\n"
+"IN SRV 0 0 80 host3.myserver.com."

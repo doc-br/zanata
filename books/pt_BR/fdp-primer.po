@@ -9,8 +9,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.0\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-23 11:28+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-08-25 02:51+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -871,7 +871,7 @@ msgid ""
 "useful work with the FreeBSD documentation. Some further notes on particular "
 "components are given below."
 msgstr ""
-"Instale o <package>textproc/docproj</package> pela coleção de Portas. Este "
+"Instale o <package>textproc/docproj</package> pela Coleção de Ports. Este "
 "<emphasis>meta-port</emphasis> instala todos os aplicativos necessários para "
 "trabalhar com a documentação do FreeBSD. Informações adicionais específicas "
 "de alguns componentes serão informadas abaixo."
@@ -929,7 +929,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:662
 msgid "ISO 8879 entities (<package>textproc/iso8879</package>)"
-msgstr "ISO 8879 entities (<package>textproc/iso8879</package>)"
+msgstr "Entidades ISO 8879 (<package>textproc/iso8879</package>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:666
@@ -1013,7 +1013,7 @@ msgid ""
 "committed to the main repository."
 msgstr ""
 "A <emphasis>área de trabalho</emphasis> é uma cópia da árvore de "
-"documentação do repositório do FreeBSD baixada no computador local. As "
+"documentação do repositório do FreeBSD baixada no caomputador local. As "
 "alterações são feitas na cópia de trabalho local, testadas e enviadas como "
 "patches para serem submetidas no repositório principal."
 
@@ -3651,7 +3651,7 @@ msgstr "O exemplo anterior é representado neste documento da seguinte forma:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2120
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">para</tag>To remove <tag class="
 "\"starttag\">filename</tag>/tmp/foo<tag class=\"endtag\">filename</tag>, use "
@@ -3661,13 +3661,13 @@ msgid ""
 "\"starttag\">userinput</tag>rm /tmp/foo<tag class=\"endtag\">userinput</"
 "tag><tag class=\"endtag\">screen</tag>"
 msgstr ""
-"<tag class=\"starttag\"> para </tag> Para remover <tag class=\"starttag\"> "
-"nome do arquivo </tag> / tmp / foo <tag class=\"endtag\"> nome do arquivo </"
-"tag>, use &amp;man .rm.1;. <tag class=\"endtag\"> para </tag>\n"
+"<tag class=\"starttag\">para</tag>To remove <tag class="
+"\"starttag\">filename</tag>/tmp/foo<tag class=\"endtag\">filename</tag>, use "
+"&amp;man.rm.1;.<tag class=\"endtag\">para</tag>\n"
 "\n"
-"<tag class=\"starttag\"> tela </tag> e prompt.user; <tag class=\"starttag\"> "
-"userinput </tag> rm / tmp / foo <tag class=\"endtag\"> userinput </tag> <tag "
-"class=\"endtag\"> tela </tag>"
+"<tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
+"\"starttag\">userinput</tag>rm /tmp/foo<tag class=\"endtag\">userinput</"
+"tag><tag class=\"endtag\">screen</tag>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2124
@@ -8287,27 +8287,23 @@ msgstr "Entidades Diversas"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4349
-#, fuzzy
 msgid "<literal>&amp;prompt.root;</literal>"
-msgstr "<literal> &amp;prompt.root; </literal>"
+msgstr "<literal>&amp;prompt.root;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4351
-#, fuzzy
 msgid "The <systemitem class=\"username\">root</systemitem> user prompt."
 msgstr "O prompt de usuário <systemitem class=\"username\"> root </systemitem>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4356
-#, fuzzy
 msgid "<literal>&amp;prompt.user;</literal>"
-msgstr "<literal> &amp;prompt.user; </literal>"
+msgstr "<literal>&amp;prompt.user;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4358
-#, fuzzy
 msgid "A prompt for an unprivileged user."
-msgstr "Um aviso para um usuário sem privilégios."
+msgstr "Um prompt para um usuário sem privilégios."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4362
@@ -9370,7 +9366,7 @@ msgstr "<tag> exemplo </tag> Origem"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4866
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">example</tag>\n"
 "  <tag class=\"starttag\">para</tag>Empty files can be created easily:<tag "
@@ -9381,14 +9377,14 @@ msgid ""
 "\"endtag\">userinput</tag><tag class=\"endtag\">screen</tag>\n"
 "<tag class=\"endtag\">example</tag>"
 msgstr ""
-"<tag class=\"starttag\"> exemplo </tag>\n"
-"  <tag class=\"starttag\"> para </tag> Arquivos vazios podem ser criados "
-"facilmente: <tag class=\"endtag\"> para </tag>\n"
+"<tag class=\"starttag\">example</tag>\n"
+"  <tag class=\"starttag\">para</tag>Empty files can be created easily:<tag "
+"class=\"endtag\">para</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tela </tag> e prompt.user; <tag class="
-"\"starttag\"> userinput </tag> arquivo de toque1 arquivo2 arquivo3 <tag "
-"class=\"endtag\"> userinput </tag> <tag class=\"endtag\"> tela </tag>\n"
-"<tag class=\"endtag\"> exemplo </tag>"
+"  <tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
+"\"starttag\">userinput</tag>touch file1 file2 file3<tag class="
+"\"endtag\">userinput</tag><tag class=\"endtag\">screen</tag>\n"
+"<tag class=\"endtag\">example</tag>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:4877
@@ -10291,13 +10287,11 @@ msgstr "Um número de elementos e entidades distintas entram em jogo aqui."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5370
-#, fuzzy
 msgid "<tag>screen</tag>"
-msgstr "tela <tag> </tag>"
+msgstr "<tag>screen</tag>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5373
-#, fuzzy
 msgid ""
 "Everything the user sees in this example will be on the computer screen, so "
 "the next element is <tag>screen</tag>."
@@ -10307,19 +10301,17 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5377
-#, fuzzy
 msgid "Within <tag>screen</tag>, white space is significant."
-msgstr "Na tela <tag> </tag>, o espaço em branco é significativo."
+msgstr "Dentro da <tag>screen</tag>, o espaço em branco é significativo."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5383
-#, fuzzy
 msgid ""
 "<tag>prompt</tag>, <literal>&amp;prompt.root;</literal> and "
 "<literal>&amp;prompt.user;</literal>"
 msgstr ""
-"<tag> prompt </tag>, <literal> &amp;prompt.root; </literal> e <literal> "
-"&amp;prompt.user; </literal>"
+"<tag>prompt</tag>, <literal>&amp;prompt.root;</literal> and "
+"<literal>&amp;prompt.user;</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5388
@@ -10381,14 +10373,12 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:5423
-#, fuzzy
 msgid "<tag>screen</tag>, <tag>prompt</tag>, and <tag>userinput</tag> Example"
-msgstr ""
-"<tag> screen </tag>, <tag> prompt </tag> e <tag> userinput </tag> Exemplo"
+msgstr "<tag>screen</tag>, <tag>prompt</tag>, e <tag>userinput</tag> exemplos"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:5428
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
 "\"starttag\">userinput</tag>ls -1<tag class=\"endtag\">userinput</tag>\n"
@@ -10406,21 +10396,21 @@ msgid ""
 "\"endtag\">userinput</tag>\n"
 "This is the file called 'foo2'<tag class=\"endtag\">screen</tag>"
 msgstr ""
-"<tag class=\"starttag\"> tela </tag> e prompt.user; <tag class=\"starttag\"> "
-"userinput </tag> ls -1 <tag class=\"endtag\"> userinput </tag>\n"
+"<tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
+"\"starttag\">userinput</tag>ls -1<tag class=\"endtag\">userinput</tag>\n"
 "foo1\n"
 "foo2\n"
 "foo3\n"
-"&amp;prompt; usuário; <tag class=\"starttag\"> userinput </tag> ls -1 | grep "
-"foo2 <tag class=\"endtag\"> userinput </tag>\n"
+"&amp;prompt.user; <tag class=\"starttag\">userinput</tag>ls -1 | grep "
+"foo2<tag class=\"endtag\">userinput</tag>\n"
 "foo2\n"
-"&amp;prompt; usuário; <tag class=\"starttag\"> userinput </tag> su <tag "
-"class=\"endtag\"> userinput </tag>\n"
-"<tag class=\"starttag\"> prompt </tag> Senha: <tag class=\"endtag\"> prompt "
-"</tag>\n"
-"&amp;prompt.root; <tag class=\"starttag\"> userinput </tag> cat foo2 <tag "
-"class=\"endtag\"> userinput </tag>\n"
-"Este é o arquivo chamado 'foo2' <tag class=\"endtag\"> tela </tag>"
+"&amp;prompt.user; <tag class=\"starttag\">userinput</tag>su<tag class="
+"\"endtag\">userinput</tag>\n"
+"<tag class=\"starttag\">prompt</tag>Password: <tag class=\"endtag\">prompt</"
+"tag>\n"
+"&amp;prompt.root; <tag class=\"starttag\">userinput</tag>cat foo2<tag class="
+"\"endtag\">userinput</tag>\n"
+"This is the file called 'foo2'<tag class=\"endtag\">screen</tag>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:5441
@@ -11964,17 +11954,17 @@ msgstr "<tag> substituível </tag> Exemplo"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:6166
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
 "\"starttag\">userinput</tag>man <tag class=\"starttag\">replaceable</"
 "tag>command<tag class=\"endtag\">replaceable</tag><tag class="
 "\"endtag\">userinput</tag><tag class=\"endtag\">screen</tag>"
 msgstr ""
-"<tag class=\"starttag\"> tela </tag> e prompt.user; <tag class=\"starttag\"> "
-"userinput </tag> homem <tag class=\"starttag\"> substituível </tag> comando "
-"<tag class=\"endtag\"> substituível </tag> <tag class=\"endtag\"> userinput "
-"</tag> <tag class=\"endtag\"> tela </tag>"
+"<tag class=\"starttag\">screen</tag>&amp;prompt.user; <tag class="
+"\"starttag\">userinput</tag>man <tag class=\"starttag\">replaceable</"
+"tag>command<tag class=\"endtag\">replaceable</tag><tag class="
+"\"endtag\">userinput</tag><tag class=\"endtag\">screen</tag>"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:6171
@@ -12129,15 +12119,15 @@ msgstr "<tag> errorname </tag> Exemplo"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:6241
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">screen</tag><tag class=\"starttag\">errorname</"
 "tag>Panic: cannot mount root<tag class=\"endtag\">errorname</tag><tag class="
 "\"endtag\">screen</tag>"
 msgstr ""
-"<tag class=\"starttag\"> tela </tag> <tag class=\"starttag\"> errorname </"
-"tag> Pânico: não é possível montar raiz <tag class=\"endtag\"> errorname </"
-"tag> <tag class=\"endtag \"> tela </tag>"
+"<tag class=\"starttag\">screen</tag><tag class=\"starttag\">errorname</"
+"tag>Panic: cannot mount root<tag class=\"endtag\">errorname</tag><tag class="
+"\"endtag\">screen</tag>"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:6246
@@ -12275,7 +12265,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6321
-#, fuzzy
 msgid "<acronym>SCR</acronym> (SCReen capture)"
 msgstr "<acronym> SCR </acronym> (captura do SCReen)"
 
@@ -15758,9 +15747,8 @@ msgstr "<tag class=\"starttag\"> lista de programação </tag>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7956
-#, fuzzy
 msgid "<tag class=\"starttag\">prompt</tag>"
-msgstr "<tag class=\"starttag\"> prompt </tag>"
+msgstr "<tag class=\"starttag\">prompt</tag>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7960
@@ -15770,9 +15758,8 @@ msgstr "<tag class=\"starttag\"> refentrytitle </tag>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7964
-#, fuzzy
 msgid "<tag class=\"starttag\">screen</tag>"
-msgstr "<tag class=\"starttag\"> tela </tag>"
+msgstr "<tag class=\"starttag\">screen</tag>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7968

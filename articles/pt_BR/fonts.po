@@ -1,4 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
 # Jonas Ferreira <jonas.h.ferreira@me.com>, 2018. #zanata
 msgid ""
 msgstr ""
@@ -7,17 +8,19 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-24 12:02+0000\n"
-"Last-Translator: Jonas Ferreira <jonas.h.ferreira@me.com>\n"
-"Language-Team: Portuguese (Brazil)\n"
-"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.0\n"
+"Language: pt_BR\n"
+"PO-Revision-Date: 2018-08-25 03:27+0000\n"
+"Last-Translator: Jonas Ferreira <jonas.h.ferreira@me.com>\n"
+"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "jonas.h.ferreira [at] me [dot] com"
+msgstr ""
+"Jonas Ferreira, jonas.h.ferreira@me.com, 2018\n"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:26
@@ -58,9 +61,7 @@ msgstr "Quarta-Feira, 7 de Agosto, 1996"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/fonts/article.xml 50805 2017-09-07 "
 "11:56:16Z mat $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/fonts/article.xml 50805 2017-09-07 "
-"11:56:16Z mat $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:44
@@ -568,7 +569,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:329
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "-bitstream-charter-medium-r-normal-xxx-0-0-0-0-p-0-iso8859-1\n"
 "     |        |      |    |   |     |  | | | | | |    \\    \\\n"
@@ -1176,11 +1177,22 @@ msgid ""
 ".\n"
 ":wq</userinput>"
 msgstr ""
+"<lineannotation>Obtendo o nome interno da fonte</lineannotation>\n"
+"<prompt>%</prompt> <userinput>fgrep internalname SHOWBOAT</userinput>\n"
+"internalname Showboat\n"
+"\n"
+"<lineannotation>Dizendo ao groff que tem que fazer o download da fonte</"
+"lineannotation>\n"
+"<prompt>%</prompt> <userinput>ex download\n"
+":$a\n"
+"Showboat      showboat.pfa\n"
+".\n"
+":wq</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:629
 msgid "To test the font:"
-msgstr ""
+msgstr "Para testar a fonte:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:632
@@ -1222,6 +1234,41 @@ msgid ""
 "<lineannotation>To print it</lineannotation>\n"
 "<prompt>%</prompt> <userinput>lpr -Ppostscript example.ps</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /tmp</userinput>\n"
+"<prompt>%</prompt> <userinput>cat &gt;example.t &lt;&lt;EOF\n"
+".sp 5\n"
+".ps 16\n"
+"This is an example of the Showboat font:\n"
+".br\n"
+".ps 48\n"
+".vs (\\n(.s+2)p\n"
+".sp\n"
+".ft SHOWBOAT\n"
+"ABCDEFGHI\n"
+".br\n"
+"JKLMNOPQR\n"
+".br\n"
+"STUVWXYZ\n"
+".sp\n"
+".ps 16\n"
+".vs (\\n(.s+2)p\n"
+".fp 5 SHOWBOAT\n"
+".ft R\n"
+"To use it for the first letter of a paragraph, it will look like:\n"
+".sp 50p\n"
+"\\s(48\\f5H\\s0\\fRere is the first sentence of a paragraph that uses the\n"
+"showboat font as its first letter.\n"
+"Additional vertical space must be used to allow room for the larger\n"
+"letter.\n"
+"EOF</userinput>\n"
+"<prompt>%</prompt> <userinput>groff -Tps example.t &gt;example.ps</"
+"userinput>\n"
+"\n"
+"<lineannotation>Para usar ghostscript/ghostview</lineannotation>\n"
+"<prompt>%</prompt> <userinput>ghostview example.ps</userinput>\n"
+"\n"
+"<lineannotation>Para imprimí-la</lineannotation>\n"
+"<prompt>%</prompt> <userinput>lpr -Ppostscript example.ps</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:668
@@ -1233,11 +1280,19 @@ msgid ""
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>pfbtops</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Referências: <filename>/usr/src/gnu/usr.bin/groff/afmtodit/afmtodit.man</"
+"filename>, <citerefentry><refentrytitle>groff_font</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>groff_char</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>pfbtops</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:674
 msgid "Converting TrueType fonts to a groff/PostScript format for groff"
 msgstr ""
+"Convertendo fontes TrueType para um formato groff / Formato PostScript para "
+"groff"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:677
@@ -1245,11 +1300,14 @@ msgid ""
 "This potentially requires a bit of work, simply because it depends on some "
 "utilities that are not installed as part of the base system. They are:"
 msgstr ""
+"Isso potencialmente requer um pouco de trabalho, simplesmente porque depende "
+"de alguns utilitários que não são instalados como parte do sistema base. "
+"Eles são:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:683
 msgid "<command>ttf2pf</command>"
-msgstr ""
+msgstr "<command>ttf2pf</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:686
@@ -1257,6 +1315,9 @@ msgid ""
 "TrueType to PostScript conversion utilities. This allows conversion of a "
 "TrueType font to an ascii font metric (<filename>.afm</filename>) file."
 msgstr ""
+"Utilitário de conversão TrueType para PostScript. Isso permite a conversão "
+"de uma fonte TrueType em um arquivo de métrica de fonte ascii (<filename> ."
+"afm </filename>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:690
@@ -1268,26 +1329,33 @@ msgid ""
 "clicking on the link. Otherwise, your browser may try to launch "
 "<application>ghostview</application> to view them."
 msgstr ""
+"Atualmente disponível em <uri xlink:href=\"http://sunsite.icm.edu.pl/pub/"
+"GUST/contrib/BachoTeX98/ttf2pf/\"> http://sunsite.icm.edu.pl/pub/GUST/"
+"contrib/BachoTeX98/ttf2pf/</uri>. Nota: Esses arquivos são programas "
+"PostScript e devem ser baixados para o disco mantendo pressionada a tecla "
+"<keycap> Shift </keycap> ao clicar no link. Caso contrário, seu navegador "
+"pode tentar iniciar o <application> ghostview </application> para visualizá-"
+"los."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:697
 msgid "The files of interest are:"
-msgstr ""
+msgstr "Os arquivos de interesse são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:701
 msgid "<filename>GS_TTF.PS</filename>"
-msgstr ""
+msgstr "<filename>GS_TTF.PS</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:705
 msgid "<filename>PF2AFM.PS</filename>"
-msgstr ""
+msgstr "<filename>PF2AFM.PS </filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:709
 msgid "<filename>ttf2pf.ps</filename>"
-msgstr ""
+msgstr "<filename>ttf2pf.ps</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:713
@@ -1301,11 +1369,20 @@ msgid ""
 "seem to include the latter.) You also may want to have these installed to "
 "<filename>/usr/local/share/groff_font/devps</filename>(?)."
 msgstr ""
+"O caso engraçado sobre maiúsculas/minúsculas é devido ao fato de serem "
+"destinados também para os terminais DOS. O <filename>ttf2pf.ps</filename> "
+"faz uso dos outros como maiúsculos, portanto, qualquer renomeação deve ser "
+"consistente com isso. (Na verdade, <filename>GS_TTF.PS</filename> e "
+"<filename>PFS2AFM.PS</filename> são supostamente parte da distribuição "
+"<application>Ghostscript</application>, mas é tão fácil usá-los como um "
+"utilitário isolado. O FreeBSD parece não incluir o último.) Você também pode "
+"querer instalá-los em <filename>/usr/local/share/groff_font/devps</filename> "
+"(?)."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:728
 msgid "<command>afmtodit</command>"
-msgstr ""
+msgstr "<command>afmtodit</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:731
@@ -1314,6 +1391,10 @@ msgid ""
 "font metrics file. This usually resides in the directory, <filename>/usr/src/"
 "contrib/groff/afmtodit</filename>, and requires some work to get going."
 msgstr ""
+"Cria arquivos de fontes para uso com o <application>groff</application> do "
+"arquivo de métricas da fonte ascii. Isso geralmente fica no diretório "
+"<filename>/usr/src/contrib/groff/afmtodit</filename> e requer algum trabalho "
+"para prosseguir."
 
 #. (itstool) path: note/para
 #: article.translate.xml:737
@@ -1321,11 +1402,15 @@ msgid ""
 "If you are paranoid about working in the <filename>/usr/src</filename> tree, "
 "simply copy the contents of the above directory to a work location."
 msgstr ""
+"Se você é paranóico sobre o trabalhar no diretório <filename>/usr/src</"
+"filename>, simplesmente copie o conteúdo do diretório acima para um local de "
+"trabalho."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:743
 msgid "In the work area, you will need to make the utility. Just type:"
 msgstr ""
+"Na área de trabalho, você precisará fazer o utilitário. Apenas digite:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:746
@@ -1333,6 +1418,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>make -f Makefile.sub afmtodit</userinput>"
 msgstr ""
+"<prompt>#</prompt><userinput>make -f Makefile.sub afmtodit</userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:748
@@ -1341,16 +1427,21 @@ msgid ""
 "textmap</filename> to <filename>/usr/share/groff_font/devps/generate</"
 "filename> if it does not already exist."
 msgstr ""
+"Você também pode precisar copiar <filename>/usr/contrib/groff/devps/generate/"
+"textmap</filename> para <filename>/usr/share/groff_font/devps/generate</"
+"filename> se ele ainda não existir."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:757
 msgid "Once all these utilities are in place, you are ready to commence:"
 msgstr ""
+"Depois que todos esses utilitários estiverem no lugar, você está pronto para "
+"começar:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:762
 msgid "Create the <filename>.afm</filename> file by typing:"
-msgstr ""
+msgstr "Crie o arquivo <filename>.afm</filename> digitando:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:765
@@ -1360,6 +1451,9 @@ msgid ""
 "<replaceable>TTF_name</replaceable> <replaceable>PS_font_name</replaceable> "
 "<replaceable>AFM_name</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>gs -dNODISPLAY -q -- ttf2pf.ps "
+"<replaceable>TTF_name</replaceable> <replaceable>PS_font_name</replaceable> "
+"<replaceable>AFM_name</replaceable></userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:767
@@ -1372,6 +1466,13 @@ msgid ""
 "files, then default names will be generated from the TrueType font file name."
 ""
 msgstr ""
+"Onde, <replaceable>TTF_name</replaceable> é o seu arquivo de fonte TrueType, "
+"<replaceable>PS_font_name</replaceable> é o nome do arquivo <filename>.pfa</"
+"filename>, <replaceable>AFM_name</replaceable> é o nome que você deseja para "
+"o arquivo <filename>.afm</filename>. Se você não especificar nomes de "
+"arquivos de saída para os arquivos <filename>.pfa</filename> ou <filename>."
+"afm</filename>, os nomes padrão serão gerados a partir do nome do arquivo de "
+"fonte TrueType."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:776
@@ -1380,6 +1481,10 @@ msgid ""
 "font metrics file (<filename>.pfb</filename> is for the binary form). This "
 "will not be needed, but could (I think) be useful for a fontserver."
 msgstr ""
+"Isso também produz um arquivo <filename>.pfa</filename>, o arquivo ascii de "
+"métricas de fonte PostScript (<filename>.pfb</filename> é para o formato "
+"binário). Isso não será necessário, mas poderia (eu acho) ser útil para um "
+"fontserver."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:782
@@ -1387,6 +1492,8 @@ msgid ""
 "For example, to convert the 30f9 Barcode font using the default file names, "
 "use the following command:"
 msgstr ""
+"Por exemplo, para converter a fonte de código de barras 30f9 usando os nomes "
+"de arquivo padrão, use o seguinte comando:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:785
@@ -1400,6 +1507,13 @@ msgid ""
 "This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
 "Converting 3of9.ttf to 3of9.pfa and 3of9.afm."
 msgstr ""
+"<prompt>%</prompt> <userinput>gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf</"
+"userinput>\n"
+"Aladdin Ghostscript 5.10 (1997-11-23)\n"
+"Copyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved."
+"\n"
+"This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
+"Converting 3of9.ttf to 3of9.pfa and 3of9.afm."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
@@ -1407,6 +1521,8 @@ msgid ""
 "If you want the converted fonts to be stored in <filename>A.pfa</filename> "
 "and <filename>B.afm</filename>, then use this command:"
 msgstr ""
+"Se você quiser que as fontes convertidas sejam armazenadas em <filename> A."
+"pfa</filename> e <filename>B.afm</filename>, use este comando:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:795
@@ -1420,11 +1536,18 @@ msgid ""
 "This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
 "Converting 3of9.ttf to A.pfa and B.afm."
 msgstr ""
+"<prompt>%</prompt> <userinput>gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf A B</"
+"userinput>\n"
+"Aladdin Ghostscript 5.10 (1997-11-23)\n"
+"Copyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved."
+"\n"
+"This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
+"Converting 3of9.ttf to A.pfa and B.afm."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:803
 msgid "Create the <application>groff</application> PostScript file:"
-msgstr ""
+msgstr "Crie o arquivo PostScript <application>groff</application>:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:805
@@ -1436,6 +1559,12 @@ msgid ""
 "filename> and <filename>generate/textmap</filename> as being in this "
 "directory.)"
 msgstr ""
+"Altere os diretórios para <filename>/usr/share/groff_font/devps</filename> "
+"para facilitar a execução do seguinte comando. Você provavelmente precisará "
+"de privilégios de root para isso. (Ou, se você é paranoico sobre trabalhar "
+"lá, certifique-se de referenciar os arquivos<filename>DESC</filename>, "
+"<filename>text.enc</filename> e <filename>generate/textmap</filename> como "
+"estando em este diretório.)"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:815
@@ -1444,6 +1573,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc file.afm generate/"
 "textmap <replaceable>PS_font_name</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc file.afm generate/"
+"textmap<replaceable>PS_font_name</replaceable></userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:817
@@ -1457,6 +1588,13 @@ msgid ""
 "<command>tiff2pf.ps</command> command above, then the 3of9 Barcode font can "
 "be created using the command:"
 msgstr ""
+"Onde, <filename>file.afm</filename> é o <replaceable>AFM_name</replaceable> "
+"criado por <command>ttf2pf.ps</command> acima e <replaceable>PS_font_name</"
+"replaceable> é o nome da fonte usada a partir desse comando, bem como o nome "
+"que <citerefentry><refentrytitle>groff</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> usará para referências a essa fonte. Por exemplo, "
+"supondo que você usou o primeiro comando <command>tiff2pf.ps</command> "
+"acima, a fonte 3of9 Barcode pode ser criada usando o comando:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:827
@@ -1465,6 +1603,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc 3of9.afm generate/"
 "textmap 3of9</userinput>"
 msgstr ""
+"<prompt>% </prompt> <userinput> afmtodit -d DESC -e text.enc 3of9.afm "
+"generate/textmap 3of9 </userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:829
@@ -1474,6 +1614,10 @@ msgid ""
 "directory <filename>/usr/share/groff_font/devps</filename> by copying or "
 "moving it there."
 msgstr ""
+"Assegure-se de que o arquivo <replaceable>PS_font_name</replaceable> "
+"resultante (por exemplo, <filename>3of9</filename> no exemplo acima) esteja "
+"localizado no diretório <filename>/usr/share/groff_font/devps</filename> "
+"copiando-o ou movendo-o para lá."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:836
@@ -1487,11 +1631,19 @@ msgid ""
 "vendor=\"ports\"><refentrytitle>gs</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Note que se <filename>ttf2pf.ps</filename> atribuir um nome de fonte usando "
+"aquele que ele encontrar no arquivo de fonte TrueType e você quiser usar um "
+"nome diferente, você deve editar o arquivo <filename>.afm</filename> antes "
+"de executar o <command>afmtodit</command>. Esse nome também deve coincidir "
+"com o usado no arquivo Fontmap se você deseja enviar <citerefentry> "
+"<refentrytitle>groff</refentrytitle> <manvolnum> 1 </manvolnum> </"
+"citerefentry>para<citerefentry vendor=\"ports\"><refentrytitle>gs</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:848
 msgid "Can TrueType fonts be used with other programs?"
-msgstr ""
+msgstr "As fontes TrueType podem ser usadas com outros programas?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:850
@@ -1500,6 +1652,8 @@ msgid ""
 "quite popular and there are a great number of fonts available in this format."
 ""
 msgstr ""
+"O formato de fonte TrueType é usado pelo Windows, Windows 95 e Mac. É "
+"bastante popular e há um grande número de fontes disponíveis neste formato."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:854
@@ -1512,6 +1666,14 @@ msgid ""
 "also has the ability to use TrueType fonts, but I rather doubt many people "
 "will be creating documents as a series of raytraced pages :-)."
 msgstr ""
+"Infelizmente, há poucos aplicativos que conheço que podem usar este formato: "
+"<application>Ghostscript</application> e <application>Povray</application> "
+"são os que vem a mente. O suporte do <application>Ghostscript</application>, "
+"de acordo com a documentação, é rudimentar e os resultados provavelmente "
+"serão inferiores as fontes tipo 1. O <application>Povray</application> "
+"versão 3 também tem a capacidade de usar fontes TrueType, mas eu duvido que "
+"muitas pessoas criem documentos como uma série de páginas tridmensionais "
+"traçadas com luz :-)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:863
@@ -1520,6 +1682,9 @@ msgid ""
 "www.freetype.org/\">FreeType Project</link> is currently developing a useful "
 "set of FreeType tools:"
 msgstr ""
+"Esta situação bastante triste pode mudar em breve. O <link xlink:href=\"http:"
+"//www.freetype.org/\">Projeto FreeType</link> está atualmente desenvolvendo "
+"um conjunto útil de ferramentas FreeType:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:869
@@ -1532,6 +1697,13 @@ msgid ""
 "xlink:href=\"http://math.missouri.edu/~stephen/software/\">Stephen "
 "Montgomery's software page</link>."
 msgstr ""
+"O servidor de fontes <command>xfsft</command> para <application>X11</"
+"application> pode fornecer fontes TrueType além de fontes regulares. Embora "
+"atualmente em beta, diz-se ser bastante utilizável. Veja <link xlink:href="
+"\"http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/\">a página de Juliusz "
+"Chroboczek</link> para maiores informações. Instruções de portabilidade para "
+"o FreeBSD podem ser encontradas em <link xlink:href=\"http://math.missouri."
+"edu/~stephen/software/\">página do software de Stephen Montgomery</link>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:879
@@ -1541,6 +1713,10 @@ msgid ""
 "sunsite.unc.edu/pub/Linux/X11/fonts/\"> ftp://sunsite.unc.edu/pub/Linux/X11/"
 "fonts/</uri>."
 msgstr ""
+"O <application>xfstt</application> é outro provedor de fontes para "
+"<application>X11</application>, disponível no <uri xlink:href=\" ftp://"
+"sunsite.unc.edu/pub/Linux/X11/fonts/\"> ftp://sunsite.unc.edu/pub/Linux/X11/"
+"fonts/</uri>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:885
@@ -1550,16 +1726,21 @@ msgid ""
 "be available from <uri xlink:href=\"ftp://crl.nmsu.edu/CLR/multiling/General/"
 "\">ftp://crl.nmsu.edu/CLR/multiling/General/</uri>."
 msgstr ""
+"Um programa chamado <command>ttf2bdf</command> pode produzir arquivos BDF "
+"adequados para uso em um ambiente X a partir de arquivos TrueType. Diz-se "
+"que os binários do Linux estão disponíveis em <uri xlink:href=\"ftp://crl."
+"nmsu.edu/CLR/multiling/General/\"> ftp://crl.nmsu.edu/CLR/multiling/Geral/ </"
+"uri>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:891
 msgid "and others …"
-msgstr ""
+msgstr "e outros …"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:897
 msgid "Where can additional fonts be obtained?"
-msgstr ""
+msgstr "Onde fontes adicionais podem ser obtidas?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:899
@@ -1568,16 +1749,19 @@ msgid ""
 "are share-ware. In addition many fonts are available in the <filename>x11-"
 "fonts/</filename> category in the ports collection"
 msgstr ""
+"Muitas fontes estão disponíveis na Internet. Eles são totalmente gratuitas "
+"ou sharewares. Além disso, muitas fontes estão disponíveis na categoria "
+"<filename>x11-fonts/</filename> na coleção do ports"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:906
 msgid "Additional questions"
-msgstr ""
+msgstr "Questões adicionais"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:910
 msgid "What use are the <filename>.pfm</filename> files?"
-msgstr ""
+msgstr "Quais são os usos dos arquivos <filename>.pfm</filename>?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:914
@@ -1585,6 +1769,8 @@ msgid ""
 "Can one generate the <filename>.afm</filename> file from a <filename>.pfa</"
 "filename> or <filename>.pfb</filename>?"
 msgstr ""
+"Pode-se gerar o arquivo <filename>.afm</filename> a partir de um <filename>."
+"pfa</filename> ou <filename>.pfb</filename>?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:920
@@ -1592,11 +1778,15 @@ msgid ""
 "How to generate the <application>groff</application> character mapping files "
 "for PostScript fonts with non-standard character names?"
 msgstr ""
+"Como gerar os arquivos de mapeamento de caracteres <application>groff </"
+"application> para fontes PostScript com nomes de caracteres não padrão?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:925
 msgid "Can xditview and devX?? devices be set up to access all the new fonts?"
 msgstr ""
+"Podem os dispositivos xditview e devX  serem configurados para acessar todas "
+"as novas fontes?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:930
@@ -1605,3 +1795,5 @@ msgid ""
 "<application>Povray</application> and <application>Ghostscript</application>."
 ""
 msgstr ""
+"Seria bom ter exemplos de uso de fontes TrueType com <application>Povray</"
+"application> e <application>Ghostscript</application>."
