@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,8 +9,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.0\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-25 02:51+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-08-26 12:35+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -1013,7 +1013,7 @@ msgid ""
 "committed to the main repository."
 msgstr ""
 "A <emphasis>área de trabalho</emphasis> é uma cópia da árvore de "
-"documentação do repositório do FreeBSD baixada no caomputador local. As "
+"documentação do repositório do FreeBSD baixada no computador local. As "
 "alterações são feitas na cópia de trabalho local, testadas e enviadas como "
 "patches para serem submetidas no repositório principal."
 
@@ -1126,10 +1126,9 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:809
-#, fuzzy
 msgid "A checkout of the source code to work on manual pages is very similar:"
 msgstr ""
-"Um checkout do código-fonte para trabalhar nas páginas de manual é muito "
+"O checkout do código-fonte para trabalhar nas páginas de manual é muito "
 "semelhante:"
 
 #. (itstool) path: sect1/screen
@@ -1144,13 +1143,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:816
-#, fuzzy
 msgid "Updating a Working Copy"
-msgstr "Atualizando uma cópia de trabalho"
+msgstr "Atualizando"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:818
-#, fuzzy
 msgid ""
 "The documents and files in the FreeBSD repository change daily. People "
 "modify files and commit changes frequently. Even a short time after an "
@@ -1161,11 +1158,11 @@ msgid ""
 "copy:"
 msgstr ""
 "Os documentos e arquivos no repositório do FreeBSD mudam diariamente. As "
-"pessoas modificam arquivos e cometem alterações com frequência. Mesmo após "
-"um checkout inicial, já haverá diferenças entre a cópia de trabalho local e "
+"pessoas modificam arquivos e submetem alterações com frequência. Mesmo após "
+"um checkout inicial, já haverá alterações entre a cópia de trabalho local e "
 "o repositório principal do FreeBSD. Para atualizar a versão local com as "
-"mudanças que foram feitas no repositório principal, use o <command> svn "
-"update </command> no diretório que contém a cópia de trabalho local:"
+"mudanças que foram feitas no repositório principal, execute <command>svn "
+"update</command> no diretório que contém a cópia de trabalho local:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:827
@@ -1179,7 +1176,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:829
-#, fuzzy
 msgid ""
 "Get in the protective habit of using <command>svn update</command> before "
 "editing document files. Someone else may have edited that file very "
@@ -1188,22 +1184,20 @@ msgid ""
 "easier than trying to combine an older, edited local file with the newer "
 "version from the repository."
 msgstr ""
-"Adquira o hábito de proteção de usar <command> svn update </command> antes "
-"de editar os arquivos de documentos. Alguém pode ter editado esse arquivo "
-"muito recentemente e a cópia de trabalho local não incluirá as alterações "
-"mais recentes até que ele seja atualizado. Editar a versão mais recente de "
+"Adquira o hábito de proteção de executar <command>svn update</command> antes "
+"de editar os arquivos de documentação. Alguém pode ter editado esse arquivo "
+"muito recentemente e a cópia de trabalho local não incluirá essas alterações "
+"mais recentes até que ela seja atualizada. Editar a versão mais recente de "
 "um arquivo é muito mais fácil do que tentar combinar um arquivo local "
 "editado mais antigo com a versão mais recente do repositório."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:839
-#, fuzzy
 msgid "Reverting Changes"
-msgstr "Revertendo mudanças"
+msgstr "Revertendo Alterações"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:841
-#, fuzzy
 msgid ""
 "Sometimes it turns out that changes were not necessary after all, or the "
 "writer just wants to start over. Files can be <quote>reset</quote> to their "
@@ -1211,11 +1205,11 @@ msgid ""
 "edits made to <filename>chapter.xml</filename> and reset it to unmodified "
 "form:"
 msgstr ""
-"Às vezes, acontece que as mudanças não eram necessárias, afinal, ou o "
-"escritor só quer começar de novo. Arquivos podem ser <quote> resetados </"
-"quote> para sua forma inalterada com <command> svn revert </command>. Por "
-"exemplo, para apagar as edições feitas no <filename> chapter.xml </filename> "
-"e redefini-las para o formato não modificado:"
+"De vez em quando acontece que algumas mudanças não eram necessárias, ou o "
+"escritor só quer começar novamente. Arquivos podem ser <quote>resetados</"
+"quote> para sua forma anterior com <command>svn revert</command>. Por "
+"exemplo, para apagar as alterações feitas no <filename>chapter.xml</"
+"filename> e redefini-las para o formato sem modificação:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:848
@@ -1225,13 +1219,11 @@ msgstr "<prompt>%</prompt> <userinput>svn revert chapter.xml</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:852
-#, fuzzy
 msgid "Making a Diff"
-msgstr "Fazendo um Diff"
+msgstr "Criando um Diff"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:854
-#, fuzzy
 msgid ""
 "After edits to a file or group of files are completed, the differences "
 "between the local working copy and the version on the FreeBSD repository "
@@ -1239,11 +1231,11 @@ msgid ""
 "emphasis> files are produced by redirecting the output of <command>svn diff</"
 "command> into a file:"
 msgstr ""
-"Após as edições de um arquivo ou grupo de arquivos serem completadas, as "
-"diferenças entre a cópia de trabalho local e a versão no repositório do "
-"FreeBSD devem ser coletadas em um único arquivo para envio. Estes arquivos "
-"<emphasis> diff </emphasis> são produzidos redirecionando a saída do "
-"<command> svn diff </command> para um arquivo:"
+"Após as alterações de um arquivo ou grupo de arquivos estiverem completas, "
+"as diferenças entre a cópia de trabalho local e a versão no repositório do "
+"FreeBSD devem ser coletadas em um único arquivo para ser submetido. Estes "
+"arquivos <emphasis>diff</emphasis> são produzidos redirecionando a saída de "
+"<command>svn diff</command> para um arquivo:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:861
@@ -1261,7 +1253,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:864
-#, fuzzy
 msgid ""
 "Give the file a meaningful name that identifies the contents. The example "
 "above is for spelling fixes to the whole documentation tree."
@@ -1271,7 +1262,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:868
-#, fuzzy
 msgid ""
 "If the diff file is to be submitted with the web <quote><link xlink:href="
 "\"https://bugs.FreeBSD.org/bugzilla/enter_bug.cgi\">Submit a FreeBSD problem "
@@ -1279,25 +1269,23 @@ msgid ""
 "to give the earnest and simple-minded web form a clue that the contents are "
 "plain text."
 msgstr ""
-"Se o arquivo diff for enviado com a web <quote> <link xlink:href=\"https://"
-"bugs.FreeBSD.org/bugzilla/enter_bug.cgi\"> Envie um relatório de problema do "
-"FreeBSD </link> </quote > interface, adicione uma extensão <filename> .txt </"
-"filename> para dar ao formulário web sincero e simples uma pista de que o "
-"conteúdo é texto simples."
+"Se o arquivo diff for enviado com a interface web <quote><link xlink:href="
+"\"https://bugs.FreeBSD.org/bugzilla/enter_bug.cgi\">Submit a FreeBSD problem "
+"report</link></quote>, adicione uma extensão <filename>.txt</filename> para "
+"que o formulário web identifique que o conteúdo do arquivo é texto plano."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:875
-#, fuzzy
 msgid ""
 "Be careful: <command>svn diff</command> includes all changes made in the "
 "current directory and any subdirectories. If there are files in the working "
 "copy with edits that are not ready to be submitted yet, provide a list of "
 "only the files that are to be included:"
 msgstr ""
-"Tenha cuidado: <command> svn diff </command> inclui todas as alterações "
-"feitas no diretório atual e em quaisquer subdiretórios. Se houver arquivos "
-"na cópia de trabalho com edições que ainda não estão prontas para serem "
-"enviadas, forneça uma lista apenas dos arquivos a serem incluídos:"
+"Tenha cuidado: <command>svn diff</command> inclui todas as alterações feitas "
+"no diretório atual e em quaisquer subdiretórios. Se houver arquivos na cópia "
+"de trabalho com edições que ainda não estão prontas para serem enviadas, "
+"forneça uma lista apenas dos arquivos a serem incluídos:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:881
@@ -1317,117 +1305,102 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:886
-#, fuzzy
 msgid "<application>Subversion</application> References"
-msgstr "<application> Subversion </application> Referências"
+msgstr "Referências <application>Subversion</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:888
-#, fuzzy
 msgid ""
 "These examples show very basic usage of <application>Subversion</"
 "application>. More detail is available in the <link xlink:href=\"http://"
 "svnbook.red-bean.com/\">Subversion Book</link> and the <link xlink:href="
 "\"http://subversion.apache.org/docs/\">Subversion documentation</link>."
 msgstr ""
-"Estes exemplos mostram o uso muito básico do <application> Subversion </"
+"Estes exemplos demonstram uso muito básico do <application>Subversion</"
 "application>. Mais detalhes estão disponíveis no <link xlink:href=\"http://"
-"svnbook.red-bean.com/\"> Subversion Book </link> e no <link xlink:href="
-"\"http: //subversion.apache. org / docs / \"> Documentação do Subversion </"
-"link>."
+"svnbook.red-bean.com/\">Subversion Book</link> e na <link xlink:href=\"http:/"
+"/subversion.apache.org/docs/\">Documentação Subversion</link>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:928
-#, fuzzy
 msgid "Documentation Directory Structure"
 msgstr "Estrutura de Diretórios da Documentação"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:930
-#, fuzzy
 msgid ""
 "Files and directories in the <filename>doc/</filename> tree follow a "
 "structure meant to:"
 msgstr ""
-"Arquivos e diretórios na árvore <filename> doc / </filename> seguem uma "
+"Arquivos e diretórios no repositório <filename>doc/</filename> seguem uma "
 "estrutura destinada a:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:936
-#, fuzzy
 msgid "Make it easy to automate converting the document to other formats."
-msgstr "Facilite a conversão do documento para outros formatos."
+msgstr "Facilitar a conversão do documento para outros formatos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:941
-#, fuzzy
 msgid ""
 "Promote consistency between the different documentation organizations, to "
 "make it easier to switch between working on different documents."
 msgstr ""
-"Promover a consistência entre as diferentes organizações de documentação, "
-"para facilitar a alternância entre o trabalho em diferentes documentos."
+"Promover a consistência entre as diferentes organizações de documentação, e "
+"assim facilitar a alternância entre diferentes documentos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:947
-#, fuzzy
 msgid ""
 "Make it easy to decide where in the tree new documentation should be placed."
-msgstr "Facilite a decisão de onde a nova documentação deve ser colocada."
+msgstr "Facilitar a decisão de onde a nova documentação deve ser colocada."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:952
-#, fuzzy
 msgid ""
 "In addition, the documentation tree must accommodate documents in many "
 "different languages and encodings. It is important that the documentation "
 "tree structure does not enforce any particular defaults or cultural "
 "preferences."
 msgstr ""
-"Além disso, a árvore de documentação deve acomodar documentos em vários "
-"idiomas e codificações diferentes. É importante que a estrutura da árvore de "
-"documentação não imponha quaisquer padrões particulares ou preferências "
-"culturais."
+"Além disso, o repositório de documentação deve acomodar documentos em vários "
+"idiomas e codificações diferentes. É importante que a estrutura do "
+"repositório de documentação não imponha quaisquer padrões particulares ou "
+"preferências culturais."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:958
-#, fuzzy
 msgid "The Top Level, <filename>doc/</filename>"
-msgstr "O nível superior, <filename> doc / </filename>"
+msgstr "O Nível Superior, <filename>doc/</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:961
-#, fuzzy
 msgid ""
 "There are two types of directory under <filename>doc/</filename>, each with "
 "very specific directory names and meanings."
 msgstr ""
-"Existem dois tipos de diretório em <filename> doc / </filename>, cada um com "
+"Existem dois tipos de diretório em <filename>doc/</filename>, cada um com "
 "nomes de diretório e significados muito específicos."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:969
 #: book.translate.xml:1023
-#, fuzzy
 msgid "Directory"
 msgstr "Diretório"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:970
 #: book.translate.xml:1024
-#, fuzzy
 msgid "Usage"
 msgstr "Uso"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:976
-#, fuzzy
 msgid "<filename>share</filename>"
-msgstr "<filename> compartilhar </filename>"
+msgstr "<filename>share</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:979
-#, fuzzy
 msgid ""
 "Contains files that are not specific to the various translations and "
 "encodings of the documentation. Contains subdirectories to further "
@@ -1440,16 +1413,14 @@ msgid ""
 msgstr ""
 "Contém arquivos que não são específicos das várias traduções e codificações "
 "da documentação. Contém subdiretórios para categorizar ainda mais as "
-"informações. Por exemplo, os arquivos que compõem a infra-estrutura "
-"<citerefentry> <refentrytitle> make </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> estão em <filename> share / mk </filename>, "
-"enquanto o acrônimo adicional de suporte a arquivos <acronym>XML</acronym> "
-"(como o DTBook estendido do FreeBSD <acronym> DTD </acronym>) estão em "
-"<filename> share / xml </filename>."
+"informações. Por exemplo, os arquivos que fazem parte da infra-estrutura "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> estão em <filename>share/mk</filename>, enquanto o suporte "
+"adicional a arquivos <acronym>XML</acronym> (como o DTBook estendido do "
+"FreeBSD <acronym>DTD</acronym>) estão em <filename>share/xml</filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:991
-#, fuzzy
 msgid ""
 "<filename><replaceable>lang</replaceable>.<replaceable>encoding</"
 "replaceable></filename>"
@@ -1459,7 +1430,6 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:994
-#, fuzzy
 msgid ""
 "One directory exists for each available translation and encoding of the "
 "documentation, for example <filename>en_US.ISO8859-1/</filename> and "
@@ -1469,63 +1439,56 @@ msgid ""
 "more than one encoding. This also avoids problems that might be caused by a "
 "future switch to Unicode."
 msgstr ""
-"Existe um diretório para cada tradução disponível e codificação da "
-"documentação, por exemplo, <filename> en_US.ISO8859-1 / </filename> e "
-"<filename> zh_TW.UTF-8 / </filename>. Os nomes são longos, mas ao "
-"especificar totalmente o idioma e a codificação, evitamos dores de cabeça "
-"futuras quando uma equipe de tradução deseja fornecer documentação no mesmo "
-"idioma, mas em mais de uma codificação. Isso também evita problemas que "
-"podem ser causados ​​por uma futura mudança para Unicode."
+"Existe um diretório para cada tradução e codificação disponível da "
+"documentação, por exemplo, <filename>en_US.ISO8859-1/</filename>  e "
+"<filename>zh_TW.UTF-8/</filename>. Os nomes são longos, mas ao especificar "
+"totalmente o idioma e a codificação, evitamos dores de cabeça futuras quando "
+"uma equipe de tradução desejar fornecer documentação no mesmo idioma, mas em "
+"mais de uma codificação. Isso também evita problemas que podem ser causados "
+"​​por uma futura mudança para Unicode."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1011
-#, fuzzy
 msgid ""
 "The <filename><replaceable>lang</replaceable>.<replaceable>encoding</"
 "replaceable>/</filename> Directories"
 msgstr ""
-"The <filename><replaceable>lang</replaceable>.<replaceable>encoding</"
-"replaceable>/</filename> Directories"
+"Os Diretórios <filename><replaceable>lang</replaceable>."
+"<replaceable>encoding</replaceable>/</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1015
-#, fuzzy
 msgid ""
 "These directories contain the documents themselves. The documentation is "
 "split into up to three more categories at this level, indicated by the "
 "different directory names."
 msgstr ""
 "Esses diretórios contêm os próprios documentos. A documentação é dividida em "
-"até três outras categorias nesse nível, indicadas pelos diferentes nomes de "
-"diretório."
+"até três outras categorias, indicadas pelos diferentes nomes de diretório."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1030
-#, fuzzy
 msgid "<filename>articles</filename>"
-msgstr "<filename> artigos </filename>"
+msgstr "<filename>articles</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1033
-#, fuzzy
 msgid ""
 "Documentation marked up as a DocBook <tag>article</tag> (or equivalent). "
 "Reasonably short, and broken up into sections. Normally only available as "
 "one <acronym>XHTML</acronym> file."
 msgstr ""
-"Documentação marcada como um artigo <tag> do DocBook </tag> (ou equivalente)."
-" Razoavelmente curto e dividido em seções. Normalmente disponível apenas "
-"como um arquivo <acronym> XHTML </acronym>."
+"Documentação marcada como DocBook <tag>article</tag> (ou equivalente). "
+"Conteúdo curto e dividido em seções. Normalmente disponível apenas como um "
+"arquivo <acronym>XHTML</acronym>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1040
-#, fuzzy
 msgid "<filename>books</filename>"
-msgstr "<filename> livros </filename>"
+msgstr "<filename>books</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1042
-#, fuzzy
 msgid ""
 "Documentation marked up as a DocBook <tag>book</tag> (or equivalent). Book "
 "length, and broken up into chapters. Normally available as both one large "
@@ -1533,21 +1496,19 @@ msgid ""
 "to print it easily from a browser) and as a collection of linked, smaller "
 "files."
 msgstr ""
-"Documentação marcada como um DocBook <tag> book </tag> (ou equivalente). "
-"Comprimento do livro e dividido em capítulos. Normalmente disponível como um "
-"grande arquivo <acronym> XHTML </acronym> (para pessoas com conexões "
-"rápidas, ou que desejam imprimi-lo facilmente de um navegador) e como uma "
-"coleção de arquivos menores e vinculados."
+"Documentação marcada como DocBook <tag>book</tag> (ou equivalente). Conteúdo "
+"longo e dividido em capítulos. Normalmente disponível como um grande arquivo "
+"<acronym>XHTML</acronym> (para pessoas com conexões rápidas, ou que desejam "
+"imprimi-lo facilmente de um navegador) e como uma coleção de arquivos "
+"menores e com links."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1052
-#, fuzzy
 msgid "<filename>man</filename>"
-msgstr "<filename> man </filename>"
+msgstr "<filename>man</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1055
-#, fuzzy
 msgid ""
 "For translations of the system manual pages. This directory will contain one "
 "or more <filename role=\"directory\">man<replaceable>N</replaceable></"
@@ -1555,116 +1516,103 @@ msgid ""
 "translated."
 msgstr ""
 "Para traduções das páginas de manual do sistema. Esse diretório conterá um "
-"ou mais diretórios <filename role=\"directory\"> man <replaceable> N </"
-"replaceable> </filename>, correspondendo às seções que foram traduzidas."
+"ou mais diretórios <filename role=\"directory\">man<replaceable>N</"
+"replaceable></filename>, correspondendo às seções que foram traduzidas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1065
-#, fuzzy
 msgid ""
 "Not every <filename role=\"directory\"><replaceable>lang</replaceable>."
 "<replaceable>encoding</replaceable></filename> directory will have all of "
 "these subdirectories. It depends on how much translation has been "
 "accomplished by that translation team."
 msgstr ""
-"Nem todo diretório <filename role=\"directory\"> <replaceable> lang </"
-"replaceable>. <replaceable> encoding </replaceable> </filename> terá todos "
-"esses subdiretórios. Depende de quanto a tradução foi realizada por essa "
-"equipe de tradução."
+"Nem todo diretório <filename role=\"directory\"><replaceable>lang</"
+"replaceable>.<replaceable>encoding</replaceable></filename> terá todos esses "
+"subdiretórios. Depende de quanto a tradução foi realizada por essa equipe de "
+"tradução."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1072
-#, fuzzy
 msgid "Document-Specific Information"
-msgstr "Informação específica do documento"
+msgstr "Informação Específica de Documentação"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1074
-#, fuzzy
 msgid ""
 "This section contains specific notes about particular documents managed by "
 "the FDP."
 msgstr ""
-"Esta seção contém notas específicas sobre documentos específicos gerenciados "
-"pelo FDP."
+"Esta seção contém informações específicas sobre documentos gerenciados pelo "
+"FDP."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1078
-#, fuzzy
 msgid "The Handbook"
-msgstr "O manual"
+msgstr "O Handbook"
 
 #. (itstool) path: sect2/subtitle
 #: book.translate.xml:1080
-#, fuzzy
 msgid "<filename>books/handbook/</filename>"
 msgstr "<filename>books/handbook/</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1082
-#, fuzzy
 msgid ""
 "The Handbook is written in DocBook <acronym>XML</acronym> using the FreeBSD "
 "DocBook extended <acronym>DTD</acronym>."
 msgstr ""
-"O Handbook está escrito em DocBook <acronym> XML </acronym> usando o DTDB "
-"estendido do <acronym> do acrônimo> </acronym>."
+"O Handbook está escrito em DocBook <acronym>XML</acronym> usando "
+"<acronym>DTD</acronym> extendido do DocBook FreeBSD."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1085
-#, fuzzy
 msgid ""
 "The Handbook is organized as a DocBook <tag>book</tag>. The book is divided "
 "into <tag>part</tag>s, each of which contains several <tag>chapter</tag>s. "
 "<tag>chapter</tag>s are further subdivided into sections (<tag>sect1</tag>) "
 "and subsections (<tag>sect2</tag>, <tag>sect3</tag>) and so on."
 msgstr ""
-"O Manual está organizado como um <tag> book </tag> do DocBook. O livro é "
-"dividido em <tag> partes </tag>, cada um contendo vários <tag> chapter </"
-"tag> s. Os <tag> chapter </tag> s são subdivididos em seções (<tag> sect1 </"
-"tag>) e subseções (<tag> sect2 </tag>, <tag> sect3 </tag>) e assim por "
-"diante."
+"O Handbook está organizado como um DocBook <tag>book</tag>. O livro é "
+"dividido em <tag>part</tag>s, cada uma contendo vários <tag>chapter</tag>s. "
+"Os <tag>chapter</tag>s são subdivididos em seções (<tag>sect1</tag>) e "
+"subseções (<tag>sect2</tag>, <tag>sect3</tag>) e assim por diante."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1094
-#, fuzzy
 msgid "Physical Organization"
 msgstr "Organização Física"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1096
-#, fuzzy
 msgid ""
 "There are a number of files and directories within the <filename>handbook</"
 "filename> directory."
 msgstr ""
-"Há vários arquivos e diretórios no diretório <filename> handbook </filename>."
-""
+"Existem vários arquivos e diretórios dentro do diretório <filename>handbook</"
+"filename>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1100
-#, fuzzy
 msgid ""
 "The Handbook's organization may change over time, and this document may lag "
 "in detailing the organizational changes. Post questions about Handbook "
 "organization to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
 "listinfo/freebsd-doc\">FreeBSD documentation project mailing list</link>."
 msgstr ""
-"A organização do manual pode mudar ao longo do tempo, e este documento pode "
-"atrasar o detalhamento das mudanças organizacionais. Poste perguntas sobre a "
-"organização do Handbook na <link xlink:href=\"http://lists.FreeBSD.org/"
-"mailman/listinfo/freebsd-doc\"> lista de discussão do projeto de "
-"documentação do FreeBSD </link>."
+"A organização do Handbook pode ser alterada ao longo do tempo, e este "
+"documento pode estar defasado quanto ao detalhamento das mudanças "
+"organizacionais do mesmo. Envie perguntas sobre a organização do Handbook na "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"doc\">lista de discussão do projeto FreeBSD</link>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:1107
-#, fuzzy
 msgid "<filename>Makefile</filename>"
-msgstr "<filename> Makefile </filename>"
+msgstr "<filename>Makefile</filename>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1109
-#, fuzzy
 msgid ""
 "The <filename>Makefile</filename> defines some variables that affect how the "
 "<acronym>XML</acronym> source is converted to other formats, and lists the "
@@ -1672,33 +1620,30 @@ msgid ""
 "standard <filename>doc.project.mk</filename>, to bring in the rest of the "
 "code that handles converting documents from one format to another."
 msgstr ""
-"O <filename> Makefile </filename> define algumas variáveis ​​que afetam como "
-"a fonte <acronym> XML </acronym> é convertida em outros formatos e lista os "
-"vários arquivos de origem que compõem o Handbook. Em seguida, ele inclui o "
-"<filename> doc.project.mk </filename> padrão, para inserir o restante do "
+"O <filename>Makefile</filename> define algumas variáveis ​​que afetam como o "
+"fonte <acronym>XML</acronym> é convertido em diversos formatos e lista os "
+"vários arquivos fontes que compõem o Handbook. Em seguida, ele inclui o "
+"<filename>doc.project.mk</filename> padrão, para inserir o restante do "
 "código que manipula a conversão de documentos de um formato para outro."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:1119
-#, fuzzy
 msgid "<filename>book.xml</filename>"
-msgstr "<filename> book.xml </filename>"
+msgstr "<filename>book.xml</filename>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1121
-#, fuzzy
 msgid ""
 "This is the top level document in the Handbook. It contains the Handbook's "
 "<link linkend=\"xml-primer-doctype-declaration\">DOCTYPE declaration</link>, "
 "as well as the elements that describe the Handbook's structure."
 msgstr ""
-"Este é o documento de nível superior no Manual. Ele contém a declaração "
-"<link linkend=\"xml-primer-doctype-declaration\"> declaração DOCTYPE </"
-"link>, bem como os elementos que descrevem a estrutura do Handbook."
+"Este é o principal arquivo do Handbook. Ele contém a  <link linkend=\"xml-"
+"primer-doctype-declaration\">declaração DOCTYPE</link>, bem como os "
+"elementos que descrevem a estrutura do Handbook."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1126
-#, fuzzy
 msgid ""
 "<filename>book.xml</filename> uses <link linkend=\"xml-primer-parameter-"
 "entities\">parameter entities</link> to load in the files with the "
@@ -1706,82 +1651,77 @@ msgid ""
 "define <link linkend=\"xml-primer-general-entities\">general entities</link> "
 "that are used throughout the rest of the Handbook."
 msgstr ""
-"<filename> book.xml </filename> usa <link linkend=\"xml-primer-parameter-"
-"entities\"> entidades de parâmetro </link> para carregar os arquivos com a "
-"extensão <filename> .ent </filename>. Esses arquivos (descritos "
-"posteriormente) então definem <link linkend=\"xml-primer-general-entities\"> "
-"entidades gerais </link> que são usados ​​em todo o restante do Manual."
+"<filename>book.xml</filename> utiliza <link linkend=\"xml-primer-parameter-"
+"entities\">entidades de parâmetro</link> para carregar os arquivos com a "
+"extensão <filename>.ent</filename>. Esses arquivos (descritos "
+"posteriormente) e então definem as <link linkend=\"xml-primer-general-"
+"entities\">entidades gerais</link> que são utilizadas ​​no restante do "
+"Handbook."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:1135
-#, fuzzy
 msgid ""
 "<filename role=\"directory\"><replaceable>directory</replaceable>/chapter."
 "xml</filename>"
 msgstr ""
-"<filename role=\"directory\"> <replaceable> diretório </replaceable> /"
-"chapter.xml </filename>"
+"<filename role=\"directory\"><replaceable>directory</replaceable>/chapter."
+"xml</filename>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1137
-#, fuzzy
 msgid ""
 "Each chapter in the Handbook is stored in a file called <filename>chapter."
 "xml</filename> in a separate directory from the other chapters. Each "
 "directory is named after the value of the <literal>id</literal> attribute on "
 "the <tag>chapter</tag> element."
 msgstr ""
-"Cada capítulo do Manual é armazenado em um arquivo chamado <filename> "
-"chapter.xml </filename> em um diretório separado dos outros capítulos. Cada "
-"diretório é nomeado após o valor do atributo <literal> id </literal> no "
-"elemento <tag> chapter </tag>."
+"Cada capítulo do Handbook é armazenado em um arquivo chamado "
+"<filename>chapter.xml</filename> em um diretório separado dos outros "
+"capítulos. Cada diretório é nomeado após o valor do atributo <literal>id</"
+"literal> no elemento <tag>chapter</tag>."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1144
-#, fuzzy
 msgid "For example, if one of the chapter files contains:"
-msgstr "Por exemplo, se um dos arquivos do capítulo contiver:"
+msgstr "Por exemplo, se um dos arquivos de capítulo contiver:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:1147
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">chapter id=\"kernelconfig\"</tag>\n"
 "...\n"
 "<tag class=\"endtag\">chapter</tag>"
 msgstr ""
-"<tag class=\"starttag\"> capítulo id=\"kernelconfig\" </tag>\n"
+"<tag class=\"starttag\">chapter id=\"kernelconfig\"</tag>\n"
 "...\n"
-"<tag class=\"endtag\"> capítulo </tag>"
+"<tag class=\"endtag\">chapter</tag>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1151
-#, fuzzy
 msgid ""
 "Then it will be called <filename>chapter.xml</filename> in the "
 "<filename>kernelconfig</filename> directory. In general, the entire contents "
 "of the chapter are in this one file."
 msgstr ""
-"Em seguida, ele será chamado <filename> chapter.xml </filename> no diretório "
-"<filename> kernelconfig </filename>. Em geral, todo o conteúdo do capítulo "
+"Então ele será chamado de <filename>chapter.xml</filename> no diretório "
+"<filename>kernelconfig</filename>. Em geral, todo o conteúdo do capítulo "
 "está neste único arquivo."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1157
-#, fuzzy
 msgid ""
 "When the <acronym>XHTML</acronym> version of the Handbook is produced, this "
 "will yield <filename>kernelconfig.html</filename>. This is because of the "
 "<literal>id</literal> value, and is not related to the name of the directory."
 ""
 msgstr ""
-"Quando a versão <acronym> XHTML </acronym> do Handbook for produzida, isso "
-"produzirá <filename> kernelconfig.html </filename>. Isso é por causa do "
-"valor <literal> id </literal> e não está relacionado ao nome do diretório."
+"Quando a versão <acronym>XHTML</acronym> do Handbook for gerada, produzirá o "
+"<filename>kernelconfig.html</filename>. Isso é por causa do valor "
+"<literal>id</literal> e não está relacionado ao nome do diretório."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1163
-#, fuzzy
 msgid ""
 "In earlier versions of the Handbook, the files were stored in the same "
 "directory as <filename>book.xml</filename>, and named after the value of the "
@@ -1794,84 +1734,77 @@ msgid ""
 "directories with a few files in them than it is to work with one directory "
 "that has many files in it."
 msgstr ""
-"Nas versões anteriores do Manual, os arquivos eram armazenados no mesmo "
-"diretório que <filename> book.xml </filename> e nomeados após o valor do "
-"atributo <literal> id </literal> no capítulo <tag> do arquivo. elemento </"
-"tag>. Agora, é possível incluir imagens em cada capítulo. Imagens para cada "
-"capítulo do Manual estão armazenadas em <filename> share / images / books / "
-"handbook </filename>. A versão localizada dessas imagens deve ser colocada "
-"no mesmo diretório que as fontes <acronym> XML </acronym> para cada capítulo."
-" As colisões de espaço de nomes são inevitáveis ​​e é mais fácil trabalhar "
-"com vários directórios com alguns ficheiros, do que trabalhar com um "
-"directório com muitos ficheiros."
+"Nas versões anteriores do Handbook, os arquivos eram armazenados no mesmo "
+"diretório que <filename>book.xml</filename> e nomeados após o valor do "
+"atributo <literal>id</literal> no elemento <tag>chapter</tag>. Agora, é "
+"possível incluir imagens em cada capítulo. Imagens para cada capítulo do "
+"Handbook são armazenadas em <filename>share/images/books/handbook</filename>."
+" As imagens devem ser colocadas no mesmo diretório que os fontes "
+"<acronym>XML</acronym> para cada capítulo. As colisões de Namespace são "
+"inevitáveis ​​e é mais fácil trabalhar com vários diretórios que contenham "
+"alguns arquivos, do que trabalhar com um único diretório que contenham "
+"muitos arquivos."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1177
-#, fuzzy
 msgid ""
 "A brief look will show that there are many directories with individual "
 "<filename>chapter.xml</filename> files, including <filename>basics/chapter."
 "xml</filename>, <filename>introduction/chapter.xml</filename>, and "
 "<filename>printing/chapter.xml</filename>."
 msgstr ""
-"Uma breve olhada mostrará que existem muitos diretórios com arquivos "
-"<filename> chapter.xml </filename> individuais, incluindo <filename> basics /"
-" chapter.xml </filename>, <filename> introduction / chapter.xml </filename> "
-"e <filename> printing / chapter.xml </filename>."
+"Com uma breve analise pode-se constatar que existem diversos diretórios com "
+"arquivos individuais <filename>chapter.xml</filename>, incluindo "
+"<filename>basics/chapter.xml</filename>, <filename>introduction/chapter.xml</"
+"filename>, e <filename>printing/chapter.xml</filename>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:1184
-#, fuzzy
 msgid ""
 "Do not name chapters or directories after their ordering within the Handbook."
 " This ordering can change as the content within the Handbook is reorganized. "
 "Reorganization should be possible without renaming files, unless entire "
 "chapters are being promoted or demoted within the hierarchy."
 msgstr ""
-"Não nomeie capítulos ou diretórios após a sua encomenda no Manual. Essa "
-"ordenação pode mudar conforme o conteúdo do Manual é reorganizado. A "
-"reorganização deve ser possível sem renomear arquivos, a menos que capítulos "
-"inteiros sejam promovidos ou rebaixados dentro da hierarquia."
+"Não nomeie capítulos ou diretórios com a ordenação do Handbook. Essa "
+"ordenação pode mudar conforme o conteúdo do Handbook é reorganizado. A "
+"reorganização deve ser realizada sem renomear arquivos, a menos que "
+"capítulos inteiros sejam promovidos ou rebaixados dentro da hierarquia."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:1192
-#, fuzzy
 msgid ""
 "The <filename>chapter.xml</filename> files are not complete <acronym>XML</"
 "acronym> documents that can be built individually. They can only be built as "
 "parts of the whole Handbook."
 msgstr ""
-"Os arquivos <filename> chapter.xml </filename> não estão completos em "
-"documentos <acronym> XML </acronym> que podem ser construídos "
-"individualmente. Eles só podem ser construídos como partes de todo o Manual."
+"Os arquivos <filename>chapter.xml</filename> não são arquivos completos de "
+"documentos <acronym>XML</acronym> que podem ser compilados individualmente. "
+"Eles só podem ser compilados como partes de todo o Handbook."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1234
-#, fuzzy
 msgid "The Documentation Build Process"
-msgstr "O processo de criação de documentação"
+msgstr "O Processo de Compilação da Documentação"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:1236
-#, fuzzy
 msgid ""
 "This chapter covers organization of the documentation build process and how "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> is used to control it."
 msgstr ""
-"Este capítulo aborda a organização do processo de criação de documentação e "
-"como <citerefentry> <refentrytitle> make </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> é usado para controlá-lo."
+"Este capítulo aborda a organização do processo de compilação da documentação "
+"e como o <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> é utilizado para isso."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1240
-#, fuzzy
 msgid "Rendering DocBook into Output"
-msgstr "Renderizando DocBook na saída"
+msgstr "Renderizando DocBook"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1242
-#, fuzzy
 msgid ""
 "Different types of output can be produced from a single DocBook source file. "
 "The type of output desired is set with the <varname>FORMATS</varname> "
@@ -1879,9 +1812,9 @@ msgid ""
 "varname>:"
 msgstr ""
 "Diferentes tipos de saída podem ser produzidos a partir de um único arquivo "
-"de origem do DocBook. O tipo de saída desejada é definido com a variável "
-"<varname> FORMATS </varname>. Uma lista de formatos conhecidos é armazenada "
-"em <varname> KNOWN_FORMATS </varname>:"
+"fonte DocBook. O tipo de saída desejado é definido com a variável "
+"<varname>FORMATS</varname>. Uma lista de formatos de saída conhecidos é "
+"armazenada em <varname>KNOWN_FORMATS</varname>:"
 
 #. (itstool) path: sect1/screen
 #. (itstool) id: book.translate.xml#doc-build-rendering-known-formats
@@ -1898,28 +1831,24 @@ msgstr ""
 
 #. (itstool) path: table/title
 #: book.translate.xml:1251
-#, fuzzy
 msgid "Common Output Formats"
 msgstr "Formatos de Saída Comuns"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1256
-#, fuzzy
 msgid "<varname>FORMATS</varname> Value"
-msgstr "<varname> FORMATS </varname> Valor"
+msgstr "Valor <varname>FORMATS</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1257
-#, fuzzy
 msgid "File Type"
-msgstr "Tipo de arquivo"
+msgstr "Tipo de Arquivo"
 
 #. (itstool) path: row/entry
 #. (itstool) path: segmentedlist/segtitle
 #: book.translate.xml:1258
 #: book.translate.xml:7229
 #: book.translate.xml:8385
-#, fuzzy
 msgid "Description"
 msgstr "Descrição"
 
@@ -1927,69 +1856,59 @@ msgstr "Descrição"
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1264
 #: book.translate.xml:2491
-#, fuzzy
 msgid "<literal>html</literal>"
-msgstr "<literal> html </literal>"
+msgstr "<literal>html</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1265
-#, fuzzy
 msgid "<acronym>HTML</acronym>, one file"
-msgstr "<acronym> HTML </acronym>, um arquivo"
+msgstr "<acronym>HTML</acronym>, arquivo único"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1266
-#, fuzzy
 msgid ""
 "A single <filename>book.html</filename> or <filename>article.html</filename>."
 ""
 msgstr ""
-"Um único <filename> book.html </filename> ou <filename> article.html </"
-"filename>."
+"Um único <filename>book.html</filename> ou <filename>article.html</filename>."
+""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1271
-#, fuzzy
 msgid "<literal>html-split</literal>"
-msgstr "<literal> html-split </literal>"
+msgstr "<literal>html-split</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1272
-#, fuzzy
 msgid "<acronym>HTML</acronym>, multiple files"
-msgstr "<acronym> HTML </acronym>, vários arquivos"
+msgstr "<acronym>HTML</acronym>, vários arquivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1273
-#, fuzzy
 msgid ""
 "Multiple <acronym>HTML</acronym> files, one for each chapter or section, for "
 "use on a typical web site."
 msgstr ""
-"Vários arquivos <acronym> HTML </acronym>, um para cada capítulo ou seção, "
-"para uso em um site típico."
+"Vários arquivos <acronym>HTML</acronym>, um para cada capítulo ou seção, "
+"para uso em um site comum."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1279
-#, fuzzy
 msgid "<literal>pdf</literal>"
-msgstr "<literal> pdf </literal>"
+msgstr "<literal>pdf</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1280
-#, fuzzy
 msgid "<acronym>PDF</acronym>"
-msgstr "<acronym> PDF </acronym>"
+msgstr "<acronym>PDF</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1281
-#, fuzzy
 msgid "Portable Document Format"
-msgstr "Formato de Documento Portátil"
+msgstr "Portable Document Format"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1287
-#, fuzzy
 msgid ""
 "The default output format can vary by document, but is usually <literal>html-"
 "split</literal>. Other formats are chosen by setting <varname>FORMATS</"
@@ -1997,16 +1916,15 @@ msgid ""
 "single time by setting <varname>FORMATS</varname> to a list of formats."
 msgstr ""
 "O formato de saída padrão pode variar de acordo com o documento, mas "
-"geralmente é <literal> html-split </literal>. Outros formatos são escolhidos "
-"definindo <varname> FORMATS </varname> para um valor específico. Múltiplos "
-"formatos de saída podem ser criados em uma única vez definindo <varname> "
-"FORMATS </varname> para uma lista de formatos."
+"geralmente é <literal>html-split</literal>. Outros formatos são escolhidos "
+"definindo <varname>FORMATS</varname> para um valor específico. Múltiplos "
+"formatos de saída podem ser criados de uma só vez definindo "
+"<varname>FORMATS</varname> para uma lista de formatos."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1294
-#, fuzzy
 msgid "Build a Single HTML Output File"
-msgstr "Construa um único arquivo de saída HTML"
+msgstr "Compilar um Arquivo Único HTML"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1296
@@ -2022,9 +1940,8 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:1301
-#, fuzzy
 msgid "Build HTML-Split and <acronym>PDF</acronym> Output Files"
-msgstr "Crie arquivos de saída HTML-Split e <acronym> PDF </acronym>"
+msgstr "Compilar HTML-Split e <acronym>PDF</acronym>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1304
@@ -2040,46 +1957,40 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1310
-#, fuzzy
 msgid "The FreeBSD Documentation Build Toolset"
-msgstr "O conjunto de ferramentas de compilação de documentação do FreeBSD"
+msgstr "O Conjunto de Ferramentas de Compilação da Documentação do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1312
-#, fuzzy
 msgid ""
 "These are the tools used to build and install the <acronym>FDP</acronym> "
 "documentation."
 msgstr ""
-"Estas são as ferramentas usadas para criar e instalar a documentação do "
-"<acronym> FDP </acronym>."
+"Estas são as ferramentas utilizadas para compilar e instalar a documentação "
+"do <acronym>FDP</acronym>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1317
-#, fuzzy
 msgid ""
 "The primary build tool is <citerefentry><refentrytitle>make</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, specifically "
 "<application>Berkeley Make</application>."
 msgstr ""
-"A principal ferramenta de construção é o <citerefentry> <refentrytitle> make "
-"</refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry>, especificamente "
-"o <application> Berkeley Make </application>."
+"A principal ferramenta de compilação é o <citerefentry><refentrytitle>make</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, especificamente o "
+"<application>Berkeley Make</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1322
-#, fuzzy
 msgid ""
 "Package building is handled by FreeBSD's <citerefentry><refentrytitle>pkg-"
 "create</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
-"O desenvolvimento de pacotes é tratado pelo <citerefentry> <refentrytitle> "
-"pkg-create </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> do "
-"FreeBSD."
+"A construção de pacotes é gerenciada pelo <citerefentry><refentrytitle>pkg-"
+"create</refentrytitle><manvolnum>8</manvolnum></citerefentry> do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1327
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> is used to create compressed versions of the document. "
@@ -2088,88 +1999,81 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is used for package "
 "building."
 msgstr ""
-"<citerefentry> <refentrytitle> gzip </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> é usado para criar versões compactadas do "
-"documento. Os arquivos <citerefentry> <refentrytitle> bzip2 </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> também são suportados. "
-"<citerefentry> <refentrytitle> tar </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> é usado para a construção de pacotes."
+"<citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> é usado para criar versões compactadas de um documento. "
+"<citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> também são suportados. <citerefentry><refentrytitle>tar</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> é usado na criação de "
+"pacotes."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1333
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>install</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> is used to install the documentation."
 msgstr ""
-"<citerefentry> <refentrytitle> install </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> é usado para instalar a documentação."
+"<citerefentry><refentrytitle>install</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> é usado para instalar a documentação."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1341
-#, fuzzy
 msgid "Understanding <filename>Makefile</filename>s in the Documentation Tree"
 msgstr ""
-"Noções básicas sobre <filename> Makefile </filename> s na árvore de "
-"documentação"
+"Noções Básicas de <filename>Makefile</filename>s no Repositório de "
+"Documentação"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1344
-#, fuzzy
 msgid ""
 "There are three main types of <filename>Makefile</filename>s in the FreeBSD "
 "Documentation Project tree."
 msgstr ""
-"Existem três tipos principais de <filename> Makefile </filename> s na árvore "
-"do Projeto de Documentação do FreeBSD."
+"Existem três tipos principais de <filename>Makefile</filename>s no "
+"repositório de Documentação do Projeto FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1349
-#, fuzzy
 msgid ""
 "<link linkend=\"sub-make\">Subdirectory <filename>Makefile</filename>s</"
 "link> simply pass commands to those directories below them."
 msgstr ""
-"<link linkend=\"sub-make\"> Subdiretório <filename> Makefile </filename> s </"
-"link> simplesmente passe os comandos para os diretórios abaixo deles."
+"<link linkend=\"sub-make\"><filename>Makefile</filename>s de Subdiretório</"
+"link> simplesmente passam os comandos para os diretórios abaixo deles."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1355
-#, fuzzy
 msgid ""
 "<link linkend=\"doc-make\">Documentation <filename>Makefile</filename>s</"
 "link> describe the documents that are produced from this directory."
 msgstr ""
-"<link linkend=\"doc-make\"> Documentação <filename> Makefile </filename> s </"
-"link> descreve os documentos produzidos a partir deste diretório."
+"<link linkend=\"doc-make\"><filename>Makefile</filename>s de Documentação</"
+"link> descrevem os documentos que devem ser produzidos a partir deste "
+"diretório."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1362
-#, fuzzy
 msgid ""
 "<link linkend=\"make-includes\"><application>Make</application> includes</"
 "link> are the glue that perform the document production, and are usually of "
 "the form <filename>doc.<replaceable>xxx</replaceable>.mk</filename>."
 msgstr ""
-"<link linkend=\"make-includes\"> <application> Tornar </application> inclui "
-"</link> a cola que executa a produção do documento e geralmente tem o "
-"formato <filename> doc. <replaceable> xxx </replaceable > .mk </filename>."
+"<link linkend=\"make-includes\"><application>Make</application> includes</"
+"link> são os responsáveis pela produção do documento, e geralmente possuem o "
+"nome no formato  <filename>doc.<replaceable>xxx</replaceable>.mk</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1370
-#, fuzzy
 msgid "Subdirectory <filename>Makefile</filename>s"
-msgstr "Subdiretório <filename> Makefile </filename> s"
+msgstr "<filename>Makefile</filename>s de Subdiretório"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1372
-#, fuzzy
 msgid "These <filename>Makefile</filename>s usually take the form of:"
-msgstr "Estes <filename> Makefile </filename> s geralmente tomam a forma de:"
+msgstr "Estes <filename>Makefile</filename>s geralmente tem a forma de:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1375
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "SUBDIR =articles\n"
 "SUBDIR+=books\n"
@@ -2179,55 +2083,51 @@ msgid ""
 "DOC_PREFIX?= ${.CURDIR}/..\n"
 ".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 msgstr ""
-"SUBDIR = artigos\n"
-"SUBDIR + = livros\n"
+"SUBDIR =articles\n"
+"SUBDIR+=books\n"
 "\n"
 "COMPAT_SYMLINK = en\n"
 "\n"
-"DOC_PREFIX? = $ {. CURDIR} / ..\n"
-".include \"$ {DOC_PREFIX} /share/mk/doc.project.mk\""
+"DOC_PREFIX?= ${.CURDIR}/..\n"
+".include \"${DOC_PREFIX}/share/mk/doc.project.mk\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1383
-#, fuzzy
 msgid ""
 "The first four non-empty lines define the <citerefentry><refentrytitle>make</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> variables "
 "<varname>SUBDIR</varname>, <varname>COMPAT_SYMLINK</varname>, and "
 "<varname>DOC_PREFIX</varname>."
 msgstr ""
-"As quatro primeiras linhas não vazias definem as variáveis ​​<citerefentry> "
-"<refentrytitle> make </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> <varname> SUBDIR </varname>, <varname> COMPAT_SYMLINK </"
-"varname> e <varname> DOC_PREFIX </varname>."
+"As quatro primeiras linhas não vazias definem as variáveis ​​do "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>,  <varname>SUBDIR</varname>, <varname>COMPAT_SYMLINK</"
+"varname>, e <varname>DOC_PREFIX</varname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1388
-#, fuzzy
 msgid ""
 "The <varname>SUBDIR</varname> statement and <varname>COMPAT_SYMLINK</"
 "varname> statement show how to assign a value to a variable, overriding any "
 "previous value."
 msgstr ""
-"A instrução <varname> SUBDIR </varname> e a instrução <varname> "
-"COMPAT_SYMLINK </varname> mostram como atribuir um valor a uma variável, "
-"substituindo qualquer valor anterior."
+"A declaração <varname>SUBDIR</varname> e <varname>COMPAT_SYMLINK</varname> "
+"mostram como atribuir um valor a uma variável, sobrescrevendo qualquer valor "
+"anterior que a mesma contenha."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1393
-#, fuzzy
 msgid ""
 "The second <varname>SUBDIR</varname> statement shows how a value is appended "
 "to the current value of a variable. The <varname>SUBDIR</varname> variable "
 "is now <literal>articles books</literal>."
 msgstr ""
-"A segunda instrução <varname> SUBDIR </varname> mostra como um valor é "
-"anexado ao valor atual de uma variável. A variável <varname> SUBDIR </"
-"varname> é agora <literal> articles books </literal>."
+"A segunda declaração <varname>SUBDIR</varname> mostra como um valor é "
+"anexado ao valor atual de uma variável. A variável <varname>SUBDIR</varname> "
+"agora é composta por <literal>articles books</literal>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1398
-#, fuzzy
 msgid ""
 "The <varname>DOC_PREFIX</varname> assignment shows how a value is assigned "
 "to the variable, but only if it is not already defined. This is useful if "
@@ -2235,39 +2135,35 @@ msgid ""
 "filename> thinks it is - the user can override this and provide the correct "
 "value."
 msgstr ""
-"A atribuição <varname> DOC_PREFIX </varname> mostra como um valor é "
-"atribuído à variável, mas somente se ela ainda não estiver definida. Isso é "
-"útil se <varname> DOC_PREFIX </varname> não estiver onde este <filename> "
-"Makefile </filename> achar que está - o usuário pode sobrescrever isso e "
-"fornecer o valor correto."
+"A declaração <varname>DOC_PREFIX</varname> mostra como um valor é atribuído "
+"para uma variável, mas somente se ela ainda não estiver definida. Isso é "
+"útil se <varname>DOC_PREFIX</varname> não for onde este <filename>Makefile</"
+"filename>pensa que é - o usuário pode cancelar e fornecer o valor correto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1405
-#, fuzzy
 msgid ""
 "What does it all mean? <varname>SUBDIR</varname> mentions which "
 "subdirectories below this one the build process should pass any work on to."
 msgstr ""
-"O que tudo isso significa? <varname> SUBDIR </varname> menciona quais "
-"subdiretórios abaixo deste o processo de construção deve passar para "
-"qualquer trabalho."
+"Agora o que tudo isso significa? <varname>SUBDIR</varname> lista quais "
+"subdiretórios abaixo do atual devem ser incluídos no processo de compilação "
+"durante a geração do documento."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1409
-#, fuzzy
 msgid ""
 "<varname>COMPAT_SYMLINK</varname> is specific to compatibility symlinks "
 "(amazingly enough) for languages to their official encoding (<filename>doc/"
 "en</filename> would point to <filename>en_US.ISO-8859-1</filename>)."
 msgstr ""
-"<varname> COMPAT_SYMLINK </varname> é específico para compatibilidade de "
-"links simbólicos (surpreendentemente) para linguagens com sua codificação "
-"oficial (<filename> doc / en </filename> apontaria para <filename> en_US.ISO-"
-"8859-1 </filename >)."
+"O <varname>COMPAT_SYMLINK</varname> é específico para compatibilizar os "
+"links simbólicos que ligam os idiomas a sua codificação oficial "
+"(<filename>doc/en</filename> deve apontar para <filename>en_US.ISO-8859-1</"
+"filename>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1414
-#, fuzzy
 msgid ""
 "<varname>DOC_PREFIX</varname> is the path to the root of the FreeBSD "
 "Document Project tree. This is not always that easy to find, and is also "
@@ -2275,55 +2171,51 @@ msgid ""
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> builtin variable with the path to the current directory."
 msgstr ""
-"<varname>DOC_PREFIX</varname> é o caminho para a raiz da árvore do Projeto "
-"de Documento do FreeBSD. Isso nem sempre é tão fácil de encontrar e também é "
-"facilmente substituído, para permitir flexibilidade. <varname>.CURDIR</"
-"varname> é uma variável interna <citerefentry><refentrytitle>make</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> com o caminho para o "
-"diretório atual."
+"O <varname>DOC_PREFIX</varname> é o caminho para a raíz da árvore do projeto "
+"de documentação do FreeBSD. O qual nem sempre é facil de encontrar, e que "
+"também pode ser facilmente sobrescrito, para permitir flexibilidade. O "
+"<varname>.CURDIR</varname> é uma variável interna do "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> que contém o caminho para o diretório atual."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1421
-#, fuzzy
 msgid ""
 "The final line includes the FreeBSD Documentation Project's project-wide "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> system file <filename>doc.project.mk</filename> which is the "
 "glue which converts these variables into build instructions."
 msgstr ""
-"A linha final inclui o arquivo de sistema <citerefentry><refentrytitle>make</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> <filename> doc.project."
-"mk </filename> do FreeBSD Documentation Project o qual é a cola que converte "
-"essas variáveis ​​em instruções de construção."
+"A linha final inclui o arquivo principal do "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> <filename>doc.project.mk</filename> do Projeto de Documentação "
+"do FreeBSD, ele é o responsável por converter estas variáveis em instruções "
+"de compilação."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1428
-#, fuzzy
 msgid "Documentation <filename>Makefile</filename>s"
-msgstr "Documentação <filename> Makefile </filename> s"
+msgstr "<filename>Makefile</filename>s de Documentação"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1430
-#, fuzzy
 msgid ""
 "These <filename>Makefile</filename>s set <citerefentry><refentrytitle>make</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> variables that "
 "describe how to build the documentation contained in that directory."
 msgstr ""
-"Essas variáveis ​​<filename> Makefile </filename> s <citerefentry> "
-"<refentrytitle> make </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> descrevem como construir a documentação contida nesse "
-"diretório."
+"Estes conjuntos de ​​<citerefentry><refentrytitle>make</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> <filename>Makefile</"
+"filename>s descrevem como construir a documentação contida nesse diretório."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1434
-#, fuzzy
 msgid "Here is an example:"
 msgstr "Aqui está um exemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1436
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "MAINTAINER=nik@FreeBSD.org\n"
 "\n"
@@ -2343,35 +2235,33 @@ msgid ""
 msgstr ""
 "MAINTAINER=nik@FreeBSD.org\n"
 "\n"
-"DOC? = Livro\n"
+"DOC?= book\n"
 "\n"
-"FORMATOS? = Html-split html\n"
+"FORMATS?= html-split html\n"
 "\n"
-"INSTALL_COMPRESSED? = Gz\n"
-"INSTALL_ONLY_COMPRESSED? =\n"
+"INSTALL_COMPRESSED?= gz\n"
+"INSTALL_ONLY_COMPRESSED?=\n"
 "\n"
-"# Conteúdo SGML\n"
-"SRCS = book.xml\n"
+"# SGML content\n"
+"SRCS=  book.xml\n"
 "\n"
-"DOC_PREFIX? = $ {. CURDIR} /../../ ..\n"
+"DOC_PREFIX?= ${.CURDIR}/../../..\n"
 "\n"
-".include \"$ (DOC_PREFIX) /share/mk/docproj.docbook.mk\""
+".include \"$(DOC_PREFIX)/share/mk/docproj.docbook.mk\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1452
-#, fuzzy
 msgid ""
 "The <varname>MAINTAINER</varname> variable allows committers to claim "
 "ownership of a document in the FreeBSD Documentation Project, and take "
 "responsibility for maintaining it."
 msgstr ""
-"A variável <varname> MAINTAINER </varname> permite que os committers "
+"A variável <varname>MAINTAINER</varname> permite que os committers "
 "reivindiquem a propriedade de um documento no Projeto de Documentação do "
 "FreeBSD, e sejam responsáveis ​​por mantê-lo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1457
-#, fuzzy
 msgid ""
 "<varname>DOC</varname> is the name (sans the <filename>.xml</filename> "
 "extension) of the main document created by this directory. <varname>SRCS</"
@@ -2379,15 +2269,14 @@ msgid ""
 "should also include important files in which a change should result in a "
 "rebuild."
 msgstr ""
-"<varname> DOC </varname> é o nome (sem a extensão <filename> .xml </"
-"filename>) do documento principal criado por este diretório. <varname> O "
-"SRCS </varname> lista todos os arquivos individuais que compõem o documento. "
-"Isso também deve incluir arquivos importantes nos quais uma alteração deve "
-"resultar em uma reconstrução."
+"<varname>DOC</varname> é o nome (sem a extensão <filename>.xml</filename>) "
+"do principal documento criado por este diretório. O <varname>SRCS</varname> "
+"lista todos os arquivos individuais que compõem o documento. Ela também deve "
+"incluir os arquivos importantes, nos quais qualquer mudança deve resultar em "
+"uma reconstrução."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1464
-#, fuzzy
 msgid ""
 "<varname>FORMATS</varname> indicates the default formats that should be "
 "built for this document. <varname>INSTALL_COMPRESSED</varname> is the "
@@ -2395,100 +2284,90 @@ msgid ""
 "build. <varname>INSTALL_ONLY_COMPRESS</varname>, empty by default, should be "
 "non-empty if only compressed documents are desired in the build."
 msgstr ""
-"FORMATOS <varname> </varname> indica os formatos padrão que devem ser "
-"criados para este documento. <varname> INSTALL_COMPRESSED </varname> é a "
-"lista padrão de técnicas de compactação que deve ser usada na criação do "
-"documento. <varname> INSTALL_ONLY_COMPRESS </varname>, vazio por padrão, "
-"deve estar vazio se apenas os documentos compactados forem desejados na "
-"construção."
+"<varname>FORMATS</varname>  indica os formatos nos quais o documento deve "
+"ser gerado por padrão. <varname>INSTALL_COMPRESSED</varname> contém a lista "
+"padrão das técnicas de compressão que devem ser usadas no documento depois "
+"que ele é gerado. A variável <varname>INSTALL_ONLY_COMPRESS</varname>, nula "
+"por padrão, deve ser definida para um valor não nulo apenas se você desejar "
+"gerar exclusivamente a versão compactada do documento."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1472
-#, fuzzy
 msgid ""
 "The <varname>DOC_PREFIX</varname> and include statements should be familiar "
 "already."
 msgstr ""
-"As instruções <varname> DOC_PREFIX </varname> e include devem estar "
-"familiarizadas já."
+"Você já deve estar familiarizado com a atribuição da variável "
+"<varname>DOC_PREFIX</varname> e com as instruções de include."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1478
-#, fuzzy
 msgid "FreeBSD Documentation Project <application>Make</application> Includes"
 msgstr ""
-"Projeto de Documentação do FreeBSD <application> Make </application> "
-"Includes"
+"Includes do <application>Make</application> do Projeto de Documentação do "
+"FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1481
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> includes are best explained by inspection of the code. Here "
 "are the system include files:"
 msgstr ""
-"<citerefentry> <refentrytitle> fazer </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> inclusões são melhor explicadas pela inspeção do "
-"código. Aqui estão os arquivos de inclusão do sistema:"
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> includes são melhor explicados por uma inspeção de código. "
+"Aqui estão os arquivos include do sistema:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1486
-#, fuzzy
 msgid ""
 "<filename>doc.project.mk</filename> is the main project include file, which "
 "includes all the following include files, as necessary."
 msgstr ""
-"<filename> doc.project.mk </filename> é o arquivo de inclusão do projeto "
-"principal, que inclui todos os arquivos de inclusão a seguir, conforme "
-"necessário."
+"<filename>doc.project.mk</filename> é o principal arquivo include do "
+"projeto, que inclui todos os arquivos includes necessários."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1492
-#, fuzzy
 msgid ""
 "<filename>doc.subdir.mk</filename> handles traversing of the document tree "
 "during the build and install processes."
 msgstr ""
-"<filename> doc.subdir.mk </filename> lida com a travessia da árvore de "
-"documentos durante os processos de compilação e instalação."
+"<filename>doc.subdir.mk</filename> controla a navegação na árvore de "
+"documentação durante o processo de construção e instalação."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1498
-#, fuzzy
 msgid ""
 "<filename>doc.install.mk</filename> provides variables that affect ownership "
 "and installation of documents."
 msgstr ""
-"O <filename> doc.install.mk </filename> fornece variáveis ​​que afetam a "
+"<filename>doc.install.mk</filename> fornece as variáveis que afetam a "
 "propriedade e a instalação de documentos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1503
-#, fuzzy
 msgid ""
 "<filename>doc.docbook.mk</filename> is included if <varname>DOCFORMAT</"
 "varname> is <literal>docbook</literal> and <varname>DOC</varname> is set."
 msgstr ""
-"<filename> doc.docbook.mk </filename> é incluído se <varname> DOCFORMAT </"
-"varname> for <literal> docbook </literal> e <varname> DOC </varname> estiver "
-"definido."
+"<filename>doc.docbook.mk</filename> é incluído se o <varname>DOCFORMAT</"
+"varname> for <literal>docbook</literal> e se a variável <varname>DOC</"
+"varname> estiver definida."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1510
-#, fuzzy
 msgid "<filename>doc.project.mk</filename>"
-msgstr "<filename> doc.project.mk </filename>"
+msgstr "<filename>doc.project.mk</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1512
-#, fuzzy
 msgid "By inspection:"
 msgstr "Por inspeção:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1514
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "DOCFORMAT?=\tdocbook\n"
 "MAINTAINER?=\tdoc@FreeBSD.org\n"
@@ -2505,17 +2384,17 @@ msgid ""
 ".include \"doc.subdir.mk\"\n"
 ".include \"doc.install.mk\""
 msgstr ""
-"DOCFORMAT? = Docbook\n"
-"MAINTAINER? = Doc@FreeBSD.org\n"
+"DOCFORMAT?=\tdocbook\n"
+"MAINTAINER?=\tdoc@FreeBSD.org\n"
 "\n"
-"PREFIXO? = / Usr / local\n"
-"PRI_LANG? = En_US.ISO8859-1\n"
+"PREFIX?=\t/usr/local\n"
+"PRI_LANG?=\ten_US.ISO8859-1\n"
 "\n"
-".if definido (DOC)\n"
-".if $ {DOCFORMAT} == \"docbook\"\n"
+".if defined(DOC)\n"
+".if ${DOCFORMAT} == \"docbook\"\n"
 ".include \"doc.docbook.mk\"\n"
-".fim se\n"
-".fim se\n"
+".endif\n"
+".endif\n"
 "\n"
 ".include \"doc.subdir.mk\"\n"
 ".include \"doc.install.mk\""
@@ -2523,66 +2402,61 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:1531
 #: book.translate.xml:1581
-#, fuzzy
 msgid "Variables"
 msgstr "Variáveis"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1533
-#, fuzzy
 msgid ""
 "<varname>DOCFORMAT</varname> and <varname>MAINTAINER</varname> are assigned "
 "default values, if these are not set by the document make file."
 msgstr ""
-"<varname> DOCFORMAT </varname> e <varname> MAINTAINER </varname> recebem "
-"valores padrão, se não forem definidos pelo arquivo de criação do documento."
+"As variáveis <varname>DOCFORMAT</varname> e <varname>MAINTAINER</varname> "
+"serão atribuídas com valores padrão, se o valor das mesmas não tiver sido "
+"definido no arquivo Makefile do documento."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1537
-#, fuzzy
 msgid ""
 "<varname>PREFIX</varname> is the prefix under which the <link linkend="
 "\"tools\">documentation building tools</link> are installed. For normal "
 "package and port installation, this is <filename>/usr/local</filename>."
 msgstr ""
-"<varname> PREFIX </varname> é o prefixo sob o qual as <link linkend="
-"\"tools\"> ferramentas de construção de documentação </link> estão "
-"instaladas. Para instalação normal de pacotes e portas, isto é <filename> / "
-"usr / local </filename>."
+"<varname>PREFIX</varname> define o caminho no qual os <link linkend="
+"\"tools\">aplicativos de construção da documentação</link> estão instalados. "
+"Para uma instalação normal através de pacotes e/ou ports, este caminho será "
+"sempre <filename>/usr/local</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1542
-#, fuzzy
 msgid ""
 "<varname>PRI_LANG</varname> should be set to whatever language and encoding "
 "is natural amongst users these documents are being built for. US English is "
 "the default."
 msgstr ""
-"<varname> PRI_LANG </varname> deve ser configurado para qualquer idioma e a "
-"codificação é natural entre os usuários para os quais esses documentos estão "
-"sendo criados. Inglês dos EUA é o padrão."
+"A variável <varname>PRI_LANG</varname> deve ser configurada para refletir o "
+"idioma e a codificação nativa dos usuários aos quais os documentos se "
+"destinam. O Inglês Americano é o padrão."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1548
-#, fuzzy
 msgid ""
 "<varname>PRI_LANG</varname> does not affect which documents can, or even "
 "will, be built. Its main use is creating links to commonly referenced "
 "documents into the FreeBSD documentation install root."
 msgstr ""
-"<varname> PRI_LANG </varname> não afeta os documentos que podem ou serão "
-"criados. Seu principal uso é criar links para documentos comumente "
-"referenciados na raiz de instalação da documentação do FreeBSD."
+"A variável <varname>PRI_LANG</varname> de maneira alguma afeta quais "
+"documentos serão, ou que poderão, ser compilados. Sua função principal é "
+"criar links para os documentos referenciados com maior frequência no "
+"diretório raiz de instalação da documentação do FreeBSD."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1556
-#, fuzzy
 msgid "Conditionals"
 msgstr "Condicionais"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1558
-#, fuzzy
 msgid ""
 "The <literal>.if defined(DOC)</literal> line is an example of a "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
@@ -2590,133 +2464,121 @@ msgid ""
 "some condition is true or if it is false. <literal>defined</literal> is a "
 "function which returns whether the variable given is defined or not."
 msgstr ""
-"A linha <literal> .if defined (DOC) </literal> é um exemplo de condicional "
+"A linha <literal>.if defined(DOC)</literal> é um exemplo da condicional do "
 "<citerefentry> <refentrytitle> make </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> que, como em outros programas , define o "
-"comportamento se alguma condição for verdadeira ou se for falsa. <literal> "
-"defined </literal> é uma função que retorna se a variável dada é definida ou "
-"não."
+"manvolnum> </citerefentry> como em outros programas, define o comportamento "
+"se alguma condição é verdadeira ou se é falsa. <literal> defined </literal> "
+"é uma função que retorna se uma dada variável está definida ou não."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1564
-#, fuzzy
 msgid ""
 "<literal>.if ${DOCFORMAT} == \"docbook\"</literal>, next, tests whether the "
 "<varname>DOCFORMAT</varname> variable is <literal>\"docbook\"</literal>, and "
 "in this case, includes <filename>doc.docbook.mk</filename>."
 msgstr ""
-"<literal> .if $ {DOCFORMAT} == \"docbook\" </literal>, a seguir, testa se a "
-"variável <varname> DOCFORMAT </varname> é <literal> \"docbook\" </literal> "
-"e, nesse caso, inclui <filename> doc.docbook.mk </filename>."
+"A seguir, <literal>.if ${DOCFORMAT} == \"docbook\"</literal> testa se a "
+"variável <varname>DOCFORMAT</varname> é <literal>\"docbook\"</literal>, e "
+"neste caso, inclue o <filename>doc.docbook.mk</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1569
-#, fuzzy
 msgid ""
 "The two <literal>.endif</literal>s close the two above conditionals, marking "
 "the end of their application."
 msgstr ""
-"Os dois <literal> .endif </literal> s fecham os dois condicionais acima, "
-"marcando o fim de sua aplicação."
+"Os dois <literal>.endif</literal>s fecham as duas condicionais anteriores, "
+"marcando o fim da sua aplicação"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1575
-#, fuzzy
 msgid "<filename>doc.subdir.mk</filename>"
-msgstr "<filename> doc.subdir.mk </filename>"
+msgstr "<filename>doc.subdir.mk</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1577
-#, fuzzy
 msgid ""
 "This file is too long to explain in detail. These notes describe the most "
 "important features."
 msgstr ""
 "Este arquivo é muito longo para ser explicado em detalhes. Estas notas "
-"descrevem os recursos mais importantes."
+"descrevem as principais funcionalidades."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1585
-#, fuzzy
 msgid ""
 "<varname>SUBDIR</varname> is a list of subdirectories that the build process "
 "should go further down into."
 msgstr ""
-"<varname> SUBDIR </varname> é uma lista de subdiretórios para os quais o "
-"processo de construção deve ir mais abaixo."
+"<varname>SUBDIR</varname> é a lista de subdiretórios nos quais o processo de "
+"construção deve ser executado."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1591
-#, fuzzy
 msgid ""
 "<varname>ROOT_SYMLINKS</varname> is the name of directories that should be "
 "linked to the document install root from their actual locations, if the "
 "current language is the primary language (specified by <varname>PRI_LANG</"
 "varname>)."
 msgstr ""
-"<varname> ROOT_SYMLINKS </varname> é o nome dos diretórios que devem ser "
-"vinculados à raiz de instalação do documento a partir de seus locais reais, "
-"se o idioma atual for o idioma principal (especificado por <varname> "
-"PRI_LANG </varname>)."
+"<varname>ROOT_SYMLINKS</varname> são os nomes dos diretórios que devem ser "
+"linkados para a raíz de instalação do documento a partir da sua localização "
+"atual, se o idioma atual for o idioma primário (especificado por "
+"<varname>PRI_LANG</varname>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1599
-#, fuzzy
 msgid ""
 "<varname>COMPAT_SYMLINK</varname> is described in the <link linkend=\"sub-"
 "make\">Subdirectory Makefile</link> section."
 msgstr ""
-"O <varname> COMPAT_SYMLINK </varname> é descrito na seção <link linkend="
-"\"sub-make\"> Subdiretório Makefile </link>."
+"<varname>COMPAT_SYMLINK</varname> já foi descrito na seção <link linkend="
+"\"sub-make\">Makefiles de Subdiretório</link>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1608
-#, fuzzy
 msgid "Targets and Macros"
-msgstr "Alvos e Macros"
+msgstr "Targets e Macros"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1610
-#, fuzzy
 msgid ""
 "Dependencies are described by <literal><replaceable>target</replaceable>: "
 "<replaceable>dependency1 dependency2 ...</replaceable></literal> tuples, "
 "where to build <literal>target</literal>, the given dependencies must be "
 "built first."
 msgstr ""
-"Dependências são descritas por <literal> <replaceable> destino </"
-"replaceable>: <replaceable> dependency1 dependency2 ... </replaceable> </"
-"literal> tuples, onde para construir <literal> target </literal>, as "
-"dependências dadas devem ser construído primeiro."
+"As dependências são descritas por <literal><replaceable>target</replaceable>:"
+" <replaceable>dependência1 dependência2 ...</replaceable></literal>, nas "
+"quais, para construir o <literal>target</literal>, é necessário "
+"primeiramente construir as dependências informadas."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1617
-#, fuzzy
 msgid ""
 "After that descriptive tuple, instructions on how to build the target may be "
 "given, if the conversion process between the target and its dependencies are "
 "not previously defined, or if this particular conversion is not the same as "
 "the default conversion method."
 msgstr ""
-"Após essa tupla descritiva, instruções sobre como construir o destino podem "
-"ser fornecidas, se o processo de conversão entre o destino e suas "
-"dependências não for definido anteriormente ou se essa conversão específica "
-"não for igual ao método de conversão padrão."
+"Depois desta descrição, instruções de como construir o target podem ser "
+"passadas, no caso do processo de conversão entre o target e estas "
+"dependências não tiver sido previamente definido, ou se esta conversão em "
+"particular não for a mesma que a definida pelo método padrão de conversão."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1623
-#, fuzzy
 msgid ""
 "A special dependency <literal>.USE</literal> defines the equivalent of a "
 "macro."
 msgstr ""
-"Uma dependência especial <literal> .USE </literal> define o equivalente de "
-"uma macro."
+"A dependência especial <literal>.USE</literal> define o equivalente a uma "
+"macro."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:1626
 #: book.translate.xml:1713
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "_SUBDIRUSE: .USE\n"
 ".for entry in ${SUBDIR}\n"
@@ -2737,23 +2599,20 @@ msgstr ""
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1633
 #: book.translate.xml:1649
-#, fuzzy
 msgid "_SUBDIRUSE"
 msgstr "_SUBDIRUSE"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1633
-#, fuzzy
 msgid ""
 "In the above, <_:buildtarget-1/> is now a macro which will execute the given "
 "commands when it is listed as a dependency."
 msgstr ""
-"Acima, <_:buildtarget-1/> é agora uma macro que executará os comandos "
-"fornecidos quando for listada como uma dependência."
+"No código acima, <_:buildtarget-1/> é agora uma macro, a qual irá executar "
+"determinados comandos quando for listada como dependência."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1637
-#, fuzzy
 msgid ""
 "What sets this macro apart from other targets? Basically, it is executed "
 "<emphasis>after</emphasis> the instructions given in the build procedure it "
@@ -2761,19 +2620,19 @@ msgid ""
 "varname>, which is the variable which contains the name of the target "
 "currently being built."
 msgstr ""
-"O que diferencia essa macro de outros alvos? Basicamente, ele é executado "
-"<emphasis> após </emphasis> as instruções dadas no procedimento de "
-"construção é listado como uma dependência para, e não ajusta <varname> ."
-"TARGET </varname>, que é a variável que contém o nome do alvo atualmente "
-"sendo construído."
+"O que diferencia essa macro de outros targets? Basicamente, ela é executada "
+"<emphasis>após</emphasis> as instruções passadas no processo de construção "
+"por ser uma dependência para o mesmo, e ela não configura o <varname>."
+"TARGET</varname>, que é a variável que contém o nome do target atual que "
+"está sendo construído."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:1645
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "clean: _SUBDIRUSE\n"
 "\trm -f ${CLEANFILES}"
 msgstr "clean: _SUBDIRUSE\n"
-"rm -f $ {CLEANFILES}"
+"\trm -f ${CLEANFILES}"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1648
@@ -2782,13 +2641,11 @@ msgstr "clean: _SUBDIRUSE\n"
 #: book.translate.xml:6096
 #: book.translate.xml:6100
 #: book.translate.xml:6104
-#, fuzzy
 msgid "clean"
-msgstr "limpar"
+msgstr "clean"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1648
-#, fuzzy
 msgid ""
 "In the above, <_:buildtarget-1/> will use the <_:buildtarget-2/> macro after "
 "it has executed the instruction <command>rm -f ${CLEANFILES}</command>. In "
@@ -2796,128 +2653,114 @@ msgid ""
 "directory tree, deleting built files as it goes <emphasis>down</emphasis>, "
 "not on the way back up."
 msgstr ""
-"Acima, <_:buildtarget-1/> usará a macro <_:buildtarget-2/> depois de "
-"executar a instrução <command> rm -f $ {CLEANFILES} </command>. De fato, "
-"isso faz com que <_:buildtarget-3/> vá mais e mais para baixo na árvore de "
-"diretórios, excluindo os arquivos construídos à medida que vão <emphasis> "
-"para baixo </emphasis>, e não no caminho de volta."
+"No código acima, o <_:buildtarget-1/> usará a macro <_:buildtarget-2/> "
+"depois de ter executado a instrução <command>rm -f $ {CLEANFILES}</command>. "
+"De fato, isso faz com que <_:buildtarget-3/> vá mais a fundo na árvore de "
+"diretórios, excluindo os arquivos construídos à medida que vai "
+"<emphasis>descendo</emphasis> pelos subdiretórios, e não quando vai na "
+"direção oposta."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:1658
-#, fuzzy
 msgid "Provided Targets"
-msgstr "Alvos Fornecidos"
+msgstr "Targets Fornecidos"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1662
-#, fuzzy
 msgid "install"
-msgstr "instalar"
+msgstr "install"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1663
-#, fuzzy
 msgid "package"
-msgstr "pacote"
+msgstr "package"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1666
-#, fuzzy
 msgid "realinstall"
 msgstr "realinstall"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1667
-#, fuzzy
 msgid "realpackage"
 msgstr "realpackage"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1662
-#, fuzzy
 msgid ""
 "<_:buildtarget-1/> and <_:buildtarget-2/> both go down the directory tree "
 "calling the real versions of themselves in the subdirectories (<_:"
 "buildtarget-3/> and <_:buildtarget-4/> respectively)."
 msgstr ""
 "<_:buildtarget-1/> e <_:buildtarget-2/> ambos percorrem a árvore de "
-"diretórios chamando as versões reais de si mesmos nos subdiretórios (<_:"
+"diretórios executando as suas versões reais dentro dos subdiretórios (<_:"
 "buildtarget-3/> e <_:buildtarget-4/> respectivamente)."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1675
-#, fuzzy
 msgid "cleandir"
 msgstr "cleandir"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1672
-#, fuzzy
 msgid ""
 "<_:buildtarget-1/> removes files created by the build process (and goes down "
 "the directory tree too). <_:buildtarget-2/> does the same, and also removes "
 "the object directory, if any."
 msgstr ""
 "<_:buildtarget-1/> remove arquivos criados pelo processo de compilação (e "
-"também desce na árvore de diretórios). <_:buildtarget-2/> faz o mesmo e "
-"também remove o diretório de objetos, se houver."
+"também desce na árvore de diretórios). <_:buildtarget-2/> faz a mesma coisa, "
+"e também remove o diretório de objetos se este existir."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1683
-#, fuzzy
 msgid "More on Conditionals"
-msgstr "Mais sobre condicionais"
+msgstr "Mais Condicionais"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1687
-#, fuzzy
 msgid ""
 "<literal>exists</literal> is another condition function which returns true "
 "if the given file exists."
 msgstr ""
-"<literal> exists </literal> é outra função de condição que retorna true se o "
-"arquivo fornecido existir."
+"<literal>exists</literal> é outra função condicional que retorna verdadeiro "
+"se o arquivo informado existir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1693
-#, fuzzy
 msgid "<literal>empty</literal> returns true if the given variable is empty."
 msgstr ""
-"<literal> empty </literal> retorna verdadeiro se a variável dada estiver "
+"<literal>empty</literal> retorna verdadeiro se a variável informada estiver "
 "vazia."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1698
-#, fuzzy
 msgid ""
 "<literal>target</literal> returns true if the given target does not already "
 "exist."
 msgstr ""
-"<literal> target </literal> retorna true se o destino especificado ainda não "
+"<literal>target</literal> retorna verdadeiro se o target informado ainda não "
 "existir."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1705
-#, fuzzy
 msgid "Looping Constructs in <command>make (.for)</command>"
-msgstr "Construções em loop em <command> make (.for) </command>"
+msgstr "Construções de Looping no <command>make (.for)</command>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1708
-#, fuzzy
 msgid ""
 "<literal>.for</literal> provides a way to repeat a set of instructions for "
 "each space-separated element in a variable. It does this by assigning a "
 "variable to contain the current element in the list being examined."
 msgstr ""
-"<literal> .for </literal> fornece uma maneira de repetir um conjunto de "
-"instruções para cada elemento separado por espaço em uma variável. Ele faz "
-"isso atribuindo uma variável para conter o elemento atual na lista que está "
-"sendo examinada."
+"<literal>.for</literal> fornece uma maneira de repetir instruções definidas "
+"para cada elemento separado por espaço em uma variável. Ele faz isso "
+"atribuíndo uma variável para conter o elemento atual da lista que está sendo "
+"examinada."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1720
-#, fuzzy
 msgid ""
 "In the above, if <varname>SUBDIR</varname> is empty, no action is taken; if "
 "it has one or more elements, the instructions between <literal>.for</"
@@ -2925,51 +2768,45 @@ msgid ""
 "<varname>entry</varname> being replaced with the value of the current "
 "element."
 msgstr ""
-"Acima, se <varname> SUBDIR </varname> estiver vazio, nenhuma ação será "
-"executada; se tiver um ou mais elementos, as instruções entre <literal> .for "
-"</literal> e <literal> .endfor </literal> serão repetidas para cada "
-"elemento, com <varname> entrada </varname> sendo substituída pelo valor do "
-"elemento atual."
+"No código acima, se <varname>SUBDIR</varname> estiver vazia, nenhuma ação "
+"será executada; se ela possuir um ou mais elementos, as instruções entre "
+"<literal> .for </literal> e <literal> .endfor </literal> serão repetidas "
+"para cada elemento, com o <varname>entry</varname> sendo substituído com o "
+"valor do elemento atual."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1763
-#, fuzzy
 msgid "The Website"
-msgstr "O site"
+msgstr "O Website"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:1765
-#, fuzzy
 msgid ""
 "The FreeBSD web site is part of the FreeBSD documents. Files for the web "
 "site are stored in the <filename>en_US.ISO8859-1/htdocs</filename> "
 "subdirectory of the document tree directory, <filename>~/doc</filename> in "
 "this example."
 msgstr ""
-"O site do FreeBSD é parte dos documentos do FreeBSD. Os arquivos para o site "
-"são armazenados no subdiretório <filename> en_US.ISO8859-1 / htdocs </"
-"filename> do diretório da árvore de documentos, <filename> ~ / doc </"
-"filename> neste exemplo."
+"O web site do FreeBSD é parte da documentação do FreeBSD. Os arquivos para o "
+"web site são armazenados no subdiretório <filename>en_US.ISO8859-1/htdocs</"
+"filename> do repositório <filename>~/doc</filename> neste exemplo."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1772
-#, fuzzy
 msgid "Environment Variables"
-msgstr "variáveis ​​ambientais"
+msgstr "Variáveis ​​de Ambiente"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1774
-#, fuzzy
 msgid ""
 "Several environment variables control which parts of the web site are built "
 "or installed, and to which directories."
 msgstr ""
-"Diversas variáveis ​​de ambiente controlam quais partes do site são "
-"construídas ou instaladas e para quais diretórios."
+"Diversas variáveis ​​de ambiente controlam quais partes do web site são "
+"compiladas ou instaladas e para quais diretórios."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1779
-#, fuzzy
 msgid ""
 "The web build system uses <citerefentry><refentrytitle>make</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, and considers "
@@ -2978,30 +2815,28 @@ msgid ""
 "variables. Setting or defining these variables with other values or methods "
 "might lead to unexpected surprises."
 msgstr ""
-"O sistema de compilação da web usa <citerefentry> <refentrytitle> make </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> e considera "
-"variáveis ​​a serem definidas quando foram definidas, mesmo se estiverem "
-"vazias. Os exemplos aqui mostram as formas recomendadas de definir e usar "
-"essas variáveis. Definir ou definir essas variáveis ​​com outros valores ou "
+"O sistema de compilação do web site utiliza o "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, e valida variáveis configuradas mesmo se estiverem vazias. Os "
+"exemplos aqui mostram as formas recomendadas de configurar e utilizar essas "
+"variáveis. Definir ou configurar essas variáveis ​​com outros valores ou "
 "métodos pode levar a surpresas inesperadas."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1789
-#, fuzzy
 msgid "<varname>DESTDIR</varname>"
-msgstr "<varname> DESTDIR </varname>"
+msgstr "<varname>DESTDIR</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1792
-#, fuzzy
 msgid ""
 "DESTDIR specifies the path where the web site files are to be installed."
 msgstr ""
-"DESTDIR especifica o caminho onde os arquivos do site devem ser instalados."
+"DESTDIR especifica o caminho onde os arquivos do web site devem ser "
+"instalados."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1795
-#, fuzzy
 msgid ""
 "This variable is best set with <citerefentry><refentrytitle>env</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> or the user shell's "
@@ -3011,100 +2846,91 @@ msgid ""
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
-"Esta variável é melhor configurada com <citerefentry> <refentrytitle> env </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> ou o método do "
-"shell do usuário para configurar variáveis ​​de ambiente, <command> setenv </"
-"command> para <citerefentry > <refentrytitle> csh </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> ou <command> export </command> "
-"para <citerefentry> <refentrytitle> sh </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry>."
+"Esta variável é melhor configurada com <citerefentry><refentrytitle>env</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> ou o método do shell "
+"do usuário para configurar variáveis ​​de ambiente, <command>setenv</"
+"command> para <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> ou <command>export</command> para "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1805
-#, fuzzy
 msgid "<varname>ENGLISH_ONLY</varname>"
-msgstr "<varname> ENGLISH_ONLY </varname>"
+msgstr "<varname>ENGLISH_ONLY</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1808
-#, fuzzy
 msgid "Default: undefined. Build and include all translations."
-msgstr "Padrão: indefinido. Construa e inclua todas as traduções."
+msgstr "Padrão: indefinido. Compile e inclua todas as traduções."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1811
-#, fuzzy
 msgid ""
 "<userinput>ENGLISH_ONLY=yes</userinput>: use only the English documents and "
 "ignore all translations."
 msgstr ""
-"<userinput> ENGLISH_ONLY = yes </userinput>: use apenas os documentos em "
-"inglês e ignore todas as traduções."
+"<userinput>ENGLISH_ONLY=yes</userinput>: compile apenas os documentos em "
+"Inglês e ignore todas as traduções."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1817
-#, fuzzy
 msgid "<varname>WEB_ONLY</varname>"
-msgstr "<varname> WEB_ONLY </varname>"
+msgstr "<varname>WEB_ONLY</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1820
-#, fuzzy
 msgid ""
 "Default: undefined. Build both the web site and all the books and articles."
-msgstr "Padrão: indefinido. Construa o site e todos os livros e artigos."
+msgstr "Padrão: indefinido. Compile o web site e todos os livros e artigos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1823
-#, fuzzy
 msgid ""
 "<userinput>WEB_ONLY=yes</userinput>: build or install only <acronym>HTML</"
 "acronym> pages from the <filename>en_US.ISO8859-1/htdocs</filename> "
 "directory. Other directories and documents, including books and articles, "
 "will be ignored."
 msgstr ""
-"<userinput> WEB_ONLY = yes </userinput>: construa ou instale apenas páginas "
-"<acronym> HTML </acronym> do diretório <filename> en_US.ISO8859-1 / htdocs </"
+"<userinput>WEB_ONLY=yes</userinput>:  Compile ou instale apenas páginas "
+"<acronym>HTML</acronym> do diretório <filename>en_US.ISO8859-1/htdocs</"
 "filename>. Outros diretórios e documentos, incluindo livros e artigos, serão "
 "ignorados."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1832
-#, fuzzy
 msgid "<varname>WEB_LANG</varname>"
-msgstr "<varname> WEB_LANG </varname>"
+msgstr "<varname>WEB_LANG</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1835
-#, fuzzy
 msgid ""
 "Default: undefined. Build and include all the available languages on the web "
 "site."
 msgstr ""
-"Padrão: indefinido. Crie e inclua todos os idiomas disponíveis no site."
+"Padrão: indefinido. Compile e inclua todos os idiomas disponíveis no web "
+"site."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1838
-#, fuzzy
 msgid ""
 "Set to a space-separated list of languages to be included in the build or "
 "install. The formats are the same as the directory names in the document "
 "root directory. For example, to include the German and French documents:"
 msgstr ""
-"Defina como uma lista separada por espaços de idiomas a serem incluídos na "
-"compilação ou instalação. Os formatos são os mesmos que os nomes de "
-"diretório no diretório raiz do documento. Por exemplo, para incluir os "
-"documentos alemão e francês:"
+"Defina com uma lista separada por espaços, todos os idiomas a serem "
+"incluídos na compilação ou instalação. Os formatos são os mesmos que os "
+"nomes de diretório no diretório raiz do documento. Por exemplo, para incluir "
+"os documentos alemão e francês:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:1844
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<userinput>WEB_LANG=\"de_DE.ISO8859-1 fr_FR.ISO8859-1\"</userinput>"
-msgstr "<userinput> WEB_LANG=\"de_DE.ISO8859-1 fr_FR.ISO8859-1\" </userinput>"
+msgstr "<userinput>WEB_LANG=\"de_DE.ISO8859-1 fr_FR.ISO8859-1\"</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1849
-#, fuzzy
 msgid ""
 "<varname>WEB_ONLY</varname>, <varname>WEB_LANG</varname>, and "
 "<varname>ENGLISH_ONLY</varname> are <citerefentry><refentrytitle>make</"
@@ -3112,32 +2938,29 @@ msgid ""
 "set in <filename>/etc/make.conf</filename>, <filename>Makefile.inc</"
 "filename>, as environment variables on the command line, or in dot files."
 msgstr ""
-"<varname> WEB_ONLY </varname>, <varname> WEB_LANG </varname> e <varname> "
-"ENGLISH_ONLY </varname> são <citerefentry> <refentrytitle> make </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry > variáveis ​​e "
-"pode ser definido em <filename> /etc/make.conf </filename>, <filename> "
-"Makefile.inc </filename>, como variáveis ​​de ambiente na linha de comando, "
-"ou em arquivos de ponto."
+"<varname>WEB_ONLY</varname>, <varname>WEB_LANG</varname>, e "
+"<varname>ENGLISH_ONLY</varname> são variáveis "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> que​e podem ser definidas em <filename>/etc/make.conf</"
+"filename>, <filename>Makefile.inc</filename>, como variáveis ​​de ambiente "
+"na linha de comando, ou em arquivos dot."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1857
-#, fuzzy
 msgid "Building and Installing the Web Pages"
-msgstr "Criando e Instalando as Páginas da Web"
+msgstr "Compilando e Instalando as Páginas Web"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1859
-#, fuzzy
 msgid ""
 "Having obtained the documentation and web site source files, the web site "
 "can be built."
 msgstr ""
-"Tendo obtido a documentação e os arquivos de origem do site, o site pode ser "
-"construído."
+"Após obter os arquivos fontes da documentação e web site, o site pode ser "
+"compilado."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1862
-#, fuzzy
 msgid ""
 "An actual installation of the web site is run as the <systemitem class="
 "\"username\">root</systemitem> user because the permissions on the web "
@@ -3145,28 +2968,26 @@ msgid ""
 "user. For testing, it can be useful to install the files as a normal user to "
 "a temporary directory."
 msgstr ""
-"Uma instalação real do site é executada como o usuário <systemitem class="
-"\"username\"> root </systemitem> porque as permissões no diretório do "
-"servidor web não permitirão a instalação de arquivos por um usuário não "
-"privilegiado. Para testar, pode ser útil instalar os arquivos como um "
-"usuário normal em um diretório temporário."
+"Uma instalação real do web site precisa ser executada pelo usuário "
+"<systemitem class=\"username\">root</systemitem> porque as permissões no "
+"diretório do servidor web não permitirão a instalação de arquivos por um "
+"usuário não privilegiado. Para testar, pode ser útil instalar os arquivos "
+"com um usuário normal em um diretório temporário."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1868
-#, fuzzy
 msgid ""
 "In these examples, the web site files are built by user <systemitem class="
 "\"username\">jru</systemitem> in their home directory, <filename>~/doc</"
 "filename>, with a full path of <filename>/usr/home/jru/doc</filename>."
 msgstr ""
-"Nestes exemplos, os arquivos do site são criados pelo usuário <systemitem "
-"class=\"username\"> jru </systemitem> em seu diretório home, <filename> ~ / "
-"doc </filename>, com um caminho completo de <filename> / usr / home / jru / "
-"doc </filename>."
+"Nestes exemplos, os arquivos do web site são criados pelo usuário "
+"<systemitem class=\"username\">jru</systemitem> em seu diretório home, "
+"<filename>~/doc</filename>, com um caminho completo de <filename>/usr/home/"
+"jru/doc</filename>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1874
-#, fuzzy
 msgid ""
 "The web site build uses the <filename>INDEX</filename> from the Ports "
 "Collection and might fail if that file or <filename>/usr/ports</filename> is "
@@ -3174,27 +2995,26 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports.html#ports-"
 "tree\">Ports Collection</link>."
 msgstr ""
-"A compilação do site usa o <filename> INDEX </filename> da coleção Ports e "
-"pode falhar se esse arquivo ou <filename> / usr / ports </filename> não "
-"estiver presente. A abordagem mais simples é instalar o <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc / pt_BR.ISO8859-1 / books / handbook / ports.html # "
-"ports-tree\"> Coleção de Portas </link>."
+"A compilação do web site utiliza o arquivo <filename>INDEX</filename> da "
+"Coleção de Ports e pode falhar se este arquivo ou <filename>/usr/ports</"
+"filename> não estiver presente no sistema. A abordagem mais simples é "
+"instalar a <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/ports.html#ports-tree\">Cole\n"
+"ção de Ports</link>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1882
-#, fuzzy
 msgid "Build the Full Web Site and All Documents"
-msgstr "Construa o site completo e todos os documentos"
+msgstr "Compile o Web Site Completo e Todos Documentos"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1884
-#, fuzzy
 msgid ""
 "Build the web site and all documents. The resulting files are left in the "
 "document tree:"
 msgstr ""
-"Construa o site e todos os documentos. Os arquivos resultantes são deixados "
-"na árvore do documento:"
+"Compile o web site e todos os documentos. Os arquivos finais são deixados na "
+"árvore de documento:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1887
@@ -3208,21 +3028,19 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:1892
-#, fuzzy
 msgid "Build Only the Web Site in English"
-msgstr "Construa apenas o site em inglês"
+msgstr "Compile Apenas o Web Site em Inglês"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1894
-#, fuzzy
 msgid ""
 "Build the web site only, in English, as user <systemitem class="
 "\"username\">jru</systemitem>, and install the resulting files into "
 "<filename>/tmp/www</filename> for testing:"
 msgstr ""
-"Construa o site apenas em inglês, como usuário <systemitem class="
-"\"username\"> jru </systemitem>, e instale os arquivos resultantes em "
-"<filename> / tmp / www </filename> para teste:"
+"Compile o web site apenas em Inglês, como usuário <systemitem class="
+"\"username\">jru</systemitem>, e instale os arquivos finais em <filename>/"
+"tmp/www</filename> para teste:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1899
@@ -3238,15 +3056,14 @@ msgstr ""
 
 #. (itstool) path: example/para
 #: book.translate.xml:1902
-#, fuzzy
 msgid ""
 "Changes to static files can usually be tested by viewing the modified files "
 "directly with a web browser. If the site has been built as shown above, a "
 "modified main page can be viewed with:"
 msgstr ""
 "Alterações em arquivos estáticos geralmente podem ser testadas visualizando "
-"os arquivos modificados diretamente com um navegador da web. Se o site foi "
-"construído como mostrado acima, uma página principal modificada pode ser "
+"os arquivos modificados diretamente com um navegador web. Se o web site foi "
+"construído como apresentado acima, a página principal modificada pode ser "
 "visualizada com:"
 
 #. (itstool) path: example/screen
@@ -3259,21 +3076,20 @@ msgstr ""
 
 #. (itstool) path: example/para
 #: book.translate.xml:1909
-#, fuzzy
 msgid ""
 "Modifications to dynamic files can be tested with a web server running on "
 "the local system. After building the site as shown above, this <filename>/"
 "usr/local/etc/apache24/httpd.conf</filename> can be used with <package>www/"
 "apache24</package>:"
 msgstr ""
-"Modificações em arquivos dinâmicos podem ser testadas com um servidor da Web "
-"em execução no sistema local. Depois de construir o site como mostrado "
-"acima, este <filename> /usr/local/etc/apache24/httpd.conf </filename> pode "
-"ser usado com <package> www / apache24 </package>:"
+"Modificações em arquivos dinâmicos podem ser testadas com um servidor web "
+"rodando no sistema local. Depois de construir o site como apresentado acima, "
+"o <filename>/usr/local/etc/apache24/httpd.conf</filename> pode ser usado com "
+"<package>www/apache24</package>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1915
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# httpd.conf for testing the FreeBSD website\n"
 "Define TestRoot \"/tmp/www/data\"\n"
@@ -3330,66 +3146,65 @@ msgid ""
 "\n"
 "Include etc/apache24/Includes/*.conf"
 msgstr ""
-"# httpd.conf para testar o site do FreeBSD\n"
-"Definir TestRoot \"/ tmp / www / data\"\n"
+"# httpd.conf for testing the FreeBSD website\n"
+"Define TestRoot \"/tmp/www/data\"\n"
 "\n"
-"# diretório para arquivos de configuração\n"
-"ServerRoot \"/ usr / local\"\n"
+"# directory for configuration files\n"
+"ServerRoot \"/usr/local\"\n"
 "\n"
-"Ouça 80\n"
+"Listen 80\n"
 "\n"
-"# módulos mínimos necessários\n"
-"LoadModule authz_core_module libexec / apache24 / mod_authz_core.so\n"
-"LoadModule mime_module libexec / apache24 / mod_mime.so\n"
-"LoadModule unixd_module libexec / apache24 / mod_unixd.so\n"
-"LoadModule cgi_module libexec / apache24 / mod_cgi.so\n"
-"LoadModule dir_module libexec / apache24 / mod_dir.so\n"
+"# minimum required modules\n"
+"LoadModule authz_core_module libexec/apache24/mod_authz_core.so\n"
+"LoadModule mime_module libexec/apache24/mod_mime.so\n"
+"LoadModule unixd_module libexec/apache24/mod_unixd.so\n"
+"LoadModule cgi_module libexec/apache24/mod_cgi.so\n"
+"LoadModule dir_module libexec/apache24/mod_dir.so\n"
 "\n"
-"# execute o servidor da web como usuário e grupo\n"
-"Usuário www\n"
-"Grupo www\n"
+"# run the webserver as user and group\n"
+"User www\n"
+"Group www\n"
 "\n"
-"ServerAdmin você@example.com\n"
-"Nome_do_servidor fbsdtest\n"
+"ServerAdmin you@example.com\n"
+"ServerName fbsdtest\n"
 "\n"
-"# negar acesso a todos os arquivos\n"
-"&lt; Diretório / &gt;\n"
-"    AllowOverride none\n"
-"    Exigir tudo negado\n"
-"&lt; / Diretório &gt;\n"
+"# deny access to all files\n"
+"&lt;Directory /&gt;\n"
+"    AllowOverride none\n"
+"    Require all denied\n"
+"&lt;/Directory&gt;\n"
 "\n"
-"# permitir acesso ao diretório do site\n"
-"DocumentRoot \"$ {TestRoot}\"\n"
-"&lt; Diretório \"$ {TestRoot}\" &gt;\n"
-"    Opções de índices FollowSymLinks\n"
-"    AllowOverride Nenhum\n"
-"    Exigir tudo concedido\n"
-"&lt; / Diretório &gt;\n"
+"# allow access to the website directory\n"
+"DocumentRoot \"${TestRoot}\"\n"
+"&lt;Directory \"${TestRoot}\"&gt;\n"
+"    Options Indexes FollowSymLinks\n"
+"    AllowOverride None\n"
+"    Require all granted\n"
+"&lt;/Directory&gt;\n"
 "\n"
-"# impede o acesso aos arquivos .htaccess e .htpasswd\n"
-"&lt; Ficheiros \".ht *\" &gt;\n"
-"    Exigir tudo negado\n"
-"&lt; / Ficheiros &gt;\n"
+"# prevent access to .htaccess and .htpasswd files\n"
+"&lt;Files \".ht*\"&gt;\n"
+"    Require all denied\n"
+"&lt;/Files&gt;\n"
 "\n"
 "ErrorLog \"/var/log/httpd-error.log\"\n"
-"LogLevel avisar\n"
+"LogLevel warn\n"
 "\n"
-"# configure o diretório do script CGI\n"
-"&lt; Diretório \"$ {TestRoot} / cgi\" &gt;\n"
-"    AllowOverride Nenhum\n"
-"    Opções Nenhum\n"
-"    Exigir tudo concedido\n"
-"    Opções + ExecCGI\n"
-"    AddHandler cgi-script .cgi\n"
-"&lt; / Diretório &gt;\n"
+"# set up the CGI script directory\n"
+"&lt;Directory \"${TestRoot}/cgi\"&gt;\n"
+"    AllowOverride None\n"
+"    Options None\n"
+"    Require all granted\n"
+"    Options +ExecCGI\n"
+"    AddHandler cgi-script .cgi\n"
+"&lt;/Directory&gt;\n"
 "\n"
-"Incluir etc / apache24 / Includes / *. Conf"
+"Include etc/apache24/Includes/*.conf"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1970
-#, fuzzy
 msgid "Start the web server with"
-msgstr "Inicie o servidor da web com"
+msgstr "Inicie o servidor  web com"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1972
@@ -3399,7 +3214,6 @@ msgstr "<prompt>#</prompt> <userinput>service apache24 onestart</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1974
-#, fuzzy
 msgid ""
 "The web site can be viewed at <link xlink:href=\"http://localhost\"/>. Be "
 "aware that many links refer to the real FreeBSD site by name, and those "
@@ -3408,33 +3222,31 @@ msgid ""
 "acronym> so <literal>www.FreeBSD.org</literal> resolves to "
 "<literal>localhost</literal> or the local <acronym>IP</acronym> address."
 msgstr ""
-"O site pode ser visto em <link xlink:href=\"http: // localhost\"/>. Esteja "
-"ciente de que muitos links se referem ao site real do FreeBSD pelo nome, e "
-"esses links ainda irão para o site externo em vez da versão de teste local. "
-"O teste completo do site local exigirá a configuração temporária do "
-"<acronym> DNS </acronym> para que <literal> www.FreeBSD.org </literal> seja "
-"resolvido como <literal> localhost </literal> ou o <acronym> IP local </"
-"acronym> > endereço."
+"O web site pode ser visualizado em <link xlink:href=\"http://localhost\"/>. "
+"Esteja ciente de que muitos links se referem ao site real do FreeBSD por "
+"nome, e esses links ainda levar para o site externo em vez da versão de "
+"teste local. O teste completo do web site local exigirá a configuração "
+"temporária do <acronym>DNS</acronym> para que o endereço <literal>www."
+"FreeBSD.org</literal> seja resolvido como <literal>localhost</literal> ou o "
+"endereço <acronym>IP</acronym> local."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1986
-#, fuzzy
 msgid "Build and Install the Web Site"
-msgstr "Construa e instale o site"
+msgstr "Compile e Instale o Web Site"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1988
-#, fuzzy
 msgid ""
 "Build the web site and all documents as user <systemitem class="
 "\"username\">jru</systemitem>. Install the resulting files as <systemitem "
 "class=\"username\">root</systemitem> into the default directory, <filename>/"
 "root/public_html</filename>:"
 msgstr ""
-"Crie o site e todos os documentos como usuário <systemitem class="
-"\"username\"> jru </systemitem>. Instale os arquivos resultantes como "
-"<systemitem class=\"username\"> root </systemitem> no diretório padrão, "
-"<filename> / root / public_html </filename>:"
+"Compile o web site e todos os documentos como usuário <systemitem class="
+"\"username\">jru</systemitem>. Instale os arquivos finais como <systemitem "
+"class=\"username\">root</systemitem> no diretório padrão, <filename>/root/"
+"public_html</filename>:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1995
@@ -3458,7 +3270,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2003
-#, fuzzy
 msgid ""
 "The install process does not delete any old or outdated files that existed "
 "previously in the same directory. If a new copy of the site is built and "
@@ -3466,9 +3277,9 @@ msgid ""
 "not been updated in three days:"
 msgstr ""
 "O processo de instalação não exclui nenhum arquivo antigo ou desatualizado "
-"que existia anteriormente no mesmo diretório. Se uma nova cópia do site for "
-"criada e instalada todos os dias, esse comando localizará e excluirá todos "
-"os arquivos que não foram atualizados em três dias:"
+"que existia anteriormente no mesmo diretório. Se uma nova cópia do web site "
+"for criada e instalada todos os dias, esse comando localizará e excluirá "
+"todos os arquivos que não foram atualizados em três dias:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:2009
@@ -3482,53 +3293,49 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:2045
-#, fuzzy
 msgid "XML Primer"
 msgstr "Primer XML"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2047
-#, fuzzy
 msgid ""
 "Most <acronym>FDP</acronym> documentation is written with markup languages "
 "based on <acronym>XML</acronym>. This chapter explains what that means, how "
 "to read and understand the documentation source, and the <acronym>XML</"
 "acronym> techniques used."
 msgstr ""
-"A maioria das documentações do <acronym> FDP </acronym> é escrita com "
-"linguagens de marcação baseadas no <acronym> XML </acronym>. Este capítulo "
-"explica o que isso significa, como ler e entender a fonte da documentação e "
-"as técnicas de <acronym> XML </acronym> usadas."
+"A maioria das documentações do <acronym>FDP</acronym> é escrita com "
+"linguagens markup baseadas em <acronym>XML</acronym>. Este capítulo explica "
+"o que isso significa, como ler e entender os arquivos fontes da documentação "
+"e as técnicas de <acronym>XML</acronym> utilizadas."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2053
-#, fuzzy
 msgid ""
 "Portions of this section were inspired by Mark Galassi's <link xlink:href="
 "\"http://www.galassi.org/mark/mydocs/docbook-intro/docbook-intro.html\">Get "
 "Going With DocBook</link>."
 msgstr ""
 "Partes desta seção foram inspiradas por Mark Galassi's <link xlink:href="
-"\"http://www.galassi.org/mark/mydocs/docbook-intro/docbook-intro.html\"> Get "
-"Going With DocBook </link>."
+"\"http://www.galassi.org/mark/mydocs/docbook-intro/docbook-intro.html\">Get "
+"Going With DocBook</link>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2060
-#, fuzzy
 msgid ""
 "In the original days of computers, electronic text was simple. There were a "
 "few character sets like <acronym>ASCII</acronym> or <acronym>EBCDIC</"
 "acronym>, but that was about it. Text was text, and what you saw really was "
 "what you got. No frills, no formatting, no intelligence."
 msgstr ""
-"Nos dias originais dos computadores, o texto eletrônico era simples. Havia "
-"alguns conjuntos de caracteres como <acronym> ASCII </acronym> ou <acronym> "
-"EBCDIC </acronym>, mas foi isso. Texto foi texto, e o que você viu realmente "
-"foi o que você conseguiu. Sem frescuras, sem formatação, sem inteligência."
+"Nos primórdios da era computacional, o texto eletrônico era simples. Havia "
+"poucos conjuntos de caracteres como <acronym>ASCII</acronym> ou "
+"<acronym>EBCDIC</acronym>, e apenas isso. Texto era texto, e o que você lia "
+"era realmente o texto que você tinha. Sem frescuras, sem formatação, sem "
+"inteligência."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2066
-#, fuzzy
 msgid ""
 "Inevitably, this was not enough. When text is in a machine-usable format, "
 "machines are expected to be able to use and manipulate it intelligently. "
@@ -3538,18 +3345,17 @@ msgid ""
 "<quote>italics</quote> when printed, or any of a myriad of other options for "
 "presentation."
 msgstr ""
-"Inevitavelmente, isso não foi suficiente. Quando o texto está em um formato "
-"utilizável pela máquina, espera-se que as máquinas possam usá-lo e manipulá-"
-"lo de maneira inteligente. Os autores querem indicar que certas frases devem "
+"Inevitavelmente, isso não era suficiente. Quando o texto está em um formato "
+"utilizável por computadores, espera-se que eles possam usá-lo e manipulá-lo "
+"de maneira inteligente. Os autores querem indicar que certas frases devem "
 "ser enfatizadas, adicionadas a um glossário ou transformadas em hiperlinks. "
-"Os nomes dos arquivos podem ser mostrados em uma fonte de estilo <quote> "
-"typewriter </quote> para exibição na tela, mas como <quote> itálico </quote> "
-"quando impressos, ou qualquer um de uma infinidade de outras opções para "
-"apresentação."
+"Os nomes dos arquivos podem ser apresentados em uma fonte de estilo "
+"<quote>typewriter</quote> para exibição na tela do computador, ou como "
+"<quote>itálico</quote> quando impressos, ou qualquer outra opção dentre uma "
+"infinidade de opções para apresentação."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2075
-#, fuzzy
 msgid ""
 "It was once hoped that Artificial Intelligence (AI) would make this easy. "
 "The computer would read the document and automatically identify key phrases, "
@@ -3559,14 +3365,13 @@ msgid ""
 msgstr ""
 "Esperava-se que a Inteligência Artificial (IA) facilitasse isso. O "
 "computador leria o documento e identificaria automaticamente frases-chave, "
-"nomes de arquivos, textos que o leitor deveria digitar, exemplos e mais. "
-"Infelizmente, a vida real não aconteceu desse jeito, e os computadores ainda "
-"precisam de assistência antes que possam processar o texto de maneira "
+"nomes de arquivos, textos que o leitor deveria digitar, exemplos e outros "
+"tipos. Infelizmente, na vida real não foi dessa forma, e os computadores "
+"ainda precisam de assistência antes que possam processar o texto de maneira "
 "significativa."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2083
-#, fuzzy
 msgid ""
 "More precisely, they need help identifying what is what. Consider this text:"
 msgstr ""
@@ -3575,14 +3380,13 @@ msgstr ""
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:2087
-#, fuzzy
 msgid ""
 "To remove <filename>/tmp/foo</filename>, use "
 "<citerefentry><refentrytitle>rm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
-"Para remover <filename> / tmp / foo </filename>, use <citerefentry> "
-"<refentrytitle> rm </refentrytitle> <manvolnum> 1 </manvolnum> </"
+"Para remover <filename>/tmp/foo</filename>, use "
+"<citerefentry><refentrytitle>rm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 
 #. (itstool) path: blockquote/screen
@@ -3593,20 +3397,18 @@ msgstr "<prompt>%</prompt> <userinput>rm /tmp/foo</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2093
-#, fuzzy
 msgid ""
 "It is easy to see which parts are filenames, which are commands to be typed "
 "in, which parts are references to manual pages, and so on. But the computer "
 "processing the document cannot. For this we need markup."
 msgstr ""
-"É fácil ver quais partes são nomes de arquivos, quais são os comandos a "
+"É fácil identificar quais partes são nomes de arquivos, quais são comandos a "
 "serem digitados, quais partes são referências a páginas de manual e assim "
-"por diante. Mas o computador que processa o documento não pode. Para isso, "
-"precisamos de marcação."
+"por diante. Mas o computador que processa o documento não consegue. Para "
+"isso, precisamos utilizar markup."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2098
-#, fuzzy
 msgid ""
 "<quote>Markup</quote> is commonly used to describe <quote>adding value</"
 "quote> or <quote>increasing cost</quote>. The term takes on both these "
@@ -3616,17 +3418,16 @@ msgid ""
 "making decisions about the document. Editors can hide the markup from the "
 "user, so the user is not distracted by it."
 msgstr ""
-"<quote> Marcação </quote> é comumente usado para descrever <quote> "
-"adicionando valor </quote> ou <quote> aumentando o custo </quote>. O termo "
-"assume esses dois significados quando aplicado ao texto. Marcação é um texto "
-"adicional incluído no documento, diferenciado do conteúdo do documento de "
-"alguma forma, para que os programas que processam o documento possam ler a "
-"marcação e usá-la ao tomar decisões sobre o documento. Os editores podem "
-"ocultar a marcação do usuário, para que o usuário não se distraia com ela."
+"<quote>Markup</quote> é geralmate utilizado assim <quote>adicionando valor</"
+"quote> ou <quote>aumentando o custo</quote>. O termo tem seus significados "
+"realçados quando aplicado ao texto. Markup é um texto adicional incluído no "
+"documento, diferenciado de alguma forma do conteúdo do documento, para que "
+"os programas que processam o documento possam ler a marcação e utiliza-la ao "
+"tomar decisões sobre o documento. Os editores podem ocultar o markup do "
+"usuário, para que este não se distraia com ela."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2108
-#, fuzzy
 msgid ""
 "The extra information stored in the markup <emphasis>adds value</emphasis> "
 "to the document. Adding the markup to the document must typically be done by "
@@ -3635,16 +3436,15 @@ msgid ""
 "This <emphasis>increases the cost</emphasis> (the effort required) to create "
 "the document."
 msgstr ""
-"A informação extra armazenada na marcação <emphasis> adiciona valor </"
-"emphasis> ao documento. Adicionar a marcação ao documento normalmente deve "
-"ser feito por uma pessoa - afinal, se os computadores pudessem reconhecer o "
-"texto suficientemente bem para adicionar a marcação, não haveria necessidade "
-"de adicioná-lo em primeiro lugar. Este <emphasis> aumenta o custo </"
-"emphasis> (o esforço necessário) para criar o documento."
+"A informação extras armazenada no markup <emphasis>adiciona valor</emphasis> "
+"ao documento. Adicionar markup ao documento normalmente deve ser feito por "
+"uma pessoa - afinal, se os computadores pudessem reconhecer o texto "
+"suficientemente bem para adicionar a markup, não haveria necessidade de "
+"utilizar markup. Isto <emphasis>aumenta o custo</emphasis> (o esforço "
+"necessário) para criar algum documento."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2117
-#, fuzzy
 msgid ""
 "The previous example is actually represented in this document like this:"
 msgstr "O exemplo anterior é representado neste documento da seguinte forma:"
@@ -3671,23 +3471,20 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2124
-#, fuzzy
 msgid "The markup is clearly separate from the content."
-msgstr "A marcação é claramente separada do conteúdo."
+msgstr "O markup é claramente separado do conteúdo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2126
-#, fuzzy
 msgid ""
 "Markup languages define what the markup means and how it should be "
 "interpreted."
 msgstr ""
-"As linguagens de marcação definem o significado da marcação e como ela deve "
-"ser interpretada."
+"As linguagens markup definem o que as marcações significam e como elas devem "
+"ser interpretadas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2129
-#, fuzzy
 msgid ""
 "Of course, one markup language might not be enough. A markup language for "
 "technical documentation has very different requirements than a markup "
@@ -3696,31 +3493,29 @@ msgid ""
 "needed is a first language used to write these other markup languages. A "
 "<emphasis>meta markup language</emphasis>."
 msgstr ""
-"Claro, uma linguagem de marcação pode não ser suficiente. Uma linguagem de "
-"marcação para documentação técnica tem requisitos muito diferentes de uma "
-"linguagem de marcação destinada a receitas de culinária. Isso, por sua vez, "
-"seria muito diferente de uma linguagem de marcação usada para descrever a "
-"poesia. O que é realmente necessário é uma primeira linguagem usada para "
-"escrever essas outras linguagens de marcação. Uma <emphasis> metage markup "
-"language </emphasis>."
+"Claro, uma linguagem markup pode não ser suficiente. Uma linguagem markup "
+"para documentação técnica tem requisitos muito diferentes de uma linguagem "
+"markup destinada a receitas de culinária. Isso, por sua vez, seria muito "
+"diferente de uma linguagem markup utilizada para descrever uma poesia. O que "
+"é realmente necessário é uma primeira linguagem utilizada para escrever "
+"essas outras linguagens markup. Uma <emphasis>meta linguagem markup</"
+"emphasis>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2137
-#, fuzzy
 msgid ""
 "This is exactly what the eXtensible Markup Language (<acronym>XML</acronym>) "
 "is. Many markup languages have been written in <acronym>XML</acronym>, "
 "including the two most used by the <acronym>FDP</acronym>, <acronym>XHTML</"
 "acronym> and DocBook."
 msgstr ""
-"É exatamente isso que a linguagem de marcação eXtensible (<acronym> XML </"
-"acronym>) é. Muitas linguagens de marcação foram escritas em <acronym> XML </"
-"acronym>, incluindo as duas mais usadas pelo <acronym> FDP </acronym>, "
-"<acronym> XHTML </acronym> e DocBook."
+"É exatamente isso que a eXtensible Markup Language (<acronym>XML</acronym>) "
+"é. Muitas linguagens markup foram escritas em <acronym>XML</acronym>, "
+"incluindo as duas mais utilizadas pelo <acronym>FDP</acronym>, "
+"<acronym>XHTML</acronym> e DocBook."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2143
-#, fuzzy
 msgid ""
 "Each language definition is more properly called a grammar, vocabulary, "
 "schema or Document Type Definition (<acronym>DTD</acronym>). There are "
@@ -3728,14 +3523,13 @@ msgid ""
 "<emphasis>schema</emphasis>."
 msgstr ""
 "Cada definição de idioma é mais apropriadamente chamada de gramática, "
-"vocabulário, esquema ou Definição de Tipo de Documento (<acronym> DTD </"
-"acronym>). Existem vários idiomas para especificar uma gramática <acronym> "
-"XML </acronym> ou um esquema <emphasis> </emphasis>."
+"vocabulário, esquema ou Definição de Tipo de Documento (<acronym>DTD</"
+"acronym>). Existem vários idiomas para especificar uma gramática "
+"<acronym>XML</acronym> ou um <emphasis>schema</emphasis>."
 
 #. (itstool) path: sect1/para
 #. (itstool) id: book.translate.xml#xml-primer-validating
 #: book.translate.xml:2149
-#, fuzzy
 msgid ""
 "A schema is a <emphasis>complete</emphasis> specification of all the "
 "elements that are allowed to appear, the order in which they should appear, "
@@ -3747,19 +3541,18 @@ msgid ""
 "are any errors in the markup. This is normally referred to as "
 "<quote>validating the document</quote>."
 msgstr ""
-"Um esquema é uma especificação <emphasis> completa </emphasis> de todos os "
-"elementos que podem aparecer, a ordem em que devem aparecer, quais elementos "
-"são obrigatórios, quais são opcionais e assim por diante. Isso torna "
-"possível escrever um <acronym> XML </acronym> <emphasis> analisador </"
-"emphasis> que lê tanto o esquema quanto um documento que afirma estar em "
-"conformidade com o esquema. O analisador pode confirmar se todos os "
-"elementos exigidos pelo vocabulário estão ou não no documento na ordem "
-"correta e se há algum erro na marcação. Isto é normalmente referido como "
-"<quote> validando o documento </quote>."
+"Um schema é uma especificação <emphasis>completa</emphasis> de todos os "
+"elementos que podem ser utilizados, a ordem em que devem aparecer, quais "
+"elementos são obrigatórios, quais são opcionais e assim por diante. Isso "
+"torna possível escrever um <acronym>XML</acronym> <emphasis>parser</"
+"emphasis> que lê tanto o schema quanto um documento que afirma estar em "
+"conformidade com o schema. O parser pode confirmar se todos os elementos "
+"exigidos pelo vocabulário estão ou não na ordem correta do documento ou se "
+"há algum erro no markup. Isto é normalmente conhecido como a "
+"<quote>valiidação do documento</quote>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:2163
-#, fuzzy
 msgid ""
 "Validation confirms that the choice of elements, their ordering, and so on, "
 "conforms to that listed in the grammar. It does <emphasis>not</emphasis> "
@@ -3769,33 +3562,30 @@ msgid ""
 "the schema defines elements for filenames and functions, and that they are "
 "allowed to appear in the same place)."
 msgstr ""
-"A validação confirma que a escolha dos elementos, sua ordenação e assim por "
-"diante estão em conformidade com os listados na gramática. Ele faz "
-"<emphasis> não </emphasis> verificar se a marcação <emphasis> apropriada </"
-"emphasis> foi usada para o conteúdo. Se todos os nomes de arquivo em um "
-"documento fossem marcados como nomes de função, o analisador não sinalizaria "
-"isso como um erro (supondo, é claro, que o esquema define elementos para "
-"nomes de arquivos e funções e que eles possam aparecer no mesmo local )."
+"A validação confirma se a escolha dos elementos, sua ordenação e assim por "
+"diante estão em conformidade com os listados na gramática. Ela "
+"<emphasis>não</emphasis> valida se o markup <emphasis>correto</emphasis> foi "
+"utilizado no conteúdo. Se todos os nomes de arquivo em um documento fossem "
+"marcados como sendo nomes de função, o analisador não sinalizaria isso como "
+"um erro (supondo, é claro, que o schema define elementos para nomes de "
+"arquivos e funções e que eles possam aparecer no mesmo local)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2174
-#, fuzzy
 msgid ""
 "Most contributions to the Documentation Project will be content marked up in "
 "either <acronym>XHTML</acronym> or DocBook, rather than alterations to the "
 "schemas. For this reason, this book will not touch on how to write a "
 "vocabulary."
 msgstr ""
-"A maioria das contribuições para o Projeto de Documentação será marcada com "
-"conteúdo em <acronym> XHTML </acronym> ou DocBook, em vez de alterações nos "
-"esquemas. Por esse motivo, este livro não abordará como escrever um "
-"vocabulário."
+"A maioria das contribuições no Projeto de Documentação utilizará markup "
+"<acronym>XHTML</acronym> ou DocBook, em vez de alterações nos schemas. Por "
+"esse motivo, este livro não abordará como escrever um vocabulário."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2182
-#, fuzzy
 msgid "Elements, Tags, and Attributes"
-msgstr "Elementos, marcas e atributos"
+msgstr "Elementos, Tags e Atributos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2184

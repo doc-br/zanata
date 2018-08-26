@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 # Nilton Jose Rizzo <rizzo@i805.com.br>, 2018. #zanata
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.0\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-25 07:28+0000\n"
+"PO-Revision-Date: 2018-08-25 11:56+0000\n"
 "Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -125,7 +125,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:70
-#, fuzzy
 msgid ""
 "This document provides information for the FreeBSD committer community. All "
 "new committers should read this document before they start, and existing "
@@ -138,7 +137,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:75
-#, fuzzy
 msgid ""
 "Almost all FreeBSD developers have commit rights to one or more repositories."
 " However, a few developers do not, and some of the information here applies "
@@ -147,14 +145,13 @@ msgid ""
 "for more information."
 msgstr ""
 "Quase todos os desenvolvedores do FreeBSD possuem direitos para um ou mais "
-"repositórios. No entanto, alguns desenvolvedores não, e algumas das "
-"informações aqui se aplicam a eles também. (Por exemplo, algumas pessoas só "
-"têm direitos para trabalhar com o banco de dados do Relatório de Problemas). "
-"Por favor, veja <xref linkend=\"non-committers\"/> para mais informações."
+"repositórios. No entanto, alguns desenvolvedores e algumas das informações "
+"aqui não se aplicam a eles também. (Por exemplo, algumas pessoas só têm "
+"direitos para trabalhar com o banco de dados do Relatório de Problemas). Por "
+"favor, veja <xref linkend=\"non-committers\"/> para mais informações."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:82
-#, fuzzy
 msgid ""
 "This document may also be of interest to members of the FreeBSD community "
 "who want to learn more about how the project works."
@@ -164,73 +161,64 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:89
-#, fuzzy
 msgid "Administrative Details"
 msgstr "Detalhes Administrativos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:97
-#, fuzzy
 msgid "<emphasis>Login Methods</emphasis>"
-msgstr "<emphasis> Métodos de login </emphasis>"
+msgstr "<emphasis>Métodos de login</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:98
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, protocol 2 only"
 msgstr ""
-"<citerefentry> <refentrytitle> ssh </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry>, somente protocolo 2"
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum> </"
+"citerefentry>,_protocol_2_only"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:102
-#, fuzzy
 msgid "<emphasis>Main Shell Host</emphasis>"
-msgstr "<emphasis> Principal Host da Shell </emphasis>"
+msgstr "<emphasis>Principal Host da Shell</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:103
-#, fuzzy
 msgid "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
-msgstr "<systemitem class=\"fqdomainname\"> freefall.FreeBSD.org </systemitem>"
+msgstr "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:107
-#, fuzzy
 msgid "<emphasis><literal>src/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis> <literal> src / </literal> Raiz do Subversion </emphasis>"
+msgstr "<emphasis><literal>src /</literal>Raiz do Subversion</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:109
-#, fuzzy
 msgid ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
 "org</systemitem><filename>/base</filename> (see also <xref linkend=\"svn-"
 "getting-started-base-layout\"/>)."
 msgstr ""
-"<literal> svn + ssh: // </literal> <systemitem class=\"fqdomainname\"> repo."
-"FreeBSD.org </systemitem> <filename> / base </filename> (veja também <xref "
-"linkend=\"svn-getting-started-base-layout \"/>)."
+"<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
+"org</systemitem><filename>/base</filename> (see also <xref linkend=\"svn-"
+"getting-started-base-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:114
-#, fuzzy
 msgid "<emphasis><literal>doc/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis> <literal> doc / </literal> Raiz do Subversion </emphasis>"
+msgstr "<emphasis><literal>doc/</literal>Raiz do Subversion</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:116
-#, fuzzy
 msgid ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
 "org</systemitem><filename>/doc</filename> (see also <xref linkend=\"svn-"
 "getting-started-doc-layout\"/>)."
 msgstr ""
-"<literal> svn + ssh: // </literal> <systemitem class=\"fqdomainname\"> repo."
-"FreeBSD.org </systemitem> <filename> / doc </filename> (veja também <xref "
-"linkend=\"svn-getting-started-doc-layout \"/>)."
+"<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
+"org</systemitem><filename>/doc</filename> (see also <xref linkend=\"svn-"
+"getting-started-doc-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:121
@@ -239,25 +227,22 @@ msgstr "<emphasis><literal>ports/</literal> Subversion Root</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:124
-#, fuzzy
 msgid ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
 "org</systemitem><filename>/ports</filename> (see also <xref linkend=\"svn-"
 "getting-started-ports-layout\"/>)."
 msgstr ""
-"<literal> svn + ssh: // </literal> <systemitem class=\"fqdomainname\"> repo."
-"FreeBSD.org </systemitem> <filename> / ports </filename> (veja também <xref "
-"linkend=\"svn-getting-started-ports-layout \"/>)."
+"<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
+"org</systemitem><filename>/ports</filename> (see also <xref linkend=\"svn-"
+"getting-started-ports-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:129
-#, fuzzy
 msgid "<emphasis>Internal Mailing Lists</emphasis>"
-msgstr "<emphasis> Listas de Discussão Interna </emphasis>"
+msgstr "<emphasis>Listas de Discussão Interna</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:130
-#, fuzzy
 msgid ""
 "developers (technically called all-developers), doc-developers, doc-"
 "committers, ports-developers, ports-committers, src-developers, src-"
@@ -268,123 +253,107 @@ msgid ""
 "replaceable>-committers-archive</filename> on the <systemitem class="
 "\"fqdomainname\">FreeBSD.org</systemitem> cluster.)"
 msgstr ""
-"desenvolvedores (tecnicamente chamados de todos os desenvolvedores), doc-"
-"developers, doc-committers, ports-desenvolvedores, ports-committers, src-"
-"developers, src-committers. (Cada repositório de projetos possui suas "
-"próprias listas de discussão -developters e -committers. Os arquivos para "
-"essas listas podem ser encontrados nos arquivos <filename> / local / mail / "
-"<replaceable> nome-do-repositório </replaceable> -developers-archive </"
-"filename > e <filename> / local / mail / <replaceable> nome do repositório </"
-"replaceable> -committers-archive </filename> no cluster <systemitem class="
-"\"fqdomainname\"> FreeBSD.org </systemitem>."
+"developers (technically called all-developers), doc-developers, doc-"
+"committers, ports-developers, ports-committers, src-developers, src-"
+"committers. (Each project repository has its own -developers and -committers "
+"mailing lists. Archives for these lists can be found in the files <filename>/"
+"local/mail/<replaceable>repository-name</replaceable>-developers-archive</"
+"filename> and <filename>/local/mail/<replaceable>repository-name</"
+"replaceable>-committers-archive</filename> on the <systemitem class="
+"\"fqdomainname\">FreeBSD.org</systemitem> cluster.)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:145
-#, fuzzy
 msgid "<emphasis>Core Team monthly reports</emphasis>"
-msgstr "<emphasis> Relatórios mensais da equipe principal </emphasis>"
+msgstr "<emphasis>Relatórios mensais da equipe principal</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:147
-#, fuzzy
 msgid ""
 "<filename>/home/core/public/monthly-reports</filename> on the <systemitem "
 "class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 msgstr ""
-"<filename> / home / core / public / monthly-reports </filename> no cluster "
-"<systemitem class=\"fqdomainname\"> FreeBSD.org </systemitem>."
+"<filename>/home/core/public/monthly-reports</filename> on the <systemitem "
+"class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:153
-#, fuzzy
 msgid "<emphasis>Ports Management Team monthly reports</emphasis>"
-msgstr ""
-"<emphasis> Relatórios mensais da Equipa de Gestão de Portos </emphasis>"
+msgstr "<emphasis>Relatórios mensais da Equipe de Gestão de Ports</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:155
-#, fuzzy
 msgid ""
 "<filename>/home/portmgr/public/monthly-reports</filename> on the <systemitem "
 "class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 msgstr ""
-"<filename> / home / portmgr / public / monthly-reports </filename> no "
-"cluster <systemitem class=\"fqdomainname\"> FreeBSD.org </systemitem>."
+"<filename>/home/portmgr/public/monthly-reports</filename> on the <systemitem "
+"class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:161
-#, fuzzy
 msgid "<emphasis>Noteworthy <literal>src/</literal> SVN Branches</emphasis>"
-msgstr ""
-"<emphasis> Destacamos os ramos <literal> src / </literal> do SVN </emphasis>"
+msgstr "<emphasis>Noteworthy <literal>src/</literal> SVN brechas</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:163
-#, fuzzy
 msgid ""
 "<literal>stable/</literal><replaceable>n</replaceable> (<replaceable>n</"
 "replaceable>-STABLE), <literal>head</literal> (-CURRENT)"
 msgstr ""
-"<literal> stable / </literal> <replaceable> n </replaceable> (<replaceable> "
-"n </replaceable> -STABLE), <literal> cabeça </literal> (-CURRENT)"
+"<literal>stable/</literal><replaceable>n</replaceable> (<replaceable>n</"
+"replaceable>-STABLE), <literal>head</literal> (-CURRENT)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> is required to connect to the project hosts. For more "
 "information, see <xref linkend=\"ssh.guide\"/>."
 msgstr ""
-"<citerefentry> <refentrytitle> ssh </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> é necessário para conectar-se aos hosts do "
-"projeto. Para mais informações, consulte <xref linkend=\"ssh.guide\"/>."
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> é necessário para se conectar aos hosts do projeto. Para mais "
+"informações, veja <xref linkend=\"ssh.guide\"/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:175
-#, fuzzy
 msgid "Useful links:"
 msgstr "Links Úteis:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:179
-#, fuzzy
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/internal/\">FreeBSD Project Internal "
 "Pages</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/internal/\"> Páginas Internas do "
-"Projeto FreeBSD </link>"
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/\">Páginas internas do projeto "
+"FreeBSD</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:184
-#, fuzzy
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\">FreeBSD "
 "Project Hosts</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\"> Hosts do "
-"Projeto FreeBSD </link>"
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\">Hosts do "
+"Projeto FreeBSD</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:189
-#, fuzzy
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/administration.html\">FreeBSD Project "
 "Administrative Groups</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html\"> Grupos "
-"Administrativos do Projeto FreeBSD </link>"
+"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html\">Grupos "
+"Administrativos do Projeto FreeBSD</link>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
-#, fuzzy
 msgid "Open<acronym>PGP</acronym> Keys for FreeBSD"
-msgstr "Abra as chaves <acronym> PGP </acronym> para o FreeBSD"
+msgstr "Open<acronym>PGP</acronym> Keys for FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:198
-#, fuzzy
 msgid ""
 "Cryptographic keys conforming to the Open<acronym>PGP</acronym> "
 "(<emphasis>Pretty Good Privacy</emphasis>) standard are used by the FreeBSD "
@@ -396,59 +365,55 @@ msgid ""
 "<link xlink:href=\"http://en.wikipedia.org/wiki/Pretty_Good_Privacy\"/> for "
 "more information."
 msgstr ""
-"As chaves criptográficas em conformidade com o padrão Open <acronym> PGP </"
-"acronym> (<emphasis> Pretty Good Privacy </emphasis>) são usadas pelo "
-"projeto FreeBSD para autenticar committers. Mensagens com informações "
-"importantes como chaves públicas de <acronym> SSH </acronym> podem ser "
-"assinadas com a chave Open <acronym> PGP </acronym> para provar que elas são "
+"Chaves criptográficas em conformidade com o Open<acronym>PGP</acronym> "
+"(<emphasis>Pretty Good Privacy</emphasis>) standard são usados pelo projeto "
+"FreeBSD para autenticar committers. Mensagens com informações importantes "
+"como informações públicas<acronym>SSH</acronym> as chaves podem ser "
+"assinadas com o Open<acronym>PGP</acronym> keypara provar que eles são "
 "realmente do committer. Veja <link xlink:href=\"http://www.nostarch.com/"
-"pgp_ml.htm\"> PGP &amp; GPG: Email para o prático paranóico de Michael Lucas "
-"</link> e <link xlink:href=\"http://en.wikipedia.org/wiki/"
-"Pretty_Good_Privacy\"/> para mais informações."
+"pgp_ml.htm\">PGP &amp; GPG: E-mail para the Practical Paranoid by Michael "
+"Lucas</link> e <link xlink:href=\"http://en.wikipedia.org/wiki/"
+"Pretty_Good_Privacy\"/> para maiores informações."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:211
-#, fuzzy
 msgid "Creating a Key"
 msgstr "Criando uma chave"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
-#, fuzzy
 msgid ""
 "Existing keys can be used, but should be checked with <filename>doc/head/"
 "share/pgpkeys/checkkey.sh</filename> first."
 msgstr ""
-"Chaves existentes podem ser usadas, mas devem ser checadas com <filename> "
-"doc / head / share / pgpkeys / checkkey.sh </filename> primeiro."
+"As chaves existentes podem ser usadas, mas devem ser verificadas com "
+"<filename>doc/head/share/pgpkeys/checkkey.sh</filename> primeiro."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:217
-#, fuzzy
 msgid ""
 "For those who do not yet have an Open<acronym>PGP</acronym> key, or need a "
 "new key to meet FreeBSD security requirements, here we show how to generate "
 "one."
 msgstr ""
-"Para aqueles que ainda não têm uma chave Open <acronym> PGP </acronym>, ou "
-"precisam de uma nova chave para atender aos requisitos de segurança do "
-"FreeBSD, aqui mostramos como gerar uma."
+"Para quem ainda não tem um Open<acronym>PGP</acronym> key, ou precisa de uma "
+"nova chave para atender aos requisitos de segurança do FreeBSD, aqui "
+"mostramos como gerar uma."
 
 #. (itstool) path: step/para
 #: article.translate.xml:225
-#, fuzzy
 msgid ""
 "Install <filename role=\"package\">security/gnupg</filename>. Enter these "
 "lines in <filename>~/.gnupg/gpg.conf</filename> to set minimum acceptable "
 "defaults:"
 msgstr ""
-"Instale <filename role=\"package\"> security / gnupg </filename>. Digite "
-"estas linhas em <filename> ~ / .gnupg / gpg.conf </filename> para definir "
-"padrões mínimos aceitáveis:"
+"Instalar <filename role=\"package\">security/gnupg</filename>. Digite estas "
+"linhas em <filename>~/.gnupg/gpg.conf</filename> para definir padrões "
+"mínimos aceitáveis:"
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:230
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "fixed-list-mode\n"
 "keyid-format 0xlong\n"
@@ -461,26 +426,25 @@ msgid ""
 "sig-notation issuer-fpr@notations.openpgp.fifthhorseman.net=%g\n"
 "cert-digest-algo SHA512"
 msgstr ""
-"modo de lista fixa\n"
-"formato de chave 0xlong\n"
+"fixed-list-mode\n"
+"keyid-format 0xlong\n"
 "personal-digest-preferences SHA512 SHA384 SHA256 SHA224\n"
-"lista de preferências padrão SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES "
-"CAST5 BZIP2 ZLIB ZIP Descompactado\n"
-"agente de uso\n"
-"verificar-opções show-uid-validade\n"
-"lista-opções show-uid-validade\n"
+"default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 "
+"BZIP2 ZLIB ZIP Uncompressed\n"
+"use-agent\n"
+"verify-options show-uid-validity\n"
+"list-options show-uid-validity\n"
 "sig-notation issuer-fpr@notations.openpgp.fifthhorseman.net=%g\n"
 "cert-digest-algo SHA512"
 
 #. (itstool) path: step/para
 #: article.translate.xml:242
-#, fuzzy
 msgid "Generate a key:"
 msgstr "Gere uma chave:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:244
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>gpg --full-gen-key</userinput>\n"
 "gpg (GnuPG) 2.1.8; Copyright (C) 2015 Free Software Foundation, Inc.\n"
@@ -564,19 +528,17 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:282
-#, fuzzy
 msgid ""
 "2048-bit keys with a three-year expiration provide adequate protection at "
 "present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
 "2048-or-4096-bits\"/> describes the situation in more detail."
 msgstr ""
-"Chaves de 2048 bits com validade de três anos fornecem proteção adequada no "
-"momento (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
-"2048-or-4096-bits\"/> descreve a situação em mais detalhes."
+"2048-bit keys with a three-year expiration provide adequate protection at "
+"present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
+"2048-or-4096-bits\"/> describes the situation in more detail."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:288
-#, fuzzy
 msgid ""
 "A three year key lifespan is short enough to obsolete keys weakened by "
 "advancing computer power, but long enough to reduce key management problems."
@@ -587,21 +549,19 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:295
-#, fuzzy
 msgid ""
 "Use your real name here, preferably matching that shown on government-issued "
 "<acronym>ID</acronym> to make it easier for others to verify your identity. "
 "Text that may help others identify you can be entered in the "
 "<literal>Comment</literal> section."
 msgstr ""
-"Use seu nome real aqui, de preferência que corresponda àquele mostrado no "
-"<acronym> ID </acronym> emitido pelo governo para facilitar a verificação da "
-"identidade de outras pessoas. O texto que pode ajudar outras pessoas a "
-"identificar você pode ser inserido na seção <literal> Comment </literal>."
+"Use o seu nome real aqui, de preferência combinando com o mostrado no "
+"governo<acronym>ID</acronym> para tornar mais fácil para outras pessoas "
+"confirmarem sua identidade. O texto que pode ajudar outras pessoas a "
+"identificar você pode ser inserido no <literal>Comment</literal> section."
 
 #. (itstool) path: step/para
 #: article.translate.xml:303
-#, fuzzy
 msgid ""
 "After the email address is entered, a passphrase is requested. Methods of "
 "creating a secure passphrase are contentious. Rather than suggest a single "
@@ -614,14 +574,13 @@ msgstr ""
 "Depois que o endereço de e-mail é inserido, uma senha é solicitada. Os "
 "métodos de criação de uma frase secreta segura são controversos. Em vez de "
 "sugerir um único caminho, aqui estão alguns links para sites que descrevem "
-"vários métodos: <link xlink:href=\"http://world.std.com/~reinhold/diceware."
+"vários métodos:<link xlink:href=\"http://world.std.com/~reinhold/diceware."
 "html\"/>, <link xlink:href=\"http://www.iusmentis.com/security/passphrasefaq/"
-"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/>, <link xlink:href=\"http: /"
-"/en.wikipedia.org/wiki/Passphrase\"/>."
+"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/>, <link xlink:href=\"http://"
+"en.wikipedia.org/wiki/Passphrase\"/>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:313
-#, fuzzy
 msgid ""
 "Protect the private key and passphrase. If either the private key or "
 "passphrase may have been compromised or disclosed, immediately notify "
@@ -629,24 +588,21 @@ msgid ""
 msgstr ""
 "Proteja a chave privada e a frase secreta. Se a chave privada ou a frase "
 "secreta pode ter sido comprometida ou divulgada, notifique imediatamente "
-"<email> accounts@FreeBSD.org </email> e revogue a chave."
+"<email>accounts@FreeBSD.org</email> e revogar a chave."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:318
-#, fuzzy
 msgid "Committing the new key is shown in <xref linkend=\"commit-steps\"/>."
 msgstr ""
-"A confirmação da nova chave é mostrada em <xref linkend=\"commit-steps\"/>."
+"Confirmando a nova chave é mostrado em <xref linkend=\"commit-steps\"/>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:324
-#, fuzzy
 msgid "Kerberos and LDAP web Password for FreeBSD Cluster"
 msgstr "Kerberos e LDAP web Password para o cluster do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:326
-#, fuzzy
 msgid ""
 "The FreeBSD cluster requires a Kerberos password to access certain services. "
 "The Kerberos password also serves as the LDAP web password, since LDAP is "
@@ -660,20 +616,16 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:334
-#, fuzzy
 msgid "<link xlink:href=\"https://bugs.freebsd.org/bugzilla\">Bugzilla</link>"
-msgstr ""
-"<link xlink:href=\"https://bugs.freebsd.org/bugzilla\"> Bugzilla </link>"
+msgstr "<link xlink:href=\"https://bugs.freebsd.org/bugzilla\">Bugzilla</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:337
-#, fuzzy
 msgid "<link xlink:href=\"https://ci.freebsd.org\">Jenkins</link>"
-msgstr "<link xlink:href=\"https://ci.freebsd.org\"> Jenkins </link>"
+msgstr "<link xlink:href=\"https://ci.freebsd.org\">Jenkins</link>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:341
-#, fuzzy
 msgid ""
 "To create a new Kerberos account in the FreeBSD cluster, or to reset a "
 "Kerberos password for an existing account using a random password generator:"
@@ -684,37 +636,33 @@ msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:345
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>ssh kpasswd.freebsd.org</userinput>"
-msgstr "<prompt>% </prompt> <userinput> ssh kpasswd.freebsd.org </userinput>"
+msgstr "<prompt>%</prompt> <userinput>ssh kpasswd.freebsd.org</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:348
-#, fuzzy
 msgid "This must be done from a machine outside of the FreeBSD.org cluster."
 msgstr ""
 "Isto deve ser feito a partir de uma máquina fora do cluster do FreeBSD.org."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:352
-#, fuzzy
 msgid ""
 "A Kerberos password can also be set manually by logging into <systemitem "
 "class=\"fqdomainname\">freefall.FreeBSD.org</systemitem> and running:"
 msgstr ""
-"Uma senha do Kerberos também pode ser definida manualmente entrando em "
-"<systemitem class=\"fqdomainname\"> freefall.FreeBSD.org </systemitem> e "
-"executando:"
+"Uma senha do Kerberos também pode ser definida manualmente,<systemitem class="
+"\"fqdomainname\">freefall.FreeBSD.org</systemitem>e executando:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:356
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>kpasswd</userinput>"
-msgstr "<prompt>% </prompt> <userinput> kpasswd </userinput>"
+msgstr "<prompt>%</prompt> <userinput>kpasswd</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:359
-#, fuzzy
 msgid ""
 "Unless the Kerberos-authenticated services of the FreeBSD.org cluster have "
 "been used previously, <errorname>Client unknown</errorname> will be shown. "
@@ -722,20 +670,18 @@ msgid ""
 "shown above must be used first to initialize the Kerberos account."
 msgstr ""
 "A menos que os serviços autenticados por Kerberos do cluster do FreeBSD.org "
-"tenham sido usados ​​anteriormente, <errorname> Cliente desconhecido </"
-"errorname> será mostrado. Esse erro significa que o método <command> ssh "
-"kpasswd.freebsd.org </command> mostrado acima deve ser usado primeiro para "
-"inicializar a conta Kerberos."
+"tenham sido usados anteriormente, <errorname>Client unknown</errorname>será "
+"mostrado. Este erro significa que o <command>ssh kpasswd.freebsd.org</"
+"command>o método mostrado acima deve ser usado primeiro para inicializar a "
+"conta Kerberos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:370
-#, fuzzy
 msgid "Commit Bit Types"
 msgstr "Tipos de bits de confirmação"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:372
-#, fuzzy
 msgid ""
 "The FreeBSD repository has a number of components which, when combined, "
 "support the basic operating system source, documentation, third party "
@@ -758,67 +704,57 @@ msgstr ""
 "quando isso ocorre, o committer deve seguir procedimentos normais de "
 "atribuição de bits de confirmação para essa área da árvore, buscando a "
 "aprovação da entidade apropriada e possivelmente obtendo um mentor para essa "
-"área por algum período de tempo. Tempo."
+"área por algum período de tempo."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:389
-#, fuzzy
 msgid "<emphasis>Committer Type</emphasis>"
-msgstr "<emphasis> Tipo de Committer </emphasis>"
+msgstr "<emphasis>Tipo de Committer</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:390
-#, fuzzy
 msgid "<emphasis>Responsible</emphasis>"
-msgstr "<emphasis> Responsável </emphasis>"
+msgstr "<emphasis>Responsável</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:391
-#, fuzzy
 msgid "<emphasis>Tree Components</emphasis>"
-msgstr "<emphasis> Componentes de árvores </emphasis>"
+msgstr "<emphasis>Componentes da Árvore</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:395
-#, fuzzy
 msgid "src"
 msgstr "src"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:396
-#, fuzzy
 msgid "core@"
-msgstr "testemunho@"
+msgstr "core@"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:397
-#, fuzzy
 msgid "src/, doc/ subject to appropriate review"
-msgstr "src /, doc / sujeito a revisão apropriada"
+msgstr "src/, doc/ sujeito a revisão apropriada"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:401
-#, fuzzy
 msgid "doc"
 msgstr "doc"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:402
-#, fuzzy
 msgid "doceng@"
-msgstr "doceng @"
+msgstr "doceng@"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:403
-#, fuzzy
 msgid "doc/, ports/, src/ documentation"
-msgstr "doc /, ports /, src / documentation"
+msgstr "doc/, ports/, src/ documentação"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:407
-#, fuzzy
 msgid "ports"
-msgstr "portas"
+msgstr "ports"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:408
@@ -854,52 +790,47 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:425
-#, fuzzy
 msgid ""
 "Committers are encouraged to seek review for their work as part of the "
 "normal development process, regardless of the area of the tree where the "
 "work is occurring."
 msgstr ""
-"Comprometidos são encorajados a buscar revisão de seu trabalho como parte do "
+"Commiters são encorajados a buscar revisão de seu trabalho como parte do "
 "processo normal de desenvolvimento, independentemente da área da árvore onde "
 "o trabalho está ocorrendo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:430
-#, fuzzy
 msgid "Policy for Committer Activity in Other Trees"
-msgstr "Política para atividade de confirmação em outras árvores"
+msgstr "Política para atividade de Commiters em outras árvores"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:434
-#, fuzzy
 msgid ""
 "All committers may modify <filename>base/head/share/misc/committers-*.dot</"
 "filename>, <filename>base/head/usr.bin/calendar/calendars/calendar.freebsd</"
 "filename>, and <filename>ports/head/astro/xearth/files</filename>."
 msgstr ""
-"Todos os committers podem modificar o <filename> base/head/share/misc/"
-"committers-*.dot </filename>, <filename> base/head/usr.bin/calendar/"
-"calendários/calendar.freebsd</filename>, e <filename> ports/head/astro/"
-"xearth/files </filename>."
+"Todos os committers podem modificar <filename>base/head/share/misc/"
+"committers-*.dot</filename>, <filename>base/head/usr.bin/calendar/calendars/"
+"calendar.freebsd</filename>, e <filename>ports/head/astro/xearth/files</"
+"filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:442
-#, fuzzy
 msgid ""
 "doc committers may commit documentation changes to <filename>src</filename> "
 "files, such as man pages, READMEs, fortune databases, calendar files, and "
 "comment fixes without approval from a src committer, subject to the normal "
 "care and tending of commits."
 msgstr ""
-"doc committers podem submeter alterações de documentação a arquivos "
-"<filename> src </filename>, como man pages, READMEs, bancos de dados "
-"fortune, arquivos de calendários e correções de comentários sem aprovação de "
-"um committer src, sujeito aos cuidados e tendências normais de commits."
+"committers de doc podem confirmar alterações de documentação "
+"para<filename>src</filename>, tal como man pages, READMEs, banco de dados de "
+"fortune, arquivos de calendários, e comentar correções sem aprovação de um "
+"src committer, sujeito aos cuidados normais dos commits."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:451
-#, fuzzy
 msgid ""
 "Any committer may make changes to any other tree with an \"Approved by\" "
 "from a non-mentored committer with the appropriate bit."
@@ -909,7 +840,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:457
-#, fuzzy
 msgid ""
 "Committers can acquire an additional bit by the usual process of finding a "
 "mentor who will propose them to core, doceng, or portmgr, as appropriate. "
@@ -920,30 +850,27 @@ msgstr ""
 "Os committers podem adquirir um bit adicional pelo processo usual de "
 "encontrar um mentor que os proporá ao core, doceng ou portmgr, conforme "
 "apropriado. Quando aprovados, eles serão adicionados ao 'acesso' e o período "
-"normal de orientação ocorrerá, o que envolverá a continuação de <quote> "
-"Aprovado por </quote> por algum período."
+"normal de orientação ocorrerá, o que envolverá uma continuação "
+"de<quote>Approved by</quote>por algum período."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:466
-#, fuzzy
 msgid ""
 "\"Approved by\" is only acceptable from non-mentored src committers -- "
 "mentored committers can provide a \"Reviewed by\" but not an \"Approved by\"."
 ""
 msgstr ""
-"\"Aprovado por\" só é aceitável de committers src não-mentored - os "
-"committers mentored podem fornecer um \"Avaliado por\" mas não um \"Aprovado "
-"por\"."
+"\"Approved by\" só é aceitável de committers src não-mentorados - os "
+"committers mentorados podem fornecer um \"Reviewed by\" mas não é um "
+"\"Approved by\"."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:475
-#, fuzzy
 msgid "Subversion Primer"
 msgstr "Subversion Primer"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:477
-#, fuzzy
 msgid ""
 "New committers are assumed to already be familiar with the basic operation "
 "of Subversion. If not, start by reading the <link xlink:href=\"http://"
@@ -951,53 +878,48 @@ msgid ""
 msgstr ""
 "Supõe-se que novos committers já estejam familiarizados com a operação "
 "básica do Subversion. Se não, comece lendo o <link xlink:href=\"http://"
-"svnbook.red-bean.com/\"> Subversion Book </link>."
+"svnbook.red-bean.com/\">Subversion Book</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:483
-#, fuzzy
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:485
-#, fuzzy
 msgid ""
 "The FreeBSD source repository switched from <acronym>CVS</acronym> to "
 "Subversion on May 31st, 2008. The first real <acronym>SVN</acronym> commit "
 "is <emphasis>r179447</emphasis>."
 msgstr ""
-"O repositório fonte do FreeBSD mudou do <acronym> CVS </acronym> para o "
-"Subversion em 31 de maio de 2008. O primeiro commit real do <acronym> SVN </"
-"acronym> é <emphasis> r179447 </emphasis>."
+"O repositório de fontes do FreeBSD mudou de <acronym>CVS</acronym>para o "
+"Subversion em 31 de maio de 2008. O primeiro real<acronym>SVN</acronym> "
+"commit é <emphasis>r179447</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:490
-#, fuzzy
 msgid ""
 "The FreeBSD <literal>doc/www</literal> repository switched from "
 "<acronym>CVS</acronym> to Subversion on May 19th, 2012. The first real "
 "<acronym>SVN</acronym> commit is <emphasis>r38821</emphasis>."
 msgstr ""
-"O repositório <literal> doc / www </literal> do FreeBSD mudou do <acronym> "
-"CVS </acronym> para o Subversion em 19 de maio de 2012. O primeiro commit "
-"real do <acronym> SVN </acronym> é <emphasis> r38821 </emphasis>."
+"O repositório do FreeBSD <literal>doc/www</literal> foi migrado de "
+"<acronym>CVS</acronym> para Subversion em 19 de Maio de 2012. O primeiro "
+"real commit no <acronym>SVN</acronym> foi <emphasis>r38821</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:495
-#, fuzzy
 msgid ""
 "The FreeBSD <literal>ports</literal> repository switched from <acronym>CVS</"
 "acronym> to Subversion on July 14th, 2012. The first real <acronym>SVN</"
 "acronym> commit is <emphasis>r300894</emphasis>."
 msgstr ""
-"O repositório <literal> ports </literal> do FreeBSD mudou do <acronym> CVS </"
-"acronym> para o Subversion em 14 de julho de 2012. O primeiro commit real do "
-"<acronym> SVN </acronym> é <emphasis> r300894 </emphasis> ."
+"O repositório do FreeBSD <literal>ports</literal> foi migrado de  "
+"<acronym>CVS</acronym> para Subversion em 14 de Julho 2012. O primeiro real "
+"commit no <acronym>SVN</acronym> foi <emphasis>r300894</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:500
-#, fuzzy
 msgid ""
 "Subversion can be installed from the FreeBSD Ports Collection by issuing "
 "these commands:"
@@ -1007,20 +929,17 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:503
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
-msgstr ""
-"<prompt> # </prompt> <userinput> pkg instala o subversion </userinput>"
+msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:508
-#, fuzzy
 msgid "Getting Started"
 msgstr "Começando"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:510
-#, fuzzy
 msgid ""
 "There are a few ways to obtain a working copy of the tree from Subversion. "
 "This section will explain them."
@@ -1030,46 +949,43 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:514
-#, fuzzy
 msgid "Direct Checkout"
 msgstr "Checkout direto"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:516
-#, fuzzy
 msgid ""
 "The first is to check out directly from the main repository. For the "
 "<literal>src</literal> tree, use:"
 msgstr ""
-"O primeiro é fazer check-out diretamente do repositório principal. Para a "
-"árvore <literal> src </literal>, use:"
+"O primeiro é fazer check-out diretamente do repositório principal. Para "
+"fazer em na árvore<literal>src</literal>, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:520
 #: article.translate.xml:741
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
 "head /usr/src</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn checkout svn + ssh: //repo.freebsd.org/"
-"base/head/usr/src </userinput>"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head /usr/src</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:522
-#, fuzzy
 msgid "For the <literal>doc</literal> tree, use:"
-msgstr "Para a árvore <literal> doc </literal>, use:"
+msgstr "Para a árvore<literal>doc</literal>, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:524
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/"
 "head /usr/doc</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn checkout svn + ssh: //repo.freebsd.org/"
-"doc/head / usr / doc </userinput>"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/"
+"head /usr/doc</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:526
@@ -1119,7 +1035,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:549
-#, fuzzy
 msgid ""
 "<literal>svn+ssh</literal> means the <acronym>SVN</acronym> protocol "
 "tunnelled over <acronym>SSH</acronym>. The name of the server is "
@@ -1127,37 +1042,34 @@ msgid ""
 "the repository, and <literal>head</literal> is the subdirectory within the "
 "repository."
 msgstr ""
-"<literal> svn + ssh </literal> significa que o protocolo <acronym> SVN </"
-"acronym> foi sintonizado em <acronym> SSH </acronym>. O nome do servidor é "
-"<literal> repo.freebsd.org </literal>, <literal> base </literal> é o caminho "
-"para o repositório, e <literal> head </literal> é o subdiretório dentro do "
-"repositório."
+"<literal>svn+ssh</literal> significa o <acronym>SVN</acronym> protocolo "
+"tunnelled sobre <acronym>SSH</acronym>.  O nome do servidor é<literal>repo."
+"freebsd.org</literal>, <literal>base</literal> é o caminho para o "
+"repositório <literal>head</literal> é o subdiretório dentro do repositório."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:556
-#, fuzzy
 msgid ""
 "If your FreeBSD login name is different from the login name used on the "
 "local machine, either include it in the <acronym>URL</acronym> (for example "
 "<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>), or add an "
 "entry to <filename>~/.ssh/config</filename> in the form:"
 msgstr ""
-"Se o seu nome de login no FreeBSD for diferente do nome de login usado na "
-"máquina local, inclua-o na <acronym> URL </acronym> (por exemplo <literal> "
-"svn + ssh: //jarjar@repo.freebsd.org/ base / head </literal>), ou adicione "
-"uma entrada para <filename> ~ / .ssh / config </filename> no formulário:"
+"Se seu nome de login do FreeBSD for diferente do nome de login usado na "
+"máquina local, inclua-o no <acronym>URL</acronym>(por "
+"exemplo<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>) ou "
+"adicionar uma entrada para <filename>~/.ssh/config</filename> na forma:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:563
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Host repo.freebsd.org\n"
 "\tUser jarjar"
-msgstr "Anfitrião repo.freebsd.org\n"
-"Jarjar do usuário"
+msgstr "Host repo.freebsd.org\n"
+"\tUser jarjar"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:566
-#, fuzzy
 msgid ""
 "This is the simplest method, but it is hard to tell just yet how much load "
 "it will place on the repository."
@@ -1167,187 +1079,167 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:570
-#, fuzzy
 msgid ""
 "The <command>svn diff</command> does not require access to the server as "
 "<acronym>SVN</acronym> stores a reference copy of every file in the working "
 "copy. This, however, means that Subversion working copies are very large in "
 "size."
 msgstr ""
-"O <command> svn diff </command> não requer acesso ao servidor, pois o "
-"<acronym> SVN </acronym> armazena uma cópia de referência de todos os "
-"arquivos na cópia de trabalho. Isto, no entanto, significa que as cópias de "
-"trabalho do Subversion são muito grandes em tamanho."
+"O <command>svn diff</command>não requer acesso ao servidor como "
+"<acronym>SVN</acronym>armazena uma cópia de referência de todos os arquivos "
+"na cópia de trabalho. Isto, no entanto, significa que as cópias de trabalho "
+"do Subversion são muito grandes em tamanho."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:579
-#, fuzzy
 msgid "<literal>RELENG_*</literal> Branches and General Layout"
-msgstr "<literal> RELENG _ * </literal> Ramificações e layout geral"
+msgstr "<literal>RELENG_*</literal> Branches e General Layout"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:582
-#, fuzzy
 msgid ""
 "In <literal>svn+ssh://repo.freebsd.org/base</literal>, <emphasis>base</"
 "emphasis> refers to the source tree. Similarly, <emphasis>ports</emphasis> "
 "refers to the ports tree, and so on. These are separate repositories with "
 "their own change number sequences, access controls and commit mail."
 msgstr ""
-"Em <literal> svn + ssh: //repo.freebsd.org/base </literal>, <emphasis> base "
-"</emphasis> refere-se à árvore fonte. Da mesma forma, <emphasis> ports </"
-"emphasis> se refere à árvore de ports, e assim por diante. Estes são "
+"Dentro <literal>svn+ssh://repo.freebsd.org/base</literal>, <emphasis>base</"
+"emphasis>refere-se à árvore de origem. Similarmente, <emphasis>ports</"
+"emphasis> refere-se à árvore de ports e assim por diante. Estes são "
 "repositórios separados com suas próprias seqüências de números de mudança, "
 "controles de acesso e email de confirmação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:589
-#, fuzzy
 msgid ""
 "For the base repository, HEAD refers to the -CURRENT tree. For example, "
 "<filename>head/bin/ls</filename> is what would go into <filename>/usr/src/"
 "bin/ls</filename> in a release. Some key locations are:"
 msgstr ""
-"Para o repositório base, HEAD refere-se à árvore -CURRENT. Por exemplo, "
-"<filename> head / bin / ls </filename> é o que iria entrar em <filename> / "
-"usr / src / bin / ls </filename> em uma versão. Alguns locais importantes "
-"são:"
+"Para o repositório base, HEAD refere-se a árvore -CURRENT. Por exemplo, "
+"<filename>head/bin/ls</filename>é o que entraria<filename>/usr/src/bin/ls</"
+"filename> em uma release. Alguns locais importantes são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:596
-#, fuzzy
 msgid ""
 "<emphasis>/head/</emphasis> which corresponds to <literal>HEAD</literal>, "
 "also known as <literal>-CURRENT</literal>."
 msgstr ""
-"<emphasis> / head / </emphasis> que corresponde a <literal> HEAD </literal>, "
-"também conhecido como <literal> -CURRENT </literal>."
+"<emphasis>/head/</emphasis> que corresponde a<literal>HEAD</literal>,também "
+"conhecido como<literal>-CURRENT</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:602
-#, fuzzy
 msgid ""
 "<emphasis>/stable/<replaceable>n</replaceable></emphasis> which corresponds "
 "to <literal>RELENG_<replaceable>n</replaceable></literal>."
 msgstr ""
-"<emphasis> / stable / <replaceable> n </replaceable> </emphasis> que "
-"corresponde a <literal> RELENG_ <replaceable> n </replaceable> </literal>."
+"<emphasis>/stable/<replaceable>n</replaceable></emphasis>que corresponde "
+"a<literal>RELENG_<replaceable>n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
-#, fuzzy
 msgid ""
 "<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> which "
 "corresponds to <literal>RELENG_<replaceable>n_n</replaceable></literal>."
 msgstr ""
-"<emphasis> / releng / <replaceable> n.n </replaceable> </emphasis> que "
-"corresponde a <literal> RELENG_ <replaceable> n_n </replaceable> </literal>."
+"<emphasis>/releng/<replaceable>n.n</replaceable></emphasis>que corresponde "
+"a<literal>RELENG_<replaceable>n_n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:614
-#, fuzzy
 msgid ""
 "<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis> which "
 "corresponds to <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
 "literal>."
 msgstr ""
-"<emphasis> / release / <replaceable> n.n.n </replaceable> </emphasis> que "
-"corresponde a <literal> RELENG_ <replaceable> n_n_n </replaceable> _RELEASE "
-"</literal>."
+"<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis>que "
+"corresponde a<literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
+"literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:620
-#, fuzzy
 msgid ""
 "<emphasis>/vendor*</emphasis> is the vendor branch import work area. This "
 "directory itself does not contain branches, however its subdirectories do. "
 "This contrasts with the <emphasis>stable</emphasis>, <emphasis>releng</"
 "emphasis> and <emphasis>release</emphasis> directories."
 msgstr ""
-"<emphasis> / vendor * </emphasis> é a área de trabalho de importação de "
-"filiais do fornecedor. Este diretório em si não contém ramificações, no "
-"entanto, seus subdiretórios. Isso contrasta com os diretórios <emphasis> "
-"stable </emphasis>, <emphasis> releng </emphasis> e <emphasis> release </"
-"emphasis>."
+"<emphasis>/vendor*</emphasis> é a área de trabalho de importação de filial "
+"do fornecedor. Este diretório em si não contém ramificações, no entanto, "
+"seus subdiretórios. Isso contrasta com o <emphasis>stable</emphasis>, "
+"<emphasis>releng</emphasis> e <emphasis>release</emphasis> diretórios."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:629
-#, fuzzy
 msgid ""
 "<emphasis>/projects</emphasis> and <emphasis>/user</emphasis> feature a "
 "branch work area. As above, the <emphasis>/user</emphasis> directory does "
 "not contain branches itself."
 msgstr ""
-"<emphasis> / projects </emphasis> e <emphasis> / user </emphasis> apresentam "
-"uma área de trabalho de filial. Como acima, o diretório <emphasis> / user </"
-"emphasis> não contém as ramificações em si."
+"<emphasis>/projects</emphasis> e <emphasis>/user</emphasis>apresentam uma "
+"área de trabalho de ramificação. Como acima, o <emphasis>/user</emphasis> "
+"diretório não contém ramificações em si."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:639
-#, fuzzy
 msgid "FreeBSD Documentation Project Branches and Layout"
 msgstr "Ramificações e Layout do Projeto de Documentação do FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:642
-#, fuzzy
 msgid ""
 "In <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
 "emphasis> refers to the repository root of the source tree."
 msgstr ""
-"Em <literal> svn + ssh: //repo.freebsd.org/doc </literal>, <emphasis> doc </"
-"emphasis> refere-se à raiz do repositório da árvore de fontes."
+"Dentro <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
+"emphasis>refere-se à raiz do repositório da árvore de origem."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:646
-#, fuzzy
 msgid ""
 "In general, most FreeBSD Documentation Project work will be done within the "
 "<filename>head/</filename> branch of the documentation source tree."
 msgstr ""
 "Em geral, a maior parte do trabalho do Projeto de Documentação do FreeBSD "
-"será feito dentro da ramificação <filename> head / </filename> da árvore de "
-"fontes de documentação."
+"será feito dentro do <filename>head/</filename> ramo da árvore de fontes de "
+"documentação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:650
-#, fuzzy
 msgid ""
 "FreeBSD documentation is written and/or translated to various languages, "
 "each in a separate directory in the <filename>head/</filename> branch."
 msgstr ""
-"A documentação do FreeBSD é escrita e / ou traduzida para vários idiomas, "
-"cada um em um diretório separado na ramificação <filename> head / </"
-"filename>."
+"A documentação do FreeBSD é escrita e/ou traduzida para vários idiomas, cada "
+"um em um diretório separado no <filename>head/</filename> branch."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:655
-#, fuzzy
 msgid ""
 "Each translation set contains several subdirectories for the various parts "
 "of the FreeBSD Documentation Project. A few noteworthy directories are:"
 msgstr ""
 "Cada conjunto de tradução contém vários subdiretórios para as várias partes "
-"do Projeto de Documentação do FreeBSD. Alguns diretórios notáveis ​​são:"
+"do Projeto de Documentação do FreeBSD. Alguns diretórios notáveis são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:661
-#, fuzzy
 msgid ""
 "<emphasis>/articles/</emphasis> contains the source code for articles "
 "written by various FreeBSD contributors."
 msgstr ""
-"<emphasis> / articles / </emphasis> contém o código fonte para artigos "
-"escritos por vários colaboradores do FreeBSD."
+"<emphasis>/articles/</emphasis> contém o código fonte para artigos escritos "
+"por vários colaboradores do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:667
-#, fuzzy
 msgid ""
 "<emphasis>/books/</emphasis> contains the source code for the different "
 "books, such as the FreeBSD Handbook."
 msgstr ""
-"<emphasis> / books / </emphasis> contém o código-fonte para os diferentes "
+"<emphasis>/books/</emphasis> contém o código fonte para os diferentes "
 "livros, como o FreeBSD Handbook."
 
 #. (itstool) path: listitem/para
@@ -1398,35 +1290,31 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:701
-#, fuzzy
 msgid ""
 "<emphasis>/tags/RELEASE_<replaceable>n_n_n</replaceable></emphasis> which "
 "corresponds to <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> "
 "represents a release tag of the ports tree."
 msgstr ""
-"<emphasis> / tags / RELEASE_ <replaceable> n_n_n </replaceable> </emphasis> "
-"que corresponde a <literal> RELEASE_ <replaceable> n_n_n </replaceable> </"
-"literal> representa uma tag de lançamento da árvore de portes."
+"<emphasis>/tags/RELEASE_<replaceable>n_n_n</replaceable></emphasis> que "
+"corresponde a <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> "
+"representa uma tag de lançamento da árvore de ports."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:708
-#, fuzzy
 msgid ""
 "<emphasis>/tags/RELEASE_<replaceable>n</replaceable>_EOL</emphasis> "
 "represents the end of life tag of a specific FreeBSD branch."
 msgstr ""
-"<emphasis> / tags / RELEASE_ <replaceable> n </replaceable> _EOL </emphasis> "
-"representa a tag de final de vida de uma ramificação específica do FreeBSD."
+"<emphasis>/tags/RELEASE_<replaceable>n</replaceable>_EOL</emphasis> "
+"representa o end of life tag de um ramo específico do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:717
-#, fuzzy
 msgid "Daily Use"
 msgstr "Uso diário"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:719
-#, fuzzy
 msgid ""
 "This section will explain how to perform common day-to-day operations with "
 "Subversion."
@@ -1436,96 +1324,87 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:723
-#, fuzzy
 msgid "Help"
-msgstr "Socorro"
+msgstr "Ajuda"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:725
-#, fuzzy
 msgid ""
 "<acronym>SVN</acronym> has built in help documentation. It can be accessed "
 "by typing:"
 msgstr ""
-"O <acronym> SVN </acronym> incluiu a documentação de ajuda. Pode ser "
+"<acronym>SVN</acronym> foi construído em documentação de ajuda. Pode ser "
 "acessado digitando:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:728
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn help</userinput>"
-msgstr "<prompt>% </prompt> <userinput> ajuda do svn </userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn help</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:730
-#, fuzzy
 msgid ""
 "Additional information can be found in the <link xlink:href=\"http://svnbook."
 "red-bean.com/\">Subversion Book</link>."
 msgstr ""
 "Informações adicionais podem ser encontradas no <link xlink:href=\"http://"
-"svnbook.red-bean.com/\"> Subversion Book </link>."
+"svnbook.red-bean.com/\">Subversion Book</link>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:736
-#, fuzzy
 msgid "Checkout"
-msgstr "Confira"
+msgstr "Checkout"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:738
-#, fuzzy
 msgid "As seen earlier, to check out the FreeBSD head branch:"
 msgstr ""
 "Como visto anteriormente, para verificar o branch principal do FreeBSD:"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:743
-#, fuzzy
 msgid ""
 "At some point, more than just <literal>HEAD</literal> will probably be "
 "useful, for instance when merging changes to stable/7. Therefore, it may be "
 "useful to have a partial checkout of the complete tree (a full checkout "
 "would be very painful)."
 msgstr ""
-"Em algum momento, mais do que apenas <literal> HEAD </literal> provavelmente "
-"será útil, por exemplo, ao mesclar as alterações para stable / 7. Portanto, "
+"Em algum momento, mais do que apenas <literal>HEAD</literal> provavelmente "
+"será útil, por exemplo, ao mesclar as alterações para stable/7. Portanto, "
 "pode ser útil ter uma verificação parcial da árvore completa (um check-out "
 "completo seria muito doloroso)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:749
-#, fuzzy
 msgid "To do this, first check out the root of the repository:"
 msgstr "Para fazer isso, primeiro confira a raiz do repositório:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:752
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
 "freebsd.org/base</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn checkout --depth = diretamente svn + ssh:"
-" //repo.freebsd.org/base </userinput>"
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:754
-#, fuzzy
 msgid ""
 "This will give <literal>base</literal> with all the files it contains (at "
 "the time of writing, just <filename>ROADMAP.txt</filename>) and empty "
 "subdirectories for <literal>head</literal>, <literal>stable</literal>, "
 "<literal>vendor</literal> and so on."
 msgstr ""
-"Isto dará a <literal> base </literal> com todos os arquivos que ela contém "
-"(no momento da escrita, apenas <filename> ROADMAP.txt </filename>) e "
-"subdiretórios vazios para <literal> head </literal>, <literal> stable </"
-"literal>, <literal> vendor </literal> e assim por diante."
+"Isso vai dar <literal>base</literal>com todos os arquivos que ele contém (no "
+"momento da escrita, apenas <filename>ROADMAP.txt</filename>)e subdiretórios "
+"vazios para <literal>head</literal>, <literal>stable</literal>, "
+"<literal>vendor</literal> e assim por diante."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:760
-#, fuzzy
 msgid ""
 "Expanding the working copy is possible. Just change the depth of the various "
 "subdirectories:"
@@ -1535,63 +1414,59 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:763
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release "
 "base/releng base/stable</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn acima --set-depth = infinity base / head "
-"</userinput>\n"
-"<prompt>% </prompt> <userinput> svn up --set-depth = base de imediatos / "
-"base de release / releng base / stable </userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release "
+"base/releng base/stable</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:766
-#, fuzzy
 msgid ""
 "The above command will pull down a full copy of <literal>head</literal>, "
 "plus empty copies of every <literal>release</literal> tag, every "
 "<literal>releng</literal> branch, and every <literal>stable</literal> branch."
 ""
 msgstr ""
-"O comando acima irá puxar para baixo uma cópia completa de <literal> head </"
-"literal>, mais cópias vazias de cada tag <literal> release </literal>, cada "
-"ramificação <literal> releng </literal>, e todas as <literal> ramo estável </"
-"literal>."
+"O comando acima irá baixar uma cópia completa <literal>head</literal>, além "
+"de cópias vazias de cada<literal>release</literal> tag, cada "
+"<literal>releng</literal> branch, e cada <literal>stable</literal> branch."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:772
-#, fuzzy
 msgid ""
 "If at a later date merging to <literal>7-STABLE</literal> is required, "
 "expand the working copy:"
 msgstr ""
-"Se, posteriormente, for necessário mesclar a <literal> 7-STABLE </literal>, "
+"Se numa data posterior se mesclar a<literal>7-STABLE</literal> é necessário, "
 "expanda a cópia de trabalho:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:776
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn acima --set-depth = infinity base / "
-"stable / 7 </userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:778
-#, fuzzy
 msgid ""
 "Subtrees do not have to be expanded completely. For instance, expanding only "
 "<literal>stable/7/sys</literal> and then later expand the rest of "
 "<literal>stable/7</literal>:"
 msgstr ""
 "As subárvores não precisam ser expandidas completamente. Por exemplo, "
-"expandindo apenas <literal> stable / 7 / sys </literal> e depois expandindo "
-"o restante de <literal> stable / 7 </literal>:"
+"expandir apenas<literal>stable/7/sys</literal> e depois expandir o "
+"resto<literal>stable/7</literal>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:783
@@ -1620,13 +1495,11 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:794
-#, fuzzy
 msgid "Anonymous Checkout"
-msgstr "Checkout anônimo"
+msgstr "Anonymous Checkout"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:796
-#, fuzzy
 msgid ""
 "It is possible to anonymously check out the FreeBSD repository with "
 "Subversion. This will give access to a read-only tree that can be updated, "
@@ -1638,35 +1511,32 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:801
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/"
 "src</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn co https://svn.FreeBSD.org/base/head/usr/"
-"src </userinput>"
+"<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/"
+"src</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:803
-#, fuzzy
 msgid ""
 "More details on using Subversion this way can be found in <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn.html\">Using "
 "Subversion</link>."
 msgstr ""
-"Mais detalhes sobre o uso do Subversion podem ser encontrados em <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc / en_US.ISO8859-1 / books / handbook / svn."
-"html\"> Usando o Subversion </link>."
+"Mais detalhes sobre o uso do Subversion podem ser encontrados em<link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn."
+"html\">Usando Subversion</link>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:809
-#, fuzzy
 msgid "Updating the Tree"
 msgstr "Atualizando a Árvore"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:811
-#, fuzzy
 msgid ""
 "To update a working copy to either the latest revision, or a specific "
 "revision:"
@@ -1676,67 +1546,60 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:814
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
 "<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn update </userinput>\n"
-"<prompt>% </prompt> <userinput> svn update - <replaceable> r12345 </"
-"replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn update</userinput>\n"
+"<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:819
-#, fuzzy
 msgid "Status"
 msgstr "Status"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:821
-#, fuzzy
 msgid "To view the local changes that have been made to the working copy:"
 msgstr "Para ver as alterações locais que foram feitas na cópia de trabalho:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:824
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn status</userinput>"
-msgstr "<prompt>% </prompt> <userinput> svn status </userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn status</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:826
-#, fuzzy
 msgid "To show local changes and files that are out-of-date do:"
 msgstr ""
 "Para mostrar alterações locais e arquivos que estão desatualizados, faça:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:829
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn status --show-updates</userinput>"
-msgstr ""
-"<prompt>% </prompt> <userinput> svn status --show-updates </userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn status --show-updates</userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:833
-#, fuzzy
 msgid "Editing and Committing"
 msgstr "Edição e Confirmação"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:835
-#, fuzzy
 msgid ""
 "<acronym>SVN</acronym> does not need to be told in advance about file "
 "editing."
 msgstr ""
-"O <acronym> SVN </acronym> não precisa ser avisado com antecedência sobre a "
+"<acronym>SVN</acronym> não precisa ser avisado com antecedência sobre a "
 "edição de arquivos."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:838
-#, fuzzy
 msgid "To commit all changes in the current directory and all subdirectories:"
 msgstr ""
 "Para confirmar todas as alterações no diretório atual e em todos os "
@@ -1744,35 +1607,33 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:841
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn commit</userinput>"
-msgstr "<prompt>% </prompt> <userinput> svn commit </userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:843
-#, fuzzy
 msgid ""
 "To commit all changes in, for example, <filename><replaceable>lib/libfetch/</"
 "replaceable></filename> and <filename><replaceable>usr/bin/fetch/</"
 "replaceable></filename> in a single operation:"
 msgstr ""
-"Para confirmar todas as alterações, por exemplo, <filename> <replaceable> "
-"lib / libfetch / </replaceable> </filename> e <filename> <replaceable> usr / "
-"bin / fetch / </replaceable> </filename> em um operação única:"
+"Para confirmar todas as alterações, por exemplo,<filename><replaceable>lib/"
+"libfetch/</replaceable></filename> e <filename><replaceable>usr/bin/fetch/</"
+"replaceable></filename> em uma única operação:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:849
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</"
 "replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn commit <replaceable> lib / libfetch </"
-"replaceable> <replaceable> usr / bin / fetch </replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</"
+"replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:851
-#, fuzzy
 msgid ""
 "There is also a commit wrapper for the ports tree to handle the properties "
 "and sanity checking the changes:"
@@ -1782,23 +1643,21 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:855
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> / usr / ports / Ferramentas / scripts / psvn "
-"commit </userinput>"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:859
-#, fuzzy
 msgid "Adding and Removing Files"
 msgstr "Adicionando e Removendo Arquivos"
 
 #. (itstool) path: note/para
 #: article.translate.xml:862
-#, fuzzy
 msgid ""
 "Before adding files, get a copy of <link xlink:href=\"https://people.FreeBSD."
 "org/~peter/auto-props.txt\">auto-props.txt</link> (there is also a <link "
@@ -1810,27 +1669,26 @@ msgid ""
 "initial config file is created when you first run a svn command, even "
 "something as simple as <command>svn help</command>."
 msgstr ""
-"Antes de adicionar arquivos, obtenha uma cópia do <link xlink:href=\"https://"
-"people.FreeBSD.org/~peter/auto-props.txt\"> auto-props.txt </link> (também "
-"há um <link xlink:href=\"https://people.FreeBSD.org/~beat/cvs2svn/auto-props."
-"txt\"> versão específica da árvore de ports </link>) e adicione-o ao "
-"<filename> ~ / .subversion / config </filename> de acordo com as instruções "
-"no arquivo. Se você adicionou algo antes de ler isto, use o <command> svn rm "
-"--keep-local </command> apenas para adicionar arquivos, corrija seu arquivo "
-"de configuração e adicione-os novamente. O arquivo de configuração inicial é "
+"Antes de adicionar arquivos, obtenha uma cópia do<link xlink:href=\"https://"
+"people.FreeBSD.org/~peter/auto-props.txt\">auto-props.txt</link> (há também "
+"um <link xlink:href=\"https://people.FreeBSD.org/~beat/cvs2svn/auto-props."
+"txt\"> versão específica da árvore de ports</link>) e adicione-o "
+"a<filename>~/.subversion/config</filename>de acordo com as instruções do "
+"arquivo. Se você adicionou algo antes de ler isto, use <command>svn rm --"
+"keep-local</command> para apenas adicionar arquivos, corrija seu arquivo de "
+"configuração e adicione-os novamente. O arquivo de configuração inicial é "
 "criado quando você executa um comando svn pela primeira vez, até mesmo algo "
-"tão simples quanto <command> svn help </command>."
+"tão simples quanto <command>svn help</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:874
-#, fuzzy
 msgid ""
 "Files are added to a <acronym>SVN</acronym> repository with <command>svn "
 "add</command>. To add a file named <emphasis>foo</emphasis>, edit it, then:"
 msgstr ""
-"Os arquivos são adicionados a um repositório <acronym> SVN </acronym> com "
-"<command> svn add </command>. Para adicionar um arquivo chamado <emphasis> "
-"foo </emphasis>, edite-o e:"
+"Os arquivos são adicionados a um<acronym>SVN</acronym>repositório com "
+"<command>svn add</command>. Para adicionar um arquivo chamado <emphasis>foo</"
+"emphasis>, edite-o e depois:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:879
@@ -1861,219 +1719,202 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:892
-#, fuzzy
 msgid "Files can be removed with <command>svn remove</command>:"
-msgstr "Os arquivos podem ser removidos com <command> svn remove </command>:"
+msgstr "Os arquivos podem ser removidos com <command>svn remove</command>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:895
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn remove <replaceable> foo </replaceable> "
-"</userinput>"
+"<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:897
-#, fuzzy
 msgid ""
 "Subversion does not require deleting the file before using <command>svn rm</"
 "command>, and indeed complains if that happens."
 msgstr ""
-"O Subversion não requer a exclusão do arquivo antes de usar <command> svn rm "
-"</command>, e na verdade reclama se isso acontecer."
+"Subversion não requer a exclusão do arquivo antes de usar <command>svn rm</"
+"command>e, de fato, reclama se isso acontecer."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:901
-#, fuzzy
 msgid "It is possible to add directories with <command>svn add</command>:"
-msgstr "É possível adicionar diretórios com o <command> svn add </command>:"
+msgstr "É possível adicionar diretórios com <command>svn add</command>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:904
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> mkdir <replaceable> barra </replaceable> </"
+"<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> svn add <replaceable> barra </replaceable> </"
+"<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></"
 "userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:907
-#, fuzzy
 msgid ""
 "Although <command>svn mkdir</command> makes this easier by combining the "
 "creation of the directory and the adding of it:"
 msgstr ""
-"Embora o <command> svn mkdir </command> torne isso mais fácil combinando a "
-"criação do diretório e a inclusão dele:"
+"Apesar <command>svn mkdir</command> torna isso mais fácil combinando a "
+"criação do diretório e a adição dele:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:911
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn mkdir <replaceable> barra </replaceable> "
-"</userinput>"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:913
-#, fuzzy
 msgid ""
 "Like files, directories are removed with <command>svn rm</command>. There is "
 "no separate command specifically for removing directories."
 msgstr ""
-"Como os arquivos, os diretórios são removidos com o <command> svn rm </"
-"command>. Não existe um comando separado especificamente para remover "
-"diretórios."
+"Como arquivos, os diretórios são removidos com <command>svn rm</command>. "
+"Não existe um comando separado especificamente para remover diretórios."
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:917
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn rm <replaceable> barra </replaceable> </"
+"<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></"
 "userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:921
-#, fuzzy
 msgid "Copying and Moving Files"
 msgstr "Copiando e Movendo Arquivos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:923
-#, fuzzy
 msgid ""
 "This command creates a copy of <filename>foo.c</filename> named "
 "<filename>bar.c</filename>, with the new file also under version control and "
 "with the full history of <filename>foo.c</filename>:"
 msgstr ""
-"Este comando cria uma cópia do <filename> foo.c </filename> chamado "
-"<filename> bar.c </filename>, com o novo arquivo também sob controle de "
-"versão e com o histórico completo de <filename> foo.c </filename>:"
+"Este comando cria uma cópia do <filename>foo.c</filename> nomeado "
+"<filename>bar.c</filename>, com o novo arquivo também sob controle de versão "
+"e com o histórico completo de <filename>foo.c</filename>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:928
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> "
 "<replaceable>bar.c</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn copy <replaceable> foo.c </replaceable> "
-"<replaceable> bar.c </replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:930
-#, fuzzy
 msgid ""
 "This is usually preferred to copying the file with <command>cp</command> and "
 "adding it to the repository with <command>svn add</command> because this way "
 "the new file does not inherit the original one's history."
 msgstr ""
-"Geralmente, é preferível copiar o arquivo com <command> cp </command> e "
-"adicioná-lo ao repositório com <command> svn add </command>, pois dessa "
-"forma o novo arquivo não herda o histórico original."
+"Geralmente é preferível copiar o arquivo com <command>cp</command> e "
+"adicionando-o ao repositório com <command>svn add</command>porque desta "
+"forma o novo arquivo não herda a história do original."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:935
-#, fuzzy
 msgid "To move and rename a file:"
 msgstr "Para mover e renomear um arquivo:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:937
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> "
 "<replaceable>bar.c</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn move <replaceable> foo.c </replaceable> "
-"<replaceable> bar.c </replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:941
-#, fuzzy
 msgid "Log and Annotate"
-msgstr "Registrar e anotar"
+msgstr "Log e Anotar"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:943
-#, fuzzy
 msgid ""
 "<command>svn log</command> shows revisions and commit messages, most recent "
 "first, for files or directories. When used on a directory, all revisions "
 "that affected the directory and files within that directory are shown."
 msgstr ""
-"O <command> svn log </command> mostra revisões e mensagens de commit, mais "
+"<command>svn log</command> mostra revisões e mensagens de commit, mais "
 "recentes primeiro, para arquivos ou diretórios. Quando usado em um "
 "diretório, todas as revisões que afetaram o diretório e os arquivos nesse "
 "diretório são mostradas."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:948
-#, fuzzy
 msgid ""
 "<command>svn annotate</command>, or equally <command>svn praise</command> or "
 "<command>svn blame</command>, shows the most recent revision number and who "
 "committed that revision for each line of a file."
 msgstr ""
-"<command> svn annotate </command>, ou igualmente <command> svn praise </"
-"command> ou <command> svn blame </command>, mostra o número de revisão mais "
-"recente e quem cometeu essa revisão para cada linha de um arquivo."
+"<command>svn annotate</command>,ou igualmente <command>svn praise</command> "
+"ou <command>svn blame</command>, mostra o número de revisão mais recente e "
+"quem cometeu essa revisão para cada linha de um arquivo."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:955
-#, fuzzy
 msgid "Diffs"
 msgstr "Diffs"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:957
-#, fuzzy
 msgid ""
 "<command>svn diff</command> displays changes to the working copy. Diffs "
 "generated by <acronym>SVN</acronym> are unified and include new files by "
 "default in the diff output."
 msgstr ""
-"O <command> svn diff </command> exibe as alterações na cópia de trabalho. As "
-"diferenças geradas pelo <acronym> SVN </acronym> são unificadas e incluem "
-"novos arquivos por padrão na saída do diff."
+"<command>svn diff</command>exibe alterações na cópia de trabalho. Diffs "
+"gerado por<acronym>SVN</acronym> são unificados e incluem novos arquivos por "
+"padrão na saída do diff."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:962
-#, fuzzy
 msgid ""
 "<command>svn diff</command> can show the changes between two revisions of "
 "the same file:"
 msgstr ""
-"<command> svn diff </command> pode mostrar as mudanças entre duas revisões "
-"do mesmo arquivo:"
+"<command>svn diff</command>pode mostrar as mudanças entre duas revisões do "
+"mesmo arquivo:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:965
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn diff -r179453: 179454 ROADMAP.txt </"
+"<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</"
 "userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:967
-#, fuzzy
 msgid ""
 "It can also show all changes for a specific changeset. This command shows "
 "what changes were made to the current directory and all subdirectories in "
@@ -2085,107 +1926,98 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:972
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn diff -c179454 .</userinput>"
-msgstr "<prompt>% </prompt> <userinput> svn diff -c179454. </userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn diff -c179454 .</userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:976
-#, fuzzy
 msgid "Reverting"
 msgstr "Revertendo"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:978
-#, fuzzy
 msgid ""
 "Local changes (including additions and deletions) can be reverted using "
 "<command>svn revert</command>. It does not update out-of-date files, but "
 "just replaces them with pristine copies of the original version."
 msgstr ""
-"Mudanças locais (incluindo adições e exclusões) podem ser revertidas usando "
-"<command> svn revert </command>. Ele não atualiza arquivos desatualizados, "
-"apenas os substitui por cópias originais da versão original."
+"Mudanças locais (including additions and deletions) pode ser revertido "
+"usando<command>svn revert</command>. Ele não atualiza arquivos "
+"desatualizados, apenas os substitui por cópias originais da versão original."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:985
-#, fuzzy
 msgid "Conflicts"
 msgstr "Conflitos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:987
-#, fuzzy
 msgid ""
 "If an <command>svn update</command> resulted in a merge conflict, Subversion "
 "will remember which files have conflicts and refuse to commit any changes to "
 "those files until explicitly told that the conflicts have been resolved. The "
 "simple, not yet deprecated procedure is:"
 msgstr ""
-"Se um <command> svn update </command> resultou em um conflito de mesclagem, "
-"o Subversion irá lembrar quais arquivos têm conflitos e se recusam a "
-"submeter quaisquer alterações a esses arquivos até que seja explicitamente "
-"informado que os conflitos foram resolvidos. O procedimento simples, ainda "
-"não suspenso, é:"
+"Se um <command>svn update</command> resultou em um conflito de mesclagem, o "
+"Subversion irá lembrar quais arquivos têm conflitos e se recusam a submeter "
+"quaisquer alterações a esses arquivos até que seja explicitamente informado "
+"que os conflitos foram resolvidos. O procedimento simples, ainda não "
+"suspenso, é:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:993
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn resolvido <replaceable> foo </"
-"replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:995
-#, fuzzy
 msgid "However, the preferred procedure is:"
 msgstr "No entanto, o procedimento preferido é:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:997
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</"
 "replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn resolve --accept = trabalhando "
-"<replaceable> foo </replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:999
-#, fuzzy
 msgid ""
 "The two examples are equivalent. Possible values for <literal>--accept</"
 "literal> are:"
 msgstr ""
-"Os dois exemplos são equivalentes. Valores possíveis para <literal> - accept "
-"</literal> são:"
+"Os dois exemplos são equivalentes. Valores possíveis para <literal>--accept</"
+"literal> são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1004
-#, fuzzy
 msgid ""
 "<literal>working</literal>: use the version in your working directory (which "
 "one presumes has been edited to resolve the conflicts)."
 msgstr ""
-"<literal> working </literal>: use a versão em seu diretório de trabalho "
-"(qual presume que foi editado para resolver os conflitos)."
+"<literal>working</literal>: use a versão em seu diretório de trabalho (qual "
+"presume que foi editado para resolver os conflitos)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1010
-#, fuzzy
 msgid ""
 "<literal>base</literal>: use a pristine copy of the version you had before "
 "<command>svn update</command>, discarding your own changes, the conflicting "
 "changes, and possibly other intervening changes as well."
 msgstr ""
-"<literal> base </literal>: use uma cópia original da versão que você tinha "
-"antes de <command> svn update </command>, descartando suas próprias "
-"mudanças, as mudanças conflitantes e possivelmente outras mudanças "
-"intervenientes também."
+"<literal>base</literal>: usar uma cópia original da versão que você tinha "
+"antes<command>svn update</command>, descartando suas próprias alterações, as "
+"mudanças conflitantes e possivelmente outras mudanças intervenientes também."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1017

@@ -1,5 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.0\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-24 06:19+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-08-26 01:08+0000\n"
+"Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -21,7 +22,6 @@ msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:9
-#, fuzzy
 msgid "Independent Verification of IPsec Functionality in FreeBSD"
 msgstr "Verificação Independente da Funcionalidade IPsec no FreeBSD"
 
@@ -87,7 +87,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:36
-#, fuzzy
 msgid ""
 "You installed IPsec and it seems to be working. How do you know? I describe "
 "a method for experimentally verifying that IPsec is working."
@@ -97,13 +96,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:43
-#, fuzzy
 msgid "The Problem"
 msgstr "O problema"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:45
-#, fuzzy
 msgid ""
 "First, lets assume you have <link linkend=\"ipsec-install\"> installed "
 "<emphasis>IPsec</emphasis></link>. How do you know it is <link linkend="
@@ -114,22 +111,20 @@ msgid ""
 "it?"
 msgstr ""
 "Primeiro, vamos assumir que você tem <link linkend=\"ipsec-install\"> "
-"instalado <emphasis> IPsec </emphasis> </link>. Como você sabe que é <link "
-"linkend=\"caveat\"> trabalhando </link>? Claro, sua conexão não funcionará "
-"se estiver mal configurada, e funcionará quando você finalmente acertar. "
-"<citerefentry> <refentrytitle> netstat </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> irá listá-lo. Mas você pode confirmar isso de "
-"forma independente?"
+"instalado <emphasis>IPsec</emphasis></link>. Como você sabe que é <link "
+"linkend=\"caveat\">trabalhando</link>? Claro, sua conexão não funcionará se "
+"estiver mal configurada, e funcionará quando você finalmente acertar. "
+"<citerefentry> <refentrytitle>netstat</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>irá listá-lo. Mas você pode confirmar isso de forma "
+"independente?"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:54
-#, fuzzy
 msgid "The Solution"
 msgstr "A solução"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
-#, fuzzy
 msgid "First, some crypto-relevant info theory:"
 msgstr ""
 "Em primeiro lugar, alguma teoria da informação relevante em relação à "
@@ -137,7 +132,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:60
-#, fuzzy
 msgid ""
 "Encrypted data is uniformly distributed, i.e., has maximal entropy per "
 "symbol;"
@@ -147,7 +141,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:65
-#, fuzzy
 msgid ""
 "Raw, uncompressed data is typically redundant, i.e., has sub-maximal entropy."
 ""
@@ -157,7 +150,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:70
-#, fuzzy
 msgid ""
 "Suppose you could measure the entropy of the data to- and from- your network "
 "interface. Then you could see the difference between unencrypted data and "
@@ -167,19 +159,17 @@ msgid ""
 msgstr ""
 "Suponha que você possa medir a entropia dos dados para e da sua interface de "
 "rede. Então você pode ver a diferença entre dados não criptografados e dados "
-"criptografados. Isso seria verdade mesmo que alguns dos dados no <quote> "
-"modo criptografado </quote> não estivessem criptografados --- como o "
-"cabeçalho IP mais externo deve ser se o pacote deve ser roteável."
+"criptografados. Isso seria verdade mesmo que alguns dos dados no<quote>modo "
+"criptografado</quote> não estivessem criptografados --- como o cabeçalho IP "
+"mais externo deve ser se o pacote deve ser roteável."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:78
-#, fuzzy
 msgid "MUST"
 msgstr "DEVO"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:80
-#, fuzzy
 msgid ""
 "Ueli Maurer's <quote>Universal Statistical Test for Random Bit Generators</"
 "quote>(<link xlink:href=\"http://www.geocities.com/SiliconValley/Code/4704/"
@@ -197,13 +187,11 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:89
-#, fuzzy
 msgid "Tcpdump"
 msgstr "Tcpdump"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:91
-#, fuzzy
 msgid ""
 "We also need a way to capture the raw network data. A program called "
 "<citerefentry><refentrytitle>tcpdump</refentrytitle><manvolnum>1</"
@@ -212,20 +200,19 @@ msgid ""
 "\"kernel\">kernel's config file</link>."
 msgstr ""
 "Também precisamos de uma maneira de capturar os dados brutos da rede. Um "
-"programa chamado <citerefentry> <refentrytitle> tcpdump </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> permite que você faça isso, se "
-"você ativou a interface <emphasis> Filtro de Pacotes Berkeley </emphasis> no "
-"seu <link linkend=\"kernel\"> arquivo de configuração do kernel </link>."
+"programa chamado <citerefentry><refentrytitle>tcpdump</refentrytitle> "
+"<manvolnum>1</manvolnum></citerefentry> permite que você faça isso, se você "
+"ativou a interface <emphasis> Filtro de Pacotes Berkeley </emphasis> no seu "
+"<link linkend=\"kernel\"> arquivo de configuração do kernel </link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:97
-#, fuzzy
 msgid "The command:"
 msgstr "O comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:99
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<userinput>tcpdump -c 4000 -s 10000 -w <replaceable>dumpfile.bin</"
 "replaceable></userinput>"
@@ -235,42 +222,36 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:101
-#, fuzzy
 msgid ""
 "will capture 4000 raw packets to <replaceable>dumpfile.bin</replaceable>. Up "
 "to 10,000 bytes per packet will be captured in this example."
 msgstr ""
-"irá capturar 4000 pacotes brutos para <replaceable> dumpfile.bin </"
+"irá capturar 4000 pacotes brutos para <replaceable>dumpfile.bin</"
 "replaceable>. Até 10.000 bytes por pacote serão capturados neste exemplo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:108
-#, fuzzy
 msgid "The Experiment"
-msgstr "O experimento"
+msgstr "O Experimento"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:110
-#, fuzzy
 msgid "Here is the experiment:"
 msgstr "Aqui está o experimento:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:114
-#, fuzzy
 msgid "Open a window to an IPsec host and another window to an insecure host."
 msgstr ""
 "Abra uma janela para um host IPsec e outra janela para um host inseguro."
 
 #. (itstool) path: step/para
 #: article.translate.xml:119
-#, fuzzy
 msgid "Now start <link linkend=\"tcpdump\">capturing packets</link>."
-msgstr "Agora inicie <link linkend=\"tcpdump\"> capturando pacotes </link>."
+msgstr "Agora inicie <link linkend=\"tcpdump\">capturando pacotes</link>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:124
-#, fuzzy
 msgid ""
 "In the <quote>secure</quote> window, run the <trademark class="
 "\"registered\">UNIX</trademark> command <citerefentry><refentrytitle>yes</"
@@ -278,29 +259,28 @@ msgid ""
 "<literal>y</literal> character. After a while, stop this. Switch to the "
 "insecure window, and repeat. After a while, stop."
 msgstr ""
-"Na janela <quote> secure </quote>, execute o comando <trademark class="
-"\"registered\">UNIX</trademark> <citerefentry> <refentrytitle> sim </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry >, que transmitirá "
-"o caractere <literal> y </literal>. Depois de um tempo, pare com isso. "
-"Alterne para a janela insegura e repita. Depois de um tempo, pare."
+"Na janela <quote>secure</quote> window, execute o <trademark class="
+"\"registered\">UNIX</trademark> command <citerefentry><refentrytitle>yes</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, que transmitirá o "
+"caractere<literal>y</literal>. Depois de um tempo, pare com isso. Alterne "
+"para a janela insegura e repita. Depois de um tempo, pare."
 
 #. (itstool) path: step/para
 #: article.translate.xml:131
-#, fuzzy
 msgid ""
 "Now run <link linkend=\"code\">MUST</link> on the captured packets. You "
 "should see something like the following. The important thing to note is that "
 "the secure connection has 93% (6.7) of the expected value (7.18), and the "
 "<quote>normal</quote> connection has 29% (2.1) of the expected value."
 msgstr ""
-"Agora execute <link linkend=\"code\"> MUST </link> nos pacotes capturados. "
+"Agora execute <link linkend=\"code\">MUST</link> nos pacotes capturados. "
 "Você deve ver algo como o seguinte. O importante é notar que a conexão "
 "segura tem 93% (6,7) do valor esperado (7,18), e a conexão <quote> normal </"
 "quote> tem 29% (2,1) do valor esperado."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:138
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>tcpdump -c 4000 -s 10000 -w "
 "<replaceable>ipsecdemo.bin</replaceable></userinput>\n"
@@ -338,13 +318,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:157
-#, fuzzy
 msgid "Caveat"
 msgstr "Embargo"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:159
-#, fuzzy
 msgid ""
 "This experiment shows that IPsec <emphasis>does</emphasis> seem to be "
 "distributing the payload data <emphasis>uniformly</emphasis>, as encryption "
@@ -354,24 +332,22 @@ msgid ""
 "visible to others, use of weak algorithms, kernel subversion, etc. Study the "
 "source; know the code."
 msgstr ""
-"Esta experiência mostra que o IPsec <emphasis> parece </emphasis> parece "
-"estar distribuindo os dados de carga <emphasis> uniformemente </emphasis>, "
-"como a criptografia deveria. No entanto, o experimento descrito aqui "
-"<emphasis> não pode </emphasis> detectar muitas falhas possíveis em um "
-"sistema (nenhum dos quais eu tenho qualquer evidência para). Estes incluem "
-"geração ou troca deficiente de chaves, dados ou chaves sendo visíveis para "
-"outros, uso de algoritmos fracos, subversão do kernel, etc. Estude a fonte; "
-"conheça o código."
+"Esta experiência mostra que o IPsec <emphasis>parece</emphasis> parece estar "
+"distribuindo os dados de carga<emphasis>uniformemente</emphasis>, como a "
+"criptografia deveria. No entanto, o experimento descrito aqui<emphasis> não "
+"pode </emphasis>detectar muitas falhas possíveis em um sistema (nenhum dos "
+"quais eu tenho qualquer evidência para). Estes incluem geração ou troca "
+"deficiente de chaves, dados ou chaves sendo visíveis para outros, uso de "
+"algoritmos fracos, subversão do kernel, etc. Estude a fonte; conheça o "
+"código."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:171
-#, fuzzy
 msgid "IPsec---Definition"
 msgstr "IPsec --- Definição"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:173
-#, fuzzy
 msgid ""
 "Internet Protocol security extensions to IPv4; required for IPv6. A protocol "
 "for negotiating encryption and authentication at the IP (host-to-host) level."
@@ -382,19 +358,17 @@ msgstr ""
 "Extensões de segurança do protocolo Internet para o IPv4; necessário para o "
 "IPv6. Um protocolo para negociar criptografia e autenticação no nível IP "
 "(host para host). SSL protege apenas um soquete de aplicativo; O "
-"<application> SSH </application> protege apenas um login; <application> PGP "
-"</application> protege apenas um arquivo ou mensagem especificada. O IPsec "
+"<application>SSH</application> protege apenas um login;<application>PGP</"
+"application> protege apenas um arquivo ou mensagem especificada. O IPsec "
 "criptografa tudo entre dois hosts."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:182
-#, fuzzy
 msgid "Installing IPsec"
 msgstr "Instalando o IPsec"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:184
-#, fuzzy
 msgid ""
 "Most of the modern versions of FreeBSD have IPsec support in their base "
 "source. So you will need to include the <option>IPSEC</option> option in "
@@ -403,14 +377,13 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> command."
 msgstr ""
 "A maioria das versões modernas do FreeBSD tem suporte a IPsec em sua fonte "
-"base. Portanto, você precisará incluir a opção <option> IPSEC </option> em "
-"sua configuração de kernel e, após a reconstrução e reinstalação do kernel, "
-"configurar conexões IPsec usando <citerefentry> <refentrytitle> setkey </"
-"refentrytitle> <manvolnum> 8 </manvolnum > </citerefentry> comando."
+"base. Portanto, você precisará incluir a opção <option>IPSEC</option> em sua "
+"configuração de kernel e, após a reconstrução e reinstalação do kernel, "
+"configurar conexões IPsec usando<citerefentry><refentrytitle>setkey</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> command."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:190
-#, fuzzy
 msgid ""
 "A comprehensive guide on running IPsec on FreeBSD is provided in <link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ipsec."
@@ -422,13 +395,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
-#, fuzzy
 msgid "src/sys/i386/conf/KERNELNAME"
 msgstr "src/sys/i386/conf/KERNELNAME"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:198
-#, fuzzy
 msgid ""
 "This needs to be present in the kernel config file in order to capture "
 "network data with <citerefentry><refentrytitle>tcpdump</"
@@ -437,27 +408,25 @@ msgid ""
 "citerefentry> after adding this, and rebuild and reinstall."
 msgstr ""
 "Isso precisa estar presente no arquivo de configuração do kernel para "
-"capturar dados de rede com <citerefentry> <refentrytitle> tcpdump </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry>. Certifique-se de "
-"executar <citerefentry> <refentrytitle> config </refentrytitle> <manvolnum> "
-"8 </manvolnum> </citerefentry> após adicioná-lo, e reconstruir e reinstalar."
+"capturar dados de rede com <citerefentry><refentrytitle>tcpdump</"
+"refentrytitle> <manvolnum>1</manvolnum></citerefentry>. Certifique-se de "
+"executar <citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</"
+"manvolnum> </citerefentry> após adicioná-lo, e reconstruir e reinstalar."
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "device\tbpf"
-msgstr "dispositivo bpf"
+msgstr "dispositivo bgf"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:207
-#, fuzzy
 msgid "Maurer's Universal Statistical Test (for block size=8 bits)"
 msgstr ""
 "Teste Estatístico Universal de Maurer (para tamanho de bloco = 8 bits)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:210
-#, fuzzy
 msgid ""
 "You can find the same code at <link xlink:href=\"http://www.geocities.com/"
 "SiliconValley/Code/4704/uliscanc.txt\"> this link</link>."
@@ -467,7 +436,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:213
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 "  ULISCAN.c   ---blocksize of 8\n"
