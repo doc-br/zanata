@@ -8,9 +8,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-26 09:32+0000\n"
+"PO-Revision-Date: 2018-08-28 12:17+0000\n"
 "Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -18,13 +18,14 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Lucas Andrade, slucasandrade@protonmail.ch, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
-#, fuzzy
 msgid "Practical rc.d scripting in BSD"
-msgstr "Script rc.d prático em BSD"
+msgstr "Scripts rc.d práticos em BSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:8
@@ -34,12 +35,11 @@ msgstr "<email>yar@FreeBSD.org</email>"
 
 #. (itstool) path: info/author
 #: article.translate.xml:7
-#, fuzzy
 msgid ""
 "<personname><firstname>Yar</firstname><surname>Tikhiy</surname></"
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
-"<personname><firstname>Yar</firstname><surname>Tikhiy</surname></"
+"<personname><firstname>Yar </firstname><surname>Tikhiy</surname></"
 "personname><affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: info/copyright
@@ -89,7 +89,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:37
-#, fuzzy
 msgid ""
 "Beginners may find it difficult to relate the facts from the formal "
 "documentation on the BSD <filename>rc.d</filename> framework with the "
@@ -100,12 +99,12 @@ msgid ""
 "and efficient application of <filename>rc.d</filename>."
 msgstr ""
 "Os iniciantes podem achar difícil relacionar os fatos da documentação formal "
-"na estrutura BSD <filename> rc.d </filename> com as tarefas práticas do "
-"script <filename> rc.d </filename>. Neste artigo, consideramos alguns casos "
-"típicos de complexidade crescente, mostre os recursos do <filename> rc.d </"
-"filename> adequados para cada caso e discuta como eles funcionam. Esse exame "
-"deve fornecer pontos de referência para um estudo mais aprofundado do design "
-"e da aplicação eficiente do <filename> rc.d </filename>."
+"do framework <filename>rc.d</filename> do BSD com as tarefas práticas do "
+"script <filename>rc.d</filename>. Neste artigo, consideramos alguns casos "
+"típicos de complexidade crescente, mostraremos os recursos do <filename>rc."
+"d</filename> adequados para cada caso e discutiremos como eles funcionam. "
+"Esse exame deve fornecer pontos de referência para um estudo mais "
+"aprofundado do design e da aplicação eficiente do <filename>rc.d</filename>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:50
@@ -114,7 +113,6 @@ msgstr "Introdução"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:52
-#, fuzzy
 msgid ""
 "The historical BSD had a monolithic startup script, <filename>/etc/rc</"
 "filename>. It was invoked by <citerefentry><refentrytitle>init</"
@@ -125,19 +123,18 @@ msgid ""
 "needed to customize it. With few exceptions, <filename>/etc/rc</filename> "
 "had to be modified, and true hackers liked it."
 msgstr ""
-"O histórico do BSD tinha um script de inicialização monolítico, <filename>/"
-"etc/rc</filename>. Ele foi chamado por <citerefentry> <refentrytitle> init </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> no momento da "
-"inicialização do sistema e executou todas as tarefas necessárias para "
+"O histórico BSD tinha um script de inicialização monolítico, <filename>/etc/"
+"rc</filename>. Ele era chamado pelo <citerefentry><refentrytitle>init</"
+"refentrytitle><manvolnum> 8</manvolnum></citerefentry> no momento da "
+"inicialização do sistema e executava todas as tarefas necessárias para "
 "operação multiusuário: verificação e montagem de sistemas de arquivos, "
-"configuração a rede, iniciando daemons e assim por diante. A lista precisa "
+"configuração de rede, iniciava daemons e assim por diante. A lista precisa "
 "de tarefas não era a mesma em todos os sistemas; os administradores "
 "precisavam personalizá-lo. Com poucas exceções, <filename>/etc/rc</filename> "
-"teve que ser modificado, e verdadeiros hackers gostaram."
+"teve que ser modificado, e os verdadeiros hackers gostaram disso."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:62
-#, fuzzy
 msgid ""
 "The real problem with the monolithic approach was that it provided no "
 "control over the individual components started from <filename>/etc/rc</"
@@ -152,19 +149,18 @@ msgid ""
 msgstr ""
 "O problema real com a abordagem monolítica era que ela não fornecia nenhum "
 "controle sobre os componentes individuais iniciados a partir de <filename>/"
-"etc/rc</filename>. Por exemplo, <filename>/etc/rc</filename> não pôde "
+"etc/rc</filename>. Por exemplo, <filename>/etc/rc</filename> não podia "
 "reiniciar um único daemon. O administrador do sistema tinha que encontrar o "
 "processo daemon manualmente, matá-lo, esperar até que ele realmente saísse, "
-"então procurar por <filename>/etc/rc</filename> pelos flags, e finalmente "
+"então procurar pelas flags em <filename>/etc/rc</filename>, e finalmente "
 "digitar a linha de comando completa para iniciar o daemon novamente. A "
 "tarefa se tornaria ainda mais difícil e propensa a erros se o serviço de "
 "reinicialização consistisse em mais de um daemon ou exigisse ações "
-"adicionais. Em poucas palavras, o script único não cumpriu o objetivo dos "
-"scripts: facilitar a vida do administrador do sistema."
+"adicionais. Em poucas palavras, o script não cumpriu o objetivo dos scripts: "
+"facilitar a vida do administrador do sistema."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:76
-#, fuzzy
 msgid ""
 "Later there was an attempt to split out some parts of <filename>/etc/rc</"
 "filename> for the sake of starting the most important subsystems separately. "
@@ -183,19 +179,18 @@ msgid ""
 msgstr ""
 "Mais tarde, houve uma tentativa de dividir algumas partes do <filename>/etc/"
 "rc</filename> para iniciar os subsistemas mais importantes separadamente. O "
-"exemplo notório foi o <filename> / etc / netstart </filename> para abrir a "
-"rede. Permitiu acessar a rede a partir do modo de usuário único, mas não se "
-"integrou bem ao processo de inicialização automática porque partes de seu "
-"código precisavam intercalar com ações essencialmente não relacionadas à "
-"rede. Foi por isso que <filename> /etc/netstart </filename> mudou para "
-"<filename> /etc/rc.network </filename>. Este último não era mais um roteiro "
-"comum; ele era composto por funções <citerefentry> <refentrytitle> sh </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> chamado <filename>/"
-"etc/rc</filename> grandes e emaranhados em diferentes estágios da "
-"inicialização do sistema. No entanto, como as tarefas de inicialização "
-"cresceram diversas e sofisticadas, a abordagem <quote> quase modular </"
-"quote> tornou-se ainda mais difícil do que o monolítico <filename>/etc/rc</"
-"filename>."
+"exemplo notório foi o <filename>/etc/netstart</filename> para abrir a rede. "
+"Permitiu acessar a rede a partir do modo single-user, mas não se integrou "
+"bem ao processo de inicialização automática porque partes de seu código "
+"precisavam intercalar com ações essencialmente não relacionadas à rede. Foi "
+"por isso que <filename>/etc/netstart</filename> mudou para <filename>/etc/rc."
+"network</filename>. Este último não era mais um roteiro comum; ele era "
+"composto por funções <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> chamado <filename>/etc/"
+"rc</filename> grandes e emaranhados em diferentes estágios da inicialização "
+"do sistema. No entanto, como as tarefas de inicialização cresceram variadas "
+"e sofisticadas, a abordagem <quote>quase modular</quote> tornou-se ainda "
+"mais difícil do que o monolítico <filename>/etc/rc</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:94
@@ -339,37 +334,33 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:158
-#, fuzzy
 msgid ""
 "This article focuses on the FreeBSD branch of <filename>rc.d</filename>. "
 "Nevertheless, it may be useful to NetBSD developers, too, because the two "
 "branches of BSD <filename>rc.d</filename> not only share the same design but "
 "also stay similar in their aspects visible to script authors."
 msgstr ""
-"Este artigo enfoca a ramificação do FreeBSD do <filename> rc.d </filename>. "
-"No entanto, pode ser útil para os desenvolvedores do NetBSD, porque os dois "
-"ramos do BSD <filename> rc.d </filename> não apenas compartilham o mesmo "
-"design, mas também permanecem similares em seus aspectos visíveis aos "
-"autores do script."
+"Este artigo enfoca no ramo <filename>rc.d</filename> do FreeBSD. No entanto, "
+"pode ser útil para os desenvolvedores do NetBSD, porque os dois ramos "
+"<filename>rc.d</filename> do BSD não apenas compartilham o mesmo design, mas "
+"também permanecem similares em seus aspectos visíveis aos autores do script."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:167
-#, fuzzy
 msgid "Outlining the task"
-msgstr "Delineando a tarefa"
+msgstr "Esboçando a tarefa"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:169
-#, fuzzy
 msgid ""
 "A little consideration before starting <envar>$EDITOR</envar> will not hurt. "
 "In order to write a well-tempered <filename>rc.d</filename> script for a "
 "system service, we should be able to answer the following questions first:"
 msgstr ""
-"Um pouco de consideração antes de iniciar <envar> $EDITOR </envar> não irá "
-"prejudicar. Para escrever um script <filename> rc.d </filename> bem "
-"temperado para um serviço de sistema, devemos poder responder as seguintes "
-"questões primeiro:"
+"Um pouco de consideração antes de iniciar <envar>$EDITOR</envar> não irá "
+"prejudicar. Para escrever um script <filename>rc.d</filename> bem temperado "
+"para um serviço do sistema, devemos poder responder as seguintes questões "
+"primeiro:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:177
@@ -378,39 +369,34 @@ msgstr "O serviço é obrigatório ou opcional?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:181
-#, fuzzy
 msgid ""
 "Will the script serve a single program, e.g., a daemon, or perform more "
 "complex actions?"
 msgstr ""
-"O script servirá um único programa, por exemplo, um daemon ou realizará "
+"O script servirá um único programa, por exemplo, um daemon, ou realizará "
 "ações mais complexas?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:186
-#, fuzzy
 msgid "Which other services will our service depend on, and vice versa?"
 msgstr "De quais outros serviços nosso serviço dependerá e vice-versa?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:191
-#, fuzzy
 msgid ""
 "From the examples that follow we will see why it is important to know the "
 "answers to these questions."
 msgstr ""
-"A partir dos exemplos que se seguem, veremos porque é importante conhecer as "
-"respostas a essas perguntas."
+"A partir dos exemplos que se seguem, veremos o porque é importante conhecer "
+"as respostas a essas perguntas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
-#, fuzzy
 msgid "A dummy script"
-msgstr "Um script fictício"
+msgstr "Scripts de simulação"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:198
-#, fuzzy
 msgid ""
 "The following script just emits a message each time the system boots up:"
 msgstr ""
@@ -419,7 +405,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:202
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh<co xml:id=\"rcng-dummy-shebang\"/>\n"
 "\n"
@@ -455,9 +441,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:219
-#, fuzzy
 msgid "Things to note are:"
-msgstr "Coisas para notar são:"
+msgstr "Coisas que devem ser notadas:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:223
@@ -481,7 +466,7 @@ msgstr ""
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:232
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>"
 msgstr "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>"
 
@@ -560,7 +545,6 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:269
-#, fuzzy
 msgid ""
 "An <filename>rc.d</filename> script must <quote>source</quote> <filename>/"
 "etc/rc.subr</filename> (include it using <quote><command>.</command></"
@@ -570,24 +554,15 @@ msgid ""
 "manvolnum></citerefentry> has an opportunity to learn the functions. The "
 "preferred style is to source <filename>/etc/rc.subr</filename> first of all."
 msgstr ""
-"Um script <filename> rc.d </filename> deve <quote> source </quote> "
-"<filename> /etc/rc.subr </filename> (incluí-lo usando <quote> <command>. </"
-"command> </quote>) <emphasis> antes </emphasis> ele chama funções "
-"<citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> para que <citerefentry> <refentrytitle> sh </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> tem uma "
-"oportunidade para aprender as funções. O estilo preferido é a fonte "
-"<filename> /etc/rc.subr </filename> antes de tudo."
 
 #. (itstool) path: note/para
 #: article.translate.xml:278
-#, fuzzy
 msgid ""
 "Some useful functions related to networking are provided by another include "
 "file, <filename>/etc/network.subr</filename>."
 msgstr ""
 "Algumas funções úteis relacionadas à rede são fornecidas por outro arquivo "
-"include, <filename> /etc/network.subr </filename>."
+"include, <filename>/etc/network.subr</filename>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:285
@@ -611,7 +586,6 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:292
-#, fuzzy
 msgid ""
 "Now it is the right time to choose a unique name for our script once and for "
 "all. We will use it in a number of places while developing the script. For a "
@@ -683,19 +657,17 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:326
-#, fuzzy
 msgid ""
 "To make the code in <filename>rc.d</filename> more uniform, it is common to "
 "use <envar>${name}</envar> wherever appropriate. Thus a number of lines can "
 "be just copied from one script to another."
 msgstr ""
-"Para tornar o código em <filename> rc.d </filename> mais uniforme, é comum "
-"usar <envar> $ {name} </envar> onde for apropriado. Assim, várias linhas "
-"podem ser copiadas de um script para outro."
+"Para tornar o código em <filename>rc.d</filename> mais uniforme, é comum "
+"usar <envar>${name}</envar> onde for apropriado. Assim, várias linhas podem "
+"ser copiadas de um script para outro."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:334
-#, fuzzy
 msgid ""
 "We should keep in mind that <citerefentry><refentrytitle>rc.subr</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> provides default "
@@ -704,16 +676,15 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> expression if we want "
 "it to do nothing."
 msgstr ""
-"Devemos ter em mente que <citerefentry> <refentrytitle> rc.subr </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> fornece métodos "
-"padrão para os argumentos padrão. Conseqüentemente, devemos sobrescrever um "
-"método padrão com uma expressão no-op <citerefentry> <refentrytitle> sh </"
-"refentrytitle> <manvolnum> </manvolnum> </citerefentry> se desejarmos que "
-"ele não faça nada."
+"Devemos ter em mente que <citerefentry> <refentrytitle>rc.subr</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> fornece métodos padrão "
+"para os argumentos padrão. Consequentemente, devemos sobrescrever um método "
+"padrão com uma expressão no-op <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum></manvolnum></citerefentry> se desejarmos que ele "
+"não faça nada."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:341
-#, fuzzy
 msgid ""
 "The body of a sophisticated method can be implemented as a function. It is a "
 "good idea to make the function name meaningful."
@@ -723,7 +694,6 @@ msgstr ""
 
 #. (itstool) path: important/para
 #: article.translate.xml:346
-#, fuzzy
 msgid ""
 "It is strongly recommended to add the prefix <envar>${name}</envar> to the "
 "names of all functions defined in our script so they never clash with the "
@@ -731,11 +701,11 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> or another common "
 "include file."
 msgstr ""
-"É altamente recomendado adicionar o prefixo <envar> $ {name} </envar> aos "
-"nomes de todas as funções definidas em nosso script, para que eles nunca "
-"entrem em conflito com as funções de <citerefentry> <refentrytitle> rc.subr "
-"</refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> ou outro arquivo "
-"de inclusão comum."
+"É altamente recomendado adicionar o prefixo <envar>${name}</envar> aos nomes "
+"de todas as funções definidas em nosso script, para que eles nunca entrem em "
+"conflito com as funções de <citerefentry> <refentrytitle>rc.subr</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> ou outro arquivo de "
+"inclusão comum."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:355
@@ -780,9 +750,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:372
-#, fuzzy
 msgid "A configurable dummy script"
-msgstr "Um script fictício configurável"
+msgstr "Um script de simulação configurável"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:374
@@ -821,7 +790,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:388
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -844,52 +813,49 @@ msgid ""
 "\n"
 "run_rc_command \"$1\""
 msgstr ""
-"#! / bin / sh\n"
+"#!/bin/sh\n"
 "\n"
 ". /etc/rc.subr\n"
 "\n"
-"nome = dummy\n"
-"rcvar = dummy_enable <co xml:id=\"rcng-confdummy-rcvar\"/>\n"
+"name=dummy\n"
+"rcvar=dummy_enable<co xml:id=\"rcng-confdummy-rcvar\"/>\n"
 "\n"
-"start_cmd = \"$ {name} _start\"\n"
-"stop_cmd = \":\"\n"
+"start_cmd=\"${name}_start\"\n"
+"stop_cmd=\":\"\n"
 "\n"
-"load_rc_config $ name <co xml:id=\"rcng-confdummy-loadconfig\"/>\n"
-": $ {dummy_enable: = no} <co xml:id=\"rcng-confdummy-enable\"/>\n"
-": $ {dummy_msg = \"Nada iniciado.\"} <co xml:id=\"rcng-confdummy-opt\"/>\n"
+"load_rc_config $name<co xml:id=\"rcng-confdummy-loadconfig\"/>\n"
+": ${dummy_enable:=no} <co xml:id=\"rcng-confdummy-enable\"/>\n"
+": ${dummy_msg=\"Nothing started.\"}<co xml:id=\"rcng-confdummy-opt\"/>\n"
 "\n"
-"dummy_start ()\n"
+"dummy_start()\n"
 "{\n"
-"echo \"$ dummy_msg\" <co xml:id=\"rcng-confdummy-msg\"/>\n"
+"\techo \"$dummy_msg\"<co xml:id=\"rcng-confdummy-msg\"/>\n"
 "}\n"
 "\n"
-"run_rc_command \"$ 1\""
+"run_rc_command \"$1\""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:410
-#, fuzzy
 msgid "What changed in this example?"
 msgstr "O que mudou neste exemplo?"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:414
-#, fuzzy
 msgid ""
 "The variable <envar>rcvar</envar> specifies the name of the ON/OFF knob "
 "variable."
 msgstr ""
-"A variável <envar> rcvar </envar> especifica o nome da variável do botão ON /"
-" OFF."
+"A variável <envar>rcvar</envar> especifica o nome da variável do botão ON/"
+"OFF."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:419
-#, fuzzy
 msgid ""
 "Now <function>load_rc_config</function> is invoked earlier in the script, "
 "before any <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> variables are accessed."
 msgstr ""
-"Agora <function> load_rc_config </function> é invocado anteriormente no "
+"Agora o <function>load_rc_config</function> é invocado anteriormente no "
 "script, antes que qualquer variável <citerefentry> <refentrytitle> rc.conf </"
 "refentrytitle> <manvolnum> 5 </manvolnum> </citerefentry> seja acessada."
 
@@ -972,10 +938,9 @@ msgstr ""
 
 #. (itstool) path: note/screen
 #: article.translate.xml:464
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>/etc/rc.d/dummy onestart</userinput>"
-msgstr ""
-"<prompt> # </prompt> <userinput> /etc/rc.d/dummy onestart </userinput>"
+msgstr "<prompt>#</prompt> <userinput>/etc/rc.d/dummy onestart</userinput>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:469
@@ -1062,13 +1027,12 @@ msgstr ""
 
 #. (itstool) path: callout/programlisting
 #: article.translate.xml:506
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "start_cmd=\"echo \\\"$dummy_msg\\\"\""
-msgstr "start_cmd = \"echo \\\" $ dummy_msg \\ \"\""
+msgstr "start_cmd=\"echo \\\"$dummy_msg\\\"\""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:512
-#, fuzzy
 msgid "Startup and shutdown of a simple daemon"
 msgstr "Inicialização e desligamento de um daemon simples"
 
@@ -1092,7 +1056,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:522
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -1120,7 +1084,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:535
-#, fuzzy
 msgid ""
 "Pleasingly simple, isn't it? Let us examine our little script. The only new "
 "thing to note is as follows:"

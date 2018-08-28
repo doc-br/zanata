@@ -7,10 +7,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-26 09:43+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-08-28 03:35+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -5914,7 +5914,7 @@ msgstr "Usando uma entidade de parâmetro para controlar uma seção marcada"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3364
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;!ENTITY % electronic.copy \"INCLUDE\"&gt;\n"
 "\n"
@@ -5924,13 +5924,13 @@ msgid ""
 "\n"
 "&lt;!ENTITY chap.preface \"\"&gt;"
 msgstr ""
-"&lt;!ENTITY% electronic.copy \"INCLUDE\" &gt;\n"
+"&lt;!ENTITY % electronic.copy \"INCLUDE\"&gt;\n"
 "\n"
-"&lt;! [% electronic.copy; [\n"
-"&lt;! ENTITY chap.preface SYSTEM \"prefface.xml\" &gt;\n"
+"&lt;![%electronic.copy;[\n"
+"&lt;!ENTITY chap.preface\tSYSTEM \"preface.xml\"&gt;\n"
 "]]&gt;\n"
 "\n"
-"&lt;! ENTITY chap.preface \"\" &gt;"
+"&lt;!ENTITY chap.preface \"\"&gt;"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3372
@@ -5944,20 +5944,19 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3375
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "&lt;!ENTITY % electronic.copy \"IGNORE\"&gt;"
-msgstr "&lt;!ENTITY% electronic.copy \"IGNORE\" &gt;"
+msgstr "&lt;!ENTITY % electronic.copy \"IGNORE\"&gt;"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3385
-#, fuzzy
 msgid "Modify <filename>entities.ent</filename> to contain the following:"
 msgstr ""
-"Modifique <filename> entidades.ent </filename> para conter o seguinte:"
+"Modifique <filename>entidades.ent</filename> para conter o seguinte texto:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:3388
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;!ENTITY version \"1.1\"&gt;\n"
 "&lt;!ENTITY % conditional.text \"IGNORE\"&gt;\n"
@@ -5971,17 +5970,17 @@ msgid ""
 "&lt;!ENTITY para2 SYSTEM \"para2.xml\"&gt;\n"
 "&lt;!ENTITY para3 SYSTEM \"para3.xml\"&gt;"
 msgstr ""
-"&lt;! ENTITY versão \"1.1\" &gt;\n"
-"&lt;!ENTITY% conditional.text \"IGNORE\" &gt;\n"
+"&lt;!ENTITY version \"1.1\"&gt;\n"
+"&lt;!ENTITY % conditional.text \"IGNORE\"&gt;\n"
 "\n"
-"&lt;! [% conditional.text; [\n"
-"&lt;! ENTITY para1 SYSTEM \"para1.xml\" &gt;\n"
+"&lt;![%conditional.text;[\n"
+"&lt;!ENTITY para1 SYSTEM \"para1.xml\"&gt;\n"
 "]]&gt;\n"
 "\n"
-"&lt;! ENTITY para1 \"\" &gt;\n"
+"&lt;!ENTITY para1 \"\"&gt;\n"
 "\n"
-"&lt;! ENTITY para2 SYSTEM \"para2.xml\" &gt;\n"
-"&lt;! ENTITY para3 SYSTEM \"para3.xml\" &gt;"
+"&lt;!ENTITY para2 SYSTEM \"para2.xml\"&gt;\n"
+"&lt;!ENTITY para3 SYSTEM \"para3.xml\"&gt;"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3402

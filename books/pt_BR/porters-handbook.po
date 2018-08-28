@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-26 05:41+0000\n"
+"PO-Revision-Date: 2018-08-27 08:04+0000\n"
 "Last-Translator: Silvio Ap Silva <alvolivre@live.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -598,7 +598,7 @@ msgid ""
 msgstr ""
 "Consulte a manpage do <citerefentry><refentrytitle>pkg-create</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> para detalhes na lista "
-"de packing."
+"de empacotamento."
 
 #. (itstool) path: note/para
 #: book.translate.xml:366
@@ -636,9 +636,9 @@ msgstr ""
 "Há apenas um caso quando <filename>pkg-plist</filename> pode ser omitido de "
 "um port. Se o port instalar apenas alguns arquivos, liste-os em "
 "<varname>PLIST_FILES</varname>, dentro do <filename>Makefile</filename> do "
-"port. Por exemplo, poderíamos nos dar bem sem <filename>pkg-plist</"
-"filename>no port <filename>oneko</filename> acima, adicionando estas linhas "
-"para no<filename>Makefile</filename>:"
+"port. Por exemplo, poderíamos nos dar bem sem <filename>pkg-plist</filename> "
+"no port <filename>oneko</filename> acima, adicionando estas linhas para no "
+"<filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:387
@@ -757,7 +757,7 @@ msgid ""
 "<filename>pkg-plist</filename> does not contain anything not installed by "
 "the port."
 msgstr ""
-"<filename>pkg-plist</filename>não contém nada não instalado pelo port."
+"<filename>pkg-plist</filename> não contém nada não instalado pelo port."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:449
@@ -765,7 +765,7 @@ msgid ""
 "<filename>pkg-plist</filename> contains everything that is installed by the "
 "port."
 msgstr ""
-"<filename>pkg-plist</filename>contém tudo o que é instalado pela port."
+"<filename>pkg-plist</filename> contém tudo o que é instalado pela port."
 
 # auto translated by TM merge from project: RPM, version: master, DocId: rpm
 #. (itstool) path: para/buildtarget
@@ -776,7 +776,7 @@ msgstr ""
 #: book.translate.xml:8822
 #: book.translate.xml:9770
 msgid "install"
-msgstr "instalar"
+msgstr "install"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:454
@@ -830,15 +830,15 @@ msgid ""
 "fakeroot\"/> and <xref linkend=\"uses-uidfix\"/>."
 msgstr ""
 "Certifique-se de que <command>make package</command> pode ser executado como "
-"um usuário normal (ou seja, não como<systemitem class=\"username\">root</"
+"um usuário normal (ou seja, não como <systemitem class=\"username\">root</"
 "systemitem>). Se isso falhar, talvez seja necessário corrigir o software. "
-"Veja também<xref linkend=\"uses-fakeroot\"/> e <xref linkend=\"uses-uidfix\"/"
-">."
+"Veja também <xref linkend=\"uses-fakeroot\"/> e <xref linkend=\"uses-"
+"uidfix\"/>."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:480
 msgid "Recommended Test Ordering"
-msgstr "Pedido recomendado de teste"
+msgstr "Ordem recomendada de teste"
 
 #. (itstool) path: step/para
 #: book.translate.xml:483
@@ -931,7 +931,7 @@ msgid ""
 "Before submitting the new port, read the <link linkend=\"porting-dads\">DOs "
 "and DON'Ts</link> section."
 msgstr ""
-"Antes de enviar a novo port, leia o<link linkend=\"porting-dads\"> A seção "
+"Antes de enviar a novo port, leia <link linkend=\"porting-dads\"> A seção "
 "sobre que fazer e não fazer</link>."
 
 #. (itstool) path: sect1/para
@@ -980,7 +980,7 @@ msgid ""
 "in the diff, then generate the diff with <command>svn diff</command>. For "
 "example:"
 msgstr ""
-"Adicione todos os arquivos com <command>svn add</command>. <command>cd</"
+"Adicione todos os arquivos com <command>svn add</command> . <command>cd</"
 "command> para a base da árvore de ports, então caminhos completos para os "
 "arquivos alterados são incluídos no diff, então gere o diff com <command>svn "
 "diff</command>. Por exemplo:"
@@ -1069,10 +1069,10 @@ msgid ""
 msgstr ""
 "Dar uma boa descrição no resumo do relatório de problema facilita muito o "
 "trabalho dos commiters de ports. Preferimos algo como <quote>Novo port:"
-"<replaceable>categoria</replaceable>/<replaceable>nome do port</"
-"replaceable><replaceable>breve descrição do port</replaceable></quote> para "
-"novos ports. Usando este esquema torna mais fácil e rápido para começar o "
-"trabalho de comitar um novo port."
+"<replaceable>categoria</replaceable>/<replaceable>nome do port</replaceable>/"
+"<replaceable>breve descrição do port</replaceable></quote> para novos ports. "
+"Usando este esquema torna mais fácil e rápido para começar o trabalho de "
+"comitar um novo port."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:616
@@ -1221,12 +1221,12 @@ msgid ""
 "<varname>PATCHDIR</varname> (defaults to the <filename>files</filename> "
 "subdirectory), they are applied at this time in alphabetical order."
 msgstr ""
-"O alvo <_:buildtarget-1/> é executado. Primeiro, quaisquer patches definidos "
-"no <varname>PATCHFILES</varname> são aplicados. Segundo, se algum arquivo de "
-"patch nomeado <filename>patch<replaceable>*</replaceable></filename> são "
-"encontrados em <varname>PATCHDIR</varname>(padrão para o<filename>arquivos</"
-"filename>subdiretório), eles são aplicados neste momento em ordem alfabética."
-""
+"O destino <_:buildtarget-1/> é executado. Primeiro, quaisquer patches "
+"definidos no <varname>PATCHFILES</varname> são aplicados. Segundo, se "
+"arquivos de patch nomeados <filename>patch<replaceable>*</replaceable></"
+"filename> são encontrados em <varname>PATCHDIR</varname> (padrão para o "
+"subdiretório <filename>arquivos</filename>), eles são aplicados neste "
+"momento em ordem alfabética."
 
 #. (itstool) path: para/buildtarget
 #. (itstool) path: entry/buildtarget
@@ -1305,7 +1305,7 @@ msgstr ""
 #: book.translate.xml:733
 #: book.translate.xml:743
 msgid "package"
-msgstr "pacote"
+msgstr "package"
 
 #. (itstool) path: step/para
 #: book.translate.xml:733
@@ -1316,7 +1316,7 @@ msgid ""
 msgstr ""
 "O destino <_:buildtarget-1/> é executado. Isso cria um pacote usando os "
 "arquivos do diretório temporário criado durante o destino <_:buildtarget-2/> "
-"destino e o <filename>pkg-plist</filename> do port."
+"e o <filename>pkg-plist</filename> do port."
 
 #. (itstool) path: step/para
 #: book.translate.xml:741
@@ -1699,8 +1699,8 @@ msgid ""
 msgstr ""
 "Evite ter mais de um patch para modificar o mesmo arquivo. Por exemplo, ter "
 "os dois <filename>patch-foobar.c</filename> e <filename>patch-foobar.c2</"
-"filename> fazendo alterações <filename>${WRKSRC} /foobar.c</filename> torna-"
-"os frágeis e difíceis de depurar."
+"filename> fazendo alterações em <filename>${WRKSRC}/foobar.c</filename> "
+"torna-os frágeis e difíceis de depurar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:933
@@ -1743,9 +1743,9 @@ msgid ""
 "In particular, <emphasis>do not use <literal>::</literal> as a path "
 "separator,</emphasis> use <literal>_</literal> instead."
 msgstr ""
-"Use apenas caracteres <literal>[- + ._ a-zA-Z0-9]</literal> para nomear "
+"Use apenas caracteres <literal>[-+._ a-zA-Z0-9]</literal> para nomear "
 "patches. Em particular, <emphasis>não use <literal>::</literal> como um "
-"separador de caminho, </emphasis> usar <literal>_</literal>em vez de."
+"separador de caminho, </emphasis> usar <literal>_</literal> em vez de."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:964
@@ -1802,9 +1802,9 @@ msgid ""
 "patched, such as <filename>patch-Imakefile</filename> or <filename>patch-src-"
 "config.h</filename>."
 msgstr ""
-"Patches são salvos em arquivos nomeados como <filename>patch- *</filename> "
+"Patches são salvos em arquivos nomeados como <filename>patch-*</filename> "
 "Onde <replaceable>*</replaceable> indica o nome do caminho do arquivo que "
-"está sendo feito o pach, como<filename>patch-imakefile</filename> ou "
+"está sendo feito o pach, como <filename>patch-imakefile</filename> ou "
 "<filename>patch-src-config.h</filename>."
 
 #. (itstool) path: sect2/para
@@ -1874,10 +1874,10 @@ msgid ""
 msgstr ""
 "Não adicione Strings RCS <literal>$FreeBSD$</literal> em patches. Quando os "
 "patches são adicionados ao repositório <application>Subversion</application> "
-"com <command>svn add</command>, a propriedade <literal>fbsd: nokeywords</"
-"literal> édefinida para <literal>yes</literal> automaticamente para que as "
+"com <command>svn add</command>, a propriedade <literal>fbsd:nokeywords</"
+"literal> é definida para <literal>yes</literal> automaticamente para que as "
 "palavras-chave no patch não sejam modificadas quando comitadas. A "
-"propriedade pode ser adicionada manualmente <command>svn propset fbsd: "
+"propriedade pode ser adicionada manualmente <command>svn propset fbsd:"
 "nokeywords yes <replaceable>files...</replaceable></command>."
 
 #. (itstool) path: sect2/para
@@ -1900,8 +1900,8 @@ msgstr ""
 "<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> para gerar patches é bom, mas por favor, olhe para os patches "
 "resultantes para se certificar de que não há nenhum lixo desnecessário lá. "
-"Em particular, diffs entre dois arquivos de backup,<filename>Makefile</"
-"filename>s quando o port usa <command>Imake</command> ou GNU "
+"Em particular, diffs entre dois arquivos de backup, <filename>Makefile</"
+"filename> quando o port usa <command>Imake</command> ou GNU "
 "<command>configure</command>, etc., são desnecessários e devem ser "
 "eliminados. Se for necessário edite <filename>configure.in</filename> e rode "
 "<command>autoconf</command> para regerar <command>configure</command>, não "
@@ -2284,11 +2284,11 @@ msgid ""
 "<varname>EXTRACT_BEFORE_ARGS</varname>, <varname>EXTRACT_AFTER_ARGS</"
 "varname>, <varname>EXTRACT_SUFX</varname>, or <varname>DISTFILES</varname>."
 msgstr ""
-"Ele mora em <varname>DISTDIR</varname> como tarball <command>gzip</"
-"command>ped chamado algo como <filename>foozolix-1.2.tar.gz</filename>? Se "
-"assim for, vá para o próximo passo. Caso contrário, o formato do arquivo de "
-"distribuição pode exigir a substituição de um ou mais <varname>DISTVERSION</"
-"varname>, <varname>DISTNAME</varname>, <varname>EXTRACT_CMD</varname>, "
+"Ele mora em <varname>DISTDIR</varname> como tarball <command>gzip</command> "
+"chamado algo como <filename>foozolix-1.2.tar.gz</filename>? Se assim for, vá "
+"para o próximo passo. Caso contrário, o formato do arquivo de distribuição "
+"pode exigir a substituição de um ou mais <varname>DISTVERSION</varname>, "
+"<varname>DISTNAME</varname>, <varname>EXTRACT_CMD</varname>, "
 "<varname>EXTRACT_BEFORE_ARGS</varname>, <varname>EXTRACT_AFTER_ARGS</"
 "varname>, <varname>EXTRACT_SUFX</varname> ou <varname>DISTFILES</varname>"
 
@@ -2356,7 +2356,7 @@ msgid ""
 "Versions, <varname>DISTVERSION</varname> <emphasis>or</emphasis> "
 "<varname>PORTVERSION</varname>"
 msgstr ""
-"Versões,<varname>DISTVERSION</varname><emphasis> ou </"
+"Versões, <varname>DISTVERSION</varname><emphasis> ou </"
 "emphasis><varname>PORTVERSION</varname>"
 
 #. (itstool) path: sect2/para
@@ -2967,10 +2967,11 @@ msgid ""
 "like <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> host keys."
 msgstr ""
-"Alterações na lista de packing ou no comportamento de tempo de instalação do "
-"pacote. Por exemplo, uma alteração em um script que gera dados iniciais para "
-"o pacote, como chaves de host <citerefentry><refentrytitle>ssh</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
+"Alterações na lista de empacotamento ou no comportamento de tempo de "
+"instalação do pacote. Por exemplo, uma alteração em um script que gera dados "
+"iniciais para o pacote, como chaves de host "
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1582
@@ -3048,7 +3049,7 @@ msgid ""
 "package was not previously buildable then there is no need to increase "
 "<varname>PORTREVISION</varname> to mark a change."
 msgstr ""
-"Construa correções que fazem com que um pacote se torne compilável onde "
+"Construir correções que fazem com que um pacote se torne compilável onde "
 "antes estava falhando. Desde que as alterações não introduzam nenhuma "
 "mudança funcional em nenhuma outra plataforma na qual o port tenha sido "
 "construído anteriormente. <varname>PORTREVISION</varname> reflete o conteúdo "
@@ -3174,8 +3175,8 @@ msgid ""
 "the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
 "ports\">FreeBSD ports mailing list</link>."
 msgstr ""
-"Diminuindo ou reiniciando<varname>PORTEPOCH</varname> incorretamente leva ao "
-"fim da tristeza. Se a discussão acima não foi clara o suficiente, por favor "
+"Diminuindo ou reiniciando <varname>PORTEPOCH</varname> incorretamente conduz "
+"ao luto eterno. Se a discussão acima não foi clara o suficiente, por favor "
 "consulte o <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-ports\"> Lista de discussão de ports do FreeBSD</link>"
 
@@ -3274,7 +3275,8 @@ msgstr "PORTNAME=\tgtkmumble\n"
 #. (itstool) path: sect3/para
 #: book.translate.xml:1747
 msgid "<varname>PKGNAME</varname> becomes <literal>gtkmumble-0.10_1</literal>"
-msgstr "<varname>PKGNAME</varname>torna-se<literal>gtkmumble-0.10_1</literal>"
+msgstr ""
+"<varname>PKGNAME</varname> torna-se <literal>gtkmumble-0.10_1</literal>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1750
@@ -3313,7 +3315,8 @@ msgstr "PORTNAME=\tgtkmumble\n"
 #. (itstool) path: sect3/para
 #: book.translate.xml:1767
 msgid "<varname>PKGNAME</varname> becomes <literal>gtkmumble-0.2,1</literal>"
-msgstr "<varname>PKGNAME</varname>torna-se<literal>gtkmumble-0.2,1</literal>"
+msgstr ""
+"<varname>PKGNAME</varname> torna-se <literal>gtkmumble-0.2.1</literal>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1770
@@ -3337,7 +3340,8 @@ msgstr "PORTNAME=\tgtkmumble\n"
 #. (itstool) path: sect3/para
 #: book.translate.xml:1778
 msgid "<varname>PKGNAME</varname> becomes <literal>gtkmumble-0.3,1</literal>"
-msgstr "<varname>PKGNAME</varname>torna-se<literal>gtkmumble-0.3,1</literal>"
+msgstr ""
+"<varname>PKGNAME</varname> torna-se <literal>gtkmumble-0.3.1</literal>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:1782
@@ -3378,7 +3382,7 @@ msgid ""
 "respectively. Do not make them part of <varname>PORTNAME</varname>."
 msgstr ""
 "Duas variáveis ​​opcionais, <varname>PKGNAMEPREFIX</varname> e "
-"<varname>PKGNAMESUFFIX</varname>, são combinados com <varname>PORTNAME</"
+"<varname>PKGNAMESUFFIX</varname>, são combinadas com <varname>PORTNAME</"
 "varname> e <varname>PORTVERSION</varname> para formar <varname>PKGNAME</"
 "varname> como <literal>${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}-"
 "${PORTVERSION}</literal>. Certifique-se de que isto está de acordo com as "
@@ -3403,7 +3407,7 @@ msgid ""
 "packages and users are going to turn away if they hurt their eyes!"
 msgstr ""
 "Estas são as convenções a serem seguidas ao nomear pacotes. Isso é para "
-"facilitar a varredura do diretório de pacotes, já que já existem milhares de "
+"facilitar a varredura do diretório de pacotes, já que existem milhares de "
 "pacotes e os usuários irão pegar ranço se eles machucarem seus olhos!"
 
 #. (itstool) path: sect2/para
@@ -3458,7 +3462,7 @@ msgid ""
 "the two letter country code as well. Examples are <literal>en_US</literal> "
 "for US English and <literal>fr_CH</literal> for Swiss French."
 msgstr ""
-"Se o port for específica de uma determinada região dentro da área de idioma, "
+"Se o port for específico de uma determinada região dentro da área de idioma, "
 "adicione também o código do país de duas letras. Exemplos são "
 "<literal>en_US</literal> para inglês dos EUA e <literal>fr_CH</literal> para "
 "o francês suíço."
@@ -5403,13 +5407,13 @@ msgstr ""
 msgid ""
 "<filename>Makefile</filename>s for the new ports once they are repocopied"
 msgstr ""
-"<filename>Makefile</filename>s para os novos ports, uma vez que sejam "
+"<filename>Makefile</filename> para os novos ports, uma vez que sejam "
 "recopiados "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2978
 msgid "<filename>Makefile</filename> for the new category"
-msgstr "<filename>Makefile</filename>para a nova categoria"
+msgstr "<filename>Makefile</filename> para a nova categoria"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2983
@@ -5420,7 +5424,7 @@ msgstr "<filename>Makefile</filename> para as categorias dos ports antigos"
 #: book.translate.xml:2988
 msgid "<filename>Makefile</filename>s for ports that depend on the old ports"
 msgstr ""
-"<filename>Makefile</filename>s para ports que dependem das ports antigas "
+"<filename>Makefile</filename> para ports que dependem das ports antigas "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2993
@@ -5533,14 +5537,15 @@ msgstr ""
 "<varname>DISTNAME</varname> é o nome do port, conforme chamado pelos autores "
 "do software. <varname>DISTNAME</varname> o padrão é <literal>${PORTNAME}-"
 "${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}</literal> e, se não "
-"estiver definido, <varname>DISTVERSION</varname> o padrão é <literal>$ "
-"{PORTVERSION}</literal> assim substituir <varname>DISTNAME</varname> somente "
-"se necessário. <varname>DISTNAME</varname> é usado apenas em dois lugares. "
-"Primeiro, a lista de arquivos de distribuição (<varname>DISTFILES</varname>) "
-"padrão para <literal>$ {DISTNAME}</literal><literal>${EXTRACT_SUFX}</"
-"literal>. Em segundo lugar, espera-se que o arquivo de distribuição seja "
-"extraído em um subdiretório denominado <varname>WRKSRC</varname>, cujo "
-"padrão é <filename>work/${DISTNAME}</filename>."
+"estiver definido, <varname>DISTVERSION</varname> o padrão é "
+"<literal>${PORTVERSION}</literal> assim substituir <varname>DISTNAME</"
+"varname> somente se necessário. <varname>DISTNAME</varname> é usado apenas "
+"em dois lugares. Primeiro, a lista de arquivos de distribuição "
+"(<varname>DISTFILES</varname>) padrão para <literal>${DISTNAME}</"
+"literal><literal>${EXTRACT_SUFX}</literal>. Em segundo lugar, espera-se que "
+"o arquivo de distribuição seja extraído em um subdiretório denominado "
+"<varname>WRKSRC</varname>, cujo padrão é <filename>work/${DISTNAME}</"
+"filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3062
@@ -5627,7 +5632,7 @@ msgstr ""
 "9.9.p1</literal>, que, no esquema de versionamento de ports significa 9.9.9 "
 "pré-release 1, que é antes de 9.9.9 e não depois. Assim "
 "<varname>PORTVERSION</varname> é derivado manualmente de uma variavel "
-"<varname>ISCVERSÃO</varname> para saída <literal>9.9.9p1</literal>."
+"<varname>ISCVERSION</varname> para saída <literal>9.9.9p1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3111
@@ -5735,7 +5740,7 @@ msgid ""
 "Define upstream version in <varname>ISCVERSION</varname>, with a comment "
 "saying <emphasis>why</emphasis> it is needed."
 msgstr ""
-"Definir versão upstream em <varname>ISCVERSÃO</varname>, com um comentário "
+"Definir versão upstream em <varname>ISCVERSION</varname>, com um comentário "
 "dizendo <emphasis>porque</emphasis> é necessário."
 
 #. (itstool) path: callout/para
@@ -5744,7 +5749,7 @@ msgid ""
 "Use <varname>ISCVERSION</varname> to get a ports-compatible "
 "<varname>PORTVERSION</varname>."
 msgstr ""
-"Usar <varname>ISCVERSÃO</varname> para obter um compatíbilidade com o "
+"Usar <varname>ISCVERSION</varname> para obter um compatíbilidade com o "
 "<varname>PORTVERSION</varname> do port."
 
 #. (itstool) path: callout/para
@@ -5753,7 +5758,7 @@ msgid ""
 "Use <varname>ISCVERSION</varname> directly to get the correct <acronym>URL</"
 "acronym> for fetching the distribution file."
 msgstr ""
-"Usar <varname>ISCVERSÃO</varname> diretamente para obter a <acronym>URL</"
+"Usar <varname>ISCVERSION</varname> diretamente para obter a <acronym>URL</"
 "acronym> correta para buscar o arquivo de distribuição."
 
 #. (itstool) path: callout/para
@@ -5761,7 +5766,7 @@ msgstr ""
 msgid ""
 "Use <varname>ISCVERSION</varname> directly to name the distribution file."
 msgstr ""
-"Usar <varname>ISCVERSÃO</varname> diretamente para nomear o arquivo de "
+"Usar <varname>ISCVERSION</varname> diretamente para nomear o arquivo de "
 "distribuição."
 
 #. (itstool) path: example/title
@@ -5903,13 +5908,13 @@ msgid ""
 "<varname>EXTRACT_SUFX</varname>)."
 msgstr ""
 "<varname>PKGNAMEPREFIX</varname> e <varname>PKGNAMESUFFIX</varname> não "
-"afeta <varname>DISTNAME</varname>. Observe também que se<varname>WRKSRC</"
+"afeta <varname>DISTNAME</varname>. Observe também que se <varname>WRKSRC</"
 "varname> é igual a <filename>${WRKDIR}/${DISTNAME}</filename> enquanto o "
 "arquivo fonte original é nomeado algo diferente de <literal>${PORTNAME}-"
 "${PORTVERSION}${EXTRACT_SUFX}</literal>, deixe <varname>DISTNAME</varname> "
 "sozinho - definindo apenas <varname>DISTFILES</varname> é mais fácil que "
 "ambos <varname>DISTNAME</varname> e <varname>WRKSRC</varname> (e "
-"possivelmente<varname>EXTRACT_SUFX</varname>)."
+"possivelmente <varname>EXTRACT_SUFX</varname>)."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -5936,9 +5941,9 @@ msgid ""
 "grabbing the distribution file with <varname>FETCH</varname> if they cannot "
 "find it already on the system."
 msgstr ""
-"O<command>make</command>macros irá tentar usar esta especificação para pegar "
-"o arquivo de distribuição com<varname>FETCH</varname>se eles não podem "
-"encontrá-lo já no sistema."
+"A macro <command>make</command> irá tentar usar esta especificação para "
+"pegar o arquivo de distribuição com <varname>FETCH</varname> se eles não "
+"puderem encontrá-lo já no sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3268
@@ -5966,7 +5971,7 @@ msgstr ""
 "apontar para arquivos da web ou para os sites de cache dos arquivos de "
 "distribuição do FreeBSD. A única exceção a essa regra são ports que não "
 "possuem arquivos de distribuição. Por exemplo, meta-ports não possuem "
-"arquivos de distribuição,<varname>MASTER_SITES</varname>não precisa ser "
+"arquivos de distribuição, <varname>MASTER_SITES</varname> não precisa ser "
 "definido."
 
 #. (itstool) path: sect3/title
@@ -16275,8 +16280,8 @@ msgstr ""
 "valores aparecerão como nomes de caminho relativos ao <filename>PREFIX</"
 "filename> se possível. Isso é, <filename>share/doc/PORTNAME</filename> será "
 "substituído por <literal>%% DOCSDIR %%</literal> na lista de empacotamento "
-"por padrão e assim por diante. (Veja mais em<filename>pkg-plist</"
-"filename>substituição <link linkend=\"plist-sub\"> Aqui</link>."
+"por padrão e assim por diante. (Veja mais em <filename>pkg-plist</filename> "
+"substituição <link linkend=\"plist-sub\"> Aqui</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9098
@@ -16318,7 +16323,7 @@ msgstr ""
 "Como uma alternativa para enumerar os arquivos de documentação em "
 "<filename>pkg-plist</filename>, um port pode definir a variável "
 "<varname>PORTDOCS</varname> para uma lista de nomes de arquivo e padrões de "
-"globalização para adicionar à lista de packing final. Os nomes serão "
+"globalização para adicionar à lista de empacotamento final. Os nomes serão "
 "relativos a <varname>DOCSDIR</varname>. Portanto, um port que utiliza "
 "<varname>PORTDOCS</varname> e usa um local não padrão para sua documentação, "
 "deve definir <varname>DOCSDIR</varname> adequadamente. Se um diretório "
@@ -16327,9 +16332,9 @@ msgstr ""
 "contidos será registrada na lista final de pacotes. Se a opção "
 "<literal>DOCS</literal> foi desfeita, em seguida, arquivos e diretórios "
 "listados em <varname>PORTDOCS</varname> não seriam instalado ou adicionado à "
-"lista de packing do port. Instalando a documentação em <varname>PORTDOCS</"
-"varname> como mostrado acima mantém até o port em si. Um exemplo típico de "
-"utilização <varname>PORTDOCS</varname>: "
+"lista de empacotamento do port. Instalando a documentação em "
+"<varname>PORTDOCS</varname> como mostrado acima mantém até o port em si. Um "
+"exemplo típico de utilização <varname>PORTDOCS</varname>: "
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9125
@@ -18876,16 +18881,16 @@ msgid ""
 "example:"
 msgstr ""
 "O próximo item na lista de tarefas é organizar de forma condicional para que "
-"os arquivos do catálogo de mensagens sejam incluídos na lista de pacotes.A "
-"parte do <filename>Makefile</filename> desta tarefa já é fornecida pela "
-"expressão idiomática. É explicado na seção sobre <link linkend=\"plist-"
-"sub\"> práticas avançadas de <filename>pkg-plist</filename></link>. Em "
-"poucas palavras, cada ocorrência de <literal>%% NLS %%</literal> dentro de "
-"<filename>pkg-plist</filename> será substituído por "
+"os arquivos do catálogo de mensagens sejam incluídos na lista de "
+"empacotamento. A parte do <filename>Makefile</filename> desta tarefa já é "
+"fornecida pela expressão idiomática. É explicado na seção sobre <link "
+"linkend=\"plist-sub\"> práticas avançadas de <filename>pkg-plist</filename></"
+"link>. Em poucas palavras, cada ocorrência de <literal>%% NLS %%</literal> "
+"dentro de <filename>pkg-plist</filename> será substituído por "
 "<quote><literal>@Comment</literal></quote> se o NLS estiver desativado ou "
 "por uma cadeia nula se o NLS estiver ativado. Consequentemente, as linhas "
 "prefixadas por <literal>%% NLS %%</literal> se tornará meros comentários na "
-"lista de packing final se o NLS estiver desativado; caso contrário, o "
+"lista de empacotamento final se o NLS estiver desativado; caso contrário, o "
 "prefixo será deixado de fora. Em seguida, insira <literal>%% NLS %%</"
 "literal> antes de cada caminho para um arquivo de catálogo de mensagens em "
 "<filename>pkg-plist</filename>. Por exemplo:"
@@ -18907,8 +18912,8 @@ msgid ""
 "<link linkend=\"plist-dynamic\">dynamic packing list generation</link>."
 msgstr ""
 "Em casos de alta complexidade, técnicas mais avançadas podem ser "
-"necessárias, como <link linkend=\"plist-dynamic\">geração dinâmica de lista "
-"de packing</link>"
+"necessárias, como <link linkend=\"plist-dynamic\"> geração dinâmica de lista "
+"de empacotamento</link>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10479
@@ -23196,11 +23201,11 @@ msgstr ""
 "Ao portar uma biblioteca Java, o port precisa instalar o(s) arquivo(s) JAR "
 "em <filename>${JAVAJARDIR}</filename> e tudo mais sob "
 "<filename>${JAVASHAREDIR}/${PORTNAME}</filename> (exceto para a "
-"documentação, veja abaixo). Para reduzir o tamanho do arquivo de packing, "
-"faça referência aos arquivos JAR diretamente no <filename>Makefile</"
-"filename>. Use esta declaração (onde <filename><replaceable>myport</"
-"replaceable>.jar</filename> é o nome do arquivo JAR instalado como parte do "
-"port): "
+"documentação, veja abaixo). Para reduzir o tamanho do arquivo de "
+"empacotamento, faça referência aos arquivos JAR diretamente no "
+"<filename>Makefile</filename>. Use esta declaração (onde "
+"<filename><replaceable>myport</replaceable>.jar</filename> é o nome do "
+"arquivo JAR instalado como parte do port): "
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12724
@@ -29550,10 +29555,10 @@ msgid ""
 "<replaceable>directory</replaceable></literal> line to the packing list, and "
 "echoes the fact that the directory is removed when deinstalling the package."
 msgstr ""
-"Esta keyword faz duas coisas, adiciona uma linha  "
-"<literal>@dirrmtry<replaceable>diretório</replaceable></literal> para a "
-"lista de  empacotamento, e ecoa o fato de que o diretório é removido ao "
-"desinstalar o pacote. "
+"Esta keyword faz duas coisas, adiciona uma linha  <literal>@dirrmtry "
+"<replaceable>diretório</replaceable></literal> para a lista de  "
+"empacotamento, e ecoa o fato de que o diretório é removido ao desinstalar o "
+"pacote. "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:16389
