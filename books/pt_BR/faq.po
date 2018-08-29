@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-28 11:31+0000\n"
+"PO-Revision-Date: 2018-08-28 07:37+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -18,7 +18,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Kanazuchi, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: book.translate.xml:19
@@ -876,13 +878,13 @@ msgstr ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/current-stable."
 "html#stable\">-STABLE</link>, um <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/current-stable.html#current\">-CURRENT</link>."
-" O<emphasis>FreeBSD-STABLE</emphasis> é o branch de desenvolvimento a partir "
-"do qual os releases principais são feitos. Mudanças entram nesta branch em "
-"um ritmo mais lento e com a suposição geral de que eles foram testados "
-"primeiro no FreeBSD-CURRENT. No entanto, a qualquer momento, o código fonte "
-"para o FreeBSD-STABLE pode ou não ser adequado para uso geral, devido a "
-"descoberta de bugs e/ou outros casos específicos que ainda não foram "
-"encontrados no FreeBSD-CURRENT. Usuários que não possuem recursos para "
+" O <emphasis>FreeBSD-STABLE</emphasis> é o branch de desenvolvimento a "
+"partir do qual os releases principais são feitos. Mudanças entram nesta "
+"branch em um ritmo mais lento e com a suposição geral de que eles foram "
+"testados primeiro no FreeBSD-CURRENT. No entanto, a qualquer momento, o "
+"código fonte para o FreeBSD-STABLE pode ou não ser adequado para uso geral, "
+"devido a descoberta de bugs e/ou outros casos específicos que ainda não "
+"foram encontrados no FreeBSD-CURRENT. Usuários que não possuem recursos para "
 "realizar testes devem, ao invés disso, executar a release mais recente do "
 "FreeBSD. O <emphasis>FreeBSD-CURRENT</emphasis>, por outro lado, tem sido "
 "uma linha continua desde que o 2.0 foi lançado, levando em direção ao 11.2-"
@@ -3957,10 +3959,10 @@ msgid ""
 "<filename>ports/</filename> directory."
 msgstr ""
 "A maioria dos ports deve funcionar em todas as versões suportadas do FreeBSD."
-" Aqueles que não são, estão  especificamente sinalizados como tal. Cada vez "
-"que uma release do FreeBSD é construida, um snapshot da coleção de ports no "
-"momento da construção também é incluída no diretório <filename>ports/</"
-"filename>."
+" Aqueles que não funcionam, estão  especificamente sinalizados como tal. "
+"Cada vez que uma release do FreeBSD é construida, um snapshot da coleção de "
+"ports no momento da construção também é incluída no diretório "
+"<filename>ports/</filename>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2356
@@ -4594,8 +4596,8 @@ msgid ""
 "process can run without being preempted in the 4BSD scheduler."
 msgstr ""
 "A variável <varname>kern.sched.quantum</varname> define o número máximo de "
-"pulsos que um processo pode executar sem ser \"preempted \" pelo scheduler "
-"4BSD."
+"pulsos que um processo pode executar sem ser \"preempted\" no scheduler 4BSD."
+""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:2736
@@ -6140,7 +6142,7 @@ msgid ""
 "\"username\">root</systemitem>'s password would be able to gain superuser "
 "level access to the system."
 msgstr ""
-"Este é um recurso de segurança. Para executar <command> su </command> para "
+"Este é um recurso de segurança. Para executar <command>su</command> para "
 "<systemitem class=\"username\">root</systemitem>, ou qualquer outra conta "
 "com privilégios de superusuário, a conta do usuário deve ser um membro do "
 "grupo <systemitem class=\"groupname\">wheel</systemitem>. Se este recurso "
@@ -6977,13 +6979,13 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:4100
 msgid "<literal>Active</literal>: pages recently statistically used."
-msgstr "<literal> Ativo </literal>: são páginas usadas recentemente "
+msgstr "<literal>Active</literal>: são páginas usadas recentemente "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4105
 msgid "<literal>Inactive</literal>: pages recently statistically unused."
 msgstr ""
-"<literal> Inativo </literal>: são páginas que não foram utilizadas "
+"<literal>Inactive</literal>: são páginas que não foram utilizadas "
 "recentemente."
 
 #. (itstool) path: listitem/para
@@ -6997,7 +6999,7 @@ msgid ""
 "known to be clean (unmodified), but that transition is a matter of policy, "
 "depending upon the algorithm choice of the VM system maintainer."
 msgstr ""
-"<literal> Cache </literal>: (na maioria das vezes) são páginas que foram "
+"<literal>Cache</literal>: (na maioria das vezes) são páginas que foram "
 "filtradas de inativas para um status no qual elas mantêm seus dados, mas que "
 "podem ser reutilizadas imediatamente (com sua associação antiga ou "
 "reutilizadas com uma nova associação). Podem ocorrer certas transições "
@@ -7013,7 +7015,7 @@ msgid ""
 "used in certain circumstances where cache pages might be ineligible. Free "
 "pages can be reused at interrupt or process state."
 msgstr ""
-"<literal> Free </literal>: são páginas sem conteúdo de dados e que podem ser "
+"<literal>Free</literal>: são páginas sem conteúdo de dados e que podem ser "
 "usadas imediatamente em determinadas circunstâncias, nas quais as páginas de "
 "cache podem estar inelegíveis. As páginas livres podem ser reutilizadas no "
 "estado de interrupção ou de processo."
@@ -7116,8 +7118,8 @@ msgstr ""
 "<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> utiliza ao executar a separação de privilégios. O diretório "
 "<filename>/var/empty</filename> está vazio, pertence ao usuário <systemitem "
-"class=\"username\"> root </systemitem> e possui o conjunto de flags "
-"<literal>schg</literal>. Este diretório não deve ser excluído."
+"class=\"username\">root</systemitem> e possui as flags <literal>schg</"
+"literal> definidas. Este diretório não deve ser excluído."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4200
@@ -7181,15 +7183,15 @@ msgid ""
 "standards</link>, with the current reference implementation, version 11 "
 "release 7.7, so references are often shortened to <literal>X11</literal>."
 msgstr ""
-"O X Window (comumente chamado de <literal>X11</literal>) é o sistema de "
-"janelas mais amplamente disponível capaz de executar em Sistemas <trademark "
-"class=\"registered\">UNIX</trademark> e sistemas <trademark class="
+"O sistema de janelas X (comumente chamado de <literal>X11</literal>) é o "
+"sistema de janelas mais amplamente disponível capaz de executar em Sistemas "
+"<trademark class=\"registered\">UNIX</trademark> e sistemas <trademark class="
 "\"registered\">UNIX</trademark>-Like, incluindo o FreeBSD. A <link xlink:"
-"href=\"http://www.x.org/wiki/\">Fundação X.Org </link> administra os <link "
-"xlink:href=\"http://en.wikipedia.org/wiki/"
-"X_Window_System_core_protocol\">Padrões de protocolo X</link>, sendo que a "
-"implementação de referência atual é a versão 11 release 7.7, então as "
-"referências são frequentemente encurtadas para <literal>X11</literal>."
+"href=\"http://www.x.org/wiki/\">Fundação X.Org</link> administra os <link "
+"xlink:href=\"http://en.wikipedia.org/wiki/X_Window_System_core_protocol\"> "
+"padrões de protocolo X</link>, sendo que a implementação de referência atual "
+"é a versão 11 release 7.7, então as referências são frequentemente "
+"encurtadas para <literal>X11</literal>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4246
@@ -8289,7 +8291,6 @@ msgstr "Uma maquina FreeBSD pode ser usada como um roteador de rede dedicado?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4815
-#, fuzzy
 msgid ""
 "Yes. Refer to the Handbook entry on <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/advanced-networking.html\">advanced "
@@ -8298,10 +8299,10 @@ msgid ""
 "html\">routing and gateways</link>."
 msgstr ""
 "Sim. Consulte a entrada do Manual em <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/books/handbook/advanced-networking.html\"> rede avançada "
-"</link>, especificamente a seção sobre <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/pt_BR.ISO8859-1/books/handbook/network-routing.html\"> roteamento e "
-"gateways </link>."
+"doc/en_US.ISO8859-1/books/handbook/advanced-networking.html\">rede avançada</"
+"link>, especificamente a seção sobre <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/pt_BR.ISO8859-1/books/handbook/network-routing.html\">roteamento e "
+"gateways</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4823
@@ -8314,7 +8315,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4828
-#, fuzzy
 msgid ""
 "Typically, people who ask this question have two PCs at home, one with "
 "FreeBSD and one with some version of <trademark class="
@@ -8325,16 +8325,15 @@ msgid ""
 "perfectly well."
 msgstr ""
 "Normalmente, as pessoas que fazem essa pergunta têm dois PCs em casa, um com "
-"o FreeBSD e outro com alguma versão do <trademark class=\"registered\"> "
-"Windows </trademark> a idéia é usar a caixa FreeBSD para conectar-se à "
-"Internet e depois ser capaz de acessar a Internet a partir da caixa "
-"<trademark class=\"registered\"> Windows </trademark> através da caixa "
-"FreeBSD. Este é realmente apenas um caso especial da pergunta anterior e "
-"funciona perfeitamente bem."
+"o FreeBSD e outro com alguma versão do <trademark class="
+"\"registered\">Windows</trademark>, a idéia é usar o sistema FreeBSD para "
+"conectar-se à Internet e depois ser capaz de acessar a Internet a partir do "
+"sistema <trademark class=\"registered\">Windows</trademark> através do "
+"sistema FreeBSD. Este é realmente apenas um caso especial da pergunta "
+"anterior e funciona perfeitamente bem."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4836
-#, fuzzy
 msgid ""
 "Dialup users must use <option>-nat</option> and set <literal>gateway_enable</"
 "literal> to <emphasis>YES</emphasis> in <filename>/etc/rc.conf</filename>. "
@@ -8343,16 +8342,15 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/userppp."
 "html\">Handbook entry on user PPP</link>."
 msgstr ""
-"Usuários dial-up devem usar <option> -nat </option> e definir <literal> "
-"gateway_enable </literal> para <emphasis> YES </emphasis> em <filename> /etc/"
-"rc.conf </filename>. Para obter mais informações, consulte <citerefentry> "
-"<refentrytitle> ppp </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"Usuários de rede discada devem usar <option>-nat</option> e definir "
+"<literal>gateway_enable</literal> para <emphasis>YES</emphasis> no arquivo "
+"<filename>/etc/rc.conf</filename>. Para obter mais informações, consulte "
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> ou o <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
-"books/handbook/userppp.html \"> Entrada do manual no usuário PPP </link>."
+"books/handbook/userppp.html \">manual no usuário PPP</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4843
-#, fuzzy
 msgid ""
 "If the connection to the Internet is over Ethernet, use "
 "<citerefentry><refentrytitle>natd</refentrytitle><manvolnum>8</manvolnum></"
@@ -8360,11 +8358,11 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/firewalls-ipfw."
 "html#network-natd\">natd</link> section of the Handbook."
 msgstr ""
-"Se a conexão com a Internet for pela Ethernet, use <citerefentry> "
-"<refentrytitle> natd </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"Se a conexão com a Internet for pela Ethernet, use "
+"<citerefentry><refentrytitle>natd</refentrytitle><manvolnum>8</manvolnum> </"
 "citerefentry>. Um tutorial pode ser encontrado na seção <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/books/handbook/firewalls-ipfw."
-"html#network-natd\"> natd </link> o Manual."
+"html#network-natd\">natd</link> do manual."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4851
@@ -8399,7 +8397,6 @@ msgstr "O FreeBSD suporta NAT ou Mascaramento de IPs?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4870
-#, fuzzy
 msgid ""
 "Yes. For instructions on how to use NAT over a PPP connection, see the <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/userppp."
@@ -8409,11 +8406,11 @@ msgid ""
 "link> section of the Handbook."
 msgstr ""
 "Sim. Para obter instruções sobre como usar o NAT em uma conexão PPP, "
-"consulte a entrada <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
-"books/handbook/userppp.html\"> no PPP </link>. Para usar o NAT em algum "
-"outro tipo de conexão de rede, consulte o <link xlink:href="
+"consulte a seção do <link xlink:href=\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/"
+"books/handbook/userppp.html\">PPP</link> no manual. Para usar o NAT em algum "
+"outro tipo de conexão de rede, consulte a seção <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/books/handbook/firewalls-ipfw."
-"html#network-natd\"> seção natd </link> do Manual."
+"html#network-natd\">natd</link> do manual."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4881
@@ -8509,7 +8506,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4924
-#, fuzzy
 msgid ""
 "The most frequent problem is not understanding the correct format of "
 "<filename>/etc/exports</filename>. Review "
@@ -8520,13 +8516,13 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/network-nfs.html#configuring-"
 "nfs\">configuring NFS</link>."
 msgstr ""
-"O problema mais freqüente é não entender o formato correto de <filename> / "
-"etc / exports </filename>. Revise <citerefentry> <refentrytitle> exports </"
-"refentrytitle> <manvolnum> 5 </manvolnum> </citerefentry> e o <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/books/handbook/network-nfs.html "
-"\"> NFS </link> entrada no Manual, especialmente na seção <link xlink:href="
-"\" @@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-nfs "
-"html#configuring-nfs \"> configurando o NFS </link>."
+"O problema mais freqüente é não entender o formato correto de <filename>/etc/"
+"exports</filename>. Revise <citerefentry> <refentrytitle>exports</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> e o <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/books/handbook/network-nfs.html "
+"\">NFS</link> no manual, especialmente na seção <link xlink:href=\" "
+"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/books/handbook/network-nfs "
+"html#configuring-nfs \">configurando o NFS</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4934
@@ -8653,7 +8649,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5002
-#, fuzzy
 msgid ""
 "When a packet with a destination address of <replaceable>foo</replaceable> "
 "arrives at the machine with this rule, the packet is forwarded to "
@@ -8665,19 +8660,18 @@ msgid ""
 "often work the way the user expects. This behavior is a feature and not a "
 "bug."
 msgstr ""
-"Quando um pacote com um endereço de destino <replaceable> foo </replaceable> "
-"chega à máquina com esta regra, o pacote é encaminhado para <replaceable> 10."
-"0.0.1 </replaceable>, mas ainda tem o endereço de destino <replaceable > foo "
-"</replaceable>. O endereço de destino do pacote não é alterado para "
-"<replaceable> 10.0.0.1 </replaceable>. A maioria das máquinas provavelmente "
+"Quando um pacote com um endereço de destino <replaceable>foo</replaceable> "
+"chega à máquina com esta regra, o pacote é encaminhado para <replaceable>10."
+"0.0.1</replaceable>, mas ainda tem o endereço de destino <replaceable >foo</"
+"replaceable>. O endereço de destino do pacote não é alterado para "
+"<replaceable>10.0.0.1</replaceable>. A maioria das máquinas provavelmente "
 "descartaria um pacote que recebesse com um endereço de destino que não fosse "
-"o seu. Portanto, usar uma regra <quote> fwd </quote> geralmente não funciona "
+"o seu. Portanto, usar uma regra <quote>fwd</quote> geralmente não funciona "
 "da maneira esperada pelo usuário. Esse comportamento é um recurso e não um "
 "bug."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5016
-#, fuzzy
 msgid ""
 "See the <link linkend=\"service-redirect\"><acronym>FAQ</acronym> about "
 "redirecting services</link>, the <citerefentry><refentrytitle>natd</"
@@ -8686,12 +8680,12 @@ msgid ""
 "\"@@URL_RELPREFIX@@/ports/index.html\">Ports Collection</link> for a correct "
 "way to do this."
 msgstr ""
-"Veja o <link linkend=\"service-redirect\"> <acronym> FAQ </acronym> sobre "
-"redirecionamento de serviços </link>, o <citerefentry> <refentrytitle> natd "
-"</refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> manual, ou um "
-"dos vários utilitários de redirecionamento de porta no <link xlink:href="
-"\"@@URL_RELPREFIX@@/ports/index.html\"> Coleção de Portas </link> para uma "
-"maneira correta de fazer isso."
+"Veja o <link linkend=\"service-redirect\"><acronym>FAQ</acronym> sobre "
+"redirecionamento de serviços</link>, o manual do "
+"<citerefentry><refentrytitle>natd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, ou um dos vários utilitários de redirecionamento de porta na "
+"<link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">Coleção de Portas</"
+"link> para uma maneira correta de fazer isso."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5025
@@ -8702,7 +8696,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5030
-#, fuzzy
 msgid ""
 "FTP and other service requests can be redirected with the <package>sysutils/"
 "socket</package> package or port. Replace the entry for the service in "
@@ -8710,10 +8703,9 @@ msgid ""
 "seen in this example for <application>ftpd</application>:"
 msgstr ""
 "FTP e outras solicitações de serviço podem ser redirecionadas com o pacote "
-"ou porta <package> sysutils / socket </package>. Substitua a entrada para o "
-"serviço em <filename> /etc/inetd.conf </filename> para chamar <command> "
-"socket </command>, conforme visto neste exemplo para <application> ftpd </"
-"application>:"
+"ou port <package>sysutils/socket</package>. Substitua a entrada para o "
+"serviço em <filename>/etc/inetd.conf</filename> para chamar <command>socket</"
+"command>, conforme visto neste exemplo para <application>ftpd</application>:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:5037
@@ -8742,7 +8734,6 @@ msgstr "Onde posso obter uma ferramenta de gerenciamento de largura de banda?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5051
-#, fuzzy
 msgid ""
 "There are three bandwidth management tools available for FreeBSD. "
 "<citerefentry><refentrytitle>dummynet</refentrytitle><manvolnum>4</"
@@ -8755,14 +8746,14 @@ msgid ""
 "com/\">Emerging Technologies</link> is a commercial product."
 msgstr ""
 "Existem três ferramentas de gerenciamento de largura de banda disponíveis "
-"para o FreeBSD. <citerefentry> <refentrytitle> dummynet </refentrytitle> "
-"<manvolnum> 4 </manvolnum> </citerefentry> é integrado ao FreeBSD como parte "
-"do <citerefentry> <refentrytitle> ipfw </refentrytitle> <manvolnum> 4 </"
-"manvolnum> </citerefentry>. <link xlink:href=\"http://www.sonycsl.co.jp/"
-"person/kjc/programs.html\"> ALTQ </link> foi integrado ao FreeBSD como parte "
-"do <citerefentry> <refentrytitle> pf </refentrytitle> <manvolnum> 4 </"
-"manvolnum> </citerefentry>. O Bandwidth Manager de <link xlink:href=\"http://"
-"www.etinc.com/\"> Tecnologias Emergentes </link> é um produto comercial."
+"para o FreeBSD. <citerefentry><refentrytitle>dummynet</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> é integrado ao FreeBSD "
+"como parte do <citerefentry><refentrytitle>ipfw</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>. <link xlink:href=\"http://www.sonycsl.co.jp/"
+"person/kjc/programs.html\">ALTQ</link> foi integrado ao FreeBSD como parte "
+"do <citerefentry><refentrytitle>pf</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>. O Bandwidth Manager das <link xlink:href=\"http://www.etinc."
+"com/\"> Tecnologias Emergentes </link> é um produto comercial."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5062
@@ -8773,15 +8764,14 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5067
-#, fuzzy
 msgid ""
 "The running application requires the Berkeley Packet Filter "
 "(<citerefentry><refentrytitle>bpf</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry>), but it was removed from a custom kernel. Add this to the "
 "kernel config file and build a new kernel:"
 msgstr ""
-"O aplicativo em execução requer o Filtro de Pacotes Berkeley (<citerefentry> "
-"<refentrytitle> bpf </refentrytitle> <manvolnum> 4 </manvolnum> </"
+"O aplicativo em execução requer o Packet Filter da Berkeley "
+"(<citerefentry><refentrytitle>bpf</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry>), mas ele foi removido de um kernel personalizado. Adicione "
 "isto ao arquivo de configuração do kernel e construa um novo kernel:"
 
@@ -8923,7 +8913,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5154
-#, fuzzy
 msgid ""
 "This means that some device on the local Ethernet is using a MAC address in "
 "a format that FreeBSD does not recognize. This is probably caused by someone "
@@ -9017,35 +9006,32 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5220
-#, fuzzy
 msgid ""
 "The process is only able to run inside the walls. Since nothing the process "
 "does in regards to executing code is supposed to be able to breach the "
 "walls, a detailed audit of its code is not needed in order to be able to say "
 "certain things about its security."
 msgstr ""
-"O processo só é capaz de correr dentro das paredes. Como nada que o processo "
-"faz em relação à execução de código deve ser capaz de violar as barreiras, "
-"uma auditoria detalhada de seu código não é necessária para poder dizer "
-"certas coisas sobre sua segurança."
+"O processo só é capaz de correr dentro das barreiras. Desde que nada que o "
+"processo faça em relação à execução de código seja capaz de violar as "
+"barreiras, uma auditoria detalhada de seu código não é necessária para poder "
+"dizer certas coisas sobre sua segurança."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5227
-#, fuzzy
 msgid ""
 "The walls might be a user ID, for example. This is the definition used in "
 "the <citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>named</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> man pages."
 msgstr ""
-"As paredes podem ser um ID do usuário, por exemplo. Esta é a definição usada "
-"na <citerefentry> <refentrytitle> security </refentrytitle> <manvolnum> 7 </"
-"manvolnum> </citerefentry> e <citerefentry> <refentrytitle> chamada </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> man pages."
+"As barreiras podem ser um ID do usuário, por exemplo. Esta é a definição "
+"usada nas páginas de manual de <citerefentry><refentrytitle>security</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry> e <citerefentry> "
+"<refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5231
-#, fuzzy
 msgid ""
 "Take the <literal>ntalk</literal> service, for example (see "
 "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
@@ -9056,19 +9042,17 @@ msgid ""
 "who has successfully hacked into the system via <literal>ntalk</literal> "
 "from being able to hack beyond that user ID."
 msgstr ""
-"Tome o serviço <literal> ntalk </literal>, por exemplo (veja <citerefentry> "
-"<refentrytitle> inetd </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"Veja o serviço <literal>ntalk</literal>, por exemplo (veja "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>). Este serviço costumava rodar como ID de usuário <systemitem "
-"class=\"username\"> root </systemitem>. Agora ele é executado como ID do "
-"usuário <systemitem class=\"username\"> tty </systemitem>. O usuário "
-"<systemitem class=\"username\"> tty </systemitem> é um sandbox projetado "
-"para tornar mais difícil para alguém que invadiu o sistema com sucesso "
-"através do <literal> ntalk </literal> ser capaz de hackear além desse "
-"usuário IDENTIDADE."
+"class=\"username\">root</systemitem>. Agora ele é executado como ID do "
+"usuário <systemitem class=\"username\">tty</systemitem>. O usuário "
+"<systemitem class=\"username\">tty</systemitem> é um sandbox projetado para "
+"tornar mais difícil para alguém que invadiu o sistema com sucesso através do "
+"<literal>ntalk</literal> ser capaz de hackear além do seu ID de usuário."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5242
-#, fuzzy
 msgid ""
 "A process which is placed inside a simulation of the machine. It means that "
 "someone who is able to break into the process may believe that he can break "
@@ -9082,7 +9066,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5249
-#, fuzzy
 msgid ""
 "The most common way to accomplish this is to build a simulated environment "
 "in a subdirectory and then run the processes in that directory chrooted so "
@@ -9091,12 +9074,11 @@ msgid ""
 msgstr ""
 "A maneira mais comum de fazer isso é construir um ambiente simulado em um "
 "subdiretório e então executar os processos nesse diretório chrooted para que "
-"<filename> / </filename> para esse processo seja este diretório, não o real "
-"<filename> / </filename> do sistema)."
+"o diretório <filename> / </filename> para esse processo seja este, não o "
+"diretório <filename>/</filename> real do sistema)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5256
-#, fuzzy
 msgid ""
 "Another common use is to mount an underlying file system read-only and then "
 "create a file system layer on top of it that gives a process a seemingly "
@@ -9107,9 +9089,9 @@ msgstr ""
 "Outro uso comum é montar um sistema de arquivos subjacente somente leitura "
 "e, em seguida, criar uma camada do sistema de arquivos sobre ele, o que dá a "
 "um processo uma visualização aparentemente gravável nesse sistema de "
-"arquivos. O processo pode acreditar que é capaz de escrever para esses "
-"arquivos, mas apenas o processo vê os efeitos - outros processos no sistema "
-"não, necessariamente."
+"arquivos. O processo pode acreditar que é capaz de escrever nesses arquivos, "
+"mas o processo apenas vê os efeitos - outros processos no sistema não, "
+"necessariamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5264
@@ -9131,20 +9113,18 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5273
-#, fuzzy
 msgid ""
 "Every <trademark class=\"registered\">UNIX</trademark> process is completely "
 "firewalled off from every other <trademark class=\"registered\">UNIX</"
 "trademark> process. One process cannot modify the address space of another."
 msgstr ""
-"Todo processo <trademark class=\"registered\"> UNIX </trademark> é "
-"completamente protegido contra firewalls de qualquer outro processo "
-"<trademark class=\"registered\"> UNIX </trademark>. Um processo não pode "
-"modificar o espaço de endereço de outro."
+"Todo processo <trademark class=\"registered\">UNIX</trademark> é "
+"completamente protegido contra qualquer outro processo <trademark class="
+"\"registered\">UNIX</trademark>. Um processo não pode modificar o espaço de "
+"endereço de outro."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5277
-#, fuzzy
 msgid ""
 "A <trademark class=\"registered\">UNIX</trademark> process is owned by a "
 "particular userid. If the user ID is not the <systemitem class="
@@ -9152,9 +9132,9 @@ msgid ""
 "from processes owned by other users. The user ID is also used to firewall "
 "off on-disk data."
 msgstr ""
-"Um processo <trademark class=\"registered\"> UNIX </trademark> é de "
-"propriedade de um determinado ID do usuário. Se o ID do usuário não for o "
-"usuário <systemitem class=\"username\"> root </systemitem>, ele servirá para "
+"Um processo <trademark class=\"registered\">UNIX</trademark> é de "
+"propriedade de um determinado ID de usuário. Se o ID de usuário não for o "
+"usuário <systemitem class=\"username\">root</systemitem>, ele servirá para "
 "proteger o processo contra processos pertencentes a outros usuários. O ID do "
 "usuário também é usado para proteger os dados no disco."
 
@@ -9165,7 +9145,6 @@ msgstr "O que é securelevel?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5291
-#, fuzzy
 msgid ""
 "<literal>securelevel</literal> is a security mechanism implemented in the "
 "kernel. When the securelevel is positive, the kernel restricts certain "
@@ -9173,9 +9152,9 @@ msgid ""
 "systemitem>) is allowed to do them. The securelevel mechanism limits the "
 "ability to:"
 msgstr ""
-"<literal> securelevel </literal> é um mecanismo de segurança implementado no "
+"<literal>securelevel</literal> é um mecanismo de segurança implementado no "
 "kernel. Quando o nível de segurança é positivo, o kernel restringe certas "
-"tarefas; nem mesmo o superusuário (<systemitem class=\"username\"> root </"
+"tarefas; nem mesmo o superusuário (<systemitem class=\"username\">root</"
 "systemitem>) pode executá-los. O mecanismo de securelevel limita a "
 "capacidade de:"
 
@@ -9264,7 +9243,6 @@ msgstr ""
 
 #. (itstool) path: warning/para
 #: book.translate.xml:5345
-#, fuzzy
 msgid ""
 "One of its biggest problems is that in order for it to be at all effective, "
 "all files used in the boot process up until the securelevel is set must be "
@@ -9287,11 +9265,10 @@ msgstr ""
 "todos os arquivos usados ​​no processo de inicialização não seja "
 "tecnicamente impossível, se for obtida, a manutenção do sistema se tornará "
 "um pesadelo, já que seria necessário desativar o sistema, pelo menos no modo "
-"de usuário único, para modificar uma configuração. Arquivo."
+"de usuário único, para modificar um arquivo de configuração."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:5360
-#, fuzzy
 msgid ""
 "This point and others are often discussed on the mailing lists, particularly "
 "the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
@@ -9301,9 +9278,9 @@ msgid ""
 msgstr ""
 "Este ponto e outros são frequentemente discutidos nas listas de discussão, "
 "particularmente na <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
-"listinfo/freebsd-security\"> lista de discussão de segurança do FreeBSD </"
+"listinfo/freebsd-security\">lista de discussão de segurança do FreeBSD</"
 "link>. Pesquise nos arquivos <link xlink:href=\"@@URL_RELPREFIX@@/search/"
-"index.html\"> aqui </link> para uma discussão extensa. Um mecanismo mais "
+"index.html\">aqui</link> para uma discussão extensa. Um mecanismo mais "
 "refinado é o preferido."
 
 #. (itstool) path: question/para
@@ -9317,7 +9294,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5377
-#, fuzzy
 msgid ""
 "BIND uses a random high-numbered port for outgoing queries. Recent versions "
 "of it choose a new, random UDP port for each query. This may cause problems "
@@ -9328,17 +9304,15 @@ msgid ""
 "range."
 msgstr ""
 "O BIND usa uma porta aleatória de numeração alta para consultas de saída. "
-"Versões recentes do mesmo escolhem uma nova porta UDP aleatória para cada "
+"Versões recentes dele escolhem uma nova porta UDP aleatória para cada "
 "consulta. Isso pode causar problemas para algumas configurações de rede, "
 "especialmente se um firewall bloquear pacotes UDP de entrada em portas "
-"específicas. Para passar por esse firewall, tente as opções <literal> avoid-"
-"v4-udp-ports </literal> e <literal> evite-v6-udp-ports </literal> para "
-"evitar a seleção de números de porta aleatórios dentro de um intervalo "
-"bloqueado."
+"específicas. Para passar por esse firewall, tente as opções <literal>avoid-"
+"v4-udp-ports</literal> e <literal>avoid-v6-udp-ports</literal> para evitar a "
+"seleção de números de porta aleatórios dentro de um intervalo bloqueado."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:5389
-#, fuzzy
 msgid ""
 "If a port number (like 53) is specified via the <literal>query-source</"
 "literal> or <literal>query-source-v6</literal> options in <filename>/usr/"
@@ -9347,10 +9321,10 @@ msgid ""
 "specify fixed port numbers."
 msgstr ""
 "Se um número de porta (como 53) for especificado através das opções "
-"<literal> query-source </literal> ou <literal> query-source-v6 </literal> em "
-"<filename> / usr / local / etc / namedb / named .conf </filename>, a seleção "
-"de portas aleatórias não será usada. É altamente recomendável que essas "
-"opções não sejam usadas para especificar números de porta fixos."
+"<literal>query-source</literal> ou <literal>query-source-v6</literal> em "
+"<filename>/usr/local/etc/namedb/named .conf</filename>, a seleção de portas "
+"aleatórias não será usada. É altamente recomendável que essas opções não "
+"sejam usadas para especificar números de porta fixos."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5399
@@ -9394,7 +9368,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5427
-#, fuzzy
 msgid ""
 "Do not worry. <systemitem class=\"username\">toor</systemitem> is an "
 "<quote>alternative</quote> superuser account, where toor is root spelled "
@@ -9410,24 +9383,22 @@ msgid ""
 "to log in to fix a problem and will have to reboot into single-user mode in "
 "order to enter the path to a shell."
 msgstr ""
-"Não se preocupe. <systemitem class=\"username\"> toor </systemitem> é uma "
-"<quote> alternativa </quote> conta de superusuário, onde toor é raiz "
-"soletrada para trás. Ele deve ser usado com um shell não padrão, portanto, o "
-"shell padrão para <systemitem class=\"username\"> root </systemitem> não "
+"Não se preocupe. <systemitem class=\"username\">toor</systemitem> é uma "
+"conta de superusuário <quote>alternativa</quote>, onde toor é root soletrada "
+"para ao contrário. Ele deve ser usado com um shell não padrão, portanto, o "
+"shell padrão para <systemitem class=\"username\">root</systemitem> não "
 "precisa ser alterado. Isto é importante porque os shells que não fazem parte "
 "da distribuição base, mas que são instalados a partir de ports ou packages, "
-"são instalados em <filename> / usr / local / bin </filename> que, por "
-"padrão, reside em um sistema de arquivos diferente . Se o shell do "
-"<systemitem class=\"username\"> root </systemitem> estiver localizado em "
-"<filename> / usr / local / bin </filename> e o sistema de arquivos contendo "
-"<filename> / usr / local / bin </filename >) não está montado, <systemitem "
-"class=\"username\"> root </systemitem> não poderá efetuar login para "
-"corrigir um problema e terá que reinicializar no modo de usuário único para "
-"inserir o caminho para um shell."
+"são instalados em <filename>/usr/local/bin</filename> que, por padrão, "
+"reside em um sistema de arquivos diferente . Se o shell do <systemitem class="
+"\"username\">root</systemitem> estiver localizado em <filename>/usr/local/"
+"bin</filename> e o sistema de arquivos contendo <filename>/usr/local/bin</"
+"filename >) não está montado, <systemitem class=\"username\">root</"
+"systemitem> não poderá efetuar login para corrigir um problema e terá que "
+"reinicializar no modo de usuário único para inserir o caminho para um shell."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5444
-#, fuzzy
 msgid ""
 "Some people use <systemitem class=\"username\">toor</systemitem> for day-to-"
 "day <systemitem class=\"username\">root</systemitem> tasks with a non-"
@@ -9438,15 +9409,15 @@ msgid ""
 "\"username\">root</systemitem> and set a password for <systemitem class="
 "\"username\">toor</systemitem> before using it to login."
 msgstr ""
-"Algumas pessoas usam <systemitem class=\"username\"> toor </systemitem> para "
-"tarefas do dia-a-dia <systemitem class=\"username\"> root </systemitem> com "
-"um shell não padrão, deixando <systemitem class=\"username \"> root </"
+"Algumas pessoas usam <systemitem class=\"username\">toor</systemitem> para "
+"tarefas do dia-a-dia do <systemitem class=\"username\">root</systemitem> com "
+"um shell não padrão, deixando o <systemitem class=\"username\">root</"
 "systemitem>, com um shell padrão, para o modo de usuário único ou "
 "emergências. Por padrão, um usuário não pode logar usando <systemitem class="
-"\"username\"> to ou </systemitem> porque ele não tem uma senha, então efetue "
-"login como <systemitem class=\"username\"> root </systemitem> e defina um "
-"senha para <systemitem class=\"username\"> toor </systemitem> antes de usá-"
-"lo para efetuar login."
+"\"username\">toor</systemitem> porque ele não tem uma senha, então efetue "
+"login como <systemitem class=\"username\">root</systemitem> e defina um "
+"senha para <systemitem class=\"username\">toor</systemitem> antes de usá-lo "
+"para efetuar login."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:5458
@@ -9530,7 +9501,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5499
-#, fuzzy
 msgid ""
 "This is usually because the hostname will not resolve. The best way to fix "
 "this is to make sure that <filename>/etc/hosts</filename> is read first by "
@@ -9540,12 +9510,12 @@ msgid ""
 "the <systemitem>localhost</systemitem> line:"
 msgstr ""
 "Geralmente, isso ocorre porque o nome do host não será resolvido. A melhor "
-"maneira de corrigir isso é certificar-se de que <filename> / etc / hosts </"
-"filename> seja lido primeiro garantindo que a linha <literal> hosts </"
-"literal> seja listada primeiro em <filename> / etc / host.conf </filename>. "
-"Em seguida, insira uma entrada em <filename> / etc / hosts </filename> para "
-"a máquina local. Se não houver nenhuma rede local, altere a linha "
-"<systemitem> localhost </systemitem>:"
+"maneira de corrigir isso é certificar-se de que <filename>/etc/hosts</"
+"filename> seja lido primeiro, garantindo que a linha <literal>hosts</"
+"literal> seja listada primeiro em <filename>/etc/host.conf</filename>. Em "
+"seguida, insira uma entrada em <filename>/etc/hosts</filename> para a "
+"máquina local. Se não houver nenhuma rede local, altere a linha "
+"<systemitem>localhost</systemitem>:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:5508
@@ -9648,13 +9618,12 @@ msgstr "O que o erro <errorname>No route to host</errorname> significa?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5558
-#, fuzzy
 msgid ""
 "This error is usually because the following section is missing in <filename>/"
 "etc/ppp/ppp.linkup</filename>:"
 msgstr ""
-"Este erro geralmente ocorre porque a seguinte seção está faltando em "
-"<filename> /etc/ppp/ppp.linkup </filename>:"
+"Este erro geralmente ocorre porque a seguinte seção está faltando no arquivo "
+"<filename>/etc/ppp/ppp.linkup</filename>:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:5562
@@ -9668,7 +9637,6 @@ msgstr "MYADDR:\n"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5566
-#, fuzzy
 msgid ""
 "This is only necessary for a dynamic IP address or when the address of the "
 "default gateway is unknown. When using interactive mode, the following can "
@@ -9678,7 +9646,7 @@ msgstr ""
 "Isso é necessário apenas para um endereço IP dinâmico ou quando o endereço "
 "do gateway padrão é desconhecido. Ao usar o modo interativo, o seguinte pode "
 "ser digitado depois de entrar no modo de pacote. O modo de pacote é indicado "
-"pelo <acronym> PPP </acronym> em letras maiúsculas no prompt:"
+"pelo <acronym>PPP</acronym> em letras maiúsculas no prompt:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:5573
@@ -9690,15 +9658,14 @@ msgstr "delete ALL\n"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5576
-#, fuzzy
 msgid ""
 "Refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/userppp.html#userppp-dynamicip\">PPP and Dynamic IP addresses</"
 "link> section of the Handbook for further details."
 msgstr ""
 "Consulte a seção <link xlink:href=\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/"
-"books/handbook/userppp.html#userppp-dynamicip\"> Endereços IP dinâmicos e "
-"PPP </link> do Manual para mais detalhes."
+"books/handbook/userppp.html#userppp-dynamicip\">Endereços IP dinâmicos e "
+"PPP</link> do manual para mais detalhes."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5584
@@ -9722,7 +9689,6 @@ msgstr "set timeout <replaceable>NNN</replaceable>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5594
-#, fuzzy
 msgid ""
 "where <replaceable>NNN</replaceable> is the number of seconds of inactivity "
 "before the connection is closed. If <replaceable>NNN</replaceable> is zero, "
@@ -9736,17 +9702,18 @@ msgid ""
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> man page for further details."
 msgstr ""
-"onde <replaceable> NNN </replaceable> é o número de segundos de inatividade "
-"antes que a conexão seja fechada. Se <replaceable> NNN </replaceable> for "
+"onde <replaceable>NNN</replaceable> é o número de segundos de inatividade "
+"antes que a conexão seja fechada. Se <replaceable>NNN</replaceable> for "
 "zero, a conexão nunca será fechada devido a um tempo limite. É possível "
-"colocar este comando em <filename> ppp.conf </filename>, ou digitá-lo no "
+"colocar este comando em <filename>ppp.conf</filename>, ou digitá-lo no "
 "prompt no modo interativo. Também é possível ajustá-lo rapidamente enquanto "
-"a linha está ativa conectando-se ao soquete de servidor do <application> ppp "
-"</application> usando <citerefentry> <refentrytitle> telnet </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> ou <citerefentry> <refentrytitle> "
-"pppctl </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>. Consulte "
-"a página do manual <citerefentry> <refentrytitle> ppp </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> para obter mais detalhes."
+"a linha está ativa conectando-se ao socket de servidor do <application>ppp</"
+"application> usando <citerefentry><refentrytitle>telnet</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> ou "
+"<citerefentry><refentrytitle>pppctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Consulte a página do manual <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> para obter mais "
+"detalhes."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5609
@@ -9755,7 +9722,6 @@ msgstr "Por que minha conexão cai sob carga pesada?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5613
-#, fuzzy
 msgid ""
 "If Link Quality Reporting (<acronym>LQR</acronym>) is configured, it is "
 "possible that too many <acronym>LQR</acronym> packets are lost between the "
@@ -9764,12 +9730,12 @@ msgid ""
 "must therefore be bad, and disconnects. <acronym>LQR</acronym> is disabled "
 "by default and can be enabled with the following line:"
 msgstr ""
-"Se o relatório de qualidade de link (<acronym> LQR </acronym>) estiver "
-"configurado, é possível que muitos pacotes <acronym> LQR </acronym> sejam "
-"perdidos entre o sistema FreeBSD e o peer. <citerefentry> <refentrytitle> "
-"ppp </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> deduz que a "
-"linha deve ser ruim e desconectada. O <acronym> LQR </acronym> está "
-"desativado por padrão e pode ser ativado com a seguinte linha:"
+"Se o relatório de qualidade de link (<acronym>LQR</acronym>) estiver "
+"configurado, é possível que muitos pacotes <acronym>LQR</acronym> sejam "
+"perdidos entre o sistema FreeBSD e o peer. <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> deduz que a linha deve "
+"ser ruim e desconectada. O <acronym>LQR</acronym> vem desativado por padrão "
+"e pode ser ativado com a seguinte linha:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:5621
@@ -9820,7 +9786,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5653
-#, fuzzy
 msgid ""
 "When using an external modem, try using <citerefentry><refentrytitle>ping</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> to see if the "
@@ -9842,22 +9807,22 @@ msgid ""
 "transmitted and received on the link. If data is going out and not coming "
 "back, the problem is remote."
 msgstr ""
-"Ao usar um modem externo, tente usar <citerefentry> <refentrytitle> ping </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> para ver se a luz "
-"<acronym> TD </acronym> está piscando quando os dados são transmitidos . Se "
-"piscar, mas a luz <acronym> RD </acronym> não, o problema é com a "
-"extremidade remota. Se <acronym> TD </acronym> não piscar, o problema é "
-"local. Com um modem interno, use o comando <literal> set server </literal> "
-"em <filename> ppp.conf </filename>. Quando o problema ocorrer, conecte-se a "
-"<citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> usando <citerefentry> <refentrytitle> pppctl </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>. Se a conexão de "
-"rede reviver repentinamente devido à atividade no soquete de diagnóstico ou "
-"se não se conectar, mas o comando <literal> set socket </literal> for bem-"
-"sucedido na inicialização, o problema será local. Se ele puder se conectar, "
-"mas as coisas ainda estiverem travadas, ative o log local com <literal> set "
-"log local async </literal> e use <citerefentry> <refentrytitle> ping </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> de outra janela ou "
+"Ao usar um modem externo, tente usar <citerefentry><refentrytitle>ping</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> para ver se a luz de "
+"<acronym>TD</acronym> está piscando quando os dados são transmitidos . Se "
+"piscar, mas a luz de <acronym>RD</acronym> não, o problema é com a "
+"extremidade remota. Se <acronym>TD</acronym> não piscar, o problema é local. "
+"Com um modem interno, use o comando <literal>set server</literal> em "
+"<filename>ppp.conf</filename>. Quando o problema ocorrer, conecte-se ao "
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> usando <citerefentry> <refentrytitle>pppctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Se a conexão de rede "
+"reviver repentinamente devido à atividade no socket de diagnóstico ou se não "
+"se conectar, mas o comando <literal>set socket</literal> for bem-sucedido na "
+"inicialização, o problema é local. Se ele puder se conectar, mas as coisas "
+"ainda estiverem travadas, ative o log local com <literal>set log local "
+"async</literal> e use <citerefentry><refentrytitle>ping</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> de outra janela ou "
 "terminal para fazer uso do link. O registro assíncrono mostrará os dados "
 "sendo transmitidos e recebidos no link. Se os dados estão saindo e não "
 "voltando, o problema é remoto."
@@ -9892,7 +9857,6 @@ msgstr "A ponta remota não está respondendo. O que eu posso fazer?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5697
-#, fuzzy
 msgid ""
 "There is very little that can be done about this. Many ISPs will refuse to "
 "help users not running a <trademark class=\"registered\">Microsoft</"
@@ -9903,12 +9867,12 @@ msgid ""
 "that useful."
 msgstr ""
 "Há muito pouco que pode ser feito sobre isso. Muitos ISPs recusam-se a "
-"ajudar usuários que não estejam executando um SO <trademark class="
-"\"registered\"> Microsoft </trademark>. Adicione <literal> enable lqr </"
-"literal> ao <filename> /etc/ppp/ppp.conf </filename>, permitindo "
-"<citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry > para detectar a falha remota e desligar. Essa "
-"detecção é relativamente lenta e, portanto, não é tão útil."
+"ajudar usuários que não estejam executando um SO da <trademark class="
+"\"registered\">Microsoft</trademark>. Adicione <literal>enable lqr</literal> "
+"ao <filename>/etc/ppp/ppp.conf</filename>, permitindo "
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para detectar a falha remota e desligar. Essa detecção é "
+"relativamente lenta e, portanto, não é tão útil."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5705
@@ -9931,7 +9895,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5711
-#, fuzzy
 msgid ""
 "Then reconnect to ensure that this makes no difference. If things improve or "
 "if the problem is solved completely, determine which setting makes the "
@@ -9947,7 +9910,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5718
-#, fuzzy
 msgid ""
 "Before contacting the ISP, enable async logging locally and wait until the "
 "connection hangs again. This may use up quite a bit of disk space. The last "
@@ -9959,34 +9921,30 @@ msgstr ""
 "e aguarde até que a conexão seja interrompida novamente. Isso pode usar um "
 "pouco de espaço em disco. Os últimos dados lidos da porta podem ser de "
 "interesse. Geralmente são dados ASCII e podem até descrever o problema "
-"(<errorname> Erro de memória </errorname>, <errorname> Núcleo descartado </"
-"errorname>)."
+"(<errorname>Memory fault</errorname>, <errorname>Core dumped</errorname>)."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5726
-#, fuzzy
 msgid ""
 "If the ISP is helpful, they should be able to enable logging on their end, "
 "then when the next link drop occurs, they may be able to tell why their side "
 "is having a problem."
 msgstr ""
-"Se o ISP for útil, eles devem ser capazes de habilitar o log em seu final, "
-"então quando o próximo link falhar, eles poderão dizer por que seu lado está "
-"tendo um problema."
+"Se o ISP for útil, eles devem ser capazes de habilitar o log em sua "
+"finalização, então quando o próximo link falhar, eles poderão dizer por que "
+"seu lado está tendo um problema."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5735
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> has hung. What can I do?"
 msgstr ""
-"<citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> foi desativado. O que eu posso fazer?"
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> foi desativado. O que eu posso fazer?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5739
-#, fuzzy
 msgid ""
 "In this case, rebuild <citerefentry><refentrytitle>ppp</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> with debugging "
@@ -9995,12 +9953,12 @@ msgid ""
 "from the <application>ppp</application> process that is stuck. To rebuild "
 "the <application>ppp</application> utility with debugging information, type:"
 msgstr ""
-"Nesse caso, reconstrua <citerefentry> <refentrytitle> ppp </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> com informações de depuração e, "
-"em seguida, use <citerefentry> <refentrytitle> gdb </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> para pegar um rastreamento de "
-"pilha do processo <application> ppp </application> que está travado. Para "
-"reconstruir o utilitário <application> ppp </application> com informações de "
+"Nesse caso, reconstrua o <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> com informações de "
+"depuração e, em seguida, use <citerefentry><refentrytitle>gdb</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> para pegar um rastrear "
+"uma pilha do processo <application>ppp</application> que está travado. Para "
+"reconstruir o utilitário <application>ppp</application> com informações de "
 "depuração, digite:"
 
 #. (itstool) path: answer/screen
@@ -10017,16 +9975,15 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5750
-#, fuzzy
 msgid ""
 "Then, restart <application>ppp</application> and wait until it hangs again. "
 "When the debug build of <application>ppp</application> hangs, start "
 "<application>gdb</application> on the stuck process by typing:"
 msgstr ""
-"Em seguida, reinicie o <application> ppp </application> e espere até que ele "
+"Em seguida, reinicie o <application>ppp</application> e espere até que ele "
 "seja interrompido novamente. Quando a compilação de depuração do "
-"<application> ppp </application> é interrompida, inicie o <application> gdb "
-"</application> no processo travado digitando:"
+"<application>ppp</application> é interrompida, inicie o <application>gdb</"
+"application> no processo travado digitando:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:5756
@@ -10111,7 +10068,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5795
-#, fuzzy
 msgid ""
 "One part of the LCP negotiation is to establish a magic number for each side "
 "of the link so that <quote>reflections</quote> can be detected. The protocol "
@@ -10136,18 +10092,19 @@ msgstr ""
 "protocolo diz que quando o parceiro tenta negociar o mesmo número mágico, um "
 "NAK deve ser enviado e um novo número mágico deve ser escolhido. Durante o "
 "período em que a porta do servidor tem o ECHO ligado, o cliente "
-"<citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> envia pacotes LCP, vê a mesma mágica no pacote "
-"refletido e NAKs isso. Ele também vê a reflexão NAK (que também significa "
-"<citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> deve mudar sua mágica). Isso produz um número "
-"potencialmente enorme de mudanças no número mágico, todas as quais estão se "
-"acumulando alegremente no buffer tty do servidor. Assim que <citerefentry> "
-"<refentrytitle> ppp </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry> é iniciado no servidor, ele é inundado com alterações "
-"numéricas mágicas e quase imediatamente decide que tentou o suficiente para "
-"negociar LCP e desistir. Enquanto isso, o cliente, que não vê mais as "
-"reflexões, fica feliz a tempo de ver um desligamento do servidor."
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> envia pacotes LCP, vê o mesmo numero mágica no pacote "
+"refletido e reflete o NAK. Ele também vê a reflexão NAK (que também "
+"significa que o <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> deve mudar seu numero "
+"magico). Isso produz um número potencialmente enorme de mudanças no número "
+"mágico, todas as quais estão se acumulando alegremente no buffer tty do "
+"servidor. Assim que <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> é iniciado no "
+"servidor, ele é inundado com alterações de numeros mágicos e quase "
+"imediatamente decide que tentou o suficiente para negociar LCP e desiste. "
+"Enquanto isso, o cliente, que não vê mais as reflexões, fica feliz a tempo "
+"de ver um desligamento do servidor."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5813
@@ -10456,7 +10413,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5974
-#, fuzzy
 msgid ""
 "Next, disable dialing under these circumstances. Usually, this sort of "
 "problem arises due to DNS lookups. To prevent DNS lookups from establishing "
@@ -10467,8 +10423,8 @@ msgid ""
 msgstr ""
 "Em seguida, desative a discagem nessas circunstâncias. Geralmente, esse tipo "
 "de problema surge devido a pesquisas de DNS. Para impedir que as pesquisas "
-"de DNS estabeleçam uma conexão (isso <emphasis> não </emphasis> impedirá que "
-"o <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"de DNS estabeleçam uma conexão (isso <emphasis>não</emphasis> impedirá que o "
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> passe os pacotes através de um diretório estabelecido) "
 "conexão), use o seguinte:"
 
@@ -10497,7 +10453,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5990
-#, fuzzy
 msgid ""
 "In the DNS case, try to determine what is actually trying to resolve a host "
 "name. A lot of the time, <application>Sendmail</application> is the culprit. "
@@ -10509,14 +10464,13 @@ msgid ""
 "filename>:"
 msgstr ""
 "No caso do DNS, tente determinar o que realmente está tentando resolver um "
-"nome de host. A maior parte do tempo, o <application> Sendmail </"
-"application> é o culpado. Certifique-se de configurar o <application> "
-"Sendmail </application> para não fazer nenhuma pesquisa de DNS em seu "
-"arquivo de configuração. Veja a seção sobre <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/smtp-dialup.html\"> "
-"usando e-mail com uma conexão discada </link> no Manual do FreeBSD para "
-"detalhes. Você também pode adicionar a seguinte linha ao <filename> .mc </"
-"filename>:"
+"nome de host. A maior parte do tempo, o <application>Sendmail</application> "
+"é o culpado. Certifique-se de configurar o <application>Sendmail</"
+"application> para não fazer nenhuma pesquisa de DNS em seu arquivo de "
+"configuração. Veja a seção sobre <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/books/handbook/smtp-dialup.html\">usando e-mail com uma "
+"conexão discada</link> no manual do FreeBSD para detalhes. Você também pode "
+"adicionar a seguinte linha ao <filename>.mc</filename>:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:6001
@@ -10526,16 +10480,15 @@ msgstr "define(`confDELIVERY_MODE', `d')dnl"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6003
-#, fuzzy
 msgid ""
 "This will make <application>Sendmail</application> queue everything until "
 "the queue is run, usually, every 30 minutes, or until a <command>sendmail -"
 "q</command> is done, perhaps from <filename>/etc/ppp/ppp.linkup</filename>."
 msgstr ""
-"Isso fará com que o <application> Sendmail </application> enfileire tudo até "
+"Isso fará com que o <application>Sendmail</application> enfileire tudo até "
 "que a fila seja executada, normalmente, a cada 30 minutos, ou até que um "
-"<command> sendmail -q </command> seja feito, talvez de <filename> / etc / "
-"ppp /ppp.linkup </filename>."
+"<command>sendmail -q</command> seja feito, talvez do <filename>/etc/ppp/ppp."
+"linkup</filename>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6013
@@ -10559,7 +10512,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6023
-#, fuzzy
 msgid ""
 "This is because <citerefentry><refentrytitle>ppp</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> is trying to negotiate "
@@ -10567,9 +10519,9 @@ msgid ""
 "compression at all. The messages are harmless, but can be silenced by "
 "disabling the compression:"
 msgstr ""
-"Isso ocorre porque <citerefentry> <refentrytitle> ppp </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> está tentando negociar a "
-"compactação Predictor1, mas o par não deseja negociar nenhuma compactação. "
+"Isso ocorre porque o <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> está tentando negociar "
+"a compactação Predictor1, mas o par não deseja negociar nenhuma compactação. "
 "As mensagens são inofensivas, mas podem ser silenciadas desativando a "
 "compactação:"
 
@@ -10602,27 +10554,25 @@ msgstr "set log +connect"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6046
-#, fuzzy
 msgid ""
 "This will make <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> log everything up until the last requested "
 "<quote>expect</quote> string."
 msgstr ""
-"Isso fará com que <citerefentry> <refentrytitle> ppp </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> registre tudo até a última string "
-"<quote> expect </quote> solicitada."
+"Isso fará com que o <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> registre tudo até a "
+"última string <quote>expect</quote> seja solicitada."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6049
-#, fuzzy
 msgid ""
 "To see the connect speed when using PAP or CHAP, make sure to configure "
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to expect the whole CONNECT line, using something like this:"
 msgstr ""
 "Para ver a velocidade de conexão ao usar o PAP ou o CHAP, certifique-se de "
-"configurar <citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 "
-"</manvolnum> </citerefentry> para esperar toda a linha CONNECT, usando algo "
+"configurar <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> para esperar toda a linha CONNECT, usando algo "
 "assim:"
 
 #. (itstool) path: answer/programlisting
@@ -10637,27 +10587,25 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6058
-#, fuzzy
 msgid ""
 "This gets the CONNECT, sends nothing, then expects a line-feed, forcing "
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to read the whole CONNECT response."
 msgstr ""
 "Isso obtém o CONNECT, não envia nada, então espera um avanço de linha, "
-"forçando <citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> a ler toda a resposta CONNECT."
+"forçando o <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> a ler toda a resposta CONNECT."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6066
-#, fuzzy
 msgid ""
 "Why does <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> ignore the <literal>\\</literal> character in my "
 "chat script?"
 msgstr ""
-"Por que o <citerefentry> <refentrytitle> ppp </refentrytitle> <manvolnum> 8 "
-"</manvolnum> </citerefentry> ignora o caractere <literal> \\ </literal> no "
-"meu script de bate-papo?"
+"Por que o <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> ignora o caractere <literal>\\</literal> no meu "
+"script de bate-papo?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6071
@@ -11368,7 +11316,7 @@ msgid ""
 "of <filename>foo</filename> (actually <filename>bar</filename>), do "
 "something like:"
 msgstr ""
-"<option> -R </option> faz um <emphasis> </"
+"<option>-R</option> faz um <emphasis></"
 "emphasis><citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> recursivo. Tenha cuidado ao especificar diretórios "
 "ou links simbólicos para diretórios para o "
@@ -11870,7 +11818,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6777
-#, fuzzy
 msgid ""
 "Seriously, FreeBSD uses the <acronym>HLT</acronym> (halt) instruction when "
 "the system is idle thus lowering its energy consumption and therefore the "
@@ -11878,10 +11825,10 @@ msgid ""
 "Configuration and Power Interface) configured, then FreeBSD can also put the "
 "CPU into a low power mode."
 msgstr ""
-"Sério, o FreeBSD usa a instrução <acronym> HLT </acronym> (halt) quando o "
+"Sério, o FreeBSD usa a instrução <acronym>HLT</acronym> (halt) quando o "
 "sistema está ocioso, reduzindo assim seu consumo de energia e, portanto, o "
-"calor gerado. Além disso, se você tiver <acronym> ACPI </acronym> "
-"(Configuração Avançada e Interface de Energia) configurada, então o FreeBSD "
+"calor gerado. Além disso, se você tiver <acronym>ACPI</acronym> "
+"(Configuração Avançada e Interface de Energia) configurado, então o FreeBSD "
 "também pode colocar a CPU em um modo de baixa energia."
 
 #. (itstool) path: question/para
@@ -11981,17 +11928,15 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6842
-#, fuzzy
 msgid ""
 "One to commit an untested lightbulb which breaks buildworld, then back it "
 "out five minutes later;"
 msgstr ""
-"Um para cometer uma lâmpada não testada que quebra o mundo da construção, e "
-"depois recua cinco minutos depois;"
+"Um para cometer uma lâmpada não testada que quebra o buildworld, e depois "
+"retorna cinco minutos depois;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6845
-#, fuzzy
 msgid ""
 "Eight to flame the PR originators for not including patches in their PRs;"
 msgstr ""
@@ -11999,13 +11944,11 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6848
-#, fuzzy
 msgid "Five to complain about buildworld being broken;"
-msgstr "Cinco para reclamar sobre o mundo da construção sendo quebrado;"
+msgstr "Cinco para reclamar sobre o buildworld sendo quebrado;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6850
-#, fuzzy
 msgid ""
 "Thirty-one to answer that it works for them, and they must have updated at a "
 "bad time;"
@@ -12015,60 +11958,53 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6853
-#, fuzzy
 msgid "One to post a patch for a new lightbulb to -hackers;"
-msgstr "Um para postar um patch para uma nova lâmpada para os hackers;"
+msgstr "Um para postar um patch para uma nova luz para -hackers;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6856
-#, fuzzy
 msgid ""
 "One to complain that he had patches for this three years ago, but when he "
 "sent them to -CURRENT they were just ignored, and he has had bad experiences "
 "with the PR system; besides, the proposed new lightbulb is non-reflexive;"
 msgstr ""
-"Um para reclamar que ele tinha remendos para isso há três anos, mas quando "
+"Um para reclamar que ele tinha patches para isso há três anos, mas quando "
 "ele os enviou para -CURRENT eles foram ignorados, e ele teve más "
-"experiências com o sistema de relações públicas; além disso, a nova lâmpada "
-"proposta não é reflexiva;"
+"experiências com o sistema de PRs; além disso, a nova luz proposta não é "
+"reflexiva;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6862
-#, fuzzy
 msgid ""
 "Thirty-seven to scream that lightbulbs do not belong in the base system, "
 "that committers have no right to do things like this without consulting the "
 "Community, and WHAT IS -CORE DOING ABOUT IT!?"
 msgstr ""
-"Trinta e sete para gritar que as lâmpadas não pertencem ao sistema básico, "
-"que os committers não têm o direito de fazer coisas assim sem consultar a "
-"Comunidade, e O QUE É - FAZER SOBRE!?"
+"Trinta e sete para gritar que essa luz não pertencem ao sistema básico, que "
+"os committers não têm o direito de fazer coisas assim sem consultar a "
+"Comunidade, e O QUE O -CORE ESTÁ FAZENDO SOBRE ISSO!?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6867
-#, fuzzy
 msgid "Two hundred to complain about the color of the bicycle shed;"
-msgstr "Duzentos para reclamar da cor do galpão de bicicleta;"
+msgstr "Duzentos para reclamar da cor do bicicletário;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6870
-#, fuzzy
 msgid ""
 "Three to point out that the patch breaks <citerefentry><refentrytitle>style</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>;"
 msgstr ""
-"Três para salientar que o patch quebra <citerefentry> <refentrytitle> style "
-"</refentrytitle> <manvolnum> 9 </manvolnum> </citerefentry>;"
+"Três para salientar que o patch quebra o <citerefentry><refentrytitle>style</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6873
-#, fuzzy
 msgid "Seventeen to complain that the proposed new lightbulb is under GPL;"
-msgstr "Dezessete para reclamar que a nova lâmpada proposta está sob a GPL;"
+msgstr "Dezessete para reclamar que a nova luz proposta está sob a GPL;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6876
-#, fuzzy
 msgid ""
 "Five hundred and eighty-six to engage in a flame war about the comparative "
 "advantages of the GPL, the BSD license, the MIT license, the NPL, and the "
@@ -12080,23 +12016,19 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6881
-#, fuzzy
 msgid "Seven to move various portions of the thread to -chat and -advocacy;"
-msgstr "Sete para mover várias partes do segmento para bate-papo e -vocacy;"
+msgstr "Sete para mover várias partes do segmento para -chat e -vocacy;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6884
-#, fuzzy
 msgid ""
 "One to commit the suggested lightbulb, even though it shines dimmer than the "
 "old one;"
 msgstr ""
-"Um para cometer a lâmpada sugerida, mesmo que ela brilhe mais do que a "
-"antiga;"
+"Um para comitar a luz sugerida, mesmo que ela seja mais escura que a antiga;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6887
-#, fuzzy
 msgid ""
 "Two to back it out with a furious flame of a commit message, arguing that "
 "FreeBSD is better off in the dark than with a dim lightbulb;"
@@ -12107,17 +12039,15 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6891
-#, fuzzy
 msgid ""
 "Forty-six to argue vociferously about the backing out of the dim lightbulb "
 "and demanding a statement from -core;"
 msgstr ""
-"Quarenta e seis para argumentar veementemente sobre o apoio da fraca lâmpada "
-"e exigir uma declaração do alto desempenho;"
+"Quarenta e seis para argumentar veementemente sobre o apoio da luz fraca e "
+"exigir uma declaração do alto desempenho;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6895
-#, fuzzy
 msgid ""
 "Eleven to request a smaller lightbulb so it will fit their Tamagotchi if we "
 "ever decide to port FreeBSD to that platform;"
@@ -12127,7 +12057,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6899
-#, fuzzy
 msgid ""
 "Seventy-three to complain about the SNR on -hackers and -chat and "
 "unsubscribe in protest;"
@@ -12137,56 +12066,50 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6902
-#, fuzzy
 msgid ""
 "Thirteen to post <quote>unsubscribe</quote>, <quote>How do I unsubscribe?</"
 "quote>, or <quote>Please remove me from the list</quote>, followed by the "
 "usual footer;"
 msgstr ""
-"Treze para postar <quote> cancelar a inscrição </quote>, <quote> Como posso "
-"cancelar a inscrição? </quote>, ou <quote> Por favor, remova-me da lista </"
+"Treze para postar <quote>cancelar a inscrição</quote>, <quote> Como posso "
+"cancelar a inscrição? </quote>, ou <quote>Por favor, remova-me da lista</"
 "quote>, seguido do rodapé habitual;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6907
-#, fuzzy
 msgid ""
 "One to commit a working lightbulb while everybody is too busy flaming "
 "everybody else to notice;"
 msgstr ""
-"Um para cometer uma lâmpada de trabalho enquanto todos estão ocupados demais "
-"chamando a atenção de todos os outros;"
+"Um para comitar uma lâmpada de trabalho enquanto todos estão ocupados demais "
+"chamando a atenção de todos os outros para esse commit;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6910
-#, fuzzy
 msgid ""
 "Thirty-one to point out that the new lightbulb would shine 0.364% brighter "
 "if compiled with TenDRA (although it will have to be reshaped into a cube), "
 "and that FreeBSD should therefore switch to TenDRA instead of GCC;"
 msgstr ""
-"Trinta e um para salientar que a nova lâmpada iria brilhar 0,364% mais "
-"brilhante se compilada com TenDRA (embora tenha que ser reformulada em um "
-"cubo), e que o FreeBSD deve, portanto, mudar para TenDRA ao invés de GCC;"
+"Trinta e um para salientar que a nova lâmpada iria brilhar 0,364% a mais se "
+"compilada com TenDRA (embora tenha que ser reformulada em um cubo), e que o "
+"FreeBSD deve, portanto, mudar para TenDRA ao invés de GCC;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6915
-#, fuzzy
 msgid "One to complain that the new lightbulb lacks fairings;"
 msgstr "Um para reclamar que a nova lâmpada não tem carenagem;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6918
-#, fuzzy
 msgid ""
 "Nine (including the PR originators) to ask <quote>what is MFC?</quote>;"
 msgstr ""
-"Nove (incluindo os criadores de relações públicas) para perguntar ao <quote> "
-"o que é o MFC? </quote>;"
+"Nove (incluindo os criadores de PRs) para perguntar <quote>o que é o MFC?</"
+"quote>;"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6921
-#, fuzzy
 msgid ""
 "Fifty-seven to complain about the lights being out two weeks after the bulb "
 "has been changed."
@@ -12196,26 +12119,23 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6924
-#, fuzzy
 msgid "<emphasis>Nik Clayton <email>nik@FreeBSD.org</email> adds:</emphasis>"
 msgstr ""
-"<emphasis> Nik Clayton <email> nik@FreeBSD.org </email> acrescenta: </"
+"<emphasis>Nik Clayton<email> nik@FreeBSD.org </email> acrescenta: </"
 "emphasis>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6926
-#, fuzzy
 msgid "<emphasis>I was laughing quite hard at this.</emphasis>"
-msgstr "<emphasis> Eu estava rindo bastante disso. </emphasis>"
+msgstr "<emphasis>Eu estava rindo bastante disso.</emphasis>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6929
-#, fuzzy
 msgid ""
 "<emphasis>And then I thought, <quote>Hang on, shouldn't there be '1 to "
 "document it.' in that list somewhere?</quote></emphasis>"
 msgstr ""
-"<emphasis> E então eu pensei, <quote> Espere, não deveria haver '1 para "
+"<emphasis>E então eu pensei, <quote> Espere, não deveria haver '1 para "
 "documentar isso.' nessa lista em algum lugar? </quote> </emphasis>"
 
 #. (itstool) path: answer/para
@@ -12241,7 +12161,6 @@ msgstr "Onde os dados gravados em <filename>/dev/null</filename> vão parar?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6949
-#, fuzzy
 msgid ""
 "It goes into a special data sink in the CPU where it is converted to heat "
 "which is vented through the heatsink / fan assembly. This is why CPU cooling "
@@ -12262,7 +12181,7 @@ msgstr ""
 "que é ventilado através do conjunto do dissipador de calor / ventilador. É "
 "por isso que o resfriamento da CPU é cada vez mais importante; À medida que "
 "as pessoas se acostumam com processadores mais rápidos, elas se tornam "
-"descuidadas com seus dados e mais e mais delas acabam em <filename>/dev/"
+"descuidadas com seus dados e mais e mais delas acabam no <filename>/dev/"
 "null</filename>, superaquecendo suas CPUs. Se você apagar <filename>/dev/"
 "null</filename> (o que efetivamente desativa o dissipador de dados da CPU) "
 "sua CPU pode ficar mais fria, mas seu sistema rapidamente ficará constipado "
@@ -12281,7 +12200,6 @@ msgstr "<emphasis>Paul Robinson acrescenta:</emphasis>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6971
-#, fuzzy
 msgid ""
 "There are other methods. As every good sysadmin knows, it is part of "
 "standard practice to send data to the screen of interesting variety to keep "
@@ -12296,7 +12214,7 @@ msgstr ""
 "Existem outros métodos. Como todo bom administrador de sistemas sabe, é "
 "parte da prática padrão enviar dados para a tela de variedade interessante "
 "para manter todos os pixies que compõem sua imagem felizes. Os duendes de "
-"tela (comumente com erros de digitação ou renomeados como <quote> pixels </"
+"tela (comumente com erros de digitação ou renomeados como <quote>pixels</"
 "quote>) são categorizados pelo tipo de chapéu que usam (vermelho, verde ou "
 "azul) e serão ocultados ou exibidos (mostrando a cor do chapéu ) sempre que "
 "recebem um pequeno pedaço de comida. Placas de vídeo transformam dados em "
@@ -12307,7 +12225,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6985
-#, fuzzy
 msgid ""
 "To take your suggestions further, you could just throw the random data to "
 "console, thereby letting the pixies consume it. This causes no heat to be "
@@ -12322,7 +12239,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6992
-#, fuzzy
 msgid ""
 "Incidentally, as an ex-admin of a large ISP who experienced many problems "
 "attempting to maintain a stable temperature in a server room, I would "
