@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-28 07:51+0000\n"
+"PO-Revision-Date: 2018-08-29 10:58+0000\n"
 "Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -467,7 +467,6 @@ msgstr "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:235
-#, fuzzy
 msgid ""
 "In order to be properly managed by the <filename>rc.d</filename> framework, "
 "its scripts need to be written in the <citerefentry><refentrytitle>sh</"
@@ -479,20 +478,18 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> script in the "
 "appropriate <filename>rc.d</filename> directory."
 msgstr ""
-"Para ser adequadamente gerenciado pelo framework <filename> rc.d </"
-"filename>, seus scripts precisam ser escritos no <citerefentry> "
-"<refentrytitle> sh </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry > idioma. Se você tiver um serviço ou porta que use um "
-"utilitário de controle binário ou uma rotina de inicialização escrita em "
-"outro idioma, instale esse elemento em <filename> / usr / sbin </filename> "
-"(para o sistema) ou <filename>/usr/local/sbin</filename> (para portas) e "
-"chamá-lo de um script <citerefentry> <refentrytitle> sh </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> no apropriado <filename> rc.d </"
-"filename> diretório."
+"Para ser adequadamente gerenciado pelo framework <filename>rc.d</filename>, "
+"seus scripts precisam ser escritos na linguagem "
+"<citerefentry><refentrytitle>sh</refentrytitle> <manvolnum>1</manvolnum></"
+"citerefentry>. Se você tiver um serviço ou porta que use um utilitário de "
+"controle binário ou uma rotina de inicialização escrita em outra linguagem, "
+"instale esse elemento em <filename>/usr/sbin</filename>(para o sistema) ou "
+"<filename>/usr/local/sbin</filename> (para portas) e chamá-lo de um script "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> no apropriado diretório <filename>rc.d</filename>."
 
 #. (itstool) path: tip/para
 #: article.translate.xml:247
-#, fuzzy
 msgid ""
 "If you would like to learn the details of why <filename>rc.d</filename> "
 "scripts must be written in the <citerefentry><refentrytitle>sh</"
@@ -501,16 +498,15 @@ msgid ""
 "<function>run_rc_script</function>, then study the implementation of "
 "<function>run_rc_script</function> in <filename>/etc/rc.subr</filename>."
 msgstr ""
-"Se você gostaria de aprender os detalhes de porque os scripts <filename> rc."
-"d </filename> devem ser escritos no idioma <citerefentry> <refentrytitle> sh "
-"</refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> , veja como "
-"<filename>/etc/rc</filename> invoca-os por meio de <function> run_rc_script "
-"</function>, então estude a implementação de <function> run_rc_script </"
-"function> em <filename> / etc / rc. subr </filename>."
+"Caso você queira aprender os detalhes do porque os scripts <filename>rc.d</"
+"filename> devem ser escritos na linguagem <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, veja como <filename>/"
+"etc/rc</filename> invoca-os por meio de <function>run_rc_script</function>, "
+"então estude a implementação de <function>run_rc_script</function> em "
+"<filename>/etc/rc. subr</filename>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:258
-#, fuzzy
 msgid ""
 "In <filename>/etc/rc.subr</filename>, a number of "
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
@@ -525,18 +521,18 @@ msgid ""
 "manvolnum></citerefentry> in <filename>rc.d</filename> scripts. We are not "
 "going to be an exception."
 msgstr ""
-"Em <filename> /etc/rc.subr </filename>, várias funções <citerefentry> "
-"<refentrytitle> sh </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> são definidas para um <filename> rc script .d </filename> a "
-"ser usado. As funções estão documentadas em <citerefentry> <refentrytitle> "
-"rc.subr </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>. Embora "
-"seja teoricamente possível escrever um script <filename> rc.d </filename> "
-"sem usar <citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum> "
-"8 </manvolnum> </citerefentry>, suas funções é extremamente útil e torna o "
+"Em <filename>/etc/rc.subr</filename>, várias funções "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> são definidas para um <filename>rc script .d</filename> a ser "
+"usado. As funções estão documentadas em <citerefentry> <refentrytitle>rc."
+"subr</refentrytitle> <manvolnum>8</manvolnum></citerefentry>. Embora seja "
+"teoricamente possível escrever um script <filename>rc.d</filename> sem usar "
+"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, suas funções são extremamente úteis e torna o "
 "trabalho mais fácil. Portanto, não é de surpreender que todos recorram a "
-"scripts <citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum> "
-"8 </manvolnum> </citerefentry> em <filename> rc.d </filename>. Nós não vamos "
-"ser uma exceção."
+"scripts <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> em <filename>rc.d</filename>. Nós não vamos ser "
+"uma exceção."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:269
@@ -561,7 +557,6 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:285
-#, fuzzy
 msgid ""
 "<anchor xml:id=\"name-var\"/>The mandatory variable <envar>name</envar> "
 "specifies the name of our script. It is required by "
@@ -571,13 +566,13 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> functions."
 msgstr ""
-"<anchor xml:id=\"name-var\"/> A variável obrigatória <envar> name </envar> "
-"especifica o nome do nosso script. É exigido por <citerefentry> "
-"<refentrytitle> rc.subr </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry>. Ou seja, cada script <filename> rc.d </filename> <emphasis> "
-"deve </emphasis> definir <envar> nome </envar> antes de chamar "
-"<citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum > 8 </"
-"manvolnum> </citerefentry> funções."
+"<anchor xml:id=\"name-var\"/> A variável obrigatória <envar>name</envar> "
+"especifica o nome do nosso script. É exigido pelo "
+"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Ou seja, cada script <filename>rc.d</"
+"filename><emphasis> deve </emphasis>definir<envar>nome</envar> antes de "
+"chamar funções <citerefentry><refentrytitle>rc.subr</refentrytitle> "
+"<manvolnum>8</manvolnum> </citerefentry>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:292
@@ -592,7 +587,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:298
-#, fuzzy
 msgid ""
 "The current style of <filename>rc.d</filename> scripting is to enclose "
 "values assigned to variables in double quotes. Keep in mind that it is just "
@@ -605,7 +599,7 @@ msgid ""
 "be able to tell the language syntax from style conventions and use both of "
 "them wisely."
 msgstr ""
-"O estilo atual do script <filename> rc.d </filename> é incluir valores "
+"O estilo atual do script <filename>rc.d</filename> é incluir valores "
 "atribuídos às variáveis ​​entre aspas duplas. Tenha em mente que é apenas um "
 "problema de estilo que nem sempre pode ser aplicável. Você pode omitir com "
 "segurança citações de palavras simples sem os metacaracteres "
@@ -618,7 +612,6 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:312
-#, fuzzy
 msgid ""
 "The main idea behind <citerefentry><refentrytitle>rc.subr</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> is that an "
@@ -635,20 +628,20 @@ msgid ""
 "manvolnum></citerefentry> provides default methods for the standard "
 "arguments."
 msgstr ""
-"A idéia principal por trás de <citerefentry> <refentrytitle> rc.subr </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> é que um script "
-"<filename> rc.d </filename> fornece manipuladores, ou métodos, para "
-"<citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> para invocar. Em particular, <option> start </"
-"option>, <option> stop </option> e outros argumentos para um script "
-"<filename> rc.d </filename> são tratados desta maneira. Um método é uma "
-"expressão <citerefentry> <refentrytitle> sh </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> armazenada em uma variável denominada <envar> "
-"<replaceable> argumento </replaceable> _cmd </envar>, onde <replaceable> "
-"argumento </replaceable> corresponde ao que pode ser especificado na linha "
-"de comando do script. Veremos mais adiante como <citerefentry> "
-"<refentrytitle> rc.subr </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry> fornece métodos padrão para os argumentos padrão."
+"A idéia principal por trás do <citerefentry><refentrytitle>rc.subr</"
+"refentrytitle> <manvolnum>8</manvolnum></citerefentry> é que um script "
+"<filename>rc.d</filename> fornece manipuladores, ou métodos, para o "
+"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> invocar. Em particular, <option>start</option>, "
+"<option>stop</option> e outros argumentos para um script <filename>rc.d</"
+"filename> são tratados desta maneira. Um método é uma expressão "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum> </"
+"citerefentry> armazenada em uma variável denominada "
+"<envar><replaceable>argumento</replaceable>_cmd </envar>, onde "
+"<replaceable>argumento</replaceable> corresponde ao que pode ser "
+"especificado na linha de comando do script. Veremos mais adiante como o "
+"<citerefentry><refentrytitle>rc.subr</refentrytitle> <manvolnum>8</"
+"manvolnum></citerefentry> fornece métodos padrão para os argumentos padrão."
 
 #. (itstool) path: note/para
 #: article.translate.xml:326
@@ -704,7 +697,6 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:355
-#, fuzzy
 msgid ""
 "This call to <citerefentry><refentrytitle>rc.subr</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> loads "
@@ -717,20 +709,19 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> itself."
 msgstr ""
-"Essa chamada para <citerefentry><refentrytitle>rc.subr</"
+"Essa chamada do <citerefentry><refentrytitle>rc.subr</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> carrega as variáveis "
 "do <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>. Nosso script não faz uso deles ainda, mas ainda "
-"assim é recomendado carregar <citerefentry><refentrytitle>rc.conf</"
-"refentrytitle><manvolnum>5</manvolnum></citerefentry> porque pode haver "
-"<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
-"manvolnum></citerefentry> variáveis ​​controlando "
-"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry> propriamente dito."
+"assim é recomendado carregar o <citerefentry><refentrytitle>rc.conf</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> pois podem haver "
+"variáveis <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> controlando o <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> propriamente "
+"dito."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:363
-#, fuzzy
 msgid ""
 "Usually this is the last command in an <filename>rc.d</filename> script. It "
 "invokes the <citerefentry><refentrytitle>rc.subr</"
@@ -738,10 +729,10 @@ msgid ""
 "the requested action using the variables and methods our script has provided."
 ""
 msgstr ""
-"Geralmente este é o último comando em um script <filename> rc.d </filename>. "
-"Invoca o maquinário <citerefentry> <refentrytitle> rc.subr </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> para executar a ação solicitada "
-"usando as variáveis ​​e métodos que nosso script forneceu."
+"Geralmente este é o último comando em um script <filename>rc.d</filename>. "
+"Invoca o maquinário <citerefentry> <refentrytitle>rc.subr</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> para executar a ação "
+"solicitada usando as variáveis ​​e métodos que nosso script forneceu."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:372
@@ -750,7 +741,6 @@ msgstr "Um script de simulação configurável"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:374
-#, fuzzy
 msgid ""
 "Now let us add some controls to our dummy script. As you may know, "
 "<filename>rc.d</filename> scripts are controlled with "
@@ -767,21 +757,20 @@ msgid ""
 "other hand, a mandatory <filename>rc.d</filename> script can have "
 "configuration variables. We will do both things in the same script though:"
 msgstr ""
-"Agora vamos adicionar alguns controles ao nosso script fictício. Como você "
-"deve saber, os scripts <filename> rc.d </filename> são controlados com "
-"<citerefentry> <refentrytitle> rc.conf </refentrytitle> <manvolnum> 5 </"
-"manvolnum> </citerefentry>. Felizmente, <citerefentry> <refentrytitle> rc."
-"subr </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> esconde "
-"todas as complicações de nós. O script a seguir usa <citerefentry> "
-"<refentrytitle> rc.conf </refentrytitle> <manvolnum> 5 </manvolnum> </"
-"citerefentry> via <citerefentry> <refentrytitle> rc.subr </refentrytitle> "
-"<manvolnum> 8 </manvolnum > </citerefentry> para ver se está habilitado em "
-"primeiro lugar, e buscar uma mensagem para mostrar no momento da "
-"inicialização. Essas duas tarefas são de fato independentes. Por um lado, um "
-"script <filename> rc.d </filename> pode apenas suportar a ativação e "
-"desativação de seu serviço. Por outro lado, um script <filename> rc.d </"
-"filename> obrigatório pode ter variáveis ​​de configuração. Nós vamos fazer "
-"as duas coisas no mesmo script embora:"
+"Agora vamos adicionar alguns controles ao nosso dummy script. Como você deve "
+"saber, os scripts <filename>rc.d</filename> são controlados pelo "
+"<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>. Felizmente, o <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> esconde todas as "
+"complicações de nós. O script a seguir usa o <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> via "
+"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> para ver se está habilitado em primeiro lugar, e "
+"buscar uma mensagem para mostrar no momento da inicialização. Essas duas "
+"tarefas são de fato independentes. Por um lado, um script <filename>rc.d</"
+"filename> pode apenas suportar a ativação e desativação de seu serviço. Por "
+"outro lado, um script <filename>rc.d</filename> obrigatório pode ter "
+"variáveis ​​de configuração. Nós vamos fazer as duas coisas no mesmo script:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:388
@@ -1235,7 +1224,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:606
-#, fuzzy
 msgid "Startup and shutdown of an advanced daemon"
 msgstr "Inicialização e desligamento de um daemon avançado"
 
@@ -1256,7 +1244,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -2047,7 +2035,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:994
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -2440,7 +2428,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1201
-#, fuzzy
 msgid "Giving more flexibility to an rc.d script"
 msgstr "Dando mais flexibilidade a um script rc.d"
 
@@ -2547,18 +2534,17 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1244
-#, fuzzy
 msgid ""
 "To illustrate this opportunity, let us modify the primitive dummy script so "
 "that its messages depend on the additional arguments supplied. Here we go:"
 msgstr ""
-"Para ilustrar essa oportunidade, vamos modificar o script dummy primitivo "
-"para que suas mensagens dependam dos argumentos adicionais fornecidos. Aqui "
-"vamos nós:"
+"Para ilustrar essa oportunidade, vamos modificar o script de simulação "
+"primitivo para que suas mensagens dependam dos argumentos adicionais "
+"fornecidos. Aqui vamos nós:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:1249
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -2638,7 +2624,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1288
-#, fuzzy
 msgid "What essential changes can we notice in the script?"
 msgstr "Quais mudanças essenciais podemos notar no script?"
 
@@ -2758,7 +2743,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1348
-#, fuzzy
 msgid "Further reading"
 msgstr "Leitura adicional"
 
@@ -2781,7 +2765,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1357
-#, fuzzy
 msgid ""
 "<anchor xml:id=\"manpages\"/>The manual pages "
 "<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
@@ -2793,19 +2776,18 @@ msgid ""
 "without studying the manual pages and referring to them while writing your "
 "own scripts."
 msgstr ""
-"<anchor xml:id=\"manpages\"/> As páginas de manual <citerefentry> "
-"<refentrytitle> rc </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry>, <citerefentry> <refentrytitle> rc.subr </refentrytitle > "
-"<manvolnum> 8 </manvolnum> </citerefentry> e <citerefentry> <refentrytitle> "
-"rcorder </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> "
-"documente o <filename> rc.d </filename> componentes em grande detalhe. Você "
-"não pode usar totalmente o poder <filename> rc.d </filename> sem estudar as "
-"páginas de manual e se referir a elas enquanto escreve seus próprios scripts."
-""
+"<anchor xml:id=\"manpages\"/>As páginas de manual "
+"<citerefentry><refentrytitle>rc </refentrytitle><manvolnum>8</manvolnum> </"
+"citerefentry>,<citerefentry><refentrytitle>rc.subr</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> e "
+"<citerefentry><refentrytitle>rcorder</refentrytitle> <manvolnum>8</"
+"manvolnum></citerefentry> documenta os componentes do <filename> rc.d </"
+"filename> com grande detalhe. Você não pode usar totalmente o poder do "
+"<filename>rc.d</filename> sem estudar as páginas de manual e se referir a "
+"elas enquanto escreve seus próprios scripts."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1364
-#, fuzzy
 msgid ""
 "The major source of working, real-life examples is <filename>/etc/rc.d</"
 "filename> in a live system. Its contents are easy and pleasant to read "
@@ -2815,10 +2797,10 @@ msgid ""
 "filename> scripts were not written by angels, so they might suffer from bugs "
 "and suboptimal design decisions. Now you can improve them!"
 msgstr ""
-"A principal fonte de trabalho, exemplos reais, é <filename> /etc/rc.d </"
+"A principal fonte de trabalho, um exemplo real é o <filename>/etc/rc.d</"
 "filename> em um sistema ativo. Seu conteúdo é fácil e agradável de ler, "
 "porque a maioria dos cantos difíceis estão escondidos no fundo "
-"<citerefentry> <refentrytitle> rc.subr </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry>. Tenha em mente que os scripts <filename> /etc/rc."
-"d </filename> não foram escritos por anjos, então eles podem sofrer de bugs "
-"e decisões de design sub-ótimas. Agora você pode melhorá-los!"
+"<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</manvolnum> "
+"</citerefentry>. Tenha em mente que os scripts <filename>/etc/rc.d</"
+"filename> não foram escritos por anjos, então eles podem sofrer de bugs e "
+"decisões de design sub-ótimas. Agora você pode melhorá-los!"
