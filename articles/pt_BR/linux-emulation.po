@@ -1,5 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,9 +8,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-24 12:19+0000\n"
+"PO-Revision-Date: 2018-08-31 03:54+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -17,7 +18,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Kanazuchi, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:7
@@ -164,7 +167,6 @@ msgstr "Introdução"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
-#, fuzzy
 msgid ""
 "In the last few years the open source <trademark class=\"registered\">UNIX</"
 "trademark> based operating systems started to be widely deployed on server "
@@ -181,23 +183,22 @@ msgid ""
 "that lack support for FreeBSD."
 msgstr ""
 "Nos últimos anos, os sistemas operacionais baseados em código aberto "
-"<trademark class=\"registered\"> UNIX </trademark> começaram a ser "
-"amplamente implantados em máquinas servidoras e clientes. Entre esses "
-"sistemas operacionais eu gostaria de destacar dois: FreeBSD, por sua herança "
-"BSD, base de código comprovada pelo tempo e muitos recursos interessantes e "
-"<trademark class=\"registered\"> Linux </trademark> para sua ampla base de "
-"usuários, entusiasta desenvolvedor aberto comunidade e apoio de grandes "
-"empresas. O FreeBSD tende a ser usado em máquinas de classe servindo tarefas "
-"de rede pesadas com menos uso em máquinas de classe desktop para usuários "
-"comuns. Embora o <trademark class=\"registered\"> Linux </trademark> tenha o "
-"mesmo uso em servidores, mas é muito mais usado por usuários domésticos. "
-"Isto leva a uma situação onde existem muitos programas binários disponíveis "
-"apenas para <trademark class=\"registered\"> Linux </trademark> que não "
-"suportam o FreeBSD."
+"<trademark class=\"registered\">UNIX</trademark> começaram a ser amplamente "
+"implantados em máquinas servidores e clientes. Entre esses sistemas "
+"operacionais eu gostaria de destacar dois: FreeBSD, por sua herança BSD, "
+"base de código comprovada pelo tempo e muitos recursos interessantes e "
+"<trademark class=\"registered\">Linux</trademark> por sua ampla base de "
+"usuários, entusiasta comunidade aberta de desenvolvedores e apoio de grandes "
+"empresas. O FreeBSD tende a ser usado em máquinas de classe servidor, "
+"tarefas de rede pesadas com menos uso em máquinas de classe desktop para "
+"usuários comuns. Embora o <trademark class=\"registered\">Linux</trademark> "
+"tenha o mesmo uso em servidores, mas é muito mais usado por usuários "
+"domésticos. Isto leva a uma situação onde existem muitos programas binários "
+"disponíveis apenas para <trademark class=\"registered\">Linux</trademark> "
+"que não suportam o FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:98
-#, fuzzy
 msgid ""
 "Naturally, a need for the ability to run <trademark class="
 "\"registered\">Linux</trademark> binaries on a FreeBSD system arises and "
@@ -205,13 +206,12 @@ msgid ""
 "\"registered\">Linux</trademark> kernel in the FreeBSD operating system."
 msgstr ""
 "Naturalmente, surge a necessidade da habilidade de executar binários "
-"<trademark class=\"registered\"> Linux </trademark> em um sistema FreeBSD e "
-"é com isso que esta tese trata: a emulação do <trademark class="
-"\"registered\"> Linux </trademark> kernel no sistema operacional do FreeBSD."
+"<trademark class=\"registered\">Linux</trademark> em um sistema FreeBSD e é "
+"com isso que esta tese trata: a emulação do kernel do <trademark class="
+"\"registered\">Linux</trademark> no sistema operacional FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:103
-#, fuzzy
 msgid ""
 "During the Summer of 2006 Google Inc. sponsored a project which focused on "
 "extending the <trademark class=\"registered\">Linux</trademark> emulation "
@@ -220,10 +220,10 @@ msgid ""
 "part of this project."
 msgstr ""
 "Durante o verão de 2006, a Google Inc. patrocinou um projeto que se "
-"concentrava em estender a camada de emulação <trademark class="
-"\"registered\"> Linux </trademark> (o chamado Linuxulator) no FreeBSD para "
-"incluir <trademark class=\"registered\"> Linux </trademark> 2.6 instalações. "
-"Esta tese é escrita como parte deste projeto."
+"concentrava em estender a camada de emulação do <trademark class="
+"\"registered\">Linux</trademark> (o chamado Linuxulator) no FreeBSD para "
+"incluir necessidades do <trademark class=\"registered\">Linux</trademark> 2."
+"6. Esta tese é escrita como parte deste projeto."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:110
@@ -244,10 +244,10 @@ msgstr ""
 "Nesta seção vamos descrever cada sistema operacional em questão. Como eles "
 "lidam com syscalls, trapframes etc., todo o material de baixo nível. Também "
 "descrevemos a maneira como eles entendem primitivos comuns <trademark class="
-"\"registered\"> UNIX </trademark> como o que é um PID, o que é um thread, "
+"\"registered\">UNIX</trademark>, como o que é um PID, o que é uma thread, "
 "etc. Na terceira subseção, falamos sobre como <trademark class="
-"\"registered\"> UNIX </trademark> na emulação <trademark class="
-"\"registered\"> UNIX </trademark> pode ser feita em geral."
+"\"registered\">UNIX</trademark> em emuladores <trademark class="
+"\"registered\">UNIX</trademark> pode ser feita em geral."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:120
@@ -256,7 +256,6 @@ msgstr "O que é o <trademark class=\"registered\"> UNIX </trademark>?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:122
-#, fuzzy
 msgid ""
 "<trademark class=\"registered\">UNIX</trademark> is an operating system with "
 "a long history that has influenced almost every other operating system "
@@ -278,26 +277,26 @@ msgid ""
 "migrated to the aforementioned systems. Let us summarize typical <trademark "
 "class=\"registered\">UNIX</trademark> characteristics."
 msgstr ""
-"<trademark class=\"registered\"> UNIX </trademark> é um sistema operacional "
+"<trademark class=\"registered\">UNIX</trademark> é um sistema operacional "
 "com um longo histórico que influenciou quase todos os outros sistemas "
-"operacionais atualmente em uso. A partir da década de 1960, seu "
+"operacionais atualmente em uso. Começando na década de 1960, seu "
 "desenvolvimento continua até hoje (embora em projetos diferentes). O "
-"desenvolvimento de <trademark class=\"registered\"> UNIX </trademark> logo "
-"se bifurcou em duas formas principais: as famílias BSDs e System III / V. "
-"Eles se influenciaram mutuamente ao desenvolver um padrão comum <trademark "
-"class=\"registered\"> UNIX </trademark>. Entre as contribuições originadas "
-"no BSD, podemos nomear memória virtual, rede TCP / IP, FFS e muitas outras. "
-"A ramificação System V contribuiu para as primitivas de comunicação entre "
-"processos SysV, copy-on-write, etc. <trademark class=\"registered\"> UNIX </"
+"desenvolvimento de <trademark class=\"registered\">UNIX</trademark> logo se "
+"bifurcou em duas formas principais: as famílias BSDs e System III/V. Eles se "
+"influenciaram mutuamente ao desenvolver um padrão <trademark class="
+"\"registered\">UNIX</trademark> comum. Entre as contribuições originadas no "
+"BSD, podemos nomear memória virtual, rede TCP/IP, FFS e muitas outras. A "
+"ramificação SystemV contribuiu para as primitivas de comunicação entre "
+"processos SysV, copy-on-write, etc. <trademark class=\"registered\">UNIX</"
 "trademark> em si não existe mais, mas suas idéias têm sido usadas por muitos "
-"outros sistemas operacionais wide, formando assim os chamados sistemas "
-"operacionais como <trademark class=\"registered\"> UNIX </trademark>. Hoje "
-"em dia os mais influentes são <trademark class=\"registered\"> Linux </"
-"trademark>, Solaris e possivelmente (até certo ponto) FreeBSD. Existem in "
-"company <trademark class=\"registered\"> UNIX </trademark> derivados (AIX, "
-"HP-UX etc.), mas estes foram mais e mais migrados para os sistemas acima "
-"mencionados. Vamos resumir as características típicas do <trademark class="
-"\"registered\"> UNIX </trademark>."
+"outros sistemas operacionais amplos formando assim os chamados sistemas "
+"operacionais como <trademark class=\"registered\">UNIX</trademark>. Hoje em "
+"dia os mais influentes são <trademark class=\"registered\">Linux</"
+"trademark>, Solaris e possivelmente (até certo ponto) FreeBSD. Existem "
+"sistemas <trademark class=\"registered\">UNIX</trademark> de companhias "
+"derivados como (AIX, HP-UX etc.), mas estas foram cada vez mais migrados "
+"para os sistemas acima mencionados. Vamos resumir as características típicas "
+"do <trademark class=\"registered\">UNIX</trademark>."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect3/title
@@ -309,7 +308,6 @@ msgstr "Detalhes técnicos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:145
-#, fuzzy
 msgid ""
 "Every running program constitutes a process that represents a state of the "
 "computation. Running process is divided between kernel-space and user-space. "
@@ -326,8 +324,8 @@ msgstr ""
 "espaço do kernel (lidando com hardware, etc.), mas o processo deve passar a "
 "maior parte de sua vida útil no espaço do usuário. O kernel é onde o "
 "gerenciamento dos processos, hardware e detalhes de baixo nível acontecem. O "
-"kernel fornece uma API unificada padrão para <trademark class="
-"\"registered\"> UNIX </trademark> para o espaço do usuário. Os mais "
+"kernel fornece uma API unificada padrão <trademark class="
+"\"registered\">UNIX</trademark> para o espaço do usuário. Os mais "
 "importantes são abordados abaixo."
 
 #. (itstool) path: sect3/title
@@ -337,7 +335,6 @@ msgstr "Comunicação entre o kernel e o processo de espaço do usuário"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:159
-#, fuzzy
 msgid ""
 "Common <trademark class=\"registered\">UNIX</trademark> API defines a "
 "syscall as a way to issue commands from a user space process to the kernel. "
@@ -352,22 +349,21 @@ msgid ""
 "space to the kernel-space in various ways (implementation dependant). "
 "Syscalls are synchronous."
 msgstr ""
-"A API comum <trademark class=\"registered\"> UNIX </trademark> define um "
-"syscall como uma forma de emitir comandos de um processo de espaço do "
+"A API comum do <trademark class=\"registered\">UNIX</trademark> define uma "
+"syscall como uma forma de emitir comandos de um processo do espaço do "
 "usuário para o kernel. A implementação mais comum é usando uma instrução de "
-"interrupção ou especializada (pense em instruções <literal> SYSENTER </"
-"literal> / <literal> SYSCALL </literal> para ia32). Syscalls são definidos "
-"por um número. Por exemplo, no FreeBSD, o número syscall 85 é o "
-"<citerefentry> <refentrytitle> swapon </refentrytitle> <manvolnum> 2 </"
-"manvolnum> </citerefentry> syscall eo número syscall 132 é <citerefentry> "
-"<refentrytitle> mkfifo </refentrytitle> <manvolnum> 2 </manvolnum> </"
-"citerefentry>. Alguns syscalls precisam de parâmetros, que são passados ​​do "
-"espaço do usuário para o espaço do kernel de várias maneiras (dependente da "
-"implementação). Syscalls são síncronos."
+"interrupção ou especializada (pense em instruções <literal>SYSENTER</"
+"literal>/<literal>SYSCALL</literal> para ia32). Syscalls são definidos por "
+"um número. Por exemplo, no FreeBSD, a syscall número 85 é a syscall "
+"<citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> e a syscall número 132 é a syscall "
+"<citerefentry><refentrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>. Algumas syscalls precisam de parâmetros, que são passados "
+"​​do espaço do usuário para o espaço do kernel de várias maneiras "
+"(dependente da implementação). Syscalls são síncronas."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:172
-#, fuzzy
 msgid ""
 "Another possible way to communicate is by using a <firstterm>trap</"
 "firstterm>. Traps occur asynchronously after some event occurs (division by "
@@ -375,12 +371,11 @@ msgid ""
 "or can result in a reaction like sending a <firstterm>signal</firstterm> "
 "(division by zero)."
 msgstr ""
-"Outra maneira possível de se comunicar é usando uma <firstterm> trap </"
-"firstterm>. As armadilhas ocorrem de forma assíncrona após a ocorrência de "
-"algum evento (divisão por zero, falha de página, etc.). Um trap pode ser "
+"Outra maneira possível de se comunicar é usando uma <firstterm>trap</"
+"firstterm>. As traps ocorrem de forma assíncrona após a ocorrência de algum "
+"evento (divisão por zero, falha de página, etc.). Uma trap pode ser "
 "transparente para um processo (falha de página) ou pode resultar em uma "
-"reação como o envio de um <firstterm> signal </firstterm> (divisão por zero)."
-""
+"reação como o envio de um <firstterm>signal</firstterm> (divisão por zero)."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:181
@@ -409,7 +404,6 @@ msgstr "Gerenciamento de processos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:194
-#, fuzzy
 msgid ""
 "Kernel instances are processed first in the system (so called init). Every "
 "running process can create its identical copy using the "
@@ -425,18 +419,18 @@ msgid ""
 "PID. Every process has a defined parent (identified by its PID)."
 msgstr ""
 "As instâncias do kernel são processadas primeiro no sistema (chamado init). "
-"Todo processo em execução pode criar sua cópia idêntica usando o syscall "
-"<citerefentry> <refentrytitle> fork </refentrytitle> <manvolnum> 2 </"
-"manvolnum> </citerefentry>. Algumas versões ligeiramente modificadas deste "
-"syscall foram introduzidas, mas a semântica básica é a mesma. Todo processo "
-"em execução pode se transformar em algum outro processo usando o syscall "
-"<citerefentry> <refentrytitle> exec </refentrytitle> <manvolnum> 3 </"
-"manvolnum> </citerefentry>. Algumas modificações deste syscall foram "
-"introduzidas, mas todas servem ao mesmo propósito básico. Os processos "
-"terminam suas vidas chamando o <citerefentry> <refentrytitle> exit </"
-"refentrytitle> <manvolnum> 2 </manvolnum> </citerefentry> syscall. Todo "
-"processo é identificado por um número único chamado PID. Todo processo tem "
-"um pai definido (identificado pelo seu PID)."
+"Todo processo em execução pode criar sua cópia idêntica usando a syscall "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum> </"
+"citerefentry>. Algumas versões ligeiramente modificadas desta syscall foram "
+"introduzidas, mas a semântica básica é a mesma. Todo processo em execução "
+"pode se transformar em algum outro processo usando a syscall "
+"<citerefentry><refentrytitle>exec</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>. Algumas modificações desta syscall foram introduzidas, mas "
+"todas servem ao mesmo propósito básico. Os processos terminam suas vidas "
+"chamando a syscall <citerefentry><refentrytitle>exit</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>. Todo processo é "
+"identificado por um número único chamado PID. Todo processo tem um processo "
+"pai definido (identificado pelo seu PID)."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:208
@@ -445,7 +439,6 @@ msgstr "Gerenciamento de threads"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:210
-#, fuzzy
 msgid ""
 "Traditional <trademark class=\"registered\">UNIX</trademark> does not define "
 "any API nor implementation for threading, while <trademark class="
@@ -455,13 +448,13 @@ msgid ""
 "envelope the whole thread group in one process and managing the threading in "
 "userspace (1:N threading). Comparing main features of each approach:"
 msgstr ""
-"O tradicional <trademark class=\"registered\"> UNIX </trademark> não define "
+"O <trademark class=\"registered\">UNIX</trademark> tradicional não define "
 "nenhuma API nem implementação para encadeamento, enquanto <trademark class="
-"\"registered\"> POSIX </trademark> define sua API de encadeamento, mas a "
+"\"registered\">POSIX</trademark> define sua API de encadeamento, mas a "
 "implementação é indefinida. Tradicionalmente, havia duas maneiras de "
-"implementar threads. Manipulando-os como processos separados (encadeamento 1:"
-" 1) ou envolvem todo o grupo de encadeamentos em um processo e gerenciando o "
-"encadeamento no espaço do usuário (encadeamento 1: N). Comparando as "
+"implementar threads. Manipulando-as como processos separados (encadeamento 1:"
+"1) ou envolver todo o grupo de encadeamentos em um processo e gerenciando o "
+"encadeamento no espaço do usuário (encadeamento 1:N). Comparando as "
 "principais características de cada abordagem:"
 
 #. (itstool) path: sect3/para
@@ -510,9 +503,8 @@ msgstr "+ agendamento pode ser facilmente alterado pelo usuário"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:248
-#, fuzzy
 msgid "- syscalls must be wrapped"
-msgstr "- syscalls devem ser embrulhados"
+msgstr "- syscalls devem ser acondicionadas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:251
@@ -526,7 +518,6 @@ msgstr "O que é o FreeBSD?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:260
-#, fuzzy
 msgid ""
 "The FreeBSD project is one of the oldest open source operating systems "
 "currently available for daily use. It is a direct descendant of the genuine "
@@ -539,19 +530,18 @@ msgid ""
 "system with different goals in mind. We will focus on FreeBSD."
 msgstr ""
 "O projeto FreeBSD é um dos mais antigos sistemas operacionais de código "
-"aberto atualmente disponíveis para uso diário. É um descendente direto da "
-"verdadeira <trademark class=\"registered\"> UNIX </trademark>, portanto, "
-"pode-se afirmar que ela é uma verdadeira <trademark class=\"registered\"> "
-"UNIX </trademark> embora os problemas de licenciamento não permitam aquele. "
-"O início do projeto remonta ao início dos anos 90, quando uma equipe de "
-"usuários BSD corrigiu o sistema operacional 386BSD. Baseado neste patchkit "
-"surgiu um novo sistema operacional chamado FreeBSD por sua licença liberal. "
-"Outro grupo criou o sistema operacional NetBSD com diferentes objetivos em "
-"mente. Vamos nos concentrar no FreeBSD."
+"aberto atualmente disponíveis para uso diário. É um descendente direto do "
+"verdadeiro <trademark class=\"registered\">UNIX</trademark>, portanto, pode-"
+"se afirmar que ele é um verdadeiro <trademark class=\"registered\">UNIX</"
+"trademark> embora os problemas de licenciamento não permitam isso. O início "
+"do projeto remonta ao início dos anos 90, quando uma equipe de usuários BSD "
+"corrigiu o sistema operacional 386BSD. Baseado neste patchkit surgiu um novo "
+"sistema operacional, chamado FreeBSD por sua licença liberal. Outro grupo "
+"criou o sistema operacional NetBSD com diferentes objetivos em mente. Vamos "
+"nos concentrar no FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:271
-#, fuzzy
 msgid ""
 "FreeBSD is a modern <trademark class=\"registered\">UNIX</trademark>-based "
 "operating system with all the features of <trademark class="
@@ -563,16 +553,15 @@ msgid ""
 "operating systems. As of December 2006 and 7-CURRENT development, the "
 "following emulation functionalities are supported:"
 msgstr ""
-"O FreeBSD é um sistema operacional baseado na <trademark class="
-"\"registered\"> UNIX </trademark> com todos os recursos de <trademark class="
-"\"registered\"> UNIX </trademark>. Multitarefa preemptiva, instalações "
-"multiusuário, rede TCP / IP, proteção de memória, suporte a "
-"multiprocessamento simétrico, memória virtual com VM mesclada e cache de "
-"buffer, todos eles estão lá. Um dos recursos interessantes e extremamente "
-"úteis é a capacidade de emular outros sistemas operacionais como <trademark "
-"class=\"registered\"> UNIX </trademark>. A partir de dezembro de 2006 e do "
-"desenvolvimento 7-CURRENT, as seguintes funcionalidades de emulação são "
-"suportadas:"
+"O FreeBSD é um sistema operacional baseado no <trademark class="
+"\"registered\">UNIX</trademark> com todos os recursos do <trademark class="
+"\"registered\">UNIX</trademark>. Multitarefa preemptiva, necessidades de  "
+"multiusuário, rede TCP/IP, proteção de memória, suporte a multiprocessamento "
+"simétrico, memória virtual com VM mesclada e cache de buffer, todos eles "
+"estão lá. Um dos recursos interessantes e extremamente úteis é a capacidade "
+"de emular outros sistemas operacionais <trademark class=\"registered\">UNIX</"
+"trademark>-like. A partir de dezembro de 2006 e do desenvolvimento do 7-"
+"CURRENT, as seguintes funcionalidades de emulação são suportadas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:283
@@ -619,20 +608,17 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:307
-#, fuzzy
 msgid ""
 "Actively developed emulations are the <trademark class=\"registered\">Linux</"
 "trademark> layer and various FreeBSD-on-FreeBSD layers. Others are not "
 "supposed to work properly nor be usable these days."
 msgstr ""
 "Emulações ativamente desenvolvidas são a camada <trademark class="
-"\"registered\"> Linux </trademark> e várias camadas FreeBSD-on-FreeBSD. "
-"Outros não devem funcionar corretamente nem ser utilizáveis ​​nos dias de "
-"hoje."
+"\"registered\">Linux</trademark> e várias camadas FreeBSD-on-FreeBSD. Outros "
+"não devem funcionar corretamente nem ser utilizáveis ​​nos dias de hoje."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:314
-#, fuzzy
 msgid ""
 "FreeBSD is traditional flavor of <trademark class=\"registered\">UNIX</"
 "trademark> in the sense of dividing the run of processes into two halves: "
@@ -643,14 +629,14 @@ msgid ""
 "exists there but the concept is similar on other architectures. The "
 "information was taken from [1] and the source code."
 msgstr ""
-"O FreeBSD é o sabor tradicional de <trademark class=\"registered\"> UNIX </"
+"O FreeBSD é o gostinho tradicional de <trademark class=\"registered\">UNIX</"
 "trademark> no sentido de dividir a execução dos processos em duas metades: "
 "espaço do kernel e execução do espaço do usuário. Existem dois tipos de "
-"entrada de processo no kernel: um syscall e um trap. Há apenas uma maneira "
-"de retornar. Nas seções subseqüentes, descreveremos as três portas de / para "
-"o kernel. Toda a descrição se aplica à arquitetura i386, pois o Linuxulator "
-"só existe lá, mas o conceito é semelhante em outras arquiteturas. A "
-"informação foi retirada de [1] e do código fonte."
+"entrada de processo no kernel: uma syscall e uma trap. Há apenas uma maneira "
+"de retornar. Nas seções subseqüentes, descreveremos as três portas de/para o "
+"kernel. Toda a descrição se aplica à arquitetura i386, pois o Linuxulator só "
+"existe lá, mas o conceito é semelhante em outras arquiteturas. A informação "
+"foi retirada de [1] e do código fonte."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:326
@@ -659,7 +645,6 @@ msgstr "Entradas do sistema"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:328
-#, fuzzy
 msgid ""
 "FreeBSD has an abstraction called an execution class loader, which is a "
 "wedge into the <citerefentry><refentrytitle>execve</"
@@ -673,15 +658,15 @@ msgid ""
 "kernel-space and the user-space at once."
 msgstr ""
 "O FreeBSD tem uma abstração chamada loader de classes de execução, que é uma "
-"entrada no <citerefentry> <refentrytitle> execve </refentrytitle> "
-"<manvolnum> 2 </manvolnum> </citerefentry> syscall. Isto emprega uma "
-"estrutura <literal> sysentvec </literal>, que descreve um ABI executável. "
-"Ele contém coisas como errno translation table, tabela de tradução de "
-"sinais, várias funções para atender às necessidades do syscall (correção de "
-"pilha, coredumping, etc.). Todo ABI que o kernel do FreeBSD deseja suportar "
+"entrada na syscall <citerefentry><refentrytitle>execve</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>. Isto emprega uma "
+"estrutura <literal>sysentvec</literal>, que descreve uma ABI executável. Ele "
+"contém coisas como tabela de tradução de errno, tabela de tradução de "
+"sinais, várias funções para atender às necessidades da syscall (correção de "
+"pilha, coredumping, etc.). Toda ABI que o kernel do FreeBSD deseja suportar "
 "deve definir essa estrutura, como é usado posteriormente no código de "
-"processamento syscall e em alguns outros lugares. As entradas do sistema são "
-"tratadas pelos manipuladores de traps, onde podemos acessar o espaço do "
+"processamento da syscall e em alguns outros lugares. As entradas do sistema "
+"são tratadas pelos manipuladores de traps, onde podemos acessar o espaço do "
 "kernel e o espaço do usuário de uma só vez."
 
 #. (itstool) path: sect4/title
@@ -703,7 +688,6 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:350
-#, fuzzy
 msgid ""
 "When a process issues an interrupt <literal>0x80</literal>, the "
 "<literal>int0x80</literal> syscall trap handler is issued (defined in "
@@ -723,24 +707,24 @@ msgid ""
 "literal>, <literal>struct syscall args *</literal> arguments where the "
 "second parameter is a pointer to the copied in structure of parameters."
 msgstr ""
-"Quando um processo emite uma interrupção <literal> 0x80 </literal>, o "
-"manipulador de armadilha syscall <literal> int0x80 </literal> é emitido "
-"(definido em <filename> sys / i386 / i386 / exception.s </filename>), que "
-"prepara argumentos (ou seja, copia-os para a pilha) para uma chamada para "
-"uma função C <citerefentry> <refentrytitle> syscall </refentrytitle> "
-"<manvolnum> 2 </manvolnum> </citerefentry> (definido em <filename> sys / "
-"i386 / i386 / trap.c </filename>), que processa o trapframe passado. O "
-"processamento consiste em preparar o syscall (dependendo da entrada "
-"<literal> sysvec </literal>), determinando se o syscall é de 32 ou 64 bits "
-"(muda o tamanho dos parâmetros), então os parâmetros são copiados, incluindo "
-"o syscall. Em seguida, a função syscall real é executada com o processamento "
-"do código de retorno (casos especiais para erros <literal> ERESTART </"
-"literal> e <literal> EJUSTRETURN </literal>). Finalmente, um <literal> "
-"userret () </literal> está agendado, trocando o processo de volta ao ritmo "
-"do usuário. Os parâmetros para o manipulador syscall atual são passados ​​na "
-"forma de argumentos <literal> struct thread * td </literal>, <literal> "
-"struct syscall args * </literal> onde o segundo parâmetro é um ponteiro para "
-"o copiado na estrutura de parâmetros."
+"Quando um processo emite uma interrupção <literal>0x80</literal>, a syscall "
+"manipuladora de trap <literal>int0x80</literal> é proclamada (definida em "
+"<filename>sys/i386/i386/exception.s</filename>), que prepara argumentos (ou "
+"seja, copia-os para a pilha) para uma chamada para uma função C "
+"<citerefentry><refentrytitle>syscall</refentrytitle><manvolnum>2</"
+"manvolnum></citerefentry> (definida em <filename>sys/i386/i386/trap.c</"
+"filename>), que processa o trapframe passado. O processamento consiste em "
+"preparar a syscall (dependendo da entrada <literal>sysvec</literal>), "
+"determinando se a syscall é de 32 ou 64 bits (muda o tamanho dos "
+"parâmetros), então os parâmetros são copiados, incluindo a syscall. Em "
+"seguida, a função syscall real é executada com o processamento do código de "
+"retorno (casos especiais para erros <literal>ERESTART</literal> e "
+"<literal>EJUSTRETURN</literal>). Finalmente, um <literal>userret()</literal> "
+"é agendado, trocando o processo de volta ao ritmo do usuário. Os parâmetros "
+"para a syscall manipuladora atual são passados ​​na forma de argumentos "
+"<literal>struct thread *td </literal>, <literal>struct syscall args*</"
+"literal> onde o segundo parâmetro é um ponteiro para o copiado na estrutura "
+"de parâmetros."
 
 #. (itstool) path: sect4/title
 #. (itstool) path: sect2/title
@@ -752,7 +736,6 @@ msgstr "Armadilhas (Traps)"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:378
-#, fuzzy
 msgid ""
 "Handling of traps in FreeBSD is similar to the handling of syscalls. "
 "Whenever a trap occurs, an assembler handler is called. It is chosen between "
@@ -764,13 +747,13 @@ msgid ""
 "<literal>userret()</literal>."
 msgstr ""
 "O manuseio de traps no FreeBSD é similar ao manuseio de syscalls. Sempre que "
-"uma armadilha ocorre, um manipulador de assembler é chamado. É escolhido "
-"entre alltraps, alltraps com regs push ou calltrap, dependendo do tipo de "
-"armadilha. Este manipulador prepara argumentos para uma chamada para uma "
-"função C <literal> trap () </literal> (definida em <filename> sys / i386 / "
-"i386 / trap.c </filename>), que então processa a armadilha ocorrida. Após o "
-"processamento, ele pode enviar um sinal para o processo e / ou sair para o "
-"userland usando <literal> userret () </literal>."
+"ocorre uma trap, um manipulador de assembler é chamado. É escolhido entre "
+"alltraps, alltraps com regs push ou calltrap, dependendo do tipo de trap. "
+"Este manipulador prepara argumentos para uma chamada para uma função C "
+"<literal>trap()</literal> (definida em <filename>sys/i386/i386/trap.c</"
+"filename>), que então processa a trap ocorrida. Após o processamento, ele "
+"pode enviar um sinal para o processo e/ou sair para o espaço do usuário "
+"usando <literal>userret()</literal>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:391
@@ -795,13 +778,11 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:401
 #: article.translate.xml:569
-#, fuzzy
 msgid "<trademark class=\"registered\">UNIX</trademark> primitives"
-msgstr "<trademark class=\"registered\"> primitivas UNIX </trademark>"
+msgstr "primitivos <trademark class=\"registered\">UNIX</trademark>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:403
-#, fuzzy
 msgid ""
 "FreeBSD operating system adheres to the traditional <trademark class="
 "\"registered\">UNIX</trademark> scheme, where every process has a unique "
@@ -814,18 +795,17 @@ msgid ""
 "citerefentry> call."
 msgstr ""
 "O sistema operacional FreeBSD adere ao esquema tradicional <trademark class="
-"\"registered\"> UNIX </trademark>, onde cada processo possui um número de "
-"identificação único, o chamado <firstterm> PID </firstterm> (ID do processo)."
-" Números PID são alocados de forma linear ou aleatória variando de <literal> "
-"0 </literal> para <literal> PID_MAX </literal>. A alocação de números PID é "
-"feita usando pesquisa linear de espaço PID. Cada thread em um processo "
-"recebe o mesmo número PID como resultado da chamada <citerefentry> "
-"<refentrytitle> getpid </refentrytitle> <manvolnum> 2 </manvolnum> </"
+"\"registered\">UNIX</trademark>, onde cada processo possui um número de "
+"identificação único, o chamado <firstterm>PID</firstterm> (ID do processo). "
+"Números PID são alocados de forma linear ou aleatória variando de "
+"<literal>0</literal> para <literal>PID_MAX</literal>. A alocação de números "
+"PID é feita usando pesquisa linear de espaço PID. Cada thread em um processo "
+"recebe o mesmo número PID como resultado da chamada "
+"<citerefentry><refentrytitle>getpid</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:413
-#, fuzzy
 msgid ""
 "There are currently two ways to implement threading in FreeBSD. The first "
 "way is M:N threading followed by the 1:1 threading model. The default "
@@ -844,22 +824,22 @@ msgid ""
 "the library and cannot be relied on."
 msgstr ""
 "Atualmente existem duas maneiras de implementar o threading no FreeBSD. A "
-"primeira maneira é o encadeamento M: N seguido pelo modelo de encadeamento 1:"
-" 1. A biblioteca padrão usada é o encadeamento M: N (<literal> libpthread </"
-"literal>) e você pode alternar no tempo de execução para encadeamento 1: 1 "
-"(<literal> libthr </literal>). O plano é mudar para a biblioteca 1: 1 por "
+"primeira maneira é o encadeamento M:N seguido pelo modelo de encadeamento 1:"
+"1. A biblioteca padrão usada é o encadeamento M:N (<literal>libpthread</"
+"literal>) e você pode alternar no tempo de execução para encadeamento 1:1 "
+"(<literal>libthr</literal>). O plano é mudar para a biblioteca 1:1 por "
 "padrão em breve. Embora essas duas bibliotecas usem as mesmas primitivas do "
-"kernel, elas são acessadas por API (es) diferentes. A biblioteca M: N usa a "
-"família <literal> kse _ * </literal> do syscalls enquanto a biblioteca 1: 1 "
-"usa a família <literal> thr _ * </literal> do syscalls. Por causa disso, não "
-"existe um conceito geral de ID de encadeamento compartilhado entre o kernel "
-"e o espaço do usuário. Obviamente, as duas bibliotecas de threads "
-"implementam a API de ID de encadeamento pthread. Todo encadeamento do kernel "
-"(como descrito por <literal> struct thread </literal>) possui td tid "
-"identifier, mas isso não é diretamente acessível a partir de userland e "
+"kernel, elas são acessadas por API(s) diferentes. A biblioteca M:N usa a "
+"família <literal>kse_*</literal> das syscalls enquanto a biblioteca 1:1 usa "
+"a família <literal>thr_*</literal> das syscalls. Por causa disso, não existe "
+"um conceito geral de ID de encadeamento compartilhado entre o kernel e o "
+"espaço do usuário. Obviamente, as duas bibliotecas de threads implementam a "
+"API de ID de encadeamento pthread. Todo encadeamento do kernel (como "
+"descrito por <literal>struct thread</literal>) possui identificadores td "
+"tid, mas isso não é diretamente acessível a partir do espaço do usuário e "
 "serve apenas as necessidades do kernel. Ele também é usado para a biblioteca "
-"de encadeamentos 1: 1 como o ID de encadeamento do pthread, mas a "
-"manipulação deste é interna à biblioteca e não pode ser confiável."
+"de encadeamentos 1:1 como o ID de encadeamento do pthread, mas a manipulação "
+"desta é interna à biblioteca e não pode ser confiável."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:434
@@ -898,7 +878,6 @@ msgstr "O que é <trademark class=\"registered\"> Linux </trademark>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:456
-#, fuzzy
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> is a <trademark class="
 "\"registered\">UNIX</trademark>-like kernel originally developed by Linus "
@@ -908,18 +887,17 @@ msgid ""
 "trademark> is being associated with its fast development pace, full hardware "
 "support and benevolent dictator model of organization."
 msgstr ""
-"<trademark class=\"registered\"> O Linux </trademark> é um kernel do tipo "
-"<trademark class=\"registered\"> UNIX </trademark> originalmente "
-"desenvolvido por Linus Torvalds, e agora está sendo contribuído por uma "
-"grande quantidade de programadores em todo o mundo o mundo. De seu simples "
-"começo até hoje, com amplo suporte de empresas como IBM ou Google, o "
-"<trademark class=\"registered\"> Linux </trademark> está sendo associado ao "
-"seu rápido ritmo de desenvolvimento, suporte completo a hardware e modelo "
-"benevolente de organização do ditador."
+"<trademark class=\"registered\">Linux</trademark> é um kernel do tipo "
+"<trademark class=\"registered\">UNIX</trademark> originalmente desenvolvido "
+"por Linus Torvalds, e agora está sendo contribuído por uma grande quantidade "
+"de programadores em todo o mundo. De seu simples começo até hoje, com amplo "
+"suporte de empresas como IBM ou Google, o <trademark class="
+"\"registered\">Linux</trademark> está sendo associado ao seu rápido ritmo de "
+"desenvolvimento, suporte completo a hardware e seu benevolente modelo "
+"despota de organização."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
-#, fuzzy
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> development started in "
 "1991 as a hobbyist project at University of Helsinki in Finland. Since then "
@@ -928,7 +906,7 @@ msgid ""
 "virtual memory, networking, basically everything is there. There are also "
 "highly advanced features like virtualization etc."
 msgstr ""
-"O desenvolvimento de <trademark class=\"registered\"> Linux </trademark> "
+"O desenvolvimento do <trademark class=\"registered\">Linux</trademark> "
 "começou em 1991 como um projeto amador na Universidade de Helsinque na "
 "Finlândia. Desde então, ele obteve todos os recursos de um sistema "
 "operacional semelhante ao UNIX: multiprocessamento, suporte multiusuário, "
@@ -937,7 +915,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:471
-#, fuzzy
 msgid ""
 "As of 2006 <trademark class=\"registered\">Linux</trademark> seems to be the "
 "most widely used open source operating system with support from independent "
@@ -955,7 +932,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:478
-#, fuzzy
 msgid ""
 "Most of the <trademark class=\"registered\">Linux</trademark> development "
 "happens in a <application>Git</application> version control system. "
@@ -967,17 +943,17 @@ msgid ""
 "in 2.6.C.D, where C represents major version, where new features are added "
 "or changed while D is a minor version for bugfixes only."
 msgstr ""
-"A maior parte do desenvolvimento do <trademark class=\"registered\"> Linux </"
-"trademark> acontece em um sistema de controle de versão <application> Git </"
-"application>. O <application> Git </application> é um sistema distribuído, "
-"de modo que não existe uma fonte central do código <trademark class="
-"\"registered\"> Linux </trademark>, mas algumas ramificações são "
-"consideradas proeminentes e oficiais. O esquema de número de versão "
-"implementado por <trademark class=\"registered\"> Linux </trademark> "
-"consiste em quatro números A.B.C.D. Atualmente, o desenvolvimento acontece "
-"em 2.6.C.D, onde C representa a versão principal, onde novos recursos são "
-"adicionados ou alterados, enquanto D é uma versão secundária somente para "
-"correções de bugs."
+"A maior parte do desenvolvimento do <trademark class=\"registered\">Linux</"
+"trademark> acontece em um sistema de controle de versão <application>Git</"
+"application>. O <application>Git</application> é um sistema distribuído, de "
+"modo que não existe uma fonte central do código <trademark class="
+"\"registered\">Linux</trademark>, mas algumas ramificações são consideradas "
+"proeminentes e oficiais. O esquema de número de versão implementado pelo "
+"<trademark class=\"registered\">Linux</trademark> consiste em quatro números "
+"A.B.C.D. Atualmente, o desenvolvimento acontece em 2.6.C.D, onde C "
+"representa a versão principal, onde novos recursos são adicionados ou "
+"alterados, enquanto D é uma versão secundária somente para correções de bugs."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
@@ -987,7 +963,6 @@ msgstr "Mais informações podem ser obtidas em [3]."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:493
-#, fuzzy
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> follows the traditional "
 "<trademark class=\"registered\">UNIX</trademark> scheme of dividing the run "
@@ -997,17 +972,16 @@ msgid ""
 "\"registered\">Linux</trademark> 2.6 on the <trademark>i386</trademark> "
 "architecture. This information was taken from [2]."
 msgstr ""
-"<trademark class=\"registered\"> O Linux </trademark> segue o esquema "
-"tradicional <trademark class=\"registered\"> UNIX </trademark> de dividir a "
+"O <trademark class=\"registered\">Linux</trademark> segue o esquema "
+"tradicional do <trademark class=\"registered\">UNIX</trademark> de dividir a "
 "execução de um processo em duas metades: o kernel e o espaço do usuário. O "
 "kernel pode ser inserido de duas maneiras: via trap ou via syscall. O "
 "retorno é tratado apenas de uma maneira. A descrição mais detalhada aplica-"
-"se a <trademark class=\"registered\"> Linux </trademark> 2.6 na arquitetura "
-"<trademark> i386 </trademark>. Esta informação foi retirada de [2]."
+"se ao <trademark class=\"registered\">Linux</trademark> 2.6 na arquitetura "
+"<trademark>i386</trademark>. Esta informação foi retirada de [2]."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:504
-#, fuzzy
 msgid ""
 "Syscalls in <trademark class=\"registered\">Linux</trademark> are performed "
 "(in userspace) using <literal>syscallX</literal> macros where X substitutes "
@@ -1023,20 +997,20 @@ msgid ""
 "\"registered\">Linux</trademark> calling convention expects parameters to "
 "the syscall to be passed via registers as shown here:"
 msgstr ""
-"Syscalls em <trademark class=\"registered\"> Linux </trademark> são "
-"executados (no userspace) usando macros <literal> syscallX </literal> onde X "
-"substitui um número que representa o número de parâmetros do syscall dado. "
+"Syscalls em <trademark class=\"registered\">Linux</trademark> são executados "
+"(no espaço de usuário) usando macros <literal>syscallX</literal> onde X "
+"substitui um número que representa o número de parâmetros da syscall dada. "
 "Essa macro traduz um código que carrega o registro <varname>% eax </varname> "
-"com um número do syscall e executa a interrupção <literal> 0x80 </literal>. "
-"Depois disso, o retorno syscall é chamado, o que traduz valores de retorno "
-"negativos para valores <literal> errno </literal> positivos e define "
-"<literal> res </literal> para <literal> -1 </literal> em caso de erro. "
-"Sempre que a interrupção <literal> 0x80 </literal> é chamada, o processo "
-"entra no kernel no manipulador de trap de chamadas do sistema. Essa rotina "
-"salva todos os registros na pilha e chama a entrada syscall selecionada. "
-"Note que a convenção de chamadas <trademark class=\"registered\"> Linux </"
-"trademark> espera que os parâmetros para o syscall sejam passados ​​pelos "
-"registradores como mostrado aqui:"
+"com um número da syscall e executa a interrupção <literal>0x80</literal>. "
+"Depois disso, um retorn da syscall é chamado, o que traduz valores de "
+"retorno negativos para valores <literal>errno</literal> positivos e define "
+"<literal>res</literal> para <literal>-1</literal> em caso de erro. Sempre "
+"que a interrupção <literal>0x80</literal> é chamada, o processo entra no "
+"kernel no manipulador de trap das syscalls. Essa rotina salva todos os "
+"registros na pilha e chama a entrada syscall selecionada. Note que a "
+"convenção de chamadas <trademark class=\"registered\">Linux</trademark> "
+"espera que os parâmetros para o syscall sejam passados ​​pelos registradores "
+"como mostrado aqui:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:523
@@ -1058,50 +1032,43 @@ msgstr "parâmetro -&gt; <varname>% edx </varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:532
-#, fuzzy
 msgid "parameter -&gt; <varname>%esi</varname>"
-msgstr "parâmetro -&gt; <varname>% esi </varname>"
+msgstr "parameter -&gt; <varname>%esi</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:535
-#, fuzzy
 msgid "parameter -&gt; <varname>%edi</varname>"
-msgstr "parâmetro -&gt; <varname>% edi </varname>"
+msgstr "parameter -&gt; <varname>%edi</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:538
-#, fuzzy
 msgid "parameter -&gt; <varname>%ebp</varname>"
-msgstr "parâmetro -&gt; <varname>% ebp </varname>"
+msgstr "parameter -&gt; <varname>%ebp</varname>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:542
-#, fuzzy
 msgid ""
 "There are some exceptions to this, where <trademark class="
 "\"registered\">Linux</trademark> uses different calling convention (most "
 "notably the <literal>clone</literal> syscall)."
 msgstr ""
-"Existem algumas exceções, onde <trademark class=\"registered\"> Linux </"
-"trademark> usa diferentes convenções de chamada (mais notavelmente o "
-"<literal> clone </literal> syscall)."
+"Existem algumas exceções, onde <trademark class=\"registered\">Linux</"
+"trademark> usa diferentes convenções de chamada (mais notavelmente a syscall "
+"<literal>clone</literal>)."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:550
-#, fuzzy
 msgid ""
 "The trap handlers are introduced in <filename>arch/i386/kernel/traps.c</"
 "filename> and most of these handlers live in <filename>arch/i386/kernel/"
 "entry.S</filename>, where handling of the traps happens."
 msgstr ""
-"Os manipuladores de armadilhas são apresentados em <filename> arch / i386 / "
-"kernel / traps.c </filename> e a maioria desses manipuladores vive em "
-"<filename> arch / i386 / kernel / entry.S </filename>, onde a manipulação do "
-"armadilhas acontece."
+"Os manipuladores de traps são apresentados em <filename>arch/i386/kernel/"
+"traps.c</filename> e a maioria desses manipuladores vive em <filename>arch/"
+"i386/kernel/entry.S</filename>, onde a manipulação das traps acontecem."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:560
-#, fuzzy
 msgid ""
 "Return from the syscall is managed by syscall "
 "<citerefentry><refentrytitle>exit</refentrytitle><manvolnum>3</manvolnum></"
@@ -1110,16 +1077,15 @@ msgid ""
 "is applied and finally the registers are restored from the stack and the "
 "process returns to the userspace."
 msgstr ""
-"O retorno do syscall é gerenciado por syscall <citerefentry> <refentrytitle> "
-"exit </refentrytitle> <manvolnum> 3 </manvolnum> </citerefentry>, que "
-"verifica se o processo não está concluído e verifica se usamos seletores "
-"fornecidos pelo usuário . Se isso acontecer, a correção da pilha é aplicada "
-"e, finalmente, os registros são restaurados da pilha e o processo retorna ao "
-"espaço do usuário."
+"O retorno da syscall é gerenciado pela syscall "
+"<citerefentry><refentrytitle>exit</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>, que verifica se o processo não está concluído e verifica se "
+"usamos seletores fornecidos pelo usuário . Se isso acontecer, a correção da "
+"pilha é aplicada e, finalmente, os registros são restaurados da pilha e o "
+"processo retorna ao espaço do usuário."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:571
-#, fuzzy
 msgid ""
 "In the 2.6 version, the <trademark class=\"registered\">Linux</trademark> "
 "operating system redefined some of the traditional <trademark class="
@@ -1136,23 +1102,22 @@ msgid ""
 "the cloning process regarding thread implementation. The semantic is a bit "
 "fuzzy as there is no single flag telling the syscall to create a thread."
 msgstr ""
-"Na versão 2.6, o sistema operacional <trademark class=\"registered\"> Linux "
-"</trademark> redefiniu algumas das primitivas tradicionais <trademark class="
-"\"registered\"> UNIX </trademark>, especialmente PID, TID e thread. O PID é "
+"Na versão 2.6, o sistema operacional <trademark class=\"registered\">Linux</"
+"trademark> redefiniu algumas das primitivas tradicionais do <trademark class="
+"\"registered\">UNIX</trademark>, especialmente PID, TID e thread. O PID é "
 "definido para não ser exclusivo para cada processo, portanto, para alguns "
-"processos (encadeamentos) <citerefentry> <refentrytitle> getppid </"
-"refentrytitle> <manvolnum> 2 </manvolnum> </citerefentry> retorna o mesmo "
-"valor. A identificação exclusiva do processo é fornecida pelo TID. Isso "
-"ocorre porque o <firstterm> NPTL </firstterm> (Nova <trademark class="
-"\"registered\"> POSIX </trademark> Biblioteca de Encadeamentos) define "
-"encadeamentos para serem processos normais (assim chamado encadeamento 1: 1)."
-" Gerar um novo processo em <trademark class=\"registered\"> Linux </"
-"trademark> 2.6 acontece usando o <literal> clone </literal> syscall (as "
-"variantes do fork são reimplementadas usando-o). Este clone syscall define "
-"um conjunto de sinalizadores que afetam o comportamento do processo de "
-"clonagem em relação à implementação do encadeamento. A semântica é um pouco "
-"confusa, pois não existe uma única bandeira dizendo ao syscall para criar um "
-"thread."
+"processos (encadeamentos) <citerefentry><refentrytitle>getppid</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry> retorna o mesmo valor. "
+"A identificação exclusiva do processo é fornecida pelo TID. Isso ocorre "
+"porque o <firstterm>NPTL</firstterm> (Nova Biblioteca de Encadeamentos "
+"<trademark class=\"registered\">POSIX</trademark>) define encadeamentos para "
+"serem processos normais (assim chamado encadeamento 1:1). Gerar um novo "
+"processo no <trademark class=\"registered\">Linux</trademark> 2.6 acontece "
+"usando a syscall <literal>clone</literal> (as variantes do fork são "
+"reimplementadas usando-o). Esta syscall clone define um conjunto de "
+"sinalizadores que afetam o comportamento do processo de clonagem em relação "
+"à implementação do encadeamento. A semântica é um pouco confusa, pois não "
+"existe uma única bandeira dizendo a syscall para criar uma thread."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:588
@@ -1182,68 +1147,59 @@ msgstr "<literal> CLONE_FILES </literal> - compartilham arquivos abertos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:604
-#, fuzzy
 msgid ""
 "<literal>CLONE_SIGHAND</literal> - share signal handlers and blocked signals"
 msgstr ""
-"<literal> CLONE_SIGHAND </literal> - compartilha manipuladores de sinais e "
+"<literal>CLONE_SIGHAND</literal> - compartilha manipuladores de sinais e "
 "bloqueia sinais"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
-#, fuzzy
 msgid "<literal>CLONE_PARENT</literal> - share parent"
-msgstr "<literal> CLONE_PARENT </literal> - compartilha pai"
+msgstr "<literal>CLONE_PARENT</literal> - compartilha processo pai"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:612
-#, fuzzy
 msgid ""
 "<literal>CLONE_THREAD</literal> - be thread (further explanation below)"
 msgstr ""
-"<literal> CLONE_THREAD </literal> - ser thread (mais explicações abaixo)"
+"<literal>CLONE_THREAD</literal> - ser a thread (mais explicações abaixo)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:616
-#, fuzzy
 msgid "<literal>CLONE_NEWNS</literal> - new namespace"
-msgstr "<literal> CLONE_NEWNS </literal> - novo namespace"
+msgstr "<literal>CLONE_NEWNS</literal> - novo namespace"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:620
-#, fuzzy
 msgid "<literal>CLONE_SYSVSEM</literal> - share SysV undo structures"
-msgstr ""
-"<literal> CLONE_SYSVSEM </literal> - compartilha estruturas de undo do SysV"
+msgstr "<literal>CLONE_SYSVSEM</literal> - compartilha SysV sob estruturas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:624
-#, fuzzy
 msgid "<literal>CLONE_SETTLS</literal> - setup TLS at supplied address"
 msgstr ""
-"<literal> CLONE_SETTLS </literal> - configura o TLS no endereço fornecido"
+"<literal>CLONE_SETTLS</literal> - configura o TLS no endereço fornecido"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:628
-#, fuzzy
 msgid "<literal>CLONE_PARENT_SETTID</literal> - set TID in the parent"
-msgstr "<literal> CLONE_PARENT_SETTID </literal> - define o TID no pai"
+msgstr "<literal>CLONE_PARENT_SETTID</literal> - define o TID no processo pai"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:632
-#, fuzzy
 msgid "<literal>CLONE_CHILD_CLEARTID</literal> - clear TID in the child"
-msgstr "<literal> CLONE_CHILD_CLEARTID </literal> - limpe o TID na criança"
+msgstr ""
+"<literal>CLONE_CHILD_CLEARTID</literal> - limpe o TID no processo filho"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
-#, fuzzy
 msgid "<literal>CLONE_CHILD_SETTID</literal> - set TID in the child"
-msgstr "<literal> CLONE_CHILD_SETTID </literal> - define o TID na criança"
+msgstr ""
+"<literal>CLONE_CHILD_SETTID</literal> - define o TID no processo filho"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:641
-#, fuzzy
 msgid ""
 "<literal>CLONE_PARENT</literal> sets the real parent to the parent of the "
 "caller. This is useful for threads because if thread A creates thread B we "
@@ -1256,16 +1212,16 @@ msgid ""
 "<literal>CLONE_*_*TID</literal> set of flags sets/clears user supplied "
 "address to TID or 0."
 msgstr ""
-"<literal> CLONE_PARENT </literal> define o pai real para o pai do chamador. "
-"Isso é útil para encadeamentos porque, se o encadeamento A criar o "
-"encadeamento B, queremos que o encadeamento B seja pai para o pai de todo o "
-"grupo de encadeamentos. <literal> CLONE_THREAD </literal> faz exatamente a "
-"mesma coisa que <literal> CLONE_PARENT </literal>, <literal> CLONE_VM </"
-"literal> e <literal> CLONE_SIGHAND </literal>, reescreve o PID para ser o "
-"mesmo que PID de o chamador, define o sinal de saída como nenhum e entra no "
-"grupo de threads. <literal> CLONE_SETTLS </literal> configura entradas GDT "
-"para tratamento de TLS. O conjunto de flags <literal> CLONE _ * _ * TID </"
-"literal> define / limpa o endereço fornecido pelo usuário para TID ou 0."
+"<literal>CLONE_PARENT</literal> define o processo real para o processo pai "
+"do requisitante. Isso é útil para threads porque, se a thread A criar a "
+"thread B, queremos que a thread B parenteada para o processo pai de todo o "
+"grupo de threads. <literal>CLONE_THREAD</literal> faz exatamente a mesma "
+"coisa que <literal>CLONE_PARENT</literal>, <literal>CLONE_VM</literal> e "
+"<literal>CLONE_SIGHAND</literal>, reescreve o PID para ser o mesmo que PID "
+"do requisitante, define o sinal de saída como none e entra no grupo de "
+"threads. <literal>CLONE_SETTLS</literal> configura entradas GDT para "
+"tratamento de TLS. O conjunto de flags <literal>CLONE_*_*TID</literal> "
+"define/limpa o endereço fornecido pelo usuário para TID ou 0."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:655
@@ -1417,7 +1373,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:725
-#, fuzzy
 msgid ""
 "Looking from an implementation point of view, there are two main approaches "
 "to the implementation of emulation. You can either emulate the whole thing - "
@@ -1443,10 +1398,10 @@ msgstr ""
 "Olhando do ponto de vista da implementação, existem duas abordagens "
 "principais para a implementação da emulação. Você pode emular a coisa toda - "
 "aceitando possíveis entradas do objeto original, mantendo o estado interno e "
-"emitindo a saída correta com base no estado e / ou na entrada. Este tipo de "
+"emitindo a saída correta com base no estado e/ou na entrada. Este tipo de "
 "emulação não requer condições especiais e basicamente pode ser implementado "
-"em qualquer lugar para qualquer dispositivo / programa. A desvantagem é que "
-"a implementação de tal emulação é bastante difícil, demorada e propensa a "
+"em qualquer lugar para qualquer dispositivo/programa. A desvantagem é que a "
+"implementação de tal emulação é bastante difícil, demorada e propensa a "
 "erros. Em alguns casos, podemos usar uma abordagem mais simples. Imagine que "
 "você deseja emular uma impressora que imprime da esquerda para a direita em "
 "uma impressora que imprime da direita para a esquerda. É óbvio que não há "

@@ -1,6 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Silvio Ap Silva <alvolivre@live.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,15 +10,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-30 04:26+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-08-31 01:28+0000\n"
+"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Kanazuchi, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
@@ -1052,30 +1054,28 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:510
-#, fuzzy
 msgid ""
 "However it is not a good idea to allow <emphasis>every</emphasis> user in "
 "the directory into <emphasis>every</emphasis> client machine. With the "
 "current configuration, all that a user needs to log into a machine is an "
 "LDAP entry. Fortunately there are a few ways to restrict user access."
 msgstr ""
-"No entanto, não é uma boa idéia permitir que <emphasis> todo </emphasis> "
-"usuário no diretório <emphasis> todo </emphasis> computador cliente. Com a "
-"configuração atual, tudo o que um usuário precisa para efetuar login em uma "
-"máquina é uma entrada LDAP. Felizmente, existem algumas maneiras de "
+"No entanto, não é uma boa idéia permitir que <emphasis>todo</emphasis> "
+"usuário no diretório dentro de <emphasis>todo</emphasis> computador cliente. "
+"Com a configuração atual, tudo o que um usuário precisa para efetuar login "
+"em uma máquina é uma entrada LDAP. Felizmente, existem algumas maneiras de "
 "restringir o acesso do usuário."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:517
-#, fuzzy
 msgid ""
 "<filename>ldap.conf</filename> supports a <literal>pam_groupdn</literal> "
 "directive; every account that connects to this machine needs to be a member "
 "of the group specified here. For example, if you have"
 msgstr ""
-"O <filename> ldap.conf </filename> suporta uma diretiva <literal> "
-"pam_groupdn </literal>; Cada conta que se conecta a essa máquina precisa ser "
-"membro do grupo especificado aqui. Por exemplo, se você tem"
+"O <filename>ldap.conf</filename> suporta uma diretiva <literal>pam_groupdn</"
+"literal>; Cada conta que se conecta a essa máquina precisa ser membro do "
+"grupo especificado aqui. Por exemplo, se você tem"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:522
@@ -1094,27 +1094,25 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:528
-#, fuzzy
 msgid ""
 "Members of this group are specified in one or more <literal>memberUid</"
 "literal> attributes, and each attribute must have the full distinguished "
 "name of the member. So <literal>memberUid: someuser</literal> will not work; "
 "it must be:"
 msgstr ""
-"Os membros desse grupo são especificados em um ou mais atributos <literal> "
-"memberUid </literal> e cada atributo deve ter o nome distinto completo do "
-"membro. Então <literal> memberUid: someuser </literal> não funcionará; deve "
-"ser:"
+"Os membros desse grupo são especificados em um ou mais atributos "
+"<literal>memberUid</literal> e cada atributo deve ter o nome distinto "
+"completo do membro. Então <literal>memberUid:someuser</literal> não "
+"funcionará; deve ser:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:534
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "memberUid: uid=someuser,ou=people,dc=example,dc=org"
-msgstr "memberUid: uid = algum usuário, ou = pessoas, dc = exemplo, dc = org"
+msgstr "memberUid: uid=algum usuário, ou=pessoas, dc=exemplo, dc=org"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:536
-#, fuzzy
 msgid ""
 "Additionally, this directive is not checked in PAM during authentication, it "
 "is checked during account management, so you will need a second line in your "
@@ -1128,31 +1126,29 @@ msgid ""
 msgstr ""
 "Além disso, essa diretiva não é verificada no PAM durante a autenticação, "
 "ela é verificada durante o gerenciamento de contas, portanto, você precisará "
-"de uma segunda linha em seus arquivos PAM em <literal> account </literal>. "
-"Isso exigirá, por sua vez, que <emphasis> todo </emphasis> usuário seja "
+"de uma segunda linha em seus arquivos PAM sob <literal>account</literal>. "
+"Isso exigirá, por sua vez, que <emphasis>todo</emphasis> usuário seja "
 "listado no grupo, o que não é necessariamente o que queremos. Para evitar o "
 "bloqueio de usuários que não estão no LDAP, você deve ativar o atributo "
-"<literal> ignore_unknown_user </literal>. Finalmente, você deve definir a "
-"opção <literal> ignore_authinfo_unavail </literal> para que você não fique "
+"<literal>ignore_unknown_user</literal>. Finalmente, você deve definir a "
+"opção <literal>ignore_authinfo_unavail</literal> para que você não fique "
 "bloqueado em todos os computadores quando o servidor LDAP estiver "
 "indisponível."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:549
-#, fuzzy
 msgid ""
 "Your <filename>pam.d/sshd</filename> might then end up looking like this:"
-msgstr "Seu <filename> pam.d / sshd </filename> pode acabar ficando assim:"
+msgstr "Seu <filename>pam.d/sshd</filename> pode acabar ficando assim:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:553
-#, fuzzy
 msgid "Sample <filename>pam.d/sshd</filename>"
-msgstr "Exemplo <filename> pam.d / sshd </filename>"
+msgstr "Exemplo <filename>pam.d/sshd</filename>"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:555
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "auth            required        pam_nologin.so          no_warn\n"
 "auth            sufficient      pam_opie.so             no_warn "
@@ -1180,7 +1176,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:566
-#, fuzzy
 msgid ""
 "Since we are adding these lines specifically to <filename>pam.d/sshd</"
 "filename>, this will only have an effect on <application>SSH</application> "
@@ -1188,21 +1183,19 @@ msgid ""
 "behavior, examine the other files in <filename>/etc/pam.d</filename> and "
 "modify them accordingly."
 msgstr ""
-"Como estamos adicionando essas linhas especificamente para <filename> pam.d /"
-" sshd </filename>, isso só terá um efeito nas sessões <application> SSH </"
+"Como estamos adicionando essas linhas especificamente para <filename>pam.d/"
+"sshd</filename>, isso só terá um efeito nas sessões <application>SSH</"
 "application>. Os usuários LDAP não poderão efetuar login no console. Para "
-"mudar este comportamento, examine os outros arquivos em <filename> /etc/pam."
-"d </filename> e modifique-os de acordo."
+"mudar este comportamento, examine os outros arquivos em <filename>/etc/pam."
+"d</filename> e modifique-os de acordo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:578
-#, fuzzy
 msgid "Name Service Switch"
-msgstr "Interruptor de serviço de nome"
+msgstr "Switch de serviço de nome"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:580
-#, fuzzy
 msgid ""
 "<application>NSS</application> is the service that maps attributes to names. "
 "So, for example, if a file is owned by user <literal>1001</literal>, an "
@@ -1210,26 +1203,24 @@ msgid ""
 "<literal>1001</literal>, and it might get <literal>bob</literal> or "
 "<literal>ted</literal> or whatever the user's name is."
 msgstr ""
-"<application> NSS </application> é o serviço que mapeia atributos para nomes."
-" Assim, por exemplo, se um arquivo é de propriedade do usuário <literal> "
-"1001 </literal>, um aplicativo consultará <application> NSS </application> "
-"para o nome de <literal> 1001 </literal>, e ele pode obter <literal> bob </"
-"literal> ou <literal> ted </literal> ou qualquer que seja o nome do usuário."
+"<application>NSS</application> é o serviço que mapeia atributos para nomes. "
+"Assim, por exemplo, se um arquivo é de propriedade do usuário <literal>1001</"
+"literal>, um aplicativo consultará o <application>NSS</application> para o "
+"nome de <literal>1001</literal>, e ele pode obter <literal>bob</literal> ou "
+"<literal>ted</literal> ou qualquer que seja o nome do usuário."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:588
-#, fuzzy
 msgid ""
 "Now that our user information is kept in LDAP, we need to tell "
 "<application>NSS</application> to look there when queried."
 msgstr ""
 "Agora que nossas informações sobre o usuário são mantidas no LDAP, "
-"precisamos dizer ao <application> NSS </application> para procurar lá quando "
+"precisamos dizer ao <application>NSS</application> para procurar lá quando "
 "perguntado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:592
-#, fuzzy
 msgid ""
 "The <package>net/nss_ldap</package> port does this. It uses the same "
 "configuration file as <package>security/pam_ldap</package>, and should not "
@@ -1237,37 +1228,35 @@ msgid ""
 "simply to edit <filename>/etc/nsswitch.conf</filename> to take advantage of "
 "the directory. Simply replace the following lines:"
 msgstr ""
-"A porta <package> net / nss_ldap </package> faz isso. Ele usa o mesmo "
-"arquivo de configuração como <package> security / pam_ldap </package> e não "
-"deve precisar de nenhum parâmetro extra depois de instalado. Em vez disso, o "
-"que resta é simplesmente editar <filename> /etc/nsswitch.conf </filename> "
-"para aproveitar o diretório. Simplesmente substitua as seguintes linhas:"
+"O port <package>net/nss_ldap</package> faz isso. Ele usa o mesmo arquivo de "
+"configuração como <package>security/pam_ldap</package> e não deve precisar "
+"de nenhum parâmetro extra depois de instalado. Em vez disso, o que resta é "
+"simplesmente editar é <filename>/etc/nsswitch.conf</filename> para "
+"aproveitar o diretório. Simplesmente substitua as seguintes linhas:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:600
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "group: compat\n"
 "passwd: compat"
-msgstr "grupo: compat\n"
+msgstr "group: compat\n"
 "passwd: compat"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:603
-#, fuzzy
 msgid "with"
 msgstr "com"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:605
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "group: files ldap\n"
 "passwd: files ldap"
-msgstr "grupo: arquivos ldap\n"
-"passwd: arquivos ldap"
+msgstr "group: files ldap\n"
+"passwd: files ldap"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:608
-#, fuzzy
 msgid "This will allow you to map usernames to UIDs and UIDs to usernames."
 msgstr ""
 "Isso permitirá que você mapeie nomes de usuários para UIDs e UIDs para nomes "
@@ -1275,19 +1264,16 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:611
-#, fuzzy
 msgid "Congratulations! You should now have working LDAP authentication."
 msgstr "Parabéns! Agora você deve ter autenticação LDAP em funcionamento."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:616
-#, fuzzy
 msgid "Caveats"
 msgstr "Ressalvas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:618
-#, fuzzy
 msgid ""
 "Unfortunately, as of the time this was written FreeBSD did not support "
 "changing user passwords with <citerefentry><refentrytitle>passwd</"
@@ -1298,23 +1284,22 @@ msgid ""
 "\"security-passwd\"/>"
 msgstr ""
 "Infelizmente, a partir do momento em que isso foi escrito, o FreeBSD não "
-"suportava a mudança de senhas de usuário com <citerefentry> <refentrytitle> "
-"passwd </refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry>. Por "
-"causa disso, a maioria dos administradores é deixada para implementar uma "
-"solução por conta própria. Eu forneço alguns exemplos aqui. Observe que, se "
-"você escrever seu próprio script de alteração de senha, há alguns problemas "
-"de segurança dos quais você deve estar ciente; veja <xref linkend=\"security-"
-"passwd\" />"
+"suportava a mudança de senhas de usuário com "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Por causa disso, a maioria dos administradores estão deixando "
+"para implementar uma solução por conta própria. Eu forneço alguns exemplos "
+"aqui. Observe que, se você escrever seu próprio script de alteração de "
+"senha, há alguns problemas de segurança dos quais você deve estar ciente; "
+"veja <xref linkend=\"security-passwd\"/>"
 
 #. (itstool) path: example/title
 #: article.translate.xml:626
-#, fuzzy
 msgid "Shell Script for Changing Passwords"
 msgstr "Script de shell para alteração de senhas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:628
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -1334,27 +1319,26 @@ msgid ""
 "  -a \"$oldp\" \\\n"
 "  -s \"$np1\""
 msgstr ""
-"#! / bin / sh\n"
+"#!/bin/sh\n"
 "\n"
 "stty -echo\n"
-"leia -p \"Senha antiga:\" oldp; eco\n"
-"leia -p \"Nova senha\": np1; eco\n"
-"read -p \"Redigite a nova senha:\" np2; eco\n"
+"read -p \"Old Password: \" oldp; echo\n"
+"read -p \"New Password: \" np1; echo\n"
+"read -p \"Retype New Password: \" np2; echo\n"
 "stty echo\n"
 "\n"
-"if [\"$ np1\"! = \"$ np2\"]; então\n"
-"  echo \"Senhas não combinam.\"\n"
-"  sair 1\n"
+"if [ \"$np1\" != \"$np2\" ]; then\n"
+"  echo \"Passwords do not match.\"\n"
+"  exit 1\n"
 "fi\n"
 "\n"
-"ldappasswd -D uid = \"$ USER\", ou = pessoas, dc = exemplo, dc = org \\\n"
-"  -w \"$ oldp\" \\\n"
-"  -a \"$ oldp\" \\\n"
-"  -s \"$ np1\""
+"ldappasswd -D uid=\"$USER\",ou=people,dc=example,dc=org \\\n"
+"  -w \"$oldp\" \\\n"
+"  -a \"$oldp\" \\\n"
+"  -s \"$np1\""
 
 #. (itstool) path: caution/para
 #: article.translate.xml:648
-#, fuzzy
 msgid ""
 "This script does hardly any error checking, but more important it is very "
 "cavalier about how it stores your passwords. If you do anything like this, "
@@ -1362,13 +1346,13 @@ msgid ""
 "value:"
 msgstr ""
 "Esse script dificilmente faz qualquer verificação de erros, mas, o mais "
-"importante, é muito arrogante sobre como ele armazena suas senhas. Se você "
-"fizer algo assim, ajuste pelo menos o valor de sysctl <literal> security.bsd."
-"see_other_uids </literal>:"
+"importante, é muito indiferente sobre como ele armazena suas senhas. Se você "
+"fizer algo assim, ajuste pelo menos o valor de sysctl <literal>security.bsd."
+"see_other_uids</literal>:"
 
 #. (itstool) path: caution/screen
 #: article.translate.xml:654
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
 "userinput>"
@@ -1378,7 +1362,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:657
-#, fuzzy
 msgid ""
 "A more flexible (and probably more secure) approach can be used by writing a "
 "custom program, or even a web interface. The following is part of a "
@@ -1387,18 +1370,17 @@ msgid ""
 msgstr ""
 "Uma abordagem mais flexível (e provavelmente mais segura) pode ser usada "
 "escrevendo um programa personalizado, ou até mesmo uma interface web. A "
-"seguir, parte de uma biblioteca <application> Ruby </application> que pode "
+"seguir, parte de uma biblioteca <application>Ruby</application> que pode "
 "alterar senhas LDAP. Ele vê o uso na linha de comando e na web."
 
 #. (itstool) path: example/title
 #: article.translate.xml:664
-#, fuzzy
 msgid "Ruby Script for Changing Passwords"
 msgstr "Script Ruby para Alterar Senhas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:666
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "require 'ldap'\n"
 "require 'base64'\n"
@@ -1438,48 +1420,46 @@ msgid ""
 "conn.bind(luser, oldp)\n"
 "conn.modify(luser, [replace])"
 msgstr ""
-"exigir 'ldap'\n"
-"requer 'base64'\n"
-"requer \"digerir\"\n"
-"requer \"senha\" # ruby-password\n"
+"require 'ldap'\n"
+"require 'base64'\n"
+"require 'digest'\n"
+"require 'password' # ruby-password\n"
 "\n"
 "ldap_server = \"ldap.example.org\"\n"
-"luser = \"uid = # {ENV ['USER']}, ou = pessoas, dc = exemplo, dc = org\"\n"
+"luser = \"uid=#{ENV['USER']},ou=people,dc=example,dc=org\"\n"
 "\n"
-"# obter a nova senha, verificá-la e criar um hash salgado\n"
+"# get the new password, check it, and create a salted hash from it\n"
 "def get_password\n"
-"  pwd1 = Password.get (\"New Password:\")\n"
-"  pwd2 = Password.get (\"Redigitar nova senha:\")\n"
+"  pwd1 = Password.get(\"New Password: \")\n"
+"  pwd2 = Password.get(\"Retype New Password: \")\n"
 "\n"
-"  levante se pwd1! = pwd2\n"
-"  pwd1.check # check password força\n"
+"  raise if pwd1 != pwd2\n"
+"  pwd1.check # check password strength\n"
 "\n"
-"  salt = rand.to_s.gsub (/ 0 \\ ./, '')\n"
-"  pass = pwd1.to_s\n"
-"  hash = \"{SSHA}\" + Base64.encode64 (Digest :: SHA1.digest (\"# {pass} # "
-"{salt}\") + sal) .chomp!\n"
-"  retorno de hash\n"
-"fim\n"
+"  salt = rand.to_s.gsub(/0\\./, '')\n"
+"  pass = pwd1.to_s\n"
+"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1."
+"digest(\"#{pass}#{salt}\")+salt).chomp!\n"
+"  return hash\n"
+"end\n"
 "\n"
-"oldp = Password.get (\"Senha antiga:\")\n"
+"oldp = Password.get(\"Old Password: \")\n"
 "newp = get_password\n"
 "\n"
-"# Vamos apenas substituí-lo. Que podemos ligar prova que nós sabemos\n"
-"# a senha antiga ou um administrador.\n"
+"# We'll just replace it.  That we can bind proves that we either know\n"
+"# the old password or are an admin.\n"
 "\n"
-"substituir = LDAP :: Mod.new (LDAP :: LDAP_MOD_REPLACE | LDAP :: "
-"LDAP_MOD_BVALUES,\n"
-"                        \"senha do usuário\",\n"
-"                        [novo p])\n"
+"replace = LDAP::Mod.new(LDAP::LDAP_MOD_REPLACE | LDAP::LDAP_MOD_BVALUES,\n"
+"                        \"userPassword\",\n"
+"                        [newp])\n"
 "\n"
-"conn = LDAP :: SSLConn.new (ldap_server, 389, true)\n"
-"conn.set_option (LDAP :: LDAP_OPT_PROTOCOL_VERSION, 3)\n"
-"conn.bind (luser, oldp)\n"
-"conn.modify (luser, [substituir])"
+"conn = LDAP::SSLConn.new(ldap_server, 389, true)\n"
+"conn.set_option(LDAP::LDAP_OPT_PROTOCOL_VERSION, 3)\n"
+"conn.bind(luser, oldp)\n"
+"conn.modify(luser, [replace])"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:704
-#, fuzzy
 msgid ""
 "Although not guaranteed to be free of security holes (the password is kept "
 "in memory, for example) this is cleaner and more flexible than a simple "
@@ -1487,17 +1467,15 @@ msgid ""
 msgstr ""
 "Apesar de não ter a garantia de estar livre de falhas de segurança (a senha "
 "é mantida na memória, por exemplo), isso é mais limpo e mais flexível do que "
-"um simples script <command> sh </command>."
+"um simples script <command>sh</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:712
-#, fuzzy
 msgid "Security Considerations"
 msgstr "Considerações de segurança"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:714
-#, fuzzy
 msgid ""
 "Now that your machines (and possibly other services) are authenticating "
 "against your LDAP server, this server needs to be protected at least as well "
@@ -1507,13 +1485,12 @@ msgid ""
 msgstr ""
 "Agora que suas máquinas (e possivelmente outros serviços) estão autenticando "
 "em seu servidor LDAP, este servidor precisa ser protegido pelo menos tão bem "
-"quanto <filename> /etc/master.passwd </filename> seria em um servidor "
-"regular, e possivelmente mais ainda, uma vez que um servidor LDAP corrompido "
+"quanto <filename>/etc/master.passwd</filename> seria em um servidor regular, "
+"e possivelmente mais ainda, uma vez que um servidor LDAP corrompido "
 "quebraria todos os serviços do cliente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:721
-#, fuzzy
 msgid ""
 "Remember, this section is not exhaustive. You should continually review your "
 "configuration and procedures for improvements."
@@ -1523,13 +1500,11 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:726
-#, fuzzy
 msgid "Setting Attributes Read-only"
 msgstr "Definindo atributos somente leitura"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:728
-#, fuzzy
 msgid ""
 "Several attributes in LDAP should be read-only. If left writable by the "
 "user, for example, a user could change his <literal>uidNumber</literal> "
@@ -1537,33 +1512,31 @@ msgid ""
 "\"username\">root</systemitem> access!"
 msgstr ""
 "Vários atributos no LDAP devem ser somente leitura. Se deixado gravável pelo "
-"usuário, por exemplo, um usuário poderia alterar seu atributo <literal> "
-"uidNumber </literal> para <literal> 0 </literal> e obter acesso ao "
-"<systemitem class = \"username\"> root </systemitem>!"
+"usuário, por exemplo, um usuário poderia alterar seu atributo "
+"<literal>uidNumber</literal> para <literal>0</literal> e obter acesso ao "
+"<systemitem class=\"username\">root</systemitem>!"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:734
-#, fuzzy
 msgid ""
 "To begin with, the <literal>userPassword</literal> attribute should not be "
 "world-readable. By default, anyone who can connect to the LDAP server can "
 "read this attribute. To disable this, put the following in <filename>slapd."
 "conf</filename>:"
 msgstr ""
-"Para começar, o atributo <literal> userPassword </literal> não deve ser "
+"Para começar, o atributo <literal>userPassword</literal> não deve ser "
 "legível por todos. Por padrão, qualquer pessoa que possa se conectar ao "
 "servidor LDAP pode ler esse atributo. Para desabilitar isso, coloque o "
-"seguinte em <filename> slapd.conf </filename>:"
+"seguinte em <filename>slapd.conf</filename>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:741
-#, fuzzy
 msgid "Hide Passwords"
 msgstr "Ocultar senhas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:743
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
 "  attrs=userPassword\n"
@@ -1575,29 +1548,27 @@ msgid ""
 "  by self write\n"
 "  by * read"
 msgstr ""
-"acesso a dn.subtree = \"ou = pessoas, dc = exemplo, dc = org\"\n"
-"  attrs = userPassword\n"
-"  por auto escrever\n"
-"  por autenticação anônima\n"
-"  por * none\n"
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
 "\n"
-"acesso a *\n"
-"  por auto escrever\n"
-"  por * ler"
+"access to *\n"
+"  by self write\n"
+"  by * read"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:754
-#, fuzzy
 msgid ""
 "This will disallow reading of the <literal>userPassword</literal> attribute, "
 "while still allowing users to change their own passwords."
 msgstr ""
-"Isso não permitirá a leitura do atributo <literal> userPassword </literal>, "
+"Isso não permitirá a leitura do atributo <literal>userPassword</literal>, "
 "enquanto ainda permite que os usuários alterem suas próprias senhas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:758
-#, fuzzy
 msgid ""
 "Additionally, you'll want to keep users from changing some of their own "
 "attributes. By default, users can change any attribute (except for those "
@@ -1607,18 +1578,17 @@ msgstr ""
 "Além disso, você desejará impedir que os usuários alterem alguns de seus "
 "próprios atributos. Por padrão, os usuários podem alterar qualquer atributo "
 "(exceto aqueles que os próprios esquemas LDAP negam alterações), como "
-"<literal> uidNumber </literal>. Para fechar este buraco, modifique o acima "
+"<literal>uidNumber</literal>. Para fechar este buraco, modifique o acima "
 "para"
 
 #. (itstool) path: example/title
 #: article.translate.xml:765
-#, fuzzy
 msgid "Read-only Attributes"
 msgstr "Atributos somente leitura"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:767
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
 "  attrs=userPassword\n"
@@ -1633,34 +1603,31 @@ msgid ""
 "  by self write\n"
 "  by * read"
 msgstr ""
-"acesso a dn.subtree = \"ou = pessoas, dc = exemplo, dc = org\"\n"
-"  attrs = userPassword\n"
-"  por auto escrever\n"
-"  por autenticação anônima\n"
-"  por * none\n"
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
 "\n"
-"acesso a attrs = homeDirectory, uidNumber, gidNumber\n"
-"  por * ler\n"
+"access to attrs=homeDirectory,uidNumber,gidNumber\n"
+"  by * read\n"
 "\n"
-"acesso a *\n"
-"  por auto escrever\n"
-"  por * ler"
+"access to *\n"
+"  by self write\n"
+"  by * read"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:781
-#, fuzzy
 msgid "This will stop users from being able to masquerade as other users."
 msgstr "Isso impedirá que os usuários se disfarçam como outros usuários."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:786
-#, fuzzy
 msgid "<systemitem class=\"username\">root</systemitem> Account Definition"
-msgstr "<systemitem class = \"username\"> root </systemitem> Definição da conta"
+msgstr "Definição da conta <systemitem class=\"username\">root</systemitem>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:789
-#, fuzzy
 msgid ""
 "Often the <systemitem class=\"username\">root</systemitem> or manager "
 "account for the LDAP service will be defined in the configuration file. "
@@ -1670,17 +1637,16 @@ msgid ""
 "LDAP, and then define a <systemitem class=\"username\">root</systemitem> "
 "account there."
 msgstr ""
-"Geralmente, a <systemitem class = \"username\"> root </systemitem> ou a "
+"Geralmente, a conta <systemitem class=\"username\"> root </systemitem> ou a "
 "conta de administrador para o serviço LDAP será definida no arquivo de "
-"configuração. O <application> OpenLDAP </application> suporta isso, por "
-"exemplo, e funciona, mas pode causar problemas se o <filename> slapd.conf </"
+"configuração. O <application>OpenLDAP</application> suporta isso, por "
+"exemplo, e funciona, mas pode causar problemas se o <filename>slapd.conf</"
 "filename> estiver comprometido. Pode ser melhor usar isto apenas para se "
-"autoinicializar no LDAP, e então definir uma conta <systemitem class = "
+"autoinicializar no LDAP, e então definir uma conta <systemitem class="
 "\"username\"> root </systemitem>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:797
-#, fuzzy
 msgid ""
 "Even better is to define accounts that have limited permissions, and omit a "
 "<systemitem class=\"username\">root</systemitem> account entirely. For "
@@ -1689,22 +1655,20 @@ msgid ""
 "security policy would help mitigate the effects of a leaked password."
 msgstr ""
 "Melhor ainda é definir contas com permissões limitadas e omitir totalmente "
-"uma conta <systemitem class = \"username\"> root </systemitem>. Por exemplo, "
-"os usuários que podem adicionar ou remover contas de usuário são adicionados "
-"a um grupo, mas não podem alterar a participação desse grupo. Essa política "
-"de segurança ajudaria a mitigar os efeitos de uma senha perdida."
+"uma conta <systemitem class=\"username\">root</systemitem>. Por exemplo, os "
+"usuários que podem adicionar ou remover contas de usuário são adicionados a "
+"um grupo, mas não podem alterar a participação desse grupo. Essa política de "
+"segurança ajudaria a mitigar os efeitos de uma senha perdida."
 
 #. (itstool) path: sect3/title
 #. (itstool) path: example/title
 #: article.translate.xml:805
 #: article.translate.xml:813
-#, fuzzy
 msgid "Creating a Management Group"
 msgstr "Criando um grupo de gerenciamento"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:807
-#, fuzzy
 msgid ""
 "Say you want your IT department to be able to change home directories for "
 "users, but you do not want all of them to be able to add or remove users. "
@@ -1717,7 +1681,7 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:815
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "dn: cn=homemanagement,dc=example,dc=org\n"
 "objectClass: top\n"
@@ -1727,58 +1691,53 @@ msgid ""
 "memberUid: uid=tuser,ou=people,dc=example,dc=org\n"
 "memberUid: uid=user2,ou=people,dc=example,dc=org"
 msgstr ""
-"dn: cn = homemanagement, dc = exemplo, dc = org\n"
+"dn: cn=homemanagement,dc=example,dc=org\n"
 "objectClass: top\n"
 "objectClass: posixGroup\n"
 "cn: homemanagement\n"
-"gidNumber: 121 # necessário para posixGroup\n"
-"memberUid: uid = tuser, ou = pessoas, dc = example, dc = org\n"
-"memberUid: uid = usuário2, ou = pessoas, dc = exemplo, dc = org"
+"gidNumber: 121 # required for posixGroup\n"
+"memberUid: uid=tuser,ou=people,dc=example,dc=org\n"
+"memberUid: uid=user2,ou=people,dc=example,dc=org"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:824
-#, fuzzy
 msgid ""
 "And then change the permissions attributes in <filename>slapd.conf</"
 "filename>:"
 msgstr ""
-"E então mude os atributos de permissões em <filename> slapd.conf </filename>:"
-""
+"E então mude os atributos de permissões em <filename>slapd.conf</filename>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:828
-#, fuzzy
 msgid "ACLs for a Home Directory Management Group"
 msgstr "ACLs para um grupo de gerenciamento de diretório inicial"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:830
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
 "  attr=homeDirectory\n"
 "  by dn=\"cn=homemanagement,dc=example,dc=org\"\n"
 "  dnattr=memberUid write"
 msgstr ""
-"acesso a dn.subtree = \"ou = pessoas, dc = exemplo, dc = org\"\n"
-"  attr = homeDirectory\n"
-"  por dn = \"cn = homemanagement, dc = exemplo, dc = org\"\n"
-"  dnattr = memberUid write"
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attr=homeDirectory\n"
+"  by dn=\"cn=homemanagement,dc=example,dc=org\"\n"
+"  dnattr=memberUid write"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:836
-#, fuzzy
 msgid ""
 "Now <systemitem class=\"username\">tuser</systemitem> and <systemitem class="
 "\"username\">user2</systemitem> can change other users' home directories."
 msgstr ""
-"Agora <systemitem class = \"username\"> tuser </systemitem> e <systemitem "
-"class = \"username\"> user2 </systemitem> pode alterar os diretórios home de "
-"outros usuários."
+"Agora <systemitem class=\"username\">tuser</systemitem> e <systemitem class="
+"\"username\">user2</systemitem> podem alterar os diretórios home de outros "
+"usuários."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:840
-#, fuzzy
 msgid ""
 "In this example we have given a subset of administrative power to certain "
 "users without giving them power in other domains. The idea is that soon no "
@@ -1789,20 +1748,18 @@ msgid ""
 msgstr ""
 "Neste exemplo, demos um subconjunto de poder administrativo a certos "
 "usuários sem dar a eles poder em outros domínios. A idéia é que em breve "
-"nenhuma conta de usuário tenha o poder de uma conta <systemitem class = "
-"\"username\"> root </systemitem>, mas cada raiz de energia teve pelo menos "
-"um usuário. A conta <systemitem class = \"username\"> root </systemitem> "
-"torna-se desnecessária e pode ser removida."
+"nenhuma conta de usuário tenha o poder de uma conta <systemitem class="
+"\"username\">root</systemitem>, mas todo poder que root tem seja tido por "
+"pelo menos um usuário. A conta <systemitem class=\"username\">root</"
+"systemitem> torna-se desnecessária e pode ser removida."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:850
-#, fuzzy
 msgid "Password Storage"
 msgstr "Armazenamento de Senha"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:852
-#, fuzzy
 msgid ""
 "By default <application>OpenLDAP</application> will store the value of the "
 "<literal>userPassword</literal> attribute as it stores any other data: in "
@@ -1810,33 +1767,30 @@ msgid ""
 "protection to keep an honest administrator from knowing your password, but "
 "little else."
 msgstr ""
-"Por padrão, <application> OpenLDAP </application> armazenará o valor do "
-"atributo <literal> userPassword </literal> conforme ele armazena quaisquer "
-"outros dados: in the clear. Na maioria das vezes, ele é codificado na base "
-"64, o que fornece proteção suficiente para impedir que um administrador "
-"honesto conheça sua senha, mas pouco mais."
+"Por padrão, <application>OpenLDAP</application> armazenará o valor do "
+"atributo <literal>userPassword</literal> conforme ele armazena quaisquer "
+"outros dados: puro texto. Na maioria das vezes, ele é codificado na base 64, "
+"o que fornece proteção suficiente para impedir que um administrador honesto "
+"conheça sua senha, mas pouco ainda."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:859
-#, fuzzy
 msgid ""
 "It is a good idea, then, to store passwords in a more secure format, such as "
 "SSHA (salted SHA). This is done by whatever program you use to change users' "
 "passwords."
 msgstr ""
 "É uma boa idéia, então, armazenar senhas em um formato mais seguro, como o "
-"SSHA (SHA salgado). Isso é feito por qualquer programa que você use para "
+"SSHA (salted SHA). Isso é feito por qualquer programa que você use para "
 "alterar as senhas dos usuários."
 
 #. (itstool) path: appendix/title
 #: article.translate.xml:866
-#, fuzzy
 msgid "Useful Aids"
 msgstr "Ajudas Úteis"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:868
-#, fuzzy
 msgid ""
 "There are a few other programs that might be useful, particularly if you "
 "have many users and do not want to configure everything manually."
@@ -1846,7 +1800,6 @@ msgstr ""
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:872
-#, fuzzy
 msgid ""
 "<package>security/pam_mkhomedir</package> is a PAM module that always "
 "succeeds; its purpose is to create home directories for users which do not "
@@ -1854,15 +1807,14 @@ msgid ""
 "much easier to use this and set up skeleton directories than to prepare "
 "every home directory."
 msgstr ""
-"O <package> security / pam_mkhomedir </package> é um módulo PAM que sempre é "
-"bem-sucedido; Sua finalidade é criar diretórios pessoais para usuários que "
-"não os possuem. Se você tiver dezenas de servidores clientes e centenas de "
+"O <package>security/pam_mkhomedir</package> é um módulo PAM que sempre é bem-"
+"sucedido; Sua finalidade é criar diretórios pessoais para usuários que não "
+"os possuem. Se você tiver dezenas de servidores clientes e centenas de "
 "usuários, é muito mais fácil usar isso e configurar diretórios esqueletos do "
 "que preparar cada diretório inicial."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:879
-#, fuzzy
 msgid ""
 "<package>sysutils/cpu</package> is a <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>-like utility that can "
@@ -1870,16 +1822,15 @@ msgid ""
 "wrap scripts around it. It can handle both TLS (with the <option>-x</option> "
 "flag) and SSL (directly)."
 msgstr ""
-"O <package> sysutils / cpu </package> é um utilitário do tipo <citerefentry> "
-"<refentrytitle> pw </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"O <package>sysutils/cpu</package> é um utilitário do tipo "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> que pode ser usado para gerenciar usuários no diretório LDAP. "
 "Você pode chamá-lo diretamente ou encapsular os scripts em torno dele. Ele "
-"pode manipular tanto o TLS (com o sinalizador <option> -x </option>) quanto "
-"o SSL (diretamente)."
+"pode manipular tanto o TLS (com o sinalizador <option>-x</option>) quanto o "
+"SSL (diretamente)."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:885
-#, fuzzy
 msgid ""
 "<package>sysutils/ldapvi</package> is a great utility for editing LDAP "
 "values in an LDIF-like syntax. The directory (or subsection of the "
@@ -1887,36 +1838,33 @@ msgid ""
 "environment variable. This makes it easy to enable large-scale changes in "
 "the directory without having to write a custom tool."
 msgstr ""
-"O <package> sysutils / ldapvi </package> é um ótimo utilitário para editar "
+"O <package>sysutils/ldapvi</package> é um ótimo utilitário para editar "
 "valores LDAP em uma sintaxe semelhante a LDIF. O diretório (ou subseção do "
 "diretório) é apresentado no editor escolhido pela variável de ambiente "
-"<envar> EDITOR </envar>. Isso facilita a ativação de alterações em grande "
+"<envar>EDITOR</envar>. Isso facilita a ativação de alterações em grande "
 "escala no diretório sem a necessidade de escrever uma ferramenta "
 "personalizada."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:892
-#, fuzzy
 msgid ""
 "<package>security/openssh-portable</package> has the ability to contact an "
 "LDAP server to verify <application>SSH</application> keys. This is extremely "
 "nice if you have many servers and do not want to copy your public keys "
 "across all of them."
 msgstr ""
-"O <package> security / openssh-portable </package> tem a capacidade de "
-"contatar um servidor LDAP para verificar as chaves <application> SSH </"
-"application>. Isso é extremamente bom se você tiver muitos servidores e não "
-"quiser copiar suas chaves públicas em todos eles."
+"O <package>security/openssh-portable</package> tem a capacidade de contatar "
+"um servidor LDAP para verificar as chaves <application>SSH</application>. "
+"Isso é extremamente bom se você tiver muitos servidores e não quiser copiar "
+"suas chaves públicas em todos eles."
 
 #. (itstool) path: appendix/title
 #: article.translate.xml:900
-#, fuzzy
 msgid "<application>OpenSSL</application> Certificates for LDAP"
-msgstr "Certificados do <application> OpenSSL </application> para LDAP"
+msgstr "Certificados do <application>OpenSSL</application> para LDAP"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:903
-#, fuzzy
 msgid ""
 "If you are hosting two or more LDAP servers, you will probably not want to "
 "use self-signed certificates, since each client will have to be configured "
@@ -1932,21 +1880,19 @@ msgstr ""
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:910
-#, fuzzy
 msgid ""
 "The steps here are presented as they are with very little attempt at "
 "explaining what is going on—further explanation can be found in "
 "<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> and its friends."
 msgstr ""
-"Os passos aqui são apresentados como estão com muito pouca tentativa de "
+"Os passos aqui são apresentados como eles são, com muito pouca tentativa de "
 "explicar o que está acontecendo - mais explicações podem ser encontradas em "
-"<citerefentry> <refentrytitle> openssl </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> e suas amigos."
+"<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> e aplicações iguais."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:914
-#, fuzzy
 msgid ""
 "To create a certificate authority, we simply need a self-signed certificate "
 "and key. The steps for this again are"
@@ -1956,13 +1902,12 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: article.translate.xml:919
-#, fuzzy
 msgid "Creating a Certificate"
 msgstr "Criando um Certificado"
 
 #. (itstool) path: example/screen
 #: article.translate.xml:921
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>openssl genrsa -out root.key 1024</userinput>\n"
 "<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</"
@@ -1978,19 +1923,17 @@ msgstr ""
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:926
-#, fuzzy
 msgid ""
 "These will be your root CA key and certificate. You will probably want to "
 "encrypt the key and store it in a cool, dry place; anyone with access to it "
 "can masquerade as one of your LDAP servers."
 msgstr ""
 "Estas serão sua chave e certificado de CA raiz. Você provavelmente desejará "
-"criptografar a chave e armazená-la em um local fresco e seco; qualquer "
-"pessoa com acesso a ele pode se passar por um dos seus servidores LDAP."
+"criptografar a chave e armazená-la em um local seguro; qualquer pessoa com "
+"acesso a ele pode se passar por um dos seus servidores LDAP."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:931
-#, fuzzy
 msgid ""
 "Next, using the first two steps above create a key <filename>ldap-server-one."
 "key</filename> and certificate signing request <filename>ldap-server-one."
@@ -1998,15 +1941,14 @@ msgid ""
 "filename>, you will be able to use <filename>ldap-server-one.*</filename> on "
 "your LDAP servers."
 msgstr ""
-"Em seguida, usando as duas primeiras etapas acima, crie uma chave <filename> "
-"ldap-server-one.key </filename> e a solicitação de assinatura de certificado "
-"<filename> ldap-server-one.csr </filename>. Depois de assinar o pedido de "
-"assinatura com <filename> root.key </filename>, você poderá usar o "
-"<filename> ldap-server-one. * </filename> nos servidores LDAP."
+"Em seguida, usando as duas primeiras etapas acima, crie uma chave "
+"<filename>ldap-server-one.key</filename> e a solicitação de assinatura de "
+"certificado <filename>ldap-server-one.csr</filename>. Depois de assinar o "
+"pedido de assinatura com <filename>root.key</filename>, você poderá usar o "
+"<filename>ldap-server-one.*</filename> nos servidores LDAP."
 
 #. (itstool) path: note/para
 #: article.translate.xml:939
-#, fuzzy
 msgid ""
 "Do not forget to use the fully qualified domain name for the <quote>common "
 "name</quote> attribute when generating the certificate signing request; "
@@ -2014,29 +1956,27 @@ msgid ""
 "tricky to diagnose."
 msgstr ""
 "Não se esqueça de usar o nome de domínio totalmente qualificado para o "
-"atributo <quote> nome comum </quote> ao gerar a solicitação de assinatura de "
+"atributo <quote>common name</quote> ao gerar a solicitação de assinatura de "
 "certificado; caso contrário, os clientes rejeitarão uma conexão com você e "
 "poderá ser muito complicado diagnosticar."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:946
-#, fuzzy
 msgid ""
 "To sign the key, use <option>-CA</option> and <option>-CAkey</option> "
 "instead of <option>-signkey</option>:"
 msgstr ""
-"Para assinar a chave, use <option> -CA </option> e <option> -CAkey </option> "
-"em vez de <option> -signkey </option>:"
+"Para assinar a chave, use <option>-CA</option> e <option>-CAkey</option> em "
+"vez de <option>-signkey</option>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:951
-#, fuzzy
 msgid "Signing as a Certificate Authority"
 msgstr "Assinando como uma autoridade de certificação"
 
 #. (itstool) path: example/screen
 #: article.translate.xml:953
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 \\\n"
 "-in ldap-server-one.csr -CA root.crt -CAkey root.key \\\n"
@@ -2048,7 +1988,6 @@ msgstr ""
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:958
-#, fuzzy
 msgid ""
 "The resulting file will be the certificate that you can use on your LDAP "
 "servers."
@@ -2058,7 +1997,6 @@ msgstr ""
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:961
-#, fuzzy
 msgid ""
 "Finally, for clients to trust all your servers, distribute <filename>root."
 "crt</filename> (the <emphasis>certificate</emphasis>, not the key!) to each "
@@ -2066,7 +2004,6 @@ msgid ""
 "directive in <filename>ldap.conf</filename>."
 msgstr ""
 "Finalmente, para os clientes confiarem em todos os seus servidores, "
-"distribua <filename> root.crt </filename> (o <emphasis> certificado </"
-"emphasis>, não a chave!) Para cada cliente, e especifique-o no <literal> "
-"TLSCACertificateFile </literal> directiva em <filename> ldap.conf </"
-"filename>."
+"distribua <filename>root.crt</filename> (o <emphasis> certificado </"
+"emphasis>, não a chave!) Para cada cliente, e especifique-o na directiva "
+"<literal>TLSCACertificateFile</literal> no <filename>ldap.conf</filename>."
