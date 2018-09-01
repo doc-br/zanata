@@ -9,8 +9,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-28 03:35+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-01 01:32+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -5660,53 +5660,47 @@ msgid ""
 "These keywords denote the marked sections <emphasis>content model</"
 "emphasis>, and allow you to change it from the default."
 msgstr ""
-"Essas palavras-chave denotam as seções marcadas <emphasis>content model</"
-"emphasis> e permitem que você a altere do padrão."
+"Essas palavras-chave indicam as seções marcadas pelo <emphasis>modelo de "
+"conteúdo</emphasis> e permitem que você a altere do padrão."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3253
-#, fuzzy
 msgid ""
 "When an <acronym>XML</acronym> parser is processing a document, it keeps "
 "track of the <quote>content model</quote>."
 msgstr ""
-"Quando um analisador <acronym> XML </acronym> está processando um documento, "
-"ele acompanha o <quote> modelo de conteúdo </quote>."
+"Quando um <acronym>XML</acronym> parser está processando um documento, ele "
+"acompanha o <quote>modelo de conteúdo</quote>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3257
-#, fuzzy
 msgid ""
 "The content model describes the content the parser is expecting to see and "
 "what it will do with that content."
 msgstr ""
-"O modelo de conteúdo descreve o conteúdo que o analisador espera ver e o que "
-"ele fará com esse conteúdo."
+"O modelo de conteúdo descreve o conteúdo que o parser espera ver e o que ele "
+"fará com esse conteúdo."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3261
-#, fuzzy
 msgid "The <literal>CDATA</literal> content model is one of the most useful."
-msgstr "O modelo de conteúdo <literal> CDATA </literal> é um dos mais úteis."
+msgstr "O modelo de conteúdo <literal>CDATA</literal> é um dos mais úteis."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3264
-#, fuzzy
 msgid ""
 "<literal>CDATA</literal> is for <quote>Character Data</quote>. When the "
 "parser is in this content model, it expects to see only characters. In this "
 "model the <literal>&lt;</literal> and <literal>&amp;</literal> symbols lose "
 "their special status, and will be treated as ordinary characters."
 msgstr ""
-"<literal> CDATA </literal> é para <quote> Dados de caractere </quote>. "
-"Quando o analisador está neste modelo de conteúdo, ele espera ver apenas "
-"caracteres. Nesse modelo, os símbolos <literal> &lt; </literal> e <literal> "
-"&amp;</literal> perdem seu status especial e serão tratados como caracteres "
-"comuns."
+"<literal>CDATA</literal> é para <quote>Dados de Caractere</quote>. Quando o "
+"parser está neste modelo de conteúdo, ele espera ver apenas caracteres. "
+"Nesse modelo, os símbolos <literal>&lt;</literal> e <literal>&amp;</literal> "
+"perdem seu status especial e serão tratados como caracteres comuns."
 
 #. (itstool) path: note/para
 #: book.translate.xml:3272
-#, fuzzy
 msgid ""
 "When using <literal>CDATA</literal> in examples of text marked up in "
 "<acronym>XML</acronym>, remember that the content of <literal>CDATA</"
@@ -5714,21 +5708,20 @@ msgid ""
 "For example, the content could be written in another document, validated, "
 "and then pasted into the <literal>CDATA</literal> section."
 msgstr ""
-"Ao usar <literal> CDATA </literal> em exemplos de texto marcados em "
-"<acronym> XML </acronym>, lembre-se de que o conteúdo de <literal> CDATA </"
-"literal> não é validado. O texto incluído deve ser verificado com outros "
+"Ao usar <literal>CDATA</literal> em exemplos de texto marcados em "
+"<acronym>XML</acronym>, lembre-se de que o conteúdo de <literal>CDATA</"
+"literal> não é validado. O texto incluído deve ser verificado por outros "
 "meios. Por exemplo, o conteúdo poderia ser escrito em outro documento, "
-"validado e depois colado na seção <literal> CDATA </literal>."
+"validado e depois colado na seção <literal>CDATA</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3282
-#, fuzzy
 msgid "Using a <literal>CDATA</literal> Marked Section"
-msgstr "Usando uma seção marcada <literal> CDATA </literal>"
+msgstr "Usando uma Seção Marcada <literal>CDATA</literal>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3285
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">para</tag>Here is an example of how to include some "
 "text that contains\n"
@@ -5794,37 +5787,33 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3308
-#, fuzzy
 msgid "<literal>INCLUDE</literal> and <literal>IGNORE</literal>"
-msgstr "<literal> INCLUDE </literal> e <literal> IGNORE </literal>"
+msgstr "<literal>INCLUDE</literal> e <literal>IGNORE</literal>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3311
-#, fuzzy
 msgid ""
 "When the keyword is <literal>INCLUDE</literal>, then the contents of the "
 "marked section will be processed. When the keyword is <literal>IGNORE</"
 "literal>, the marked section is ignored and will not be processed. It will "
 "not appear in the output."
 msgstr ""
-"Quando a palavra-chave é <literal> INCLUDE </literal>, o conteúdo da seção "
-"marcada será processado. Quando a palavra-chave é <literal> IGNORE </"
-"literal>, a seção marcada é ignorada e não será processada. Não aparecerá na "
-"saída."
+"Quando a palavra-chave é <literal>INCLUDE</literal>, o conteúdo da seção "
+"marcada será processado. Quando a palavra-chave é <literal>IGNORE</literal>, "
+"a seção marcada é ignorada e não será processada. Não aparecerá na saída."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3318
-#, fuzzy
 msgid ""
 "Using <literal>INCLUDE</literal> and <literal>IGNORE</literal> in Marked "
 "Sections"
 msgstr ""
-"Usando <literal> INCLUDE </literal> e <literal> IGNORE </literal> em seções "
-"marcadas"
+"Usando <literal>INCLUDE</literal> e <literal>IGNORE</literal> em Seções "
+"Marcadas"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3321
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;![INCLUDE[\n"
 "  This text will be processed and included.\n"
@@ -5834,39 +5823,36 @@ msgid ""
 "  This text will not be processed or included.\n"
 "]]&gt;"
 msgstr ""
-"&lt;! [INCLUIR [\n"
-"  Este texto será processado e incluído.\n"
+"&lt;![INCLUDE[\n"
+"  This text will be processed and included.\n"
 "]]&gt;\n"
 "\n"
-"&lt;! [IGNORE [\n"
-"  Este texto não será processado ou incluído.\n"
+"&lt;![IGNORE[\n"
+"  This text will not be processed or included.\n"
 "]]&gt;"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3330
-#, fuzzy
 msgid ""
 "By itself, this is not too useful. Text to be removed from the document "
 "could be cut out, or wrapped in comments."
 msgstr ""
 "Por si só, isso não é muito útil. O texto a ser removido do documento pode "
-"ser recortado ou envolto em comentários."
+"ser recortado ou estar em forma de comentários."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3334
-#, fuzzy
 msgid ""
 "It becomes more useful when controlled by <link linkend=\"xml-primer-"
 "parameter-entities\">parameter entities</link>, yet this usage is limited to "
 "entity files."
 msgstr ""
-"Ele se torna mais útil quando controlado por entidades de parâmetro <link "
-"linkend=\"xml-primer-parameter-entities\"> </link>, mas esse uso é limitado "
+"Ele se torna mais útil quando controlado por <link linkend=\"xml-primer-"
+"parameter-entities\">entidades de parâmetro</link>, mas esse uso é limitado "
 "a arquivos de entidades."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3339
-#, fuzzy
 msgid ""
 "For example, suppose that documentation was produced in a hard-copy version "
 "and an electronic version. Some extra text is desired in the electronic "
@@ -5878,7 +5864,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3344
-#, fuzzy
 msgid ""
 "Create an entity file that defines general entities to include each chapter "
 "and guard these definitions with a parameter entity that can be set to "
@@ -5895,22 +5880,21 @@ msgid ""
 msgstr ""
 "Crie um arquivo de entidade que defina entidades gerais para incluir cada "
 "capítulo e proteja essas definições com uma entidade de parâmetro que pode "
-"ser definida como <literal> INCLUDE </literal> ou <literal> IGNORE </"
-"literal> para controlar se a entidade está definida . Após essas definições "
-"de entidades gerais condicionais, coloque mais uma definição para cada "
-"entidade geral para defini-las como um valor vazio. Essa técnica faz uso do "
-"fato de que as definições de entidade não podem ser substituídas, mas a "
-"primeira definição sempre entra em vigor. Assim, a inclusão do capítulo é "
-"controlada com a entidade de parâmetro correspondente. Definido como "
-"<literal> INCLUDE </literal>, a primeira definição de entidade geral será "
-"lida e a segunda será ignorada. Definido como <literal> IGNORE </literal>, a "
-"primeira definição será ignorada e a segunda terá efeito."
+"ser definida como <literal>INCLUDE</literal> ou <literal>IGNORE</literal> "
+"para controlar se a entidade está definida . Após essas definições de "
+"entidades gerais condicionais, coloque mais uma definição para cada entidade "
+"geral para defini-las como um valor vazio. Essa técnica faz uso do fato de "
+"que as definições de entidade não podem ser substituídas, mas a primeira "
+"definição sempre entra em vigor. Assim, a inclusão do capítulo é controlada "
+"com a entidade de parâmetro correspondente. Definido como <literal>INCLUDE</"
+"literal>, a primeira definição de entidade geral será lida e a segunda será "
+"ignorada. Definido como <literal>IGNORE</literal>, a primeira definição será "
+"ignorada e a segunda será utilizada."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3361
-#, fuzzy
 msgid "Using a Parameter Entity to Control a Marked Section"
-msgstr "Usando uma entidade de parâmetro para controlar uma seção marcada"
+msgstr "Usando uma Entidade de Parâmetro para Controlar uma Seção Marcada"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3364
@@ -5934,12 +5918,11 @@ msgstr ""
 
 #. (itstool) path: example/para
 #: book.translate.xml:3372
-#, fuzzy
 msgid ""
 "When producing the hard-copy version, change the parameter entity's "
 "definition to:"
 msgstr ""
-"Ao produzir a versão impressa, altere a definição da entidade do parâmetro "
+"Ao produzir a versão impressa, altere a definição do parâmetro de entidade "
 "para:"
 
 #. (itstool) path: example/programlisting
@@ -5984,7 +5967,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:3402
-#, fuzzy
 msgid ""
 "Normalize <filename>example.xml</filename> and notice that the conditional "
 "text is not present in the output document. Set the parameter entity guard "
@@ -5993,76 +5975,68 @@ msgid ""
 "conditional chunks depending on the same condition. For example, to control "
 "generating printed or online text."
 msgstr ""
-"Normalize <filename> exemplo.xml </filename> e observe que o texto "
-"condicional não está presente no documento de saída. Defina o guarda de "
-"entidade de parâmetro como <literal> INCLUDE </literal> e gere novamente o "
-"documento normalizado e o texto aparecerá novamente. Esse método faz sentido "
-"se houver mais partes condicionais dependendo da mesma condição. Por "
-"exemplo, para controlar a geração de texto impresso ou on-line."
+"Normalize <filename>example.xml</filename> e observe que o texto condicional "
+"não está presente no documento de saída. Altere o parâmetro de entidade para "
+"<literal>INCLUDE</literal> e gere novamente o documento normalizado, dessa "
+"forma e o texto aparecerá novamente. Esse método faz sentido se houver mais "
+"partes condicionais dependendo da mesma condição. Por exemplo, para "
+"controlar a geração de texto impresso ou on-line."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3417
-#, fuzzy
 msgid "Conclusion"
 msgstr "Conclusão"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3419
-#, fuzzy
 msgid ""
 "That is the conclusion of this <acronym>XML</acronym> primer. For reasons of "
 "space and complexity, several things have not been covered in depth (or at "
 "all). However, the previous sections cover enough <acronym>XML</acronym> to "
 "introduce the organization of the <acronym>FDP</acronym> documentation."
 msgstr ""
-"Essa é a conclusão deste primer <acronym> XML </acronym>. Por razões de "
-"espaço e complexidade, várias coisas não foram cobertas em profundidade (ou "
-"de todo). No entanto, as seções anteriores abrangem o suficiente <acronym> "
-"XML </acronym> para apresentar a organização da documentação do <acronym> "
-"FDP </acronym>."
+"Essa é a conclusão deste primer <acronym>XML</acronym>. Por razões de espaço "
+"e complexidade, vários assuntos não foram cobertos bem afundo. No entanto, "
+"as seções anteriores abrangem o suficiente de <acronym>XML</acronym> para "
+"apresentar a organização da documentação do <acronym>FDP</acronym>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:3460
-#, fuzzy
 msgid "<acronym>XHTML</acronym> Markup"
-msgstr "<acronym> XHTML </acronym> Marcação"
+msgstr "<acronym>XHTML</acronym> Markup"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3463
 #: book.translate.xml:4065
 #: book.translate.xml:7330
 #: book.translate.xml:8250
-#, fuzzy
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3465
-#, fuzzy
 msgid ""
 "This chapter describes usage of the <acronym>XHTML</acronym> markup language "
 "used for the FreeBSD web site."
 msgstr ""
-"Este capítulo descreve o uso da linguagem de marcação <acronym> XHTML </"
-"acronym> usada para o site do FreeBSD."
+"Este capítulo descreve o uso da linguagem <acronym>XHTML</acronym> markup "
+"usada no site do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3468
-#, fuzzy
 msgid ""
 "<acronym>XHTML</acronym> is the <acronym>XML</acronym> version of the "
 "HyperText Markup Language, the markup language of choice on the World Wide "
 "Web. More information can be found at <uri xlink:href=\"http://www.w3.org/"
 "\">http://www.w3.org/</uri>."
 msgstr ""
-"<acronym> XHTML </acronym> é a versão <acronym> XML </acronym> da HyperText "
-"Markup Language, a linguagem de marcação escolhida na World Wide Web. Mais "
-"informações podem ser encontradas em <uri xlink:href=\"http://www.w3.org/\"> "
-"http://www.w3.org/ </uri>."
+"<acronym>XHTML</acronym> é a versão <acronym>XML</acronym> da HyperText "
+"Markup Language, a linguagem markup escolhida na World Wide Web. Mais "
+"informações podem ser encontradas em <uri xlink:href=\"http://www.w3.org/"
+"\">http://www.w3.org/</uri>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3473
-#, fuzzy
 msgid ""
 "<acronym>XHTML</acronym> is used to mark up pages on the FreeBSD web site. "
 "It is usually not used to mark up other documentation, since DocBook offers "
@@ -6070,15 +6044,14 @@ msgid ""
 "<acronym>XHTML</acronym> pages will normally only be encountered when "
 "writing for the web site."
 msgstr ""
-"<acronym> XHTML </acronym> é usado para marcar páginas no site do FreeBSD. "
-"Geralmente não é usado para marcar outra documentação, uma vez que o DocBook "
-"oferece um conjunto muito mais rico de elementos para escolher. "
-"Consequentemente, as páginas <acronym> XHTML </acronym> normalmente só serão "
-"encontradas ao escrever para o site."
+"<acronym>XHTML</acronym> é usado para escrever páginas no site do FreeBSD. "
+"Geralmente não é usado para escrever outra documentação, uma vez que o "
+"DocBook oferece um conjunto muito mais rico de elementos para se escolher. "
+"Consequentemente, as páginas <acronym>XHTML</acronym> normalmente só serão "
+"encontradas ao escrever para o web site."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3480
-#, fuzzy
 msgid ""
 "<acronym>HTML</acronym> has gone through a number of versions. The "
 "<acronym>XML</acronym>-compliant version described here is called "
@@ -6086,28 +6059,25 @@ msgid ""
 "acronym> 1.0, available in both <emphasis>strict</emphasis> and "
 "<emphasis>transitional</emphasis> variants."
 msgstr ""
-"O <acronym> HTML </acronym> passou por várias versões. A versão compatível "
-"com <acronym> XML </acronym> descrita aqui é chamada <acronym> XHTML </"
-"acronym>. A versão mais recente generalizada é o <acronym> XHTML </acronym> "
-"1.0, disponível nas variantes <emphasis> strict </emphasis> e <emphasis> "
-"transitional </emphasis>."
+"O <acronym>HTML</acronym> passou por várias versões. A versão compatível com "
+"<acronym>XML</acronym> descrita aqui é chamada <acronym>XHTML</acronym>. A "
+"versão mais recente generalizada é o <acronym>XHTML</acronym> 1.0, "
+"disponível nas variantes <emphasis>strict</emphasis> e "
+"<emphasis>transitional</emphasis>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3487
-#, fuzzy
 msgid ""
 "The <acronym>XHTML</acronym> <acronym>DTDs</acronym> are available from the "
 "Ports Collection in <package>textproc/xhtml</package>. They are "
 "automatically installed by the <package>textproc/docproj</package> port."
 msgstr ""
-"Os <acronym> XHTML </acronym> <acronym> DTDs </acronym> estão disponíveis na "
-"coleção de ports em <package> textproc / xhtml </package>. Eles são "
-"automaticamente instalados pela porta <package> textproc / docproj </"
-"package>."
+"Os <acronym>XHTML</acronym> <acronym>DTDs</acronym> estão disponíveis na "
+"Coleção de Ports em <package>textproc/xhtml</package>. Eles são "
+"automaticamente instalados pelo port <package>textproc/docproj</package>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:3493
-#, fuzzy
 msgid ""
 "This is <emphasis>not</emphasis> an exhaustive list of elements, since that "
 "would just repeat the documentation for <acronym>XHTML</acronym>. The aim is "
@@ -6116,24 +6086,22 @@ msgid ""
 "FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD documentation project "
 "mailing list</link>."
 msgstr ""
-"Isto é <emphasis> não </emphasis> uma lista exaustiva de elementos, uma vez "
-"que isso apenas repetiria a documentação para <acronym> XHTML </acronym>. O "
-"objetivo é listar os elementos mais comumente usados. Por favor, poste "
-"perguntas sobre elementos ou usos não abordados aqui na <link xlink:href="
-"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\"> lista de "
-"discussão do projeto de documentação do FreeBSD </link>."
+"Isto <emphasis>não</emphasis> é uma lista completa de elementos, uma vez que "
+"isso apenas repetiria a documentação de <acronym>XHTML</acronym>. O objetivo "
+"é listar os elementos mais utilizados. Por favor, poste perguntas sobre "
+"elementos ou usos não abordados aqui na <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/freebsd-doc\">lista de discussão do projeto de "
+"documentação do FreeBSD</link>."
 
 #. (itstool) path: note/title
 #: book.translate.xml:3501
 #: book.translate.xml:4104
-#, fuzzy
 msgid "Inline Versus Block"
 msgstr "Inline Versus Block"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3503
 #: book.translate.xml:4106
-#, fuzzy
 msgid ""
 "In the remainder of this document, when describing elements, "
 "<emphasis>inline</emphasis> means that the element can occur within a block "
@@ -6141,21 +6109,19 @@ msgid ""
 "element, by comparison, will cause a line break (and other processing) when "
 "it is encountered."
 msgstr ""
-"No restante deste documento, ao descrever elementos, <emphasis> inline </"
-"emphasis> significa que o elemento pode ocorrer dentro de um elemento de "
-"bloco e não causa uma quebra de linha. Um elemento <emphasis> bloco </"
-"emphasis>, por comparação, causará uma quebra de linha (e outro "
-"processamento) quando for encontrado."
+"No restante deste documento, ao descrever elementos, <emphasis>inline</"
+"emphasis> significa que o elemento pode estar dentro de um elemento de bloco "
+"e não causa uma quebra de linha. Um elemento <emphasis>block</emphasis>, por "
+"outro lado, causará uma quebra de linha (e outro processamento) quando for "
+"encontrado."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3513
-#, fuzzy
 msgid "Formal Public Identifier (<acronym>FPI</acronym>)"
-msgstr "Identificador Público Formal (<acronym> FPI </acronym>)"
+msgstr "Identificador Público Formal (<acronym>FPI</acronym>)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3515
-#, fuzzy
 msgid ""
 "There are a number of <acronym>XHTML</acronym> <acronym>FPI</acronym>s, "
 "depending upon the version, or <emphasis>level</emphasis> of <acronym>XHTML</"
@@ -6163,27 +6129,25 @@ msgid ""
 "documents on the FreeBSD web site comply with the transitional version of "
 "<acronym>XHTML</acronym> 1.0."
 msgstr ""
-"Existem vários <acronym> XHTML </acronym> <acronym> FPI </acronym> s, "
-"dependendo da versão, ou <emphasis> level </emphasis> do <acronym> XHTML </"
-"acronym> ao qual um documento está em conformidade. A maioria dos documentos "
-"do <acronym> XHTML </acronym> no site do FreeBSD está de acordo com a versão "
-"de transição do <acronym> XHTML </acronym> 1.0."
+"Existem vários <acronym>XHTML</acronym> <acronym>FPI</acronym>s, dependendo "
+"da versão, ou da <emphasis>versão</emphasis> do <acronym>XHTML</acronym> ao "
+"qual um documento está em conformidade. A maioria dos documentos "
+"<acronym>XHTML</acronym> no site do FreeBSD está de acordo com a versão de "
+"transição do <acronym>XHTML</acronym> 1.0."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:3522
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\""
-msgstr "PÚBLICO \"- // W3C // DTD XHTML 1.0 Transitional // EN\""
+msgstr "PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3526
-#, fuzzy
 msgid "Sectional Elements"
-msgstr "Elementos secionais"
+msgstr "Seções de Elementos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3528
-#, fuzzy
 msgid ""
 "An <acronym>XHTML</acronym> document is normally split into two sections. "
 "The first section, called the <emphasis>head</emphasis>, contains meta-"
@@ -6191,33 +6155,31 @@ msgid ""
 "the parent document, and so on. The second section, the <emphasis>body</"
 "emphasis>, contains content that will be displayed to the user."
 msgstr ""
-"Um documento <acronym> XHTML </acronym> é normalmente dividido em duas "
-"seções. A primeira seção, chamada de <emphasis> head </emphasis>, contém "
-"meta-informações sobre o documento, como seu título, o nome do autor, o "
-"documento pai e assim por diante. A segunda seção, o <emphasis> corpo </"
-"emphasis>, contém conteúdo que será exibido ao usuário."
+"Um documento <acronym>XHTML</acronym> é normalmente dividido em duas seções. "
+"A primeira seção, chamada de <emphasis>head</emphasis>, contém meta-"
+"informações sobre o documento, como seu título, o nome do autor, o documento "
+"pai e assim por diante. A segunda seção, o<emphasis>body</emphasis>, contém "
+"o conteúdo que será exibido ao usuário."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3536
-#, fuzzy
 msgid ""
 "These sections are indicated with <tag>head</tag> and <tag>body</tag> "
 "elements respectively. These elements are contained within the top-level "
 "<tag>html</tag> element."
 msgstr ""
-"Essas seções são indicadas com os elementos <tag> head </tag> e <tag> body </"
-"tag>, respectivamente. Esses elementos estão contidos no elemento <tag> html "
-"</tag> de nível superior."
+"Essas seções são indicadas com os elementos <tag>head</tag> e <tag>body</"
+"tag>, respectivamente. Esses elementos estão dentro do elemento <tag>html</"
+"tag> de nível superior."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3542
-#, fuzzy
 msgid "Normal <acronym>XHTML</acronym> Document Structure"
-msgstr "Estrutura do documento normal <acronym> XHTML </acronym>"
+msgstr "Estrutura de um Documento <acronym>XHTML</acronym>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3545
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">html xmlns=\"http://www.w3.org/1999/xhtml\"</tag>\n"
 "  <tag class=\"starttag\">head</tag>\n"
@@ -6232,63 +6194,57 @@ msgid ""
 "  <tag class=\"endtag\">body</tag>\n"
 "<tag class=\"endtag\">html</tag>"
 msgstr ""
-"<tag class=\"starttag\"> html xmlns=\"http://www.w3.org/1999/xhtml\" </tag>\n"
-"  <tag class=\"starttag\"> cabeça </tag>\n"
-"<tag class=\"starttag\"> título </tag> <replaceable> O título do documento </"
-"replaceable> <tag class=\"endtag\"> title </tag>\n"
-"  <tag class=\"endtag\"> head </tag>\n"
+"<tag class=\"starttag\">html xmlns=\"http://www.w3.org/1999/xhtml\"</tag>\n"
+"  <tag class=\"starttag\">head</tag>\n"
+"\t  <tag class=\"starttag\">title</tag><replaceable>The Document's Title</"
+"replaceable><tag class=\"endtag\">title</tag>\n"
+"  <tag class=\"endtag\">head</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> body </tag>\n"
+"  <tag class=\"starttag\">body</tag>\n"
 "\n"
-"    …\n"
+"    …\n"
 "\n"
-"  <tag class=\"endtag\"> body </tag>\n"
-"<tag class=\"endtag\"> html </tag>"
+"  <tag class=\"endtag\">body</tag>\n"
+"<tag class=\"endtag\">html</tag>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3560
 #: book.translate.xml:4704
-#, fuzzy
 msgid "Block Elements"
-msgstr "Elementos de bloco"
+msgstr "Elementos Block"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3563
-#, fuzzy
 msgid "Headings"
 msgstr "Cabeçalhos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3565
-#, fuzzy
 msgid ""
 "<acronym>XHTML</acronym> has tags to denote headings in the document at up "
 "to six different levels."
 msgstr ""
-"<acronym> XHTML </acronym> tem tags para indicar títulos no documento em até "
+"<acronym>XHTML</acronym> tem tags para indicar títulos no documento em até "
 "seis níveis diferentes."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3568
-#, fuzzy
 msgid ""
 "The largest and most prominent heading is <tag>h1</tag>, then <tag>h2</tag>, "
 "continuing down to <tag>h6</tag>."
 msgstr ""
-"O maior e mais importante título é <tag> h1 </tag>, depois <tag> h2 </tag>, "
-"continuando até <tag> h6 </tag>."
+"O maior e mais importante título é <tag>h1</tag>, depois <tag>h2</tag>, "
+"seguindo até <tag>h6</tag>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3572
-#, fuzzy
 msgid "The element's content is the text of the heading."
 msgstr "O conteúdo do elemento é o texto do cabeçalho."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3575
-#, fuzzy
 msgid "<tag>h1</tag>, <tag>h2</tag>, and Other Header Tags"
-msgstr "<tag> h1 </tag>, <tag> h2 </tag> e outros tags de cabeçalho"
+msgstr "<tag>h1</tag>, <tag>h2</tag> e Outras Tags de Cabeçalho"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3578
@@ -6333,13 +6289,12 @@ msgstr "<tag> h1 </tag>, <tag> h2 </tag> e outros tags de cabeçalho"
 #: book.translate.xml:6239
 #: book.translate.xml:6719
 #: book.translate.xml:6735
-#, fuzzy
 msgid "Usage:"
 msgstr "Uso:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3580
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">h1</tag>First section<tag class=\"endtag\">h1</tag>\n"
 "\n"
@@ -6360,101 +6315,93 @@ msgid ""
 "\n"
 "&lt;!-- Content for the second section goes here --&gt;"
 msgstr ""
-"<tag class=\"starttag\"> h1 </tag> Primeira seção <tag class=\"endtag\"> h1 "
-"</tag>\n"
+"<tag class=\"starttag\">h1</tag>First section<tag class=\"endtag\">h1</tag>\n"
 "\n"
-"&lt;! - Introdução do documento vai aqui - &gt;\n"
+"&lt;!-- Document introduction goes here --&gt;\n"
 "\n"
-"<tag class=\"starttag\"> h2 </tag> Este é o cabeçalho da primeira seção <tag "
-"class=\"endtag\"> h2 </tag>\n"
+"<tag class=\"starttag\">h2</tag>This is the heading for the first "
+"section<tag class=\"endtag\">h2</tag>\n"
 "\n"
-"&lt;! - O conteúdo da primeira seção vai aqui - &gt;\n"
+"&lt;!-- Content for the first section goes here --&gt;\n"
 "\n"
-"<tag class=\"starttag\"> h3 </tag> Este é o cabeçalho da primeira subseção "
-"<tag class=\"endtag\"> h3 </tag>\n"
+"<tag class=\"starttag\">h3</tag>This is the heading for the first sub-"
+"section<tag class=\"endtag\">h3</tag>\n"
 "\n"
-"&lt;! - O conteúdo da primeira subseção segue aqui - &gt;\n"
+"&lt;!-- Content for the first sub-section goes here --&gt;\n"
 "\n"
-"<tag class=\"starttag\"> h2 </tag> Este é o cabeçalho da segunda seção <tag "
-"class=\"endtag\"> h2 </tag>\n"
+"<tag class=\"starttag\">h2</tag>This is the heading for the second "
+"section<tag class=\"endtag\">h2</tag>\n"
 "\n"
-"&lt;! - O conteúdo da segunda seção vai aqui - &gt;"
+"&lt;!-- Content for the second section goes here --&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3597
-#, fuzzy
 msgid ""
 "Generally, an <acronym>XHTML</acronym> page should have one first level "
 "heading (<tag>h1</tag>). This can contain many second level headings "
 "(<tag>h2</tag>), which can in turn contain many third level headings. Do not "
 "leave gaps in the numbering."
 msgstr ""
-"Geralmente, uma página <acronym> XHTML </acronym> deve ter um título de "
-"primeiro nível (<tag> h1 </tag>). Isso pode conter muitos títulos de segundo "
-"nível (<tag> h2 </tag>), que por sua vez podem conter muitos cabeçalhos de "
+"Geralmente, uma página <acronym>XHTML</acronym> deve ter um título de "
+"primeiro nível (<tag>h1</tag>). Nela pode conter muitos títulos de segundo "
+"nível (<tag>h2</tag>), que por sua vez podem conter muitos cabeçalhos de "
 "terceiro nível. Não deixe lacunas na numeração."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3605
 #: book.translate.xml:4707
-#, fuzzy
 msgid "Paragraphs"
 msgstr "Parágrafos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3607
-#, fuzzy
 msgid ""
 "<acronym>XHTML</acronym> supports a single paragraph element, <tag>p</tag>."
 msgstr ""
-"O <acronym> XHTML </acronym> suporta um único elemento de parágrafo, <tag> p "
-"</tag>."
+"O <acronym>XHTML</acronym> suporta um único elemento de parágrafo, <tag>p</"
+"tag>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3611
-#, fuzzy
 msgid "<tag>p</tag> Example"
-msgstr "<tag> p </tag> Exemplo"
+msgstr "Exemplo <tag>p</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>This is a paragraph.  It can contain just "
 "about any\n"
 "  other element.<tag class=\"endtag\">p</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Este é um parágrafo. Pode conter "
-"praticamente qualquer\n"
-"  outro elemento <tag class=\"endtag\"> p </tag>"
+"<tag class=\"starttag\">p</tag>This is a paragraph.  It can contain just "
+"about any\n"
+"  other element.<tag class=\"endtag\">p</tag>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3621
 #: book.translate.xml:4736
-#, fuzzy
 msgid "Block Quotations"
-msgstr "Bloquear Cotações"
+msgstr "Bloco de Citações"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3623
-#, fuzzy
 msgid ""
 "A block quotation is an extended quotation from another document that will "
 "appear in a separate paragraph."
 msgstr ""
-"Uma cotação de bloco é uma cotação estendida de outro documento que "
-"aparecerá em um parágrafo separado."
+"Um bloco de citação é uma citação estendida de outro documento que aparecerá "
+"em um parágrafo separado."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3627
 #: book.translate.xml:4747
-#, fuzzy
 msgid "<tag>blockquote</tag> Example"
-msgstr "<tag> blockquote </tag> Exemplo"
+msgstr "Exemplo <tag>blockquote</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3631
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>A small excerpt from the US Constitution:<tag "
 "class=\"endtag\">p</tag>\n"
@@ -6467,36 +6414,33 @@ msgid ""
 "  Posterity, do ordain and establish this Constitution for the\n"
 "  United States of America.<tag class=\"endtag\">blockquote</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Um pequeno trecho da Constituição dos EUA: "
-"<tag class=\"endtag\"> p </tag>\n"
+"<tag class=\"starttag\">p</tag>A small excerpt from the US Constitution:<tag "
+"class=\"endtag\">p</tag>\n"
 "\n"
-"<tag class=\"starttag\"> blockquote </tag> Nós, o povo dos Estados Unidos, a "
-"fim de formar\n"
-"  uma união mais perfeita, estabelecer a justiça, assegurar\n"
-"  Tranquilidade, providenciar a defesa comum, promover o interesse geral\n"
-"  Bem-estar, e garantir as Bênçãos da Liberdade para nós e para o nosso\n"
-"  Posteridade, ordenar e estabelecer esta Constituição para o\n"
-"  Estados Unidos da América <tag class=\"endtag\"> blockquote </tag>"
+"<tag class=\"starttag\">blockquote</tag>We the People of the United States, "
+"in Order to form\n"
+"  a more perfect Union, establish Justice, insure domestic\n"
+"  Tranquility, provide for the common defence, promote the general\n"
+"  Welfare, and secure the Blessings of Liberty to ourselves and our\n"
+"  Posterity, do ordain and establish this Constitution for the\n"
+"  United States of America.<tag class=\"endtag\">blockquote</tag>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3643
-#, fuzzy
 msgid "Lists"
 msgstr "Listas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3645
-#, fuzzy
 msgid ""
 "<acronym>XHTML</acronym> can present the user with three types of lists: "
 "ordered, unordered, and definition."
 msgstr ""
-"O <acronym> XHTML </acronym> pode apresentar ao usuário três tipos de listas:"
-" ordenadas, desordenadas e de definição."
+"O <acronym>XHTML</acronym> pode apresentar ao usuário três tipos de listas: "
+"ordenadas, desordenadas e de definição."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3648
-#, fuzzy
 msgid ""
 "Entries in an ordered list will be numbered, while entries in an unordered "
 "list will be preceded by bullet points. Definition lists have two sections "
@@ -6510,50 +6454,46 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3654
-#, fuzzy
 msgid ""
 "Ordered lists are indicated by the <tag>ol</tag> element, unordered lists by "
 "the <tag>ul</tag> element, and definition lists by the <tag>dl</tag> element."
 ""
 msgstr ""
-"As listas ordenadas são indicadas pelo elemento <tag> ol </tag>, listas não "
-"ordenadas pelo elemento <tag> ul </tag> e listas de definição pelo elemento "
-"<tag> dl </tag>."
+"As listas ordenadas são indicadas pelo elemento <tag>ol</tag>, listas não "
+"ordenadas pelo elemento <tag>ul</tag> e listas de definição pelo elemento "
+"<tag>dl</tag>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3659
-#, fuzzy
 msgid ""
 "Ordered and unordered lists contain listitems, indicated by the <tag>li</"
 "tag> element. A listitem can contain textual content, or it may be further "
 "wrapped in one or more <tag>p</tag> elements."
 msgstr ""
 "As listas ordenadas e não ordenadas contêm listitens, indicadas pelo "
-"elemento <tag> li </tag>. Um listitem pode conter conteúdo textual ou pode "
-"ser envolvido em um ou mais elementos <tag> p </tag>."
+"elemento <tag>li</tag>. Um listitem pode conter conteúdo textual ou pode ser "
+"envoltos em um ou mais elementos <tag>p</tag>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3664
-#, fuzzy
 msgid ""
 "Definition lists contain definition terms (<tag>dt</tag>) and definition "
 "descriptions (<tag>dd</tag>). A definition term can only contain inline "
 "elements. A definition description can contain other block elements."
 msgstr ""
-"As listas de definições contêm termos de definição (<tag> dt </tag>) e "
-"descrições de definição (<tag> dd </tag>). Um termo de definição pode conter "
+"As listas de definições contêm termos de definição (<tag>dt</tag>) e "
+"descrições de definição (<tag>dd</tag>). Um termo de definição pode conter "
 "apenas elementos in-line. Uma descrição de definição pode conter outros "
 "elementos de bloco."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3671
-#, fuzzy
 msgid "<tag>ul</tag> and <tag>ol</tag> Example"
-msgstr "<tag> ul </tag> e <tag> ol </tag> Exemplo"
+msgstr "Exemplo <tag>ul</tag> and <tag>ol</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3676
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>An unordered list.  Listitems will probably "
 "be\n"
@@ -6623,13 +6563,12 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:3704
-#, fuzzy
 msgid "Definition Lists with <tag>dl</tag>"
-msgstr "Listas de definição com <tag> dl </tag>"
+msgstr "Listas de Definição com <tag>dl</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3708
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">dl</tag>\n"
 "  <tag class=\"starttag\">dt</tag>Term 1<tag class=\"endtag\">dt</tag>\n"
@@ -6651,74 +6590,64 @@ msgid ""
 "of definition 3.<tag class=\"endtag\">p</tag><tag class=\"endtag\">dd</tag>\n"
 "<tag class=\"endtag\">dl</tag>"
 msgstr ""
-"<tag class=\"starttag\"> dl </tag>\n"
-"  <tag class=\"starttag\"> dt </tag> Termo 1 <tag class=\"endtag\"> dt </"
-"tag>\n"
+"<tag class=\"starttag\">dl</tag>\n"
+"  <tag class=\"starttag\">dt</tag>Term 1<tag class=\"endtag\">dt</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> dd </tag> <tag class=\"starttag\"> p </tag> "
-"Parágrafo 1 da definição 1. <tag class=\"endtag\"> p </tag>\n"
+"  <tag class=\"starttag\">dd</tag><tag class=\"starttag\">p</tag>Paragraph 1 "
+"of definition 1.<tag class=\"endtag\">p</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> p </tag> Parágrafo 2 da definição 1. <tag class="
-"\"endtag\"> p </tag> <tag class=\"endtag\"> dd </tag>\n"
+"    <tag class=\"starttag\">p</tag>Paragraph 2 of definition 1.<tag class="
+"\"endtag\">p</tag><tag class=\"endtag\">dd</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> dt </tag> Termo 2 <tag class=\"endtag\"> dt </"
-"tag>\n"
+"  <tag class=\"starttag\">dt</tag>Term 2<tag class=\"endtag\">dt</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> dd </tag> <tag class=\"starttag\"> p </tag> "
-"Parágrafo 1 da definição 2. <tag class=\"endtag\"> p </tag> <tag class=\" "
-"endtag \"> dd </tag>\n"
+"  <tag class=\"starttag\">dd</tag><tag class=\"starttag\">p</tag>Paragraph 1 "
+"of definition 2.<tag class=\"endtag\">p</tag><tag class=\"endtag\">dd</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> dt </tag> Termo 3 <tag class=\"endtag\"> dt </"
-"tag>\n"
+"  <tag class=\"starttag\">dt</tag>Term 3<tag class=\"endtag\">dt</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> dd </tag> <tag class=\"starttag\"> p </tag> "
-"Parágrafo 1 da definição 3. <tag class=\"endtag\"> p </tag> <tag class=\" "
-"endtag \"> dd </tag>\n"
-"<tag class=\"endtag\"> dl </tag>"
+"  <tag class=\"starttag\">dd</tag><tag class=\"starttag\">p</tag>Paragraph 1 "
+"of definition 3.<tag class=\"endtag\">p</tag><tag class=\"endtag\">dd</tag>\n"
+"<tag class=\"endtag\">dl</tag>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3727
-#, fuzzy
 msgid "Pre-formatted Text"
-msgstr "Texto pré-formatado"
+msgstr "Texto Pré-formatado"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3729
-#, fuzzy
 msgid ""
 "Pre-formatted text is shown to the user exactly as it is in the file. Text "
 "is shown in a fixed font. Multiple spaces and line breaks are shown exactly "
 "as they are in the file."
 msgstr ""
-"Texto pré-formatado é mostrado para o usuário exatamente como está no "
+"Texto pré-formatado é apresentado para o usuário exatamente como está no "
 "arquivo. O texto é mostrado em uma fonte fixa. Vários espaços e quebras de "
 "linha são mostrados exatamente como estão no arquivo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3734
-#, fuzzy
 msgid "Wrap pre-formatted text in the <tag>pre</tag> element."
-msgstr "Embrulhe o texto pré-formatado no elemento <tag> pre </tag>."
+msgstr "Deixe o texto pré-formatado no elemento <tag>pre</tag>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3738
-#, fuzzy
 msgid "<tag>pre</tag> Example"
-msgstr "<tag> pre </tag> Exemplo"
+msgstr "Exemplo <tag>pre</tag>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3740
-#, fuzzy
 msgid ""
 "For example, the <tag>pre</tag> tags could be used to mark up an email "
 "message:"
 msgstr ""
-"Por exemplo, as tags <tag> pre </tag> podem ser usadas para marcar uma "
+"Por exemplo, as tags <tag>pre</tag> podem ser usadas para marcar uma "
 "mensagem de email:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3743
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">pre</tag>  From: nik@FreeBSD.org\n"
 "  To: freebsd-doc@FreeBSD.org\n"
@@ -6733,22 +6662,21 @@ msgid ""
 "\n"
 "  N<tag class=\"endtag\">pre</tag>"
 msgstr ""
-"<tag class=\"starttag\"> pre </tag> De: nik@FreeBSD.org\n"
-"  Para: freebsd-doc@FreeBSD.org\n"
-"  Assunto: Nova documentação disponível\n"
+"<tag class=\"starttag\">pre</tag>  From: nik@FreeBSD.org\n"
+"  To: freebsd-doc@FreeBSD.org\n"
+"  Subject: New documentation available\n"
 "\n"
-"  Existe uma nova cópia do meu manual para os contribuidores do FreeBSD\n"
-"  Projeto de Documentação disponível em\n"
+"  There is a new copy of my primer for contributors to the FreeBSD\n"
+"  Documentation Project available at\n"
 "\n"
-"    &amp;lt;URL:https://people.FreeBSD.org/~nik/primer/index.html&amp;gt;\n"
+"    &amp;lt;URL:https://people.FreeBSD.org/~nik/primer/index.html&amp;gt;\n"
 "\n"
-"  Comentários apreciados.\n"
+"  Comments appreciated.\n"
 "\n"
-"  N <tag class=\"endtag\"> pre </tag>"
+"  N<tag class=\"endtag\">pre</tag>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3756
-#, fuzzy
 msgid ""
 "Keep in mind that <literal>&lt;</literal> and <literal>&amp;</literal> still "
 "are recognized as special characters in pre-formatted text. This is why the "
@@ -6758,25 +6686,22 @@ msgid ""
 "characters that may appear in text copied from a plain-text source, like an "
 "email message or program code."
 msgstr ""
-"Tenha em mente que <literal> &lt; </literal> e <literal> &amp;</literal> "
-"ainda são reconhecidos como caracteres especiais no texto pré-formatado. É "
-"por isso que o exemplo mostrado teve que usar <literal> &amp;lt; </literal> "
-"em vez de <literal> &lt; </literal>. Para consistência, o <literal> &amp;gt; "
-"</literal> também foi usado no lugar de <literal> &gt; </literal>. Fique "
-"atento para os caracteres especiais que podem aparecer no texto copiado de "
-"uma fonte de texto simples, como uma mensagem de e-mail ou código de "
-"programa."
+"Tenha em mente que <literal>&lt;</literal> e <literal>&amp;</literal> ainda "
+"são reconhecidos como caracteres especiais no texto pré-formatado. É por "
+"isso que o exemplo mostrado teve que usar <literal>&amp;lt;</literal> em vez "
+"de <literal>&lt;</literal>. Para consistência, o <literal>&amp;gt;</literal> "
+"também foi usado no lugar de <literal>&gt;</literal>. Fique atento com os "
+"caracteres especiais que podem aparecer no texto copiado de uma fonte de "
+"texto simples, como uma mensagem de e-mail ou código de programa."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3769
 #: book.translate.xml:5238
-#, fuzzy
 msgid "Tables"
 msgstr "Tabelas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3771
-#, fuzzy
 msgid ""
 "Mark up tabular information using the <tag>table</tag> element. A table "
 "consists of one or more table rows (<tag>tr</tag>), each containing one or "
@@ -6785,23 +6710,22 @@ msgid ""
 "(this nesting can repeat indefinitely). If the cell only contains one "
 "paragraph then the <tag>p</tag>element is not needed."
 msgstr ""
-"Marque as informações tabulares usando o elemento <tag> table </tag>. Uma "
-"tabela consiste em uma ou mais linhas da tabela (<tag> tr </tag>), cada uma "
-"contendo uma ou mais células de dados da tabela (<tag> td </tag>). Cada "
-"célula pode conter outros elementos de bloco, como parágrafos ou listas. "
-"Também pode conter outra tabela (esse aninhamento pode repetir "
-"indefinidamente). Se a célula contiver apenas um parágrafo, o elemento <tag> "
-"p </tag> não será necessário."
+"Marque as informações tabulares usando o elemento <tag>table</tag>. Uma "
+"tabela consiste em uma ou mais linhas da tabela (<tag>tr</tag>), cada uma "
+"contendo uma ou mais células de dados da tabela (<tag>td</tag>). Cada célula "
+"pode conter outros elementos de bloco, como parágrafos ou listas. Também "
+"pode conter outra tabela (esse aninhamento pode repetir indefinidamente). Se "
+"a célula contiver apenas um parágrafo, o elemento <tag>p</tag> não será "
+"necessário."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3781
-#, fuzzy
 msgid "Simple Use of <tag>table</tag>"
-msgstr "Uso simples da tabela <tag> </tag>"
+msgstr "Uso Simples de <tag>table</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3785
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>This is a simple 2x2 table.<tag class="
 "\"endtag\">p</tag>\n"
@@ -6824,49 +6748,46 @@ msgid ""
 "  <tag class=\"endtag\">tr</tag>\n"
 "<tag class=\"endtag\">table</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Esta é uma simples tabela 2x2. <tag class="
-"\"endtag\"> p </tag>\n"
+"<tag class=\"starttag\">p</tag>This is a simple 2x2 table.<tag class="
+"\"endtag\">p</tag>\n"
 "\n"
-"<tag class=\"starttag\"> tabela </tag>\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td </tag> Célula superior esquerda <tag class="
-"\"endtag\"> td </tag>\n"
+"<tag class=\"starttag\">table</tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td</tag>Top left cell<tag class=\"endtag\">td</"
+"tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula superior direita <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
+"    <tag class=\"starttag\">td</tag>Top right cell<tag class=\"endtag\">td</"
+"tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior esquerda <tag class="
-"\"endtag\"> td </tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td</tag>Bottom left cell<tag class="
+"\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior direita <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
-"<tag class=\"endtag\"> tabela </tag>"
+"    <tag class=\"starttag\">td</tag>Bottom right cell<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
+"<tag class=\"endtag\">table</tag>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3802
-#, fuzzy
 msgid ""
 "A cell can span multiple rows and columns by adding the <tag class="
 "\"attribute\">rowspan</tag> or <tag class=\"attribute\">colspan</tag> "
 "attributes with values for the number of rows or columns to be spanned."
 msgstr ""
 "Uma célula pode abranger várias linhas e colunas adicionando os atributos "
-"<tag class=\"attribute\"> rowspan </tag> ou <tag class=\"attribute\"> "
-"colspan </tag> com valores para o número de linhas ou colunas a serem "
-"abrangido."
+"<tag class=\"attribute\">rowspan</tag> ou <tag class=\"attribute\">colspan</"
+"tag> com valores para o número de linhas ou colunas a serem abrangido."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3808
-#, fuzzy
 msgid "Using <tag class=\"attribute\">rowspan</tag>"
-msgstr "Usando <tag class=\"attribute\"> rowspan </tag>"
+msgstr "Usando <tag class=\"attribute\">rowspan</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3813
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>One tall thin cell on the left, two short "
 "cells next to\n"
@@ -6886,34 +6807,32 @@ msgid ""
 "  <tag class=\"endtag\">tr</tag>\n"
 "<tag class=\"endtag\">table</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Uma célula alta e fina à esquerda, duas "
-"células curtas ao lado\n"
-"  à direita <tag class=\"endtag\"> p </tag>\n"
+"<tag class=\"starttag\">p</tag>One tall thin cell on the left, two short "
+"cells next to\n"
+"  it on the right.<tag class=\"endtag\">p</tag>\n"
 "\n"
-"<tag class=\"starttag\"> tabela </tag>\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td rowspan=\"2\" </tag> Longa e fina <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
+"<tag class=\"starttag\">table</tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td rowspan=\"2\"</tag>Long and thin<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td </tag> Célula superior <tag class="
-"\"endtag\"> td </tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td</tag>Top cell<tag class=\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
-"<tag class=\"endtag\"> tabela </tag>"
+"    <tag class=\"starttag\">td</tag>Bottom cell<tag class=\"endtag\">td</"
+"tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
+"<tag class=\"endtag\">table</tag>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:3830
-#, fuzzy
 msgid "Using <tag class=\"attribute\">colspan</tag>"
-msgstr "Usando <tag class=\"attribute\"> colspan </tag>"
+msgstr "Usando <tag class=\"attribute\">colspan</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3835
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>One long cell on top, two short cells below "
 "it.<tag class=\"endtag\">p</tag>\n"
@@ -6933,37 +6852,36 @@ msgid ""
 "  <tag class=\"endtag\">tr</tag>\n"
 "<tag class=\"endtag\">table</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Uma célula longa no topo, duas células "
-"curtas abaixo dela <tag class=\"endtag\"> p </tag>\n"
+"<tag class=\"starttag\">p</tag>One long cell on top, two short cells below "
+"it.<tag class=\"endtag\">p</tag>\n"
 "\n"
-"<tag class=\"starttag\"> tabela </tag>\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td colspan=\"2\" </tag> Célula superior <tag "
-"class=\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
+"<tag class=\"starttag\">table</tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td colspan=\"2\"</tag>Top cell<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior esquerda <tag class="
-"\"endtag\"> td </tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td</tag>Bottom left cell<tag class="
+"\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior direita <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
-"<tag class=\"endtag\"> tabela </tag>"
+"    <tag class=\"starttag\">td</tag>Bottom right cell<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
+"<tag class=\"endtag\">table</tag>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:3851
-#, fuzzy
 msgid ""
 "Using <tag class=\"attribute\">rowspan</tag> and <tag class="
 "\"attribute\">colspan</tag> Together"
 msgstr ""
-"Usando <tag class=\"attribute\"> rowspan </tag> e <tag class=\"attribute\"> "
-"colspan </tag> juntos"
+"Usando <tag class=\"attribute\">rowspan</tag> e <tag class="
+"\"attribute\">colspan</tag> Juntos"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3857
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>On a 3x3 grid, the top left block is a 2x2 "
 "set of\n"
@@ -7000,70 +6918,66 @@ msgid ""
 "  <tag class=\"endtag\">tr</tag>\n"
 "<tag class=\"endtag\">table</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Em uma grade de 3x3, o bloco superior "
-"esquerdo é um conjunto de 2x2\n"
-"  células mescladas em uma. As outras células são normais <tag class="
-"\"endtag\"> p </tag>\n"
+"<tag class=\"starttag\">p</tag>On a 3x3 grid, the top left block is a 2x2 "
+"set of\n"
+"  cells merged into one.  The other cells are normal.<tag class="
+"\"endtag\">p</tag>\n"
 "\n"
-"<tag class=\"starttag\"> tabela </tag>\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td colspan=\"2\" filas=\"2\" </tag> Célula "
-"grande esquerda superior <tag class=\"endtag\"> td </tag>\n"
+"<tag class=\"starttag\">table</tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td colspan=\"2\" rowspan=\"2\"</tag>Top left "
+"large cell<tag class=\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula superior direita <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
+"    <tag class=\"starttag\">td</tag>Top right cell<tag class=\"endtag\">td</"
+"tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    &lt;! - Porque a célula grande à esquerda se funde em\n"
-"         esta linha, o primeiro &lt; td &gt; ocorrerá em seu\n"
-"         certo - &gt;\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    &lt;!-- Because the large cell on the left merges into\n"
+"         this row, the first &lt;td&gt; will occur on its\n"
+"         right --&gt;\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula do meio direito <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
+"    <tag class=\"starttag\">td</tag>Middle right cell<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
 "\n"
-"  <tag class=\"starttag\"> tr </tag>\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior esquerda <tag class="
-"\"endtag\"> td </tag>\n"
+"  <tag class=\"starttag\">tr</tag>\n"
+"    <tag class=\"starttag\">td</tag>Bottom left cell<tag class="
+"\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula intermediária <tag class="
-"\"endtag\"> td </tag>\n"
+"    <tag class=\"starttag\">td</tag>Bottom middle cell<tag class="
+"\"endtag\">td</tag>\n"
 "\n"
-"    <tag class=\"starttag\"> td </tag> Célula inferior direita <tag class="
-"\"endtag\"> td </tag>\n"
-"  <tag class=\"endtag\"> tr </tag>\n"
-"<tag class=\"endtag\"> tabela </tag>"
+"    <tag class=\"starttag\">td</tag>Bottom right cell<tag class="
+"\"endtag\">td</tag>\n"
+"  <tag class=\"endtag\">tr</tag>\n"
+"<tag class=\"endtag\">table</tag>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3888
 #: book.translate.xml:5464
-#, fuzzy
 msgid "In-line Elements"
-msgstr "Elementos in-line"
+msgstr "Elementos In-line"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3891
 #: book.translate.xml:5467
-#, fuzzy
 msgid "Emphasizing Information"
-msgstr "Enfatizando a informação"
+msgstr "Realçando Informação"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3893
-#, fuzzy
 msgid ""
 "Two levels of emphasis are available in <acronym>XHTML</acronym>, <tag>em</"
 "tag> and <tag>strong</tag>. <tag>em</tag> is for a normal level of emphasis "
 "and <tag>strong</tag> indicates stronger emphasis."
 msgstr ""
-"Dois níveis de ênfase estão disponíveis em <acronym> XHTML </acronym>, <tag> "
-"em </tag> e <tag> strong </tag>. <tag> em </tag> é para um nível normal de "
-"ênfase e <tag> strong </tag> indica ênfase mais forte."
+"Dois níveis de ênfase estão disponíveis em <acronym>XHTML</acronym>, "
+"<tag>em</tag> e <tag>strong</tag>. <tag>em</tag> é para um nível normal de "
+"ênfase e <tag>strong</tag> indica ênfase mais forte."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3899
-#, fuzzy
 msgid ""
 "<tag>em</tag> is typically rendered in italic and <tag>strong</tag> is "
 "rendered in bold. This is not always the case, and should not be relied upon."
@@ -7071,79 +6985,72 @@ msgid ""
 "information, and stylesheets are later applied to them. Think of semantics, "
 "not formatting, when using these tags."
 msgstr ""
-"O <tag> em </tag> é normalmente renderizado em itálico e o <tag> strong </"
-"tag> é renderizado em negrito. Isso nem sempre é o caso e não deve ser "
-"confiável. De acordo com as práticas recomendadas, as páginas da Web "
+"<tag>em</tag> é normalmente renderizado em itálico e o <tag>strong</tag> é "
+"renderizado em negrito. Isso nem sempre assim e não deve ser considerado ao "
+"pé da letra. De acordo com as práticas recomendadas, as páginas web "
 "armazenam apenas informações estruturais e semânticas, e as folhas de estilo "
 "são aplicadas posteriormente a elas. Pense na semântica, não na formatação, "
 "ao usar essas tags."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3908
-#, fuzzy
 msgid "<tag>em</tag> and <tag>strong</tag> Example"
-msgstr "<tag> em </tag> e <tag> strong </tag> Exemplo"
+msgstr "Exemplo <tag>em</tag> e <tag>strong</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3913
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag><tag class=\"starttag\">em</tag>This<tag "
 "class=\"endtag\">em</tag> has been emphasized, while\n"
 "  <tag class=\"starttag\">strong</tag>this<tag class=\"endtag\">strong</tag> "
 "has been strongly emphasized.<tag class=\"endtag\">p</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> <tag class=\"starttag\"> em </tag> Essa "
-"<tag class=\"endtag\"> em </tag> foi enfatizada, enquanto\n"
-"  <tag class=\"starttag\"> strong </tag> este <tag class=\"endtag\"> strong "
-"</tag> foi fortemente enfatizado. <tag class=\"endtag\"> p </tag>"
+"<tag class=\"starttag\">p</tag><tag class=\"starttag\">em</tag>This<tag "
+"class=\"endtag\">em</tag> has been emphasized, while\n"
+"  <tag class=\"starttag\">strong</tag>this<tag class=\"endtag\">strong</tag> "
+"has been strongly emphasized.<tag class=\"endtag\">p</tag>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3919
-#, fuzzy
 msgid "Indicating Fixed-Pitch Text"
-msgstr "Indicando texto de passo fixo"
+msgstr "Indicando Texto Fixo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3921
-#, fuzzy
 msgid ""
 "Content that should be rendered in a fixed pitch (typewriter) typeface is "
 "tagged with <tag>tt</tag> (for <quote>teletype</quote>)."
 msgstr ""
-"O conteúdo que deve ser renderizado em um tipo fixo de letra (typewriter) é "
-"marcado com <tag> tt </tag> (para <quote> teletype </quote>)."
+"O conteúdo que deve ser renderizado em um tipo fixo de texto (typewriter) é "
+"marcado com <tag>tt</tag> (para <quote>teletype</quote>)."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3926
-#, fuzzy
 msgid "<tag>tt</tag> Example"
-msgstr "<tag> tt </tag> Exemplo"
+msgstr "Exemplo <tag>tt</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3930
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>Many system settings are stored in\n"
 "  <tag class=\"starttag\">tt</tag>/etc<tag class=\"endtag\">tt</tag>.<tag "
 "class=\"endtag\">p</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Muitas configurações do sistema são "
-"armazenadas em\n"
-"  <tag class=\"starttag\"> tt </tag> /etc <tag class=\"endtag\"> tt </tag>. "
-"<tag class=\"endtag\"> p </tag>"
+"<tag class=\"starttag\">p</tag>Many system settings are stored in\n"
+"  <tag class=\"starttag\">tt</tag>/etc<tag class=\"endtag\">tt</tag>.<tag "
+"class=\"endtag\">p</tag>"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:3936
 #: book.translate.xml:6557
-#, fuzzy
 msgid "Links"
 msgstr "Links"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3939
-#, fuzzy
 msgid "Links are also inline elements."
 msgstr "Links também são elementos in-line."
 
@@ -7151,13 +7058,11 @@ msgstr "Links também são elementos in-line."
 #. (itstool) path: sect2/title
 #: book.translate.xml:3943
 #: book.translate.xml:6652
-#, fuzzy
 msgid "Linking to Other Documents on the Web"
-msgstr "Vinculando a outros documentos na Web"
+msgstr "Linkando com Outros Documentos na Web"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3945
-#, fuzzy
 msgid ""
 "A link points to the <acronym>URL</acronym> of a document on the web. The "
 "link is indicated with <tag>a</tag>, and the <tag class=\"attribute\">href</"
@@ -7165,46 +7070,41 @@ msgid ""
 "The content of the element becomes the link, indicated to the user by "
 "showing it in a different color or with an underline."
 msgstr ""
-"Um link aponta para o <acronym> URL </acronym> de um documento na web. O "
-"link é indicado com <tag> a </tag>, e o atributo <tag class=\"attribute\"> "
-"href </tag> contém o <acronym> URL </acronym> do documento de destino. O "
-"conteúdo do elemento se torna o link, indicado ao usuário, mostrando-o em "
-"uma cor diferente ou com um sublinhado."
+"Um link aponta para uma <acronym>URL</acronym> de um documento na web. O "
+"link é indicado com a <tag>a</tag>, e o atributo <tag class="
+"\"attribute\">href</tag> contém a <acronym>URL</acronym> do documento de "
+"destino. O conteúdo do elemento se torna o link, indicado ao usuário, "
+"mostrando-o em uma cor diferente ou com um sublinhado."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3955
-#, fuzzy
 msgid "Using <tag class=\"starttag\">a href=\"...\"</tag>"
-msgstr "Usando <tag class=\"starttag\"> a href=\"...\" </tag>"
+msgstr "Usando <tag class=\"starttag\">a href=\"...\"</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3960
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>More information is available at the\n"
 "  <tag class=\"starttag\">a href=\"http://www.&amp;os;.org/\"</tag>&amp;os; "
 "web site<tag class=\"endtag\">a</tag>.<tag class=\"endtag\">p</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p </tag> Mais informações estão disponíveis no\n"
-"  <tag class=\"starttag\"> um href=\"http: //www.&amp; os; .org /\" </tag> "
-"&amp;os; site da web <tag class=\"endtag\"> a </tag>. <tag class=\"endtag\"> "
-"p </tag>"
+"<tag class=\"starttag\">p</tag>More information is available at the\n"
+"  <tag class=\"starttag\">a href=\"http://www.&amp;os;.org/\"</tag>&amp;os; "
+"web site<tag class=\"endtag\">a</tag>.<tag class=\"endtag\">p</tag>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3964
-#, fuzzy
 msgid "This link always takes the user to the top of the linked document."
-msgstr "Esse link sempre leva o usuário ao topo do documento vinculado."
+msgstr "Esse link sempre leva o usuário ao topo do documento que foi linkado."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3969
-#, fuzzy
 msgid "Linking to Specific Parts of Documents"
-msgstr "Vinculando a partes específicas de documentos"
+msgstr "Linkando com Partes Específicas de Documentos"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3971
-#, fuzzy
 msgid ""
 "To link to a specific point within a document, that document must include an "
 "<emphasis>anchor</emphasis> at the desired point. Anchors are included by "
@@ -7213,66 +7113,62 @@ msgid ""
 "\"attribute\">id</tag> attribute of a <tag class=\"element\">p</tag> element."
 ""
 msgstr ""
-"Para ligar a um ponto específico dentro de um documento, esse documento deve "
-"incluir uma <emphasis> âncora </emphasis> no ponto desejado. As âncoras são "
-"incluídas configurando o atributo <tag class=\"attribute\"> id </tag> de um "
-"elemento para um nome. Este exemplo cria uma âncora definindo o atributo "
-"<tag class=\"attribute\"> id </tag> de um elemento <tag class=\"element\"> p "
-"</tag>."
+"Para linkar a um ponto específico dentro de um documento, esse documento "
+"deve incluir uma <emphasis>âncora</emphasis> no ponto desejado. As âncoras "
+"são incluídas configurando o atributo <tag class=\"attribute\">id</tag> de "
+"um elemento para um nome. Este exemplo cria uma âncora definindo o atributo "
+"<tag class=\"attribute\">id</tag> de um elemento <tag class=\"element\">p</"
+"tag>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3981
-#, fuzzy
 msgid "Creating an Anchor"
-msgstr "Criando uma âncora"
+msgstr "Criando uma Âncora"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3985
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p id=\"samplepara\"</tag>This paragraph can be "
 "referenced\n"
 "  in other links with the name <tag class=\"starttag\">tt</"
 "tag>samplepara<tag class=\"endtag\">tt</tag>.<tag class=\"endtag\">p</tag>"
 msgstr ""
-"<tag class=\"starttag\"> p id=\"samplepara\" </tag> Este parágrafo pode ser "
-"referenciado\n"
-"  em outros links com o nome <tag class=\"starttag\"> tt </tag> samplepara "
-"<tag class=\"endtag\"> tt </tag>. <tag class=\"endtag\"> p </tag>"
+"<tag class=\"starttag\">p id=\"samplepara\"</tag>This paragraph can be "
+"referenced\n"
+"  in other links with the name <tag class=\"starttag\">tt</"
+"tag>samplepara<tag class=\"endtag\">tt</tag>.<tag class=\"endtag\">p</tag>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3989
-#, fuzzy
 msgid ""
 "Links to anchors are similar to plain links, but include a <literal>#</"
 "literal> symbol and the anchor's <acronym>ID</acronym> at the end of the "
 "<acronym>URL</acronym>."
 msgstr ""
 "Links para âncoras são semelhantes aos links simples, mas incluem um símbolo "
-"<literal> # </literal> e o <acronym> ID </acronym> da âncora no final da "
-"<acronym> URL </acronym>."
+"<literal>#</literal> e o <acronym>ID</acronym> da âncora no final da "
+"<acronym>URL</acronym>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3995
-#, fuzzy
 msgid "Linking to a Named Part of a Different Document"
-msgstr "Vinculando a uma parte nomeada de um documento diferente"
+msgstr "Linkando a uma Parte Nomeada de um Outro Documento"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3998
-#, fuzzy
 msgid ""
 "The <literal>samplepara</literal> example is part of a document called "
 "<filename>foo.html</filename>. A link to that specific paragraph in the "
 "document is constructed in this example."
 msgstr ""
-"O exemplo <literal> samplepara </literal> é parte de um documento chamado "
-"<filename> foo.html </filename>. Um link para esse parágrafo específico no "
+"O exemplo <literal>samplepara</literal> é parte de um documento chamado "
+"<filename>foo.html</filename>. Um link para esse parágrafo específico no "
 "documento é construído neste exemplo."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4003
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>More information can be found in the\n"
 "  <tag class=\"starttag\">a href=\"foo.html#samplepara\"</tag>sample "
@@ -7288,35 +7184,32 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:4008
-#, fuzzy
 msgid ""
 "To link to a named anchor within the same document, omit the document's "
 "<acronym>URL</acronym>, and just use the <literal>#</literal> symbol "
 "followed by the name of the anchor."
 msgstr ""
-"Para vincular-se a uma âncora nomeada no mesmo documento, omita a URL "
-"<acronym> do documento </acronym> e use apenas o símbolo <literal> # </"
+"Para vincular-se a uma âncora nomeada no mesmo documento, omita a  "
+"<acronym>URL</acronym>do documento, e use apenas o símbolo <literal>#</"
 "literal> seguido do nome da âncora."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4014
-#, fuzzy
 msgid "Linking to a Named Part of the Same Document"
-msgstr "Vinculando a uma parte nomeada do mesmo documento"
+msgstr "Linkando a uma Parte Nomeada no Mesmo Documento"
 
 #. (itstool) path: example/para
 #: book.translate.xml:4016
-#, fuzzy
 msgid ""
 "The <literal>samplepara</literal> example resides in this document. To link "
 "to it:"
 msgstr ""
-"O exemplo <literal> samplepara </literal> reside neste documento. Para "
+"O exemplo <literal>samplepara</literal> reside neste documento. Para "
 "vincular a ele:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4019
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<tag class=\"starttag\">p</tag>More information can be found in the\n"
 "  <tag class=\"starttag\">a href=\"#samplepara\"</tag>sample paragraph<tag "
@@ -7330,13 +7223,11 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:4062
-#, fuzzy
 msgid "DocBook Markup"
-msgstr "Marcação DocBook"
+msgstr "DocBook Markup"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4067
-#, fuzzy
 msgid ""
 "This chapter is an introduction to DocBook as it is used for FreeBSD "
 "documentation. DocBook is a large and complex markup system, but the subset "
@@ -7346,30 +7237,28 @@ msgid ""
 "not answer to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
 "listinfo/freebsd-doc\">FreeBSD documentation project mailing list</link>."
 msgstr ""
-"Este capítulo é uma introdução ao DocBook como ele é usado para documentação "
-"do FreeBSD. O DocBook é um sistema de marcação grande e complexo, mas o "
+"Este capítulo é uma introdução ao DocBook e como ele é usado na documentação "
+"do FreeBSD. O DocBook é um sistema de marcação extenso e complexo, mas o "
 "subconjunto descrito aqui abrange as partes mais usadas para a documentação "
 "do FreeBSD. Enquanto um subconjunto moderado é coberto, é impossível "
 "antecipar todas as situações. Por favor, poste questões que este documento "
 "não responde à <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"freebsd-doc\"> lista de discussão do projeto de documentação do FreeBSD </"
+"freebsd-doc\">lista de discussão do projeto de documentação do FreeBSD</"
 "link>."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:4078
-#, fuzzy
 msgid ""
 "A short history can be found under <link xlink:href=\"http://www.oasis-open."
 "org/docbook/intro.shtml#d0e41\">http://www.oasis-open.org/docbook/intro."
 "shtml#d0e41</link>."
 msgstr ""
 "Um breve histórico pode ser encontrado em <link xlink:href=\"http://www."
-"oasis-open.org/docbook/intro.shtml#d0e41\"> http://www.oasis-open.org/"
-"docbook/intro .shtml # d0e41 </link>."
+"oasis-open.org/docbook/intro.shtml#d0e41\">http://www.oasis-open.org/docbook/"
+"intro.shtml#d0e41</link>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4075
-#, fuzzy
 msgid ""
 "DocBook was originally developed by HaL Computer Systems and O'Reilly &amp; "
 "Associates to be a Document Type Definition (<acronym>DTD</acronym>) for "
@@ -7380,79 +7269,72 @@ msgid ""
 "oriented towards markup that describes <emphasis>what</emphasis> something "
 "is, rather than describing <emphasis>how</emphasis> it should be presented."
 msgstr ""
-"DocBook foi originalmente desenvolvido por HaL Computer Systems e O'Reilly "
-"&amp;Associados para ser uma Definição de Tipo de Documento (<acronym> DTD </"
+"DocBook foi originalmente desenvolvido por HaL Computer Systems and O'Reilly "
+"&amp; Associates para ser uma Definição de Tipo de Documento (<acronym>DTD</"
 "acronym>) para escrever documentação técnica <_:footnote-1/>. Desde 1998, "
 "ele é mantido pelo <link xlink:href=\"http://www.oasis-open.org/committees/"
-"tc_home.php?wg_abbrev=docbook\"> Comitê Técnico do DocBook </link>. Como "
-"tal, e ao contrário do LinuxDoc e do <acronym> XHTML </acronym>, o DocBook é "
-"fortemente orientado para a marcação que descreve <emphasis> o que </"
-"emphasis> é, em vez de descrever <emphasis> como </emphasis> deve ser "
+"tc_home.php?wg_abbrev=docbook\">Comitê Técnico do DocBook</link>. Como tal, "
+"e ao contrário do LinuxDoc e do <acronym>XHTML</acronym>, o DocBook é "
+"fortemente orientado para um markup que descreve <emphasis>o que</emphasis> "
+"alguma coisa é, em vez de descrever <emphasis>como</emphasis> deve ser "
 "apresentado."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4086
-#, fuzzy
 msgid ""
 "The DocBook <acronym>DTD</acronym> is available from the Ports Collection in "
 "the <package>textproc/docbook-xml</package> port. It is automatically "
 "installed as part of the <package>textproc/docproj</package> port."
 msgstr ""
-"O DocBook <acronym> DTD </acronym> está disponível na coleção Ports na porta "
-"<package> textproc / docbook-xml </package>. Ele é instalado automaticamente "
-"como parte da porta <package> textproc / docproj </package>."
+"O DocBook <acronym>DTD</acronym> está disponível na coleção Ports "
+"<package>textproc/docbook-xml</package>. Ele é instalado automaticamente "
+"como parte do port <package>textproc/docproj</package>."
 
 #. (itstool) path: note/title
 #: book.translate.xml:4094
-#, fuzzy
 msgid "Formal Versus Informal"
 msgstr "Formal Versus Informal"
 
 #. (itstool) path: note/para
 #: book.translate.xml:4096
-#, fuzzy
 msgid ""
 "Some elements may exist in two forms, <emphasis>formal</emphasis> and "
 "<emphasis>informal</emphasis>. Typically, the formal version of the element "
 "will consist of a title followed by the informal version of the element. The "
 "informal version will not have a title."
 msgstr ""
-"Alguns elementos podem existir em duas formas, <emphasis> formal </emphasis> "
-"e <emphasis> informal </emphasis>. Normalmente, a versão formal do elemento "
+"Alguns elementos podem existir em duas formas, <emphasis>formal</emphasis> e "
+"<emphasis>informal</emphasis>. Normalmente, a versão formal do elemento "
 "consistirá em um título seguido pela versão informal do elemento. A versão "
 "informal não terá um título."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:4116
-#, fuzzy
 msgid "FreeBSD Extensions"
 msgstr "Extensões do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4118
-#, fuzzy
 msgid ""
 "The FreeBSD Documentation Project has extended the DocBook <acronym>DTD</"
 "acronym> with additional elements and entities. These additions serve to "
 "make some of the markup easier or more precise."
 msgstr ""
-"O Projeto de Documentação do FreeBSD estendeu o DocBook <acronym> DTD </"
+"O Projeto de Documentação do FreeBSD estendeu o DocBook <acronym>DTD</"
 "acronym> com elementos e entidades adicionais. Essas adições servem para "
 "tornar algumas das marcações mais fáceis ou mais precisas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4123
-#, fuzzy
 msgid ""
 "Throughout the rest of this document, the term <quote>DocBook</quote> is "
 "used to mean the FreeBSD-extended DocBook <acronym>DTD</acronym>."
 msgstr ""
-"Ao longo do restante deste documento, o termo <quote> DocBook </quote> é "
-"usado para indicar o DocBook <acronym> DTD </acronym> estendido do FreeBSD."
+"Ao longo deste documento, o termo <quote>DocBook</quote> é usado para "
+"indicar o DocBook <acronym>DTD</acronym> estendido do FreeBSD."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4128
-#, fuzzy
 msgid ""
 "Most of these extensions are not unique to FreeBSD, it was just felt that "
 "they were useful enhancements for this particular project. Should anyone "
@@ -7460,36 +7342,33 @@ msgid ""
 "in collaborating on a standard DocBook extension set, please contact "
 "Documentation Engineering Team <email>doceng@FreeBSD.org</email>."
 msgstr ""
-"A maioria dessas extensões não é exclusiva do FreeBSD, foi apenas sentido "
-"que elas eram melhorias úteis para este projeto em particular. Se alguém de "
-"qualquer um dos outros campos * nix (NetBSD, OpenBSD, Linux,…) estiver "
-"interessado em colaborar em um conjunto de extensões DocBook padrão, entre "
-"em contato com a Equipe de Engenharia da Documentação <email> doceng@FreeBSD."
-"org </email>."
+"A maioria dessas extensões não é exclusiva do FreeBSD, foi apenas "
+"identificado que elas eram melhorias úteis para este projeto. Se alguém de "
+"qualquer um dos outros *nix (NetBSD, OpenBSD, Linux,…) estiverem "
+"interessados em colaborar em um conjunto de extensão DocBook padrão, entre "
+"em contato com a Equipe de Engenharia de Documentação <email>doceng@FreeBSD."
+"org</email>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4137
-#, fuzzy
 msgid "FreeBSD Elements"
 msgstr "Elementos do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4139
-#, fuzzy
 msgid ""
 "The additional FreeBSD elements are not (currently) in the Ports Collection. "
 "They are stored in the FreeBSD Subversion tree, as <link xlink:href=\"http://"
 "svnweb.FreeBSD.org/doc/head/share/xml/freebsd.dtd\">head/share/xml/freebsd."
 "dtd</link>."
 msgstr ""
-"Os elementos adicionais do FreeBSD não estão (atualmente) na coleção de "
-"ports. Eles são armazenados na árvore Subversion do FreeBSD, como <link "
-"xlink:href=\"http://svnweb.FreeBSD.org/doc/head/share/xml/freebsd.dtd\"> "
-"head / share / xml / freebsd.dtd </link>."
+"Os elementos adicionais do FreeBSD não estão (atualmente) na Coleção de "
+"Ports. Eles são armazenados na repositório Subversion do FreeBSD, como <link "
+"xlink:href=\"http://svnweb.FreeBSD.org/doc/head/share/xml/freebsd.dtd\">head/"
+"share/xml/freebsd.dtd</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4143
-#, fuzzy
 msgid ""
 "FreeBSD-specific elements used in the examples below are clearly marked."
 msgstr ""
@@ -7498,229 +7377,199 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4148
-#, fuzzy
 msgid "FreeBSD Entities"
 msgstr "Entidades do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4150
-#, fuzzy
 msgid ""
 "This table shows some of the most useful entities available in the "
 "<acronym>FDP</acronym>. For a complete list, see the <filename>*.ent</"
 "filename> files in <filename>doc/share/xml</filename>."
 msgstr ""
-"Esta tabela mostra algumas das entidades mais úteis disponíveis no <acronym> "
-"FDP </acronym>. Para obter uma lista completa, consulte os arquivos "
-"<filename> *. Ent </filename> em <filename> doc / share / xml </filename>."
+"Esta tabela mostra algumas das entidades mais úteis disponíveis no "
+"<acronym>FDP</acronym>. Para obter uma lista completa, consulte os arquivos "
+"<filename>*.ent</filename> em <filename>doc/share/xml</filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4170
-#, fuzzy
 msgid "<emphasis>FreeBSD Name Entities</emphasis>"
-msgstr "<emphasis> Entidades de nome do FreeBSD </emphasis>"
+msgstr "<emphasis>Entidades de Nome do FreeBSD</emphasis>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4175
-#, fuzzy
 msgid "<literal>&amp;os;</literal>"
-msgstr "<literal> &amp;os; </literal>"
+msgstr "<literal>&amp;os;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4176
-#, fuzzy
 msgid "<literal>FreeBSD</literal>"
-msgstr "<literal> FreeBSD </literal>"
+msgstr "<literal>FreeBSD</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4181
-#, fuzzy
 msgid "<literal>&amp;os.stable;</literal>"
-msgstr "<literal> &amp;os.stable; </literal>"
+msgstr "<literal>&amp;os.stable;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4182
-#, fuzzy
 msgid "<literal>FreeBSD-STABLE</literal>"
-msgstr "<literal> FreeBSD-STABLE </literal>"
+msgstr "<literal>FreeBSD-STABLE</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4187
-#, fuzzy
 msgid "<literal>&amp;os.current;</literal>"
 msgstr "<literal>&amp;os.current;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4188
-#, fuzzy
 msgid "<literal>FreeBSD-CURRENT</literal>"
-msgstr "<literal> FreeBSD-CURRENT </literal>"
+msgstr "<literal>FreeBSD-CURRENT</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4199
-#, fuzzy
 msgid "Manual Page Entities"
-msgstr "Entidades de página manual"
+msgstr "Entidades de Página de Manual"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4204
-#, fuzzy
 msgid "<literal>&amp;man.ls.1;</literal>"
-msgstr "<literal> &amp;man.ls.1; </literal>"
+msgstr "<literal>&amp;man.ls.1;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4205
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
-"<citerefentry> <refentrytitle> ls </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry>"
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4206
-#, fuzzy
 msgid ""
 "Usage: <literal>&amp;man.ls.1; is the manual page for &lt;command&gt;ls&lt;/"
 "command&gt;.</literal>"
 msgstr ""
-"Uso: <literal> &amp;man.ls.1; é a página de manual para o &lt; comando &gt; "
-"ls &lt; / command &gt;. </literal>"
+"Uso: <literal>&amp;man.ls.1; é a página de manual para o "
+"&lt;command&gt;ls&lt;/command&gt;.</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4212
-#, fuzzy
 msgid "<literal>&amp;man.cp.1;</literal>"
-msgstr "<literal> &amp;man.cp.1; </literal>"
+msgstr "<literal>&amp;man.cp.1;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4213
 #: book.translate.xml:8901
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>cp</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
-"<citerefentry> <refentrytitle> cp </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry>"
+"<citerefentry><refentrytitle>cp</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4214
-#, fuzzy
 msgid ""
 "Usage: <literal>The manual page for &lt;command&gt;cp&lt;/command&gt; is "
 "&amp;man.cp.1;.</literal>"
 msgstr ""
-"Uso: <literal> A página de manual para &lt; command &gt; cp &lt; / command "
-"&gt; é &amp;man.cp.1;. </literal>"
+"Uso: <literal> A página de manual para &lt;command&gt;cp&lt;/command&gt; é "
+"&amp;man.cp.1;.</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4220
-#, fuzzy
 msgid ""
 "<literal>&amp;man.<replaceable>command</replaceable>."
 "<replaceable>sectionnumber</replaceable>;</literal>"
 msgstr ""
-"<literal> &amp;man. <replaceable> command </replaceable>. <replaceable> "
-"sectionnumber </replaceable>; </literal>"
+"<literal>&amp;man.<replaceable>command</replaceable>."
+"<replaceable>sectionnumber</replaceable>;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4221
-#, fuzzy
 msgid ""
 "<emphasis>link to <replaceable>command</replaceable> manual page in section "
 "<replaceable>sectionnumber</replaceable></emphasis>"
 msgstr ""
-"<emphasis> link para a página de manual <replaceable> command </replaceable> "
-"na seção <replaceable> sectionnumber </replaceable> </emphasis>"
+"<emphasis>link para a página de manual <replaceable>command</replaceable> na "
+"seção <replaceable>sectionnumber</replaceable></emphasis>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4225
-#, fuzzy
 msgid ""
 "Entities are defined for all the <link xlink:href=\"@@URL_RELPREFIX@@/cgi/"
 "man.cgi\">FreeBSD manual pages</link>."
 msgstr ""
 "As entidades são definidas para todas as <link xlink:href="
-"\"@@URL_RELPREFIX@@/cgi / man.cgi\"> páginas de manual do FreeBSD </link>."
+"\"@@URL_RELPREFIX@@/cgi/man.cgi\">páginas de manual do FreeBSD</link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4237
-#, fuzzy
 msgid "FreeBSD Mailing List Entities"
-msgstr "FreeBSD Mailing List Entities"
+msgstr "Entidades das Listas de Email do FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4242
-#, fuzzy
 msgid "<literal>&amp;a.doc;</literal>"
-msgstr "<literal> &amp;a.doc; </literal>"
+msgstr "<literal>&amp;a.doc;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4243
-#, fuzzy
 msgid ""
 "<literal><link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-doc\">FreeBSD documentation project mailing list</link></literal>"
 msgstr ""
-"<literal> <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"freebsd-doc\"> Lista de discussão do projeto de documentação do FreeBSD </"
+"<literal><link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-doc\">Lista de discussão do projeto de documentação do FreeBSD</"
 "link> </literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4244
-#, fuzzy
 msgid "Usage: <literal>A link to the &amp;a.doc;.</literal>"
-msgstr "Uso: <literal> Um link para o &amp;a.doc;. </literal>"
+msgstr "Uso: <literal>Um link para a &amp;a.doc;.</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4249
-#, fuzzy
 msgid "<literal>&amp;a.questions;</literal>"
-msgstr "<literal> &amp;a.questions; </literal>"
+msgstr "<literal>&amp;a.questions;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4250
-#, fuzzy
 msgid ""
 "<literal><link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-questions\">FreeBSD general questions mailing list</link></literal>"
 msgstr ""
-"<literal> <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"freebsd-questions\"> Lista de discussão de perguntas gerais do FreeBSD </"
-"link> </literal>"
+"<literal><link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-questions\">Lista de discussão de assuntos gerais do FreeBSD</link></"
+"literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4251
-#, fuzzy
 msgid "Usage: <literal>A link to the &amp;a.questions;.</literal>"
-msgstr "Uso: <literal> Um link para o &amp;a.questions;. </literal>"
+msgstr "Uso: <literal> Um link para a &amp;a.questions;.</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4256
-#, fuzzy
 msgid "<literal>&amp;a.<replaceable>listname</replaceable>;</literal>"
 msgstr "<literal>&amp;a.<replaceable>listname</replaceable>;</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4257
-#, fuzzy
 msgid "<emphasis>link to <replaceable>listname</replaceable></emphasis>"
-msgstr ""
-"<emphasis> link para <replaceable> listname </replaceable> </emphasis>"
+msgstr "<emphasis>link para <replaceable>listname</replaceable></emphasis>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4259
-#, fuzzy
 msgid ""
 "Entities are defined for all the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/eresources.html#eresources-mail\">FreeBSD "
 "mailing lists</link>."
 msgstr ""
-"As entidades são definidas para todas as listas de discussão <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc / en_US.ISO8859-1 / books / handbook / "
-"eresources.html # eresources-mail\"> FreeBSD </link>."
+"Foram criadas entidades para todas as listas de discussão <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/eresources."
+"html#eresources-mail\">Listas de email FreeBSD</link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4270
@@ -7730,18 +7579,15 @@ msgstr "Entidades de Link de Documento do FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4275
-#, fuzzy
 msgid "<literal>&amp;url.books.handbook;</literal>"
-msgstr "<literal> &amp;url.books.handbook; </literal>"
+msgstr "<literal>&amp;url.books.handbook;</literal>a"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4276
-#, fuzzy
 msgid ""
 "<literal>@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook</literal>"
 msgstr ""
-"<literal> @@ URL_RELPREFIX @@ / doc / en_US.ISO8859-1 / books / handbook </"
-"literal>"
+"<literal>@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4277

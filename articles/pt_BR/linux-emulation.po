@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-31 03:54+0000\n"
+"PO-Revision-Date: 2018-09-01 02:44+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -763,7 +763,6 @@ msgstr "Saídas"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:393
-#, fuzzy
 msgid ""
 "Exits from kernel to userspace happen using the assembler routine "
 "<literal>doreti</literal> regardless of whether the kernel was entered via a "
@@ -771,8 +770,8 @@ msgid ""
 "returns to the userspace."
 msgstr ""
 "As saídas do kernel para o userspace acontecem usando a rotina assembler "
-"<literal> doreti </literal>, independentemente de o kernel ter sido digitado "
-"por meio de um trap ou via syscall. Isso restaura o status do programa da "
+"<literal>doreti</literal>, independentemente de o kernel ter sido acessado "
+"por meio de uma trap ou via syscall. Isso restaura o status do programa da "
 "pilha e retorna ao espaço do usuário."
 
 #. (itstool) path: sect4/title
@@ -843,7 +842,6 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:434
-#, fuzzy
 msgid ""
 "As stated previously there are two implementations of threading in FreeBSD. "
 "The M:N library divides the work between kernel space and userspace. Thread "
@@ -858,23 +856,22 @@ msgid ""
 "and made the code more difficult to deal with)."
 msgstr ""
 "Como dito anteriormente, existem duas implementações de threads no FreeBSD. "
-"A biblioteca M: N divide o trabalho entre o espaço do kernel e o espaço do "
+"A biblioteca M:N divide o trabalho entre o espaço do kernel e o espaço do "
 "usuário. Thread é uma entidade que é agendada no kernel, mas pode "
-"representar vários números de threads do userspace. M threads do userspace "
-"são mapeadas para N threads do kernel, economizando recursos e mantendo a "
+"representar vários números de threads do userspace. Threads M do userspace "
+"são mapeadas para threads N do kernel, economizando recursos e mantendo a "
 "capacidade de explorar o paralelismo de multiprocessadores. Mais informações "
 "sobre a implementação podem ser obtidas na página do manual ou [1]. A "
-"biblioteca 1: 1 mapeia diretamente um segmento userland para um thread do "
+"biblioteca 1:1 mapeia diretamente um segmento userland para uma thread do "
 "kernel, simplificando muito o esquema. Nenhum desses designs implementa um "
-"mecanismo de justiça (tal mecanismo foi implementado, mas foi removido "
+"mecanismo justo (tal mecanismo foi implementado, mas foi removido "
 "recentemente porque causou séria lentidão e tornou o código mais difícil de "
 "lidar)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:454
-#, fuzzy
 msgid "What is <trademark class=\"registered\">Linux</trademark>"
-msgstr "O que é <trademark class=\"registered\"> Linux </trademark>"
+msgstr "O que é <trademark class=\"registered\">Linux</trademark>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:456
@@ -957,7 +954,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
-#, fuzzy
 msgid "More information can be obtained from [3]."
 msgstr "Mais informações podem ser obtidas em [3]."
 
@@ -1014,21 +1010,18 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:523
-#, fuzzy
 msgid "parameter -&gt; <varname>%ebx</varname>"
-msgstr "parâmetro -&gt; <varname>%ebx </varname>"
+msgstr "parameter -&gt; <varname>%ebx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
-#, fuzzy
 msgid "parameter -&gt; <varname>%ecx</varname>"
-msgstr "parâmetro -&gt; <varname>%ecx </varname>"
+msgstr "parameter -&gt; <varname>%ecx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:529
-#, fuzzy
 msgid "parameter -&gt; <varname>%edx</varname>"
-msgstr "parâmetro -&gt; <varname>% edx </varname>"
+msgstr "parameter -&gt; <varname>%edx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:532
@@ -1121,29 +1114,25 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:588
-#, fuzzy
 msgid "Implemented clone flags are:"
-msgstr "Sinalizadores de clone implementados são:"
+msgstr "Flags de clone implementados são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:592
-#, fuzzy
 msgid "<literal>CLONE_VM</literal> - processes share their memory space"
 msgstr ""
-"<literal> CLONE_VM </literal> - os processos compartilham seu espaço de "
+"<literal>CLONE_VM</literal> - os processos compartilham seu espaço de "
 "memória"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:596
-#, fuzzy
 msgid "<literal>CLONE_FS</literal> - share umask, cwd and namespace"
-msgstr "<literal> CLONE_FS </literal> - compartilha umask, cwd e namespace"
+msgstr "<literal>CLONE_FS</literal> - compartilha umask, cwd e namespace"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:600
-#, fuzzy
 msgid "<literal>CLONE_FILES</literal> - share open files"
-msgstr "<literal> CLONE_FILES </literal> - compartilham arquivos abertos"
+msgstr "<literal>CLONE_FILES</literal> - compartilham arquivos abertos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:604
@@ -1225,7 +1214,6 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:655
-#, fuzzy
 msgid ""
 "As you can see the <literal>CLONE_THREAD</literal> does most of the work and "
 "does not seem to fit the scheme very well. The original intention is unclear "
@@ -1235,18 +1223,17 @@ msgid ""
 "this partition is good for as glibc does not use that so only hand-written "
 "use of the clone permits a programmer to access this features."
 msgstr ""
-"Como você pode ver, o <literal> CLONE_THREAD </literal> faz a maior parte do "
+"Como você pode ver, o <literal>CLONE_THREAD</literal> faz a maior parte do "
 "trabalho e não parece se encaixar muito bem no esquema. A intenção original "
 "não é clara (mesmo para autores, de acordo com comentários no código), mas "
-"acho que originalmente havia uma bandeira de segmentação, que foi então "
-"dividida entre muitas outras flags, mas essa separação nunca foi totalmente "
-"concluída. Também não está claro para que serve esta partição, uma vez que a "
-"glibc não usa isso, portanto, apenas o uso do clone escrito à mão permite "
-"que um programador acesse esses recursos."
+"acho que originalmente havia uma flag de thread, que foi então dividida "
+"entre muitas outras flags, mas essa separação nunca foi totalmente concluída."
+" Também não está claro para que serve esta partição, uma vez que a glibc não "
+"usa isso, portanto, apenas o uso do clone escrito à mão permite que um "
+"programador acesse esses recursos."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:666
-#, fuzzy
 msgid ""
 "For non-threaded programs the PID and TID are the same. For threaded "
 "programs the first thread PID and TID are the same and every created thread "
@@ -1255,26 +1242,26 @@ msgid ""
 "processes forming this threaded program."
 msgstr ""
 "Para programas não segmentados, o PID e o TID são os mesmos. Para programas "
-"encadeados, o primeiro encadeamento PID e TID são os mesmos e todos os "
+"encadeados, os primeiros PID e TID da thread são os mesmos e todos os "
 "encadeamentos criados compartilham o mesmo PID e são atribuídos a um TID "
-"exclusivo (porque <literal> CLONE_THREAD </literal> é passado), também pai é "
-"compartilhado para todos os processos que formam esse encadeamento programa."
+"exclusivo (porque <literal>CLONE_THREAD</literal> é passado), o processo pai "
+"também é compartilhado para todos os processos que formam esse encadeamento "
+"do programa."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:674
-#, fuzzy
 msgid ""
 "The code that implements <citerefentry><refentrytitle>pthread_create</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> in NPTL defines the "
 "clone flags like this:"
 msgstr ""
-"O código que implementa <citerefentry> <refentrytitle> pthread_create </"
-"refentrytitle> <manvolnum> 3 </manvolnum> </citerefentry> no NPTL define os "
-"sinalizadores de clone como este:"
+"O código que implementa <citerefentry><refentrytitle>pthread_create</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> no NPTL define as "
+"flags de clone como este:"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:677
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "int clone_flags = (CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGNAL\n"
 "\n"
@@ -1290,45 +1277,41 @@ msgid ""
 msgstr ""
 "int clone_flags = (CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGNAL\n"
 "\n"
-" | CLONE_SETTLS | CLONE_PARENT_SETTID\n"
+" | CLONE_SETTLS | CLONE_PARENT_SETTID\n"
 "\n"
 "| CLONE_CHILD_CLEARTID | CLONE_SYSVSEM\n"
 "#if __ASSUME_NO_CLONE_DETACHED == 0\n"
 "\n"
 "| CLONE_DETACHED\n"
-"#fim se\n"
+"#endif\n"
 "\n"
 "| 0);"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:689
-#, fuzzy
 msgid "The <literal>CLONE_SIGNAL</literal> is defined like"
-msgstr "O <literal> CLONE_SIGNAL </literal> é definido como"
+msgstr "O <literal>CLONE_SIGNAL</literal> é definido como"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)"
 msgstr "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:694
-#, fuzzy
 msgid "the last 0 means no signal is sent when any of the threads exits."
 msgstr ""
-"o último 0 significa que nenhum sinal é enviado quando qualquer um dos "
-"threads sai."
+"o último 0 significa que nenhum sinal é enviado quando qualquer uma das "
+"threads finaliza."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:701
-#, fuzzy
 msgid "What is emulation"
 msgstr "O que é emulação"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:703
-#, fuzzy
 msgid ""
 "According to a dictionary definition, emulation is the ability of a program "
 "or device to imitate another program or device. This is achieved by "
@@ -1340,7 +1323,7 @@ msgid ""
 "of the operating system or as a userspace program)."
 msgstr ""
 "De acordo com uma definição de dicionário, emulação é a capacidade de um "
-"programa ou dispositivo para imitar outro programa ou dispositivo. Isto é "
+"programa ou dispositivo de imitar um outro programa ou dispositivo. Isto é "
 "conseguido fornecendo a mesma reação a um determinado estímulo que o objeto "
 "emulado. Na prática, o mundo do software vê três tipos de emulação - um "
 "programa usado para emular uma máquina (QEMU, vários emuladores de consoles "
@@ -1351,7 +1334,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:714
-#, fuzzy
 msgid ""
 "Emulation is usually used in a place, where using the original component is "
 "not feasible nor possible at all. For example someone might want to use a "
@@ -1367,9 +1349,9 @@ msgstr ""
 "programa desenvolvido para um sistema operacional diferente do que eles usam."
 " Então a emulação vem a calhar. Por vezes, não há outra maneira senão usar "
 "emulação - por ex. Quando o dispositivo de hardware que você tenta usar não "
-"existe (ainda / mais), então não há outro caminho além da emulação. Isso "
+"existe (ainda/mais), então não há outro caminho além da emulação. Isso "
 "acontece com frequência ao transferir um sistema operacional para uma nova "
-"plataforma (inexistente). Às vezes é mais barato imitar."
+"plataforma (inexistente). Às vezes é mais barato emular."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:725
@@ -1419,7 +1401,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:751
-#, fuzzy
 msgid ""
 "This master thesis deals with emulation of <trademark class="
 "\"registered\">UNIX</trademark> on <trademark class=\"registered\">UNIX</"
@@ -1429,25 +1410,23 @@ msgid ""
 "usually self contained and do not affect some global kernel state."
 msgstr ""
 "Esta tese de mestrado lida com a emulação de <trademark class="
-"\"registered\"> UNIX </trademark> em <trademark class=\"registered\"> UNIX </"
+"\"registered\">UNIX</trademark> em <trademark class=\"registered\">UNIX</"
 "trademark>, que é exatamente o caso, onde apenas uma camada fina de tradução "
-"é suficiente para fornecer emulação completa. A API <trademark class="
-"\"registered\"> UNIX </trademark> consiste em um conjunto de syscalls, que "
-"geralmente são autônomos e não afetam algum estado do kernel global."
+"é suficiente para fornecer emulação completa. A API do <trademark class="
+"\"registered\">UNIX</trademark> consiste em um conjunto de syscalls, que "
+"geralmente são autônomas e não afetam algum estado global do kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:758
-#, fuzzy
 msgid ""
 "There are a few syscalls that affect inner state but this can be dealt with "
 "by providing some structures that maintain the extra state."
 msgstr ""
-"Existem alguns syscalls que afetam o estado interno, mas isso pode ser "
+"Existem algumas syscalls que afetam o estado interno, mas isso pode ser "
 "resolvido fornecendo algumas estruturas que mantêm o estado extra."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:762
-#, fuzzy
 msgid ""
 "No emulation is perfect and emulations tend to lack some parts but this "
 "usually does not cause any serious drawbacks. Imagine a game console "
@@ -1465,7 +1444,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:770
-#, fuzzy
 msgid ""
 "The same goes with the <trademark class=\"registered\">UNIX</trademark> API. "
 "Most programs can live with a very limited set of syscalls working. Those "
@@ -1482,36 +1460,33 @@ msgid ""
 "shared among all <trademark class=\"registered\">UNIX</trademark>es, which "
 "exist todays."
 msgstr ""
-"O mesmo acontece com a API <trademark class=\"registered\"> UNIX </"
+"O mesmo acontece com a API do <trademark class=\"registered\">UNIX</"
 "trademark>. A maioria dos programas pode viver com um conjunto muito "
-"limitado de syscalls funcionando. Esses syscalls tendem a ser os mais "
-"antigos (<citerefentry> <refentrytitle> ler </refentrytitle> <manvolnum> 2 </"
-"manvolnum> </citerefentry> / <citerefentry> <refentrytitle> escrever </"
-"refentrytitle> <manvolnum> 2 </manvolnum> </citerefentry>, <citerefentry> "
-"<refentrytitle> garfo </refentrytitle> <manvolnum> 2 </manvolnum> </"
-"citerefentry> família, <citerefentry> <refentrytitle> signal </"
-"refentrytitle> <manvolnum> 3 </manvolnum > </citerefentry> tratamento, "
-"<citerefentry> <refentrytitle> exit </refentrytitle> <manvolnum> 3 </"
-"manvolnum> </citerefentry>, <citerefentry> <refentrytitle> socket </"
-"refentrytitle> <manvolnum> 2 </manvolnum> </citerefentry> API), portanto, é "
+"limitado de syscalls funcionando. Essas syscalls tendem a ser as mais "
+"antigas (<citerefentry><refentrytitle>read</refentrytitle><manvolnum>2</"
+"manvolnum></citerefentry>/<citerefentry><refentrytitle>write</"
+"refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>,<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</"
+"manvolnum></citerefentry>family,<citerefentry> <refentrytitle>signal</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>handling, "
+"<citerefentry><refentrytitle>exit</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>socket</"
+"refentrytitle><manvolnum>2</manvolnum> </citerefentry> API), portanto, é "
 "fácil emular porque sua semântica é compartilhada entre todos os <trademark "
-"class=\"registered\"> UNIX </trademark> es, que existem hoje."
+"class=\"registered\">UNIX</trademark>, que existem hoje."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:781
-#, fuzzy
 msgid "Emulation"
 msgstr "Emulação"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:784
-#, fuzzy
 msgid "How emulation works in FreeBSD"
 msgstr "Como funciona a emulação no FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:786
-#, fuzzy
 msgid ""
 "As stated earlier, FreeBSD supports running binaries from several other "
 "<trademark class=\"registered\">UNIX</trademark>es. This works because "
@@ -1522,17 +1497,15 @@ msgid ""
 "citerefentry> is about to execute a binary it examines its type."
 msgstr ""
 "Como dito anteriormente, o FreeBSD suporta a execução de binários a partir "
-"de vários outros <trademark class=\"registered\"> UNIX </trademark>. Isso "
+"de vários outros <trademark class=\"registered\">UNIX</trademark>. Isso "
 "funciona porque o FreeBSD tem uma abstração chamada loader de classes de "
-"execução. Isso se encaixa no <citerefentry> <refentrytitle> execve </"
-"refentrytitle> <manvolnum> 2 </manvolnum> </citerefentry> syscall, então "
-"quando <citerefentry> <refentrytitle> execve </refentrytitle> <manvolnum> 2 "
-"</manvolnum> </citerefentry> está prestes a executar um binário que examina "
-"seu tipo."
+"execução. Isso se encaixa na syscall <citerefentry><refentrytitle>execve</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>, então quando "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> está prestes a executar um binário que examina seu tipo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:792
-#, fuzzy
 msgid ""
 "There are basically two types of binaries in FreeBSD. Shell-like text "
 "scripts which are identified by <literal>#!</literal> as their first two "
@@ -1544,18 +1517,17 @@ msgid ""
 "binary the given file is."
 msgstr ""
 "Existem basicamente dois tipos de binários no FreeBSD. Scripts de texto "
-"semelhantes a shell que são identificados por <literal> #! </literal> como "
-"seus dois primeiros caracteres e binários normais (normalmente <firstterm> "
-"ELF </firstterm>), que são uma representação de um objeto executável "
-"compilado. A grande maioria (pode-se dizer todos eles) de binários no "
-"FreeBSD é do tipo ELF. Os arquivos ELF contêm um cabeçalho, que especifica o "
-"OS ABI para este arquivo ELF. Ao ler essas informações, o sistema "
-"operacional pode determinar com precisão o tipo de binário do arquivo "
-"fornecido."
+"semelhantes a shell que são identificados por <literal>#!</literal> como "
+"seus dois primeiros caracteres e binários normais (normalmente "
+"<firstterm>ELF</firstterm>), que são uma representação de um objeto "
+"executável compilado. A grande maioria (pode-se dizer todos eles) de "
+"binários no FreeBSD é do tipo ELF. Os arquivos ELF contêm um cabeçalho, que "
+"especifica a ABI do OS para este arquivo ELF. Ao ler essas informações, o "
+"sistema operacional pode determinar com precisão o tipo de binário do "
+"arquivo fornecido."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:803
-#, fuzzy
 msgid ""
 "Every OS ABI must be registered in the FreeBSD kernel. This applies to the "
 "FreeBSD native OS ABI, as well. So when <citerefentry><refentrytitle>execve</"
@@ -1567,20 +1539,19 @@ msgid ""
 "some global one. This effectively provides a very elegant and easy way of "
 "supporting execution of various binary formats."
 msgstr ""
-"Todo OS ABI deve ser registrado no kernel do FreeBSD. Isso também se aplica "
-"ao sistema operacional nativo do FreeBSD. Então, quando <citerefentry> "
-"<refentrytitle> execve </refentrytitle> <manvolnum> 2 </manvolnum> </"
+"Toda ABI de OS deve ser registrada no kernel do FreeBSD. Isso também se "
+"aplica ao sistema operacional nativo do FreeBSD. Então, quando "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> executa um binário, ele itera através da lista de APIs "
-"registradas e quando ele encontra o direito, ele começa a usar as "
-"informações contidas na descrição do OS ABI (sua tabela syscall, tabela de "
-"tradução <literal> errno </literal>, etc.). Assim, toda vez que o processo "
-"chama um syscall, ele usa seu próprio conjunto de syscalls em vez de um "
+"registradas e quando ele encontra a correta, ele começa a usar as "
+"informações contidas na descrição da ABI do OS (sua tabela syscall, tabela "
+"de tradução <literal>errno</literal>, etc.). Assim, toda vez que o processo "
+"chama uma syscall, ele usa seu próprio conjunto de syscalls em vez de uma "
 "global. Isso efetivamente fornece uma maneira muito elegante e fácil de "
 "suportar a execução de vários formatos binários."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:814
-#, fuzzy
 msgid ""
 "The nature of emulation of different OSes (and also some other subsystems) "
 "led developers to invite a handler event mechanism. There are various places "
@@ -1590,16 +1561,15 @@ msgid ""
 "whatever the subsystem needs to be cleaned."
 msgstr ""
 "A natureza da emulação de diferentes sistemas operacionais (e também alguns "
-"outros subsistemas) levou os desenvolvedores a convidar um mecanismo de "
+"outros subsistemas) levou os desenvolvedores a invitar um mecanismo de "
 "evento manipulador. Existem vários locais no kernel, onde uma lista de "
 "manipuladores de eventos é chamada. Cada subsistema pode registrar um "
-"manipulador de eventos e eles são chamados de acordo. Por exemplo, quando um "
-"processo é encerrado, há um manipulador chamado que possivelmente limpa o "
-"que o subsistema precisa de limpeza."
+"manipulador de eventos e eles são chamados de acordo com sua necessidade. "
+"Por exemplo, quando um processo é encerrado, há um manipulador chamado que "
+"possivelmente limpa o que o subsistema que ele  precisa de limpeza."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:823
-#, fuzzy
 msgid ""
 "Those simple facilities provide basically everything that is needed for the "
 "emulation infrastructure and in fact these are basically the only things "
@@ -1608,18 +1578,16 @@ msgid ""
 msgstr ""
 "Essas facilidades simples fornecem basicamente tudo o que é necessário para "
 "a infra-estrutura de emulação e, de fato, essas são basicamente as únicas "
-"coisas necessárias para implementar a camada de emulação <trademark class="
-"\"registered\"> Linux </trademark>."
+"coisas necessárias para implementar a camada de emulação do <trademark class="
+"\"registered\">Linux</trademark>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:830
-#, fuzzy
 msgid "Common primitives in the FreeBSD kernel"
 msgstr "Primitivos comuns no kernel do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:832
-#, fuzzy
 msgid ""
 "Emulation layers need some support from the operating system. I am going to "
 "describe some of the supported primitives in the FreeBSD operating system."
@@ -1629,59 +1597,51 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:837
-#, fuzzy
 msgid "Locking primitives"
 msgstr "Primitivas de Bloqueio"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:839
-#, fuzzy
 msgid "Contributed by: Attilio Rao <email>attilio@FreeBSD.org</email>"
-msgstr "Contribuído por: Attilio Rao <email> attilio@FreeBSD.org </email>"
+msgstr "Contribuído por: Attilio Rao <email>attilio@FreeBSD.org</email>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:841
-#, fuzzy
 msgid ""
 "The FreeBSD synchronization primitive set is based on the idea to supply a "
 "rather huge number of different primitives in a way that the better one can "
 "be used for every particular, appropriate situation."
 msgstr ""
-"O conjunto primitivo de sincronização do FreeBSD é baseado na idéia de "
-"fornecer um grande número de diferentes primitivos de uma maneira que o "
-"melhor possa ser usado para cada situação específica e apropriada."
+"O conjunto de primitivas de sincronização do FreeBSD é baseado na idéia de "
+"fornecer um grande número de diferentes primitivas de uma maneira que a "
+"melhor possa ser usada para cada situação específica e apropriada."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:846
-#, fuzzy
 msgid ""
 "To a high level point of view you can consider three kinds of "
 "synchronization primitives in the FreeBSD kernel:"
 msgstr ""
 "Para um ponto de vista de alto nível, você pode considerar três tipos de "
-"primitivos de sincronização no kernel do FreeBSD:"
+"primitivas de sincronização no kernel do FreeBSD:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:852
-#, fuzzy
 msgid "atomic operations and memory barriers"
 msgstr "operações atômicas e barreiras de memória"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:855
-#, fuzzy
 msgid "locks"
-msgstr "fechaduras"
+msgstr "locks"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:858
-#, fuzzy
 msgid "scheduling barriers"
 msgstr "barreiras de agendamento"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:862
-#, fuzzy
 msgid ""
 "Below there are descriptions for the 3 families. For every lock, you should "
 "really check the linked manpage (where possible) for more detailed "
@@ -1693,13 +1653,11 @@ msgstr ""
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:867
-#, fuzzy
 msgid "Atomic operations and memory barriers"
 msgstr "Operações atômicas e barreiras de memória"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:869
-#, fuzzy
 msgid ""
 "Atomic operations are implemented through a set of functions performing "
 "simple arithmetics on memory operands in an atomic way with respect to "
@@ -1728,15 +1686,15 @@ msgstr ""
 "executam aritmética simples em operandos de memória de maneira atômica com "
 "relação a eventos externos (interrupções, preempção, etc.). Operações "
 "atômicas podem garantir atomicidade apenas em pequenos tipos de dados (na "
-"ordem de magnitude do tipo de dados C da arquitetura <literal> .long. </"
+"ordem de magnitude do tipo de dados C da arquitetura <literal>.long.</"
 "literal>), portanto raramente devem ser usados ​​diretamente no código de "
 "nível final, se não apenas para operações muito simples (como configuração "
-"de sinalizador em um bitmap, por exemplo). De fato, é bastante simples e "
-"comum escrever uma semântica errada baseada apenas em operações atômicas "
+"de flags em um bitmap, por exemplo). De fato, é bastante simples e comum "
+"escrever uma semântica errada baseada apenas em operações atômicas "
 "(geralmente referidas como lock-less). O kernel do FreeBSD oferece uma "
 "maneira de realizar operações atômicas em conjunto com uma barreira de "
 "memória. As barreiras de memória garantirão que uma operação atômica "
-"ocorrerá seguindo alguns pedidos especificados em relação a outros acessos à "
+"ocorrerá seguindo alguma ordem especificas em relação a outros acessos à "
 "memória. Por exemplo, se precisarmos que uma operação atômica aconteça logo "
 "depois que todas as outras gravações pendentes (em termos de instruções "
 "reordenando atividades de buffers) forem concluídas, precisamos usar "
@@ -1747,18 +1705,16 @@ msgstr ""
 "operações atômicas, consulte <citerefentry><refentrytitle>atomic</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>. É muito, no entanto, "
 "notar que as operações atômicas (e as barreiras de memória também) devem, "
-"idealmente, ser usadas apenas para construir bloqueios frontais (como "
+"idealmente, ser usadas apenas para construir bloqueios front-ending (como "
 "mutexes)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:900
-#, fuzzy
 msgid "Refcounts"
-msgstr "Recontas"
+msgstr "Refcounts"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:902
-#, fuzzy
 msgid ""
 "Refcounts are interfaces for handling reference counters. They are "
 "implemented through atomic operations and are intended to be used just for "
@@ -1776,18 +1732,16 @@ msgstr ""
 "interface de recontagem para estruturas, onde um mutex já é usado, "
 "geralmente está errado, pois provavelmente devemos fechar o contador de "
 "referência em alguns caminhos já protegidos. Uma manpage discutindo refcount "
-"não existe atualmente, apenas verifique <filename> sys / refcount.h </"
-"filename> para uma visão geral da API existente."
+"não existe atualmente, apenas verifique <filename>sys/refcount.h</filename> "
+"para uma visão geral da API existente."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:916
-#, fuzzy
 msgid "Locks"
-msgstr "Fechaduras"
+msgstr "Locks"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:918
-#, fuzzy
 msgid ""
 "FreeBSD kernel has huge classes of locks. Every lock is defined by some "
 "peculiar properties, but probably the most important is the event linked to "
@@ -1804,37 +1758,31 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:927
-#, fuzzy
 msgid "spinning"
-msgstr "fiação"
+msgstr "spinning"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:930
-#, fuzzy
 msgid "blocking"
-msgstr "bloqueio"
+msgstr "blocking"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:933
-#, fuzzy
 msgid "sleeping"
-msgstr "dormindo"
+msgstr "sleeping"
 
 #. (itstool) path: note/para
 #: article.translate.xml:938
-#, fuzzy
 msgid "numbers are not casual"
 msgstr "números não são casuais"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:943
-#, fuzzy
 msgid "Spinning locks"
-msgstr "Fechaduras giratórias"
+msgstr "Spinning locks"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:945
-#, fuzzy
 msgid ""
 "Spin locks let waiters to spin until they cannot acquire the lock. An "
 "important matter do deal with is when a thread contests on a spin lock if it "
@@ -1845,26 +1793,24 @@ msgid ""
 "CPUs, etc.), spin locks are intended to protect very small paths of code, or "
 "ideally not to be used at all if not explicitly requested (explained later)."
 msgstr ""
-"Bloqueios de giro permitem que os garçons girem até que eles não consigam "
-"adquirir a fechadura. Uma questão importante é quando um segmento contesta "
-"em um bloqueio de giro se não for desmarcado. Uma vez que o kernel do "
+"Spin locks permitem que os acumuladores rotacionarem até que eles não "
+"consigam adquirir um lock. Uma questão importante é quando um segmento "
+"contesta em um spin lock se não for desmarcado. Uma vez que o kernel do "
 "FreeBSD é preventivo, isto expõe o spin lock ao risco de deadlocks que podem "
 "ser resolvidos apenas desabilitando as interrupções enquanto elas são "
 "adquiridas. Por essa e outras razões (como falta de suporte à propagação de "
 "prioridade, falta de esquemas de balanceamento de carga entre CPUs, etc.), "
-"os bloqueios de giro têm a finalidade de proteger caminhos muito pequenos de "
+"os spin locks têm a finalidade de proteger endereçamentos muito pequenos de "
 "código ou, idealmente, não serem usados ​​se não solicitados explicitamente "
 "( explicado posteriormente)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:959
-#, fuzzy
 msgid "Blocking"
 msgstr "Bloqueio"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:961
-#, fuzzy
 msgid ""
 "Block locks let waiters to be descheduled and blocked until the lock owner "
 "does not drop it and wakes up one or more contenders. In order to avoid "
@@ -1873,23 +1819,21 @@ msgid ""
 "interface and are intended to be the most used kind of locks in the kernel, "
 "if no particular conditions are met."
 msgstr ""
-"Os bloqueios de blocos permitem que os garçons sejam desmarcados e "
-"bloqueados até que o proprietário da trava não os abandone e ative um ou "
-"mais contendores. Para evitar problemas de fome, os bloqueios de bloqueio "
-"fazem a propagação de prioridade dos garçons para o proprietário. Os "
-"bloqueios de bloco devem ser implementados por meio da interface de "
-"torniquete e devem ser o tipo mais usado de bloqueios no kernel, se nenhuma "
-"condição específica for atendida."
+"Os locks em blocos permitem que as tarefas dos acumuladores sejam removidas "
+"e bloqueados até que o proprietário do bloqueio não os libere e ative um ou "
+"mais contendores. Para evitar problemas de fome, os locks em bloco fazem a "
+"propagação de prioridade dos acumuladores para o proprietário. Os locks em "
+"bloco devem ser implementados por meio da interface turnstile e devem ser o "
+"tipo mais usado de bloqueios no kernel, se nenhuma condição específica for "
+"atendida."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:972
-#, fuzzy
 msgid "Sleeping"
-msgstr "adormecido"
+msgstr "Sleeping"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:974
-#, fuzzy
 msgid ""
 "Sleep locks let waiters to be descheduled and fall asleep until the lock "
 "holder does not drop it and wakes up one or more waiters. Since sleep locks "
@@ -1898,13 +1842,13 @@ msgid ""
 "implemented through the <citerefentry><refentrytitle>sleepqueue</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> interface."
 msgstr ""
-"As travas para dormir permitem que os garçons sejam desmarcados e adormecem "
-"até que o suporte da trava não os deixe cair e desperte um ou mais garçons. "
-"Como os bloqueios de sono se destinam a proteger grandes caminhos de código "
-"e a atender a eventos assíncronos, eles não fazem nenhuma forma de "
+"Sleep locks permitem que as tarefas dos waiters sejam removidas e eles "
+"adormecem até que o suporte do lock não os deixe cair e desperte um ou mais "
+"waiters. Como os sleep locks se destinam a proteger grandes endereçamentos "
+"de código e a atender a eventos assíncronos, eles não fazem nenhuma forma de "
 "propagação de prioridade. Eles devem ser implementados por meio da interface "
-"<citerefentry> <refentrytitle> sleepqueue </refentrytitle> <manvolnum> 9 </"
-"manvolnum> </citerefentry>."
+"<citerefentry><refentrytitle>sleepqueue</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:982
