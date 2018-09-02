@@ -1,6 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -8,9 +7,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-26 01:08+0000\n"
+"PO-Revision-Date: 2018-09-02 03:03+0000\n"
 "Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -91,8 +90,9 @@ msgid ""
 "You installed IPsec and it seems to be working. How do you know? I describe "
 "a method for experimentally verifying that IPsec is working."
 msgstr ""
-"Você instalou o IPsec e parece estar funcionando. Como você sabe? Descrevo "
-"um método para verificar experimentalmente se o IPsec está funcionando."
+"Você instalou o IPsec e ele parece estar funcionando. Como você sabe? Eu "
+"descrevo um método para verificar experimentalmente se o IPsec está "
+"funcionando."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:43
@@ -110,13 +110,13 @@ msgid ""
 "manvolnum></citerefentry> will list it. But can you independently confirm "
 "it?"
 msgstr ""
-"Primeiro, vamos assumir que você tem <link linkend=\"ipsec-install\"> "
-"instalado <emphasis>IPsec</emphasis></link>. Como você sabe que é <link "
-"linkend=\"caveat\">trabalhando</link>? Claro, sua conexão não funcionará se "
-"estiver mal configurada, e funcionará quando você finalmente acertar. "
-"<citerefentry> <refentrytitle>netstat</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry>irá listá-lo. Mas você pode confirmar isso de forma "
-"independente?"
+"Primeiro, vamos assumir que você tem o <link linkend=\"ipsec-"
+"install\"><emphasis>IPsec</emphasis> instalado </link>. Como você sabe que "
+"ele está <link linkend=\"caveat\">funcionando</link>? Claro, sua conexão não "
+"funcionará se ele estiver mal configurado, e funcionará quando você "
+"finalmente acertar a configuração. O <citerefentry> <refentrytitle>netstat</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>irá listá-lo. Mas você "
+"pode confirmar isso de forma independente?"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:54
@@ -127,7 +127,7 @@ msgstr "A solução"
 #: article.translate.xml:56
 msgid "First, some crypto-relevant info theory:"
 msgstr ""
-"Em primeiro lugar, alguma teoria da informação relevante em relação à "
+"Em primeiro lugar, vejamos alguma informação teórica relevante em relação à "
 "criptografia:"
 
 #. (itstool) path: listitem/para
@@ -157,16 +157,17 @@ msgid ""
 "<quote>encrypted mode</quote> was not encrypted---as the outermost IP header "
 "must be if the packet is to be routable."
 msgstr ""
-"Suponha que você possa medir a entropia dos dados para e da sua interface de "
-"rede. Então você pode ver a diferença entre dados não criptografados e dados "
-"criptografados. Isso seria verdade mesmo que alguns dos dados no<quote>modo "
-"criptografado</quote> não estivessem criptografados --- como o cabeçalho IP "
-"mais externo deve ser se o pacote deve ser roteável."
+"Suponha que você possa medir a entropia dos dados destinados para a sua "
+"interface de rede e também dos dados originados dela. Então você pode ver a "
+"diferença entre dados não criptografados e dados criptografados. Isso seria "
+"verdade mesmo que alguns dos dados no <quote>modo criptografado</quote> não "
+"estivessem criptografados --- como deve o cabeçalho IP mais externo para que "
+"o pacote seja roteável."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:78
 msgid "MUST"
-msgstr "DEVO"
+msgstr "MUST"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:80
@@ -178,12 +179,12 @@ msgid ""
 "\"code\">The code is given below</link> for a variant which measures "
 "successive (~quarter megabyte) chunks of a file."
 msgstr ""
-"Teste <quote>Estatística da Universal para Geradores de Bits Aleatórios</"
+"O teste de <quote>Estatística Universal para Geradores de Bits Aleatórios</"
 "quote> de Ueli Maurer (<link xlink:href=\"http://www.geocities.com/"
-"SiliconValley/Code/4704/universal.pdf\"> <acronym> MUST </acronym> </link>) "
+"SiliconValley/Code/4704/universal.pdf\"><acronym>MUST</acronym> </link>) "
 "mede rapidamente a entropia de uma amostra. Ele usa um algoritmo semelhante "
-"à compressão. <link linkend=\"code\"> O código é dado abaixo </link> para "
-"uma variante que mede partes sucessivas (~ quarto megabyte) de um arquivo."
+"à compressão. <link linkend=\"code\"> O código é dado abaixo</link> para uma "
+"variante que mede partes sucessivas (~quarto de megabyte) de um arquivo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:89
@@ -202,8 +203,8 @@ msgstr ""
 "Também precisamos de uma maneira de capturar os dados brutos da rede. Um "
 "programa chamado <citerefentry><refentrytitle>tcpdump</refentrytitle> "
 "<manvolnum>1</manvolnum></citerefentry> permite que você faça isso, se você "
-"ativou a interface <emphasis> Filtro de Pacotes Berkeley </emphasis> no seu "
-"<link linkend=\"kernel\"> arquivo de configuração do kernel </link>."
+"ativou a interface <emphasis>Berkeley Packet Filter</emphasis> no seu <link "
+"linkend=\"kernel\">arquivo de configuração do kernel</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:97
@@ -226,7 +227,7 @@ msgid ""
 "will capture 4000 raw packets to <replaceable>dumpfile.bin</replaceable>. Up "
 "to 10,000 bytes per packet will be captured in this example."
 msgstr ""
-"irá capturar 4000 pacotes brutos para <replaceable>dumpfile.bin</"
+"irá capturar 4000 pacotes brutos no arquivo <replaceable>dumpfile.bin</"
 "replaceable>. Até 10.000 bytes por pacote serão capturados neste exemplo."
 
 #. (itstool) path: sect1/title
@@ -248,7 +249,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: article.translate.xml:119
 msgid "Now start <link linkend=\"tcpdump\">capturing packets</link>."
-msgstr "Agora inicie <link linkend=\"tcpdump\">capturando pacotes</link>."
+msgstr "Agora comece a <link linkend=\"tcpdump\">capturar os pacotes</link>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:124
@@ -259,10 +260,10 @@ msgid ""
 "<literal>y</literal> character. After a while, stop this. Switch to the "
 "insecure window, and repeat. After a while, stop."
 msgstr ""
-"Na janela <quote>secure</quote> window, execute o <trademark class="
-"\"registered\">UNIX</trademark> command <citerefentry><refentrytitle>yes</"
+"Na janela <quote>segura</quote>, execute o comando <trademark class="
+"\"registered\">UNIX</trademark>  <citerefentry><refentrytitle>yes</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, que transmitirá o "
-"caractere<literal>y</literal>. Depois de um tempo, pare com isso. Alterne "
+"caractere <literal>y</literal>. Depois de um tempo, pare com isso. Alterne "
 "para a janela insegura e repita. Depois de um tempo, pare."
 
 #. (itstool) path: step/para
@@ -273,9 +274,9 @@ msgid ""
 "the secure connection has 93% (6.7) of the expected value (7.18), and the "
 "<quote>normal</quote> connection has 29% (2.1) of the expected value."
 msgstr ""
-"Agora execute <link linkend=\"code\">MUST</link> nos pacotes capturados. "
+"Agora execute o <link linkend=\"code\">MUST</link> nos pacotes capturados. "
 "Você deve ver algo como o seguinte. O importante é notar que a conexão "
-"segura tem 93% (6,7) do valor esperado (7,18), e a conexão <quote> normal </"
+"segura tem 93% (6,7) do valor esperado (7,18), e a conexão <quote>normal</"
 "quote> tem 29% (2,1) do valor esperado."
 
 #. (itstool) path: step/screen
@@ -332,11 +333,11 @@ msgid ""
 "visible to others, use of weak algorithms, kernel subversion, etc. Study the "
 "source; know the code."
 msgstr ""
-"Esta experiência mostra que o IPsec <emphasis>parece</emphasis> parece estar "
-"distribuindo os dados de carga<emphasis>uniformemente</emphasis>, como a "
-"criptografia deveria. No entanto, o experimento descrito aqui<emphasis> não "
-"pode </emphasis>detectar muitas falhas possíveis em um sistema (nenhum dos "
-"quais eu tenho qualquer evidência para). Estes incluem geração ou troca "
+"Esta experiência mostra que o IPsec <emphasis>parece</emphasis> estar "
+"distribuindo os dados de carga <emphasis>uniformemente</emphasis>, como a "
+"criptografia deveria. No entanto, o experimento descrito aqui <emphasis>não "
+"pode</emphasis> detectar muitas das falhas possíveis em um sistema (nenhum "
+"dos quais eu tenho qualquer evidência para). Estes incluem geração ou troca "
 "deficiente de chaves, dados ou chaves sendo visíveis para outros, uso de "
 "algoritmos fracos, subversão do kernel, etc. Estude a fonte; conheça o "
 "código."
@@ -355,11 +356,11 @@ msgid ""
 "secures only a login; <application>PGP</application> secures only a "
 "specified file or message. IPsec encrypts everything between two hosts."
 msgstr ""
-"Extensões de segurança do protocolo Internet para o IPv4; necessário para o "
+"Extensões de segurança do protocolo Internet para o IPv4; obrigatório para o "
 "IPv6. Um protocolo para negociar criptografia e autenticação no nível IP "
-"(host para host). SSL protege apenas um soquete de aplicativo; O "
+"(host para host). O SSL protege apenas um soquete de aplicativo; O "
 "<application>SSH</application> protege apenas um login;<application>PGP</"
-"application> protege apenas um arquivo ou mensagem especificada. O IPsec "
+"application> protege apenas um arquivo ou mensagem especifico. O IPsec "
 "criptografa tudo entre dois hosts."
 
 #. (itstool) path: sect1/title
@@ -379,8 +380,9 @@ msgstr ""
 "A maioria das versões modernas do FreeBSD tem suporte a IPsec em sua fonte "
 "base. Portanto, você precisará incluir a opção <option>IPSEC</option> em sua "
 "configuração de kernel e, após a reconstrução e reinstalação do kernel, "
-"configurar conexões IPsec usando<citerefentry><refentrytitle>setkey</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> command."
+"configurar as conexões IPsec usando o comando "
+"<citerefentry><refentrytitle>setkey</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:190
@@ -391,7 +393,7 @@ msgid ""
 msgstr ""
 "Um guia completo sobre como executar o IPsec no FreeBSD é fornecido no <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ipsec."
-"html\"> Manual do FreeBSD </link>."
+"html\">Handbook do FreeBSD</link>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
@@ -407,17 +409,18 @@ msgid ""
 "<citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> after adding this, and rebuild and reinstall."
 msgstr ""
-"Isso precisa estar presente no arquivo de configuração do kernel para "
-"capturar dados de rede com <citerefentry><refentrytitle>tcpdump</"
-"refentrytitle> <manvolnum>1</manvolnum></citerefentry>. Certifique-se de "
-"executar <citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</"
-"manvolnum> </citerefentry> após adicioná-lo, e reconstruir e reinstalar."
+"Isto precisa estar presente no arquivo de configuração do kernel para "
+"habilitar o suporte para captura de dados de rede com o "
+"<citerefentry><refentrytitle>tcpdump</refentrytitle> <manvolnum>1</"
+"manvolnum></citerefentry>. Certifique-se de executar o "
+"<citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</manvolnum> "
+"</citerefentry> depois de adicionar a linha, de recompilar e de reinstalar."
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:203
 #, no-wrap
 msgid "device\tbpf"
-msgstr "dispositivo bgf"
+msgstr "device\tbpf"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:207
@@ -432,7 +435,7 @@ msgid ""
 "SiliconValley/Code/4704/uliscanc.txt\"> this link</link>."
 msgstr ""
 "Você pode encontrar o mesmo código em <link xlink:href=\"http://www."
-"geocities.com/SiliconValley/Code/4704/uliscanc.txt\"> neste link </link>."
+"geocities.com/SiliconValley/Code/4704/uliscanc.txt\">neste link</link>."
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:213

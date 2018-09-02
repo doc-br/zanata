@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Nilton Jose Rizzo <rizzo@i805.com.br>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,17 +7,19 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-24 12:17+0000\n"
+"PO-Revision-Date: 2018-09-02 01:57+0000\n"
 "Last-Translator: Nilton Jose Rizzo <rizzo@i805.com.br>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Nilton José Rizzo aka rizzo@rizzo.eng.br"
+msgstr ""
+"Nilton José Rizzo, rizzo@rizzo.eng.br, 2018\n"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
@@ -29,9 +31,7 @@ msgstr "Suporte do FreeBSD a Leap Seconds"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 2017-"
 "11-30 14:49:53Z ygy $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 2017-"
-"11-30 14:49:53Z ygy $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:12
@@ -47,9 +47,9 @@ msgid ""
 "interacts with leap seconds."
 msgstr ""
 "Um <emphasis>leap second</emphasis> é o ajuste de um segundo feito em "
-"específicas horas do ano para sincronizar a scala atômica do UTC com a "
-"variação da rotação da terra.  Esse artigo descreve como o FreeBSD interage "
-"com o leap seconds."
+"momentos específicos do ano para sincronizar a escala atômica de tempo do "
+"UTC com a variação da rotação da terra.  Esse artigo descreve como o FreeBSD "
+"interage com o leap seconds."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:20
@@ -58,9 +58,10 @@ msgid ""
 "UTC. This leap second will occur during a business day for North and South "
 "America and the Asia/Pacific region."
 msgstr ""
-"Como foi descrito, a próxima ocorrência do leap second irá acontecer em 30 "
-"de junho de 2015 as 23:59:60 UTC.  Esse leap second ira ocorrer durante um "
-"dia útil para as Américas do Norte e Sul e a região da Asia/Pacifico."
+"No momento em que este artigo está sendo escrito, a próxima ocorrência do "
+"leap second irá acontecer em 30 de junho de 2015 as 23:59:60 UTC.  Esse leap "
+"second ira ocorrer durante um dia útil para as Américas do Norte e do Sul e "
+"a região da Ásia/Pacifico."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:25
@@ -107,13 +108,13 @@ msgid ""
 msgstr ""
 "A maneira mais fácil de manipular o leap seconds é com a regra de tempo "
 "<acronym>POSIX</acronym> que é utilizada por padrão pelo FreeBSD, combinada "
-"com <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"network-ntp.html\"><acronym>NTP</acronym></link>. Quando o  "
+"com o <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/network-ntp.html\"><acronym>NTP</acronym></link>. Quando o  "
 "<citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> está sendo executado e o tempo é sincronizado com upstream dos "
-"servidores <acronym>NTP</acronym> que gerenciam o leap seconds corretamente, "
-"causará a repetição do último segundo do dia de forma automática. Nenhum "
-"outro ajuste será necessário."
+"citerefentry> está sendo executado e o tempo é sincronizado com os "
+"servidores <acronym>NTP</acronym> de upstream que gerenciam o leap seconds "
+"corretamente, o leap second causará a repetição do último segundo do dia de "
+"forma automática. Nenhum outro ajuste será necessário."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:45
@@ -123,10 +124,10 @@ msgid ""
 "manvolnum></citerefentry> will step the time by one second after the errant "
 "upstream server has noticed and stepped itself."
 msgstr ""
-"Se os servidores de upstream <acronym>NTP</acronym> não gerenciarem o leap "
-"seconds corretamente, <citerefentry><refentrytitle>ntpd</"
+"Se os servidores de <acronym>NTP</acronym> upstream  não gerenciarem o leap "
+"seconds corretamente, o <citerefentry><refentrytitle>ntpd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> irá avançar em um "
-"segundo apois o servidor se corrigir."
+"segundo após o servidor se corrigir."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
@@ -134,7 +135,7 @@ msgid ""
 "If <acronym>NTP</acronym> is not being used, manual adjustment of the system "
 "clock will be required after the leap second has passed."
 msgstr ""
-"Se <acronym>NTP</acronym> não está sendo utilizado, será necessário um "
+"Se o <acronym>NTP</acronym> não está sendo utilizado, será necessário um "
 "ajuste manual do relógio do sistema apois o leap seconds ter passado."
 
 #. (itstool) path: sect1/title
@@ -149,9 +150,9 @@ msgid ""
 "<acronym>UTC</acronym> midnight. In Japan that is mid-morning, in the "
 "Pacific mid-day, in the Americas late afternoon, and in Europe at night."
 msgstr ""
-"Leap seconds são inseridos no mesmo instante em todo o mundo a meia noite "
+"Os Leap seconds são inseridos no mesmo instante em todo o mundo a meia noite "
 "<acronym>UTC</acronym>. No Japão será no meio da manhã e no Pacífico ao meio "
-"dia, na Americas  a tarde e na Europa à noite."
+"dia, nas Américas a tarde e na Europa à noite."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:63
@@ -160,9 +161,9 @@ msgid ""
 "<acronym>NTP</acronym> service, will work as designed during this leap "
 "second, as it did during the previous ones."
 msgstr ""
-"Nos acreditamos e esperamosque o FreeBSD, se provido de um serviço de "
+"Nos acreditamos e esperamos que o FreeBSD, se provido de um serviço de "
 "<acronym>NTP</acronym> estável,  irá funcionar como foi especificado durante "
-"o leap second, como foi durante os anteriores,"
+"o leap second, como aconteceu nos anteriores."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
@@ -172,10 +173,11 @@ msgid ""
 "are essentially a replay of the second before the leap second, and this is a "
 "surprise to most application programmers."
 msgstr ""
-"Enrtetanto, nos alertamos que praticamente nenhum aplicativo tem questionado "
-"o kernel sobre leap seconds.  Nossa esperiência é que, como projetado, leap "
-"seconds são, essencionalmente, a repetição do último segundo antes do "
-"evento, e isso é uma surpresa para a maioria dos programadores."
+"Enrtetanto, nós alertamos que praticamente nenhum aplicativo nunca "
+"questionou o kernel sobre leap seconds.  Nossa experiência é que, como "
+"projetado, leap seconds são, essencialmente, a repetição do último segundo "
+"antes do leap second, e isso é uma surpresa para a maioria dos programadores."
+""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
@@ -186,9 +188,9 @@ msgid ""
 "all."
 msgstr ""
 "Outros sistemas operacionais e computadores podem ou não manipular o leap "
-"seconds da mesma maneira que o FreeBSD e sistemas sem correção ou o serviço "
-"estável de <acronym>NTP</acronym> não terá conhecimento algum sobre o leap "
-"seconds."
+"seconds da mesma maneira que o FreeBSD e sistemas sem um serviço correto e "
+"estável de <acronym>NTP</acronym> não terão conhecimento algum sobre a "
+"ocorrência de leap seconds."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
@@ -197,18 +199,18 @@ msgid ""
 "experience has shown that a large fraction of all public <acronym>NTP</"
 "acronym> servers might handle and announce the leap second incorrectly."
 msgstr ""
-"Não é inétido que os computadores travem por causa do leap seconds, e It is "
-"not unheard of for computers to crash because of leap seconds, e a "
-"esperiência mostra que uma grande fração de todos servidores públicos de  "
-"<acronym>NTP</acronym> podem gerenciar e anunciar o leap seconds "
-"incorretamente."
+"Não é inétido que os computadores travem por causa do leap seconds, e a "
+"experiência mostra que uma grande parte de todos os servidores públicos de "
+"<acronym>NTP</acronym> podem manipular e anunciar o leap seconds de forma "
+"incorreta."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
 msgid ""
 "Please try to make sure nothing horrible happens because of the leap second."
 msgstr ""
-"Por favor tenha certeza que nada de grave aconteça por causa do leap second."
+"Por favor, tente garantir que nada horrível acontecerá por causa do leap "
+"seconds."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:89
@@ -223,10 +225,10 @@ msgid ""
 "leap second. Some major reference clock sources only announce leap seconds "
 "one hour ahead of the event. Query the <acronym>NTP</acronym> daemon:"
 msgstr ""
-"É possível testar se um leap seconds será utilizado. Devido a natiureza do "
+"É possível testar se um leap seconds será utilizado. Devido a natureza do "
 "<acronym>NTP</acronym>, o teste deve funcionar até 24 horas antes do lead "
 "seconds. Algumas da principais fontes de referência de tempo somente "
-"anunciam o leap seconds uma hora antese do evento. Consulte o processo "
+"anunciam o leap seconds uma hora antes do evento. Consulte o daemon do "
 "<acronym>NTP</acronym>:"
 
 #. (itstool) path: sect1/screen
@@ -243,9 +245,10 @@ msgid ""
 "second, or after the leap second has passed, <literal>leap_none</literal> "
 "will be shown."
 msgstr ""
-"A saída inclue <literal>leap_add_sec</literal> indicando que o suporte "
-"adequadoao leap second. Antes de 24 horas até a ocorrencia do leap second, "
-"ou  depois de ter passado, <literal>leap_none</literal> será mostrado"
+"Uma saída que inclua <literal>leap_add_sec</literal> indica o suporte "
+"adequado ao leap second. Antes de 24 horas até a ocorrência do leap second, "
+"ou  depois dele já ter ocorrido, a saída do comando irá mostrar "
+"<literal>leap_none</literal>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:106
@@ -260,5 +263,5 @@ msgid ""
 "event proceed more smoothly."
 msgstr ""
 "Na prática, o leap seconds não é um problema do FreeBSD. Esperamos que esta "
-"visão geral, ajude-o: a esaclarecer, o que esperar e como tornar o evento de "
-"leap seconds mrnod traumático possível."
+"visão geral, ajude-o a esclarecer oque esperar e como tornar o evento de "
+"leap seconds o menos traumático possível."

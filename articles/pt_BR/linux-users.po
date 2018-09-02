@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Nilton Jose Rizzo <rizzo@i805.com.br>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,17 +7,20 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-24 12:21+0000\n"
+"PO-Revision-Date: 2018-09-02 12:35+0000\n"
 "Last-Translator: Nilton Jose Rizzo <rizzo@i805.com.br>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Nilton José Rizzo aka rizzo@rizzo.eng.br"
+msgstr ""
+"Nilton José Rizzo, rizzo@rizzo.eng.br, 2018\n"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Danilo G. Baio, dbaio@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
@@ -25,8 +28,8 @@ msgid ""
 "FreeBSD Quickstart Guide for <trademark class=\"registered\">Linux</"
 "trademark> Users"
 msgstr ""
-"FreeBSD guia rápido para usuários de <trademark class=\"registered\">Linux</"
-"trademark>"
+"Guia rápido de FreeBSD para usuários de <trademark class="
+"\"registered\">Linux</trademark>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:8
@@ -49,9 +52,7 @@ msgstr "<year>2008</year> <holder>Projeto de Documentação do FreeBSD</holder>"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 50978 2017-"
 "09-29 10:58:18Z wosch $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 50978 2017-"
-"09-29 10:58:18Z wosch $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
@@ -114,9 +115,9 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark> users with the basics of "
 "FreeBSD."
 msgstr ""
-"Este documento tem a intenção de familiarizar usuários intermediarios ou "
-"avançados do <trademark class=\"registered\">Linux</trademark> com o básico "
-"do FreeBSD."
+"Este documento tem a intenção de familiarizar rapidamente usuários "
+"intermediários ou avançados do <trademark class=\"registered\">Linux</"
+"trademark> com o básico do FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:50
@@ -132,9 +133,9 @@ msgid ""
 "quickly familiarize themselves with the basics of FreeBSD."
 msgstr ""
 "Esse documento destaca algumas diferenças técnicas entre o FreeBSD e o "
-"<trademark class=\"registered\">Linux</trademark> que os usuários "
+"<trademark class=\"registered\">Linux</trademark> para que os usuários "
 "intermediários ou avançados do <trademark class=\"registered\">Linux</"
-"trademark> podem rapidamente se familiarizar com o básico do FreeBSD."
+"trademark> possam se familiarizar rapidamente com o básico do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:57
@@ -146,8 +147,8 @@ msgid ""
 msgstr ""
 "Este documento assume que o FreeBSD já está instalado. Acesse o link do "
 "capítulo <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
-"handbook/bsdinstall.html\"> Instalando o FreeBSD</link> no manual do FreeBSD "
-"para uma ajuda no processo de instalação."
+"handbook/bsdinstall.html\"> Instalando o FreeBSD</link> no Handbook do "
+"FreeBSD para obter ajuda no processo de instalação."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:64
@@ -172,20 +173,21 @@ msgid ""
 "citerefentry> will run in <application>Bash</application>, but the reverse "
 "is not always true."
 msgstr ""
-"Usuários <trademark class=\"registered\">Linux</trademark> são geralmente "
-"surpreendidos quando descobrem que o <application>Bash</application> não é o "
-"shell padrão do FreeBSD. De fato, o <application>Bash</application> não é "
-"incluído na instalação padrão.  Ao invés disto, o FreeBSD usa "
-"<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> como shell padrão para o usuário root, e o <application>Bourne "
-"shell</application>-compatível <citerefentry><refentrytitle>sh</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> como shell padrão para "
-"usuários. <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> É muito similar ao <application>Bash</application> "
-"mas com um conjunto de funcionalidades muito menor. Geralmente os programas "
-"em shell escritos para o <citerefentry><refentrytitle>sh</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> irá ser executado no "
-"<application>Bash</application>, mas o contrário não."
+"Os usuários do <trademark class=\"registered\">Linux</trademark> são "
+"geralmente surpreendidos quando descobrem que o <application>Bash</"
+"application> não é o shell padrão do FreeBSD. De fato, o <application>Bash</"
+"application> não é incluído na instalação padrão.  Ao invés disto, o FreeBSD "
+"usa o <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> como shell padrão para o usuário root, e o "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, um shell compatível com o <application>Bourne shell</"
+"application>, como shell padrão para os demais usuários. O "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> é muito similar ao <application>Bash</application> mas com um "
+"conjunto de funcionalidades muito menor. Geralmente os scripts shell "
+"escritos para o <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> irão ser executados no <application>Bash</"
+"application>, mas o contrário não."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:77
@@ -195,10 +197,10 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/ports.html\">Packages and Ports Collection</"
 "link>."
 msgstr ""
-"Entretanto, <application>Bash</application> e outros shells estão "
+"Entretanto, o <application>Bash</application> e outros shells estão "
 "disponíveis para a instalação usando a <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/books/handbook/ports.html\">Coleção de Pacotes e Árvore "
-"de Ports</link>."
+"doc/en_US.ISO8859-1/books/handbook/ports.html\">Coleção de Pacotes e a "
+"Árvore de Ports</link>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:81
@@ -216,15 +218,15 @@ msgid ""
 msgstr ""
 "Depois de instalar um novo shell, use o comando "
 "<citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> para trocar o shell padrão do usuário.  Isso é recomendado "
-"para que o shell padrão do usuário <systemitem class=\"username\">root</"
-"systemitem> se mantenha inalterado uma vez que os shells não inclusos na "
-"base do sistema são instalados em <filename>/usr/local/bin</filename>. No "
-"caso de ocorrer algum problema com o sistema de arquivos onde o diretório "
-"<filename>/usr/local/bin</filename> está localizado e este não puder ser "
-"utilizado, o usuário <systemitem class=\"username\">root</systemitem> poderá "
-"não ter acesso ao shell padrão, evitando que o usuário <systemitem class="
-"\"username\">root</systemitem> entre no sistema e o restabeleça."
+"citerefentry> para trocar o shell padrão do usuário.  É recomendado que o "
+"shell padrão do usuário <systemitem class=\"username\">root</systemitem> se "
+"mantenha inalterado uma vez que os shells que não fazem parte da base do "
+"sistema são instalados em <filename>/usr/local/bin</filename>. No caso de "
+"ocorrer algum problema com o sistema de arquivos onde o diretório <filename>/"
+"usr/local/bin</filename> está localizado e este não puder ser utilizado, o "
+"usuário <systemitem class=\"username\">root</systemitem> poderá não ter "
+"acesso ao shell padrão, evitando que o usuário <systemitem class="
+"\"username\">root</systemitem> entre no sistema para corrigir o problema."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:94
@@ -251,12 +253,12 @@ msgstr "Pacotes Binários"
 #: article.translate.xml:104
 msgid "Faster installation as compared to compiling large applications."
 msgstr ""
-"Instalação rápida quando comparada a compilação de aplicativos grandes."
+"Instalação rápida quando comparada com a compilação de grandes aplicativos ."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:109
 msgid "Does not require an understanding of how to compile software."
-msgstr "Não há a necessidade de compreensão de como compilar programas."
+msgstr "Não há a necessidade de compreender como compilar um software."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:114
@@ -278,7 +280,7 @@ msgstr "Possibilidade de customizar as opções de instalação"
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:126
 msgid "Custom patches can be applied."
-msgstr "Pode-se aplicar patchs customizados"
+msgstr "Possibilidade de se aplicar patchs customizados"
 
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:135
@@ -295,10 +297,10 @@ msgid ""
 "buildtarget-1/>."
 msgstr ""
 "Se a instalação da aplicação não necessitar de opções customizadas, a "
-"instalação via pacotes é suficiente.  Compilação via ports só é necessária "
-"se for utilizada opções customizadas.  Se você necessita de pacotes "
-"customizados, pode obte-los através da compilação dos ports utilizando o "
-"comando <command>make</command> <_:buildtarget-1/>."
+"instalação via pacotes é suficiente. Compile o port sempre que o aplicativo "
+"exigir a personalização das opções padrão.  Se você necessita de pacotes "
+"customizados, você poderá obtê-los através da compilação a partir do ports "
+"utilizando o comando <command>make</command> <_:buildtarget-1/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:137
@@ -323,11 +325,11 @@ msgid ""
 "are installed using <command>pkg</command>. For example, the following "
 "command installs <application>Apache 2.4</application>:"
 msgstr ""
-"Pacotes são aplicações pré-compiladas, equivalemtes ao arquivos <filename>."
-"deb</filename> nos sistemas baseados no Debian/Ubuntu e ao arquivos "
-"<filename>.rpm</filename> nos sistemas baseados no Fedora/Red Hat.  Pacotes "
-"são instalados através do comando <command>pkg</command>. Por exemplo, o "
-"comando a seguir instala <application>Apache 2.4</application>:"
+"Pacotes são aplicações pré-compiladas, os equivalentes no FreeBSD aos "
+"arquivos <filename>.deb</filename> nos sistemas baseados no Debian/Ubuntu e "
+"aos arquivos <filename>.rpm</filename> nos sistemas baseados no Fedora/Red "
+"Hat.  Pacotes são instalados através do comando <command>pkg</command>. Por "
+"exemplo, o comando a seguir instala o <application>Apache 2.4</application>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:151
@@ -347,8 +349,8 @@ msgid ""
 "handbook/pkgng-intro.html\">Using pkgng for Binary Package Management</link>."
 ""
 msgstr ""
-"Para mais informações sobre pacotes, veja a seção 5.4 do manual do FreeBSD: "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"Para mais informações sobre pacotes, veja a seção 5.4 do Handbook do FreeBSD:"
+" <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "pkgng-intro.html\">Usando pkgng para gerenciar pacotes binários</link>."
 
 #. (itstool) path: sect2/para
@@ -362,9 +364,10 @@ msgid ""
 msgstr ""
 "A árvore de ports do FreeBSD é um framework de <filename>Makefiles</"
 "filename> e patches customizados especificamente para a instalação através "
-"do código fonte no FreeBSD. Quando um ports é instalado, o sistema irá "
-"buscar o código fonte, aplicar qualquer patch que for necessário, compilar o "
-"código e instalar qualquer pré requisito necessário a aplicação."
+"do código fonte no FreeBSD. Quando um port é instalado, o sistema irá buscar "
+"o código fonte, aplicar qualquer patch que seja necessário, compilar o "
+"código, instalar a aplicação e qualquer outra dependência da qual ela "
+"necessite."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:168
@@ -377,12 +380,13 @@ msgid ""
 "ISO8859-1/books/handbook/ports-using.html\">section 5.5</link> of the "
 "FreeBSD Handbook."
 msgstr ""
-"A árvore de ports pode ser instalada em <filename>/usr/ports</filename> "
-"usando o comando <citerefentry><refentrytitle>portsnap</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Instruções detalhadas "
-"para instalação dos ports podem ser encontradas em <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using."
-"html\">seção 5.5</link> do manual do FreeBSD."
+"A Coleção de Ports, algumas vezes referenciada como a árvore de ports, pode "
+"ser instalada em <filename>/usr/ports</filename> usando o comando "
+"<citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Instruções detalhadas para instalação da Coleção "
+"de Ports podem ser encontradas na <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/books/handbook/ports-using.html\">seção 5.5</link> do "
+"Handbook do FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:174
@@ -391,9 +395,9 @@ msgid ""
 "process. The following example installs <application>Apache 2.4</"
 "application> from the Ports Collection:"
 msgstr ""
-"Para compilar um ports, mude para o diretório e inicie o processo de "
+"Para compilar um port, mude para o diretório do port e inicie o processo de "
 "compilação.  O exemplo abaixo instala o <application>Apache 2.4</"
-"application> através da árvore de ports:"
+"application> através da Coleção de Ports:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:179
@@ -412,10 +416,10 @@ msgid ""
 "installation options. This example specifies that the <application>mod_ldap</"
 "application> module should also be installed:"
 msgstr ""
-"Um dos benefícios de usar a árvore de ports para realizar a instalação é a "
-"possibilidade de customizar as opções de instalação. O exemplo a seguir, "
-"especifica que o módulo <application>mod_ldap</application> Deve ser "
-"instalado em conjunto."
+"Um dos benefícios de usar a árvore de ports para realizar a instalação de um "
+"software é a possibilidade de customizar as opções de instalação. O exemplo "
+"a seguir, especifica que o módulo <application>mod_ldap</application> também "
+"deve ser instalado:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:187
@@ -437,7 +441,7 @@ msgid ""
 "information."
 msgstr ""
 "Veja <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"ports-using.html\">Usando a árvore de ports</link> para mais informações."
+"ports-using.html\">Usando a Coleção de Ports</link> para mais informações."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
@@ -463,21 +467,21 @@ msgid ""
 "similar to the scripts located in <filename>/etc/init.d/</filename> on "
 "<trademark class=\"registered\">Linux</trademark> systems."
 msgstr ""
-"Muitas distribuições <trademark class=\"registered\">Linux</trademark> usa o "
-"sistema init do SysV, distributions use the SysV init system, enquanto o "
-"FreeBSD usa o tradicional estilo BSD do <citerefentry><refentrytitle>init</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Por utilizar este "
-"sistema <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>, não existe níveis diferenciados de execução e o "
-"arquivo <filename>/etc/inittab</filename> não existe. does not exist. Ao "
-"invés disto, a inicialização é controlada por arquivos "
+"Muitas distribuições <trademark class=\"registered\">Linux</trademark> usam "
+"o sistema init do SysV, enquanto o FreeBSD usa o tradicional "
+"<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> estilo BSD. Por utilizar este sistema "
+"<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, não existe níveis diferenciados de execução e o arquivo "
+"<filename>/etc/inittab</filename> não existe. Ao invés disto, a "
+"inicialização é controlada por meio de scripts "
 "<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>. Na inicialização do sistema, <filename>/etc/rc</filename> lê "
-"o arquivo <filename>/etc/rc.conf</filename> e o arquivo <filename>/etc/"
-"defaults/rc.conf</filename> para determinar quais os serviços devem ser "
-"inicializados. Os serviços especificados são inicializados pela execução de "
-"arquivos de inicialização localizados em <filename>/etc/rc.d/</filename> e "
-"<filename>/usr/local/etc/rc.d/</filename>. Esses arquivos são similares aos "
+"citerefentry>. Na inicialização do sistema, o <filename>/etc/rc</filename> "
+"lê o arquivo <filename>/etc/rc.conf</filename> e o arquivo <filename>/etc/"
+"defaults/rc.conf</filename> para determinar quais são os serviços que devem "
+"ser inicializados. Os serviços especificados são inicializados pela execução "
+"de scripts de inicialização localizados em <filename>/etc/rc.d/</filename> e "
+"<filename>/usr/local/etc/rc.d/</filename>. Esses scripts são similares aos "
 "contidos no diretório <filename>/etc/init.d/</filename> dos sistemas "
 "<trademark class=\"registered\">Linux</trademark>."
 
@@ -494,13 +498,13 @@ msgid ""
 "for user-installed applications such as <application>Apache</application> "
 "and <application>Squid</application>."
 msgstr ""
-"Os aquivos encontrados no diretório <filename>/etc/rc.d/</filename> fazem "
-"parte das aplicações da  <quote>base</quote> do sistema, como por exemplo: "
+"Os scripts encontrados no diretório <filename>/etc/rc.d/</filename> fazem "
+"parte das aplicações da  <quote>base</quote> do sistema, tais como "
 "<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>, <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, e "
 "<citerefentry><refentrytitle>syslog</refentrytitle><manvolnum>3</manvolnum></"
-"citerefentry>. Os arquivos encontrados no diterório <filename>/usr/local/etc/"
+"citerefentry>. Os scripts encontrados no diterório <filename>/usr/local/etc/"
 "rc.d/</filename> correspondem aos aplicativos instalados pelo usuário, como "
 "por exemplo:  <application>Apache</application> e <application>Squid</"
 "application>."
@@ -518,15 +522,16 @@ msgid ""
 "usr/local/bin/</filename>, configuration files are in <filename>/usr/local/"
 "etc/</filename>, and so on."
 msgstr ""
-"O FreeBSD é desenvolvido como um sistema completo, aplicações instaladas "
-"pelos usuários não são consideradas parte do sistema <quote>base</quote>. "
-"Aplicações instaladas pelos usuários são geralmente instaladas utilizando ou "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"ports-using.html\">os Pacotes Binários ou a Árvore de Ports</link>. Para se "
-"manter separados da base do sistema, eles são instalados abaixo do diretório "
-"<filename>/usr/local/</filename>. Entretanto, os aplicativos binários "
-"instalados pelos usuários ficam em <filename>/usr/local/bin/</filename>, os "
-"arquivos de configuração em <filename>/usr/local/etc/</filename>."
+"Uma vez que o FreeBSD é desenvolvido como um sistema completo, aplicações "
+"instaladas pelos usuários não são consideradas parte do sistema <quote>base</"
+"quote>. As aplicações dos usuários são geralmente instaladas por meio <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-"
+"using.html\">dos Pacotes Binários ou da Coleção de Ports</link>. Para mantê-"
+"los separados da base do sistema, eles são instalados sob o diretório "
+"<filename>/usr/local/</filename>. Portanto, os aplicativos binários "
+"instalados pelos usuários localizam-se em <filename>/usr/local/bin/</"
+"filename>, e os arquivos de configuração em <filename>/usr/local/etc/</"
+"filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:233
@@ -540,15 +545,15 @@ msgid ""
 "applications, review the application's install message to determine how to "
 "enable any associated services."
 msgstr ""
-"Os serviços são abilitados pela adição de uma entrada no arquivo <filename>/"
-"etc/rc.conf</filename> . As configurações padrão são encontradas em "
-"<filename>/etc/defaults/rc.conf</filename> e essas configurações padrão são "
-"redefinidas pelas configurações colocadas no arquivo <filename>/etc/rc.conf</"
-"filename>. Veja em <citerefentry><refentrytitle>rc.conf</"
+"Os serviços são habilitados pela adição de uma entrada no arquivo <filename>/"
+"etc/rc.conf</filename> . As configurações padrões são encontradas no arquivo "
+"<filename>/etc/defaults/rc.conf</filename> e essas configurações padrões são "
+"sobre postas pelas configurações realizadas no arquivo <filename>/etc/rc."
+"conf</filename>. Veja o manual do <citerefentry><refentrytitle>rc.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> para maiores "
-"informações sobre as entradas disponíveis.  Quando se instala aplicações "
-"adicionais, reveja as mensagens de instalação da aplicação para determinar "
-"como abilitar os serviços associados a essa aplicação."
+"informações sobre as entradas disponíveis.  Quando você instalar aplicações "
+"adicionais, leia as mensagens de instalação da aplicação para determinar "
+"como habilitar os serviços associados a essa aplicação."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:243
@@ -559,9 +564,9 @@ msgid ""
 "that <application>Apache</application> should be started with <acronym>SSL</"
 "acronym>."
 msgstr ""
-"As seguintes entradas no arquivo <filename>/etc/rc.conf</filename> abilitam "
-"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>, <application>Apache 2.4</application>, e especifica que o "
+"As seguintes entradas no arquivo <filename>/etc/rc.conf</filename> habilitam "
+"o <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, o <application>Apache 2.4</application>, e especifica que o "
 "<application>Apache</application> deve ser inicializado com <acronym>SSL</"
 "acronym> ativado."
 
@@ -587,9 +592,9 @@ msgid ""
 "Once a service has been enabled in <filename>/etc/rc.conf</filename>, it can "
 "be started without rebooting the system:"
 msgstr ""
-"Uma vez que o serviço tenha sido abilitado no arquivo <filename>/etc/rc."
+"Uma vez que o serviço tenha sido habilitado no arquivo <filename>/etc/rc."
 "conf</filename>, ele pode ser inicializado sem a necessidade de uma "
-"reinialização do sistema."
+"reinicialização do sistema."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:259
@@ -611,8 +616,8 @@ msgid ""
 "If a service has not been enabled, it can be started from the command line "
 "using <option>onestart</option>:"
 msgstr ""
-"Se o serviço não tiver sido abilidado, ele pode ser inicializado com o "
-"comando usando a opção <option>onestart</option>:"
+"Se o serviço não tiver sido habilitado, ele poderá ser inicializado a partir "
+"da linha de comando usando a opção <option>onestart</option>:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:265
@@ -643,10 +648,10 @@ msgstr ""
 "Diferente da identificação genérica <emphasis>ethX</emphasis> usada pelo "
 "<trademark class=\"registered\">Linux</trademark> para identificar a "
 "interface de rede, o FreeBSD usa o nome do driver seguido por um número. A "
-"seguinte saida do comando <citerefentry><refentrytitle>ifconfig</"
+"seguinte saída do comando <citerefentry><refentrytitle>ifconfig</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> mostra duas interfaces "
-"<trademark class=\"registered\">Intel</trademark> Pro 1000 (<filename>em0</"
-"filename> e <filename>em1</filename>):"
+"de rede <trademark class=\"registered\">Intel</trademark> Pro 1000 "
+"(<filename>em0</filename> e <filename>em1</filename>):"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:278
@@ -693,10 +698,11 @@ msgstr ""
 "Um endereço <acronym>IP</acronym> pode ser designado à uma interface "
 "utilizando o comando <citerefentry><refentrytitle>ifconfig</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. Para torna-lo "
-"definitivo e persistente as inicializações, o endereço <acronym>IP</acronym> "
-"deve ser incluído no arquivo <filename>/etc/rc.conf</filename>. A seguinte "
-"entrada no arquivo <filename>/etc/rc.conf</filename> especifica o nome da "
-"máquina, o endereço <acronym>IP</acronym> e a saída padrão:"
+"definitivo e persistente entre as reinicializações, o endereço <acronym>IP</"
+"acronym> deve ser incluído no arquivo <filename>/etc/rc.conf</filename>. A "
+"seguinte entrada no arquivo <filename>/etc/rc.conf</filename> especifica o "
+"nome da máquina, o endereço <acronym>IP</acronym> e o gateway padrão da rede:"
+""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:299
@@ -716,8 +722,8 @@ msgid ""
 "Use the following entries to instead configure an interface for "
 "<acronym>DHCP</acronym>:"
 msgstr ""
-"Use a seguinte entrada para configurar a interface para <acronym>DHCP</"
-"acronym>:"
+"Use a seguinte entrada para configurar uma interface para obter sua "
+"configuração por meio do <acronym>DHCP</acronym>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:306
@@ -739,9 +745,9 @@ msgid ""
 "<application>IPTABLES</application> for its firewall. Instead, FreeBSD "
 "offers a choice of three kernel level firewalls:"
 msgstr ""
-"O sistema FreeBSD não usa o comando <application>IPTABLES</application> do "
-"<trademark class=\"registered\">Linux</trademark>  como seu firewall, o "
-"FreeBSD oferece tres tipos de firewall a nível de kernel:"
+"O sistema FreeBSD não utiliza o <trademark class=\"registered\">Linux</"
+"trademark> <application>IPTABLES</application> como seu firewall, o FreeBSD "
+"oferece três tipos de firewall a nível de kernel:"
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:319
@@ -780,13 +786,13 @@ msgid ""
 "paired with <citerefentry><refentrytitle>altq</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> to provide <acronym>QoS</acronym> features."
 msgstr ""
-"O firewall <application>PF</application> é desenvolvido pelo projeto OpenBSD "
-"e portado para o FreeBSD. O <application>PF</application> foi criado para "
-"substituir o firewall <application>IPFILTER</application> e sua sintaxe é "
-"similar ao <application>IPFILTER</application>. O <application>PF</"
-"application> pode ser utilizado em conjunto com "
-"<citerefentry><refentrytitle>altq</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry> para prover funcionalidade de <acronym>QoS</acronym>."
+"O <application>PF</application> é desenvolvido pelo projeto OpenBSD e "
+"portado para o FreeBSD. O <application>PF</application> foi criado para "
+"substituir o <application>IPFILTER</application> e sua sintaxe é similar ao "
+"<application>IPFILTER</application>. O <application>PF</application> pode "
+"ser utilizado em conjunto com <citerefentry><refentrytitle>altq</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> para prover "
+"funcionalidade de <acronym>QoS</acronym>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:337
@@ -794,9 +800,8 @@ msgid ""
 "This sample <application>PF</application> entry allows inbound "
 "<application>SSH</application>:"
 msgstr ""
-"O seguinte exemplo de entrada no arquivo de configuração do This sample "
-"<application>PF</application> permite a entrada de <application>SSH</"
-"application>:"
+"O exemplo abaixo mostra uma regra do <application>PF</application> para "
+"permitir conexões de entrada do <application>SSH</application>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:340
@@ -811,9 +816,10 @@ msgid ""
 "Darren Reed. It is not specific to FreeBSD and has been ported to several "
 "operating systems including NetBSD, OpenBSD, SunOS, HP/UX, and Solaris."
 msgstr ""
-"O <application>IPFILTER</application> éfoi desenvolvido por Darren Reed. e "
-"não é específico para o FreeBSD e foi portado para diversos sistemas "
-"operacionais, incluindo NetBSD, OpenBSD, SunOS, HP/UX, e Solaris."
+"O <application>IPFILTER</application> é uma aplicação de firewall "
+"desenvolvida por Darren Reed. Ela não é específica para o FreeBSD e foi "
+"portado para diversos sistemas operacionais, incluindo NetBSD, OpenBSD, "
+"SunOS, HP/UX, e Solaris."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:347
@@ -821,8 +827,8 @@ msgid ""
 "The <application>IPFILTER</application> syntax to allow inbound "
 "<application>SSH</application> is:"
 msgstr ""
-"A sintaxe do <application>IPFILTER</application> para permitir a entrada de "
-"<application>SSH</application> é:"
+"A sintaxe do <application>IPFILTER</application> para permitir conexões de "
+"entrada do <application>SSH</application> é:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:350
@@ -839,9 +845,9 @@ msgid ""
 "shaping capabilities and simulate different types of network connections."
 msgstr ""
 "O <application>IPFW</application> é o firewall desenvolvido e mantido pelo "
-"FreeBSD. Ele pode ser utilizado em conjunto com "
+"FreeBSD. Ele pode ser utilizado em conjunto com o "
 "<citerefentry><refentrytitle>dummynet</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry> para prover capacidade de traffic shaping e "
+"manvolnum></citerefentry> para prover a funcionalidade de traffic shaping e "
 "simular diferentes tipos de conexões de rede."
 
 #. (itstool) path: sect1/para
@@ -850,8 +856,8 @@ msgid ""
 "The <application>IPFW</application> syntax to allow inbound "
 "<application>SSH</application> would be:"
 msgstr ""
-"A sintaxe do <application>IPFW</application> para permitor a conexão de "
-"entrada de  <application>SSH</application> deve ser:"
+"A sintaxe do <application>IPFW</application> para permitir conexões de "
+"entrada do <application>SSH</application> é:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:360
@@ -870,8 +876,8 @@ msgid ""
 "There are two methods for updating a FreeBSD system: from source or binary "
 "updates."
 msgstr ""
-"Existem dois métodos para realizar a atualização em um sistema FreeBSD: "
-"através do código fonte ou atualização binária."
+"Existem dois métodos para realizar a atualização em um sistema FreeBSD: a "
+"partir do código fonte ou atualização binária."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:369
@@ -882,11 +888,11 @@ msgid ""
 "application> servers. Once the local source code is up-to-date, a new "
 "version of the kernel and userland can be compiled."
 msgstr ""
-"Atualizando através do código fonte é o método mais trabalhoso, mas oferece "
+"Atualizar através do código fonte é a forma mais trabalhosa, mas ela oferece "
 "uma grande flexibilidade.  O processo envolve a sincronização da cópia local "
 "do código fonte do FreeBSD com os servidores de <application>Subversion</"
-"application> do FreeBSD. Uma vez que o código fonte esteja atualizado, uma "
-"nova versão do kernel e da userland podem ser compilada."
+"application> do FreeBSD. Uma vez que o código fonte local esteja atualizado, "
+"uma nova versão do kernel e da userland poderão ser compiladas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:376
@@ -900,13 +906,13 @@ msgid ""
 "citerefentry>."
 msgstr ""
 "Atualização binária é similar ao uso do comando <command>yum</command> ou "
-"<command>apt-get</command> para atualizar sistemas <trademark class="
+"<command>apt-get</command> para atualizar um sistema <trademark class="
 "\"registered\">Linux</trademark>.  No FreeBSD, o comando "
 "<citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> pode ser utilizado para buscar uma nova "
-"atualização binária e a instala-la.  Essa tarefa de atualização pode ser "
-"agendada com o uso do <citerefentry><refentrytitle>cron</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
+"atualização binária e a instalá-la.  Estas atualizações podem ser agendada "
+"usando o <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:383
@@ -918,12 +924,12 @@ msgid ""
 "possibility of a large number of machines all pulling updates at the same "
 "time:"
 msgstr ""
-"Quando usamos o <citerefentry><refentrytitle>cron</"
+"Quando utilizar o <citerefentry><refentrytitle>cron</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> para agendar as "
 "atualizações, use o comando <command>freebsd-update cron</command> no "
 "arquivo <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> para reduzir a possibilidade de um grande número "
-"de máquinas fação a atualização ao mesmo tempo:"
+"manvolnum></citerefentry> para reduzir a possibilidade de que um grande "
+"número de máquinas busquem a atualização ao mesmo tempo:"
 
 #. (itstool) path: note/programlisting
 #: article.translate.xml:388
@@ -938,14 +944,15 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/updating-upgrading."
 "html\">the chapter on updating</link> in the FreeBSD Handbook."
 msgstr ""
-"Para maiores informações sobre atualizações, acesse o <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/updating-upgrading."
-"html\">capítulo sobre atualização</link> no manual do FreeBSD ."
+"Para maiores informações sobre a atualização por meio do código fonte ou dos "
+"updates binários, acesse o <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/updating-upgrading.html\">capítulo sobre "
+"atualização</link> do Handbook do FreeBSD ."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:397
 msgid "procfs: Gone But Not Forgotten"
-msgstr "procfs: Passado, mas não esquecido"
+msgstr "procfs: É passado, mas foi não esquecido"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:399
@@ -956,12 +963,12 @@ msgid ""
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is instead used to view this and other system settings."
 msgstr ""
-"Em algumas distribuições <trademark class=\"registered\">Linux</trademark>, "
-"uma olhada em <filename>/proc/sys/net/ipv4/ip_forward</filename> para "
-"determinar se o encaminhamento de <acronym>IP</acronym> está ou não "
-"abilitado. No FreeBSD, o comando <citerefentry><refentrytitle>sysctl</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> é utilizado para ver "
-"isto e outras variáveis do sistema."
+"Em algumas distribuições do <trademark class=\"registered\">Linux</"
+"trademark>, você pode consultar o  <filename>/proc/sys/net/ipv4/ip_forward</"
+"filename> para verificar se o encaminhamento de <acronym>IP</acronym> está "
+"ou não abilitado. No FreeBSD, o comando <citerefentry><refentrytitle>sysctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> é utilizado para ver o "
+"status desta e também de outras variáveis do sistema."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:405
@@ -970,7 +977,7 @@ msgid ""
 "forwarding is enabled on a FreeBSD system:"
 msgstr ""
 "Por exemplo, use o seguinte comando para determinar se o encaminhamento de "
-"<acronym>IP</acronym> está ou não abilitado."
+"<acronym>IP</acronym> está ou não habilitado."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:409
@@ -1033,12 +1040,12 @@ msgstr "<prompt>#</prompt> <userinput>mount /proc</userinput>"
 #. (itstool) path: sect1/title
 #: article.translate.xml:432
 msgid "Common Commands"
-msgstr "Comando Comuns"
+msgstr "Comandos Comuns"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:434
 msgid "Some common command equivalents are as follows:"
-msgstr "Alguns comandos comuns são os seguintes:"
+msgstr "Alguns comandos comuns e equivalentes são os seguintes:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:441
@@ -1051,7 +1058,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:442
 msgid "FreeBSD equivalent"
-msgstr "Equivalente FreeBSD"
+msgstr "Equivalente no FreeBSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:443
@@ -1110,7 +1117,7 @@ msgstr "<command>pkg info</command>"
 #: article.translate.xml:466
 msgid "List installed packages"
 msgstr ""
-"Listar pacotes instalados (Pacotes binários e através da árvore de ports)"
+"Listar os pacotes instalados (Pacotes binários e através da árvore de ports)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:470
@@ -1155,7 +1162,7 @@ msgstr "<command>kldload</command> / <command>kldunload</command>"
 #. (itstool) path: row/entry
 #: article.translate.xml:485
 msgid "Load/Unload kernel modules"
-msgstr "Carrega/Retira módulos do kernel."
+msgstr "Carrega/Descarrega módulos do kernel."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:489
@@ -1170,7 +1177,7 @@ msgstr "<command>truss</command>"
 #. (itstool) path: row/entry
 #: article.translate.xml:491
 msgid "Trace system calls"
-msgstr "Rastreia chamadas ao sistema"
+msgstr "Rastreia chamadas do sistema"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:499
@@ -1185,7 +1192,7 @@ msgid ""
 "html\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
 "well as the many topics not covered by this document."
 msgstr ""
-"Esse documento prové uma visão geral do FreeBSD. Veja o <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html\">Manual "
+"EEste documento forneceu uma visão geral do FreeBSD. Veja o <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html\">Handbook "
 "do FreeBSD</link> para uma cobertura mais profunda desses tópicos, assim "
 "como outros não cobertos por este documento."
