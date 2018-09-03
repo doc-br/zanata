@@ -1,5 +1,4 @@
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,10 +6,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-24 12:28+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-02 10:24+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -21,9 +20,8 @@ msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
-#, fuzzy
 msgid "Writing FreeBSD Problem Reports"
-msgstr "Escrevendo Relatórios de Problemas do FreeBSD"
+msgstr "Escrevendo Relatórios de Problemas para o FreeBSD"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:9
@@ -37,9 +35,9 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
-"IBM, AIX, OS / 2, PowerPC, PS / 2, S / 390 e ThinkPad são marcas comerciais "
-"da International Business Machines Corporation nos Estados Unidos e / ou em "
-"outros países."
+"IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of "
+"International Business Machines Corporation in the United States, other "
+"countries, or both."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:15
@@ -100,23 +98,19 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 51348 "
 "2017-12-30 22:56:56Z eadler $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 51348 "
-"2017-12-30 22:56:56Z eadler $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:42
-#, fuzzy
 msgid ""
 "This article describes how to best formulate and submit a problem report to "
 "the FreeBSD Project."
 msgstr ""
-"Este artigo descreve como melhor formular e enviar um relatório de problemas "
+"Este artigo descreve como redigir e submeter um bom relatório de problemas "
 "ao Projeto FreeBSD."
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:47
-#, fuzzy
 msgid ""
 "<personname> <firstname>Dag-Erling</firstname> <surname>Smørgrav</surname> </"
 "personname> <contrib>Contributed by </contrib>"
@@ -126,29 +120,25 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:55
-#, fuzzy
 msgid ""
 "<personname> <firstname>Mark</firstname> <surname>Linimon</surname> </"
 "personname>"
 msgstr ""
-"<personname> <firstname> Marcar </firstname> <surname> Linimon </surname> </"
+"<personname> <firstname> Mark</firstname> <surname> Linimon</surname> </"
 "personname>"
 
 #. (itstool) path: article/indexterm
 #: article.translate.xml:64
-#, fuzzy
 msgid "<primary>problem reports</primary>"
-msgstr "<primary>Relatórios de problemas </primary>"
+msgstr "<primary>relatórios de problemas</primary>"
 
 #. (itstool) path: section/title
 #: article.translate.xml:67
-#, fuzzy
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: section/para
 #: article.translate.xml:69
-#, fuzzy
 msgid ""
 "One of the most frustrating experiences one can have as a software user is "
 "to submit a problem report only to have it summarily closed with a terse and "
@@ -158,18 +148,17 @@ msgid ""
 "reports but requests for support, or that contain little or no information "
 "about what the problem is and how to reproduce it."
 msgstr ""
-"Uma das experiências mais frustrantes que alguém pode ter como usuário de "
-"software é submeter um relatório de problema apenas para encerrá-lo "
-"sumariamente com uma explicação concisa e inútil como <quote> não é um bug </"
-"quote> ou <quote> falso PR </quote>. Da mesma forma, uma das experiências "
-"mais frustrantes como desenvolvedor de software é ser inundada com "
-"relatórios de problemas que não são realmente relatórios de problemas, mas "
-"solicitações de suporte, ou que contêm pouca ou nenhuma informação sobre o "
-"problema e como reproduzi-lo."
+"Uma das experiências mais frustrantes que alguém pode ter como usuário de um "
+"software é submeter um relatório de problema apenas para vê-lo ser encerrado "
+"sumariamente com uma explicação curta e inútil tal como <quote>não é um bug</"
+"quote> ou <quote>PR Falso</quote>. Da mesma forma, uma das experiências mais "
+"frustrantes como desenvolvedor de software é ser inundado com relatórios de "
+"problemas que não são realmente relatórios de problemas mas sim pedidos de "
+"suporte, ou então por relatórios que contêm pouca ou nenhuma informação "
+"sobre o que é o problema e sobre como reproduzi-lo."
 
 #. (itstool) path: section/para
 #: article.translate.xml:79
-#, fuzzy
 msgid ""
 "This document attempts to describe how to write good problem reports. What, "
 "one asks, is a good problem report? Well, to go straight to the bottom line, "
@@ -178,42 +167,38 @@ msgid ""
 msgstr ""
 "Este documento tenta descrever como escrever bons relatórios de problemas. O "
 "que, alguém pergunta, é um bom relatório de problemas? Bem, para ir "
-"diretamente para a linha de fundo, um bom relatório de problema é aquele que "
-"pode ser analisado e tratado rapidamente, para a satisfação mútua do usuário "
-"e do desenvolvedor."
+"diretamente para ao ponto, um bom relatório de problema é aquele que pode "
+"ser analisado e tratado rapidamente, para a satisfação mútua do usuário e do "
+"desenvolvedor."
 
 #. (itstool) path: section/para
 #: article.translate.xml:85
-#, fuzzy
 msgid ""
 "Although the primary focus of this article is on FreeBSD problem reports, "
 "most of it should apply quite well to other software projects."
 msgstr ""
 "Embora o foco principal deste artigo esteja nos relatórios de problemas do "
-"FreeBSD, a maioria deles deve se aplicar muito bem a outros projetos de "
-"software."
+"FreeBSD, a maioria das recomendações deve se aplicar muito bem a outros "
+"projetos de software."
 
 #. (itstool) path: section/para
 #: article.translate.xml:89
-#, fuzzy
 msgid ""
 "Note that this article is organized thematically, not chronologically. Read "
 "the entire document before submitting a problem report, rather than treating "
 "it as a step-by-step tutorial."
 msgstr ""
-"Observe que este artigo é organizado por temas, não cronologicamente. Leia "
-"todo o documento antes de enviar um relatório de problemas, em vez de tratá-"
-"lo como um tutorial passo a passo."
+"Observe que este artigo é organizado por temas, não de uma forma cronológica."
+" Leia todo o documento antes de enviar um relatório de problemas, em vez de "
+"tratá-lo como um tutorial passo a passo."
 
 #. (itstool) path: section/title
 #: article.translate.xml:96
-#, fuzzy
 msgid "When to Submit a Problem Report"
-msgstr "Quando enviar um relatório de problemas"
+msgstr "Quando Enviar um Relatório de Problemas"
 
 #. (itstool) path: section/para
 #: article.translate.xml:98
-#, fuzzy
 msgid ""
 "There are many types of problems, and not all of them should engender a "
 "problem report. Of course, nobody is perfect, and there will be times when "
@@ -229,19 +214,18 @@ msgid ""
 msgstr ""
 "Existem muitos tipos de problemas, e nem todos devem gerar um relatório de "
 "problemas. Naturalmente, ninguém é perfeito, e haverá momentos em que o que "
-"parece ser um bug em um programa é, na verdade, um equívoco da sintaxe de um "
+"parece ser um bug em um programa é, na verdade, um equívoco na sintaxe de um "
 "comando ou um erro tipográfico em um arquivo de configuração (embora isso "
-"por si só possa pode ser um indicativo de documentação deficiente ou de "
-"erros no manuseio do aplicativo). Ainda há muitos casos em que submeter um "
-"relatório de problema é claramente <emphasis> não </emphasis> o curso de "
-"ação correto, e só servirá para frustrar o apresentador e os desenvolvedores."
-" Por outro lado, há casos em que pode ser apropriado enviar um relatório de "
-"problema sobre algo diferente de um bug - um aprimoramento ou um novo "
-"recurso, por exemplo."
+"por si só possa ser um indicativo de uma documentação deficiente ou de "
+"deficiências no manuseio de erros pelo aplicativo). Existem ainda muitos "
+"casos em que submeter um relatório de problema claramente <emphasis>não</"
+"emphasis> é o curso de ação correto, e só servirá para frustrar tanto o "
+"usuário e quanto o desenvolvedor. Por outro lado, existem casos em que pode "
+"ser apropriado enviar um relatório de problema sobre algo diferente de um "
+"bug - tal como um aprimoramento ou um novo recurso, por exemplo."
 
 #. (itstool) path: section/para
 #: article.translate.xml:112
-#, fuzzy
 msgid ""
 "So how does one determine what is a bug and what is not? As a simple rule of "
 "thumb, the problem is <emphasis>not</emphasis> a bug if it can be expressed "
@@ -253,27 +237,25 @@ msgid ""
 "questions mailing list</link>."
 msgstr ""
 "Então, como se determina o que é um bug e o que não é? Como uma regra "
-"simples, o problema é <emphasis> não </emphasis> um bug se ele puder ser "
-"expresso como uma questão (geralmente na forma <quote> Como faço X? </quote> "
-"ou <quote> Onde posso encontrar Y? </quote>). Nem sempre é tão preto e "
-"branco, mas a regra da pergunta cobre a grande maioria dos casos. Ao "
-"procurar por uma resposta, considere colocar a questão na <link xlink:href="
-"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\"> lista de "
-"discussão de perguntas gerais do FreeBSD </link>."
+"simples, o problema <emphasis>não</emphasis> é um bug se ele puder ser "
+"expresso como uma pergunta (geralmente na forma <quote>Como faço X?</quote> "
+"ou <quote>Onde posso encontrar Y?</quote>). Nem sempre é tão preto e branco, "
+"mas a regra da pergunta cobre a grande maioria dos casos. Ao procurar por "
+"uma resposta, considere colocar a questão na <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/freebsd-questions\">lista de discussão de "
+"perguntas gerais sobre o FreeBSD</link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:121
-#, fuzzy
 msgid ""
 "Consider these factors when submitting PRs about ports or other software "
 "that is not part of FreeBSD itself:"
 msgstr ""
-"Considere estes fatores ao enviar PRs sobre portas ou outros softwares que "
+"Considere estes fatores ao enviar PRs sobre ports ou outros softwares que "
 "não fazem parte do próprio FreeBSD:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:126
-#, fuzzy
 msgid ""
 "Please do not submit problem reports that simply state that a newer version "
 "of an application is available. Ports maintainers are automatically notified "
@@ -283,14 +265,13 @@ msgid ""
 msgstr ""
 "Por favor, não envie relatórios de problemas que simplesmente afirmam que "
 "uma versão mais nova de um aplicativo está disponível. Os mantenedores de "
-"portas são automaticamente notificados pelo <application> portscout </"
-"application> quando uma nova versão de um aplicativo se torna disponível. "
-"Patches reais para atualizar uma porta para a versão mais recente são bem-"
-"vindos."
+"ports são notificados automaticamente pelo <application>portscout</"
+"application> quando uma nova versão de um aplicativo fica disponível. "
+"Patches para atualizar um port para uma versão mais recente do software são "
+"sempre bem-vindos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:135
-#, fuzzy
 msgid ""
 "For unmaintained ports (<varname>MAINTAINER</varname> is "
 "<literal>ports@FreeBSD.org</literal>), a PR without an included patch is "
@@ -298,15 +279,14 @@ msgid ""
 "unmaintained port, submit a PR with the request (patch preferred but not "
 "required)."
 msgstr ""
-"Para portas não-mantidas (<varname> MAINTAINER </varname> é <literal> "
-"ports@FreeBSD.org </literal>), é improvável que um PR sem um patch incluído "
-"seja escolhido por um committer. Para se tornar o mantenedor de uma porta "
-"não-mantida, envie um PR com o pedido (patch preferido, mas não obrigatório)."
-""
+"Para ports não mantidos (O seu <varname>MAINTAINER</varname> é "
+"<literal>ports@FreeBSD.org</literal>), é improvável que um PR que não tenha "
+"um patch incluído seja escolhido para ser trabalhado por um committer. Para "
+"se tornar o mantenedor de um port não mantido, envie um PR com o pedido "
+"(Será ótimo se o pedido vier com um patch, mas isso não é obrigatório)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:144
-#, fuzzy
 msgid ""
 "In either case, following the process described in <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/port-"
@@ -315,16 +295,15 @@ msgid ""
 "ISO8859-1/articles/contributing/ports-contributing.html\">Contributing to "
 "the FreeBSD Ports Collection</link>.)"
 msgstr ""
-"Em ambos os casos, seguindo o processo descrito em <link xlink:href="
+"Em ambos os casos, seguir o processo descrito no <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/port-"
-"upgrading.html\"> Manual de Porter </link> rende os melhores resultados. "
-"(Você também pode ler <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
-"1/articles /contribute/ports-contribute.html\"> Contribuindo para a Coleção "
-"de Ports do FreeBSD </link>. )"
+"upgrading.html\">Porter's Handbook</link> produzirá os melhores resultados. "
+"(Você também pode desejar ler a seção <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/articles/contributing/ports-contributing."
+"html\">Contribuindo para a Coleção de Ports do FreeBSD </link>. )"
 
 #. (itstool) path: section/para
 #: article.translate.xml:151
-#, fuzzy
 msgid ""
 "A bug that cannot be reproduced can rarely be fixed. If the bug only "
 "occurred once and you cannot reproduce it, and it does not seem to happen to "
@@ -337,29 +316,27 @@ msgid ""
 msgstr ""
 "Um bug que não pode ser reproduzido raramente pode ser corrigido. Se o bug "
 "ocorreu apenas uma vez e você não pode reproduzi-lo, e não parece acontecer "
-"a mais ninguém, é provável que nenhum dos desenvolvedores consiga reproduzi-"
-"lo ou descobrir o que está errado. Isso não significa que isso não tenha "
-"acontecido, mas significa que as chances de o seu relatório de problema "
-"levar a uma correção de bug são muito pequenas. Para piorar, muitas vezes "
-"esses tipos de bugs são causados ​​por discos rígidos com falha ou "
-"processadores superaquecidos - você deve sempre tentar excluir essas causas, "
-"sempre que possível, antes de enviar um PR."
+"com mais ninguém, é muito provável que nenhum dos desenvolvedores consiga "
+"reproduzi-lo ou descobrir o que está errado. Isso não significa que isso não "
+"tenha acontecido, mas significa que as chances do seu relatório de problema "
+"levar à correção do bug são muito pequenas. Para piorar, muitas vezes esses "
+"tipos de bugs são causados ​​por discos rígidos com defeito ou por "
+"processadores superaquecidos - sempre que possível você deve tentar "
+"descartar essas causas antes de enviar um PR."
 
 #. (itstool) path: section/para
 #: article.translate.xml:162
-#, fuzzy
 msgid ""
 "Next, to decide to whom you should file your problem report, you need to "
 "understand that the software that makes up FreeBSD is composed of several "
 "different elements:"
 msgstr ""
-"Em seguida, para decidir a quem você deve enviar seu relatório de problemas, "
-"você precisa entender que o software que compõe o FreeBSD é composto de "
-"vários elementos diferentes:"
+"Em seguida, para decidir para quem você deve enviar seu relatório de "
+"problema, você precisa entender que o software que compõe o FreeBSD é "
+"composto por vários elementos diferentes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:168
-#, fuzzy
 msgid ""
 "Code in the base system that is written and maintained by FreeBSD "
 "contributors, such as the kernel, the C library, and the device drivers "
@@ -368,16 +345,15 @@ msgid ""
 "literal>); and the web pages (<literal>www</literal>). All bugs in these "
 "areas should be reported to the FreeBSD developers."
 msgstr ""
-"Código no sistema base que é escrito e mantido pelos contribuidores do "
+"Código no sistema base que é escrito e mantido por contribuidores do "
 "FreeBSD, como o kernel, a biblioteca C e os drivers de dispositivo "
-"(categorizados como <literal> kern </literal>); os utilitários binários "
-"(<literal> bin </literal>); as páginas de manual e documentação (<literal> "
-"docs </literal>); e as páginas da web (<literal> www </literal>). Todos os "
-"erros nessas áreas devem ser reportados aos desenvolvedores do FreeBSD."
+"(categorizados como <literal>kern</literal>); os utilitários binários "
+"(<literal>bin</literal>); as páginas de manual e documentação "
+"(<literal>docs</literal>); e as páginas web (<literal>www</literal>). Todos "
+"os erros nestas áreas devem ser reportados aos desenvolvedores do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:178
-#, fuzzy
 msgid ""
 "Code in the base system that is written and maintained by others, and "
 "imported into FreeBSD and adapted. Examples include "
@@ -388,18 +364,17 @@ msgid ""
 "may need to be reported to the original authors instead if the problems are "
 "not FreeBSD-specific."
 msgstr ""
-"Código no sistema base que é escrito e mantido por outros, e importado para "
-"o FreeBSD e adaptado. Exemplos incluem <citerefentry> <refentrytitle> clang "
-"</refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> e <citerefentry> "
-"<refentrytitle> sendmail </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry> . A maioria dos bugs nessas áreas deve ser reportada aos "
-"desenvolvedores do FreeBSD; mas em alguns casos eles podem precisar ser "
-"relatados aos autores originais, em vez disso, se os problemas não forem "
-"específicos do FreeBSD."
+"Código no sistema base que é escrito e mantido por outras pessoas, o qual é "
+"importado e adaptado para o FreeBSD. Exemplos incluem o "
+"<citerefentry><refentrytitle>clang</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> e o <citerefentry><refentrytitle>sendmail</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. A maioria dos bugs "
+"nessas áreas deve ser reportada aos desenvolvedores do FreeBSD; mas em "
+"alguns casos eles podem precisar ser relatados aos autores originais se os "
+"problemas não forem específicos do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:188
-#, fuzzy
 msgid ""
 "Individual applications that are not in the base system but are instead part "
 "of the FreeBSD Ports Collection (category <literal>ports</literal>). Most of "
@@ -409,16 +384,15 @@ msgid ""
 "to be FreeBSD-specific; otherwise, report it to the authors of the software."
 msgstr ""
 "Aplicativos individuais que não estão no sistema base, mas que são parte da "
-"coleção de ports do FreeBSD (categoria <literal> ports </literal>). A "
-"maioria desses aplicativos não são escritos por desenvolvedores do FreeBSD; "
-"o que o FreeBSD fornece é meramente uma estrutura para instalar o aplicativo."
-" Portanto, apenas relate um problema para os desenvolvedores do FreeBSD "
+"coleção de ports do FreeBSD (categoria <literal>ports</literal>). A maioria "
+"desses aplicativos não são escritos por desenvolvedores do FreeBSD; o que o "
+"FreeBSD fornece é meramente um framework para instalar o aplicativo. "
+"Portanto, apenas relate um problema para os desenvolvedores do FreeBSD "
 "quando o problema for considerado específico do FreeBSD; caso contrário, "
 "informe aos autores do software."
 
 #. (itstool) path: section/para
 #: article.translate.xml:199
-#, fuzzy
 msgid ""
 "Then, ascertain whether the problem is timely. There are few things that "
 "will annoy a developer more than receiving a problem report about a bug she "
@@ -426,11 +400,10 @@ msgid ""
 msgstr ""
 "Em seguida, verifique se o problema é oportuno. Há poucas coisas que "
 "incomodarão mais um desenvolvedor do que receber um relatório de problemas "
-"sobre um bug que ela já corrigiu."
+"sobre um bug que ele já corrigiu."
 
 #. (itstool) path: section/para
 #: article.translate.xml:203
-#, fuzzy
 msgid ""
 "If the problem is in the base system, first read the FAQ section on <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction."
@@ -442,20 +415,19 @@ msgid ""
 "recurs. The Security Officer team maintains the <link xlink:href="
 "\"@@URL_RELPREFIX@@/security/\">list of supported versions</link>."
 msgstr ""
-"Se o problema estiver no sistema básico, primeiro leia a seção de perguntas "
-"frequentes em <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
-"faq/introduction.html#LATEST-VERSION\"> FreeBSD versões </link>, se você "
-"ainda não estiver familiarizado com o tópico. Não é possível para o FreeBSD "
-"consertar problemas em nada além de certas ramificações recentes do sistema "
-"básico, então arquivar um relatório de bug sobre uma versão mais antiga "
-"provavelmente resultará em um desenvolvedor aconselhando você a atualizar "
-"para uma versão suportada para ver se o problema ainda recorre. A equipe do "
-"Security Officer mantém a <link xlink:href=\"@@URL_RELPREFIX@@/security/\"> "
-"lista de versões suportadas </link>."
+"Se o problema estiver no sistema base, primeiro leia a seção <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction."
+"html#LATEST-VERSION\"> Versões do FreeBSD</link> do FAQ, se você ainda não "
+"estiver familiarizado com o tópico. Não é possível para o FreeBSD consertar "
+"problemas em nada além de certas branchs recentes do sistema base, de forma "
+"que enviar um relatório de bug sobre uma versão mais antiga provavelmente "
+"resultará em um desenvolvedor aconselhando você a atualizar para uma versão "
+"suportada para ver se o problema ainda continua ocorrendo. A equipe do "
+"Security Officer mantém a <link xlink:href=\"@@URL_RELPREFIX@@/security/"
+"\">lista das versões suportadas </link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:215
-#, fuzzy
 msgid ""
 "If the problem is in a port, note that you must first upgrade to the latest "
 "version of the Ports Collection and see if the problem still applies. Due to "
@@ -463,18 +435,17 @@ msgid ""
 "FreeBSD to support anything other than the absolute latest versions, and "
 "problems with older version of applications simply cannot be fixed."
 msgstr ""
-"Se o problema estiver em uma porta, observe que você deve primeiro atualizar "
-"para a versão mais recente da Coleção de Portas e verificar se o problema "
+"Se o problema estiver em um port, observe que você deverá primeiro atualizar "
+"para a versão mais recente da Coleção de Ports e verificar se o problema "
 "ainda se aplica. Devido ao ritmo acelerado de mudanças nesses aplicativos, é "
-"impossível que o FreeBSD ofereça suporte a algo que não seja as versões mais "
-"recentes e os problemas com versões mais antigas de aplicativos simplesmente "
-"não podem ser corrigidos."
+"inviável que o FreeBSD ofereça suporte para qualquer coisa que não seja "
+"absolutamente a versão mais recente e os problemas com versões mais antigas "
+"de aplicativos simplesmente não podem ser corrigidos."
 
 #. (itstool) path: section/title
 #: article.translate.xml:225
-#, fuzzy
 msgid "Preparations"
-msgstr "Preparações"
+msgstr "Preparativos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:227

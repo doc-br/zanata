@@ -1,5 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,10 +8,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-24 03:54+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-02 09:02+0000\n"
+"Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -23,7 +24,6 @@ msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 #. (itstool) path: sect1/title
 #: article.translate.xml:4
 #: article.translate.xml:40
-#, fuzzy
 msgid "Introduction to NanoBSD"
 msgstr "Introdução ao NanoBSD"
 
@@ -74,17 +74,16 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:31
-#, fuzzy
 msgid ""
 "This document provides information about the <application>NanoBSD</"
 "application> tools, which can be used to create FreeBSD system images for "
 "embedded applications, suitable for use on a Compact Flash card (or other "
 "mass storage medium)."
 msgstr ""
-"Este documento fornece informações sobre as ferramentas <application> "
-"NanoBSD </application>, que podem ser usadas para criar imagens do sistema "
-"FreeBSD para aplicativos embarcados, adequadas para uso em um cartão Compact "
-"Flash (ou outro meio de armazenamento em massa)."
+"Este documento fornece informações sobre as ferramentas "
+"<application>NanoBSD</application>, que podem ser usadas para criar imagens "
+"do sistema FreeBSD para aplicativos embarcados, adequadas para uso em um "
+"cartão Compact Flash (ou outro meio de armazenamento em massa)."
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:42
@@ -93,22 +92,19 @@ msgstr "<primary>NanoBSD</primary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:44
-#, fuzzy
 msgid ""
 "<application>NanoBSD</application> is a tool currently developed by Poul-"
 "Henning Kamp <email>phk@FreeBSD.org</email>. It creates a FreeBSD system "
 "image for embedded applications, suitable for use on a Compact Flash card "
 "(or other mass storage medium)."
 msgstr ""
-"<application> NanoBSD </application> é uma ferramenta atualmente "
-"desenvolvida por Poul-Henning Kamp <email> phk@FreeBSD.org </email>. Ele "
-"cria uma imagem do sistema FreeBSD para aplicativos incorporados, adequada "
-"para uso em um cartão Compact Flash (ou outro meio de armazenamento em "
-"massa)."
+"<application>NanoBSD</application> é uma ferramenta atualmente desenvolvida "
+"por Poul-Henning Kamp<email> phk@FreeBSD.org </email>. Ele cria uma imagem "
+"do sistema FreeBSD para aplicativos incorporados, adequada para uso em um "
+"cartão Compact Flash (ou outro meio de armazenamento em massa)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:49
-#, fuzzy
 msgid ""
 "It can be used to build specialized install images, designed for easy "
 "installation and maintenance of systems commonly called <quote>computer "
@@ -119,32 +115,29 @@ msgid ""
 msgstr ""
 "Ele pode ser usado para construir imagens de instalação especializadas, "
 "projetadas para fácil instalação e manutenção de sistemas comumente chamados "
-"de <quote> aparelhos de computador </quote>. Os dispositivos de computador "
-"têm seu hardware e software agrupados no produto, o que significa que todos "
-"os aplicativos são pré-instalados. O appliance é conectado a uma rede "
-"existente e pode começar a funcionar (quase) imediatamente."
+"de <quote>appliances </quote>. Os appliances têm seu hardware e software "
+"agrupados no produto, o que significa que todos os aplicativos são pré-"
+"instalados. O appliance é conectado a uma rede existente e pode começar a "
+"funcionar (quase) imediatamente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:57
-#, fuzzy
 msgid "The features of <application>NanoBSD</application> include:"
-msgstr "Os recursos do <application> NanoBSD </application> incluem:"
+msgstr "Os recursos do <application>NanoBSD</application> incluem:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:62
-#, fuzzy
 msgid ""
 "Ports and packages work as in FreeBSD — Every single application can be "
 "installed and used in a <application>NanoBSD</application> image, the same "
 "way as in FreeBSD."
 msgstr ""
-"Portos e pacotes funcionam como no FreeBSD - Cada aplicativo pode ser "
+"Como Ports e pacotes funcionam  no FreeBSD - Cada aplicativo pode ser "
 "instalado e usado em uma imagem do <application> NanoBSD </application>, da "
 "mesma forma que no FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:69
-#, fuzzy
 msgid ""
 "No missing functionality — If it is possible to do something with FreeBSD, "
 "it is possible to do the same thing with <application>NanoBSD</application>, "
@@ -152,13 +145,12 @@ msgid ""
 "<application>NanoBSD</application> image when it was created."
 msgstr ""
 "Nenhuma funcionalidade ausente - Se é possível fazer algo com o FreeBSD, é "
-"possível fazer a mesma coisa com o <application> NanoBSD </application>, a "
+"possível fazer a mesma coisa com o <application>NanoBSD</application>, a "
 "menos que o recurso ou os recursos específicos sejam explicitamente "
-"removidos do <application> NanoBSD </application > imagem quando foi criada."
+"removidos do <application>NanoBSD</application > imagem quando foi criada."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:78
-#, fuzzy
 msgid ""
 "Everything is read-only at run-time — It is safe to pull the power-plug. "
 "There is no necessity to run <citerefentry><refentrytitle>fsck</"
@@ -166,13 +158,12 @@ msgid ""
 "shutdown of the system."
 msgstr ""
 "Tudo é somente leitura em tempo de execução - É seguro puxar o plugue de "
-"alimentação. Não há necessidade de executar <citerefentry> <refentrytitle> "
-"fsck </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> após um "
-"desligamento não-normal do sistema."
+"alimentação. Não há necessidade de executar <citerefentry> "
+"<refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"após um desligamento não-normal do sistema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:85
-#, fuzzy
 msgid ""
 "Easy to build and customize — Making use of just one shell script and one "
 "configuration file it is possible to build reduced and customized images "
@@ -184,69 +175,61 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:94
-#, fuzzy
 msgid "NanoBSD Howto"
-msgstr "Howto NanoBSD"
+msgstr "Como fazer no NanoBSD"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:97
-#, fuzzy
 msgid "The Design of NanoBSD"
-msgstr "O design do NanoBSD"
+msgstr "O Design do NanoBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:99
-#, fuzzy
 msgid ""
 "Once the image is present on the medium, it is possible to boot "
 "<application>NanoBSD</application>. The mass storage medium is divided into "
 "three parts by default:"
 msgstr ""
-"Quando a imagem estiver presente no meio, é possível inicializar o "
-"<application> NanoBSD </application>. O meio de armazenamento em massa é "
+"Quando a imagem estiver presente na midia, é possível inicializar o "
+"<application>NanoBSD </application>. O meio de armazenamento em massa é "
 "dividido em três partes por padrão:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:105
-#, fuzzy
 msgid ""
 "Two image partitions: <literal>code#1</literal> and <literal>code#2</"
 "literal>."
 msgstr ""
-"Duas partições de imagem: <literal> código # 1 </literal> e <literal> código "
-"# 2 </literal>."
+"Duas partições de imagem:  \n"
+"<literal>code#1</literal> e <literal>code#2</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:110
-#, fuzzy
 msgid ""
 "The configuration file partition, which can be mounted under the <filename>/"
 "cfg</filename> directory at run time."
 msgstr ""
-"A partição do arquivo de configuração, que pode ser montada no diretório "
-"<filename> / cfg </filename> em tempo de execução."
+"A partição do arquivo de configuração, que pode ser montada no diretório  "
+"<filename>/cfg</filename> no diretório em tempo de execução."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:116
-#, fuzzy
 msgid "These partitions are normally mounted read-only."
 msgstr "Essas partições são normalmente montadas como somente leitura."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:118
-#, fuzzy
 msgid ""
 "The <filename>/etc</filename> and <filename>/var</filename> directories are "
 "<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> (malloc) disks."
 msgstr ""
-"Os diretórios <filename> / etc </filename> e <filename> / var </filename> "
-"são discos <citerefentry> <refentrytitle> md </refentrytitle> <manvolnum> 4 "
-"</manvolnum> </citerefentry> (malloc)."
+"Os diretórios <filename> /etc</filename> e <filename> /var</filename> são "
+"diretórios <citerefentry> <refentrytitle>md</refentrytitle> <manvolnum>4</"
+"manvolnum></citerefentry> (malloc) discos.."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:122
-#, fuzzy
 msgid ""
 "The configuration file partition persists under the <filename>/cfg</"
 "filename> directory. It contains files for <filename>/etc</filename> "
@@ -255,24 +238,22 @@ msgid ""
 "filename> back to the <filename>/cfg</filename> directory if changes are "
 "expected to persist after the system restarts."
 msgstr ""
-"A partição do arquivo de configuração persiste no diretório <filename> / cfg "
-"</filename>. Ele contém arquivos para o diretório <filename> / etc </"
-"filename> e é brevemente montado somente para leitura logo após a "
-"inicialização do sistema, portanto é necessário copiar os arquivos "
-"modificados de <filename> / etc </filename> de volta para o <filename > / "
-"cfg </filename> se as alterações persistirem após a reinicialização do "
-"sistema."
+"A partição do arquivo de configuração persiste no diretório <filename>/cfg</"
+"filename>. Ele contém arquivos para o diretório <filename>/etc</filename> e "
+"é brevemente montado somente para leitura logo após a inicialização do "
+"sistema, portanto é necessário copiar os arquivos modificados de<filename>/"
+"etc</filename> de volta para o <filename>/cfg</filename>  se as alterações "
+"persistirem após a reinicialização do sistema."
 
 #. (itstool) path: example/title
 #: article.translate.xml:132
-#, fuzzy
 msgid "Making Persistent Changes to <filename>/etc/resolv.conf</filename>"
 msgstr ""
-"Fazendo Mudanças Persistentes no <filename> /etc/resolv.conf </filename>"
+"Fazendo Mudanças Persistentes no <filename>/etc/resolv.conf</filename>"
 
 #. (itstool) path: example/screen
 #: article.translate.xml:135
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>vi /etc/resolv.conf</userinput>\n"
 "[...]\n"
@@ -288,18 +269,15 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:143
-#, fuzzy
 msgid ""
 "The partition containing <filename>/cfg</filename> should be mounted only at "
 "boot time and while overriding the configuration files."
 msgstr ""
-"A partição que contém o <filename> / cfg </filename> deve ser montada "
-"somente no momento da inicialização e sobrescrevendo os arquivos de "
-"configuração."
+"A partição que contém o <filename> /cfg </filename> deve ser montada somente "
+"no momento da inicialização e sobrescrevendo os arquivos de configuração."
 
 #. (itstool) path: note/para
 #: article.translate.xml:148
-#, fuzzy
 msgid ""
 "Keeping <filename>/cfg</filename> mounted at all times is not a good idea, "
 "especially if the <application>NanoBSD</application> system runs off a mass "
@@ -307,15 +285,14 @@ msgid ""
 "the partition (like when the filesystem syncer flushes data to the system "
 "disks)."
 msgstr ""
-"Manter o <filename> / cfg </filename> montado o tempo todo não é uma boa "
-"idéia, especialmente se o sistema <application> NanoBSD </application> for "
-"executado em um meio de armazenamento em massa que pode ser afetado "
-"negativamente por um grande número de gravações a partição (como quando o "
-"sistema de arquivos sincroniza os dados para os discos do sistema)."
+"Manter o <filename>/cfg</filename> montado o tempo todo não é uma boa idéia, "
+"especialmente se o sistema <application>NanoBSD</application> for executado "
+"em um meio de armazenamento em massa que pode ser afetado negativamente por "
+"um grande número de gravações a partição (como quando o sistema de arquivos "
+"sincroniza os dados para os discos do sistema)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:158
-#, fuzzy
 msgid "Building a NanoBSD Image"
 msgstr "Construindo uma imagem NanoBSD"
 
