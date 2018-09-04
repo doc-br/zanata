@@ -1,6 +1,6 @@
-# Clayton Eduardo dos Santos <claytones@gmail.com>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,20 +10,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-02 04:55+0000\n"
-"Last-Translator: Clayton Eduardo dos Santos <claytones@gmail.com>\n"
+"PO-Revision-Date: 2018-09-03 10:57+0000\n"
+"Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#, fuzzy
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Mauro Risonho de Paula Assumpção, mauro.risonho@gmail.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:35
-#, fuzzy
 msgid "FreeBSD and Solid State Devices"
 msgstr "FreeBSD e dispositivos de estado sólido"
 
@@ -155,7 +155,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:115
-#, fuzzy
 msgid ""
 "This article covers the use of solid state disk devices in FreeBSD to create "
 "embedded systems."
@@ -165,7 +164,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:118
-#, fuzzy
 msgid ""
 "Embedded systems have the advantage of increased stability due to the lack "
 "of integral moving parts (hard drives). Account must be taken, however, for "
@@ -179,7 +177,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:124
-#, fuzzy
 msgid ""
 "Specific topics to be covered include the types and attributes of solid "
 "state media suitable for disk use in FreeBSD, kernel options that are of "
@@ -191,21 +188,19 @@ msgid ""
 msgstr ""
 "Tópicos específicos a serem abordados incluem os tipos e atributos de mídia "
 "de estado sólido adequados para uso de disco no FreeBSD, opções de kernel "
-"que são de interesse em tal ambiente, os mecanismos <filename> rc."
-"initdiskless </filename> que automatizam a inicialização de tais sistemas e "
-"a necessidade de sistemas de arquivos somente para leitura e a construção de "
+"que são de interesse em tal ambiente, os mecanismos <filename>rc."
+"initdiskless</filename> que automatizam a inicialização de tais sistemas e a "
+"necessidade de sistemas de arquivos somente para leitura e a construção de "
 "sistemas de arquivos a partir do zero. O artigo será concluído com algumas "
 "estratégias gerais para ambientes FreeBSD pequenos e somente leitura."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
-#, fuzzy
 msgid "Solid State Disk Devices"
 msgstr "Dispositivos de disco de estado sólido"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
-#, fuzzy
 msgid ""
 "The scope of this article will be limited to solid state disk devices made "
 "from flash memory. Flash memory is a solid state memory (no moving parts) "
@@ -245,7 +240,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:159
-#, fuzzy
 msgid ""
 "Specifically, we will be discussing ATA compatible compact-flash units, "
 "which are quite popular as storage media for digital cameras. Of particular "
@@ -266,7 +260,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:169
-#, fuzzy
 msgid ""
 "Other solid state disk solutions do exist, but their expense, obscurity, and "
 "relative unease of use places them beyond the scope of this article."
@@ -276,13 +269,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:175
-#, fuzzy
 msgid "Kernel Options"
 msgstr "Opções do Kernel"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:177
-#, fuzzy
 msgid ""
 "A few kernel options are of specific interest to those creating an embedded "
 "FreeBSD system."
@@ -292,7 +283,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
-#, fuzzy
 msgid ""
 "All embedded FreeBSD systems that use flash memory as system disk will be "
 "interested in memory disks and memory filesystems. Because of the limited "
@@ -308,15 +298,14 @@ msgstr ""
 "de memória. Devido ao número limitado de gravações que podem ser feitas na "
 "memória flash, o disco e os sistemas de arquivos no disco provavelmente "
 "serão montados somente leitura. Nesse ambiente, sistemas de arquivos como "
-"<filename> / tmp </filename> e <filename> / var </filename> são montados "
-"como sistemas de arquivos de memória para permitir que o sistema crie logs e "
+"<filename> /tmp</filename>e<filename>/var</filename> são montados como "
+"sistemas de arquivos de memória para permitir que o sistema crie logs e "
 "atualize contadores e arquivos temporários. Os sistemas de arquivos de "
 "memória são um componente crítico para uma implementação bem-sucedida do "
 "FreeBSD em estado sólido."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:191
-#, fuzzy
 msgid ""
 "You should make sure the following lines exist in your kernel configuration "
 "file:"
@@ -326,7 +315,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:194
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "options         MFS             # Memory Filesystem\n"
 "options         MD_ROOT         # md device usable as a potential root "
@@ -340,24 +329,21 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:200
-#, fuzzy
 msgid "The <literal>rc</literal> Subsystem and Read-Only Filesystems"
 msgstr ""
-"O subsistema <literal> rc </literal> e sistemas de arquivos somente leitura"
+"O subsistema <literal>rc</literal> e sistemas de arquivos somente leitura"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:203
-#, fuzzy
 msgid ""
 "The post-boot initialization of an embedded FreeBSD system is controlled by "
 "<filename>/etc/rc.initdiskless</filename>."
 msgstr ""
 "A inicialização pós-inicialização de um sistema embarcado do FreeBSD é "
-"controlada por <filename> /etc/rc.initdiskless </filename>."
+"controlada por <filename>/etc/rc.initdiskless</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
-#, fuzzy
 msgid ""
 "<filename>/etc/rc.d/var</filename> mounts <filename>/var</filename> as a "
 "memory filesystem, makes a configurable list of directories in <filename>/"
@@ -369,31 +355,29 @@ msgid ""
 "created by <filename>/etc/rc.d/var</filename> based on the value of this "
 "variable in <filename>rc.conf</filename>:"
 msgstr ""
-"<filename> /etc/rc.d/var </filename> monta <filename> / var </filename> como "
-"um sistema de arquivos de memória, cria uma lista configurável de diretórios "
-"em <filename> / var </filename> com o comando <citerefentry > "
-"<refentrytitle> mkdir </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> e altera os modos em alguns desses diretórios. Na execução de "
-"<filename> /etc/rc.d/var </filename>, uma outra variável <filename> rc.conf "
-"</filename> entra em jogo - <literal> varsize </literal>. Uma partição "
-"<filename> / var </filename> é criada por <filename> /etc/rc.d/var </"
-"filename> baseado no valor desta variável em <filename> rc.conf </filename>:"
+"<filename>/etc/rc.d/var</filename>mounts<filename>/var</filename>como um "
+"sistema de arquivos de memória, cria uma lista configurável de diretórios em "
+"<filename>/var</filename> com o comando<citerefentry><refentrytitle>mkdir </"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> e altera os modos em "
+"alguns desses diretórios. Na execução de <filename>/etc/rc.d/var</filename>, "
+"uma outra variável<filename>rc.conf</filename> entra em jogo "
+"–<literal>varsize </literal>. Uma partição <filename>/var</filename> é "
+"criada por <filename> /etc/rc.d/var</filename> baseado no valor desta "
+"variável em <filename>rc.conf</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:218
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "varsize=8192"
-msgstr "tamanho = 8192"
+msgstr "varsize=8192"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:220
-#, fuzzy
 msgid "Remember that this value is in sectors by default."
 msgstr "Lembre-se de que esse valor está nos setores por padrão."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:222
-#, fuzzy
 msgid ""
 "The fact that <filename>/var</filename> is a read-write filesystem is an "
 "important distinction, as the <filename>/</filename> partition (and any "
@@ -408,24 +392,23 @@ msgid ""
 "etc/fstab</filename>, you should also change the Options field for each "
 "filesystem to <literal>ro</literal> as follows:"
 msgstr ""
-"O fato de <filename> / var </filename> ser um sistema de arquivos de leitura "
-"/ gravação é uma distinção importante, pois a partição <filename> / </"
-"filename> (e quaisquer outras partições que você possa ter em sua mídia "
-"flash) deve ser montada somente leitura. Lembre-se que em <xref linkend="
-"\"intro\"/> detalhamos as limitações da memória flash - especificamente a "
-"capacidade de gravação limitada. A importância de não montar sistemas de "
-"arquivos em mídia flash de leitura / gravação, e a importância de não usar "
-"um arquivo de troca, não pode ser exagerada. Um arquivo de troca em um "
-"sistema ocupado pode gravar através de uma mídia flash em menos de um ano. "
-"Criação de log pesado ou criação e destruição de arquivos temporários podem "
-"fazer o mesmo. Portanto, além de remover a entrada <literal> swap </literal> "
-"do seu <filename> / etc / fstab </filename>, você também deve alterar o "
-"campo Options para cada sistema de arquivos para <literal> ro </literal> "
-"como segue:"
+"O fato de <filename>/var</filename> ser um sistema de arquivos de leitura "
+"gravação é uma distinção importante, pois a partição <filename>/</filename> "
+"(e quaisquer outras partições que você possa ter em sua mídia flash) deve "
+"ser montada somente leitura. Lembre-se que em <xref linkend=\"intro\"/> "
+"detalhamos as limitações da memória flash - especificamente a capacidade de "
+"gravação limitada. A importância de não montar sistemas de arquivos em mídia "
+"flash de leitura gravação, e a importância de não usar um arquivo de troca, "
+"não pode ser exagerada. Um arquivo de troca em um sistema ocupado pode "
+"gravar através de uma mídia flash em menos de um ano. Criação de log pesado "
+"ou criação e destruição de arquivos temporários podem fazer o mesmo. "
+"Portanto, além de remover a entrada <literal>swap</literal>do seu<filename>/"
+"etc/fstab</filename>, você também deve alterar o campo Options para cada "
+"sistema de arquivos para <literal>ro</literal>como segue:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:239
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# Device                Mountpoint      FStype  Options         Dump    "
 "Pass#\n"
@@ -437,7 +420,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:242
-#, fuzzy
 msgid ""
 "A few applications in the average system will immediately begin to fail as a "
 "result of this change. For instance, cron will not run properly as a result "
@@ -451,29 +433,28 @@ msgid ""
 msgstr ""
 "Alguns aplicativos no sistema médio começarão a falhar imediatamente como "
 "resultado dessa alteração. Por exemplo, o cron não será executado "
-"corretamente como resultado da falta de guias cron no <filename> / var </"
-"filename> criado por <filename> /etc/rc.d/var </filename>, e syslog e dhcp "
+"corretamente como resultado da falta de guias cron no <filename>/var</"
+"filename> criado por <filename>/etc/rc.d/var</filename>, e syslog e dhcp "
 "irão encontrar problemas, bem como um resultado do sistema de arquivos "
-"somente leitura e itens ausentes no <filename> / var </filename> que "
-"<filename> /etc/rc.d/var </filename> criou. Estes são apenas problemas "
-"temporários, embora sejam abordados, juntamente com soluções para a execução "
-"de outros pacotes de software comuns em <xref linkend=\"strategies\"/>."
+"somente leitura e itens ausentes no <filename>/var</filename>que<filename>/"
+"etc/rc.d/var</filename> criou. Estes são apenas problemas temporários, "
+"embora sejam abordados, juntamente com soluções para a execução de outros "
+"pacotes de software comuns em <xref linkend=\"strategies\"/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:254
-#, fuzzy
 msgid ""
 "An important thing to remember is that a filesystem that was mounted read-"
 "only with <filename>/etc/fstab</filename> can be made read-write at any time "
 "by issuing the command:"
 msgstr ""
 "Uma coisa importante a lembrar é que um sistema de arquivos que foi montado "
-"somente leitura com <filename> / etc / fstab </filename> pode ser lido a "
-"qualquer momento emitindo o comando:"
+"somente leitura com <filename>/etc/fstab</filename> pode ser lido a qualquer "
+"momento emitindo o comando:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:258
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/sbin/mount -uw <replaceable>partition</"
 "replaceable></userinput>"
@@ -483,13 +464,12 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:260
-#, fuzzy
 msgid "and can be toggled back to read-only with the command:"
 msgstr "e pode ser alternado de volta para somente leitura com o comando:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:263
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/sbin/mount -ur <replaceable>partition</"
 "replaceable></userinput>"
@@ -499,13 +479,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:267
-#, fuzzy
 msgid "Building a File System from Scratch"
 msgstr "Construindo um sistema de arquivos a partir do zero"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:269
-#, fuzzy
 msgid ""
 "Because ATA compatible compact-flash cards are seen by FreeBSD as normal IDE "
 "hard drives, you could theoretically install FreeBSD from the network using "
@@ -517,7 +495,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:274
-#, fuzzy
 msgid ""
 "However, even a small installation of FreeBSD using normal installation "
 "procedures can produce a system in size of greater than 200 megabytes. "
@@ -536,7 +513,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:283
-#, fuzzy
 msgid ""
 "The easiest way to overcome this space limitation is to install FreeBSD "
 "using conventional means to a normal hard disk. After the installation is "
@@ -553,21 +529,19 @@ msgstr ""
 "conclusão da instalação, reduza o sistema operacional para um tamanho que "
 "caiba na mídia flash e aplique o sistema de arquivos inteiro. Os passos "
 "seguintes irão guiá-lo através do processo de preparação de uma parte da "
-"memória flash para o seu sistema de arquivos tarred. Lembre-se, porque uma "
-"instalação normal não está sendo executada, operações como particionamento, "
-"rotulagem, criação de sistema de arquivos, etc. precisam ser executadas "
-"manualmente. Além dos disquetes kern e mfsroot, você também precisará usar o "
-"disquete do fixit."
+"memória flash para o seu sistema de arquivos revestido. Lembre-se, porque "
+"uma instalação normal não está sendo executada, operações como "
+"particionamento, rotulagem, criação de sistema de arquivos, etc. precisam "
+"ser executadas manualmente. Além dos disquetes kern e mfsroot, você também "
+"precisará usar o disquete do fixit."
 
 #. (itstool) path: step/title
 #: article.translate.xml:297
-#, fuzzy
 msgid "Partitioning Your Flash Media Device"
 msgstr "Particionando seu dispositivo de mídia Flash"
 
 #. (itstool) path: step/para
 #: article.translate.xml:299
-#, fuzzy
 msgid ""
 "After booting with the kern and mfsroot floppies, choose <literal>custom</"
 "literal> from the installation menu. In the custom installation menu, choose "
@@ -582,23 +556,22 @@ msgid ""
 "keycap> to quit the partition menu. You will be shown the boot manager menu "
 "once more - repeat the choice you made earlier."
 msgstr ""
-"Após inicializar com os disquetes kern e mfsroot, escolha <literal> custom </"
+"Após inicializar com os disquetes kern e mfsroot, escolha <literal>custom</"
 "literal> no menu de instalação. No menu de instalação personalizada, escolha "
-"<literal> partition </literal>. No menu de partições, você deve apagar todas "
-"as partições existentes usando <keycap> d </keycap>. Depois de excluir todas "
-"as partições existentes, crie uma partição usando <keycap> c </keycap> e "
+"<literal>partition</literal>. No menu de partições, você deve apagar todas "
+"as partições existentes usando <keycap>d</keycap>. Depois de excluir todas "
+"as partições existentes, crie uma partição usando <keycap>c</keycap> e "
 "aceite o valor padrão para o tamanho da partição. Quando perguntado sobre o "
 "tipo da partição, certifique-se de que o valor esteja configurado para "
-"<literal> 165 </literal>. Agora escreva esta tabela de partições no disco "
-"pressionando <keycap> w </keycap> (esta é uma opção oculta nesta tela). Se "
+"<literal>165</literal>. Agora escreva esta tabela de partições no disco "
+"pressionando <keycap>w</keycap> (esta é uma opção oculta nesta tela). Se "
 "você estiver usando um cartão compact flash compatível com ATA, deverá "
-"escolher o FreeBSD Boot Manager. Agora pressione <keycap> q </keycap> para "
+"escolher o FreeBSD Boot Manager. Agora pressione <keycap>q</keycap> para "
 "sair do menu de partições. Você verá novamente o menu do gerenciador de "
 "inicialização - repita a escolha feita anteriormente."
 
 #. (itstool) path: step/title
 #: article.translate.xml:319
-#, fuzzy
 msgid "Creating Filesystems on Your Flash Memory Device"
 msgstr "Criando sistemas de arquivos em seu dispositivo de memória flash"
 

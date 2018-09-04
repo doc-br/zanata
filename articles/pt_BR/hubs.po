@@ -1,5 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,15 +10,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-02 11:27+0000\n"
-"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-03 07:07+0000\n"
+"Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Mauro Risonho de Paula Assumpção, mauro.risonho@gmail.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
@@ -52,7 +55,7 @@ msgid ""
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
 "<personname><firstname>Valentino</firstname><surname>Vaschetto</surname></"
-"personname><affiliation> <_:address-1/> </affiliation>"
+"personname><affiliation><_:address-1/></affiliation>"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
@@ -67,7 +70,7 @@ msgid ""
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
 "<personname><firstname>Daniel</firstname><surname>Lang</surname></"
-"personname><affiliation> <_:address-1/> </affiliation>"
+"personname><affiliation><_:address-1/></affiliation>"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:17
@@ -516,7 +519,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:238
-#, fuzzy
 msgid ""
 "<package>www/boa</package>: <application>Boa</application> is a single-"
 "tasking HTTP server. Unlike traditional web servers, it does not fork for "
@@ -524,16 +526,14 @@ msgid ""
 "multiple connections. Although, it should provide considerably great "
 "performance for purely static content."
 msgstr ""
-"<package> www / boa </package>: <application> Boa </application> é um "
-"servidor HTTP de tarefa única. Ao contrário dos servidores da Web "
-"tradicionais, ele não é bifurcado para cada conexão de entrada nem bifurca "
-"muitas cópias de si mesmo para lidar com várias conexões. No entanto, deve "
-"fornecer um desempenho consideravelmente excelente para conteúdo puramente "
-"estático."
+"<package>www/boa</package>: <application>Boa</application> é um servidor "
+"HTTP de tarefa única. Ao contrário dos servidores da Web tradicionais, ele "
+"não é bifurcado para cada conexão de entrada nem bifurca muitas cópias de si "
+"mesmo para lidar com várias conexões. No entanto, deve fornecer um "
+"desempenho consideravelmente excelente para conteúdo puramente estático."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:247
-#, fuzzy
 msgid ""
 "<package>www/cherokee</package>: <application>&gt;Cherokee</application> is "
 "a very fast, flexible and easy to configure web server. It supports the "
@@ -542,30 +542,28 @@ msgid ""
 "balancing. It also generates <application>Apache</application> compatible "
 "log files."
 msgstr ""
-"<package> www / cherokee </package>: <application> &gt; Cherokee </"
-"application> é um servidor web muito rápido, flexível e fácil de configurar. "
-"Ele suporta as tecnologias difundidas atualmente: conexões criptografadas "
-"FastCGI, SCGI, PHP, CGI, SSL / TLS, vhosts, autenticação de usuários, "
-"codificação e equilíbrio de carga on the fly. Ele também gera arquivos de "
-"log compatíveis com o <application> Apache </application>."
+"<package>www/cherokee</package>: <application>&gt;Cherokee</application> é "
+"um servidor web muito rápido, flexível e fácil de configurar. Ele suporta as "
+"tecnologias difundidas atualmente: conexões criptografadas FastCGI, SCGI, "
+"PHP, CGI, SSL/TLS, vhosts, autenticação de usuários, codificação e "
+"equilíbrio de carga on the fly. Ele também gera arquivos de log compatíveis "
+"com o <application>Apache</application>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:257
-#, fuzzy
 msgid ""
 "<package>www/lighttpd</package>: <application>lighttpd</application> is a "
 "secure, fast, compliant and very flexible web server which has been "
 "optimized for high-performance environments. It has a very low memory "
 "footprint compared to other web servers and takes care of cpu-load."
 msgstr ""
-"<package> www / lighttpd </package>: <application> lighttpd </application> é "
-"um servidor web seguro, rápido, compatível e muito flexível que foi "
-"otimizado para ambientes de alto desempenho. Tem uma pegada de memória muito "
-"baixa em comparação com outros servidores da Web e cuida da carga da CPU."
+"<package>www/lighttpd</package>: <application>lighttpd</application> é um "
+"servidor web seguro, rápido, compatível e muito flexível que foi otimizado "
+"para ambientes de alto desempenho. Tem uma pegada de memória muito baixa em "
+"comparação com outros servidores da Web e cuida da carga da CPU."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:265
-#, fuzzy
 msgid ""
 "<package>www/nginx</package>: <application>nginx</application> is a high "
 "performance edge web server with a low memory footprint and key features to "
@@ -574,7 +572,7 @@ msgid ""
 "request throttling, connection multiplexing and reuse, SSL offload and HTTP "
 "media streaming."
 msgstr ""
-"<package> www / nginx </package>: <application> nginx </application> é um "
+"<package> www/nginx</package>: <application>nginx</application> é um "
 "servidor web de alto desempenho com baixo consumo de memória e recursos-"
 "chave para construir uma infraestrutura web moderna e eficiente. Os recursos "
 "incluem um servidor HTTP, proxy reverso de HTTP e correio, armazenamento em "
@@ -584,27 +582,24 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:276
-#, fuzzy
 msgid ""
 "<package>www/thttpd</package>: If you are going to be serving a large amount "
 "of static content you may find that using an application such as "
 "<application>thttpd</application> is more efficient than others. It is also "
 "optimized for excellent performance on FreeBSD."
 msgstr ""
-"<package> www / thttpd </package>: Se você estiver servindo uma grande "
+"<package>www/thttpd</package>: Se você estiver servindo uma grande "
 "quantidade de conteúdo estático, você pode achar que usar um aplicativo como "
-"<application> thttpd </application> é mais eficiente do que outros. Ele "
-"também é otimizado para excelente desempenho no FreeBSD."
+"<application>thttpd</application> é mais eficiente do que outros. Ele também "
+"é otimizado para excelente desempenho no FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:287
-#, fuzzy
 msgid "How to Mirror FreeBSD"
 msgstr "Como espelhar o FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
-#, fuzzy
 msgid ""
 "Ok, now you know the requirements and how to offer the services, but not how "
 "to get it. :-) This section explains how to actually mirror the various "
@@ -616,13 +611,11 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:296
-#, fuzzy
 msgid "Mirroring the FTP site"
 msgstr "Espelhando o site FTP"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:297
-#, fuzzy
 msgid ""
 "The FTP area is the largest amount of data that needs to be mirrored. It "
 "includes the <emphasis>distribution sets</emphasis> required for network "
@@ -633,16 +626,15 @@ msgid ""
 "architectures."
 msgstr ""
 "A área de FTP é a maior quantidade de dados que precisa ser espelhada. "
-"Inclui os <emphasis> conjuntos de distribuição </emphasis> necessários para "
-"a instalação em rede, os <emphasis> branches </emphasis> que são realmente "
-"instantâneos de árvores de fontes com check-out, <emphasis> Imagens ISO </"
-"emphasis> para gravar CD -ROMs com a distribuição de instalação, um sistema "
+"Inclui os <emphasis>conjuntos de distribuição</emphasis> necessários para a "
+"instalação em rede, os <emphasis>branches</emphasis> que são realmente "
+"instantâneos de árvores de fontes com check-out,<emphasis>Imagens ISO</"
+"emphasis> para gravar CD-ROMs com a distribuição de instalação, um sistema "
 "de arquivos ativo e um instantâneo da árvore de portes. Tudo claro para "
 "várias versões do FreeBSD e várias arquiteturas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:307
-#, fuzzy
 msgid ""
 "The best way to mirror the FTP area is <application>rsync</application>. You "
 "can install the port <package>net/rsync</package> and then use rsync to sync "
@@ -652,18 +644,17 @@ msgid ""
 "upstream site may not allow it. You may need to hunt around a little bit to "
 "find a site that allows <application>rsync</application> access."
 msgstr ""
-"A melhor maneira de espelhar a área de FTP é o <application> rsync </"
-"application>. Você pode instalar a porta <package> net / rsync </package> e "
-"então usar o rsync para sincronizar com seu host upstream. O <application> "
-"rsync </application> já é mencionado em <xref linkend = \"mirror-serv-"
-"rsync\" />. Como o acesso <application> rsync </application> não é "
-"necessário, seu site de upstream preferido pode não permitir isso. Talvez "
-"você precise procurar um pouco para localizar um site que permita o acesso "
-"ao <application> rsync </application>."
+"A melhor maneira de espelhar a área de FTP é o <application>rsync </"
+"application>. Você pode instalar a porta<package>net/rsync</package> e então "
+"usar o rsync para sincronizar com seu host upstream. O <application>rsync </"
+"application>já é mencionado em<xref linkend=\"mirror-serv-rsync\"/>. Como o "
+"acesso <application>rsync</application> não é necessário, seu site de "
+"upstream preferido pode não permitir isso. Talvez você precise procurar um "
+"pouco para localizar um site que permita o acesso ao <application>rsync</"
+"application>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:318
-#, fuzzy
 msgid ""
 "Since the number of <application>rsync</application> clients will have a "
 "significant impact on the server machine, most admins impose limitations on "
@@ -671,7 +662,7 @@ msgid ""
 "syncing from about their policy, and maybe an exception for your host (since "
 "you are a mirror)."
 msgstr ""
-"Como o número de clientes <application> rsync </application> terá um impacto "
+"Como o número de clientes <application>rsync</application> terá um impacto "
 "significativo na máquina do servidor, a maioria dos administradores impõe "
 "limitações em seu servidor. Por um espelho, você deve perguntar ao "
 "mantenedor do site que você está sincronizando sobre sua política, e talvez "
@@ -679,23 +670,21 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:327
-#, fuzzy
 msgid "A command line to mirror FreeBSD might look like:"
 msgstr "Uma linha de comando para espelhar o FreeBSD pode parecer com:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:328
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD."
 "org/FreeBSD/ /pub/FreeBSD/</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> rsync -vaHz --delete rsync: //ftp4.de."
-"FreeBSD.org/FreeBSD/ / pub / FreeBSD / </userinput>"
+"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD."
+"org/FreeBSD/ /pub/FreeBSD/</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:329
-#, fuzzy
 msgid ""
 "Consult the documentation for <application>rsync</application>, which is "
 "also available at <link xlink:href=\"http://rsync.samba.org/\">http://rsync."
@@ -706,58 +695,53 @@ msgid ""
 "calls such a command via <citerefentry><refentrytitle>cron</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
-"Consulte a documentação do <application> rsync </application>, que também "
-"está disponível em <link xlink:href=\"http://rsync.samba.org/\"> http://"
-"rsync.samba.org/ </link >, sobre as várias opções a serem usadas com o rsync."
-" Se você sincronizar o módulo inteiro (diferentemente dos subdiretórios), "
-"esteja ciente de que o diretório do módulo (aqui \"FreeBSD\") não será "
-"criado, então você não pode omitir o diretório de destino. Além disso, você "
-"pode querer configurar um framework de script que chame tal comando via "
-"<citerefentry> <refentrytitle> cron </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry>."
+"Consulte a documentação do <application>rsync</application>, que também está "
+"disponível em <link xlink:href=\"http://rsync.samba.org/\">http://rsync."
+"samba.org/ </link >, sobre as várias opções a serem usadas com o rsync. Se "
+"você sincronizar o módulo inteiro (diferentemente dos subdiretórios), esteja "
+"ciente de que o diretório do módulo (aqui \"FreeBSD\") não será criado, "
+"então você não pode omitir o diretório de destino. Além disso, você pode "
+"querer configurar um framework de script que chame tal comando via "
+"<citerefentry><refentrytitle>cron</refentrytitle> <manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:342
-#, fuzzy
 msgid "Mirroring the WWW pages"
 msgstr "Espelhando as páginas WWW"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:343
-#, fuzzy
 msgid ""
 "The FreeBSD website should only be mirrored via <application>rsync</"
 "application>."
 msgstr ""
-"O site do FreeBSD só deve ser espelhado via <application> rsync </"
-"application>."
+"O site do FreeBSD só deve ser espelhado via <application>rsync</application>."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:346
-#, fuzzy
 msgid "A command line to mirror the FreeBSD web site might look like:"
 msgstr ""
 "Uma linha de comando para espelhar o site do FreeBSD pode parecer com:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:347
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west."
 "freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> rsync -vaHz --delete rsync: //bit0.us-west."
-"freebsd.org/FreeBSD-www-data/ / usr / local / www / </userinput>"
+"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west."
+"freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:350
-#, fuzzy
 msgid "Mirroring Packages"
 msgstr "Pacotes de espelhamento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:351
-#, fuzzy
 msgid ""
 "Due to very high requirements of bandwidth, storage and adminstration the "
 "FreeBSD Project has decided not to allow public mirrors of packages. For "
@@ -769,14 +753,14 @@ msgstr ""
 "Devido a exigências muito altas de largura de banda, armazenamento e "
 "administração, o Projeto FreeBSD decidiu não permitir espelhos públicos de "
 "pacotes. Para sites com muitas máquinas, pode ser vantajoso executar um "
-"proxy HTTP em cache para o processo <citerefentry> <refentrytitle> pkg </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>. Alternativamente, "
+"proxy HTTP em cache para o processo <citerefentry><refentrytitle>pkg</"
+"refentrytitle> <manvolnum>8</manvolnum></citerefentry>. Alternativamente, "
 "pacotes específicos e suas dependências podem ser buscados executando algo "
 "como o seguinte:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pkg fetch -d -o <replaceable>/usr/local/"
 "mirror</replaceable> <replaceable>vim</replaceable></userinput>"
@@ -786,7 +770,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:360
-#, fuzzy
 msgid ""
 "Once those packages have been fetched, the repository metadata must be "
 "generated by running:"
@@ -796,7 +779,7 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:362
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pkg repo <replaceable>/usr/local/mirror</"
 "replaceable></userinput>"
@@ -806,7 +789,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:364
-#, fuzzy
 msgid ""
 "Once the packages have been fetched and the metadata for the repository has "
 "been generated, serve the packages up to the client machines via HTTP. For "
@@ -818,9 +800,9 @@ msgstr ""
 "Uma vez que os pacotes tenham sido buscados e os metadados para o "
 "repositório tenham sido gerados, sirva os pacotes até as máquinas clientes "
 "via HTTP. Para obter informações adicionais, consulte as páginas man do "
-"<citerefentry> <refentrytitle> pkg </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry>, especificamente o <citerefentry> <refentrytitle> "
-"pkg-repo </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> página."
+"<citerefentry<refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum</"
+"citerefentry>, especificamente o <citerefentry><refentrytitle>pkg-repo</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> página."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:371
@@ -868,7 +850,6 @@ msgstr "Teste se o seu script funciona. Verifique os logs."
 
 #. (itstool) path: step/para
 #: article.translate.xml:400
-#, fuzzy
 msgid ""
 "Use <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to add the script to the appropriate user's "
@@ -912,7 +893,6 @@ msgstr "De onde onde espelhar"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:422
-#, fuzzy
 msgid ""
 "This is an important issue. So this section will spend some effort to "
 "explain the backgrounds. We will say this several times: under no "
@@ -921,8 +901,8 @@ msgid ""
 msgstr ""
 "Esta é uma questão importante. Então, esta seção vai gastar algum esforço "
 "para explicar os fundos. Nós diremos isso várias vezes: sob nenhuma "
-"circunstância você deve espelhar a partir de <systemitem class = "
-"\"fqdomainname\"> ftp.FreeBSD.org </systemitem>."
+"circunstância você deve espelhar a partir de <systemitem class="
+"\"fqdomainname\">ftp.FreeBSD.org</systemitem>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:429
@@ -931,7 +911,6 @@ msgstr "Algumas palavras sobre a organização"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:430
-#, fuzzy
 msgid ""
 "Mirrors are organized by country. All official mirrors have a DNS entry of "
 "the form <systemitem class=\"fqdomainname\">ftpN.CC.FreeBSD.org</systemitem>."
@@ -951,25 +930,24 @@ msgid ""
 "to mirror from."
 msgstr ""
 "Os espelhos são organizados por país. Todos os espelhos oficiais possuem uma "
-"entrada de DNS no formato <systemitem class = \"fqdomainname\"> ftpN.CC."
-"FreeBSD.org </systemitem>. O <emphasis> CC </emphasis> (ou seja, o código do "
-"país) é o <emphasis> domínio de nível superior </emphasis> (TLD) do país "
-"onde esse espelho está localizado. <emphasis> N </emphasis> é um número, "
-"dizendo que o host seria o espelho <emphasis> Nth </emphasis> daquele país. "
-"(O mesmo se aplica a <systemitem> wwwN.CC.FreeBSD.org </systemitem>, etc.) "
-"Há espelhos sem partes <emphasis> CC </emphasis>. Esses são os sites "
-"espelhos que são muito bem conectados e permitem um grande número de "
-"usuários simultâneos. <systemitem class = \"fqdomainname\"> ftp.FreeBSD.org "
-"</systemitem> é na verdade duas máquinas, uma atualmente localizada na "
-"Dinamarca e outra nos Estados Unidos. É <emphasis> NÃO </emphasis> um site "
-"mestre e nunca deve ser usado para espelhar. Muita documentação on-line leva "
-"os usuários <quote> interativos </quote> a <systemitem class = "
-"\"fqdomainname\"> ftp.FreeBSD.org </systemitem> para que os sistemas "
-"automatizados de espelhamento encontrem uma máquina diferente para espelhar."
+"entrada de DNS no formato <systemitem class=\"fqdomainname\"> ftpN.CC."
+"FreeBSD.org</systemitem>. O <emphasis>CC</emphasis> (ou seja, o código do "
+"país) é o <emphasis>domínio de nível superior</emphasis>(TLD) do país onde "
+"esse espelho está localizado.<emphasis>N</emphasis> é um número, dizendo que "
+"o host seria o espelho<emphasis>Nth</emphasis> daquele país. (O mesmo se "
+"aplica a <systemitem>wwwN.CC.FreeBSD.org</systemitem>, etc.) Há espelhos sem "
+"partes <emphasis>CC</emphasis>. Esses são os sites espelhos que são muito "
+"bem conectados e permitem um grande número de usuários simultâneos. "
+"<systemitem class =\"fqdomainname\">ftp.FreeBSD.org</systemitem> é na "
+"verdade duas máquinas, uma atualmente localizada na Dinamarca e outra nos "
+"Estados Unidos. É <emphasis>NÃO</emphasis> um site mestre e nunca deve ser "
+"usado para espelhar. Muita documentação on-line leva os usuários "
+"<quote>interativos</quote>a<systemitem class=\"fqdomainname\">ftp.FreeBSD."
+"org</systemitem> para que os sistemas automatizados de espelhamento "
+"encontrem uma máquina diferente para espelhar."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:453
-#, fuzzy
 msgid ""
 "Additionally there exists a hierarchy of mirrors, which is described in "
 "terms of <emphasis>tiers</emphasis>. The master sites are not referred to "
@@ -986,59 +964,54 @@ msgid ""
 "(this is just a rough hint, and there is no rule)."
 msgstr ""
 "Além disso, existe uma hierarquia de espelhos, descrita em termos de "
-"<emphasis> camadas </emphasis>. Os sites mestres não são referidos, mas "
-"podem ser descritos como <emphasis> Tier-0 </emphasis>. Espelhos que "
-"espelham desses sites podem ser considerados <emphasis> Tier-1 </emphasis>, "
-"espelhos de <emphasis> Tier-1 </emphasis> -mirrors, são <emphasis> Tier-2 </"
-"emphasis>, etc. os sites são encorajados a ter um <emphasis> nível </"
-"emphasis> baixo, mas quanto mais baixo o nível, maiores os requisitos em "
-"termos, conforme descrito em <xref linkend = \"mirror-requirements\" />. "
-"Também o acesso a espelhos de baixo nível pode ser restrito, e o acesso a "
-"sites mestres é definitivamente restrito. A hierarquia <emphasis> camada </"
-"emphasis> não é refletida pelo DNS e geralmente não é documentada em nenhum "
-"lugar, exceto nos sites mestres. No entanto, os espelhos oficiais com "
-"números baixos como 1-4, geralmente são <emphasis> Tier-1 </emphasis> (isso "
-"é apenas uma dica grosseira, e não há regra)."
+"<emphasis>camadas</emphasis>. Os sites mestres não são referidos, mas podem "
+"ser descritos como <emphasis>Tier-0</emphasis>. Espelhos que espelham desses "
+"sites podem ser considerados <emphasis>Tier-1</emphasis>, espelhos de "
+"<emphasis>Tier-1</emphasis>mirrors, são<emphasis>Tier-2</emphasis>, etc. os "
+"sites oficiais são encorajados a ter um <emphasis>nível</emphasis> baixo, "
+"mas quanto mais baixo o nível, maiores os requisitos em termos, conforme "
+"descrito em <xref linkend=\"mirror-requirements\"/>. Também o acesso a "
+"espelhos de baixo nível pode ser restrito, e o acesso a sites mestres é "
+"definitivamente restrito. A hierarquia <emphasis>camada</emphasis> não é "
+"refletida pelo DNS e geralmente não é documentada em nenhum lugar, exceto "
+"nos sites mestres. No entanto, os espelhos oficiais com números baixos como "
+"1-4, geralmente são <emphasis>Tier-1 </emphasis>(isso é apenas uma dica "
+"grosseira, e não há regra)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:474
-#, fuzzy
 msgid "Ok, but where should I get the stuff now?"
 msgstr "Ok, mas onde devo pegar as coisas agora?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:475
-#, fuzzy
 msgid ""
 "Under no circumstances should you mirror from <systemitem class="
 "\"fqdomainname\">ftp.FreeBSD.org</systemitem>. The short answer is: from the "
 "site that is closest to you in Internet terms, or gives you the fastest "
 "access."
 msgstr ""
-"Em nenhuma circunstância você deve espelhar a partir de <systemitem class = "
-"\"fqdomainname\"> ftp.FreeBSD.org </systemitem>. A resposta curta é: do site "
+"Em nenhuma circunstância você deve espelhar a partir de <systemitem class ="
+"\"fqdomainname\">ftp.FreeBSD.org</systemitem>. A resposta curta é: do site "
 "que está mais próximo de você em termos da Internet ou oferece o acesso mais "
 "rápido."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:482
-#, fuzzy
 msgid "I just want to mirror from somewhere!"
 msgstr "Eu só quero espelhar de algum lugar!"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:483
-#, fuzzy
 msgid ""
 "If you have no special intentions or requirements, the statement in <xref "
 "linkend=\"mirror-where-where\"/> applies. This means:"
 msgstr ""
 "Se você não tem nenhuma intenção ou requisito especial, a declaração em "
-"<xref linkend = \"mirror-where-where\" /> se aplica. Isso significa:"
+"<xref linkend=\"mirror-where-where\"/> se aplica. Isso significa:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:490
-#, fuzzy
 msgid ""
 "Check for those which provide fastest access (number of hops, round-trip-"
 "times) and offer the services you intend to use (like <application>rsync</"
@@ -1046,11 +1019,10 @@ msgid ""
 msgstr ""
 "Verifique os que fornecem acesso mais rápido (número de saltos, tempos de "
 "ida e volta) e ofereçam os serviços que você pretende usar (como "
-"<application> rsync </application>)."
+"<application>rsync</application>)."
 
 #. (itstool) path: step/para
 #: article.translate.xml:498
-#, fuzzy
 msgid ""
 "Contact the administrators of your chosen site stating your request, and "
 "asking about their terms and policies."
@@ -1060,19 +1032,16 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:505
-#, fuzzy
 msgid "Set up your mirror as described above."
 msgstr "Configure o seu espelho conforme descrito acima."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:512
-#, fuzzy
 msgid "I am an official mirror, what is the right site for me?"
 msgstr "Eu sou um espelho oficial, qual é o site certo para mim?"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:513
-#, fuzzy
 msgid ""
 "In general the description in <xref linkend=\"mirror-where-simple\"/> still "
 "applies. Of course you may want to put some weight on the fact that your "
@@ -1080,11 +1049,11 @@ msgid ""
 "<emphasis>official</emphasis> mirrors that are described in <xref linkend="
 "\"mirror-official\"/>."
 msgstr ""
-"Em geral, a descrição em <xref linkend = \"mirror-where-simple\" /> ainda se "
+"Em geral, a descrição em <xref linkend=\"mirror-where-simple\"/> ainda se "
 "aplica. É claro que você pode querer colocar algum peso no fato de que seu "
 "upstream deve ser de nível baixo. Existem algumas outras considerações sobre "
-"os espelhos <emphasis> oficiais </emphasis> que são descritos em <xref "
-"linkend = \"mirror-official\" />."
+"os espelhos <emphasis>oficiais</emphasis> que são descritos em <xref linkend="
+"\"mirror-official\"/>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:523
@@ -1093,7 +1062,6 @@ msgstr "Eu quero acessar os sites principais!"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:524
-#, fuzzy
 msgid ""
 "If you have good reasons and good prerequisites, you may want and get access "
 "to one of the master sites. Access to these sites is generally restricted, "
@@ -1108,26 +1076,25 @@ msgstr ""
 "Se você tiver boas razões e bons pré-requisitos, poderá querer e obter "
 "acesso a um dos sites mestres. O acesso a esses sites é geralmente restrito "
 "e existem políticas especiais para acesso. Se você já é um espelho "
-"<emphasis> official </emphasis>, isso certamente ajuda você a obter acesso. "
-"Em qualquer outro caso, certifique-se de que seu país realmente precisa de "
-"outro espelho. Se já tiver três ou mais, pergunte ao <quote> administrador "
-"de região </quote> (<email> hostmaster@CC.FreeBSD.org </email>) ou <link "
-"xlink:href=\"http: //lists.FreeBSD .org / mailman / listinfo / freebsd-hubs "
-"\"> Listas de discussão de sites espelho do FreeBSD </link> primeiro."
+"<emphasis>official</emphasis>, isso certamente ajuda você a obter acesso. Em "
+"qualquer outro caso, certifique-se de que seu país realmente precisa de "
+"outro espelho. Se já tiver três ou mais, pergunte ao <quote>administrador de "
+"região</quote>(<email> hostmaster@CC.FreeBSD.org</email>)ou<link xlink:href="
+"\"http: //lists.FreeBSD.org /mailman/listinfo/freebsd-hubs\"> Listas de "
+"discussão de sites espelho do FreeBSD </link>primeiro."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:534
-#, fuzzy
 msgid ""
 "Whoever helped you become, an <emphasis>official</emphasis> should have "
 "helped you gain access to an appropriate upstream host, either one of the "
 "master sites or a suitable Tier-1 site. If not, you can send email to "
 "<email>mirror-admin@FreeBSD.org</email> to request help with that."
 msgstr ""
-"Quem ajudou você a se tornar, um <emphasis> oficial </emphasis> deve ter "
+"Quem ajudou você a se tornar, um <emphasis>oficial</emphasis> deve ter "
 "ajudado você a obter acesso a um host de upstream apropriado, seja um dos "
 "sites mestres ou um site Tier-1 adequado. Caso contrário, você pode enviar "
-"um email para <email> mirror-admin@FreeBSD.org </email> para solicitar ajuda "
+"um email para <email>mirror-admin@FreeBSD.org</email> para solicitar ajuda "
 "com isso."
 
 #. (itstool) path: sect3/para
@@ -1195,16 +1162,15 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:584
-#, fuzzy
 msgid ""
 "So far to distinguish official mirrors. Official mirrors are not necessarily "
 "<emphasis>Tier-1</emphasis>-mirrors. However you probably will not find a "
 "<emphasis>Tier-1</emphasis>-mirror, that is not also official."
 msgstr ""
 "Até agora, para distinguir espelhos oficiais. Espelhos oficiais não são "
-"necessariamente <emphasis> Tier-1 </emphasis> -mirrors. No entanto, você "
-"provavelmente não encontrará um espelhamento <emphasis> Tier-1 </emphasis>, "
-"que também não é oficial."
+"necessariamente <emphasis>Tier-1</emphasis>-mirrors. No entanto, você "
+"provavelmente não encontrará um espelhamento<emphasis>Tier-1</emphasis>, que "
+"também não é oficial."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:590
@@ -1251,7 +1217,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:607
-#, fuzzy
 msgid ""
 "Furthermore, admins should be subscribed to the <link xlink:href=\"http://"
 "lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\">FreeBSD mirror sites "
@@ -1261,14 +1226,13 @@ msgid ""
 msgstr ""
 "Além disso, os administradores devem estar inscritos nas <link xlink:href="
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\"> listas de "
-"discussão de sites espelho do FreeBSD </link>. Consulte <link xlink:href="
+"discussão de sites espelho do FreeBSD</link>. Consulte<link xlink:href="
 "\"https://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/eresources."
-"html#ERESOURCES-MAIL\"> este link </link> para obter detalhes, como se "
+"html#ERESOURCES-MAIL\">este link</link> para obter detalhes, como se "
 "inscrever."
 
 #. (itstool) path: important/para
 #: article.translate.xml:611
-#, fuzzy
 msgid ""
 "It is <emphasis>very</emphasis> important for a hub administrator, "
 "especially Tier-1 hub admins, to check the <link xlink:href=\"https://www."
@@ -1277,7 +1241,7 @@ msgid ""
 "scheduled to come out, and thus giving you time to prepare for the big spike "
 "of traffic which follows it."
 msgstr ""
-"É <emphasis> muito </emphasis> importante para um administrador de hub, "
+"É <emphasis>muito</emphasis> importante para um administrador de hub, "
 "especialmente administradores de hub de nível 1, verificar o <link xlink:"
 "href=\"https://www.FreeBSD.org/releng/\"> calendário de lançamentos </link> "
 "para a próxima versão do FreeBSD. Isto é importante porque lhe dirá quando o "
@@ -1286,7 +1250,6 @@ msgstr ""
 
 #. (itstool) path: important/para
 #: article.translate.xml:618
-#, fuzzy
 msgid ""
 "It is also important that hub administrators try to keep their mirrors as up-"
 "to-date as possible (again, even more crucial for Tier-1 mirrors). If "
