@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-03 04:54+0000\n"
+"PO-Revision-Date: 2018-09-05 01:57+0000\n"
 "Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -99,10 +99,10 @@ msgid ""
 "image for embedded applications, suitable for use on a Compact Flash card "
 "(or other mass storage medium)."
 msgstr ""
-"<application>NanoBSD</application> é uma ferramenta atualmente desenvolvida "
-"por Poul-Henning Kamp<email> phk@FreeBSD.org </email>. Ele cria uma imagem "
-"do sistema FreeBSD para aplicativos incorporados, adequada para uso em um "
-"cartão Compact Flash (ou outro meio de armazenamento em massa)."
+"O <application>NanoBSD</application> é uma ferramenta atualmente "
+"desenvolvida por Poul-Henning Kamp <email>phk@FreeBSD.org</email>. Ele cria "
+"uma imagem do sistema FreeBSD para aplicativos embarcados, adequada para uso "
+"em um cartão Compact Flash (ou outro meio de armazenamento em massa)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:49
@@ -116,7 +116,7 @@ msgid ""
 msgstr ""
 "Ele pode ser usado para construir imagens de instalação especializadas, "
 "projetadas para fácil instalação e manutenção de sistemas comumente chamados "
-"de <quote>appliances </quote>. Os appliances têm seu hardware e software "
+"de <quote>appliances</quote>. Os appliances têm seu hardware e software "
 "agrupados no produto, o que significa que todos os aplicativos são pré-"
 "instalados. O appliance é conectado a uma rede existente e pode começar a "
 "funcionar (quase) imediatamente."
@@ -133,8 +133,8 @@ msgid ""
 "installed and used in a <application>NanoBSD</application> image, the same "
 "way as in FreeBSD."
 msgstr ""
-"Como Ports e pacotes funcionam  no FreeBSD - Cada aplicativo pode ser "
-"instalado e usado em uma imagem do <application> NanoBSD </application>, da "
+"Os Ports e os pacotes funcionam como no FreeBSD - Cada aplicativo pode ser "
+"instalado e usado em uma imagem do <application>NanoBSD</application>, da "
 "mesma forma que no FreeBSD."
 
 #. (itstool) path: listitem/para
@@ -148,7 +148,7 @@ msgstr ""
 "Nenhuma funcionalidade ausente - Se é possível fazer algo com o FreeBSD, é "
 "possível fazer a mesma coisa com o <application>NanoBSD</application>, a "
 "menos que o recurso ou os recursos específicos sejam explicitamente "
-"removidos do <application>NanoBSD</application > imagem quando foi criada."
+"removidos do <application>NanoBSD</application> quando a imagem  foi criada."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:78
@@ -158,10 +158,10 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> after a non-graceful "
 "shutdown of the system."
 msgstr ""
-"Tudo é somente leitura em tempo de execução - É seguro puxar o plugue de "
-"alimentação. Não há necessidade de executar <citerefentry> "
-"<refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
-"após um desligamento não-normal do sistema."
+"Todo o sistema opera em modo read-only em tempo de execução - É seguro puxar "
+"o plugue de alimentação. Não há necessidade de executar "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> após um desligamento abrupto do sistema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:85
@@ -170,14 +170,14 @@ msgid ""
 "configuration file it is possible to build reduced and customized images "
 "satisfying any arbitrary set of requirements."
 msgstr ""
-"Fácil de construir e personalizar - Usando apenas um script de shell e um "
+"É fácil de criar e personalizar - Usando apenas um script de shell e um "
 "arquivo de configuração, é possível criar imagens reduzidas e "
 "personalizadas, satisfazendo qualquer conjunto arbitrário de requisitos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:94
 msgid "NanoBSD Howto"
-msgstr "Como fazer no NanoBSD"
+msgstr "NanoBSD Howto"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:97
@@ -201,8 +201,8 @@ msgid ""
 "Two image partitions: <literal>code#1</literal> and <literal>code#2</"
 "literal>."
 msgstr ""
-"Duas partições de imagem:  \n"
-"<literal>code#1</literal> e <literal>code#2</literal>."
+"Duas partições de imagem: <literal>code#1</literal> e <literal>code#2</"
+"literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:110
@@ -210,13 +210,15 @@ msgid ""
 "The configuration file partition, which can be mounted under the <filename>/"
 "cfg</filename> directory at run time."
 msgstr ""
-"A partição do arquivo de configuração, que pode ser montada no diretório  "
-"<filename>/cfg</filename> no diretório em tempo de execução."
+"A partição do arquivo de configuração, que pode ser montada no diretório "
+"<filename>/cfg</filename> em tempo de execução."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:116
 msgid "These partitions are normally mounted read-only."
-msgstr "Essas partições são normalmente montadas como somente leitura."
+msgstr ""
+"Essas partições são normalmente montadas em modo read-only (somente leitura)."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:118
@@ -225,9 +227,10 @@ msgid ""
 "<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> (malloc) disks."
 msgstr ""
-"Os diretórios <filename> /etc</filename> e <filename> /var</filename> são "
-"diretórios <citerefentry> <refentrytitle>md</refentrytitle> <manvolnum>4</"
-"manvolnum></citerefentry> (malloc) discos.."
+"Os diretórios <filename>/etc</filename> e <filename>/var</filename> são "
+"discos criados em memória (malloc) pelo comando "
+"<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:122
@@ -241,10 +244,10 @@ msgid ""
 msgstr ""
 "A partição do arquivo de configuração persiste no diretório <filename>/cfg</"
 "filename>. Ele contém arquivos para o diretório <filename>/etc</filename> e "
-"é brevemente montado somente para leitura logo após a inicialização do "
-"sistema, portanto é necessário copiar os arquivos modificados de<filename>/"
-"etc</filename> de volta para o <filename>/cfg</filename>  se as alterações "
-"persistirem após a reinicialização do sistema."
+"é brevemente montado como read-only logo após a inicialização do sistema, "
+"portanto é necessário copiar os arquivos modificados de <filename>/etc</"
+"filename> de volta para o <filename>/cfg</filename> se as alterações "
+"precisarem ser mantidas após a reinicialização do sistema."
 
 #. (itstool) path: example/title
 #: article.translate.xml:132
@@ -275,7 +278,8 @@ msgid ""
 "boot time and while overriding the configuration files."
 msgstr ""
 "A partição que contém o <filename>/cfg</filename> deve ser montada somente "
-"no momento da inicialização e sobrescrevendo os arquivos de configuração."
+"no momento da inicialização ou quando for preciso sobrescrever os arquivos "
+"de configuração."
 
 #. (itstool) path: note/para
 #: article.translate.xml:148
@@ -286,10 +290,10 @@ msgid ""
 "the partition (like when the filesystem syncer flushes data to the system "
 "disks)."
 msgstr ""
-"Manter o <filename>/cfg</filename> montado o tempo todo não é uma boa idéia, "
-"especialmente se o sistema <application>NanoBSD</application> for executado "
+"Manter o <filename>/cfg</filename> montado o tempo todo não é uma boa ideia, "
+"especialmente se o sistema  <application>NanoBSD</application> for executado "
 "em um meio de armazenamento em massa que pode ser afetado negativamente por "
-"um grande número de gravações a partição (como quando o sistema de arquivos "
+"um grande número de gravações na partição (como quando o sistema de arquivos "
 "sincroniza os dados para os discos do sistema)."
 
 #. (itstool) path: sect2/title
@@ -307,12 +311,12 @@ msgid ""
 "medium using the <citerefentry><refentrytitle>dd</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility."
 msgstr ""
-"Uma imagem <application>NanoBSD</application> é construída usando um script "
-"simples <filename>nanobsd.sh</filename>, que pode ser encontrado no "
-"<filename><replaceable> /usr</replaceable> /src/tools/tools/nanobsd</"
+"Uma imagem <application>NanoBSD</application> é construída usando um simples "
+"shell script <filename>nanobsd.sh</filename>, que pode ser encontrado no "
+"diretório <filename><replaceable>/usr</replaceable>/src/tools/tools/nanobsd</"
 "filename>. Este script cria uma imagem, que pode ser copiada no meio de "
 "armazenamento usando o utilitário <citerefentry><refentrytitle>dd</"
-"refentrytitle><manvolnum>1</manvolnum> </citerefentry>."
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:167
@@ -351,7 +355,7 @@ msgid ""
 "Change the current directory to the base directory of the "
 "<application>NanoBSD</application> build script."
 msgstr ""
-"Altere o diretório atual para o diretório base do script de construção "
+"Altere o diretório atual para o diretório base do script de construção do "
 "<application>NanoBSD</application>."
 
 #. (itstool) path: callout/para
@@ -388,7 +392,8 @@ msgid ""
 msgstr ""
 "Este é provavelmente o recurso mais importante e interessante do "
 "<application>NanoBSD</application>. Este também é o lugar onde você passará "
-"a maior parte do tempo desenvolvendo com <application>NanoBSD</application>."
+"a maior parte do tempo desenvolvendo com o <application>NanoBSD</"
+"application>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:206
@@ -397,7 +402,7 @@ msgid ""
 "filename> to read its configuration from <filename>myconf.nano</filename> "
 "located in the current directory:"
 msgstr ""
-"A invocação do seguinte comando forçará o <filename>nanobsd.sh</filename> a "
+"A execução do seguinte comando forçará o <filename>nanobsd.sh</filename> a "
 "ler sua configuração do <filename>myconf.nano</filename> localizado no "
 "diretório atual:"
 
@@ -455,13 +460,14 @@ msgid ""
 "and two or three files in the userland."
 msgstr ""
 "Com as definições de configuração, é possível configurar as opções passadas "
-"para os estágios <_:buildtarget-1/>e<_:buildtarget-2/> do processo de "
-"construção <application>NanoBSD</application>, bem como opções internas "
-"passado para o processo de compilação principal do <application>NanoBSD</"
-"application>. Através dessas opções, é possível cortar o sistema, para que "
-"ele caiba em 64 MB. Você pode usar as opções de configuração para reduzir "
-"ainda mais o FreeBSD, até que ele consista apenas no kernel e em dois ou "
-"três arquivos na área de usuário."
+"tanto para o estágio <_:buildtarget-1/> quando para o <_:buildtarget-2/> do "
+"processo de construção do <application>NanoBSD</application>, bem como "
+"opções internas passadas para o processo principal de construção do "
+"<application>NanoBSD</application>. Através destas opções, é possível "
+"reduzir o sistema para que ele caiba, por exemplo, em um cartão de memória "
+"de 64 MB. Você pode usar as opções de configuração para reduzir ainda mais o "
+"FreeBSD, até que ele consista apenas no kernel e em dois ou três arquivos na "
+"área de usuário."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:240
@@ -470,7 +476,7 @@ msgid ""
 "default values. The most important directives are:"
 msgstr ""
 "O arquivo de configuração consiste em opções de configuração, que substituem "
-"os valores padrão. As diretivas mais importantes são:"
+"os valores padrões. As diretivas mais importantes são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:246
@@ -479,7 +485,7 @@ msgid ""
 "names)."
 msgstr ""
 "<literal>NANO_NAME</literal> - Nome da compilação (usada para construir os "
-"nomes do diretorio de trabalho)."
+"nomes do diretório de trabalho)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:251
@@ -487,8 +493,8 @@ msgid ""
 "<literal>NANO_SRC</literal> — Path to the source tree used to build the "
 "image."
 msgstr ""
-"<literal>NANO_SRC</literal> - Caminho para a árvore de origem usada para "
-"construir a imagem."
+"<literal>NANO_SRC</literal> - Caminho para o diretório com o código fonte "
+"que será utilizado na construção da imagem."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:256
@@ -574,8 +580,9 @@ msgid ""
 "changes the default size of the <filename>/etc</filename> directory from 5MB "
 "to 30MB:"
 msgstr ""
-"Um exemplo mais útil de uma função de customização é o seguinte, que altera "
-"o tamanho padrão do diretório <filename>/etc</filename> de 5MB para 30MB:"
+"Um exemplo mais útil de uma função de customização é o seguinte, o qual "
+"altera o tamanho padrão do diretório <filename>/etc</filename> de 5MB para "
+"30MB:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:306
@@ -598,8 +605,8 @@ msgstr ""
 msgid ""
 "There are a few default pre-defined customization functions ready for use:"
 msgstr ""
-"Existem algumas funções de customização pré-definidas padrão prontas para "
-"uso:"
+"Existem algumas funções de customização pré-definidas por padrão e prontas "
+"para uso:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:317
@@ -609,10 +616,10 @@ msgid ""
 "citerefentry> on the VGA devices (the <filename>/dev/ttyv*</filename> device "
 "nodes) and enables the use of the COM1 serial port as the system console."
 msgstr ""
-"<literal>cust_comconsole</literal> — Disables "
+"<literal>cust_comconsole</literal> — Desabilita o "
 "<citerefentry><refentrytitle>getty</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> on the VGA devices (the <filename>/dev/ttyv*</filename> device "
-"nodes) and enables the use of the COM1  o console do sistema."
+"citerefentry> nos dispositivos VGA (os device nodes <filename>/dev/ttyv*</"
+"filename>) e habilita o uso do console do sistema na serial COM1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:325
@@ -622,7 +629,7 @@ msgid ""
 "<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
-"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class="
+"<literal>cust_allow_ssh_root</literal> — Permite que o <systemitem class="
 "\"username\">root</systemitem> faça o login via "
 "<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
@@ -634,9 +641,9 @@ msgid ""
 "<filename>nanobsd/Files</filename> directory, which contains some useful "
 "scripts for system administration."
 msgstr ""
-"<literal>cust_install_files</literal> — Instala arquivos do "
-"diretório<filename> nanobsd/Files</filename>, que contém alguns scripts "
-"úteis para administração do sistema."
+"<literal>cust_install_files</literal> — Instala arquivos do diretório "
+"<filename>nanobsd/Files</filename>, que contém alguns scripts úteis para "
+"administração do sistema."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:341
@@ -678,7 +685,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:359
 msgid "Configuration File Example"
-msgstr "Exemplo de arquivo de configuração"
+msgstr "Exemplo do arquivo de configuração"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:361
@@ -835,9 +842,9 @@ msgid ""
 msgstr ""
 "A diferença mais importante deste passo da instalação inicial do "
 "<application>NanoBSD</application> é que agora, em vez de usar <filename>_. "
-"Disk.full</filename>(que contém uma imagem de todo o disco), o <filename>_. "
-"disk.image</filename>a imagem está instalada (que contém uma imagem de uma "
-"única partição do sistema)."
+"Disk.full</filename> (que contém uma imagem do disco todo), a imagem "
+"<filename>_.disk.image</filename> está instalada (a qual contém uma imagem "
+"de uma única partição do sistema)."
 
 #. (itstool) path: step/para
 #: article.translate.xml:444
@@ -857,9 +864,9 @@ msgid ""
 "possible. Fix any problems of the new build, and repeat the process."
 msgstr ""
 "Se algo der errado, reinicie a partição anterior (que contém a imagem antiga "
-"em funcionamento) para restaurar a funcionalidade do sistema o mais rápido "
-"possível. Corrija quaisquer problemas da nova compilação e repita o processo."
-""
+"que estava em funcionamento) para restaurar a funcionalidade do sistema o "
+"mais rápido possível. Corrija quaisquer problemas da nova compilação e "
+"repita o processo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:460
@@ -871,9 +878,9 @@ msgid ""
 "system."
 msgstr ""
 "Para instalar uma nova imagem no sistema <application>NanoBSD</application>, "
-"é possível usar o script<filename>updatep1</filename>ou<filename>updatep2</"
-"filename> localizado no <filename>/root</filename>, dependendo de qual "
-"partição está executando o sistema atual."
+"é possível usar o script <filename>updatep1</filename> ou "
+"<filename>updatep2</filename> localizado no diretório <filename>/root</"
+"filename>, dependendo de qual partição o sistema atual está executando."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:467
@@ -882,9 +889,9 @@ msgid ""
 "<application>NanoBSD</application> image and what type of transfer is "
 "preferred, it is possible to examine one of these three ways:"
 msgstr ""
-"De acordo com os serviços disponíveis no host que serve a nova imagem "
-"<application>NanoBSD</application> e que tipo de transferência é "
-"preferencial, é possível examinar uma destas três maneiras:"
+"De acordo com os serviços que estiverem disponíveis no servidor que contem a "
+"nova imagem <application>NanoBSD</application> e o tipo de transferência "
+"preferido, é possível seguir por uma destas três maneiras:"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:473
@@ -918,7 +925,7 @@ msgid ""
 "Using <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 msgstr ""
-"Using <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
+"Usando <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
@@ -943,7 +950,7 @@ msgid ""
 "Using <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 msgstr ""
-"Using <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
+"Usando <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
@@ -954,10 +961,11 @@ msgid ""
 "citerefentry> or <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> service:"
 msgstr ""
-"Tente este exemplo se o host remoto não estiver executando nem "
-"<citerefentry><refentrytitle>ftpd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> ou <citerefentry><refentrytitle>sshd</"
-"refentrytitle><manvolnum>8</manvolnum> </citerefentry> service:"
+"Tente este exemplo se o host remoto que contem a nova imagem não estiver "
+"executando o serviço <citerefentry><refentrytitle>ftpd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> e nem o serviço "
+"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum> </"
+"citerefentry> :"
 
 #. (itstool) path: step/para
 #: article.translate.xml:499
@@ -965,8 +973,8 @@ msgid ""
 "At first, open a TCP listener on host serving the image and make it send the "
 "image to client:"
 msgstr ""
-"Primeiramente, abra um TCP em modo escuta no host que serve a imagem e envie "
-"a imagem para o cliente:"
+"Primeiramente, abra um socket TCP em modo escuta no host que serve a imagem "
+"e envie a imagem para o cliente:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:502
@@ -994,7 +1002,7 @@ msgid ""
 "Connect to the host serving new image and execute <filename>updatep1</"
 "filename> script:"
 msgstr ""
-"Conecte-se ao host que está exibindo nova imagem e execute o script "
+"Conecte-se ao host que está servindo a nova imagem e execute o script "
 "<filename>updatep1</filename>:"
 
 #. (itstool) path: step/screen
