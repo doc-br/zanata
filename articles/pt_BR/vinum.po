@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-07 04:57+0000\n"
+"PO-Revision-Date: 2018-09-07 11:37+0000\n"
 "Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -19,7 +19,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
-"Lucas Andrade, slucasandrade@protonmail.ch"
+"Lucas Andrade, slucasandrade@protonmail.ch, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:16
@@ -129,22 +129,20 @@ msgstr "Acessos de gargalos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:78
-#, fuzzy
 msgid ""
 "Modern systems frequently need to access data in a highly concurrent manner. "
 "For example, large FTP or HTTP servers can maintain thousands of concurrent "
 "sessions and have multiple 100 Mbit/s connections to the outside world, well "
 "beyond the sustained transfer rate of most disks."
 msgstr ""
-"Sistemas modernos freqüentemente precisam acessar dados de uma maneira "
+"Sistemas modernos frequentemente precisam acessar dados de uma maneira "
 "altamente concorrente. Por exemplo, grandes servidores FTP ou HTTP podem "
-"manter milhares de sessões simultâneas e ter múltiplas conexões de 100 Mbit /"
-" s para o mundo externo, muito além da taxa de transferência sustentada da "
+"manter milhares de sessões simultâneas e ter múltiplas conexões de 100 Mbit/"
+"s para o mundo externo, muito além da taxa de transferência sustentada da "
 "maioria dos discos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
-#, fuzzy
 msgid ""
 "Current disk drives can transfer data sequentially at up to 70 MB/s, but "
 "this value is of little importance in an environment where many independent "
@@ -155,7 +153,7 @@ msgid ""
 "occupies the drives involved in the transfer."
 msgstr ""
 "As unidades de disco atuais podem transferir dados sequencialmente a até 70 "
-"MB / s, mas esse valor é de pouca importância em um ambiente em que muitos "
+"MB/s, mas esse valor é de pouca importância em um ambiente em que muitos "
 "processos independentes acessam uma unidade e onde podem obter apenas uma "
 "fração desses valores. Nesses casos, é mais interessante visualizar o "
 "problema do ponto de vista do subsistema de disco. O parâmetro importante é "
@@ -164,21 +162,19 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:94
-#, fuzzy
 msgid ""
 "In any disk transfer, the drive must first position the heads, wait for the "
 "first sector to pass under the read head, and then perform the transfer. "
 "These actions can be considered to be atomic as it does not make any sense "
 "to interrupt them."
 msgstr ""
-"Em qualquer transferência de disco, a unidade deve primeiro posicionar as "
-"cabeças, aguardar que o primeiro setor passe sob a cabeça de leitura e "
+"Em qualquer transferência de disco, a unidade deve primeiro posicionar os "
+"cabeçalhos, aguardar que o primeiro setor passe sob a leitura do cabeçalho e "
 "depois realizar a transferência. Essas ações podem ser consideradas "
 "atômicas, pois não faz sentido interrompê-las."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:100
-#, fuzzy
 msgid ""
 "<anchor xml:id=\"vinum-latency\"/> Consider a typical transfer of about "
 "10 kB: the current generation of high-performance disks can position the "
@@ -190,16 +186,15 @@ msgid ""
 msgstr ""
 "<anchor xml:id=\"vinum-latency\"/> Considere uma transferência típica de "
 "cerca de 10 kB: a geração atual de discos de alto desempenho pode posicionar "
-"as cabeças em uma média de 3,5 ms. As unidades mais rápidas giram a 15.000 "
-"rpm, portanto a latência rotacional média (meia revolução) é de 2 ms. A 70 "
-"MB / s, a própria transferência leva cerca de 150 μs, quase nada em "
+"os cabeçalhos em uma média de 3,5 ms. As unidades mais rápidas giram a 15."
+"000 rpm, portanto a latência rotacional média (meia revolução) é de 2 ms. A "
+"70 MB/s, a própria transferência leva cerca de 150 μs, quase nada em "
 "comparação com o tempo de posicionamento. Nesse caso, a taxa de "
-"transferência efetiva cai para pouco mais de 1 MB / se é claramente "
-"altamente dependente do tamanho da transferência."
+"transferência efetiva cai para pouco mais de 1 MB/s e é claramente altamente "
+"dependente do tamanho da transferência."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:111
-#, fuzzy
 msgid ""
 "The traditional and obvious solution to this bottleneck is <quote>more "
 "spindles</quote>: rather than using one large disk, use several smaller "
@@ -207,15 +202,14 @@ msgid ""
 "positioning and transferring independently, so the effective throughput "
 "increases by a factor close to the number of disks used."
 msgstr ""
-"A solução tradicional e óbvia para esse gargalo é <quote> more spindles </"
-"quote>: em vez de usar um disco grande, use vários discos menores com o "
-"mesmo espaço de armazenamento agregado. Cada disco é capaz de se posicionar "
-"e transferir de forma independente, portanto, o rendimento efetivo aumenta "
-"em um fator próximo ao número de discos usados."
+"A solução tradicional e óbvia para esse gargalo é <quote>mais eixos</quote>: "
+"em vez de usar um disco grande, use vários discos menores com o mesmo espaço "
+"de armazenamento agregado. Cada disco é capaz de se posicionar e transferir "
+"de forma independente, portanto, o rendimento efetivo aumenta em um fator "
+"próximo ao número de discos usados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:118
-#, fuzzy
 msgid ""
 "The actual throughput improvement is smaller than the number of disks "
 "involved. Although each drive is capable of transferring in parallel, there "
@@ -229,15 +223,13 @@ msgstr ""
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:124
-#, fuzzy
 msgid "<primary>disk concatenation</primary>"
-msgstr "<primary>concatenação de disco </primary>"
+msgstr "<primary>Concatenação de disco</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:127
-#, fuzzy
 msgid "<primary>Vinum</primary> <secondary>concatenation</secondary>"
-msgstr "<primary> Vinum </primary> <secondary> concatenação </secondary>"
+msgstr "<primary>Concatenação </primary> <secondary>Vinum</secondary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:132
@@ -275,7 +267,6 @@ msgstr ""
 
 #. (itstool) path: figure/title
 #: article.translate.xml:152
-#, fuzzy
 msgid "Concatenated Organization"
 msgstr "Organização Concatenada"
 
@@ -285,28 +276,24 @@ msgstr "Organização Concatenada"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:156
-#, fuzzy
 msgctxt "_"
 msgid "external ref='vinum-concat' md5='__failed__'"
 msgstr "external ref='vinum-concat' md5='__ failed__'"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:161
-#, fuzzy
 msgid "<primary>disk striping</primary>"
-msgstr "<primary> disk striping </primary>"
+msgstr "<primary>Divisão de discos</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:164
-#, fuzzy
 msgid "<primary>Vinum</primary> <secondary>striping</secondary>"
-msgstr "<primary> Vinum </primary> <secondary> distribuição </secondary>"
+msgstr "<primary>Divisão de discos no </primary> <secondary>Vinum</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:168
-#, fuzzy
 msgid "<primary><acronym>RAID</acronym></primary>"
-msgstr "<primary> <acronym> RAID </acronym> </primary>"
+msgstr "<primary><acronym>RAID</acronym></primary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
@@ -360,14 +347,12 @@ msgstr "Organização listrada"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:197
-#, fuzzy
 msgctxt "_"
 msgid "external ref='vinum-striped' md5='__failed__'"
 msgstr "external ref='vinum-striped' md5='__ failed__'"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:204
-#, fuzzy
 msgid "Data Integrity"
 msgstr "Integridade de dados"
 
@@ -390,15 +375,13 @@ msgstr ""
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:213
-#, fuzzy
 msgid "<primary>disk mirroring</primary>"
-msgstr "<primary> espelhamento de disco </primary>"
+msgstr "<primary>Espelhamento de disco</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:216
-#, fuzzy
 msgid "<primary>vinum</primary> <secondary>mirroring</secondary>"
-msgstr "<primary> vinum </primary> <secondary> espelhamento </secondary>"
+msgstr "<primary>Espelhamento no </primary> <secondary>Vinum</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:219
