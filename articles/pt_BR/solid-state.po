@@ -1,6 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-03 10:57+0000\n"
-"Last-Translator: Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>\n"
+"PO-Revision-Date: 2018-09-09 11:32+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -25,7 +25,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: article.translate.xml:35
 msgid "FreeBSD and Solid State Devices"
-msgstr "FreeBSD e dispositivos de estado sólido"
+msgstr "FreeBSD e Dispositivos de Estado Sólido"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:44
@@ -149,9 +149,7 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 2014-"
 "05-23 17:36:54Z bcr $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 2014-"
-"05-23 17:36:54Z bcr $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:115
@@ -170,9 +168,9 @@ msgid ""
 "the generally low disk space available in the system and the durability of "
 "the storage medium."
 msgstr ""
-"Os sistemas embarcados têm a vantagem de maior estabilidade devido à falta "
-"de partes móveis integrais (discos rígidos). No entanto, é preciso ter em "
-"conta o espaço em disco geralmente baixo disponível no sistema e a "
+"Os sistemas embarcados têm a vantagem de uma maior estabilidade devido à "
+"ausência de partes móveis (discos rígidos). No entanto, é preciso ter em "
+"conta que o espaço disponível em disco é geralmente baixo no sistema e a "
 "durabilidade do meio de armazenamento."
 
 #. (itstool) path: abstract/para
@@ -186,18 +184,18 @@ msgid ""
 "will conclude with some general strategies for small and read-only FreeBSD "
 "environments."
 msgstr ""
-"Tópicos específicos a serem abordados incluem os tipos e atributos de mídia "
-"de estado sólido adequados para uso de disco no FreeBSD, opções de kernel "
+"Tópicos específicos a serem abordados incluem os tipos e atributos das mídia "
+"de estado sólido adequadas para uso como disco no FreeBSD, opções de kernel "
 "que são de interesse em tal ambiente, os mecanismos <filename>rc."
 "initdiskless</filename> que automatizam a inicialização de tais sistemas e a "
-"necessidade de sistemas de arquivos somente para leitura e a construção de "
-"sistemas de arquivos a partir do zero. O artigo será concluído com algumas "
-"estratégias gerais para ambientes FreeBSD pequenos e somente leitura."
+"necessidade de sistemas de arquivos read-only e a construção de sistemas de "
+"arquivos a partir do zero. O artigo será concluído com algumas estratégias "
+"gerais para ambientes FreeBSD pequenos e read-only ."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
 msgid "Solid State Disk Devices"
-msgstr "Dispositivos de disco de estado sólido"
+msgstr "Dispositivos de Disco de Estado Sólido"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
@@ -223,7 +221,7 @@ msgstr ""
 "feitos de memória flash. A memória flash é uma memória de estado sólido (sem "
 "partes móveis) que é não volátil (a memória mantém os dados mesmo depois de "
 "todas as fontes de energia terem sido desconectadas). A memória flash pode "
-"suportar tremendo choque físico e é razoavelmente rápida (as soluções de "
+"suportar um enorme choque físico e é razoavelmente rápida (as soluções de "
 "memória flash abordadas neste artigo são um pouco mais lentas que um disco "
 "rígido EIDE para operações de gravação e muito mais rápidas para operações "
 "de leitura). Um aspecto muito importante da memória flash, cujas "
@@ -231,11 +229,11 @@ msgstr ""
 "tem uma capacidade limitada de reescrita. Você só pode gravar, apagar e "
 "gravar novamente em um setor de memória flash um certo número de vezes antes "
 "que o setor fique permanentemente inutilizável. Embora muitos produtos de "
-"memória flash automaticamente mapeiam blocos defeituosos, e embora alguns "
+"memória flash mapeiam automaticamente os blocos defeituosos, e embora alguns "
 "até distribuam operações de gravação uniformemente por toda a unidade, a "
 "verdade é que existe um limite para a quantidade de escrita que pode ser "
-"feita no dispositivo. Unidades competitivas têm entre 1.000.000 e 10.000.000 "
-"de gravações por setor em suas especificações. Este valor varia devido à "
+"feita no dispositivo. Unidades competitivas possuem entre 1.000.000 e 10.000."
+"000 gravações por setor em suas especificações. Este valor varia com à "
 "temperatura do ambiente."
 
 #. (itstool) path: sect1/para
@@ -250,8 +248,8 @@ msgid ""
 "see the device as a normal hard disk (albeit small)."
 msgstr ""
 "Especificamente, estaremos discutindo unidades compact-flash compatíveis com "
-"ATA, que são bastante populares como mídia de armazenamento para câmeras "
-"digitais. De particular interesse é o fato de que eles são fixados "
+"ATA, as quais são bastante populares como mídia de armazenamento para "
+"câmeras digitais. De particular interesse é o fato de que eles são fixados "
 "diretamente no barramento IDE e são compatíveis com o conjunto de comandos "
 "ATA. Portanto, com um adaptador muito simples e de baixo custo, esses "
 "dispositivos podem ser conectados diretamente a um barramento IDE em um "
@@ -264,8 +262,9 @@ msgid ""
 "Other solid state disk solutions do exist, but their expense, obscurity, and "
 "relative unease of use places them beyond the scope of this article."
 msgstr ""
-"Outras soluções de disco de estado sólido existem, mas sua despesa, "
-"obscuridade e desconforto relativo o colocam além do escopo deste artigo."
+"Outras soluções de disco de estado sólido existem, mas seu custo, "
+"obscuridade e relativa dificuldade de uso os colocam além do escopo deste "
+"artigo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:175
@@ -279,7 +278,7 @@ msgid ""
 "FreeBSD system."
 msgstr ""
 "Algumas opções do kernel são de interesse específico para aqueles que criam "
-"um sistema FreeBSD incorporado."
+"sistemas FreeBSD embarcados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
@@ -293,16 +292,16 @@ msgid ""
 "create logs and update counters and temporary files. Memory filesystems are "
 "a critical component to a successful solid state FreeBSD implementation."
 msgstr ""
-"Todos os sistemas embarcados do FreeBSD que usam memória flash como disco de "
-"sistema estarão interessados ​​em discos de memória e sistemas de arquivos "
-"de memória. Devido ao número limitado de gravações que podem ser feitas na "
-"memória flash, o disco e os sistemas de arquivos no disco provavelmente "
-"serão montados somente leitura. Nesse ambiente, sistemas de arquivos como "
-"<filename> /tmp</filename>e<filename>/var</filename> são montados como "
-"sistemas de arquivos de memória para permitir que o sistema crie logs e "
-"atualize contadores e arquivos temporários. Os sistemas de arquivos de "
-"memória são um componente crítico para uma implementação bem-sucedida do "
-"FreeBSD em estado sólido."
+"Todos os sistemas embarcados FreeBSD que usam memória flash como disco para "
+"o sistema estarão interessados ​​em usar discos em memória e sistemas de "
+"arquivos em memória. Devido ao número limitado de gravações que podem ser "
+"feitas na memória flash, o disco e os sistemas de arquivos no disco "
+"provavelmente serão montados como read-only. Nesse ambiente, sistemas de "
+"arquivos tais como <filename>/tmp</filename> e <filename>/var</filename> são "
+"montados como sistemas de arquivos em memória para permitir que o sistema "
+"crie logs e atualize contadores e arquivos temporários. Os sistemas de "
+"arquivos em memória são um componente crítico para uma implementação bem-"
+"sucedida do FreeBSD em dispositivos de estado sólido."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:191
@@ -331,7 +330,7 @@ msgstr ""
 #: article.translate.xml:200
 msgid "The <literal>rc</literal> Subsystem and Read-Only Filesystems"
 msgstr ""
-"O subsistema <literal>rc</literal> e sistemas de arquivos somente leitura"
+"O Subsistema <literal>rc</literal> e os Sistemas de Arquivos Read-Only"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:203
@@ -339,8 +338,8 @@ msgid ""
 "The post-boot initialization of an embedded FreeBSD system is controlled by "
 "<filename>/etc/rc.initdiskless</filename>."
 msgstr ""
-"A inicialização pós-inicialização de um sistema embarcado do FreeBSD é "
-"controlada por <filename>/etc/rc.initdiskless</filename>."
+"A inicialização pós-boot de um sistema FreeBSD embarcado é controlada por "
+"<filename>/etc/rc.initdiskless</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
@@ -355,15 +354,15 @@ msgid ""
 "created by <filename>/etc/rc.d/var</filename> based on the value of this "
 "variable in <filename>rc.conf</filename>:"
 msgstr ""
-"<filename>/etc/rc.d/var</filename>mounts<filename>/var</filename>como um "
-"sistema de arquivos de memória, cria uma lista configurável de diretórios em "
-"<filename>/var</filename> com o comando<citerefentry><refentrytitle>mkdir </"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> e altera os modos em "
-"alguns desses diretórios. Na execução de <filename>/etc/rc.d/var</filename>, "
-"uma outra variável<filename>rc.conf</filename> entra em jogo "
-"–<literal>varsize </literal>. Uma partição <filename>/var</filename> é "
-"criada por <filename> /etc/rc.d/var</filename> baseado no valor desta "
-"variável em <filename>rc.conf</filename>:"
+"O <filename>/etc/rc.d/var</filename> monta o <filename>/var</filename> como "
+"um sistema de arquivos em memória, cria uma lista configurável de diretórios "
+"em <filename>/var</filename> com o comando "
+"<citerefentry><refentrytitle>mkdir</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> e altera os modos em alguns desses diretórios. Na execução do "
+"<filename>/etc/rc.d/var</filename>, uma outra variável <filename>rc.conf</"
+"filename> entra em jogo – <literal>varsize</literal>. Uma partição "
+"<filename>/var</filename> é criada por <filename> /etc/rc.d/var</filename> "
+"baseado no valor desta variável em <filename>rc.conf</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:218
@@ -374,7 +373,7 @@ msgstr "varsize=8192"
 #. (itstool) path: sect1/para
 #: article.translate.xml:220
 msgid "Remember that this value is in sectors by default."
-msgstr "Lembre-se de que esse valor está nos setores por padrão."
+msgstr "Lembre-se de que esse valor é informado em setores, por padrão."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:222
@@ -392,19 +391,19 @@ msgid ""
 "etc/fstab</filename>, you should also change the Options field for each "
 "filesystem to <literal>ro</literal> as follows:"
 msgstr ""
-"O fato de <filename>/var</filename> ser um sistema de arquivos de leitura "
-"gravação é uma distinção importante, pois a partição <filename>/</filename> "
-"(e quaisquer outras partições que você possa ter em sua mídia flash) deve "
-"ser montada somente leitura. Lembre-se que em <xref linkend=\"intro\"/> "
+"O fato do <filename>/var</filename> ser um sistema de arquivos read-write é "
+"uma distinção importante, pois a partição <filename>/</filename> (e "
+"quaisquer outras partições que você possa ter em sua mídia flash) deve ser "
+"montada como read-only. Lembre-se que em <xref linkend=\"intro\"/> "
 "detalhamos as limitações da memória flash - especificamente a capacidade de "
 "gravação limitada. A importância de não montar sistemas de arquivos em mídia "
-"flash de leitura gravação, e a importância de não usar um arquivo de troca, "
-"não pode ser exagerada. Um arquivo de troca em um sistema ocupado pode "
-"gravar através de uma mídia flash em menos de um ano. Criação de log pesado "
-"ou criação e destruição de arquivos temporários podem fazer o mesmo. "
-"Portanto, além de remover a entrada <literal>swap</literal>do seu<filename>/"
-"etc/fstab</filename>, você também deve alterar o campo Options para cada "
-"sistema de arquivos para <literal>ro</literal>como segue:"
+"flash em modo read-write, e a importância de não usar um arquivo de swap, "
+"não pode ser exagerado. Um arquivo de swap em um sistema ocupado pode "
+"inutilizar uma mídia flash em menos de um ano. Criação de log pesado ou "
+"criação e destruição de arquivos temporários podem fazer o mesmo. Portanto, "
+"além de remover a entrada <literal>swap</literal> do seu <filename>/etc/"
+"fstab</filename>, você também deve alterar o campo Options para cada sistema "
+"de arquivos para <literal>ro</literal> como segue:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:239
@@ -431,15 +430,15 @@ msgid ""
 "to the execution of other common software packages in <xref linkend="
 "\"strategies\"/>."
 msgstr ""
-"Alguns aplicativos no sistema médio começarão a falhar imediatamente como "
-"resultado dessa alteração. Por exemplo, o cron não será executado "
-"corretamente como resultado da falta de guias cron no <filename>/var</"
-"filename> criado por <filename>/etc/rc.d/var</filename>, e syslog e dhcp "
-"irão encontrar problemas, bem como um resultado do sistema de arquivos "
-"somente leitura e itens ausentes no <filename>/var</filename>que<filename>/"
-"etc/rc.d/var</filename> criou. Estes são apenas problemas temporários, "
-"embora sejam abordados, juntamente com soluções para a execução de outros "
-"pacotes de software comuns em <xref linkend=\"strategies\"/>."
+"Alguns aplicativos no sistema começarão a falhar imediatamente como "
+"resultado desta alteração. Por exemplo, o cron não será executado "
+"corretamente como resultado da falta de crontabs no <filename>/var</"
+"filename> criado pelo <filename>/etc/rc.d/var</filename>, o syslog e o dhcp "
+"também irão encontrar problemas como resultado do sistema de arquivos estar "
+"em modo read-only e dos itens ausentes no <filename>/var</filename> que o "
+"<filename>/etc/rc.d/var</filename> criou. Estes são apenas problemas "
+"temporários, embora sejam abordados, juntamente com soluções para a execução "
+"de outros pacotes de software comuns em <xref linkend=\"strategies\"/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:254
@@ -448,9 +447,9 @@ msgid ""
 "only with <filename>/etc/fstab</filename> can be made read-write at any time "
 "by issuing the command:"
 msgstr ""
-"Uma coisa importante a lembrar é que um sistema de arquivos que foi montado "
-"somente leitura com <filename>/etc/fstab</filename> pode ser lido a qualquer "
-"momento emitindo o comando:"
+"Uma coisa importante para lembrar é que um sistema de arquivos que foi "
+"montado como read-only com o  <filename>/etc/fstab</filename> pode ser "
+"colocado em modo read-write a qualquer momento, executando o comando:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:258
@@ -491,7 +490,8 @@ msgid ""
 msgstr ""
 "Como os cartões Compact Flash compatíveis com ATA são vistos pelo FreeBSD "
 "como discos rígidos IDE normais, você poderia teoricamente instalar o "
-"FreeBSD a partir da rede usando os disquetes kern e mfsroot ou de um CD."
+"FreeBSD a partir da rede usando o os disquetes do kern e mfsroot ou de um CD."
+""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:274
@@ -503,13 +503,13 @@ msgid ""
 "installation using normal mechanisms is not possible—there is simply not "
 "enough disk space for even the smallest of conventional installations."
 msgstr ""
-"No entanto, mesmo uma pequena instalação do FreeBSD usando procedimentos "
+"No entanto, mesmo uma pequena instalação do FreeBSD utilizando procedimentos "
 "normais de instalação pode produzir um sistema com tamanho maior que 200 "
 "megabytes. Como a maioria das pessoas usará dispositivos de memória flash "
-"menores (128 megabytes são considerados grandes - 32 ou até 16 megabytes são "
-"comuns), uma instalação que usa mecanismos normais não é possível - "
-"simplesmente não há espaço em disco suficiente nem para as menores "
-"instalações convencionais."
+"menores (128 megabytes são considerados razoavelmente grandes - 32 ou até "
+"mesmo 16 megabytes são comuns), uma instalação usando mecanismos normais não "
+"será possível - simplesmente não há espaço em disco suficiente nem para as "
+"menores instalações convencionais."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:283
@@ -527,18 +527,18 @@ msgstr ""
 "A maneira mais fácil de superar essa limitação de espaço é instalar o "
 "FreeBSD usando meios convencionais em um disco rígido normal. Após a "
 "conclusão da instalação, reduza o sistema operacional para um tamanho que "
-"caiba na mídia flash e aplique o sistema de arquivos inteiro. Os passos "
-"seguintes irão guiá-lo através do processo de preparação de uma parte da "
-"memória flash para o seu sistema de arquivos revestido. Lembre-se, porque "
-"uma instalação normal não está sendo executada, operações como "
-"particionamento, rotulagem, criação de sistema de arquivos, etc. precisam "
-"ser executadas manualmente. Além dos disquetes kern e mfsroot, você também "
-"precisará usar o disquete do fixit."
+"caiba na mídia flash e compacte o sistema de arquivos inteiro com o tar. Os "
+"passos seguintes irão guiá-lo através do processo de preparação de uma parte "
+"da memória flash para o seu sistema de arquivos compactado com o tar. Lembre-"
+"se de que não estamos executando uma instalação normal, logo as operações "
+"como particionamento, criação dos labels, criação do sistema de arquivos, "
+"etc. precisam ser executadas manualmente. Além dos disquetes do kern e "
+"mfsroot, você também precisará usar o disquete do fixit."
 
 #. (itstool) path: step/title
 #: article.translate.xml:297
 msgid "Partitioning Your Flash Media Device"
-msgstr "Particionando seu dispositivo de mídia Flash"
+msgstr "Particionando seu Dispositivo de Mídia Flash"
 
 #. (itstool) path: step/para
 #: article.translate.xml:299
@@ -556,65 +556,62 @@ msgid ""
 "keycap> to quit the partition menu. You will be shown the boot manager menu "
 "once more - repeat the choice you made earlier."
 msgstr ""
-"Após inicializar com os disquetes kern e mfsroot, escolha <literal>custom</"
-"literal> no menu de instalação. No menu de instalação personalizada, escolha "
-"<literal>partition</literal>. No menu de partições, você deve apagar todas "
-"as partições existentes usando <keycap>d</keycap>. Depois de excluir todas "
-"as partições existentes, crie uma partição usando <keycap>c</keycap> e "
-"aceite o valor padrão para o tamanho da partição. Quando perguntado sobre o "
-"tipo da partição, certifique-se de que o valor esteja configurado para "
-"<literal>165</literal>. Agora escreva esta tabela de partições no disco "
-"pressionando <keycap>w</keycap> (esta é uma opção oculta nesta tela). Se "
-"você estiver usando um cartão compact flash compatível com ATA, deverá "
-"escolher o FreeBSD Boot Manager. Agora pressione <keycap>q</keycap> para "
-"sair do menu de partições. Você verá novamente o menu do gerenciador de "
-"inicialização - repita a escolha feita anteriormente."
+"Após inicializar com os disquetes do kern e mfsroot, escolha "
+"<literal>custom</literal> no menu de instalação. No menu de instalação "
+"personalizada, escolha <literal>partition</literal>. No menu de partições, "
+"você deve apagar todas as partições existentes usando a tecla <keycap>d</"
+"keycap>. Depois de excluir todas as partições existentes, crie uma partição "
+"usando a tecla <keycap>c</keycap> e aceite o valor padrão para o tamanho da "
+"partição. Quando perguntado sobre o tipo da partição, certifique-se de que o "
+"valor esteja configurado para <literal>165</literal>. Agora escreva esta "
+"tabela de partições no disco pressionando <keycap>w</keycap> (esta é uma "
+"opção oculta nesta tela). Se você estiver usando um cartão compact flash "
+"compatível com ATA, deverá escolher o FreeBSD Boot Manager. Agora pressione "
+"<keycap>q</keycap> para sair do menu de partições. Você verá novamente o "
+"menu do gerenciador de inicialização - repita a escolha feita anteriormente."
 
 #. (itstool) path: step/title
 #: article.translate.xml:319
 msgid "Creating Filesystems on Your Flash Memory Device"
-msgstr "Criando sistemas de arquivos em seu dispositivo de memória flash"
+msgstr "Criando Sistemas de Arquivos em seu Dispositivo de Memória Flash"
 
 #. (itstool) path: step/para
 #: article.translate.xml:322
-#, fuzzy
 msgid ""
 "Exit the custom installation menu, and from the main installation menu "
 "choose the <literal>fixit</literal> option. After entering the fixit "
 "environment, enter the following command:"
 msgstr ""
 "Saia do menu de instalação personalizada e, no menu de instalação principal, "
-"escolha a opção <literal> fixit </literal>. Depois de entrar no ambiente do "
+"escolha a opção <literal>fixit</literal>. Depois de entrar no ambiente do "
 "fixit, digite o seguinte comando:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:327
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>disklabel -e /dev/ad0c</userinput>"
 msgstr "<prompt>#</prompt> <userinput>disklabel -e /dev/ad0c</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:329
-#, fuzzy
 msgid ""
 "At this point you will have entered the vi editor under the auspices of the "
 "disklabel command. Next, you need to add an <literal>a:</literal> line at "
 "the end of the file. This <literal>a:</literal> line should look like:"
 msgstr ""
 "Neste ponto, você terá entrado no editor vi sob os auspícios do comando "
-"disklabel. Em seguida, você precisa adicionar uma linha <literal> a: </"
-"literal> no final do arquivo. Esta linha <literal> a: </literal> deve ser "
-"semelhante a:"
+"disklabel. Em seguida, você precisa adicionar uma linha <literal>a:</"
+"literal> no final do arquivo. Esta linha <literal>a:</literal> deve ser "
+"semelhante a linha abaixo:"
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:334
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "a:      <replaceable>123456</replaceable>  0       4.2BSD  0       0"
 msgstr "a:      <replaceable>123456</replaceable>  0       4.2BSD  0       0"
 
 #. (itstool) path: step/para
 #: article.translate.xml:336
-#, fuzzy
 msgid ""
 "Where <replaceable>123456</replaceable> is a number that is exactly the same "
 "as the number in the existing <literal>c:</literal> entry for size. "
@@ -622,15 +619,15 @@ msgid ""
 "<literal>a:</literal> line, making sure that fstype is <literal>4.2BSD</"
 "literal>. Save the file and exit."
 msgstr ""
-"Onde <replaceable> 123456 </replaceable> é um número que é exatamente o "
-"mesmo que o número existente na entrada <literal> c: </literal> para o "
-"tamanho. Basicamente, você está duplicando a linha <literal> c: </literal> "
-"existente como uma linha <literal> a: </literal>, assegurando que o fstype "
-"seja <literal> 4.2BSD </literal>. Salve o arquivo e saia."
+"Onde <replaceable>123456</replaceable> é um número o qual é exatamente o "
+"mesmo que o número existente na entrada <literal>c:</literal> para o tamanho."
+" Basicamente, você está duplicando a linha <literal>c:</literal> existente "
+"como uma linha <literal>a:</literal>, certifique-se de que o fstype seja "
+"<literal>4.2BSD</literal>. Salve o arquivo e saia."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:343
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>disklabel -B -r /dev/ad0c</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/ad0a</userinput>"
@@ -640,37 +637,34 @@ msgstr ""
 
 #. (itstool) path: step/title
 #: article.translate.xml:348
-#, fuzzy
 msgid "Placing Your Filesystem on the Flash Media"
-msgstr "Colocando seu sistema de arquivos na mídia Flash"
+msgstr "Colocando seu Sistema de Arquivos na Mídia Flash"
 
 #. (itstool) path: step/para
 #: article.translate.xml:350
-#, fuzzy
 msgid "Mount the newly prepared flash media:"
 msgstr "Monte a mídia flash recém-preparada:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:352
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount /dev/ad0a /flash</userinput>"
 msgstr "<prompt>#</prompt> <userinput>mount /dev/ad0a /flash</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:354
-#, fuzzy
 msgid ""
 "Bring this machine up on the network so we may transfer our tar file and "
 "explode it onto our flash media filesystem. One example of how to do this is:"
 ""
 msgstr ""
 "Coloque esta máquina na rede para que possamos transferir nosso arquivo tar "
-"e explodi-lo em nosso sistema de arquivos de mídia flash. Um exemplo de como "
+"e extrai-lo em nosso sistema de arquivos de mídia flash. Um exemplo de como "
 "fazer isso é:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ifconfig xl0 192.168.0.10 netmask 255.255.255."
 "0</userinput>\n"
@@ -682,7 +676,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:361
-#, fuzzy
 msgid ""
 "Now that the machine is on the network, transfer your tar file. You may be "
 "faced with a bit of a dilemma at this point - if your flash memory part is "
@@ -694,17 +687,18 @@ msgid ""
 "the tar contents on your disk at the same time:"
 msgstr ""
 "Agora que a máquina está na rede, transfira seu arquivo tar. Você pode se "
-"deparar com um pequeno dilema neste ponto - se a sua parte de memória flash "
-"tiver 128 megabytes, por exemplo, e seu arquivo tar for maior que 64 "
-"megabytes, você não poderá ter seu arquivo tar na mídia flash ao mesmo tempo "
-"quando você explodir, ficará sem espaço. Uma solução para esse problema, se "
-"você estiver usando FTP, é descompactar o arquivo enquanto ele é transferido "
-"por FTP. Se você realizar sua transferência desta maneira, você nunca terá o "
-"arquivo tar e o conteúdo do tar em seu disco ao mesmo tempo:"
+"deparar com um pequeno dilema neste ponto - se a sua memória flash tiver por "
+"exemplo 128 megabytes, e seu arquivo tar for maior que 64 megabytes, você "
+"não poderá ter o seu arquivo tar na mídia flash ao mesmo tempo em que "
+"realiza a descompressão - você ficará sem espaço. Uma solução para esse "
+"problema, se você estiver usando FTP, é descompactar o arquivo enquanto ele "
+"é transferido por FTP. Se você realizar sua transferência desta maneira, "
+"você nunca terá o arquivo tar e o conteúdo do tar em seu disco ao mesmo "
+"tempo:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:373
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| tar xvf -\"</"
 "userinput>"
@@ -714,13 +708,12 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:375
-#, fuzzy
 msgid "If your tarfile is gzipped, you can accomplish this as well:"
-msgstr "Se o seu tarfile for gzipado, você pode fazer isso também:"
+msgstr "Se o seu arquivo tar estiver gzipado, você pode fazer isso também:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:378
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| zcat | tar xvf -\"</"
 "userinput>"
@@ -730,18 +723,17 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:380
-#, fuzzy
 msgid ""
 "After the contents of your tarred filesystem are on your flash memory "
 "filesystem, you can unmount the flash memory and reboot:"
 msgstr ""
-"Depois que o conteúdo do seu sistema de arquivos tarred estiver no sistema "
-"de arquivos da memória flash, você poderá desmontar a memória flash e "
-"reinicializar:"
+"Depois que o conteúdo do seu sistema de arquivos compactado pelo tar estiver "
+"no sistema de arquivos da sua memória flash, você poderá desmontar a memória "
+"flash e reinicializar:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:384
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /</userinput>\n"
 "<prompt>#</prompt> <userinput>umount /flash</userinput>\n"
@@ -753,7 +745,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:388
-#, fuzzy
 msgid ""
 "Assuming that you configured your filesystem correctly when it was built on "
 "the normal hard disk (with your filesystems mounted read-only, and with the "
@@ -762,19 +753,16 @@ msgid ""
 msgstr ""
 "Assumindo que você configurou seu sistema de arquivos corretamente quando "
 "ele foi construído no disco rígido normal (com seus sistemas de arquivos "
-"montados como somente leitura, e com as opções necessárias compiladas no "
-"kernel) você deve agora inicializar com sucesso seu sistema embarcado "
-"FreeBSD."
+"montado como read-only, e com as opções necessárias compiladas no kernel) "
+"você agora deve inicializar com sucesso seu sistema embarcado FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:398
-#, fuzzy
 msgid "System Strategies for Small and Read Only Environments"
-msgstr "Estratégias do sistema para ambientes pequenos e somente leitura"
+msgstr "Estratégias do Sistema para Ambientes Pequenos e Somente Leitura"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:401
-#, fuzzy
 msgid ""
 "In <xref linkend=\"ro-fs\"/>, it was pointed out that the <filename>/var</"
 "filename> filesystem constructed by <filename>/etc/rc.d/var</filename> and "
@@ -784,36 +772,33 @@ msgid ""
 "server will be provided."
 msgstr ""
 "Em <xref linkend=\"ro-fs\"/>, foi apontado que o sistema de arquivos "
-"<filename> / var </filename> construído por <filename> /etc/rc.d/var </"
-"filename> e a presença de Um sistema de arquivos raiz somente leitura causa "
-"problemas com muitos pacotes de software comuns usados ​​com o FreeBSD. "
-"Neste artigo, serão fornecidas sugestões para a execução bem-sucedida do "
-"cron, do syslog, das instalações de portas e do servidor da Web Apache."
+"<filename>/var</filename> construído pelo <filename>/etc/rc.d/var</filename> "
+"e a presença de um sistema de arquivos raiz read-only causa problemas com "
+"muitos pacotes de software comuns usados ​​com o FreeBSD. Neste artigo, "
+"serão fornecidas sugestões para a execução bem-sucedida do cron, do syslog, "
+"instalações de ports e do servidor Web Apache."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:410
-#, fuzzy
 msgid "Cron"
 msgstr "Cron"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:412
-#, fuzzy
 msgid ""
 "Upon boot, <filename>/var</filename> gets populated by <filename>/etc/rc.d/"
 "var</filename> using the list from <filename>/etc/mtree/BSD.var.dist</"
 "filename>, so the <filename>cron</filename>, <filename>cron/tabs</filename>, "
 "<filename>at</filename>, and a few other standard directories get created."
 msgstr ""
-"Na inicialização, <filename> / var </filename> é preenchido por <filename> /"
-"etc/rc.d/var </filename> usando a lista de <filename> /etc/mtree/BSD.var."
-"dist </filename >, então o <filename> cron </filename>, o <filename> cron / "
-"tabs </filename>, <filename> em </filename>, e alguns outros diretórios "
-"padrão são criados."
+"Na inicialização, o <filename>/var</filename> é preenchido pelo <filename>/"
+"etc/rc.d/var</filename> usando a lista disponível em <filename>/etc/mtree/"
+"BSD.var.dist</filename>, então o <filename>cron</filename>, o <filename>cron/"
+"tabs</filename>, <filename>at</filename>, e alguns outros diretórios padrões "
+"são criados."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:419
-#, fuzzy
 msgid ""
 "However, this does not solve the problem of maintaining cron tabs across "
 "reboots. When the system reboots, the <filename>/var</filename> filesystem "
@@ -828,29 +813,27 @@ msgid ""
 "permissions on the directories you create and the files you copy with "
 "<filename>/etc/rc.initdiskless</filename>."
 msgstr ""
-"No entanto, isso não resolve o problema de manter as guias do cron nas "
+"No entanto, isso não resolve o problema de manter as crontabs entre nas "
 "reinicializações. Quando o sistema for reinicializado, o sistema de arquivos "
-"<filename> / var </filename> que está na memória desaparecerá e todas as "
-"guias do cron que você tenha nele também desaparecerão. Portanto, uma "
-"solução seria criar guias cron para os usuários que precisam delas, montar "
-"seu sistema de arquivos <filename> / </filename> como leitura-gravação e "
-"copiar essas guias cron para algum lugar seguro, como <filename> / etc / "
-"tabs </filename>, em seguida, adicione uma linha ao final de <filename> /etc/"
-"rc.initdiskless </filename> que copie esses crontabs em <filename> / var / "
-"cron / tabs </filename> depois que o diretório for criado durante "
-"inicialização do sistema. Você também pode precisar adicionar uma linha que "
-"altere modos e permissões nos diretórios criados e nos arquivos copiados com "
-"<filename> /etc/rc.initdiskless </filename>."
+"<filename>/var</filename> que está na memória desaparecerá e todas as "
+"crontabs que você tenha nele também desaparecerão. Portanto, uma solução "
+"seria criar crontabs para os usuários que precisam delas, montar seu sistema "
+"de arquivos <filename>/</filename> como read-write e copiar estas crontabs "
+"para algum lugar seguro, como <filename>/etc/tabs</filename>, em seguida, "
+"adicione uma linha ao final do  <filename>/etc/rc.initdiskless</filename> "
+"que copie estes crontabs para <filename>/var/cron/tabs</filename> depois que "
+"o diretório for criado durante inicialização do sistema. Você também pode "
+"precisar adicionar uma linha que altere modos e permissões nos diretórios "
+"criados e nos arquivos copiados com <filename>/etc/rc.initdiskless</"
+"filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:437
-#, fuzzy
 msgid "Syslog"
 msgstr "Syslog"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:439
-#, fuzzy
 msgid ""
 "<filename>syslog.conf</filename> specifies the locations of certain log "
 "files that exist in <filename>/var/log</filename>. These files are not "
@@ -859,16 +842,16 @@ msgid ""
 "section that creates the directories in <filename>/var</filename>, you will "
 "need to add something like this:"
 msgstr ""
-"<filename> syslog.conf </filename> especifica os locais de certos arquivos "
-"de log que existem em <filename> / var / log </filename>. Esses arquivos não "
-"são criados pelo <filename> /etc/rc.d/var </filename> na inicialização do "
-"sistema. Portanto, em algum lugar em <filename> /etc/rc.d/var </filename>, "
-"após a seção que cria os diretórios em <filename> / var </filename>, você "
-"precisará adicionar algo como isto:"
+"O <filename>syslog.conf</filename> especifica os locais de certos arquivos "
+"de log que existem em <filename>/var/log</filename>. Esses arquivos não são "
+"criados pelo <filename>/etc/rc.d/var</filename> na inicialização do sistema. "
+"Portanto, em algum lugar do <filename>/etc/rc.d/var</filename>, logo após a "
+"seção que cria os diretórios em <filename>/var</filename>, você precisará "
+"adicionar algo como isto:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:448
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>touch /var/log/security /var/log/maillog /var/"
 "log/cron /var/log/messages</userinput>\n"
@@ -880,13 +863,11 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:453
-#, fuzzy
 msgid "Ports Installation"
-msgstr "Instalação de Portas"
+msgstr "Instalação de Ports"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:455
-#, fuzzy
 msgid ""
 "Before discussing the changes necessary to successfully use the ports tree, "
 "a reminder is necessary regarding the read-only nature of your filesystems "
@@ -897,24 +878,22 @@ msgid ""
 "considerably shorten its lifespan."
 msgstr ""
 "Antes de discutir as alterações necessárias para usar com êxito a árvore de "
-"ports, é necessário um lembrete sobre a natureza somente leitura de seus "
-"sistemas de arquivos na mídia flash. Como eles são somente leitura, você "
-"precisará montá-los temporariamente para leitura-gravação usando a sintaxe "
-"de montagem mostrada em <xref linkend=\"ro-fs\"/>. Você deve sempre remontar "
-"esses sistemas de arquivos somente leitura quando tiver terminado qualquer "
-"manutenção - gravações desnecessárias na mídia flash podem reduzir "
-"consideravelmente sua vida útil."
+"ports, é necessário um lembrete sobre a natureza read-only dos seus sistemas "
+"de arquivos na mídia flash. Como eles são read-only, você precisará montá-"
+"los temporariamente para read-write usando a sintaxe de montagem mostrada em "
+"<xref linkend=\"ro-fs\"/>. Você sempre deve remontar esses sistemas de "
+"arquivos no modo read-only quando tiver terminado qualquer manutenção - "
+"gravações desnecessárias na mídia flash podem reduzir consideravelmente sua "
+"vida útil."
 
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:466
 #: article.translate.xml:489
-#, fuzzy
 msgid "install"
-msgstr "instalar"
+msgstr "install"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
-#, fuzzy
 msgid ""
 "To make it possible to enter a ports directory and successfully run "
 "<command>make</command> <_:buildtarget-1/>, we must create a packages "
@@ -924,53 +903,51 @@ msgid ""
 "that an area on the flash media can also be used for package information to "
 "be written to."
 msgstr ""
-"Para tornar possível entrar em um diretório de ports e executar com sucesso "
-"o <command> make </command> <_:buildtarget-1/>, devemos criar um diretório "
-"de pacotes em um sistema de arquivos não-memória que manterá o controle de "
-"nossos pacotes através de reinicializações . Como é necessário montar seus "
-"sistemas de arquivos como leitura-gravação para a instalação de um pacote, é "
-"sensato supor que uma área na mídia flash também possa ser usada para que as "
-"informações do pacote sejam gravadas."
+"Para tornar possível entrar em um diretório do ports e executar com sucesso "
+"o comando <command>make</command> <_:buildtarget-1/>, devemos criar um "
+"diretório de pacotes em um sistema de arquivos que não esteja localizado na "
+"memória o qual manterá o controle dos nossos pacotes entre as "
+"reinicializações . Como é necessário montar seus sistemas de arquivos como "
+"read-write para a instalação de um pacote, é sensato supor que uma área na "
+"mídia flash também possa ser usada para que as informações do pacote sejam "
+"gravadas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:474
-#, fuzzy
 msgid ""
 "First, create a package database directory. This is normally in <filename>/"
 "var/db/pkg</filename>, but we cannot place it there as it will disappear "
 "every time the system is booted."
 msgstr ""
-"Primeiro, crie um diretório de banco de dados de pacotes. Isto é normalmente "
-"em <filename> / var / db / pkg </filename>, mas não podemos colocá-lo lá, "
-"pois ele irá desaparecer toda vez que o sistema for inicializado."
+"Primeiro, crie o diretório do banco de dados de pacotes. Ele fica "
+"normalmente em <filename>/var/db/pkg</filename>, mas não podemos colocá-lo "
+"lá, pois ele irá desaparecer toda vez que o sistema for inicializado."
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:479
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>mkdir /etc/pkg</userinput>"
 msgstr "<prompt>#</prompt> <userinput>mkdir /etc/pkg</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:481
-#, fuzzy
 msgid ""
 "Now, add a line to <filename>/etc/rc.d/var</filename> that links the "
 "<filename>/etc/pkg</filename> directory to <filename>/var/db/pkg</filename>. "
 "An example:"
 msgstr ""
-"Agora, adicione uma linha ao <filename> /etc/rc.d/var </filename> que "
-"vincula o diretório <filename> / etc / pkg </filename> ao <filename> / var / "
-"db / pkg </filename> . Um exemplo:"
+"Agora, adicione uma linha ao arquivo <filename>/etc/rc.d/var</filename> que "
+"vincule o <filename>/etc/pkg</filename> ao <filename>/var/db/pkg</filename>. "
+"Um exemplo:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:485
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>ln -s /etc/pkg /var/db/pkg</userinput>"
 msgstr "<prompt>#</prompt> <userinput>ln -s /etc/pkg /var/db/pkg</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:487
-#, fuzzy
 msgid ""
 "Now, any time that you mount your filesystems as read-write and install a "
 "package, the <command>make</command> <_:buildtarget-1/> will work, and "
@@ -979,22 +956,20 @@ msgid ""
 "which will always be available to the operating system as <filename>/var/db/"
 "pkg</filename>."
 msgstr ""
-"Agora, sempre que montar seus sistemas de arquivos como leitura-gravação e "
-"instalar um pacote, o <command> make </command> <_:buildtarget-1/> "
-"funcionará e as informações do pacote serão gravadas com êxito em <filename> "
-"/ etc / pkg </filename> (porque o sistema de arquivos será, naquele momento, "
-"montado read-write) que estará sempre disponível para o sistema operacional "
-"como <filename> / var / db / pkg </filename>."
+"Agora, sempre que montar seus sistemas de arquivos como read-write e "
+"instalar um pacote, o <command>make</command> <_:buildtarget-1/> funcionará "
+"e as informações do pacote serão gravadas com êxito em <filename>/etc/pkg</"
+"filename> (porque o sistema de arquivos será, naquele momento, montado como "
+"read-write) que estará sempre disponível para o sistema operacional como "
+"<filename>/var/db/pkg</filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:498
-#, fuzzy
 msgid "Apache Web Server"
 msgstr "Servidor Web Apache"
 
 #. (itstool) path: note/para
 #: article.translate.xml:501
-#, fuzzy
 msgid ""
 "The steps in this section are only necessary if Apache is set up to write "
 "its pid or log information outside of <filename>/var</filename>. By default, "
@@ -1002,14 +977,12 @@ msgid ""
 "log files in <filename>/var/log</filename>."
 msgstr ""
 "As etapas nesta seção são necessárias apenas se o Apache estiver configurado "
-"para gravar suas informações de pid ou log fora do <filename> / var </"
-"filename>. Por padrão, o Apache mantém seu arquivo pid em <filename> /var/"
-"run/httpd.pid </filename> e seus arquivos de log em <filename> / var / log </"
-"filename>."
+"para gravar suas informações de pid ou log fora do <filename>/var</filename>."
+" Por padrão, o Apache mantém seu arquivo pid em <filename>/var/run/httpd."
+"pid</filename> e seus arquivos de log em <filename>/var/log</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:508
-#, fuzzy
 msgid ""
 "It is now assumed that Apache keeps its log files in a directory "
 "<filename><replaceable>apache_log_dir</replaceable></filename> outside of "
@@ -1022,39 +995,37 @@ msgid ""
 "necessary to set permissions and ownership on this new directory."
 msgstr ""
 "Agora é assumido que o Apache mantém seus arquivos de log em um diretório "
-"<filename> <replaceable> apache_log_dir </replaceable> </filename> fora do "
-"<filename> / var </filename>. Quando esse diretório reside em um sistema de "
-"arquivos somente para leitura, o Apache não poderá salvar nenhum arquivo de "
-"log e pode ter problemas para funcionar. Se assim for, é necessário "
-"adicionar um novo diretório à lista de diretórios em <filename> /etc/rc.d/"
-"var </filename> para criar <filename> / var </filename> e vincular <filename "
-"> <replaceable> apache_log_dir </replaceable> </filename> para <filename> / "
-"var / log / apache </filename>. Também é necessário definir permissões e "
+"<filename><replaceable>apache_log_dir</replaceable></filename> fora do "
+"<filename>/var</filename>. Quando esse diretório reside em um sistema de "
+"arquivos read-only, o Apache não poderá salvar nenhum arquivo de log e pode "
+"ter problemas para funcionar. Se assim for, é necessário adicionar um novo "
+"diretório à lista de diretórios em <filename>/etc/rc.d/var</filename> para "
+"criar no <filename>/var</filename> e vincular "
+"<filename><replaceable>apache_log_dir</replaceable></filename> ao <filename>/"
+"var/log/apache</filename>. Também é necessário definir permissões e "
 "propriedade neste novo diretório."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:521
-#, fuzzy
 msgid ""
 "First, add the directory <literal>log/apache</literal> to the list of "
 "directories to be created in <filename>/etc/rc.d/var</filename>."
 msgstr ""
-"Primeiro, adicione o diretório <literal> log / apache </literal> à lista de "
-"diretórios a serem criados em <filename> /etc/rc.d/var </filename>."
+"Primeiro, adicione o diretório <literal>log/apache</literal> à lista de "
+"diretórios a serem criados em <filename>/etc/rc.d/var</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:525
-#, fuzzy
 msgid ""
 "Second, add these commands to <filename>/etc/rc.d/var</filename> after the "
 "directory creation section:"
 msgstr ""
-"Segundo, adicione estes comandos ao <filename> /etc/rc.d/var </filename> "
-"após a seção de criação do diretório:"
+"Segundo, adicione estes comandos ao <filename>/etc/rc.d/var</filename> após "
+"a seção de criação do diretório:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:529
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>chmod 0774 /var/log/apache</userinput>\n"
 "<prompt>#</prompt> <userinput>chown nobody:nobody /var/log/apache</"
@@ -1066,17 +1037,16 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:532
-#, fuzzy
 msgid ""
 "Finally, remove the existing <filename><replaceable>apache_log_dir</"
 "replaceable></filename> directory, and replace it with a link:"
 msgstr ""
-"Por fim, remova o diretório <filename> <replaceable> apache_log_dir </"
-"replaceable> </filename> existente e substitua-o por um link:"
+"Por fim, remova o diretório <filename><replaceable>apache_log_dir</"
+"replaceable></filename> existente e substitua-o por um link:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:536
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</"
 "replaceable></userinput>\n"
