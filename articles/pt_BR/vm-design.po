@@ -1,6 +1,6 @@
 # André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -8,9 +8,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-25 11:51+0000\n"
+"PO-Revision-Date: 2018-09-12 11:08+0000\n"
 "Last-Translator: André Franciosi <andre@franciosi.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -18,7 +18,10 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Silvio Ap Silva, contato@kanazuchi.com, 2018\n"
+"André Franciosi, andre@franciosi.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
@@ -104,7 +107,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:43
-#, fuzzy
 msgid ""
 "The title is really just a fancy way of saying that I am going to attempt to "
 "describe the whole VM enchilada, hopefully in a way that everyone can follow."
@@ -121,14 +123,14 @@ msgid ""
 "peoples names, since I will invariably get it wrong."
 msgstr ""
 "O título é realmente apenas uma maneira extravagante de dizer que vou tentar "
-"descrever toda a VM enchilada, esperançosamente de uma forma que todos "
-"possam seguir. No ano passado eu me concentrei em vários dos principais "
+"descrever todo o grupo de itens de uma VM, espero que de uma forma que todos "
+"possam acompanhar. Pelo ultimo ano eu me concentrei em vários dos principais "
 "subsistemas do kernel dentro do FreeBSD, com os subsistemas VM e Swap sendo "
-"os mais interessantes e o NFS sendo <quote> uma tarefa necessária </quote>. "
-"Eu reescrevi apenas pequenas partes do código. Na área de VM, a única grande "
+"os mais interessantes e o NFS sendo <quote>uma tarefa necessária</quote>. Eu "
+"reescrevi apenas pequenas partes do código. Na área de VM, a única grande "
 "reescrita que fiz foi para o subsistema de troca. A maior parte do meu "
-"trabalho foi de limpeza e manutenção, com apenas regravação de código "
-"moderada e sem grandes ajustes algorítmicos no subsistema VM. A maior parte "
+"trabalho foi de limpeza e manutenção, com apenas uma moderada reescrita de "
+"código e sem grandes ajustes nos algorítimos do subsistema VM. A maior parte "
 "da base teórica do subsistema VM permanece inalterada e muito do crédito "
 "pelo esforço de modernização nos últimos anos pertence a John Dyson e David "
 "Greenman. Não sendo um historiador como Kirk, eu não tentarei marcar todos "
@@ -136,27 +138,24 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:60
-#, fuzzy
 msgid ""
 "This article was originally published in the January 2000 issue of <link "
 "xlink:href=\"http://www.daemonnews.org/\">DaemonNews</link>. This version of "
 "the article may include updates from Matt and other authors to reflect "
 "changes in FreeBSD's VM implementation."
 msgstr ""
-"Este artigo foi publicado originalmente na edição de janeiro de 2000 <link "
-"xlink:href=\"http://www.daemonnews.org/\"> DaemonNews </link>. Esta versão "
-"do artigo pode incluir atualizações de Matt e outros autores para refletir "
-"as mudanças na implementação da VM do FreeBSD."
+"Este artigo foi publicado originalmente na edição de janeiro de 2000 do "
+"<link xlink:href=\"http://www.daemonnews.org/\">DaemonNews</link>. Esta "
+"versão do artigo pode incluir atualizações feitas por Matt e outros autores "
+"para refletir as mudanças na implementação da VM do FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:68
-#, fuzzy
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:70
-#, fuzzy
 msgid ""
 "Before moving along to the actual design let's spend a little time on the "
 "necessity of maintaining and modernizing any long-living codebase. In the "
@@ -187,40 +186,39 @@ msgid ""
 "are always right because our marketing department says so</quote>. I have "
 "little tolerance for anyone who cannot learn from history."
 msgstr ""
-"Antes de avançarmos para o design atual, vamos dedicar um pouco de tempo à "
-"necessidade de manter e modernizar qualquer base de código de longa duração. "
-"No mundo da programação, os algoritmos tendem a ser mais importantes do que "
-"o código, e é precisamente devido às raízes acadêmicas da BSD que uma grande "
+"Antes de avançarmos para o design atual, vamos dedicar um pouco de tempo a "
+"necessidade de manter e modernizar qualquer base de código duradoura. No "
+"mundo da programação, os algoritmos tendem a ser mais importantes do que o "
+"código, e é precisamente devido as raízes acadêmicas do BSD que uma grande "
 "atenção foi dada ao design do algoritmo desde o início. Mais atenção ao "
 "design geralmente leva a uma base de código limpa e flexível que pode ser "
 "facilmente modificada, estendida ou substituída ao longo do tempo. Embora o "
-"BSD seja considerado um sistema operacional <quote> antigo </quote> por "
+"BSD seja considerado um sistema operacional <quote>antigo</quote> por "
 "algumas pessoas, aqueles de nós que trabalham nele tendem a vê-lo mais como "
-"uma base de código <quote> madura </quote> que possui vários componentes "
+"uma base de código <quote>madura</quote> que possui vários componentes "
 "modificados, estendidos, ou substituído por código moderno. Ele evoluiu e o "
-"FreeBSD está no limite, não importa quantos anos tenha o código. Esta é uma "
+"FreeBSD está no topo, não importa quantos anos tenha o código. Esta é uma "
 "distinção importante a ser feita e infelizmente perdida para muitas pessoas. "
 "O maior erro que um programador pode cometer é não aprender com a história, "
 "e esse é precisamente o erro que muitos outros sistemas operacionais "
-"modernos fizeram. <trademark class=\"registered\"> Windows NT </trademark> é "
+"modernos cometeram. <trademark class=\"registered\">Windows NT</trademark> é "
 "o melhor exemplo disso, e as conseqüências foram terríveis. O Linux também "
-"comete esse erro até certo ponto - o suficiente para que nós, do BSD, "
-"possamos fazer pequenas piadas sobre isso de vez em quando, de qualquer "
-"maneira. O problema do Linux é simplesmente a falta de experiência e "
-"histórico para comparar idéias, um problema que está sendo resolvido de "
-"forma fácil e rápida pela comunidade Linux, da mesma forma como foi abordado "
-"na comunidade BSD - pelo desenvolvimento contínuo de código. O folk "
-"<trademark class=\"registered\"> do Windows NT </trademark>, por outro lado, "
-"repetidamente faz os mesmos erros resolvidos por <trademark class="
-"\"registered\"> UNIX </trademark> décadas atrás e depois gasta anos "
-"corrigindo-os . De novo e de novo. Eles têm um caso grave de <quote> não "
-"projetado aqui </quote> e <quote> estamos sempre certos porque nosso "
-"departamento de marketing diz que </quote>. Tenho pouca tolerância para quem "
-"não pode aprender com a história."
+"cometeu esse erro até certo ponto - o suficiente para que nós, do BSD, "
+"possamos fazer pequenas piadas sobre isso de vez em quando, entretanto. O "
+"problema do Linux é simplesmente a falta de experiência e histórico para "
+"comparar idéias, um problema que está sendo resolvido de forma fácil e "
+"rápida pela comunidade Linux, da mesma forma como foi abordado na comunidade "
+"BSD - pelo desenvolvimento contínuo de código. Por outro lado, o povo do "
+"<trademark class=\"registered\">Windows NT</trademark>, repetidamente comete "
+"os mesmos erros resolvidos no <trademark class=\"registered\">UNIX</"
+"trademark> décadas atrás e depois gasta anos corrigindo-os. De novo e de "
+"novo. Eles têm um caso grave de <quote>não foi projetado aqui</quote> e "
+"<quote>estamos sempre certos porque nosso departamento de marketing diz que "
+"sim</quote>. Tenho pouca tolerância para quem não pode aprender com a "
+"história."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:99
-#, fuzzy
 msgid ""
 "Much of the apparent complexity of the FreeBSD design, especially in the VM/"
 "Swap subsystem, is a direct result of having to solve serious performance "
@@ -230,18 +228,17 @@ msgid ""
 "system resources begin to get stressed. As I describe FreeBSD's VM/Swap "
 "subsystem the reader should always keep two points in mind:"
 msgstr ""
-"Grande parte da aparente complexidade do design do FreeBSD, especialmente no "
-"subsistema VM / Swap, é um resultado direto de ter que resolver sérios "
-"problemas de desempenho que ocorrem sob várias condições. Esses problemas "
-"não se devem ao mau design algorítmico, mas sim a fatores ambientais. Em "
-"qualquer comparação direta entre plataformas, esses problemas tornam-se mais "
+"Grande parte da complexidade aparente do design do FreeBSD, especialmente no "
+"subsistema VM/Swap, é um resultado direto de ter que resolver sérios "
+"problemas de desempenho que ocorrem sob várias condições. Estes problemas "
+"não se devem ao mau design de algorítimo, mas sim a fatores ambientais. Em "
+"qualquer comparação direta entre plataformas, estes problemas tornam-se mais "
 "aparentes quando os recursos do sistema começam a ficar estressados. Como "
-"descrevo o subsistema VM / Swap do FreeBSD, o leitor deve sempre manter dois "
+"descrevo o subsistema VM/Swap do FreeBSD, o leitor deve sempre manter dois "
 "pontos em mente:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:110
-#, fuzzy
 msgid ""
 "The most important aspect of performance design is what is known as "
 "<quote>Optimizing the Critical Path</quote>. It is often the case that "
@@ -249,13 +246,12 @@ msgid ""
 "the critical path perform better."
 msgstr ""
 "O aspecto mais importante do design de desempenho é o que é conhecido como "
-"<quote> Otimizando o caminho crítico </quote>. Muitas vezes, as otimizações "
-"de desempenho adicionam um pouco de inchaço ao código para que o caminho "
-"crítico tenha um melhor desempenho."
+"<quote>Otimizando o Caminho Crítico </quote>. Muitas vezes, as otimizações "
+"de desempenho inflam um pouco o código, para que o caminho crítico tenha um "
+"melhor desempenho."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:117
-#, fuzzy
 msgid ""
 "A solid, generalized design outperforms a heavily-optimized design over the "
 "long run. While a generalized design may end up being slower than an heavily-"
@@ -263,16 +259,15 @@ msgid ""
 "tends to be easier to adapt to changing conditions and the heavily-optimized "
 "design winds up having to be thrown away."
 msgstr ""
-"Um design sólido e generalizado supera um projeto altamente otimizado em "
+"Um design sólido e generalizado supera um projeto altamente otimizado a "
 "longo prazo. Enquanto um design generalizado pode acabar sendo mais lento do "
 "que um projeto altamente otimizado quando eles são implementados pela "
-"primeira vez, o design generalizado tende a ser mais fácil de se adaptar às "
+"primeira vez, o design generalizado tende a ser mais fácil de se adaptar as "
 "mudanças de condições e o projeto altamente otimizado acaba tendo que ser "
 "descartado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
-#, fuzzy
 msgid ""
 "Any codebase that will survive and be maintainable for years must therefore "
 "be designed properly from the beginning even if it costs some performance. "
@@ -286,19 +281,17 @@ msgstr ""
 "portanto, ser projetada adequadamente desde o início, mesmo que isso custe "
 "algum desempenho. Vinte anos atrás, as pessoas ainda argumentavam que "
 "programar em assembly era melhor do que programar em uma linguagem de alto "
-"nível porque produzia um código que era dez vezes mais rápido. Hoje, a "
-"falibilidade desse argumento é óbvia - assim como os paralelos com o design "
-"algorítmico e a generalização de código."
+"nível porque produzia um código que era dez vezes mais rápido. Hoje, a queda "
+"desse argumento é óbvia - assim como os paralelos com o design de algorítimo "
+"e a generalização de código."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
-#, fuzzy
 msgid "VM Objects"
 msgstr "Objetos de VM"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
-#, fuzzy
 msgid ""
 "The best way to begin describing the FreeBSD VM system is to look at it from "
 "the perspective of a user-level process. Each user process sees a single, "
@@ -313,24 +306,24 @@ msgid ""
 "them. The fork system call adds an entirely new dimension to the VM "
 "management problem on top of the complexity already given."
 msgstr ""
-"A melhor maneira de começar a descrever o sistema VM do FreeBSD é examiná-lo "
-"da perspectiva de um processo em nível de usuário. Cada processo do usuário "
-"vê um espaço de endereço de VM único, contíguo e contíguo, contendo vários "
-"tipos de objetos de memória. Esses objetos possuem várias características. O "
-"código do programa e os dados do programa são efetivamente um único arquivo "
-"mapeado na memória (o arquivo binário sendo executado), mas o código do "
-"programa é somente leitura enquanto os dados do programa são copy-on-write. "
-"O programa BSS é apenas memória alocada e preenchida com zeros sob demanda, "
-"chamado preenchimento de página de demanda zero. Arquivos arbitrários também "
-"podem ser mapeados na memória para o espaço de endereço, que é como o "
-"mecanismo de biblioteca compartilhada funciona. Esses mapeamentos podem "
-"exigir modificações para permanecerem privados ao processo que os faz. A "
-"chamada do sistema fork adiciona uma dimensão totalmente nova ao problema de "
-"gerenciamento de VMs além da complexidade já fornecida."
+"A melhor maneira de começar a descrever o sistema de VM do FreeBSD é examiná-"
+"lo da perspectiva de um processo em nível de usuário. Cada processo do "
+"usuário vê um espaço de endereço de VM único, privado e contíguo, contendo "
+"vários tipos de objetos de memória. Esses objetos possuem várias "
+"características. O código do programa e os dados do programa são "
+"efetivamente um único arquivo mapeado na memória (o arquivo binário sendo "
+"executado), mas o código do programa é read-only enquanto os dados do "
+"programa são copy-on-write. O programa BSS é apenas memória alocada e "
+"preenchida com zeros sob demanda, chamado de demanda de preenchimento de "
+"página com zero. Arquivos arbitrários também podem ser mapeados na memória "
+"dentro do espaço de endereçamento como bem entender, que é como o mecanismo "
+"de biblioteca compartilhada funciona. Esses mapeamentos podem exigir "
+"modificações para permanecerem privados para o processo que os produz. A "
+"chamada do sistema de fork adiciona uma dimensão totalmente nova ao problema "
+"de gerenciamento de VMs além da complexidade já fornecida."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:152
-#, fuzzy
 msgid ""
 "A program binary data page (which is a basic copy-on-write page) illustrates "
 "the complexity. A program binary contains a preinitialized data section "
@@ -343,21 +336,20 @@ msgid ""
 "system may no longer free it, because there is no longer any way to restore "
 "it later on."
 msgstr ""
-"Uma página de dados binários do programa (que é uma página básica de cópia "
-"na gravação) ilustra a complexidade. Um programa binário contém uma seção de "
-"dados pré-inicializada que é inicialmente mapeada diretamente a partir do "
-"arquivo de programa. Quando um programa é carregado no espaço VM de um "
-"processo, essa área é inicialmente mapeada na memória e suportada pelo "
-"próprio binário do programa, permitindo que o sistema VM liberte / reutilize "
-"a página e depois carregue-a de volta a partir do binário. No entanto, no "
-"momento em que um processo modifica esses dados, o sistema VM deve fazer uma "
-"cópia privada da página para esse processo. Como a cópia privada foi "
-"modificada, o sistema da VM pode não mais liberá-la, porque não há mais como "
-"restaurá-la mais tarde."
+"Uma página de dados binários do programa (que é uma página básica de copy-on-"
+"write) ilustra a complexidade. Um programa binário contém uma seção de dados "
+"pré-inicializada que é inicialmente mapeada diretamente a partir do arquivo "
+"de programa. Quando um programa é carregado no espaço de VM de um processo, "
+"esta área é inicialmente mapeada na memória e suportada pelo próprio binário "
+"do programa, permitindo que o sistema de VM liberte/reutilize a página e "
+"depois carregue-a de volta a partir do binário. No entanto, no momento em "
+"que um processo modifica esses dados, o sistema de VM deve fazer uma cópia "
+"privada da página para esse processo. A partir do momento que a cópia "
+"privada tenha sido modificada, o sistema de VM pode não mais liberá-la, "
+"porque não há mais como restaurá-la depois."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:163
-#, fuzzy
 msgid ""
 "You will notice immediately that what was originally a simple file mapping "
 "has become much more complex. Data may be modified on a page-by-page basis "
@@ -376,22 +368,21 @@ msgstr ""
 "Você notará imediatamente que o que originalmente era um mapeamento de "
 "arquivo simples se tornou muito mais complexo. Os dados podem ser "
 "modificados página a página, enquanto o mapeamento de arquivos abrange "
-"muitas páginas de uma só vez. A complexidade aumenta ainda mais quando um "
-"processo se bifurca. Quando um processo se bifurca, o resultado é dois "
-"processos - cada um com seus próprios espaços de endereço privados, "
-"incluindo quaisquer modificações feitas pelo processo original antes da "
-"chamada para <function> fork () </function>. Seria bobagem o sistema VM "
-"fazer uma cópia completa dos dados no momento da <function> fork () </"
+"muitas páginas de uma só vez. A complexidade aumenta ainda mais quando "
+"existe um fork do processo. Quando um processo se duplica, o resultado são "
+"dois processos - cada um com seus próprios espaços de endereçamento "
+"privados, incluindo quaisquer modificações feitas pelo processo original "
+"antes de chamar um <function>fork()</function>. Seria bobagem o sistema de "
+"VM fizesse uma cópia completa dos dados no momento do <function>fork()</"
 "function> porque é bem possível que pelo menos um dos dois processos precise "
-"ler apenas de essa página a partir de então, permitindo que a página "
-"original continue a ser usada. O que era uma página privada é feito copy-on-"
-"write novamente, já que cada processo (pai e filho) espera que suas próprias "
+"apenas ler essa página a partir de então, permitindo que a página original "
+"continue a ser usada. O que era uma página privada é feito um copy-on-write "
+"novamente, já que cada processo (pai e filho) espera que suas próprias "
 "modificações pós-fork permaneçam privadas para si mesmas e não afetem a "
 "outra."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:178
-#, fuzzy
 msgid ""
 "FreeBSD manages all of this with a layered VM Object model. The original "
 "binary program file winds up being the lowest VM Object layer. A copy-on-"
@@ -405,18 +396,18 @@ msgid ""
 "When the process starts, the VM system creates an object layer, let's call "
 "this A:"
 msgstr ""
-"O FreeBSD gerencia tudo isso com um modelo de objetos da VM em camadas. O "
-"arquivo de programa binário original acaba sendo a camada de objeto VM mais "
-"baixa. Uma camada copy-on-write é colocada em cima disso para conter as "
+"O FreeBSD gerencia tudo isso com um modelo de objetos de VM em camadas. O "
+"arquivo de programa binário original acaba sendo a camada de objeto de VM "
+"mais baixa. Uma camada copy-on-write é colocada acima dela para conter as "
 "páginas que tiveram que ser copiadas do arquivo original. Se o programa "
-"modificar uma página de dados pertencente ao arquivo original, o sistema da "
-"VM assumirá uma falha e fará uma cópia da página na camada superior. Quando "
-"um processo se bifurca, as camadas adicionais de objetos da VM são ativadas. "
-"Isso pode fazer um pouco mais de sentido com um exemplo bastante básico. Um "
-"<function> fork () </function> é uma operação comum para qualquer sistema * "
-"BSD, então este exemplo irá considerar um programa que inicia e um fork. "
-"Quando o processo é iniciado, o sistema VM cria uma camada de objeto, vamos "
-"chamar isso de A:"
+"modificar uma página de dados pertencente ao arquivo original, o sistema de "
+"VM assumirá que existe uma falha e fará uma cópia da página na camada "
+"superior. Quando existe um fork do processo, as camadas adicionais de "
+"objetos de VM são ativadas. Isso pode fazer um pouco mais de sentido com um "
+"exemplo bastante básico. Um <function>fork()</function> é uma operação comum "
+"para qualquer sistema *BSD, então este exemplo irá considerar um programa "
+"que inicia e é feito um fork. Quando o processo é iniciado, o sistema de VM "
+"cria uma camada de objeto, vamos chamar isso de A:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -424,36 +415,33 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:192
-#, fuzzy
 msgctxt "_"
 msgid "external ref='fig1' md5='__failed__'"
-msgstr "ref externo = 'fig1' md5 = '__ failed__'"
+msgstr "external ref='fig1' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:196
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "+---------------+\n"
 "|       A       |\n"
 "+---------------+"
-msgstr "+ --------------- +\n"
-"| A |\n"
-"+ --------------- +"
+msgstr "+---------------+\n"
+"|       A       |\n"
+"+---------------+"
 
 #. (itstool) path: sect1/mediaobject
 #: article.translate.xml:190
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"fig1\"/> </imageobject> <textobject> <_:"
 "literallayout-1/> </textobject> <textobject> <phrase>A picture</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"fig1\"/> </imageobject> <textobject> <_:"
-"literallayout-1/> </textobject> <textobject> <phrase>uma imagem</phrase> </"
+"literallayout-1/> </textobject> <textobject> <phrase>A picture</phrase> </"
 "textobject>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
-#, fuzzy
 msgid ""
 "A represents the file—pages may be paged in and out of the file's physical "
 "media as necessary. Paging in from the disk is reasonable for a program, but "
@@ -464,8 +452,8 @@ msgstr ""
 "A representa o arquivo - as páginas podem ser paginadas dentro e fora da "
 "mídia física do arquivo, conforme necessário. Paginar a partir do disco é "
 "razoável para um programa, mas nós realmente não queremos voltar atrás e "
-"sobrescrever o executável. O sistema VM, portanto, cria uma segunda camada, "
-"B, que será fisicamente suportada pelo espaço de troca:"
+"sobrescrever o executável. O sistema de VM, portanto, cria uma segunda "
+"camada, B, que será fisicamente suportada pelo espaço de troca:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -473,14 +461,13 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:214
-#, fuzzy
 msgctxt "_"
 msgid "external ref='fig2' md5='__failed__'"
-msgstr "ref externo = 'fig2' md5 = '__ failed__'"
+msgstr "external ref='fig2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:218
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+---------------+\n"
 "|       B       |\n"
@@ -488,26 +475,25 @@ msgid ""
 "|       A       |\n"
 "+---------------+"
 msgstr ""
-"+ --------------- +\n"
-"| B |\n"
-"+ --------------- +\n"
-"| A |\n"
-"+ --------------- +"
+"+---------------+\n"
+"|       B       |\n"
+"+---------------+\n"
+"|       A       |\n"
+"+---------------+"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:226
-#, fuzzy
 msgid ""
 "On the first write to a page after this, a new page is created in B, and its "
 "contents are initialized from A. All pages in B can be paged in or out to a "
 "swap device. When the program forks, the VM system creates two new object "
 "layers—C1 for the parent, and C2 for the child—that rest on top of B:"
 msgstr ""
-"Na primeira gravação em uma página depois disso, uma nova página é criada em "
-"B e seu conteúdo é inicializado em A. Todas as páginas em B podem ser "
-"paginadas para dentro ou para fora para um dispositivo de permuta. Quando o "
-"programa é forjado, o sistema VM cria duas novas camadas de objetos - C1 "
-"para o pai e C2 para o filho - que ficam no topo de B:"
+"Na primeira escrita em uma página depois disso, uma nova página é criada em "
+"B e seu conteúdo é inicializado a partir de A. Todas as páginas em B podem "
+"ser paginadas para dentro ou para fora por um dispositivo de troca. Quando é "
+"feito o fork do programa, o sistema de VM cria duas novas camadas de objetos "
+"- C1 para o processo pai e C2 para o filho - que ficam no topo de B:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -515,14 +501,13 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:234
-#, fuzzy
 msgctxt "_"
 msgid "external ref='fig3' md5='__failed__'"
-msgstr "ref externo = 'fig3' md5 = '__ failed__'"
+msgstr "external ref='fig3' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:238
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+-------+-------+\n"
 "|   C1  |   C2  |\n"
@@ -532,17 +517,16 @@ msgid ""
 "|       A       |\n"
 "+---------------+"
 msgstr ""
-"+ ------- + ------- +\n"
-"| C1 | C2 |\n"
-"+ ------- + ------- +\n"
-"| B |\n"
-"+ --------------- +\n"
-"| A |\n"
-"+ --------------- +"
+"+-------+-------+\n"
+"|   C1  |   C2  |\n"
+"+-------+-------+\n"
+"|       B       |\n"
+"+---------------+\n"
+"|       A       |\n"
+"+---------------+"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:248
-#, fuzzy
 msgid ""
 "In this case, let's say a page in B is modified by the original parent "
 "process. The process will take a copy-on-write fault and duplicate the page "
@@ -557,19 +541,19 @@ msgid ""
 "current address space is usually replaced by a new address space "
 "representing a new file. In this case, the C2 layer is destroyed:"
 msgstr ""
-"Nesse caso, digamos que uma página em B seja modificada pelo processo pai "
-"original. O processo terá uma falha de cópia na gravação e duplicará a "
-"página em C1, deixando a página original em B intocada. Agora, digamos que a "
-"mesma página em B seja modificada pelo processo filho. O processo assumirá "
-"uma falha de cópia na gravação e duplicará a página em C2. A página original "
-"em B agora está completamente oculta, já que C1 e C2 têm uma cópia e B "
-"poderia, teoricamente, ser destruído se não representasse um arquivo <quote> "
-"real </quote>; no entanto, esse tipo de otimização não é trivial, porque é "
-"muito refinado. O FreeBSD não faz essa otimização. Agora, suponha (como é "
-"frequentemente o caso) que o processo filho faça uma <function> exec () </"
-"function>. Seu espaço de endereço atual é geralmente substituído por um novo "
-"espaço de endereço representando um novo arquivo. Nesse caso, a camada C2 é "
-"destruída:"
+"Neste caso, digamos que uma página em B seja modificada pelo processo pai "
+"original. O processo terá uma falha de copy-on-write e duplicará a página em "
+"C1, deixando a página original em B intocada. Agora, digamos que a mesma "
+"página em B seja modificada pelo processo filho. O processo assumirá uma "
+"falha de copy-on-write e duplicará a página em C2. A página original em B "
+"agora está completamente oculta, já que C1 e C2 têm uma cópia e B poderia, "
+"teoricamente, ser destruído se não representasse um arquivo <quote>real</"
+"quote>; no entanto, esse tipo de otimização não é trivial de se fazer, "
+"porque é muito refinado. O FreeBSD não faz essa otimização. Agora, suponha "
+"(como é frequentemente o caso) que o processo filho execute um "
+"<function>exec()</function>. Seu espaço de endereço atual é geralmente "
+"substituído por um novo espaço de endereço representando um novo arquivo. "
+"Nesse caso, a camada C2 é destruída:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -577,14 +561,13 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:264
-#, fuzzy
 msgctxt "_"
 msgid "external ref='fig4' md5='__failed__'"
-msgstr "ref externo = 'fig4' md5 = '__ failed__'"
+msgstr "external ref='fig4' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:268
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "+-------+\n"
 "|   C1  |\n"
@@ -594,17 +577,16 @@ msgid ""
 "|       A       |\n"
 "+---------------+"
 msgstr ""
-"+ ------- +\n"
-"| C1 |\n"
-"+ ------- + ------- +\n"
-"| B |\n"
-"+ --------------- +\n"
-"| A |\n"
-"+ --------------- +"
+"+-------+\n"
+"|   C1  |\n"
+"+-------+-------+\n"
+"|       B       |\n"
+"+---------------+\n"
+"|       A       |\n"
+"+---------------+"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:278
-#, fuzzy
 msgid ""
 "In this case, the number of children of B drops to one, and all accesses to "
 "B now go through C1. This means that B and C1 can be collapsed together. Any "
@@ -614,15 +596,14 @@ msgid ""
 "<function>exec()</function>."
 msgstr ""
 "Neste caso, o número de filhos de B cai para um, e todos os acessos para B "
-"passam agora por C1. Isso significa que B e C1 podem ser recolhidos juntos. "
-"Todas as páginas em B que também existem em C1 são excluídas de B durante o "
-"recolhimento. Assim, mesmo que a otimização na etapa anterior não possa ser "
-"feita, podemos recuperar as páginas mortas quando um dos processos sair ou "
-"<function> exec () </function>."
+"passam agora por C1. Isso significa que B e C1 podem ser unidas. Todas as "
+"páginas em B que também existem em C1 são excluídas de B durante a união. "
+"Assim, mesmo que a otimização na etapa anterior não possa ser feita, podemos "
+"recuperar as páginas mortas quando um dos processos finalizar ou executar um "
+"<function>exec()</function>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:285
-#, fuzzy
 msgid ""
 "This model creates a number of potential problems. The first is that you can "
 "wind up with a relatively deep stack of layered VM Objects which can cost "
@@ -634,20 +615,19 @@ msgid ""
 "the page and the original page in B is no longer accessible by anyone. That "
 "page in B can be freed."
 msgstr ""
-"Este modelo cria vários problemas potenciais. A primeira é que você pode "
+"Este modelo cria vários problemas potenciais. O primeiro é que você pode "
 "acabar com uma pilha relativamente profunda de objetos de VM em camadas, que "
 "pode custar tempo de varredura e memória quando ocorrer uma falha. Camadas "
-"profundas podem ocorrer quando os processos bifurcam e, em seguida, bifurcam "
-"novamente (pai ou filho). O segundo problema é que você pode acabar com "
-"páginas inacessíveis e mortas no meio da pilha de objetos VM. Em nosso "
-"último exemplo, se os processos pai e filho modificarem a mesma página, "
-"ambos receberão suas próprias cópias privadas da página e a página original "
-"em B não poderá mais ser acessada por ninguém. Essa página em B pode ser "
-"liberada."
+"profundas podem ocorrer quando houver forks dos processos e, em seguida, "
+"houver um fork novamente (do processo pai ou filho). O segundo problema é "
+"que você pode acabar com páginas profundas inacessíveis e mortas no meio da "
+"pilha de objetos de VM. Em nosso último exemplo, se os processos pai e filho "
+"modificarem a mesma página, ambos receberão suas próprias cópias privadas da "
+"página e a página original em B não poderá mais ser acessada por ninguém. "
+"Essa página em B pode ser liberada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:295
-#, fuzzy
 msgid ""
 "FreeBSD solves the deep layering problem with a special optimization called "
 "the <quote>All Shadowed Case</quote>. This case occurs if either C1 or C2 "
@@ -668,27 +648,26 @@ msgid ""
 "cascade forks."
 msgstr ""
 "O FreeBSD resolve o problema de camadas profundas com uma otimização "
-"especial chamada <quote> All Shadowed Case </quote>. Este caso ocorre se C1 "
-"ou C2 tiverem falhas de COW suficientes para sombrear completamente todas as "
-"páginas em B. Digamos que C1 consiga isso. C1 agora pode ignorar B "
-"completamente, então, em vez disso, temos C1-> B-> A e C2-> B-> A temos "
-"agora C1-> A e C2-> B-> A. Mas veja o que também aconteceu - agora B tem "
-"apenas uma referência (C2), então podemos colapsar B e C2 juntos. O "
-"resultado final é que B é deletado inteiramente e temos C1-> A e C2-> A. É "
-"comum que B contenha um grande número de páginas e nem C1 nem C2 possam "
+"especial chamada <quote>All Shadowed Case</quote>. Este caso ocorre se C1 ou "
+"C2 tiverem falhas de COW suficientes para fazer uma copia de sombra completa "
+"de todas as páginas em B. Digamos que C1 consiga isso. C1 agora pode ignorar "
+"B completamente, então, em vez de temos C1-&gt;B-&gt;A e C2-&gt;B-&gt;A "
+"temos agora C1-&gt;A e C2-&gt;B-&gt;A. Mas veja o que também aconteceu - "
+"agora B tem apenas uma referência (C2), então podemos unir B e C2. O "
+"resultado final é que B é deletado inteiramente e temos C1-&gt;A e C2-&gt;A. "
+"É comum que B contenha um grande número de páginas e nem C1 nem C2 possam "
 "ofuscar completamente. Se nós forçarmos novamente e criarmos um conjunto de "
 "camadas D, no entanto, é muito mais provável que uma das camadas D "
 "eventualmente seja capaz de ofuscar completamente o conjunto de dados muito "
 "menor representado por C1 ou C2. A mesma otimização funcionará em qualquer "
 "ponto do gráfico e o grande resultado disso é que, mesmo em uma máquina "
-"fortemente bifurcada, pilhas de objetos da VM tendem a não ficar muito mais "
-"profundas do que 4. Isso é verdade tanto para o pai quanto para os filhos e "
-"verdadeiro o pai está fazendo a bifurcação ou se as crianças em cascata "
-"garfos."
+"diversos forks, pilhas de objetos da VM tendem a não ficar muito mais "
+"profundas do que 4. Isso é verdade tanto para o processo pai quanto para os "
+"filhos e verdadeiro quer seja o processo pai fazendo o fork ou os processos "
+"filhos fazendo forks em cascata."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:313
-#, fuzzy
 msgid ""
 "The dead page problem still exists in the case where C1 or C2 do not "
 "completely overshadow B. Due to our other optimizations this case does not "
@@ -696,15 +675,14 @@ msgid ""
 "system runs low on memory it will swap them out, eating a little swap, but "
 "that is it."
 msgstr ""
-"O problema da página morta ainda existe no caso em que C1 ou C2 não ofuscam "
-"completamente o B. Devido às nossas outras otimizações, este caso não "
-"representa um grande problema e simplesmente permitimos que as páginas "
-"fiquem inativas. Se o sistema ficar com pouca memória, ele irá trocá-los, "
-"comendo uma pequena troca, mas é isso."
+"O problema da página morta ainda existe no caso em que C1 ou C2 não "
+"ofuscaram completamente as páginas de B. Devido as nossas outras "
+"otimizações, este caso não representa um grande problema e simplesmente "
+"permitimos que as páginas fiquem inativas. Se o sistema ficar com pouca "
+"memória, ele irá trocá-las, comendo uma pequena parte da swap, mas é isso."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:319
-#, fuzzy
 msgid ""
 "The advantage to the VM Object model is that <function>fork()</function> is "
 "extremely fast, since no real data copying need take place. The disadvantage "
@@ -713,23 +691,21 @@ msgid ""
 "Object structures. The optimizations FreeBSD makes proves to reduce the "
 "problems enough that they can be ignored, leaving no real disadvantage."
 msgstr ""
-"A vantagem do modelo VM Object é que <function> fork () </function> é "
-"extremamente rápida, já que não é necessária nenhuma cópia de dados real. A "
+"A vantagem do modelo de objetos de VM é que o <function>fork()</function> é "
+"extremamente rápido, já que não é necessária nenhuma cópia de dados real. A "
 "desvantagem é que você pode criar uma camada de Objetos de VM relativamente "
 "complexa que reduz um pouco o tratamento de falhas de página e gasta memória "
 "gerenciando as estruturas de Objetos de VM. As otimizações que o FreeBSD faz "
-"para reduzir os problemas o suficiente para que possam ser ignoradas, não "
-"deixando nenhuma desvantagem real."
+"prova reduzir os problemas o suficiente para que as falhas possam ser "
+"ignoradas, não deixando nenhuma desvantagem real."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:329
-#, fuzzy
 msgid "SWAP Layers"
 msgstr "Camadas de SWAP"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:331
-#, fuzzy
 msgid ""
 "Private data pages are initially either copy-on-write or zero-fill pages. "
 "When a change, and therefore a copy, is made, the original backing object "
@@ -740,19 +716,18 @@ msgid ""
 "only when it is actually needed. However, the swap management structure has "
 "had problems historically:"
 msgstr ""
-"As páginas de dados particulares são inicialmente páginas copy-on-write ou "
-"zero-fill. Quando uma alteração e, portanto, uma cópia, é feita, o objeto de "
+"As páginas de dados privadas são inicialmente páginas copy-on-write ou zero-"
+"fill. Quando uma alteração e, portanto, uma cópia, é feita, o objeto de "
 "apoio original (geralmente um arquivo) não pode mais ser usado para salvar "
 "uma cópia da página quando o sistema da VM precisar reutilizá-lo para outras "
-"finalidades. É aí que o SWAP entra. O SWAP é alocado para criar um backing "
-"store para a memória que não o possui. O FreeBSD aloca a estrutura de "
-"gerenciamento de troca para um objeto de VM somente quando for realmente "
-"necessário. No entanto, a estrutura de gerenciamento de troca teve problemas "
-"historicamente:"
+"finalidades. É aí que o SWAP entra. O SWAP é alocado para criar um suporte "
+"de armazenamento para a memória que não o possui. O FreeBSD aloca a "
+"estrutura de gerenciamento de troca para um objeto de VM somente quando for "
+"realmente necessário. No entanto, historicamente, a estrutura de "
+"gerenciamento de troca teve problemas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:343
-#, fuzzy
 msgid ""
 "Under FreeBSD 3.X the swap management structure preallocates an array that "
 "encompasses the entire object requiring swap backing store—even if only a "
@@ -761,39 +736,36 @@ msgid ""
 "runsizes (RSS) fork."
 msgstr ""
 "Sob o FreeBSD 3.X, a estrutura de gerenciamento de swap pré-aloca uma matriz "
-"que engloba todo o objeto que requer armazenamento de apoio de swap - mesmo "
-"que apenas algumas páginas desse objeto sejam suportadas por swap. Isso cria "
-"um problema de fragmentação de memória do kernel quando grandes objetos são "
-"mapeados ou processos com bifurcação de grandes runsizes (RSS)."
+"que engloba todo o objeto que requer suporte para armazenamento da swap - "
+"mesmo que apenas algumas páginas desse objeto sejam suportadas por swap. "
+"Isto cria um problema de fragmentação de memória do kernel quando grandes "
+"objetos são mapeados ou processos com fork de grandes runsizes (RSS)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:352
-#, fuzzy
 msgid ""
 "Also, in order to keep track of swap space, a <quote>list of holes</quote> "
 "is kept in kernel memory, and this tends to get severely fragmented as well. "
 "Since the <quote>list of holes</quote> is a linear list, the swap allocation "
 "and freeing performance is a non-optimal O(n)-per-page."
 msgstr ""
-"Além disso, para manter o controle do espaço de troca, uma <quote> lista de "
-"furos </quote> é mantida na memória do kernel, e isso tende a ficar "
-"severamente fragmentado também. Como a lista <quote> de furos </quote> é uma "
-"lista linear, o desempenho de alocação e liberação de swap é uma O (n) -per-"
-"page não ideal."
+"Além disso, para manter o controle do espaço de swap, uma <quote>lista de "
+"espaços vazios</quote> é mantida na memória do kernel, e isso tende a ficar "
+"severamente fragmentado também. Como a lista <quote>de espaços vazios</"
+"quote> é uma lista linear, o desempenho de alocação e liberação de swap é "
+"uma troca O(n)-per-page (Uma por página) não ideal."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:360
-#, fuzzy
 msgid ""
 "It requires kernel memory allocations to take place during the swap freeing "
 "process, and that creates low memory deadlock problems."
 msgstr ""
 "Requer que as alocações de memória do kernel ocorram durante o processo de "
-"troca de swap, e isso cria problemas de deadlock de pouca memória."
+"troca de swap, e isto cria problemas de deadlock de pouca memória."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:366
-#, fuzzy
 msgid ""
 "The problem is further exacerbated by holes created due to the interleaving "
 "algorithm."
@@ -803,27 +775,24 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:371
-#, fuzzy
 msgid ""
 "Also, the swap block map can become fragmented fairly easily resulting in "
 "non-contiguous allocations."
 msgstr ""
-"Além disso, o mapa de blocos de troca pode se tornar fragmentado com "
-"bastante facilidade, resultando em alocações não contíguas."
+"Além disso, o mapa de blocos da swap pode se fragmentar com bastante "
+"facilidade, resultando em alocações não contíguas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:376
-#, fuzzy
 msgid ""
 "Kernel memory must also be allocated on the fly for additional swap "
 "management structures when a swapout occurs."
 msgstr ""
 "A memória do kernel também deve ser alocada dinamicamente para estruturas "
-"adicionais de gerenciamento de troca quando ocorre uma troca."
+"adicionais de gerenciamento da swap quando ocorre uma troca."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:381
-#, fuzzy
 msgid ""
 "It is evident from that list that there was plenty of room for improvement. "
 "For FreeBSD 4.X, I completely rewrote the swap subsystem:"
@@ -833,7 +802,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:387
-#, fuzzy
 msgid ""
 "Swap management structures are allocated through a hash table rather than a "
 "linear array giving them a fixed allocation size and much finer granularity."
@@ -844,22 +812,20 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:393
-#, fuzzy
 msgid ""
 "Rather then using a linearly linked list to keep track of swap space "
 "reservations, it now uses a bitmap of swap blocks arranged in a radix tree "
 "structure with free-space hinting in the radix node structures. This "
 "effectively makes swap allocation and freeing an O(1) operation."
 msgstr ""
-"Em vez de usar uma lista linearmente vinculada para acompanhar as reservas "
+"Em vez de usar uma lista vinculada linearmente para acompanhar as reservas "
 "de espaço de troca, ele agora usa um bitmap de blocos de troca organizados "
-"em uma estrutura de árvore raiz com dicas de espaço livre nas estruturas do "
-"nó radix. Isso efetivamente faz a alocação de swap e libera uma operação O "
-"(1)."
+"em uma estrutura de árvores raiz com dicas de espaço livre nas estruturas do "
+"nó de origem. Isto efetivamente faz a alocação de swap e libera uma operação "
+"O(1)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:401
-#, fuzzy
 msgid ""
 "The entire radix tree bitmap is also preallocated in order to avoid having "
 "to allocate kernel memory during critical low memory swapping operations. "
@@ -867,45 +833,41 @@ msgid ""
 "avoid allocating kernel memory at such times in order to avoid potential "
 "deadlocks."
 msgstr ""
-"Todo o bitmap da árvore radix também é pré-alocado para evitar a alocação da "
-"memória do kernel durante operações críticas de troca de memória baixa. "
+"Todo o bitmap da árvore raiz também é pré-alocado para evitar ter que alocar "
+"a memória do kernel durante operações críticas de troca com memória baixa. "
 "Afinal de contas, o sistema tende a trocar quando está com pouca memória, "
 "por isso devemos evitar a alocação da memória do kernel nesses momentos para "
 "evitar possíveis deadlocks."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:410
-#, fuzzy
 msgid ""
 "To reduce fragmentation the radix tree is capable of allocating large "
 "contiguous chunks at once, skipping over smaller fragmented chunks."
 msgstr ""
-"Para reduzir a fragmentação, a árvore de raiz é capaz de alocar grandes "
-"blocos contíguos de uma só vez, pulando pedaços menores e fragmentados."
+"Para reduzir a fragmentação, a árvore raiz é capaz de alocar grandes blocos "
+"contíguos de uma só vez, pulando pedaços menores e fragmentados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:416
-#, fuzzy
 msgid ""
 "I did not take the final step of having an <quote>allocating hint pointer</"
 "quote> that would trundle through a portion of swap as allocations were made "
 "in order to further guarantee contiguous allocations or at least locality of "
 "reference, but I ensured that such an addition could be made."
 msgstr ""
-"Eu não dei o último passo de ter um <quote> ponteiro de sugestão de alocação "
-"</quote> que percorria uma porção do swap conforme as alocações eram feitas "
-"a fim de garantir alocações contíguas ou pelo menos a localidade de "
-"referência, mas assegurei que tal adição poderia ser feita."
+"Eu não dei o último passo de ter um <quote>ponteiro de sugestão de alocação</"
+"quote> que percorria uma porção da swap conforme as alocações eram feitas a "
+"fim de garantir alocações contíguas ou pelo menos a referência localmente, "
+"mas assegurei que tal adição poderia ser feita."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:424
-#, fuzzy
 msgid "When to free a page"
 msgstr "Quando libertar uma página"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:426
-#, fuzzy
 msgid ""
 "Since the VM system uses all available memory for disk caching, there are "
 "usually very few truly-free pages. The VM system depends on being able to "
@@ -915,18 +877,17 @@ msgid ""
 "VM system may be forced to unnecessarily retrieve pages from disk, seriously "
 "degrading system performance."
 msgstr ""
-"Como o sistema VM usa toda a memória disponível para o cache de disco, "
-"geralmente há poucas páginas realmente livres. O sistema VM depende de poder "
-"escolher corretamente as páginas que não estão em uso para reutilizar novas "
-"alocações. Selecionar as páginas ideais para liberar é possivelmente a "
-"função mais importante que qualquer sistema VM pode executar, porque se "
-"fizer uma seleção ruim, o sistema VM poderá ser forçado a recuperar páginas "
-"desnecessariamente do disco, prejudicando seriamente o desempenho do sistema."
-""
+"Como o sistema de VM usa toda a memória disponível para o cache em disco, "
+"geralmente há poucas páginas realmente livres. O sistema de VM depende de "
+"poder escolher corretamente as páginas que não estão em uso para reutilizar "
+"em novas alocações. Selecionar as páginas ideais para liberar é "
+"possivelmente a função mais importante que qualquer sistema de VM pode "
+"executar, porque se fizer uma seleção ruim, o sistema de VM poderá ser "
+"desnecessariamente forçado a recuperar páginas do disco, prejudicando "
+"seriamente o desempenho do sistema."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:434
-#, fuzzy
 msgid ""
 "How much overhead are we willing to suffer in the critical path to avoid "
 "freeing the wrong page? Each wrong choice we make will cost us hundreds of "
@@ -937,28 +898,26 @@ msgid ""
 msgstr ""
 "Quanta sobrecarga estamos dispostos a sofrer no caminho crítico para evitar "
 "a liberação da página errada? Cada escolha errada que fazemos nos custará "
-"centenas de milhares de ciclos de CPU e uma paralisação notável dos "
-"processos afetados, por isso estamos dispostos a suportar uma quantidade "
+"centenas de milhares de ciclos da CPU e uma paralisação notável dos "
+"processos afetados, por isto estamos dispostos a suportar uma quantidade "
 "significativa de sobrecarga, a fim de ter certeza de que a página certa é "
-"escolhida. É por isso que o FreeBSD tende a superar outros sistemas quando "
+"escolhida. É por isto que o FreeBSD tende a superar outros sistemas quando "
 "os recursos de memória ficam estressados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
-#, fuzzy
 msgid ""
 "The free page determination algorithm is built upon a history of the use of "
 "memory pages. To acquire this history, the system takes advantage of a page-"
 "used bit feature that most hardware page tables have."
 msgstr ""
 "O algoritmo de determinação de página livre é construído sobre um histórico "
-"do uso de páginas de memória. Para adquirir esse histórico, o sistema tira "
-"proveito de um recurso de bit usado pela página que a maioria das tabelas de "
-"página de hardware possui."
+"do uso das páginas de memória. Para adquirir este histórico, o sistema tira "
+"proveito de um recurso de um bit usado pela página que a maioria das tabelas "
+"de página de hardware possui."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:446
-#, fuzzy
 msgid ""
 "In any case, the page-used bit is cleared and at some later point the VM "
 "system comes across the page again and sees that the page-used bit has been "
@@ -970,24 +929,22 @@ msgid ""
 "the best candidate page to reuse."
 msgstr ""
 "Em qualquer caso, o bit usado na página é desmarcado e, em algum momento "
-"posterior, o sistema da VM encontra a página novamente e vê que o bit usado "
+"posterior, o sistema de VM encontra a página novamente e vê que o bit usado "
 "na página foi definido. Isso indica que a página ainda está sendo usada "
-"ativamente. Se o bit ainda estiver claro, é uma indicação de que a página "
-"não está sendo usada ativamente. Ao testar este bit periodicamente, é "
+"ativamente. Se o bit ainda estiver desmarcado, é uma indicação de que a "
+"página não está sendo usada ativamente. Ao testar este bit periodicamente, é "
 "desenvolvido um histórico de uso (na forma de um contador) para a página "
-"física. Quando, posteriormente, o sistema VM precisar liberar algumas "
+"física. Quando, posteriormente, o sistema de VM precisar liberar algumas "
 "páginas, a verificação desse histórico se tornará a base da determinação da "
 "melhor página candidata a ser reutilizada."
 
 #. (itstool) path: sidebar/title
 #: article.translate.xml:456
-#, fuzzy
 msgid "What if the hardware has no page-used bit?"
-msgstr "E se o hardware não tiver bit usado na página?"
+msgstr "E se o hardware não tiver o bit usado na página?"
 
 #. (itstool) path: sidebar/para
 #: article.translate.xml:458
-#, fuzzy
 msgid ""
 "For those platforms that do not have this feature, the system actually "
 "emulates a page-used bit. It unmaps or protects a page, forcing a page fault "
@@ -999,18 +956,17 @@ msgid ""
 "needs it back and then have to go to disk."
 msgstr ""
 "Para as plataformas que não possuem esse recurso, o sistema realmente emula "
-"um bit usado na página. Ele desmapeia ou protege uma página, forçando uma "
-"falha de página se a página for acessada novamente. Quando a falha de página "
-"é tomada, o sistema simplesmente marca a página como tendo sido usada e "
-"desprotege a página para que ela possa ser usada. Embora a tomada de tais "
-"falhas de página apenas para determinar se uma página está sendo usada "
-"pareça ser uma proposta cara, é muito menos dispendioso do que reutilizar a "
-"página para outra finalidade, apenas para descobrir que um processo precisa "
-"dela e depois ir para o disco ."
+"um bit usado na página. Ele remove o mapeamento ou protege uma página, "
+"forçando uma falha de página se a página for acessada novamente. Quando a "
+"falha de página acontece, o sistema simplesmente marca a página como tendo "
+"sido usada e desprotege a página para que ela possa ser usada. Embora a "
+"tomada de tais falhas de página apenas para determinar se uma página está "
+"sendo usada pareça ser uma proposta cara, é muito menos dispendioso do que "
+"reutilizar a página para outra finalidade, apenas para descobrir que um "
+"processo precisa dela e depois ir para o disco ."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:469
-#, fuzzy
 msgid ""
 "FreeBSD makes use of several page queues to further refine the selection of "
 "pages to reuse as well as to determine when dirty pages must be flushed to "
@@ -1033,28 +989,27 @@ msgid ""
 msgstr ""
 "O FreeBSD faz uso de várias filas de páginas para refinar ainda mais a "
 "seleção de páginas para reutilização, bem como para determinar quando "
-"páginas sujas devem ser liberadas para o armazenamento de apoio. Como as "
-"tabelas de páginas são entidades dinâmicas sob o FreeBSD, não custa "
+"páginas inativas devem ser liberadas para o suporte ao armazenamento. Como "
+"as tabelas de páginas são entidades dinâmicas sob o FreeBSD, não custa "
 "virtualmente nada desmapear uma página do espaço de endereço de qualquer "
-"processo que a utilize. Quando um candidato de página foi escolhido com base "
-"no contador de uso de página, isso é precisamente o que é feito. O sistema "
-"deve fazer uma distinção entre páginas limpas que teoricamente podem ser "
-"liberadas a qualquer momento, e páginas sujas que devem primeiro ser "
-"gravadas em seu repositório antes de serem reutilizáveis. Quando um "
-"candidato a página for encontrado, ele será movido para a fila inativa, se "
-"estiver sujo, ou para a fila de cache, se estiver limpa. Um algoritmo "
-"separado baseado na proporção de páginas sujas para limpas determina quando "
-"páginas sujas na fila inativa devem ser liberadas para o disco. Depois que "
-"isso for feito, as páginas liberadas serão movidas da fila inativa para a "
-"fila de cache. Neste ponto, as páginas na fila de cache ainda podem ser "
-"reativadas por uma falha de VM a um custo relativamente baixo. No entanto, "
-"as páginas na fila de cache são consideradas <quote> imediatamente livres </"
-"quote> e serão reutilizadas em uma forma LRU (usada menos recentemente) "
-"quando o sistema precisar alocar nova memória."
+"processo que a utilize. Quando uma página cadidata ser escolhida com base no "
+"contador de uso de página, isso é precisamente o que é feito. O sistema deve "
+"fazer uma distinção entre páginas limpas que teoricamente podem ser "
+"liberadas a qualquer momento, e páginas inativas que devem primeiro ser "
+"escritas em seu repositório de armazenamento antes de serem reutilizáveis. "
+"Quando uma página candidata for encontrada, ela será movida para a fila "
+"inativa, se estiver inativas, ou para a fila de cache, se estiver limpa. Um "
+"algoritmo separado baseado na proporção de páginas inativas para limpas "
+"determina quando páginas inativas na fila inativa devem ser liberadas para o "
+"disco. Depois que isso for feito, as páginas liberadas serão movidas da fila "
+"inativa para a fila de cache. Neste ponto, as páginas na fila de cache ainda "
+"podem ser reativadas por uma falha de VM a um custo relativamente baixo. No "
+"entanto, as páginas na fila de cache são consideradas <quote>imediatamente "
+"livres</quote> e serão reutilizadas em uma forma LRU (usada menos "
+"recentemente) quando o sistema precisar alocar nova memória."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:489
-#, fuzzy
 msgid ""
 "It is important to note that the FreeBSD VM system attempts to separate "
 "clean and dirty pages for the express reason of avoiding unnecessary flushes "
@@ -1066,19 +1021,18 @@ msgid ""
 "effort to maintain the various page queues at the levels determined to be "
 "the most effective."
 msgstr ""
-"É importante notar que o sistema VM do FreeBSD tenta separar páginas limpas "
-"e sujas pelo motivo expresso de evitar descargas desnecessárias de páginas "
-"sujas (que consomem largura de banda de E / S), nem mover páginas entre as "
-"várias filas de páginas gratuitamente quando subsistema de memória não está "
-"sendo enfatizado. É por isso que você verá alguns sistemas com contagens de "
-"fila de cache muito baixas e contagens de alta fila ativa ao executar um "
-"comando <command> systat -vm </command>. À medida que o sistema VM se torna "
-"mais estressado, ele faz um esforço maior para manter as várias filas de "
-"páginas nos níveis determinados como os mais eficazes."
+"É importante notar que o sistema de VM do FreeBSD tenta separar páginas "
+"limpas e inativas pelo motivo expresso de evitar descargas desnecessárias de "
+"páginas inativas (que consomem largura de banda de I/O), nem move páginas "
+"entre as várias filas de páginas gratuitamente quando o subsistema de "
+"memória não está sendo enfatizado. É por isto que você verá alguns sistemas "
+"com contagens de fila de cache muito baixas e contagens alta de fila ativa "
+"ao executar um comando <command>systat -vm</command>. À medida que o sistema "
+"de VM se torna mais estressado, ele faz um esforço maior para manter as "
+"várias filas de páginas nos níveis determinados para serem mais eficazes."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:499
-#, fuzzy
 msgid ""
 "An urban myth has circulated for years that Linux did a better job avoiding "
 "swapouts than FreeBSD, but this in fact is not true. What was actually "
@@ -1087,9 +1041,9 @@ msgid ""
 "core and leaving less memory available for cache and process pages. I do not "
 "know whether this is still true today."
 msgstr ""
-"Um mito urbano circulou durante anos que o Linux fez um trabalho melhor "
-"evitando trocas do que o FreeBSD, mas isso na verdade não é verdade. O que "
-"estava realmente ocorrendo era que o FreeBSD estava proativamente paginando "
+"Uma lenda urbana circulou durante anos que o Linux fez um trabalho melhor "
+"evitando trocas do que o FreeBSD, mas isso de fato não é verdade. O que "
+"estava realmente ocorrendo era que o FreeBSD estava proativamente numerando "
 "páginas não usadas a fim de abrir espaço para mais cache de disco enquanto o "
 "Linux mantinha páginas não utilizadas no núcleo e deixando menos memória "
 "disponível para páginas de cache e processo. Eu não sei se isso ainda é "
@@ -1097,13 +1051,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:509
-#, fuzzy
 msgid "Pre-Faulting and Zeroing Optimizations"
-msgstr "Otimizações Pré-Falhas e Zeroing"
+msgstr "Otimizações de Pré-Falhas ou para Zerar"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:511
-#, fuzzy
 msgid ""
 "Taking a VM fault is not expensive if the underlying page is already in core "
 "and can simply be mapped into the process, but it can become expensive if "
@@ -1125,29 +1077,28 @@ msgid ""
 "code faults (which were pre-faulted in already). Pre-copying pages on exec "
 "or fork is an area that could use more study."
 msgstr ""
-"Tomar uma falha de VM não é caro se a página subjacente já estiver no núcleo "
+"Pegar uma falha de VM não é caro se a página subjacente já estiver no núcleo "
 "e puder simplesmente ser mapeada no processo, mas pode se tornar cara se "
-"você levar muitos deles regularmente. Um bom exemplo disso é executar um "
-"programa como <citerefentry> <refentrytitle> ls </refentrytitle> <manvolnum> "
-"1 </manvolnum> </citerefentry> ou <citerefentry> <refentrytitle> ps </"
-"refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> várias vezes. Se o "
+"você pegar muitas delas regularmente. Um bom exemplo disso é executar um "
+"programa como <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> ou <citerefentry><refentrytitle>ps</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> várias vezes. Se o "
 "programa binário é mapeado na memória, mas não mapeado na tabela de páginas, "
-"então todas as páginas que serão acessadas pelo programa precisarão estar "
-"com falha toda vez que o programa for executado. Isso é desnecessário quando "
-"as páginas em questão já estão no VM Cache, então o FreeBSD tentará "
+"então todas as páginas que serão acessadas pelo programa irão estar com "
+"falha toda vez que o programa for executado. Isso é desnecessário quando as "
+"páginas em questão já estão no cache de VM, então o FreeBSD tentará "
 "preencher previamente as tabelas de páginas de um processo com as páginas "
-"que já estão no VM Cache. Uma coisa que o FreeBSD ainda não faz é pré-copiar-"
-"em-escrever certas páginas no exec. Por exemplo, se você executar o programa "
-"<citerefentry> <refentrytitle> ls </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> ao executar o <command> vmstat 1 </command>, "
-"notará que sempre é necessário um determinado número de falhas de página, "
-"mesmo quando você o executa várias vezes. Estas são falhas de preenchimento "
-"zero, não falhas de código de programa (que já foram pré-falhas). A pré-"
-"cópia de páginas em exec ou fork é uma área que poderia usar mais estudos."
+"que já estão no cache de VM. Uma coisa que o FreeBSD ainda não faz é pré-"
+"copiar-durante-escrita certas páginas no exec. Por exemplo, se você executar "
+"o programa <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> ao executar o <command>vmstat 1</command>, notará "
+"que sempre pega um determinado número de falhas de página, mesmo quando você "
+"o executa várias vezes. Estas são falhas de preenchimento com zero, não "
+"falhas de código de programa (que já foram pré-falhas). A pré-cópia de "
+"páginas em exec ou fork é uma área que poderia se utilizar de mais estudos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:529
-#, fuzzy
 msgid ""
 "A large percentage of page faults that occur are zero-fill faults. You can "
 "usually see this by observing the <command>vmstat -s</command> output. These "
@@ -1163,28 +1114,27 @@ msgid ""
 "the VM system in order to optimize the critical path."
 msgstr ""
 "Uma grande porcentagem de falhas de página que ocorrem são falhas de "
-"preenchimento zero. Geralmente, você pode ver isso observando a saída "
-"<command> vmstat -s </command>. Estes ocorrem quando um processo acessa "
+"preenchimento com zero. Geralmente, você pode ver isso observando a saída de "
+"<command>vmstat -s</command>. Estas falhas ocorrem quando um processo acessa "
 "páginas em sua área BSS. Espera-se que a área BSS seja inicialmente zero, "
-"mas o sistema VM não se preocupa em alocar memória alguma até que o processo "
-"realmente a acesse. Quando ocorre uma falha, o sistema da VM deve alocar não "
-"apenas uma nova página, mas deve zerá-la também. Para otimizar a operação de "
-"zeramento, o sistema VM tem a capacidade de pré-zerar páginas e marcá-las "
-"como tal, e solicitar páginas pré-zeradas quando ocorrem falhas de "
-"preenchimento zero. O pré-zeramento ocorre sempre que a CPU está inativa, "
-"mas o número de páginas que o sistema pre-zeros é limitado, a fim de evitar "
-"que os caches de memória sejam dissipados. Este é um excelente exemplo de "
-"adição de complexidade ao sistema VM para otimizar o caminho crítico."
+"mas o sistema de VM não se preocupa em alocar memória alguma até que o "
+"processo realmente a acesse. Quando ocorre uma falha, o sistema de VM deve "
+"alocar não apenas uma nova página, mas deve zerá-la também. Para otimizar a "
+"operação de zeramento, o sistema de VM tem a capacidade de pré-zerar páginas "
+"e marcá-las como tal, e solicitar páginas pré-zeradas quando ocorrem falhas "
+"de preenchimento com zero. O pré-zeramento ocorre sempre que a CPU está "
+"inativa, mas o número de páginas que o sistema pre-zeros é limitado, a fim "
+"de evitar que os caches de memória sejam dissipados. Este é um excelente "
+"exemplo de adição de complexidade ao sistema de VM para otimizar o caminho "
+"crítico."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:545
-#, fuzzy
 msgid "Page Table Optimizations"
-msgstr "Otimizações de tabela de páginas"
+msgstr "Otimizações da Tabela de Páginas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:547
-#, fuzzy
 msgid ""
 "The page table optimizations make up the most contentious part of the "
 "FreeBSD VM design and they have shown some strain with the advent of serious "
@@ -1206,29 +1156,28 @@ msgid ""
 "literal> structures."
 msgstr ""
 "As otimizações da tabela de páginas constituem a parte mais contenciosa do "
-"design da VM do FreeBSD e mostraram alguma tensão com o advento do uso sério "
-"de <function> mmap () </function>. Eu acho que isso é realmente uma "
+"design de VM do FreeBSD e mostraram alguma tensão com o advento do uso sério "
+"de <function>mmap()</function>. Eu acho que isso é realmente uma "
 "característica da maioria dos BSDs, embora eu não tenha certeza de quando "
 "foi introduzido pela primeira vez. Existem duas otimizações principais. A "
 "primeira é que as tabelas de páginas de hardware não contêm estado "
 "persistente, mas podem ser descartadas a qualquer momento com apenas uma "
 "pequena quantidade de sobrecarga de gerenciamento. A segunda é que cada "
 "entrada ativa da tabela de páginas no sistema tem uma estrutura governante "
-"<literal> pv_entry </literal> que é amarrada na estrutura <literal> vm_page "
-"</literal>. O FreeBSD pode simplesmente iterar através desses mapeamentos "
-"que são conhecidos, enquanto o Linux deve verificar todas as tabelas de "
-"páginas que <emphasis> possam </emphasis> conter um mapeamento específico "
-"para ver se o faz, o que pode alcançar O (n ^ 2) situações. É por isso que o "
-"FreeBSD tende a fazer melhores escolhas em quais páginas reutilizar ou "
-"trocar quando a memória é enfatizada, dando-lhe melhor desempenho sob carga. "
-"No entanto, o FreeBSD requer o ajuste do kernel para acomodar situações de "
+"<literal>pv_entry</literal> que é amarrada na estrutura <literal>vm_page</"
+"literal>. O FreeBSD pode simplesmente iterar através desses mapeamentos que "
+"são conhecidos, enquanto o Linux deve verificar todas as tabelas de páginas "
+"que <emphasis>possam</emphasis> conter um mapeamento específico para ver se "
+"ele o faz, o que pode alcançar O(n^2) situações. É por isso que o FreeBSD "
+"tende a fazer melhores escolhas em quais páginas reutilizar ou trocar quando "
+"a memória é estressada, dando-lhe melhor desempenho em sobrecarga. No "
+"entanto, o FreeBSD requer o ajuste do kernel para acomodar situações de "
 "grandes espaços de endereços compartilhados, como aquelas que podem ocorrer "
-"em um sistema de notícias, porque ele pode ficar sem estruturas <literal> "
-"pv_entry </literal>."
+"em um sistema de notícias, porque ele pode rodar sem estruturas "
+"<literal>pv_entry</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:567
-#, fuzzy
 msgid ""
 "Both Linux and FreeBSD need work in this area. FreeBSD is trying to maximize "
 "the advantage of a potentially sparse active-mapping model (not all "
@@ -1255,13 +1204,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:580
-#, fuzzy
 msgid "Page Coloring"
-msgstr "Colorir Página"
+msgstr "Page Coloring"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:582
-#, fuzzy
 msgid ""
 "We will end with the page coloring optimizations. Page coloring is a "
 "performance optimization designed to ensure that accesses to contiguous "
@@ -1278,25 +1225,25 @@ msgid ""
 "CPU performance. This is true even with multi-way set-associative caches "
 "(though the effect is mitigated somewhat)."
 msgstr ""
-"Terminaremos com as otimizações de coloração da página. Coloração de página "
-"é uma otimização de desempenho projetada para garantir que acessos a páginas "
+"Terminaremos com as otimizações de page coloring. Page coloring é uma "
+"otimização de desempenho projetada para garantir que acessos a páginas "
 "contíguas na memória virtual façam o melhor uso do cache do processador. Nos "
 "tempos antigos (isto é, há mais de 10 anos), os caches de processador "
 "tendiam a mapear a memória virtual em vez da memória física. Isso levou a um "
 "grande número de problemas, incluindo a necessidade de limpar o cache em "
 "cada troca de contexto em alguns casos e problemas com o alias de dados no "
 "cache. Caches de processador modernos mapeiam a memória física com precisão "
-"para resolver esses problemas. Isso significa que duas páginas lado a lado "
+"para resolver esses problemas. Isto significa que duas páginas lado a lado "
 "em um espaço de endereço de processos podem não corresponder a duas páginas "
 "lado a lado no cache. Na verdade, se você não for cuidadoso, as páginas lado "
 "a lado na memória virtual podem acabar usando a mesma página no cache do "
-"processador - levando a que dados em cache sejam descartados prematuramente "
-"e reduzindo o desempenho da CPU. Isso é verdade mesmo com caches "
-"associativas set de múltiplas vias (embora o efeito seja um pouco mitigado)."
+"processador - conduzindo para que dados em cache sejam descartados "
+"prematuramente e reduzindo o desempenho da CPU. Isto é verdade mesmo com "
+"caches auto associativos de múltiplas vias (embora o efeito seja um pouco "
+"mitigado)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:598
-#, fuzzy
 msgid ""
 "FreeBSD's memory allocation code implements page coloring optimizations, "
 "which means that the memory allocation code will attempt to locate free "
@@ -1312,30 +1259,28 @@ msgid ""
 "makes VM memory as deterministic as physical memory in regards to cache "
 "performance."
 msgstr ""
-"O código de alocação de memória do FreeBSD implementa otimizações de "
-"coloração de página, o que significa que o código de alocação de memória "
-"tentará localizar páginas livres contíguas do ponto de vista do cache. Por "
-"exemplo, se a página 16 da memória física for atribuída à página 0 da "
-"memória virtual de um processo e o cache puder conter 4 páginas, o código de "
-"coloração de página não atribuirá a página 20 da memória física à página 1 "
-"da memória virtual de um processo. Em vez disso, atribui a página 21 da "
-"memória física. O código de coloração de página tenta evitar a designação da "
-"página 20, porque ela é mapeada sobre a mesma memória cache da página 16 e "
-"resultaria em um armazenamento não ideal. Esse código adiciona uma "
-"quantidade significativa de complexidade ao subsistema de alocação de "
-"memória da VM, como você pode imaginar, mas o resultado vale o esforço. "
-"Coloração de página torna a memória VM tão determinante quanto a memória "
-"física em relação ao desempenho do cache."
+"O código de alocação de memória do FreeBSD implementa otimizações de page "
+"coloring, o que significa que o código de alocação de memória tentará "
+"localizar páginas livres contíguas do ponto de vista do cache. Por exemplo, "
+"se a página 16 da memória física for atribuída à página 0 da memória virtual "
+"de um processo e o cache puder conter 4 páginas, o código de page coloring "
+"não atribuirá a página 20 da memória física a página 1 da memória virtual de "
+"um processo. Em vez disso, atribui a página 21 da memória física. O código "
+"de page coloring tenta evitar assimilar a página 20, porque ela é mapeada "
+"sobre a mesma memória cache da página 16 e resultaria em um armazenamento "
+"não otimizado. Este código adiciona uma quantidade significativa de "
+"complexidade ao subsistema de alocação de memória de VM, como você pode "
+"imaginar, mas o resultado vale o esforço. Page coloring torna a memória de "
+"VM tão determinante quanto a memória física em relação ao desempenho do "
+"cache."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:615
-#, fuzzy
 msgid "Conclusion"
 msgstr "Conclusão"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:617
-#, fuzzy
 msgid ""
 "Virtual memory in modern operating systems must address a number of "
 "different issues efficiently and for many different usage patterns. The "
@@ -1347,33 +1292,29 @@ msgid ""
 msgstr ""
 "A memória virtual em sistemas operacionais modernos deve abordar vários "
 "problemas diferentes de maneira eficiente e para muitos padrões de uso "
-"diferentes. A abordagem modular e algorítmica que o BSD historicamente levou "
+"diferentes. A abordagem modular e algorítmica que o BSD historicamente teve "
 "nos permite estudar e entender a implementação atual, bem como substituir de "
 "forma relativamente limpa grandes seções do código. Houve uma série de "
-"melhorias no sistema VM do FreeBSD nos últimos anos e o trabalho está em "
+"melhorias no sistema de VM do FreeBSD nos últimos anos e o trabalho está em "
 "andamento."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:627
-#, fuzzy
 msgid "Bonus QA session by Allen Briggs <email>briggs@ninthwonder.com</email>"
 msgstr ""
-"Sessão de QA de bônus de Allen Briggs <email> briggs@ninthwonder.com </"
-"email>"
+"Sessão bônus de QA por Allen Briggs <email>briggs@ninthwonder.com</email>"
 
 #. (itstool) path: question/para
 #: article.translate.xml:633
-#, fuzzy
 msgid ""
 "What is <quote>the interleaving algorithm</quote> that you refer to in your "
 "listing of the ills of the FreeBSD 3.X swap arrangements?"
 msgstr ""
-"O que é <quote> o algoritmo de entrelaçamento </quote> ao qual você se "
-"refere em sua listagem dos males dos arranjos de swap do FreeBSD 3.X?"
+"O que é <quote>o algoritmo de intercalação</quote> ao qual você se refere em "
+"sua listagem dos males dos arranjos de swap do FreeBSD 3.X?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:639
-#, fuzzy
 msgid ""
 "FreeBSD uses a fixed swap interleave which defaults to 4. This means that "
 "FreeBSD reserves space for four swap areas even if you only have one, two, "
@@ -1385,22 +1326,21 @@ msgid ""
 msgstr ""
 "O FreeBSD usa um intercalador de swap fixo, cujo padrão é 4. Isso significa "
 "que o FreeBSD reserva espaço para quatro áreas de swap, mesmo se você tiver "
-"apenas um, dois ou três. Como o swap é intercalado, o espaço de "
-"endereçamento linear representando as <quote> quatro áreas de troca </quote> "
-"será fragmentado se você não tiver quatro áreas de troca. Por exemplo, se "
+"apenas uma, duas ou três. Como a swap é intercalada, o espaço de "
+"endereçamento linear representando as <quote>quatro áreas de troca</quote> "
+"estará fragmentado se você não tiver quatro áreas de troca. Por exemplo, se "
 "você tiver duas áreas de swap, A e B, a representação do espaço de "
-"endereçamento do FreeBSD para essa área de troca será intercalada em blocos "
+"endereçamento do FreeBSD para esta área de troca será intercalada em blocos "
 "de 16 páginas:"
 
 #. (itstool) path: answer/literallayout
 #: article.translate.xml:648
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "A B C D A B C D A B C D A B C D"
-msgstr "A B C D A B C D A B C A B C D"
+msgstr "A B C D A B C D A B C D A B C D"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:650
-#, fuzzy
 msgid ""
 "FreeBSD 3.X uses a <quote>sequential list of free regions</quote> approach "
 "to accounting for the free swap areas. The idea is that large blocks of free "
@@ -1412,20 +1352,19 @@ msgid ""
 "account for because C and D are holes, so the list node cannot be combined "
 "with the next A-B sequence."
 msgstr ""
-"O FreeBSD 3.X usa uma abordagem de <quote> lista sequencial de regiões "
-"livres </quote> para contabilizar as áreas de swap gratuitas. A ideia é que "
+"O FreeBSD 3.X usa uma abordagem de <quote>lista sequencial de regiões "
+"livres</quote> para contabilizar as áreas de swap livres. A ideia é que "
 "grandes blocos de espaço linear livre possam ser representados com um único "
-"nó de lista (<filename> kern / subr_rlist.c </filename>). Mas devido à "
+"nó da lista (<filename>kern/subr_rlist.c</filename>). Mas devido a "
 "fragmentação, a lista sequencial acaba sendo insanamente fragmentada. No "
-"exemplo acima, o swap completamente sem uso terá A e B mostrados como "
-"<quote> livres </quote> e C e D mostrados como <quote> todos alocados </"
-"quote>. Cada sequência A-B requer um nó de lista para considerar porque C e "
-"D são buracos, portanto, o nó de lista não pode ser combinado com a próxima "
-"seqüência A-B."
+"exemplo acima, a swap completamente sem uso terá A e B mostrados como "
+"<quote>livres</quote> e C e D mostrados como <quote>todos alocados</quote>. "
+"Cada sequência A-B requer um nó da lista para considerar porque C e D são "
+"buracos, portanto, o nó de lista não pode ser combinado com a próxima "
+"sequência A-B."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:662
-#, fuzzy
 msgid ""
 "Why do we interleave our swap space instead of just tack swap areas onto the "
 "end and do something fancier? Because it is a whole lot easier to allocate "
@@ -1437,11 +1376,10 @@ msgstr ""
 "áreas de swap no final e fazer algo mais sofisticado? Porque é muito mais "
 "fácil alocar trechos lineares de um espaço de endereçamento e ter o "
 "resultado automaticamente intercalado em vários discos do que tentar colocar "
-"essa sofisticação em outro lugar."
+"esta sofisticação em outro lugar."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:668
-#, fuzzy
 msgid ""
 "The fragmentation causes other problems. Being a linear list under 3.X, and "
 "having such a huge amount of inherent fragmentation, allocating and freeing "
@@ -1454,16 +1392,15 @@ msgid ""
 msgstr ""
 "A fragmentação causa outros problemas. Sendo uma lista linear sob 3.X, e "
 "tendo uma enorme quantidade de fragmentação inerente, alocando e liberando "
-"os ventos de troca sendo um algoritmo O (N) ao invés de um algoritmo O (1). "
-"Combinado com outros fatores (troca pesada) e você começa a entrar em O (N ^ "
-"2) e O (N ^ 3) níveis de sobrecarga, o que é ruim. O sistema 3.X também pode "
-"precisar alocar o KVM durante uma operação de troca para criar um novo nó de "
-"lista que pode levar a um impasse se o sistema estiver tentando fazer uma "
-"pageout em uma situação de pouca memória."
+"swap leva a ser um algoritmo O(N) ao invés de um algoritmo O(1). Combinado "
+"com outros fatores (troca pesada) e você começa a entrar em níveis de "
+"sobrecarga O(N^2) e O(N^3), o que é ruim. O sistema 3.X também pode precisar "
+"alocar o KVM durante uma operação de troca para criar um novo nó da lista "
+"que pode levar a um impasse se o sistema estiver tentando fazer uma "
+"liberação de página em uma situação de pouca memória."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:678
-#, fuzzy
 msgid ""
 "Under 4.X we do not use a sequential list. Instead we use a radix tree and "
 "bitmaps of swap blocks rather than ranged list nodes. We take the hit of "
@@ -1473,17 +1410,16 @@ msgid ""
 "a sequential list gives us nearly O(1) performance no matter how fragmented "
 "the tree becomes."
 msgstr ""
-"Em 4.X, não usamos uma lista sequencial. Em vez disso, usamos uma árvore de "
-"raiz e bitmaps de blocos de troca em vez de nós de lista de variáveis. "
-"Aceitamos o sucesso de pré-alocar todos os bitmaps necessários para toda a "
-"área de troca na frente, mas acaba desperdiçando menos memória devido ao uso "
-"de um bitmap (um bit por bloco) em vez de uma lista encadeada de nós. O uso "
-"de uma árvore radix em vez de uma lista sequencial nos dá quase o desempenho "
-"O (1), não importa o quão fragmentada a árvore se torne."
+"No 4.X, não usamos uma lista sequencial. Em vez disto, usamos uma árvore "
+"raiz e bitmaps de blocos de swap em vez de lista de nós variáveis. Aceitamos "
+"o sucesso de pré-alocar todos os bitmaps necessários para toda a área de "
+"swap na frente, mas acaba desperdiçando menos memória devido ao uso de um "
+"bitmap (um bit por bloco) em vez de uma lista encadeada de nós. O uso de uma "
+"árvore raiz em vez de uma lista sequencial nos dá quase o desempenho O(1), "
+"não importa o quão fragmentada a árvore se torne."
 
 #. (itstool) path: question/para
 #: article.translate.xml:691
-#, fuzzy
 msgid ""
 "How is the separation of clean and dirty (inactive) pages related to the "
 "situation where you see low cache queue counts and high active queue counts "
@@ -1492,18 +1428,16 @@ msgid ""
 msgstr ""
 "Como a separação de páginas limpas e sujas (inativas) está relacionada à "
 "situação em que você vê baixas contagens de filas de cache e altas contagens "
-"de filas ativas no <command> systat -vm </command>? As estatísticas do "
-"systat rolam as páginas ativa e suja juntas para a contagem de filas ativas?"
+"de filas ativas no <command>systat -vm</command>? As estatísticas do systat "
+"rolam as páginas ativa e inativas juntas para a contagem de filas ativas?"
 
 #. (itstool) path: question/para
 #: article.translate.xml:697
-#, fuzzy
 msgid "I do not get the following:"
 msgstr "Eu não entendo o seguinte:"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:700
-#, fuzzy
 msgid ""
 "It is important to note that the FreeBSD VM system attempts to separate "
 "clean and dirty pages for the express reason of avoiding unnecessary flushes "
@@ -1513,30 +1447,28 @@ msgid ""
 "counts and high active queue counts when doing a <command>systat -vm</"
 "command> command."
 msgstr ""
-"É importante notar que o sistema VM do FreeBSD tenta separar páginas limpas "
-"e sujas pelo motivo expresso de evitar descargas desnecessárias de páginas "
-"sujas (que consomem largura de banda de E / S), nem mover páginas entre as "
-"várias filas de páginas gratuitamente quando subsistema de memória não está "
-"sendo enfatizado. É por isso que você verá alguns sistemas com contagens de "
-"fila de cache muito baixas e contagens de alta fila ativa ao executar um "
-"comando <command> systat -vm </command>."
+"É importante notar que o sistema de VM do FreeBSD tenta separar páginas "
+"limpas e inativas pelo motivo expresso de evitar descargas desnecessárias de "
+"páginas inativas (que consomem largura de banda de I/O), nem mover páginas "
+"entre as várias filas de páginas gratuitamente quando subsistema de memória "
+"não está sendo estressado. É por itso que você verá alguns sistemas com "
+"contagens de fila de cache muito baixas e contagens de fila ativa altas ao "
+"executar um comando <command>systat -vm</command>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:712
-#, fuzzy
 msgid ""
 "Yes, that is confusing. The relationship is <quote>goal</quote> verses "
 "<quote>reality</quote>. Our goal is to separate the pages but the reality is "
 "that if we are not in a memory crunch, we do not really have to."
 msgstr ""
-"Sim, isso é confuso. A relação é <quote> meta </quote> versus <quote> "
-"realidade </quote>. Nosso objetivo é separar as páginas, mas a realidade é "
-"que, se não estamos em uma crise de memória, não precisamos realmente fazê-"
-"lo."
+"Sim, isto é confuso. A relação é <quote>meta</quote> versus "
+"<quote>realidade</quote>. Nosso objetivo é separar as páginas, mas a "
+"realidade é que, se não estamos em uma crise de memória, não precisamos "
+"realmente fazer isso."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:717
-#, fuzzy
 msgid ""
 "What this means is that FreeBSD will not try very hard to separate out dirty "
 "pages (inactive queue) from clean pages (cache queue) when the system is not "
@@ -1546,13 +1478,12 @@ msgid ""
 msgstr ""
 "O que isto significa é que o FreeBSD não tentará muito separar páginas sujas "
 "(fila inativa) de páginas limpas (fila de cache) quando o sistema não está "
-"sendo estressado, nem vai tentar desativar páginas (fila ativa - &gt; fila "
-"inativa ) quando o sistema não está sendo estressado, mesmo que não estejam "
+"sendo estressado, nem vai tentar desativar páginas (fila ativa -&gt; fila "
+"inativa) quando o sistema não está sendo estressado, mesmo que não estejam "
 "sendo usados."
 
 #. (itstool) path: question/para
 #: article.translate.xml:727
-#, fuzzy
 msgid ""
 "In the <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> / <command>vmstat 1</command> example, would not "
@@ -1561,16 +1492,15 @@ msgid ""
 "some program data. Or are you implying that FreeBSD does do pre-COW for the "
 "program data?"
 msgstr ""
-"No exemplo <citerefentry> <refentrytitle> ls </refentrytitle> <manvolnum> 1 "
-"</manvolnum> </citerefentry> / <command> vmstat 1 </command>, algumas falhas "
-"de página não seriam falhas de página de dados (COW do arquivo executável "
-"para a página privada)? Ou seja, eu esperaria que as falhas de página fossem "
-"um preenchimento zero e alguns dados do programa. Ou você está sugerindo que "
-"o FreeBSD faz pré-COW para os dados do programa?"
+"No exemplo <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> / <command>vmstat 1</command>, algumas falhas de "
+"página não seriam falhas de página de dados (COW do arquivo executável para "
+"a página privada)? Ou seja, eu esperaria que as falhas de página fossem um "
+"preenchimento com zero e alguns dados do programa. Ou você está sugerindo "
+"que o FreeBSD faz pré-COW para os dados do programa?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:735
-#, fuzzy
 msgid ""
 "A COW fault can be either zero-fill or program-data. The mechanism is the "
 "same either way because the backing program-data is almost certainly already "
@@ -1578,15 +1508,15 @@ msgid ""
 "program data or zero-fill, but it <emphasis>does</emphasis> pre-map pages "
 "that exist in its cache."
 msgstr ""
-"Uma falha de COW pode ser preenchimento zero ou dados de programa. O "
+"Uma falha de COW pode ser preenchimento com zero ou dados de programa. O "
 "mecanismo é o mesmo dos dois modos, porque os dados do programa de apoio "
 "quase certamente já estão no cache. Eu estou realmente juntando os dois. O "
-"FreeBSD não preenche dados do programa COW ou preenchimento zero, mas "
-"<emphasis> faz </emphasis> pré-mapear páginas que existem em seu cache."
+"FreeBSD não faz o pré-COW dos dados do programa ou preenchimento com zero, "
+"mas <emphasis>faz</emphasis> pré-mapeamento de páginas que existem em seu "
+"cache."
 
 #. (itstool) path: question/para
 #: article.translate.xml:746
-#, fuzzy
 msgid ""
 "In your section on page table optimizations, can you give a little more "
 "detail about <literal>pv_entry</literal> and <literal>vm_page</literal> (or "
@@ -1595,24 +1525,22 @@ msgid ""
 "reaction would require scanning the mappings?"
 msgstr ""
 "Em sua seção sobre otimizações de tabela de páginas, você pode dar um pouco "
-"mais de detalhes sobre <literal> pv_entry </literal> e <literal> vm_page </"
-"literal> (ou deve ser vm_page como <literal> vm_pmap </literal>? , cf. pp. "
-"180-181 de McKusick, Bostic, Karel, Quarterman)? Especificamente, que tipo "
-"de operação / reação exigiria a varredura dos mapeamentos?"
+"mais de detalhes sobre <literal>pv_entry</literal> e <literal>vm_page</"
+"literal> (ou vm_page deveria ser <literal>vm_pmap</literal>- como em 4.4, cf."
+" pp. 180-181 of McKusick, Bostic, Karel, Quarterman)? Especificamente, que "
+"tipo de operação/reação exigiria a varredura dos mapeamentos?"
 
 #. (itstool) path: question/para
 #: article.translate.xml:753
-#, fuzzy
 msgid ""
 "How does Linux do in the case where FreeBSD breaks down (sharing a large "
 "file mapping over many processes)?"
 msgstr ""
-"Como o Linux faz no caso em que o FreeBSD quebra (compartilhando um grande "
+"Como o Linux faz no caso onde o FreeBSD quebra (compartilhando um grande "
 "mapeamento de arquivos em muitos processos)?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:758
-#, fuzzy
 msgid ""
 "A <literal>vm_page</literal> represents an (object,index#) tuple. A "
 "<literal>pv_entry</literal> represents a hardware page table entry (pte). If "
@@ -1621,16 +1549,15 @@ msgid ""
 "by a single <literal>vm_page</literal> structure and three "
 "<literal>pv_entry</literal> structures."
 msgstr ""
-"Uma <literal> vm_page </literal> representa uma tupla (objeto, índice #). Um "
-"<literal> pv_entry </literal> representa uma entrada de tabela de página de "
+"Uma <literal>vm_page</literal> representa uma tupla (objeto,índice#). Um "
+"<literal>pv_entry</literal> representa uma entrada de tabela de página de "
 "hardware (pte). Se você tem cinco processos compartilhando a mesma página "
-"física, e três dessas tabelas de páginas realmente mapeiam a página, essa "
-"página será representada por uma única estrutura <literal> vm_page </"
-"literal> e três <literal> pv_entry </literal> estruturas."
+"física, e três dessas tabelas de páginas atualmente mapeiam a página, esta "
+"página será representada por uma única estrutura <literal>vm_page</literal> "
+"e três estruturas <literal>pv_entry</literal>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:766
-#, fuzzy
 msgid ""
 "<literal>pv_entry</literal> structures only represent pages mapped by the "
 "MMU (one <literal>pv_entry</literal> represents one pte). This means that "
@@ -1640,18 +1567,17 @@ msgid ""
 "<literal>pv_entry</literal>'s associated with that <literal>vm_page</"
 "literal> to remove or modify the pte's from their page tables."
 msgstr ""
-"As estruturas <literal> pv_entry </literal> representam apenas as páginas "
-"mapeadas pela MMU (uma <literal> pv_entry </literal> representa uma pte). "
-"Isso significa que quando precisamos remover todas as referências de "
-"hardware para uma <literal> vm_page </literal> (para reutilizar a página "
-"para outra coisa, paginar, limpar, sujar e assim por diante), podemos "
-"simplesmente digitalizar a lista encadeada de <literal> pv_entry </literal> "
-"associada a essa <literal> vm_page </literal> para remover ou modificar os "
-"pte's de suas tabelas de páginas."
+"As estruturas <literal>pv_entry</literal> representam apenas as páginas "
+"mapeadas pela MMU (uma <literal>pv_entry</literal> representa uma pte). Isso "
+"significa que quando precisamos remover todas as referências de hardware "
+"para uma <literal>vm_page</literal> (para reutilizar a página para outra "
+"coisa, paginar, limpar, inativar e assim por diante), podemos simplesmente "
+"escanear a lista encadeada de <literal>pv_entry</literal> associada a essa "
+"<literal>vm_page</literal> para remover ou modificar os pte's de suas "
+"tabelas de páginas."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:776
-#, fuzzy
 msgid ""
 "Under Linux there is no such linked list. In order to remove all the "
 "hardware page table mappings for a <literal>vm_page</literal> linux must "
@@ -1669,35 +1595,33 @@ msgid ""
 "performance."
 msgstr ""
 "No Linux, não existe essa lista vinculada. Para remover todos os mapeamentos "
-"de tabelas de páginas de hardware para um <literal> vm_page </literal>, o "
-"linux deve indexar em todos os objetos de VM que <emphasis> possam </"
-"emphasis> ter mapeado a página. Por exemplo, se você tiver 50 processos, "
-"todos mapeando a mesma biblioteca compartilhada e quiser se livrar da página "
-"X nessa biblioteca, será necessário indexar na tabela de páginas para cada "
-"um desses 50 processos, mesmo se apenas 10 deles realmente tiverem mapeado a "
-"tabela. página. Então, o Linux está trocando a simplicidade de seu design "
-"com o desempenho. Muitos algoritmos de VM que são O (1) ou (pequeno N) no "
-"FreeBSD acabam sendo O (N), O (N ^ 2), ou pior no Linux. Como os pte's que "
-"representam uma determinada página em um objeto tendem a estar no mesmo "
-"offset em todas as tabelas de páginas em que estão mapeados, reduzir o "
-"número de acessos nas tabelas de páginas no mesmo pte offset evitará a linha "
-"de cache L1 para esse deslocamento, o que pode levar a um melhor desempenho."
+"de tabelas de páginas de hardware para um <literal>vm_page</literal>, o "
+"linux deve indexar em todos os objetos de VM que <emphasis>possam</emphasis> "
+"ter mapeado a página. Por exemplo, se você tiver 50 processos, todos "
+"mapeando a mesma biblioteca compartilhada e quiser se livrar da página X "
+"nessa biblioteca, será necessário indexar na tabela de páginas para cada um "
+"desses 50 processos, mesmo se apenas 10 deles realmente tiverem mapeado a "
+"página. Então, o Linux está trocando a simplicidade de seu design com o "
+"desempenho. Muitos algoritmos de VM que são O(1) ou (pequeno N) no FreeBSD "
+"acabam sendo O(N), O(N^2), ou pior no Linux. Como os pte's que representam "
+"uma determinada página em um objeto tendem a estar no mesmo offset em todas "
+"as tabelas de páginas em que estão mapeados, reduzir o número de acessos nas "
+"tabelas de páginas no mesmo pte offset evitará a linha de cache L1 para esse "
+"deslocamento, o que pode levar a um melhor desempenho."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:793
-#, fuzzy
 msgid ""
 "FreeBSD has added complexity (the <literal>pv_entry</literal> scheme) in "
 "order to increase performance (to limit page table accesses to "
 "<emphasis>only</emphasis> those pte's that need to be modified)."
 msgstr ""
-"O FreeBSD adicionou complexidade (o esquema <literal> pv_entry </literal>) "
+"O FreeBSD adicionou complexidade (o esquema <literal>pv_entry</literal>) "
 "para aumentar o desempenho (para limitar os acessos da tabela de páginas a "
-"<emphasis> somente </emphasis> aqueles pte's que precisam ser modificados)."
+"<emphasis>somente</emphasis> aqueles pte's que precisam ser modificados)."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:798
-#, fuzzy
 msgid ""
 "But FreeBSD has a scaling problem that Linux does not in that there are a "
 "limited number of <literal>pv_entry</literal> structures and this causes "
@@ -1708,17 +1632,16 @@ msgid ""
 "we really need to find a better way to do it."
 msgstr ""
 "Mas o FreeBSD tem um problema de escalonamento que o Linux não possui, pois "
-"há um número limitado de estruturas <literal> pv_entry </literal> e isso "
-"causa problemas quando você tem um compartilhamento massivo de dados. Nesse "
-"caso, você pode ficar sem estruturas <literal> pv_entry </literal>, mesmo "
-"que haja bastante memória livre disponível. Isso pode ser corrigido com "
-"bastante facilidade aumentando o número de estruturas <literal> pv_entry </"
-"literal> na configuração do kernel, mas realmente precisamos encontrar uma "
-"maneira melhor de fazê-lo."
+"há um número limitado de estruturas <literal>pv_entry</literal> e isso causa "
+"problemas quando você tem um compartilhamento massivo de dados. Nesse caso, "
+"você pode ficar sem estruturas <literal>pv_entry</literal>, mesmo que haja "
+"bastante memória livre disponível. Isto pode ser corrigido com bastante "
+"facilidade aumentando o número de estruturas <literal>pv_entry</literal> na "
+"configuração do kernel, mas realmente precisamos encontrar uma maneira "
+"melhor de fazê-lo."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:808
-#, fuzzy
 msgid ""
 "In regards to the memory overhead of a page table verses the "
 "<literal>pv_entry</literal> scheme: Linux uses <quote>permanent</quote> page "
@@ -1730,28 +1653,26 @@ msgid ""
 "away page tables at will with very low overhead."
 msgstr ""
 "Em relação à sobrecarga de memória de uma tabela de páginas verso do esquema "
-"<literal> pv_entry </literal>: o Linux usa tabelas de <quote> permanente </"
-"quote> que não são descartadas, mas não precisa de um <literal> pv_entry </"
-"literal> para cada pte potencialmente mapeado. O FreeBSD usa tabelas de "
-"páginas <quote> throw away </quote>, mas adiciona em uma estrutura <literal> "
-"pv_entry </literal> para cada pte realmente mapeado. Eu acho que a "
-"utilização da memória acaba sendo a mesma, dando ao FreeBSD uma vantagem "
-"algorítmica com sua capacidade de jogar fora tabelas de páginas à vontade "
-"com uma sobrecarga muito baixa."
+"<literal>pv_entry</literal>: o Linux usa tabelas <quote>permanentes</quote> "
+"que não são descartadas, mas não precisa de um <literal>pv_entry</literal> "
+"para cada pte potencialmente mapeado. O FreeBSD usa tabelas de páginas "
+"<quote>throw away</quote>, mas adiciona em uma estrutura <literal>pv_entry</"
+"literal> para cada pte realmente mapeado. Eu acho que a utilização da "
+"memória acaba sendo a mesma, dando ao FreeBSD uma vantagem algorítmica com "
+"sua capacidade de jogar fora tabelas de páginas a vontade com uma sobrecarga "
+"muito baixa."
 
 #. (itstool) path: question/para
 #: article.translate.xml:823
-#, fuzzy
 msgid ""
 "Finally, in the page coloring section, it might help to have a little more "
 "description of what you mean here. I did not quite follow it."
 msgstr ""
-"Finalmente, na seção de coloração da página, pode ser útil descrever um "
-"pouco mais o que você quer dizer aqui. Eu não segui bem isso."
+"Finalmente, na seção de page coloring, pode ser útil descrever um pouco mais "
+"o que você quer dizer aqui. Eu não segui bem isso."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:829
-#, fuzzy
 msgid ""
 "Do you know how an L1 hardware memory cache works? I will explain: Consider "
 "a machine with 16MB of main memory but only 128K of L1 cache. Generally the "
@@ -1763,14 +1684,13 @@ msgstr ""
 "Você sabe como funciona um cache de memória de hardware L1? Vou explicar: "
 "Considere uma máquina com 16MB de memória principal, mas apenas 128K de "
 "cache L1. Geralmente, a maneira como este cache funciona é que cada bloco de "
-"128K de memória principal usa o <emphasis> mesmo </emphasis> 128K de cache. "
-"Se você acessar o offset 0 na memória principal e depois deslocar 128K na "
+"128K de memória principal usa o <emphasis>mesmo</emphasis> 128K de cache. Se "
+"você acessar o offset 0 na memória principal e depois deslocar 128K na "
 "memória principal, você pode acabar jogando fora os dados em cache que você "
 "leu do offset 0!"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:837
-#, fuzzy
 msgid ""
 "Now, I am simplifying things greatly. What I just described is what is "
 "called a <quote>direct mapped</quote> hardware memory cache. Most modern "
@@ -1780,15 +1700,15 @@ msgid ""
 "cached data. But only N."
 msgstr ""
 "Agora estou simplificando muito as coisas. O que acabei de descrever é o que "
-"é chamado de cache de memória de hardware <quote> direto mapeado </quote>. A "
-"maioria dos caches modernos são chamados de associações associativas de 2 "
-"vias ou associativas de 4 vias. O set-associatively permite acessar até N "
-"regiões de memória diferentes que se sobrepõem à mesma memória de cache sem "
-"destruir os dados armazenados em cache anteriormente. Mas apenas N."
+"é chamado de cache de memória de hardware <quote>diretamente mapeado</quote>."
+" A maioria dos caches modernos são chamados de definição de associações de 2 "
+"vias ou definição de associações de 4 vias. A definição de associacões "
+"permite acessar até N regiões de memória diferentes que se sobrepõem à mesma "
+"memória de cache sem destruir os dados armazenados em cache anteriormente. "
+"Mas apenas N."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:845
-#, fuzzy
 msgid ""
 "So if I have a 4-way set associative cache I can access offset 0, offset "
 "128K, 256K and offset 384K and still be able to access offset 0 again and "
@@ -1803,7 +1723,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:851
-#, fuzzy
 msgid ""
 "It is extremely important… <emphasis>extremely</emphasis> important for most "
 "of a processor's memory accesses to be able to come from the L1 cache, "
@@ -1815,34 +1734,32 @@ msgid ""
 "into a computer) is <emphasis>slow</emphasis>, when compared to the speed of "
 "a modern processor core."
 msgstr ""
-"É extremamente importante… <emphasis> extremamente </emphasis> importante "
-"para que a maioria dos acessos de memória de um processador possam vir do "
-"cache L1, porque o cache L1 opera na freqüência do processador. No momento "
-"em que você tem uma falha de cache L1 e precisa ir para o cache L2 ou para a "
+"É extremamente importante… <emphasis>extremamente</emphasis> importante para "
+"que a maioria dos acessos de memória de um processador possam vir do cache "
+"L1, porque o cache L1 opera na frequência do processador. No momento em que "
+"você tem uma falha de cache L1 e precisa ir para o cache L2 ou para a "
 "memória principal, o processador irá parar e potencialmente sentar-se por "
-"centenas de instruções aguardando uma leitura de memória principal para "
-"completar. A memória principal (o ram dinâmico que você coloca em um "
-"computador) é <emphasis> lenta </emphasis>, quando comparada à velocidade de "
-"um núcleo de processador moderno."
+"<emphasis>centenas</emphasis> de instruções aguardando uma leitura de "
+"memória principal para completar. A memória principal (o ram dinâmico que "
+"você coloca em um computador) é <emphasis>lenta</emphasis>, quando comparada "
+"à velocidade de um núcleo de processador moderno."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:863
-#, fuzzy
 msgid ""
 "Ok, so now onto page coloring: All modern memory caches are what are known "
 "as <emphasis>physical</emphasis> caches. They cache physical memory "
 "addresses, not virtual memory addresses. This allows the cache to be left "
 "alone across a process context switch, which is very important."
 msgstr ""
-"Ok, agora na página color: Todos os caches de memória modernos são "
-"conhecidos como caches <emphasis> físicos </emphasis>. Eles armazenam em "
-"cache endereços de memória física, não endereços de memória virtual. Isso "
-"permite que o cache seja deixado sozinho em uma opção de contexto de "
-"processo, o que é muito importante."
+"Ok, agora em page coloring: Todos os caches de memória modernos são "
+"conhecidos como caches <emphasis>físicos</emphasis>. Eles armazenam em cache "
+"endereços de memória física, não endereços de memória virtual. Isto permite "
+"que o cache seja deixado sozinho em uma opção de contexto de processo, o que "
+"é muito importante."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:869
-#, fuzzy
 msgid ""
 "But in the <trademark class=\"registered\">UNIX</trademark> world you are "
 "dealing with virtual address spaces, not physical address spaces. Any "
@@ -1852,18 +1769,17 @@ msgid ""
 "that are side by side in a processes address space which wind up being at "
 "offset 0 and offset 128K in <emphasis>physical</emphasis> memory."
 msgstr ""
-"Mas no mundo <trademark class=\"registered\"> UNIX </trademark> você está "
+"Mas no mundo <trademark class=\"registered\">UNIX</trademark> você está "
 "lidando com espaços de endereço virtual, não com espaços de endereço físico. "
 "Qualquer programa que você escreva verá o espaço de endereço virtual dado a "
-"ele. As páginas reais <emphasis> físicas </emphasis> subjacentes a esse "
-"espaço de endereço virtual não são necessariamente contíguas fisicamente! De "
-"fato, você pode ter duas páginas que estão lado a lado em um espaço de "
-"endereço de processos que termina no offset 0 e desloca 128K na memória "
-"<emphasis> física </emphasis>."
+"ele. As páginas reais <emphasis>físicas</emphasis> subjacentes a este espaço "
+"de endereço virtual não são necessariamente contíguas fisicamente! De fato, "
+"você pode ter duas páginas que estão lado a lado em um espaço de endereço de "
+"processos que termina no offset 0 e desloca 128K na memória "
+"<emphasis>física</emphasis>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:878
-#, fuzzy
 msgid ""
 "A program normally assumes that two side-by-side pages will be optimally "
 "cached. That is, that you can access data objects in both pages without "
@@ -1879,7 +1795,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:885
-#, fuzzy
 msgid ""
 "This is what Page coloring does. Instead of assigning <emphasis>random</"
 "emphasis> physical pages to virtual addresses, which may result in non-"
@@ -1889,18 +1804,17 @@ msgid ""
 "hardware cache are the same for their virtual address space as they would be "
 "if the program had been run directly in a physical address space."
 msgstr ""
-"É isso que Coloração de página faz. Em vez de atribuir páginas físicas "
-"<emphasis> aleatórias </emphasis> a endereços virtuais, o que pode resultar "
-"em desempenho de cache não ideal, a coloração de página atribui páginas "
-"físicas <emphasis> contíguas e razoavelmente contíguas </emphasis> a "
-"endereços virtuais. Assim, os programas podem ser escritos sob a suposição "
-"de que as características do cache de hardware subjacente são as mesmas para "
-"seu espaço de endereço virtual, como seriam se o programa tivesse sido "
-"executado diretamente em um espaço de endereço físico."
+"É isso que o disfarce de página faz. Em vez de atribuir páginas físicas "
+"<emphasis>aleatórias</emphasis> a endereços virtuais, o que pode resultar em "
+"desempenho de cache não ideal, o disfarce de página atribui páginas físicas "
+"<emphasis>razoavelmente contíguas</emphasis> a endereços virtuais. Assim, os "
+"programas podem ser escritos sob a suposição de que as características do "
+"cache de hardware subjacente são as mesmas para seu espaço de endereço "
+"virtual, como seriam se o programa tivesse sido executado diretamente em um "
+"espaço de endereço físico."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:895
-#, fuzzy
 msgid ""
 "Note that I say <quote>reasonably</quote> contiguous rather than simply "
 "<quote>contiguous</quote>. From the point of view of a 128K direct mapped "
@@ -1913,14 +1827,14 @@ msgid ""
 "of virtual memory, it just needs to make sure it assigns contiguous pages "
 "from the point of view of cache performance and operation."
 msgstr ""
-"Note que eu digo <quote> razoavelmente </quote> contíguo ao invés de "
-"simplesmente <quote> contíguo </quote>. Do ponto de vista de um cache "
-"mapeado direto de 128K, o endereço físico 0 é o mesmo que o endereço físico "
-"128K. Assim, duas páginas lado a lado em seu espaço de endereço virtual "
-"podem acabar sendo compensadas em 128K e compensadas em 132K na memória "
-"física, mas também podem ser facilmente compensadas em 128K e compensadas em "
-"4K na memória física e ainda manter as mesmas características de desempenho "
-"de cache. Portanto, a coloração de página não tem que atribuir páginas "
-"verdadeiramente contíguas de memória física a páginas contíguas de memória "
-"virtual, basta certificar-se de atribuir páginas contíguas do ponto de vista "
-"do desempenho e da operação do cache."
+"Note que eu digo <quote>razoavelmente</quote> contíguo ao invés de "
+"simplesmente <quote>contíguo</quote>. Do ponto de vista de um cache mapeado "
+"direto de 128K, o endereço físico 0 é o mesmo que o endereço físico 128K. "
+"Assim, duas páginas lado a lado em seu espaço de endereço virtual podem "
+"acabar sendo compensadas em 128K e compensadas em 132K na memória física, "
+"mas também podem ser facilmente compensadas em 128K e compensadas em 4K na "
+"memória física e ainda manter as mesmas características de desempenho de "
+"cache. Portanto, disfarce de página <emphasis>não </emphasis> tem que "
+"atribuir páginas verdadeiramente contíguas de memória física a páginas "
+"contíguas de memória virtual, basta certificar-se de atribuir páginas "
+"contíguas do ponto de vista do desempenho e da operação do cache."

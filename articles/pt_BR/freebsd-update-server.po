@@ -1,4 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
@@ -9,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-06 05:46+0000\n"
-"Last-Translator: Jonas Ferreira <jonas.h.ferreira@me.com>\n"
+"PO-Revision-Date: 2018-09-12 01:09+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -449,7 +450,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: article.translate.xml:234
 msgid "Create a build environment for amd64:"
-msgstr "Crie um ambiente de construção para o amd64:"
+msgstr "Crie um ambiente de compilação para o amd64:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:237
@@ -516,10 +517,10 @@ msgid ""
 "within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
 "\">release announcement</link>."
 msgstr ""
-"The <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> hash key for the desired release, is published "
-"within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
-"\">release announcement</link>."
+"A chave <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> usada para fazer o hash para a release desejada é "
+"publicada no respectivo <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
+"\">anúncio de release</link>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:270
@@ -551,7 +552,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:286
 msgid "Building Update Code"
-msgstr "Código de Atualização de Construção"
+msgstr "Compilando o Código de Atualização"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
@@ -647,8 +648,8 @@ msgstr ""
 #: article.translate.xml:327
 msgid "What follows is a sample of an <emphasis>initial</emphasis> build run."
 msgstr ""
-"O que se segue é uma amostra de uma execução de construção "
-"<emphasis>inicial</emphasis>."
+"O que se segue é uma amostra de uma execução da compilação<emphasis>inicial</"
+"emphasis>."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:330
@@ -765,7 +766,7 @@ msgid ""
 "detailed explanation may be found in <filename>scripts/build.subr</filename>."
 ""
 msgstr ""
-"Então a construção do world é executada novamente, com patches para world. "
+"Então a compilação do world é executada novamente, com patches para world. "
 "Uma explicação mais detalhada pode ser encontrada em <filename>scripts/build."
 "subr</filename>."
 
@@ -782,17 +783,16 @@ msgid ""
 "to determine which files need to be updated. This timestamp-finding works by "
 "doing two builds 400 days apart and comparing the results.\""
 msgstr ""
-"Durante este segundo ciclo de construção, o daemon do protocolo de tempo de "
+"Durante este segundo ciclo de compilação, o daemon do protocolo de tempo de "
 "rede, <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>, é desativado. Por Colin Percival "
+"manvolnum></citerefentry>, é desativado. Segundo o Colin Percival "
 "<email>cperciva@FreeBSD.org</email>, Oficial de segurança emérito do "
-"FreeBSD, \"o código de construção do <link xlink:href=\"https://svnweb."
+"FreeBSD, \"a compilação do código do <link xlink:href=\"https://svnweb."
 "freebsd.org/base/user/cperciva/freebsd-update-build/\">freebsd-update-"
 "server</link> precisa identificar os timestamps que são armazenados nos "
-"arquivos para que possam ser ignorados ao comparar construções para "
-"determinar quais arquivos precisam ser atualizados. Essa busca de timestamp "
-"trabalha com duas construções com 400 dias de diferença e compara os "
-"resultados.\""
+"arquivos para que possam ser ignorados ao comparar builds para determinar "
+"quais arquivos precisam ser atualizados. Essa busca de timestamp trabalha "
+"com duas construções com 400 dias de diferença e compara os resultados.\""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:384
@@ -1132,7 +1132,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:555
 msgid "Building a Patch"
-msgstr "Construindo um Patch"
+msgstr "Compilando um Patch"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:557
@@ -1205,10 +1205,10 @@ msgstr ""
 "Como exemplo, pegue o patch para <citerefentry><refentrytitle>named</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. Leia o comunicado, e "
 "pegue o arquivo necessário de <link xlink:href=\"@@URL_RELPREFIX@@/security/"
-"advisories.html\"> Conselhos de Segurança do FreeBSD </link>. Mais "
-"informações sobre a interpretação do comunicado podem ser encontradas no "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"security-advisories.html\">Handbook do FreeBSD</link>."
+"advisories.html\"> Avisos de Segurança do FreeBSD </link>. Mais informações "
+"sobre a interpretação do comunicado podem ser encontradas no <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/security-"
+"advisories.html\">Handbook do FreeBSD</link>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:592
@@ -1302,8 +1302,8 @@ msgstr ""
 msgid ""
 "What follows is a sample of a <emphasis>differential</emphasis> build run."
 msgstr ""
-"O que se segue é um exemplo de uma execução de construção "
-"<emphasis>diferenciada</emphasis>."
+"O que se segue é um exemplo de uma execução de uma compilação "
+"<emphasis>diferencial</emphasis>."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:634
@@ -1558,7 +1558,7 @@ msgstr ""
 #: article.translate.xml:725
 msgid "Follow the same process as noted before for approving a build:"
 msgstr ""
-"Siga o mesmo processo descrito anteriormente para aprovar uma construção:"
+"Siga o mesmo processo descrito anteriormente para aprovar uma compilação:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:728
