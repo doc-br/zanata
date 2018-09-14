@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-13 03:33+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-14 02:04+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -1487,7 +1487,7 @@ msgstr ""
 "Definir a variável <varname>MASTER_SITES</varname> para refletir onde o "
 "tarball original reside. Existem definições abreviadas para a maioria dos "
 "sites mainstream em <filename>bsd.sites.mk</filename>. Por favor, use esses "
-"sites - e as definições associadas - se for possível, para ajudar a evitar o "
+"sites - e as definições associadas—se for possível, para ajudar a evitar o "
 "problema de ter as mesmas informações repetidas várias vezes na base de "
 "origem. Como esses sites tendem a mudar com o tempo, isso se torna um "
 "pesadelo de manutenção para todos os envolvidos. Veja <xref linkend="
@@ -1524,7 +1524,7 @@ msgstr ""
 "filename> da conta <systemitem>freefall</systemitem> de alguém . Peça à "
 "pessoa que comita o port para fazer isso. Essa pessoa também irá definir "
 "<varname>MASTER_SITES</varname> para <literal>LOCAL/<replaceable>username</"
-"replaceable></literal> Onde <literal><replaceable>username</replaceable></"
+"replaceable></literal> onde <literal><replaceable>username</replaceable></"
 "literal> é o login do cluster do FreeBSD."
 
 #. (itstool) path: sect1/para
@@ -1583,11 +1583,11 @@ msgid ""
 msgstr ""
 "Desempacote uma cópia do tarball em um diretório privado e faça as "
 "alterações necessárias para obter o port para compilar corretamente sob a "
-"versão atual do FreeBSD. <emphasis>Atenção dobrada </emphasis> nessas "
-"etapas, pois elas serão necessárias para automatizar o processo em breve. "
-"Tudo, incluindo a exclusão, adição ou modificação de arquivos, deve ser "
-"feito usando um script automatizado ou arquivo de correção quando o port "
-"estiver concluído."
+"versão atual do FreeBSD. <emphasis>Atenção dobrada</emphasis> nessas etapas, "
+"pois elas serão necessárias para automatizar o processo em breve. Tudo, "
+"incluindo a exclusão, adição ou modificação de arquivos, deve ser feito "
+"usando um script automatizado ou arquivo de correção quando o port estiver "
+"concluído."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:869
@@ -1603,7 +1603,7 @@ msgstr ""
 "compilar ou instalar, dê uma olhada em um dos scripts "
 "<application>Configure</application> clássicos de Larry Wall e talvez faça "
 "algo semelhante. O objetivo da nova coleção de ports é fazer com que cada "
-"port seja <quote>plug and play</quote> o quanto possível para o usuário "
+"port seja <quote>plug-and-play</quote> o quanto possível para o usuário "
 "final, usando um mínimo de espaço em disco."
 
 #. (itstool) path: note/para
@@ -2206,7 +2206,7 @@ msgstr ""
 "Inclua quaisquer comandos de personalização adicionais no script "
 "<filename>configure</filename> e salve-o no subdiretório <filename>scripts</"
 "filename>. Como mencionado acima, também é possível fazer isso com "
-"<filename>Makefile</filename> alvos e/ou scripts com o nome <filename>pre-"
+"<filename>Makefile</filename> targets e/ou scripts com o nome <filename>pre-"
 "configure</filename> ou <filename>post-configure</filename>."
 
 #. (itstool) path: sect1/title
@@ -2758,8 +2758,8 @@ msgid ""
 "quote>"
 msgstr ""
 "Usando <varname>DISTVERSION</varname> Quando a versão contém letras "
-"Significando <quote>alfa</quote>, <quote>beta</quote> ou <quote>pre-release</"
-"quote>"
+"Significando <quote>alpha</quote>, <quote>beta</quote> ou <quote>pre-"
+"release</quote>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1468
@@ -2770,9 +2770,9 @@ msgid ""
 "letters, use <varname>DISTVERSION</varname>."
 msgstr ""
 "Quando a versão contém números separados por pontos, traços ou sublinhados, "
-"e letras são usadas para significar <quote>alfa</quote>, <quote>beta</quote> "
-"ou <quote>pre-release</quote>, que é, antes da versão sem as letras, usar "
-"<varname>DISTVERSION</varname>."
+"e letras são usadas para significar <quote>alpha</quote>, <quote>beta</"
+"quote> ou <quote>pre-release</quote>, que é, antes da versão sem as letras, "
+"usar <varname>DISTVERSION</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1475
@@ -2830,7 +2830,7 @@ msgid ""
 "<quote>patch level</quote>, and meaning after the version without the "
 "letters, use <varname>PORTVERSION</varname>."
 msgstr ""
-"Quando a versão contém letras que não significam <quote>alfa</quote>, "
+"Quando a versão contém letras que não significam <quote>alpha</quote>, "
 "<quote>beta</quote> ou <quote>pre</quote>, mas mais em um <quote>nível de "
 "patch</quote>, e significando depois da versão sem as letras, use "
 "<varname>PORTVERSION</varname>."
@@ -3586,7 +3586,7 @@ msgstr ""
 "única exceção é a string <literal>pl</literal> (significando "
 "<quote>patchlevel</quote>), que pode ser usado <emphasis>só</emphasis> "
 "quando não há números de versão maiores e menores no software. Se a versão "
-"do software tiver sequências como <quote>alfa</quote>, <quote>beta</quote>, "
+"do software tiver sequências como <quote>alpha</quote>, <quote>beta</quote>, "
 "<quote>rc</quote> ou <quote>pré</quote>, pegue a primeira letra e coloque "
 "imediatamente após um período. Se a sequência da versão continuar após esses "
 "nomes, os números seguirão o alfabeto único sem um período extra entre eles "
@@ -3758,7 +3758,7 @@ msgstr "EmiClock-1.0.2"
 #. (itstool) path: row/entry
 #: book.translate.xml:2004
 msgid "emiclock"
-msgstr "glib-compile-schemasemiclock"
+msgstr "emiclock"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2006
@@ -3843,7 +3843,7 @@ msgstr "tiff"
 #. (itstool) path: row/entry
 #: book.translate.xml:2047
 msgid "3.3"
-msgstr "3,3"
+msgstr "3.3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2048
@@ -4363,7 +4363,7 @@ msgid ""
 "filename> or <filename>misc</filename>, depending on the exact functionality."
 ""
 msgstr ""
-"Emuladores de terminal <emphasis>não</emphasis> são aqui. Os baseados em X "
+"Emuladores de terminal <emphasis>não</emphasis> estão aqui. Os baseados em X "
 "vão para o <filename>x11</filename> e baseados em texto para qualquer "
 "<filename>comms</filename> ou <filename>misc</filename>, dependendo da "
 "funcionalidade exata."
@@ -4519,7 +4519,7 @@ msgstr "<filename>ipv6</filename><literal>*</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:2427
 msgid "IPv6 related software."
-msgstr "Software relacionado ao IPv6\""
+msgstr "Software relacionado ao IPv6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2432
@@ -4694,7 +4694,7 @@ msgstr "<filename>net</filename>"
 #. (itstool) path: row/entry
 #: book.translate.xml:2534
 msgid "Miscellaneous networking software."
-msgstr "Software de rede diverso."
+msgstr "Software de rede diversos."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2539
@@ -4792,7 +4792,7 @@ msgid ""
 "plan9dist/\">Plan9</link>."
 msgstr ""
 "Vários programas de <link xlink:href=\"http://www.cs.bell-labs.com/plan9dist/"
-"\">Plano9</link>."
+"\">Plan9</link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2604
@@ -4834,7 +4834,7 @@ msgstr "<filename>print</filename>"
 #. (itstool) path: row/entry
 #: book.translate.xml:2623
 msgid "Printing software."
-msgstr "Imprimindo software."
+msgstr "Software de Impressão."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2624
@@ -5038,7 +5038,7 @@ msgstr "<filename>www</filename>"
 #. (itstool) path: row/entry
 #: book.translate.xml:2745
 msgid "Software related to the World Wide Web."
-msgstr "Software relacionado à World Wide Web\""
+msgstr "Software relacionado à World Wide Web."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2746
@@ -5168,7 +5168,7 @@ msgstr "<filename>zope</filename><literal>*</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:2820
 msgid "<link xlink:href=\"http://www.zope.org/\">Zope</link> support."
-msgstr "<link xlink:href=\"http://www.zope.org/\">Zope</link>Apoio, suporte."
+msgstr "<link xlink:href=\"http://www.zope.org/\">Zope</link> suporte."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2830
@@ -5225,8 +5225,8 @@ msgstr ""
 "Categorias específicas são listadas antes de outras menos específicas. Por "
 "exemplo, um editor de HTML é listado como <filename>editores www</filename>, "
 "não o contrário. Além disso, não liste <filename>net</filename> quando o "
-"port pertence a qualquer um dos <filename>irc</filename>, <filename>enviar</"
-"filename>, <filename>notícia</filename>, <filename>segurança</filename> ou "
+"port pertence a qualquer um dos <filename>irc</filename>, <filename>mail</"
+"filename>, <filename>news</filename>, <filename>security</filename> ou "
 "<filename>www</filename>, como <filename>net</filename> está incluído "
 "implicitamente."
 
@@ -5251,7 +5251,7 @@ msgid ""
 "filename>."
 msgstr ""
 "Os modos <application>Emacs</application> são colocados na mesma categoria "
-"de ports que a aplicação suportada pelo modo, não em<filename>editores</"
+"de ports que a aplicação suportada pelo modo, não em<filename>editors</"
 "filename>. Por exemplo, um modo <application>Emacs</application> para editar "
 "arquivos de origem de alguma linguagem de programação entra "
 "em<filename>lang</filename>."
@@ -5454,8 +5454,8 @@ msgid ""
 msgstr ""
 "Como isso afeta a infraestrutura de ports e envolve a movimentação e a "
 "correção de vários ports, mas também a possibilidade de executar testes de "
-"regressão no cluster de build, atribua o PR à equipe de gerenciamento de "
-"ports <email>portmgr@FreeBSD.org</email>."
+"regressão no cluster de build, atribua o PR à Equipe de Gerenciamento de "
+"Ports <email>portmgr@FreeBSD.org</email>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3008
@@ -5598,7 +5598,7 @@ msgstr ""
 "Se o esquema de versão upstream puder ser derivado em um esquema de versão "
 "compatível com ports, defina uma variável para a versão upstream, "
 "<emphasis>não</emphasis> usar <varname>DISTVERSION</varname> como o nome da "
-"variável. Sete <varname>PORTVERSION</varname> para a versão computada com "
+"variável. Setar <varname>PORTVERSION</varname> para a versão computada com "
 "base na variável <varname>DISTNAME</varname> criada e definida adequadamente."
 ""
 
@@ -5921,7 +5921,7 @@ msgstr ""
 "varname> é igual a <filename>${WRKDIR}/${DISTNAME}</filename> enquanto o "
 "arquivo fonte original é nomeado algo diferente de <literal>${PORTNAME}-"
 "${PORTVERSION}${EXTRACT_SUFX}</literal>, deixe <varname>DISTNAME</varname> "
-"sozinho - definindo apenas <varname>DISTFILES</varname> é mais fácil que "
+"sozinho— definindo apenas <varname>DISTFILES</varname> é mais fácil que "
 "ambos <varname>DISTNAME</varname> e <varname>WRKSRC</varname> (e "
 "possivelmente <varname>EXTRACT_SUFX</varname>)."
 
@@ -6486,7 +6486,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:3572
 msgid "<varname>USE_GITHUB</varname> Description"
-msgstr "Descrição <varname>USE_GITHUB</varname>"
+msgstr "<varname>USE_GITHUB</varname>Descrição"
 
 # auto translated by TM merge from project: ManageIQ Classic UI, version: fine, DocId: ManageIQ_UI_Classic
 #. (itstool) path: row/entry
@@ -6858,7 +6858,7 @@ msgid ""
 "Which means using <varname>PORTEPOCH</varname> will not be needed in case "
 "upstream decides to cut versions in the future."
 msgstr ""
-"Siginifica que usar <varname>PORTEPOCH</varname> não será necessário caso o "
+"Significa que usar <varname>PORTEPOCH</varname> não será necessário caso o "
 "upstream decida cortar versões no futuro."
 
 #. (itstool) path: example/title
