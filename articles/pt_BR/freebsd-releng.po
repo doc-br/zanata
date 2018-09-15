@@ -1,5 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Lucas Andrade <lucassandrade98@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,23 +8,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-25 12:37+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-14 08:38+0000\n"
+"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Lucas Andrade, slucasandrade@protonmail.ch, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:26
-#, fuzzy
 msgid "FreeBSD Release Engineering"
-msgstr "FreeBSD Release Engineering"
+msgstr "Engenharia de Lançamento do FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:37
@@ -86,12 +88,12 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:60
-#, fuzzy
 msgid ""
 "This article describes the release engineering process of the "
 "FreeBSD Project."
 msgstr ""
-"Este artigo descreve o processo de engenharia de versões do Projeto FreeBSD."
+"Este artigo descreve o processo por trás dos lançamentos das versões do "
+"Projeto FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:66
@@ -101,7 +103,6 @@ msgstr "Introdução ao Processo de Engenharia de Release do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:69
-#, fuzzy
 msgid ""
 "Development of FreeBSD has a very specific workflow. In general, all changes "
 "to the FreeBSD base system are committed to the <literal>head/</literal> "
@@ -109,20 +110,19 @@ msgid ""
 msgstr ""
 "O desenvolvimento do FreeBSD tem um fluxo de trabalho muito específico. Em "
 "geral, todas as mudanças no sistema base do FreeBSD estão comprometidas com "
-"o ramo <literal> head / </literal>, que reflete o topo da árvore fonte."
+"o ramo <literal>head/</literal>, que reflete o topo da árvore fonte."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
-#, fuzzy
 msgid ""
 "After a reasonable testing period, changes can then be merged to the "
 "<literal>stable/</literal> branches. The default minimum timeframe before "
 "merging to <literal>stable/</literal> branches is three (3) days."
 msgstr ""
-"Após um período de teste razoável, as alterações podem ser mescladas às "
-"ramificações <literal> stable / </literal>. O período de tempo mínimo padrão "
-"antes da mesclagem para as ramificações <literal> stable / </literal> é de "
-"três (3) dias."
+"Após um período razoável de testes, as alterações podem ser incluídas às "
+"ramificações <literal>stable/</literal>. O período de tempo mínimo padrão "
+"antes da inclusão para as ramificações <literal>stable/</literal> é de três "
+"(3) dias."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
