@@ -5,75 +5,75 @@ Existe tradução completa ou parcial para os documentos abaixo que possuem link
 
 ## articles
 
-─ bsdl-gpl
+─ ~~bsdl-gpl~~ - **completo**
 
 ─ ~~building-products~~ - **completo**
 
 ─ committers-guide
 
-─ [contributing](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/contributing/article.xml)
+─ ~~contributing~~ - **completo**
 
 ─ contributors
 
-─ cups
+─ ~~cups~~ - **completo**
 
-─ [explaining-bsd](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/explaining-bsd/article.xml)
+─ ~~explaining-bsd~~ - **completo**
 
 ─ filtering-bridges
 
-─ fonts
+─ ~~fonts~~ - **completo**
 
-─ [freebsd-questions](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/freebsd-questions/article.xml)
+─ ~~freebsd-questions~~ - **completo**
 
 ─ freebsd-releng
 
-─ [freebsd-update-server](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/freebsd-questions/article.xml)
+─ ~~freebsd-update-server~~ - **completo**
 
 ─ geom-class
 
 ─ gjournal-desktop
 
-─ [hubs](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/hubs/article.xml)
+─ ~~hubs~~ - **completo**
 
-─ ipsec-must
+─ ~~ipsec-must~~ - **completo**
 
-─ ldap-auth
+─ ~~ldap-auth~~ - **completo**
 
-─ leap-seconds
+─ ~~leap-seconds~~ - **completo**
 
-─ linux-emulation
+─ ~~linux-emulation~~ - **completo**
 
-─ [linux-users](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/linux-users/article.xml)
+─ ~~linux-users~~ - **completo**
 
-─ mailing-list-faq
+─ ~~mailing-list-faq~~ - **completo**
 
-─ nanobsd
+─ ~~nanobsd~~ - **completo**
 
-─ [new-users](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/new-users/article.xml)
+─ ~~new-users~~ - **completo**
 
-─ pam
+─ ~~pam~~ - **completo**
 
-─ pgpkeys
+─ ~~pgpkeys~~ - **completo**
 
-─ port-mentor-guidelines
+─ ~~port-mentor-guidelines~~ - **completo**
 
-─ pr-guidelines
+─ ~~pr-guidelines~~ - **completo**
 
-─ [problem-reports](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/articles/problem-reports/article.xml)
+─ ~~problem-reports~~ - **completo**
 
-─ rc-scripting
+─ ~~rc-scripting~~ - **completo**
 
 ─ releng
 
-─ remote-install
+─ ~~remote-install~~ - **completo**
 
 ─ serial-uart
 
-─ solid-state
+─ ~~solid-state~~ - **completo**
 
-─ vinum
+─ ~~vinum~~ - **completo**
 
-─ vm-design
+─ ~~vm-design~~ - **completo**
 
 
 ## books
@@ -84,9 +84,9 @@ Existe tradução completa ou parcial para os documentos abaixo que possuem link
 
 ─ developers-handbook
 
-─ [faq](https://github.com/freebsd/freebsd-doc/blob/master/pt_BR.ISO8859-1/books/faq/book.xml)
+─ ~~faq~~ - **completo**
 
-─ [fdp-primer](https://github.com/freebsd/freebsd-doc/tree/master/pt_BR.ISO8859-1/books/fdp-primer)
+─ ~~fdp-primer~~ - **completo**
 
 ─ [handbook](https://github.com/freebsd/freebsd-doc/tree/master/pt_BR.ISO8859-1/books/handbook)
 
