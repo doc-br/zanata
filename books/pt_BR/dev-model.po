@@ -10,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-15 02:35+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-16 02:39+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -303,7 +303,7 @@ msgid ""
 msgstr ""
 "Durante as eleições do Core em 2002, Mark Murray declarou: <quote>Me oponho "
 "a um longo livro de regras, pois isso satisfaz tendências de advogados e é "
-"contrário à tecnocentrismo de que o projeto tanto necessita.</quote> "
+"contrário ao tecnocentrismo de que o projeto tanto necessita.</quote> "
 "<citation><xref linkend=\"bsd-election2002\"/></citation>. Este modelo de "
 "projeto não pretende ser uma ferramenta para justificar a criação de "
 "imposições para desenvolvedores, mas como uma ferramenta para facilitar a "
@@ -401,7 +401,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:237
 msgid "Hat"
-msgstr "Hat (Definição função especificas para algumas pessoas)"
+msgstr "Hat (Definição/função especifica para algumas pessoas)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:239
@@ -413,7 +413,7 @@ msgid ""
 msgstr ""
 "Uma <quote>hat</quote> é um sinônimo de função. Uma hat tem certas "
 "responsabilidades em um processo e para o resultado do processo. O hat "
-"executa atividades. Está bem definido quais problemas o hat deve ser "
+"executa atividades. Está bem definido por quais problemas o hat deve ser "
 "contatado pelos membros do projeto e pessoas fora do projeto."
 
 #. (itstool) path: section/title
@@ -433,7 +433,7 @@ msgid ""
 "linkend=\"ref-pmbok\"/></citation>. Examples of outcomes are a piece of "
 "software, a decision made or a report written."
 msgstr ""
-"Um <quote>resultado</quote> é o finalização do processo. Isso é sinônimo de "
+"Um <quote>resultado</quote> é a finalização do processo. Isso é sinônimo de "
 "entrega, que é definido como <quote>qualquer finalização mensurável, "
 "tangível, verificável ou item que deve ser produzido para concluir um "
 "projeto ou parte de um projeto. Frequentemente usado de forma mais restrita "
@@ -455,7 +455,7 @@ msgid ""
 "quote> we will mean the project organisation."
 msgstr ""
 "Ao dizer <quote>FreeBSD</quote> queremos dizer o sistema operacional FreeBSD "
-"derivativo de BSD semelhante ao UNIX, enquanto ao dizer <quote>o projeto "
+"derivativo do BSD semelhante ao UNIX, enquanto ao dizer <quote>o projeto "
 "FreeBSD</quote> queremos dizer a organização do projeto."
 
 #. (itstool) path: chapter/title
@@ -522,12 +522,12 @@ msgid ""
 "the developers who do not have this privilege. They are also the developers "
 "who elect the core team, and they have access to closed discussions."
 msgstr ""
-"Os committers são desenvolvedores com o privilégio de poder aplicar mudanças."
-" Geralmente, são os desenvolvedores mais ativos que estão dispostos a gastar "
-"seu tempo não apenas integrando seu próprio código, mas integrando o código "
-"enviado pelos desenvolvedores que não têm esse privilégio. Eles também são "
-"os desenvolvedores que elegem a equipe principal (core) e têm acesso a "
-"discussões fechadas."
+"Os committers são desenvolvedores com o privilégio de poder aplicar mudanças "
+"(fazer commit). Geralmente, são os desenvolvedores mais ativos que estão "
+"dispostos a gastar seu tempo não apenas integrando seu próprio código, mas "
+"integrando o código enviado pelos desenvolvedores que não têm esse "
+"privilégio. Eles também são os desenvolvedores que elegem a equipe principal "
+"(core) e têm acesso a discussões fechadas."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:326
@@ -540,7 +540,7 @@ msgstr ""
 "O projeto pode ser agrupado em quatro partes separadas distintas, e a "
 "maioria dos desenvolvedores focará seu envolvimento em uma parte do FreeBSD. "
 "As quatro partes são desenvolvimento de kernel, desenvolvimento de userland, "
-"ports e documentação. Ao se referir ao sistema base, se destina tanto o "
+"ports e documentação. Ao se referir ao sistema base, nos referimos tanto o "
 "kernel quanto o userland."
 
 #. (itstool) path: chapter/para
@@ -607,12 +607,12 @@ msgid ""
 msgstr ""
 "O kernel é o principal bloco de construção do FreeBSD. Enquanto os "
 "aplicativos em userland são protegidos contra falhas em outros aplicativos "
-"em userland, todo o sistema é vulnerável a erros no kernel. Isso, combinado "
+"do userland, todo o sistema é vulnerável a erros no kernel. Isso, combinado "
 "com a grande quantidade de dependências no kernel e que não é fácil ver "
-"todas as conseqüências de uma mudança no kernel, exige que os "
+"todas as consequências de uma mudança no kernel, exige que os "
 "desenvolvedores tenham uma compreensão relativamente completa do kernel. "
 "Múltiplos esforços de desenvolvimento no kernel também requerem uma "
-"coordenação mais próxima do que os aplicativos em userland."
+"coordenação mais próxima do que os aplicativos em userland requerem."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:386
@@ -641,7 +641,7 @@ msgid ""
 msgstr ""
 "A documentação é tratada por <xref linkend=\"sub-project-documentation\"/> e "
 "inclui todos os documentos em torno do projeto FreeBSD, incluindo as páginas "
-"web. Durante o ano de 2004, 101 pessoas se comprometeram com o Projeto de "
+"web. Durante o ano de 2004, 101 pessoas fizeram commits para o Projeto de "
 "Documentação do FreeBSD."
 
 #. (itstool) path: footnote/para
@@ -748,11 +748,11 @@ msgstr ""
 "próprios sistemas. Depois de integrar a mudança na versão de "
 "desenvolvimento, chamada FreeBSD-CURRENT, ela é testada por muitos usuários "
 "e desenvolvedores na comunidade FreeBSD. Depois de passar por testes "
-"suficientes, é feito o merge (mesclado) na versão de produção, chamada "
+"suficientes, é feito o merge (aplicado) na versão de produção, chamada "
 "FreeBSD-STABLE. A menos que cada estágio seja concluído com êxito, o "
 "desenvolvedor precisa voltar e fazer modificações no código e reiniciar o "
 "processo. Integrar uma mudança com -CURRENT ou -STABLE é chamado de fazer um "
-"commit (cometer)."
+"commit."
 
 #. (itstool) path: section/para
 #: book.translate.xml:468
@@ -767,7 +767,7 @@ msgstr ""
 "individualmente, o que significa que este modelo é usado em paralelo por "
 "muitos desenvolvedores nos diferentes esforços de desenvolvimento em "
 "andamento. Um desenvolvedor também pode estar trabalhando em várias "
-"alterações, de modo que, enquanto ele aguarda revisão ouque pessoas testem "
+"alterações, de modo que, enquanto ele aguarda revisão ou que pessoas testem "
 "uma ou mais de suas alterações, ele pode estar escrevendo outra alteração."
 
 #. (itstool) path: footnote/para
@@ -823,13 +823,13 @@ msgstr ""
 "Da perspectiva de um modelo em etapas (como o modelo em cascata), os outros "
 "suportes podem ser vistos como verificação adicional e integração do sistema."
 " Essa integração do sistema também é importante para ver se uma alteração é "
-"aceita pela comunidade. Até que o código seja confirmado, o desenvolvedor é "
-"livre para escolher quanto se deve comunicar sobre o restante do projeto. "
-"Para que -CURRENT funcione como um buffer (para que as ideias brilhantes que "
-"tinham algumas desvantagens não descobertas possam ser recuperadas), o tempo "
-"mínimo que uma confirmação deve estar no -CURRENT antes de fazer o merge "
-"para -STABLE é de 3 dias. Esse merge é referido como um MFC (Merge From "
-"Current)."
+"aceita pela comunidade. Até que o código seja \"committed\", o desenvolvedor "
+"é livre para escolher quanto se deve comunicar sobre o restante do projeto. "
+"Para que o -CURRENT funcione como um buffer (para que as ideias brilhantes "
+"que tinham algumas desvantagens não descobertas possam ser recuperadas), o "
+"tempo mínimo que um \"commit\" deve estar no -CURRENT antes de fazer o merge "
+"(aplicar o código) para -STABLE é de 3 dias. Esse merge (aplicação) é "
+"referido como um MFC (Merge From Current)."
 
 #. (itstool) path: section/para
 #: book.translate.xml:515
@@ -850,7 +850,7 @@ msgid ""
 msgstr ""
 "As únicas exceções desse modelo são correções de segurança e alterações nos "
 "recursos que estão obsoletos na branch (ramificação) -CURRENT. Nesses casos, "
-"as alterações podem ser confirmadas diretamente na branch -STABLE."
+"as alterações podem ser \"committed\" diretamente na branch -STABLE."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:534
@@ -860,7 +860,7 @@ msgid ""
 "branch. Now it is a part of the core FreeBSD system."
 msgstr ""
 "Por exemplo, o desenvolvimento da pilha Bluetooth começou como um subprojeto "
-"até ser considerada estável o suficiente para ser feito o merge (mesclado) "
+"até ser considerada estável o suficiente para ser feito o merge (aplicado) "
 "na branch -CURRENT. Agora é parte do sistema principal do FreeBSD."
 
 #. (itstool) path: section/para
@@ -882,7 +882,7 @@ msgstr ""
 "esforços regulares de desenvolvimento: eles produzem código que são "
 "integrados ao Projeto FreeBSD. No entanto, alguns deles (como Ports e "
 "Documentação) têm o privilégio de serem aplicáveis ​​às duas branchs "
-"(ramificações) ou de se comprometerem diretamente com -CURRENT e -STABLE."
+"(ramificações) ou de commit diretamente na -CURRENT e na -STABLE."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:553
@@ -931,7 +931,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:582
 msgid "Release branches"
-msgstr "Lançamento de ramificações (Release branches)"
+msgstr "Lançamento de versões (Release branches)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:584
@@ -962,17 +962,17 @@ msgstr ""
 "determinada direção representam uma branch. Caixas com linhas completas e "
 "encorporadas representam lançamentos oficiais. Caixas com linhas pontilhadas "
 "representam a branch de desenvolvimento nesse momento. Branchs de segurança "
-"são representados por ovais. As encorporadas diferem das caixas em que "
-"representam uma bifurcação, definindo um lugar onde uma branch se divide em "
-"duas branchs, onde uma das branchs se torna uma sub-branch (sub ramificação)."
-" Por exemplo, em 4.0-RELEASE, a branch 4.0-CURRENT é dividida em 4-STABLE e "
-"5.0-CURRENT. No 4.5-RELEASE, a branch retirou uma branch de segurança "
-"chamada RELENG_4_5."
+"são representadas por ovais. As encorporadas diferem das caixas em que "
+"representam um fork, definindo um lugar onde uma branch se divide em duas "
+"branchs, onde uma das branches se tornam uma sub-branch (sub ramificação). "
+"Por exemplo, em 4.0-RELEASE, a branch 4.0-CURRENT é dividida em 4-STABLE e 5."
+"0-CURRENT. No 4.5-RELEASE, a branch retirou uma branch de segurança chamada "
+"RELENG_4_5."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:608
 msgid "The FreeBSD release tree"
-msgstr "A árvore de lançamento do FreeBSD"
+msgstr "A árvore de versões (release) do FreeBSD"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1156,9 +1156,9 @@ msgstr ""
 "Nuvens de esforços de desenvolvimento pairam sobre o projeto, onde os "
 "desenvolvedores usam os modelos de desenvolvimento que eles acham adequados. "
 "O produto de seu trabalho é então integrado em -CURRENT, onde ele é depurado "
-"paralelamente e finalmente é feito o merge de -CURRENT na -STABLE. As "
-"correções de segurança são feitos os merges da -STABLE para as branches de "
-"segurança."
+"paralelamente e finalmente é feito o merge (aplicado o código) do -CURRENT "
+"na -STABLE. As correções de segurança são feitos os merges (aplicado os "
+"códigos) da -STABLE para as branches de segurança."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:720
@@ -1180,9 +1180,9 @@ msgstr ""
 "são chamados de hats. Esses títulos podem ser funções do projeto, como "
 "diretor de relações públicas ou mantenedor de uma determinada área do código."
 " Como esse é um projeto em que as pessoas doam voluntariamente seu tempo "
-"livre, as pessoas com chapéus atribuídos nem sempre estão disponíveis. Eles "
-"devem, portanto, nomear um substituto que possa desempenhar o papel hat em "
-"sua ausência. A outra opção é ter o papel ocupado por um grupo."
+"livre, as pessoas com hats atribuídos nem sempre estão disponíveis. Eles "
+"devem, portanto, nomear um substituto que possa desempenhar o cargo de hat "
+"em sua ausência. A outra opção é ter o cargo ocupado por um grupo."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:735
@@ -1259,13 +1259,14 @@ msgid ""
 "requests on how changes in the code should be made"
 msgstr ""
 "Vale a pena notar que não existem barreiras técnicas para impedir que "
-"alguém, uma vez tendo ganho privilégios para o main- ou um sub-projeto, faça "
-"commits em partes da fonte desse projeto que o committer não obteve "
-"permissão especificamente para modificar. No entanto, quando quiser fazer "
-"modificações em partes que um committer não tenha participado antes, ele "
-"deve ler os logs para ver o que aconteceu nesta área antes, e também ler o "
-"arquivo MAINTAINER para ver se o mantenedor desta parte tem quaisquer "
-"pedidos especiais sobre como as alterações no código devem ser feitas"
+"alguém, uma vez tendo ganho privilégios de commit para o main- ou um sub-"
+"projeto, de fazer commits em partes do código desse projeto que o committer "
+"não obteve permissão especificamente para modificar. No entanto, quando "
+"quiser fazer modificações em partes que um committer não tenha participado "
+"antes, ele deve ler os logs para ver o que aconteceu nesta área antes, e "
+"também ler o arquivo MAINTAINER para ver se o mantenedor desta parte tem "
+"quaisquer pedidos especiais sobre como as alterações no código devem ser "
+"feitas"
 
 #. (itstool) path: section/title
 #: book.translate.xml:800
@@ -1292,7 +1293,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:817
 msgid "Maintainership"
-msgstr "Manutenção"
+msgstr "Maintainership"
 
 #. (itstool) path: section/para
 #: book.translate.xml:819
@@ -1302,10 +1303,10 @@ msgid ""
 "over the code occur. This involves proactive work aimed at stimulating "
 "contributions and reactive work in reviewing commits."
 msgstr ""
-"A manutenção significa que essa pessoa é responsável pelo que é permitido "
+"Maintainership significa que essa pessoa é responsável pelo que é permitido "
 "entrar nessa área do código e tem a palavra final caso ocorram discordâncias "
 "sobre o código. Isso envolve trabalho proativo destinado a estimular "
-"contribuições e trabalho reativo na revisão de compromissos."
+"contribuições e trabalho reativo na revisão de commits."
 
 #. (itstool) path: section/para
 #: book.translate.xml:827
@@ -1316,7 +1317,7 @@ msgid ""
 "development effort rather than being stuck in a slow correspondence should "
 "the maintainer be unavailable for some time."
 msgstr ""
-"Com código fonte do FreeBSD vem o arquivo MAINTAINERS que contém um resumo "
+"Com o código fonte do FreeBSD vem o arquivo MAINTAINERS que contém um resumo "
 "de uma linha de como cada mantenedor gostaria que as contribuições fossem "
 "feitas. Ter este aviso e informações de contato permite que os "
 "desenvolvedores se concentrem no esforço de desenvolvimento, em vez de "
@@ -1369,7 +1370,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:869
 msgid "Overview of official hats"
-msgstr "Visão geral dos chapéus oficiais"
+msgstr "Visão geral dos hats (funções) oficiais"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1406,7 +1407,7 @@ msgid ""
 "defining and following up documentation goals for the committers in the "
 "Documentation project."
 msgstr ""
-"<xref linkend=\"sub-project-documentation\"/> O arquiteto é responsável por "
+"<xref linkend=\"sub-project-documentation\"/> é o arquiteto responsável por "
 "definir e acompanhar as metas de documentação para os committers no projeto "
 "Documentação."
 
@@ -1435,7 +1436,7 @@ msgid ""
 "mail such as having troll-, spam- and virus-filters."
 msgstr ""
 "O Postmaster é responsável pelo envio correto do email para o endereço de "
-"email do committers. Ele também é responsável por garantir que as listas de "
+"email dos committers. Ele também é responsável por garantir que as listas de "
 "discussão funcionem e deve tomar medidas contra possíveis interrupções de "
 "correspondência, como filtros de vírus, spam e trolls."
 
@@ -1523,8 +1524,8 @@ msgid ""
 "Making press statements when happenings that are important to the FreeBSD "
 "Project happen."
 msgstr ""
-"Faz declarações de imprensa quando acontecem coisas que são importantes para "
-"o projeto FreeBSD."
+"Fazer declarações de imprensa quando acontecem coisas que são importantes "
+"para o projeto FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:966
@@ -1641,7 +1642,6 @@ msgstr "Gerente de Eleições"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1029
-#, fuzzy
 msgid ""
 "The Election Manager is responsible for the <xref linkend=\"process-core-"
 "election\"/> process. The manager is responsible for running and maintaining "
@@ -1649,27 +1649,24 @@ msgid ""
 "events happen in the election process. Major unforeseen events have to be "
 "discussed with the <xref linkend=\"role-core\"/>"
 msgstr ""
-"O Gestor Eleitoral é responsável pelo processo <xref linkend=\"process-core-"
-"election\"/>. O gerente é responsável por executar e manter o sistema "
+"O Gerente de Eleições é responsável pelo processo <xref linkend=\"process-"
+"core-election\"/>. O gerente é responsável por executar e manter o sistema "
 "eleitoral, e é a autoridade final caso eventos imprevistos menores ocorram "
 "no processo eleitoral. Grandes imprevistos devem ser discutidos com o <xref "
 "linkend=\"role-core\"/>"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1037
-#, fuzzy
 msgid "Hat held only during elections."
-msgstr "Chapéu realizado apenas durante as eleições."
+msgstr "Hat realizado apenas durante as eleições."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1043
-#, fuzzy
 msgid "Web site Management"
 msgstr "Gerenciamento de sites"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1044
-#, fuzzy
 msgid ""
 "The Web site Management hat is responsible for coordinating the rollout of "
 "updated web pages on mirrors around the world, for the overall structure of "
@@ -1677,58 +1674,52 @@ msgid ""
 "to coordinate the content with <xref linkend=\"sub-project-documentation\"/> "
 "and acts as maintainer for the <quote>www</quote> tree."
 msgstr ""
-"O site Web Management Hat é responsável por coordenar o lançamento de "
-"páginas da Web atualizadas em espelhos ao redor do mundo, pela estrutura "
-"geral do site principal e pelo sistema em que está sendo executado. O "
+"O hat Web site Management é responsável por coordenar o lançamento de "
+"páginas Web atualizadas em espelhos ao redor do mundo, pela estrutura geral "
+"do site principal e pelo sistema em que está sendo executado. O "
 "gerenciamento precisa coordenar o conteúdo com <xref linkend=\"sub-project-"
-"documentation\"/> e atua como mantenedor da árvore <quote> www </quote>."
+"documentation\"/> e atua como mantenedor da árvore <quote>www</quote>."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1054
-#, fuzzy
 msgid "Hat held by: the FreeBSD Webmasters <email>www@FreeBSD.org</email>."
 msgstr ""
-"Chapéu mantido por: Webmasters do FreeBSD <email> www@FreeBSD.org </email>."
+"Hat mantido pelos: Webmasters do FreeBSD <email>www@FreeBSD.org</email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1061
-#, fuzzy
 msgid "Ports Manager"
-msgstr "Gerente de Portos"
+msgstr "Gerente de Ports"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1062
-#, fuzzy
 msgid ""
 "The Ports Manager acts as a liaison between <xref linkend=\"sub-project-"
 "ports\"/> and the core project, and all requests from the project should go "
 "to the ports manager."
 msgstr ""
-"O Ports Manager atua como uma ligação entre <xref linkend=\"sub-project-"
+"O Gerente de Ports atua como uma conexão entre <xref linkend=\"sub-project-"
 "ports\"/> e o projeto principal, e todas as solicitações do projeto devem ir "
-"para o gerenciador de portas."
+"para o gerente de ports."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1070
-#, fuzzy
 msgid ""
 "Hat held by: the Ports Management Team <email>portmgr@FreeBSD.org</email>. "
 "The <link xlink:href=\"https://www.freebsd.org/portmgr/charter.html\"> "
 "Portmgr charter</link>."
 msgstr ""
-"Chapéu mantido por: Equipe de Gerenciamento de Portas <email> "
-"portmgr@FreeBSD.org </email>. O <link xlink:href=\"https://www.freebsd.org/"
-"portmgr/charter.html\"> Portmgr charter </link>."
+"Hat mantido pela: Equipe de Gerenciamento de Ports <email>portmgr@FreeBSD."
+"org</email>. O <link xlink:href=\"https://www.freebsd.org/portmgr/charter."
+"html\">Capitulo Portmgr</link>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1080
-#, fuzzy
 msgid "Standards"
 msgstr "Padrões"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1081
-#, fuzzy
 msgid ""
 "The Standards hat is responsible for ensuring that FreeBSD complies with the "
 "standards it is committed to , keeping up to date on the development of "
@@ -1736,56 +1727,49 @@ msgid ""
 "allows them to take a proactive role and decrease the time between a "
 "standards update and FreeBSD's compliancy."
 msgstr ""
-"O padrão é responsável por garantir que o FreeBSD cumpra com os padrões com "
-"os quais está comprometido, mantendo-se atualizado sobre o desenvolvimento "
-"desses padrões e notificando os desenvolvedores do FreeBSD sobre mudanças "
-"importantes que lhes permitam assumir um papel proativo e diminuir o tempo "
-"entre padrões. atualização e complacência do FreeBSD."
+"O Standards (Padrões) é responsável por garantir que o FreeBSD cumpra com os "
+"padrões com os quais está comprometido, mantendo-se atualizado sobre o "
+"desenvolvimento desses padrões e notificando os desenvolvedores do FreeBSD "
+"sobre mudanças importantes que lhes permitam assumir um papel proativo e "
+"diminuir o tempo entre atualização de padrões e complacência do FreeBSD."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1091
-#, fuzzy
 msgid ""
 "Hat currently held by: Garrett Wollman <email>wollman@FreeBSD.org</email>."
 msgstr ""
-"Hat atualmente detido por: Garrett Wollman <email> wollman@FreeBSD.org </"
+"Hat atualmente mantido por: Garrett Wollman <email>wollman@FreeBSD.org</"
 "email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1098
-#, fuzzy
 msgid "Core Secretary"
-msgstr "Secretário central"
+msgstr "Secretário do Core (do time do Core)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1099
-#, fuzzy
 msgid ""
 "The Core Secretary's main responsibility is to write drafts to and publish "
 "the final Core Reports. The secretary also keeps the core agenda, thus "
 "ensuring that no balls are dropped unresolved."
 msgstr ""
-"A principal responsabilidade do Secretário Principal é redigir e publicar os "
-"Relatórios Principais finais. O secretário também mantém a agenda central, "
-"assegurando assim que nenhuma bola seja descartada sem solução."
+"A principal responsabilidade do Secretário do Core é redigir os drafts e "
+"publicar os Relatórios finais do Core. O secretário também mantém a agenda "
+"central, assegurando assim que nenhuma bola seja descartada sem solução."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1105
-#, fuzzy
 msgid "Hat currently held by: Joseph Mingrone <email>jrm@FreeBSD.org</email>."
 msgstr ""
-"Chapéu atualmente mantido por: Joseph Mingrone <email> jrm@FreeBSD.org </"
-"email>."
+"Hat atualmente mantido por: Joseph Mingrone <email>jrm@FreeBSD.org</email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1111
-#, fuzzy
 msgid "Bugmeister"
 msgstr "Bugmeister"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1112
-#, fuzzy
 msgid ""
 "The Bugmeister is responsible for ensuring that the maintenance database is "
 "in working order, that the entries are correctly categorised and that there "
@@ -1797,60 +1781,53 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1117
-#, fuzzy
 msgid ""
 "Hat currently held by: the Bugmeister Team <email>bugmeister@FreeBSD.org</"
 "email>."
 msgstr ""
-"Hat atualmente mantido por: the Bugmeister Team <email> bugmeister@FreeBSD."
-"org </email>."
+"Hat atualmente mantido pelo: Time Bugmeister <email>bugmeister@FreeBSD.org</"
+"email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1124
-#, fuzzy
 msgid "Donations Liaison Officer"
-msgstr "Oficial de ligação de doações"
+msgstr "Oficial de Contratos de doações"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1125
-#, fuzzy
 msgid ""
 "The task of the donations liaison officer is to match the developers with "
 "needs with people or organisations willing to make a donation. The Donations "
 "Liaison Charter is available <link xlink:href=\"https://www.freebsd.org/"
 "donations/\">here</link>"
 msgstr ""
-"A tarefa do oficial de ligação de doações é combinar os desenvolvedores com "
-"necessidades com pessoas ou organizações dispostas a fazer uma doação. A "
-"Carta de Ligação de Doações está disponível <link xlink:href=\"https://www."
-"freebsd.org/donations/\"> aqui </link>"
+"A tarefa do oficial de contratos de doações é combinar os desenvolvedores "
+"com necessidades com pessoas ou organizações dispostas a fazer uma doação. A "
+"carta de ligação de doações está disponível <link xlink:href=\"https://www."
+"freebsd.org/donations/\">aqui</link>"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1134
-#, fuzzy
 msgid ""
 "Hat held by: the Donations Liaison Office <email>donations@FreeBSD.org</"
 "email>."
 msgstr ""
-"Chapéu de propriedade do: Gabinete de Ligação de Doações <email> "
-"donations@FreeBSD.org </email>."
+"Hat mantida pelo: Escritório de Contratos de Doações "
+"<email>donations@FreeBSD.org</email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1141
-#, fuzzy
 msgid "Admin"
 msgstr "Admin"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1142
-#, fuzzy
 msgid "(Also called <quote>FreeBSD Cluster Admin</quote>)"
 msgstr ""
-"(Também chamado de <quote> Administrador de Cluster do FreeBSD </quote>)"
+"(Também chamado de <quote>Administrador de Cluster do FreeBSD</quote>)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1146
-#, fuzzy
 msgid ""
 "The admin team consists of the people responsible for administrating the "
 "computers that the project relies on for its distributed work and "
@@ -1858,33 +1835,27 @@ msgid ""
 "have physical access to the servers."
 msgstr ""
 "A equipe administrativa consiste nas pessoas responsáveis ​​por administrar "
-"os computadores nos quais o projeto depende, para que seu trabalho "
+"os computadores dos quais o projeto depende, para que seu trabalho "
 "distribuído e comunicação sejam sincronizados. Consiste principalmente "
 "naquelas pessoas que têm acesso físico aos servidores."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1156
-#, fuzzy
 msgid "Hat held by: the Admin team <email>admin@FreeBSD.org</email>."
-msgstr ""
-"Chapéu mantido por: a equipe de administração <email> admin@FreeBSD.org </"
-"email>."
+msgstr "Hat mantido pela: Equipe de Admin <email>admin@FreeBSD.org</email>."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1168
-#, fuzzy
 msgid "Process dependent hats"
-msgstr "Chapéus dependentes do processo"
+msgstr "Hats dependentes de processo"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1171
-#, fuzzy
 msgid "Report originator"
 msgstr "Criador do relatório"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1172
-#, fuzzy
 msgid "The person originally responsible for filing a Problem Report."
 msgstr ""
 "A pessoa originalmente responsável pelo preenchimento de um Relatório de "
@@ -1892,13 +1863,11 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: book.translate.xml:1180
-#, fuzzy
 msgid "Bugbuster"
 msgstr "Bugbuster"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1181
-#, fuzzy
 msgid ""
 "A person who will either find the right person to solve the problem, or "
 "close the PR if it is a duplicate or otherwise not an interesting one."
@@ -1908,13 +1877,11 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: book.translate.xml:1190
-#, fuzzy
 msgid "Mentor"
 msgstr "Mentor"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1191
-#, fuzzy
 msgid ""
 "A mentor is a committer who takes it upon him/her to introduce a new "
 "committer to the project, both in terms of ensuring the new committers setup "
@@ -1924,66 +1891,58 @@ msgid ""
 msgstr ""
 "Um mentor é um committer que assume a responsabilidade de introduzir um novo "
 "committer no projeto, tanto em termos de garantir que a nova configuração de "
-"committers seja válida, que o novo committer conhece as ferramentas "
-"disponíveis necessárias em seu trabalho e que o O novo committer sabe o que "
-"se espera dele em termos de comportamento."
+"committers seja válida, que o novo committer conheça as ferramentas "
+"disponíveis necessárias em seu trabalho quanto que o novo committer saiba o "
+"que se espera dele em termos de comportamento."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1202
-#, fuzzy
 msgid "Vendor"
 msgstr "Fornecedor"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1203
-#, fuzzy
 msgid ""
 "The person(s) or organisation whom external code comes from and whom patches "
 "are sent to."
 msgstr ""
-"A (s) pessoa (s) ou organização de quem vem o código externo e para quem os "
+"A(s) pessoa(s) ou organização de quem vem o código externo e para quem os "
 "patches são enviados."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1210
-#, fuzzy
 msgid "Reviewers"
 msgstr "Revisores"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1211
-#, fuzzy
 msgid "People on the mailing list where the request for review is posted."
 msgstr ""
 "Pessoas na lista de discussão em que a solicitação de revisão é postada."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1222
-#, fuzzy
 msgid "Processes"
 msgstr "Processos"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:1224
-#, fuzzy
 msgid ""
 "The following section will describe the defined project processes. Issues "
 "that are not handled by these processes happen on an ad-hoc basis based on "
 "what has been customary to do in similar cases."
 msgstr ""
-"A seção a seguir descreverá os processos do projeto definidos. Questões que "
+"A seção a seguir descreverá os processos definidos do projeto. Questões que "
 "não são tratadas por esses processos acontecem em uma base ad-hoc com base "
 "no que era costume fazer em casos semelhantes."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1232
-#, fuzzy
 msgid "Adding new and removing old committers"
-msgstr "Adicionando novos e removendo committers antigos"
+msgstr "Adicionando novos committers  e removendo committers  antigos "
 
 #. (itstool) path: section/para
 #: book.translate.xml:1234
-#, fuzzy
 msgid ""
 "The Core team has the responsibility of giving and removing commit "
 "privileges to contributors. This can only be done through a vote on the core "
@@ -1991,28 +1950,25 @@ msgid ""
 "privileges to people working on these projects, but have to date not removed "
 "such privileges."
 msgstr ""
-"A equipe principal tem a responsabilidade de fornecer e remover os "
-"privilégios de commit aos contribuidores. Isso só pode ser feito por meio de "
-"votação na lista de discussão principal. Os subprojetos de portas e "
-"documentação podem conceder privilégios de confirmação a pessoas que "
-"trabalham nesses projetos, mas até o momento não removeram esses privilégios."
-""
+"O Core team tem a responsabilidade de fornecer e remover os privilégios de "
+"commit aos colaboradores. Isso só pode ser feito por meio de votação na "
+"lista de discussão do core. Os subprojetos de ports e documentação podem "
+"conceder privilégios de commit a pessoas que trabalham nesses projetos, mas "
+"até o momento não removeram esses privilégios."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1244
-#, fuzzy
 msgid ""
 "Normally a contributor is recommended to core by a committer. For "
 "contributors or outsiders to contact core asking to be a committer is not "
 "well thought of and is usually rejected."
 msgstr ""
-"Normalmente, um colaborador é recomendado para o núcleo por um committer. "
-"Para contribuintes ou pessoas de fora para entrar em contato com o núcleo "
-"pedindo para ser um committer não é bem pensado e geralmente é rejeitado."
+"Normalmente, um colaborador é recomendado para o core por um committer. Para "
+"colaboradores ou pessoas de fora entrar em contato com o core pedindo para "
+"ser um committer não é algo bem pensado e geralmente é rejeitado."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1252
-#, fuzzy
 msgid ""
 "If the area of particular interest for the developer potentially overlaps "
 "with other committers' area of maintainership, the opinion of those "
@@ -2021,12 +1977,11 @@ msgid ""
 msgstr ""
 "Se a área de interesse particular para o desenvolvedor potencialmente se "
 "sobrepuser à área de manutenção de outros committers, a opinião desses "
-"mantenedores é solicitada. No entanto, é frequentemente esse committer que "
-"recomenda o desenvolvedor."
+"commiters mantenedores é solicitada. No entanto, é frequentemente esse "
+"committer que recomenda o desenvolvedor."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1260
-#, fuzzy
 msgid ""
 "When a contributor is given committer status, he is assigned a mentor. The "
 "committer who recommended the new committer will, in the general case, take "
@@ -2038,7 +1993,6 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1268
-#, fuzzy
 msgid ""
 "When a contributor is given his commit bit, a <xref linkend=\"tool-pgp\"/>-"
 "signed email is sent from either <xref linkend=\"role-core-secretary\"/>, "
@@ -2050,19 +2004,18 @@ msgid ""
 "account is created, the mentor activates the commit bit and guides the new "
 "committer through the rest of the initial process."
 msgstr ""
-"Quando um colaborador recebe seu bit de confirmação, um e-mail assinado "
-"<xref linkend=\"tool-pgp\"/> é enviado de <xref linkend=\"role-core-"
-"secretary\"/>, <xref linkend=\"role-ports-manager \"/> ou nik@freebsd.org "
-"para admins@freebsd.org, o mentor designado, o novo committer e o core "
-"confirmando a aprovação de uma nova conta. O mentor então reúne uma senha, "
-"<xref linkend=\"tool-ssh2\"/> chave pública e chave PGP do novo committer e "
-"as envia para <xref linkend=\"role-admin\"/>. Quando a nova conta é criada, "
-"o mentor ativa o bit de confirmação e orienta o novo committer pelo resto do "
+"Quando um colaborador recebe seu commit bit, um e-mail assinado <xref "
+"linkend=\"tool-pgp\"/> é enviado de <xref linkend=\"role-core-secretary\"/>, "
+"<xref linkend=\"role-ports-manager\"/> ou nik@freebsd.org para ambos "
+"admins@freebsd.org, o mentor designado, o novo committer e o core "
+"confirmando a aprovação de uma nova conta. O mentor então reúne uma senha, a "
+"chave pública <xref linkend=\"tool-ssh2\"/> e a chave PGP do novo committer "
+"e as envia para <xref linkend=\"role-admin\"/>. Quando a nova conta é "
+"criada, o mentor ativa o commit bit e orienta o novo committer pelo resto do "
 "processo inicial."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1282
-#, fuzzy
 msgid "Process summary: adding a new committer"
 msgstr "Resumo do processo: adicionando um novo committer"
 
@@ -2072,14 +2025,12 @@ msgstr "Resumo do processo: adicionando um novo committer"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1283
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-add-committer' md5='__failed__'"
-msgstr "ref externo = 'proc-add-committer' md5 = '__ failed__'"
+msgstr "external ref='proc-add-committer' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1287
-#, fuzzy
 msgid ""
 "When a contributor sends a piece of code, the receiving committer may choose "
 "to recommend that the contributor is given commit privileges. If he "
@@ -2089,18 +2040,17 @@ msgid ""
 "After this, the new committer is all set to make his first commit. By "
 "tradition, this is by adding his name to the committers list."
 msgstr ""
-"Quando um colaborador envia uma parte do código, o committer de recebimento "
-"pode optar por recomendar que o contribuidor receba privilégios de "
-"confirmação. Se ele recomendar isso para o núcleo, eles votarão nessa "
-"recomendação. Se eles votarem a favor, um mentor é designado ao novo "
-"committer e o novo committer tem que enviar seus detalhes para os "
-"administradores para que uma conta seja criada. Depois disso, o novo "
-"committer está pronto para fazer seu primeiro commit. Por tradição, isso é "
-"adicionando seu nome à lista de committers."
+"Quando um colaborador envia uma parte do código, o committer que recebe pode "
+"optar por recomendar que o colaborador receba privilégios de commit. Se ele "
+"recomendar isso para o core, eles irão votar essa recomendação. Se eles "
+"votarem a favor, um mentor é designado ao novo committer e o novo committer "
+"tem que enviar seus dados para os administradores para que uma conta seja "
+"criada. Depois disso, o novo committer está pronto para fazer seu primeiro "
+"commit. Por tradição, isso é feito adicionando seu nome à lista de "
+"committers."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1299
-#, fuzzy
 msgid ""
 "Recall that a committer is considered to be someone who has committed code "
 "during the past 12 months. However, it is not until after 18 months of "
@@ -2110,17 +2060,16 @@ msgid ""
 "concerning commit privileges not triggered by time, see <link linkend="
 "\"process-reactions\">section 1.5.8</link>."
 msgstr ""
-"Lembre-se de que um committer é considerado alguém que tenha cometido código "
-"nos últimos 12 meses. No entanto, somente após 18 meses de inatividade terem "
-"passado, os privilégios de commit são qualificados para serem revogados. "
-"<citation><xref linkend=\"freebsd-expiration-policy\"/></citation> Não há, "
-"no entanto, procedimentos automáticos para fazer isso. Para reações "
-"relativas a privilégios de commit não acionados pelo tempo, veja <link "
-"linkend=\"process-reactions\"> seção 1.5.8 </link>."
+"Lembre-se de que um committer é considerado alguém que tenha feito algum "
+"commit de código nos últimos 12 meses. No entanto, somente após 18 meses de "
+"inatividade terem se passado, os privilégios de commit são qualificados para "
+"serem revogados. <citation><xref linkend=\"freebsd-expiration-policy\"/></"
+"citation> Não há, no entanto, procedimentos automáticos para fazer isso. "
+"Para reações a consentimentos de privilégios de commit não acionados pelo "
+"tempo, veja a <link linkend=\"process-reactions\">seção 1.5.8</link>."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1314
-#, fuzzy
 msgid "Process summary: removing a committer"
 msgstr "Resumo do processo: removendo um committer"
 
@@ -2130,14 +2079,12 @@ msgstr "Resumo do processo: removendo um committer"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1315
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-rm-committer' md5='__failed__'"
-msgstr "ref externo = 'proc-rm-committer' md5 = '__ failed__'"
+msgstr "external ref='proc-rm-committer' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1319
-#, fuzzy
 msgid ""
 "When Core decides to clean up the committers list, they check who has not "
 "made a commit for the past 18 months. Committers who have not done so have "
@@ -2145,37 +2092,33 @@ msgid ""
 msgstr ""
 "Quando o Core decide limpar a lista de committers, eles checam quem não fez "
 "um commit nos últimos 18 meses. Os committers que não fizeram isso têm seus "
-"bits de commit revogados."
+"commit bit revogados."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1326
-#, fuzzy
 msgid ""
 "It is also possible for committers to request that their commit bit be "
 "retired if for some reason they are no longer going to be actively "
 "committing to the project. In this case, it can also be restored at a later "
 "time by core, should the committer ask."
 msgstr ""
-"Também é possível que os committers solicitem que seu bit de confirmação "
-"seja retirado se, por alguma razão, eles não estiverem mais se comprometendo "
+"Também é possível que os committers solicitem que seu commit bit seja "
+"retirado se, por alguma razão, eles não estiverem mais se comprometendo "
 "ativamente com o projeto. Nesse caso, ele também pode ser restaurado "
-"posteriormente pelo núcleo, caso o committer pergunte."
+"posteriormente pelo core, caso o committer peça."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1333
-#, fuzzy
 msgid "Roles in this process: <_:orderedlist-1/>"
 msgstr "Funções neste processo: <_:orderedlist-1/>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1364
-#, fuzzy
 msgid "Committing code"
-msgstr "Código de confirmação"
+msgstr "Enviando código para o projeto (Committing code)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1366
-#, fuzzy
 msgid ""
 "The committing of new or modified code is one of the most frequent processes "
 "in the FreeBSD project and will usually happen many times a day. Committing "
@@ -2183,16 +2126,15 @@ msgid ""
 "either code written by themselves, code submitted to them or code submitted "
 "through a <link linkend=\"model-pr\">problem report</link>."
 msgstr ""
-"O commit de código novo ou modificado é um dos processos mais frequentes no "
-"projeto FreeBSD e geralmente acontece muitas vezes ao dia. O commit do "
-"código só pode ser feito por um <quote> committer </quote>. Committers "
-"cometem código escrito por eles mesmos, código enviado a eles ou código "
-"enviado através de um <link linkend=\"model-pr\"> relatório de problemas </"
-"link>."
+"O processo de commit de um código novo ou modificado é um dos processos mais "
+"frequentes no projeto FreeBSD e geralmente acontece muitas vezes ao dia. O "
+"commit do código só pode ser feito por um <quote>committer</quote>. "
+"Committers aplicam código escrito por eles mesmos, código enviado a eles ou "
+"código enviado através de um <link linkend=\"model-pr\">relatório de "
+"problemas</link>."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1376
-#, fuzzy
 msgid ""
 "When code is written by the developer that is non-trivial, he should seek a "
 "code review from the community. This is done by sending mail to the relevant "
@@ -2202,17 +2144,16 @@ msgid ""
 "code is received, it should be reviewed by the committer and tested the same "
 "way."
 msgstr ""
-"Quando o código é escrito pelo desenvolvedor que não é trivial, ele deve "
+"Quando o código é escrito pelo desenvolvedor que é não trivial, ele deve "
 "procurar uma revisão de código da comunidade. Isso é feito enviando e-mails "
 "para a lista relevante solicitando a revisão. Antes de enviar o código para "
 "revisão, ele deve garantir que ele seja compilado corretamente com a árvore "
 "inteira e que todos os testes relevantes sejam executados. Isso é chamado "
-"<quote> teste de pré-confirmação </quote>. Quando o código contribuído é "
-"recebido, ele deve ser revisado pelo committer e testado da mesma maneira."
+"<quote>teste de pré-commit</quote>. Quando o código contribuído é recebido, "
+"ele deve ser revisado pelo committer e testado da mesma maneira."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1387
-#, fuzzy
 msgid ""
 "When a change is committed to a part of the source that has been contributed "
 "from an outside <xref linkend=\"role-vendor\"/>, the maintainer should "
@@ -2221,16 +2162,15 @@ msgid ""
 "outside projects as the patches do not have to be reapplied every time a new "
 "release is made."
 msgstr ""
-"Quando uma alteração é confirmada em uma parte da fonte que foi contribuída "
-"de um <xref linkend=\"role-vendor\"/> externo, o mantenedor deve garantir "
-"que o patch seja repassado ao fornecedor. Isso está de acordo com a "
-"filosofia de código aberto e facilita a sincronização com os projetos "
+"Quando uma alteração é \"committed\" em uma parte do código fonte que foi "
+"contribuída por um <xref linkend=\"role-vendor\"/> externo, o mantenedor "
+"deve garantir que o patch seja repassado ao fornecedor. Isso está de acordo "
+"com a filosofia de código aberto e facilita a sincronização com os projetos "
 "externos, pois os patches não precisam ser reaplicados sempre que uma nova "
 "versão é feita."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1400
-#, fuzzy
 msgid ""
 "After the code has been available for review and no further changes are "
 "necessary, the code is committed into the development branch, -CURRENT. If "
@@ -2242,34 +2182,32 @@ msgid ""
 "well). Only security critical changes should be merged to security branches."
 msgstr ""
 "Depois que o código estiver disponível para revisão e nenhuma alteração "
-"adicional for necessária, o código será confirmado na ramificação de "
-"desenvolvimento, -CURRENT. Se a alteração se aplicar também à ramificação -"
-"STABLE ou às outras ramificações, uma contagem regressiva <quote>Merge From "
+"adicional for necessária, o código será \"committed\" na branch de "
+"desenvolvimento, -CURRENT. Se a alteração se aplicar também à branch -STABLE "
+"ou às outras branches, uma contagem regressiva de um <quote>Merge From "
 "Current</quote> (\"MFC\") será definida pelo committer. Após o número de "
 "dias que o committer escolheu ao configurar o MFC, um email será enviado "
-"automaticamente ao committer, lembrando-o de enviá-lo para a ramificação -"
-"STABLE (e possivelmente também para ramos de segurança). Apenas alterações "
-"críticas de segurança devem ser mescladas a filiais de segurança."
+"automaticamente ao committer, lembrando-o de enviá-lo para a branch -STABLE "
+"(e possivelmente também para branches de segurança). Apenas alterações "
+"críticas de segurança devem ser aplicadas a branch de segurança."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1415
-#, fuzzy
 msgid ""
 "Delaying the commit to -STABLE and other branches allows for <quote>parallel "
 "debugging</quote> where the committed code is tested on a wide range of "
 "configurations. This makes changes to -STABLE to contain fewer faults and "
 "thus giving the branch its name."
 msgstr ""
-"Atrasar o commit para -STABLE e outras ramificações permite <quote> "
-"depuração paralela </quote> onde o código confirmado é testado em uma ampla "
-"gama de configurações. Isso faz alterações no -STABLE para conter menos "
-"falhas e, assim, dar o nome à ramificação."
+"Atrasar o commit para -STABLE e outras branches permite <quote>depuração "
+"paralela</quote> onde o código \"committed\" é testado em uma ampla gama de "
+"configurações. Isso faz alterações no -STABLE para conter menos falhas e, "
+"assim, dar seu nome à branch."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1425
-#, fuzzy
 msgid "Process summary: A committer commits code"
-msgstr "Resumo do processo: um committer confirma o código"
+msgstr "Resumo do processo: um committer aplica o código"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2277,14 +2215,12 @@ msgstr "Resumo do processo: um committer confirma o código"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1426
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-commit' md5='__failed__'"
-msgstr "ref externo = 'proc-commit' md5 = '__ failed__'"
+msgstr "external ref='proc-commit' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1430
-#, fuzzy
 msgid ""
 "When a committer has written a piece of code and wants to commit it, he "
 "first needs to determine if it is trivial enough to go in without prior "
@@ -2297,22 +2233,21 @@ msgid ""
 "and the committer can go back to writing a patch. If a vendor is affected, "
 "he can choose to implement or ignore the patch."
 msgstr ""
-"Quando um committer escreveu um pedaço de código e quer confirmá-lo, ele "
-"primeiro precisa determinar se é trivial o suficiente entrar sem uma análise "
-"prévia ou se deve ser revisado pela comunidade de desenvolvedores. Se o "
-"código é trivial ou foi revisado e o committer não é o mantenedor, ele deve "
-"consultar o mantenedor antes de continuar. Se o código for contribuído por "
-"um fornecedor externo, o mantenedor deve criar um patch que seja enviado de "
-"volta ao fornecedor. O código é então confirmado e implantado pelos usuários."
-" Caso encontrem problemas com o código, isso será relatado e o committer "
-"poderá voltar a escrever um patch. Se um fornecedor for afetado, ele pode "
-"optar por implementar ou ignorar o patch."
+"Quando um committer escreveu um pedaço de código e quer fazer o seu commit, "
+"ele primeiro precisa determinar se é trivial o suficiente entrar sem uma "
+"análise prévia ou se deve ser revisado pela comunidade de desenvolvedores. "
+"Se o código é trivial ou foi revisado e o committer não é o mantenedor, ele "
+"deve consultar o mantenedor antes de continuar. Se o código for contribuído "
+"por um fornecedor externo, o mantenedor deve criar um patch que seja enviado "
+"de volta ao fornecedor. O código é então confirmado e implantado pelos "
+"usuários. Caso encontrem problemas com o código, isso será relatado e o "
+"committer poderá voltar a escrever um patch. Se um fornecedor for afetado, "
+"ele pode optar por implementar ou ignorar o patch."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1449
-#, fuzzy
 msgid "Process summary: A contributor commits code"
-msgstr "Resumo do processo: um colaborador confirma o código"
+msgstr "Resumo do processo: um colaborador envia o código"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2320,14 +2255,12 @@ msgstr "Resumo do processo: um colaborador confirma o código"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1450
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-contrib' md5='__failed__'"
-msgstr "ref externo = 'proc-contrib' md5 = '__ failed__'"
+msgstr "external ref='proc-contrib' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1454
-#, fuzzy
 msgid ""
 "The difference when a contributor makes a code contribution is that he "
 "submits the code through the Bugzilla interface. This report is picked up by "
@@ -2335,55 +2268,47 @@ msgid ""
 msgstr ""
 "A diferença quando um colaborador faz uma contribuição de código é que ele "
 "envia o código através da interface do Bugzilla. Este relatório é escolhido "
-"pelo mantenedor que revisa o código e o confirma."
+"pelo mantenedor que revisa o código e faz o seu commit."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1461
-#, fuzzy
 msgid "Hats included in this process are: <_:orderedlist-1/>"
-msgstr "Chapéus incluídos neste processo são: <_:orderedlist-1/>"
+msgstr "Hats incluídos neste processo são: <_:orderedlist-1/>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1487
-#, fuzzy
 msgid "Core election"
-msgstr "Eleição central"
+msgstr "Eleição do Core"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1492
-#, fuzzy
 msgid "The first Core election was held September 2000"
-msgstr "A primeira eleição do núcleo foi realizada em setembro de 2000"
+msgstr "A primeira eleição do core foi realizada em setembro de 2000"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1489
-#, fuzzy
 msgid ""
 "Core elections are held at least every two years. <_:footnote-1/> Nine core "
 "members are elected. New elections are held if the number of core members "
 "drops below seven. New elections can also be held should at least 1/3 of the "
 "active committers demand this."
 msgstr ""
-"As eleições principais são realizadas pelo menos a cada dois anos. <_:"
-"footnote-1/> Nove membros principais são eleitos. Novas eleições serão "
-"realizadas se o número de membros do núcleo cair abaixo de sete. Novas "
-"eleições também podem ser realizadas se pelo menos 1/3 dos committers ativos "
-"exigirem isso."
+"As eleições do core são realizadas pelo menos a cada dois anos. <_:footnote-"
+"1/> Nove membros do core são eleitos. Novas eleições serão realizadas se o "
+"número de membros do core ficar abaixo de sete. Novas eleições também podem "
+"ser realizadas se pelo menos 1/3 dos committers ativos exigirem isso."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1499
-#, fuzzy
 msgid ""
 "When an election is to take place, core announces this at least 6 weeks in "
 "advance, and appoints an election manager to run the elections."
 msgstr ""
-"Quando uma eleição é realizada, o núcleo anuncia isso com pelo menos 6 "
-"semanas de antecedência e nomeia um gerente eleitoral para dirigir as "
-"eleições."
+"Quando uma eleição é realizada, o core anuncia isso com pelo menos 6 semanas "
+"de antecedência e nomeia um gerente eleitoral para dirigir as eleições."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1506
-#, fuzzy
 msgid ""
 "Only committers can be elected into core. The candidates need to submit "
 "their candidacy at least one week before the election starts, but can refine "
@@ -2396,25 +2321,23 @@ msgstr ""
 "apresentar sua candidatura pelo menos uma semana antes do início das "
 "eleições, mas podem refinar suas declarações até o início da votação. Eles "
 "são apresentados na <link xlink:href=\"http://election.uk.freebsd.org/"
-"candidates.html\"> lista de candidatos </link>. Ao escrever suas declarações "
-"eleitorais, os candidatos devem responder a algumas perguntas padrão "
+"candidates.html\">lista de candidatos</link>. Ao escrever suas declarações "
+"eleitorais, os candidatos devem responder a algumas perguntas padrões "
 "submetidas pelo gerente eleitoral."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1516
-#, fuzzy
 msgid ""
 "During elections, the rule that a committer must have committed during the "
 "12 past months is followed strictly. Only these committers are eligible to "
 "vote."
 msgstr ""
-"Durante as eleições, a regra que um committer deve ter cometido durante os "
-"12 meses passados ​​é seguida estritamente. Apenas esses committers estão "
-"qualificados para votar."
+"Durante as eleições, a regra que um committer deve ter feito um commit "
+"durante os 12 meses passados ​​é seguida estritamente. Apenas esses "
+"committers estão qualificados para votar."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1523
-#, fuzzy
 msgid ""
 "When voting, the committer may vote once in support of up to nine nominees. "
 "The voting is done over a period of four weeks with reminders being posted "
@@ -2423,33 +2346,30 @@ msgid ""
 msgstr ""
 "Ao votar, o committer pode votar uma vez em apoio de até nove candidatos. A "
 "votação é feita durante um período de quatro semanas com lembretes sendo "
-"postados na lista de discussão <quote> desenvolvedores </quote> que está "
-"disponível para todos os committers."
+"postados na lista de discussão <quote>developers</quote> que está disponível "
+"para todos os committers."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1530
-#, fuzzy
 msgid ""
 "The election results are released one week after the election ends, and the "
 "new core team takes office one week after the results have been posted."
 msgstr ""
 "Os resultados das eleições são divulgados uma semana após o término da "
-"eleição, e a nova equipe principal toma posse uma semana após o lançamento "
-"dos resultados."
+"eleição, e a nova equipe do core toma posse uma semana após o lançamento dos "
+"resultados."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1536
-#, fuzzy
 msgid ""
 "Should there be a voting tie, this will be resolved by the new, "
 "unambiguously elected core members."
 msgstr ""
-"Se houver um empate de votação, isso será resolvido pelos novos membros "
-"principais, sem ambiguidade, eleitos."
+"Se houver um empate de votação, isso será resolvido pelos novos membros do "
+"core, eleitos sem ambiguidade."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1541
-#, fuzzy
 msgid ""
 "Votes and candidate statements are archived, but the archives are not "
 "publicly available."
@@ -2459,9 +2379,8 @@ msgstr ""
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1548
-#, fuzzy
 msgid "Process summary: Core elections"
-msgstr "Resumo do processo: eleições principais"
+msgstr "Resumo do processo: Eleições do Core"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2469,41 +2388,36 @@ msgstr "Resumo do processo: eleições principais"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1549
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-elections' md5='__failed__'"
-msgstr "ref = 'proc-elections' md5 = '__ failed__'"
+msgstr "external ref='proc-elections' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1553
-#, fuzzy
 msgid ""
 "Core announces the election and selects an election manager. He prepares the "
 "elections, and when ready, candidates can announce their candidacies through "
 "submitting their statements. The committers then vote. After the vote is "
 "over, the election results are announced and the new core team takes office."
 msgstr ""
-"Core anuncia a eleição e seleciona um gerente eleitoral. Ele prepara as "
+"O Core anuncia a eleição e seleciona um gerente eleitoral. Ele prepara as "
 "eleições e, quando estiver pronto, os candidatos podem anunciar suas "
 "candidaturas através da apresentação de suas declarações. Os committers "
 "então votam. Após o término da votação, os resultados das eleições são "
-"anunciados e a nova equipe principal toma posse."
+"anunciados e a nova equipe do core toma posse."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1562
-#, fuzzy
 msgid "Hats in core elections are: <_:itemizedlist-1/>"
-msgstr "Chapéus nas eleições principais são: <_:itemizedlist-1/>"
+msgstr "Hats nas eleições do Core são: <_:itemizedlist-1/>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1588
-#, fuzzy
 msgid "Development of new features"
 msgstr "Desenvolvimento de novos recursos"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1590
-#, fuzzy
 msgid ""
 "Within the project there are sub-projects that are working on new features. "
 "These projects are generally done by one person <citation><xref linkend="
@@ -2514,17 +2428,16 @@ msgid ""
 "the -STABLE branch, it is merged to the -STABLE branch."
 msgstr ""
 "Dentro do projeto existem subprojetos que estão trabalhando em novos "
-"recursos. Esses projetos geralmente são feitos por uma pessoa <citation> "
-"<xref linkend=\"jorgensen2001\"/> </citation>. Todo projeto é livre para "
-"organizar o desenvolvimento como achar melhor. No entanto, quando o projeto "
-"é mesclado à ramificação -CURRENT, ele deve seguir as diretrizes do projeto. "
-"Quando o código foi bem testado na ramificação -CURRENT e considerado "
-"estável o suficiente e relevante para a ramificação -STABLE, ele é mesclado "
-"à ramificação -STABLE."
+"recursos. Esses projetos geralmente são feitos por uma pessoa "
+"<citation><xref linkend=\"jorgensen2001\"/></citation>. Todo projeto é livre "
+"para organizar o desenvolvimento como achar melhor. No entanto, quando é "
+"feito o merge do projeto (aplicado) à branch -CURRENT, ele deve seguir as "
+"diretrizes do projeto. Quando o código foi bem testado na branch -CURRENT e "
+"considerado estável o suficiente e relevante para a branch -STABLE, ele é "
+"mergeado à branch -STABLE."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1602
-#, fuzzy
 msgid ""
 "The requirements of the project are given by developer wishes, requests from "
 "the community in terms of direct requests by mail, Problem Reports, "
@@ -2537,7 +2450,7 @@ msgid ""
 "the responsibility. All requests, their distribution and follow-up are "
 "handled by the <xref linkend=\"tool-bugzilla\"/> tool."
 msgstr ""
-"Os requisitos do projeto são fornecidos por desejos do desenvolvedor, "
+"Os requisitos do projeto são fornecidos como o desenvolvedor desejar, "
 "solicitações da comunidade em termos de solicitações diretas por correio, "
 "relatórios de problemas, financiamento comercial para o desenvolvimento de "
 "recursos ou contribuições da comunidade científica. Os desejos que estão sob "
@@ -2551,7 +2464,6 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1617
-#, fuzzy
 msgid ""
 "Requirements analysis happens in two ways. The requests that come in are "
 "discussed on mailing lists, both within the main project and in the sub-"
@@ -2571,7 +2483,6 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1628
-#, fuzzy
 msgid ""
 "As the requests are prioritised by the individual developers on the basis of "
 "doing what they find interesting, necessary or are funded to do, there is no "
@@ -2586,24 +2497,21 @@ msgstr ""
 "como requisitos e acompanhamento de sua implementação correta. No entanto, a "
 "maioria dos desenvolvedores tem uma visão compartilhada de quais problemas "
 "são mais importantes e podem solicitar diretrizes da equipe de engenharia de "
-"versões."
+"release."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1656
-#, fuzzy
 msgid ""
 "More and more tests are however performed when building the system "
 "(<quote>make world</quote>). These tests are however a very new addition and "
 "no systematic framework for these tests have yet been created."
 msgstr ""
 "No entanto, mais e mais testes são executados ao construir o sistema "
-"(<quote> make world </quote>). Esses testes são, no entanto, uma adição "
-"muito nova e ainda não foi criada nenhuma estrutura sistemática para esses "
-"testes."
+"(<quote>make world</quote>). Esses testes são, no entanto, uma adição muito "
+"nova e ainda não foi criada nenhuma estrutura sistemática para esses testes."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1641
-#, fuzzy
 msgid ""
 "The verification phase of the project is two-fold. Before committing code to "
 "the current-branch, developers request their code to be reviewed by their "
@@ -2616,37 +2524,34 @@ msgid ""
 "usually not collected by the main project and are usually removed before the "
 "code is committed to the current branch. <_:footnote-1/>"
 msgstr ""
-"A fase de verificação do projeto é dupla. Antes de confirmar o código para a "
-"ramificação atual, os desenvolvedores solicitam que seu código seja revisado "
-"por seus pares. Esta revisão é, na maior parte, feita por testes funcionais, "
-"mas também a revisão de código é importante. Quando o código é confirmado "
-"para a filial, um teste funcional mais amplo ocorrerá, o que pode acionar "
-"mais revisões de código e depuração, caso o código não se comporte conforme "
-"o esperado. Esta segunda forma de verificação pode ser considerada como "
-"verificação estrutural. Embora os próprios subprojetos possam escrever "
-"testes formais, como testes de unidade, eles geralmente não são coletados "
-"pelo projeto principal e geralmente são removidos antes que o código seja "
-"confirmado na ramificação atual. <_:footnote-1/>"
+"A fase de verificação do projeto é dupla. Antes de fazer o commit do código "
+"para a branch atual, os desenvolvedores solicitam que seu código seja "
+"revisado por seus pares. Esta revisão é, na maior parte, feita por testes "
+"funcionais, mas a revisão de código também é importante. Quando o código é "
+"\"committed\" para a branch, um teste funcional mais amplo ocorrerá, o que "
+"pode acionar mais revisões de código e depuração, caso o código não se "
+"comporte conforme o esperado. Esta segunda forma de verificação pode ser "
+"considerada como verificação estrutural. Embora os próprios subprojetos "
+"possam escrever testes formais, como testes de unidade, eles geralmente não "
+"são coletados pelo projeto principal e geralmente são removidos antes que o "
+"código seja \"committed\" na branch atual. <_:footnote-1/>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1671
-#, fuzzy
 msgid "Maintenance"
 msgstr "Manutenção"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1687
-#, fuzzy
 msgid ""
 "sendmail and named are examples of code that has been merged from other "
 "platforms."
 msgstr ""
-"sendmail e named são exemplos de código que foi mesclado de outras "
-"plataformas."
+"sendmail e named são exemplos de código que foi feito merge (aplicado o "
+"código) de outras plataformas."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1673
-#, fuzzy
 msgid ""
 "It is an advantage to the project to for each area of the source have at "
 "least one person that knows this area well. Some parts of the code have "
@@ -2658,31 +2563,29 @@ msgid ""
 "code comes from if it is contributed code, and apply patches submitted by "
 "the community or write fixes to issues that are discovered."
 msgstr ""
-"É uma vantagem para o projeto que para cada área da fonte tenha pelo menos "
-"uma pessoa que conheça bem essa área. Algumas partes do código designaram "
-"mantenedores. Outros têm mantenedores de fato, e algumas partes do sistema "
-"não possuem mantenedores. O mantenedor é geralmente uma pessoa do subprojeto "
-"que escreveu e integrou o código, ou alguém que o portou da plataforma para "
-"a qual foi escrito. <_:footnote-1/> O trabalho do mantenedor é garantir que "
-"o código esteja em sincronia com o projeto de onde vem o código, se for um "
-"código contribuído, e aplicar correções enviadas pela comunidade ou escrever "
-"correções em problemas descobertos."
+"É uma vantagem para o projeto que para cada área do código fonte tenha pelo "
+"menos uma pessoa que conheça bem essa área. Algumas partes do código "
+"designaram mantenedores. Outros têm mantenedores de fato, e algumas partes "
+"do sistema não possuem mantenedores. O mantenedor é geralmente uma pessoa do "
+"subprojeto que escreveu e integrou o código, ou alguém que o portou da "
+"plataforma para a qual foi escrito. <_:footnote-1/> O trabalho do mantenedor "
+"é garantir que o código esteja em sincronia com o projeto de onde vem o "
+"código, se for um código contribuído, e aplicar correções enviadas pela "
+"comunidade ou escrever correções em problemas descobertos."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1700
-#, fuzzy
 msgid ""
 "The main bulk of work that is put into the FreeBSD project is maintenance. "
 "<citation><xref linkend=\"jorgensen2001\"/></citation> has made a figure "
 "showing the life cycle of changes."
 msgstr ""
 "A maior parte do trabalho que é colocado no projeto FreeBSD é a manutenção. "
-"<citation> <xref linkend=\"jorgensen2001\"/> </citation> fez uma figura "
+"<citation><xref linkend=\"jorgensen2001\"/></citation> fez uma figura "
 "mostrando o ciclo de vida das mudanças."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1714
-#, fuzzy
 msgid ""
 "Here <quote>development release</quote> refers to the -CURRENT branch while "
 "<quote>production release</quote> refers to the -STABLE branch. The "
@@ -2692,17 +2595,16 @@ msgid ""
 "that can trigger more review, and debugging when the code is included in the "
 "-CURRENT branch."
 msgstr ""
-"Aqui, <quote> release de desenvolvimento </quote> refere-se ao ramo -"
-"CURRENT, enquanto o <quote> release de produção </quote> refere-se ao ramo -"
-"STABLE. O <quote> teste de pré-consolidação </quote> é o teste funcional por "
-"desenvolvedores de peers quando solicitado a fazê-lo ou a experimentação do "
-"código para determinar o status do subprojeto. <quote> Depuração paralela </"
-"quote> é o teste funcional que pode acionar mais revisões e depuração quando "
-"o código é incluído na ramificação -CURRENT."
+"Aqui, <quote>desenvolvimento de release (versão)</quote> refere-se a branch -"
+"CURRENT, enquanto o <quote>release em produção</quote> refere-se a branch -"
+"STABLE. O <quote>teste de pré-commit</quote> é o teste funcional feito por "
+"desenvolvedores de peers quando solicitado a fazê-lo ou a testar o código "
+"para determinar o status do subprojeto. <quote>Debug paralelo</quote> é o "
+"teste funcional que pode acionar mais revisões e debugs quando o código é "
+"incluído na branch -CURRENT."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1727
-#, fuzzy
 msgid ""
 "As of this writing, there were 269 committers in the project. When they "
 "commit a change to a branch, that constitutes a new release. It is very "
@@ -2714,19 +2616,18 @@ msgid ""
 "better feedback that again spurs more maintenance and ultimately should "
 "create a better product."
 msgstr ""
-"Como desta escrita, havia 269 committers no projeto. Quando eles cometem uma "
-"mudança em uma ramificação, isso constitui uma nova liberação. É muito comum "
-"os usuários da comunidade rastrearem um determinado ramo. A existência "
-"imediata de um novo lançamento torna as mudanças amplamente disponíveis "
-"imediatamente e permite um feedback rápido da comunidade. Isso também dá à "
-"comunidade o tempo de resposta que eles esperam em questões que são "
-"importantes para eles. Isso torna a comunidade mais engajada e, assim, "
-"permite mais e melhor feedback que estimula mais a manutenção e, por fim, "
-"deve criar um produto melhor."
+"A partir desta escrita, havia 269 committers no projeto. Quando eles fazem o "
+"commit de uma mudança em uma branch, isso constitui uma nova release "
+"(versão). É muito comum os usuários da comunidade rastrearem uma determinada "
+"branch. A existência imediata de uma nova release torna as mudanças "
+"amplamente disponíveis imediatamente e permite um feedback rápido da "
+"comunidade. Isso também dá à comunidade o tempo de resposta que eles esperam "
+"em questões que são importantes para eles. Isso torna a comunidade mais "
+"engajada e, assim, permite mais e melhores feedbacks que estimulam mais a "
+"manutenção e, por fim, deverá criar um produto melhor."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1740
-#, fuzzy
 msgid ""
 "Before making changes to code in parts of the tree that has a history "
 "unknown to the committer, the committer is required to read the commit logs "
@@ -2736,17 +2637,15 @@ msgstr ""
 "Antes de fazer alterações no código em partes da árvore que tem um histórico "
 "desconhecido para o committer, o committer é obrigado a ler os logs de "
 "commit para ver porque certos recursos são implementados da maneira que eles "
-"estão, para não cometer erros que anteriormente pensado ou resolvido."
+"estão, para não cometer erros que foram anteriormente pensado ou resolvido."
 
 #. (itstool) path: section/title
 #: book.translate.xml:1753
-#, fuzzy
 msgid "Problem reporting"
-msgstr "Relatório de problemas"
+msgstr "Relatório de Problemas"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1755
-#, fuzzy
 msgid ""
 "Before FreeBSD 10, FreeBSD included a problem reporting tool called "
 "<command>send-pr</command>. Problems include bug reports, feature requests, "
@@ -2757,17 +2656,15 @@ msgid ""
 "link>."
 msgstr ""
 "Antes do FreeBSD 10, o FreeBSD incluía uma ferramenta de relatório de "
-"problemas chamada <command> send-pr </command>. Os problemas incluem "
+"problemas chamada <command>send-pr</command>. Os problemas incluem "
 "relatórios de bugs, solicitações de recursos, aprimoramentos de recursos e "
 "avisos de novas versões de software externo incluídas no projeto. Embora o "
-"<command> send-pr </command> esteja disponível, os usuários e "
-"desenvolvedores são incentivados a enviar problemas usando nosso <link xlink:"
-"href=\"https://bugs.freebsd.org/submit/\"> formulário de relatório de "
-"problemas </link>."
+"<command>send-pr</command> esteja disponível, os usuários e desenvolvedores "
+"são incentivados a enviar problemas usando nosso <link xlink:href=\"https://"
+"bugs.freebsd.org/submit/\">formulário de relatório de problemas</link>."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1765
-#, fuzzy
 msgid ""
 "Problem reports are sent to an email address where it is inserted into the "
 "Problem Reports maintenance database. A <xref linkend=\"role-bugbuster\"/> "
@@ -2789,11 +2686,11 @@ msgstr ""
 "inseridos no banco de dados de manutenção de Relatórios de Problemas. Um "
 "<xref linkend=\"role-bugbuster\"/> classifica o problema e o envia ao grupo "
 "ou mantenedor correto dentro do projeto. Depois que alguém assume a "
-"responsabilidade pelo relatório, o relatório está sendo analisado. Esta "
+"responsabilidade pelo relatório, o relatório estará sendo analisado. Esta "
 "análise inclui verificar o problema e pensar em uma solução para o problema. "
 "Muitas vezes é necessário feedback do criador do relatório ou até mesmo da "
 "comunidade do FreeBSD. Uma vez que um patch para o problema é feito, o "
-"originador pode ser solicitado a testá-lo. Finalmente, o patch de trabalho é "
+"criador pode ser solicitado a testá-lo. Finalmente, o patch de trabalhado é "
 "integrado ao projeto e documentado, se aplicável. Ele passa pelo ciclo de "
 "manutenção regular, conforme descrito na seção <xref linkend=\"model-"
 "maintenance\"/>. Estes são os estados em que um relatório de problemas pode "
@@ -2804,9 +2701,8 @@ msgstr ""
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1789
-#, fuzzy
 msgid "Process summary: problem reporting"
-msgstr "Resumo do processo: relatório de problemas"
+msgstr "Resumo do processo: Relatório de Pproblemas"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2814,14 +2710,12 @@ msgstr "Resumo do processo: relatório de problemas"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1790
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-pr' md5='__failed__'"
-msgstr "ref externo = 'proc-pr' md5 = '__ failed__'"
+msgstr "external ref='proc-pr' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1794
-#, fuzzy
 msgid ""
 "A problem is reported by the report originator. It is then classified by a "
 "bugbuster and handed to the correct maintainer. He verifies the problem and "
@@ -2829,65 +2723,58 @@ msgid ""
 "create a working patch. This patch is then committed and the problem report "
 "is closed."
 msgstr ""
-"Um problema é relatado pelo originador do relatório. É então classificado "
-"por um bugbuster e entregue ao mantenedor correto. Ele verifica o problema e "
-"discute o problema com o originador até que ele tenha informações "
-"suficientes para criar um patch de trabalho. Este patch é então confirmado e "
-"o relatório de problemas é fechado."
+"Um problema é relatado pelo criador do relatório. É então classificado por "
+"um bugbuster e entregue ao mantenedor correto. Ele verifica o problema e "
+"discute o problema com o criador até que ele tenha informações suficientes "
+"para criar um patch de trabalhado. Este patch é então \"committed\" e o "
+"relatório de problemas é fechado."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1804
-#, fuzzy
 msgid "The roles included in this process are: <_:orderedlist-1/>"
 msgstr "As funções incluídas neste processo são: <_:orderedlist-1/>"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1819
-#, fuzzy
 msgid ""
 "<citation><xref linkend=\"freebsd-handle-pr\"/></citation>. <citation><xref "
 "linkend=\"freebsd-send-pr\"/></citation>"
 msgstr ""
-"<citation> <xref linkend=\"freebsd-handle-pr\"/></citation>. <citation> "
-"<xref linkend=\"freebsd-send-pr\"/></citation>"
+"<citation><xref linkend=\"freebsd-handle-pr\"/></citation>. <citation><xref "
+"linkend=\"freebsd-send-pr\"/></citation>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1827
-#, fuzzy
 msgid "Reacting to misbehavior"
 msgstr "Reagindo ao mau comportamento"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1838
-#, fuzzy
 msgid ""
 "Committing during code freezes without the approval of the Release "
 "Engineering team - 2 days"
 msgstr ""
-"Confirmação durante o código congela sem a aprovação da equipe do Release "
-"Engineering - 2 dias"
+"Fazer um commit durante o code freeze (tempo de congelamento de código) sem "
+"a aprovação da equipe dos Engenheiros de Release - 2 dias"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1842
-#, fuzzy
 msgid "Committing to a security branch without approval - 2 days"
-msgstr "Compromisso com um ramo de segurança sem aprovação - 2 dias"
+msgstr "Fazer um commit em uma branch de segurança sem aprovação - 2 dias"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1845
-#, fuzzy
 msgid "Commit wars - 5 days to all participating parties"
-msgstr "Cometer guerras - 5 dias para todas as partes participantes"
+msgstr ""
+"Guerras por causa de commit - 5 dias para todas as partes participantes"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1848
-#, fuzzy
 msgid "Impolite or inappropriate behavior - 5 days"
-msgstr "Comportamento descortês ou inadequado - 5 dias"
+msgstr "Comportamento deselegante ou inapropriado - 5 dias"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1829
-#, fuzzy
 msgid ""
 "<citation><xref linkend=\"freebsd-committer\"/></citation> has a number of "
 "rules that committers should follow. However, it happens that these rules "
@@ -2896,16 +2783,15 @@ msgid ""
 "the committer's commit privileges. <_:itemizedlist-1/> <citation><xref "
 "linkend=\"ref-freebsd-trenches\"/></citation>"
 msgstr ""
-"<citation> <xref linkend=\"freebsd-committer\"/> </citation> tem um número "
-"de regras que os committers devem seguir. No entanto, acontece que essas "
-"regras estão quebradas. As seguintes regras existem para poder reagir ao mau "
-"comportamento. Eles especificam quais ações resultarão em quanto tempo uma "
-"suspensão os privilégios de confirmação do committer. <_:itemizedlist-1/> "
-"<citation> <xref linkend=\"ref-freebsd-trenches\"/></citation>"
+"<citation><xref linkend=\"freebsd-committer\"/></citation> tem um número de "
+"regras que os committers devem seguir. No entanto, acontece que essas regras "
+"são quebradas. As seguintes regras existem para poder reagir ao mau "
+"comportamento. Eles especificam quais ações resultarão e em quanto tempo "
+"será uma suspensão dos privilégios de commit do committer. <_:itemizedlist-1/"
+"><citation><xref linkend=\"ref-freebsd-trenches\"/></citation>"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1856
-#, fuzzy
 msgid ""
 "For the suspensions to be efficient, any single core member can implement a "
 "suspension before discussing it on the <quote>core</quote> mailing list. "
@@ -2915,18 +2801,17 @@ msgid ""
 "controversy). All suspensions are posted to the <quote>developers</quote> "
 "mailing list, a list available to committers only."
 msgstr ""
-"Para que as suspensões sejam eficientes, qualquer membro central único pode "
-"implementar uma suspensão antes de discuti-la na lista de discussão <quote> "
-"core </quote>. Os infratores repetidos podem, com um voto de 2/3 por núcleo, "
-"receber penalidades mais duras, incluindo a remoção permanente dos "
-"privilégios de confirmação. (No entanto, este último é sempre visto como um "
+"Para que as suspensões sejam eficientes, qualquer membro do core pode "
+"implementar uma suspensão antes de discuti-la na lista de discussão "
+"<quote>core</quote>. Os infratores reincidentes podem, com um voto de 2/3 do "
+"core, receber penalidades mais duras, incluindo a remoção permanente dos "
+"privilégios de commit. (No entanto, este último é sempre visto como um "
 "último recurso, devido à sua tendência inerente de criar controvérsia). "
-"Todas as suspensões são postadas na lista de discussão <quote> "
-"desenvolvedores </quote>, uma lista disponível apenas para committers."
+"Todas as suspensões são postadas na lista de discussão <quote>developers</"
+"quote>, uma lista disponível apenas para committers."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1868
-#, fuzzy
 msgid ""
 "It is important that you cannot be suspended for making technical errors. "
 "All penalties come from breaking social etiquette."
@@ -2936,19 +2821,16 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1873
-#, fuzzy
 msgid "Hats involved in this process: <_:itemizedlist-1/>"
-msgstr "Chapéus envolvidos neste processo: <_:itemizedlist-1/>"
+msgstr "Hats envolvidos neste processo: <_:itemizedlist-1/>"
 
 #. (itstool) path: section/title
 #: book.translate.xml:1888
-#, fuzzy
 msgid "Release engineering"
-msgstr "Engenharia de Liberação"
+msgstr "Engenharia de Release (Versão)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:1890
-#, fuzzy
 msgid ""
 "The FreeBSD project has a Release Engineering team with a principal release "
 "engineer that is responsible for creating releases of FreeBSD that can be "
@@ -2961,20 +2843,19 @@ msgid ""
 "release engineer, a representative for the release engineering team is meant."
 ""
 msgstr ""
-"O projeto FreeBSD possui uma equipe de Engenharia de Lançamentos com um "
-"engenheiro de lançamento principal responsável por criar versões do FreeBSD "
-"que podem ser trazidas para a comunidade de usuários através da rede ou "
-"vendidas em lojas de varejo. Como o FreeBSD está disponível em várias "
-"plataformas e as liberações para as diferentes arquiteturas são "
-"disponibilizadas ao mesmo tempo, a equipe tem uma pessoa responsável por "
-"cada arquitetura. Além disso, há funções na equipe responsável por coordenar "
-"os esforços de garantia de qualidade, construir um conjunto de pacotes e ter "
-"um conjunto atualizado de documentos. Ao se referir ao engenheiro de "
-"liberação, um representante da equipe de engenharia de liberação é indicado."
+"O projeto FreeBSD possui uma equipe de Engenharia de Release com um "
+"engenheiro de release principal responsável por criar versões do FreeBSD que "
+"podem ser trazidas para a comunidade de usuários através da rede ou vendidas "
+"em lojas de varejo. Como o FreeBSD está disponível em várias plataformas e "
+"as releases para as diferentes arquiteturas são disponibilizadas ao mesmo "
+"tempo, a equipe tem uma pessoa responsável por cada arquitetura. Além disso, "
+"há cargos na equipe responsável por coordenar os esforços de garantia de "
+"qualidade, construir um conjunto de pacotes e ter um conjunto atualizado de "
+"documentos. Ao se referir ao engenheiro de release, um representante da "
+"equipe de engenharia de release é indicado."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1905
-#, fuzzy
 msgid ""
 "When a release is coming, the FreeBSD project changes shape somewhat. A "
 "release schedule is made containing feature- and code-freezes, release of "
@@ -2990,63 +2871,57 @@ msgstr ""
 "Quando uma versão está chegando, o projeto do FreeBSD muda de forma um pouco."
 " Um cronograma de lançamento é feito contendo congelamentos de recursos e "
 "códigos, liberação de versões intermediárias e a versão final. Um "
-"congelamento de recursos significa que nenhum novo recurso pode ser "
-"confirmado na filial sem o consentimento explícito dos engenheiros de "
-"liberação. O congelamento de código significa que nenhuma alteração no "
-"código (como bugs-fixes) pode ser confirmada sem o consentimento explícito "
-"dos engenheiros de liberação. Esse congelamento de recurso e código é "
-"conhecido como estabilização. Durante o processo de lançamento, o engenheiro "
-"de versão tem a autoridade total para reverter para versões mais antigas de "
-"código e, assim, \"recuar\" as alterações, caso ache que as alterações não "
-"são adequadas para serem incluídas na versão."
+"congelamento de recursos significa que nenhum novo recurso pode ser aplicado "
+"na branch sem o consentimento explícito dos engenheiros de release. O "
+"congelamento de código significa que nenhuma alteração no código (como bugs-"
+"fixes) pode ser aplicada sem o consentimento explícito dos engenheiros de "
+"release. Esse congelamento de recurso e código é conhecido como "
+"estabilização. Durante o processo de lançamento, o engenheiro de release tem "
+"a autoridade total para reverter para versões mais antigas de código e, "
+"assim, \"desfazer\" as alterações, caso ache que as alterações não são "
+"adequadas para serem incluídas na versão."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1923
-#, fuzzy
 msgid ""
 ".0 releases are the first release of a major version. These are branched of "
 "the -CURRENT branch and have a significantly longer release engineering "
 "cycle due to the unstable nature of the -CURRENT branch"
 msgstr ""
-".0 lançamentos são o primeiro lançamento de uma versão principal. Eles são "
-"ramificados da ramificação -CURRENT e têm um ciclo de engenharia de "
-"liberação significativamente maior devido à natureza instável da ramificação "
-"-CURRENT"
+"Releases .0 são o primeiro lançamento de uma versão principal. Eles são "
+"branches da branch -CURRENT e têm um ciclo de engenharia de release "
+"significativamente maior devido à natureza instável da branch -CURRENT"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1929
-#, fuzzy
 msgid ""
 ".X releases are releases of the -STABLE branch. They are scheduled to come "
 "out every 4 months."
 msgstr ""
-"As versões .X são lançamentos da ramificação -STABLE. Eles estão programados "
-"para sair a cada 4 meses."
+"As versões .X são releases da branch -STABLE. Elas estão programadas para "
+"sair a cada 4 meses."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1933
-#, fuzzy
 msgid ""
 ".X.Y releases are security releases that follow the .X branch. These come "
 "out only when sufficient security fixes have been merged since the last "
 "release on that branch. New features are rarely included, and the security "
 "team is far more involved in these than in regular releases."
 msgstr ""
-"As versões .X.Y são versões de segurança que seguem a ramificação .X. Eles "
-"saem somente quando correções de segurança suficientes foram mescladas desde "
-"o último release nessa ramificação. Novos recursos raramente são incluídos e "
-"a equipe de segurança está muito mais envolvida nesses recursos do que em "
+"As versões .X.Y são versões de segurança que seguem a branch .X. Eles saem "
+"somente quando correções de segurança suficientes foram feito aplicadas "
+"desde o último release nessa branch. Novos recursos raramente são incluídos "
+"e a equipe de segurança está muito mais envolvida nesses recursos do que em "
 "releases regulares."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1920
-#, fuzzy
 msgid "There are three different kinds of releases: <_:orderedlist-1/>"
-msgstr "Existem três tipos diferentes de lançamentos: <_:orderedlist-1/>"
+msgstr "Existem três tipos diferentes de releases: <_:orderedlist-1/>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1970
-#, fuzzy
 msgid ""
 "Many commercial vendors use these images to create CD-ROMs that are sold in "
 "retail outlets."
@@ -3056,7 +2931,6 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:1946
-#, fuzzy
 msgid ""
 "For releases of the -STABLE-branch, the release process starts 45 days "
 "before the anticipated release date. During the first phase, the first 15 "
@@ -3077,30 +2951,29 @@ msgid ""
 "that may well be in-process and subject to change before the PGP-signed "
 "message is sent. <_:footnote-1/>."
 msgstr ""
-"Para liberações da ramificação -STABLE, o processo de liberação inicia 45 "
-"dias antes da data de lançamento prevista. Durante a primeira fase, os "
-"primeiros 15 dias, os desenvolvedores mesclam as alterações que tiveram no -"
-"CURRENT que desejam ter no release para a ramificação do release. Quando "
-"esse período terminar, o código entra em um congelamento de código de 15 "
-"dias, no qual apenas correções de bugs, atualizações de documentação, "
-"correções relacionadas à segurança e pequenas alterações de driver de "
-"dispositivo são permitidas. Essas alterações devem ser aprovadas pelo "
-"engenheiro de lançamento com antecedência. No início do último período de 15 "
-"dias, um candidato a lançamento é criado para testes generalizados. É menos "
-"provável que as atualizações sejam permitidas durante esse período, exceto "
-"por importantes correções de bugs e atualizações de segurança. Neste período "
-"final, todos os lançamentos são considerados candidatos a lançamento. No "
-"final do processo de lançamento, uma versão é criada com o novo número da "
-"versão, incluindo distribuições binárias em sites e a criação de imagens em "
-"CD-ROM. No entanto, o lançamento não é considerado \"realmente liberado\" "
-"até que uma mensagem assinada afirmando exatamente isso, seja enviada para a "
-"lista de discussão freebsd-announce; Qualquer coisa rotulada como "
-"\"release\" antes disso pode estar em processo e sujeita a alterações antes "
-"do envio da mensagem assinada pelo PGP. <_:footnote-1/>."
+"Para releases da branch -STABLE, o processo de release inicia 45 dias antes "
+"da data de lançamento prevista. Durante a primeira fase, os primeiros 15 "
+"dias, os desenvolvedores aplicam as alterações que tiveram no -CURRENT e que "
+"desejam ter na versão para a branch do release. Quando esse período "
+"terminar, o código entra em um congelamento de código de 15 dias, no qual "
+"apenas correções de bugs, atualizações de documentação, correções "
+"relacionadas à segurança e pequenas alterações de driver de dispositivo são "
+"permitidas. Essas alterações devem ser aprovadas pelo engenheiro de release "
+"com antecedência. No início do último período de 15 dias, um candidato a "
+"reçease é criado para testes generalizados. É menos provável que as "
+"atualizações sejam permitidas durante esse período, exceto por importantes "
+"correções de bugs e atualizações de segurança. Neste período final, todos os "
+"releases são considerados candidatos a release. No final do processo de "
+"release, uma release é criada com o novo número da versão, incluindo "
+"distribuições binárias em sites e a criação de imagens em CD-ROM. No "
+"entanto, a release não é considerado \"realmente liberado\" até que uma "
+"mensagem <xref linkend=\"tool-pgp\"/>-assinada afirmando exatamente isso, "
+"seja enviada para a lista de discussão freebsd-announce; Qualquer coisa "
+"rotulada como \"release\" antes disso pode estar em processo e sujeita a "
+"alterações antes do envio da mensagem assinada pelo PGP. <_:footnote-1/>."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1979
-#, fuzzy
 msgid ""
 "The releases of the -CURRENT-branch (that is, all releases that end with "
 "<quote>.0</quote>) are very similar, but with twice as long timeframe. It "
@@ -3114,22 +2987,21 @@ msgid ""
 "development on the main development branch can continue. Other than these "
 "differences, the release engineering processes are alike."
 msgstr ""
-"Os lançamentos da ramificação -CURRENT (ou seja, todas as liberações que "
-"terminam com <quote> .0 </quote>) são muito semelhantes, mas com o dobro do "
-"tempo. Começa 8 semanas antes do lançamento com o anúncio da linha do tempo "
-"de liberação. Duas semanas após o processo de lançamento, o congelamento de "
-"recursos é iniciado e os ajustes de desempenho devem ser mantidos ao mínimo. "
-"Quatro semanas antes do lançamento, uma versão beta oficial é "
-"disponibilizada. Duas semanas antes do lançamento, o código é oficialmente "
-"transformado em uma nova versão. Esta versão recebe status de release "
-"candidate e, como na engenharia de release do -STABLE, o congelamento de "
-"código do release candidate é endurecido. No entanto, o desenvolvimento no "
-"principal ramo de desenvolvimento pode continuar. Além dessas diferenças, os "
-"processos de engenharia de lançamento são semelhantes."
+"Os lançamentos da branch -CURRENT (ou seja, todas as releases que terminam "
+"com <quote>.0</quote>) são muito semelhantes, mas com o dobro do prazo. "
+"Começa 8 semanas antes do lançamento com o anúncio da linha do tempo da "
+"release. Duas semanas após o processo de release, o congelamento de recursos "
+"é iniciado e os ajustes de desempenho devem ser mantidos ao mínimo. Quatro "
+"semanas antes do lançamento, uma versão beta oficial é disponibilizada. Duas "
+"semanas antes do lançamento, o código é oficialmente transformado em uma "
+"nova versão. Esta versão recebe status de release candidate e, como na "
+"engenharia de release do -STABLE, o congelamento de código do release "
+"candidate é endurecido. No entanto, o desenvolvimento na branch principal de "
+"desenvolvimento pode continuar. Além dessas diferenças, os processos de "
+"engenharia de release são semelhantes."
 
 #. (itstool) path: section/para
 #: book.translate.xml:1997
-#, fuzzy
 msgid ""
 ".0 releases go into their own branch and are aimed mainly at early adopters. "
 "The branch then goes through a period of stabilisation, and it is not until "
@@ -3138,16 +3010,15 @@ msgid ""
 "major version. While this for the majority has been with .1 versions, this "
 "is not a demand."
 msgstr ""
-".0 lançamentos vão para o seu próprio ramo e são destinados principalmente a "
-"early adopters. O branch passa por um período de estabilização, e não é até "
-"que o <xref linkend=\"role-releng\"/> decida que as demandas de estabilidade "
-"foram satisfeitas de que o branch se torna -STABLE e -CURRENT segmenta a "
-"próxima versão principal. Enquanto isso para a maioria foi com versões .1, "
-"isso não é uma demanda."
+"Releases .0 vão para o seu própria branch e são destinadas principalmente a "
+"adoções primárias. A branch passa por um período de estabilização, e não é "
+"até que o <xref linkend=\"role-releng\"/> decida que as demandas de "
+"estabilidade foram satisfeitas e de que o branch se torna -STABLE e -CURRENT "
+"segmenta a próxima versão principal. Enquanto isso para a maioria tem sido "
+"com versões .1, isso não é uma demanda."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2007
-#, fuzzy
 msgid ""
 "Most releases are made when a given date that has been deemed a long enough "
 "time since the previous release comes. A target is set for having major "
@@ -3157,20 +3028,19 @@ msgid ""
 "time not to become too long with regards to security and stability issues, "
 "extra discipline is required when committing changes to -STABLE."
 msgstr ""
-"A maioria dos lançamentos é feita quando uma determinada data é considerada "
-"longa o suficiente desde o lançamento anterior. Um alvo é definido para ter "
-"grandes lançamentos a cada 18 meses e lançamentos menores a cada 4 meses. A "
-"comunidade de usuários deixou bem claro que a segurança e a estabilidade não "
-"podem ser sacrificadas por prazos e prazos de lançamento desejados. Por um "
-"lapso de tempo para não se tornar muito longo no que diz respeito a questões "
-"de segurança e estabilidade, é necessária uma disciplina extra ao cometer "
-"alterações para -STABLE."
+"A maioria das versões são feitas quando uma determinada data é considerada "
+"longa o suficiente desde o lançamento anterior. Uma data destino é definida "
+"para ter grandes releases a cada 18 meses e versões menores a cada 4 meses. "
+"A comunidade de usuários deixou bem claro que a segurança e a estabilidade "
+"não podem ser sacrificadas por prazos auto impostos e datas de lançamento "
+"desejadas. Por um lapso de tempo para não se tornar muito longo no que diz "
+"respeito a questões de segurança e estabilidade, é necessária uma disciplina "
+"extra ao aplicar alterações na -STABLE."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:2026
-#, fuzzy
 msgid "Process summary: release engineering"
-msgstr "Resumo do processo: engenharia de lançamento"
+msgstr "Resumo do processo: engenharia de release"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3178,32 +3048,28 @@ msgstr "Resumo do processo: engenharia de lançamento"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:2027
-#, fuzzy
 msgctxt "_"
 msgid "external ref='proc-releng' md5='__failed__'"
-msgstr "ref externo = 'proc-releng' md5 = '__ failed__'"
+msgstr "external ref='proc-releng' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2031
-#, fuzzy
 msgid ""
 "These are the stages in the release engineering process. Multiple release "
 "candidates may be created until the release is deemed stable enough to be "
 "released."
 msgstr ""
-"Estas são as etapas do processo de engenharia de lançamento. Vários "
-"candidatos a lançamento podem ser criados até que a liberação seja "
-"considerada estável o suficiente para ser liberada."
+"Estas são as etapas do processo de engenharia de release. Vários candidatos "
+"a release podem ser criados até que a versão seja considerada estável o "
+"suficiente para ser liberada."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:2051
-#, fuzzy
 msgid "Tools"
 msgstr "Ferramentas"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2053
-#, fuzzy
 msgid ""
 "The major support tools for supporting the development process are Bugzilla, "
 "Mailman, and OpenSSH. These are externally developed tools and are commonly "
@@ -3215,33 +3081,29 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: book.translate.xml:2060
-#, fuzzy
 msgid "Subversion (SVN)"
-msgstr "Subversão (SVN)"
+msgstr "Subversion (SVN)"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2061
-#, fuzzy
 msgid ""
 "Subversion (<quote>SVN</quote>) is a system to handle multiple versions of "
 "text files and tracking who committed what changes and why. A project lives "
 "within a <quote>repository</quote> and different versions are considered "
 "different <quote>branches</quote>."
 msgstr ""
-"Subversion (<quote> SVN </quote>) é um sistema para lidar com múltiplas "
-"versões de arquivos de texto e rastrear quem cometeu mudanças e por quê. Um "
-"projeto vive dentro de um <quote> repositório </quote> e diferentes versões "
-"são consideradas <quote> ramificações </quote> diferentes."
+"Subversion (<quote>SVN</quote>) é um sistema para lidar com múltiplas "
+"versões de arquivos de texto e rastrear quem aplicou mudanças e por quê. Um "
+"projeto vive dentro de um <quote>repositório</quote> e diferentes versões "
+"são consideradas <quote>branches</quote> diferentes."
 
 #. (itstool) path: section/title
 #: book.translate.xml:2070
-#, fuzzy
 msgid "Bugzilla"
 msgstr "Bugzilla"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2071
-#, fuzzy
 msgid ""
 "Bugzilla is a maintenance database consisting of a set of tools to track "
 "bugs at a central site. It supports the bug tracking process for sending and "
@@ -3254,19 +3116,17 @@ msgstr ""
 "ferramentas para rastrear bugs em um site central. Ele suporta o processo de "
 "rastreamento de bugs para envio e tratamento de bugs, além de consultar e "
 "atualizar o banco de dados e editar relatórios de bugs. O projeto usa sua "
-"interface web para enviar <quote> Relatórios de Problemas </quote> para o "
-"servidor central do Bugzilla. Os committers também possuem clientes da web e "
-"de linha de comando."
+"interface web para enviar <quote>Relatórios de Problemas</quote> para o "
+"servidor central do Bugzilla. Os committers também possuem clientes web e de "
+"linha de comando."
 
 #. (itstool) path: section/title
 #: book.translate.xml:2084
-#, fuzzy
 msgid "Mailman"
-msgstr "Carteiro"
+msgstr "Mailman"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2085
-#, fuzzy
 msgid ""
 "Mailman is a program that automates the management of mailing lists. The "
 "FreeBSD Project uses it to run 16 general lists, 60 technical lists, 4 "
@@ -3291,13 +3151,11 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: book.translate.xml:2103
-#, fuzzy
 msgid "Pretty Good Privacy"
-msgstr "Muito boa privacidade"
+msgstr "Pretty Good Privacy"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2104
-#, fuzzy
 msgid ""
 "Pretty Good Privacy, better known as PGP, is a cryptosystem using a public "
 "key architecture to allow people to digitally sign and/or encrypt "
@@ -3309,23 +3167,21 @@ msgid ""
 "it, and not altered in transit."
 msgstr ""
 "Pretty Good Privacy, mais conhecida como PGP, é um sistema criptográfico que "
-"usa uma arquitetura de chave pública para permitir que as pessoas assinem e /"
-" ou criptografem digitalmente as informações, a fim de garantir a "
-"comunicação segura entre as duas partes. Uma assinatura é usada ao enviar "
-"informações a muitos destinatários, permitindo que eles verifiquem se as "
-"informações não foram adulteradas antes de recebê-las. No Projeto FreeBSD "
-"este é o principal meio de assegurar que a informação tenha sido escrita "
-"pela pessoa que afirma ter escrito, e não alterada em trânsito."
+"usa uma arquitetura de chave pública para permitir que as pessoas assinem e/"
+"ou criptografem digitalmente as informações, a fim de garantir a comunicação "
+"segura entre as duas partes. Uma assinatura é usada ao enviar informações a "
+"muitos destinatários, permitindo que eles verifiquem se as informações não "
+"foram adulteradas antes de recebê-las. No Projeto FreeBSD este é o principal "
+"meio de assegurar que a informação tenha sido escrita pela pessoa que afirma "
+"ter escrito, e não alterada em trânsito."
 
 #. (itstool) path: section/title
 #: book.translate.xml:2118
-#, fuzzy
 msgid "Secure Shell"
-msgstr "Capsula segura"
+msgstr "Secure Shell"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2119
-#, fuzzy
 msgid ""
 "Secure Shell is a standard for securely logging into a remote system and for "
 "executing commands on the remote system. It allows other connections, called "
@@ -3347,13 +3203,11 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:2135
-#, fuzzy
 msgid "Sub-projects"
 msgstr "Sub-projetos"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2137
-#, fuzzy
 msgid ""
 "Sub-projects are formed to reduce the amount of communication needed to "
 "coordinate the group of developers. When a problem area is sufficiently "
@@ -3369,29 +3223,26 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: book.translate.xml:2148
-#, fuzzy
 msgid "The Ports Subproject"
 msgstr "Subprojeto Ports"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2150
-#, fuzzy
 msgid ""
 "A <quote>port</quote> is a set of meta-data and patches that are needed to "
 "fetch, compile and install correctly an external piece of software on a "
 "FreeBSD system. The amount of ports have grown at a tremendous rate, as "
 "shown by the following figure."
 msgstr ""
-"Uma <quote> porta </quote> é um conjunto de meta-dados e patches que são "
+"Um <quote>port</quote> é um conjunto de meta-dados e patches que são "
 "necessários para buscar, compilar e instalar corretamente um software "
-"externo em um sistema FreeBSD. A quantidade de portas cresceu a um ritmo "
+"externo em um sistema FreeBSD. A quantidade de ports cresceu a um ritmo "
 "tremendo, como mostra a figura a seguir."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:2159
-#, fuzzy
 msgid "Number of ports added between 1996 and 2005"
-msgstr "Número de portos adicionados entre 1996 e 2005"
+msgstr "Número de ports adicionados entre 1996 e 2005"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3399,14 +3250,12 @@ msgstr "Número de portos adicionados entre 1996 e 2005"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:2160
-#, fuzzy
 msgctxt "_"
 msgid "external ref='portsstatus' md5='__failed__'"
-msgstr "ref externo = 'portsstatus' md5 = '__ failed__'"
+msgstr "external ref='portsstatus' md5='__failed__'"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2164
-#, fuzzy
 msgid ""
 "<xref linkend=\"fig-ports\"/> is taken from <link xlink:href=\"https://www."
 "freebsd.org/ports/growth/status.png\"> the FreeBSD web site</link>. It shows "
@@ -3415,14 +3264,13 @@ msgid ""
 "middle of 2001 grown linearly."
 msgstr ""
 "<xref linkend=\"fig-ports\"/> é obtido do <link xlink:href=\"https://www."
-"freebsd.org/ports/growth/status.png\"> site do FreeBSD </link>. Ele mostra o "
-"número de portas disponíveis para o FreeBSD no período de 1995 a 2005. "
-"Parece que a curva cresceu primeiro exponencialmente e, desde meados de "
-"2001, cresceu linearmente."
+"freebsd.org/ports/growth/status.png\">site do FreeBSD</link>. Ele mostra o "
+"número de ports disponíveis para o FreeBSD no período de 1995 a 2005. Parece "
+"que a curva cresceu primeiro exponencialmente e, desde meados de 2001, "
+"cresceu linearmente."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2173
-#, fuzzy
 msgid ""
 "As the external software described by the port often is under continued "
 "development, the amount of work required to maintain the ports is already "
@@ -3430,15 +3278,14 @@ msgid ""
 "gaining a more empowered structure, and is more and more becoming a sub-"
 "project of the FreeBSD project."
 msgstr ""
-"Como o software externo descrito pela porta geralmente está em "
-"desenvolvimento contínuo, a quantidade de trabalho necessária para manter as "
-"portas já é grande e está aumentando. Isso fez com que a parte de ports do "
+"Como o software externo descrito pelo port geralmente está em "
+"desenvolvimento contínuo, a quantidade de trabalho necessária para manter os "
+"ports já é grande e está aumentando. Isso fez com que a parte dos ports do "
 "projeto FreeBSD ganhasse uma estrutura mais poderosa, e está se tornando "
 "cada vez mais um subprojeto do projeto FreeBSD."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2182
-#, fuzzy
 msgid ""
 "Ports has its own core team with the <xref linkend=\"role-ports-manager\"/> "
 "as its leader, and this team can appoint committers without FreeBSD Core's "
@@ -3446,16 +3293,14 @@ msgid ""
 "frequently is rewarded with a commit bit, the ports sub-project contains "
 "many active maintainers that are not committers."
 msgstr ""
-"Ports tem sua própria equipe principal com o <xref linkend=\"role-ports-"
-"manager\"/> como seu líder, e esta equipe pode indicar committers sem a "
-"aprovação do FreeBSD Core. Ao contrário do Projeto FreeBSD, onde muitas "
-"tarefas de manutenção são frequentemente recompensadas com um bit de "
-"confirmação, o subprojeto ports contém muitos mantenedores ativos que não "
-"são committers."
+"Ports tem seu próprio core team (time principal) com o <xref linkend=\"role-"
+"ports-manager\"/> como seu líder, e esta equipe pode indicar committers sem "
+"a aprovação do FreeBSD Core. Ao contrário do Projeto FreeBSD, onde muitas "
+"tarefas de manutenção são frequentemente recompensadas com um commit bit, o "
+"subprojeto ports contém muitos mantenedores ativos que não são committers."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2191
-#, fuzzy
 msgid ""
 "Unlike the main project, the ports tree is not branched. Every release of "
 "FreeBSD follows the current ports collection and has thus available updated "
@@ -3463,36 +3308,34 @@ msgid ""
 "means that a port that makes dependencies on the system may need to have "
 "variations depending on what version of FreeBSD it runs on."
 msgstr ""
-"Ao contrário do projeto principal, a árvore de ports não é ramificada. Cada "
-"versão do FreeBSD segue a coleção atual de ports e, portanto, disponibiliza "
-"informações atualizadas sobre onde encontrar programas e como construí-los. "
-"Isso, no entanto, significa que uma porta que faz dependências no sistema "
-"pode precisar ter variações dependendo de qual versão do FreeBSD é executada."
-""
+"Ao contrário do projeto principal, a árvore de ports não é ramificada (tem "
+"uma branch própria). Cada versão do FreeBSD segue a coleção atual de ports "
+"e, portanto, disponibiliza informações atualizadas sobre onde encontrar "
+"programas e como construí-los. Isso, no entanto, significa que um port que "
+"faz dependências no sistema pode precisar ter variações dependendo de qual "
+"versão do FreeBSD é executada."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2200
-#, fuzzy
 msgid ""
 "With an unbranched ports repository it is not possible to guarantee that any "
 "port will run on anything other than -CURRENT and -STABLE, in particular "
 "older, minor releases. There is neither the infrastructure nor volunteer "
 "time needed to guarantee this."
 msgstr ""
-"Com um repositório de portas não ramificadas, não é possível garantir que "
-"qualquer porta seja executada em algo diferente de -CURRENT e -STABLE, em "
-"particular liberações menores e antigas. Não há infraestrutura nem tempo de "
-"voluntariado necessário para garantir isso."
+"Com um repositório de ports não ramificado (sem branches), não é possível "
+"garantir que qualquer port seja executado em algo diferente de -CURRENT e -"
+"STABLE, em particular liberações secundárias e antigas. Não há "
+"infraestrutura nem tempo de voluntariado necessário para garantir isso."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2208
-#, fuzzy
 msgid ""
 "For efficiency of communication, teams depending on Ports, such as the "
 "release engineering team, have their own ports liaisons."
 msgstr ""
-"Para eficiência de comunicação, as equipes que dependem de portas, como a "
-"equipe de engenharia de versões, têm suas próprias conexões de portas."
+"Para eficiência de comunicação, as equipes que dependem de ports, como a "
+"equipe de engenharia de release, têm suas próprias conexões com ports."
 
 #. (itstool) path: section/title
 #. (itstool) path: publisher/publishername
@@ -3503,13 +3346,11 @@ msgstr ""
 #: book.translate.xml:2407
 #: book.translate.xml:2426
 #: book.translate.xml:2472
-#, fuzzy
 msgid "The FreeBSD Documentation Project"
 msgstr "O projeto de documentação do FreeBSD"
 
 #. (itstool) path: section/para
 #: book.translate.xml:2220
-#, fuzzy
 msgid ""
 "The FreeBSD Documentation project was started January 1995. From the initial "
 "group of a project leader, four team leaders and 16 members, they are now a "
@@ -3524,75 +3365,68 @@ msgstr ""
 
 #. (itstool) path: section/para
 #: book.translate.xml:2230
-#, fuzzy
 msgid ""
 "The goal of the Documentation project is to provide good and useful "
 "documentation of the FreeBSD project, thus making it easier for new users to "
 "get familiar with the system and detailing advanced features for the users."
 msgstr ""
-"O objetivo do projeto Documentation é fornecer uma documentação boa e útil "
+"O objetivo do projeto de Documentação é fornecer uma documentação boa e útil "
 "do projeto FreeBSD, facilitando assim que novos usuários se familiarizem com "
 "o sistema e detalhando recursos avançados para os usuários."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2237
-#, fuzzy
 msgid ""
 "The main tasks in the Documentation project are to work on current projects "
 "in the <quote>FreeBSD Documentation Set</quote>, and translate the "
 "documentation to other languages."
 msgstr ""
 "As principais tarefas no projeto de Documentação são trabalhar em projetos "
-"atuais no <quote> Conjunto de Documentação do FreeBSD </quote>, e traduzir a "
+"atuais no <quote>Conjunto de Documentação do FreeBSD</quote>, e traduzir a "
 "documentação para outros idiomas."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2243
-#, fuzzy
 msgid ""
 "Like the FreeBSD Project, documentation is split in the same branches. This "
 "is done so that there is always an updated version of the documentation for "
 "each version. Only documentation errors are corrected in the security "
 "branches."
 msgstr ""
-"Como o Projeto FreeBSD, a documentação é dividida nas mesmas ramificações. "
-"Isso é feito para que sempre haja uma versão atualizada da documentação de "
-"cada versão. Apenas erros de documentação são corrigidos nos ramos de "
+"Como o Projeto FreeBSD, a documentação é dividida nas mesmas branches. Isso "
+"é feito para que sempre haja uma versão atualizada da documentação de cada "
+"versão. Apenas erros de documentação são corrigidos nas branches de "
 "segurança."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2250
-#, fuzzy
 msgid ""
 "Like the ports sub-project, the Documentation project can appoint "
 "documentation committers without FreeBSD Core's approval. <citation><xref "
 "linkend=\"freebsd-doceng-charter\"/></citation>."
 msgstr ""
-"Como o sub-projeto ports, o projeto Documentation pode indicar committers de "
-"documentação sem a aprovação do FreeBSD Core. <citation> <xref linkend="
+"Como o sub-projeto ports, o projeto de Documentação pode indicar committers "
+"de documentação sem a aprovação do FreeBSD Core. <citation><xref linkend="
 "\"freebsd-doceng-charter\"/></citation>."
 
 #. (itstool) path: section/para
 #: book.translate.xml:2256
-#, fuzzy
 msgid ""
 "The Documentation project has a primer. This is used both to introduce new "
 "project members to the standard tools and syntaxes and acts as a reference "
 "when working on the project."
 msgstr ""
-"O projeto Documentation possui um primer. Isso é usado para apresentar novos "
-"membros de projeto às ferramentas e sintaxes padrão e atua como referência "
-"ao trabalhar no projeto."
+"O projeto de Documentação possui uma cartilha. Isso é usado para apresentar "
+"novos membros de projeto às ferramentas e sintaxes padrão e atua como "
+"referência ao trabalhar no projeto."
 
 #. (itstool) path: bibliography/title
 #: book.translate.xml:2268
-#, fuzzy
 msgid "References"
 msgstr "Referências"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2272
-#, fuzzy
 msgid ""
 "<personname><firstname>Frederick P.</firstname><surname>Brooks</surname></"
 "personname>"
@@ -3602,60 +3436,50 @@ msgstr ""
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2274
-#, fuzzy
 msgid ""
 "<year>1975</year><year>1995</year> <holder>Pearson Education Limited</"
 "holder>"
 msgstr ""
-"<year> 1975 </year> <year> 1995 </year> <holder>Pearson Education Limited</"
+"<year>1975</year><year>1995</year> <holder>Pearson Education Limited</"
 "holder>"
 
 #. (itstool) path: biblioentry/biblioid
 #: book.translate.xml:2277
-#, fuzzy
 msgid "0201835959"
 msgstr "0201835959"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2279
-#, fuzzy
 msgid "Addison-Wesley Pub Co"
 msgstr "Addison-Wesley Pub Co"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2281
-#, fuzzy
 msgid "The Mythical Man-Month"
 msgstr "The Mythical Man-Month"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2282
-#, fuzzy
 msgid "Essays on Software Engineering, Anniversary Edition (2nd Edition)"
-msgstr ""
-"Ensaios sobre Engenharia de Software, Edição de Aniversário (2ª Edição)"
+msgstr "Essays on Software Engineering, Anniversary Edition (2nd Edition)"
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2289
-#, fuzzy
 msgid "<year>2003</year>"
-msgstr "<year> 2003 </year>"
+msgstr "<year>2003</year>"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2293
-#, fuzzy
 msgid "Candidatus Scientiarum thesis"
 msgstr "Tese de Candidatus Scientiarum"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2294
-#, fuzzy
 msgid "http://niklas.saers.com/thesis"
 msgstr "http://niklas.saers.com/thesis"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2300
-#, fuzzy
 msgid ""
 "<personname><firstname>Niels</firstname><surname>Jørgensen</surname></"
 "personname>"
@@ -3665,62 +3489,55 @@ msgstr ""
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2302
-#, fuzzy
 msgid "<year>2001</year>"
-msgstr "<year> 2001 </year>"
+msgstr "<year>2001</year>"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2305
-#, fuzzy
 msgid "Putting it All in the Trunk"
 msgstr "Colocando tudo no porta-malas"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2306
-#, fuzzy
 msgid "Incremental Software Development in the FreeBSD Open Source Project"
 msgstr ""
 "Desenvolvimento Incremental de Software no Projeto Open Source do FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2307
-#, fuzzy
 msgid "http://www.dat.ruc.dk/~nielsj/research/papers/freebsd.pdf"
 msgstr "http://www.dat.ruc.dk/~nielsj/research/papers/freebsd.pdf"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2312
-#, fuzzy
 msgid ""
 "<personname><surname>Project Management Institute</surname></personname>"
 msgstr ""
-"<personname><surname>Project Management Institute</surname></personname>"
+"<personname><surname>Instituto de Gerenciamento de Projeto</surname></"
+"personname>"
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2314
-#, fuzzy
 msgid ""
 "<year>1996</year><year>2000</year> <holder>Project Management Institute</"
 "holder>"
 msgstr ""
-"<year> 1996 </year> <year> 2000 </year> <holder> Instituto de Gerenciamento "
-"de Projetos </holder>"
+"<year>1996</year><year>2000</year> <holder>Instituto de Gerenciamento de "
+"Projetos</holder>"
 
 #. (itstool) path: biblioentry/biblioid
 #: book.translate.xml:2317
-#, fuzzy
 msgid "1-880410-23-0"
 msgstr "1-880410-23-0"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2319
-#, fuzzy
 msgid "Project Management Institute"
 msgstr "Instituto de Gerenciamento de Projetos"
 
 #. (itstool) path: publisher/address
 #: book.translate.xml:2320
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\n"
 "                    <street>Newtown Square</street>\n"
@@ -3729,22 +3546,20 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                    <street> Newtown Square </street>\n"
-"                    <city> Pensilvânia </city>\n"
-"                    <country> EUA </country>\n"
-"                "
+"                    <street>Newtown Square</street>\n"
+"                    <city>Pennsylvania</city>\n"
+"                    <country>USA</country>\n"
+"                "
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2326
-#, fuzzy
 msgid "PMBOK Guide"
 msgstr "Guia PMBOK"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2327
-#, fuzzy
 msgid "A Guide to the Project Management Body of Knowledge, 2000 Edition"
-msgstr "Um Guia do Conhecimento em Gerenciamento de Projetos, edição 2000"
+msgstr "A Guide to the Project Management Body of Knowledge, 2000 Edition"
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2334
@@ -3752,19 +3567,16 @@ msgstr "Um Guia do Conhecimento em Gerenciamento de Projetos, edição 2000"
 #: book.translate.xml:2433
 #: book.translate.xml:2444
 #: book.translate.xml:2456
-#, fuzzy
 msgid "<year>2002</year> <holder>The FreeBSD Project</holder>"
-msgstr "<year> 2002 </year> <holder> O projeto FreeBSD </holder>"
+msgstr "<year>2002</year> <holder>O projeto FreeBSD</holder>"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2337
-#, fuzzy
 msgid "Core Bylaws"
-msgstr "Estatuto essencial"
+msgstr "Estatuto do Core"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2338
-#, fuzzy
 msgid "https://www.freebsd.org/internal/bylaws.html"
 msgstr "https://www.freebsd.org/internal/bylaws.html"
 
@@ -3775,40 +3587,34 @@ msgstr "https://www.freebsd.org/internal/bylaws.html"
 #: book.translate.xml:2402
 #: book.translate.xml:2422
 #: book.translate.xml:2468
-#, fuzzy
 msgid "<year>2002</year> <holder>The FreeBSD Documentation Project</holder>"
 msgstr ""
-"<year> 2002 </year> <holder> O Projeto de Documentação do FreeBSD </holder>"
+"<year>2002</year> <holder>O Projeto de Documentação do FreeBSD</holder>"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2345
-#, fuzzy
 msgid "FreeBSD Developer's Handbook"
 msgstr "Manual do desenvolvedor do FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2346
-#, fuzzy
 msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/books/developers-handbook/"
 msgstr ""
 "https://www.freebsd.org/doc/en_US.ISO8859-1/books/developers-handbook/"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2353
-#, fuzzy
 msgid "Core team election 2002"
-msgstr "Eleição da equipe principal em 2002"
+msgstr "Eleição da equipe do Core em 2002"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2354
-#, fuzzy
 msgid "http://election.uk.freebsd.org/candidates.html"
 msgstr "http://election.uk.freebsd.org/candidates.html"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2359
 #: book.translate.xml:2374
-#, fuzzy
 msgid ""
 "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></"
 "personname>"
@@ -3818,7 +3624,6 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2360
-#, fuzzy
 msgid ""
 "<personname><firstname>Hiten</firstname><surname>Pandya</surname></"
 "personname>"
@@ -3828,50 +3633,42 @@ msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2368
-#, fuzzy
 msgid "Problem Report Handling Guidelines"
-msgstr "Diretrizes para manuseio de relatórios de problemas"
+msgstr "Diretrizes para manuseio de Relatórios de Problemas"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2369
-#, fuzzy
 msgid "https://www.freebsd.org/doc/en/articles/pr-guidelines/article.html"
 msgstr "https://www.freebsd.org/doc/en/articles/pr-guidelines/article.html"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2382
-#, fuzzy
 msgid "Writing FreeBSD Problem Reports"
 msgstr "Escrevendo Relatórios de Problemas do FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2383
-#, fuzzy
 msgid "https://www.freebsd.org/doc/en/articles/problem-reports/article.html"
 msgstr "https://www.freebsd.org/doc/en/articles/problem-reports/article.html"
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2387
-#, fuzzy
 msgid "<year>2001</year> <holder>The FreeBSD Documentation Project</holder>"
 msgstr ""
-"<year> 2001 </year> <holder> O Projeto de Documentação do FreeBSD </holder>"
+"<year>2001</year> <holder>O Projeto de Documentação do FreeBSD</holder>"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2394
-#, fuzzy
 msgid "Committers Guide"
-msgstr "Guia de Comitês"
+msgstr "Guia para Commiters"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2395
-#, fuzzy
 msgid "https://www.freebsd.org/doc/en/articles/committers-guide/article.html"
 msgstr "https://www.freebsd.org/doc/en/articles/committers-guide/article.html"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2400
-#, fuzzy
 msgid ""
 "<personname><firstname>Murray</firstname><surname>Stokely</surname></"
 "personname>"
@@ -3881,13 +3678,11 @@ msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2409
-#, fuzzy
 msgid "FreeBSD Release Engineering"
-msgstr "Engenharia de Liberação do FreeBSD"
+msgstr "Engenharia de Release do FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2410
-#, fuzzy
 msgid ""
 "https://www.freebsd.org/doc/en_US.ISO8859-1/articles/releng/article.html"
 msgstr ""
@@ -3895,35 +3690,30 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2415
-#, fuzzy
 msgid ""
 "<personname><surname>The FreeBSD Documentation Project</surname></"
 "personname>"
 msgstr ""
-"<personname><surname>The FreeBSD Documentation Project</surname></"
+"<personname><surname>Projeto de Documentação do FreeBSD</surname></"
 "personname>"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2417
-#, fuzzy
 msgid "FreeBSD Handbook"
 msgstr "Manual do FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2418
-#, fuzzy
 msgid "https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
 msgstr "https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2428
-#, fuzzy
 msgid "Contributors to FreeBSD"
 msgstr "Colaboradores para o FreeBSD"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2429
-#, fuzzy
 msgid ""
 "https://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributors/article."
 "html"
@@ -3935,79 +3725,66 @@ msgstr ""
 #: book.translate.xml:2437
 #: book.translate.xml:2448
 #: book.translate.xml:2460
-#, fuzzy
 msgid "The FreeBSD Project"
 msgstr "O projeto FreeBSD"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2439
-#, fuzzy
 msgid "Core team elections 2002"
-msgstr "Eleições da equipe principal em 2002"
+msgstr "Eleições da equipe do Core em 2002"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2440
-#, fuzzy
 msgid "http://election.uk.freebsd.org"
 msgstr "http://election.uk.freebsd.org"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2450
-#, fuzzy
 msgid "Commit Bit Expiration Policy"
-msgstr "Política de expiração de bit de confirmação"
+msgstr "Política de expiração de commit bit"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2451
-#, fuzzy
 msgid "2002/04/06 15:35:30"
 msgstr "2002/04/06 15:35:30"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2452
-#, fuzzy
 msgid "https://www.freebsd.org/internal/expire-bits.html"
 msgstr "https://www.freebsd.org/internal/expire-bits.html"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2462
-#, fuzzy
 msgid "New Account Creation Procedure"
 msgstr "Novo procedimento de criação de conta"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2463
-#, fuzzy
 msgid "2002/08/19 17:11:27"
 msgstr "2002/08/19 17:11:27"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2464
-#, fuzzy
 msgid "https://www.freebsd.org/internal/new-account.html"
 msgstr "https://www.freebsd.org/internal/new-account.html"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2474
-#, fuzzy
 msgid "FreeBSD DocEng Team Charter"
-msgstr "Carta de Equipe do DocEng do FreeBSD"
+msgstr "Capitulo da Equipe do DocEng do FreeBSD"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2475
-#, fuzzy
 msgid "2003/03/16 12:17"
 msgstr "2003/03/16 12:17"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2476
-#, fuzzy
 msgid "https://www.freebsd.org/internal/doceng.html"
 msgstr "https://www.freebsd.org/internal/doceng.html"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2481
-#, fuzzy
 msgid ""
 "<personname><firstname>Greg</firstname><surname>Lehey</surname></personname>"
 msgstr ""
@@ -4015,30 +3792,25 @@ msgstr ""
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:2483
-#, fuzzy
 msgid "<year>2002</year> <holder>Greg Lehey</holder>"
-msgstr "<year> 2002 </year> <holder> Greg Lehey </holder>"
+msgstr "<year>2002</year> <holder>Greg Lehey</holder>"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2487
-#, fuzzy
 msgid "Greg Lehey"
 msgstr "Greg Lehey"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2489
-#, fuzzy
 msgid "Two years in the trenches"
 msgstr "Dois anos nas trincheiras"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2490
-#, fuzzy
 msgid "The evolution of a software project"
 msgstr "A evolução de um projeto de software"
 
 #. (itstool) path: biblioentry/bibliomisc
 #: book.translate.xml:2491
-#, fuzzy
 msgid "http://www.lemis.com/grog/In-the-trenches.pdf"
 msgstr "http://www.lemis.com/grog/In-the-trenches.pdf"

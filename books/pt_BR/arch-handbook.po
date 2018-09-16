@@ -1,3 +1,4 @@
+# Alexandre Vasconcelos <alex.vasconcelos@gmail.com>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
@@ -7,8 +8,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-08-30 10:00+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-16 02:59+0000\n"
+"Last-Translator: Alexandre Vasconcelos <alex.vasconcelos@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -17,13 +18,14 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Alexandre Vasconcelos, alex.vasconcelos@gmail.com, 2018"
 
 #. (itstool) path: info/title
 #: book.translate.xml:140
-#, fuzzy
 msgid "FreeBSD Architecture Handbook"
-msgstr "Manual de Arquitetura do FreeBSD"
+msgstr "FreeBSD Architecture Handbook"
 
 #. (itstool) path: info/author
 #: book.translate.xml:143
@@ -173,7 +175,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:227
-#, fuzzy
 msgid ""
 "Welcome to the FreeBSD Architecture Handbook. This manual is a "
 "<emphasis>work in progress</emphasis> and is the work of many individuals. "
@@ -182,16 +183,15 @@ msgid ""
 "the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
 "doc\">FreeBSD documentation project mailing list</link>."
 msgstr ""
-"Bem-vindo ao FreeBSD Architecture Handbook. Este manual � um <emphasis> "
-"trabalho em progresso </emphasis> e � o trabalho de muitas pessoas. Muitas "
-"se��es ainda n�o existem e algumas que existem precisam ser atualizadas. Se "
-"voc� est� interessado em ajudar com este projeto, envie um email para o "
-"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\"> "
-"Lista de discuss�o do projeto de documenta��o do FreeBSD </link> "
+"Welcome to the FreeBSD Architecture Handbook. This manual is a "
+"<emphasis>work in progress</emphasis> and is the work of many individuals. "
+"Many sections do not yet exist and some of those that do exist need to be "
+"updated. If you are interested in helping with this project, send email to "
+"the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"doc\">FreeBSD documentation project mailing list</link>."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:234
-#, fuzzy
 msgid ""
 "The latest version of this document is always available from the <link xlink:"
 "href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD World Wide Web server</link>. "
@@ -201,44 +201,40 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp."
 "html\">mirror sites</link>."
 msgstr ""
-"A vers�o mais recente deste documento est� sempre dispon�vel no site <link "
-"xlink:href=\"@@URL_RELPREFIX@@/index.html\"> Servidor da World Wide Web do "
-"FreeBSD </link> . Ele tamb�m pode ser baixado em v�rios formatos e op��es de "
-"compacta��o do <link xlink:href=\"https://download.freebsd.org/ftp/doc/\"> "
-"Servidor FTP FreeBSD </link> ou um dos numerosos <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html\"> "
-"sites espelho </link> "
+"The latest version of this document is always available from the <link xlink:"
+"href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD World Wide Web server</link>. "
+"It may also be downloaded in a variety of formats and compression options "
+"from the <link xlink:href=\"https://download.freebsd.org/ftp/doc/\">FreeBSD "
+"FTP server</link> or one of the numerous <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp."
+"html\">mirror sites</link>."
 
 #. (itstool) path: part/title
 #: book.translate.xml:243
-#, fuzzy
 msgid "Kernel"
-msgstr "N�cleo"
+msgstr "Núcleo"
 
 #. (itstool) path: info/title
 #: book.translate.xml:259
-#, fuzzy
 msgid "Bootstrapping and Kernel Initialization"
-msgstr "Bootstrapping e inicializa��o do kernel"
+msgstr "Bootstrapping e inicialização do kernel"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:262
-#, fuzzy
 msgid ""
 "<personname> <firstname>Sergey</firstname> <surname>Lyubka</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
 " <personname><firstname> Sergey </firstname><surname> Lyubka </surname></"
-"personname><contrib> Contribu�ram por </contrib> "
+"personname><contrib> Contribuíram por </contrib> "
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:274
-#, fuzzy
 msgid ""
 "<personname> <firstname>Sergio Andrés</firstname> <surname> Gómez del Real</"
 "surname> </personname> <contrib>Updated and enhanced by </contrib>"
 msgstr ""
-" <personname><firstname> Sergio Andr�s </firstname><surname> G�mez del Real "
+" <personname><firstname> Sergio Andrés </firstname><surname> Gómez del Real "
 "</surname></personname><contrib> Atualizado e aprimorado por </contrib> "
 
 #. (itstool) path: sect1/title
@@ -246,51 +242,43 @@ msgstr ""
 #: book.translate.xml:4323
 #: book.translate.xml:16381
 #: book.translate.xml:19348
-#, fuzzy
 msgid "Synopsis"
-msgstr "Sinopse"
+msgstr "Sinopse "
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: para/indexterm
 #: book.translate.xml:289
 #: book.translate.xml:20696
-#, fuzzy
 msgid "<primary>BIOS</primary>"
-msgstr " <primary> BIOS </primary> "
+msgstr " <primary>BIOS</primary> "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:290
-#, fuzzy
 msgid "<primary>firmware</primary>"
-msgstr " <primary> firmware </primary> "
+msgstr " <primary>firmware</primary> "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:291
-#, fuzzy
 msgid "<primary>POST</primary>"
-msgstr " <primary> POSTAR </primary> "
+msgstr " <primary>POSTAR</primary> "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:292
-#, fuzzy
 msgid "<primary>IA-32</primary>"
-msgstr " <primary> IA-32 </primary> "
+msgstr " <primary>IA-32</primary> "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:293
-#, fuzzy
 msgid "<primary>booting</primary>"
-msgstr " <primary> inicializa��o </primary> "
+msgstr " <primary>inicialização</primary> "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:294
-#, fuzzy
 msgid "<primary>system initialization</primary>"
-msgstr " <primary> inicializa��o do sistema </primary> "
+msgstr " <primary>inicialização do sistema</primary> "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:295
-#, fuzzy
 msgid ""
 "This chapter is an overview of the boot and system initialization processes, "
 "starting from the <acronym>BIOS</acronym> (firmware) <acronym>POST</"
@@ -298,15 +286,14 @@ msgid ""
 "system startup are very architecture dependent, the IA-32 architecture is "
 "used as an example."
 msgstr ""
-"Este cap�tulo � uma vis�o geral dos processos de inicializa��o e "
-"inicializa��o do sistema, desde o <acronym>POST</acronym> da <acronym>BIOS</"
-"acronym> (firmware) at� a primeira cria��o do processo do usu�rio. Como as "
-"etapas iniciais da inicializa��o do sistema s�o muito dependentes da "
-"arquitetura, a arquitetura IA-32 � usada como um exemplo."
+"Este capítulo é uma visão geral dos processos de inicialização e "
+"inicialização do sistema, desde o <acronym>POST</acronym> da <acronym>BIOS</"
+"acronym> (firmware) até a primeira criação do processo do usuário. Como as "
+"etapas iniciais da inicialização do sistema são muito dependentes da "
+"arquitetura, a arquitetura IA-32 é usada como um exemplo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:301
-#, fuzzy
 msgid ""
 "The FreeBSD boot process can be surprisingly complex. After control is "
 "passed from the <acronym>BIOS</acronym>, a considerable amount of low-level "
@@ -314,24 +301,22 @@ msgid ""
 "This setup must be done in a simple and flexible manner, allowing the user a "
 "great deal of customization possibilities."
 msgstr ""
-"O processo de inicializa��o do FreeBSD pode ser surpreendentemente complexo. "
-"Ap�s o controle ser passado do <acronym>BIOS</acronym> , uma quantidade "
-"consider�vel de configura��o de baixo n�vel deve ser feita antes que o "
-"kernel possa ser carregado e executado. Essa configura��o deve ser feita de "
-"maneira simples e flex�vel, permitindo ao usu�rio uma grande quantidade de "
-"possibilidades de personaliza��o. "
+"O processo de inicialização do FreeBSD pode ser surpreendentemente complexo. "
+"Após o controle ser passado da <acronym>BIOS</acronym>, uma quantidade "
+"considerável de configuração de baixo nével deve ser feita antes que o "
+"kernel possa ser carregado e executado. Essa configuração deve ser feita de "
+"maneira simples e flexível, permitindo ao usuário uma grande quantidade de "
+"possibilidades de personalização. "
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
 #: book.translate.xml:310
 #: book.translate.xml:23316
-#, fuzzy
 msgid "Overview"
-msgstr "Vis�o geral"
+msgstr "Visão geral"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:312
-#, fuzzy
 msgid ""
 "The boot process is an extremely machine-dependent activity. Not only must "
 "code be written for every computer architecture, but there may also be "
@@ -348,26 +333,24 @@ msgid ""
 "filename> multi-boot loader stored in the very first sector. That boot code "
 "starts the FreeBSD three-stage boot process."
 msgstr ""
-"O processo de inicializa��o � uma atividade extremamente dependente da "
-"m�quina. N�o s� deve ser escrito c�digo para cada arquitetura de computador, "
-"mas tamb�m pode haver v�rios tipos de inicializa��o na mesma arquitetura. "
-"Por exemplo, uma lista de diret�rios de <filename> / usr / src / sys / boot "
-"</filename> revela uma grande quantidade de c�digo dependente de arquitetura."
-" Existe um diret�rio para cada uma das v�rias arquiteturas suportadas. No "
-"x86-specific <filename> i386 </filename> diret�rio, existem subdiret�rios "
-"para diferentes padr�es de inicializa��o, como <filename> mbr </filename> "
-"(Master Boot Record), <filename> gpt </filename> (Tabela de Parti��o "
-"<acronym>GUID</acronym> ) e <filename> efi </filename> (Interface de "
-"Firmware Extens�vel). Cada padr�o de inicializa��o possui suas pr�prias "
-"conven��es e estruturas de dados. O exemplo a seguir mostra a inicializa��o "
-"de um computador x86 de um disco r�gido <acronym>MBR</acronym> com o FreeBSD "
-"<filename> boot0 </filename> carregador multi-boot armazenado no primeiro "
-"setor. Esse c�digo de inicializa��o inicia o processo de inicializa��o de "
-"tr�s est�gios do FreeBSD. "
+"O processo de inicialização é uma atividade extremamente dependente da "
+"máquina. Não sé deve ser escrito código para cada arquitetura de computador, "
+"mas também pode haver vários tipos de inicialização na mesma arquitetura. "
+"Por exemplo, uma lista de diretórios de <filename>/usr/src/sys/boot</"
+"filename> revela uma grande quantidade de código dependente de arquitetura. "
+"Existe um diretório para cada uma das várias arquiteturas suportadas. No x86-"
+"specific <filename>i386</filename> diretório, existem subdiretórios para "
+"diferentes padrões de inicialização, como <filename>mbr</filename> (Master "
+"Boot Record), <filename>gpt</filename> (Tabela de Partição <acronym>GUID</"
+"acronym> ) e <filename>efi</filename> (Interface de Firmware Extensível). "
+"Cada padrão de inicialização possui suas próprias convenções e estruturas de "
+"dados. O exemplo a seguir mostra a inicialização de um computador x86 de um "
+"disco rígido <acronym>MBR</acronym> com o FreeBSD <filename>boot0</filename> "
+"carregador multi-boot armazenado no primeiro setor. Esse código inicia o "
+"processo de inicialização de três estágios do FreeBSD. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:331
-#, fuzzy
 msgid ""
 "The key to understanding this process is that it is a series of stages of "
 "increasing complexity. These stages are <filename>boot1</filename>, "
@@ -378,42 +361,38 @@ msgid ""
 "loading the FreeBSD kernel. Each stage is examined in the following sections."
 ""
 msgstr ""
-"A chave para entender esse processo � que ele � uma s�rie de est�gios de "
-"crescente complexidade. Esses est�gios s�o <filename> boot1 </filename> , "
-"<filename> boot2 </filename> e <filename> carregador </filename> (Vejo "
-"<citerefentry><refentrytitle> bota </refentrytitle><manvolnum> 8 </"
-"manvolnum></citerefentry> para mais detalhes). O sistema de inicializa��o "
-"executa cada est�gio em seq��ncia. O �ltimo est�gio <filename> carregador </"
-"filename> , � respons�vel por carregar o kernel do FreeBSD. Cada est�gio � "
-"examinado nas se��es seguintes. "
+"A chave para entender esse processo é que ele é uma série de estágios de "
+"crescente complexidade. Esses estágios são <filename>boot1</filename> , "
+"<filename>boot2</filename> e <filename>carregador</filename> (Vejo "
+"<citerefentry><refentrytitle>boot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para mais detalhes). O sistema de inicialização executa cada "
+"estágio em sequência. O último estágio <filename>carregador</filename> , é "
+"responsável por carregar o kernel do FreeBSD. Cada estágio é examinado nas "
+"seções seguintes. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:340
-#, fuzzy
 msgid ""
 "Here is an example of the output generated by the different boot stages. "
 "Actual output may differ from machine to machine:"
 msgstr ""
-"Aqui est� um exemplo da sa�da gerada pelos diferentes est�gios de "
-"inicializa��o. A sa�da real pode diferir de m�quina para m�quina:"
+"Aqui está um exemplo da saída gerada pelos diferentes estágios de "
+"inicialização. A saída real pode diferir de máquina para máquina:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:348
-#, fuzzy
 msgid "FreeBSD Component"
 msgstr "Componente do FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:349
-#, fuzzy
 msgid "Output (may vary)"
-msgstr "Sa�da (pode variar)"
+msgstr "Saída (pode variar)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:353
-#, fuzzy
 msgid "<literal>boot0</literal>"
-msgstr " <literal> boot0 </literal> "
+msgstr " <literal>boot0</literal> "
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:354
@@ -427,18 +406,17 @@ msgstr "F1    FreeBSD\n"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:361
-#, fuzzy
 msgid ""
 "This prompt will appear if the user presses a key just after selecting an OS "
 "to boot at the <literal>boot0</literal> stage."
 msgstr ""
-"Este aviso aparecer� se o usu�rio pressionar uma tecla logo ap�s selecionar "
-"um SO para inicializar no <literal> boot0 </literal> etapa."
+"Este aviso aparecerá se o usuário pressionar uma tecla logo após selecionar "
+"um SO para inicializar no <literal>boot0</literal> etapa."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:360
 msgid "<literal>boot2</literal> <_:footnote-1/>"
-msgstr " <literal>boot2</literal> <_:footnote-1/>"
+msgstr "<literal>boot2</literal> <_:footnote-1/>"
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:365
@@ -452,9 +430,8 @@ msgstr "&gt;&gt;FreeBSD/i386 BOOT\n"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:371
-#, fuzzy
 msgid "<filename>loader</filename>"
-msgstr " <filename> carregador </filename> "
+msgstr " <filename>carregador</filename> "
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:372
@@ -486,9 +463,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:385
-#, fuzzy
 msgid "kernel"
-msgstr "n�cleo"
+msgstr "núcleo"
 
 #. (itstool) path: entry/screen
 #: book.translate.xml:386
@@ -512,13 +488,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:400
-#, fuzzy
 msgid "The <acronym>BIOS</acronym>"
-msgstr "O <acronym>BIOS</acronym> "
+msgstr "O <acronym>BIOS</acronym>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:402
-#, fuzzy
 msgid ""
 "When the computer powers on, the processor's registers are set to some "
 "predefined values. One of the registers is the <emphasis>instruction "
@@ -537,42 +511,40 @@ msgid ""
 "provided by the <acronym>BIOS</acronym>, and the <acronym>BIOS</acronym> "
 "itself works in legacy, 16-bit code."
 msgstr ""
-"Quando o computador liga, os registros do processador s�o ajustados para "
-"alguns valores pr�-definidos. Um dos registradores � o <emphasis> ponteiro "
-"de instru��o </emphasis> registrar, e seu valor ap�s um power on � bem "
-"definido: � um valor de 32 bits de <literal> 0xfffffff0 </literal> . O "
-"registrador de ponteiro de instru��o (tamb�m conhecido como Contador de "
-"Programa) aponta para o c�digo a ser executado pelo processador. Outro "
-"registro importante � o <literal> cr0 </literal> Registro de controle de 32 "
-"bits, e seu valor logo ap�s a reinicializa��o � <literal> 0 </literal> . Um "
-"de <literal> cr0 </literal> ';s bits, o bit PE (Protection Enabled), indica "
-"se o processador est� sendo executado no modo protegido de 32 bits ou no "
-"modo real de 16 bits. Como esse bit � limpo no momento da inicializa��o, o "
-"processador � inicializado no modo real de 16 bits. O modo real significa, "
-"entre outras coisas, que os endere�os linear e f�sico s�o id�nticos. O "
-"motivo para o processador n�o iniciar imediatamente no modo protegido de 32 "
-"bits � compat�vel com vers�es anteriores. Em particular, o processo de "
-"inicializa��o depende dos servi�os fornecidos pelo <acronym>BIOS</acronym> , "
-"e o pr�prio <acronym>BIOS</acronym> funciona em c�digo legado de 16 bits. "
+"Quando o computador liga, os registros do processador são ajustados para "
+"alguns valores pré-definidos. Um dos registradores é o <emphasis>ponteiro de "
+"instrução</emphasis> registrar, e seu valor após um power on é bem definido: "
+"é um valor de 32 bits de <literal>0xfffffff0</literal> . O registrador de "
+"ponteiro de instrução (também conhecido como Contador de Programa) aponta "
+"para o código a ser executado pelo processador. Outro registro importante é "
+"o <literal>cr0</literal> Registro de controle de 32 bits, e seu valor logo "
+"após a reinicialização é <literal>0</literal>. Um de <literal>cr0</"
+"literal>'s bits, o bit PE (Protection Enabled), indica se o processador está "
+"sendo executado no modo protegido de 32 bits ou no modo real de 16 bits. "
+"Como esse bit é limpo no momento da inicialização, o processador é "
+"inicializado no modo real de 16 bits. O modo real significa, entre outras "
+"coisas, que os endereços linear e físico são idênticos. O motivo para o "
+"processador não iniciar imediatamente no modo protegido de 32 bits é "
+"compatível com versões anteriores. Em particular, o processo de "
+"inicialização depende dos serviços fornecidos pelo <acronym>BIOS</acronym>, "
+"e o próprio <acronym>BIOS</acronym> funciona em código legado de 16 bits. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:422
-#, fuzzy
 msgid ""
 "The value of <literal>0xfffffff0</literal> is slightly less than 4 GB, so "
 "unless the machine has 4 GB of physical memory, it cannot point to a valid "
 "memory address. The computer's hardware translates this address so that it "
 "points to a <acronym>BIOS</acronym> memory block."
 msgstr ""
-"O valor de <literal> 0xfffffff0 </literal> � um pouco menor que 4 GB, "
-"portanto, a menos que a m�quina tenha 4 GB de mem�ria f�sica, ela n�o pode "
-"apontar para um endere�o de mem�ria v�lido. O hardware do computador traduz "
-"esse endere�o para que ele aponte para um bloco de mem�ria da <acronym>BIOS</"
+"O valor de <literal>0xfffffff0</literal> é um pouco menor que 4 GB, "
+"portanto, a menos que a máquina tenha 4 GB de memória física, ela não pode "
+"apontar para um endereço de memória válido. O hardware do computador traduz "
+"esse endereço para que ele aponte para um bloco de memória da <acronym>BIOS</"
 "acronym> . "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:428
-#, fuzzy
 msgid ""
 "The <acronym>BIOS</acronym> (Basic Input Output System) is a chip on the "
 "motherboard that has a relatively small amount of read-only memory "
@@ -582,17 +554,16 @@ msgid ""
 "the <acronym>BIOS</acronym>'s memory. Usually this address contains a jump "
 "instruction to the <acronym>BIOS</acronym>'s POST routines."
 msgstr ""
-"O <acronym>BIOS</acronym> (Basic Input Output System) � um chip da placa-m�e "
-"que tem uma quantidade relativamente pequena de mem�ria somente leitura ( "
-"<acronym>ROM</acronym> ). Essa mem�ria cont�m v�rias rotinas de baixo n�vel "
-"que s�o espec�ficas para o hardware fornecido com a placa-m�e. O processador "
-"ir� primeiro saltar para o endere�o 0xfffffff0, que realmente reside na "
-"mem�ria do <acronym>BIOS</acronym> . Normalmente, este endere�o cont�m uma "
-"instru��o de salto para as rotinas de POST do <acronym>BIOS</acronym> . "
+"O <acronym>BIOS</acronym> (Basic Input Output System) é um chip da placa-mãe "
+"que tem uma quantidade relativamente pequena de memória somente leitura "
+"(<acronym>ROM</acronym>). Essa memória contém várias rotinas de baixo nível "
+"que são específicas para o hardware fornecido com a placa-mãe. O processador "
+"irá primeiro saltar para o endereço 0xfffffff0, que realmente reside na "
+"memória do <acronym>BIOS</acronym>. Normalmente, este endereço contém uma "
+"instrução de salto para as rotinas de POST do <acronym>BIOS</acronym>. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:438
-#, fuzzy
 msgid ""
 "The <acronym>POST</acronym> (Power On Self Test) is a set of routines "
 "including the memory check, system bus check, and other low-level "
@@ -602,18 +573,17 @@ msgid ""
 "boot device, allowing booting from a floppy, <acronym>CD-ROM</acronym>, hard "
 "disk, or other devices."
 msgstr ""
-"O <acronym>POST</acronym> (Power On Self Test) � um conjunto de rotinas "
-"incluindo a verifica��o de mem�ria, verifica��o do barramento do sistema e "
-"outras inicializa��es de baixo n�vel para que a <acronym>CPU</acronym> possa "
-"configurar o computador corretamente. A etapa importante deste est�gio � "
-"determinar o dispositivo de inicializa��o. As implementa��es modernas do "
-"<acronym>BIOS</acronym> permitem a sele��o de um dispositivo de "
-"inicializa��o, permitindo a inicializa��o a partir de um disquete, "
-"<acronym>CD-ROM</acronym> , disco r�gido ou outros dispositivos. "
+"O <acronym>POST</acronym> (Power On Self Test) é um conjunto de rotinas "
+"incluindo a verificação de memória, verificação do barramento do sistema e "
+"outras inicializações de baixo nível para que a <acronym>CPU</acronym> possa "
+"configurar o computador corretamente. A etapa importante deste estágio é "
+"determinar o dispositivo de inicialização. As implementações modernas do "
+"<acronym>BIOS</acronym> permitem a seleção de um dispositivo de "
+"inicialização, permitindo a inicialização a partir de um disquete, "
+"<acronym>CD-ROM</acronym>, disco rígido ou outros dispositivos. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:447
-#, fuzzy
 msgid ""
 "The very last thing in the <acronym>POST</acronym> is the <literal>INT 0x19</"
 "literal> instruction. The <literal>INT 0x19</literal> handler reads 512 "
@@ -627,47 +597,43 @@ msgid ""
 "<acronym>MBR</acronym>, or Master Boot Record. The remaining sectors on the "
 "first track are never used."
 msgstr ""
-"A �ltima coisa no <acronym>POST</acronym> � a <literal> INT 0x19 </literal> "
-"instru��o. o <literal> INT 0x19 </literal> manipulador l� 512 bytes do "
-"primeiro setor do dispositivo de inicializa��o para a mem�ria no endere�o "
-"<literal> 0x7c00 </literal> . O termo <emphasis> primeiro setor </emphasis> "
-"origina-se da arquitetura do disco r�gido, onde a placa magn�tica � dividida "
-"em v�rios trilhos cil�ndricos. As faixas s�o numeradas e todas as faixas s�o "
-"divididas em um n�mero (geralmente 64) de setores. Os n�meros das faixas "
-"come�am em 0, mas os n�meros setoriais come�am em 1. A faixa 0 � a mais "
-"externa na placa magn�tica, e o setor 1, o primeiro setor, tem uma "
-"finalidade especial. Tamb�m � chamado de <acronym>MBR</acronym> ou Master "
-"Boot Record. Os setores restantes na primeira faixa nunca s�o usados ​​\""
+"A última coisa no <acronym>POST</acronym> é a <literal>INT 0x19</literal> "
+"instrução. o <literal>INT 0x19</literal> manipulador lê 512 bytes do "
+"primeiro setor do dispositivo de inicialização para a memória no endereço "
+"<literal>0x7c00</literal>. O termo <emphasis>primeiro setor</emphasis> "
+"origina-se da arquitetura do disco rígido, onde a placa magnética é dividida "
+"em vários trilhos cilíndricos. As faixas são numeradas e todas as faixas são "
+"divididas em um número (geralmente 64) de setores. Os números das faixas "
+"começam em 0, mas os números setoriais começam em 1. A faixa 0 é a mais "
+"externa na placa magnética, e o setor 1, o primeiro setor, tem uma "
+"finalidade especial. Também é chamado de <acronym>MBR</acronym> ou Master "
+"Boot Record. Os setores restantes na primeira faixa nunca são usados."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:462
-#, fuzzy
 msgid ""
 "This sector is our boot-sequence starting point. As we will see, this sector "
 "contains a copy of our <filename>boot0</filename> program. A jump is made by "
 "the <acronym>BIOS</acronym> to address <literal>0x7c00</literal> so it "
 "starts executing."
 msgstr ""
-"Este setor � o nosso ponto de partida da seq��ncia de inicializa��o. Como "
-"veremos, este setor cont�m uma c�pia do nosso <filename> boot0 </filename> "
-"programa. Um salto � feito pelo <acronym>BIOS</acronym> para endere�ar "
-"<literal> 0x7c00 </literal> ent�o come�a a execu��o. "
+"Este setor é o nosso ponto de partida da sequência de inicialização. Como "
+"veremos, este setor contém uma cópia do nosso <filename>boot0</filename> "
+"programa. Um salto é feito pelo <acronym>BIOS</acronym> para endereçar "
+"<literal>0x7c00</literal> então começa a execução. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:470
-#, fuzzy
 msgid "The Master Boot Record (<literal>boot0</literal>)"
-msgstr "O registro mestre de inicializa��o ( <literal> boot0 </literal> ) "
+msgstr "O registro mestre de inicialização (<literal>boot0</literal>) "
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:472
-#, fuzzy
 msgid "<primary>MBR</primary>"
-msgstr " <primary> MBR </primary> "
+msgstr " <primary>MBR</primary> "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:474
-#, fuzzy
 msgid ""
 "After control is received from the <acronym>BIOS</acronym> at memory address "
 "<literal>0x7c00</literal>, <filename>boot0</filename> starts executing. It "
@@ -684,24 +650,23 @@ msgid ""
 "<filename>boot0</filename> <emphasis>is</emphasis> the <acronym>MBR</"
 "acronym>."
 msgstr ""
-"Depois que o controle � recebido do <acronym>BIOS</acronym> no endere�o de "
-"mem�ria <literal> 0x7c00 </literal> , <filename> boot0 </filename> come�a a "
-"executar. � o primeiro peda�o de c�digo sob controle do FreeBSD. A tarefa de "
-"<filename> boot0 </filename> � bastante simples: escaneie a tabela de "
-"parti��es e deixe o usu�rio escolher de qual parti��o inicializar. A Tabela "
-"de Parti��o � uma estrutura de dados padr�o especial incorporada no "
-"<acronym>MBR</acronym> (portanto, <filename> boot0 </filename> ) descrevendo "
-"o quatro PC padr�o <quote> parti��es </quote> <_: nota de rodap� 1 />. "
-"<filename> boot0 </filename> reside no sistema de arquivos como <filename> / "
-"boot / boot0 </filename> . � um pequeno arquivo de 512 bytes, e � exatamente "
-"o que o procedimento de instala��o do FreeBSD escreveu para o <acronym>MBR</"
-"acronym> do disco r�gido se voc� escolheu <quote> bootmanager </quote> op��o "
-"no momento da instala��o. De fato, <filename> boot0 </filename><emphasis> � "
-"</emphasis> o <acronym>MBR</acronym> \""
+"Depois que o controle é recebido do <acronym>BIOS</acronym> no endereço de "
+"memória <literal>0x7c00</literal>, <filename>boot0</filename> começa a "
+"executar. É o primeiro pedaço de código sob controle do FreeBSD. A tarefa de "
+"<filename>boot0</filename> é bastante simples: escaneie a tabela de "
+"partições e deixe o usuário escolher de qual partição inicializar. A Tabela "
+"de Partição é uma estrutura de dados padrão especial incorporada no "
+"<acronym>MBR</acronym> (portanto, <filename>boot0</filename>) descrevendo o "
+"quatro PC padrão <quote>partições</quote> <_:footnote-1/>. <filename>boot0</"
+"filename> reside no sistema de arquivos como <filename>/boot/boot0</"
+"filename> . É um pequeno arquivo de 512 bytes, e é exatamente o que o "
+"procedimento de instalação do FreeBSD escreveu para o <acronym>MBR</acronym> "
+"do disco rígido se você escolheu <quote> bootmanager </quote> opção no "
+"momento da instalação. De fato, <filename>boot0</filename><emphasis> é </"
+"emphasis> o <acronym>MBR</acronym>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:494
-#, fuzzy
 msgid ""
 "As mentioned previously, the <literal>INT 0x19</literal> instruction causes "
 "the <literal>INT 0x19</literal> handler to load an <acronym>MBR</acronym> "
@@ -710,17 +675,15 @@ msgid ""
 "<filename>sys/boot/i386/boot0/boot0.S</filename> - which is an awesome piece "
 "of code written by Robert Nordier."
 msgstr ""
-"Como mencionado anteriormente, o <literal> INT 0x19 </literal> instru��o faz "
-"com que o <literal> INT 0x19 </literal> manipulador para carregar um "
-"<acronym>MBR</acronym> ( <filename> boot0 </filename> ) na mem�ria no "
-"endere�o <literal> 0x7c00 </literal> . O arquivo de origem para <filename> "
-"boot0 </filename> pode ser encontrado em <filename> sys / boot / i386 / "
-"boot0 / boot0.S </filename> - que � um peda�o incr�vel de c�digo escrito por "
-"Robert Nordier \""
+"Como mencionado anteriormente, o <literal>INT 0x19</literal> instrução faz "
+"com que o <literal>INT 0x19</literal> manipulador para carregar um "
+"<acronym>MBR</acronym> (<filename>boot0</filename>) na memória no endereço "
+"<literal>0x7c00</literal> . O arquivo de origem para <filename>boot0</"
+"filename> pode ser encontrado em <filename>sys/boot/i386/boot0/boot0.S</"
+"filename> - que é um pedaço incrível de código escrito por Robert Nordier."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:502
-#, fuzzy
 msgid ""
 "A special structure starting from offset <literal>0x1be</literal> in the "
 "<acronym>MBR</acronym> is called the <emphasis>partition table</emphasis>. "
@@ -730,48 +693,42 @@ msgid ""
 "(slice) is bootable or not. Exactly one record must have that flag set, "
 "otherwise <filename>boot0</filename>'s code will refuse to proceed."
 msgstr ""
-"Uma estrutura especial a partir de offset <literal> 0x1be </literal> no "
-"<acronym>MBR</acronym> � chamado o <emphasis> tabela de parti��es </"
-"emphasis> . Tem quatro registros de 16 bytes cada, chamados <emphasis> "
-"registros de parti��es </emphasis> , que representam como o disco r�gido � "
-"particionado, ou, na terminologia do FreeBSD, fatiado. Um byte desses 16 diz "
-"se uma parti��o (fatia) � inicializ�vel ou n�o. Exatamente um registro deve "
-"ter esse sinalizador definido, caso contr�rio <filename> boot0 </filename> O "
-"c�digo da empresa se recusar� a prosseguir. "
+"Uma estrutura especial a partir de offset <literal>0x1be</literal> no "
+"<acronym>MBR</acronym> é chamado de <emphasis>tabela de partições</emphasis>."
+" Tem quatro registros de 16 bytes cada, chamados <emphasis>registros de "
+"partições</emphasis>, que representam como o disco rígido é particionado, "
+"ou, na terminologia do FreeBSD, fatiado. Um byte desses 16 diz se uma "
+"partição (fatia) é inicializável ou não. Exatamente um registro deve ter "
+"esse sinalizador definido, caso contrário <filename>boot0</filename> O "
+"código da empresa se recusará a prosseguir. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:512
-#, fuzzy
 msgid "A partition record has the following fields:"
-msgstr "Um registro de parti��o possui os seguintes campos:"
+msgstr "Um registro de partição possui os seguintes campos:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:516
-#, fuzzy
 msgid "the 1-byte filesystem type"
-msgstr "o tipo de sistema de arquivos de 1 byte"
+msgstr "o tipo de sistema de arquivos de 1 byte "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:520
-#, fuzzy
 msgid "the 1-byte bootable flag"
-msgstr "o sinalizador de inicializa��o de 1 byte"
+msgstr "o sinalizador de inicialização de 1 byte"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:524
-#, fuzzy
 msgid "the 6 byte descriptor in CHS format"
-msgstr "o descritor de 6 bytes no formato CHS"
+msgstr "o descritor de 6 bytes no formato CHS "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:528
-#, fuzzy
 msgid "the 8 byte descriptor in LBA format"
-msgstr "o descritor de 8 bytes no formato do LBA"
+msgstr "o descritor de 8 bytes no formato do LBA "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:532
-#, fuzzy
 msgid ""
 "A partition record descriptor contains information about where exactly the "
 "partition resides on the drive. Both descriptors, <acronym>LBA</acronym> and "
@@ -782,18 +739,17 @@ msgid ""
 "partition. The partition table ends with the special signature "
 "<literal>0xaa55</literal>."
 msgstr ""
-"Um descritor de registro de parti��o cont�m informa��es sobre onde "
-"exatamente a parti��o reside na unidade. Ambos os descritores, <acronym>LBA</"
-"acronym> e <acronym>CHS</acronym> , descrevem as mesmas informa��es, mas de "
+"Um descritor de registro de partição contém informações sobre onde "
+"exatamente a partição reside na unidade. Ambos os descritores, <acronym>LBA</"
+"acronym> e <acronym>CHS</acronym>, descrevem as mesmas informações, mas de "
 "maneiras diferentes: <acronym>LBA</acronym> (Logical Block Addressing) tem o "
-"setor inicial da parti��o e da parti��o. comprimento, enquanto <acronym>CHS</"
-"acronym> (Cylinder Head Sector) tem coordenadas para o primeiro e �ltimo "
-"setores da parti��o.A tabela de parti��o termina com a assinatura especial "
-"<literal> 0xaa55 </literal> "
+"setor inicial da partição e da partição. comprimento, enquanto <acronym>CHS</"
+"acronym> (Cylinder Head Sector) tem coordenadas para o primeiro e último "
+"setores da partição.A tabela de partição termina com a assinatura especial "
+"<literal>0xaa55</literal>. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:543
-#, fuzzy
 msgid ""
 "The <acronym>MBR</acronym> must fit into 512 bytes, a single disk sector. "
 "This program uses low-level <quote>tricks</quote> like taking advantage of "
@@ -803,17 +759,16 @@ msgid ""
 "embedded in the <acronym>MBR</acronym> itself. For these reasons, be very "
 "careful when modifying <filename>boot0.S</filename>."
 msgstr ""
-"O <acronym>MBR</acronym> deve caber em 512 bytes, um �nico setor de disco. "
-"Este programa usa baixo n�vel <quote> truques </quote> como aproveitar os "
-"efeitos colaterais de certas instru��es e reutilizar valores de registro de "
-"opera��es anteriores para obter o m�ximo das instru��es poss�veis. Cuidado "
-"tamb�m deve ser tomado ao manusear a tabela de parti��es, que est� embutida "
-"no pr�prio <acronym>MBR</acronym> . Por estas raz�es, tenha muito cuidado ao "
-"modificar <filename> boot0.S </filename> "
+"O <acronym>MBR</acronym> deve caber em 512 bytes, um único setor de disco. "
+"Este programa usa baixo nível <quote>truques</quote> como aproveitar os "
+"efeitos colaterais de certas instruções e reutilizar valores de registro de "
+"operações anteriores para obter o máximo das instruções possíveis. Cuidado "
+"também deve ser tomado ao manusear a tabela de partições, que está embutida "
+"no próprio <acronym>MBR</acronym>. Por estas razões, tenha muito cuidado ao "
+"modificar o <filename>boot0.S</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:553
-#, fuzzy
 msgid ""
 "Note that the <filename>boot0.S</filename> source file is assembled "
 "<quote>as is</quote>: instructions are translated one by one to binary, with "
@@ -824,19 +779,18 @@ msgid ""
 "practice this means that <filename>boot0</filename> must be loaded to memory "
 "address <literal>0x600</literal> in order to function properly."
 msgstr ""
-"Note que o <filename> boot0.S </filename> arquivo de origem � montado "
-"<quote> como � </quote> : instru��es s�o traduzidas uma a uma para bin�rio, "
-"sem informa��es adicionais (sem formato de arquivo <acronym>ELF</acronym> , "
-"por exemplo). Esse tipo de controle de baixo n�vel � obtido no momento do "
+"Note que o <filename>boot0.S</filename> arquivo de origem é montado "
+"<quote>como é</quote> : instruções são traduzidas uma a uma para binário, "
+"sem informações adicionais (sem formato de arquivo <acronym>ELF</acronym>, "
+"por exemplo). Esse tipo de controle de baixo nível é obtido no momento do "
 "link por meio de sinalizadores de controle especiais passados ​​para o "
-"vinculador. Por exemplo, a se��o de texto do programa est� configurada para "
-"estar localizada no endere�o <literal> 0x600 </literal> . Na pr�tica, isso "
-"significa que <filename> boot0 </filename> deve ser carregado no endere�o de "
-"mem�ria <literal> 0x600 </literal> para funcionar corretamente. "
+"vinculador. Por exemplo, a seção de texto do programa está configurada para "
+"estar localizada no enderço <literal>0x600</literal>. Na prática, isso "
+"significa que <filename>boot0</filename> deve ser carregado no endereço de "
+"memória <literal>0x600</literal> para funcionar corretamente. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:564
-#, fuzzy
 msgid ""
 "It is worth looking at the <filename>Makefile</filename> for "
 "<filename>boot0</filename> (<filename>sys/boot/i386/boot0/Makefile</"
@@ -851,26 +805,24 @@ msgid ""
 "the text section at address <literal>0x600</literal>, and to build the "
 "output file <quote>as is</quote> (strip out any file formatting):"
 msgstr ""
-"Vale a pena olhar para o <filename> Makefile </filename> para <filename> "
-"boot0 </filename> ( <filename> sys / boot / i386 / boot0 / Makefile </"
-"filename> ), uma vez que define um pouco do comportamento em tempo de "
-"execu��o de <filename> boot0 </filename> . Por exemplo, se um terminal "
-"conectado � porta serial (COM1) for usado para E / S, a macro <literal> SIO "
-"</literal> deve ser definido ( <literal> -DSIO </literal> ). <literal> -DPXE "
-"</literal> permite inicializar atrav�s do <acronym>PXE</acronym> "
-"pressionando <keycap> F6 </keycap> . Al�m disso, o programa define um "
-"conjunto de <emphasis> bandeiras </emphasis> que permitem modifica��es "
-"adicionais de seu comportamento. Tudo isso � ilustrado no <filename> "
-"Makefile </filename> . Por exemplo, observe as diretivas do vinculador que "
-"comandam o vinculador para iniciar a se��o de texto no endere�o <literal> "
-"0x600 </literal> e para construir o arquivo de sa�da <quote> como � </quote> "
-"(tira qualquer formata��o de arquivo): "
+"Vale a pena olhar para o <filename>Makefile</filename> para <filename>boot0</"
+"filename> (<filename>sys/boot/i386/boot0/Makefile</filename>), uma vez que "
+"define um pouco do comportamento em tempo de execução de <filename>boot0</"
+"filename>. Por exemplo, se um terminal conectado à porta serial (COM1) for "
+"usado para E/S, a macro <literal>SIO</literal> deve ser definido (<literal>-"
+"DSIO</literal>). <literal>-DPXE</literal> permite inicializar através do "
+"<acronym>PXE</acronym> pressionando <keycap> F6 </keycap>. Além disso, o "
+"programa define um conjunto de <emphasis>bandeiras</emphasis> que permitem "
+"modificações adicionais de seu comportamento. Tudo isso é ilustrado no "
+"<filename>Makefile</filename>. Por exemplo, observe as diretivas do "
+"vinculador que comandam o vinculador para iniciar a seção de texto no "
+"endereço <literal>0x600</literal> e para construir o arquivo de saída "
+"<quote>como é</quote> (tira qualquer formatação de arquivo): "
 
 #. (itstool) path: figure/title
 #: book.translate.xml:583
-#, fuzzy
 msgid "<filename>sys/boot/i386/boot0/Makefile</filename>"
-msgstr " <filename> sys / boot / i386 / boot0 / Makefile </filename> "
+msgstr " <filename>sys/boot/i386/boot0/Makefile</filename>"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:585
@@ -886,27 +838,25 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:590
-#, fuzzy
 msgid ""
 "Let us now start our study of the <acronym>MBR</acronym>, or "
 "<filename>boot0</filename>, starting where execution begins."
 msgstr ""
-"Vamos come�ar agora nosso estudo do <acronym>MBR</acronym> , ou <filename> "
-"boot0 </filename> , come�ando onde a execu��o come�a. "
+"Vamos começar agora nosso estudo do <acronym>MBR</acronym>, ou "
+"<filename>boot0</filename>, começando onde a execução começa. "
 
 #. (itstool) path: note/para
 #: book.translate.xml:595
-#, fuzzy
 msgid ""
 "Some modifications have been made to some instructions in favor of better "
 "exposition. For example, some macros are expanded, and some macro tests are "
 "omitted when the result of the test is known. This applies to all of the "
 "code examples shown."
 msgstr ""
-"Algumas modifica��es foram feitas em algumas instru��es em favor de uma "
-"melhor exposi��o. Por exemplo, algumas macros s�o expandidas e alguns testes "
-"de macro s�o omitidos quando o resultado do teste � conhecido. Isso se "
-"aplica a todos os exemplos de c�digo mostrados."
+"Algumas modificações foram feitas em algumas instruções em favor de uma "
+"melhor exposição. Por exemplo, algumas macros são expandidas e alguns testes "
+"de macro são omitidos quando o resultado do teste é conhecido. Isso se "
+"aplica a todos os exemplos de código mostrados."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:603
@@ -918,9 +868,8 @@ msgstr ""
 #: book.translate.xml:819
 #: book.translate.xml:837
 #: book.translate.xml:907
-#, fuzzy
 msgid "<filename>sys/boot/i386/boot0/boot0.S</filename>"
-msgstr " <filename> sys / boot / i386 / boot0 / boot0.S </filename> "
+msgstr " <filename>sys/boot/i386/boot0/boot0.S</filename> "
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:605
@@ -944,21 +893,19 @@ msgstr ""
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:619
-#, fuzzy
 msgid ""
 "When in doubt, we refer the reader to the official Intel manuals, which "
 "describe the exact semantics for each instruction: <link xlink:href=\"http://"
 "www.intel.com/content/www/us/en/processors/architectures-software-developer-"
 "manuals.html\"/>."
 msgstr ""
-"Em caso de d�vida, encaminhamos o leitor para os manuais oficiais da Intel, "
-"que descrevem a sem�ntica exata de cada instru��o: <link xlink:href=\"http://"
+"Em caso de dúvida, encaminhamos o leitor para os manuais oficiais da Intel, "
+"que descrevem a semântica exata de cada instrução: <link xlink:href=\"http://"
 "www.intel.com/content/www/us/en/processors/architectures-software-developer-"
-"manuals.html\"/> "
+"manuals.html\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:614
-#, fuzzy
 msgid ""
 "This first block of code is the entry point of the program. It is where the "
 "<acronym>BIOS</acronym> transfers control. First, it makes sure that the "
@@ -968,24 +915,23 @@ msgid ""
 "the stack pointer register (<literal>%sp</literal>) to address "
 "<literal>0x7c00</literal>, so we have a working stack."
 msgstr ""
-"Este primeiro bloco de c�digo � o ponto de entrada do programa. � onde o "
+"Este primeiro bloco de código é o ponto de entrada do programa. É onde o "
 "<acronym>BIOS</acronym> transfere o controle. Primeiro, ele garante que as "
-"opera��es de string autoincrementem seus operandos de ponteiro (o <literal> "
-"cld </literal> instru��o) <_: nota de rodap�-1 />. Ent�o, como n�o faz "
-"nenhuma suposi��o sobre o estado dos registradores de segmento, ele os "
-"inicializa. Finalmente, define o registrador de ponteiro da pilha ( "
-"<literal> % sp </literal> ) endere�ar <literal> 0x7c00 </literal> , ent�o "
-"temos uma pilha de trabalho \""
+"operações de string autoincrementem seus operandos de ponteiro (o "
+"<literal>cld</literal> instrução) <_:footnote-1/>. Então, como não faz "
+"nenhuma suposição sobre o estado dos registradores de segmento, ele os "
+"inicializa. Finalmente, define o registrador de ponteiro da pilha "
+"(<literal>%sp</literal>) endereçar <literal>0x7c00</literal> , então temos "
+"uma pilha de trabalho."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:627
-#, fuzzy
 msgid ""
 "The next block is responsible for the relocation and subsequent jump to the "
 "relocated code."
 msgstr ""
-"O pr�ximo bloco � respons�vel pela realoca��o e posterior salto para o "
-"c�digo realocado."
+"O próximo bloco é responsável pela realocação e posterior salto para o "
+"código realocado."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:633
@@ -1017,7 +963,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:646
-#, fuzzy
 msgid ""
 "Because <filename>boot0</filename> is loaded by the <acronym>BIOS</acronym> "
 "to address <literal>0x7C00</literal>, it copies itself to address "
@@ -1040,31 +985,29 @@ msgid ""
 "literal>+<literal>512</literal>= <literal>0x7e00</literal>; we have thus "
 "completed the code <emphasis>relocation</emphasis>."
 msgstr ""
-"Porque <filename> boot0 </filename> � carregado pelo <acronym>BIOS</acronym> "
-"para endere�ar <literal> 0x7C00 </literal> , copia-se para endere�ar "
-"<literal> 0x600 </literal> e depois transfere o controle para l� (lembre-se "
-"de que estava ligado para executar no endere�o <literal> 0x600 </literal> ). "
-"O endere�o de origem, <literal> 0x7c00 </literal> , � copiado para se "
-"registrar <literal> %si </literal> . O endere�o de destino, <literal> 0x600 "
-"</literal> , registrar <literal> % di </literal> . O n�mero de bytes para "
-"copiar, <literal> 512 </literal> (tamanho do programa), � copiado para "
-"registrar <literal> % cx </literal> . Em seguida, o <literal> representante "
-"</literal> instru��o repete a instru��o que se segue, isto �, <literal> "
-"movsb </literal> , o n�mero de vezes ditado pelo <literal> % cx </literal> "
-"registo. o <literal> movsb </literal> instru��o copia o byte apontado por "
-"<literal> %si </literal> para o endere�o apontado por <literal> % di </"
-"literal> . Isso � repetido mais 511 vezes. Em cada repeti��o, os registros "
-"de origem e destino, <literal> %si </literal> e <literal> % di </literal> , "
-"s�o incrementados por um. Assim, ap�s a conclus�o da c�pia de 512 bytes, "
-"<literal> % di </literal> tem o valor <literal> 0x600 </literal> + <literal> "
-"512 </literal> = <literal> 0x800 </literal> e <literal> %si </literal> tem o "
-"valor <literal> 0x7c00 </literal> + <literal> 512 </literal> = <literal> "
-"0x7e00 </literal> ; assim, completamos o c�digo <emphasis> reloca��o </"
-"emphasis> "
+"Porque <filename>boot0</filename> é carregado pelo <acronym>BIOS</acronym> "
+"para endereçar <literal>0x7C00</literal>, copia-se para endereçar "
+"<literal>0x600</literal> e depois transfere o controle para lá (lembre-se de "
+"que estava ligado para executar no endereço <literal>0x600</literal>. O "
+"endereço de origem, <literal>0x7c00</literal>, é copiado para se registrar "
+"<literal>%si</literal>. O endereço de destino, <literal>0x600</literal>, "
+"registrar <literal>%di</literal>. O número de bytes para copiar, "
+"<literal>512</literal> (tamanho do programa), é copiado para registrar "
+"<literal>%cx</literal>. Em seguida, a instrução <literal>rep</literal> "
+"repete a instrução que se segue, isto é, <literal>movsb</literal>, o número "
+"de vezes ditado pelo registrador <literal>%cx</literal>. A instrução "
+"<literal>movsb</literal> copia o byte apontado por <literal>%si</literal> "
+"para o endereço apontado por <literal>%di</literal>. Isso é repetido mais "
+"511 vezes. Em cada repetição, os registros de origem e destino, "
+"<literal>%si</literal> e <literal>%di</literal>, são incrementados por um. "
+"Assim, após a conclusão da cópia de 512 bytes, <literal>%di</literal> tem o "
+"valor <literal>0x600</literal> + <literal>512</literal> = <literal>0x800</"
+"literal> e <literal>%si</literal> tem o valor <literal>0x7c00</literal> + "
+"<literal>512</literal> = <literal>0x7e00</literal>; assim, completamos o "
+"código de <emphasis>relocação</emphasis>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:672
-#, fuzzy
 msgid ""
 "Next, the destination register <literal>%di</literal> is copied to "
 "<literal>%bp</literal>. <literal>%bp</literal> gets the value "
@@ -1083,35 +1026,33 @@ msgid ""
 "from the relocated code. Note that until this jump to the relocated code, "
 "any reference to an absolute address was avoided."
 msgstr ""
-"Em seguida, o registro de destino <literal> % di </literal> � copiado para "
-"<literal> % pb </literal> . <literal> % pb </literal> Obt�m o valor "
-"<literal> 0x800 </literal> . O valor que <literal> 16 </literal> � copiado "
-"para <literal> % cl </literal> em prepara��o para uma nova opera��o de "
-"string (como a nossa anterior <literal> movsb </literal> ). Agora, <literal> "
-"stosb </literal> � executado 16 vezes. Esta instru��o copia um <literal> 0 </"
-"literal> valor para o endere�o indicado pelo registo de destino ( <literal> "
-"% di </literal> , qual � <literal> 0x800 </literal> ) e incrementa-o. Isso � "
-"repetido mais 15 vezes, ent�o <literal> % di </literal> acaba com valor "
-"<literal> 0x810 </literal> . Efetivamente, isso limpa o intervalo de "
-"endere�os <literal> 0x800 </literal> - <literal> 0x80f </literal> . Esse "
-"intervalo � usado como uma tabela de parti��es (falsa) para gravar o "
-"<acronym>MBR de</acronym> volta no disco. Finalmente, o campo setorial para "
-"o endere�amento <acronym>CHS</acronym> desta parti��o falsa recebe o valor 1 "
-"e um salto � feito para a fun��o principal a partir do c�digo realocado. "
-"Note que at� este salto para o c�digo realocado, qualquer refer�ncia a um "
-"endere�o absoluto foi evitada. "
+"Em seguida, o registro de destino <literal>%di</literal> é copiado para "
+"<literal>%bp</literal>. <literal>%bp</literal> Obtém o valor <literal>0x800</"
+"literal>. O valor que <literal>16</literal> é copiado para <literal>%cl</"
+"literal> em preparação para uma nova operação de string (como a nossa "
+"anterior <literal>movsb</literal>). Agora, <literal>stosb</literal> é "
+"executado 16 vezes. Esta instrução copia um valor <literal>0</literal> para "
+"o endereço indicado pelo registo de destino (<literal>%di</literal>, que é "
+"<literal>0x800</literal>) e incrementa-o. Isso é repetido mais 15 vezes, "
+"então <literal>%di</literal> acaba com valor <literal>0x810</literal>. "
+"Efetivamente, isso limpa o intervalo de endereços <literal>0x800</literal> - "
+"<literal>0x80f</literal>. Esse intervalo é usado como uma tabela de "
+"partições (falsa) para gravar o <acronym>MBR de</acronym> volta no disco. "
+"Finalmente, o campo setorial para o endereçamento <acronym>CHS</acronym> "
+"desta partição falsa recebe o valor 1 e um salto é feito para a função "
+"principal a partir do código realocado. Note que até este salto para o "
+"código realocado, qualquer referência a um endereço absoluto foi evitada. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:693
-#, fuzzy
 msgid ""
 "The following code block tests whether the drive number provided by the "
 "<acronym>BIOS</acronym> should be used, or the one stored in "
 "<filename>boot0</filename>."
 msgstr ""
-"O bloco de c�digo a seguir testa se o n�mero da unidade fornecido pelo "
-"<acronym>BIOS</acronym> deve ser usado ou aquele armazenado <filename> boot0 "
-"</filename> "
+"O bloco de código a seguir testa se o número da unidade fornecido pelo "
+"<acronym>BIOS</acronym> deve ser usado ou aquele armazenado <filename>boot0</"
+"filename>."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:700
@@ -1131,7 +1072,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:707
-#, fuzzy
 msgid ""
 "This code tests the <literal>SETDRV</literal> bit (<literal>0x20</literal>) "
 "in the <emphasis>flags</emphasis> variable. Recall that register "
@@ -1146,31 +1086,30 @@ msgid ""
 "that the <acronym>BIOS</acronym> provided a valid drive number, so we jump "
 "to <literal>save_curdrive</literal>."
 msgstr ""
-"Este c�digo testa o <literal> SETDRV </literal> pouco ( <literal> 0x20 </"
-"literal> ) no <emphasis> bandeiras </emphasis> vari�vel. Lembre-se de que "
-"registrar <literal> % pb </literal> aponta para endere�o local <literal> "
-"0x800 </literal> , ent�o o teste � feito para o <emphasis> bandeiras </"
-"emphasis> vari�vel no endere�o <literal> 0x800 </literal> - <literal> 69 </"
-"literal> = <literal> 0x7bb </literal> . Este � um exemplo do tipo de "
-"modifica��es que podem ser feitas para <filename> boot0 </filename> . o "
-"<literal> SETDRV </literal> flag n�o � definido por padr�o, mas pode ser "
-"definido no <filename> Makefile </filename> . Quando definido, o n�mero da "
-"unidade armazenado no <acronym>MBR</acronym> � usado em vez daquele "
-"fornecido pelo <acronym>BIOS</acronym> . N�s assumimos os padr�es, e que o "
-"<acronym>BIOS</acronym> forneceu um n�mero de drive v�lido, ent�o n�s "
-"pulamos para <literal> save_curdrive </literal> "
+"Este código testa o bit (<literal>0x20</literal>) de <literal>SETDRV</"
+"literal> na varíavel <emphasis>flags</emphasis>. Lembre-se de que o "
+"registrador <literal>%bp</literal> aponta para endereço local "
+"<literal>0x800</literal>, então o teste é feito para a vairável "
+"<emphasis>flags</emphasis> no endereço <literal>0x800</literal>-<literal>69</"
+"literal>=<literal>0x7bb</literal>. Este é um exemplo do tipo de modificações "
+"que podem ser feitas para <filename>boot0</filename>. O flag de "
+"<literal>SETDRV</literal> não é definido por padrão, mas pode ser definido "
+"no <filename>Makefile</filename>. Quando definido, o número da unidade "
+"armazenado no <acronym>MBR</acronym> é usado em vez daquele fornecido pelo "
+"<acronym>BIOS</acronym>. Nós assumimos os padrões, e que a <acronym>BIOS</"
+"acronym> forneceu um número de drive válido, então pulamos para "
+"<literal>save_curdrive</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:723
-#, fuzzy
 msgid ""
 "The next block saves the drive number provided by the <acronym>BIOS</"
 "acronym>, and calls <literal>putn</literal> to print a new line on the "
 "screen."
 msgstr ""
-"O pr�ximo bloco salva o n�mero da unidade fornecido pelo <acronym>BIOS</"
-"acronym> e as chamadas <literal> putn </literal> para imprimir uma nova "
-"linha na tela. "
+"O próximo bloco salva o número da unidade fornecido pelo <acronym>BIOS</"
+"acronym> e as chamadas <literal>putn</literal> para imprimir uma nova linha "
+"na tela."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:730
@@ -1198,15 +1137,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:741
-#, fuzzy
 msgid ""
 "Note that we assume <varname>TEST</varname> is not defined, so the "
 "conditional code in it is not assembled and will not appear in our "
 "executable <filename>boot0</filename>."
 msgstr ""
-"Note que n�s assumimos <varname> TESTE </varname> n�o est� definido, ent�o o "
-"c�digo condicional nele n�o � montado e n�o aparecer� em nosso execut�vel "
-"<filename> boot0 </filename> "
+"Note que assumimos <varname>TESTE</varname> como não definida, então o "
+"código condicional nele não é montado e não aparecerá em nosso executável de "
+"<filename>boot0</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:745
