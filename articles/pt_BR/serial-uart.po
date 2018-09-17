@@ -1,5 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <edson.brandi@gmail.com>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -7,9 +7,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.0\n"
+"X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-08-25 01:15+0000\n"
+"PO-Revision-Date: 2018-09-17 01:40+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -21,9 +21,8 @@ msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
-#, fuzzy
 msgid "Serial and UART Tutorial"
-msgstr "Tutorial Serial e UART"
+msgstr "Tutorial sobre Comunicações Seriais e UART"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:9
@@ -78,25 +77,20 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 2014-"
 "04-29 02:46:48Z wblock $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 2014-"
-"04-29 02:46:48Z wblock $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:33
-#, fuzzy
 msgid "This article talks about using serial hardware with FreeBSD."
 msgstr "Este artigo fala sobre o uso de hardware serial com o FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:38
-#, fuzzy
 msgid "The UART: What it is and how it works"
-msgstr "A UART: o que é e como funciona"
+msgstr "A UART: O que é e como funciona"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:40
-#, fuzzy
 msgid ""
 "<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</email>, "
 "All Rights Reserved. 13 January 1996.</emphasis>"
@@ -148,25 +142,21 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:62
-#, fuzzy
 msgid "Some common acronyms are:"
 msgstr "Algumas siglas comuns são:"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:65
-#, fuzzy
 msgid "UART Universal Asynchronous Receiver/Transmitter"
-msgstr "Receptor / Transmissor Assíncrono Universal UART"
+msgstr "UART Receptor / Transmissor Assíncrono Universal"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:69
-#, fuzzy
 msgid "USART Universal Synchronous-Asynchronous Receiver/Transmitter"
-msgstr "Receptor / Transmissor Síncrono-Assíncrono Universal USART"
+msgstr "USART Receptor / Transmissor Síncrono-Assíncrono Universal"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:74
-#, fuzzy
 msgid "Synchronous Serial Transmission"
 msgstr "Transmissão Serial Síncrona"
 
@@ -187,15 +177,15 @@ msgid ""
 msgstr ""
 "A transmissão serial síncrona requer que o emissor e o receptor compartilhem "
 "um relógio entre si, ou que o remetente forneça um sinal estroboscópico ou "
-"outro sinal de tempo para que o receptor saiba quando deve ler o próximo bit "
-"dos dados. Na maioria das formas de comunicação síncrona serial, se não "
-"houver dados disponíveis em um dado instante para transmitir, um caractere "
-"de preenchimento deve ser enviado para que os dados sejam sempre "
-"transmitidos. A comunicação síncrona é geralmente mais eficiente, pois "
-"somente os bits de dados são transmitidos entre o emissor e o receptor, e a "
-"comunicação síncrona pode ser mais cara se fios e circuitos extras forem "
-"necessários para compartilhar um sinal de relógio entre o emissor e o "
-"receptor."
+"outro sinal de tempo para que o receptor saiba quando deve <quote>ler</"
+"quote> o próximo bit dos dados. Na maioria das formas de comunicação "
+"síncrona serial, se não houver dados disponíveis em um dado instante para "
+"transmitir, um caractere de preenchimento deve ser enviado para que os dados "
+"sejam sempre transmitidos. A comunicação síncrona é geralmente mais "
+"eficiente, pois somente os bits de dados são transmitidos entre o emissor e "
+"o receptor, e a comunicação síncrona pode ser mais cara se fios e circuitos "
+"extras forem necessários para compartilhar um sinal de relógio entre o "
+"emissor e o receptor."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:90
@@ -231,7 +221,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:105
-#, fuzzy
 msgid "Asynchronous Serial Transmission"
 msgstr "Transmissão Serial Assíncrona"
 
@@ -386,7 +375,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:177
-#, fuzzy
 msgid "Other UART Functions"
 msgstr "Outras funções UART"
 
@@ -418,7 +406,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:195
-#, fuzzy
 msgid "The RS232-C and V.24 Standards"
 msgstr "Os padrões RS232-C e V.24"
 
@@ -437,7 +424,6 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:204
-#, fuzzy
 msgid "RS232-C Bit Assignments (Marks and Spaces)"
 msgstr "Atribuições de bit RS232-C (marcas e espaços)"
 
@@ -501,18 +487,17 @@ msgid ""
 "VDC, but these values are still acceptable to a RS232-C receiver, provided "
 "that the cable lengths are short."
 msgstr ""
-"Em RS232-C, o sinal \"Marking\" (a <literal> 1 </literal>) é representado "
-"por uma tensão entre -2 VDC e -12 VDC, e um sinal \"Spacing\" (um <literal> "
-"0 </literal >) é representado por uma tensão entre 0 e +12 VDC. O "
-"transmissor deve enviar +12 VDC ou -12 VCC, e o receptor deve permitir "
-"alguma perda de tensão em cabos longos. Alguns transmissores em dispositivos "
-"de baixa potência (como computadores portáteis) às vezes usam apenas +5 VCC "
-"e -5 VCC, mas esses valores ainda são aceitáveis ​​para um receptor RS232-C, "
-"desde que os comprimentos dos cabos sejam curtos."
+"Em RS232-C, o sinal \"Marking\" (a <literal>1</literal>) é representado por "
+"uma tensão entre -2 VDC e -12 VDC, e um sinal \"Spacing\" (um <literal>0</"
+"literal>) é representado por uma tensão entre 0 e +12 VDC. O transmissor "
+"deve enviar +12 VDC ou -12 VCC, e o receptor deve permitir alguma perda de "
+"tensão em cabos longos. Alguns transmissores em dispositivos de baixa "
+"potência (como computadores portáteis) às vezes usam apenas +5 VCC e -5 VCC, "
+"mas esses valores ainda são aceitáveis ​​para um receptor RS232-C, desde que "
+"os comprimentos dos cabos sejam curtos."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:242
-#, fuzzy
 msgid "RS232-C Break Signal"
 msgstr "Sinal de quebra RS232-C"
 
@@ -610,7 +595,6 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:292
-#, fuzzy
 msgid "RS232-C DTE and DCE Devices"
 msgstr "Dispositivos RS232-C DTE e DCE"
 
@@ -668,7 +652,6 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:321
-#, fuzzy
 msgid "RS232-C Pin Assignments"
 msgstr "Atribuições de pinos RS232-C"
 
@@ -726,37 +709,31 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:348
-#, fuzzy
 msgid "DB25 RS232-C Pin"
-msgstr "Pino DB25 RS232-C"
+msgstr "Pinos DB25 RS232-C"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:348
-#, fuzzy
 msgid "DB9 IBM PC Pin"
-msgstr "DB9 IBM PC Pin"
+msgstr "Pinos DB9 IBM PC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:349
-#, fuzzy
 msgid "EIA Circuit Symbol"
 msgstr "Símbolo do Circuito EIA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:350
-#, fuzzy
 msgid "CCITT Circuit Symbol"
 msgstr "Símbolo do Circuito CCITT"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:350
-#, fuzzy
 msgid "Common Name"
-msgstr "Nome comum"
+msgstr "Nome Comum"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:351
-#, fuzzy
 msgid "Signal Source"
 msgstr "Fonte de sinal"
 
@@ -764,7 +741,6 @@ msgstr "Fonte de sinal"
 #: article.translate.xml:352
 #: article.translate.xml:1177
 #: article.translate.xml:1489
-#, fuzzy
 msgid "Description"
 msgstr "Descrição"
 
@@ -788,7 +764,6 @@ msgstr "Descrição"
 #: article.translate.xml:1660
 #: article.translate.xml:1667
 #: article.translate.xml:1668
-#, fuzzy
 msgid "1"
 msgstr "1"
 
@@ -828,31 +803,26 @@ msgstr "1"
 #: article.translate.xml:599
 #: article.translate.xml:600
 #: article.translate.xml:602
-#, fuzzy
 msgid "-"
 msgstr "-"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:360
-#, fuzzy
 msgid "AA"
 msgstr "AA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:361
-#, fuzzy
 msgid "101"
 msgstr "101"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:362
-#, fuzzy
 msgid "PG/FG"
-msgstr "PG / FG"
+msgstr "PG/FG"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:364
-#, fuzzy
 msgid "Frame/Protective Ground"
 msgstr "Quadro / aterramento de proteção"
 
@@ -860,7 +830,6 @@ msgstr "Quadro / aterramento de proteção"
 #: article.translate.xml:368
 #: article.translate.xml:379
 #: article.translate.xml:1485
-#, fuzzy
 msgid "2"
 msgstr "2"
 
@@ -868,25 +837,21 @@ msgstr "2"
 #: article.translate.xml:369
 #: article.translate.xml:378
 #: article.translate.xml:1061
-#, fuzzy
 msgid "3"
 msgstr "3"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:370
-#, fuzzy
 msgid "BA"
 msgstr "BA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:371
-#, fuzzy
 msgid "103"
 msgstr "103"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:372
-#, fuzzy
 msgid "TD"
 msgstr "TD"
 
@@ -900,31 +865,26 @@ msgstr "TD"
 #: article.translate.xml:563
 #: article.translate.xml:583
 #: article.translate.xml:593
-#, fuzzy
 msgid "DTE"
 msgstr "DTE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:374
-#, fuzzy
 msgid "Transmit Data"
-msgstr "Transmitir Dados"
+msgstr "Transmit Data"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:380
-#, fuzzy
 msgid "BB"
 msgstr "BB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:381
-#, fuzzy
 msgid "104"
 msgstr "104"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:382
-#, fuzzy
 msgid "RD"
 msgstr "RD"
 
@@ -940,21 +900,18 @@ msgstr "RD"
 #: article.translate.xml:523
 #: article.translate.xml:573
 #: article.translate.xml:603
-#, fuzzy
 msgid "DCE"
 msgstr "DCE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:384
-#, fuzzy
 msgid "Receive Data"
-msgstr "Receber dados"
+msgstr "Receive Data"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:388
 #: article.translate.xml:549
 #: article.translate.xml:1353
-#, fuzzy
 msgid "4"
 msgstr "4"
 
@@ -962,38 +919,32 @@ msgstr "4"
 #: article.translate.xml:389
 #: article.translate.xml:418
 #: article.translate.xml:1338
-#, fuzzy
 msgid "7"
 msgstr "7"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:390
-#, fuzzy
 msgid "CA"
 msgstr "CA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:391
-#, fuzzy
 msgid "105"
 msgstr "105"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:392
-#, fuzzy
 msgid "RTS"
 msgstr "RTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:394
-#, fuzzy
 msgid "Request to Send"
-msgstr "Pedido para enviar"
+msgstr "Request to Send"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:398
 #: article.translate.xml:419
-#, fuzzy
 msgid "5"
 msgstr "5"
 
@@ -1001,118 +952,99 @@ msgstr "5"
 #: article.translate.xml:399
 #: article.translate.xml:428
 #: article.translate.xml:1359
-#, fuzzy
 msgid "8"
 msgstr "8"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:400
-#, fuzzy
 msgid "CB"
 msgstr "CB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:401
-#, fuzzy
 msgid "106"
 msgstr "106"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:402
-#, fuzzy
 msgid "CTS"
 msgstr "CTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:404
-#, fuzzy
 msgid "Clear to Send"
-msgstr "Limpar para enviar"
+msgstr "Clear to Send"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:408
 #: article.translate.xml:409
 #: article.translate.xml:1339
-#, fuzzy
 msgid "6"
 msgstr "6"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:410
-#, fuzzy
 msgid "CC"
 msgstr "CC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:411
-#, fuzzy
 msgid "107"
 msgstr "107"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:412
-#, fuzzy
 msgid "DSR"
 msgstr "DSR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:414
-#, fuzzy
 msgid "Data Set Ready"
-msgstr "Conjunto de dados pronto"
+msgstr "Data Set Ready"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:420
-#, fuzzy
 msgid "AV"
 msgstr "AV"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:421
-#, fuzzy
 msgid "102"
 msgstr "102"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:422
-#, fuzzy
 msgid "SG/GND"
-msgstr "SG / GND"
+msgstr "SG/GND"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:424
-#, fuzzy
 msgid "Signal Ground"
-msgstr "Campo de sinal"
+msgstr "Signal Ground"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:430
-#, fuzzy
 msgid "CF"
 msgstr "CF"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:431
-#, fuzzy
 msgid "109"
 msgstr "109"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:432
-#, fuzzy
 msgid "DCD/CD"
-msgstr "DCD / CD"
+msgstr "DCD/CD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:434
-#, fuzzy
 msgid "Data Carrier Detect"
 msgstr "Data Carrier Detect"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:438
 #: article.translate.xml:569
-#, fuzzy
 msgid "9"
 msgstr "9"
 
@@ -1120,410 +1052,343 @@ msgstr "9"
 #: article.translate.xml:444
 #: article.translate.xml:454
 #: article.translate.xml:464
-#, fuzzy
 msgid "Reserved for Test"
-msgstr "Reservado para teste"
+msgstr "Reserved for Test"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:448
-#, fuzzy
 msgid "10"
 msgstr "10"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:458
-#, fuzzy
 msgid "11"
 msgstr "11"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:468
-#, fuzzy
 msgid "12"
 msgstr "12"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:470
-#, fuzzy
 msgid "CI"
 msgstr "CI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:471
-#, fuzzy
 msgid "122"
 msgstr "122"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:472
-#, fuzzy
 msgid "SRLSD"
 msgstr "SRLSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:474
-#, fuzzy
 msgid "Sec. Recv. Line Signal Detector"
-msgstr "Sec. Recv. Detector de Sinal de Linha"
+msgstr "Sec. Recv. Line Signal Detector"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:478
-#, fuzzy
 msgid "13"
 msgstr "13"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:480
-#, fuzzy
 msgid "SCB"
 msgstr "SCB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:481
-#, fuzzy
 msgid "121"
 msgstr "121"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:482
-#, fuzzy
 msgid "SCTS"
 msgstr "SCTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:484
-#, fuzzy
 msgid "Secondary Clear to Send"
-msgstr "Limpeza secundária para enviar"
+msgstr "Secondary Clear to Send"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:488
 #: article.translate.xml:1365
-#, fuzzy
 msgid "14"
 msgstr "14"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:490
-#, fuzzy
 msgid "SBA"
 msgstr "SBA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:491
-#, fuzzy
 msgid "118"
 msgstr "118"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:492
-#, fuzzy
 msgid "STD"
 msgstr "DST"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:494
-#, fuzzy
 msgid "Secondary Transmit Data"
-msgstr "Dados de Transmissão Secundários"
+msgstr "Secondary Transmit Data"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:498
-#, fuzzy
 msgid "15"
 msgstr "15"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:500
-#, fuzzy
 msgid "DB"
 msgstr "DB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:501
-#, fuzzy
 msgid "114"
 msgstr "114"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:502
 #: article.translate.xml:592
-#, fuzzy
 msgid "TSET"
 msgstr "TSET"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:504
 #: article.translate.xml:594
-#, fuzzy
 msgid "Trans. Sig. Element Timing"
-msgstr "Trans. Sig. Elemento de tempo"
+msgstr "Trans. Sig. Element Timing"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:508
-#, fuzzy
 msgid "16"
 msgstr "16"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:510
-#, fuzzy
 msgid "SBB"
 msgstr "SBB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:511
-#, fuzzy
 msgid "119"
 msgstr "119"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:512
-#, fuzzy
 msgid "SRD"
 msgstr "SRD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:514
-#, fuzzy
 msgid "Secondary Received Data"
-msgstr "Dados Recebidos Secundários"
+msgstr "Secondary Received Data"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:518
-#, fuzzy
 msgid "17"
 msgstr "17"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:520
-#, fuzzy
 msgid "DD"
 msgstr "DD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:521
-#, fuzzy
 msgid "115"
 msgstr "115"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:522
-#, fuzzy
 msgid "RSET"
 msgstr "RSET"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:524
-#, fuzzy
 msgid "Receiver Signal Element Timing"
-msgstr "Tempo do Elemento do Sinal do Receptor"
+msgstr "Receiver Signal Element Timing"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:528
-#, fuzzy
 msgid "18"
 msgstr "18"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:531
-#, fuzzy
 msgid "141"
 msgstr "141"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:532
-#, fuzzy
 msgid "LOOP"
 msgstr "LOOP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:534
-#, fuzzy
 msgid "Local Loopback"
-msgstr "Loopback local"
+msgstr "Local Loopback"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:538
 #: article.translate.xml:1067
-#, fuzzy
 msgid "19"
 msgstr "19"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:540
-#, fuzzy
 msgid "SCA"
 msgstr "SCA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:541
-#, fuzzy
 msgid "120"
 msgstr "120"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:542
-#, fuzzy
 msgid "SRS"
 msgstr "SRS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:544
-#, fuzzy
 msgid "Secondary Request to Send"
-msgstr "Pedido Secundário para Enviar"
+msgstr "Secondary Request to Send"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:548
-#, fuzzy
 msgid "20"
 msgstr "20"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:550
-#, fuzzy
 msgid "CD"
 msgstr "CD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:551
-#, fuzzy
 msgid "108.2"
-msgstr "108,2"
+msgstr "108.2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:552
-#, fuzzy
 msgid "DTR"
 msgstr "DTR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:554
-#, fuzzy
 msgid "Data Terminal Ready"
-msgstr "Terminal de dados pronto"
+msgstr "Data Terminal Ready"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:558
-#, fuzzy
 msgid "21"
 msgstr "21"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:562
-#, fuzzy
 msgid "RDL"
 msgstr "RDL"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:564
-#, fuzzy
 msgid "Remote Digital Loopback"
-msgstr "Loopback digital remoto"
+msgstr "Remote Digital Loopback"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:568
-#, fuzzy
 msgid "22"
 msgstr "22"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:570
-#, fuzzy
 msgid "CE"
 msgstr "CE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:571
-#, fuzzy
 msgid "125"
 msgstr "125"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:572
-#, fuzzy
 msgid "RI"
 msgstr "RI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:574
-#, fuzzy
 msgid "Ring Indicator"
-msgstr "Indicador de Anel"
+msgstr "Ring Indicator"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:578
 #: article.translate.xml:1073
-#, fuzzy
 msgid "23"
 msgstr "23"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:580
-#, fuzzy
 msgid "CH"
 msgstr "CH"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:581
-#, fuzzy
 msgid "111"
 msgstr "111"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:582
-#, fuzzy
 msgid "DSRS"
 msgstr "DSRS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:584
-#, fuzzy
 msgid "Data Signal Rate Selector"
-msgstr "Seletor de taxa de sinal de dados"
+msgstr "Data Signal Rate Selector"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:588
-#, fuzzy
 msgid "24"
 msgstr "24"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:590
-#, fuzzy
 msgid "DA"
 msgstr "DA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:591
-#, fuzzy
 msgid "113"
 msgstr "113"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:598
-#, fuzzy
 msgid "25"
 msgstr "25"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:601
-#, fuzzy
 msgid "142"
 msgstr "142"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:604
-#, fuzzy
 msgid "Test Mode"
-msgstr "Modo de teste"
+msgstr "Test Mode"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:613
-#, fuzzy
 msgid "Bits, Baud and Symbols"
-msgstr "Bits, Baud e Símbolos"
+msgstr "Bits, Baud e Simbolos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:615
@@ -1725,9 +1590,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:713
-#, fuzzy
 msgid "The IBM Personal Computer UART"
-msgstr "O computador pessoal IBM UART"
+msgstr "O computador pessoal IBM e o UART"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:715
@@ -1747,23 +1611,21 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:723
-#, fuzzy
 msgid "National Semiconductor UART Family Tree"
-msgstr "Árvore genealógica da UART nacional de semicondutores"
+msgstr "Árvore Genealógica da National Semiconductor UART"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:725
-#, fuzzy
 msgid ""
 "There have been several versions and subsequent generations of the INS8250 "
 "UART. Each major version is described below."
 msgstr ""
 "Houve várias versões e gerações subseqüentes do INSART50 UART. Cada versão "
-"principal é descrita abaixo."
+"principal está descrita abaixo."
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:730
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "INS8250  -&gt; INS8250B\n"
 "  \\\n"
@@ -1789,7 +1651,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:743
-#, fuzzy
 msgid "INS8250"
 msgstr "INS8250"
 
@@ -1824,7 +1685,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:763
-#, fuzzy
 msgid "INS8250-B"
 msgstr "INS8250-B"
 
@@ -1840,7 +1700,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:773
-#, fuzzy
 msgid "INS8250A"
 msgstr "INS8250A"
 
@@ -1862,7 +1721,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:788
-#, fuzzy
 msgid "INS82C50A"
 msgstr "INS82C50A"
 
@@ -1878,7 +1736,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:798
-#, fuzzy
 msgid "NS16450"
 msgstr "NS16450"
 
@@ -1896,7 +1753,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:809
-#, fuzzy
 msgid "NS16C450"
 msgstr "NS16C450"
 
@@ -1908,7 +1764,6 @@ msgstr "Esta é uma versão CMOS (baixo consumo de energia) do NS16450."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:818
-#, fuzzy
 msgid "NS16550"
 msgstr "NS16550"
 
@@ -1924,7 +1779,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:828
-#, fuzzy
 msgid "NS16550A"
 msgstr "NS16550A"
 
@@ -1945,7 +1799,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:841
-#, fuzzy
 msgid "NS16C552"
 msgstr "NS16C552"
 
@@ -1959,7 +1812,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:850
-#, fuzzy
 msgid "PC16550D"
 msgstr "PC16550D"
 
@@ -1976,7 +1828,6 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:863
-#, fuzzy
 msgid "The NS16550AF and the PC16550D are the same thing"
 msgstr "O NS16550AF e o PC16550D são a mesma coisa"
 
@@ -2042,9 +1893,8 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:895
-#, fuzzy
 msgid "National Semiconductor Part Numbering System"
-msgstr "Sistema Nacional de Numeração de Peças de Semicondutores"
+msgstr "Sistema de Numeração de Peças da National Semiconductor"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:897
@@ -2076,57 +1926,48 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:912
-#, fuzzy
 msgid "\"F\""
 msgstr "\"F\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:913
-#, fuzzy
 msgid "QFP"
 msgstr "QFP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:914
-#, fuzzy
 msgid "(quad flat pack) L lead type"
-msgstr "(quad flat pack) L tipo de chumbo"
+msgstr "(quad flat pack) L lead type"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:918
-#, fuzzy
 msgid "\"N\""
 msgstr "\"N\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:919
-#, fuzzy
 msgid "DIP"
-msgstr "MERGULHO"
+msgstr "DIP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:920
-#, fuzzy
 msgid "(dual inline package) through hole straight lead type"
-msgstr "(pacote inline duplo) através do tipo de chumbo reto"
+msgstr "(dual inline package) through hole straight lead type"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:925
-#, fuzzy
 msgid "\"V\""
 msgstr "\"V\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:926
-#, fuzzy
 msgid "LPCC"
 msgstr "LPCC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:927
-#, fuzzy
 msgid "(lead plastic chip carrier) J lead type"
-msgstr "(transportador de chip de chumbo) tipo de chumbo J"
+msgstr "(lead plastic chip carrier) J lead type"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:933
@@ -2156,7 +1997,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:947
-#, fuzzy
 msgid "Other Vendors and Similar UARTs"
 msgstr "Outros fornecedores e UARTs semelhantes"
 
@@ -2334,19 +2174,16 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1033
-#, fuzzy
 msgid "Vendor"
 msgstr "Fornecedor"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1034
-#, fuzzy
 msgid "Part Number"
 msgstr "Número da peça"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1035
-#, fuzzy
 msgid "Errors (aka \"differences\" reported)"
 msgstr "Erros (também conhecidos como \"diferenças\")"
 
@@ -2354,13 +2191,11 @@ msgstr "Erros (também conhecidos como \"diferenças\")"
 #: article.translate.xml:1041
 #: article.translate.xml:1047
 #: article.translate.xml:1053
-#, fuzzy
 msgid "National"
-msgstr "Nacional"
+msgstr "National"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1042
-#, fuzzy
 msgid "(PC16550DV)"
 msgstr "(PC16550DV)"
 
@@ -2388,59 +2223,50 @@ msgstr "(PC16550DV)"
 #: article.translate.xml:1653
 #: article.translate.xml:1661
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1048
-#, fuzzy
 msgid "(NS16550AFN)"
 msgstr "(NS16550AFN)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1054
-#, fuzzy
 msgid "(NS16C552V)"
 msgstr "(NS16C552V)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1059
-#, fuzzy
 msgid "TI"
 msgstr "TI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1060
-#, fuzzy
 msgid "(TL16550AFN)"
 msgstr "(TL16550AFN)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1065
-#, fuzzy
 msgid "CMD"
 msgstr "CMD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1066
-#, fuzzy
 msgid "(16C550PE)"
 msgstr "(16C550PE)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1071
-#, fuzzy
 msgid "StarTech"
 msgstr "StarTech"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1072
-#, fuzzy
 msgid "(ST16C550J)"
 msgstr "(ST16C550J)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1077
-#, fuzzy
 msgid "Rockwell"
 msgstr "Rockwell"
 
@@ -2454,25 +2280,21 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1080
-#, fuzzy
 msgid "117"
 msgstr "117"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1084
-#, fuzzy
 msgid "Sierra"
-msgstr "Serra"
+msgstr "Sierra"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1085
-#, fuzzy
 msgid "Modem with an internal 16550 (SC11951/SC11351)"
-msgstr "Modem com um 16550 interno (SC11951 / SC11351)"
+msgstr "Modem com um 16550 interno (SC11951/SC11351)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1087
-#, fuzzy
 msgid "91"
 msgstr "91"
 
@@ -2588,7 +2410,6 @@ msgstr "Erro (6) ... Interrupção de tempo limite falhou: IIR = c1 LSR = 61"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1151
-#, fuzzy
 msgid "8250/16450/16550 Registers"
 msgstr "Registradores 8250/16450/16550"
 
@@ -2632,22 +2453,19 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1168
-#, fuzzy
 msgid ""
 "A description of the I/O ports of the 8250/16450/16550 UART is provided "
 "below."
 msgstr ""
-"Uma descrição das portas I / O da UART 8250/16450/16550 é fornecida abaixo."
+"Uma descrição das portas I/O da UART 8250/16450/16550 é fornecida abaixo."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1175
-#, fuzzy
 msgid "I/O Port"
-msgstr "Porta I / O"
+msgstr "Porta I/O"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1176
-#, fuzzy
 msgid "Access Allowed"
 msgstr "Acesso permitido"
 
@@ -2655,21 +2473,18 @@ msgstr "Acesso permitido"
 #: article.translate.xml:1183
 #: article.translate.xml:1192
 #: article.translate.xml:1201
-#, fuzzy
 msgid "+0x00"
-msgstr "+ 0x00"
+msgstr "+0x00"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1184
-#, fuzzy
 msgid "write (DLAB==0)"
-msgstr "escrever (DLAB == 0)"
+msgstr "write (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1185
-#, fuzzy
 msgid "Transmit Holding Register (THR)."
-msgstr "Transmitir Registro de Retenção (THR)."
+msgstr "Transmit Holding Register (THR)."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1186
@@ -2683,15 +2498,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1193
-#, fuzzy
 msgid "read (DLAB==0)"
-msgstr "ler (DLAB == 0)"
+msgstr "read (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1194
-#, fuzzy
 msgid "Receive Buffer Register (RBR)."
-msgstr "Receber Registrador de Buffer (RBR)."
+msgstr "Receive Buffer Register (RBR)."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1194
@@ -2706,15 +2519,13 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1202
 #: article.translate.xml:1213
-#, fuzzy
 msgid "write/read (DLAB==1)"
-msgstr "escrever / ler (DLAB == 1)"
+msgstr "write/read (DLAB==1)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1203
-#, fuzzy
 msgid "Divisor Latch LSB (DLL)"
-msgstr "Latch Divisor LSB (DLL)"
+msgstr "Divisor Latch LSB (DLL)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1203
@@ -2731,15 +2542,13 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1212
 #: article.translate.xml:1223
-#, fuzzy
 msgid "+0x01"
-msgstr "+ 0x01"
+msgstr "+0x01"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1214
-#, fuzzy
 msgid "Divisor Latch MSB (DLH)"
-msgstr "Trava Divisória MSB (DLH)"
+msgstr "Divisor Latch MSB (DLH)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1214
@@ -2755,15 +2564,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1224
-#, fuzzy
 msgid "write/read (DLAB==0)"
-msgstr "escrever / ler (DLAB == 0)"
+msgstr "write/read (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1232
-#, fuzzy
 msgid "Interrupt Enable Register (IER)"
-msgstr "Interruptor de Ativação de Interrupção (IER)"
+msgstr "Interrupt Enable Register (IER)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1233
@@ -2794,7 +2601,6 @@ msgstr ""
 #: article.translate.xml:1691
 #: article.translate.xml:1765
 #: article.translate.xml:1846
-#, fuzzy
 msgid "Bit 7"
 msgstr "Bit 7"
 
@@ -2810,9 +2616,8 @@ msgstr "Bit 7"
 #: article.translate.xml:1692
 #: article.translate.xml:1697
 #: article.translate.xml:1702
-#, fuzzy
 msgid "Reserved, always 0."
-msgstr "Reservado, sempre 0."
+msgstr "Reserved, always 0."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1253
@@ -2822,7 +2627,6 @@ msgstr "Reservado, sempre 0."
 #: article.translate.xml:1696
 #: article.translate.xml:1773
 #: article.translate.xml:1852
-#, fuzzy
 msgid "Bit 6"
 msgstr "6 bits"
 
@@ -2834,7 +2638,6 @@ msgstr "6 bits"
 #: article.translate.xml:1701
 #: article.translate.xml:1781
 #: article.translate.xml:1858
-#, fuzzy
 msgid "Bit 5"
 msgstr "Bit 5"
 
@@ -2846,7 +2649,6 @@ msgstr "Bit 5"
 #: article.translate.xml:1706
 #: article.translate.xml:1790
 #: article.translate.xml:1864
-#, fuzzy
 msgid "Bit 4"
 msgstr "Bit 4"
 
@@ -2858,7 +2660,6 @@ msgstr "Bit 4"
 #: article.translate.xml:1718
 #: article.translate.xml:1796
 #: article.translate.xml:1870
-#, fuzzy
 msgid "Bit 3"
 msgstr "Bit 3"
 
@@ -2882,7 +2683,6 @@ msgstr ""
 #: article.translate.xml:1727
 #: article.translate.xml:1804
 #: article.translate.xml:1878
-#, fuzzy
 msgid "Bit 2"
 msgstr "Bit 2"
 
@@ -2906,7 +2706,6 @@ msgstr ""
 #: article.translate.xml:1734
 #: article.translate.xml:1810
 #: article.translate.xml:1886
-#, fuzzy
 msgid "Bit 1"
 msgstr "Bit 1"
 
@@ -2931,7 +2730,6 @@ msgstr ""
 #: article.translate.xml:1741
 #: article.translate.xml:1820
 #: article.translate.xml:1894
-#, fuzzy
 msgid "Bit 0"
 msgstr "Bit 0"
 
@@ -2954,19 +2752,16 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1307
 #: article.translate.xml:1417
-#, fuzzy
 msgid "+0x02"
-msgstr "+ 0x02"
+msgstr "+0x02"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1308
-#, fuzzy
 msgid "write"
-msgstr "Escreva"
+msgstr "write"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1319
-#, fuzzy
 msgid ""
 "FIFO Control Register (FCR) (This port does not exist on the 8250 and 16450 "
 "UART.)"
@@ -2976,15 +2771,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1326
-#, fuzzy
 msgid "Receiver Trigger Bit #1"
-msgstr "Trigger do Receptor Bit # 1"
+msgstr "Receiver Trigger Bit #1"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1331
-#, fuzzy
 msgid "Receiver Trigger Bit #0"
-msgstr "Trigger do Receptor Bit # 0"
+msgstr "Trigger do Receptor Bit #0"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1332
@@ -3053,9 +2846,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1418
-#, fuzzy
 msgid "read"
-msgstr "ler"
+msgstr "read"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1431
@@ -3105,69 +2897,58 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1488
-#, fuzzy
 msgid "Priority"
 msgstr "Prioridade"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1496
-#, fuzzy
 msgid "First"
 msgstr "Primeiro"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1497
-#, fuzzy
 msgid "Received Error (OE, PE, BI, or FE)"
-msgstr "Erro recebido (OE, PE, BI ou FE)"
+msgstr "Received Error (OE, PE, BI, or FE)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1505
 #: article.translate.xml:1513
-#, fuzzy
 msgid "Second"
 msgstr "Segundo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1506
-#, fuzzy
 msgid "Received Data Available"
 msgstr "Dados Recebidos Disponíveis"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1514
-#, fuzzy
 msgid "Trigger level identification (Stale data in receive buffer)"
 msgstr ""
 "Identificação do nível de gatilho (dados obsoletos no buffer de recebimento)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1522
-#, fuzzy
 msgid "Third"
 msgstr "Terceiro"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1523
-#, fuzzy
 msgid "Transmitter has room for more words (THRE)"
 msgstr "Transmissor tem espaço para mais palavras (THRE)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1531
-#, fuzzy
 msgid "Fourth"
 msgstr "Quarto"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1532
-#, fuzzy
 msgid "Modem Status Change (-CTS, -DSR, -RI, or -DCD)"
 msgstr "Alteração de status do modem (-CTS, -DSR, -RI ou -DCD)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1538
-#, fuzzy
 msgid ""
 "Interrupt Pending Bit. If this bit is set to \"0\", then at least one "
 "interrupt is pending."
@@ -3177,9 +2958,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1547
-#, fuzzy
 msgid "+0x03"
-msgstr "+ 0x03"
+msgstr "+0x03"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1548
@@ -3187,13 +2967,11 @@ msgstr "+ 0x03"
 #: article.translate.xml:1752
 #: article.translate.xml:1833
 #: article.translate.xml:1906
-#, fuzzy
 msgid "write/read"
-msgstr "escrever ler"
+msgstr "write/read"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1561
-#, fuzzy
 msgid "Line Control Register (LCR)"
 msgstr "Registro de Controle de Linha (LCR)"
 
@@ -3303,37 +3081,31 @@ msgstr "Comprimento da palavra"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1648
-#, fuzzy
 msgid "5 Data Bits"
 msgstr "5 bits de dados"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1655
-#, fuzzy
 msgid "6 Data Bits"
 msgstr "6 bits de dados"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1662
-#, fuzzy
 msgid "7 Data Bits"
 msgstr "7 bits de dados"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1669
-#, fuzzy
 msgid "8 Data Bits"
 msgstr "8 bits de dados"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1677
-#, fuzzy
 msgid "+0x04"
-msgstr "+ 0x04"
+msgstr "+0x04"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1686
-#, fuzzy
 msgid "Modem Control Register (MCR)"
 msgstr "Registro de Controle de Modem (MCR)"
 
@@ -3377,7 +3149,6 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1735
-#, fuzzy
 msgid ""
 "Request to Send (RTS). When set to \"1\", the output of the UART -RTS line "
 "is Low (Active)."
@@ -3387,7 +3158,6 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1742
-#, fuzzy
 msgid ""
 "Data Terminal Ready (DTR). When set to \"1\", the output of the UART -DTR "
 "line is Low (Active)."
@@ -3397,13 +3167,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1751
-#, fuzzy
 msgid "+0x05"
-msgstr "+ 0x05"
+msgstr "+0x05"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1760
-#, fuzzy
 msgid "Line Status Register (LSR)"
 msgstr "Registro de status de linha (LSR)"
 
@@ -3500,39 +3268,33 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1832
-#, fuzzy
 msgid "+0x06"
-msgstr "+ 0x06"
+msgstr "+0x06"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1841
-#, fuzzy
 msgid "Modem Status Register (MSR)"
 msgstr "Registro de status de modem (MSR)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1847
-#, fuzzy
 msgid ""
 "Data Carrier Detect (DCD). Reflects the state of the DCD line on the UART."
 msgstr "Data Carrier Detect (DCD). Reflete o estado da linha DCD no UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1853
-#, fuzzy
 msgid "Ring Indicator (RI). Reflects the state of the RI line on the UART."
 msgstr "Indicador de anel (RI). Reflete o estado da linha RI no UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1859
-#, fuzzy
 msgid "Data Set Ready (DSR). Reflects the state of the DSR line on the UART."
 msgstr ""
 "Conjunto de dados pronto (DSR). Reflete o estado da linha DSR no UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1865
-#, fuzzy
 msgid "Clear To Send (CTS). Reflects the state of the CTS line on the UART."
 msgstr "Limpar para enviar (CTS). Reflete o estado da linha CTS no UART."
 
@@ -3579,9 +3341,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1905
-#, fuzzy
 msgid "+0x07"
-msgstr "+ 0x07"
+msgstr "+0x07"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1907
@@ -3597,7 +3358,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1918
-#, fuzzy
 msgid "Beyond the 16550A UART"
 msgstr "Além do UART 16550A"
 
@@ -3622,7 +3382,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1931
-#, fuzzy
 msgid "ST16650"
 msgstr "ST16650"
 
@@ -3639,7 +3398,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1941
-#, fuzzy
 msgid "TIL16660"
 msgstr "TIL16660"
 
@@ -3657,7 +3415,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1951
-#, fuzzy
 msgid "Hayes ESP"
 msgstr "Hayes ESP"
 
@@ -3698,9 +3455,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1975
-#, fuzzy
 msgid "Configuring the <filename>sio</filename> driver"
-msgstr "Configurando o driver <filename> sio </filename>"
+msgstr "Configurando o driver <filename>sio</filename>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1977
@@ -3721,19 +3477,17 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1984
-#, fuzzy
 msgid "Digi International (DigiBoard) PC/8"
-msgstr "Digi International (DigiBoard) PC / 8"
+msgstr "Digi International (DigiBoard) PC/8"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1986
-#, fuzzy
 msgid ""
 "<emphasis>Contributed by Andrew Webster <email>awebster@pubnix.net</email>. "
 "26 August 1995.</emphasis>"
 msgstr ""
-"<emphasis> Contribuição de Andrew Webster <email> awebster@pubnix.net </"
-"email>. 26 de agosto de 1995. </emphasis>"
+"<emphasis>Contribuição de Andrew Webster <email>awebster@pubnix.net</email>. "
+"26 de agosto de 1995.</emphasis>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1989
@@ -3751,7 +3505,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:1995
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "device          sio4    at isa? port 0x100 flags 0xb05\n"
 "device          sio5    at isa? port 0x108 flags 0xb05\n"
@@ -3783,19 +3537,17 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2010
-#, fuzzy
 msgid "Boca 16"
 msgstr "Boca 16"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2012
-#, fuzzy
 msgid ""
 "<emphasis>Contributed by Don Whiteside <email>whiteside@acm.org</email>. 26 "
 "August 1995.</emphasis>"
 msgstr ""
-"<emphasis> Contribuição de Don Whiteside <email> whiteside@acm.org </email>. "
-"26 de agosto de 1995. </emphasis>"
+"<emphasis>Contribuição de Don Whiteside <email>whiteside@acm.org</email>. 26 "
+"de agosto de 1995.</emphasis>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2015
@@ -3867,13 +3619,12 @@ msgstr ""
 
 #. (itstool) path: para/programlisting
 #: article.translate.xml:2054
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "options COM_MULTIPORT"
-msgstr "opções COM_MULTIPORT"
+msgstr "options COM_MULTIPORT"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2052
-#, fuzzy
 msgid "Add the line <_:programlisting-1/> to the config file."
 msgstr "Adicione a linha <_:programlisting-1/> ao arquivo de configuração."
 
@@ -3895,7 +3646,7 @@ msgstr ""
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:2068
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "device sio1 at isa? port 0x100 flags 0x1005\n"
 "device sio2 at isa? port 0x108 flags 0x1005\n"
@@ -3915,7 +3666,7 @@ msgstr ""
 
 #. (itstool) path: para/programlisting
 #: article.translate.xml:2085
-#, fuzzy, no-wrap
+#, no-wrap
 msgid " flags\n"
 "\t      0x1005"
 msgstr " flags\n"
@@ -3968,7 +3719,7 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:2103
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "sio1 at 0x100-0x107 flags 0x1005 on isa\n"
 "sio1: type 16550A (multiport)\n"
@@ -4038,7 +3789,7 @@ msgstr ""
 
 #. (itstool) path: para/screen
 #: article.translate.xml:2138
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>dmesg | more</userinput>"
 msgstr "<prompt>#</prompt> <userinput>dmesg | more</userinput>"
 
@@ -4081,7 +3832,7 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:2153
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
 "<prompt>#</prompt> <userinput>./MAKEDEV tty1</userinput>\n"
@@ -4109,7 +3860,7 @@ msgstr ""
 
 #. (itstool) path: para/screen
 #: article.translate.xml:2170
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>echo at &gt; ttyd*</userinput>"
 msgstr "<prompt>#</prompt> <userinput>echo at &gt; ttyd*</userinput>"
 
@@ -4130,7 +3881,6 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2179
-#, fuzzy
 msgid "Support for Cheap Multi-UART Cards"
 msgstr "Suporte para cartões Multi-UART baratos"
 
@@ -4194,7 +3944,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:2207
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "            o  o  o  *\n"
 "Port A               |\n"
@@ -4264,7 +4014,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:2240
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "                          Diode\n"
 "                +----------&gt;|-------+\n"
@@ -4314,7 +4064,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:2260
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# standard on-board COM1 port\n"
 "device          sio0    at isa? port \"IO_COM1\" flags 0x10\n"
@@ -4353,7 +4103,7 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:2277
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "sio0: irq maps: 0x1 0x11 0x1 0x1\n"
 "sio0 at 0x3f8-0x3ff irq 4 flags 0x10 on isa\n"
@@ -4395,27 +4145,24 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2299
-#, fuzzy
 msgid "Configuring the <filename>cy</filename> driver"
-msgstr "Configurando o driver <filename> cy </filename>"
+msgstr "Configurando o driver <filename>cy</filename>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2301
-#, fuzzy
 msgid "<emphasis>Contributed by Alex Nash. 6 June 1996.</emphasis>"
-msgstr "<emphasis> Contribuição de Alex Nash. 6 de Junho de 1996. </emphasis>"
+msgstr "<emphasis>Contribuição de Alex Nash. 6 de Junho de 1996.</emphasis>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2304
-#, fuzzy
 msgid ""
 "The Cyclades multiport cards are based on the <filename>cy</filename> driver "
 "instead of the usual <filename>sio</filename> driver used by other multiport "
 "cards. Configuration is a simple matter of:"
 msgstr ""
-"As placas multiportas Cyclades são baseadas no driver <filename> cy </"
-"filename> em vez do driver usual <filename> sio </filename> usado por outras "
-"placas multiportas. Configuração é uma simples questão de:"
+"As placas multiseriais da Cyclades são baseadas no driver <filename>cy</"
+"filename> em vez do driver usual <filename>sio</filename> usado por outras "
+"placas multiseriais. Configuração é uma simples questão de:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2311
@@ -4429,15 +4176,14 @@ msgstr ""
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:2315
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "device cy0 at isa? irq 10 iomem 0xd4000 iosiz 0x2000"
-msgstr "dispositivo cy0 em isa? irq 10 iomem 0xd4000 iosiz 0x2000"
+msgstr "device cy0 at isa? irq 10 iomem 0xd4000 iosiz 0x2000"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2319
-#, fuzzy
 msgid "Rebuild and install the new kernel."
-msgstr "Recrie e instale o novo kernel."
+msgstr "Recompile e instale o novo kernel."
 
 #. (itstool) path: footnote/para
 #: article.translate.xml:2325
@@ -4463,7 +4209,7 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:2329
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
 "<prompt>#</prompt> <userinput>for i in 0 1 2 3 4 5 6 7;do ./MAKEDEV cuac$i "
@@ -4488,7 +4234,7 @@ msgstr ""
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:2340
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "ttyc0   \"/usr/libexec/getty std.38400\"  unknown on insecure\n"
 "ttyc1   \"/usr/libexec/getty std.38400\"  unknown on insecure\n"
@@ -4504,25 +4250,22 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:2348
-#, fuzzy
 msgid "Reboot with the new kernel."
 msgstr "Reinicie com o novo kernel."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2354
-#, fuzzy
 msgid "Configuring the <filename>si</filename> driver"
-msgstr "Configurando o driver <filename> si </filename>"
+msgstr "Configurando o driver <filename>si</filename>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2356
-#, fuzzy
 msgid ""
 "<emphasis>Contributed by Nick Sayer <email>nsayer@FreeBSD.org</email>. 25 "
 "March 1998.</emphasis>"
 msgstr ""
-"<emphasis> Contribuição de Nick Sayer <email> nsayer@FreeBSD.org </email>. "
-"25 de Março de 1998. </emphasis>"
+"<emphasis>Contribuição de Nick Sayer <email>nsayer@FreeBSD.org</email>. 25 "
+"de Março de 1998.</emphasis>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2359
@@ -4538,33 +4281,28 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2365
-#, fuzzy
 msgid "ISA SI/XIO host card (2 versions)"
-msgstr "Placa host ISA SI / XIO (2 versões)"
+msgstr "ISA SI/XIO host card (2 versions)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2366
-#, fuzzy
 msgid "EISA SI/XIO host card"
-msgstr "Cartão host EISA SI / XIO"
+msgstr "EISA SI/XIO host card"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2367
-#, fuzzy
 msgid "PCI SI/XIO host card"
-msgstr "Placa de host PCI SI / XIO"
+msgstr "PCI SI/XIO host card"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2368
-#, fuzzy
 msgid "ISA SX host card"
-msgstr "Cartão host ISA SX"
+msgstr "ISA SX host card"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2369
-#, fuzzy
 msgid "PCI SX host card"
-msgstr "Placa host PCI SX"
+msgstr "PCI SX host card"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2372
@@ -4632,39 +4370,36 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:2401
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "device si0 at isa? iomem 0xd0000 irq 11"
-msgstr "dispositivo si0 em isa? iomem 0xd0000 irq 11"
+msgstr "device si0 at isa? iomem 0xd0000 irq 11"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2403
-#, fuzzy
 msgid ""
 "Valid IRQ numbers are 9, 10, 11, 12 and 15 for SX ISA host cards and 11, 12 "
 "and 15 for SI/XIO ISA host cards."
 msgstr ""
 "Números de IRQ válidos são 9, 10, 11, 12 e 15 para placas host SX ISA e 11, "
-"12 e 15 para placas host ISA / XIO ISA."
+"12 e 15 para placas host ISA/XIO ISA."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2406
-#, fuzzy
 msgid "To configure an EISA or PCI host card, use this line:"
 msgstr "Para configurar uma placa de host EISA ou PCI, use esta linha:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:2408
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "device si0"
-msgstr "dispositivo si0"
+msgstr "device si0"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2410
-#, fuzzy
 msgid ""
 "After adding the configuration entry, rebuild and install your new kernel."
 msgstr ""
-"Depois de adicionar a entrada de configuração, reconstrua e instale seu novo "
+"Depois de adicionar a entrada de configuração, recompile e instale seu novo "
 "kernel."
 
 #. (itstool) path: note/para
@@ -4676,8 +4411,8 @@ msgid ""
 "citerefentry> in FreeBSD 5.<replaceable>X</replaceable>."
 msgstr ""
 "A etapa seguinte, não é necessária se você estiver usando <citerefentry "
-"vendor = \"current\"> <refentrytitle> devfs </refentrytitle> <manvolnum> 5 </"
-"manvolnum> </citerefentry> no FreeBSD 5. <replaceable> X </replaceable >."
+"vendor=\"current\"> <refentrytitle> devfs </refentrytitle> <manvolnum> 5 </"
+"manvolnum> </citerefentry> no FreeBSD 5. <replaceable> X </replaceable>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2418
@@ -4694,7 +4429,7 @@ msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:2423
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
 "<prompt>#</prompt> <userinput>./MAKEDEV ttyA<replaceable>nn</replaceable> "
@@ -4706,33 +4441,29 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2426
-#, fuzzy
 msgid "(where <replaceable>nn</replaceable> is the number of ports)"
-msgstr "(onde <replaceable> nn </replaceable> é o número de portas)"
+msgstr "(no qual <replaceable>nn</replaceable> é o número de portas)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2429
-#, fuzzy
 msgid ""
 "If you want login prompts to appear on these ports, you will need to add "
 "lines like this to <filename>/etc/ttys</filename>:"
 msgstr ""
 "Se você quiser que as solicitações de login apareçam nessas portas, você "
-"precisará adicionar linhas como esta para <filename> / etc / ttys </"
-"filename>:"
+"precisará adicionar linhas como esta para <filename>/etc/ttys</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:2433
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "ttyA01  \"/usr/libexec/getty std.9600\"   vt100   on insecure"
 msgstr "ttyA01  \"/usr/libexec/getty std.9600\"   vt100   on insecure"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2435
-#, fuzzy
 msgid ""
 "Change the terminal type as appropriate. For modems, <userinput>dialup</"
 "userinput> or <userinput>unknown</userinput> is fine."
 msgstr ""
-"Altere o tipo de terminal conforme apropriado. Para modems, <userinput> "
-"dialup </userinput> ou <userinput> unknown </userinput> está bem."
+"Altere o tipo de terminal conforme apropriado. Para modems, "
+"<userinput>dialup</userinput> ou <userinput>unknown</userinput> está bem."
