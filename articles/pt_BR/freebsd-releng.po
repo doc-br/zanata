@@ -1,6 +1,7 @@
 # André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Lucas Andrade <lucassandrade98@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-17 02:57+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-09-18 02:34+0000\n"
+"Last-Translator: André Franciosi <andre@franciosi.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -127,68 +128,62 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
-#, fuzzy
 msgid ""
 "Although a general rule to wait a minimum of three days before merging from "
 "<literal>head/</literal>, there are a few special circumstances where an "
 "immediate merge may be necessary, such as a critical security fix, or a bug "
 "fix that directly inhibits the release build process."
 msgstr ""
-"Embora seja uma regra geral esperar pelo menos três dias antes de mesclar "
-"<literal> head / </literal>, há algumas circunstâncias especiais em que uma "
+"Embora seja uma regra geral esperar pelo menos três dias antes de mesclar o "
+"<literal>head/</literal>, há algumas circunstâncias especiais em que uma "
 "mesclagem imediata pode ser necessária, como uma correção de segurança "
-"crítica ou uma correção de bug inibe diretamente o processo de criação da "
-"versão."
+"crítica ou uma correção de bug que inibe diretamente o processo de criação "
+"da versão."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:85
-#, fuzzy
 msgid ""
 "After several months, and the number of changes in the <literal>stable/</"
 "literal> branch have grown significantly, it is time to release the next "
 "version of FreeBSD. These releases have been historically referred to as "
 "<quote>point</quote> releases."
 msgstr ""
-"Após vários meses, e o número de mudanças na ramificação <literal> stable / "
-"</literal> cresceu significativamente, é hora de lançar a próxima versão do "
-"FreeBSD. Esses lançamentos foram historicamente chamados de lançamentos "
-"<quote> point </quote>."
+"Após vários meses, quando o número de mudanças na ramificação "
+"<literal>stable/</literal> cresce significativamente, é hora de lançar a "
+"próxima versão do FreeBSD. Esses lançamentos foram historicamente chamados "
+"de lançamentos <quote>point</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
-#, fuzzy
 msgid ""
 "In between releases from the <literal>stable/</literal> branches, "
 "approximately every two (2) years, a release will be cut directly from "
 "<literal>head/</literal>. These releases have been historically referred to "
 "as <quote>dot-zero</quote> releases."
 msgstr ""
-"Entre os lançamentos das ramificações <literal> stable / </literal>, "
+"Entre os lançamentos das ramificações <literal>stable/</literal>, "
 "aproximadamente a cada dois (2) anos, um lançamento será cortado diretamente "
-"de <literal> head / </literal>. Esses lançamentos foram historicamente "
-"chamados de lançamentos <quote> dot-zero </quote>."
+"do <literal>head/</literal>. Esses lançamentos foram historicamente chamados "
+"de lançamentos <quote>dot-zero</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:97
-#, fuzzy
 msgid ""
 "This article will highlight the workflow and responsibilities of the FreeBSD "
 "Release Engineering Team for both <quote>dot-zero</quote> and <quote>point</"
 "quote>' releases."
 msgstr ""
 "Este artigo irá destacar o fluxo de trabalho e as responsabilidades da "
-"Equipe de Engenharia de Lançamentos do FreeBSD para os lançamentos <quote> "
-"ponto zero </quote> e <quote> ponto </quote>."
+"Equipe de Engenharia de Lançamentos do FreeBSD para os lançamentos "
+"<quote>dot-zero</quote> e <quote>point</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:102
-#, fuzzy
 msgid "The following sections of this article describe:"
 msgstr "As seções a seguir deste artigo descrevem:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:109
-#, fuzzy
 msgid "General information and preparation before starting the release cycle."
 msgstr ""
 "Informações gerais e preparação antes de iniciar o ciclo de lançamento."
@@ -197,39 +192,34 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:118
 #: article.translate.xml:508
-#, fuzzy
 msgid "Website Changes During the Release Cycle"
 msgstr "Alterações no site durante o ciclo de lançamento"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:126
-#, fuzzy
 msgid ""
 "Terminology and general information, such as the <quote>code slush</quote> "
 "and <quote>code freeze</quote>, used throughout this document."
 msgstr ""
-"Terminologia e informações gerais, como o <quote> code slush </quote> e o "
-"<quote> code freeze </quote>, usadas em todo este documento."
+"Terminologia e informações gerais, como o <quote>code slush</quote> e o "
+"<quote>code freeze</quote>, usadas em todo este documento."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:136
-#, fuzzy
 msgid "The Release Engineering process for a <quote>dot-zero</quote> release."
 msgstr ""
-"O processo de Engenharia de Release para um lançamento de <quote> ponto-zero "
-"</quote>."
+"O processo de Engenharia de Lançamento para um lançamento de <quote>dot-"
+"zero</quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:145
-#, fuzzy
 msgid "The Release Engineering process for a <quote>point</quote> release."
 msgstr ""
-"O processo de Engenharia de Release para um lançamento <quote> point </"
+"O processo de Engenharia de Lançamento para um lançamento <quote>point</"
 "quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:154
-#, fuzzy
 msgid ""
 "Information related to the specific procedures to build installation medium."
 msgstr ""
@@ -238,25 +228,21 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:163
-#, fuzzy
 msgid "Procedures to publish installation medium."
 msgstr "Procedimentos para publicar o meio de instalação."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:171
-#, fuzzy
 msgid "Wrapping up the release cycle."
 msgstr "Encerrando o ciclo de lançamento."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:178
-#, fuzzy
 msgid "General Information and Preparation"
 msgstr "Informação Geral e Preparação"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
-#, fuzzy
 msgid ""
 "Approximately two months before the start of the release cycle, the FreeBSD "
 "Release Engineering Team decides on a schedule for the release. The schedule "
@@ -264,7 +250,7 @@ msgid ""
 "dates, branch dates, and build dates. For example:"
 msgstr ""
 "Aproximadamente dois meses antes do início do ciclo de lançamento, a Equipe "
-"de Engenharia de Lançamentos do FreeBSD decide sobre um cronograma para o "
+"de Engenharia de Lançamentos do FreeBSD decide e faz um cronograma para o "
 "lançamento. A programação inclui os vários pontos de marco do ciclo de "
 "lançamento, como datas de congelamento, datas de ramificação e datas de "
 "compilação. Por exemplo:"
@@ -2217,9 +2203,8 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1144
-#, fuzzy
 msgid "This controls <filename>thermite.sh</filename> behavior"
-msgstr "Isso controla o comportamento de <filename> thermite.sh </filename>"
+msgstr "Isto controla o comportamento do <filename>thermite.sh</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1149
@@ -2237,15 +2222,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1153
-#, fuzzy
 msgid ""
 "This controls <filename>release/release.sh</filename> behavior within the "
 "build <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
-"Isso controla o comportamento <filename> release / release.sh </filename> "
-"dentro da compilação <citerefentry> <refentrytitle> chroot </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry>"
+"Isto controla o comportamento <filename>release/release.sh</filename> dentro "
+"da compilação<citerefentry> <refentrytitle>chroot</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1159
@@ -2263,23 +2247,21 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1170
-#, fuzzy
 msgid "Building FreeBSD Development Snapshots"
 msgstr "Construindo Snapshots de Desenvolvimento do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1172
-#, fuzzy
 msgid ""
 "The official release build machines have a specific filesystem layout, which "
 "using <acronym>ZFS</acronym>, <filename>thermite.sh</filename> takes heavy "
 "advantage of with clones and snapshots, ensuring a pristine build "
 "environment."
 msgstr ""
-"As máquinas oficiais de compilação de versões têm um layout de sistema de "
-"arquivos específico, que usando <acronym> ZFS </acronym>, <filename> "
-"thermite.sh </filename> tira grande proveito de clones e snapshots, "
-"garantindo um ambiente de construção intocado."
+"As máquinas oficiais de compilação de versões têm um layout do sistema de "
+"arquivos específico, que usando <acronym>ZFS</acronym>, <filename>thermite."
+"sh</filename> tira grande proveito de clones e snapshots, garantindo um "
+"ambiente de construção intocado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1178
@@ -2366,7 +2348,7 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1213
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
 "userinput>\n"
@@ -2388,15 +2370,14 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1218
-#, fuzzy
 msgid ""
 "Once the builds have completed, additional helper scripts are available to "
 "generate development snapshot emails which are sent to the <literal>freebsd-"
 "snapshots@freebsd.org</literal> mailing list:"
 msgstr ""
-"Quando as compilações forem concluídas, scripts auxiliares adicionais "
-"estarão disponíveis para gerar emails de instantâneo de desenvolvimento que "
-"são enviados para a lista de email <literal> freebsd-snapshots@freebsd.org </"
+"Quando as compilações forem concluídas, scripts adicionais auxiliares "
+"estarão disponíveis para gerar e-mails de snapshots de desenvolvimento que "
+"são enviados para a lista de e-mail <literal>freebsd-snapshots@freebsd.org</"
 "literal>:"
 
 #. (itstool) path: sect2/screen
@@ -2444,13 +2425,11 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1242
-#, fuzzy
 msgid "Building FreeBSD Releases"
-msgstr "Construindo Liberações do FreeBSD"
+msgstr "Construindo Versões do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1244
-#, fuzzy
 msgid ""
 "Similar to building FreeBSD development snapshots, <filename>thermite.sh</"
 "filename> would be invoked the same way. The difference between development "
@@ -2460,14 +2439,14 @@ msgid ""
 "must be named with <literal>release</literal> instead of <literal>snap</"
 "literal> as the \"type\", as mentioned above."
 msgstr ""
-"Similar à construção de snapshots de desenvolvimento do FreeBSD, <filename> "
-"thermite.sh </filename> seria invocado da mesma maneira. A diferença entre "
-"snapshots de desenvolvimento e builds de releases, <literal> BETA </literal> "
-"e <literal> RC </literal> incluído, é que o <citerefentry> <refentrytitle> "
-"chroot </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> os "
-"arquivos de configuração devem ser nomeados com <literal> release </literal> "
-"ao invés de <literal> snap </literal> como o \"tipo\", como mencionado acima."
-""
+"Similar a construção de snapshots de desenvolvimento do FreeBSD, "
+"<filename>thermite.sh</filename> seria invocado da mesma maneira. A "
+"diferença entre snapshots de desenvolvimento e builds de releases, "
+"<literal>BETA</literal> e <literal>RC</literal> incluso, é que o "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> os arquivos de configuração devem ser nomeados com "
+"<literal>release</literal> ao invés de <literal>snap</literal> como o "
+"\"tipo\", como mencionado acima."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1252
@@ -2593,31 +2572,25 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1312
-#, fuzzy
 msgid "Staging FreeBSD Installation Media Images"
-msgstr "Preparando imagens de mídia de instalação do FreeBSD"
+msgstr "Preparando Imagens de Mídias de Instalação do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1314
-#, fuzzy
 msgid "Staging FreeBSD snapshots and releases is a two part process:"
-msgstr ""
-"Os instantâneos e versões do FreeBSD de teste são um processo de duas partes:"
-""
+msgstr "Os snapshots e versões do FreeBSD são um processo de duas partes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1319
-#, fuzzy
 msgid ""
 "Creating the directory structure to match the hierarchy on <systemitem>ftp-"
 "master</systemitem>"
 msgstr ""
-"Criando a estrutura de diretórios para corresponder à hierarquia em "
-"<systemitem> ftp-master </systemitem>"
+"Criando a estrutura de diretórios para corresponder a hierarquia em "
+"<systemitem> ftp-master</systemitem>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1322
-#, fuzzy
 msgid ""
 "If <literal>EVERYTHINGISFINE</literal> is defined in the build configuration "
 "files, <filename>main.conf</filename> in the case of the build scripts "
@@ -2630,20 +2603,20 @@ msgid ""
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> directly:"
 msgstr ""
-"Se <literal> EVERYTHINGISFINE </literal> for definido nos arquivos de "
-"configuração de compilação, <filename> main.conf </filename> no caso dos "
-"scripts de construção mencionados acima, isso acontece automaticamente no "
-"<citerefentry> <refentrytitle> chroot </refentrytitle> <manvolnum> 8 </"
-"manvolnum> </citerefentry> após a compilação ser concluída, criando a "
-"estrutura de diretório em <filename class=\"directory\"> $ {DESTDIR} / R / "
-"ftp-stage </filename> com um estrutura do caminho que corresponde ao que é "
-"esperado em <systemitem> ftp-master </systemitem>. Isso é equivalente a "
-"executar o seguinte no <citerefentry> <refentrytitle> chroot </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> diretamente:"
+"Se <literal>EVERYTHINGISFINE</literal> for definido nos arquivos de "
+"configuração de compilação, <filename>main.conf</filename> no caso dos "
+"scripts de construção mencionados acima, isto acontece automaticamente no "
+"<citerefentry><refentrytitle>chroot</refentrytitle> <manvolnum>8</"
+"manvolnum></citerefentry> após a compilação ser concluída, criando a "
+"estrutura de diretório em <filename class=\"directory\">${DESTDIR}/R/ftp-"
+"stage</filename> com um estrutura de caminho path que corresponde ao que é "
+"esperado em <systemitem>ftp-master</systemitem>. Isto é equivalente a "
+"executar o mesmo no <citerefentry><refentrytitle>chroot</refentrytitle> "
+"<manvolnum>8</manvolnum></citerefentry> diretamente:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:1331
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors "
 "EVERYTHINGISFINE=1 ftp-stage</userinput>"
@@ -2653,7 +2626,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1333
-#, fuzzy
 msgid ""
 "After each architecture is built, <filename>thermite.sh</filename> will "
 "<application>rsync</application> the <filename class="
@@ -2663,29 +2635,28 @@ msgid ""
 "filename> or <filename class=\"directory\">/snap/ftp/releases</filename> on "
 "the build host, respectively."
 msgstr ""
-"Depois que cada arquitetura é construída, <filename> thermite.sh </filename> "
-"irá <application> rsync </application> <filename> $ {DESTDIR} / R / ftp-"
-"stage </filename> compilação <citerefentry> <refentrytitle> chroot </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> para o diretório "
-"<filename class=\"directory\"> / snap / ftp / snapshots </filename> ou "
-"<filename class=\"directory\"> / snap / ftp / releases </filename> no host "
-"de compilação, respectivamente."
+"Depois que cada arquitetura é construída, <filename>thermite.sh</filename> "
+"irá fazer um <application>rsync</application> do <filename>${DESTDIR}/R/ftp-"
+"stage</filename> da compilação <citerefentry><refentrytitle>chroot</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> para o diretório "
+"<filename class=\"directory\">/snap/ftp/snapshots</filename> ou <filename "
+"class=\"directory\">/snap/ftp/releases</filename> no host de compilação, "
+"respectivamente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1342
-#, fuzzy
 msgid ""
 "Copying the files to a staging directory on <systemitem>ftp-master</"
 "systemitem> before moving the files into <filename class=\"directory\">pub/</"
 "filename> to begin propagation to the Project mirrors"
 msgstr ""
-"Copiando os arquivos para um diretório temporário em <systemitem> ftp-master "
-"</systemitem> antes de mover os arquivos para <filename class=\"directory\"> "
-"pub / </filename> para iniciar a propagação para os espelhos do Project"
+"Copiando os arquivos para um diretório temporário em <systemitem>ftp-master "
+"</systemitem> antes de mover os arquivos para <filename class="
+"\"directory\">pub/</filename> para iniciar a propagação para os servidores "
+"espelhos do Projeto"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1347
-#, fuzzy
 msgid ""
 "Once all builds have finished, <filename class=\"directory\">/snap/ftp/"
 "snapshots</filename>, or <filename class=\"directory\">/snap/ftp/releases</"
@@ -2694,35 +2665,31 @@ msgid ""
 "archive/tmp/snapshots</filename> or <filename class=\"directory\">/archive/"
 "tmp/releases</filename>, respectively."
 msgstr ""
-"Uma vez que todas as compilações terminarem, <filename class=\"directory\"> /"
-" snap / ftp / snapshots </filename>, ou <filename class=\"directory\"> / "
-"snap / ftp / releases </filename> para uma versão, é pesquisado por "
-"<systemitem> ftp-master </systemitem> usando <application> rsync </"
-"application> para <filename class=\"directory\"> / archive / tmp / snapshots "
-"</filename> ou <filename class=\"directory\"> / archive / tmp / releases </"
-"filename>, respectivamente."
+"Uma vez que todas as compilações terminarem, <filename class=\"directory\">/"
+"snap/ftp/snapshots</filename>, ou <filename class=\"directory\">/snap/ftp/"
+"releases</filename> para uma versão, é pesquisado por <systemitem>ftp-"
+"master</systemitem> usando <application>rsync</application> para <filename "
+"class=\"directory\">/archive/tmp/snapshots</filename> ou <filename class="
+"\"directory\">/archive/tmp/releases</filename>, respectivamente."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1356
-#, fuzzy
 msgid ""
 "On <systemitem>ftp-master</systemitem> in the FreeBSD Project "
 "infrastructure, this step requires <literal>root</literal> level access, as "
 "this step must be executed as the <literal>archive</literal> user."
 msgstr ""
-"No <systemitem> ftp-master </systemitem> na infra-estrutura do Projeto "
-"FreeBSD, esta etapa requer acesso de nível <literal> root </literal>, já que "
-"esta etapa deve ser executada como o usuário <literal> archive </literal>."
+"No <systemitem>ftp-master</systemitem> na infraestrutura do Projeto FreeBSD, "
+"esta etapa requer acesso ao nível de <literal>root</literal>, já que esta "
+"etapa deve ser executada como o usuário <literal>archive</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1366
-#, fuzzy
 msgid "Publishing FreeBSD Installation Media"
 msgstr "Publicando a Mídia de Instalação do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1368
-#, fuzzy
 msgid ""
 "Once the images are staged in <filename class=\"directory\">/archive/tmp/</"
 "filename>, they are ready to be made public by putting them in <filename "
@@ -2732,30 +2699,28 @@ msgid ""
 "links from <filename class=\"directory\">/archive/tmp</filename> to "
 "<filename class=\"directory\">/archive/pub/FreeBSD</filename>."
 msgstr ""
-"Uma vez que as imagens são colocadas em <filename class=\"directory\"> / "
-"archive / tmp / </filename>, elas estão prontas para serem publicadas "
-"colocando-as em <filename class=\"directory\"> / archive / pub / FreeBSD </"
-"filename>. Para reduzir o tempo de propagação, <citerefentry> "
-"<refentrytitle> pax </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> é usado para criar links físicos a partir de <filename class="
-"\"directory\"> / archive / tmp </filename> para <filename class="
-"\"directory\"> / archive / pub / FreeBSD </filename>."
+"Uma vez que as imagens são colocadas em <filename class=\"directory\">/"
+"archive/tmp/</filename>, elas estão prontas para serem publicadas colocando-"
+"as em <filename class=\"directory\">/archive/pub/FreeBSD</filename>. Para "
+"reduzir o tempo de propagação, <citerefentry><refentrytitle>pax</"
+"refentrytitle> <manvolnum>1</manvolnum> </citerefentry> é usado para criar "
+"links físicos a partir de <filename class=\"directory\">/archive/tmp</"
+"filename> para <filename class=\"directory\">/archive/pub/FreeBSD</filename>."
+""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1375
-#, fuzzy
 msgid ""
 "In order for this to be effective, both <filename class=\"directory\">/"
 "archive/tmp</filename> and <filename class=\"directory\">/archive/pub</"
 "filename> must reside on the same logical filesystem."
 msgstr ""
-"Para que isso seja efetivo, <filename> / archive / tmp </filename> e "
-"<filename class=\"directory\"> / archive / pub </filename> devem residir no "
-"mesmo sistema de arquivos lógico."
+"Para que isto seja efetivo, <filename class=\"directory\">/archive/tmp</"
+"filename> e <filename class=\"directory\">/archive/pub</filename> devem "
+"residir no mesmo sistema de arquivos lógico."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1379
-#, fuzzy
 msgid ""
 "There is a caveat, however, where <application>rsync</application> must be "
 "used after <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</"
@@ -2765,35 +2730,33 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> will replace with a "
 "hard link, increasing the propagation time."
 msgstr ""
-"Há uma ressalva, no entanto, em que <application> rsync </application> deve "
-"ser usado após <citerefentry> <refentrytitle> pax </refentrytitle> "
-"<manvolnum> 1 </manvolnum> </citerefentry> para corrigir os links simbólicos "
-"em <filename class=\"directory\"> pub / FreeBSD / <replaceable> snapshots </"
-"replaceable> / ISO-IMAGES </filename> que <citerefentry> <refentrytitle> pax "
-"</refentrytitle> <manvolnum> 1 </manvolnum> </citerefentry> substituirá por "
-"um link físico, aumentando o tempo de propagação."
+"Há uma ressalva, no entanto, em que o <application>rsync</application> deve "
+"ser usado após <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</"
+"manvolnum> </citerefentry> para corrigir os links simbólicos em <filename "
+"class=\"directory\">pub/FreeBSD/<replaceable>snapshots</replaceable>/ISO-"
+"IMAGES</filename> que <citerefentry><refentrytitle>pax</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> substituirá por um "
+"hard link, aumentando o tempo de propagação."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1386
-#, fuzzy
 msgid ""
 "As with the staging steps, this requires <literal>root</literal> level "
 "access, as this step must be executed as the <literal>archive</literal> user."
 ""
 msgstr ""
-"Assim como nas etapas de preparação, isso requer acesso de nível <literal> "
-"root </literal>, já que essa etapa deve ser executada como o usuário do "
-"<literal> archive </literal>."
+"Assim como nas etapas de preparação, isto requer acesso em nível de "
+"<literal>root</literal>, já que essa etapa deve ser executada como o usuário "
+"do <literal>archive</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1391
-#, fuzzy
 msgid "As the <literal>archive</literal> user:"
-msgstr "Como o usuário do <literal> archive </literal>:"
+msgstr "Como o usuário de <literal>archive</literal>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1393
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</"
 "replaceable></userinput>\n"
@@ -2813,35 +2776,30 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1397
-#, fuzzy
 msgid ""
 "Replace <replaceable>snapshots</replaceable> with <replaceable>releases</"
 "replaceable> as appropriate."
 msgstr ""
-"Substitua os <replaceable>snapshots </replaceable> por <replaceable> "
-"releases </replaceable> conforme apropriado."
+"Substitua os <replaceable>snapshots</replaceable> por <replaceable>releases</"
+"replaceable> conforme apropriado."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1404
-#, fuzzy
 msgid "Wrapping up the Release Cycle"
-msgstr "Encerrando o ciclo de lançamento"
+msgstr "Encerrando o Ciclo de Lançamento"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1406
-#, fuzzy
 msgid "This section describes general post-release tasks."
 msgstr "Esta seção descreve as tarefas gerais de pós-lançamento."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1409
-#, fuzzy
 msgid "Post-Release Errata Notices"
 msgstr "Avisos de Erratas de Pós-lançamento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1411
-#, fuzzy
 msgid ""
 "As the release cycle approaches conclusion, it is common to have several "
 "<acronym>EN</acronym> (Errata Notice) candidates to address issues that were "
@@ -2850,33 +2808,30 @@ msgid ""
 "approved prior to the final release, and depending on the scope of the "
 "change in question, may issue an <acronym>EN</acronym>."
 msgstr ""
-"À medida que o ciclo de lançamento se aproxima da conclusão, é comum ter "
-"vários candidatos <acronym> EN </acronym> (Aviso de Erratas) para abordar os "
-"problemas que foram descobertos no final do ciclo. Após o lançamento, a "
-"Equipe de Engenharia de Lançamentos do FreeBSD e a Equipe de Segurança do "
+"AA medida que o ciclo de lançamento se aproxima da conclusão, é comum ter "
+"vários candidatos <acronym>EN</acronym> (Aviso de Erratas) para abordar os "
+"problemas que foram descobertos ao final do ciclo. Após o lançamento, a "
+"Equipe de Engenharia de Lançamentos do FreeBSD e o Time de Segurança do "
 "FreeBSD revisitaram mudanças que não foram aprovadas antes da versão final, "
-"e dependendo do escopo da mudança em questão, podem emitir um <acronym> EN </"
+"e dependendo do escopo da mudança em questão, podem emitir um <acronym>EN</"
 "acronym>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1420
-#, fuzzy
 msgid ""
 "The actual process of issuing <acronym>EN</acronym>s is handled by the "
 "FreeBSD Security Team."
 msgstr ""
-"O processo atual de emissão de <acronym> EN </acronym> s é tratado pela "
-"equipe de segurança do FreeBSD."
+"O processo atual de emissão de <acronym>EN</acronym>s é tratado pelo Time de "
+"Segurança do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1426
-#, fuzzy
 msgid "Handoff to the FreeBSD Security Team"
-msgstr "Entrega para a equipe de segurança do FreeBSD"
+msgstr "Entrega para o Time de Segurança do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1428
-#, fuzzy
 msgid ""
 "Roughly two weeks following the release, the Release Engineer updates "
 "<filename>svnadmin/conf/approvers</filename> changing the approver column "
@@ -2884,7 +2839,7 @@ msgid ""
 "the <literal>releng/<replaceable>11.0</replaceable>/</literal> branch."
 msgstr ""
 "Aproximadamente duas semanas após o lançamento, o Engenheiro de Versão "
-"atualiza <filename> svnadmin / conf / approvers </filename> alterando a "
-"coluna do aprovador de <literal> re </literal> para <literal> (so | security-"
-"officer) </literal > para o ramo <literal> releng / <replaceable> 11.0 </"
-"replaceable> / </literal>."
+"atualiza <filename>svnadmin/conf/approvers</filename> alterando a coluna do "
+"aprovador de <literal>re</literal> para <literal>(so|security-officer)</"
+"literal > para o branch <literal>releng/<replaceable>11.0</replaceable>/</"
+"literal>."
