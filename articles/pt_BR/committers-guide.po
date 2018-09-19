@@ -1,7 +1,6 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
-# Nilton Jose Rizzo <rizzo@i805.com.br>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-18 03:33+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-19 02:52+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -142,11 +141,12 @@ msgid ""
 "the Problem Report database). Please see <xref linkend=\"non-committers\"/> "
 "for more information."
 msgstr ""
-"Quase todos os desenvolvedores do FreeBSD possuem direitos para um ou mais "
-"repositórios. No entanto, alguns desenvolvedores e algumas das informações "
-"aqui não se aplicam a eles também. (Por exemplo, algumas pessoas só têm "
-"direitos para trabalhar com o banco de dados do Relatório de Problemas). Por "
-"favor, veja <xref linkend=\"non-committers\"/> para mais informações."
+"Quase todos os desenvolvedores do FreeBSD possuem direitos de commit para um "
+"ou mais repositórios. No entanto, alguns desenvolvedores não tem, e algumas "
+"das informações aqui se aplicam a eles também. (Por exemplo, algumas pessoas "
+"só têm direitos para trabalhar com o banco de dados do Relatório de "
+"Problemas). Por favor, veja <xref linkend=\"non-committers\"/> para mais "
+"informações."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:82
@@ -174,12 +174,12 @@ msgid ""
 "citerefentry>, protocol 2 only"
 msgstr ""
 "<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum> </"
-"citerefentry>,_protocol_2_only"
+"citerefentry>,_apenas no protocolo 2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:102
 msgid "<emphasis>Main Shell Host</emphasis>"
-msgstr "<emphasis>Principal Host da Shell</emphasis>"
+msgstr "<emphasis>Servidor Principal de Shell</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:103
@@ -189,7 +189,8 @@ msgstr "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
 #. (itstool) path: row/entry
 #: article.translate.xml:107
 msgid "<emphasis><literal>src/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>src /</literal>Raiz do Subversion</emphasis>"
+msgstr ""
+"<emphasis>Raiz do Subversion para o <literal>src/</literal></emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:109
@@ -199,13 +200,14 @@ msgid ""
 "getting-started-base-layout\"/>)."
 msgstr ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/base</filename> (see also <xref linkend=\"svn-"
+"org</systemitem><filename>/base</filename> (veja também <xref linkend=\"svn-"
 "getting-started-base-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:114
 msgid "<emphasis><literal>doc/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>doc/</literal>Raiz do Subversion</emphasis>"
+msgstr ""
+"<emphasis>Raiz do Subversion para o <literal>doc/</literal></emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:116
@@ -215,13 +217,14 @@ msgid ""
 "getting-started-doc-layout\"/>)."
 msgstr ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/doc</filename> (see also <xref linkend=\"svn-"
+"org</systemitem><filename>/doc</filename> (veja também <xref linkend=\"svn-"
 "getting-started-doc-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:121
 msgid "<emphasis><literal>ports/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>ports/</literal> Subversion Root</emphasis>"
+msgstr ""
+"<emphasis>Raiz do Subversion para o <literal>ports/</literal></emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:124
@@ -231,16 +234,17 @@ msgid ""
 "getting-started-ports-layout\"/>)."
 msgstr ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/ports</filename> (see also <xref linkend=\"svn-"
+"org</systemitem><filename>/ports</filename> (veja também <xref linkend=\"svn-"
 "getting-started-ports-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:129
 msgid "<emphasis>Internal Mailing Lists</emphasis>"
-msgstr "<emphasis>Listas de Discussão Interna</emphasis>"
+msgstr "<emphasis>Listas de Discussão Internas</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:130
+#, fuzzy
 msgid ""
 "developers (technically called all-developers), doc-developers, doc-"
 "committers, ports-developers, ports-committers, src-developers, src-"
@@ -263,7 +267,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:145
 msgid "<emphasis>Core Team monthly reports</emphasis>"
-msgstr "<emphasis>Relatórios mensais da equipe principal</emphasis>"
+msgstr "<emphasis>Relatórios mensais do Core Team</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:147
@@ -271,13 +275,14 @@ msgid ""
 "<filename>/home/core/public/monthly-reports</filename> on the <systemitem "
 "class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 msgstr ""
-"<filename>/home/core/public/monthly-reports</filename> on the <systemitem "
-"class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
+"Disponíveis no diretório <filename>/home/core/public/monthly-reports</"
+"filename> do cluster <systemitem class=\"fqdomainname\">FreeBSD.org</"
+"systemitem>."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:153
 msgid "<emphasis>Ports Management Team monthly reports</emphasis>"
-msgstr "<emphasis>Relatórios mensais da Equipe de Gestão de Ports</emphasis>"
+msgstr "<emphasis>Relatórios mensais da Equipe de Gestão do Ports</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:155
@@ -285,13 +290,16 @@ msgid ""
 "<filename>/home/portmgr/public/monthly-reports</filename> on the <systemitem "
 "class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
 msgstr ""
-"<filename>/home/portmgr/public/monthly-reports</filename> on the <systemitem "
-"class=\"fqdomainname\">FreeBSD.org</systemitem> cluster."
+"Disponíveis no diretório <filename>/home/portmgr/public/monthly-reports</"
+"filename> do cluster <systemitem class=\"fqdomainname\">FreeBSD.org</"
+"systemitem>."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:161
 msgid "<emphasis>Noteworthy <literal>src/</literal> SVN Branches</emphasis>"
-msgstr "<emphasis>Noteworthy <literal>src/</literal> SVN brechas</emphasis>"
+msgstr ""
+"<emphasis>Branchs SVN do <literal>src/</literal> dignas de atenção</"
+"emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:163
@@ -309,9 +317,9 @@ msgid ""
 "citerefentry> is required to connect to the project hosts. For more "
 "information, see <xref linkend=\"ssh.guide\"/>."
 msgstr ""
-"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> é necessário para se conectar aos hosts do projeto. Para mais "
-"informações, veja <xref linkend=\"ssh.guide\"/>."
+"O <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> é necessário para se conectar aos servidores do projeto. Para "
+"mais informações, veja <xref linkend=\"ssh.guide\"/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:175
@@ -324,7 +332,7 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/internal/\">FreeBSD Project Internal "
 "Pages</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/internal/\">Páginas internas do projeto "
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/\">Páginas Internas do Projeto "
 "FreeBSD</link>"
 
 #. (itstool) path: listitem/para
@@ -333,7 +341,7 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\">FreeBSD "
 "Project Hosts</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\">Hosts do "
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/machines.html\">Servidores do "
 "Projeto FreeBSD</link>"
 
 #. (itstool) path: listitem/para
@@ -348,7 +356,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
 msgid "Open<acronym>PGP</acronym> Keys for FreeBSD"
-msgstr "Open<acronym>PGP</acronym> Keys for FreeBSD"
+msgstr "Chaves Open<acronym>PGP</acronym> para o FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:198
@@ -363,15 +371,15 @@ msgid ""
 "<link xlink:href=\"http://en.wikipedia.org/wiki/Pretty_Good_Privacy\"/> for "
 "more information."
 msgstr ""
-"Chaves criptográficas em conformidade com o Open<acronym>PGP</acronym> "
-"(<emphasis>Pretty Good Privacy</emphasis>) standard são usados pelo projeto "
-"FreeBSD para autenticar committers. Mensagens com informações importantes "
-"como informações públicas<acronym>SSH</acronym> as chaves podem ser "
-"assinadas com o Open<acronym>PGP</acronym> keypara provar que eles são "
-"realmente do committer. Veja <link xlink:href=\"http://www.nostarch.com/"
-"pgp_ml.htm\">PGP &amp; GPG: E-mail para the Practical Paranoid by Michael "
-"Lucas</link> e <link xlink:href=\"http://en.wikipedia.org/wiki/"
-"Pretty_Good_Privacy\"/> para maiores informações."
+"O projeto FreeBSD utiliza chaves criptográficas em conformidade com o padrão "
+"Open<acronym>PGP</acronym> (<emphasis>Pretty Good Privacy</emphasis>) para "
+"autenticar os committers. Mensagens contendo informações importantes como "
+"chaves públicas <acronym>SSH</acronym> podem ser assinadas com uma chave "
+"Open<acronym>PGP</acronym> para provar que elas vieram realmente do "
+"committer. Veja <link xlink:href=\"http://www.nostarch.com/pgp_ml.htm\">PGP "
+"&amp; GPG: E-mail para the Practical Paranoid by Michael Lucas</link> e "
+"<link xlink:href=\"http://en.wikipedia.org/wiki/Pretty_Good_Privacy\"/> para "
+"maiores informações."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:211
@@ -384,7 +392,7 @@ msgid ""
 "Existing keys can be used, but should be checked with <filename>doc/head/"
 "share/pgpkeys/checkkey.sh</filename> first."
 msgstr ""
-"As chaves existentes podem ser usadas, mas devem ser verificadas com "
+"As chaves existentes podem ser usadas, mas elas devem ser obtidas com o "
 "<filename>doc/head/share/pgpkeys/checkkey.sh</filename> primeiro."
 
 #. (itstool) path: sect2/para
@@ -394,9 +402,9 @@ msgid ""
 "new key to meet FreeBSD security requirements, here we show how to generate "
 "one."
 msgstr ""
-"Para quem ainda não tem um Open<acronym>PGP</acronym> key, ou precisa de uma "
-"nova chave para atender aos requisitos de segurança do FreeBSD, aqui "
-"mostramos como gerar uma."
+"Para quem ainda não tem uma chave Open<acronym>PGP</acronym>, ou precisa de "
+"uma nova chave para atender aos requisitos de segurança do FreeBSD, nesta "
+"seção iremos mostrar como gerar uma."
 
 #. (itstool) path: step/para
 #: article.translate.xml:225
@@ -405,8 +413,8 @@ msgid ""
 "lines in <filename>~/.gnupg/gpg.conf</filename> to set minimum acceptable "
 "defaults:"
 msgstr ""
-"Instalar <filename role=\"package\">security/gnupg</filename>. Digite estas "
-"linhas em <filename>~/.gnupg/gpg.conf</filename> para definir padrões "
+"Instale o  <filename role=\"package\">security/gnupg</filename>. Digite "
+"estas linhas no <filename>~/.gnupg/gpg.conf</filename> para definir padrões "
 "mínimos aceitáveis:"
 
 #. (itstool) path: step/programlisting
@@ -531,12 +539,14 @@ msgid ""
 "present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
 "2048-or-4096-bits\"/> describes the situation in more detail."
 msgstr ""
-"2048-bit keys with a three-year expiration provide adequate protection at "
-"present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
-"2048-or-4096-bits\"/> describes the situation in more detail."
+"Chaves de 2048-bit e com uma expiração de 3 anos proveem uma proteção "
+"adequada nos dias de hoje (2013-12). O artigo <link xlink:href=\"http://"
+"danielpocock.com/rsa-key-sizes-2048-or-4096-bits\"/> descreve a situação em "
+"mais detalhes."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:288
+#, fuzzy
 msgid ""
 "A three year key lifespan is short enough to obsolete keys weakened by "
 "advancing computer power, but long enough to reduce key management problems."
@@ -547,6 +557,7 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:295
+#, fuzzy
 msgid ""
 "Use your real name here, preferably matching that shown on government-issued "
 "<acronym>ID</acronym> to make it easier for others to verify your identity. "

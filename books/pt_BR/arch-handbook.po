@@ -1,6 +1,7 @@
 # Alexandre Vasconcelos <alex.vasconcelos@gmail.com>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Marcos  <udialup@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -8,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-16 02:59+0000\n"
-"Last-Translator: Alexandre Vasconcelos <alex.vasconcelos@gmail.com>\n"
+"PO-Revision-Date: 2018-09-18 08:20+0000\n"
+"Last-Translator: Marcos  <udialup@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -1803,7 +1804,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1078
-#, fuzzy
 msgid ""
 "In the code above, register <literal>%dl</literal> maintains information "
 "about the boot device. This is passed on by the <acronym>BIOS</acronym> and "
@@ -1816,17 +1816,17 @@ msgid ""
 "address holds a <quote>fake partition</quote> to be used by <literal>nread</"
 "literal>. The following is the data in the fake partition:"
 msgstr ""
-"No c�digo acima, registre <literal> % dl </literal> mant�m informa��es sobre "
-"o dispositivo de inicializa��o. Isso � transmitido pelo <acronym>BIOS</"
-"acronym> e preservado pelo <acronym>MBR</acronym> . N�meros <literal> 0x80 </"
-"literal> e maior nos diz que estamos lidando com um disco r�gido, ent�o uma "
-"chamada � feita para <literal> nread </literal> , onde o <acronym>MBR</"
-"acronym> � lido. Argumentos para <literal> nread </literal> s�o passados "
-"​​por <literal> %si </literal> e <literal> % dh </literal> . O endere�o de "
-"mem�ria na etiqueta <literal> part4 </literal> � copiado para <literal> %si "
-"</literal> . Este endere�o de mem�ria cont�m um <quote> parti��o falsa </"
-"quote> para ser usado por <literal> nread </literal> . A seguir, os dados da "
-"parti��o falsa: "
+"No código acima, o registro <literal>%dl</literal> mantém informações sobre "
+"o dispositivo de inicialização. Isso é transmitido pelo <acronym>BIOS</"
+"acronym> e preservado pelo <acronym>MBR</acronym>. Os números <literal>0x80</"
+"literal> e maiores nos dizem que estamos lidando com um disco rígido, então "
+"uma chamada é feita para <literal>nread</literal>, onde o <acronym>MBR</"
+"acronym> é lido. Argumentos para <literal>nread</literal> são passados "
+"​​através de <literal>%si</literal> e <literal>%dh</literal>. O endereço de "
+"memória no rótulo <literal>part4</literal> é copiado para <literal>%si</"
+"literal>. Este endereço de memória contém uma <quote>partição falsa</quote> "
+"a ser usada por <literal>nread</literal>. A seguir estão os dados na "
+"partição falsa:"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1094
@@ -1834,9 +1834,8 @@ msgstr ""
 #: book.translate.xml:1400
 #: book.translate.xml:1432
 #: book.translate.xml:1473
-#, fuzzy
 msgid "<filename>sys/boot/i386/boot2/Makefile</filename>"
-msgstr " <filename> sys / boot / i386 / boot2 / Makefile </filename> "
+msgstr " <filename>sys/boot/i386/boot2/Makefile</filename> "
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1096
