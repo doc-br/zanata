@@ -1,6 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Wendell Borges <perlporter@gmail.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,20 +9,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-03 05:33+0000\n"
-"Last-Translator: Wendell Borges <perlporter@gmail.com>\n"
+"PO-Revision-Date: 2018-09-20 02:34+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Wendell Borges, perlporter@gmail.com, 2018"
+msgstr ""
+"Wendell Borges, perlporter@gmail.com, 2018\n"
+"Silvio Ap Silva, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
 msgid "FreeBSD Release Engineering"
-msgstr "Engenharia de Lançamentos do FreeBSD"
+msgstr "Engenharia de Release (Versão) do FreeBSD"
 
 #. (itstool) path: confgroup/confdates
 #: article.translate.xml:9
@@ -75,7 +76,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:36
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD é uma marca registrada da FreeBSD Foundation."
+msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:38
@@ -85,8 +86,8 @@ msgid ""
 "subsidiaries in the United States and other countries."
 msgstr ""
 "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, "
-"and Xeon são marcas reare trademarks or registered trademarks of Intel "
-"Corporation or its subsidiaries in the United States and other countries."
+"and Xeon are trademarks or registered trademarks of Intel Corporation or its "
+"subsidiaries in the United States and other countries."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:42
@@ -114,7 +115,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:55
-#, fuzzy
 msgid ""
 "This document is outdated and does not accurately describe the current "
 "release procedures of the FreeBSD Release Engineering team. It is retained "
@@ -124,15 +124,14 @@ msgid ""
 "Engineering</link> article."
 msgstr ""
 "Este documento está desatualizado e não descreve com precisão os "
-"procedimentos atuais de liberação da equipe de Engenharia de Liberação do "
-"FreeBSD. É retido para fins históricos. Os procedimentos atuais usados "
-"​​pela equipe de Engenharia de Lançamentos do FreeBSD estão disponíveis na "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/freebsd-"
-"releng/article.html\"> FreeBSD Release Engineering </link> artigo."
+"procedimentos atuais de lançamentos da equipe de Engenharia de Release "
+"(Versão) do FreeBSD. É retido para fins históricos. Os procedimentos atuais "
+"usados ​​pela equipe de Engenharia de Release do FreeBSD estão disponíveis "
+"no artigo <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"freebsd-releng/article.html\">FreeBSD Release Engineering</link>."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:62
-#, fuzzy
 msgid ""
 "This paper describes the approach used by the FreeBSD release engineering "
 "team to make production quality releases of the FreeBSD Operating System. It "
@@ -140,12 +139,12 @@ msgid ""
 "the tools available for those interested in producing customized FreeBSD "
 "releases for corporate rollouts or commercial productization."
 msgstr ""
-"Este artigo descreve a abordagem usada pela equipe de engenharia de "
-"lançamentos do FreeBSD para fazer lançamentos de qualidade de produção do "
-"Sistema Operacional FreeBSD. Ele detalha a metodologia utilizada para os "
-"lançamentos oficiais do FreeBSD e descreve as ferramentas disponíveis para "
-"aqueles interessados ​​em produzir versões customizadas do FreeBSD para "
-"lançamentos corporativos ou para a produção comercial."
+"Este artigo descreve a abordagem usada pela equipe de engenharia de release "
+"do FreeBSD para fazer versões de produção de qualidade do Sistema "
+"Operacional FreeBSD. Ele detalha a metodologia utilizada para as versões "
+"oficiais do FreeBSD e descreve as ferramentas disponíveis para aqueles "
+"interessados ​​em produzir versões customizadas do FreeBSD para lançamentos "
+"corporativos ou para a produção comercial."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:74
@@ -154,13 +153,12 @@ msgstr "Introdução"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:79
-#, fuzzy
 msgid ""
 "Subversion, <uri xlink:href=\"http://subversion.apache.org\">http://"
 "subversion.apache.org</uri>"
 msgstr ""
-"Subversion, <uri xlink:href=\"http://subversion.apache.org\"> http://"
-"subversion.apache.org </uri>"
+"Subversion, <uri xlink:href=\"http://subversion.apache.org\">http://"
+"subversion.apache.org</uri>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:92
@@ -169,21 +167,19 @@ msgid ""
 "contributors/article.html#staff-committers\">FreeBSD committers</link>"
 msgstr ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
-"contributors/article.html#staff-committers\">FreeBSD committers</link>"
+"contributors/article.html#staff-committers\">Committers FreeBSD</link>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:100
-#, fuzzy
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">FreeBSD "
 "Core Team</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\"> Equipe "
-"Principal do FreeBSD </link>"
+"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">Equipe "
+"Core do FreeBSD</link>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:76
-#, fuzzy
 msgid ""
 "The development of FreeBSD is a very open process. FreeBSD is comprised of "
 "contributions from thousands of people around the world. The FreeBSD Project "
@@ -206,23 +202,22 @@ msgstr ""
 "composto por contribuições de milhares de pessoas em todo o mundo. O Projeto "
 "FreeBSD fornece acesso ao Subversion <_:footnote-1/> para o público em geral "
 "para que outros possam ter acesso a mensagens de log, diffs (patches) entre "
-"filiais de desenvolvimento e outros aprimoramentos de produtividade que o "
-"gerenciamento formal de código-fonte fornece. Isso tem sido uma grande ajuda "
-"para atrair desenvolvedores mais talentosos para o FreeBSD. No entanto, acho "
-"que todos concordariam que o caos logo se manifestaria se o acesso de "
-"gravação ao repositório principal fosse aberto a todos na Internet. "
-"Portanto, apenas um grupo <quote> select </quote> de quase 300 pessoas "
-"recebe acesso de escrita ao repositório Subversion. Estes <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc /en_US.ISO8859-1/articles/contributors/article."
-"html#staff-committers\"> committers </link> <_:footnote-2/> são normalmente "
-"as pessoas que fazem a maior parte do desenvolvimento do FreeBSD. Uma equipe "
-"eleita <link xlink:href=\"@@URL_RELPREFIX@@/administration.html # t-core\"> "
-"Core Team </link> <_:footnote-3/> fornece algum nível de orientação sobre o "
-"projeto."
+"branches (ramificações) de desenvolvimento e outros aprimoramentos de "
+"produtividade que o gerenciamento formal de código-fonte fornece. Isso tem "
+"sido uma grande ajuda para atrair desenvolvedores mais talentosos para o "
+"FreeBSD. No entanto, acho que todos concordariam que o caos logo se "
+"manifestaria se o acesso para modificar o repositório principal fosse aberto "
+"a todos na Internet. Dessa forma, apenas um grupo <quote>seleto</quote> de "
+"quase 300 pessoas recebe acesso de escrita ao repositório do Subversion. "
+"Estes <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributors/article.html#staff-committers\">committers</link> <_:footnote-2/"
+"> são normalmente as pessoas que fazem a maior parte do desenvolvimento do "
+"FreeBSD. Um <link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-"
+"core\">Time Core</link> <_:footnote-3/> eleito fornece algum nível de "
+"orientação sobre o projeto."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:106
-#, fuzzy
 msgid ""
 "The rapid pace of <systemitem>FreeBSD</systemitem> development makes the "
 "main development branch unsuitable for the everyday use by the general "
@@ -233,19 +228,18 @@ msgid ""
 "emphasis> of our Subversion tree, known as <quote>FreeBSD-CURRENT</quote> or "
 "<quote>-CURRENT</quote> for short."
 msgstr ""
-"O ritmo acelerado do desenvolvimento do <systemitem> FreeBSD </systemitem> "
-"torna o principal ramo de desenvolvimento inadequado para o uso diário pelo "
-"público em geral. Em particular, são necessários esforços de estabilização "
-"para polir o sistema de desenvolvimento em um release de qualidade de "
-"produção. Para resolver este conflito, o desenvolvimento continua em várias "
-"trilhas paralelas. O principal ramo de desenvolvimento é o <emphasis> HEAD </"
-"emphasis> ou <emphasis> trunk </emphasis> da nossa árvore do Subversion, "
-"conhecida como <quote> FreeBSD-CURRENT </quote> ou <quote> -CURRENT </quote> "
-"abreviado."
+"O ritmo acelerado do desenvolvimento do <systemitem>FreeBSD</systemitem> "
+"torna a principal branch de desenvolvimento inadequada para o uso diário "
+"pelo público em geral. Em particular, são necessários esforços de "
+"estabilização para polir o sistema de desenvolvimento em uma release de "
+"qualidade para por em produção. Para resolver este conflito, o "
+"desenvolvimento continua em várias trilhas paralelas. A principal branch de "
+"desenvolvimento é a <emphasis>HEAD</emphasis> ou <emphasis>trunk</emphasis> "
+"da nossa árvore do Subversion, conhecida como <quote>FreeBSD-CURRENT</quote> "
+"ou <quote>-CURRENT</quote> abreviado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:117
-#, fuzzy
 msgid ""
 "A set of more stable branches are maintained, known as <quote>FreeBSD-"
 "STABLE</quote> or <quote>-STABLE</quote> for short. All branches live in a "
@@ -256,20 +250,19 @@ msgid ""
 "different pace, and with the general assumption that they have first gone "
 "into FreeBSD-CURRENT and have been thoroughly tested by our user community."
 msgstr ""
-"Um conjunto de ramificações mais estáveis ​​é mantido, conhecido como "
-"<quote> FreeBSD-STABLE </quote> ou <quote> -STABLE </quote> para breve. "
-"Todas as filiais vivem em um repositório mestre do Subversion mantido pelo "
-"Projeto FreeBSD. O FreeBSD-CURRENT é o <quote> sangramento </quote> do "
+"Um conjunto de branches mais estáveis ​​é mantida, conhecido como "
+"<quote>FreeBSD-STABLE</quote> ou <quote>-STABLE</quote> na forma abreviada. "
+"Todas as branchs ficam em um repositório principal do Subversion mantido "
+"pelo Projeto FreeBSD. O FreeBSD-CURRENT é a <quote>ponta inicial</quote> do "
 "desenvolvimento do FreeBSD, no qual todas as novas alterações entram no "
-"sistema pela primeira vez. O FreeBSD-STABLE é o ramo de desenvolvimento a "
-"partir do qual os principais lançamentos são feitos. Mudanças entram neste "
-"ramo em um ritmo diferente, e com a suposição geral de que eles foram "
+"sistema pela primeira vez. O FreeBSD-STABLE é a branch de desenvolvimento a "
+"partir do qual as principais versões são feitas. Mudanças entram nesta "
+"branch em um ritmo diferente, e com a suposição geral de que elas foram "
 "primeiro para o FreeBSD-CURRENT e foram exaustivamente testados por nossa "
 "comunidade de usuários."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:128
-#, fuzzy
 msgid ""
 "The term <emphasis>stable</emphasis> in the name of the branch refers to the "
 "presumed Application Binary Interface stability, which is promised by the "
@@ -280,16 +273,15 @@ msgid ""
 "systems run unmodified on newer systems, including <emphasis>HEAD</"
 "emphasis>, assuming that the system management interfaces are not used."
 msgstr ""
-"O termo <emphasis> stable </emphasis> no nome da ramificação refere-se à "
+"O termo <emphasis>stable</emphasis> no nome da branch refere-se à "
 "estabilidade presumida da Interface Binária da Aplicação, que é prometida "
 "pelo projeto. Isso significa que um aplicativo de usuário compilado em uma "
-"versão mais antiga do sistema da mesma ramificação funciona em um sistema "
-"mais novo da mesma ramificação. A estabilidade do ABI melhorou muito em "
-"relação às versões anteriores. Na maioria dos casos, os binários dos "
-"sistemas <emphasis> STABLE </emphasis> mais antigos são executados sem "
-"modificações em sistemas mais recentes, incluindo <emphasis> HEAD </"
-"emphasis>, assumindo que as interfaces de gerenciamento do sistema não são "
-"usadas."
+"versão mais antiga do sistema da mesma branch funciona em um sistema mais "
+"novo da mesma branch. A estabilidade do ABI melhorou muito em relação às "
+"versões anteriores. Na maioria dos casos, os binários dos sistemas "
+"<emphasis>STABLE</emphasis> mais antigos são executados sem modificações em "
+"sistemas mais recentes, incluindo <emphasis>HEAD</emphasis>, assumindo que "
+"as interfaces de gerenciamento do sistema não são usadas."
 
 #. (itstool) path: quote/buildtarget
 #: article.translate.xml:147
@@ -303,11 +295,10 @@ msgid ""
 "makeworld.html\">Rebuilding \"world\"</link>"
 msgstr ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"makeworld.html\">Rebuilding \"world\"</link>"
+"makeworld.html\">Re-construindo \"world\"</link>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:140
-#, fuzzy
 msgid ""
 "In the interim period between releases, weekly snapshots are built "
 "automatically by the FreeBSD Project build machines and made available for "
@@ -319,14 +310,15 @@ msgid ""
 "before the quality assurance activities ramp up pending a major release."
 msgstr ""
 "No período intermediário entre as versões, os snapshots semanais são "
-"construídos automaticamente pelas máquinas de construção do FreeBSD Project "
-"e disponibilizados para download em <systemitem> ftp://ftp.FreeBSD.org/pub/"
-"FreeBSD/snapshots/ </systemitem>. A ampla disponibilidade de instantâneos de "
-"versão binária e a tendência da nossa comunidade de usuários para acompanhar "
-"o desenvolvimento do -STABLE com o Subversion e <quote> <command> make </"
-"command> <_:buildtarget-1/> </quote> <_:footnote-2/> ajuda a manter o "
-"FreeBSD-STABLE em uma condição muito confiável, mesmo antes que as "
-"atividades de garantia de qualidade aumentem até um grande lançamento."
+"construídos automaticamente pelas máquinas de build (construçao da imagem e "
+"ports) do FreeBSD Project e disponibilizados para download em "
+"<systemitem>ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/</systemitem>. A "
+"ampla disponibilidade de lançamentos de versão binária e a tendência da "
+"nossa comunidade de usuários para acompanhar o desenvolvimento do -STABLE "
+"com o Subversion e <quote><command>make</command> <_:buildtarget-1/></quote> "
+"<_:footnote-2/> ajuda a manter o FreeBSD-STABLE em uma condição muito "
+"confiável, mesmo antes que as atividades de garantia de qualidade aumentem "
+"até um grande lançamento."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:154
@@ -346,21 +338,19 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:161
-#, fuzzy
 msgid ""
 "The virtual machine images are approximately 150MB "
 "<citerefentry><refentrytitle>xz</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> compressed, and contain a 10GB sparse filesystem when attached "
 "to a virtual machine."
 msgstr ""
-"As imagens da máquina virtual são aproximadamente 150MB <citerefentry> "
-"<refentrytitle> xz </refentrytitle> <manvolnum> 1 </manvolnum> </"
-"citerefentry> compactadas e contêm um sistema de arquivos esparso de 10GB "
-"quando conectado a uma máquina virtual."
+"As imagens para máquina virtual tem aproximadamente 150MB compactadas em "
+"<citerefentry> <refentrytitle>xz</refentrytitle><manvolnum> 1 </manvolnum></"
+"citerefentry> e contêm um sistema de arquivos esparso de 10GB quando "
+"atachado a uma máquina virtual."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:165
-#, fuzzy
 msgid ""
 "Bug reports and feature requests are continuously submitted by users "
 "throughout the release cycle. Problems reports are entered into our "
@@ -369,15 +359,14 @@ msgid ""
 "html\">https://www.freebsd.org/support/bugreports.html</uri>."
 msgstr ""
 "Relatórios de bugs e solicitações de recursos são enviados continuamente "
-"pelos usuários durante todo o ciclo de lançamento. Os relatórios de "
-"problemas são inseridos em nosso banco de dados <application> Bugzilla </"
-"application> por meio da interface da Web fornecida em <uri xlink:href="
-"\"https://www.freebsd.org/support/bugreports.html\">https://www.freebsd.org/"
-"support/bugreports.html</uri>."
+"pelos usuários durante todo o ciclo da versão. Os relatórios de problemas "
+"são inseridos em nosso banco de dados <application>Bugzilla</application> "
+"por meio da interface da Web fornecida em <uri xlink:href=\"https://www."
+"freebsd.org/support/bugreports.html\">https://www.freebsd.org/support/"
+"bugreports.html</uri>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:171
-#, fuzzy
 msgid ""
 "To service our most conservative users, individual release branches were "
 "introduced with FreeBSD 4.3. These release branches are created shortly "
@@ -387,12 +376,12 @@ msgid ""
 "keep systems on the <emphasis>releng/<replaceable>X</replaceable>."
 "<replaceable>Y</replaceable></emphasis> branches updated."
 msgstr ""
-"Para atender nossos usuários mais conservadores, lançamentos individuais "
-"foram introduzidos com o FreeBSD 4.3. Estas ramificações de lançamento são "
-"criadas pouco antes de uma liberação final ser feita. Após o lançamento, "
-"somente as correções e adições de segurança mais críticas são mescladas na "
-"ramificação do release. Além das atualizações de fonte via Subversion, "
-"patchkits binários estão disponíveis para manter os sistemas nas branchs "
+"Para atender nossos usuários mais conservadores, versões individuais foram "
+"introduzidas com o FreeBSD 4.3. Estas branchs de versões são criadas pouco "
+"antes de uma liberação final ser feita. Após o lançamento, somente as "
+"correções e adições de segurança mais críticas são aplicadas na branch da "
+"versão. Além das atualizações do código fonte via Subversion, patchkits "
+"binários estão disponíveis para manter os sistemas nas branchs "
 "<emphasis>releng/<replaceable>X</replaceable>.<replaceable>Y</replaceable></"
 "emphasis> atualizadas."
 
@@ -422,31 +411,26 @@ msgstr "O processo de criação atual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:208
-#, fuzzy
 msgid "How the base release may be extended by third parties."
 msgstr "Como o release base pode ser estendido por terceiros."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:217
-#, fuzzy
 msgid "Some of the lessons learned through the release of FreeBSD 4.4."
 msgstr "Algumas das lições aprendidas através do lançamento do FreeBSD 4.4."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:226
-#, fuzzy
 msgid "Future directions of development."
 msgstr "Direções futuras de desenvolvimento."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:235
-#, fuzzy
 msgid "Release Process"
-msgstr "Processo de lançamento"
+msgstr "Processos da Release (Versão) "
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:237
-#, fuzzy
 msgid ""
 "New releases of FreeBSD are released from the -STABLE branch at "
 "approximately four month intervals. The FreeBSD release process begins to "
@@ -456,18 +440,17 @@ msgid ""
 "code freeze. During this time, many developers perform what have become "
 "known as <quote>MFC sweeps</quote>."
 msgstr ""
-"Novas versões do FreeBSD são liberadas da ramificação -STABLE em intervalos "
-"de aproximadamente quatro meses. O processo de liberação do FreeBSD começa a "
+"Novas versões do FreeBSD são liberadas da branch -STABLE em intervalos de "
+"aproximadamente quatro meses. O processo de liberação do FreeBSD começa a "
 "aumentar 70-80 dias antes da data de lançamento prevista, quando o "
 "engenheiro de versão envia um email para as listas de discussão de "
 "desenvolvimento para lembrar aos desenvolvedores que eles só têm 15 dias "
 "para integrar novas alterações antes do congelamento de código. Durante esse "
-"tempo, muitos desenvolvedores executam o que ficou conhecido como <quote> "
-"MFC sweeps </quote>."
+"tempo, muitos desenvolvedores executam o que ficou conhecido como <quote>MFC "
+"sweeps</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:246
-#, fuzzy
 msgid ""
 "<acronym>MFC</acronym> stands for <quote>Merge From CURRENT</quote> and it "
 "describes the process of merging a tested change from our -CURRENT "
@@ -479,26 +462,24 @@ msgid ""
 "operating system). Minimal MFC period is 3 days, which is typically used "
 "only for trivial or critical bugfixes."
 msgstr ""
-"<acronym> MFC </acronym> significa <quote> Merge From CURRENT </quote> e "
-"descreve o processo de mesclagem de uma alteração testada de nossa "
-"ramificação de desenvolvimento -CURRENT para nossa ramificação -STABLE. A "
-"política de projeto requer que qualquer mudança seja aplicada pela primeira "
-"vez ao trunk, e mesclada às ramificações -STABLE após testes externos "
-"suficientes serem feitos pelos usuários -CURRENT (espera-se que os "
-"desenvolvedores testem extensivamente a mudança antes de se comprometerem "
-"com -CURRENT, mas é impossível para um pessoa a exercer todos os usos do "
-"sistema operacional de propósito geral). Período MFC mínimo é de 3 dias, que "
-"normalmente é usado apenas para correções de bugs triviais ou críticas."
+"<acronym>MFC</acronym> significa <quote>Merge From CURRENT</quote> e "
+"descreve o processo de aplicação de uma alteração testada de nossa branch de "
+"desenvolvimento -CURRENT para nossa branch -STABLE. A política do projeto "
+"requer que qualquer mudança seja aplicada pela primeira vez ao trunk, e "
+"aplicada às branches -STABLE após testes externos suficientes serem feitos "
+"pelos usuários no -CURRENT (espera-se que os desenvolvedores testem "
+"extensivamente a mudança antes de se comprometerem com -CURRENT, mas é "
+"impossível para um pessoa a exercer todos os usos do sistema operacional de "
+"propósito geral). Período MFC mínimo é de 3 dias, que normalmente é usado "
+"apenas para correções de bugs triviais ou críticas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:259
-#, fuzzy
 msgid "Code Review"
 msgstr "Revisão de código"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:261
-#, fuzzy
 msgid ""
 "Sixty days before the anticipated release, the source repository enters a "
 "<quote>code freeze</quote>. During this time, all commits to the -STABLE "
@@ -507,57 +488,50 @@ msgid ""
 "The kinds of changes that are allowed during this period include:"
 msgstr ""
 "Sessenta dias antes do lançamento previsto, o repositório de origem insere "
-"um congelamento de código <quote> </quote>. Durante esse tempo, todos os "
-"commits para a filial -STABLE devem ser aprovados pela equipe de engenharia "
-"de lançamento <email> re@FreeBSD.org </email>. O processo de aprovação é "
+"um <quote>congelamento de código</quote>. Durante esse tempo, todos os "
+"commits para a branch -STABLE devem ser aprovados pela equipe de engenharia "
+"de release (versão) <email>re@FreeBSD.org</email>. O processo de aprovação é "
 "tecnicamente aplicado por um gancho de pré-consolidação. Os tipos de "
 "alterações permitidos durante esse período incluem:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:270
-#, fuzzy
 msgid "Bug fixes."
 msgstr "Correções de bugs."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:274
-#, fuzzy
 msgid "Documentation updates."
 msgstr "Atualizações de documentação."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:278
-#, fuzzy
 msgid "Security-related fixes of any kind."
 msgstr "Correções relacionadas à segurança de qualquer tipo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:282
-#, fuzzy
 msgid "Minor changes to device drivers, such as adding new Device IDs."
 msgstr ""
-"Pequenas alterações nos drivers de dispositivos, como a adição de novas IDs "
+"Pequenas alterações nos drivers de dispositivos, como a adição de novos IDs "
 "de dispositivos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:287
-#, fuzzy
 msgid "Driver updates from the vendors."
 msgstr "Atualizações de driver dos fornecedores."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:291
-#, fuzzy
 msgid ""
 "Any additional change that the release engineering team feels is justified, "
 "given the potential risk."
 msgstr ""
-"Qualquer mudança adicional que a equipe de engenharia de lançamento julgue "
+"Qualquer mudança adicional que a equipe de engenharia de release julgue "
 "justificada, dado o risco potencial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:297
-#, fuzzy
 msgid ""
 "Shortly after the code freeze is started, a <emphasis>BETA1</emphasis> image "
 "is built and released for widespread testing. During the code freeze, at "
@@ -568,19 +542,18 @@ msgid ""
 "ensure that all of the different components required for a successful "
 "release are available."
 msgstr ""
-"Logo após o início do congelamento de código, uma imagem <emphasis> BETA1 </"
+"Logo após o início do congelamento de código, uma imagem <emphasis>BETA1</"
 "emphasis> é criada e liberada para testes generalizados. Durante o "
-"congelamento de código, pelo menos uma imagem beta ou um candidato a "
-"lançamento é lançado a cada duas semanas até que a versão final esteja "
-"pronta. Durante os dias que antecederam a versão final, a equipe de "
-"engenharia de lançamentos está em constante comunicação com a equipe de "
-"segurança, os mantenedores de documentação e os mantenedores da porta para "
-"garantir que todos os diferentes componentes necessários para uma liberação "
-"bem-sucedida estejam disponíveis."
+"congelamento de código, pelo menos uma imagem beta ou um candidato a versão "
+"é lançado a cada duas semanas até que a versão final esteja pronta. Durante "
+"os dias que antecedem a versão final, a equipe de engenharia de release está "
+"em constante comunicação com a equipe de segurança, os mantenedores de "
+"documentação e os mantenedores de ports para garantir que todos os "
+"diferentes componentes necessários para uma liberação bem-sucedida estejam "
+"disponíveis."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:308
-#, fuzzy
 msgid ""
 "After the quality of the BETA images is satisfying enough, and no large and "
 "potentially risky changes are planned, the release branch is created and "
@@ -592,20 +565,18 @@ msgid ""
 ""
 msgstr ""
 "Após a qualidade das imagens BETA ser satisfatória o suficiente, e nenhuma "
-"grande e potencialmente arriscada alteração for planejada, o ramo release é "
-"criado e as imagens <emphasis> Release Candidate </emphasis> (RC) são "
-"construídas a partir do branch release, ao invés do Imagens BETA da "
-"ramificação STABLE. Além disso, o congelamento na ramificação STABLE é "
-"levantado e a ramificação de lançamento entra em um congelamento de código "
-"difícil, onde fica muito mais difícil justificar novas alterações no "
-"sistema, a menos que uma correção séria de bug ou problema de segurança "
-"esteja envolvido."
+"grande e potencialmente arriscada alteração for planejada, a branch release "
+"é criado e as imagens <emphasis>Release Candidate</emphasis> (RC) são "
+"construídas a partir da branch release, ao invés das Imagens BETA da branch "
+"STABLE. Além disso, o congelamento na branch STABLE é levantado e a branch "
+"de lançamento entra em um <quote>congelamento de código rigido</quote>, onde "
+"fica muito mais difícil justificar novas alterações no sistema, a menos que "
+"uma correção séria de bug ou problema de segurança esteja envolvido."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:321
-#, fuzzy
 msgid "Final Release Checklist"
-msgstr "Lista Final de Liberação"
+msgstr "Checagem Final de Liberação"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:323
@@ -615,30 +586,27 @@ msgid ""
 "quote> can begin."
 msgstr ""
 "Quando várias imagens BETA foram disponibilizadas para testes generalizados "
-"e todos os principais problemas foram resolvidos, a versão final do "
-"<quote>polishing</quote> pode começar."
+"e todos os principais problemas foram resolvidos, a versão final mais "
+"<quote>polida</quote> pode começar."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:328
-#, fuzzy
 msgid "Creating the Release Branch"
-msgstr "Criação da Release Branch"
+msgstr "Criação da Branch (Ramificação) da Release (Versão)"
 
 #. (itstool) path: note/para
 #: article.translate.xml:331
-#, fuzzy
 msgid ""
 "In all examples below, <literal>$FSVN</literal> refers to the location of "
 "the FreeBSD Subversion repository, <literal>svn+ssh://svn.FreeBSD.org/base/</"
 "literal>."
 msgstr ""
-"Em todos os exemplos abaixo, <literal> $ FSVN </literal> refere-se ao local "
-"do repositório Subversion do FreeBSD, <literal> svn + ssh: //svn.FreeBSD.org/"
-"base/ </literal>."
+"Em todos os exemplos abaixo, <literal>$FSVN</literal> refere-se ao local do "
+"repositório Subversion do FreeBSD, <literal>svn+ssh://svn.FreeBSD.org/base/</"
+"literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:337
-#, fuzzy
 msgid ""
 "The layout of FreeBSD branches in Subversion is described in the <link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/"
@@ -647,12 +615,12 @@ msgid ""
 "the <literal>stable/<replaceable>X</replaceable></literal> sources that you "
 "want to branch <emphasis>from</emphasis>."
 msgstr ""
-"O layout das ramificações do FreeBSD no Subversion é descrito no <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide /"
-"subversion-primer.html#subversion-primer-base- layout \"> Guia do Comutador "
-"</link>. O primeiro passo na criação de um branch é identificar a revisão "
-"das fontes <literal> stable / <replaceable> X </replaceable> </literal> que "
-"você deseja ramificar <emphasis> de </emphasis>."
+"O layout das branchs do FreeBSD no Subversion é descrito no <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-"
+"primer.html#subversion-primer-base-layout\">Guia do Commiter</link>. O "
+"primeiro passo na criação de uma branch é identificar a revisão dos códigos "
+"fontes de <literal>stable/<replaceable>X</replaceable></literal>, a "
+"<emphasis>branch</emphasis> de origem que você deseja criar uma nova branch."
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:345
@@ -662,13 +630,12 @@ msgstr "<prompt>#</prompt> <userinput>svn log -v $FSVN/stable/9</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:347
-#, fuzzy
 msgid "The next step is to create the <emphasis>release branch</emphasis>"
-msgstr "O próximo passo é criar o <emphasis> release branch </emphasis>"
+msgstr "O próximo passo é criar a <emphasis>branch release</emphasis>"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:350
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>svn cp $FSVN/stable/9@REVISION $FSVN/releng/9."
 "2</userinput>"
@@ -678,27 +645,25 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:352
-#, fuzzy
 msgid "This branch can be checked out:"
-msgstr "Este ramo pode ser verificado:"
+msgstr "Esta branch pode ser verificada:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:354
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn co $FSVN/releng/9.2 src</userinput>"
 msgstr "<prompt>#</prompt> <userinput>svn co $FSVN/releng/9.2 src</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:357
-#, fuzzy
 msgid ""
 "Creating the <literal>releng</literal> branch and <literal>release</literal> "
 "tags is done by the <link xlink:href=\"@@URL_RELPREFIX@@/administration."
 "html#t-re\">Release Engineering Team</link>."
 msgstr ""
-"A criação das tags <literal> releng </literal> branch e <literal> release </"
-"literal> é feita pela equipe de engenharia de lançamento do <link xlink:href="
-"\"@@URL_RELPREFIX@@/administration.html # t-re\"> </link>."
+"A criação das tags <literal>releng</literal> branch e <literal>release</"
+"literal> é feita pela equipe de engenharia de release do <link xlink:href="
+"\"@@URL_RELPREFIX@@/administration.html#t-re\"> </link>."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -706,22 +671,20 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:364
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-head' md5='__failed__'"
-msgstr "ref externo = 'branches-head' md5 = '__ failed__'"
+msgstr "external ref='branches-head' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:362
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-head\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD Development Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-head\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD Development Branch</phrase> </"
-"textobject>"
+"imageobject> <textobject> <phrase>Branch de Desenvolvimento do FreeBSD</"
+"phrase> </textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -729,21 +692,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:374
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng3' md5='__failed__'"
-msgstr "ref externo = 'branches-releng3' md5 = '__ failed__'"
+msgstr "external ref='branches-releng3' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:372
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng3\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng3\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 3.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -752,21 +713,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:384
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng4' md5='__failed__'"
-msgstr "ref externo = 'branches-releng4' md5 = '__ failed__'"
+msgstr "external ref='branches-releng4' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:382
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng4\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng4\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 4.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -775,21 +734,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:394
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng5' md5='__failed__'"
-msgstr "ref externo = 'branches-releng5' md5 = '__ failed__'"
+msgstr "external ref='branches-releng5' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:392
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng5\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng5\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 5.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -798,21 +755,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:404
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng6' md5='__failed__'"
-msgstr "ref externo = 'branches-releng6' md5 = '__ failed__'"
+msgstr "external ref='branches-releng6' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:402
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 6.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -821,21 +776,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:414
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng7' md5='__failed__'"
-msgstr "ref externo = 'branches-releng7' md5 = '__ failed__'"
+msgstr "external ref='branches-releng7' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:412
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 7.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -844,21 +797,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:424
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng8' md5='__failed__'"
-msgstr "ref externo = 'branches-releng8' md5 = '__ failed__'"
+msgstr "external ref='branches-releng8' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:422
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng8\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng8\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 8.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -867,32 +818,28 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: article.translate.xml:434
-#, fuzzy
 msgctxt "_"
 msgid "external ref='branches-releng9' md5='__failed__'"
-msgstr "ref externo = 'branches-releng9' md5 = '__ failed__'"
+msgstr "external ref='branches-releng9' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:432
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng9\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng9\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 9.x STABLE</phrase> </"
 "textobject>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:444
-#, fuzzy
 msgid "Bumping up the Version Number"
-msgstr "Aumentando o número da versão"
+msgstr "Incrementando o número da versão"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:446
-#, fuzzy
 msgid ""
 "Before the final release can be tagged, built, and released, the following "
 "files need to be modified to reflect the correct version of FreeBSD:"
@@ -903,270 +850,226 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:452
-#, fuzzy
 msgid ""
 "<filename>doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml</filename>"
 msgstr ""
-"<filename> doc / en_US.ISO8859-1 / books / handbook / mirrors / chapter.xml "
-"</filename>"
+"<filename>doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:456
-#, fuzzy
 msgid ""
 "<filename>doc/en_US.ISO8859-1/books/porters-handbook/book.xml</filename>"
 msgstr ""
-"<filename> doc / en_US.ISO8859-1 / books / porters-handbook / book.xml </"
-"filename>"
+"<filename>doc/en_US.ISO8859-1/books/porters-handbook/book.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:460
-#, fuzzy
 msgid "<filename>doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi</filename>"
-msgstr ""
-"<filename> doc / en_US.ISO8859-1 / htdocs / cgi / ports.cgi </filename>"
+msgstr "<filename>doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:464
-#, fuzzy
 msgid "<filename>ports/Tools/scripts/release/config</filename>"
-msgstr "<filename> ports / Tools / scripts / release / config </filename>"
+msgstr "<filename>ports/Tools/scripts/release/config</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:468
-#, fuzzy
 msgid "<filename>doc/share/xml/freebsd.ent</filename>"
-msgstr "<filename> doc / share / xml / freebsd.ent </filename>"
+msgstr "<filename>doc/share/xml/freebsd.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:472
-#, fuzzy
 msgid "<filename>src/Makefile.inc1</filename>"
-msgstr "<filename> src / Makefile.inc1 </filename>"
+msgstr "<filename>src/Makefile.inc1</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:476
-#, fuzzy
 msgid "<filename>src/UPDATING</filename>"
-msgstr "<filename> src / UPDATING </filename>"
+msgstr "<filename>src/UPDATING</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:480
-#, fuzzy
 msgid "<filename>src/gnu/usr.bin/groff/tmac/mdoc.local</filename>"
-msgstr ""
-"<filename> src / gnu / usr.bin / groff / tmac / mdoc.local </filename>"
+msgstr "<filename>src/gnu/usr.bin/groff/tmac/mdoc.local</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:484
-#, fuzzy
 msgid "<filename>src/release/Makefile</filename>"
-msgstr "<filename> src / release / Makefile </filename>"
+msgstr "<filename>src/release/Makefile</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:488
-#, fuzzy
 msgid ""
 "<filename>src/release/doc/en_US.ISO8859-1/share/xml/release.dsl</filename>"
 msgstr ""
-"<filename> src / release / doc / en_US.ISO8859-1 / share / xml / release.dsl "
-"</filename>"
+"<filename>src/release/doc/en_US.ISO8859-1/share/xml/release.dsl</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
-#, fuzzy
 msgid ""
 "<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
 msgstr ""
-"<filename> src / release / doc / share / exemplos / Makefile.relnotesng </"
-"filename>"
+"<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:496
-#, fuzzy
 msgid "<filename>src/release/doc/share/xml/release.ent</filename>"
-msgstr ""
-"<filename> src / release / doc / share / xml / release.ent </filename>"
+msgstr "<filename>src/release/doc/share/xml/release.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
-#, fuzzy
 msgid "<filename>src/sys/conf/newvers.sh</filename>"
-msgstr "<filename> src / sys / conf / newvers.sh </filename>"
+msgstr "<filename>src/sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:504
-#, fuzzy
 msgid "<filename>src/sys/sys/param.h</filename>"
-msgstr "<filename> src / sys / sys / param.h </filename>"
+msgstr "<filename>src/sys/sys/param.h</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:508
-#, fuzzy
 msgid "<filename>src/usr.sbin/pkg_install/add/main.c</filename>"
-msgstr "<filename> src / usr.sbin / pkg_install / add / main.c </filename>"
+msgstr "<filename>src/usr.sbin/pkg_install/add/main.c</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:512
-#, fuzzy
 msgid ""
 "<filename>doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml</filename>"
 msgstr ""
-"<filename> doc / en_US.ISO8859-1 / htdocs / search / opensearch / man.xml </"
-"filename>"
+"<filename>doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:516
-#, fuzzy
 msgid ""
 "The release notes and errata files also need to be adjusted for the new "
 "release (on the release branch) and truncated appropriately (on the stable/"
 "current branch):"
 msgstr ""
 "As notas de versão e os arquivos de errata também precisam ser ajustados "
-"para a nova versão (na ramificação da release) e truncados apropriadamente "
-"(na ramificação stable / current):"
+"para a nova versão (na branch (ramificação) da release) e truncados "
+"apropriadamente (na branch stable/current):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
-#, fuzzy
 msgid ""
 "<filename>src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml</filename>"
 msgstr ""
-"<filename> src / release / doc / en_US.ISO8859-1 / relnotes / common / new."
-"xml </filename>"
+"<filename>src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
-#, fuzzy
 msgid ""
 "<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
 msgstr ""
-"<filename> src / release / doc / en_US.ISO8859-1 / errata / article.xml </"
-"filename>"
+"<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:534
-#, fuzzy
 msgid ""
 "FreeBSD Ports Collection <uri xlink:href=\"https://www.FreeBSD.org/"
 "ports\">https://www.FreeBSD.org/ports</uri>"
 msgstr ""
 "Coleção de Ports do FreeBSD <uri xlink:href=\"https://www.FreeBSD.org/"
-"ports\"> https://www.FreeBSD.org/ports </uri>"
+"ports\">https://www.FreeBSD.org/port</uri>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:530
-#, fuzzy
 msgid ""
 "<application>Sysinstall</application> should be updated to note the number "
 "of available ports and the amount of disk space required for the Ports "
 "Collection. <_:footnote-1/> This information is currently kept in "
 "<filename>src/usr.sbin/bsdinstall/dist.c</filename>."
 msgstr ""
-"O <application> Sysinstall </application> deve ser atualizado para anotar o "
-"número de portas disponíveis e a quantidade de espaço em disco necessária "
+"O <application>Sysinstall</application> deve ser atualizado para notificar o "
+"número de ports disponíveis e a quantidade de espaço em disco necessária "
 "para o Ports Collection. <_:footnote-1/> Esta informação é atualmente "
-"mantida em <filename> src / usr.sbin / bsdinstall / dist.c </filename>."
+"mantida em <filename>src/usr.sbin/bsdinstall/dist.c</filename>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:540
-#, fuzzy
 msgid ""
 "After the release has been built, a number of files should be updated to "
 "announce the release to the world. These files are relative to <literal>head/"
 "</literal> within the <literal>doc/</literal> subversion tree."
 msgstr ""
-"Após o lançamento, vários arquivos devem ser atualizados para anunciar o "
-"lançamento para o mundo. Esses arquivos são relativos a <literal> head / </"
-"literal> dentro da árvore de subversão <literal> doc / </literal>."
+"Após o lançamento, vários arquivos devem ser atualizados para anunciar a "
+"versão para o mundo. Esses arquivos são relativos a <literal>head/</literal> "
+"dentro da árvore <literal>doc/</literal> do subversion."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:547
-#, fuzzy
 msgid ""
 "<filename>share/images/articles/releng/branches-releng<replaceable>X</"
 "replaceable>.pic</filename>"
 msgstr ""
-"<filename> share / images / articles / releng / branches-releng "
-"<replaceable> X </replaceable> .pic </filename>"
+"<filename>share/images/articles/releng/branches-releng<replaceable>X</"
+"replaceable>.pic</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:551
-#, fuzzy
 msgid "<filename>head/share/xml/release.ent</filename>"
-msgstr "<filename> head / share / xml / release.ent </filename>"
+msgstr "<filename>head/share/xml/release.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:555
-#, fuzzy
 msgid "<filename>en_US.ISO8859-1/htdocs/releases/*</filename>"
-msgstr "<filename> en_US.ISO8859-1 / htdocs / releases / * </filename>"
+msgstr "<filename>en_US.ISO8859-1/htdocs/releases/*</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:559
-#, fuzzy
 msgid "<filename>en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
-msgstr "<filename> en_US.ISO8859-1 / htdocs / releng / index.xml </filename>"
+msgstr "<filename>en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:563
-#, fuzzy
 msgid "<filename>share/xml/news.xml</filename>"
-msgstr "<filename> share / xml / news.xml </filename>"
+msgstr "<filename>share/xml/news.xml</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:567
-#, fuzzy
 msgid "Additionally, update the <quote>BSD Family Tree</quote> file:"
-msgstr ""
-"Além disso, atualize o arquivo <quote> Árvore genealógica do BSD </quote>:"
+msgstr "Além disso, atualize o arquivo <quote>BSD Family Tree</quote>:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:572
-#, fuzzy
 msgid "<filename>src/share/misc/bsd-family-tree</filename>"
-msgstr "<filename> src / share / misc / bsd-family-tree </filename>"
+msgstr "<filename>src/share/misc/bsd-family-tree</filename>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:578
-#, fuzzy
 msgid "Creating the Release Tag"
-msgstr "Criando a Tag de Liberação"
+msgstr "Criando a Tag de Release"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:580
-#, fuzzy
 msgid ""
 "When the final release is ready, the following command will create the "
 "<literal>release/9.2.0</literal> tag."
 msgstr ""
 "Quando a versão final estiver pronta, o seguinte comando criará a tag "
-"<literal> release / 9.2.0 </literal>."
+"<literal>release/9.2.0</literal>."
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:583
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0</"
 "userinput>"
 msgstr ""
-"<prompt> # </prompt> <userinput> svn cp $ FSVN / releng / 9.2 $ FSVN / "
-"release / 9.2.0 </userinput>"
+"<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:585
-#, fuzzy
 msgid ""
 "The Documentation and Ports managers are responsible for tagging their "
 "respective trees with the <literal>tags/RELEASE_9_2_0</literal> tag."
 msgstr ""
-"Os gerenciadores de Documentação e Portas são responsáveis ​​por marcar suas "
-"respectivas árvores com a tag <literal> tags / RELEASE_9_2_0 </literal>."
+"Os gerenciadores de Documentação e Ports são responsáveis ​​por marcar suas "
+"respectivas árvores com a tag <literal>tags/RELEASE_9_2_0</literal>."
 
 #. (itstool) path: sidebar/para
 #: article.translate.xml:590
-#, fuzzy
 msgid ""
 "When the Subversion <command>svn cp</command> command is used to create a "
 "<emphasis>release tag</emphasis>, this identifies the source at a specific "
@@ -1174,21 +1077,19 @@ msgid ""
 "always be able to use the exact same source we used to create the official "
 "FreeBSD Project releases."
 msgstr ""
-"Quando o comando Subversion <command> svn cp </command> é usado para criar "
-"uma <emphasis> tag de lançamento </emphasis>, isso identifica a fonte em um "
+"Quando o comando <command>svn cp</command> do Subversion é usado para criar "
+"uma <emphasis>tag de versão</emphasis>, isso identifica o código fonte em um "
 "ponto específico no tempo. Criando tags, nós garantimos que futuros "
 "construtores de versões sempre poderão usar exatamente a mesma fonte que "
-"usamos para criar os lançamentos oficiais do Projeto FreeBSD."
+"usamos para criar as versões oficiais do Projeto FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:603
-#, fuzzy
 msgid "Release Building"
-msgstr "Edifício de Liberação"
+msgstr "Construção da Release (Versão)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:605
-#, fuzzy
 msgid ""
 "FreeBSD <quote>releases</quote> can be built by anyone with a fast machine "
 "and access to a source repository. (That should be everyone, since we offer "
@@ -1211,96 +1112,89 @@ msgid ""
 "build a release. <command>generate-release.sh</command> is a wrapper around "
 "the Makefile target: <command>make release</command>."
 msgstr ""
-"As versões <quote> do FreeBSD </quote> podem ser construídas por qualquer "
+"As <quote>versões</quote> do FreeBSD podem ser construídas por qualquer "
 "pessoa com uma máquina rápida e acesso a um repositório de código-fonte. "
 "(Isso deve ser todo mundo, já que oferecemos acesso ao Subversion! Veja a "
-"seção <link xlink:href=\"@@URL_RELPREFIX@@/doc / en_US.ISO8859-1 / books / "
-"handbook / svn.html\"> Subversion no Manual </link> para detalhes.) O "
-"requisito especial <emphasis> only </emphasis> é que o dispositivo "
-"<citerefentry> <refentrytitle> md </refentrytitle> <manvolnum> 4 </"
-"manvolnum> </citerefentry> esteja disponível. Se o dispositivo não estiver "
-"carregado em seu kernel, então o módulo do kernel deve ser carregado "
-"automaticamente quando <citerefentry> <refentrytitle> mdconfig </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> for executado "
-"durante a fase de criação da mídia de inicialização . Todas as ferramentas "
-"necessárias para construir uma versão estão disponíveis no repositório "
-"Subversion em <filename> src / release </filename>. Essas ferramentas visam "
-"fornecer uma maneira consistente de construir versões do FreeBSD. Uma versão "
-"completa pode ser construída com apenas um único comando, incluindo a "
-"criação de imagens <acronym> ISO </acronym> adequadas para gravação em CD-"
-"ROM ou DVD e um diretório de instalação de FTP. <citerefentry> "
-"<refentrytitle> release </refentrytitle> <manvolnum> 7 </manvolnum> </"
-"citerefentry> documenta completamente o script <command> src / release / "
-"generate-release.sh </command> que é usado para construir uma versão . "
-"<command> generate-release.sh </command> é um wrapper em torno do alvo do "
-"Makefile: <command> make release </command>."
+"seção <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/svn.html\">Subversion no Manual</link> para detalhes.)  "
+"<emphasis>Apenas</emphasis> o requisito especial é que o dispositivo "
+"<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> esteja disponível. Se o dispositivo não estiver carregado em "
+"seu kernel, então o módulo do kernel deve ser carregado automaticamente "
+"quando <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> for executado durante a fase de criação da mídia "
+"de inicialização. Todas as ferramentas necessárias para construir uma versão "
+"estão disponíveis no repositório Subversion em <filename>src/release</"
+"filename>. Essas ferramentas visam fornecer uma maneira consistente de "
+"construir versões do FreeBSD. Uma versão completa pode ser construída com "
+"apenas um único comando, incluindo a criação de imagens <acronym>ISO</"
+"acronym> adequadas para gravação em CD-ROM ou DVD e um diretório de "
+"instalação de FTP. <citerefentry><refentrytitle>release</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry> documenta "
+"completamente o script <command>src/release/generate-release.sh</command> "
+"que é usado para construir uma versão . <command>generate-release.sh</"
+"command> é um wrapper em torno do alvo do Makefile: <command>make release</"
+"command>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:626
-#, fuzzy
 msgid "Building a Release"
-msgstr "Construindo um Release"
+msgstr "Construindo uma Release (Versão)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:628
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry> documents the exact commands required to build a "
 "FreeBSD release. The following sequences of commands can build an 9.2.0 "
 "release:"
 msgstr ""
-"<citerefentry> <refentrytitle> release </refentrytitle> <manvolnum> 7 </"
-"manvolnum> </citerefentry> documenta os comandos exatos necessários para "
+"<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry> documenta os comandos exatos necessários para "
 "construir uma versão do FreeBSD. As seguintes sequências de comandos podem "
-"construir uma liberação 9.2.0:"
+"construir uma versão 9.2.0:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:632
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src/release</userinput>\n"
 "<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/"
 "release</userinput>"
 msgstr ""
-"<prompt> # </prompt> <userinput> cd / usr / src / release </userinput>\n"
-"<prompt> # </prompt> <userinput> sh liberação generate-release.sh / 9.2.0 / "
-"local3 / release </userinput>"
+"<prompt>#</prompt> <userinput>cd /usr/src/release</userinput>\n"
+"<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/"
+"release</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:635
-#, fuzzy
 msgid ""
 "After running these commands, all prepared release files are available in "
 "<filename>/local3/release/R</filename> directory."
 msgstr ""
-"Depois de executar esses comandos, todos os arquivos de versão preparados "
-"estarão disponíveis no diretório <filename> / local3 / release / R </"
-"filename>."
+"Depois de executar esses comandos, todos os arquivos preparados da versão "
+"estarão disponíveis no diretório <filename>/local3/release/R</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:639
-#, fuzzy
 msgid ""
 "The release <filename>Makefile</filename> can be broken down into several "
 "distinct steps."
 msgstr ""
-"A versão <filename> Makefile </filename> pode ser dividida em várias etapas "
+"O <filename>Makefile</filename> da versão pode ser dividido em várias etapas "
 "distintas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:644
-#, fuzzy
 msgid ""
 "Creation of a sanitized system environment in a separate directory hierarchy "
 "with <quote><command>make installworld</command></quote>."
 msgstr ""
-"Criação de um ambiente de sistema higienizado em uma hierarquia de diretório "
-"separada com <quote> <command> make installworld </command> </quote>."
+"Criação de um ambiente de sistema limpo em uma hierarquia de diretório "
+"separada com <quote><command>make installworld</command></quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:650
-#, fuzzy
 msgid ""
 "Checkout from Subversion of a clean version of the system source, "
 "documentation, and ports into the release build hierarchy."
@@ -1310,45 +1204,40 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:656
-#, fuzzy
 msgid ""
 "Population of <filename>/etc</filename> and <filename>/dev</filename> in the "
 "chrooted environment."
 msgstr ""
-"População de <filename> / etc </filename> e <filename> / dev </filename> no "
-"ambiente chrooted."
+"População de <filename>/etc</filename> e <filename>/dev</filename> no "
+"ambiente chrooted. (Processo de transferir o diretório root para outro "
+"lugar)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:662
-#, fuzzy
 msgid ""
 "chroot into the release build hierarchy, to make it harder for the outside "
 "environment to taint this build."
 msgstr ""
-"chroot na hierarquia de build do release, para tornar mais difícil para o "
-"ambiente externo manchar essa build."
+"chroot na hierarquia de build (construção) da release, para tornar mais "
+"difícil para o ambiente externo corromper essa build."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:668
-#, fuzzy
 msgid "<command>make world</command> in the chrooted environment."
-msgstr "<command> make world </command> no ambiente chrooted."
+msgstr "<command>make world</command> no ambiente chrooted."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:673
-#, fuzzy
 msgid "Build of Kerberos-related binaries."
 msgstr "Compilação de binários relacionados ao Kerberos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:677
-#, fuzzy
 msgid "Build <filename>GENERIC</filename> kernel."
-msgstr "Construa o kernel <filename> GENERIC </filename>."
+msgstr "Construa o kernel <filename>GENERIC</filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:681
-#, fuzzy
 msgid ""
 "Creation of a staging directory tree where the binary distributions will be "
 "built and packaged."
@@ -1358,7 +1247,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:686
-#, fuzzy
 msgid ""
 "Build and installation of the documentation toolchain needed to convert the "
 "documentation source (SGML) into HTML and text documents that will accompany "
@@ -1370,7 +1258,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:692
-#, fuzzy
 msgid ""
 "Build and installation of the actual documentation (user manuals, tutorials, "
 "release notes, hardware compatibility lists, and so on.)"
@@ -1381,60 +1268,53 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:698
-#, fuzzy
 msgid "Package up distribution tarballs of the binaries and sources."
-msgstr "Empacote tarballs de distribuição dos binários e fontes."
+msgstr "Empacotar tarballs de distribuição dos binários e fontes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:703
-#, fuzzy
 msgid "Create FTP installation hierarchy."
-msgstr "Crie hierarquia de instalação de FTP."
+msgstr "Criar hierarquia de instalação de FTP."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:707
-#, fuzzy
 msgid ""
 "<emphasis>(optionally)</emphasis> Create ISO images for CDROM/DVD media."
 msgstr ""
-"<emphasis> (opcionalmente) </emphasis> Crie imagens ISO para mídia de CDROM /"
-" DVD."
+"<emphasis>(opcionalmente)</emphasis> Crie imagens ISO para mídia de CDROM/"
+"DVD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:712
-#, fuzzy
 msgid ""
 "For more information about the release build infrastructure, please see "
 "<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 msgstr ""
 "Para obter mais informações sobre a infraestrutura de criação de versões, "
-"consulte <citerefentry> <refentrytitle> release </refentrytitle> <manvolnum> "
-"7 </manvolnum> </citerefentry>."
+"consulte <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:716
-#, fuzzy
 msgid ""
 "It is important to remove any site-specific settings from <filename>/etc/"
 "make.conf</filename>. For example, it would be unwise to distribute binaries "
 "that were built on a system with <varname>CPUTYPE</varname> set to a "
 "specific processor."
 msgstr ""
-"É importante remover qualquer configuração específica do site do <filename> /"
-"etc/make.conf </filename>. Por exemplo, seria imprudente distribuir binários "
-"que foram construídos em um sistema com <varname> CPUTYPE </varname> "
+"É importante remover qualquer configuração específica do site do <filename>/"
+"etc/make.conf</filename>. Por exemplo, seria imprudente distribuir binários "
+"que foram construídos em um sistema com <varname>CPUTYPE</varname> "
 "configurado para um processador específico."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:725
-#, fuzzy
 msgid "Contributed Software (<quote>ports</quote>)"
-msgstr "Software Contribuído (<quote> portas </quote>)"
+msgstr "Software Contribuído (<quote>ports</quote>)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:727
-#, fuzzy
 msgid ""
 "The <link xlink:href=\"https://www.FreeBSD.org/ports\">FreeBSD Ports "
 "collection</link> is a collection of over 24,000 third-party software "
@@ -1443,22 +1323,20 @@ msgid ""
 "consistent ports tree that can be used to create the binary packages that "
 "accompany official FreeBSD releases."
 msgstr ""
-"A <link xlink:href=\"https://www.FreeBSD.org/ports\"> coleção FreeBSD Ports "
-"</link> é uma coleção de mais de 24.000 pacotes de software de terceiros "
-"disponíveis para o FreeBSD. A Equipe de Gerenciamento de Portas <email> "
-"portmgr@FreeBSD.org </email> é responsável por manter uma árvore de ports "
-"consistente que pode ser usada para criar os pacotes binários que acompanham "
-"os lançamentos oficiais do FreeBSD."
+"A <link xlink:href=\"https://www.FreeBSD.org/ports\"> coleção de Ports do "
+"FreeBSD</link> é uma coleção de mais de 24.000 pacotes de software de "
+"terceiros disponíveis para o FreeBSD. A Equipe de Gerenciamento de Ports "
+"<email>portmgr@FreeBSD.org</email> é responsável por manter uma árvore de "
+"ports consistente que pode ser usada para criar os pacotes binários que "
+"acompanham as versões oficiais do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:736
-#, fuzzy
 msgid "Release ISOs"
-msgstr "Liberar ISOs"
+msgstr "Releases (Versões) ISO"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:738
-#, fuzzy
 msgid ""
 "Starting with FreeBSD 4.4, the FreeBSD Project decided to release all four "
 "ISO images that were previously sold on the <emphasis>BSDi/Wind River "
@@ -1473,19 +1351,19 @@ msgid ""
 msgstr ""
 "Começando com o FreeBSD 4.4, o Projeto FreeBSD decidiu liberar todas as "
 "quatro imagens ISO que foram vendidas anteriormente nas distribuições "
-"<emphasis> oficiais do BSRi / Wind River Systems / FreeBSD Mall </emphasis> "
-"<quote> oficial </quote> CDROM. Cada um dos quatro discos deve conter um "
-"arquivo <filename> README.TXT </filename> que explica o conteúdo do disco, "
-"um arquivo <filename> CDROM.INF </filename> que fornece metadados para o "
-"disco para que <citerefentry> <refentrytitle> bsdinstall </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry> pode validar e usar o conteúdo, e "
-"um arquivo <filename> filename.txt </filename> que fornece um manifesto para "
-"o disco. Este <emphasis> manifesto </emphasis> pode ser criado com um "
-"simples comando:"
+"<emphasis>oficiais do BSRi/Wind River Systems/FreeBSD Mall</emphasis> "
+"<quote>oficial</quote> em CDROM. Cada um dos quatro discos deve conter um "
+"arquivo <filename>README.TXT</filename> que explica o conteúdo do disco, um "
+"arquivo <filename>CDROM.INF</filename> que fornece metadados para o disco "
+"para que <citerefentry><refentrytitle>bsdinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> possa validar e usar o "
+"conteúdo, e um arquivo <filename>filename.txt</filename> que fornece um "
+"manifesto para o disco. Este <emphasis>manifesto</emphasis> pode ser criado "
+"com um simples comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:751
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\.\\//"
 "/' | sort &gt; filename.txt</userinput>"
@@ -1495,19 +1373,16 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:753
-#, fuzzy
 msgid "The specific requirements of each CD are outlined below."
 msgstr "Os requisitos específicos de cada CD são descritos abaixo."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:757
-#, fuzzy
 msgid "Disc 1"
 msgstr "Disco 1"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:759
-#, fuzzy
 msgid ""
 "The first disc is almost completely created by <command>make release</"
 "command>. The only changes that should be made to the <filename>disc1</"
@@ -1518,18 +1393,17 @@ msgid ""
 "This disc should be made bootable so that users of modern PCs do not need to "
 "create installation floppy disks."
 msgstr ""
-"O primeiro disco é quase completamente criado por <command> make release </"
-"command>. As únicas alterações que devem ser feitas no diretório <filename> "
-"disc1 </filename> são a adição de um diretório <filename> tools </filename> "
-"e tantos pacotes de software de terceiros quanto couberem no disco. O "
-"diretório <filename> tools </filename> contém software que permite aos "
+"O primeiro disco é quase completamente criado por <command>make release</"
+"command>. As únicas alterações que devem ser feitas no diretório "
+"<filename>disc1</filename> são a adição de um diretório <filename>tools</"
+"filename> e tantos pacotes de software de terceiros quanto couberem no disco."
+" O diretório <filename>tools</filename> contém software que permite aos "
 "usuários criar disquetes de instalação a partir de outros sistemas "
 "operacionais. Esse disco deve ser inicializado para que os usuários dos PCs "
 "modernos não precisem criar disquetes de instalação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:770
-#, fuzzy
 msgid ""
 "If a custom kernel of FreeBSD is to be included, then "
 "<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
@@ -1544,28 +1418,26 @@ msgid ""
 "usr.sbin/bsdinstall</filename>. Optionally, you may choose to update "
 "<filename>bsdinstall.8</filename>."
 msgstr ""
-"Se um kernel customizado do FreeBSD deve ser incluído, então <citerefentry> "
-"<refentrytitle> bsdinstall </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry> e <citerefentry> <refentrytitle> release </refentrytitle> "
-"<manvolnum> 7 </manvolnum> </citerefentry> deve ser atualizado para incluir "
-"instruções de instalação. O código relevante está contido em <filename> src /"
-" release </filename> e <filename> src / usr.sbin / bsdinstall </filename>. "
-"Especificamente, o arquivo <filename> src / release / Makefile </filename> e "
-"<filename> dist.c </filename>, <filename> dist.h </filename>, <filename> "
-"menus.c </filename> , <filename> install.c </filename>, e <filename> "
-"Makefile </filename> precisará ser atualizado em <filename> src / usr.sbin / "
-"bsdinstall </filename>. Opcionalmente, você pode escolher atualizar "
-"<filename> bsdinstall.8 </filename>."
+"Se um kernel customizado do FreeBSD deve ser incluído, então "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> e <citerefentry><refentrytitle>release</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry> deve ser atualizado "
+"para incluir instruções de instalação. O código relevante está contido em "
+"<filename>src/release</filename> e <filename>src/usr.sbin/bsdinstall</"
+"filename>. Especificamente, o arquivo <filename>src/release/Makefile</"
+"filename> e <filename>dist.c</filename>, <filename>dist.h</filename>, "
+"<filename>menus.c</filename> , <filename>install.c</filename>, e "
+"<filename>Makefile</filename> precisará ser atualizado em <filename>src/usr."
+"sbin/bsdinstall</filename>. Opcionalmente, você pode escolher atualizar o "
+"<filename>bsdinstall.8</filename>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:785
-#, fuzzy
 msgid "Disc 2"
 msgstr "Disco 2"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:787
-#, fuzzy
 msgid ""
 "The second disc is also largely created by <command>make release</command>. "
 "This disc contains a <quote>live filesystem</quote> that can be used from "
@@ -1575,24 +1447,22 @@ msgid ""
 "repository in the <filename>CVSROOT</filename> directory and commercial "
 "software demos in the <filename>commerce</filename> directory."
 msgstr ""
-"O segundo disco também é largamente criado por <command> make release </"
-"command>. Este disco contém um <quote> sistema de arquivos ao vivo </quote> "
-"que pode ser usado de <citerefentry> <refentrytitle> bsdinstall </"
-"refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry> para solucionar "
-"problemas de instalação do FreeBSD. Este disco deve ser inicializável e "
-"também deve conter uma cópia compactada do repositório CVS no diretório "
-"<filename> CVSROOT </filename> e demos de software comercial no diretório "
-"<filename> commerce </filename>."
+"O segundo disco também é largamente criado por <command>make release</"
+"command>. Este disco contém um <quote>sistema de arquivos no formato live "
+"(sem instalação necessária)</quote> que pode ser usado por "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> para solucionar problemas de instalação do FreeBSD."
+" Este disco deve ser inicializável e também deve conter uma cópia compactada "
+"do repositório CVS no diretório <filename>CVSROOT</filename> e demos de "
+"software comercial no diretório <filename>commerce</filename>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:798
-#, fuzzy
 msgid "Multi-volume Support"
 msgstr "Suporte para vários volumes"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:800
-#, fuzzy
 msgid ""
 "<application>Sysinstall</application> supports multiple volume package "
 "installations. This requires that each disc have an <filename>INDEX</"
@@ -1604,31 +1474,28 @@ msgid ""
 "that is not on the current disc, bsdinstall will prompt the user to insert "
 "the appropriate one."
 msgstr ""
-"O <application> Sysinstall </application> suporta várias instalações de "
-"pacotes de volume. Isso requer que cada disco tenha um arquivo <filename> "
-"INDEX </filename> contendo todos os pacotes em todos os volumes de um "
-"conjunto, junto com um campo extra que indica em qual volume esse pacote "
+"O <application>Sysinstall</application> suporta várias instalações de "
+"pacotes de volume. Isso requer que cada disco tenha um arquivo "
+"<filename>INDEX</filename> contendo todos os pacotes em todos os volumes de "
+"um conjunto, junto com um campo extra que indica em qual volume esse pacote "
 "específico está. Cada volume no conjunto também deve ter a variável "
-"<literal> CD_VOLUME </literal> definida no arquivo <filename> cdrom.inf </"
+"<literal>CD_VOLUME</literal> definida no arquivo <filename>cdrom.inf</"
 "filename> para que o bsdinstall possa informar qual volume é qual. Quando um "
 "usuário tentar instalar um pacote que não esteja no disco atual, o "
 "bsdinstall solicitará que o usuário insira o arquivo apropriado."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:817
-#, fuzzy
 msgid "Distribution"
 msgstr "Distribuição"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:820
-#, fuzzy
 msgid "FTP Sites"
 msgstr "Sites FTP"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:822
-#, fuzzy
 msgid ""
 "When the release has been thoroughly tested and packaged for distribution, "
 "the master FTP site must be updated. The official FreeBSD public FTP sites "
@@ -1637,88 +1504,78 @@ msgid ""
 "is ready, the following files must be modified on <systemitem>ftp-master</"
 "systemitem>:"
 msgstr ""
-"Quando a versão foi totalmente testada e empacotada para distribuição, o "
-"site FTP mestre deve ser atualizado. Os sites FTP públicos oficiais do "
-"FreeBSD são todos espelhos de um servidor mestre que está aberto somente a "
-"outros sites FTP. Este site é conhecido como <systemitem> ftp-master </"
-"systemitem>. Quando o release estiver pronto, os seguintes arquivos devem "
-"ser modificados no <systemitem> ftp-master </systemitem>:"
+"Quando a versão for totalmente testada e empacotada para distribuição, o "
+"site FTP principal deve ser atualizado. Os sites FTP públicos oficiais do "
+"FreeBSD são todos espelhos de um servidor principal que está acessível "
+"somente a outros sites FTP. Este site é conhecido como <systemitem>ftp-"
+"master</systemitem>. Quando a release estiver pronta, os seguintes arquivos "
+"devem ser modificados no <systemitem>ftp-master</systemitem>:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:832
-#, fuzzy
 msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/</filename>"
 msgstr ""
-"<filename> / pub / FreeBSD / releases / <replaceable> arch </replaceable> / "
-"<replaceable> X.Y </replaceable> -RELEASE / </filename>"
+"<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
+"<replaceable>X.Y</replaceable>-RELEASE/</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:834
-#, fuzzy
 msgid ""
 "The installable FTP directory as output from <command>make release</command>."
 ""
 msgstr ""
-"O diretório FTP instalável como saída de <command> make release </command>."
+"O diretório FTP instalável como saída de <command>make release</command>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:840
-#, fuzzy
 msgid ""
 "<filename>/pub/FreeBSD/ports/<replaceable>arch</replaceable>/packages-"
 "<replaceable>X.Y</replaceable>-release/</filename>"
 msgstr ""
-"<filename> / pub / FreeBSD / ports / <replaceable> arch </replaceable> / "
-"packages- <replaceable> X.Y </replaceable> -release / </filename>"
+"<filename>/pub/FreeBSD/ports/<replaceable>arch</replaceable>/packages-"
+"<replaceable>X.Y</replaceable>-release/</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:842
-#, fuzzy
 msgid "The complete package build for this release."
 msgstr "O pacote completo criado para esta versão."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:848
-#, fuzzy
 msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/tools</filename>"
 msgstr ""
-"<filename> / pub / FreeBSD / releases / <replaceable> arch </replaceable> / "
-"<replaceable> X.Y </replaceable> -RELEASE / tools </filename>"
+"<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
+"<replaceable>X.Y</replaceable>-RELEASE/tools</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:850
-#, fuzzy
 msgid "A symlink to <filename>../../../tools</filename>."
-msgstr "Um link simbólico para <filename> ../../../ tools </filename>."
+msgstr "Um link simbólico para <filename>../../../tools</filename>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:856
-#, fuzzy
 msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/packages</filename>"
 msgstr ""
-"<filename> / pub / FreeBSD / releases / <replaceable> arch </replaceable> / "
-"<replaceable> X.Y </replaceable> -RELEASE / packages </filename>"
+"<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
+"<replaceable>X.Y</replaceable>-RELEASE/packages</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:858
-#, fuzzy
 msgid ""
 "A symlink to <filename>../../../ports/<replaceable>arch</replaceable>/"
 "packages-<replaceable>X.Y</replaceable>-release</filename>."
 msgstr ""
-"Um link simbólico para <filename> ../../../ ports / <replaceable> arch </"
-"replaceable> / packages- <replaceable> X.Y </replaceable> -release </"
-"filename>."
+"Um link simbólico para <filename>../../../ports/<replaceable>arch</"
+"replaceable>/packages-<replaceable>X.Y</replaceable>-release</filename>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:864
-#, fuzzy
 msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/ISO-IMAGES/"
 "<replaceable>X.Y</replaceable>/<replaceable>X.Y</replaceable>-RELEASE-"
@@ -1730,7 +1587,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:866
-#, fuzzy
 msgid ""
 "The ISO images. The <quote>*</quote> is <filename>disc1</filename>, "
 "<filename>disc2</filename>, etc. Only if there is a <filename>disc1</"
@@ -1738,27 +1594,25 @@ msgid ""
 "stripped-down install with no windowing system) there may be a "
 "<filename>mini</filename> as well."
 msgstr ""
-"As imagens ISO. O <quote> * </quote> é <filename> disc1 </filename>, "
-"<filename> disc2 </filename>, etc. Somente se houver um <filename> disc1 </"
-"filename> e houver uma alternativa primeira instalação CD (por exemplo, uma "
-"instalação simplificada sem sistema de janelas) também pode haver um "
-"<filename> mini </filename>."
+"As imagens ISO. O <quote>*</quote> é o <filename>disc1</filename>, "
+"<filename> disc2 </filename>, etc. Somente se houver um <filename>disc1</"
+"filename> e houver um CD alternativo para primeira instalação  (por exemplo, "
+"uma instalação simplificada sem sistema de janelas) também pode haver um "
+"<filename>mini</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:876
-#, fuzzy
 msgid ""
 "For more information about the distribution mirror architecture of the "
 "FreeBSD FTP sites, please see the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/articles/hubs/\">Mirroring FreeBSD</link> article."
 msgstr ""
 "Para mais informações sobre a arquitetura espelho de distribuição dos sites "
-"FTP do FreeBSD, por favor veja o <link xlink:href=\"@@URL_RELPREFIX@@/doc / "
-"en_US.ISO8859-1 / articles / hubs /\"> Espelhando o FreeBSD </link> artigo."
+"FTP do FreeBSD, por favor veja o artigo <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/articles/hubs/\"> Espelhando o FreeBSD </link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:880
-#, fuzzy
 msgid ""
 "It may take many hours to two days after updating <systemitem>ftp-master</"
 "systemitem> before a majority of the Tier-1 FTP sites have the new software "
@@ -1778,34 +1632,32 @@ msgid ""
 "access. Be sure to include a time zone with the time, for example make it "
 "relative to GMT."
 msgstr ""
-"Pode levar de muitas horas a dois dias após a atualização do <systemitem> "
-"ftp-master </systemitem> antes que a maioria dos sites de FTP da camada 1 "
-"tenham o novo software, dependendo se um conjunto de pacotes foi ou não "
-"carregado ao mesmo tempo. É imperativo que os engenheiros de lançamento "
-"coordenem com os <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
-"listinfo/mirror-announce\"> administradores do site espelho do FreeBSD </"
-"link> antes de anunciar a disponibilidade geral de novo software nos sites "
-"FTP. Idealmente, o pacote de lançamento deve ser carregado pelo menos quatro "
-"dias antes do dia de lançamento. Os bits de lançamento devem ser carregados "
-"entre 24 e 48 horas antes do horário de lançamento planejado com as "
-"permissões de arquivo <quote> other </quote> desativadas. Isso permitirá que "
-"os sites espelho façam o download, mas o público em geral não poderá baixá-"
-"lo dos sites espelhos. O e-mail deve ser enviado para <link xlink:href="
-"\"http://lists.FreeBSD.org/mailman/listinfo/mirror-announce\"> "
-"administradores do site espelho do FreeBSD </link> no momento em que os bits "
-"de lançamento são publicados dizendo o lançamento foi encenado e dando o "
-"tempo que os sites espelho devem começar a permitir acesso. Certifique-se de "
-"incluir um fuso horário com a hora, por exemplo, torná-lo relativo ao GMT."
+"Pode levar de muitas horas a dois dias após a atualização do <systemitem>ftp-"
+"master</systemitem> antes que a maioria dos sites de FTP da camada 1 tenham "
+"o novo software, dependendo se um conjunto de pacotes foi ou não carregado "
+"ao mesmo tempo. É imperativo que os engenheiros de release coordenem com os "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/mirror-"
+"announce\">administradores do site espelho do FreeBSD</link> antes de "
+"anunciar a disponibilidade geral de novo software nos sites FTP. Idealmente, "
+"o pacote da versão deve ser carregado pelo menos quatro dias antes do dia de "
+"lançamento. Os bits de lançamento devem ser carregados entre 24 e 48 horas "
+"antes do horário de lançamento planejado com as permissões de arquivo "
+"<quote>other</quote> desativadas. Isso permitirá que os sites espelho façam "
+"o download, mas o público em geral não poderá baixá-lo dos sites espelhos. O "
+"e-mail deve ser enviado para <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/mirror-announce\">administradores do site espelho do "
+"FreeBSD</link> no momento em que os bits de lançamento forem publicados "
+"dizendo que a versão foi preparada e dando o tempo que os sites espelho "
+"devem começar a permitir acesso. Certifique-se de incluir um fuso horário "
+"com a hora, por exemplo, torná-lo relativo ao GMT."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:901
-#, fuzzy
 msgid "CD-ROM Replication"
 msgstr "Replicação de CD-ROM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:903
-#, fuzzy
 msgid ""
 "Coming soon: Tips for sending FreeBSD ISOs to a replicator and quality "
 "assurance measures to be taken."
@@ -1815,13 +1667,11 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:911
-#, fuzzy
 msgid "Extensibility"
 msgstr "Extensibilidade"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:913
-#, fuzzy
 msgid ""
 "Although FreeBSD forms a complete operating system, there is nothing that "
 "forces you to use the system exactly as we have packaged it up for "
@@ -1838,8 +1688,8 @@ msgstr ""
 "force você a usar o sistema exatamente como o empacotamos para distribuição. "
 "Tentamos projetar o sistema para ser o mais extensível possível, de modo que "
 "ele possa servir como uma plataforma na qual outros produtos comerciais "
-"possam ser construídos. A única <quote> regra </quote> que temos sobre isso "
-"é que se você for distribuir o FreeBSD com mudanças não-triviais, nós "
+"possam ser construídos. A única <quote>regra</quote> que temos sobre isso é "
+"que se você for distribuir o FreeBSD com mudanças não-triviais, nós "
 "encorajamos você a documentar suas melhorias! A comunidade do FreeBSD só "
 "pode ajudar a suportar usuários do software que fornecemos. Nós certamente "
 "encorajamos a inovação na forma de ferramentas avançadas de instalação e "
@@ -1848,25 +1698,22 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:927
-#, fuzzy
 msgid "Scripting <command>bsdinstall</command>"
-msgstr "Scripting <command>bsdinstall</command>"
+msgstr "Usando o script <command>bsdinstall</command>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:934
-#, fuzzy
 msgid ""
 "<uri xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "network-pxe-nfs.html\">@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "network-pxe-nfs.html</uri>"
 msgstr ""
-"<uri xlink:href=\"@@URL_RELPREFIX@@/doc / en_US.ISO8859-1 / books / handbook "
-"/ network-pxe-nfs.html\"> @@ URL_RELPREFIX @@ / doc / en_US.ISO8859-1 / "
-"books / manual / network-pxe-nfs.html </uri>"
+"<uri xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"network-pxe-nfs.html\">@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"network-pxe-nfs.html</uri>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:929
-#, fuzzy
 msgid ""
 "The FreeBSD system installation and configuration tool, "
 "<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
@@ -1875,22 +1722,20 @@ msgid ""
 "class=\"registered\">Intel</trademark> PXE <_:footnote-1/> to bootstrap "
 "systems from the network."
 msgstr ""
-"A ferramenta de instalação e configuração do sistema FreeBSD, <citerefentry> "
-"<refentrytitle> bsdinstall </refentrytitle> <manvolnum> 8 </manvolnum> </"
-"citerefentry>, pode ser programada para fornecer instalações automatizadas "
-"para sites grandes. Essa funcionalidade pode ser usada em conjunto com "
-"<trademark class=\"registered\">Intel</trademark> PXE <_:footnote-1/> para "
-"inicializar sistemas da rede."
+"A ferramenta de instalação e configuração do sistema FreeBSD, "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, pode ser programada para fornecer instalações "
+"automatizadas para sites grandes. Essa funcionalidade pode ser usada em "
+"conjunto com <trademark class=\"registered\">Intel</trademark> PXE <_:"
+"footnote-1/> para inicializar sistemas da rede."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:943
-#, fuzzy
 msgid "Lessons Learned from FreeBSD 4.4"
 msgstr "Lições Aprendidas do FreeBSD 4.4"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:945
-#, fuzzy
 msgid ""
 "The release engineering process for 4.4 formally began on August 1st, 2001. "
 "After that date all commits to the <literal>RELENG_4</literal> branch of "
@@ -1903,21 +1748,20 @@ msgid ""
 "over <emphasis>500</emphasis> emails were sent to the Release Engineering "
 "Team <email>re@FreeBSD.org</email> in little over a month."
 msgstr ""
-"O processo de engenharia de lançamento do 4.4 começou formalmente em 1º de "
-"agosto de 2001. Após essa data, todos os commits do ramo <literal> RELENG_4 "
-"</literal> do FreeBSD tiveram que ser explicitamente aprovados pela Equipe "
-"de Engenharia de Lançamentos <email> re@FreeBSD.org </email>. O primeiro "
-"release candidate para a arquitetura x86 foi lançado em 16 de agosto, "
-"seguido por mais 4 candidatos ao lançamento que antecederam a versão final "
-"em 18 de setembro. O agente de segurança esteve muito envolvido na última "
-"semana do processo, pois vários problemas de segurança foram encontrados nos "
-"candidatos anteriores. Um total de mais de <emphasis> 500 </emphasis> e-"
-"mails foram enviados para a Equipe de Engenharia de Lançamentos <email> "
-"re@FreeBSD.org </email> em pouco mais de um mês."
+"O processo de engenharia de release do 4.4 começou formalmente em 1º de "
+"agosto de 2001. Após essa data, todos os commits da branch "
+"<literal>RELENG_4</literal> do FreeBSD tiveram que ser explicitamente "
+"aprovados pela Equipe de Engenharia de Release <email>re@FreeBSD.org</email>."
+" O primeiro release candidate para a arquitetura x86 foi lançado em 16 de "
+"agosto, seguido por mais 4 candidatos a versão que antecederam a versão "
+"final em 18 de setembro. O agente de segurança esteve muito envolvido na "
+"última semana do processo, pois vários problemas de segurança foram "
+"encontrados nos candidatos anteriores. Um total de mais de <emphasis>500</"
+"emphasis> e-mails foram enviados para a Equipe de Engenharia de Release "
+"<email>re@FreeBSD.org</email> em pouco mais de um mês."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:956
-#, fuzzy
 msgid ""
 "Our user community has made it very clear that the security and stability of "
 "a FreeBSD release should not be sacrificed for any self-imposed deadlines or "
@@ -1936,26 +1780,23 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:967
-#, fuzzy
 msgid "Future Directions"
 msgstr "Direções futuras"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:969
-#, fuzzy
 msgid ""
 "It is imperative for our release engineering activities to scale with our "
 "growing userbase. Along these lines we are working very hard to document the "
 "procedures involved in producing FreeBSD releases."
 msgstr ""
-"É imperativo que nossas atividades de engenharia de lançamento sejam "
-"escaladas com nossa crescente base de usuários. Nessa linha, estamos "
-"trabalhando muito para documentar os procedimentos envolvidos na produção de "
-"versões do FreeBSD."
+"É imperativo que nossas atividades de engenharia de release sejam escaladas "
+"com nossa crescente base de usuários. Nessa linha, estamos trabalhando muito "
+"para documentar os procedimentos envolvidos na produção de versões do "
+"FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:976
-#, fuzzy
 msgid ""
 "<emphasis>Parallelism</emphasis> - Certain portions of the release build are "
 "actually <quote>embarrassingly parallel</quote>. Most of the tasks are very "
@@ -1969,43 +1810,40 @@ msgid ""
 "on another disk. Using a <acronym>RAID</acronym> solution (hardware or "
 "software) can significantly decrease the overall build time."
 msgstr ""
-"<emphasis> Paralelismo </emphasis> - Algumas partes da compilação do release "
-"são, na verdade, <quote> embaraçosamente paralelas </quote>. A maioria das "
-"tarefas é muito intensiva em E / S, portanto, ter várias unidades de disco "
-"de alta velocidade é realmente mais importante do que usar vários "
-"processadores para acelerar o processo <command> make release </command>. Se "
-"vários discos forem usados ​​para hierarquias diferentes no ambiente "
-"<citerefentry> <refentrytitle> chroot </refentrytitle> <manvolnum> 2 </"
-"manvolnum> </citerefentry>, a verificação do CVS dos <filename> ports </"
-"filename> e as árvores <filename> doc </filename> podem estar acontecendo "
-"simultaneamente como o <command> make world </command> em outro disco. Usar "
-"uma solução <acronym> RAID </acronym> (hardware ou software) pode diminuir "
+"<emphasis>Paralelismo</emphasis> - Algumas partes da compilação da release "
+"são, na verdade, <quote>embaraçosamente paralelas</quote>. A maioria das "
+"tarefas é muito intensiva em E/S, portanto, ter várias unidades de disco de "
+"alta velocidade é realmente mais importante do que usar vários processadores "
+"para acelerar o processo <command>make release</command>. Se vários discos "
+"forem usados ​​para hierarquias diferentes no ambiente "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>, a verificação do CVS dos <filename>ports</filename> e as "
+"árvores <filename>doc</filename> podem estar acontecendo simultaneamente "
+"como o <command>make world</command> em outro disco. Usar uma solução "
+"<acronym>RAID</acronym> (hardware ou software) pode diminuir "
 "significativamente o tempo de compilação geral."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:992
-#, fuzzy
 msgid ""
 "<emphasis>Cross-building releases</emphasis> - Building IA-64 or Alpha "
 "release on x86 hardware? <command>make TARGET=ia64 release</command>."
 msgstr ""
-"<emphasis> Versões de construção cruzada </emphasis> - Criação do release IA-"
-"64 ou Alpha em hardware x86? <command> make TARGET = lançamento do ia64 </"
-"command>."
+"<emphasis>Versões cross-building (Arquiteturas integradas)</emphasis> - "
+"Criação do release IA-64 ou Alpha em hardware x86? <command>make TARGET=ia64 "
+"release</command>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:998
-#, fuzzy
 msgid ""
 "<emphasis>Regression Testing</emphasis> - We need better automated "
 "correctness testing for FreeBSD."
 msgstr ""
-"<emphasis> Teste de regressão </emphasis> - Precisamos de um melhor teste de "
+"<emphasis>Teste de regressão</emphasis> - Precisamos de um teste  melhor de "
 "correção automatizado para o FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1003
-#, fuzzy
 msgid ""
 "<emphasis>Installation Tools</emphasis> - Our installation program has long "
 "since outlived its intended life span. Several projects are under "
@@ -2013,7 +1851,7 @@ msgid ""
 "project was one such project that aimed to provide an intelligent new "
 "package framework and GUI installation program."
 msgstr ""
-"<emphasis> Ferramentas de instalação </emphasis> - Nosso programa de "
+"<emphasis>Ferramentas de instalação</emphasis> - Nosso programa de "
 "instalação há muito tempo sobreviveu à sua expectativa de vida útil. Vários "
 "projetos estão em desenvolvimento para fornecer um mecanismo de instalação "
 "mais avançado. O projeto libh era um desses projetos que visava fornecer um "
@@ -2021,49 +1859,44 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1016
-#, fuzzy
 msgid "Acknowledgements"
 msgstr "Agradecimentos"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1031
-#, fuzzy
 msgid ""
 "Marshall Kirk McKusick, Michael J. Karels, and Keith Bostic: <link xlink:"
 "href=\"http://docs.FreeBSD.org/44doc/papers/releng.html\"> <emphasis>The "
 "Release Engineering of 4.3BSD</emphasis></link>"
 msgstr ""
 "Marshall Kirk McKusick, Michael J. Karels e Keith Bostic: <link xlink:href="
-"\"http://docs.FreeBSD.org/44doc/papers/releng.html\"> <emphasis> A "
-"Engenharia de Lançamentos do 4.3BSD </emphasis> </link>"
+"\"http://docs.FreeBSD.org/44doc/papers/releng.html\"> <emphasis>A Engenharia "
+"de Release do 4.3BSD</emphasis></link>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1040
-#, fuzzy
 msgid ""
 "NetBSD Developer Documentation: Release Engineering <uri xlink:href=\"http://"
 "www.NetBSD.org/developers/releng/index.html\">http://www.NetBSD.org/"
 "developers/releng/index.html</uri>"
 msgstr ""
-"Documentação do desenvolvedor do NetBSD: Release Engineering <uri xlink:href="
-"\"http://www.NetBSD.org/developers/releng/index.html\"> http://www.NetBSD."
-"org/developers/releng/index.html </uri>"
+"Documentação do desenvolvedor do NetBSD: Engenharia de Release <uri xlink:"
+"href=\"http://www.NetBSD.org/developers/releng/index.html\">http://www."
+"NetBSD.org/developers/releng/index.html</uri>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1046
-#, fuzzy
 msgid ""
 "John Baldwin's FreeBSD Release Engineering Proposal <uri xlink:href=\"https:/"
 "/people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD.org/~jhb/"
 "docs/releng.txt</uri>"
 msgstr ""
-"Proposta de engenharia de lançamento do FreeBSD de John Baldwin <uri xlink:"
-"href=\"https://people.FreeBSD.org/~jhb/docs/releng.txt\"> https://people."
-"FreeBSD.org/~jhb/docs/releng. txt </uri>"
+"Proposta de engenharia de Release do FreeBSD de John Baldwin <uri xlink:href="
+"\"https://people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD."
+"org/~jhb/docs/releng. txt</uri>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1018
-#, fuzzy
 msgid ""
 "I would like to thank Jordan Hubbard for giving me the opportunity to take "
 "on some of the release engineering responsibilities for FreeBSD 4.4 and also "
@@ -2083,19 +1916,19 @@ msgid ""
 " <_:footnote-3/>"
 msgstr ""
 "Eu gostaria de agradecer a Jordan Hubbard por me dar a oportunidade de "
-"assumir algumas das responsabilidades de engenharia de lançamento do FreeBSD "
-"4.4 e também por todo o seu trabalho ao longo dos anos fazendo do FreeBSD o "
+"assumir algumas das responsabilidades de engenharia de release do FreeBSD 4."
+"4 e também por todo o seu trabalho ao longo dos anos fazendo do FreeBSD o "
 "que é hoje. É claro que o lançamento não teria sido possível sem todo o "
 "trabalho relacionado ao lançamento feito por Satoshi Asami "
-"<email>asami@FreeBSD.org </email>, Steve Price <email> steve@FreeBSD.org </"
-"email>, Bruce A. Mah <email> bmah@FreeBSD.org </email>, Nik Clayton <email> "
-"nik@FreeBSD.org </email>, David O'Brien <email> obrien@FreeBSD.org </email>, "
-"Kris Kennaway <email> kris@FreeBSD.org </email>, John Baldwin <email> "
-"jhb@FreeBSD.org </email> e o resto da comunidade de desenvolvimento do "
-"FreeBSD. Eu também gostaria de agradecer a Rodney Grimes <email> "
-"rgrimes@FreeBSD.org </email>, Poul-Henning Kamp <email> phk@FreeBSD.org </"
-"email>, e outros que trabalharam nas ferramentas de engenharia de lançamento "
-"no primeiros dias do FreeBSD. Este artigo foi influenciado por documentos de "
-"engenharia de lançamento do CSRG <_:footnote-1/>, o Projeto NetBSD, <_:"
-"footnote-2/>, e as notas de processo de engenharia de lançamento propostas "
-"por John Baldwin. <_:footnote-3/>"
+"<email>asami@FreeBSD.org</email>, Steve Price <email>steve@FreeBSD.org</"
+"email>, Bruce A. Mah <email>bmah@FreeBSD.org</email>, Nik Clayton "
+"<email>nik@FreeBSD.org</email>, David O'Brien <email>obrien@FreeBSD.org</"
+"email>, Kris Kennaway <email>kris@FreeBSD.org</email>, John Baldwin "
+"<email>jhb@FreeBSD.org</email> e o resto da comunidade de desenvolvimento do "
+"FreeBSD. Eu também gostaria de agradecer a Rodney Grimes "
+"<email>rgrimes@FreeBSD.org</email>, Poul-Henning Kamp <email>phk@FreeBSD."
+"org</email>, e outros que trabalharam nas ferramentas de engenharia de "
+"lançamento no primeiros dias do FreeBSD. Este artigo foi influenciado por "
+"documentos de engenharia de lançamento do CSRG <_:footnote-1/>, o Projeto "
+"NetBSD, <_:footnote-2/>, e as notas de processo de engenharia de release "
+"propostas por John Baldwin. <_:footnote-3/>"
