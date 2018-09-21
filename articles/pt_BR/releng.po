@@ -1,4 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
@@ -9,8 +10,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-20 02:34+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-21 02:48+0000\n"
+"Last-Translator: Wendell Borges <perlporter@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -19,12 +20,14 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Wendell Borges, perlporter@gmail.com, 2018\n"
-"Silvio Ap Silva, contato@kanazuchi.com, 2018"
+"Silvio Ap Silva, contato@kanazuchi.com, 2018\n"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Danilo G Baio, dbaio@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
 msgid "FreeBSD Release Engineering"
-msgstr "Engenharia de Release (Versão) do FreeBSD"
+msgstr "Engenharia de Release do FreeBSD"
 
 #. (itstool) path: confgroup/confdates
 #: article.translate.xml:9
@@ -44,9 +47,9 @@ msgid ""
 "first official release of FreeBSD that I played a significant part in."
 msgstr ""
 "Eu estive envolvido no desenvolvimento de produtos baseados no FreeBSD desde "
-"1997 no Walnut Creek CDROM, BSDi e agora no Wind River Systems. O FreeBSD 4."
-"4 foi o primeiro lançamento oficial do FreeBSD no qual eu participei de "
-"forma significativa."
+"1997 na Walnut Creek CDROM, BSDi e agora na Wind River Systems. O FreeBSD 4."
+"4 foi o primeiro release oficial do FreeBSD no qual eu participei de forma "
+"significativa."
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:27
@@ -109,9 +112,7 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/releng/article.xml 51824 2018-06-12 "
 "18:54:46Z bcr $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/releng/article.xml 51824 2018-06-12 "
-"18:54:46Z bcr $"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: note/para
 #: article.translate.xml:55
@@ -128,7 +129,7 @@ msgstr ""
 "(Versão) do FreeBSD. É retido para fins históricos. Os procedimentos atuais "
 "usados ​​pela equipe de Engenharia de Release do FreeBSD estão disponíveis "
 "no artigo <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
-"freebsd-releng/article.html\">FreeBSD Release Engineering</link>."
+"freebsd-releng/article.html\">Engenharia de Release do FreeBSD</link>."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:62
@@ -140,11 +141,11 @@ msgid ""
 "releases for corporate rollouts or commercial productization."
 msgstr ""
 "Este artigo descreve a abordagem usada pela equipe de engenharia de release "
-"do FreeBSD para fazer versões de produção de qualidade do Sistema "
-"Operacional FreeBSD. Ele detalha a metodologia utilizada para as versões "
+"do FreeBSD para produzir versões  do Sistema Operacional FreeBSD com "
+"qualidade de produção. Ele detalha a metodologia utilizada para as versões "
 "oficiais do FreeBSD e descreve as ferramentas disponíveis para aqueles "
-"interessados ​​em produzir versões customizadas do FreeBSD para lançamentos "
-"corporativos ou para a produção comercial."
+"interessados ​​em produzir versões customizadas do FreeBSD para uso "
+"corporativo ou para uso em produtos comerciais."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:74
@@ -167,7 +168,7 @@ msgid ""
 "contributors/article.html#staff-committers\">FreeBSD committers</link>"
 msgstr ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
-"contributors/article.html#staff-committers\">Committers FreeBSD</link>"
+"contributors/article.html#staff-committers\">Committers do FreeBSD</link>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:100
@@ -175,8 +176,8 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">FreeBSD "
 "Core Team</link>"
 msgstr ""
-"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">Equipe "
-"Core do FreeBSD</link>"
+"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">Core Team "
+"do FreeBSD</link>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:76
@@ -203,8 +204,8 @@ msgstr ""
 "FreeBSD fornece acesso ao Subversion <_:footnote-1/> para o público em geral "
 "para que outros possam ter acesso a mensagens de log, diffs (patches) entre "
 "branches (ramificações) de desenvolvimento e outros aprimoramentos de "
-"produtividade que o gerenciamento formal de código-fonte fornece. Isso tem "
-"sido uma grande ajuda para atrair desenvolvedores mais talentosos para o "
+"produtividade que o gerenciamento formal de código-fonte proporciona. Isso "
+"tem sido uma grande ajuda na atração de desenvolvedores talentosos para o "
 "FreeBSD. No entanto, acho que todos concordariam que o caos logo se "
 "manifestaria se o acesso para modificar o repositório principal fosse aberto "
 "a todos na Internet. Dessa forma, apenas um grupo <quote>seleto</quote> de "
@@ -213,7 +214,7 @@ msgstr ""
 "contributors/article.html#staff-committers\">committers</link> <_:footnote-2/"
 "> são normalmente as pessoas que fazem a maior parte do desenvolvimento do "
 "FreeBSD. Um <link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-"
-"core\">Time Core</link> <_:footnote-3/> eleito fornece algum nível de "
+"core\">Core team</link> <_:footnote-3/> eleito fornece algum nível de "
 "orientação sobre o projeto."
 
 #. (itstool) path: sect1/para
@@ -228,15 +229,16 @@ msgid ""
 "emphasis> of our Subversion tree, known as <quote>FreeBSD-CURRENT</quote> or "
 "<quote>-CURRENT</quote> for short."
 msgstr ""
-"O ritmo acelerado do desenvolvimento do <systemitem>FreeBSD</systemitem> "
+"O ritmo acelerado de desenvolvimento do <systemitem>FreeBSD</systemitem> "
 "torna a principal branch de desenvolvimento inadequada para o uso diário "
 "pelo público em geral. Em particular, são necessários esforços de "
 "estabilização para polir o sistema de desenvolvimento em uma release de "
-"qualidade para por em produção. Para resolver este conflito, o "
-"desenvolvimento continua em várias trilhas paralelas. A principal branch de "
-"desenvolvimento é a <emphasis>HEAD</emphasis> ou <emphasis>trunk</emphasis> "
-"da nossa árvore do Subversion, conhecida como <quote>FreeBSD-CURRENT</quote> "
-"ou <quote>-CURRENT</quote> abreviado."
+"qualidade apropriada para uso em ambiente produtivo. Para resolver este "
+"conflito, o desenvolvimento continua em várias trilhas paralelas. A "
+"principal branch de desenvolvimento é a <emphasis>HEAD</emphasis> ou "
+"<emphasis>trunk</emphasis> da nossa árvore do Subversion, conhecida como "
+"<quote>FreeBSD-CURRENT</quote> ou <quote>-CURRENT</quote>  quando  abreviado."
+""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:117
@@ -250,16 +252,16 @@ msgid ""
 "different pace, and with the general assumption that they have first gone "
 "into FreeBSD-CURRENT and have been thoroughly tested by our user community."
 msgstr ""
-"Um conjunto de branches mais estáveis ​​é mantida, conhecido como "
+"Um conjunto de branches mais estáveis ​​é mantido, e é conhecido como "
 "<quote>FreeBSD-STABLE</quote> ou <quote>-STABLE</quote> na forma abreviada. "
 "Todas as branchs ficam em um repositório principal do Subversion mantido "
-"pelo Projeto FreeBSD. O FreeBSD-CURRENT é a <quote>ponta inicial</quote> do "
-"desenvolvimento do FreeBSD, no qual todas as novas alterações entram no "
-"sistema pela primeira vez. O FreeBSD-STABLE é a branch de desenvolvimento a "
-"partir do qual as principais versões são feitas. Mudanças entram nesta "
-"branch em um ritmo diferente, e com a suposição geral de que elas foram "
-"primeiro para o FreeBSD-CURRENT e foram exaustivamente testados por nossa "
-"comunidade de usuários."
+"pelo Projeto FreeBSD. O FreeBSD-CURRENT é a <quote>vanguarda do "
+"desenvolvimento tecnológico</quote> do FreeBSD, pelo qual todas as novas "
+"alterações entram no sistema pela primeira vez. O FreeBSD-STABLE é a branch "
+"de desenvolvimento a partir do qual as releases principais são feitas. "
+"Mudanças entram nesta branch em um ritmo diferente, e com a suposição geral "
+"de que elas foram primeiro para o FreeBSD-CURRENT e foram exaustivamente "
+"testadas por nossa comunidade de usuários."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:128
@@ -274,14 +276,15 @@ msgid ""
 "emphasis>, assuming that the system management interfaces are not used."
 msgstr ""
 "O termo <emphasis>stable</emphasis> no nome da branch refere-se à "
-"estabilidade presumida da Interface Binária da Aplicação, que é prometida "
-"pelo projeto. Isso significa que um aplicativo de usuário compilado em uma "
-"versão mais antiga do sistema da mesma branch funciona em um sistema mais "
-"novo da mesma branch. A estabilidade do ABI melhorou muito em relação às "
-"versões anteriores. Na maioria dos casos, os binários dos sistemas "
-"<emphasis>STABLE</emphasis> mais antigos são executados sem modificações em "
-"sistemas mais recentes, incluindo <emphasis>HEAD</emphasis>, assumindo que "
-"as interfaces de gerenciamento do sistema não são usadas."
+"estabilidade presumida da Interface Binária da Aplicação (ABI), que é "
+"prometida pelo projeto. Isso significa que um aplicativo de usuário "
+"compilado em uma versão mais antiga do sistema da mesma branch funciona em "
+"um sistema mais novo da mesma branch. A estabilidade do ABI melhorou muito "
+"em relação às versões anteriores. Na maioria dos casos, os binários dos "
+"sistemas <emphasis>STABLE</emphasis> mais antigos são executados sem "
+"modificações em sistemas mais recentes, incluindo o <emphasis>HEAD</"
+"emphasis>, assumindo que as interfaces de gerenciamento do sistema não são "
+"usadas."
 
 #. (itstool) path: quote/buildtarget
 #: article.translate.xml:147
@@ -295,7 +298,7 @@ msgid ""
 "makeworld.html\">Rebuilding \"world\"</link>"
 msgstr ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"makeworld.html\">Re-construindo \"world\"</link>"
+"makeworld.html\">Re-construindo o \"mundo\"</link>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:140
@@ -309,16 +312,15 @@ msgid ""
 "footnote-2/> helps to keep FreeBSD-STABLE in a very reliable condition even "
 "before the quality assurance activities ramp up pending a major release."
 msgstr ""
-"No período intermediário entre as versões, os snapshots semanais são "
-"construídos automaticamente pelas máquinas de build (construçao da imagem e "
-"ports) do FreeBSD Project e disponibilizados para download em "
-"<systemitem>ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/</systemitem>. A "
-"ampla disponibilidade de lançamentos de versão binária e a tendência da "
-"nossa comunidade de usuários para acompanhar o desenvolvimento do -STABLE "
-"com o Subversion e <quote><command>make</command> <_:buildtarget-1/></quote> "
-"<_:footnote-2/> ajuda a manter o FreeBSD-STABLE em uma condição muito "
-"confiável, mesmo antes que as atividades de garantia de qualidade aumentem "
-"até um grande lançamento."
+"No período intermediário entre as versões, snapshots semanais são "
+"construídos automaticamente pelas máquinas de build do Projeto FreeBSD e "
+"disponibilizados para download em <systemitem>ftp://ftp.FreeBSD.org/pub/"
+"FreeBSD/snapshots/</systemitem>. A ampla disponibilidade de snapshots "
+"binários e a tendência da nossa comunidade de usuários para acompanhar o "
+"desenvolvimento do -STABLE com o Subversion e <quote><command>make</command> "
+"<_:buildtarget-1/></quote> <_:footnote-2/> ajuda a manter o FreeBSD-STABLE "
+"em uma condição muito confiável, mesmo antes que as atividades de garantia "
+"de qualidade aumentem na proximidade de um grande lançamento."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:154
@@ -330,11 +332,11 @@ msgid ""
 "org/pub/FreeBSD/snapshots/VM-IMAGES/</systemitem>."
 msgstr ""
 "Além dos snapshots de instalação no formato ISO, imagens semanais de "
-"máquinas virtuais também são fornecidas para uso com "
-"<application>VirtualBox</application>, <application>qemu</application> ou "
-"outro software de emulação. As imagens da máquina virtual podem ser baixadas "
-"em <systemitem>ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/VM-IMAGES/</"
-"systemitem>."
+"máquinas virtuais também são fornecidas para uso com o "
+"<application>VirtualBox</application>, o <application>qemu</application> ou "
+"outros softwares populares de emulação. As imagens de máquinas virtuais "
+"podem ser baixadas em <systemitem>ftp://ftp.FreeBSD.org/pub/FreeBSD/"
+"snapshots/VM-IMAGES/</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:161
@@ -344,8 +346,8 @@ msgid ""
 "citerefentry> compressed, and contain a 10GB sparse filesystem when attached "
 "to a virtual machine."
 msgstr ""
-"As imagens para máquina virtual tem aproximadamente 150MB compactadas em "
-"<citerefentry> <refentrytitle>xz</refentrytitle><manvolnum> 1 </manvolnum></"
+"As imagens das máquinas virtuais tem aproximadamente 150MB compactadas com o "
+"<citerefentry> <refentrytitle>xz</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> e contêm um sistema de arquivos esparso de 10GB quando "
 "atachado a uma máquina virtual."
 
@@ -359,10 +361,10 @@ msgid ""
 "html\">https://www.freebsd.org/support/bugreports.html</uri>."
 msgstr ""
 "Relatórios de bugs e solicitações de recursos são enviados continuamente "
-"pelos usuários durante todo o ciclo da versão. Os relatórios de problemas "
-"são inseridos em nosso banco de dados <application>Bugzilla</application> "
-"por meio da interface da Web fornecida em <uri xlink:href=\"https://www."
-"freebsd.org/support/bugreports.html\">https://www.freebsd.org/support/"
+"pelos usuários durante todo o ciclo da release. Os relatórios de problemas "
+"são inseridos em nosso banco de dados do <application>Bugzilla</application> "
+"por meio da interface da Web disponibilizada em <uri xlink:href=\"https://"
+"www.freebsd.org/support/bugreports.html\">https://www.freebsd.org/support/"
 "bugreports.html</uri>."
 
 #. (itstool) path: sect1/para
@@ -388,7 +390,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:182
 msgid "What This Article Describes"
-msgstr "O que este artigo descreve"
+msgstr "O que Este Artigo Descreve"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:184
@@ -401,8 +403,8 @@ msgid ""
 "The different phases of the release engineering process leading up to the "
 "actual system build."
 msgstr ""
-"As diferentes fases do processo de engenharia de lançamentos que levam à "
-"criação atual do sistema."
+"As diferentes fases do processo de engenharia de release que levam à criação "
+"do sistema atual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:200
@@ -427,7 +429,7 @@ msgstr "Direções futuras de desenvolvimento."
 #. (itstool) path: sect1/title
 #: article.translate.xml:235
 msgid "Release Process"
-msgstr "Processos da Release (Versão) "
+msgstr "Processos de Release (Versão) "
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:237
@@ -440,14 +442,14 @@ msgid ""
 "code freeze. During this time, many developers perform what have become "
 "known as <quote>MFC sweeps</quote>."
 msgstr ""
-"Novas versões do FreeBSD são liberadas da branch -STABLE em intervalos de "
-"aproximadamente quatro meses. O processo de liberação do FreeBSD começa a "
-"aumentar 70-80 dias antes da data de lançamento prevista, quando o "
-"engenheiro de versão envia um email para as listas de discussão de "
-"desenvolvimento para lembrar aos desenvolvedores que eles só têm 15 dias "
-"para integrar novas alterações antes do congelamento de código. Durante esse "
-"tempo, muitos desenvolvedores executam o que ficou conhecido como <quote>MFC "
-"sweeps</quote>."
+"Novas versões do FreeBSD são liberadas a partir da branch -STABLE em "
+"intervalos de aproximadamente quatro meses. O processo de release do FreeBSD "
+"começa a se desenhar cerca de 70-80 dias antes da data de lançamento "
+"prevista, quando o engenheiro de versão envia um email para as listas de "
+"discussão de desenvolvimento para lembrar aos desenvolvedores que eles só "
+"têm 15 dias para integrar novas alterações antes do congelamento de código. "
+"Durante esse tempo, muitos desenvolvedores executam o que ficou conhecido "
+"como <quote>MFC sweeps</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:246
@@ -463,15 +465,15 @@ msgid ""
 "only for trivial or critical bugfixes."
 msgstr ""
 "<acronym>MFC</acronym> significa <quote>Merge From CURRENT</quote> e "
-"descreve o processo de aplicação de uma alteração testada de nossa branch de "
-"desenvolvimento -CURRENT para nossa branch -STABLE. A política do projeto "
+"descreve o processo de fusão de uma alteração testada de nossa branch de "
+"desenvolvimento -CURRENT com a nossa branch -STABLE. A política do projeto "
 "requer que qualquer mudança seja aplicada pela primeira vez ao trunk, e "
 "aplicada às branches -STABLE após testes externos suficientes serem feitos "
 "pelos usuários no -CURRENT (espera-se que os desenvolvedores testem "
-"extensivamente a mudança antes de se comprometerem com -CURRENT, mas é "
-"impossível para um pessoa a exercer todos os usos do sistema operacional de "
-"propósito geral). Período MFC mínimo é de 3 dias, que normalmente é usado "
-"apenas para correções de bugs triviais ou críticas."
+"extensivamente a mudança antes de enviarem a mesma para o -CURRENT, mas é "
+"impossível para uma pessoa  exercer todos os usos de um sistema operacional "
+"de propósito geral). O período mínimo de MFC é de 3 dias, que normalmente é "
+"usado apenas para correções de bugs triviais ou críticas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:259
@@ -487,12 +489,12 @@ msgid ""
 "email>. The approval process is technically enforced by a pre-commit hook. "
 "The kinds of changes that are allowed during this period include:"
 msgstr ""
-"Sessenta dias antes do lançamento previsto, o repositório de origem insere "
-"um <quote>congelamento de código</quote>. Durante esse tempo, todos os "
-"commits para a branch -STABLE devem ser aprovados pela equipe de engenharia "
-"de release (versão) <email>re@FreeBSD.org</email>. O processo de aprovação é "
-"tecnicamente aplicado por um gancho de pré-consolidação. Os tipos de "
-"alterações permitidos durante esse período incluem:"
+"Sessenta dias antes do lançamento previsto, o repositório de código entra um "
+"<quote>congelamento de código</quote>. Durante esse tempo, todos os commits "
+"para a branch -STABLE devem ser aprovados pela equipe de engenharia de "
+"release (versão) <email>re@FreeBSD.org</email>. O processo de aprovação é "
+"tecnicamente aplicado por um \"pre-commit hook\". Os tipos de alterações "
+"permitidos durante esse período incluem:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:270
@@ -549,7 +551,7 @@ msgstr ""
 "os dias que antecedem a versão final, a equipe de engenharia de release está "
 "em constante comunicação com a equipe de segurança, os mantenedores de "
 "documentação e os mantenedores de ports para garantir que todos os "
-"diferentes componentes necessários para uma liberação bem-sucedida estejam "
+"diferentes componentes necessários para uma versão bem-sucedida estejam "
 "disponíveis."
 
 #. (itstool) path: sect2/para
@@ -565,18 +567,19 @@ msgid ""
 ""
 msgstr ""
 "Após a qualidade das imagens BETA ser satisfatória o suficiente, e nenhuma "
-"grande e potencialmente arriscada alteração for planejada, a branch release "
-"é criado e as imagens <emphasis>Release Candidate</emphasis> (RC) são "
-"construídas a partir da branch release, ao invés das Imagens BETA da branch "
-"STABLE. Além disso, o congelamento na branch STABLE é levantado e a branch "
-"de lançamento entra em um <quote>congelamento de código rigido</quote>, onde "
-"fica muito mais difícil justificar novas alterações no sistema, a menos que "
-"uma correção séria de bug ou problema de segurança esteja envolvido."
+"mudança grande e potencialmente arriscada estar planejada, a branch release "
+"é criada e as imagens <emphasis>Release Candidate</emphasis> (RC) são "
+"construídas a partir da branch release, ao invés das Imagens BETA serem "
+"construidas da branch STABLE. Além disso, o congelamento na branch STABLE é "
+"suspenso e a branch de release entra em um <quote>congelamento de código "
+"rígido</quote>, onde fica muito mais difícil justificar novas alterações no "
+"sistema, a menos que envolva uma correção séria de bug ou um problema de "
+"segurança."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:321
 msgid "Final Release Checklist"
-msgstr "Checagem Final de Liberação"
+msgstr "Checklist Final para uma Release"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:323
@@ -585,9 +588,9 @@ msgid ""
 "all major issues have been resolved, the final release <quote>polishing</"
 "quote> can begin."
 msgstr ""
-"Quando várias imagens BETA foram disponibilizadas para testes generalizados "
-"e todos os principais problemas foram resolvidos, a versão final mais "
-"<quote>polida</quote> pode começar."
+"Quando várias imagens BETA já tiverem sido disponibilizadas para testes "
+"generalizados e todos os principais problemas tiverem sido resolvidos, o "
+"<quote>polimento</quote> da versão final pode começar."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:328
@@ -618,9 +621,9 @@ msgstr ""
 "O layout das branchs do FreeBSD no Subversion é descrito no <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-"
 "primer.html#subversion-primer-base-layout\">Guia do Commiter</link>. O "
-"primeiro passo na criação de uma branch é identificar a revisão dos códigos "
-"fontes de <literal>stable/<replaceable>X</replaceable></literal>, a "
-"<emphasis>branch</emphasis> de origem que você deseja criar uma nova branch."
+"primeiro passo na criação de uma branch é identificar a revisão do código "
+"fonte do  <literal>stable/<replaceable>X</replaceable></literal>, a partir "
+"do qual você deseja criar a nova <emphasis>branch</emphasis>."
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:345
@@ -631,7 +634,7 @@ msgstr "<prompt>#</prompt> <userinput>svn log -v $FSVN/stable/9</userinput>"
 #. (itstool) path: sect3/para
 #: article.translate.xml:347
 msgid "The next step is to create the <emphasis>release branch</emphasis>"
-msgstr "O próximo passo é criar a <emphasis>branch release</emphasis>"
+msgstr "O próximo passo é criar a <emphasis>branch da release</emphasis>"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:350
@@ -646,7 +649,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:352
 msgid "This branch can be checked out:"
-msgstr "Esta branch pode ser verificada:"
+msgstr "Esta branch pode ser obtida com:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:354
@@ -661,9 +664,9 @@ msgid ""
 "tags is done by the <link xlink:href=\"@@URL_RELPREFIX@@/administration."
 "html#t-re\">Release Engineering Team</link>."
 msgstr ""
-"A criação das tags <literal>releng</literal> branch e <literal>release</"
-"literal> é feita pela equipe de engenharia de release do <link xlink:href="
-"\"@@URL_RELPREFIX@@/administration.html#t-re\"> </link>."
+"A criação das tags da branch <literal>releng</literal> e de "
+"<literal>release</literal> é feita pela <link xlink:href=\"@@URL_RELPREFIX@@/"
+"administration.html#t-re\">Equipe de Engenharia de Release</link>."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -683,8 +686,8 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-head\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch de Desenvolvimento do FreeBSD</"
-"phrase> </textobject>"
+"imageobject> <textobject><phrase>Branch de Desenvolvimento do FreeBSD</"
+"phrase></textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -704,7 +707,7 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng3\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 3.x STABLE</phrase> </"
+"imageobject> <textobject><phrase>Branch FreeBSD 3.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -725,7 +728,7 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng4\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 4.x STABLE</phrase> </"
+"imageobject> <textobject> <phrase>Branch FreeBSD 4.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -746,7 +749,7 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng5\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 5.x STABLE</phrase> </"
+"imageobject> <textobject><phrase>Branch FreeBSD 5.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -766,8 +769,8 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
-"<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 6.x STABLE</phrase> </"
+"<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/></"
+"imageobject><textobject><phrase>Branch FreeBSD 6.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -787,8 +790,8 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
-"<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 7.x STABLE</phrase> </"
+"<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/></"
+"imageobject><textobject><phrase>Branch FreeBSD 7.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -809,7 +812,7 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng8\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 8.x STABLE</phrase> </"
+"imageobject><textobject><phrase>Branch FreeBSD 8.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: imageobject/imagedata
@@ -830,7 +833,7 @@ msgid ""
 "textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"branches-releng9\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>Branch FreeBSD 9.x STABLE</phrase> </"
+"imageobject> <textobject><phrase>Branch FreeBSD 9.x STABLE</phrase></"
 "textobject>"
 
 #. (itstool) path: sect3/title
@@ -980,9 +983,9 @@ msgid ""
 "Collection. <_:footnote-1/> This information is currently kept in "
 "<filename>src/usr.sbin/bsdinstall/dist.c</filename>."
 msgstr ""
-"O <application>Sysinstall</application> deve ser atualizado para notificar o "
+"O <application>Sysinstall</application> deve ser atualizado para exibir o "
 "número de ports disponíveis e a quantidade de espaço em disco necessária "
-"para o Ports Collection. <_:footnote-1/> Esta informação é atualmente "
+"para a Coleção de Ports. <_:footnote-1/> Esta informação é atualmente "
 "mantida em <filename>src/usr.sbin/bsdinstall/dist.c</filename>."
 
 #. (itstool) path: sect3/para
@@ -992,9 +995,10 @@ msgid ""
 "announce the release to the world. These files are relative to <literal>head/"
 "</literal> within the <literal>doc/</literal> subversion tree."
 msgstr ""
-"Após o lançamento, vários arquivos devem ser atualizados para anunciar a "
-"versão para o mundo. Esses arquivos são relativos a <literal>head/</literal> "
-"dentro da árvore <literal>doc/</literal> do subversion."
+"Após a release ter sido construida, vários arquivos devem ser atualizados "
+"para anunciar a versão para o mundo. Esses arquivos são relativos a "
+"<literal>head/</literal> dentro da árvore <literal>doc/</literal> do "
+"subversion."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:547
@@ -1028,7 +1032,8 @@ msgstr "<filename>share/xml/news.xml</filename>"
 #. (itstool) path: sect3/para
 #: article.translate.xml:567
 msgid "Additionally, update the <quote>BSD Family Tree</quote> file:"
-msgstr "Além disso, atualize o arquivo <quote>BSD Family Tree</quote>:"
+msgstr ""
+"Além disso, atualize o arquivo da <quote>Árvore Genealógica do BSD</quote>:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:572
@@ -1065,7 +1070,7 @@ msgid ""
 "The Documentation and Ports managers are responsible for tagging their "
 "respective trees with the <literal>tags/RELEASE_9_2_0</literal> tag."
 msgstr ""
-"Os gerenciadores de Documentação e Ports são responsáveis ​​por marcar suas "
+"Os gerentes de Documentação e do Ports são responsáveis ​​por marcar suas "
 "respectivas árvores com a tag <literal>tags/RELEASE_9_2_0</literal>."
 
 #. (itstool) path: sidebar/para
@@ -1080,8 +1085,8 @@ msgstr ""
 "Quando o comando <command>svn cp</command> do Subversion é usado para criar "
 "uma <emphasis>tag de versão</emphasis>, isso identifica o código fonte em um "
 "ponto específico no tempo. Criando tags, nós garantimos que futuros "
-"construtores de versões sempre poderão usar exatamente a mesma fonte que "
-"usamos para criar as versões oficiais do Projeto FreeBSD."
+"construtores de versões sempre poderão usar exatamente o mesmo código fonte "
+"que usamos para criar as releases oficiais do Projeto FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:603
@@ -1112,29 +1117,29 @@ msgid ""
 "build a release. <command>generate-release.sh</command> is a wrapper around "
 "the Makefile target: <command>make release</command>."
 msgstr ""
-"As <quote>versões</quote> do FreeBSD podem ser construídas por qualquer "
+"As <quote>releases</quote> do FreeBSD podem ser construídas por qualquer "
 "pessoa com uma máquina rápida e acesso a um repositório de código-fonte. "
-"(Isso deve ser todo mundo, já que oferecemos acesso ao Subversion! Veja a "
-"seção <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
-"handbook/svn.html\">Subversion no Manual</link> para detalhes.)  "
-"<emphasis>Apenas</emphasis> o requisito especial é que o dispositivo "
+"(Isso deveria ser todo mundo, já que oferecemos acesso ao Subversion! Veja a "
+"seção sobre <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/svn.html\">Subversion</link> no Handbook para detalhes.)  O "
+"<emphasis>único</emphasis> requisito especial é que o dispositivo "
 "<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> esteja disponível. Se o dispositivo não estiver carregado em "
 "seu kernel, então o módulo do kernel deve ser carregado automaticamente "
-"quando <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</"
+"quando o <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for executado durante a fase de criação da mídia "
-"de inicialização. Todas as ferramentas necessárias para construir uma versão "
-"estão disponíveis no repositório Subversion em <filename>src/release</"
-"filename>. Essas ferramentas visam fornecer uma maneira consistente de "
-"construir versões do FreeBSD. Uma versão completa pode ser construída com "
-"apenas um único comando, incluindo a criação de imagens <acronym>ISO</"
-"acronym> adequadas para gravação em CD-ROM ou DVD e um diretório de "
-"instalação de FTP. <citerefentry><refentrytitle>release</"
+"de boot. Todas as ferramentas necessárias para construir uma release estão "
+"disponíveis no repositório Subversion em <filename>src/release</filename>. "
+"Essas ferramentas visam fornecer uma maneira consistente de construir "
+"versões do FreeBSD. Uma release completa pode ser construída com apenas um "
+"único comando, incluindo a criação de imagens <acronym>ISO</acronym> "
+"adequadas para gravação em CD-ROM ou DVD e um diretório para instalação por "
+"FTP. A pagina de manual <citerefentry><refentrytitle>release</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> documenta "
 "completamente o script <command>src/release/generate-release.sh</command> "
-"que é usado para construir uma versão . <command>generate-release.sh</"
-"command> é um wrapper em torno do alvo do Makefile: <command>make release</"
-"command>."
+"que é usado para construir uma release. O <command>generate-release.sh</"
+"command> é um invólucro em torno do target do Makefile: <command>make "
+"release</command>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:626
@@ -1149,10 +1154,10 @@ msgid ""
 "FreeBSD release. The following sequences of commands can build an 9.2.0 "
 "release:"
 msgstr ""
-"<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
-"manvolnum></citerefentry> documenta os comandos exatos necessários para "
-"construir uma versão do FreeBSD. As seguintes sequências de comandos podem "
-"construir uma versão 9.2.0:"
+"A página de manual <citerefentry><refentrytitle>release</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry> documenta os comandos "
+"exatos necessários para construir uma Release do FreeBSD. As seguintes "
+"sequências de comandos podem construir uma versão 9.2.0:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:632
@@ -1181,7 +1186,7 @@ msgid ""
 "The release <filename>Makefile</filename> can be broken down into several "
 "distinct steps."
 msgstr ""
-"O <filename>Makefile</filename> da versão pode ser dividido em várias etapas "
+"O release <filename>Makefile</filename> pode ser dividido em várias etapas "
 "distintas."
 
 #. (itstool) path: listitem/para
@@ -1199,8 +1204,8 @@ msgid ""
 "Checkout from Subversion of a clean version of the system source, "
 "documentation, and ports into the release build hierarchy."
 msgstr ""
-"Checkout do Subversion de uma versão limpa da origem do sistema, "
-"documentação e portas na hierarquia de build do release."
+"Checkout do Subversion de uma versão limpa do código fonte do sistema, da "
+"documentação e e da coleção de ports na hierarquia de build do release."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:656
@@ -1208,9 +1213,8 @@ msgid ""
 "Population of <filename>/etc</filename> and <filename>/dev</filename> in the "
 "chrooted environment."
 msgstr ""
-"População de <filename>/etc</filename> e <filename>/dev</filename> no "
-"ambiente chrooted. (Processo de transferir o diretório root para outro "
-"lugar)"
+"Popula o <filename>/etc</filename> e o <filename>/dev</filename> no ambiente "
+"chrooted (Processo de transferir o diretório root para outro lugar)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:662
@@ -1218,23 +1222,24 @@ msgid ""
 "chroot into the release build hierarchy, to make it harder for the outside "
 "environment to taint this build."
 msgstr ""
-"chroot na hierarquia de build (construção) da release, para tornar mais "
-"difícil para o ambiente externo corromper essa build."
+"Faz chroot na hierarquia de build (construção) da release, para tornar mais "
+"difícil para o ambiente externo corromper essa construção."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:668
 msgid "<command>make world</command> in the chrooted environment."
-msgstr "<command>make world</command> no ambiente chrooted."
+msgstr ""
+"Execução do comando <command>make world</command> no ambiente chrooted."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:673
 msgid "Build of Kerberos-related binaries."
-msgstr "Compilação de binários relacionados ao Kerberos."
+msgstr "Compilação dos binários relacionados ao Kerberos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:677
 msgid "Build <filename>GENERIC</filename> kernel."
-msgstr "Construa o kernel <filename>GENERIC</filename>."
+msgstr "Compilação do kernel <filename>GENERIC</filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:681
@@ -1242,8 +1247,8 @@ msgid ""
 "Creation of a staging directory tree where the binary distributions will be "
 "built and packaged."
 msgstr ""
-"Criação de uma árvore de diretórios temporários onde as distribuições "
-"binárias serão construídas e empacotadas."
+"Criação uma árvore de diretórios temporários onde as distribuições binárias "
+"serão compiladas e empacotadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:686
@@ -1252,9 +1257,9 @@ msgid ""
 "documentation source (SGML) into HTML and text documents that will accompany "
 "the release."
 msgstr ""
-"Criação e instalação da caixa de ferramentas de documentação necessária para "
-"converter a fonte da documentação (SGML) em HTML e documentos de texto que "
-"acompanharão a versão."
+"Compilação e instalação do toolchain necessário para converter o fonte da "
+"documentação (SGML) em HTML e demais documentos de texto que acompanharão a "
+"versão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:692
@@ -1262,27 +1267,27 @@ msgid ""
 "Build and installation of the actual documentation (user manuals, tutorials, "
 "release notes, hardware compatibility lists, and so on.)"
 msgstr ""
-"Criação e instalação da documentação propriamente dita (manuais do usuário, "
-"tutoriais, notas de versão, listas de compatibilidade de hardware e assim "
-"por diante)."
+"Compilação e instalação da documentação propriamente dita (manuais do "
+"usuário, tutoriais, notas de versão, listas de compatibilidade de hardware e "
+"assim por diante)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:698
 msgid "Package up distribution tarballs of the binaries and sources."
-msgstr "Empacotar tarballs de distribuição dos binários e fontes."
+msgstr "Empacotamento dos tarballs de distribuição dos binários e fontes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:703
 msgid "Create FTP installation hierarchy."
-msgstr "Criar hierarquia de instalação de FTP."
+msgstr "Criação da hierarquia de instalação por FTP."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:707
 msgid ""
 "<emphasis>(optionally)</emphasis> Create ISO images for CDROM/DVD media."
 msgstr ""
-"<emphasis>(opcionalmente)</emphasis> Crie imagens ISO para mídia de CDROM/"
-"DVD."
+"<emphasis>(opcionalmente)</emphasis> Criação das imagens ISO para mídia de "
+"CDROM/DVD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:712
@@ -1291,7 +1296,7 @@ msgid ""
 "<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 msgstr ""
-"Para obter mais informações sobre a infraestrutura de criação de versões, "
+"Para obter maiores informações sobre a infraestrutura de criação de versões, "
 "consulte <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 
@@ -1303,10 +1308,10 @@ msgid ""
 "that were built on a system with <varname>CPUTYPE</varname> set to a "
 "specific processor."
 msgstr ""
-"É importante remover qualquer configuração específica do site do <filename>/"
-"etc/make.conf</filename>. Por exemplo, seria imprudente distribuir binários "
-"que foram construídos em um sistema com <varname>CPUTYPE</varname> "
-"configurado para um processador específico."
+"É importante remover qualquer configuração específica do seu servidor do "
+"<filename>/etc/make.conf</filename>. Por exemplo, seria imprudente "
+"distribuir binários que foram compilados em um sistema com <varname>CPUTYPE</"
+"varname> configurado para um processador específico."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:725
@@ -1323,17 +1328,17 @@ msgid ""
 "consistent ports tree that can be used to create the binary packages that "
 "accompany official FreeBSD releases."
 msgstr ""
-"A <link xlink:href=\"https://www.FreeBSD.org/ports\"> coleção de Ports do "
+"A <link xlink:href=\"https://www.FreeBSD.org/ports\">Coleção de Ports do "
 "FreeBSD</link> é uma coleção de mais de 24.000 pacotes de software de "
 "terceiros disponíveis para o FreeBSD. A Equipe de Gerenciamento de Ports "
 "<email>portmgr@FreeBSD.org</email> é responsável por manter uma árvore de "
 "ports consistente que pode ser usada para criar os pacotes binários que "
-"acompanham as versões oficiais do FreeBSD."
+"acompanham as releases oficiais do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:736
 msgid "Release ISOs"
-msgstr "Releases (Versões) ISO"
+msgstr "ISOs das Releases (Versões) "
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:738
@@ -1349,17 +1354,16 @@ msgid ""
 "<filename>filename.txt</filename> file that provides a manifest for the disc."
 " This <emphasis>manifest</emphasis> can be created with a simple command:"
 msgstr ""
-"Começando com o FreeBSD 4.4, o Projeto FreeBSD decidiu liberar todas as "
-"quatro imagens ISO que foram vendidas anteriormente nas distribuições "
-"<emphasis>oficiais do BSRi/Wind River Systems/FreeBSD Mall</emphasis> "
-"<quote>oficial</quote> em CDROM. Cada um dos quatro discos deve conter um "
-"arquivo <filename>README.TXT</filename> que explica o conteúdo do disco, um "
-"arquivo <filename>CDROM.INF</filename> que fornece metadados para o disco "
-"para que <citerefentry><refentrytitle>bsdinstall</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> possa validar e usar o "
-"conteúdo, e um arquivo <filename>filename.txt</filename> que fornece um "
-"manifesto para o disco. Este <emphasis>manifesto</emphasis> pode ser criado "
-"com um simples comando:"
+"Começando no FreeBSD 4.4, o Projeto FreeBSD decidiu liberar todas as quatro "
+"imagens ISO que eram vendidas anteriormente nas distribuições "
+"<quote>oficiais</quote> em CDROM pela <emphasis>BSRi/Wind River Systems/"
+"FreeBSD Mall</emphasis>. Cada um dos quatro discos deve conter um arquivo "
+"<filename>README.TXT</filename> que explica o conteúdo do disco, um arquivo "
+"<filename>CDROM.INF</filename> que fornece metadados do disco para que o "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> possa validar e usar o conteúdo, e um arquivo "
+"<filename>filename.txt</filename> que fornece um manifesto para o disco. "
+"Este <emphasis>manifesto</emphasis> pode ser criado com um simples comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:751
@@ -1418,18 +1422,18 @@ msgid ""
 "usr.sbin/bsdinstall</filename>. Optionally, you may choose to update "
 "<filename>bsdinstall.8</filename>."
 msgstr ""
-"Se um kernel customizado do FreeBSD deve ser incluído, então "
+"Se um kernel customizado do FreeBSD precisa ser incluído, então o "
 "<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry> e <citerefentry><refentrytitle>release</"
+"manvolnum></citerefentry> e o <citerefentry><refentrytitle>release</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> deve ser atualizado "
 "para incluir instruções de instalação. O código relevante está contido em "
 "<filename>src/release</filename> e <filename>src/usr.sbin/bsdinstall</"
-"filename>. Especificamente, o arquivo <filename>src/release/Makefile</"
-"filename> e <filename>dist.c</filename>, <filename>dist.h</filename>, "
+"filename>. Especificamente, os arquivos <filename>src/release/Makefile</"
+"filename>, <filename>dist.c</filename>, <filename>dist.h</filename>, "
 "<filename>menus.c</filename> , <filename>install.c</filename>, e "
-"<filename>Makefile</filename> precisará ser atualizado em <filename>src/usr."
-"sbin/bsdinstall</filename>. Opcionalmente, você pode escolher atualizar o "
-"<filename>bsdinstall.8</filename>."
+"<filename>Makefile</filename> precisarão ser atualizados em <filename>src/"
+"usr.sbin/bsdinstall</filename>. Opcionalmente, você pode escolher atualizar "
+"o <filename>bsdinstall.8</filename>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:785
@@ -1448,13 +1452,13 @@ msgid ""
 "software demos in the <filename>commerce</filename> directory."
 msgstr ""
 "O segundo disco também é largamente criado por <command>make release</"
-"command>. Este disco contém um <quote>sistema de arquivos no formato live "
-"(sem instalação necessária)</quote> que pode ser usado por "
-"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry> para solucionar problemas de instalação do FreeBSD."
-" Este disco deve ser inicializável e também deve conter uma cópia compactada "
-"do repositório CVS no diretório <filename>CVSROOT</filename> e demos de "
-"software comercial no diretório <filename>commerce</filename>."
+"command>. Este disco contém um <quote>live filesystem</quote> que pode ser "
+"usado por <citerefentry><refentrytitle>bsdinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> para solucionar "
+"problemas de instalação do FreeBSD. Este disco deve ser inicializável e "
+"também deve conter uma cópia compactada do repositório CVS no diretório "
+"<filename>CVSROOT</filename> e demos de software comercial no diretório "
+"<filename>commerce</filename>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:798
@@ -1474,15 +1478,15 @@ msgid ""
 "that is not on the current disc, bsdinstall will prompt the user to insert "
 "the appropriate one."
 msgstr ""
-"O <application>Sysinstall</application> suporta várias instalações de "
-"pacotes de volume. Isso requer que cada disco tenha um arquivo "
+"O <application>Sysinstall</application> suporta a instalação de pacotes a "
+"partir de vários volumes. Isso requer que cada disco tenha um arquivo "
 "<filename>INDEX</filename> contendo todos os pacotes em todos os volumes de "
 "um conjunto, junto com um campo extra que indica em qual volume esse pacote "
 "específico está. Cada volume no conjunto também deve ter a variável "
 "<literal>CD_VOLUME</literal> definida no arquivo <filename>cdrom.inf</"
 "filename> para que o bsdinstall possa informar qual volume é qual. Quando um "
 "usuário tentar instalar um pacote que não esteja no disco atual, o "
-"bsdinstall solicitará que o usuário insira o arquivo apropriado."
+"bsdinstall solicitará que o usuário insira o disco apropriado."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:817
@@ -1504,9 +1508,9 @@ msgid ""
 "is ready, the following files must be modified on <systemitem>ftp-master</"
 "systemitem>:"
 msgstr ""
-"Quando a versão for totalmente testada e empacotada para distribuição, o "
-"site FTP principal deve ser atualizado. Os sites FTP públicos oficiais do "
-"FreeBSD são todos espelhos de um servidor principal que está acessível "
+"Quando a release for totalmente testada e empacotada para distribuição, o "
+"site FTP principal deverá ser atualizado. Os sites de FTP públicos oficiais "
+"do FreeBSD são todos espelhos de um servidor principal que está acessível "
 "somente a outros sites FTP. Este site é conhecido como <systemitem>ftp-"
 "master</systemitem>. Quando a release estiver pronta, os seguintes arquivos "
 "devem ser modificados no <systemitem>ftp-master</systemitem>:"
@@ -1596,9 +1600,9 @@ msgid ""
 msgstr ""
 "As imagens ISO. O <quote>*</quote> é o <filename>disc1</filename>, "
 "<filename> disc2 </filename>, etc. Somente se houver um <filename>disc1</"
-"filename> e houver um CD alternativo para primeira instalação  (por exemplo, "
-"uma instalação simplificada sem sistema de janelas) também pode haver um "
-"<filename>mini</filename>."
+"filename> e houver um CD alternativo para o primeiro disco de instalação  "
+"(por exemplo, uma instalação simplificada sem sistema de janelas) também "
+"pode haver um <filename>mini</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:876
@@ -1607,9 +1611,10 @@ msgid ""
 "FreeBSD FTP sites, please see the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/articles/hubs/\">Mirroring FreeBSD</link> article."
 msgstr ""
-"Para mais informações sobre a arquitetura espelho de distribuição dos sites "
-"FTP do FreeBSD, por favor veja o artigo <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/articles/hubs/\"> Espelhando o FreeBSD </link>."
+"Para mais informações sobre a arquitetura do sistema de espelhamento dos "
+"sites de FTP para distribuição do FreeBSD, por favor veja o artigo <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/hubs/"
+"\">Espelhando o FreeBSD</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:880
@@ -1637,24 +1642,24 @@ msgstr ""
 "o novo software, dependendo se um conjunto de pacotes foi ou não carregado "
 "ao mesmo tempo. É imperativo que os engenheiros de release coordenem com os "
 "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/mirror-"
-"announce\">administradores do site espelho do FreeBSD</link> antes de "
+"announce\">administradores dos sites espelho do FreeBSD</link> antes de "
 "anunciar a disponibilidade geral de novo software nos sites FTP. Idealmente, "
-"o pacote da versão deve ser carregado pelo menos quatro dias antes do dia de "
-"lançamento. Os bits de lançamento devem ser carregados entre 24 e 48 horas "
+"o pacote da release deve ser carregado pelo menos quatro dias antes do dia "
+"de lançamento. Os bits da release devem ser carregados entre 24 e 48 horas "
 "antes do horário de lançamento planejado com as permissões de arquivo "
 "<quote>other</quote> desativadas. Isso permitirá que os sites espelho façam "
-"o download, mas o público em geral não poderá baixá-lo dos sites espelhos. O "
-"e-mail deve ser enviado para <link xlink:href=\"http://lists.FreeBSD.org/"
-"mailman/listinfo/mirror-announce\">administradores do site espelho do "
-"FreeBSD</link> no momento em que os bits de lançamento forem publicados "
-"dizendo que a versão foi preparada e dando o tempo que os sites espelho "
-"devem começar a permitir acesso. Certifique-se de incluir um fuso horário "
-"com a hora, por exemplo, torná-lo relativo ao GMT."
+"o download, mas o público em geral não poderá baixá-los dos sites espelho. "
+"Um e-mail deve ser enviado para a lista dos <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/mirror-announce\">administradores do site "
+"espelho do FreeBSD</link> no momento em que os bits da release forem "
+"publicados, informando que a release foi preparada e informando o horário em "
+"que os sites espelho devem começar a permitir o acesso. Certifique-se de "
+"incluir um fuso horário com a hora, por exemplo, torná-lo relativo ao GMT."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:901
 msgid "CD-ROM Replication"
-msgstr "Replicação de CD-ROM"
+msgstr "Replicação do CD-ROM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:903
@@ -1689,12 +1694,12 @@ msgstr ""
 "Tentamos projetar o sistema para ser o mais extensível possível, de modo que "
 "ele possa servir como uma plataforma na qual outros produtos comerciais "
 "possam ser construídos. A única <quote>regra</quote> que temos sobre isso é "
-"que se você for distribuir o FreeBSD com mudanças não-triviais, nós "
+"que se você for distribuir o FreeBSD com mudanças não triviais, nós "
 "encorajamos você a documentar suas melhorias! A comunidade do FreeBSD só "
 "pode ajudar a suportar usuários do software que fornecemos. Nós certamente "
 "encorajamos a inovação na forma de ferramentas avançadas de instalação e "
-"administração, por exemplo, mas não podemos esperar que respondamos a "
-"perguntas sobre isso."
+"administração, por exemplo, mas você não esperar que respondamos perguntas "
+"sobre isso."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:927
@@ -1812,14 +1817,14 @@ msgid ""
 msgstr ""
 "<emphasis>Paralelismo</emphasis> - Algumas partes da compilação da release "
 "são, na verdade, <quote>embaraçosamente paralelas</quote>. A maioria das "
-"tarefas é muito intensiva em E/S, portanto, ter várias unidades de disco de "
+"tarefas é muito intensiva em I/O, portanto, ter várias unidades de disco de "
 "alta velocidade é realmente mais importante do que usar vários processadores "
-"para acelerar o processo <command>make release</command>. Se vários discos "
-"forem usados ​​para hierarquias diferentes no ambiente "
+"para acelerar o processo do <command>make release</command>. Se vários "
+"discos forem usados ​​para hierarquias diferentes no ambiente "
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
-"citerefentry>, a verificação do CVS dos <filename>ports</filename> e as "
-"árvores <filename>doc</filename> podem estar acontecendo simultaneamente "
-"como o <command>make world</command> em outro disco. Usar uma solução "
+"citerefentry>, o CVS checkout das árvores do <filename>ports</filename> e do "
+"<filename>doc</filename> podem estar acontecendo simultaneamente como o "
+"<command>make world</command> em outro disco. Usar uma solução "
 "<acronym>RAID</acronym> (hardware ou software) pode diminuir "
 "significativamente o tempo de compilação geral."
 
@@ -1829,9 +1834,9 @@ msgid ""
 "<emphasis>Cross-building releases</emphasis> - Building IA-64 or Alpha "
 "release on x86 hardware? <command>make TARGET=ia64 release</command>."
 msgstr ""
-"<emphasis>Versões cross-building (Arquiteturas integradas)</emphasis> - "
-"Criação do release IA-64 ou Alpha em hardware x86? <command>make TARGET=ia64 "
-"release</command>."
+"<emphasis>Releases cross-building</emphasis> - Criação do release IA-64 ou "
+"Alpha em hardware x86? Use o comando <command>make TARGET=ia64 release</"
+"command>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:998
@@ -1839,8 +1844,8 @@ msgid ""
 "<emphasis>Regression Testing</emphasis> - We need better automated "
 "correctness testing for FreeBSD."
 msgstr ""
-"<emphasis>Teste de regressão</emphasis> - Precisamos de um teste  melhor de "
-"correção automatizado para o FreeBSD."
+"<emphasis>Teste de regressão</emphasis> - Precisamos de melhores testes "
+"automatizados para o FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1003
@@ -1852,7 +1857,7 @@ msgid ""
 "package framework and GUI installation program."
 msgstr ""
 "<emphasis>Ferramentas de instalação</emphasis> - Nosso programa de "
-"instalação há muito tempo sobreviveu à sua expectativa de vida útil. Vários "
+"instalação há muito tempo ultrapassou à sua expectativa de vida útil. Vários "
 "projetos estão em desenvolvimento para fornecer um mecanismo de instalação "
 "mais avançado. O projeto libh era um desses projetos que visava fornecer um "
 "novo e inteligente framework de pacotes e um programa de instalação GUI."
@@ -1893,7 +1898,7 @@ msgid ""
 msgstr ""
 "Proposta de engenharia de Release do FreeBSD de John Baldwin <uri xlink:href="
 "\"https://people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD."
-"org/~jhb/docs/releng. txt</uri>"
+"org/~jhb/docs/releng.txt</uri>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1018
@@ -1918,17 +1923,16 @@ msgstr ""
 "Eu gostaria de agradecer a Jordan Hubbard por me dar a oportunidade de "
 "assumir algumas das responsabilidades de engenharia de release do FreeBSD 4."
 "4 e também por todo o seu trabalho ao longo dos anos fazendo do FreeBSD o "
-"que é hoje. É claro que o lançamento não teria sido possível sem todo o "
-"trabalho relacionado ao lançamento feito por Satoshi Asami "
-"<email>asami@FreeBSD.org</email>, Steve Price <email>steve@FreeBSD.org</"
-"email>, Bruce A. Mah <email>bmah@FreeBSD.org</email>, Nik Clayton "
-"<email>nik@FreeBSD.org</email>, David O'Brien <email>obrien@FreeBSD.org</"
-"email>, Kris Kennaway <email>kris@FreeBSD.org</email>, John Baldwin "
-"<email>jhb@FreeBSD.org</email> e o resto da comunidade de desenvolvimento do "
-"FreeBSD. Eu também gostaria de agradecer a Rodney Grimes "
-"<email>rgrimes@FreeBSD.org</email>, Poul-Henning Kamp <email>phk@FreeBSD."
-"org</email>, e outros que trabalharam nas ferramentas de engenharia de "
-"lançamento no primeiros dias do FreeBSD. Este artigo foi influenciado por "
-"documentos de engenharia de lançamento do CSRG <_:footnote-1/>, o Projeto "
-"NetBSD, <_:footnote-2/>, e as notas de processo de engenharia de release "
-"propostas por John Baldwin. <_:footnote-3/>"
+"que é hoje. É claro quea Release não teria sido possível sem todo o trabalho "
+"relacionado a release feito por Satoshi Asami <email>asami@FreeBSD.org</"
+"email>, Steve Price <email>steve@FreeBSD.org</email>, Bruce A. Mah "
+"<email>bmah@FreeBSD.org</email>, Nik Clayton <email>nik@FreeBSD.org</email>, "
+"David O'Brien <email>obrien@FreeBSD.org</email>, Kris Kennaway "
+"<email>kris@FreeBSD.org</email>, John Baldwin <email>jhb@FreeBSD.org</email> "
+"e o resto da comunidade de desenvolvimento do FreeBSD. Eu também gostaria de "
+"agradecer a Rodney Grimes <email>rgrimes@FreeBSD.org</email>, Poul-Henning "
+"Kamp <email>phk@FreeBSD.org</email>, e outros que trabalharam nas "
+"ferramentas de engenharia de release nos  primeiros dias do FreeBSD. Este "
+"artigo foi influenciado por documentos de engenharia de release do CSRG <_:"
+"footnote-1/>, o Projeto NetBSD, <_:footnote-2/>, e as notas de processo de "
+"engenharia de release propostas por John Baldwin. <_:footnote-3/>"

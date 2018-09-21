@@ -1,7 +1,7 @@
 # André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Lucas Andrade <lucassandrade98@gmail.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
+# Vinicius Zavam <egypcio@googlemail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-18 09:21+0000\n"
-"Last-Translator: André Franciosi <andre@franciosi.org>\n"
+"PO-Revision-Date: 2018-09-21 03:16+0000\n"
+"Last-Translator: Vinicius Zavam <egypcio@googlemail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -22,12 +22,14 @@ msgid "translator-credits"
 msgstr ""
 "Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
 "Lucas Andrade, slucasandrade@protonmail.ch, 2018\n"
-"André Franciosi, andre@franciosi.org, 2018"
+"André Franciosi, andre@franciosi.org, 2018\n"
+"Vinícius Zavam, egypcio@googlemail.com, 2018\n"
+"Silvio Ap Silva, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:26
 msgid "FreeBSD Release Engineering"
-msgstr "Engenharia de Lançamento do FreeBSD"
+msgstr "Engenharia de Release (Versionamento) do FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:37
@@ -94,13 +96,14 @@ msgid ""
 "This article describes the release engineering process of the "
 "FreeBSD Project."
 msgstr ""
-"Este artigo descreve o processo por trás dos lançamentos das versões do "
-"Projeto FreeBSD."
+"Este artigo descreve o processo por trás do modelo de versionamento adotado "
+"pelo Projeto FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:66
 msgid "Introduction to the FreeBSD Release Engineering Process"
-msgstr "Introdução ao Processo de Engenharia de Lançamento do FreeBSD"
+msgstr ""
+"Introdução ao Processo de Engenharia de Release (Versionamento) do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:69
@@ -109,10 +112,10 @@ msgid ""
 "to the FreeBSD base system are committed to the <literal>head/</literal> "
 "branch, which reflects the top of the source tree."
 msgstr ""
-"O desenvolvimento do FreeBSD tem um fluxo de trabalho muito específico. Em "
-"geral, todas as mudanças no sistema base do FreeBSD estão comprometidas com "
-"o ramo <literal>head/</literal>, que reflete o topo da árvore de código "
-"fonte."
+"O desenvolvimento do FreeBSD segue um fluxo muito específico. Em geral, "
+"todas as mudanças no sistema base do FreeBSD estão feitas em uma branch "
+"chamada <literal>head/</literal>, que reflete o estado da arte da árvore de "
+"código fonte."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
@@ -121,9 +124,9 @@ msgid ""
 "<literal>stable/</literal> branches. The default minimum timeframe before "
 "merging to <literal>stable/</literal> branches is three (3) days."
 msgstr ""
-"Após um período razoável de testes, as alterações podem ser incluídas as "
-"ramificações <literal>stable/</literal>. O período de tempo mínimo padrão "
-"antes da inclusão para as ramificações <literal>stable/</literal> é de três "
+"Após um período razoável de testes, as alterações podem ser incluídas nas "
+"branches <literal>stable/</literal>. O período de tempo mínimo padrão antes "
+"da inclusão de alterações nas branches <literal>stable/</literal> é de três "
 "(3) dias."
 
 #. (itstool) path: sect1/para
@@ -134,11 +137,11 @@ msgid ""
 "immediate merge may be necessary, such as a critical security fix, or a bug "
 "fix that directly inhibits the release build process."
 msgstr ""
-"Embora seja uma regra geral esperar pelo menos três dias antes de mesclar o "
-"<literal>head/</literal>, há algumas circunstâncias especiais em que uma "
-"mesclagem imediata pode ser necessária, como uma correção de segurança "
-"crítica ou uma correção de bug que inibe diretamente o processo de criação "
-"da versão."
+"Embora seja uma regra geral esperar pelo menos três (3) dias antes de "
+"incorporar código produzido na branch <literal>head/</literal>, há algumas "
+"circunstâncias especiais em que uma aplicação imediata pode ser necessária, "
+"como uma correção de segurança crítica ou uma correção de bug que inibe "
+"diretamente o processo de criação de uma versão."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:85
@@ -148,10 +151,10 @@ msgid ""
 "version of FreeBSD. These releases have been historically referred to as "
 "<quote>point</quote> releases."
 msgstr ""
-"Após vários meses, quando o número de mudanças na ramificação "
-"<literal>stable/</literal> cresce significativamente, é hora de lançar a "
-"próxima versão do FreeBSD. Esses lançamentos foram historicamente chamados "
-"de lançamentos <quote>point</quote>."
+"Após vários meses, quando o número de mudanças na branch <literal>stable/</"
+"literal> cresce significativamente, é hora de lançar a próxima versão do "
+"FreeBSD. Essas versões foram historicamente chamadas de <quote>point</quote> "
+"releases."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
@@ -161,10 +164,10 @@ msgid ""
 "<literal>head/</literal>. These releases have been historically referred to "
 "as <quote>dot-zero</quote> releases."
 msgstr ""
-"Entre os lançamentos das ramificações <literal>stable/</literal>, "
-"aproximadamente a cada dois (2) anos, um lançamento será cortado diretamente "
-"do <literal>head/</literal>. Esses lançamentos foram historicamente chamados "
-"de lançamentos <quote>dot-zero</quote>."
+"Entre versões das branches <literal>stable/</literal>, aproximadamente a "
+"cada dois (2) anos, uma nova versão é criada vinda diretamente da branch "
+"<literal>head/</literal>. Essas versões foram historicamente chamadas de "
+"versões <quote>zero</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:97
@@ -174,8 +177,8 @@ msgid ""
 "quote>' releases."
 msgstr ""
 "Este artigo irá destacar o fluxo de trabalho e as responsabilidades da "
-"Equipe de Engenharia de Lançamentos do FreeBSD para os lançamentos "
-"<quote>dot-zero</quote> e <quote>point</quote>."
+"Equipe de Engenharia de Release (Versionamento) do FreeBSD para versões "
+"<quote>zero</quote> e <quote>point release</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:102
@@ -186,14 +189,14 @@ msgstr "As seções a seguir deste artigo descrevem:"
 #: article.translate.xml:109
 msgid "General information and preparation before starting the release cycle."
 msgstr ""
-"Informações gerais e preparação antes de iniciar o ciclo de lançamento."
+"Informações gerais e preparação antes de iniciar o ciclo de versionamento."
 
 #. (itstool) path: listitem/para
 #. (itstool) path: sect1/title
 #: article.translate.xml:118
 #: article.translate.xml:508
 msgid "Website Changes During the Release Cycle"
-msgstr "Alterações no site durante o ciclo de lançamento"
+msgstr "Alterações no Site Web Durante o Ciclo de Release (Versionamento)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:126
@@ -201,21 +204,21 @@ msgid ""
 "Terminology and general information, such as the <quote>code slush</quote> "
 "and <quote>code freeze</quote>, used throughout this document."
 msgstr ""
-"Terminologia e informações gerais, como o <quote>code slush</quote> e o "
-"<quote>code freeze</quote>, usadas em todo este documento."
+"Terminologia e informações gerais, como <quote>pré congelamento de código</"
+"quote> e <quote>congelamento de código</quote>, usadas por todo este "
+"documento."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:136
 msgid "The Release Engineering process for a <quote>dot-zero</quote> release."
 msgstr ""
-"O processo de Engenharia de Lançamento para um lançamento de <quote>dot-"
-"zero</quote>."
+"O processo de Engenharia de Release para uma versão <quote>zero</quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:145
 msgid "The Release Engineering process for a <quote>point</quote> release."
 msgstr ""
-"O processo de Engenharia de Lançamento para um lançamento <quote>point</"
+"O processo de Engenharia de Release para uma versão <quote>point release</"
 "quote>."
 
 #. (itstool) path: listitem/para
@@ -229,12 +232,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:163
 msgid "Procedures to publish installation medium."
-msgstr "Procedimentos para publicar o meio de instalação."
+msgstr "Procedimentos para publicar um meio de instalação."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:171
 msgid "Wrapping up the release cycle."
-msgstr "Encerrando o ciclo de lançamento."
+msgstr "Encerrando o ciclo de versionamento."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:178
@@ -249,11 +252,11 @@ msgid ""
 "includes the various milestone points of the release cycle, such as freeze "
 "dates, branch dates, and build dates. For example:"
 msgstr ""
-"Aproximadamente dois meses antes do início do ciclo de lançamento, a Equipe "
-"de Engenharia de Lançamentos do FreeBSD decide e faz um cronograma para o "
-"lançamento. A programação inclui os vários pontos de marco do ciclo de "
-"lançamento, como datas de congelamento, datas de ramificação e datas de "
-"compilação. Por exemplo:"
+"Aproximadamente dois meses antes do início do ciclo de vida de uma nova "
+"versão, a Equipe de Engenharia de Release do FreeBSD decide e faz um "
+"cronograma para seu lançamento. A programação inclui os vários pontos de "
+"marco do ciclo de versionamento, como datas de congelamento, datas para as "
+"branches e datas de compilação do código. Por exemplo:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:190
@@ -268,7 +271,7 @@ msgstr "Data prevista"
 #. (itstool) path: row/entry
 #: article.translate.xml:197
 msgid "<literal>head/</literal> slush:"
-msgstr "<literal>head/</literal> slush:"
+msgstr "pré congelanto da <literal>head/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:198
@@ -278,7 +281,7 @@ msgstr "27 de maio de 2016"
 #. (itstool) path: row/entry
 #: article.translate.xml:202
 msgid "<literal>head/</literal> freeze:"
-msgstr "<literal>head/</literal> freeze:"
+msgstr "Congelamento da <literal>head/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:203
@@ -288,7 +291,7 @@ msgstr "10 de junho de 2016"
 #. (itstool) path: row/entry
 #: article.translate.xml:207
 msgid "<literal>head/</literal> KBI freeze:"
-msgstr "<literal>head/</literal> KBI freeze:"
+msgstr "Congelamento de KBI da <literal>head/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:208
@@ -299,204 +302,172 @@ msgstr "24 de junho de 2016"
 #. (itstool) path: row/entry
 #: article.translate.xml:212
 msgid "<literal>doc/</literal> tree slush [1]:"
-msgstr "<literal>doc/</literal> tree slush [1]:"
+msgstr "Pré congelamento da árvore <literal>doc/</literal> [1]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:217
-#, fuzzy
 msgid "Ports quarterly branch [2]:"
-msgstr "Sucursal trimestral dos portos [2]:"
+msgstr "Branch (Ramificação) trimestral dos ports [2]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:218
-#, fuzzy
 msgid "July 1, 2016"
 msgstr "1º de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:222
-#, fuzzy
 msgid "<literal>stable/<replaceable>11</replaceable>/</literal> branch:"
-msgstr ""
-"Seção <literal> stable / <replaceable> 11 </replaceable> / </literal>:"
+msgstr "Branch <literal>stable/<replaceable>11</replaceable>/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:223
 #: article.translate.xml:228
 #: article.translate.xml:233
-#, fuzzy
 msgid "July 8, 2016"
 msgstr "8 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:227
-#, fuzzy
 msgid "<literal>doc/</literal> tree tag [3]:"
-msgstr "Tag da árvore <literal> doc / </literal> [3]:"
+msgstr "marcação específica na árvore <literal>doc/</literal> [3]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:232
-#, fuzzy
 msgid "BETA1 build starts:"
-msgstr "Começa a compilação BETA1:"
+msgstr "Começa a compilação da fase BETA1:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:237
-#, fuzzy
 msgid "<literal>head/</literal> thaw:"
-msgstr "degelo <literal> head / </literal>:"
+msgstr "liberação da branch <literal>head/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:238
-#, fuzzy
 msgid "July 9, 2016"
 msgstr "9 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:242
-#, fuzzy
 msgid "BETA2 build starts:"
-msgstr "Começa a construção de BETA2:"
+msgstr "Começa a compilação da fase BETA2:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:243
-#, fuzzy
 msgid "July 15, 2016"
 msgstr "15 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:247
-#, fuzzy
 msgid "BETA3 build starts [*]:"
-msgstr "Começa a construção de BETA3 [*]:"
+msgstr "Começa a compilação da fase BETA3 [*]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:248
-#, fuzzy
 msgid "July 22, 2016"
 msgstr "22 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:252
-#, fuzzy
 msgid "<literal>releng/<replaceable>11.0</replaceable>/</literal> branch:"
-msgstr ""
-"ramificação <literal> releng / <replaceable> 11.0 </replaceable> / </"
-"literal>:"
+msgstr "branch <literal>releng/<replaceable>11.0</replaceable>/</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:253
 #: article.translate.xml:258
-#, fuzzy
 msgid "July 29, 2016"
 msgstr "29 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:257
-#, fuzzy
 msgid "RC1 build starts:"
-msgstr "A compilação do RC1 é iniciada:"
+msgstr "A compilação da fase RC1 é iniciada:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:262
-#, fuzzy
 msgid "<literal>stable/<replaceable>11</replaceable>/</literal> thaw:"
 msgstr ""
-"<literal> stable/ <replaceable> 11 </replaceable> / </literal> "
-"descongelamento:"
+"liberação da branch <literal>stable/<replaceable>11</replaceable>/</literal>:"
+""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:263
-#, fuzzy
 msgid "July 30, 2016"
 msgstr "30 de julho de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:267
-#, fuzzy
 msgid "RC2 build starts:"
-msgstr "Começa a compilação RC2:"
+msgstr "Começa a compilação da fase RC2:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:268
-#, fuzzy
 msgid "August 5, 2016"
 msgstr "5 de agosto de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:272
-#, fuzzy
 msgid "Final Ports package builds [4]:"
-msgstr "Pacotes finais de pacotes de ports [4]:"
+msgstr "última compilação dos ports [4]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:273
-#, fuzzy
 msgid "August 6, 2016"
 msgstr "6 de agosto de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:277
-#, fuzzy
 msgid "Ports release tag:"
-msgstr "Tag de liberação de portas:"
+msgstr "marcação específica na árvore dos ports:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:278
 #: article.translate.xml:283
-#, fuzzy
 msgid "August 12, 2016"
 msgstr "12 de agosto de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:282
-#, fuzzy
 msgid "RC3 build starts [*]:"
-msgstr "A compilação do RC3 é iniciada [*]:"
+msgstr "compilação da fase RC3 [*]:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:287
-#, fuzzy
 msgid "RELEASE build starts:"
-msgstr "RELEASE build começa:"
+msgstr "início de compilação da RELEASE:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:288
-#, fuzzy
 msgid "August 19, 2016"
 msgstr "19 de agosto de 2016"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:292
-#, fuzzy
 msgid "RELEASE announcement:"
-msgstr "Anúncio de divulgação:"
+msgstr "Anúncio da RELEASE:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:293
-#, fuzzy
 msgid "September 2, 2016"
 msgstr "2 de setembro de 2016"
 
 #. (itstool) path: note/para
 #: article.translate.xml:300
-#, fuzzy
 msgid "Items marked with \"[*]\" are \"as needed\"."
-msgstr "Itens marcados com \"[*]\" são \"conforme necessário\"."
+msgstr ""
+"Itens marcados com \"[*]\" identificam passos executados apenas \"conforme "
+"necessário\"."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:306
-#, fuzzy
 msgid ""
 "The <literal>doc/</literal> tree slush is coordinated by the FreeBSD "
 "Documentation Engineering Team."
 msgstr ""
-"O slush de árvore <literal> doc / </literal> é coordenado pela Equipe de "
-"Engenharia de Documentação do FreeBSD."
+"O pré congelamento da árvore <literal>doc</literal> é coordenado pela Equipe "
+"de Engenharia de Documentação do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:311
-#, fuzzy
 msgid ""
 "The Ports quarterly branch used is determined by when the final <literal>RC</"
 "literal> build is planned. A new quarterly branch is created on the first "
@@ -504,51 +475,47 @@ msgid ""
 "cycle milestones into account. The quarterly branch is created by the "
 "FreeBSD Ports Management Team."
 msgstr ""
-"A ramificação trimestral de Portas usada é determinada quando a construção "
-"final de <literal> RC </literal> é planejada. Uma nova filial trimestral é "
-"criada no primeiro dia do trimestre, portanto, essa métrica deve ser usada "
-"ao considerar os marcos do ciclo de lançamento. A filial trimestral é criada "
-"pela equipe de gerenciamento de portas do FreeBSD."
+"A branch trimestral da árvore dos ports é determinada quando a compilação "
+"final de fases <literal>RC</literal> é planejada. Uma nova branch trimestral "
+"é criada no primeiro dia do trimestre, portanto, essa métrica deve ser usada "
+"ao considerar os marcos do ciclo de versionamento. Uma branch trimestral é "
+"criada pela Equipe de Gerenciamento de Ports do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:320
-#, fuzzy
 msgid ""
 "The <literal>doc/</literal> tree is tagged by the FreeBSD Documentation "
 "Engineering Team."
 msgstr ""
-"A árvore <literal> doc / </literal> é marcada pela Equipe de Engenharia de "
-"Documentação do FreeBSD."
+"A árvore <literal>doc</literal> recebe uma marcação, de acordo com a Equipe "
+"de Engenharia de Documentação do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:325
-#, fuzzy
 msgid ""
 "The final Ports package build is done by the FreeBSD Ports Management Team "
 "after the final (or what is expected to be final) <literal>RC</literal> "
 "build."
 msgstr ""
-"A compilação final do pacote Ports é feita pela Equipe de Gerenciamento de "
-"Ports do FreeBSD após a construção final (ou o que é esperado ser final) "
-"<literal> RC </literal>."
+"A compilação final de pacotes é feita pela Equipe de Gerenciamento de Ports "
+"do FreeBSD após a compilação final (ou o que é esperado ser final) de uma "
+"fase <literal>RC</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:332
-#, fuzzy
 msgid ""
 "If the release is being created from an existing <literal>stable/</literal> "
 "branch, the <acronym>KBI</acronym> freeze date can be excluded, since the "
 "<acronym>KBI</acronym> is already considered frozen on established "
 "<literal>stable/</literal> branches."
 msgstr ""
-"Se o release estiver sendo criado a partir de um branch <literal> stable / </"
-"literal> existente, a data de congelamento do <acronym> KBI </acronym> "
-"poderá ser excluída, já que o <acronym> KBI </acronym> já é considerado "
-"congelado estabelecer ramificações <literal> stable / </literal>."
+"Se a versão RELEASE estiver sendo criada a partir de uma branch "
+"<literal>stable</literal> existente, a data de congelamento do <acronym>KBI</"
+"acronym> poderá ser excluída, já que o <acronym>KBI</acronym> já está "
+"congelado em branchs <literal>stable</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:339
-#, fuzzy
 msgid ""
 "When writing the release cycle schedule, a number of things need to be taken "
 "into consideration, in particular milestones where the target date depends "
@@ -558,28 +525,26 @@ msgid ""
 "quarterly branch is used, when the release tag can happen, and what revision "
 "of the ports tree is used for the final <literal>RELEASE</literal> build."
 msgstr ""
-"Ao escrever o cronograma do ciclo de liberação, várias coisas precisam ser "
+"Ao escrever o cronograma do ciclo de versões, várias coisas precisam ser "
 "levadas em consideração, em particular marcos, em que a data alvo depende de "
 "marcos pré-definidos sobre os quais existe uma dependência. Por exemplo, a "
-"tag de lançamento do Ports Collection é originada da ramificação trimestral "
-"ativa no momento da última <literal> RC </literal>. Isso em parte define "
-"qual ramificação trimestral é usada, quando a tag de lançamento pode "
-"acontecer e qual revisão da árvore de ports é usada para a construção final "
-"de <literal> RELEASE </literal>."
+"marcação de release da Coleção de Ports é originada da branch trimestral "
+"ativa no momento da última fase do <literal>RC</literal>. Isso em parte "
+"define qual branch trimestral é usada, quando a marcação pode acontecer e "
+"qual revisão da árvore de ports é usada para a construção final de uma "
+"<literal>RELEASE</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:349
-#, fuzzy
 msgid ""
 "After general agreement on the schedule, the FreeBSD Release Engineering "
 "Team emails the schedule to the FreeBSD Developers."
 msgstr ""
 "Depois de um acordo geral sobre o cronograma, a Equipe de Engenharia de "
-"Lançamentos do FreeBSD envia e-mails para os desenvolvedores do FreeBSD."
+"Release do FreeBSD envia e-mails para os desenvolvedores do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:352
-#, fuzzy
 msgid ""
 "It is somewhat typical that many developers will inform the FreeBSD Release "
 "Engineering Team about various works-in-progress. In some cases, an "
@@ -587,15 +552,14 @@ msgid ""
 "request for <quote>blanket approval</quote> to a particular subset of the "
 "tree will be made."
 msgstr ""
-"É um pouco típico que muitos desenvolvedores informem a Equipe de Engenharia "
-"de Lançamentos do FreeBSD sobre vários trabalhos em andamento. Em alguns "
-"casos, uma extensão para o trabalho em andamento será solicitada e, em "
-"outros casos, uma solicitação para <quote> aprovação geral </quote> para um "
-"subconjunto específico da árvore será feita."
+"É normal que muitos desenvolvedores informem a Equipe de Engenharia de "
+"Release do FreeBSD sobre vários trabalhos em andamento. Em alguns casos, uma "
+"extensão para o trabalho em andamento será solicitada e, em outros casos, "
+"uma solicitação para <quote>aprovação geral</quote> para um subconjunto "
+"específico da árvore será feita."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:358
-#, fuzzy
 msgid ""
 "When such requests are made, it is important to make sure timelines (even if "
 "estimated) are discussed. For blanket approvals, the length of time for the "
@@ -607,11 +571,11 @@ msgstr ""
 "cronogramas (mesmo que estimados) sejam discutidos. Para aprovações gerais, "
 "o período de tempo para a aprovação geral deve ser claro. Por exemplo, um "
 "desenvolvedor do FreeBSD pode solicitar aprovações gerais desde o início do "
-"slush de código até o início da construção do <literal> RC </literal>."
+"pré congelamento de código até o início da construção da primeira "
+"<literal>RC</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:366
-#, fuzzy
 msgid ""
 "In order to keep track of blanket approvals, the FreeBSD Release Engineering "
 "Team uses an internal repository to keep a running log of such requests, "
@@ -625,23 +589,22 @@ msgstr ""
 "Para manter o controle das aprovações coletivas, a Equipe de Engenharia de "
 "Release do FreeBSD usa um repositório interno para manter um registro em "
 "execução de tais solicitações, que define a área na qual uma aprovação geral "
-"foi concedida, o (s) autor (es), quando a aprovação geral expira e a razão "
+"foi concedida, o(s) autor(es), quando a aprovação geral expira e a razão "
 "pela qual a aprovação foi concedida. Um exemplo disso é conceder aprovação "
 "geral a <filename class=\"directory\">release/doc/</filename> a todos os "
 "membros da Equipe de Engenharia do Release do FreeBSD até o <literal>RC</"
-"literal> final para atualizar as notas de lançamento e outros documentação "
+"literal> final para atualizar as notas de lançamento e outras documentação "
 "relacionada à liberação."
 
 #. (itstool) path: note/para
 #: article.translate.xml:377
-#, fuzzy
 msgid ""
 "The FreeBSD Release Engineering Team also uses this repository to track "
 "pending approval requests that are received just prior to starting various "
 "builds during the release cycle, which the Release Engineer specifies the "
 "cutoff period with an email to the FreeBSD developers."
 msgstr ""
-"A Equipe de Engenharia de Lançamentos do FreeBSD também usa este repositório "
+"A Equipe de Engenharia de Release do FreeBSD também usa este repositório "
 "para rastrear solicitações de aprovação pendentes que são recebidas antes de "
 "iniciar várias construções durante o ciclo de lançamento, que o Engenheiro "
 "de Release especifica o período de corte com um email para os "
@@ -649,7 +612,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:384
-#, fuzzy
 msgid ""
 "Depending on the underlying set of code in question, and the overall impact "
 "the set of code has on FreeBSD as a whole, such requests may be approved or "
@@ -657,12 +619,11 @@ msgid ""
 msgstr ""
 "Dependendo do conjunto de código subjacente em questão, e do impacto geral "
 "que o conjunto de código tem no FreeBSD como um todo, tais solicitações "
-"podem ser aprovadas ou negadas pela Equipe de Engenharia de Lançamentos do "
+"podem ser aprovadas ou negadas pela Equipe de Engenharia de Release do "
 "FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:388
-#, fuzzy
 msgid ""
 "The same applies to work-in-progress extensions. For example, in-progress "
 "work for a new device driver that is otherwise isolated from the rest of the "
@@ -674,36 +635,32 @@ msgstr ""
 "trabalho em andamento para um novo driver de dispositivo que, de outra "
 "forma, é isolado do restante da árvore pode receber uma extensão. Um novo "
 "agendador, no entanto, pode não ser viável, especialmente se tais mudanças "
-"dramáticas não existirem em outro ramo."
+"dramáticas não existirem em outra branch."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:395
-#, fuzzy
 msgid ""
 "The schedule is also added to the Project website, in the <literal>doc/</"
 "literal> repository, in <filename>head/en_US.ISO8859-1/htdocs/releases/"
 "<replaceable>11.0</replaceable>R/schedule.xml</filename>. This file is "
 "continuously updated as the release cycle progresses."
 msgstr ""
-"O agendamento também é adicionado ao site do Project, no repositório "
-"<literal> doc / </literal>, em <filename> head / en_US.ISO8859-1 / htdocs / "
-"releases / <replaceable> 11.0 </replaceable> R / schedule .xml </filename>. "
-"Este arquivo é continuamente atualizado conforme o ciclo de lançamento "
-"progride."
+"O agendamento também é adicionado ao site do projeto, no repositório "
+"<literal>doc</literal>, em <filename>head/en_US.ISO8859-1/htdocs/releases/"
+"<replaceable>11.0</replaceable>R/schedule.xml</filename>. Este arquivo é "
+"continuamente atualizado conforme o ciclo progride."
 
 #. (itstool) path: note/para
 #: article.translate.xml:402
-#, fuzzy
 msgid ""
 "In most cases, the <filename>schedule.xml</filename> can be copied from a "
 "prior release and updated accordingly."
 msgstr ""
-"Na maioria dos casos, o <filename> schedule.xml </filename> pode ser copiado "
+"Na maioria dos casos, o <filename>schedule.xml</filename> pode ser copiado "
 "de uma versão anterior e atualizado de acordo."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:406
-#, fuzzy
 msgid ""
 "In addition to adding <filename>schedule.xml</filename> to the website, "
 "<filename>head/share/xml/navibar.ent</filename> and <filename>head/share/xml/"
@@ -711,37 +668,34 @@ msgid ""
 "various subpages, as well as enabling the link to the schedule on the "
 "Project website index page."
 msgstr ""
-"Além de adicionar <filename> schedule.xml </filename> ao site, <filename> "
-"head / share / xml / navibar.ent </filename> e <filename> head / share / xml "
-"/ release.ent </filename > também são atualizados para adicionar o link ao "
-"agendamento para várias subpáginas, bem como habilitar o link para o "
-"agendamento na página de índice do site do Project."
+"Além de adicionar <filename>schedule.xml</filename> ao site, <filename>head/"
+"share/xml/navibar.ent</filename> e <filename>head/share/xml/release.ent</"
+"filename> também são atualizados para adicionar o link ao agendamento para "
+"várias subpáginas, bem como habilitar o link para o agendamento na página de "
+"índice da página web do projeto."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:413
-#, fuzzy
 msgid ""
 "The schedule is also linked from <filename>head/en_US.ISO8859-1/htdocs/"
 "releng/index.xml</filename>."
 msgstr ""
-"O agendamento também está vinculado a partir de <filename> head / en_US."
-"ISO8859-1 / htdocs / releng / index.xml </filename>."
+"O agendamento também está vinculado a partir de <filename>head/en_US.ISO8859-"
+"1/htdocs/releng/index.xml</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:416
-#, fuzzy
 msgid ""
 "Approximately one month prior to the scheduled <quote>code slush</quote>, "
 "the FreeBSD Release Engineering Team sends a reminder email to the FreeBSD "
 "Developers."
 msgstr ""
-"Aproximadamente um mês antes do slush de código <quote> programado </quote>, "
-"a Equipe de Engenharia de Lançamentos do FreeBSD envia um email de lembrete "
-"para os desenvolvedores do FreeBSD."
+"Aproximadamente um mês antes do <quote>pré congelamento do código</quote>, a "
+"Equipe de Engenharia de Release do FreeBSD envia um email de lembrete para "
+"os desenvolvedores do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:420
-#, fuzzy
 msgid ""
 "Once the first builds of the release cycle are available, update the "
 "<literal>beta.local.where</literal> entity in <filename>head/en_US.ISO8859-1/"
@@ -749,30 +703,27 @@ msgid ""
 "replacing <literal>IGNORE</literal> with <literal>INCLUDE</literal>."
 msgstr ""
 "Uma vez que as primeiras compilações do ciclo de lançamento estejam "
-"disponíveis, atualize a entidade <literal> beta.local.where </literal> em "
-"<filename> head / en_US.ISO8859-1 / htdocs / releases / <replaceable> 11.0 </"
-"replaceable> R / schedule.xml </filename>. substituindo <literal> IGNORE </"
-"literal> por <literal> INCLUDE </literal>."
+"disponíveis, atualize a entidade <literal>beta.local.where</literal> em "
+"<filename>head/en_US.ISO8859-1/htdocs/releases/<replaceable>11.0</"
+"replaceable>R/schedule.xml</filename>. substituindo <literal>IGNORE</"
+"literal> por <literal>INCLUDE</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:427
-#, fuzzy
 msgid ""
 "If two parallel release cycles are happening at once, the <literal>beta2."
 "local.where</literal> entity may be used instead."
 msgstr ""
 "Se dois ciclos de lançamento paralelo estão acontecendo ao mesmo tempo, a "
-"entidade <literal> beta2.local.where </literal> pode ser usada no lugar."
+"entidade <literal>beta2.local.where</literal> pode ser usada no lugar."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:440
-#, fuzzy
 msgid "Release Engineering Terminology"
-msgstr "Solucionar terminologia de engenharia"
+msgstr "Terminologia da Engenhadia de Release (Versão)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
-#, fuzzy
 msgid ""
 "This section describes some of the terminology used throughout the rest of "
 "this document."
@@ -782,62 +733,58 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:446
-#, fuzzy
 msgid "The Code Slush"
-msgstr "O Código Slush"
+msgstr "O <literal>Code Slush</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:448
-#, fuzzy
 msgid ""
 "Although the code slush is not a hard freeze on the tree, the FreeBSD "
 "Release Engineering Team requests that bugs in the existing code base take "
 "priority over new features."
 msgstr ""
-"Embora o slush de código não seja um congelamento difícil na árvore, a "
-"Equipe de Engenharia de Release do FreeBSD solicita que os bugs existentes "
-"na base de código tenham prioridade sobre os novos recursos."
+"Embora o <literal>code slush</literal> não seja um congelamento difícil na "
+"árvore, a Equipe de Engenharia de Versionamento do FreeBSD solicita que "
+"resoluções dos bugs existentes no código tenham prioridade sobre "
+"implementação de novos recursos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
-#, fuzzy
 msgid "The code slush does not enforce commit approvals to the branch."
-msgstr "O código slush não impõe aprovações de confirmação para o ramo."
+msgstr ""
+"O <literal>code slush</literal> não impõe aprovações de confirmação para o "
+"ramo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:457
-#, fuzzy
 msgid "The Code Freeze"
 msgstr "O congelamento de código"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:459
-#, fuzzy
 msgid ""
 "The code freeze marks the point in time where all commits to the branch "
 "require explicit approval from the FreeBSD Release Engineering Team."
 msgstr ""
 "O congelamento de código marca o momento em que todos os commits para o "
-"branch exigem aprovação explícita da Equipe de Engenharia de Lançamentos do "
-"FreeBSD."
+"branch exigem aprovação explícita da Equipe de Engenharia de Versionamento "
+"do FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:462
-#, fuzzy
 msgid ""
 "The FreeBSD <application>Subversion</application> repository contains "
 "several hooks to perform sanity checks before any commit is actually "
 "committed to the tree. One of these hooks will evaluate if committing to a "
 "particular branch requires specific approval."
 msgstr ""
-"O repositório do FreeBSD <application> Subversion </application> contém "
-"vários ganchos para executar verificações de integridade antes que qualquer "
-"commit seja realmente confirmado na árvore. Um desses ganchos avaliará se o "
-"comprometimento com uma ramificação específica requer aprovação específica."
+"O repositório <application>Subversion</application> do FreeBSD contém vários "
+"ganchos para executar verificações de integridade antes que qualquer commit "
+"seja realmente confirmado na árvore. Um desses ganchos avaliará se o "
+"comprometimento com uma branch específica requer aprovação específica."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:468
-#, fuzzy
 msgid ""
 "To enforce commit approvals by the FreeBSD Release Engineering Team, the "
 "Release Engineer updates <filename>base/svnadmin/conf/approvers</filename>, "
@@ -845,27 +792,25 @@ msgid ""
 "to the branch must include an <quote>Approved by:</quote> line in the commit "
 "message."
 msgstr ""
-"Para impor aprovações de confirmação pela Equipe de Engenharia de "
-"Lançamentos do FreeBSD, o Engenheiro de Lançamentos atualiza o <filename> "
-"base / svnadmin / conf / approvers </filename>, e confirma a mudança de "
-"volta para o repositório. Feito isso, qualquer alteração no ramo deve "
-"incluir uma linha <quote> Aprovado por: </quote> na mensagem de confirmação."
+"Para impor aprovações de commit pela Equipe de Engenharia de Release do "
+"FreeBSD, o Engenheiro de Release atualiza o <filename>base/svnadmin/conf/"
+"approvers</filename>, e confirma a mudança de volta para o repositório. "
+"Feito isso, qualquer alteração na branch deve incluir uma linha "
+"<quote>Aprovado por:</quote> na mensagem de commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:475
-#, fuzzy
 msgid ""
 "The <quote>Approved by:</quote> line must match the second column in "
 "<filename>base/svnadmin/conf/approvers</filename>, otherwise the commit will "
 "be rejected by the repository hooks."
 msgstr ""
-"A linha <quote> Aprovada por: </quote> deve corresponder à segunda coluna em "
-"<filename> base / svnadmin / conf / aprovadores </filename>, caso contrário, "
-"a confirmação será rejeitada pelos ganchos do repositório."
+"A linha <quote>Aprovada por:</quote> deve corresponder à segunda coluna em "
+"<filename>base/svnadmin/conf/aprovovers </filename>, caso contrário, o "
+"commit será rejeitado pelos ganchos do repositório."
 
 #. (itstool) path: note/para
 #: article.translate.xml:481
-#, fuzzy
 msgid ""
 "During the code freeze, FreeBSD committers are urged to follow the <link "
 "xlink:href=\"https://wiki.freebsd.org/Releng/"
@@ -873,17 +818,15 @@ msgid ""
 msgstr ""
 "Durante o congelamento de código, os committers do FreeBSD devem seguir as "
 "<link xlink:href=\"https://wiki.freebsd.org/Releng/"
-"ChangeRequestGuidelines\"> Change Request Guidelines </link>."
+"ChangeRequestGuidelines\">Recomendações de Requisição de Mudanças</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:488
-#, fuzzy
 msgid "The <acronym>KBI</acronym>/<acronym>KPI</acronym> Freeze"
-msgstr "O <acronym> KBI </acronym> / <acronym> KPI </acronym> Congelar"
+msgstr "O Congelamento de <acronym>KBI</acronym>/<acronym>KPI</acronym>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:491
-#, fuzzy
 msgid ""
 "<acronym>KBI</acronym>/<acronym>KPI</acronym> stability implies that the "
 "caller of a function across two different releases of software that "
@@ -892,16 +835,15 @@ msgid ""
 "certain way, otherwise the <acronym>KBI</acronym>/<acronym>KPI</acronym> "
 "stability on the branch is broken."
 msgstr ""
-"A estabilidade de <acronym> KBI </acronym> / <acronym> KPI </acronym> "
-"implica que o chamador de uma função através de duas versões diferentes de "
-"software que implementam a função resulta no mesmo estado final. O chamador, "
-"seja um processo, encadeamento ou função, espera que a função opere de uma "
-"determinada maneira, caso contrário, a estabilidade do <acronym> KBI </"
-"acronym> / <acronym> KPI </acronym> no ramo é interrompida."
+"A estabilidade de <acronym>KBI</acronym>/<acronym>KPI</acronym> implica que "
+"o caller (que faz uma chamada) de uma função através de duas versões "
+"diferentes de software que implementam a função, resulta no mesmo estado "
+"final. O caller, seja um processo, thread ou função, espera que a função "
+"opere de uma determinada maneira, caso contrário, a estabilidade do "
+"<acronym>KBI</acronym>/<acronym>KPI</acronym> na branch é interrompida."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:510
-#, fuzzy
 msgid ""
 "This section describes the changes to the website that should occur as the "
 "release cycle progresses."
@@ -911,25 +853,22 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:514
-#, fuzzy
 msgid ""
 "The files specified throughout this section are relative to the "
 "<literal>head/</literal> branch of the <literal>doc</literal> repository in "
 "<application>Subversion</application>."
 msgstr ""
-"Os arquivos especificados ao longo desta seção são relativos à ramificação "
-"<literal> head / </literal> do repositório <literal> doc </literal> no "
-"<application> Subversion </application>."
+"Os arquivos especificados ao longo desta seção são relativos à branch "
+"<literal>head/</literal> do repositório <literal>doc</literal> no "
+"<application>Subversion</application>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:521
-#, fuzzy
 msgid "Website Changes Before the Release Cycle Begins"
-msgstr "Alterações no site antes do início do ciclo de lançamento"
+msgstr "Alterações na página web antes do início do ciclo de versionamento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:523
-#, fuzzy
 msgid ""
 "When the release cycle schedule is available, these files need to be updated "
 "to enable various different functionalities on the FreeBSD Project website:"
@@ -945,7 +884,6 @@ msgstr ""
 #: article.translate.xml:758
 #: article.translate.xml:869
 #: article.translate.xml:949
-#, fuzzy
 msgid "File to Edit"
 msgstr "Arquivo para editar"
 
@@ -956,7 +894,6 @@ msgstr "Arquivo para editar"
 #: article.translate.xml:759
 #: article.translate.xml:870
 #: article.translate.xml:950
-#, fuzzy
 msgid "What to Change"
 msgstr "O que mudar"
 
@@ -966,131 +903,115 @@ msgstr "O que mudar"
 #: article.translate.xml:552
 #: article.translate.xml:559
 #: article.translate.xml:597
-#, fuzzy
 msgid "<filename>share/xml/release.ent</filename>"
-msgstr "<filename> share / xml / release.ent </filename>"
+msgstr "<filename>share/xml/release.ent</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:539
-#, fuzzy
 msgid ""
 "Change <literal>beta.upcoming</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal> beta.upcoming </literal> de <literal> IGNORE </literal> "
-"para <literal> INCLUDE </literal>"
+"Altere <literal>beta.upcoming</literal> de <literal>IGNORE</literal> para "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:546
-#, fuzzy
 msgid ""
 "Change <literal>% beta.upcoming</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal>% beta.upcoming </literal> de <literal> IGNORE </literal> "
-"para <literal> INCLUDE </literal>"
+"Altere <literal>% beta.upcoming</literal> de <literal>IGNORE</literal> para "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:553
-#, fuzzy
 msgid ""
 "Change <literal>beta.testing</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal> beta.testing </literal> de <literal> IGNORE </literal> para "
-"<literal> INCLUDE </literal>"
+"Altere <literal>beta.testing</literal> de <literal>IGNORE</literal> para "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:560
-#, fuzzy
 msgid ""
 "Change <literal>% beta.testing</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal>% beta.testing </literal> de <literal> IGNORE </literal> "
-"para <literal> INCLUDE </literal>"
+"Altere <literal>% beta.testing</literal> de <literal>IGNORE</literal> para "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:570
-#, fuzzy
 msgid ""
 "Website Changes During <literal>BETA</literal> or <literal>RC</literal>"
 msgstr ""
-"Alterações no site durante o <literal> BETA </literal> ou <literal> RC </"
-"literal>"
+"Alterações na página web durante a fase <literal>BETA</literal> ou "
+"<literal>RC</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:573
-#, fuzzy
 msgid ""
 "When transitioning from <literal>PRERELEASE</literal> to <literal>BETA</"
 "literal>, these files need to be updated to enable the \"Help Test\" block "
 "on the download page. All files are relative to <filename class="
 "\"directory\">head/</filename> in the <literal>doc</literal> repository:"
 msgstr ""
-"Ao fazer a transição de <literal> PRERELEASE </literal> para <literal> BETA "
-"</literal>, esses arquivos precisam ser atualizados para ativar o bloco "
+"Ao fazer a transição de <literal>PRERELEASE</literal> para <literal>BETA</"
+"literal>, esses arquivos precisam ser atualizados para ativar o bloco "
 "\"Teste de ajuda\" na página de download. Todos os arquivos são relativos ao "
-"<filename class=\"directory\"> head / </filename> no repositório <literal> "
-"doc </literal>:"
+"<filename class=\"directory\">head/</filename> no repositório <literal>doc</"
+"literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:590
-#, fuzzy
 msgid ""
 "<filename>en_US.ISO8859-1/htdocs/releases/11.0R/schedule.xml</filename>"
 msgstr ""
-"<filename> en_US.ISO8859-1 / htdocs / releases / 11.0R / schedule.xml </"
-"filename>"
+"<filename>en_US.ISO8859-1/htdocs/releases/11.0R/schedule.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:591
-#, fuzzy
 msgid ""
 "Change <literal>% beta.local.where</literal> <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal>% beta.local.where </literal> <literal> IGNORE </literal> "
-"para <literal> INCLUDE </literal>"
+"Altere <literal>% beta.local.where</literal> <literal>IGNORE</literal> para "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:598
-#, fuzzy
 msgid ""
 "Update <literal>% betarel.vers</literal> to <literal>BETA<replaceable>1</"
 "replaceable></literal>"
 msgstr ""
-"Atualize <literal>% betarel.vers </literal> para <literal> BETA "
-"<replaceable> 1 </replaceable> </literal>"
+"Atualize <literal>% betarel.vers</literal> para <literal>BETA<replaceable>1</"
+"replaceable></literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:603
-#, fuzzy
 msgid "<filename>share/xml/news.xml</filename>"
-msgstr "<filename> share / xml / news.xml </filename>"
+msgstr "<filename>share/xml/news.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:604
-#, fuzzy
 msgid "Add an entry announcing the <literal>BETA</literal>"
-msgstr "Adicione uma entrada anunciando o <literal> BETA </literal>"
+msgstr "Adicione uma entrada anunciando a versão <literal>BETA</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:611
-#, fuzzy
 msgid ""
 "Once the <literal>releng/<replaceable>11.0</replaceable>/</literal> branch "
 "is created, the various release-related documents need to be generated and "
 "manually added to the <literal>doc/</literal> repository."
 msgstr ""
-"Uma vez criada a ramificação <literal> releng / <replaceable> 11.0 </"
-"replaceable> / </literal>, os diversos documentos relacionados à liberação "
-"precisam ser gerados e adicionados manualmente ao repositório <literal> doc /"
-" </literal>."
+"Uma vez criada a branch <literal>releng/<replaceable>11.0</replaceable>/</"
+"literal>, os diversos documentos relacionados à liberação precisam ser "
+"gerados e adicionados manualmente ao repositório <literal>doc/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:615
-#, fuzzy
 msgid ""
 "Within <filename class=\"directory\">release/doc</filename>, invoke "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
@@ -1101,41 +1022,37 @@ msgid ""
 "Y</replaceable>R/</filename>, where <replaceable>X.Y</replaceable> "
 "represents the major and minor version number of the release."
 msgstr ""
-"Dentro de <filename class=\"directory\"> release / doc </filename>, invoque "
-"<citerefentry> <refentrytitle> make </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> para gerar <filename> errata.html </filename>, "
-"<filename> hardware.html </filename>, <filename> readme.html </filename> e "
-"<filename> relnotes.html </filename> páginas, que são então adicionadas ao "
-"diretório <filename class=\"directory\"> doc / head / en_US.ISO8859-1 / "
-"htdocs / releases / <replaceable> XY </replaceable> R / </filename>, em que "
-"<replaceable> XY </replaceable> representa o número da versão principal e "
-"secundária da versão ."
+"Dentro de <filename class=\"directory\">release/doc</filename>, invoque "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para gerar as páginas <filename>errata.html</filename>, "
+"<filename>hardware.html </filename>, <filename> readme.html </filename> e "
+"<filename> relnotes.html </filename>, que são então adicionadas ao diretório "
+"<filename class=\"directory\">doc/head/en_US.ISO8859-1/htdocs/releases/"
+"<replaceable>XY</replaceable>R/</filename>, em que <replaceable>XY</"
+"replaceable> representa o número da versão principal e da versão secundária."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:625
-#, fuzzy
 msgid ""
 "The <literal>fbsd:nokeywords</literal> must be set to <literal>on</literal> "
 "on the newly-added files before the pre-commit hooks will allow them to be "
 "added to the repository."
 msgstr ""
-"O <literal> fbsd: nokeywords </literal> deve ser definido como <literal> on "
-"</literal> nos arquivos recém-adicionados antes que os ganchos de pré-"
-"consolidação permitam que eles sejam adicionados ao repositório."
+"O <literal>fbsd: nokeywords</literal> deve ser definido como <literal>on</"
+"literal> nos arquivos recém-adicionados antes que os ganchos de pré-commit "
+"permitam que eles sejam adicionados ao repositório."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:632
-#, fuzzy
 msgid ""
 "Ports Changes During <literal>BETA</literal>, <literal>RC</literal>, and the "
 "Final <literal>RELEASE</literal>"
 msgstr ""
-"Mudanças de Portas Durante <literal> BETA </literal>, <literal> RC </"
-"literal>, e o Final <literal> RELEASE </literal>"
+"Mudanças em ports durante fases <literal>BETA</literal>, <literal>RC</"
+"literal>, e a versão <literal>RELEASE</literal> final"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:636
-#, fuzzy
 msgid ""
 "For each build during the release cycle, the <literal>MANIFEST</literal> "
 "files containing the <literal>SHA256</literal> of the various distribution "
@@ -1147,53 +1064,49 @@ msgid ""
 "to safely use these distribution sets by providing a mechanism through which "
 "the checksums can be verified."
 msgstr ""
-"Para cada compilação durante o ciclo de lançamento, os arquivos <literal> "
-"MANIFEST </literal> contendo o <literal> SHA256 </literal> dos vários "
-"conjuntos de distribuição, como <literal> base.txz </literal>, <literal> "
-"kernel.txz </literal>, e assim por diante, são adicionados à porta <package> "
-"misc / freebsd-release-manifests </package>. Isso permite que utilitários "
-"diferentes de <citerefentry> <refentrytitle> bsdinstall </refentrytitle> "
-"<manvolnum> 8 </manvolnum> </citerefentry>, como <package> ports-mgmt / "
-"poudriere </package>, usem esses conjuntos de distribuição com segurança "
-"fornecendo um mecanismo através do qual as somas de verificação podem ser "
+"Para cada compilação durante o ciclo de lançamento, os arquivos "
+"<literal>MANIFEST</literal> contendo o <literal>SHA256</literal> dos vários "
+"conjuntos de distribuição, como <literal>base.txz</literal>, <literal>kernel."
+"txz</literal>, e assim por diante, são adicionados ao port <package>misc/"
+"freebsd-release-manifests</package>. Isso permite que utilitários diferentes "
+"de <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, como <package>ports-mgmt/poudriere</package>, "
+"usem esses conjuntos de distribuição com segurança fornecendo um mecanismo "
+"através do qual os checksums (checagem atravém de um calculo) podem ser "
 "verificadas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:656
-#, fuzzy
 msgid "Release from <literal>head/</literal>"
-msgstr "Liberar de <literal> head / </literal>"
+msgstr "Versões oriundas da branch <literal>head/</literal>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:659
-#, fuzzy
 msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from the <literal>head/</literal> branch."
 msgstr ""
-"Esta seção descreve os procedimentos gerais do ciclo de lançamento do "
-"FreeBSD da ramificação <literal> head / </literal>."
+"Esta seção descreve os procedimentos gerais do ciclo de release do FreeBSD "
+"na branch <literal>head</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:663
-#, fuzzy
 msgid "FreeBSD <quote><literal>ALPHA</literal></quote> Builds"
-msgstr "FreeBSD <quote> <literal> ALPHA </literal> </quote> Constrói"
+msgstr "Compilações <quote><literal>ALPHA</literal></quote> do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:665
-#, fuzzy
 msgid ""
 "Starting with the FreeBSD 10.0-RELEASE cycle, the notion of "
 "<quote><literal>ALPHA</literal></quote> builds was introduced. Unlike the "
 "<literal>BETA</literal> and <literal>RC</literal> builds, <literal>ALPHA</"
 "literal> builds are not included in the FreeBSD Release schedule."
 msgstr ""
-"Começando com o ciclo FreeBSD 10.0-RELEASE, a noção de construções <quote> "
-"<literal> ALPHA </literal> </quote> foi introduzida. Ao contrário das "
-"compilações <literal> BETA </literal> e <literal> RC </literal>, as "
-"construções <literal> ALPHA </literal> não são incluídas na programação do "
-"Release do FreeBSD."
+"Tendo aparecido primeiramente durante o ciclo de versionamento para o "
+"FreeBSD 10.0-RELEASE, a noção de compilações de fases <quote><literal>ALPHA</"
+"literal></quote> foi introduzida. Ao contrário das <literal>BETA</literal> e "
+"<literal>RC</literal>, as compilações desse novo estágio <literal>ALPHA</"
+"literal> não são incluídas nos agendamentos da Release do FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:671
@@ -1203,8 +1116,8 @@ msgid ""
 "literal> branch."
 msgstr ""
 "A idéia por trás das compilações <literal>ALPHA</literal> é fornecer "
-"construções regulares fornecidas pelo FreeBSD antes da criação da "
-"ramificação <literal>stable/</literal>."
+"construções regulares fornecidas pelo FreeBSD antes da criação da branch "
+"<literal>stable/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:675
@@ -1226,9 +1139,9 @@ msgid ""
 msgstr ""
 "Para a primeira construção <literal>ALPHA</literal>, o valor "
 "<varname>BRANCH</varname> em <filename>sys/conf/newvers.sh</filename> "
-"precisa ser alterado de <literal>CURRENT</literal >para<literal>ALPHA1</"
-"literal>. Para construções <literal>ALPHA</literal> subsequentes, incremente "
-"cada valor <literal>ALPHA<replaceable>N</replaceable></literal> em um."
+"precisa ser alterado de <literal>CURRENT</literal> para <literal>ALPHA1</"
+"literal>. Para compilações <literal>ALPHA</literal> subsequentes, incremente "
+"cada valor de <literal>ALPHA<replaceable>N</replaceable></literal> em um."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:686
@@ -1236,7 +1149,7 @@ msgid ""
 "See <xref linkend=\"releng-building\"/> for information on building the "
 "<literal>ALPHA</literal> images."
 msgstr ""
-"Veja <xref linkend = \"releng-building\"/> para informações sobre como "
+"Veja <xref linkend=\"releng-building\"/> para informações sobre como "
 "construir as imagens <literal>ALPHA</literal>."
 
 #. (itstool) path: sect2/title
@@ -1244,11 +1157,10 @@ msgstr ""
 msgid ""
 "Creating the <literal>stable/<replaceable>11</replaceable>/</literal> Branch"
 msgstr ""
-"Criando o ramo <literal>stable/<replaceable>11</replaceable>/</literal>"
+"Criando a branch <literal>stable/<replaceable>11</replaceable>/</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:693
-#, fuzzy
 msgid ""
 "When creating the <literal>stable/</literal> branch, several changes are "
 "required in both the new <literal>stable/</literal> branch and the "
@@ -1256,11 +1168,11 @@ msgid ""
 "repository root. To create the new <literal>stable/<replaceable>11</"
 "replaceable>/</literal> branch in Subversion:"
 msgstr ""
-"Ao criar a ramificação <literal> stable / </literal>, várias alterações são "
-"necessárias na nova ramificação <literal> stable / </literal> e na "
-"ramificação <literal> head / </literal>. Os arquivos listados são relativos "
-"à raiz do repositório. Para criar a nova ramificação <literal> stable / "
-"<replaceable> 11 </replaceable> / </literal> no Subversion:"
+"Ao criar a branch <literal>stable/</literal>, várias alterações são "
+"necessárias na nova branch <literal>stable/</literal> e na branch "
+"<literal>head/</literal>. Os arquivos listados são relativos ao repositório "
+"raiz. Para criar a nova branch <literal>stable/<replaceable>11</replaceable>/"
+"</literal> no Subversion:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:699
@@ -1278,8 +1190,8 @@ msgid ""
 "Once the <literal>stable/<replaceable>11</replaceable>/</literal> branch has "
 "been committed, make the following edits:"
 msgstr ""
-"Uma vez que o ramo <literal>stable/<replaceable>11</replaceable>/</literal> "
-"tenha sido confirmado, faça as seguintes edições:"
+"Uma vez que a branch <literal>stable/<replaceable>11</replaceable>/</"
+"literal> tenha sido confirmada, faça as seguintes edições:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:715
@@ -1344,285 +1256,243 @@ msgstr "Atualizar <varname>SRCBRANCH</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:738
-#, fuzzy
 msgid ""
 "<filename>stable/<replaceable>11</replaceable>/sys/*/conf/GENERIC-NODEBUG</"
 "filename>"
 msgstr ""
-"<filename> stable / <replaceable> 11 </replaceable> / sys / * / conf / "
-"GENERIC-NODEBUG </filename>"
+"<filename>stable/<replaceable>11</replaceable>/sys/*/conf/GENERIC-NODEBUG</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:739
-#, fuzzy
 msgid "Remove these kernel configurations"
 msgstr "Remova essas configurações do kernel"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:743
 #: article.translate.xml:982
-#, fuzzy
 msgid ""
 "<filename>stable/<replaceable>11</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 msgstr ""
-"<filename> stable / <replaceable> 11 </replaceable> /sys/conf/newvers.sh </"
+"<filename>stable/<replaceable>11</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:744
-#, fuzzy
 msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>BETA1</"
 "literal>"
 msgstr ""
-"Atualize o valor <varname> BRANCH </varname> para refletir <literal> BETA1 </"
-"literal>"
+"Atualize o valor de <varname>BRANCH</varname> para refletir em "
+"<literal>BETA1</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:751
-#, fuzzy
 msgid ""
 "Then in the <literal>head/</literal> branch, which will now become a new "
 "major version:"
 msgstr ""
-"Então, na ramificação <literal> head / </literal>, que agora se tornará uma "
-"nova versão principal:"
+"Então, na branch <literal>head/</literal>, que agora se tornará uma nova "
+"versão principal:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:765
-#, fuzzy
 msgid "<filename>head/UPDATING</filename>"
-msgstr "<filename> head / UPDATING </filename>"
+msgstr "<filename>head/UPDATING</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:766
-#, fuzzy
 msgid "Update the FreeBSD version"
 msgstr "Atualize a versão do FreeBSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:770
-#, fuzzy
 msgid "<filename>head/gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
-msgstr ""
-"<filename> head / gnu / usr.bin / groff / tmac / mdoc.local.in </filename>"
+msgstr "<filename>head/gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:771
 #: article.translate.xml:877
-#, fuzzy
 msgid "Add the new FreeBSD version"
 msgstr "Adicione a nova versão do FreeBSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:775
-#, fuzzy
 msgid "<filename>head/sys/conf/newvers.sh</filename>"
-msgstr "<filename> head / sys / conf / newvers.sh </filename>"
+msgstr "<filename>head/sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:776
-#, fuzzy
 msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>CURRENT</"
 "literal>, and increment <literal>REVISION</literal>"
 msgstr ""
-"Atualize o valor <varname> BRANCH </varname> para refletir <literal> CURRENT "
-"</literal> e incremente <literal> REVISION </literal>"
+"Atualize o valor de <varname>BRANCH</varname> para refletir em "
+"<literal>CURRENT</literal> e incremente <literal>REVISION</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:782
-#, fuzzy
 msgid "<filename>head/Makefile.inc1</filename>"
-msgstr "<filename> head / Makefile.inc1 </filename>"
+msgstr "<filename>head/Makefile.inc1</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:783
 #: article.translate.xml:888
-#, fuzzy
 msgid "Update <varname>TARGET_TRIPLE</varname>"
-msgstr "Atualizar <varname> TARGET_TRIPLE </varname>"
+msgstr "Atualizar <varname>TARGET_TRIPLE</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:787
-#, fuzzy
 msgid "<filename>head/sys/sys/param.h</filename>"
-msgstr "<filename> head / sys / sys / param.h </filename>"
+msgstr "<filename>head/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:788
-#, fuzzy
 msgid "Update <literal>__FreeBSD_version</literal>"
-msgstr "Atualizar <literal> __ FreeBSD_version </literal>"
+msgstr "Atualizar <literal>__FreeBSD_version</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:792
-#, fuzzy
 msgid ""
 "<filename>head/contrib/llvm/tools/clang/lib/Basic/Targets.cpp</filename>"
 msgstr ""
-"<filename> head / contrib / llvm / ferramentas / clang / lib / Basic / "
-"Targets.cpp </filename>"
+"<filename>head/contrib/llvm/tools/clang/lib/Basic/Targets.cpp</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:793
-#, fuzzy
 msgid "Update <literal>__FreeBSD_cc_version</literal>"
-msgstr "Atualizar <literal> __ FreeBSD_cc_version </literal>"
+msgstr "Atualizar <literal>__FreeBSD_cc_version</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:798
-#, fuzzy
 msgid "<filename>head/gnu/usr.bin/cc/cc_tools/freebsd-native.h</filename>"
-msgstr ""
-"<filename> head / gnu / usr.bin / cc / cc_tools / freebsd-native.h </"
-"filename>"
+msgstr "<filename>head/gnu/usr.bin/cc/cc_tools/freebsd-native.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:799
-#, fuzzy
 msgid ""
 "Update <literal>FBSD_MAJOR</literal> and <literal>FBSD_CC_VER</literal>"
 msgstr ""
-"Atualizar <literal> FBSD_MAJOR </literal> e <literal> FBSD_CC_VER </literal>"
+"Atualizar <literal>FBSD_MAJOR</literal> e <literal>FBSD_CC_VER</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:804
-#, fuzzy
 msgid "<filename>head/contrib/gcc/config.gcc</filename>"
-msgstr "<filename> head / contrib / gcc / config.gcc </filename>"
+msgstr "<filename>head/contrib/gcc/config.gcc</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:805
-#, fuzzy
 msgid "Append the <literal>freebsd&lt;version&gt;.h</literal> section"
-msgstr "Anexe a seção <literal> freebsd &lt; versão &gt; .h </literal>"
+msgstr "Anexe a seção <literal>freebsd&lt;versão&gt;.h</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:811
-#, fuzzy
 msgid "<filename>head/release/Makefile</filename>"
-msgstr "<filename> head / release / Makefile </filename>"
+msgstr "<filename>head/release/Makefile</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:812
-#, fuzzy
 msgid "Remove the <literal>debug.witness.trace</literal> entries"
-msgstr "Remova as entradas <literal> debug.witness.trace </literal>"
+msgstr "Remova as entradas <literal>debug.witness.trace</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:817
-#, fuzzy
 msgid ""
 "<filename>head/release/doc/en_US.ISO8859-1/readme/article.xml</filename>"
 msgstr ""
-"<filename> head / release / doc / pt_BR.ISO8859-1 / readme / article.xml </"
-"filename>"
+"<filename>head/release/doc/en_US.ISO8859-1/readme/article.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:818
-#, fuzzy
 msgid "Replace &amp;a.current; with &amp;a.stable;"
-msgstr "Substituir &amp; a.corrente; com &amp; a.stable;"
+msgstr "Substituir &amp;a.ccurrent; com &amp; a.stable;"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:829
-#, fuzzy
 msgid "<filename>head/lib/clang/clang.build.mk</filename>"
-msgstr "<filename> head / lib / clang / clang.build.mk </filename>"
+msgstr "<filename>head/lib/clang/clang.build.mk</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:830
-#, fuzzy
 msgid "Uncomment <literal>-DNDEBUG</literal>"
-msgstr "Remova o comentário <literal> -DNDEBUG </literal>"
+msgstr "Remova o comentário <literal>-DNDEBUG</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:834
-#, fuzzy
 msgid "<filename>head/lib/clang/freebsd_cc_version.h</filename>"
-msgstr "<filename> head / lib / clang / freebsd_cc_version.h </filename>"
+msgstr "<filename>head/lib/clang/freebsd_cc_version.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:835
-#, fuzzy
 msgid "Update <literal>FREEBSD_CC_VERSION</literal>"
-msgstr "Atualizar <literal> FREEBSD_CC_VERSION </literal>"
+msgstr "Atualizar <literal>FREEBSD_CC_VERSION</literal>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:851
-#, fuzzy
 msgid "Release from <literal>stable/</literal>"
-msgstr "Liberar de <literal> stable / </literal>"
+msgstr "Release (Versão) a partir da <literal>stable/</literal>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:853
-#, fuzzy
 msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from an extablished <literal>stable/</literal> branch."
 msgstr ""
 "Esta seção descreve os procedimentos gerais do ciclo de liberação do FreeBSD "
-"a partir de uma ramificação <literal> stable / </literal>."
+"a partir de uma branch <literal>stable/</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:857
-#, fuzzy
 msgid "FreeBSD <literal>stable</literal> Branch Code Slush"
-msgstr "FreeBSD <literal> stable </literal> Código de Ramo Slush"
+msgstr ""
+"Branch (Ramificação) <literal>stable</literal> de código congelado do "
+"FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:859
-#, fuzzy
 msgid ""
 "In preparation for the code freeze on a <literal>stable</literal> branch, "
 "several files need to be updated to reflect the release cycle is officially "
 "in progress. These files are all relative to the top-most level of the "
 "stable branch:"
 msgstr ""
-"Na preparação para o congelamento de código em uma ramificação <literal> "
-"stable </literal>, vários arquivos precisam ser atualizados para refletir o "
-"ciclo de liberação que está oficialmente em andamento. Esses arquivos são "
-"todos relativos ao nível mais alto do ramo estável:"
+"Na preparação para o congelamento de código em uma branch <literal>stable</"
+"literal>, vários arquivos precisam ser atualizados para refletir o ciclo de "
+"liberação que está oficialmente em andamento. Esses arquivos são todos "
+"relativos ao nível mais alto da branch stable:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:876
-#, fuzzy
 msgid "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
-msgstr "<filename> gnu / usr.bin / groff / tmac / mdoc.local.in </filename>"
+msgstr "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:881
-#, fuzzy
 msgid "<filename>sys/conf/newvers.sh</filename>"
-msgstr "<filename> sys / conf / newvers.sh </filename>"
+msgstr "<filename>sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:882
-#, fuzzy
 msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>PRERELEASE</"
 "literal>"
 msgstr ""
-"Atualize o valor <varname> BRANCH </varname> para refletir <literal> "
-"PRERELEASE </literal>"
+"Atualize o valor  da <varname>BRANCH</varname> para refletir em "
+"<literal>PRERELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:887
-#, fuzzy
 msgid "<filename>Makefile.inc1</filename>"
 msgstr "<filename> Makefile.inc1 </filename>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:896
-#, fuzzy
 msgid "FreeBSD <literal>BETA</literal> Builds"
-msgstr "FreeBSD <literal> BETA </literal> Constrói"
+msgstr "(Builds) Construções <literal>BETA</literal> do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:898
-#, fuzzy
 msgid ""
 "Following the code slush, the next phase of the release cycle is the code "
 "freeze. This is the point at which all commits to the stable branch require "
@@ -1632,24 +1502,22 @@ msgid ""
 "expression matching the <literal>stable/<replaceable>11</replaceable>/</"
 "literal> branch for the release:"
 msgstr ""
-"Após o slush de código, a próxima fase do ciclo de lançamento é o "
-"congelamento de código. Este é o ponto no qual todos os commits para o "
-"branch estável requerem aprovação explícita da Equipe de Engenharia de "
-"Lançamentos do FreeBSD. Isto é reforçado por ganchos de pré-commit no "
-"repositório Subversion editando <filename> base / svnadmin / conf / "
-"approvers </filename> para incluir uma expressão regular que coincida com o "
-"<literal> stable / <replaceable> 11 </replaceable> / </literal> branch para "
-"o lançamento:"
+"Após o pré congelamento de código, a próxima fase do ciclo de lançamento é o "
+"congelamento de código. Este é o ponto no qual todos os commits para a "
+"branch stable requerem aprovação explícita da Equipe de Engenharia de "
+"Release do FreeBSD. Isto é reforçado por ganchos de pré-commit no "
+"repositório Subversion editando <filename>base/svnadmin/conf/approvers</"
+"filename> para incluir uma expressão regular que coincida com a  branch "
+"<literal>stable/<replaceable>11</replaceable>/</literal> para o lançamento:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:907
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "^/<literal>stable/<replaceable>11</replaceable>/</literal>\tre"
-msgstr "^ / <literal> estável / <replaceable> 11 </replaceable> / </literal>"
+msgstr "^/<literal>stable/<replaceable>11</replaceable>/</literal>\tre"
 
 #. (itstool) path: note/para
 #: article.translate.xml:910
-#, fuzzy
 msgid ""
 "There are two general exceptions to requiring commit approval during the "
 "release cycle. The first is any change that needs to be committed by the "
@@ -1659,53 +1527,47 @@ msgid ""
 msgstr ""
 "Há duas exceções gerais para exigir aprovação de confirmação durante o ciclo "
 "de liberação. A primeira é qualquer alteração que precisa ser confirmada "
-"pelo Engenheiro de Liberação para continuar com o fluxo de trabalho diário "
-"do ciclo de lançamento, a outra é a correção de segurança que pode ocorrer "
+"pelo Engenheiro de Release para continuar com o fluxo de trabalho diário do "
+"ciclo de lançamento, a outra é a correção de segurança que pode ocorrer "
 "durante o ciclo de liberação."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:918
-#, fuzzy
 msgid ""
 "Once the code freeze is in effect, the next build from the branch is labeled "
 "<literal>BETA1</literal>. This is done by updating the <varname>BRANCH</"
 "varname> value in <filename>sys/conf/newvers.sh</filename> from "
 "<literal>PRERELEASE</literal> to <literal>BETA1</literal>."
 msgstr ""
-"Quando o congelamento de código estiver em vigor, a próxima construção do "
-"ramo será rotulada como <literal> BETA1 </literal>. Isso é feito atualizando "
-"o valor <varname> BRANCH </varname> em <filename> sys / conf / newvers.sh </"
-"filename> de <literal> PRERELEASE </literal> para <literal> BETA1 </literal>."
-""
+"Quando o congelamento de código estiver em vigor, a próxima construção da "
+"branch será rotulada como <literal>BETA1</literal>. Isso é feito atualizando "
+"o valor de <varname>BRANCH</varname> em <filename>sys/conf/newvers.sh</"
+"filename> de <literal>PRERELEASE</literal> para <literal>BETA1</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:925
-#, fuzzy
 msgid ""
 "Once this is done, the first set of <literal>BETA</literal> builds are "
 "started. Subsequent <literal>BETA</literal> builds do not require updates to "
 "any files other than <filename>sys/conf/newvers.sh</filename>, incrementing "
 "the <literal>BETA</literal> build number."
 msgstr ""
-"Feito isso, o primeiro conjunto de construções <literal> BETA </literal> é "
-"iniciado. Construções <literal> BETA </literal> subseqüentes não requerem "
-"atualizações para nenhum arquivo diferente de <filename> sys / conf / "
-"newvers.sh </filename>, incrementando o número de compilação <literal> BETA "
-"</literal>."
+"Feito isso, o primeiro conjunto de builds (construções) <literal>BETA</"
+"literal> é iniciado. Builds (Construções) <literal>BETA</literal> "
+"subseqüentes não requerem atualizações para nenhum arquivo diferente de "
+"<filename>sys/conf/newvers.sh</filename>, incrementando o número de "
+"compilação da versão <literal>BETA</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:933
-#, fuzzy
 msgid ""
 "Creating the <literal>releng/<replaceable>11.0</replaceable>/</literal> "
 "Branch"
 msgstr ""
-"Criando o ramo <literal> releng / <replaceable> 11.0 </replaceable> / </"
-"literal>"
+"Criando a branch <literal>releng/<replaceable>11.0</replaceable>/</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:935
-#, fuzzy
 msgid ""
 "When the first <literal>RC</literal> (Release Candidate) build is ready to "
 "begin, the <literal>releng/</literal> branch is created. This is a multi-"
@@ -1714,17 +1576,16 @@ msgid ""
 "for example. The paths listed below are relative to the repository root. The "
 "order of commits and what to change are:"
 msgstr ""
-"Quando a primeira construção <literal> RC </literal> (Release Candidate) "
-"está pronta para começar, a ramificação <literal> releng / </literal> é "
-"criada. Este é um processo de várias etapas que deve ser feito em uma ordem "
-"específica, a fim de evitar anomalias, como sobreposições com valores de "
-"<varname> __ FreeBSD_version </varname>, por exemplo. Os caminhos listados "
-"abaixo são relativos à raiz do repositório. A ordem dos commits e o que "
-"mudar são:"
+"Quando a primeira construção <literal>RC</literal> (Release Candidate) está "
+"pronta para começar, a branch <literal>releng/</literal> é criada. Este é um "
+"processo de várias etapas que deve ser feito em uma ordem específica, a fim "
+"de evitar anomalias, como sobreposições com valores de <varname>__ "
+"FreeBSD_version</varname>, por exemplo. Os caminhos listados abaixo são "
+"relativos ao repositório raiz. A ordem dos commits e o que mudar são:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:943
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>11</"
 "replaceable>/</literal> <literal>releng/<replaceable>11.0</replaceable>/</"
@@ -1736,109 +1597,96 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:956
-#, fuzzy
 msgid ""
 "<filename>releng/<replaceable>11.0</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 msgstr ""
-"<filename> releng / <replaceable> 11.0 </replaceable> /sys/conf/newvers.sh </"
+"<filename>releng/<replaceable>11.0</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:957
-#, fuzzy
 msgid ""
 "Change <literal>BETA<replaceable>X</replaceable></literal> to <literal>RC1</"
 "literal>"
 msgstr ""
-"Altere <literal> BETA <replaceable> X </replaceable> </literal> para "
-"<literal> RC1 </literal>"
+"Change <literal>BETA<replaceable>X</replaceable></literal> to <literal>RC1</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:963
-#, fuzzy
 msgid ""
 "<filename>releng/<replaceable>11.0</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
-"<filename> releng / <replaceable> 11.0 </replaceable> /sys/sys/param.h </"
-"filename>"
+"<filename>releng/<replaceable>11.0</replaceable>/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:964
 #: article.translate.xml:990
-#, fuzzy
 msgid "Update <varname>__FreeBSD_version</varname>"
-msgstr "Atualizar <varname> __ FreeBSD_version </varname>"
+msgstr "Atualizar <varname>__ FreeBSD_version</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:968
-#, fuzzy
 msgid ""
 "<filename>releng/<replaceable>11.0</replaceable>/etc/pkg/FreeBSD.conf</"
 "filename>"
 msgstr ""
-"<filename> releng / <replaceable> 11.0 </replaceable> /etc/pkg/FreeBSD.conf "
-"</filename>"
+"<filename>releng/<replaceable>11.0</replaceable>/etc/pkg/FreeBSD.conf</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:969
 #: article.translate.xml:976
-#, fuzzy
 msgid ""
 "Replace <literal>latest</literal> with <literal>quarterly</literal> as the "
 "default package repository location"
 msgstr ""
-"Substitua <literal> latest </literal> por <literal> trimestral </literal> "
-"como o local padrão do repositório de pacotes"
+"Substitua <literal>latest</literal> por <literal>quarterly (trimestral)</"
+"literal> como o local padrão do repositório de pacotes"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:975
-#, fuzzy
 msgid ""
 "<filename>releng/<replaceable>11.0</replaceable>/release/pkg_repos/release-"
 "dvd.conf</filename>"
 msgstr ""
-"<filename> releng / <replaceable> 11.0 </replaceable> /release/pkg_repos/"
-"release-dvd.conf </filename>"
+"<filename>releng/<replaceable>11.0</replaceable>/release/pkg_repos/release-"
+"dvd.conf</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:983
-#, fuzzy
 msgid ""
 "Update <literal>BETA<replaceable>X</replaceable></literal> with "
 "<literal>PRERELEASE</literal>"
 msgstr ""
-"Atualizar <literal> BETA <replaceable> X </replaceable> </literal> com "
-"<literal> PRERELEASE </literal>"
+"Atualizar <literal>BETA<replaceable>X</replaceable></literal> com "
+"<literal>PRERELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:989
-#, fuzzy
 msgid ""
 "<filename>stable/<replaceable>11</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
-"<filename> stable / <replaceable> 11 </replaceable> /sys/sys/param.h </"
-"filename>"
+"<filename>stable/<replaceable>11</replaceable>/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:994
-#, fuzzy
 msgid "<filename>svnadmin/conf/approvers</filename>"
-msgstr "<filename> svnadmin / conf / approvers </filename>"
+msgstr "<filename>svnadmin/conf/approvers</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:995
-#, fuzzy
 msgid ""
 "Add a new approvers line for the releng branch as was done for the stable "
 "branch"
 msgstr ""
-"Adicione uma nova linha de aprovadores para o ramo releng como foi feito "
-"para o ramo estável"
+"Adicione uma nova linha de aprovadores para a branch releng como foi feito "
+"para a branch stable"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1002
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/"
 "<replaceable>11.0</replaceable>/</literal></userinput>\n"
@@ -1856,55 +1704,50 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1006
-#, fuzzy
 msgid ""
 "Now that two new <varname>__FreeBSD_version</varname> values exist, also "
 "update <filename>head/en_US.ISO8859-1/books/porters-handbook/versions/"
 "chapter.xml</filename> in the Documentation Project repository."
 msgstr ""
-"Agora que existem dois novos valores de <varname> __ FreeBSD_version </"
-"varname>, também atualize <filename> head / pt_BR.ISO8859-1 / books / "
-"porters-handbook / versions / chapter.xml </filename> no repositório "
-"Documentation Project."
+"Agora que existem dois novos valores de <varname>__ FreeBSD_version</"
+"varname>, também atualize <filename>head/pt_BR.ISO8859-1/books/porters-"
+"handbook/versions/chapter.xml</filename> no repositório do Projeto de "
+"Documentação ( Documentation Project)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1011
-#, fuzzy
 msgid ""
 "After the first <literal>RC</literal> build has completed and tested, the "
 "<literal>stable/</literal> branch can be <quote>thawed</quote> by removing "
 "(or commenting) the ^/<literal>stable/<replaceable>11</replaceable>/</"
 "literal> entry in <filename>svnadmin/conf/approvers</filename>."
 msgstr ""
-"Depois que a primeira construção <literal> RC </literal> for concluída e "
-"testada, a ramificação <literal> stable / </literal> pode ser <quote> "
-"descongelada </quote> removendo (ou comentando) o ^ / <literal> stable / "
-"<replaceable> 11 </replaceable> / </literal> entrada em <filename> svnadmin /"
-" conf / approvers </filename>."
+"Depois que a primeira construção de um <literal>RC</literal> for concluída e "
+"testada, a branch <literal>stable/</literal> pode ser <quote>descongelada</"
+"quote> removendo (ou comentando) a entrada ^/<literal>stable/"
+"<replaceable>11</replaceable>/</literal> em <filename>svnadmin/conf/"
+"approvers</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1017
-#, fuzzy
 msgid ""
 "Following the availability of the first <literal>RC</literal>, FreeBSD "
 "Bugmeister Team should be emailed to add the new FreeBSD <literal>-RELEASE</"
 "literal> to the <literal>versions</literal> available in the drop-down menu "
 "shown in the bug tracker."
 msgstr ""
-"Seguindo a disponibilidade do primeiro <literal> RC </literal>, o FreeBSD "
-"Bugmeister Team deve ser enviado por e-mail para adicionar o novo FreeBSD "
-"<literal> -RELEASE </literal> às <literal> versões </literal> disponíveis no "
-"drop-downter. menu para baixo mostrado no rastreador de bugs."
+"Seguindo a disponibilidade do primeiro <literal>RC</literal>, o Time "
+"Bugmeister do FreeBSD deve ser avisado por e-mail para adicionar o novo "
+"FreeBSD <literal>-RELEASE</literal> às <literal>versões</literal> "
+"disponíveis no menu drop-down exibido no rastreador de bugs."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1032
-#, fuzzy
 msgid "Building FreeBSD Installation Media"
 msgstr "Construindo a Mídia de Instalação do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1034
-#, fuzzy
 msgid ""
 "This section describes the general procedures producing FreeBSD development "
 "snapshots and releases."
@@ -1914,29 +1757,26 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1038
-#, fuzzy
 msgid "Release Build Scripts"
-msgstr "Liberar Scripts de Construção"
+msgstr "Liberar Scripts de Build (Construção)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1040
-#, fuzzy
 msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
-"Esta seção descreve os scripts de construção usados ​​pelo FreeBSD Release "
-"Engineering Team para produzir snapshots e releases de desenvolvimento."
+"Esta seção descreve os scripts de build (construção) usados ​​pelo Time de "
+"Engenharia de Release do FreeBSD para produzir snapshots e releases de "
+"desenvolvimento."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1044
-#, fuzzy
 msgid "The <filename>release.sh</filename> Script"
-msgstr "O script <filename> release.sh </filename>"
+msgstr "O script <filename>release.sh</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1046
-#, fuzzy
 msgid ""
 "Prior to FreeBSD 9.0-RELEASE, <filename>src/release/Makefile</filename> was "
 "updated to support <citerefentry><refentrytitle>bsdinstall</"
@@ -1945,17 +1785,16 @@ msgid ""
 "automate invoking the <citerefentry><refentrytitle>release</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> targets."
 msgstr ""
-"Antes do FreeBSD 9.0-RELEASE, o <filename> src / release / Makefile </"
-"filename> era atualizado para suportar <citerefentry> <refentrytitle> "
-"bsdinstall </refentrytitle> <manvolnum> 8 </manvolnum> </citerefentry>, e o "
-"script <filename> src / release / generate-release.sh </filename> foi "
-"introduzido como um wrapper para automatizar a chamada dos destinos "
-"<citerefentry> <refentrytitle> release </refentrytitle> <manvolnum> 7 </"
-"manvolnum> </citerefentry>."
+"Antes do FreeBSD 9.0-RELEASE, o <filename>src/release/Makefile</filename> "
+"era atualizado para suportar o <citerefentry><refentrytitle>bsdinstall</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, e o script "
+"<filename>src/release/generate-release.sh</filename> foi introduzido como um "
+"wrapper (empacotador) para automatizar a chamada dos targets (alvos) "
+"<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1053
-#, fuzzy
 msgid ""
 "Prior to FreeBSD 9.2-RELEASE, <filename>src/release/release.sh</filename> "
 "was introduced, which heavily based on <filename>src/release/generate-"
@@ -1965,28 +1804,27 @@ msgid ""
 "for a release by specifying a separate configuration file for each "
 "invocation."
 msgstr ""
-"Antes do FreeBSD 9.2-RELEASE, foi introduzido o <filename> src / release / "
-"release.sh </filename>, que fortemente baseado em <filename> src / release / "
-"generate-release.sh </filename> incluía suporte para especificar arquivos de "
+"Antes do FreeBSD 9.2-RELEASE, foi introduzido o <filename>src/release /"
+"release.sh</filename>, que baseado fortemente em <filename>src/release/"
+"generate-release.sh</filename> incluía suporte para especificar arquivos de "
 "configuração para substituir várias opções e variáveis ​​de ambiente. O "
-"suporte para arquivos de configuração forneceu suporte para a construção "
-"cruzada de cada arquitetura para uma liberação, especificando um arquivo de "
-"configuração separado para cada chamada."
+"suporte para arquivos de configuração forneceu suporte para cross-build "
+"(construção cruzada) de cada arquitetura para uma versão, especificando um "
+"arquivo de configuração separado para cada chamada."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1063
-#, fuzzy
 msgid ""
 "As a brief example of using <filename>src/release/release.sh</filename> to "
 "build a single release in <filename class=\"directory\">/scratch</filename>:"
 msgstr ""
-"Como um breve exemplo do uso de <filename> src / release / release.sh </"
-"filename> para construir uma única versão em <filename class=\"directory\"> /"
-" scratch </filename>:"
+"Como um breve exemplo do uso de <filename>src/release/release.sh</filename> "
+"para construir uma única versão em <filename class=\"directory\">/scratch</"
+"filename>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1067
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</"
 "userinput>"
@@ -1996,20 +1834,19 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1069
-#, fuzzy
 msgid ""
 "As a brief example of using <filename>src/release/release.sh</filename> to "
 "build a single, cross-built release using a different target directory, "
 "create a custom <filename>release.conf</filename> containing:"
 msgstr ""
-"Como um breve exemplo do uso de <filename> src / release / release.sh </"
-"filename> para construir uma única versão cruzada usando um diretório de "
-"destino diferente, crie um <filename> release.conf </filename> personalizado "
-"contendo:"
+"Como um breve exemplo do uso de <filename>src/release/release.sh</filename> "
+"para construir uma única versão cross-build (entre arquiteturas) usando um "
+"diretório de destino diferente, crie um <filename>release.conf</filename> "
+"personalizado contendo:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1074
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# release.sh configuration for powerpc/powerpc64\n"
 "CHROOTDIR=\"/scratch-powerpc64\"\n"
@@ -2017,22 +1854,20 @@ msgid ""
 "TARGET_ARCH=\"powerpc64\"\n"
 "KERNEL=\"GENERIC64\""
 msgstr ""
-"# release.sh configuração para powerpc / powerpc64\n"
-"CHROOTDIR = \"/ scratch-powerpc64\"\n"
-"TARGET = \"powerpc\"\n"
-"TARGET_ARCH = \"powerpc64\"\n"
-"KERNEL = \"GENERIC64\""
+"# release.sh configuration for powerpc/powerpc64\n"
+"CHROOTDIR=\"/scratch-powerpc64\"\n"
+"TARGET=\"powerpc\"\n"
+"TARGET_ARCH=\"powerpc64\"\n"
+"KERNEL=\"GENERIC64\""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1080
-#, fuzzy
 msgid "Then invoke <filename>src/release/release.sh</filename> as:"
-msgstr ""
-"Em seguida, invoque <filename> src / release / release.sh </filename> como:"
+msgstr "Em seguida, invoque <filename>src/release/release.sh</filename> como:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1083
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c "
 "<replaceable>$HOME/release.conf</replaceable></userinput>"
@@ -2042,25 +1877,22 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1085
-#, fuzzy
 msgid ""
 "See <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry> and <filename>src/release/release.conf.sample</"
 "filename> for more details and example usage."
 msgstr ""
-"Veja <citerefentry> <refentrytitle> release </refentrytitle> <manvolnum> 7 </"
-"manvolnum> </citerefentry> e <filename> src / release / release.conf.sample "
-"</filename> para mais detalhes e exemplos de uso."
+"Veja <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry> e <filename>src/release/release.conf.sample</"
+"filename> para mais detalhes e exemplos de uso."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1091
-#, fuzzy
 msgid "The <filename>thermite.sh</filename> Wrapper Script"
-msgstr "O script <filename> thermite.sh </filename> do Wrapper"
+msgstr "O Script Wrapper (Empacotador) <filename>thermite.sh</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1094
-#, fuzzy
 msgid ""
 "In order to make cross building the full set of architectures supported on a "
 "given branch faster, easier, and reduce human error factors, a wrapper "
@@ -2069,17 +1901,16 @@ msgid ""
 "<filename>src/release/release.sh</filename> using a configuration file "
 "specific to that architecture."
 msgstr ""
-"Para tornar a construção cruzada do conjunto completo de arquiteturas "
-"suportadas em um determinado branch mais rápido, mais fácil e reduzir os "
-"fatores de erro humano, um script wrapper em torno de <filename> src / "
-"release / release.sh </filename> foi escrito para iterar pelo várias "
-"combinações de arquiteturas e invoque <filename> src / release / release.sh "
-"</filename> usando um arquivo de configuração específico para essa "
-"arquitetura."
+"Para tornar a construção de várias arquiteturas o conjunto completo de "
+"arquiteturas suportadas em uma determinada branch mais rápido, mais fácil e "
+"reduzir os fatores de erro humano, um script wrapper cobrindo <filename>src/"
+"release/release.sh</filename> foi escrito para iterar pelas várias "
+"combinações de arquiteturas e invocar <filename>src/release/release.sh</"
+"filename> usando um arquivo de configuração específico para essa arquitetura."
+""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1102
-#, fuzzy
 msgid ""
 "The wrapper script is called <filename>thermite.sh</filename>, which is "
 "available in the FreeBSD Subversion repository at <literal>svn://svn.freebsd."
@@ -2087,26 +1918,24 @@ msgid ""
 "used to build <literal>head/</literal> and <literal>stable/<replaceable>11</"
 "replaceable>/</literal> development snapshots."
 msgstr ""
-"O script wrapper é chamado de <filename> thermite.sh </filename>, que está "
-"disponível no repositório do FreeBSD Subversion em <literal> svn: //svn."
-"freebsd.org/base/user/gjb/thermite/ </literal> , além dos arquivos de "
+"O script wrapper é chamado de <filename>thermite.sh</filename>, que está "
+"disponível no repositório Subversion do FreeBSD em <literal>svn://svn."
+"freebsd.org/base/user/gjb/thermite/</literal> , além dos arquivos de "
 "configuração usados ​​para construir os snapshots de desenvolvimento "
-"<literal> head / </literal> e <literal> stable / <replaceable> 11 </"
-"replaceable> / </literal>."
+"<literal>head/</literal> e <literal>stable/<replaceable>11</replaceable>/</"
+"literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1110
-#, fuzzy
 msgid ""
 "Using <filename>thermite.sh</filename> is covered in <xref linkend=\"releng-"
 "build-snapshot\"/> and <xref linkend=\"releng-build-release\"/>."
 msgstr ""
-"O uso do <filename> thermite.sh </filename> é coberto em <xref linkend = "
-"\"releng-build-snapshot\" /> e <xref linkend = \"releng-build-release\" />."
+"O uso do <filename>thermite.sh</filename> é explicado em <xref linkend="
+"\"releng-build-snapshot\"/> e <xref linkend=\"releng-build-release\"/>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1112
-#, fuzzy
 msgid ""
 "Each architecture and individual kernel have their own configuration file "
 "used by <filename>release.sh</filename>. Each branch has its own "
@@ -2115,14 +1944,13 @@ msgid ""
 "are set and/or overridden in the per-build files."
 msgstr ""
 "Cada arquitetura e kernel individual tem seu próprio arquivo de configuração "
-"usado pelo <filename> release.sh </filename>. Cada ramificação tem sua "
-"própria configuração <filename> defaults-X.conf </filename> que contém "
-"entradas comuns em cada arquitetura, onde substituições ou variáveis "
-"​​especiais são definidas e / ou substituídas nos arquivos por compilação."
+"usado pelo <filename>release.sh</filename>. Cada branch tem sua própria "
+"configuração <filename>defaults-X.conf</filename> que contém entradas comuns "
+"em cada arquitetura, onde substituições ou variáveis ​​especiais são "
+"definidas e/ou substituídas nos arquivos por compilação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1119
-#, fuzzy
 msgid ""
 "The per-build configuration file naming scheme is in the form of "
 "<filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</filename>, "
@@ -2133,16 +1961,15 @@ msgid ""
 "respective branch."
 msgstr ""
 "O esquema de nomenclatura do arquivo de configuração por compilação está na "
-"forma de <filename> $ {revision} - $ {TARGET_ARCH} - $ {KERNCONF} - $ {type} "
-".conf </filename>, em que as variáveis ​​em maiúsculas são equivalentes a "
-"<citerefentry> <refentrytitle> make </refentrytitle> <manvolnum> 1 </"
-"manvolnum> </citerefentry> usa o sistema de compilação e as variáveis "
-"​​minúsculas são definidas nos arquivos de configuração, mapeando para a "
-"versão principal da respectiva ramificação."
+"forma de <filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</"
+"filename>, em que as variáveis ​​em maiúsculas são equivalentes a que "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> usa no sistema de compilação e as variáveis ​​minúsculas são "
+"definidas nos arquivos de configuração, mapeando para a versão principal da "
+"respectiva branch."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1127
-#, fuzzy
 msgid ""
 "Each branch also has its own <filename>builds-X.conf</filename> "
 "configuration, which is used by <filename>thermite.sh</filename>. The "
@@ -2152,29 +1979,27 @@ msgid ""
 "if the respective configuration file exists, which is where the naming "
 "scheme above is relevant."
 msgstr ""
-"Cada ramificação também possui sua própria configuração <filename> builds-X."
-"conf </filename>, que é usada pelo <filename> thermite.sh </filename>. O "
-"script <filename> thermite.sh </filename> itera através de cada valor $ "
-"{revision}, $ {TARGET_ARCH}, $ {KERNCONF} e $ {type}, criando uma lista "
-"principal do que construir. No entanto, uma determinada combinação da lista "
-"só será criada se o respectivo arquivo de configuração existir, que é onde o "
-"esquema de nomenclatura acima é relevante."
+"Cada branch também possui sua própria configuração <filename>builds-X.conf</"
+"filename>, que é usada pelo <filename>thermite.sh</filename>. O script "
+"<filename>thermite.sh</filename> itera através de cada valor ${revision}, "
+"${TARGET_ARCH}, ${KERNCONF} e ${type}, criando uma lista principal do que "
+"construir. No entanto, uma determinada combinação da lista só será criada se "
+"o respectivo arquivo de configuração existir, que é onde o esquema de "
+"nomenclatura acima é relevante."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1138
-#, fuzzy
 msgid "There are two paths of file sourcing:"
 msgstr "Existem dois caminhos de fornecimento de arquivos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1142
-#, fuzzy
 msgid ""
 "<filename>builds-<replaceable>11</replaceable>.conf</filename> -&gt; "
 "<filename>main.conf</filename>"
 msgstr ""
-"<filename> builds- <replaceable> 11 </replaceable> .conf </filename> - &gt; "
-"<filename> main.conf </filename>"
+"<filename>builds-<replaceable>11</replaceable>.conf</filename> -&gt; "
+"<filename>main.conf</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1144
@@ -2183,17 +2008,16 @@ msgstr "Isto controla o comportamento do <filename>thermite.sh</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1149
-#, fuzzy
 msgid ""
 "<filename><replaceable>11</replaceable>-<replaceable>amd64</replaceable>-"
 "<replaceable>GENERIC</replaceable>-<replaceable>snap</replaceable>.conf</"
 "filename> -&gt; <filename>defaults-<replaceable>11</replaceable>.conf</"
 "filename> -&gt; <filename>main.conf</filename>"
 msgstr ""
-"<filename> <replaceable> 11 </replaceable> - <replaceable> amd64 </"
-"replaceable> - <replaceable> GENERIC </replaceable> - <replaceable> snap </"
-"replaceable> .conf </filename> - &gt; <filename> defaults- <replaceable> 11 "
-"</replaceable> .conf </filename> - &gt; <filename> main.conf </filename>"
+"<filename><replaceable>11</replaceable>-<replaceable>amd64</replaceable>-"
+"<replaceable>GENERIC</replaceable>-<replaceable>snap</replaceable>.conf</"
+"filename> -&gt; <filename>defaults-<replaceable>11</replaceable>.conf</"
+"filename> -&gt; <filename>main.conf</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1153
@@ -2203,22 +2027,21 @@ msgid ""
 "manvolnum></citerefentry>"
 msgstr ""
 "Isto controla o comportamento <filename>release/release.sh</filename> dentro "
-"da compilação<citerefentry> <refentrytitle>chroot</"
+"da compilação <citerefentry><refentrytitle>chroot</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1159
-#, fuzzy
 msgid ""
 "The <filename>builds-<replaceable>11</replaceable>.conf</filename>, "
 "<filename>defaults-<replaceable>11</replaceable>.conf</filename>, and "
 "<filename>main.conf</filename> configuration files exist to reduce "
 "repetition between the various per-build files."
 msgstr ""
-"O <filename> builds- <replaceable> 11 </replaceable> .conf </filename>, "
-"<filename> defaults- <replaceable> 11 </replaceable> .conf </filename> e "
-"<filename> main.conf </filename> arquivos de configuração existem para "
-"reduzir a repetição entre os vários arquivos por compilação."
+"Os arquivos de configuração <filename>builds-<replaceable>11</replaceable>."
+"conf</filename>, <filename>defaults-<replaceable>11</replaceable>.conf</"
+"filename>, e <filename>main.conf</filename> existem para reduzir a repetição "
+"entre os vários arquivos por compilação."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1170
@@ -2240,7 +2063,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1178
-#, fuzzy
 msgid ""
 "The build scripts reside in <filename class=\"directory\">/releng/scripts-"
 "snapshot/scripts</filename> or <filename class=\"directory\">/releng/scripts-"
@@ -2249,15 +2071,13 @@ msgid ""
 "literal> snapshot from the respective stable branch."
 msgstr ""
 "Os scripts de construção residem respeitosamente em <filename class="
-"\"directory\"> / releng / scripts-snapshot / scripts </filename> ou "
-"<filename class=\"directory\"> / releng / scripts-release / scripts </"
-"filename>, para evitar colisões entre uma construção <literal> RC </literal> "
-"de uma ramificação releng versus uma captura instantânea <literal> STABLE </"
-"literal> da respectiva ramificação estável."
+"\"directory\">/releng/scripts-snapshot/scripts</filename> ou <filename class="
+"\"directory\">/releng/scripts-release/scripts</filename>, para evitar "
+"colisões entre uma construção <literal>RC</literal> de uma branch releng "
+"versus um snapshot <literal>STABLE</literal> da respectiva branch stable."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1185
-#, fuzzy
 msgid ""
 "A separate dataset exists for the final build images, <filename class="
 "\"directory\">/snap/ftp</filename>. This directory contains both snapshots "
@@ -2265,29 +2085,27 @@ msgid ""
 "<literal>EVERYTHINGISFINE</literal> variable is defined in <filename>main."
 "conf</filename>."
 msgstr ""
-"Existe um conjunto de dados separado para as imagens finais de compilação, "
-"<filename class=\"directory\"> / snap / ftp </filename>. Este diretório "
-"contém diretórios de instantâneos e releases. Eles são usados ​​apenas se a "
-"variável <literal> EVERYTHINGISFINE </literal> estiver definida em "
-"<filename> main.conf </filename>."
+"Existe um dataset (conjunto de dados) separado para as imagens finais de "
+"compilação, <filename class=\"directory\">/snap/ftp</filename>. Este "
+"diretório contém diretórios de snapshots e releases. Eles são usados "
+"​​apenas se a variável <literal>EVERYTHINGISFINE</literal> estiver definida "
+"em <filename>main.conf</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1192
-#, fuzzy
 msgid ""
 "The <literal>EVERYTHINGISFINE</literal> variable name was chosen to avoid "
 "colliding with a variable that might be possibly set in the user "
 "environment, accidentally enabling the behavior that depends on it being "
 "defined."
 msgstr ""
-"O nome da variável <literal> EVERYTHINGISFINE </literal> foi escolhido para "
+"O nome da variável <literal>EVERYTHINGISFINE</literal> foi escolhido para "
 "evitar a colisão com uma variável possivelmente definida no ambiente do "
 "usuário, ativando acidentalmente o comportamento que depende de sua "
 "definição."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1198
-#, fuzzy
 msgid ""
 "As <filename>thermite.sh</filename> iterates through the master list of "
 "combinations and locates the per-build configuration file, a <acronym>ZFS</"
@@ -2299,27 +2117,25 @@ msgid ""
 "snap</filename>, which are then cloned and mounted into the respective build "
 "datasets. This is done to avoid checking out a given tree more than once."
 msgstr ""
-"Como <filename> thermite.sh </filename> percorre a lista mestra de "
-"combinações e localiza o arquivo de configuração por compilação, um conjunto "
-"de dados <acronym> ZFS </acronym> é criado sob <filename class="
-"\"directory\"> / releng </filename>, como <filename class=\"directory\"> / "
-"releng / 12-amd64-GENERIC-snap </filename>. As árvores <literal> src / </"
-"literal>, <literal> ports / </literal> e <literal> doc / </literal> são "
-"retiradas para separar conjuntos de dados <acronym> ZFS </acronym>, como "
-"<filename class=\"directory\"> / releng / 12-src-snap </filename>, que são "
-"então clonados e montados nos respectivos conjuntos de dados de construção. "
-"Isso é feito para evitar o check-out de uma determinada árvore mais de uma "
-"vez."
+"Como <filename>thermite.sh</filename> percorre a lista principal de "
+"combinações e localiza o arquivo de configuração por compilação, um datasets "
+"(conjunto de dados) <acronym>ZFS</acronym> é criado sob <filename class="
+"\"directory\">/releng</filename>, como <filename class=\"directory\">/releng/"
+"12-amd64-GENERIC-snap</filename>. As árvores <literal>src/</literal>, "
+"<literal>ports/</literal> e <literal>doc/</literal> são removidas para "
+"separar datasets (conjuntos de dados) <acronym>ZFS</acronym>, como <filename "
+"class=\"directory\">/releng/12-src-snap</filename>, que são então clonados e "
+"montados nos respectivos datasets de construção. Isso é feito para evitar a "
+"remoção de uma determinada árvore mais de uma vez."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1210
-#, fuzzy
 msgid ""
 "Assuming these filesystem paths, <filename>thermite.sh</filename> would be "
 "invoked as:"
 msgstr ""
-"Assumindo que esses caminhos do sistema de arquivos, <filename> thermite.sh "
-"</filename> seria chamado como:"
+"Assumindo esses caminhos do sistema de arquivos, <filename>thermite.sh</"
+"filename> deveria ser chamado como:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1213
@@ -2357,7 +2173,7 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1223
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
 "userinput>\n"
@@ -2373,17 +2189,15 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1227
-#, fuzzy
 msgid ""
 "The generated output should be double-checked for correctness, and the email "
 "itself should be PGP signed, in-line."
 msgstr ""
-"A saída gerada deve ser checada duas vezes quanto à exatidão, e o próprio e-"
-"mail deve ter assinatura PGP, em linha."
+"A saída gerada deve ser checada duas vezes para garantir a exatidão, e o "
+"próprio e-mail deve ter assinatura PGP, in-line (no arquivo)."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1233
-#, fuzzy
 msgid ""
 "These helper scripts only apply to development snapshot builds. "
 "Announcements during the release cycle (excluding the final release "
@@ -2391,12 +2205,12 @@ msgid ""
 "template currently used can be found <link xlink:href=\"https://svn.freebsd."
 "org/base/user/gjb/thermite/non-release-template-mail.txt\">here</link>."
 msgstr ""
-"Esses scripts auxiliares aplicam-se apenas às compilações de desenvolvimento "
-"de instantâneo. Os anúncios durante o ciclo de lançamento (excluindo o "
-"anúncio de lançamento final) são criados a partir de um modelo de email. Uma "
-"amostra do modelo de email usado atualmente pode ser encontrada <link xlink:"
-"href=\"https://svn.freebsd.org/base/user/gjb/thermite/non-release-template-"
-"mail.txt\"> aqui </link>."
+"Esses scripts auxiliares aplicam-se apenas às compilações de snapshot "
+"(versão instantânea) de desenvolvimento. Os anúncios durante o ciclo de "
+"lançamento (excluindo o anúncio de versão final) são criados a partir de um "
+"modelo de email. Uma amostra do modelo de email usado atualmente pode ser "
+"encontrada <link xlink:href=\"https://svn.freebsd.org/base/user/gjb/thermite/"
+"non-release-template-mail.txt\">aqui</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1242
@@ -2417,15 +2231,14 @@ msgstr ""
 "Similar a construção de snapshots de desenvolvimento do FreeBSD, "
 "<filename>thermite.sh</filename> seria invocado da mesma maneira. A "
 "diferença entre snapshots de desenvolvimento e builds de releases, "
-"<literal>BETA</literal> e <literal>RC</literal> incluso, é que o "
-"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> os arquivos de configuração devem ser nomeados com "
+"<literal>BETA</literal> e <literal>RC</literal> incluso, é que os arquivos "
+"de configuração <citerefentry><refentrytitle>chroot</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> devem ser nomeados com "
 "<literal>release</literal> ao invés de <literal>snap</literal> como o "
 "\"tipo\", como mencionado acima."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1252
-#, fuzzy
 msgid ""
 "In addition, the <literal>BUILDTYPE</literal> and <literal>types</literal> "
 "must be changed from <literal>snap</literal> to <literal>release</literal> "
@@ -2433,15 +2246,14 @@ msgid ""
 "<filename>builds-<replaceable>11</replaceable>.conf</filename>, respectively."
 ""
 msgstr ""
-"Além disso, os tipos <literal> BUILDTYPE </literal> e <literal> </literal> "
-"devem ser alterados de <literal> snap </literal> para <literal> release </"
-"literal> em <filename> defaults- <replaceable > 11 </replaceable> .conf </"
-"filename> e <filename> builds- <replaceable> 11 </replaceable> .conf </"
-"filename>, respectivamente."
+"Além disso, <literal>BUILDTYPE</literal> e <literal>types</literal> devem "
+"ser alterados de <literal>snap</literal> para <literal>release</literal> em "
+"<filename>defaults-<replaceable>11</replaceable>.conf</filename> e "
+"<filename>builds-<replaceable>11</replaceable>.conf</filename>, "
+"respectivamente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1260
-#, fuzzy
 msgid ""
 "When building <literal>BETA</literal>, <literal>RC</literal>, and the final "
 "<literal>RELEASE</literal>, also statically set <literal>BUILDSVNREV</"
@@ -2457,23 +2269,21 @@ msgid ""
 "replaceable>/</literal> or <literal>releng/<replaceable>11.0</replaceable>/</"
 "literal>."
 msgstr ""
-"Ao construir o <literal> BETA </literal>, <literal> RC </literal>, e o "
-"<literal> RELEASE </literal> final, também ajuste estaticamente <literal> "
-"BUILDSVNREV </literal> para a revisão no ramo refletindo a mudança de nome, "
-"<literal> BUILDDATE </literal> para a data em que as compilações são "
-"iniciadas no formato <literal> YYYYMMDD </literal>. Se as árvores <literal> "
-"doc / </literal> e <literal> ports / </literal> tiverem sido marcadas, "
-"defina também <literal> PORTBRANCH </literal> e <literal> DOCBRANCH </"
-"literal> para o caminho de tag relevante no repositório Subversion, "
-"substituindo <literal> HEAD </literal> pela última revisão alterada. Também "
-"defina <literal> releasesrc </literal> em <filename> builds- <replaceable> "
-"11 </replaceable> .conf </filename> para o ramo relevante, como <literal> "
-"stable / <replaceable> 11 </replaceable> / </literal> ou <literal> releng / "
-"<replaceable> 11.0 </replaceable> / </literal>."
+"Ao construir o <literal>BETA</literal>, <literal>RC</literal>, e o "
+"<literal>RELEASE</literal> final, também ajuste estaticamente "
+"<literal>BUILDSVNREV</literal> para a revisão na branch refletindo a mudança "
+"de nome, <literal>BUILDDATE</literal> para a data em que as compilações são "
+"iniciadas no formato <literal>YYYYMMDD</literal>. Se as árvores <literal>doc/"
+"</literal> e <literal>ports/</literal> tiverem sido marcadas, defina também "
+"<literal>PORTBRANCH</literal> e <literal>DOCBRANCH</literal> para a tag "
+"relevante de caminho no repositório Subversion, substituindo <literal>HEAD</"
+"literal> pela última revisão alterada. Também defina <literal>releasesrc</"
+"literal> em <filename>builds-<replaceable>11</replaceable>.conf </filename> "
+"para a branch relevante, como <literal>stable/<replaceable>11</replaceable>/"
+"</literal> ou <literal>releng/<replaceable>11.0</replaceable>/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1276
-#, fuzzy
 msgid ""
 "During the release cycle, a copy of <filename>CHECKSUM.SHA512</filename> and "
 "<filename>CHECKSUM.SHA256</filename> for each architecture are stored in the "
@@ -2483,18 +2293,17 @@ msgid ""
 "<filename>kernel.txz</filename>, etc. are added to <package>misc/freebsd-"
 "release-manifests</package> in the Ports Collection, as well."
 msgstr ""
-"Durante o ciclo de lançamento, uma cópia do <filename> CHECKSUM.SHA512 </"
-"filename> e <filename> CHECKSUM.SHA256 </filename> para cada arquitetura é "
-"armazenada no repositório interno da Equipe de Engenharia do Release do "
-"FreeBSD, além de ser incluída nos diversos e-mails de anúncio. Cada "
-"<filename> MANIFEST </filename> contendo os hashes de <filename> base.txz </"
-"filename>, <filename> kernel.txz </filename>, etc. são adicionados ao "
-"<package> misc / freebsd-release-manifests </package> na coleção de ports "
-"também."
+"Durante o ciclo de lançamento, uma cópia do <filename>CHECKSUM.SHA512</"
+"filename> e <filename>CHECKSUM.SHA256</filename> para cada arquitetura é "
+"armazenada no repositório interno da Equipe de Engenharia de Release "
+"(Versão) do FreeBSD, além de ser incluída nos diversos e-mails de anúncio. "
+"Cada <filename>MANIFEST</filename> contendo os hashes de <filename>base.txz</"
+"filename>, <filename>kernel.txz</filename>, etc. são adicionados ao "
+"<package>misc/freebsd-release-manifests</package> na coleção de ports também."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1287
-#, fuzzy
 msgid ""
 "After building the final <literal>RELEASE</literal>, the <literal>releng/"
 "<replaceable>11.0</replaceable>/</literal> branch is tagged as "
@@ -2504,18 +2313,17 @@ msgid ""
 "<literal>releng/<replaceable>11.0</replaceable>/</literal> branches, this is "
 "done with <command>svn cp</command>. From the repository root:"
 msgstr ""
-"Depois de construir a <literal> RELEASE </literal> final, a ramificação "
-"<literal> releng / <replaceable> 11.0 </replaceable> / </literal> é marcada "
-"como <literal> release / <replaceable> 11.0.0 </replaceable > / </literal> "
-"usando a revisão a partir da qual o <literal> RELEASE </literal> foi "
-"construído. Semelhante a criar as ramificações <literal> stable / "
-"<replaceable> 11 </replaceable> / </literal> e <literal> releng / "
-"<replaceable> 11.0 </replaceable> / </literal>, isso é feito com <command> "
-"svn cp </command>. Da raiz do repositório:"
+"Depois de construir a <literal>RELEASE</literal> final, a branch "
+"<literal>releng/<replaceable>11.0</replaceable>/</literal> é marcada como "
+"<literal>release/<replaceable>11.0.0</replaceable>/</literal> usando a "
+"revisão a partir da qual a <literal>RELEASE</literal> foi construída. "
+"Semelhante a criar as branches <literal>stable/<replaceable>11</replaceable>/"
+"</literal> e <literal>releng/<replaceable>11.0</replaceable>/</literal>, "
+"isso é feito com <command>svn cp</command>. Do repositório raiz:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1294
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>11.0</"
 "replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/"
@@ -2531,18 +2339,16 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1306
-#, fuzzy
 msgid "Publishing FreeBSD Installation Media to Project Mirrors"
 msgstr "Publicando a Mídia de Instalação do FreeBSD nos Espelhos do Projeto"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1308
-#, fuzzy
 msgid ""
 "This section describes the procedure to publish FreeBSD development "
 "snapshots and releases to the Project mirrors."
 msgstr ""
-"Esta seção descreve o procedimento para publicar instantâneos e releases de "
+"Esta seção descreve o procedimento para publicar snapshots e releases de "
 "desenvolvimento do FreeBSD nos espelhos do Projeto."
 
 #. (itstool) path: sect2/title
@@ -2562,7 +2368,7 @@ msgid ""
 "master</systemitem>"
 msgstr ""
 "Criando a estrutura de diretórios para corresponder a hierarquia em "
-"<systemitem> ftp-master</systemitem>"
+"<systemitem>ftp-master</systemitem>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1322
@@ -2581,13 +2387,13 @@ msgstr ""
 "Se <literal>EVERYTHINGISFINE</literal> for definido nos arquivos de "
 "configuração de compilação, <filename>main.conf</filename> no caso dos "
 "scripts de construção mencionados acima, isto acontece automaticamente no "
-"<citerefentry><refentrytitle>chroot</refentrytitle> <manvolnum>8</"
-"manvolnum></citerefentry> após a compilação ser concluída, criando a "
-"estrutura de diretório em <filename class=\"directory\">${DESTDIR}/R/ftp-"
-"stage</filename> com um estrutura de caminho path que corresponde ao que é "
-"esperado em <systemitem>ftp-master</systemitem>. Isto é equivalente a "
-"executar o mesmo no <citerefentry><refentrytitle>chroot</refentrytitle> "
-"<manvolnum>8</manvolnum></citerefentry> diretamente:"
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> após a compilação ser concluída, criando a estrutura de "
+"diretório em <filename class=\"directory\">${DESTDIR}/R/ftp-stage</filename> "
+"com um estrutura de caminho que corresponde ao que é esperado em "
+"<systemitem>ftp-master</systemitem>. Isto é equivalente a executar o mesmo "
+"no <citerefentry><refentrytitle>chroot</refentrytitle> <manvolnum>8</"
+"manvolnum></citerefentry> diretamente:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:1331
@@ -2611,12 +2417,12 @@ msgid ""
 "the build host, respectively."
 msgstr ""
 "Depois que cada arquitetura é construída, <filename>thermite.sh</filename> "
-"irá fazer um <application>rsync</application> do <filename>${DESTDIR}/R/ftp-"
-"stage</filename> da compilação <citerefentry><refentrytitle>chroot</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> para o diretório "
-"<filename class=\"directory\">/snap/ftp/snapshots</filename> ou <filename "
-"class=\"directory\">/snap/ftp/releases</filename> no host de compilação, "
-"respectivamente."
+"irá fazer um <application>rsync</application> do <filename class="
+"\"directory\">${DESTDIR}/R/ftp-stage</filename> da compilação "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para o diretório <filename class=\"directory\">/snap/ftp/"
+"snapshots</filename> ou <filename class=\"directory\">/snap/ftp/releases</"
+"filename> no host de compilação, respectivamente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1342
@@ -2642,9 +2448,9 @@ msgid ""
 msgstr ""
 "Uma vez que todas as compilações terminarem, <filename class=\"directory\">/"
 "snap/ftp/snapshots</filename>, ou <filename class=\"directory\">/snap/ftp/"
-"releases</filename> para uma versão, é pesquisado por <systemitem>ftp-"
-"master</systemitem> usando <application>rsync</application> para <filename "
-"class=\"directory\">/archive/tmp/snapshots</filename> ou <filename class="
+"releases</filename> para uma versão, é apurado por <systemitem>ftp-master</"
+"systemitem> usando <application>rsync</application> para <filename class="
+"\"directory\">/archive/tmp/snapshots</filename> ou <filename class="
 "\"directory\">/archive/tmp/releases</filename>, respectivamente."
 
 #. (itstool) path: note/para
@@ -2678,7 +2484,7 @@ msgstr ""
 "archive/tmp/</filename>, elas estão prontas para serem publicadas colocando-"
 "as em <filename class=\"directory\">/archive/pub/FreeBSD</filename>. Para "
 "reduzir o tempo de propagação, <citerefentry><refentrytitle>pax</"
-"refentrytitle> <manvolnum>1</manvolnum> </citerefentry> é usado para criar "
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> é usado para criar "
 "links físicos a partir de <filename class=\"directory\">/archive/tmp</"
 "filename> para <filename class=\"directory\">/archive/pub/FreeBSD</filename>."
 ""
@@ -2707,7 +2513,7 @@ msgid ""
 msgstr ""
 "Há uma ressalva, no entanto, em que o <application>rsync</application> deve "
 "ser usado após <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</"
-"manvolnum> </citerefentry> para corrigir os links simbólicos em <filename "
+"manvolnum></citerefentry> para corrigir os links simbólicos em <filename "
 "class=\"directory\">pub/FreeBSD/<replaceable>snapshots</replaceable>/ISO-"
 "IMAGES</filename> que <citerefentry><refentrytitle>pax</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> substituirá por um "
@@ -2722,12 +2528,12 @@ msgid ""
 msgstr ""
 "Assim como nas etapas de preparação, isto requer acesso em nível de "
 "<literal>root</literal>, já que essa etapa deve ser executada como o usuário "
-"do <literal>archive</literal>."
+" <literal>archive</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1391
 msgid "As the <literal>archive</literal> user:"
-msgstr "Como o usuário de <literal>archive</literal>:"
+msgstr "Como o usuário <literal>archive</literal>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1393
@@ -2761,7 +2567,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:1404
 msgid "Wrapping up the Release Cycle"
-msgstr "Encerrando o Ciclo de Lançamento"
+msgstr "Encerrando o Ciclo de Release (Lançamento)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1406
@@ -2783,13 +2589,13 @@ msgid ""
 "approved prior to the final release, and depending on the scope of the "
 "change in question, may issue an <acronym>EN</acronym>."
 msgstr ""
-"AA medida que o ciclo de lançamento se aproxima da conclusão, é comum ter "
-"vários candidatos <acronym>EN</acronym> (Aviso de Erratas) para abordar os "
-"problemas que foram descobertos ao final do ciclo. Após o lançamento, a "
-"Equipe de Engenharia de Lançamentos do FreeBSD e o Time de Segurança do "
-"FreeBSD revisitaram mudanças que não foram aprovadas antes da versão final, "
-"e dependendo do escopo da mudança em questão, podem emitir um <acronym>EN</"
-"acronym>."
+"A medida que o ciclo de release (lançamento) se aproxima da conclusão, é "
+"comum ter vários candidatos <acronym>EN</acronym> (Aviso de Erratas) para "
+"abordar os problemas que foram descobertos ao final do ciclo. Após o "
+"lançamento, a Equipe de Engenharia de Release do FreeBSD e o Time de "
+"Segurança do FreeBSD reveem mudanças que não foram aprovadas antes da versão "
+"final, e dependendo do escopo da mudança em questão, podem emitir um "
+"<acronym>EN</acronym>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1420
@@ -2813,8 +2619,8 @@ msgid ""
 "from <literal>re</literal> to <literal>(so|security-officer)</literal> for "
 "the <literal>releng/<replaceable>11.0</replaceable>/</literal> branch."
 msgstr ""
-"Aproximadamente duas semanas após o lançamento, o Engenheiro de Versão "
+"Aproximadamente duas semanas após o lançamento, o Engenheiro de Release "
 "atualiza <filename>svnadmin/conf/approvers</filename> alterando a coluna do "
 "aprovador de <literal>re</literal> para <literal>(so|security-officer)</"
-"literal > para o branch <literal>releng/<replaceable>11.0</replaceable>/</"
+"literal> para a branch <literal>releng/<replaceable>11.0</replaceable>/</"
 "literal>."
