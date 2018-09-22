@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-21 03:16+0000\n"
-"Last-Translator: Vinicius Zavam <egypcio@googlemail.com>\n"
+"PO-Revision-Date: 2018-09-21 02:50+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -29,7 +29,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: article.translate.xml:26
 msgid "FreeBSD Release Engineering"
-msgstr "Engenharia de Release (Versionamento) do FreeBSD"
+msgstr "Engenharia de Release do FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:37
@@ -96,14 +96,13 @@ msgid ""
 "This article describes the release engineering process of the "
 "FreeBSD Project."
 msgstr ""
-"Este artigo descreve o processo por trás do modelo de versionamento adotado "
-"pelo Projeto FreeBSD."
+"Este artigo descreve o processo por trás do modelo de engenharia de release "
+"adotado pelo Projeto FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:66
 msgid "Introduction to the FreeBSD Release Engineering Process"
-msgstr ""
-"Introdução ao Processo de Engenharia de Release (Versionamento) do FreeBSD"
+msgstr "Introdução ao Processo de Engenharia de Release do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:69
@@ -177,7 +176,7 @@ msgid ""
 "quote>' releases."
 msgstr ""
 "Este artigo irá destacar o fluxo de trabalho e as responsabilidades da "
-"Equipe de Engenharia de Release (Versionamento) do FreeBSD para versões "
+"Equipe de Engenharia de Release do FreeBSD para ambas as versões "
 "<quote>zero</quote> e <quote>point release</quote>."
 
 #. (itstool) path: sect1/para
@@ -188,15 +187,14 @@ msgstr "As seções a seguir deste artigo descrevem:"
 #. (itstool) path: listitem/para
 #: article.translate.xml:109
 msgid "General information and preparation before starting the release cycle."
-msgstr ""
-"Informações gerais e preparação antes de iniciar o ciclo de versionamento."
+msgstr "Informações gerais e preparação antes de iniciar o ciclo de release."
 
 #. (itstool) path: listitem/para
 #. (itstool) path: sect1/title
 #: article.translate.xml:118
 #: article.translate.xml:508
 msgid "Website Changes During the Release Cycle"
-msgstr "Alterações no Site Web Durante o Ciclo de Release (Versionamento)"
+msgstr "Alterações na Página Web Durante o Ciclo de Release"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:126
@@ -204,9 +202,8 @@ msgid ""
 "Terminology and general information, such as the <quote>code slush</quote> "
 "and <quote>code freeze</quote>, used throughout this document."
 msgstr ""
-"Terminologia e informações gerais, como <quote>pré congelamento de código</"
-"quote> e <quote>congelamento de código</quote>, usadas por todo este "
-"documento."
+"Terminologia e informações gerais, como <quote>code slush</quote> e "
+"<quote>code freeze</quote>, usadas por todo este documento."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:136
@@ -237,7 +234,7 @@ msgstr "Procedimentos para publicar um meio de instalação."
 #. (itstool) path: listitem/para
 #: article.translate.xml:171
 msgid "Wrapping up the release cycle."
-msgstr "Encerrando o ciclo de versionamento."
+msgstr "Encerrando o ciclo de release."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:178
@@ -255,8 +252,8 @@ msgstr ""
 "Aproximadamente dois meses antes do início do ciclo de vida de uma nova "
 "versão, a Equipe de Engenharia de Release do FreeBSD decide e faz um "
 "cronograma para seu lançamento. A programação inclui os vários pontos de "
-"marco do ciclo de versionamento, como datas de congelamento, datas para as "
-"branches e datas de compilação do código. Por exemplo:"
+"marco do ciclo de release, como datas de congelamento, datas para as "
+"branches e datas para compilação do código. Por exemplo:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:190
@@ -478,8 +475,8 @@ msgstr ""
 "A branch trimestral da árvore dos ports é determinada quando a compilação "
 "final de fases <literal>RC</literal> é planejada. Uma nova branch trimestral "
 "é criada no primeiro dia do trimestre, portanto, essa métrica deve ser usada "
-"ao considerar os marcos do ciclo de versionamento. Uma branch trimestral é "
-"criada pela Equipe de Gerenciamento de Ports do FreeBSD."
+"ao considerar os marcos do ciclo de release. Uma branch trimestral é criada "
+"pela Equipe de Gerenciamento de Ports do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:320
@@ -555,7 +552,7 @@ msgstr ""
 "É normal que muitos desenvolvedores informem a Equipe de Engenharia de "
 "Release do FreeBSD sobre vários trabalhos em andamento. Em alguns casos, uma "
 "extensão para o trabalho em andamento será solicitada e, em outros casos, "
-"uma solicitação para <quote>aprovação geral</quote> para um subconjunto "
+"uma solicitação para um <quote>aprovação geral</quote> para um subconjunto "
 "específico da árvore será feita."
 
 #. (itstool) path: sect1/para
@@ -571,8 +568,7 @@ msgstr ""
 "cronogramas (mesmo que estimados) sejam discutidos. Para aprovações gerais, "
 "o período de tempo para a aprovação geral deve ser claro. Por exemplo, um "
 "desenvolvedor do FreeBSD pode solicitar aprovações gerais desde o início do "
-"pré congelamento de código até o início da construção da primeira "
-"<literal>RC</literal>."
+"code slush até o início da construção da primeira <literal>RC</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:366
@@ -592,7 +588,7 @@ msgstr ""
 "foi concedida, o(s) autor(es), quando a aprovação geral expira e a razão "
 "pela qual a aprovação foi concedida. Um exemplo disso é conceder aprovação "
 "geral a <filename class=\"directory\">release/doc/</filename> a todos os "
-"membros da Equipe de Engenharia do Release do FreeBSD até o <literal>RC</"
+"membros da Equipe de Engenharia de Release do FreeBSD até o <literal>RC</"
 "literal> final para atualizar as notas de lançamento e outras documentação "
 "relacionada à liberação."
 
@@ -606,9 +602,9 @@ msgid ""
 msgstr ""
 "A Equipe de Engenharia de Release do FreeBSD também usa este repositório "
 "para rastrear solicitações de aprovação pendentes que são recebidas antes de "
-"iniciar várias construções durante o ciclo de lançamento, que o Engenheiro "
-"de Release especifica o período de corte com um email para os "
-"desenvolvedores do FreeBSD."
+"iniciar várias compilações durante o ciclo de release, que o Engenheiro de "
+"Release especifica o período de corte com um email para os desenvolvedores "
+"do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:384
@@ -690,9 +686,9 @@ msgid ""
 "the FreeBSD Release Engineering Team sends a reminder email to the FreeBSD "
 "Developers."
 msgstr ""
-"Aproximadamente um mês antes do <quote>pré congelamento do código</quote>, a "
-"Equipe de Engenharia de Release do FreeBSD envia um email de lembrete para "
-"os desenvolvedores do FreeBSD."
+"Aproximadamente um mês antes do <quote>code slush</quote>, a Equipe de "
+"Engenharia de Release do FreeBSD envia um email de lembrete para os "
+"desenvolvedores do FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:420
@@ -720,7 +716,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:440
 msgid "Release Engineering Terminology"
-msgstr "Terminologia da Engenhadia de Release (Versão)"
+msgstr "Terminologia da Engenharia de Release"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
@@ -743,10 +739,9 @@ msgid ""
 "Release Engineering Team requests that bugs in the existing code base take "
 "priority over new features."
 msgstr ""
-"Embora o <literal>code slush</literal> não seja um congelamento difícil na "
-"árvore, a Equipe de Engenharia de Versionamento do FreeBSD solicita que "
-"resoluções dos bugs existentes no código tenham prioridade sobre "
-"implementação de novos recursos."
+"Embora o code slush não seja um congelamento difícil na árvore, a Equipe de "
+"Engenharia de Release do FreeBSD solicita que resoluções dos bugs existentes "
+"no código tenham prioridade sobre implementação de novos recursos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
@@ -758,7 +753,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:457
 msgid "The Code Freeze"
-msgstr "O congelamento de código"
+msgstr "O Code Freeze"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:459
@@ -766,9 +761,8 @@ msgid ""
 "The code freeze marks the point in time where all commits to the branch "
 "require explicit approval from the FreeBSD Release Engineering Team."
 msgstr ""
-"O congelamento de código marca o momento em que todos os commits para o "
-"branch exigem aprovação explícita da Equipe de Engenharia de Versionamento "
-"do FreeBSD."
+"O code freeze marca o momento em que todos os commits para a branch exigem "
+"aprovação explícita da Equipe de Engenharia de Release do FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:462
@@ -794,9 +788,9 @@ msgid ""
 msgstr ""
 "Para impor aprovações de commit pela Equipe de Engenharia de Release do "
 "FreeBSD, o Engenheiro de Release atualiza o <filename>base/svnadmin/conf/"
-"approvers</filename>, e confirma a mudança de volta para o repositório. "
-"Feito isso, qualquer alteração na branch deve incluir uma linha "
-"<quote>Aprovado por:</quote> na mensagem de commit."
+"approvers</filename>, e aplica a mudança de volta para o repositório. Feito "
+"isso, qualquer alteração na branch deve incluir uma linha <quote>Aprovado "
+"por:</quote> na mensagem de commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:475
@@ -816,8 +810,8 @@ msgid ""
 "xlink:href=\"https://wiki.freebsd.org/Releng/"
 "ChangeRequestGuidelines\">Change Request Guidelines</link>."
 msgstr ""
-"Durante o congelamento de código, os committers do FreeBSD devem seguir as "
-"<link xlink:href=\"https://wiki.freebsd.org/Releng/"
+"Durante o code freeze, os committers do FreeBSD devem seguir as <link xlink:"
+"href=\"https://wiki.freebsd.org/Releng/"
 "ChangeRequestGuidelines\">Recomendações de Requisição de Mudanças</link>."
 
 #. (itstool) path: sect2/title
@@ -865,7 +859,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:521
 msgid "Website Changes Before the Release Cycle Begins"
-msgstr "Alterações na página web antes do início do ciclo de versionamento"
+msgstr "Alterações na Página Web Antes do Início do Ciclo de Release"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:523
@@ -1102,9 +1096,9 @@ msgid ""
 "<literal>BETA</literal> and <literal>RC</literal> builds, <literal>ALPHA</"
 "literal> builds are not included in the FreeBSD Release schedule."
 msgstr ""
-"Tendo aparecido primeiramente durante o ciclo de versionamento para o "
-"FreeBSD 10.0-RELEASE, a noção de compilações de fases <quote><literal>ALPHA</"
-"literal></quote> foi introduzida. Ao contrário das <literal>BETA</literal> e "
+"Tendo aparecido primeiramente durante o ciclo de release para o FreeBSD 10.0-"
+"RELEASE, a noção de compilações de fases <quote><literal>ALPHA</literal></"
+"quote> foi introduzida. Ao contrário das <literal>BETA</literal> e "
 "<literal>RC</literal>, as compilações desse novo estágio <literal>ALPHA</"
 "literal> não são incluídas nos agendamentos da Release do FreeBSD."
 
@@ -1445,9 +1439,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:857
 msgid "FreeBSD <literal>stable</literal> Branch Code Slush"
-msgstr ""
-"Branch (Ramificação) <literal>stable</literal> de código congelado do "
-"FreeBSD"
+msgstr "Branch <literal>stable</literal> de Code Slush do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:859
@@ -1457,10 +1449,10 @@ msgid ""
 "in progress. These files are all relative to the top-most level of the "
 "stable branch:"
 msgstr ""
-"Na preparação para o congelamento de código em uma branch <literal>stable</"
-"literal>, vários arquivos precisam ser atualizados para refletir o ciclo de "
-"liberação que está oficialmente em andamento. Esses arquivos são todos "
-"relativos ao nível mais alto da branch stable:"
+"Na preparação para o code freeze em uma branch <literal>stable</literal>, "
+"vários arquivos precisam ser atualizados para refletir o ciclo de liberação "
+"que está oficialmente em andamento. Esses arquivos são todos relativos ao "
+"nível mais alto da branch stable:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:876
@@ -1502,13 +1494,13 @@ msgid ""
 "expression matching the <literal>stable/<replaceable>11</replaceable>/</"
 "literal> branch for the release:"
 msgstr ""
-"Após o pré congelamento de código, a próxima fase do ciclo de lançamento é o "
-"congelamento de código. Este é o ponto no qual todos os commits para a "
-"branch stable requerem aprovação explícita da Equipe de Engenharia de "
-"Release do FreeBSD. Isto é reforçado por ganchos de pré-commit no "
-"repositório Subversion editando <filename>base/svnadmin/conf/approvers</"
-"filename> para incluir uma expressão regular que coincida com a  branch "
-"<literal>stable/<replaceable>11</replaceable>/</literal> para o lançamento:"
+"Após o code slush, a próxima fase do ciclo de release é o code freeze. Este "
+"é o ponto no qual todos os commits para a branch stable requerem aprovação "
+"explícita da Equipe de Engenharia de Release do FreeBSD. Isto é reforçado "
+"por ganchos de pré-commit no repositório Subversion editando <filename>base/"
+"svnadmin/conf/approvers</filename> para incluir uma expressão regular que "
+"coincida com a  branch <literal>stable/<replaceable>11</replaceable>/</"
+"literal> para a versão:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:907
@@ -1539,10 +1531,10 @@ msgid ""
 "varname> value in <filename>sys/conf/newvers.sh</filename> from "
 "<literal>PRERELEASE</literal> to <literal>BETA1</literal>."
 msgstr ""
-"Quando o congelamento de código estiver em vigor, a próxima construção da "
-"branch será rotulada como <literal>BETA1</literal>. Isso é feito atualizando "
-"o valor de <varname>BRANCH</varname> em <filename>sys/conf/newvers.sh</"
-"filename> de <literal>PRERELEASE</literal> para <literal>BETA1</literal>."
+"Quando o code freeze estiver em vigor, a próxima construção da branch será "
+"rotulada como <literal>BETA1</literal>. Isso é feito atualizando o valor de "
+"<varname>BRANCH</varname> em <filename>sys/conf/newvers.sh</filename> de "
+"<literal>PRERELEASE</literal> para <literal>BETA1</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:925
@@ -1722,7 +1714,7 @@ msgid ""
 "(or commenting) the ^/<literal>stable/<replaceable>11</replaceable>/</"
 "literal> entry in <filename>svnadmin/conf/approvers</filename>."
 msgstr ""
-"Depois que a primeira construção de um <literal>RC</literal> for concluída e "
+"Depois que a primeira compilação de um <literal>RC</literal> for concluída e "
 "testada, a branch <literal>stable/</literal> pode ser <quote>descongelada</"
 "quote> removendo (ou comentando) a entrada ^/<literal>stable/"
 "<replaceable>11</replaceable>/</literal> em <filename>svnadmin/conf/"
@@ -1758,7 +1750,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:1038
 msgid "Release Build Scripts"
-msgstr "Liberar Scripts de Build (Construção)"
+msgstr "Scripts de Build de Release"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1040
@@ -1766,9 +1758,8 @@ msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
-"Esta seção descreve os scripts de build (construção) usados ​​pelo Time de "
-"Engenharia de Release do FreeBSD para produzir snapshots e releases de "
-"desenvolvimento."
+"Esta seção descreve os scripts de build usados ​​pela Equipe de Engenharia "
+"de Release do FreeBSD para produzir snapshots e releases de desenvolvimento."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1044
@@ -1808,9 +1799,9 @@ msgstr ""
 "release.sh</filename>, que baseado fortemente em <filename>src/release/"
 "generate-release.sh</filename> incluía suporte para especificar arquivos de "
 "configuração para substituir várias opções e variáveis ​​de ambiente. O "
-"suporte para arquivos de configuração forneceu suporte para cross-build "
-"(construção cruzada) de cada arquitetura para uma versão, especificando um "
-"arquivo de configuração separado para cada chamada."
+"suporte para arquivos de configuração forneceu suporte para cross building "
+"(compilação com mais de uma arquitetura) de cada arquitetura para uma "
+"versão, especificando um arquivo de configuração separado para cada chamada."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1063
@@ -1905,9 +1896,9 @@ msgstr ""
 "arquiteturas suportadas em uma determinada branch mais rápido, mais fácil e "
 "reduzir os fatores de erro humano, um script wrapper cobrindo <filename>src/"
 "release/release.sh</filename> foi escrito para iterar pelas várias "
-"combinações de arquiteturas e invocar <filename>src/release/release.sh</"
-"filename> usando um arquivo de configuração específico para essa arquitetura."
-""
+"combinações de arquiteturas e chamar o script <filename>src/release/release."
+"sh</filename> usando um arquivo de configuração específico para essa "
+"arquitetura."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1102
@@ -2059,7 +2050,7 @@ msgstr ""
 "As máquinas oficiais de compilação de versões têm um layout do sistema de "
 "arquivos específico, que usando <acronym>ZFS</acronym>, <filename>thermite."
 "sh</filename> tira grande proveito de clones e snapshots, garantindo um "
-"ambiente de construção intocado."
+"ambiente de compilação intocado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1178
@@ -2070,11 +2061,11 @@ msgid ""
 "<literal>RC</literal> build from a releng branch versus a <literal>STABLE</"
 "literal> snapshot from the respective stable branch."
 msgstr ""
-"Os scripts de construção residem respeitosamente em <filename class="
+"Os scripts de compilação residem respeitosamente em <filename class="
 "\"directory\">/releng/scripts-snapshot/scripts</filename> ou <filename class="
 "\"directory\">/releng/scripts-release/scripts</filename>, para evitar "
-"colisões entre uma construção <literal>RC</literal> de uma branch releng "
-"versus um snapshot <literal>STABLE</literal> da respectiva branch stable."
+"colisões entre uma compilação <literal>RC</literal> de uma branch releng "
+"contra um snapshot <literal>STABLE</literal> da respectiva branch stable."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1185
@@ -2118,15 +2109,15 @@ msgid ""
 "datasets. This is done to avoid checking out a given tree more than once."
 msgstr ""
 "Como <filename>thermite.sh</filename> percorre a lista principal de "
-"combinações e localiza o arquivo de configuração por compilação, um datasets "
-"(conjunto de dados) <acronym>ZFS</acronym> é criado sob <filename class="
-"\"directory\">/releng</filename>, como <filename class=\"directory\">/releng/"
-"12-amd64-GENERIC-snap</filename>. As árvores <literal>src/</literal>, "
-"<literal>ports/</literal> e <literal>doc/</literal> são removidas para "
-"separar datasets (conjuntos de dados) <acronym>ZFS</acronym>, como <filename "
-"class=\"directory\">/releng/12-src-snap</filename>, que são então clonados e "
-"montados nos respectivos datasets de construção. Isso é feito para evitar a "
-"remoção de uma determinada árvore mais de uma vez."
+"combinações e localiza o arquivo de configuração por compilação, um dataset "
+"<acronym>ZFS</acronym> é criado sob <filename class=\"directory\">/releng</"
+"filename>, como <filename class=\"directory\">/releng/12-amd64-GENERIC-snap</"
+"filename>. As árvores <literal>src/</literal>, <literal>ports/</literal> e "
+"<literal>doc/</literal> são removidas para separar os datasets <acronym>ZFS</"
+"acronym>, como <filename class=\"directory\">/releng/12-src-snap</filename>, "
+"que são então clonados e montados nos respectivos datasets de compilação. "
+"Isso é feito para evitar a remoção de uma determinada árvore mais de uma vez."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1210
@@ -2228,13 +2219,13 @@ msgid ""
 "must be named with <literal>release</literal> instead of <literal>snap</"
 "literal> as the \"type\", as mentioned above."
 msgstr ""
-"Similar a construção de snapshots de desenvolvimento do FreeBSD, "
+"Similar a compilação de snapshots de desenvolvimento do FreeBSD, "
 "<filename>thermite.sh</filename> seria invocado da mesma maneira. A "
 "diferença entre snapshots de desenvolvimento e builds de releases, "
-"<literal>BETA</literal> e <literal>RC</literal> incluso, é que os arquivos "
-"de configuração <citerefentry><refentrytitle>chroot</"
+"<literal>BETA</literal> e <literal>RC</literal> inclusos, é que os arquivos "
+"de compilação <citerefentry><refentrytitle>chroot</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> devem ser nomeados com "
-"<literal>release</literal> ao invés de <literal>snap</literal> como o "
+"<literal>release</literal> ao invés de <literal>snap</literal> assim como o "
 "\"tipo\", como mencionado acima."
 
 #. (itstool) path: sect2/para
@@ -2293,11 +2284,11 @@ msgid ""
 "<filename>kernel.txz</filename>, etc. are added to <package>misc/freebsd-"
 "release-manifests</package> in the Ports Collection, as well."
 msgstr ""
-"Durante o ciclo de lançamento, uma cópia do <filename>CHECKSUM.SHA512</"
+"Durante o ciclo de release, uma cópia do <filename>CHECKSUM.SHA512</"
 "filename> e <filename>CHECKSUM.SHA256</filename> para cada arquitetura é "
-"armazenada no repositório interno da Equipe de Engenharia de Release "
-"(Versão) do FreeBSD, além de ser incluída nos diversos e-mails de anúncio. "
-"Cada <filename>MANIFEST</filename> contendo os hashes de <filename>base.txz</"
+"armazenada no repositório interno da Equipe de Engenharia de Release do "
+"FreeBSD, além de ser incluída nos diversos e-mails de anúncio. Cada "
+"<filename>MANIFEST</filename> contendo os hashes de <filename>base.txz</"
 "filename>, <filename>kernel.txz</filename>, etc. são adicionados ao "
 "<package>misc/freebsd-release-manifests</package> na coleção de ports também."
 ""
@@ -2386,7 +2377,7 @@ msgid ""
 msgstr ""
 "Se <literal>EVERYTHINGISFINE</literal> for definido nos arquivos de "
 "configuração de compilação, <filename>main.conf</filename> no caso dos "
-"scripts de construção mencionados acima, isto acontece automaticamente no "
+"scripts de compilação mencionados acima, isto acontece automaticamente no "
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> após a compilação ser concluída, criando a estrutura de "
 "diretório em <filename class=\"directory\">${DESTDIR}/R/ftp-stage</filename> "
@@ -2567,17 +2558,17 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:1404
 msgid "Wrapping up the Release Cycle"
-msgstr "Encerrando o Ciclo de Release (Lançamento)"
+msgstr "Encerrando o Ciclo de Release"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1406
 msgid "This section describes general post-release tasks."
-msgstr "Esta seção descreve as tarefas gerais de pós-lançamento."
+msgstr "Esta seção descreve as tarefas gerais de pós-release."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1409
 msgid "Post-Release Errata Notices"
-msgstr "Avisos de Erratas de Pós-lançamento"
+msgstr "Avisos de Erratas de Pós-Release"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1411
@@ -2589,13 +2580,13 @@ msgid ""
 "approved prior to the final release, and depending on the scope of the "
 "change in question, may issue an <acronym>EN</acronym>."
 msgstr ""
-"A medida que o ciclo de release (lançamento) se aproxima da conclusão, é "
-"comum ter vários candidatos <acronym>EN</acronym> (Aviso de Erratas) para "
-"abordar os problemas que foram descobertos ao final do ciclo. Após o "
-"lançamento, a Equipe de Engenharia de Release do FreeBSD e o Time de "
-"Segurança do FreeBSD reveem mudanças que não foram aprovadas antes da versão "
-"final, e dependendo do escopo da mudança em questão, podem emitir um "
-"<acronym>EN</acronym>."
+"A medida que o ciclo de release se aproxima da conclusão, é comum ter vários "
+"candidatos a <acronym>EN</acronym> (Aviso de Erratas) para abordar os "
+"problemas que foram descobertos ao final do ciclo. Após o lançamento, a "
+"Equipe de Engenharia de Release do FreeBSD e a Equipe de Segurança do "
+"FreeBSD reveem mudanças que não foram aprovadas antes da versão final, e "
+"dependendo do escopo da mudança em questão, podem emitir um <acronym>EN</"
+"acronym>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1420
@@ -2603,13 +2594,13 @@ msgid ""
 "The actual process of issuing <acronym>EN</acronym>s is handled by the "
 "FreeBSD Security Team."
 msgstr ""
-"O processo atual de emissão de <acronym>EN</acronym>s é tratado pelo Time de "
-"Segurança do FreeBSD."
+"O processo atual de emissão de <acronym>EN</acronym>s é tratado pela Equipe "
+"de Segurança do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1426
 msgid "Handoff to the FreeBSD Security Team"
-msgstr "Entrega para o Time de Segurança do FreeBSD"
+msgstr "Entrega para a Equipe de Segurança do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1428
