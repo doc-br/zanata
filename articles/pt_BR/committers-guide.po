@@ -1,6 +1,6 @@
+# André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,20 +10,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-20 02:55+0000\n"
-"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-09-22 11:18+0000\n"
+"Last-Translator: André Franciosi <andre@franciosi.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr ""
+"André Franciosi, andre@franciosi.org, 2018\n"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:8
 msgid "Committer's Guide"
-msgstr "Guia dos Committer's"
+msgstr "Guia dos Committers"
 
 #. (itstool) path: info/author
 #: article.translate.xml:10
@@ -538,10 +540,10 @@ msgid ""
 "present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
 "2048-or-4096-bits\"/> describes the situation in more detail."
 msgstr ""
-"Chaves de 2048-bit e com uma expiração de 3 anos proveem uma proteção "
-"adequada nos dias de hoje (2013-12). O artigo <link xlink:href=\"http://"
-"danielpocock.com/rsa-key-sizes-2048-or-4096-bits\"/> descreve a situação em "
-"mais detalhes."
+"Chaves de 2048-bit com uma expiração de 3 anos proveem uma proteção adequada "
+"nos dias de hoje (2013-12). O artigo <link xlink:href=\"http://danielpocock."
+"com/rsa-key-sizes-2048-or-4096-bits\"/> descreve a situação em mais detalhes."
+""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:288
@@ -584,8 +586,8 @@ msgstr ""
 "sugerir um único caminho, aqui estão alguns links para sites que descrevem "
 "vários métodos:<link xlink:href=\"http://world.std.com/~reinhold/diceware."
 "html\"/>, <link xlink:href=\"http://www.iusmentis.com/security/passphrasefaq/"
-"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/>, <link xlink:href=\"http://"
-"en.wikipedia.org/wiki/Passphrase\"/>."
+"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/> e <link xlink:href=\"http:/"
+"/en.wikipedia.org/wiki/Passphrase\"/>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:313
@@ -595,19 +597,20 @@ msgid ""
 "<email>accounts@FreeBSD.org</email> and revoke the key."
 msgstr ""
 "Proteja a chave privada e a frase secreta. Se a chave privada ou a frase "
-"secreta pode ter sido comprometida ou divulgada, notifique imediatamente "
-"<email>accounts@FreeBSD.org</email> e revogar a chave."
+"secreta pode ter sido comprometida ou exposta, notifique imediatamente \n"
+" <email>accounts@FreeBSD.org</email> e revogue a chave."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:318
 msgid "Committing the new key is shown in <xref linkend=\"commit-steps\"/>."
 msgstr ""
-"Confirmando a nova chave é mostrado em <xref linkend=\"commit-steps\"/>."
+"O processo para commit da nova chave é mostrado em <xref linkend=\"commit-"
+"steps\"/>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:324
 msgid "Kerberos and LDAP web Password for FreeBSD Cluster"
-msgstr "Kerberos e LDAP web Password para o cluster do FreeBSD"
+msgstr "Kerberos e LDAP Web Password para o cluster do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:326
@@ -618,9 +621,9 @@ msgid ""
 "include:"
 msgstr ""
 "O cluster do FreeBSD requer uma senha do Kerberos para acessar certos "
-"serviços. A senha do Kerberos também serve como a senha da web do LDAP, já "
-"que o LDAP está fazendo proxy para o Kerberos no cluster. Alguns dos "
-"serviços que exigem isso incluem:"
+"serviços. A senha do Kerberos também serve como a senha LDAP para a web, já "
+"que o LDAP faz um proxy para o Kerberos no cluster. Alguns dos serviços que "
+"exigem isso incluem:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:334
@@ -660,8 +663,9 @@ msgid ""
 "A Kerberos password can also be set manually by logging into <systemitem "
 "class=\"fqdomainname\">freefall.FreeBSD.org</systemitem> and running:"
 msgstr ""
-"Uma senha do Kerberos também pode ser definida manualmente,<systemitem class="
-"\"fqdomainname\">freefall.FreeBSD.org</systemitem>e executando:"
+"Uma senha do Kerberos também pode ser definida manualmente, para isto logue "
+"no servidor <systemitem class=\"fqdomainname\">freefall.FreeBSD.org</"
+"systemitem> e execute:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:356
@@ -678,15 +682,15 @@ msgid ""
 "shown above must be used first to initialize the Kerberos account."
 msgstr ""
 "A menos que os serviços autenticados por Kerberos do cluster do FreeBSD.org "
-"tenham sido usados anteriormente, <errorname>Client unknown</errorname>será "
-"mostrado. Este erro significa que o <command>ssh kpasswd.freebsd.org</"
-"command>o método mostrado acima deve ser usado primeiro para inicializar a "
-"conta Kerberos."
+"tenham sido usados anteriormente, o erro <errorname>Client unknown</"
+"errorname>será exibido. Este erro significa que o método <command>ssh "
+"kpasswd.freebsd.org</command> mostrado acima deve ser usado primeiro para "
+"inicializar a conta Kerberos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:370
 msgid "Commit Bit Types"
-msgstr "Tipos de bits de confirmação"
+msgstr "Tipos de Commit Bits"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:372
@@ -703,14 +707,14 @@ msgid ""
 "mentor for that area for some period of time."
 msgstr ""
 "O repositório do FreeBSD possui um número de componentes que, quando "
-"combinados, suportam a fonte básica do sistema operacional, a documentação, "
-"a infraestrutura de portas de aplicativos de terceiros e vários utilitários "
-"mantidos. Quando os bits de consolidação do FreeBSD são alocados, as áreas "
-"da árvore onde o bit pode ser usado são especificadas. Geralmente, as áreas "
-"associadas a um bit refletem quem autorizou a alocação do bit de confirmação."
-" Áreas adicionais de autoridade podem ser adicionadas em uma data posterior: "
-"quando isso ocorre, o committer deve seguir procedimentos normais de "
-"atribuição de bits de confirmação para essa área da árvore, buscando a "
+"combinados, suportam os fontes básicos do sistema operacional, a "
+"documentação, a infraestrutura de ports de aplicativos de terceiros e vários "
+"utilitários mantidos. Quando os commit bits do FreeBSD são alocados, as "
+"áreas da árvore onde o bit pode ser usado são especificadas. Geralmente, as "
+"áreas associadas a um bit refletem quem autorizou a alocação do bit de "
+"commit. Áreas adicionais de autoridade podem ser adicionadas em uma data "
+"posterior: quando isso ocorre, o committer deve seguir procedimentos normais "
+"de atribuição de bits de confirmação para essa área da árvore, buscando a "
 "aprovação da entidade apropriada e possivelmente obtendo um mentor para essa "
 "área por algum período de tempo."
 
@@ -786,15 +790,15 @@ msgid ""
 "the benefit of the committer working in an area of less familiarity as it is "
 "for others working on the tree."
 msgstr ""
-"Os bits de confirmação alocados antes do desenvolvimento da noção de áreas "
-"de autoridade podem ser apropriados para uso em muitas partes da árvore. No "
+"Os commit bits alocados antes do desenvolvimento da noção de áreas de "
+"autoridade podem ser apropriados para uso em muitas partes da árvore. No "
 "entanto, o senso comum determina que um committer que não tenha trabalhado "
-"anteriormente em uma área da árvore faça uma revisão antes de se "
-"comprometer, busque a aprovação da parte responsável apropriada e/ou "
-"trabalhe com um mentor. Uma vez que as regras relativas à manutenção de "
-"código diferem por área da árvore, isso é tanto para o benefício do "
-"committer trabalhando em uma área de menos familiar quanto para outras "
-"pessoas trabalhando na árvore."
+"anteriormente em uma área da árvore busque alguém para realizar uma revisão "
+"antes de realizar o commit, busque a aprovação da parte responsável "
+"apropriada e/ou trabalhe com um mentor. Uma vez que as regras relativas à "
+"manutenção de código diferem por área da árvore, isso é tanto para o "
+"benefício do committer trabalhando em uma área de menos familiar quanto para "
+"as outras pessoas trabalhando na árvore."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:425
@@ -803,7 +807,7 @@ msgid ""
 "normal development process, regardless of the area of the tree where the "
 "work is occurring."
 msgstr ""
-"Commiters são encorajados a buscar revisão de seu trabalho como parte do "
+"Commiters são encorajados a buscar revisão do seu trabalho como parte do "
 "processo normal de desenvolvimento, independentemente da área da árvore onde "
 "o trabalho está ocorrendo."
 
@@ -832,10 +836,11 @@ msgid ""
 "comment fixes without approval from a src committer, subject to the normal "
 "care and tending of commits."
 msgstr ""
-"committers de doc podem confirmar alterações de documentação "
-"para<filename>src</filename>, tal como man pages, READMEs, banco de dados de "
+"os doc committers podem efetuar commits de alterações na documentação sob  "
+"<filename>src</filename>, tal como man pages, READMEs, banco de dados do "
 "fortune, arquivos de calendários, e comentar correções sem aprovação de um "
-"src committer, sujeito aos cuidados normais dos commits."
+"src committer, sujeito aos cuidados normais necessários para um commit "
+"seguro."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:451
@@ -844,7 +849,8 @@ msgid ""
 "from a non-mentored committer with the appropriate bit."
 msgstr ""
 "Qualquer committer pode fazer alterações em qualquer outra árvore com um "
-"\"Approved by\" de um committer não orientado com o bit apropriado."
+"\"Approved by\" de um committer que não esteja sob mentoria e que tenha o "
+"bit apropriado."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:457
@@ -857,9 +863,9 @@ msgid ""
 msgstr ""
 "Os committers podem adquirir um bit adicional pelo processo usual de "
 "encontrar um mentor que os proporá ao core, doceng ou portmgr, conforme "
-"apropriado. Quando aprovados, eles serão adicionados ao 'acesso' e o período "
-"normal de orientação ocorrerá, o que envolverá uma continuação "
-"de<quote>Approved by</quote>por algum período."
+"apropriado. Quando aprovados, eles serão adicionados ao 'access' e o período "
+"normal de mentoria irá ocorrer, o que envolverá a continuidade do uso do "
+"<quote>Approved by</quote> por um período."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:466
@@ -868,9 +874,9 @@ msgid ""
 "mentored committers can provide a \"Reviewed by\" but not an \"Approved by\"."
 ""
 msgstr ""
-"\"Approved by\" só é aceitável de committers src não-mentorados - os "
-"committers mentorados podem fornecer um \"Reviewed by\" mas não é um "
-"\"Approved by\"."
+"O \"Approved by\" só é aceitável vindo de src committers que não estejam sob "
+"mentoria  - os committers mentorados podem fornecer um \"Reviewed by\" mas "
+"não um \"Approved by\"."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:475
@@ -900,9 +906,9 @@ msgid ""
 "Subversion on May 31st, 2008. The first real <acronym>SVN</acronym> commit "
 "is <emphasis>r179447</emphasis>."
 msgstr ""
-"O repositório de fontes do FreeBSD mudou de <acronym>CVS</acronym>para o "
-"Subversion em 31 de maio de 2008. O primeiro real<acronym>SVN</acronym> "
-"commit é <emphasis>r179447</emphasis>."
+"O repositório de código fonte do FreeBSD mudou do <acronym>CVS</acronym> "
+"para o Subversion em 31 de maio de 2008. O primeiro commit real no "
+"<acronym>SVN</acronym> é o <emphasis>r179447</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:490
@@ -911,9 +917,9 @@ msgid ""
 "<acronym>CVS</acronym> to Subversion on May 19th, 2012. The first real "
 "<acronym>SVN</acronym> commit is <emphasis>r38821</emphasis>."
 msgstr ""
-"O repositório do FreeBSD <literal>doc/www</literal> foi migrado de "
-"<acronym>CVS</acronym> para Subversion em 19 de Maio de 2012. O primeiro "
-"real commit no <acronym>SVN</acronym> foi <emphasis>r38821</emphasis>."
+"O repositório do FreeBSD <literal>doc/www</literal> foi migrado do  "
+"<acronym>CVS</acronym> para o Subversion em 19 de Maio de 2012. O primeiro "
+"commit real no <acronym>SVN</acronym> foi o <emphasis>r38821</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:495
@@ -922,9 +928,10 @@ msgid ""
 "acronym> to Subversion on July 14th, 2012. The first real <acronym>SVN</"
 "acronym> commit is <emphasis>r300894</emphasis>."
 msgstr ""
-"O repositório do FreeBSD <literal>ports</literal> foi migrado de  "
-"<acronym>CVS</acronym> para Subversion em 14 de Julho 2012. O primeiro real "
-"commit no <acronym>SVN</acronym> foi <emphasis>r300894</emphasis>."
+"O repositório da coleção de <literal>ports</literal> do FreeBSD  foi migrado "
+"do   <acronym>CVS</acronym> para o Subversion em 14 de Julho 2012. O "
+"primeiro commit real no <acronym>SVN</acronym> foi o <emphasis>r300894</"
+"emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:500
@@ -933,7 +940,7 @@ msgid ""
 "these commands:"
 msgstr ""
 "O Subversion pode ser instalado a partir da Coleção de Ports do FreeBSD, "
-"emitindo estes comandos:"
+"executando o comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:503
@@ -944,7 +951,7 @@ msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
 #. (itstool) path: sect2/title
 #: article.translate.xml:508
 msgid "Getting Started"
-msgstr "Começando"
+msgstr "Primeiros Passos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:510
@@ -953,7 +960,7 @@ msgid ""
 "This section will explain them."
 msgstr ""
 "Existem algumas maneiras de obter uma cópia de trabalho da árvore do "
-"Subversion. Esta seção irá explicá-los."
+"Subversion. Esta seção irá explicá-las."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:514
@@ -966,8 +973,8 @@ msgid ""
 "The first is to check out directly from the main repository. For the "
 "<literal>src</literal> tree, use:"
 msgstr ""
-"O primeiro é fazer check-out diretamente do repositório principal. Para "
-"fazer em na árvore<literal>src</literal>, use:"
+"O primeiro é fazer check-out diretamente do repositório principal. Para a "
+"árvore <literal>src</literal>, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:520
@@ -983,7 +990,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:522
 msgid "For the <literal>doc</literal> tree, use:"
-msgstr "Para a árvore<literal>doc</literal>, use:"
+msgstr "Para a árvore <literal>doc</literal>, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:524
@@ -998,7 +1005,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:526
 msgid "For the <literal>ports</literal> tree, use:"
-msgstr "Para a árvore <literal>ports</literal>, use:"
+msgstr "Para a árvore da coleção de <literal>ports</literal>, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:528
@@ -1007,7 +1014,7 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/"
 "head /usr/ports</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput> svn checkout svn+ssh://repo.freebsd.org/ports/"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/"
 "head /usr/ports</userinput>"
 
 #. (itstool) path: note/para
@@ -1019,11 +1026,11 @@ msgid ""
 "<literal>ports</literal> tree. Ports related Subversion operations are "
 "listed in <xref linkend=\"ports\"/>."
 msgstr ""
-"Embora os exemplos restantes neste documento sejam escritos com o fluxo de "
-"trabalho de trabalho com a árvore <literal>src</literal> em mente, os "
-"conceitos subjacentes são os mesmos para trabalhar com o <literal>doc</"
-"literal> e o <literal> árvore>ports</literal>. Portas relacionadas às "
-"operações do Subversion estão listadas em <xref linkend=\"ports\"/>."
+"Embora os exemplos restantes neste documento tenham sido escritos tendo o "
+"workflow de trabalho com a árvore <literal>src</literal> em mente, os "
+"conceitos básicos são os mesmos para se trabalhar com o <literal>doc</"
+"literal> e com a árvore dos <literal>ports</literal>. Os ports relacionados "
+"às operações do Subversion estão listados em <xref linkend=\"ports\"/>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:541
@@ -1034,12 +1041,12 @@ msgid ""
 "that command causes the working copy, in this case, to be named <quote>head</"
 "quote>, but that can be renamed safely."
 msgstr ""
-"O comando acima irá verificar uma árvore de código-fonte <literal>CURRENT</"
-"literal>árvore de origem como<filename><replaceable>/usr/src/</replaceable></"
-"filename>, que pode ser qualquer diretório de destino no sistema de arquivos "
-"local. Omitir o argumento final desse comando faz com que a cópia de "
-"trabalho, neste caso, seja denominada <quote>head</quote>, mas que pode ser "
-"renomeada com segurança."
+"O comando acima irá fazer o checkout da árvore de código-fonte "
+"<literal>CURRENT</literal>  como <filename><replaceable>/usr/src/</"
+"replaceable></filename>, o qual pode ser qualquer diretório de destino no "
+"sistema de arquivos local. Omitir o argumento final desse comando faz com "
+"que a cópia de trabalho, neste caso, seja nominada como <quote>head</quote>, "
+"mas ela poderá ser renomeada com segurança."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:549
@@ -1050,10 +1057,11 @@ msgid ""
 "the repository, and <literal>head</literal> is the subdirectory within the "
 "repository."
 msgstr ""
-"<literal>svn+ssh</literal> significa o <acronym>SVN</acronym> protocolo "
-"tunnelled sobre <acronym>SSH</acronym>.  O nome do servidor é<literal>repo."
-"freebsd.org</literal>, <literal>base</literal> é o caminho para o "
-"repositório <literal>head</literal> é o subdiretório dentro do repositório."
+"O <literal>svn+ssh</literal> significa que o protocolo <acronym>SVN</"
+"acronym> será tunelado sobre o <acronym>SSH</acronym>.  O nome do servidor é "
+"<literal>repo.freebsd.org</literal>, e <literal>base</literal> é o caminho "
+"para o repositório, e <literal>head</literal> é o subdiretório dentro do "
+"repositório."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:556
@@ -1063,10 +1071,10 @@ msgid ""
 "<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>), or add an "
 "entry to <filename>~/.ssh/config</filename> in the form:"
 msgstr ""
-"Se seu nome de login do FreeBSD for diferente do nome de login usado na "
-"máquina local, inclua-o no <acronym>URL</acronym>(por "
-"exemplo<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>) ou "
-"adicionar uma entrada para <filename>~/.ssh/config</filename> na forma:"
+"Se seu nome de login no projeto FreeBSD for diferente do nome de login usado "
+"na sua  máquina local, inclua-o na <acronym>URL</acronym> (por exemplo "
+"<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>) ou adicione "
+"uma entrada no arquivo <filename>~/.ssh/config</filename> no formato:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:563
@@ -1082,7 +1090,7 @@ msgid ""
 "This is the simplest method, but it is hard to tell just yet how much load "
 "it will place on the repository."
 msgstr ""
-"Este é o método mais simples, mas é difícil dizer ainda quanta carga ele irá "
+"Este é o método mais simples, mas é difícil dizer quanta carga ele irá "
 "colocar no repositório."
 
 #. (itstool) path: note/para
@@ -1093,15 +1101,15 @@ msgid ""
 "copy. This, however, means that Subversion working copies are very large in "
 "size."
 msgstr ""
-"O <command>svn diff</command>não requer acesso ao servidor como "
-"<acronym>SVN</acronym>armazena uma cópia de referência de todos os arquivos "
+"O <command>svn diff</command> não requer acesso ao servidor pois o "
+"<acronym>SVN</acronym> armazena uma cópia de referência de todos os arquivos "
 "na cópia de trabalho. Isto, no entanto, significa que as cópias de trabalho "
 "do Subversion são muito grandes em tamanho."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:579
 msgid "<literal>RELENG_*</literal> Branches and General Layout"
-msgstr "<literal>RELENG_*</literal> Branches e General Layout"
+msgstr "Branches <literal>RELENG_*</literal> e Layout Geral"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:582
@@ -1111,11 +1119,11 @@ msgid ""
 "refers to the ports tree, and so on. These are separate repositories with "
 "their own change number sequences, access controls and commit mail."
 msgstr ""
-"Dentro <literal>svn+ssh://repo.freebsd.org/base</literal>, <emphasis>base</"
-"emphasis>refere-se à árvore de origem. Similarmente, <emphasis>ports</"
+"No <literal>svn+ssh://repo.freebsd.org/base</literal>, <emphasis>base</"
+"emphasis> refere-se à árvore de código fonte. Similarmente, <emphasis>ports</"
 "emphasis> refere-se à árvore de ports e assim por diante. Estes são "
 "repositórios separados com suas próprias seqüências de números de mudança, "
-"controles de acesso e email de confirmação."
+"controles de acesso e email de commit."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:589
@@ -1125,8 +1133,8 @@ msgid ""
 "bin/ls</filename> in a release. Some key locations are:"
 msgstr ""
 "Para o repositório base, HEAD refere-se a árvore -CURRENT. Por exemplo, "
-"<filename>head/bin/ls</filename>é o que entraria<filename>/usr/src/bin/ls</"
-"filename> em uma release. Alguns locais importantes são:"
+"<filename>head/bin/ls</filename> é o que entraria como <filename>/usr/src/"
+"bin/ls</filename> em uma release. Alguns locais importantes são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:596
@@ -1134,8 +1142,8 @@ msgid ""
 "<emphasis>/head/</emphasis> which corresponds to <literal>HEAD</literal>, "
 "also known as <literal>-CURRENT</literal>."
 msgstr ""
-"<emphasis>/head/</emphasis> que corresponde a<literal>HEAD</literal>,também "
-"conhecido como<literal>-CURRENT</literal>."
+"<emphasis>/head/</emphasis> que corresponde a <literal>HEAD</literal>, "
+"também conhecido como <literal>-CURRENT</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:602
@@ -1143,8 +1151,8 @@ msgid ""
 "<emphasis>/stable/<replaceable>n</replaceable></emphasis> which corresponds "
 "to <literal>RELENG_<replaceable>n</replaceable></literal>."
 msgstr ""
-"<emphasis>/stable/<replaceable>n</replaceable></emphasis>que corresponde "
-"a<literal>RELENG_<replaceable>n</replaceable></literal>."
+"<emphasis>/stable/<replaceable>n</replaceable></emphasis> que corresponde a "
+"<literal>RELENG_<replaceable>n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
@@ -1152,8 +1160,8 @@ msgid ""
 "<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> which "
 "corresponds to <literal>RELENG_<replaceable>n_n</replaceable></literal>."
 msgstr ""
-"<emphasis>/releng/<replaceable>n.n</replaceable></emphasis>que corresponde "
-"a<literal>RELENG_<replaceable>n_n</replaceable></literal>."
+"<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> que corresponde "
+"a <literal>RELENG_<replaceable>n_n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:614
@@ -1162,8 +1170,8 @@ msgid ""
 "corresponds to <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
 "literal>."
 msgstr ""
-"<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis>que "
-"corresponde a<literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
+"<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis> que "
+"corresponde a <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
 "literal>."
 
 #. (itstool) path: listitem/para
@@ -1174,10 +1182,10 @@ msgid ""
 "This contrasts with the <emphasis>stable</emphasis>, <emphasis>releng</"
 "emphasis> and <emphasis>release</emphasis> directories."
 msgstr ""
-"<emphasis>/vendor*</emphasis> é a área de trabalho de importação de filial "
-"do fornecedor. Este diretório em si não contém ramificações, no entanto, "
-"seus subdiretórios. Isso contrasta com o <emphasis>stable</emphasis>, "
-"<emphasis>releng</emphasis> e <emphasis>release</emphasis> diretórios."
+"<emphasis>/vendor*</emphasis> é uma área de trabalho para importar branches "
+"de vendors. Este diretório em si não contém branches, no entanto, os seus "
+"subdiretórios contém. Isso contrasta com os diretórios <emphasis>stable</"
+"emphasis>, <emphasis>releng</emphasis> e <emphasis>release</emphasis>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:629
@@ -1186,14 +1194,14 @@ msgid ""
 "branch work area. As above, the <emphasis>/user</emphasis> directory does "
 "not contain branches itself."
 msgstr ""
-"<emphasis>/projects</emphasis> e <emphasis>/user</emphasis>apresentam uma "
-"área de trabalho de ramificação. Como acima, o <emphasis>/user</emphasis> "
-"diretório não contém ramificações em si."
+"<emphasis>/projects</emphasis> e <emphasis>/user</emphasis> são áreas de "
+"trabalho de branch. Como acima, o diretório <emphasis>/user</emphasis> não "
+"contém branches em si."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:639
 msgid "FreeBSD Documentation Project Branches and Layout"
-msgstr "Ramificações e Layout do Projeto de Documentação do FreeBSD"
+msgstr "Branches e Layout do Projeto de Documentação do FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:642
@@ -1201,8 +1209,8 @@ msgid ""
 "In <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
 "emphasis> refers to the repository root of the source tree."
 msgstr ""
-"Dentro <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
-"emphasis>refere-se à raiz do repositório da árvore de origem."
+"no <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
+"emphasis> refere-se à raiz do repositório da árvore de código fonte."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:646
@@ -1211,8 +1219,8 @@ msgid ""
 "<filename>head/</filename> branch of the documentation source tree."
 msgstr ""
 "Em geral, a maior parte do trabalho do Projeto de Documentação do FreeBSD "
-"será feito dentro do <filename>head/</filename> ramo da árvore de fontes de "
-"documentação."
+"será feito dentro do branch <filename>head/</filename> da árvore com os "
+"arquivos fontes da documentação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:650
@@ -1221,7 +1229,7 @@ msgid ""
 "each in a separate directory in the <filename>head/</filename> branch."
 msgstr ""
 "A documentação do FreeBSD é escrita e/ou traduzida para vários idiomas, cada "
-"um em um diretório separado no <filename>head/</filename> branch."
+"um em um diretório separado no branch <filename>head/</filename>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:655
@@ -1248,7 +1256,7 @@ msgid ""
 "books, such as the FreeBSD Handbook."
 msgstr ""
 "<emphasis>/books/</emphasis> contém o código fonte para os diferentes "
-"livros, como o FreeBSD Handbook."
+"livros, como o Handbook do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:673
@@ -1256,12 +1264,12 @@ msgid ""
 "<emphasis>/htdocs/</emphasis> contains the source code for the "
 "FreeBSD website."
 msgstr ""
-"<emphasis>/htdocs/</emphasis>contém o código-fonte do site do FreeBSD."
+"<emphasis>/htdocs/</emphasis> contém o código-fonte do website do FreeBSD."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:680
 msgid "FreeBSD Ports Tree Branches and Layout"
-msgstr "Ports de árvore e layout de ports do FreeBSD"
+msgstr "Branches e Layout da Árvore de Ports do FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:682
@@ -1269,8 +1277,8 @@ msgid ""
 "In <literal>svn+ssh://repo.freebsd.org/ports</literal>, <emphasis>ports</"
 "emphasis> refers to the repository root of the ports tree."
 msgstr ""
-"Em <literal>svn+ssh: //repo.freebsd.org/ports</literal>,<emphasis>ports</"
-"emphasis>refere-se à raiz do repositório da árvore de ports."
+"No <literal>svn+ssh: //repo.freebsd.org/ports</literal>, <emphasis>ports</"
+"emphasis> refere-se à raiz do repositório da árvore de ports."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:686
@@ -1279,10 +1287,10 @@ msgid ""
 "filename> branch of the ports tree which is the actual ports tree used to "
 "install software. Some other key locations are:"
 msgstr ""
-"Em geral, a maior parte do trabalho de ports do FreeBSD será feito dentro da "
-"ramificação<filename>head/</filename> da árvore de ports, que é a árvore de "
-"ports real usada para instalar o software. Alguns outros locais importantes "
-"são:"
+"Em geral, a maior parte do trabalho na coleção de ports do FreeBSD será "
+"feito dentro da branch <filename>head/</filename> da árvore de ports, que é "
+"a árvore de ports real usada para instalar software. Alguns outros locais "
+"importantes são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:693
@@ -1292,9 +1300,8 @@ msgid ""
 "used to merge back security updates in preparation for a release."
 msgstr ""
 "<emphasis>/branches/RELENG_<replaceable>n_n_n</replaceable></emphasis> que "
-"corresponde a<literal>RELENG_<replaceable>n_n_n</replaceable></literal> é "
-"usado para mesclar atualizações de segurança em preparação para uma "
-"liberação."
+"corresponde a <literal>RELENG_<replaceable>n_n_n</replaceable></literal> e é "
+"usado para mesclar atualizações de segurança em preparação para uma release."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:701
@@ -1304,8 +1311,8 @@ msgid ""
 "represents a release tag of the ports tree."
 msgstr ""
 "<emphasis>/tags/RELEASE_<replaceable>n_n_n</replaceable></emphasis> que "
-"corresponde a <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> "
-"representa uma tag de lançamento da árvore de ports."
+"corresponde a <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> e "
+"representa uma tag de release da árvore de ports."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:708
@@ -1314,7 +1321,7 @@ msgid ""
 "represents the end of life tag of a specific FreeBSD branch."
 msgstr ""
 "<emphasis>/tags/RELEASE_<replaceable>n</replaceable>_EOL</emphasis> "
-"representa o end of life tag de um ramo específico do FreeBSD."
+"representa o tag de end of life de um branch específico do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:717
@@ -1341,8 +1348,8 @@ msgid ""
 "<acronym>SVN</acronym> has built in help documentation. It can be accessed "
 "by typing:"
 msgstr ""
-"<acronym>SVN</acronym> foi construído em documentação de ajuda. Pode ser "
-"acessado digitando:"
+"O <acronym>SVN</acronym> traz em si uma documentação interna de ajuda. Ela "
+"pode ser acessada digitando:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:728
@@ -1368,7 +1375,8 @@ msgstr "Checkout"
 #: article.translate.xml:738
 msgid "As seen earlier, to check out the FreeBSD head branch:"
 msgstr ""
-"Como visto anteriormente, para verificar o branch principal do FreeBSD:"
+"Como visto anteriormente, para fazer o checkout da branch principal (head) "
+"do FreeBSD:"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:743
@@ -1378,10 +1386,10 @@ msgid ""
 "useful to have a partial checkout of the complete tree (a full checkout "
 "would be very painful)."
 msgstr ""
-"Em algum momento, mais do que apenas <literal>HEAD</literal> provavelmente "
-"será útil, por exemplo, ao mesclar as alterações para stable/7. Portanto, "
-"pode ser útil ter uma verificação parcial da árvore completa (um check-out "
-"completo seria muito doloroso)."
+"Em algum momento, provavelmente será útil ter uma copia de trabalho mais do "
+"que apenas do <literal>HEAD</literal>, por exemplo, ao mesclar as alterações "
+"para stable/7. Portanto, pode ser útil ter uma verificação parcial da árvore "
+"completa (um check-out completo seria muito doloroso)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:749
@@ -1406,10 +1414,10 @@ msgid ""
 "subdirectories for <literal>head</literal>, <literal>stable</literal>, "
 "<literal>vendor</literal> and so on."
 msgstr ""
-"Isso vai dar <literal>base</literal>com todos os arquivos que ele contém (no "
-"momento da escrita, apenas <filename>ROADMAP.txt</filename>)e subdiretórios "
-"vazios para <literal>head</literal>, <literal>stable</literal>, "
-"<literal>vendor</literal> e assim por diante."
+"Isso vai obter o <literal>base</literal> com todos os arquivos que ele "
+"contém (no momento da escrita, apenas o <filename>ROADMAP.txt</filename>) e "
+"subdiretórios vazios para <literal>head</literal>, <literal>stable</"
+"literal>, <literal>vendor</literal> e assim por diante."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:760
@@ -1417,7 +1425,7 @@ msgid ""
 "Expanding the working copy is possible. Just change the depth of the various "
 "subdirectories:"
 msgstr ""
-"Expandir a cópia de trabalho é possível. Basta alterar a profundidade dos "
+"É possível expandir a cópia de trabalho. Basta alterar a profundidade dos "
 "vários subdiretórios:"
 
 #. (itstool) path: sect3/screen
@@ -1442,9 +1450,10 @@ msgid ""
 "<literal>releng</literal> branch, and every <literal>stable</literal> branch."
 ""
 msgstr ""
-"O comando acima irá baixar uma cópia completa <literal>head</literal>, além "
-"de cópias vazias de cada<literal>release</literal> tag, cada "
-"<literal>releng</literal> branch, e cada <literal>stable</literal> branch."
+"O comando acima irá baixar uma cópia completa do <literal>head</literal>, "
+"além de cópias vazias de cada tag de <literal>release</literal>, de cada "
+"branch de <literal>releng</literal>, e de cada branch <literal>stable</"
+"literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:772
@@ -1452,8 +1461,8 @@ msgid ""
 "If at a later date merging to <literal>7-STABLE</literal> is required, "
 "expand the working copy:"
 msgstr ""
-"Se numa data posterior se mesclar a<literal>7-STABLE</literal> é necessário, "
-"expanda a cópia de trabalho:"
+"Se numa data posterior você tiver necessidade de mesclar algo, por exemplo, "
+"com a <literal>7-STABLE</literal>, expanda a cópia de trabalho:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:776
@@ -1472,9 +1481,9 @@ msgid ""
 "<literal>stable/7/sys</literal> and then later expand the rest of "
 "<literal>stable/7</literal>:"
 msgstr ""
-"As subárvores não precisam ser expandidas completamente. Por exemplo, "
-"expandir apenas<literal>stable/7/sys</literal> e depois expandir o "
-"resto<literal>stable/7</literal>:"
+"As subárvores não precisam ser expandidas completamente. Por exemplo, para "
+"expandir apenas o <literal>stable/7/sys</literal> e depois expandir o resto "
+"do <literal>stable/7</literal>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:783
@@ -1485,9 +1494,9 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
 "userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput> svn up --set-depth = infinity base/stable/7/"
-"sys</userinput>\n"
-"<prompt>%</prompt> <userinput> svn up --set-depth = infinity base/stable/7</"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7/sys</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
 "userinput>"
 
 #. (itstool) path: sect3/para
@@ -1497,14 +1506,14 @@ msgid ""
 "was previously asked for (in this case, <literal>head</literal> and "
 "<literal>stable/7</literal>; it will not pull down the whole tree."
 msgstr ""
-"Atualizando a árvore com <command> svn update </command> irá apenas "
-"atualizar o que foi pedido anteriormente (neste caso, <literal>head</"
-"literal> e <literal>stable/7</literal>; ele não irá puxar a árvore inteira."
+"Atualizar a árvore com <command>svn update</command> irá apenas atualizar o "
+"que foi pedido anteriormente (neste caso, <literal>head</literal> e "
+"<literal>stable/7</literal>), ele não irá puxar a árvore inteira."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:794
 msgid "Anonymous Checkout"
-msgstr "Anonymous Checkout"
+msgstr "Checkout Anonimo"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:796
@@ -1513,9 +1522,10 @@ msgid ""
 "Subversion. This will give access to a read-only tree that can be updated, "
 "but not committed back to the main repository. To do this, use:"
 msgstr ""
-"É possível verificar anonimamente o repositório do FreeBSD com o Subversion. "
+"É possível efetuar o checkout anonimo o repositório Subversion do FreeBSD. "
 "Isso dará acesso a uma árvore somente leitura que pode ser atualizada, mas "
-"não confirmada no repositório principal. Para fazer isso, use:"
+"que não poderá ser enviada de volta para o repositório principal por meio de "
+"um commit. Para fazer isso, use:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:801
@@ -1536,7 +1546,7 @@ msgid ""
 msgstr ""
 "Mais detalhes sobre o uso do Subversion podem ser encontrados em<link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn."
-"html\">Usando Subversion</link>."
+"html\">Usando o Subversion</link>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:809
@@ -1584,7 +1594,7 @@ msgstr "<prompt>%</prompt> <userinput>svn status</userinput>"
 #: article.translate.xml:826
 msgid "To show local changes and files that are out-of-date do:"
 msgstr ""
-"Para mostrar alterações locais e arquivos que estão desatualizados, faça:"
+"Para mostrar alterações locais e arquivos que estão desatualizados, execute:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:829
@@ -1595,7 +1605,7 @@ msgstr "<prompt>%</prompt> <userinput>svn status --show-updates</userinput>"
 #. (itstool) path: sect3/title
 #: article.translate.xml:833
 msgid "Editing and Committing"
-msgstr "Edição e Confirmação"
+msgstr "Editando e efetuando o commit"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:835
@@ -1603,15 +1613,15 @@ msgid ""
 "<acronym>SVN</acronym> does not need to be told in advance about file "
 "editing."
 msgstr ""
-"<acronym>SVN</acronym> não precisa ser avisado com antecedência sobre a "
+"O <acronym>SVN</acronym> não precisa ser avisado com antecedência sobre a "
 "edição de arquivos."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:838
 msgid "To commit all changes in the current directory and all subdirectories:"
 msgstr ""
-"Para confirmar todas as alterações no diretório atual e em todos os "
-"subdiretórios:"
+"Para efetuar o commit de todas as alterações no diretório atual e em todos "
+"os seus  subdiretórios:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:841
@@ -1626,9 +1636,10 @@ msgid ""
 "replaceable></filename> and <filename><replaceable>usr/bin/fetch/</"
 "replaceable></filename> in a single operation:"
 msgstr ""
-"Para confirmar todas as alterações, por exemplo,<filename><replaceable>lib/"
-"libfetch/</replaceable></filename> e <filename><replaceable>usr/bin/fetch/</"
-"replaceable></filename> em uma única operação:"
+"Para efetuar o commit de todas as alterações, por exemplo, nos arquivos "
+"<filename><replaceable>lib/libfetch/</replaceable></filename> e "
+"<filename><replaceable>usr/bin/fetch/</replaceable></filename> em uma única "
+"operação, execute:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:849
@@ -1646,8 +1657,8 @@ msgid ""
 "There is also a commit wrapper for the ports tree to handle the properties "
 "and sanity checking the changes:"
 msgstr ""
-"Há também um wrapper de confirmação para a árvore de ports para manipular as "
-"propriedades e sanidade verificando as mudanças:"
+"Também existe um wrapper de commit para a árvore de ports para manipular as "
+"propriedades e para verificar a sanidade das mudanças:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:855
@@ -1677,16 +1688,16 @@ msgid ""
 "initial config file is created when you first run a svn command, even "
 "something as simple as <command>svn help</command>."
 msgstr ""
-"Antes de adicionar arquivos, obtenha uma cópia do<link xlink:href=\"https://"
+"Antes de adicionar arquivos, obtenha uma cópia do <link xlink:href=\"https://"
 "people.FreeBSD.org/~peter/auto-props.txt\">auto-props.txt</link> (há também "
 "um <link xlink:href=\"https://people.FreeBSD.org/~beat/cvs2svn/auto-props."
-"txt\"> versão específica da árvore de ports</link>) e adicione-o "
-"a<filename>~/.subversion/config</filename>de acordo com as instruções do "
-"arquivo. Se você adicionou algo antes de ler isto, use <command>svn rm --"
-"keep-local</command> para apenas adicionar arquivos, corrija seu arquivo de "
-"configuração e adicione-os novamente. O arquivo de configuração inicial é "
-"criado quando você executa um comando svn pela primeira vez, até mesmo algo "
-"tão simples quanto <command>svn help</command>."
+"txt\"> versão específica da árvore de ports</link>) e adicione-o ao "
+"<filename>~/.subversion/config</filename> seguindo as instruções contidas no "
+"arquivo. Se você adicionou algo antes de ler isto, use o comando "
+"<command>svn rm --keep-local</command> para apenas os arquivos adicionados, "
+"corrija seu arquivo de configuração e adicione-os novamente. O arquivo de "
+"configuração inicial é criado quando você executa um comando svn pela "
+"primeira vez, até mesmo algo tão simples quanto <command>svn help</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:874
@@ -1694,9 +1705,9 @@ msgid ""
 "Files are added to a <acronym>SVN</acronym> repository with <command>svn "
 "add</command>. To add a file named <emphasis>foo</emphasis>, edit it, then:"
 msgstr ""
-"Os arquivos são adicionados a um<acronym>SVN</acronym>repositório com "
+"Os arquivos são adicionados a um <acronym>SVN</acronym> repositório com "
 "<command>svn add</command>. Para adicionar um arquivo chamado <emphasis>foo</"
-"emphasis>, edite-o e depois:"
+"emphasis>, edite-o e depois execute:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:879
@@ -1705,7 +1716,7 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></"
 "userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput> svn add <replaceable>foo</replaceable> </"
+"<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></"
 "userinput>"
 
 #. (itstool) path: note/para
@@ -1719,11 +1730,12 @@ msgid ""
 "literal> string."
 msgstr ""
 "A maioria dos novos arquivos fonte deve incluir uma string "
-"<literal>$FreeBSD$</literal>próxima ao início do arquivo. Em commit, o "
-"<command>svn</command>expandirá a string<literal>$FreeBSD$</literal>, "
-"adicionando o caminho do arquivo, o número da revisão, a data e a hora da "
-"confirmação e o nome de usuário do committer. Arquivos que não podem ser "
-"modificados podem ser confirmados sem a string <literal>$FreeBSD$</literal>."
+"<literal>$FreeBSD$</literal> próxima ao início do arquivo. Ao efetuar o "
+"commit, o <command>svn</command> expandirá a string <literal>$FreeBSD$</"
+"literal>, adicionando o caminho do arquivo, o número da revisão, a data e a "
+"hora da confirmação e o nome de usuário do committer. Arquivos que não podem "
+"ser modificados podem ser enviados sem a string <literal>$FreeBSD$</literal>."
+""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:892
@@ -1746,8 +1758,8 @@ msgid ""
 "Subversion does not require deleting the file before using <command>svn rm</"
 "command>, and indeed complains if that happens."
 msgstr ""
-"Subversion não requer a exclusão do arquivo antes de usar <command>svn rm</"
-"command>e, de fato, reclama se isso acontecer."
+"O subversion não requer a exclusão do arquivo antes de usaramos o comando  "
+"<command>svn rm</command> e, de fato, ele reclama se isso acontecer."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:901
@@ -1774,8 +1786,8 @@ msgid ""
 "Although <command>svn mkdir</command> makes this easier by combining the "
 "creation of the directory and the adding of it:"
 msgstr ""
-"Apesar <command>svn mkdir</command> torna isso mais fácil combinando a "
-"criação do diretório e a adição dele:"
+"Apesar que o <command>svn mkdir</command> torna isso mais fácil, combinando "
+"a criação do diretório e a adição dele:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:911
@@ -1818,7 +1830,7 @@ msgid ""
 "<filename>bar.c</filename>, with the new file also under version control and "
 "with the full history of <filename>foo.c</filename>:"
 msgstr ""
-"Este comando cria uma cópia do <filename>foo.c</filename> nomeado "
+"Este comando cria uma cópia do arquivo <filename>foo.c</filename> nomeado "
 "<filename>bar.c</filename>, com o novo arquivo também sob controle de versão "
 "e com o histórico completo de <filename>foo.c</filename>:"
 
@@ -1839,9 +1851,10 @@ msgid ""
 "adding it to the repository with <command>svn add</command> because this way "
 "the new file does not inherit the original one's history."
 msgstr ""
-"Geralmente é preferível copiar o arquivo com <command>cp</command> e "
-"adicionando-o ao repositório com <command>svn add</command>porque desta "
-"forma o novo arquivo não herda a história do original."
+"Geralmente é preferível copiar desta forma ao invés de copiar o arquivo com "
+"comando <command>cp</command> e adicionando-o ao repositório com "
+"<command>svn add</command> porque desta forma o novo arquivo não herda a "
+"história do original."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:935
@@ -1861,7 +1874,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:941
 msgid "Log and Annotate"
-msgstr "Log e Anotar"
+msgstr "Logs e Anotações"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:943
@@ -1870,9 +1883,9 @@ msgid ""
 "first, for files or directories. When used on a directory, all revisions "
 "that affected the directory and files within that directory are shown."
 msgstr ""
-"<command>svn log</command> mostra revisões e mensagens de commit, mais "
-"recentes primeiro, para arquivos ou diretórios. Quando usado em um "
-"diretório, todas as revisões que afetaram o diretório e os arquivos nesse "
+"O <command>svn log</command> mostra revisões e mensagens de commit, as mais "
+"recentes são exibidas primeiro, para arquivos ou diretórios. Quando usado em "
+"um diretório, todas as revisões que afetaram o diretório e os arquivos nesse "
 "diretório são mostradas."
 
 #. (itstool) path: sect3/para
@@ -1882,9 +1895,9 @@ msgid ""
 "<command>svn blame</command>, shows the most recent revision number and who "
 "committed that revision for each line of a file."
 msgstr ""
-"<command>svn annotate</command>,ou igualmente <command>svn praise</command> "
-"ou <command>svn blame</command>, mostra o número de revisão mais recente e "
-"quem cometeu essa revisão para cada linha de um arquivo."
+"O <command>svn annotate</command> , ou igualmente o <command>svn praise</"
+"command> ou <command>svn blame</command>, mostra o número de revisão mais "
+"recente e quem fez o commit dessa revisão para cada linha de um arquivo."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:955
@@ -1898,9 +1911,9 @@ msgid ""
 "generated by <acronym>SVN</acronym> are unified and include new files by "
 "default in the diff output."
 msgstr ""
-"<command>svn diff</command>exibe alterações na cópia de trabalho. Diffs "
-"gerado por<acronym>SVN</acronym> são unificados e incluem novos arquivos por "
-"padrão na saída do diff."
+"O <command>svn diff</command> exibe alterações na cópia de trabalho. Diffs "
+"gerado por <acronym>SVN</acronym> são unificados e incluem novos arquivos "
+"por padrão na saída do diff."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:962
@@ -1908,8 +1921,8 @@ msgid ""
 "<command>svn diff</command> can show the changes between two revisions of "
 "the same file:"
 msgstr ""
-"<command>svn diff</command>pode mostrar as mudanças entre duas revisões do "
-"mesmo arquivo:"
+"O <command>svn diff</command> pode mostrar as mudanças entre duas revisões "
+"do mesmo arquivo:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:965
@@ -1950,8 +1963,8 @@ msgid ""
 "<command>svn revert</command>. It does not update out-of-date files, but "
 "just replaces them with pristine copies of the original version."
 msgstr ""
-"Mudanças locais (including additions and deletions) pode ser revertido "
-"usando<command>svn revert</command>. Ele não atualiza arquivos "
+"Mudanças locais (including additions and deletions) podem ser revertidas  "
+"usando <command>svn revert</command>. Ele não atualiza arquivos "
 "desatualizados, apenas os substitui por cópias originais da versão original."
 
 #. (itstool) path: sect3/title
@@ -1968,10 +1981,10 @@ msgid ""
 "simple, not yet deprecated procedure is:"
 msgstr ""
 "Se um <command>svn update</command> resultou em um conflito de mesclagem, o "
-"Subversion irá lembrar quais arquivos têm conflitos e se recusam a submeter "
-"quaisquer alterações a esses arquivos até que seja explicitamente informado "
-"que os conflitos foram resolvidos. O procedimento simples, ainda não "
-"suspenso, é:"
+"Subversion irá lembrar quais arquivos têm conflitos e se recusará a fazer o "
+"commit de quaisquer alterações nesses arquivos até que seja explicitamente "
+"informado que os conflitos foram resolvidos. O procedimento simples, ainda "
+"não obsoleto, é:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:993
@@ -2004,8 +2017,8 @@ msgid ""
 "The two examples are equivalent. Possible values for <literal>--accept</"
 "literal> are:"
 msgstr ""
-"Os dois exemplos são equivalentes. Valores possíveis para <literal>--accept</"
-"literal> são:"
+"Os dois exemplos são equivalentes. Os valores possíveis para <literal>--"
+"accept</literal> são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1004
@@ -2013,8 +2026,8 @@ msgid ""
 "<literal>working</literal>: use the version in your working directory (which "
 "one presumes has been edited to resolve the conflicts)."
 msgstr ""
-"<literal>working</literal>: use a versão em seu diretório de trabalho (qual "
-"presume que foi editado para resolver os conflitos)."
+"<literal>working</literal>: use a versão em seu diretório de trabalho (a "
+"qual se presume que foi editada para resolver os conflitos)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1010
@@ -2024,137 +2037,123 @@ msgid ""
 "changes, and possibly other intervening changes as well."
 msgstr ""
 "<literal>base</literal>: usar uma cópia original da versão que você tinha "
-"antes<command>svn update</command>, descartando suas próprias alterações, as "
-"mudanças conflitantes e possivelmente outras mudanças intervenientes também."
+"antes do <command>svn update</command>, descartando suas próprias "
+"alterações, as mudanças conflitantes e possivelmente outras mudanças "
+"intervenientes também."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1017
-#, fuzzy
 msgid ""
 "<literal>mine-full</literal>: use what you had before <command>svn update</"
 "command>, including your own changes, but discarding the conflicting "
 "changes, and possibly other intervening changes as well."
 msgstr ""
-"<literal> mine-full </literal>: use o que você tinha antes de <command> svn "
-"update </command>, incluindo suas próprias mudanças, mas descartando as "
+"<literal>mine-full</literal>: use o que você tinha antes do <command>svn "
+"update</command>, incluindo suas próprias mudanças, mas descartando as "
 "mudanças conflitantes, e possivelmente outras mudanças intervenientes também."
 ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1024
-#, fuzzy
 msgid ""
 "<literal>theirs-full</literal>: use the version that was retrieved when you "
 "did <command>svn update</command>, discarding your own changes."
 msgstr ""
-"<literal> theirs-full </literal>: use a versão que foi recuperada quando "
-"você fez <command> svn update </command>, descartando suas próprias mudanças."
-""
+"<literal>theirs-full</literal>: use a versão que foi recuperada quando você "
+"fez o <command>svn update</command>, descartando as suas próprias mudanças."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1034
-#, fuzzy
 msgid "Advanced Use"
 msgstr "Uso Avançado"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1037
-#, fuzzy
 msgid "Sparse Checkouts"
-msgstr "Checkouts esparsos"
+msgstr "Checkouts dispersos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1039
-#, fuzzy
 msgid ""
 "<acronym>SVN</acronym> allows <emphasis>sparse</emphasis>, or partial "
 "checkouts of a directory by adding <option>--depth</option> to a "
 "<command>svn checkout</command>."
 msgstr ""
-"<acronym> SVN </acronym> permite <emphasis> esparsas </emphasis>, ou "
-"checkouts parciais de um diretório adicionando <option> - depth </option> a "
-"um <command> svn checkout </command>."
+"O <acronym>SVN</acronym> permite <emphasis>sparse</emphasis>, ou checkouts "
+"parciais de um diretório adicionando <option>--depth</option> a um "
+"<command>svn checkout</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1044
-#, fuzzy
 msgid "Valid arguments to <option>--depth</option> are:"
-msgstr "Argumentos válidos para <option> - depth </option> são:"
+msgstr "Os argumentos válidos para <option>--depth</option> são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1049
-#, fuzzy
 msgid ""
 "<literal>empty</literal>: the directory itself without any of its contents."
-msgstr ""
-"<literal> empty </literal>: o próprio diretório sem qualquer conteúdo."
+msgstr "<literal>empty</literal>: o próprio diretório sem qualquer conteúdo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1054
-#, fuzzy
 msgid "<literal>files</literal>: the directory and any files it contains."
 msgstr ""
-"<literal> files </literal>: o diretório e quaisquer arquivos nele contidos."
+"<literal>files</literal>: o diretório e quaisquer arquivos nele contidos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1059
-#, fuzzy
 msgid ""
 "<literal>immediates</literal>: the directory and any files and directories "
 "it contains, but none of the subdirectories' contents."
 msgstr ""
-"<literal> immediates </literal>: o diretório e quaisquer arquivos e "
-"diretórios contidos nele, mas nenhum dos conteúdos dos subdiretórios."
+"<literal>immediates</literal>: o diretório e quaisquer arquivos e diretórios "
+"contidos nele, mas nenhum dos conteúdos dos subdiretórios."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1065
-#, fuzzy
 msgid "<literal>infinity</literal>: anything."
-msgstr "<literal> infinito </literal>: qualquer coisa."
+msgstr "<literal>infinity</literal>: qualquer coisa."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1069
-#, fuzzy
 msgid ""
 "The <literal>--depth</literal> option applies to many other commands, "
 "including <command>svn commit</command>, <command>svn revert</command>, and "
 "<command>svn diff</command>."
 msgstr ""
-"A opção <literal> - depth </literal> se aplica a muitos outros comandos, "
-"incluindo <command> svn commit </command>, <command> svn revert </command> e "
-"<command> svn diff </command>."
+"A opção <literal>--depth</literal> se aplica a muitos outros comandos, "
+"incluindo <command>svn commit</command>, <command>svn revert</command> e o "
+"<command>svn diff</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1074
-#, fuzzy
 msgid ""
 "Since <literal>--depth</literal> is sticky, there is a <literal>--set-depth</"
 "literal> option for <command>svn update</command> that will change the "
 "selected depth. Thus, given the working copy produced by the previous "
 "example:"
 msgstr ""
-"Como <literal> - depth </literal> é pegajoso, existe uma opção <literal> - "
-"set-depth </literal> para <command> svn update </command> que irá mudar a "
-"profundidade selecionada. Assim, dada a cópia de trabalho produzida pelo "
-"exemplo anterior:"
+"Como o parâmetro <literal>--depth </literal> utilizado é persistente, existe "
+"uma opção <literal>--set-depth</literal> para o <command>svn update</"
+"command> que irá mudar a profundidade selecionada. Assim, dada a cópia de "
+"trabalho produzida pelo exemplo anterior:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1080
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> ~ / freebsd </replaceable> "
-"</userinput>\n"
-"<prompt>% </prompt> <userinput> svn update --set-depth = imediatos. </"
+"<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</"
 "userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1083
-#, fuzzy
 msgid ""
 "The above command will populate the working copy in <replaceable>~/freebsd</"
 "replaceable> with <filename>ROADMAP.txt</filename> and empty subdirectories, "
@@ -2163,32 +2162,30 @@ msgid ""
 "<replaceable>head</replaceable> (in this case) to infinity, and fully "
 "populate it:"
 msgstr ""
-"O comando acima irá preencher a cópia de trabalho em <replaceable> ~ / "
-"freebsd </replaceable> com <filename> ROADMAP.txt </filename> e "
-"subdiretórios vazios, e nada acontecerá quando <command> svn update </"
-"command> for executado nos subdiretórios. No entanto, esse comando definirá "
-"a profundidade para <replaceable> head </replaceable> (nesse caso) como "
-"infinito e o preencherá totalmente:"
+"O comando acima irá popular a cópia de trabalho em <replaceable>~/freebsd</"
+"replaceable> com <filename>ROADMAP.txt</filename> e subdiretórios vazios, e "
+"nada acontecerá quando <command>svn update</command> for executado nos "
+"subdiretórios. No entanto, esse comando definirá a profundidade para "
+"<replaceable>head</replaceable> (nesse caso) como infinito e o populará "
+"totalmente:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1092
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn update --set-depth=infinity "
 "<replaceable>head</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn update --set-depth = infinity "
-"<replaceable> head </replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity "
+"<replaceable>head</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1096
-#, fuzzy
 msgid "Direct Operation"
 msgstr "Operação Direta"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1098
-#, fuzzy
 msgid ""
 "Certain operations can be performed directly on the repository without "
 "touching the working copy. Specifically, this applies to any operation that "
@@ -2200,65 +2197,58 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1105
-#, fuzzy
 msgid "<literal>log</literal>, <literal>diff</literal>"
-msgstr "<literal> log </literal>, <literal> diff </literal>"
+msgstr "<literal>log</literal>, <literal>diff</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1110
-#, fuzzy
 msgid "<literal>mkdir</literal>"
-msgstr "<literal> mkdir </literal>"
+msgstr "<literal>mkdir</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1114
-#, fuzzy
 msgid ""
 "<literal>remove</literal>, <literal>copy</literal>, <literal>rename</"
 "literal>"
 msgstr ""
-"<literal> remove </literal>, <literal> copy </literal>, <literal> renomear </"
+"<literal>remove</literal>, <literal>copy</literal>, <literal>rename</"
 "literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1119
-#, fuzzy
 msgid ""
 "<literal>propset</literal>, <literal>propedit</literal>, <literal>propdel</"
 "literal>"
 msgstr ""
-"<literal> propset </literal>, <literal> propedit </literal>, <literal> "
-"propdel </literal>"
+"<literal>propset</literal>, <literal>propedit</literal>, <literal>propdel</"
+"literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1125
-#, fuzzy
 msgid "<literal>merge</literal>"
-msgstr "<literal> mesclar </literal>"
+msgstr "<literal>merge</literal>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1129
-#, fuzzy
 msgid ""
 "Branching is very fast. This command would be used to branch "
 "<literal>RELENG_8</literal>:"
 msgstr ""
-"Ramificar é muito rápido. Este comando seria usado para ramificar <literal> "
-"RELENG_8 </literal>:"
+"A criação de uma branch é muito rápida. Este comando seria usado para criar "
+"a branch <literal>RELENG_8</literal>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1132
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
 "svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn copiar svn + ssh: //repo.freebsd.org/"
-"base/head svn + ssh: //repo.freebsd.org/base/stable/8 </userinput>"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1134
-#, fuzzy
 msgid ""
 "This is equivalent to these commands which take minutes and hours as opposed "
 "to seconds, depending on your network connection:"
@@ -2268,7 +2258,7 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1138
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
 "freebsd.org/base</userinput>\n"
@@ -2278,51 +2268,46 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn copy head stable/8</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit stable/8</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn checkout --depth = diretamente svn + ssh:"
-" //repo.freebsd.org/base </userinput>\n"
-"<prompt>% </prompt> <userinput> cd base </userinput>\n"
-"<prompt>% </prompt> <userinput> svn update --set-depth = cabeça do infinity "
-"</userinput>\n"
-"<prompt>% </prompt> <userinput> svn cabeça de cópia estável / 8 </userinput>\n"
-"<prompt>% </prompt> <userinput> svn confirmar estável / 8 </userinput>"
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>\n"
+"<prompt>%</prompt> <userinput>cd base</userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity head</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn copy head stable/8</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit stable/8</userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1146
-#, fuzzy
 msgid "Merging with <acronym>SVN</acronym>"
-msgstr "Mesclando com <acronym> SVN </acronym>"
+msgstr "Mesclando com <acronym>SVN</acronym>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1148
-#, fuzzy
 msgid ""
 "This section deals with merging code from one branch to another (typically, "
 "from head to a stable branch)."
 msgstr ""
-"Esta seção lida com o código de mesclagem de um ramo para outro "
-"(normalmente, do cabeçalho para um ramo estável)."
+"Esta seção lida com o merge de código de um branch para outro (normalmente, "
+"do head para um brach stable)."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1152
-#, fuzzy
 msgid ""
 "In all examples below, <literal>$FSVN</literal> refers to the location of "
 "the FreeBSD Subversion repository, <literal>svn+ssh://repo.freebsd.org/base/"
 "</literal>."
 msgstr ""
-"Em todos os exemplos abaixo, <literal> $ FSVN </literal> refere-se à "
-"localização do repositório Subversion do FreeBSD, <literal> svn + ssh: //"
-"repo.freebsd.org/base/ </literal>."
+"Em todos os exemplos abaixo, <literal>$FSVN</literal> refere-se à "
+"localização do repositório Subversion do FreeBSD, <literal>svn+ssh://repo."
+"freebsd.org/base </literal>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1158
-#, fuzzy
 msgid "About Merge Tracking"
 msgstr "Sobre o acompanhamento de mesclagem"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1160
-#, fuzzy
 msgid ""
 "From the user's perspective, merge tracking information (or mergeinfo) is "
 "stored in a property called <literal>svn:mergeinfo</literal>, which is a "
@@ -2332,17 +2317,16 @@ msgid ""
 "directories) except for those that have their own <literal>svn:mergeinfo</"
 "literal>."
 msgstr ""
-"Do ponto de vista do usuário, informações de rastreamento de mesclagem (ou "
-"mergeinfo) são armazenadas em uma propriedade chamada <literal> svn: "
-"mergeinfo </literal>, que é uma lista separada por vírgulas de revisões e "
+"Do ponto de vista do usuário, informações de acompanhamento de mesclagem (ou "
+"mergeinfo) são armazenadas em uma propriedade chamada <literal>svn:"
+"mergeinfo</literal>, que é uma lista separada por vírgulas de revisões e "
 "intervalos de revisões que foram mescladas. Quando definido em um arquivo, "
 "ele se aplica somente a esse arquivo. Quando definido em um diretório, ele "
 "se aplica a esse diretório e seus descendentes (arquivos e diretórios), "
-"exceto aqueles que possuem seu próprio <literal> svn: mergeinfo </literal>."
+"exceto aqueles que possuem o seu próprio <literal>svn:mergeinfo</literal>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1170
-#, fuzzy
 msgid ""
 "It is <emphasis>not</emphasis> inherited. For instance, <filename>stable/6/"
 "contrib/openpam/</filename> does not implicitly inherit mergeinfo from "
@@ -2351,17 +2335,15 @@ msgid ""
 "mergeinfo is explicitly propagated down the tree. For merging something into "
 "<filename>branch/foo/bar/</filename>, these rules apply:"
 msgstr ""
-"É <emphasis> não </emphasis> herdado. Por exemplo, <filename> stable / 6 / "
-"contrib / openpam / </filename> não implicitamente herdam mergeinfo de "
-"<filename> stable / 6 / </filename>, ou <filename> stable / 6 / contrib / </"
-"filename> . Isso faria com que os checkouts parciais fossem difíceis de "
-"gerenciar. Em vez disso, mergeinfo é explicitamente propagado pela árvore. "
-"Para mesclar algo em <filename> branch / foo / bar / </filename>, estas "
-"regras se aplicam:"
+"Ele <emphasis>não</emphasis> é herdado. Por exemplo, <filename>stable/6/"
+"contrib/openpam/</filename> não herda implicitamente o mergeinfo de "
+"<filename>stable/6/</filename>, ou do <filename>stable/6/contrib/</filename>."
+" Isso faria com que os checkouts parciais fossem difíceis de gerenciar. Em "
+"vez disso, o mergeinfo é explicitamente propagado pela árvore. Para mesclar "
+"algo em <filename>branch/foo/bar/</filename>, estas regras se aplicam:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1183
-#, fuzzy
 msgid ""
 "If <filename>branch/foo/bar/</filename> does not already have a mergeinfo "
 "record, but a direct ancestor (for instance, <filename>branch/foo/</"
@@ -2369,38 +2351,34 @@ msgid ""
 "<filename>branch/foo/bar/</filename> before information about the current "
 "merge is recorded."
 msgstr ""
-"Se <filename> branch / foo / bar / </filename> ainda não tiver um registro "
-"mergeinfo, mas um ancestral direto (por exemplo, <filename> branch / foo / </"
-"filename>), então esse registro será propagado até <filename> branch / foo / "
-"bar / </filename> antes que as informações sobre a mesclagem atual sejam "
-"registradas."
+"Se <filename>branch/foo/bar/</filename> ainda não tiver um registro "
+"mergeinfo, mas um ancestral direto (por exemplo, <filename>branch/foo/</"
+"filename>) tem, então esse registro será propagado para abaixo até "
+"<filename>branch/foo/bar/</filename> antes que as informações sobre a "
+"mesclagem atual sejam registradas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1195
-#, fuzzy
 msgid ""
 "Information about the current merge will <emphasis>not</emphasis> be "
 "propagated back up that ancestor."
 msgstr ""
-"As informações sobre a mesclagem atual <emphasis> não </emphasis> serão "
+"As informações sobre a mesclagem atual <emphasis>não</emphasis> serão "
 "propagadas para o ancestral."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1201
-#, fuzzy
 msgid ""
 "If a direct descendant of <filename>branch/foo/bar/</filename> (for "
 "instance, <filename>branch/foo/bar/baz/</filename>) already has a mergeinfo "
 "record, information about the current merge will be propagated down to it."
 msgstr ""
-"Se um descendente direto de <filename> branch / foo / bar / </filename> (por "
-"exemplo, <filename> branch / foo / bar / baz / </filename>) já tiver um "
-"registro mergeinfo, as informações sobre a mesclagem atual serão ser "
-"propagado para baixo para ele."
+"Se um descendente direto de <filename>branch/foo/bar/</filename> (por "
+"exemplo, <filename>branch/foo/bar/baz/</filename>) já tiver um registro "
+"mergeinfo, as informações sobre a mesclagem atual serão propagadas para ele."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1209
-#, fuzzy
 msgid ""
 "If you consider the case where a revision changes several separate parts of "
 "the tree (for example, <filename>branch/foo/bar/</filename> and "
@@ -2411,132 +2389,121 @@ msgid ""
 "when in fact it had not been."
 msgstr ""
 "Se você considerar o caso em que uma revisão altera várias partes separadas "
-"da árvore (por exemplo, <filename> branch / foo / bar / </filename> e "
-"<filename> branch / foo / quux / </filename>), só deseja mesclar alguns "
-"deles (por exemplo, <filename> branch / foo / bar / </filename>), você verá "
-"que essas regras fazem sentido. Se mergeinfo fosse propagado, pareceria que "
-"a revisão também foi mesclada com <filename> branch / foo / quux / </"
-"filename>, quando na verdade não foi."
+"da árvore (por exemplo, <filename>branch/foo/bar/</filename> e "
+"<filename>branch/foo/quux/</filename>), mas você só deseja mesclar alguns "
+"deles (por exemplo, <filename>branch/foo/bar/</filename>), você verá que "
+"essas regras fazem sentido. Se mergeinfo fosse propagado, pareceria que a "
+"revisão também foi mesclada com <filename>branch/foo/quux/</filename>, "
+"quando na verdade não foi."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1222
-#, fuzzy
 msgid "Selecting the Source and Target Branch When Merging"
-msgstr "Selecionando a ramificação de origem e de destino ao mesclar"
+msgstr "Selecionando a branch de origem e de destino ao mesclar"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1225
-#, fuzzy
 msgid ""
 "Merging to <literal>stable/</literal> branches should originate from "
 "<literal>head/</literal>. For example:"
 msgstr ""
-"Mesclar as ramificações <literal> stable / </literal> deve originar-se de "
-"<literal> head / </literal>. Por exemplo:"
+"Mesclagens para as branches <literal>stable/</literal> devem originar-se da "
+"<literal>head/</literal>. Por exemplo:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1229
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
 "stable/<replaceable>11</replaceable>\n"
 "<prompt>%</prompt> svn commit stable/<replaceable>11</replaceable>"
 msgstr ""
-"<prompt>% </prompt> svn merge -c <replaceable> r123456 </replaceable> ^ / "
-"head / stable / <replaceable> 11 </replaceable>\n"
-"<prompt>% </prompt> svn commit stable / <replaceable> 11 </replaceable>"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"stable/<replaceable>11</replaceable>\n"
+"<prompt>%</prompt> svn commit stable/<replaceable>11</replaceable>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1232
-#, fuzzy
 msgid ""
 "Merges to <literal>releng/</literal> branches should always originate from "
 "the corresponding <literal>stable/</literal> branch. For example:"
 msgstr ""
-"Mesclagens para ramificações <literal> releng / </literal> devem sempre se "
-"originar da ramificação <literal> stable / </literal> correspondente. Por "
-"exemplo:"
+"Mesclagens para as branches <literal>releng/</literal> devem sempre se "
+"originar da branch <literal>stable/</literal> correspondente. Por exemplo:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1236
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
 "<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
 "<prompt>%</prompt> svn commit releng/<replaceable>11.0</replaceable>"
 msgstr ""
-"<prompt>% </prompt> svn merge -c <replaceable> r123456 </replaceable> ^ / "
-"stable / <replaceable> 11 </replaceable> releng / <replaceable> 11.0 </"
-"replaceable>\n"
-"<prompt>% </prompt> svn commit releng / <replaceable> 11.0 </replaceable>"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
+"<prompt>%</prompt> svn commit releng/<replaceable>11.0</replaceable>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1240
-#, fuzzy
 msgid ""
 "Committers are only permitted to commit to the <literal>releng/</literal> "
 "branches during a release cycle after receiving approval from the Release "
 "Engineering Team, after which only the Security Officer may commit to a "
 "<literal>releng/</literal> branch for a Security Advisory or Errata Notice."
 msgstr ""
-"Os committers só podem se comprometer com as ramificações <literal> releng / "
+"Os committers só podem se efetuar um commit para as branches <literal>releng/"
 "</literal> durante um ciclo de release após receber aprovação da Equipe de "
-"Engenharia de Liberação, após o qual somente o Security Officer pode se "
-"comprometer com um <literal> releng / </literal> ramo para um aviso de "
-"segurança ou aviso de errata."
+"Engenharia de Release, após o qual somente o Security Officer pode efetuar "
+"commits para o branch <literal>releng/</literal> para um Aviso de Segurança "
+"ou Aviso de Errata."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1248
-#, fuzzy
 msgid ""
 "All merges are merged to and committed from the root of the branch. All "
 "merges look like:"
 msgstr ""
-"Todas as mesclagens são mescladas e confirmadas a partir da raiz da filial. "
-"Todas as mesclagens se parecem com:"
+"Todas as mesclagens são mescladas e enviadas por commit a partir da raiz da "
+"branch. Todas as mesclagens se parecem com:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1252
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
 "<replaceable>checkout</replaceable>\n"
 "<prompt>%</prompt> svn commit <replaceable>checkout</replaceable>"
 msgstr ""
-"<prompt>% </prompt> svn merge -c <replaceable> r123456 </replaceable> ^ / "
-"head / <replaceable> checkout </replaceable>\n"
-"<prompt>% </prompt> svn commit <replaceable> checkout </replaceable>"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"<replaceable>checkout</replaceable>\n"
+"<prompt>%</prompt> svn commit <replaceable>checkout</replaceable>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1255
-#, fuzzy
 msgid ""
 "Note that <replaceable>checkout</replaceable> must be a complete checkout of "
 "the branch to which the merge occurs."
 msgstr ""
-"Observe que <replaceable> checkout </replaceable> deve ser uma verificação "
-"completa da ramificação na qual a mesclagem ocorre."
+"Observe que <replaceable>checkout</replaceable> deve ser uma verificação "
+"completa da branch na qual a mesclagem ocorre."
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1259
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
 "<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
 msgstr ""
-"<prompt>% </prompt> svn merge -c <replaceable> r123456 </replaceable> ^ / "
-"stable / <replaceable> 10 </replaceable> releng / <replaceable> 10.0 </"
-"replaceable>"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1263
-#, fuzzy
 msgid "Preparing the Merge Target"
-msgstr "Preparando o Merge Target"
+msgstr "Preparando o Alvo de Mesclagem (Merge Target)"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1265
-#, fuzzy
 msgid ""
 "Because of the mergeinfo propagation issues described earlier, it is very "
 "important to never merge changes into a sparse working copy. Always use a "
@@ -2546,62 +2513,56 @@ msgstr ""
 "Devido aos problemas de propagação do mergeinfo descritos anteriormente, é "
 "muito importante nunca mesclar as alterações em uma cópia de trabalho "
 "esparsa. Sempre use um checkout completo do branch que está sendo mesclado. "
-"Por exemplo, ao mesclar de HEAD para 7, use um checkout completo de stable / "
-"7:"
+"Por exemplo, ao mesclar de HEAD para 7, use um checkout completo de stable/7:"
+""
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1272
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd stable/7</userinput>\n"
 "<prompt>%</prompt> <userinput>svn up --set-depth=infinity</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd stable / 7 </userinput>\n"
-"<prompt>% </prompt> <userinput> svn acima --set-depth = infinity </"
-"userinput>"
+"<prompt>%</prompt> <userinput>cd stable/7</userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1275
-#, fuzzy
 msgid ""
 "The target directory must also be up-to-date and must not contain any "
 "uncommitted changes or stray files."
 msgstr ""
 "O diretório de destino também deve estar atualizado e não deve conter "
-"alterações não confirmadas ou arquivos dispersos."
+"alterações que ainda não foram enviadas por commit ou arquivos perdidos."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1280
-#, fuzzy
 msgid "Identifying Revisions"
-msgstr "Identificando revisões"
+msgstr "Identificando Revisões"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1282
-#, fuzzy
 msgid ""
 "Identifying revisions to be merged is a must. If the target already has "
 "complete mergeinfo, ask <acronym>SVN</acronym> for a list:"
 msgstr ""
 "Identificar revisões a serem mescladas é uma obrigação. Se o alvo já tiver "
-"mergeinfo completo, pergunte <acronym> SVN </acronym> para uma lista:"
+"mergeinfo completo, solicite uma lista para o <acronym>SVN</acronym>:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1286
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd stable/6/contrib/openpam</userinput>\n"
 "<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/"
 "contrib/openpam</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd estável / 6 / contrib / openpam </"
-"userinput>\n"
-"<prompt>% </prompt> <userinput> svn mergeinfo --show-revs = elegível $ FSVN /"
-" head / contrib / openpam </userinput>"
+"<prompt>%</prompt> <userinput>cd stable/6/contrib/openpam</userinput>\n"
+"<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/"
+"contrib/openpam</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1289
-#, fuzzy
 msgid ""
 "If the target does not have complete mergeinfo, check the log for the merge "
 "source."
@@ -2611,139 +2572,125 @@ msgstr ""
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1294
-#, fuzzy
 msgid "Merging"
 msgstr "Mesclando"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1296
-#, fuzzy
 msgid "Now, let us start merging!"
-msgstr "Agora vamos começar a fundir!"
+msgstr "Agora vamos começar a mesclar!"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1299
-#, fuzzy
 msgid "The Principles"
 msgstr "Os princípios"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1301
-#, fuzzy
 msgid "For example, To merge:"
 msgstr "Por exemplo, para mesclar:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1305
-#, fuzzy
 msgid "revision <literal>$R</literal>"
-msgstr "revisão <literal> $ R </literal>"
+msgstr "revisão <literal>$R</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1309
-#, fuzzy
 msgid "in directory $target in stable branch $B"
-msgstr "no diretório $ target na filial estável $ B"
+msgstr "no diretório $target na branch stable $B"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1314
-#, fuzzy
 msgid "from directory $source in head"
-msgstr "do diretório $ source na cabeça"
+msgstr "a partir do diretório $source no head"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1318
-#, fuzzy
 msgid "$FSVN is <literal>svn+ssh://repo.freebsd.org/base</literal>"
-msgstr "$ FSVN é <literal> svn + ssh: //repo.freebsd.org/base </literal>"
+msgstr "$FSVN é o <literal>svn+ssh://repo.freebsd.org/base</literal>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1323
-#, fuzzy
 msgid ""
 "Assuming that revisions $P and $Q have already been merged, and that the "
 "current directory is an up-to-date working copy of stable/$B, the existing "
 "mergeinfo looks like this:"
 msgstr ""
-"Supondo que as revisões $ P e $ Q já tenham sido mescladas e que o diretório "
-"atual seja uma cópia de trabalho atualizada de stable / $ B, a mergeinfo "
+"Supondo que as revisões $P e $Q já tenham sido mescladas e que o diretório "
+"atual seja uma cópia de trabalho atualizada de stable/$B, a mergeinfo "
 "existente será semelhante a:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1328
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
 "userinput>\n"
 "$target - /head/$source:$P,$Q"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn proprio svn: mergeinfo -R $ target </"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
 "userinput>\n"
-"$ target - / head / $ source: $ P, $ Q"
+"$target - /head/$source:$P,$Q"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1331
-#, fuzzy
 msgid "Merging is done like so:"
-msgstr "A fusão é feita assim:"
+msgstr "A mesclagem é feita assim:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1333
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn merge -c $ R $ FSVN / head / $ fonte $ "
-"alvo </userinput>"
+"<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</"
+"userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1335
-#, fuzzy
 msgid ""
 "Checking the results of this is possible with <command>svn diff</command>."
 msgstr ""
-"Verificar os resultados disso é possível com <command> svn diff </command>."
+"É possível verificar os resultados disso com um <command>svn diff</command>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1338
-#, fuzzy
 msgid "The svn:mergeinfo now looks like:"
-msgstr "O svn: mergeinfo agora se parece com:"
+msgstr "O svn:mergeinfo agora se parece com:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1340
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
 "userinput>\n"
 "$target - head/$source:$P,$Q,$R"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn proprio svn: mergeinfo -R $ target </"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
 "userinput>\n"
-"$ target - head / $ source: $ P, $ Q, $ R"
+"$target - head/$source:$P,$Q,$R"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1343
-#, fuzzy
 msgid ""
 "If the results are not exactly as shown, assistance may be required before "
 "committing as mistakes may have been made, or there may be something wrong "
 "with the existing mergeinfo, or there may be a bug in Subversion."
 msgstr ""
-"Se os resultados não forem exatamente como mostrados, a assistência pode ser "
-"necessária antes de cometer erros já feitos, ou pode haver algo errado com o "
-"mergeinfo existente, ou pode haver um bug no Subversion."
+"Se os resultados não forem exatamente como os mostrados, você pode precisar "
+"de assistência antes de efetuar o commit pois erros podem ter sido "
+"cometidos, ou pode haver algo errado com o mergeinfo existente, ou pode "
+"haver um bug no Subversion."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1351
-#, fuzzy
 msgid "Practical Example"
 msgstr "Exemplo Prático"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1353
-#, fuzzy
 msgid ""
 "As a practical example, consider this scenario. The changes to "
 "<filename>netmap.4</filename> in r238987 are to be merged from CURRENT to 9-"
@@ -2753,43 +2700,42 @@ msgid ""
 "the top of the svn repository. For more information on the directory layout, "
 "see <xref linkend=\"svn-getting-started-base-layout\"/>."
 msgstr ""
-"Como um exemplo prático, considere este cenário. As alterações no <filename> "
-"netmap.4 </filename> no r238987 devem ser mescladas do CURRENT para o 9-"
-"STABLE. O arquivo reside em <filename> head / share / man / man4 </filename>."
-" De acordo com o <xref linkend=\"svn-advanced-use-merging\"/>, também é onde "
-"fazer a mesclagem. Note que neste exemplo todos os caminhos são relativos ao "
-"topo do repositório svn. Para obter mais informações sobre o layout do "
-"diretório, consulte <xref linkend=\"svn-getting-started-base-layout\"/>."
+"Como um exemplo prático, considere este cenário. As alterações no "
+"<filename>netmap.4</filename> no r238987 devem ser mescladas do CURRENT para "
+"o 9-STABLE. O arquivo reside em <filename>head/share/man/man4</filename>. De "
+"acordo com o <xref linkend=\"svn-advanced-use-merging\"/>, também é onde "
+"devemos fazer a mesclagem. Note que neste exemplo todos os caminhos são "
+"relativos ao topo do repositório svn. Para obter mais informações sobre o "
+"layout do diretório, consulte <xref linkend=\"svn-getting-started-base-"
+"layout\"/>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1363
-#, fuzzy
 msgid "The first step is to inspect the existing mergeinfo."
 msgstr "O primeiro passo é inspecionar o mergeinfo existente."
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1366
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/"
 "man/man4</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn propício svn: mergeinfo -R estável / 9 / "
-"share / man / man4 </userinput>"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/"
+"man/man4</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1368
-#, fuzzy
 msgid ""
 "Take a quick note of how it looks before moving on to the next step; doing "
 "the actual merge:"
 msgstr ""
-"Tome uma nota rápida de como se parece antes de avançar para o próximo "
+"Tome uma nota rápida de como ele se parece antes de avançar para o próximo "
 "passo; fazendo a mesclagem real:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1371
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd."
 "org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
@@ -2799,61 +2745,54 @@ msgid ""
 "'stable/9/share/man/man4':\n"
 " U   stable/9/share/man/man4"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn merge -c r238987 svn + ssh: //repo."
-"freebsd.org/base/head/share/man/man4estável/9 / share / man / man4 </"
-"userinput>\n"
-"--- Mesclando r238987 em 'stable / 9 / share / man / man4':\n"
-"U estável / 9 / share / man / man4 / netmap.4\n"
-"--- Gravação mergeinfo para mesclagem de r238987 em\n"
-"'stable / 9 / share / man / man4':\n"
-" U estável / 9 / share / man / man4"
+"<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd."
+"org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
+"--- Merging r238987 into 'stable/9/share/man/man4':\n"
+"U    stable/9/share/man/man4/netmap.4\n"
+"--- Recording mergeinfo for merge of r238987 into\n"
+"'stable/9/share/man/man4':\n"
+" U   stable/9/share/man/man4"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1378
-#, fuzzy
 msgid ""
 "Check that the revision number of the merged revision has been added. Once "
 "this is verified, the only thing left is the actual commit."
 msgstr ""
 "Verifique se o número de revisão da revisão mesclada foi adicionado. Quando "
-"isso for verificado, a única coisa que resta é o commit atual."
+"isso for verificado, a única coisa que resta é o commit em si."
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1382
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn confirmar estável / 9 / share / man / "
-"man4 </userinput>"
+"<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1387
-#, fuzzy
 msgid "Precautions Before Committing"
-msgstr "Precauções antes de cometer"
+msgstr "Precauções antes de efetuar o commit"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1389
-#, fuzzy
 msgid "As always, build world (or appropriate parts of it)."
-msgstr "Como sempre, construa o mundo (ou partes apropriadas dele)."
+msgstr "Como sempre, construa o mundo (ou as partes apropriadas dele)."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1392
-#, fuzzy
 msgid ""
 "Check the changes with <command>svn diff</command> and <command>svn stat</"
 "command>. Make sure all the files that should have been added or deleted "
 "were in fact added or deleted."
 msgstr ""
-"Verifique as mudanças com <command> svn diff </command> e <command> svn stat "
-"</command>. Certifique-se de que todos os arquivos que deveriam ter sido "
+"Verifique as mudanças com o <command>svn diff</command> e <command>svn stat</"
+"command>. Certifique-se de que todos os arquivos que deveriam ter sido "
 "adicionados ou excluídos foram de fato adicionados ou excluídos."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1397
-#, fuzzy
 msgid ""
 "Take a closer look at any property change (marked by a <literal>M</literal> "
 "in the second column of <command>svn stat</command>). Normally, no svn:"
@@ -2861,45 +2800,40 @@ msgid ""
 "directories)."
 msgstr ""
 "Dê uma olhada mais de perto em qualquer mudança de propriedade (marcada por "
-"um <literal> M </literal> na segunda coluna do <command> svn stat </"
-"command>). Normalmente, nenhuma propriedade svn: mergeinfo deve estar em "
-"qualquer lugar, exceto o diretório de destino (ou diretórios)."
+"um <literal>M</literal> na segunda coluna do <command>svn stat</command>). "
+"Normalmente, nenhuma propriedade svn:mergeinfo deve estar em qualquer lugar, "
+"exceto o diretório (ou diretórios) de destino."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1403
-#, fuzzy
 msgid "If something looks fishy, ask for help."
 msgstr "Se algo parecer suspeito, peça ajuda."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1407
-#, fuzzy
 msgid "Committing"
-msgstr "Comprometendo"
+msgstr "Fazendo o commit"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1409
-#, fuzzy
 msgid ""
 "Make sure to commit a top level directory to have the mergeinfo included as "
 "well. Do not specify individual files on the command line. For more "
 "information about committing files in general, see the relevant section of "
 "this primer."
 msgstr ""
-"Certifique-se de confirmar um diretório de nível superior para incluir "
-"também o mergeinfo. Não especifique arquivos individuais na linha de comando."
-" Para mais informações sobre como submeter arquivos em geral, veja a seção "
-"relevante deste manual."
+"Certifique-se de efetuar o commit de um diretório de nível superior para "
+"incluir também o mergeinfo. Não especifique arquivos individuais na linha de "
+"comando. Para mais informações sobre como submeter arquivos em geral, veja a "
+"seção relevante deste manual."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1418
-#, fuzzy
 msgid "Vendor Imports with <acronym>SVN</acronym>"
-msgstr "Importações de fornecedores com <acronym> SVN </acronym>"
+msgstr "Importações de fornecedores com <acronym>SVN</acronym>"
 
 #. (itstool) path: important/para
 #: article.translate.xml:1421
-#, fuzzy
 msgid "Please read this entire section before starting a vendor import."
 msgstr ""
 "Por favor, leia toda esta seção antes de iniciar uma importação de "
@@ -2907,14 +2841,12 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1426
-#, fuzzy
 msgid "Patches to vendor code fall into two categories:"
 msgstr ""
 "Os patches para o código do fornecedor se enquadram em duas categorias:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1431
-#, fuzzy
 msgid ""
 "Vendor patches: these are patches that have been issued by the vendor, or "
 "that have been extracted from the vendor's version control system, which "
@@ -2926,7 +2858,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1439
-#, fuzzy
 msgid ""
 "FreeBSD patches: these are patches that modify the vendor code to address "
 "FreeBSD-specific issues."
@@ -2936,13 +2867,12 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1444
-#, fuzzy
 msgid "The nature of a patch dictates where it should be committed:"
-msgstr "A natureza de um patch determina onde ele deve ser confirmado:"
+msgstr ""
+"A natureza de um patch determina para onde ele deve ser enviado por commit:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1449
-#, fuzzy
 msgid ""
 "Vendor patches must be committed to the vendor branch, and merged from there "
 "to head. If the patch addresses an issue in a new release that is currently "
@@ -2951,47 +2881,42 @@ msgid ""
 "can be applied and committed. There is no need to re-tag the vendor sources "
 "after committing the patch."
 msgstr ""
-"Os patches do fornecedor devem ser confirmados no ramo do fornecedor e "
-"mesclados a partir dele. Se o patch resolver um problema em uma nova versão "
-"que está sendo importada atualmente, <emphasis> não deve </emphasis> ser "
-"confirmada junto com a nova versão: a versão deve ser importada e marcada "
-"primeiro, então a correção pode ser aplicada e comprometido. Não há "
-"necessidade de etiquetar novamente as fontes do fornecedor depois de "
-"confirmar o patch."
+"Os patches do fornecedor devem ser enviados por commit para o branch do "
+"fornecedor e mesclados a partir dele. Se o patch resolver um problema em uma "
+"nova versão que está sendo importada atualmente, ele <emphasis>não deve</"
+"emphasis> ser enviado por commit junto com a nova versão: a versão deve ser "
+"importada e marcada primeiro, então a correção pode ser aplicada e o commit "
+"efetuado. Não há necessidade de marcar novamente as fontes do fornecedor "
+"depois de confirmar o patch."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1460
-#, fuzzy
 msgid "FreeBSD patches are committed directly to head."
 msgstr "Patches do FreeBSD são enviados diretamente para o head."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1467
-#, fuzzy
 msgid "Preparing the Tree"
 msgstr "Preparando a Árvore"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1469
-#, fuzzy
 msgid ""
 "If importing for the first time after the switch to Subversion, flattening "
 "and cleaning up the vendor tree is necessary, as well as bootstrapping the "
 "merge history in the main tree."
 msgstr ""
-"Se importar pela primeira vez após a mudança para o Subversion, é necessário "
-"achatar e limpar a árvore do fornecedor, bem como inicializar o histórico de "
-"mesclagem na árvore principal."
+"Se estiver importando pela primeira vez após a mudança para o Subversion, é "
+"necessário achatar e limpar a árvore do fornecedor, bem como inicializar o "
+"histórico de mesclagem na árvore principal."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1475
-#, fuzzy
 msgid "Flattening"
-msgstr "Aplainamento"
+msgstr "Achatamento"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1477
-#, fuzzy
 msgid ""
 "During the conversion from <acronym>CVS</acronym> to Subversion, vendor "
 "branches were imported with the same layout as the main tree. This means "
@@ -2999,22 +2924,21 @@ msgid ""
 "pf/dist/contrib/pf</filename>. The vendor source is best directly in "
 "<filename>vendor/pf/dist</filename>."
 msgstr ""
-"Durante a conversão do <acronym> CVS </acronym> para o Subversion, as "
-"filiais do fornecedor foram importadas com o mesmo layout da árvore "
-"principal. Isso significa que as fontes do fornecedor <literal> pf </"
-"literal> foram encerradas em <filename> vendor / pf / dist / contrib / pf </"
-"filename>. A fonte do fornecedor é melhor diretamente em <filename> vendor / "
-"pf / dist </filename>."
+"Durante a conversão do <acronym>CVS</acronym> para o Subversion, as branches "
+"do fornecedor foram importadas com o mesmo layout da árvore principal. Isso "
+"significa que as fontes do fornecedor <literal>pf</literal> foram "
+"armazenadas originalmente em <filename>vendor/pf/dist/contrib/pf</filename>. "
+"O código fonte do fornecedor fica melhor se armazenado diretamente em "
+"<filename>vendor/pf/dist</filename>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1485
-#, fuzzy
 msgid "To flatten the <literal>pf</literal> tree:"
-msgstr "Para achatar a árvore <literal> pf </literal>:"
+msgstr "Para achatar a árvore do <literal>pf</literal>:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1487
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</"
 "replaceable></userinput>\n"
@@ -3024,51 +2948,47 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> fornecedor / pf / dist / "
-"contrib / pf </replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> svn mv $ (lista svn) ../..</userinput>\n"
-"<prompt>% </prompt> <userinput> cd ../..</userinput>\n"
-"<prompt>% </prompt> <userinput> svn rm contrib </userinput>\n"
-"<prompt>% </prompt> <userinput> svn propdel -R svn: mergeinfo. </userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn mv $(svn list) ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>svn rm contrib</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1494
-#, fuzzy
 msgid ""
 "The <literal>propdel</literal> bit is necessary because starting with 1.5, "
 "Subversion will automatically add <literal>svn:mergeinfo</literal> to any "
 "directory that is copied or moved. In this case, as nothing is being merged "
 "from the deleted tree, they just get in the way."
 msgstr ""
-"O bit <literal> propdel </literal> é necessário porque, começando com 1.5, o "
-"Subversion adicionará <literal> svn: mergeinfo </literal> em qualquer "
-"diretório que seja copiado ou movido. Nesse caso, como nada está sendo "
-"mesclado da árvore excluída, eles apenas atrapalham."
+"O bit <literal>propdel</literal> é necessário porque, começando com 1.5, o "
+"Subversion adicionará <literal>svn:mergeinfo</literal> em qualquer diretório "
+"que seja copiado ou movido. Nesse caso, como nada está sendo mesclado da "
+"árvore excluída, eles apenas atrapalham."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1501
-#, fuzzy
 msgid ""
 "Tags may be flattened as well (3, 4, 3.5 etc.); the procedure is exactly the "
 "same, only changing <literal>dist</literal> to <literal>3.5</literal> or "
 "similar, and putting the <command>svn commit</command> off until the end of "
 "the process."
 msgstr ""
-"Tags podem ser achatadas também (3, 4, 3.5 etc.); o procedimento é "
-"exatamente o mesmo, mudando apenas <literal> dist </literal> para <literal> "
-"3.5 </literal> ou similar, e colocando o <command> svn commit </command> "
-"desligado até o final do processo."
+"As tags também podem ser achatadas (3, 4, 3.5 etc.); o procedimento é "
+"exatamente o mesmo, mudando apenas <literal>dist</literal> para <literal>3."
+"5</literal> ou similar, e aguardando para executar o <command>svn commit </"
+"command> apenas no final do processo."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1509
-#, fuzzy
 msgid "Cleaning Up"
 msgstr "Limpando"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1511
-#, fuzzy
 msgid ""
 "The <literal>dist</literal> tree can be cleaned up as necessary. Disabling "
 "keyword expansion is recommended, as it makes no sense on unmodified vendor "
@@ -3076,33 +2996,30 @@ msgid ""
 "application>, for example, includes two files that originated with FreeBSD "
 "and still contain the original version tags. To do this:"
 msgstr ""
-"A árvore <literal> dist </literal> pode ser limpa conforme necessário. A "
+"A árvore <literal>dist</literal> pode ser limpa conforme necessário. A "
 "desativação da expansão de palavras-chave é recomendada, pois não faz "
 "sentido no código do fornecedor não modificado e, em alguns casos, pode até "
-"mesmo ser prejudicial. O <application> OpenSSH </application>, por exemplo, "
+"mesmo ser prejudicial. O <application>OpenSSH</application>, por exemplo, "
 "inclui dois arquivos que se originaram do FreeBSD e ainda contêm as tags da "
 "versão original. Para fazer isso:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1519
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn propdel svn: palavras-chave -R. </"
-"userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1524
-#, fuzzy
 msgid "Bootstrapping Merge History"
-msgstr "Bootstrapping Merge History"
+msgstr "Bootstrapping o historico de mesclagem"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1526
-#, fuzzy
 msgid ""
 "If importing for the first time after the switch to Subversion, bootstrap "
 "<literal>svn:mergeinfo</literal> on the target directory in the main tree to "
@@ -3110,13 +3027,13 @@ msgid ""
 "prior to importing new sources:"
 msgstr ""
 "Se estiver importando pela primeira vez após a mudança para o Subversion, "
-"inicialize <literal> svn: mergeinfo </literal> no diretório de destino na "
-"árvore principal para a revisão que corresponde à última alteração "
+"faça o bootstrap do <literal>svn:mergeinfo</literal> no diretório de destino "
+"da árvore principal para a revisão que corresponde à última alteração "
 "relacionada à árvore do fornecedor, antes de importar novos fontes:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1532
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
 "userinput>\n"
@@ -3124,40 +3041,35 @@ msgid ""
 "org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> head / contrib / pf </"
-"replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> svn merge - somente svn + ssh: //repo."
-"freebsd.org/base/ <replaceable> vendor / pf / dist @ 180876 </replaceable>. "
-"</userinput >\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd."
+"org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1539
-#, fuzzy
 msgid "Importing New Sources"
 msgstr "Importando Novas Fontes"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1541
-#, fuzzy
 msgid ""
 "With two commits—one for the import itself and one for the tag—this step can "
 "optionally be repeated for every upstream release between the last import "
 "and the current import."
 msgstr ""
-"Com duas confirmações - uma para a importação em si e outra para a tag - "
-"essa etapa pode ser opcionalmente repetida para cada release upstream entre "
-"a última importação e a importação atual."
+"Com dois commits - um para a importação em si e outro para a tag - essa "
+"etapa pode ser opcionalmente repetida para cada release upstream entre a "
+"última importação e a importação atual."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1547
-#, fuzzy
 msgid "Preparing the Vendor Sources"
-msgstr "Preparando as fontes do fornecedor"
+msgstr "Preparando os fontes do fornecedor"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1549
-#, fuzzy
 msgid ""
 "Subversion is able to store a full distribution in the vendor tree. So, "
 "import everything, but merge only what is required."
@@ -3167,7 +3079,6 @@ msgstr ""
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1553
-#, fuzzy
 msgid ""
 "A <command>svn add</command> is required to add any files that were added "
 "since the last vendor import, and <command>svn rm</command> is required to "
@@ -3175,16 +3086,16 @@ msgid ""
 "of the vendor tree and of the sources that are about to be imported is "
 "recommended, to facilitate the process."
 msgstr ""
-"Um <command> svn add </command> é necessário para adicionar quaisquer "
-"arquivos que foram adicionados desde a última importação do fornecedor, e o "
-"<command> svn rm </command> é necessário para remover todos os que foram "
+"Um <command>svn add</command> é necessário para adicionar quaisquer arquivos "
+"que foram adicionados desde a última importação do fornecedor, e o "
+"<command>svn rm</command> é necessário para remover todos os que foram "
 "removidos desde então. Recomenda-se a preparação de listas ordenadas do "
 "conteúdo da árvore do fornecedor e das fontes que serão importadas, para "
 "facilitar o processo."
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1561
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></"
 "userinput>\n"
@@ -3195,51 +3106,48 @@ msgid ""
 "<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> fornecedor / pf / dist </"
-"replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> svn list -R | grep -v '/ $' | ordenar &gt; .."
-"/ antigo </userinput>\n"
-"<prompt>% </prompt> <userinput> cd <replaceable> ../ pf-4.3 </replaceable> </"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> find. tipo f | corte -c 3- | ordenar &gt; ../"
-" nova </userinput>"
+"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
+"userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1566
-#, fuzzy
 msgid ""
 "With these two files, <command>comm -23 ../old ../new</command> will list "
 "removed files (files only in <filename>old</filename>), while <command>comm -"
 "13 ../old ../new</command> will list added files only in <filename>new</"
 "filename>."
 msgstr ""
-"Com esses dois arquivos, <command> comm -23 ../old ../ new </command> "
-"listará os arquivos removidos (arquivos somente em <filename> old </"
-"filename>), enquanto <command> comm -13 .. / old ../ new </command> listará "
-"os arquivos adicionados somente no <filename> new </filename>."
+"Com esses dois arquivos, o <command>comm -23 ../old ../new</command> listará "
+"os arquivos removidos (arquivos somente em <filename>old</filename>), "
+"enquanto <command> comm -13 .. /old ../new</command> listará os arquivos "
+"adicionados somente no <filename>new</filename>."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1575
 #: article.translate.xml:1718
-#, fuzzy
 msgid "Importing into the Vendor Tree"
-msgstr "Importando para a árvore do fornecedor"
+msgstr "Importando para a Árvore do Fornecedor"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1577
-#, fuzzy
 msgid ""
 "Now, the sources must be copied into <filename><replaceable>dist</"
 "replaceable></filename> and the <command>svn add</command> and <command>svn "
 "rm</command> commands are used as needed:"
 msgstr ""
-"Agora, as fontes devem ser copiadas para <filename> <replaceable> dist </"
-"replaceable> </filename> e os comandos <command> svn add </command> e "
-"<command> svn rm </command> são usados ​​conforme necessário:"
+"Agora, os fontes devem ser copiados para <filename><replaceable>dist</"
+"replaceable></filename> e os comandos <command>svn add</command> e "
+"<command>svn rm</command> são usados ​​conforme necessário:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1583
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</"
 "replaceable></userinput>\n"
@@ -3251,31 +3159,29 @@ msgid ""
 "<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --"
 "parents</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> fornecedor / pf / pf-4.3 </"
-"replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> tar cf -. | tar xf - -C ../dist </userinput>\n"
-"<prompt>% </prompt> <userinput> cd <replaceable> ../ dist </replaceable> </"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>tar cf - . | tar xf - -C ../dist</userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>../dist</replaceable></"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> comm -23 ../old ../new | xargs svn rm </"
+"<prompt>%</prompt> <userinput>comm -23 ../old ../new | xargs svn rm</"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> comm -13 ../old ../new | xargs svn add --"
-"parents </userinput>"
+"<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --"
+"parents</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1589
-#, fuzzy
 msgid ""
 "If any directories were removed, they will have to be <command>svn rm</"
 "command>ed manually. Nothing will break if they are not, but they will "
 "remain in the tree."
 msgstr ""
-"Se algum diretório foi removido, ele terá que ser <command> svn rm </"
-"command> ed manualmente. Nada vai quebrar se eles não forem, mas eles "
+"Se algum diretório foi removido, ele terá que ser removido manualmente com o "
+"<command>svn rm</command>. Nada vai quebrar se eles não forem, mas eles "
 "permanecerão na árvore."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1594
-#, fuzzy
 msgid ""
 "Check properties on any new files. All text files should have <literal>svn:"
 "eol-style</literal> set to <literal>native</literal>. All binary files "
@@ -3286,101 +3192,94 @@ msgid ""
 "tree."
 msgstr ""
 "Verifique as propriedades em qualquer novo arquivo. Todos os arquivos de "
-"texto devem ter o <literal> svn: eol-style </literal> definido como "
-"<literal> native </literal>. Todos os arquivos binários devem ter o "
-"<literal> svn: mime-type </literal> configurado para <literal> application / "
-"octet-stream </literal>, a menos que haja um tipo de mídia mais apropriado. "
-"Arquivos executáveis ​​devem ter <literal> svn: executable </literal> "
-"definido como <literal> * </literal>. Nenhuma outra propriedade deve existir "
-"em qualquer arquivo da árvore."
+"texto devem ter o <literal>svn:eol-style</literal> definido como "
+"<literal>native</literal>. Todos os arquivos binários devem ter o "
+"<literal>svn:mime-type</literal> configurado para <literal>application/octet-"
+"stream </literal>, a menos que haja um tipo de mídia mais apropriado. "
+"Arquivos executáveis ​​devem ter <literal>svn:executable</literal> definido "
+"como <literal>*</literal>. Nenhuma outra propriedade deve existir em "
+"qualquer arquivo da árvore."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1604
-#, fuzzy
 msgid ""
 "Committing is now possible. However, it is good practice to make sure that "
 "everything is okay by using the <command>svn stat</command> and <command>svn "
 "diff</command> commands."
 msgstr ""
-"Committing agora é possível. No entanto, é uma boa prática certificar-se de "
-"que tudo está bem, usando os comandos <command> svn stat </command> e "
-"<command> svn diff </command>."
+"Agora é possível fazer o commit. No entanto, é uma boa prática certificar-se "
+"de que tudo está correto, usando os comandos <command>svn stat</command> e "
+"<command>svn diff</command>."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1611
-#, fuzzy
 msgid "Tagging"
-msgstr "Marcação"
+msgstr "Marcação (Tagging)"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1613
-#, fuzzy
 msgid ""
 "Once committed, vendor releases are tagged for future reference. The best "
 "and quickest way to do this is directly in the repository:"
 msgstr ""
-"Depois de confirmados, as versões do fornecedor são marcadas para referência "
-"futura. A melhor e mais rápida maneira de fazer isso é diretamente no "
-"repositório:"
+"Depois de realizado o commit, as versões do fornecedor são marcadas para "
+"referência futura. A melhor e mais rápida maneira de fazer isso é "
+"diretamente no repositório:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1617
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/"
 "<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/"
 "<replaceable>vendor/pf/4.3</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn cp svn + ssh: //repo.freebsd.org/base/ "
-"<replaceable> fornecedor / pf / dist </replaceable> svn + ssh: //repo."
-"freebsd.org /base/<replaceable>vendor/pf/4.3</replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/4.3</replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1619
-#, fuzzy
 msgid ""
 "Once that is complete, <command>svn up</command> the working copy of "
 "<filename><replaceable>vendor/pf</replaceable></filename> to get the new "
 "tag, although this is rarely needed."
 msgstr ""
-"Quando isso estiver concluído, <command> svn up </command> a cópia de "
-"trabalho de <filename> <replaceable> vendor / pf </replaceable> </filename> "
-"para obter a nova tag, embora isso raramente seja necessário."
+"Quando isso estiver concluído, execute o <command>svn up</command> para a "
+"cópia de trabalho do <filename><replaceable>vendor/pf</replaceable></"
+"filename> para obter a nova tag, embora isso raramente seja necessário."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1625
-#, fuzzy
 msgid ""
 "If creating the tag in the working copy of the tree, <command>svn:mergeinfo</"
 "command> results must be removed:"
 msgstr ""
 "Se você criar a tag na cópia de trabalho da árvore, os resultados do "
-"<command> svn: mergeinfo </command> deverão ser removidos:"
+"<command>svn:mergeinfo</command> deverão ser removidos:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1629
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn cp dist 4.3</userinput>\n"
 "<prompt>%</prompt> <userinput>svn propdel svn:mergeinfo -R 4.3</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> vendor / pf </replaceable> "
-"</userinput>\n"
-"<prompt>% </prompt> <userinput> svn cp dist 4.3 </userinput>\n"
-"<prompt>% </prompt> <userinput> svn propdel svn: mergeinfo -R 4.3 </"
-"userinput>"
+"<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp dist 4.3</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propdel svn:mergeinfo -R 4.3</userinput>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1636
-#, fuzzy
 msgid "Merging to Head"
-msgstr "Fusão à cabeça"
+msgstr "Mesclagem para o Head"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1638
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
 "userinput>\n"
@@ -3388,27 +3287,23 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo."
 "freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd <replaceable> head / contrib / pf </"
-"replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> svn up </userinput>\n"
-"<prompt>% </prompt> <userinput> svn merge --accept = adiar svn + ssh: //repo."
-"freebsd.org/base/ <replaceable> fornecedor / pf / dist </replaceable>. </"
-"userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo."
+"freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1642
-#, fuzzy
 msgid ""
 "The <literal>--accept=postpone</literal> tells Subversion not to complain "
 "about merge conflicts as they will be handled manually."
 msgstr ""
-"O <literal> - accept = postpone </literal> diz ao Subversion para não "
-"reclamar sobre conflitos de mesclagem, pois eles serão manipulados "
-"manualmente."
+"O <literal>--accept=postpone</literal> diz ao Subversion para não reclamar "
+"sobre conflitos de mesclagem, pois eles serão manipulados manualmente."
 
 #. (itstool) path: tip/para
 #: article.translate.xml:1647
-#, fuzzy
 msgid ""
 "The <command>cvs2svn</command> changeover occurred on June 3, 2008. When "
 "performing vendor merges for packages which were already present and "
@@ -3419,19 +3314,19 @@ msgid ""
 "<option>-c <replaceable>REV</replaceable></option> to indicate the revision "
 "to merge from the <filename>/vendor</filename> tree. For example:"
 msgstr ""
-"A mudança do <command> cvs2svn </command> ocorreu em 3 de junho de 2008. Ao "
+"A mudança do <command>cvs2svn</command> ocorreu em 3 de junho de 2008. Ao "
 "realizar mesclagens de fornecedores para pacotes que já estavam presentes e "
-"convertidos pelo processo <command> cvs2svn </command>, o comando usado para "
-"mesclar <filename> / fornecedor / <replaceable> nome_do_pacote </"
-"replaceable> / dist </filename> para <filename> / head / <replaceable> "
-"localização_do_placa </replaceable> </filename> (por exemplo, <filename> "
-"head / contrib / sendmail </filename >) deve usar <option> -c <replaceable> "
-"REV </replaceable> </option> para indicar a revisão a ser mesclada a partir "
-"da árvore <filename> / vendor </filename>. Por exemplo:"
+"convertidos pelo processo <command>cvs2svn</command>, o comando usado para "
+"mesclar <filename>/vendor/<replaceable>package_name</replaceable>/dist</"
+"filename> para <filename>/head/<replaceable>package_location</replaceable></"
+"filename> (por exemplo, <filename>head/contrib/sendmail</filename>) deve "
+"usar <option>-c <replaceable>REV</replaceable></option> para indicar a "
+"revisão a ser mesclada a partir da árvore <filename>/vendor</filename>. Por "
+"exemplo:"
 
 #. (itstool) path: tip/screen
 #: article.translate.xml:1661
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
 "head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
@@ -3440,38 +3335,34 @@ msgid ""
 "replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn checkout svn + ssh: //repo.freebsd.org/"
-"base/head/contrib/ <replaceable> sendmail </replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> cd sendmail </userinput>\n"
-"<prompt>% </prompt> <userinput> svn merge -c r <replaceable> 261190 </"
-"replaceable> '^ / vendor / <replaceable> sendmail / dist </replaceable>'. </"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd sendmail</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge -c r<replaceable>261190</"
+"replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</"
 "userinput>"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:1665
-#, fuzzy
 msgid "<literal>^</literal> is an alias for the repository path."
-msgstr "<literal> ^ </literal> é um alias para o caminho do repositório."
+msgstr "<literal>^</literal> é um alias para o caminho do repositório."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1670
-#, fuzzy
 msgid ""
 "If using the <application>Zsh</application> shell, the <literal>^</literal> "
 "must be escaped with <literal>\\</literal> or quoted."
 msgstr ""
-"Se estiver usando o shell <application> Zsh </application>, o <literal> ^ </"
-"literal> deve ser escapado com <literal> \\ </literal> ou entre aspas."
+"Se estiver usando o shell <application>Zsh</application>, o <literal>^</"
+"literal> deve ser escapado com <literal>\\</literal> ou entre aspas."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1675
-#, fuzzy
 msgid "It is necessary to resolve any merge conflicts."
 msgstr "É necessário resolver quaisquer conflitos de mesclagem."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1677
-#, fuzzy
 msgid ""
 "Make sure that any files that were added or removed in the vendor tree have "
 "been properly added or removed in the main tree. To check diffs against the "
@@ -3479,37 +3370,35 @@ msgid ""
 msgstr ""
 "Certifique-se de que todos os arquivos adicionados ou removidos na árvore do "
 "fornecedor tenham sido adicionados ou removidos corretamente na árvore "
-"principal. Para verificar os diffs com relação ao ramo do fornecedor:"
+"principal. Para verificar os diffs com relação ao branch do fornecedor:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1682
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://"
 "repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn diff --no-diff-deletado --old = svn + "
-"ssh: //repo.freebsd.org/base/ <replaceable> fornecedor / pf / dist </"
-"replaceable> --new =. </userinput>"
+"<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://"
+"repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</"
+"userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1684
-#, fuzzy
 msgid ""
 "The <literal>--no-diff-deleted</literal> tells Subversion not to complain "
 "about files that are in the vendor tree but not in the main tree. Things "
 "that would have previously been removed before the vendor import, like the "
 "vendor's makefiles and configure scripts."
 msgstr ""
-"O <literal> - no-diff-deleted </literal> diz ao Subversion para não reclamar "
-"sobre os arquivos que estão na árvore do fornecedor, mas não na árvore "
-"principal. Coisas que teriam sido removidas antes da importação do "
+"O <literal>--no-diff-deleted</literal> diz ao Subversion para não reclamar "
+"sobre os arquivos que estão na árvore do fornecedor, mas que não estão na "
+"árvore principal. Coisas que teriam sido removidas antes da importação do "
 "fornecedor, como os makefiles do fornecedor e os scripts de configuração."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1691
-#, fuzzy
 msgid ""
 "Using <acronym>CVS</acronym>, once a file was off the vendor branch, it was "
 "not able to be put back. With Subversion, there is no concept of on or off "
@@ -3517,68 +3406,62 @@ msgid ""
 "make it not show up in diffs in the vendor tree, all that has to be done is "
 "remove any left-over cruft like FreeBSD version tags, which is much easier."
 msgstr ""
-"Usando o <acronym> CVS </acronym>, uma vez que um arquivo estava fora do "
-"ramo do fornecedor, ele não podia ser colocado de volta. Com o Subversion, "
-"não há nenhum conceito dentro ou fora do ramo do fornecedor. Se um arquivo "
+"Usando o <acronym>CVS</acronym>, uma vez que um arquivo estava fora do "
+"branch do fornecedor, ele não podia ser colocado de volta. Com o Subversion, "
+"não há nenhum conceito dentro ou fora do branch do fornecedor. Se um arquivo "
 "que anteriormente tinha modificações locais, para fazer com que ele não "
 "apareça em diffs na árvore do fornecedor, tudo o que tem que ser feito é "
-"remover qualquer sobrescrito como as versões do FreeBSD, o que é muito mais "
-"fácil."
+"remover qualquer sobra como as tags de versões do FreeBSD, o que é muito "
+"mais fácil."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1700
-#, fuzzy
 msgid ""
 "If any changes are required for the world to build with the new sources, "
 "make them now, and keep testing until everything builds and runs perfectly."
 msgstr ""
-"Se alguma mudança for necessária para o mundo construir com as novas fontes, "
-"faça-as agora e continue testando até que tudo seja construído e executado "
-"perfeitamente."
+"Se alguma mudança for necessária para o \"world\" compilar com os novos "
+"fontes, faça-as agora e continue testando até que tudo seja compilado e "
+"executado perfeitamente."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1706
-#, fuzzy
 msgid "Committing the Vendor Import"
-msgstr "Comprometendo a importação de fornecedores"
+msgstr "Comprometendo a Importação de Fornecedores"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1708
-#, fuzzy
 msgid ""
 "Committing is now possible! Everything must be committed in one go. If done "
 "properly, the tree will move from a consistent state with old code, to a "
 "consistent state with new code."
 msgstr ""
-"Cometer agora é possível! Tudo deve ser comprometido de uma só vez. Se feito "
-"corretamente, a árvore passará de um estado consistente com o código antigo "
-"para um estado consistente com o novo código."
+"Comprometendo agora é possível! Tudo deve ser comprometido de uma só vez. Se "
+"feito corretamente, a árvore passará de um estado consistente com o código "
+"antigo para um estado consistente com o novo código."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1715
-#, fuzzy
 msgid "From Scratch"
-msgstr "Do princípio"
+msgstr "Do Princípio"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1720
-#, fuzzy
 msgid ""
 "This section is an example of importing and tagging <application>byacc</"
 "application> into <filename>head</filename>."
 msgstr ""
-"Esta seção é um exemplo de importação e marcação de <application> byacc </"
-"application> em <filename> head </filename>."
+"Esta seção é um exemplo de importação e marcação de <application>byacc</"
+"application> em <filename>head</filename>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1724
-#, fuzzy
 msgid "First, prepare the directory in <filename>vendor</filename>:"
-msgstr "Primeiro, prepare o diretório em <filename> vendor </filename>:"
+msgstr "Primeiro, prepare o diretório em <filename>vendor</filename>:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1727
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/"
 "vendor</replaceable></userinput>\n"
@@ -3589,14 +3472,14 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
 "replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn co -depth immediates <replaceable> $ "
-"FSVN / vendor </replaceable> </userinput>\n"
-"<prompt>% </prompt> <userinput> cd <replaceable> fornecedor </replaceable> </"
+"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/"
+"vendor</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> svn mkdir <replaceable> byacc </replaceable> "
-"</userinput>\n"
-"<prompt>% </prompt> <userinput> svn mkdir <replaceable> byacc / dist </"
-"replaceable> </userinput>"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1732
@@ -3615,16 +3498,15 @@ msgstr ""
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1739
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</"
 "replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
 "<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn cp -m <replaceable> \"Tag byacc "
-"20120115\" </replaceable> <replaceable> $ FSVN / vendor / byacc / dist </"
-"replaceable> <replaceable> $ FSVN / vendor / byacc / 20120115 </replaceable> "
-"</userinput>"
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</"
+"replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1743
@@ -3640,16 +3522,15 @@ msgstr "Devido a este ser um novo arquivo, copie-o para a mesclagem:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1748
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to "
 "contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
 "<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn cp -m <replaceable> \"Importar byacc "
-"para contrib\" </replaceable> <replaceable> $ FSVN / vendor / byacc / dist </"
-"replaceable> <replaceable> $ FSVN / head / contrib / byacc </replaceable> </"
-"userinput>"
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to "
+"contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1750
@@ -3671,15 +3552,15 @@ msgstr "A reversão de um commit para uma versão anterior é bem fácil:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1762
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn merge -r179454: 179453 ROADMAP.txt </"
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1765
@@ -3693,14 +3574,13 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1768
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn merge -c -179454 ROADMAP.txt</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn merge -c -179454 ROADMAP.txt </"
-"userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>svn merge -c -179454 ROADMAP.txt</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1771
@@ -3710,13 +3590,13 @@ msgstr "Isso também pode ser feito diretamente no repositório:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1773
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
 "freebsd.org/base/ROADMAP.txt</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn merge -r179454: 179453 svn + ssh: //repo."
-"freebsd.org/base/ROADMAP.txt </userinput>"
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
+"freebsd.org/base/ROADMAP.txt</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1776
@@ -3744,15 +3624,15 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1787
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
 "ROADMAP.txt@179454</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn copia svn + ssh: //repo.freebsd.org/base/"
-"ROADMAP.txt@179454 </userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1790
@@ -3762,13 +3642,13 @@ msgstr "ou, igualmente:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1792
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
 "ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn copia svn + ssh: //repo.freebsd.org/base/"
-"ROADMAP.txt@179454 svn + ssh: //repo.freebsd.org/base </userinput>"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1794
@@ -3929,17 +3809,17 @@ msgstr "Extraia o arquivo e atualize-o:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1868
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</"
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
 "userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> tar xf svnmirror-base-r261170.tar.xz </"
+"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</"
 "userinput>\n"
-"<prompt>% </prompt> <userinput> svnsync arquivo sync: /// home / svnmirror / "
-"base </userinput>"
+"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
+"userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1871
@@ -3969,13 +3849,13 @@ msgstr ""
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1881
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
 "svnmirror/base</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn proplist -v --revprop -r 0 file: /// "
-"home / svnmirror / base </userinput>"
+"<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
+"svnmirror/base</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1883
@@ -4015,7 +3895,7 @@ msgstr ""
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1903
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</"
 "userinput>"
@@ -4084,13 +3964,13 @@ msgstr "Para criar um ramo de projeto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1933
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
 "svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn copy svn + ssh: //repo.freebsd.org/base/"
-"head svn + ssh: //repo.freebsd.org/base/projects/spif </userinput>"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1935
@@ -4100,17 +3980,17 @@ msgstr "Para mesclar as alterações de HEAD de volta ao ramo do projeto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1938
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd copy_of_spif</userinput>\n"
 "<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/"
 "head</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> cd copy_of_spif </userinput>\n"
-"<prompt>% </prompt> <userinput> svn mesclar svn + ssh: //repo.freebsd.org/"
-"base/head </userinput>\n"
-"<prompt>% </prompt> <userinput> svn commit </userinput>"
+"<prompt>%</prompt> <userinput>cd copy_of_spif</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/"
+"head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1942
@@ -4189,14 +4069,13 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1978
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:keywords .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn revert -R .</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> svn propdel -R svn: palavras-chave. </"
-"userinput>\n"
-"<prompt>% </prompt> <userinput> svn reverter -R. </userinput>"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:keywords .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn revert -R .</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1981
@@ -8058,7 +7937,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:3936
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>make install</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>\n"
@@ -8069,14 +7948,14 @@ msgid ""
 "<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>"
 msgstr ""
-"<prompt> # </prompt> <userinput> make install </userinput>\n"
-"<prompt> # </prompt> <userinput> make package </userinput>\n"
-"<prompt> # </prompt> <userinput> faz o deinstall </userinput>\n"
-"<prompt> # </prompt> <userinput> pkg add <replaceable> pacote criado acima </"
-"replaceable> </userinput>\n"
-"<prompt> # </prompt> <userinput> faz o deinstall </userinput>\n"
-"<prompt> # </prompt> <userinput> faz a reinstalação </userinput>\n"
-"<prompt> # </prompt> <userinput> make package </userinput>"
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"<prompt>#</prompt> <userinput>make package</userinput>\n"
+"<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built above</"
+"replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>make package</userinput>"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:3944
@@ -8304,7 +8183,7 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:4080
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
 "replaceable></userinput>\n"
@@ -8344,7 +8223,7 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:4092
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
 "replaceable></userinput>\n"
@@ -8910,7 +8789,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4454
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
 "userinput>\n"
@@ -8976,69 +8855,69 @@ msgid ""
 "   Merged /head:r380362\n"
 "Do you want to commit? (no = start a shell) [y/n]"
 msgstr ""
-"<prompt>% </prompt> <userinput> / usr / ports / Ferramentas / scripts / mfh "
-"380362 </userinput>\n"
-" U 2015Q1\n"
-"Check-out revisão 380443.\n"
-"Um 2015Q1 / segurança\n"
-"Atualizando '2015Q1 / security / rubygem-sshkit':\n"
-"Um 2015Q1 / segurança / rubygem-sshkit\n"
-"Um 2015Q1 / security / rubygem-sshkit / Makefile\n"
-"A 2015Q1 / security / rubygem-sshkit / distinfo\n"
-"Um 2015Q1 / security / rubygem-sshkit / pkg-descr\n"
-"Atualizado para revisão 380443.\n"
-"--- Fusão de r380362 em '2015Q1':\n"
-"U 2015Q1 / segurança / rubygem-sshkit / Makefile\n"
-"U 2015Q1 / segurança / rubygem-sshkit / distinfo\n"
-"--- Gravação de mergeinfo para mesclagem do r380362 em '2015Q1':\n"
-" U 2015Q1\n"
-"--- Gravação de mergeinfo para mesclagem do r380362 em '2015Q1 / security':\n"
-" G 2015Q1 / segurança\n"
-"--- Elindo mergeinfo de '2015Q1 / security':\n"
-" U 2015Q1 / segurança\n"
-"--- Gravação mergeinfo para mesclagem de r380362 em '2015Q1 / security / "
-"rubygem-sshkit':\n"
-" G 2015Q1 / segurança / rubygem-sshkit\n"
-"--- Elindo mergeinfo de '2015Q1 / security / rubygem-sshkit':\n"
-" U 2015Q1 / segurança / rubygem-sshkit\n"
-" M 2015Q1\n"
-"M 2015Q1 / security / rubygem-sshkit / Makefile\n"
-"M 2015Q1 / segurança / rubygem-sshkit / distinfo\n"
-"Índice: 2015Q1 / security / rubygem-sshkit / Makefile\n"
-"================================================== =================\n"
-"--- 2015Q1 / security / rubygem-sshkit / Makefile (revisão 380443)\n"
-"+++ 2015Q1 / security / rubygem-sshkit / Makefile (cópia de trabalho)\n"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
+"userinput>\n"
+" U   2015Q1\n"
+"Checked out revision 380443.\n"
+"A    2015Q1/security\n"
+"Updating '2015Q1/security/rubygem-sshkit':\n"
+"A    2015Q1/security/rubygem-sshkit\n"
+"A    2015Q1/security/rubygem-sshkit/Makefile\n"
+"A    2015Q1/security/rubygem-sshkit/distinfo\n"
+"A    2015Q1/security/rubygem-sshkit/pkg-descr\n"
+"Updated to revision 380443.\n"
+"--- Merging r380362 into '2015Q1':\n"
+"U    2015Q1/security/rubygem-sshkit/Makefile\n"
+"U    2015Q1/security/rubygem-sshkit/distinfo\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1':\n"
+" U   2015Q1\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security':\n"
+" G   2015Q1/security\n"
+"--- Eliding mergeinfo from '2015Q1/security':\n"
+" U   2015Q1/security\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-"
+"sshkit':\n"
+" G   2015Q1/security/rubygem-sshkit\n"
+"--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
+" U   2015Q1/security/rubygem-sshkit\n"
+" M      2015Q1\n"
+"M       2015Q1/security/rubygem-sshkit/Makefile\n"
+"M       2015Q1/security/rubygem-sshkit/distinfo\n"
+"Index: 2015Q1/security/rubygem-sshkit/Makefile\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $ FreeBSD: head / pt_BR.ISO8859-1 / articles / committers-guide / article."
-"xml 52061 2018-07-26 05: 18: 49Z eadler $\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+"52061 2018-07-26 05:18:49Z eadler $\n"
 "\n"
-" PORTNAME = sshkit\n"
-"-PORTVERSÃO = 1.6.1\n"
-"+ PORTVERSÃO = 1.7.0\n"
-" CATEGORIAS = rubygems de segurança\n"
-" MASTER_SITES = RG\n"
+" PORTNAME=      sshkit\n"
+"-PORTVERSION=   1.6.1\n"
+"+PORTVERSION=   1.7.0\n"
+" CATEGORIES=    security rubygems\n"
+" MASTER_SITES=  RG\n"
 "\n"
-"Índice: 2015Q1 / security / rubygem-sshkit / distinfo\n"
-"================================================== =================\n"
-"--- 2015Q1 / security / rubygem-sshkit / distinfo (revisão 380443)\n"
-"+++ 2015Q1 / security / rubygem-sshkit / distinfo (cópia de trabalho)\n"
+"Index: 2015Q1/security/rubygem-sshkit/distinfo\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
 "@@ -1,2 +1,2 @@\n"
-"-SHA256 (rubygem / sshkit-1.6.1.gem) = "
+"-SHA256 (rubygem/sshkit-1.6.1.gem) = "
 "8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
-"-SIZE (rubygem / sshkit-1.6.1.gem) = 135680\n"
-"+ SHA256 (rubygem / sshkit-1.7.0.gem) = "
+"-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
+"+SHA256 (rubygem/sshkit-1.7.0.gem) = "
 "90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
-"+ TAMANHO (rubygem / sshkit-1.7.0.gem) = 136192\n"
-"Índice: 2015Q1\n"
-"================================================== =================\n"
-"--- 2015Q1 (revisão 380443)\n"
-"+++ 2015Q1 (cópia de trabalho)\n"
+"+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
+"Index: 2015Q1\n"
+"===================================================================\n"
+"--- 2015Q1      (revision 380443)\n"
+"+++ 2015Q1      (working copy)\n"
 "\n"
-"Alterações de propriedade em: 2015Q1\n"
+"Property changes on: 2015Q1\n"
 "___________________________________________________________________\n"
-"Modificado: svn: mergeinfo\n"
-"   Mesclado / cabeça: r380362\n"
-"Você quer se comprometer? (no = inicia uma shell) [y / n]"
+"Modified: svn:mergeinfo\n"
+"   Merged /head:r380362\n"
+"Do you want to commit? (no = start a shell) [y/n]"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4513
@@ -9099,13 +8978,13 @@ msgstr ""
 
 #. (itstool) path: tip/screen
 #: article.translate.xml:4541
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 "
 "r407722 r408567 r408943 r410728</userinput>"
 msgstr ""
-"<prompt>% </prompt> <userinput> / usr / ports / Ferramentas / scripts / mfh "
-"r407208 r407713 r407722 r408567 r408943 r410728 </userinput>"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 "
+"r407722 r408567 r408943 r410728</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:4545
@@ -9124,17 +9003,17 @@ msgstr ""
 
 #. (itstool) path: note/screen
 #: article.translate.xml:4552
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 "
 "r407713</userinput>\n"
 "/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/"
 "n]"
 msgstr ""
-"<prompt>% </prompt> <userinput> / usr / ports / Ferramentas / scripts / mfh "
-"2016Q1 r407208 r407713 </userinput>\n"
-"/! \\ A última filial é 2016Q2, você realmente quer se comprometer com o "
-"2016Q1? [y / n]"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 "
+"r407713</userinput>\n"
+"/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/"
+"n]"
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4560
@@ -9187,44 +9066,39 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:4589
-#, fuzzy
 msgid "Assign the PR back to you."
-msgstr "Atribuir o PR de volta para você."
+msgstr "Atribua o PR de volta para você."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4597
-#, fuzzy
 msgid "What do I need to do to implement a new physical category?"
 msgstr "O que preciso fazer para implementar uma nova categoria física?"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4604
-#, fuzzy
 msgid ""
 "Upgrade each moved port's <filename>Makefile</filename>. Do not connect the "
 "new category to the build yet."
 msgstr ""
-"Atualize o <filename> Makefile </filename> de cada porta movida. Não conecte "
-"a nova categoria ao build ainda."
+"Atualize o <filename>Makefile</filename> de cada port movido. Não conecte a "
+"nova categoria ao build ainda."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4608
-#, fuzzy
 msgid "To do this, you will need to:"
 msgstr "Para fazer isso, você precisará:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4612
-#, fuzzy
 msgid ""
 "Change the port's <varname>CATEGORIES</varname> (this was the point of the "
 "exercise, remember?) The new category is listed <emphasis>first</emphasis>. "
 "This will help to ensure that the <varname>PKGORIGIN</varname> is correct."
 msgstr ""
-"Altere as <varname> CATEGORIES </varname> da porta (esse foi o ponto do "
-"exercício, lembra?) A nova categoria está listada <emphasis> first </"
-"emphasis>. Isso ajudará a garantir que o <varname> PKGORIGIN </varname> "
-"esteja correto."
+"Altere as <varname>CATEGORIES</varname> do port (esse foi o ponto do "
+"exercício, lembra?) A nova categoria está listada <emphasis>primeiro</"
+"emphasis>. Isso ajudará a garantir que o <varname>PKGORIGIN</varname> esteja "
+"correto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4622
@@ -9337,14 +9211,11 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:4690
-#, fuzzy
 msgid "Add appropriate entries to <filename>ports/MOVED</filename>."
-msgstr ""
-"Adicione entradas apropriadas para <filename> ports / MOVED </filename>."
+msgstr "Adicione as entradas apropriadas no <filename>ports/MOVED</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4695
-#, fuzzy
 msgid "Update the documentation by modifying:"
 msgstr "Atualize a documentação modificando:"
 
@@ -9376,13 +9247,12 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:4712
-#, fuzzy
 msgid ""
 "(Note: these are in the docs, not the ports, repository). If you are not a "
 "docs committer, you will need to submit a PR for this."
 msgstr ""
-"(Nota: estes estão nos docs, não nas portas, repositório). Se você não é um "
-"committer docs, você precisará enviar um PR para isso."
+"(Nota: estes estão nos docs, não nos ports, repositório). Se você não é um "
+"doc committer, você precisará enviar um PR para isso."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4718
