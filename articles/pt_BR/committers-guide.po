@@ -1,6 +1,7 @@
 # André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-22 11:18+0000\n"
-"Last-Translator: André Franciosi <andre@franciosi.org>\n"
+"PO-Revision-Date: 2018-09-23 02:41+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -3427,7 +3428,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:1706
 msgid "Committing the Vendor Import"
-msgstr "Comprometendo a Importação de Fornecedores"
+msgstr "Fazendo o commit da Importação de Fornecedores"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1708
@@ -3436,14 +3437,14 @@ msgid ""
 "properly, the tree will move from a consistent state with old code, to a "
 "consistent state with new code."
 msgstr ""
-"Comprometendo agora é possível! Tudo deve ser comprometido de uma só vez. Se "
-"feito corretamente, a árvore passará de um estado consistente com o código "
-"antigo para um estado consistente com o novo código."
+"Agora é possível fazer o commit! O commit deve ser feito de tudo de uma só "
+"vez. Se feito corretamente, a árvore passará de um estado consistente com o "
+"código antigo para um estado consistente com o novo código."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1715
 msgid "From Scratch"
-msgstr "Do Princípio"
+msgstr "A partir do zero"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1720
@@ -3451,8 +3452,8 @@ msgid ""
 "This section is an example of importing and tagging <application>byacc</"
 "application> into <filename>head</filename>."
 msgstr ""
-"Esta seção é um exemplo de importação e marcação de <application>byacc</"
-"application> em <filename>head</filename>."
+"Esta seção é um exemplo de importação e marcação do <application>byacc</"
+"application> no <filename>head</filename>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1724
@@ -3483,18 +3484,17 @@ msgstr ""
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1732
-#, fuzzy
 msgid ""
 "Now, import the sources into the <filename>dist</filename> directory. Once "
 "the files are in place, <command>svn add</command> the new ones, then "
 "<command>svn commit</command> and tag the imported version. To save time and "
 "bandwidth, direct remote committing and tagging is possible:"
 msgstr ""
-"Agora, importe as fontes para o diretório <filename> dist </filename>. Uma "
-"vez que os arquivos estão no lugar, <command> svn add </command> os novos, "
-"então <command> svn commit </command> e marca a versão importada. Para "
-"poupar tempo e largura de banda, é possível efetuar remessas e marcações "
-"remotas diretas:"
+"Agora, importe os fontes para o diretório <filename>dist</filename>. Uma vez "
+"que os arquivos estiverem no lugar, faça o <command>svn add</command> dos "
+"novos, e então faça o <command>svn commit</command> e aplique a tag na "
+"versão importada. Para poupar tempo e largura de banda, é possível efetuar "
+"diretamente o commit e as marcações de forma remota:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1739
@@ -3510,13 +3510,11 @@ msgstr ""
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1743
-#, fuzzy
 msgid "Merging to <literal>head</literal>"
-msgstr "Mesclando a <literal> cabeça </literal>"
+msgstr "Mesclando para o <literal>head</literal>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1745
-#, fuzzy
 msgid "Due to this being a new file, copy it for the merge:"
 msgstr "Devido a este ser um novo arquivo, copie-o para a mesclagem:"
 
@@ -3534,19 +3532,16 @@ msgstr ""
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1750
-#, fuzzy
 msgid "Working normally on newly imported sources is still possible."
-msgstr "Trabalhar normalmente em fontes recém importadas ainda é possível."
+msgstr "Ainda é possível trabalhar normalmente nos fontes recém importados."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1757
-#, fuzzy
 msgid "Reverting a Commit"
 msgstr "Revertendo um Commit"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1759
-#, fuzzy
 msgid "Reverting a commit to a previous version is fairly easy:"
 msgstr "A reversão de um commit para uma versão anterior é bem fácil:"
 
@@ -3564,13 +3559,12 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1765
-#, fuzzy
 msgid ""
 "Change number syntax, with negative meaning a reverse change, can also be "
 "used:"
 msgstr ""
-"Alterar a sintaxe do número, com significado negativo de uma alteração "
-"inversa, também pode ser usada:"
+"Alterar a sintaxe do número, com o negativo significando a reversão de uma "
+"mudança, também pode ser usado:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1768
@@ -3584,7 +3578,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1771
-#, fuzzy
 msgid "This can also be done directly in the repository:"
 msgstr "Isso também pode ser feito diretamente no repositório:"
 
@@ -3600,27 +3593,25 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1776
-#, fuzzy
 msgid ""
 "It is important to ensure that the mergeinfo is correct when reverting a "
 "file to permit <command>svn mergeinfo --eligible</command> to work as "
 "expected."
 msgstr ""
 "É importante assegurar que o mergeinfo esteja correto ao reverter um arquivo "
-"para permitir que o <command> svn mergeinfo --eligible </command> funcione "
+"para permitir que o <command>svn mergeinfo --eligible</command> funcione "
 "como esperado."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1782
-#, fuzzy
 msgid ""
 "Reverting the deletion of a file is slightly different. Copying the version "
 "of the file that predates the deletion is required. For example, to restore "
 "a file that was deleted in revision N, restore version N-1:"
 msgstr ""
-"A reversão da exclusão de um arquivo é um pouco diferente. Copiar a versão "
-"do arquivo que antecede a exclusão é necessária. Por exemplo, para restaurar "
-"um arquivo que foi excluído na revisão N, restaure a versão N-1:"
+"A reversão da exclusão de um arquivo é um pouco diferente. É necessário "
+"copiar a versão do arquivo que antecede a exclusão. Por exemplo, para "
+"restaurar um arquivo que foi excluído na revisão N, restaure a versão N-1:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1787
@@ -3636,7 +3627,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1790
-#, fuzzy
 msgid "or, equally:"
 msgstr "ou, igualmente:"
 
@@ -3652,80 +3642,72 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1794
-#, fuzzy
 msgid ""
 "Do <emphasis>not</emphasis> simply recreate the file manually and "
 "<command>svn add</command> it—this will cause history to be lost."
 msgstr ""
-"Do <emphasis> not </emphasis> simplesmente recrie o arquivo manualmente e "
-"<command> svn add </command> it - isso fará com que o histórico seja perdido."
-""
+"Simplesmente <emphasis>não</emphasis> recrie o arquivo manualmente e o "
+"adicione com o <command>svn add</command> - isso fará com que o histórico "
+"seja perdido."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1800
-#, fuzzy
 msgid "Fixing Mistakes"
 msgstr "Corrigindo Erros"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1802
-#, fuzzy
 msgid ""
 "While we can do surgery in an emergency, do not plan on having mistakes "
 "fixed behind the scenes. Plan on mistakes remaining in the logs forever. Be "
 "sure to check the output of <command>svn status</command> and <command>svn "
 "diff</command> before committing."
 msgstr ""
-"Embora possamos fazer uma cirurgia em uma emergência, não planeje erros nos "
-"bastidores. Planeje os erros restantes nos registros para sempre. Certifique-"
-"se de verificar a saída do <command> svn status </command> e do <command> "
-"svn diff </command> antes de confirmar."
+"Por mais que possamos realizar uma cirurgia em uma emergência, não planeje "
+"ou corrija erros por baixo dos panos. Planos para erros permanecem nos "
+"registros para sempre. Certifique-se de verificar a saída do <command>svn "
+"status</command> e do <command>svn diff</command> antes de enviar o commit."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1808
-#, fuzzy
 msgid ""
 "Mistakes will happen but, they can generally be fixed without disruption."
 msgstr ""
-"Erros acontecerão, mas geralmente podem ser corrigidos sem interrupção."
+"Erros acontecerão, mas eles geralmente podem ser corrigidos sem perturbar."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1812
-#, fuzzy
 msgid ""
 "Take a case of adding a file in the wrong location. The right thing to do is "
 "to <command>svn move</command> the file to the correct location and commit. "
 "This causes just a couple of lines of metadata in the repository journal, "
 "and the logs are all linked up correctly."
 msgstr ""
-"Tome um caso de adicionar um arquivo no local errado. A coisa certa a fazer "
-"é <command> svn move </command> o arquivo para o local correto e confirmar. "
-"Isso causa apenas algumas linhas de metadados no diário do repositório, e os "
-"logs são todos ligados corretamente."
+"No caso de adicionar um arquivo no local errado. A coisa certa a fazer é "
+"usar o <command>svn move</command> e mover o arquivo para o local correto e "
+"fazer o commit. Isso altera apenas algumas linhas de metadados no journal do "
+"repositório, e os logs serão todos conectados corretamente."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1818
-#, fuzzy
 msgid ""
 "The wrong thing to do is to delete the file and then <command>svn add</"
 "command> an independent copy in the correct location. Instead of a couple of "
 "lines of text, the repository journal grows an entire new copy of the file. "
 "This is a waste."
 msgstr ""
-"A coisa errada a fazer é apagar o arquivo e, em seguida, <command> svn add </"
-"command> uma cópia independente no local correto. Em vez de algumas linhas "
-"de texto, o diário de repositório produz uma nova cópia inteira do arquivo. "
-"Isso é um desperdício."
+"A coisa errada a fazer é apagar o arquivo e, em seguida, usar <command>svn "
+"add</command> para adicionar uma cópia independente no local correto. Em vez "
+"de algumas linhas de texto, o repositório journal cria uma nova cópia "
+"inteira do arquivo. Isso é um desperdício."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1826
-#, fuzzy
 msgid "Using a Subversion Mirror"
-msgstr "Usando um espelho do Subversion"
+msgstr "Usando um Espelho do Subversion"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1828
-#, fuzzy
 msgid ""
 "There is a serious disadvantage to this method: every time something is to "
 "be committed, a <command>svn relocate</command> to the master repository has "
@@ -3735,43 +3717,39 @@ msgid ""
 "local repository's UUID has to occur before it is possible to start using it."
 ""
 msgstr ""
-"Há uma séria desvantagem neste método: toda vez que algo for cometido, um "
-"<command> svn relocate </command> para o repositório principal deve ser "
-"feito, lembrando-se de <command> svn relocate </command> de volta para o "
-"espelho após o commit. Além disso, como o <command> svn relocate </command> "
-"só funciona entre os repositórios que possuem o mesmo UUID, algum hacking do "
-"UUID do repositório local deve ocorrer antes que seja possível começar a usá-"
-"lo."
+"Há uma séria desvantagem neste método: toda vez que for feito o commit de "
+"algo, terá que executar um <command>svn relocate</command> no repositório "
+"master, não esquecendo de executar o <command>svn relocate</command> de "
+"volta para o mirror após o commit. Além disso, como o <command>svn relocate</"
+"command> só funciona entre os repositórios que possuem o mesmo UUID, algum "
+"hacking do UUID do repositório local deve ocorrer antes que seja possível "
+"começar a usá-lo."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1839
-#, fuzzy
 msgid "Checkout from a Mirror"
-msgstr "Checkout de um espelho"
+msgstr "Checkout a partir de um Mirror"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1841
-#, fuzzy
 msgid ""
 "Check out a working copy from a mirror by substituting the mirror's "
 "<acronym>URL</acronym> for <literal>svn+ssh://repo.freebsd.org/base</"
 "literal>. This can be an official mirror or a mirror maintained by using "
 "<command>svnsync</command>."
 msgstr ""
-"Confira uma cópia de trabalho de um espelho substituindo a <acronym> URL </"
-"acronym> do espelho por <literal> svn + ssh: //repo.freebsd.org/base </"
-"literal>. Este pode ser um espelho oficial ou um espelho mantido usando "
-"<command> svnsync </command>."
+"Faça o checkout de uma cópia de trabalho a partir de um mirror substituindo "
+"a <acronym>URL</acronym> do mirror por <literal>svn+ssh://repo.freebsd.org/"
+"base</literal>. Este pode ser um mirror oficial ou um mirror mantido usando "
+"o <command>svnsync</command>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1849
-#, fuzzy
 msgid "Setting up a <application>svnsync</application> Mirror"
-msgstr "Configurando um Espelho <application> svnsync </application>"
+msgstr "Configurando um Mirror <application>svnsync</application>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1852
-#, fuzzy
 msgid ""
 "Avoid setting up a <application>svnsync</application> mirror unless there is "
 "a very good reason for it. Most of the time a <command>git</command> mirror "
@@ -3780,32 +3758,30 @@ msgid ""
 "international links are involved, expect this to take four to ten times "
 "longer."
 msgstr ""
-"Evite configurar um espelho <application> svnsync </application> a menos que "
-"haja uma boa razão para isso. Na maioria das vezes, um espelho <command> git "
-"</command> é uma alternativa melhor. Começar um novo espelho do zero leva "
-"muito tempo. Espere um mínimo de 10 horas para conectividade de alta "
-"velocidade. Se os links internacionais estiverem envolvidos, espere que isso "
-"leve de quatro a dez vezes mais."
+"Evite configurar um mirror <application>svnsync</application> a menos que "
+"haja uma boa razão para isso. Na maioria das vezes, um mirror <command>git</"
+"command> é uma alternativa melhor. Começar um novo mirror do zero leva muito "
+"tempo. Espere um mínimo de 10 horas para conectividade de alta velocidade. "
+"Se o trafego for passar por links internacionais, espere que isso leve de "
+"quatro a dez vezes mais."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1861
-#, fuzzy
 msgid ""
 "One way to limit the time required is to grab a <link xlink:href=\"https://"
 "download.freebsd.org/ftp/development/subversion/\">seed file</link>. It is "
 "large (~1GB) but will consume less network traffic and take less time to "
 "fetch than svnsync will."
 msgstr ""
-"Uma maneira de limitar o tempo necessário é pegar um <link xlink:href="
-"\"https://download.freebsd.org/ftp/development/subversion/\"> arquivo "
-"semente </link>. Ele é grande (~ 1 GB), mas consome menos tráfego de rede e "
-"leva menos tempo para buscar do que o svnsync."
+"Uma maneira de limitar o tempo necessário é pegar um arquivo de <link xlink:"
+"href=\"https://download.freebsd.org/ftp/development/subversion/\">seed</"
+"link>. Ele é grande (~1GB), mas consome menos tráfego de rede e leva menos "
+"tempo para baixar do que o svnsync."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1866
-#, fuzzy
 msgid "Extract the file and update it:"
-msgstr "Extraia o arquivo e atualize-o:"
+msgstr "Extraia o arquivo e o atualize:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1868
@@ -3823,28 +3799,26 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1871
-#, fuzzy
 msgid ""
 "Now, set that up to run from <citerefentry><refentrytitle>cron</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, do checkouts locally, "
 "set up a svnserve server for local machines to talk to, etc."
 msgstr ""
-"Agora, configure isso para executar a partir de <citerefentry> "
-"<refentrytitle> cron </refentrytitle> <manvolnum> 8 </manvolnum> </"
+"Agora, configure isso para executar a partir do "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>, faça checkouts localmente, configure um servidor svnserve "
 "para as máquinas locais com as quais conversar, etc."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1875
-#, fuzzy
 msgid ""
 "The seed mirror is set to fetch from <literal>svn://svn.freebsd.org/base</"
 "literal>. The configuration for the mirror is stored in <literal>revprop 0</"
 "literal> on the local mirror. To see the configuration, try:"
 msgstr ""
-"O espelho de sementes está definido para buscar a partir de <literal> svn: //"
-"svn.freebsd.org/base </literal>. A configuração para o espelho é armazenada "
-"em <literal> revprop 0 </literal> no espelho local. Para ver a configuração, "
+"O mirror seed está definido para buscar o conteúdo a partir de <literal>svn:/"
+"/svn.freebsd.org/base</literal>. A configuração para o mirror é armazenada "
+"em <literal>revprop 0</literal> no mirror local. Para ver a configuração, "
 "tente:"
 
 #. (itstool) path: sect4/screen
@@ -3859,19 +3833,16 @@ msgstr ""
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1883
-#, fuzzy
 msgid "Use <literal>svn propset</literal> to change things."
-msgstr "Use <literal> svn propset </literal> para mudar as coisas."
+msgstr "Use <literal>svn propset</literal> para mudar as coisas."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1889
-#, fuzzy
 msgid "Committing High-<acronym>ASCII</acronym> Data"
-msgstr "Comprometendo dados de alta- <acronym> ASCII </acronym>"
+msgstr "Fazendo commit de dados High<acronym>ASCII</acronym>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1891
-#, fuzzy
 msgid ""
 "Files that have high-<acronym>ASCII</acronym> bits are considered binary "
 "files in <acronym>SVN</acronym>, so the pre-commit checks fail and indicate "
@@ -3883,15 +3854,15 @@ msgid ""
 "set the <literal>fbsd:notbinary</literal> property with <literal>propset</"
 "literal>:"
 msgstr ""
-"Os arquivos que possuem bits de alta ASCII são considerados arquivos "
-"binários em <acronym> SVN </acronym>, portanto, as verificações de pré-"
-"confirmação falham e indicam que a propriedade <literal> mime-type </"
-"literal> deve ser definido como <literal> application / octet-stream </"
-"literal>. No entanto, o uso deste é desencorajado, por isso, não o defina. A "
-"melhor maneira é sempre evitar dados de <acronym> ASCII </acronym>, para que "
-"possam ser lidos em qualquer lugar com qualquer editor de texto, mas se não "
-"for evitável, em vez de alterar o tipo mime, defina o <literal> fbsd : "
-"notbinary </literal> propriedade com <literal> propset </literal>:"
+"Os arquivos que possuem bits high-<acronym>ASCII</acronym> são considerados "
+"arquivos binários no <acronym>SVN</acronym>, portanto, as verificações de "
+"pré-commit falham e indicam que a propriedade <literal>mime-type</literal> "
+"deve ser definida como <literal>application/octet-stream</literal>. No "
+"entanto, o uso deste é desencorajado, por isso, não o defina. A melhor "
+"maneira é sempre evitar dados high-<acronym>ASCII</acronym>, para que possam "
+"ser lidos em qualquer lugar com qualquer editor de texto, mas se não for "
+"possivel evitar, em vez de alterar o mime-type, defina a propriedade "
+"<literal>fbsd:notbinary</literal> com o <literal>propset</literal>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1903
@@ -3905,13 +3876,11 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1907
-#, fuzzy
 msgid "Maintaining a Project Branch"
-msgstr "Mantendo uma ramificação do projeto"
+msgstr "Mantendo um branch de projeto"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1909
-#, fuzzy
 msgid ""
 "A project branch is one that is synced to head (or another branch) is used "
 "to develop a project then commit it back to head. In <acronym>SVN</acronym>, "
@@ -3922,20 +3891,19 @@ msgid ""
 "After the branch is committed back at the end, it is dead (although a new "
 "branch with the same name can be created after the dead one is deleted)."
 msgstr ""
-"Uma ramificação do projeto é aquela que é sincronizada com a cabeça (ou "
-"outra ramificação) é usada para desenvolver um projeto e, em seguida, comete-"
-"a de volta à cabeça. Em <acronym> SVN </acronym>, <quote> golfinho </quote> "
-"é usado para isso. Uma ramificação <quote> dolphin </quote> é aquela que "
-"diverge por um tempo e é finalmente enviada de volta ao branch original. "
-"Durante a migração do código de desenvolvimento em uma direção (da cabeça ao "
-"ramo apenas). Nenhum código é confirmado de volta à cabeça até o final. "
-"Depois que a ramificação é confirmada no final, ela está inativa (embora uma "
-"nova ramificação com o mesmo nome possa ser criada depois que a que está "
-"morta é excluída)."
+"Uma branch de projeto é aquela que está sincronizada com o head (ou outra "
+"branch) e é usada para desenvolver um projeto e, em seguida, fazer o seu "
+"commit de volta para o head. No <acronym>SVN</acronym>, o branch "
+"<quote>dolphin</quote> é usado para isso. Uma branch <quote>dolphin</quote> "
+"é aquela que diverge por um tempo e é finalmente enviada de volta ao branch "
+"original. Durante a migração do código de desenvolvimento em uma direção (do "
+"head para o branch apenas). Não é feito o commit de nenhum código de volta "
+"ao head até o final. Depois que é feito o commit da branch no final, ela "
+"estará morta (embora uma nova branch com o mesmo nome possa ser criada "
+"depois que a que está morta é excluída)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1921
-#, fuzzy
 msgid ""
 "As per <link xlink:href=\"https://people.FreeBSD.org/~peter/svn_notes."
 "txt\">https://people.FreeBSD.org/~peter/svn_notes.txt</link>, work that is "
@@ -3946,21 +3914,20 @@ msgid ""
 "filename>. <link xlink:href=\"https://svnweb.freebsd.org/base/projects/"
 "GUIDELINES.txt\">This page</link> contains further details."
 msgstr ""
-"Como por <link xlink:href=\"https://people.FreeBSD.org/~peter/svn_notes."
-"txt\"> https://people.FreeBSD.org/~peter/svn_notes.txt </link>, trabalho que "
-"destina-se a ser fundido de volta para HEAD deve estar em <filename> base / "
-"projects / </filename>. Se o trabalho é benéfico para a comunidade do "
-"FreeBSD de alguma forma, mas não se destina a ser mesclado diretamente no "
-"HEAD, então o local apropriado é <filename> base / usuário / <replaceable> "
-"nome de usuário </replaceable> / </filename>. <link xlink:href=\"https://"
-"svnweb.freebsd.org/base/projects/GUIDELINES.txt\"> Esta página </link> "
-"contém mais detalhes."
+"Como explicado em <link xlink:href=\"https://people.FreeBSD.org/~peter/"
+"svn_notes.txt\">https://people.FreeBSD.org/~peter/svn_notes.txt</link>, o "
+"trabalho que destina-se a ser mesclado de volta para o HEAD deve estar em "
+"<filename>base/projects/</filename>. Se o trabalho é benéfico para a "
+"comunidade do FreeBSD de alguma forma, mas não se destina a ser mesclado "
+"diretamente no HEAD, então o local apropriado é <filename>base/user/"
+"<replaceable>username</replaceable>/</filename>. <link xlink:href=\"https://"
+"svnweb.freebsd.org/base/projects/GUIDELINES.txt\">Esta página</link> contém "
+"mais detalhes."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1931
-#, fuzzy
 msgid "To create a project branch:"
-msgstr "Para criar um ramo de projeto:"
+msgstr "Para criar um branch de projeto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1933
@@ -3974,9 +3941,8 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1935
-#, fuzzy
 msgid "To merge changes from HEAD back into the project branch:"
-msgstr "Para mesclar as alterações de HEAD de volta ao ramo do projeto:"
+msgstr "Para mesclar as alterações do HEAD de volta ao branch de projeto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1938
@@ -3994,66 +3960,61 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1942
-#, fuzzy
 msgid "It is important to resolve any merge conflicts before committing."
 msgstr ""
-"É importante resolver quaisquer conflitos de mesclagem antes de confirmar."
+"É importante resolver quaisquer conflitos de mesclagem antes de fazer o "
+"commit."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1954
-#, fuzzy
 msgid "Some Tips"
 msgstr "Algumas dicas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1956
-#, fuzzy
 msgid ""
 "In commit logs etc., <quote>rev 179872</quote> is spelled <quote>r179872</"
 "quote> as per convention."
 msgstr ""
-"Nos registos de submissão, etc., <quote> rev 179872 </quote> está escrito "
-"<quote> r179872 </quote> conforme a convenção."
+"Nos logs de commit, etc., <quote>rev 179872</quote> é soletrado "
+"<quote>r179872</quote> conforme a convenção."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1959
-#, fuzzy
 msgid ""
 "Speeding up svn is possible by adding these entries to <filename>~/.ssh/"
 "config</filename>:"
 msgstr ""
-"A aceleração do svn é possível adicionando estas entradas ao <filename> ~ / ."
-"ssh / config </filename>:"
+"É possível acelerar o svn adicionando estas entradas ao <filename>~/.ssh/"
+"config</filename>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1962
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Host *\n"
 "ControlPath ~/.ssh/sockets/master-%l-%r@%h:%p\n"
 "ControlMaster auto\n"
 "ControlPersist yes"
 msgstr ""
-"Hospedeiro *\n"
-"ControlPath ~/.ssh/sockets/master-%l-%r@%h:% p\n"
-"Auto ControlMaster\n"
-"ControlPersist sim"
+"Host *\n"
+"ControlPath ~/.ssh/sockets/master-%l-%r@%h:%p\n"
+"ControlMaster auto\n"
+"ControlPersist yes"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1967
-#, fuzzy
 msgid "and then typing"
 msgstr "e depois digitando"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1969
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<userinput>mkdir ~/.ssh/sockets</userinput>"
-msgstr "<userinput> mkdir ~ / .ssh / sockets </userinput>"
+msgstr "<userinput>mkdir ~/.ssh/sockets</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1971
-#, fuzzy
 msgid ""
 "Checking out a working copy with a stock Subversion client without FreeBSD-"
 "specific patches (<varname>OPTIONS_SET=FREEBSD_TEMPLATE</varname>) will mean "
@@ -4061,11 +4022,11 @@ msgid ""
 "correct version has been installed, trick Subversion into expanding them "
 "like so:"
 msgstr ""
-"Fazer check-out de uma cópia de trabalho com um cliente Subversion padrão "
-"sem patches específicos do FreeBSD (<varname> OPTIONS_SET = FREEBSD_TEMPLATE "
-"</varname>) significará que as tags <literal> $ FreeBSD $ </literal> não "
-"serão expandidas. Uma vez que a versão correta foi instalada, engane o "
-"Subversion para expandi-las da seguinte forma:"
+"Fazer o check-out de uma cópia de trabalho com um cliente Subversion padrão "
+"sem patches específicos do FreeBSD (<varname>OPTIONS_SET=FREEBSD_TEMPLATE</"
+"varname>) significará que as tags <literal>$FreeBSD$</literal> não serão "
+"expandidas. Uma vez que a versão correta foi instalada, engane o Subversion "
+"para expandi-las da seguinte forma:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1978
@@ -4079,61 +4040,55 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1981
-#, fuzzy
 msgid "This will wipe out uncommitted patches."
-msgstr "Isso eliminará os patches não confirmados."
+msgstr "Isso eliminará os patches para os quais ainda não foi feito o commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1983
-#, fuzzy
 msgid ""
 "It is possible to automatically fill the \"Sponsored by\" and \"MFC after\" "
 "commit log fields by setting \"freebsd-sponsored-by\" and \"freebsd-mfc-"
 "after\" fields in the \"[miscellany]\" section of the <filename>~/."
 "subversion/config</filename> configuration file. For example:"
 msgstr ""
-"É possível preencher automaticamente os campos de log de confirmação "
-"\"Promovido por\" e \"MFC após\" configurando os campos \"freebsd-sponsored-"
-"by\" e \"freebsd-mfc-after\" na seção \"[miscellany]\" do <filename> arquivo "
-"de configuração ~ / .subversion / config </filename>. Por exemplo:"
+"É possível preencher automaticamente os campos de log de commit \"Sponsored "
+"by\" e \"MFC after\" configurando os campos \"freebsd-sponsored-by\" e "
+"\"freebsd-mfc-after\" na seção \"[miscellany]\" do arquivo de configuração "
+"<filename>~/.subversion/config</filename>. Por exemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:1990
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "freebsd-sponsored-by = The FreeBSD Foundation\n"
 "freebsd-mfc-after = 2 weeks"
 msgstr ""
-"freebsd-sponsored-by = Fundação do FreeBSD\n"
-"freebsd-mfc-after = 2 semanas"
+"freebsd-sponsored-by = The FreeBSD Foundation\n"
+"freebsd-mfc-after = 2 weeks"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1996
-#, fuzzy
 msgid "Setup, Conventions, and Traditions"
 msgstr "Configuração, Convenções e Tradições"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1998
-#, fuzzy
 msgid ""
 "There are a number of things to do as a new developer. The first set of "
 "steps is specific to committers only. These steps must be done by a mentor "
 "for those who are not committers."
 msgstr ""
-"Há uma série de coisas para fazer como um novo desenvolvedor. O primeiro "
-"conjunto de etapas é específico para committers apenas. Essas etapas devem "
-"ser feitas por um mentor para aqueles que não são committers."
+"Existe uma série de coisas para fazer como um novo desenvolvedor. O primeiro "
+"conjunto de etapas é específico apenas para os committers. Essas etapas "
+"devem ser feitas por um mentor para aqueles que não são committers."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2004
-#, fuzzy
 msgid "For New Committers"
 msgstr "Para novos committers"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2006
-#, fuzzy
 msgid ""
 "Those who have been given commit rights to the FreeBSD repositories must "
 "follow these steps."
@@ -4143,26 +4098,24 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2011
-#, fuzzy
 msgid "Get mentor approval before committing each of these changes!"
 msgstr ""
-"Obtenha a aprovação do mentor antes de confirmar cada uma dessas mudanças!"
+"Obtenha a aprovação do seu mentor antes de fazer o commit de cada uma dessas "
+"mudanças!"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2016
-#, fuzzy
 msgid ""
 "The <filename>.ent</filename> and <filename>.xml</filename> files mentioned "
 "below exist in the FreeBSD Documentation Project SVN repository at "
 "<literal>svn+ssh://repo.FreeBSD.org/doc/</literal>."
 msgstr ""
-"Os arquivos <filename> .ent </filename> e <filename> .xml </filename> "
-"mencionados abaixo existem no repositório SVN do FreeBSD Documentation "
-"Project em <literal> svn + ssh: //repo.FreeBSD.org/doc/ </literal>."
+"Os arquivos <filename>.ent</filename> e <filename>.xml</filename> "
+"mencionados abaixo existem no repositório SVN do Projeto de Documentation do "
+"FreeBSD em <literal>svn+ssh://repo.FreeBSD.org/doc/</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2023
-#, fuzzy
 msgid ""
 "New files that do not have the <literal>FreeBSD=%H</literal> <command>svn:"
 "keywords</command> property will be rejected when attempting to commit them "
@@ -4171,64 +4124,59 @@ msgid ""
 "subversion/config</filename> contains the necessary <quote>auto-props</"
 "quote> entries from <filename>auto-props.txt</filename> mentioned there."
 msgstr ""
-"Novos arquivos que não possuem a propriedade <literal> FreeBSD=%H </literal> "
-"<command> svn:keywords </command> serão rejeitados ao tentar submetê-los ao "
-"repositório. Certifique-se de ler <xref linkend=\"svn-daily-use-adding-and-"
-"removing\"/> sobre adicionar e remover arquivos. Verifique se o <filename> ~ "
-"/ .subversion / config </filename> contém as entradas necessárias <quote> "
-"auto-props </quote> do <filename> auto-props.txt </filename> mencionado lá."
+"Novos arquivos que não possuem a propriedade <literal>FreeBSD=%H</literal> "
+"<command>svn:keywords</command> serão rejeitados quando você tentar fazer o "
+"commit dos mesmos para o repositório. Certifique-se de ler <xref linkend="
+"\"svn-daily-use-adding-and-removing\"/> sobre como adicionar e remover "
+"arquivos. Verifique se o <filename>~/.subversion/config</filename> contém as "
+"entradas necessárias de <quote>auto-props</quote> do <filename>auto-props."
+"txt</filename> mencionado lá."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2037
-#, fuzzy
 msgid ""
 "All <filename>src</filename> commits go to FreeBSD-CURRENT first before "
 "being merged to FreeBSD-STABLE. The FreeBSD-STABLE branch must maintain "
 "<acronym>ABI</acronym> and <acronym>API</acronym> compatibility with earlier "
 "versions of that branch. Do not merge changes that break this compatibility."
 msgstr ""
-"Todos os commits do <filename> src </filename> vão para o FreeBSD-CURRENT "
-"antes de serem mesclados ao FreeBSD-STABLE. A ramificação do FreeBSD-STABLE "
-"deve manter a compatibilidade com <acronym> ABI </acronym> e <acronym> API </"
-"acronym> com versões anteriores dessa ramificação. Não mescle as alterações "
+"Todos os commits do <filename>src</filename> vão para o FreeBSD-CURRENT "
+"antes de serem mesclados para o FreeBSD-STABLE. A branch do FreeBSD-STABLE "
+"deve manter a compatibilidade de <acronym>ABI</acronym> e de  <acronym>API</"
+"acronym> com as versões anteriores dessa branch. Não mescle as alterações "
 "que quebram essa compatibilidade."
 
 #. (itstool) path: procedure/title
 #: article.translate.xml:2047
-#, fuzzy
 msgid "Steps for New Committers"
-msgstr "Etapas para novos committers"
+msgstr "Etapas para os novos committers"
 
 #. (itstool) path: step/title
 #: article.translate.xml:2050
-#, fuzzy
 msgid "Add an Author Entity"
-msgstr "Adicionar uma entidade de autor"
+msgstr "Adicione uma entidade de autor"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2052
-#, fuzzy
 msgid ""
 "<filename>doc/head/share/xml/authors.ent</filename> — Add an author entity. "
 "Later steps depend on this entity, and missing this step will cause the "
 "<filename>doc/</filename> build to fail. This is a relatively easy task, but "
 "remains a good first test of version control skills."
 msgstr ""
-"<filename> doc / head / share / xml / authors.ent </filename> - Adicione uma "
-"entidade de autor. Etapas posteriores dependem dessa entidade, e a falta "
-"dessa etapa fará com que a compilação <filename> doc / </filename> falhe. "
-"Essa é uma tarefa relativamente fácil, mas continua sendo um bom primeiro "
-"teste de habilidades de controle de versão."
+"<filename>doc/head/share/xml/authors.ent</filename> - Adicione uma entidade "
+"de autor. Etapas posteriores dependem dessa entidade, e a falta dessa etapa "
+"fará com que a compilação do <filename>doc/</filename> falhe. Essa é uma "
+"tarefa relativamente fácil, mas continua sendo um bom primeiro teste de "
+"habilidades no controle de versão."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2061
-#, fuzzy
 msgid "Update the List of Developers and Contributors"
 msgstr "Atualize a lista de desenvolvedores e colaboradores"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2064
-#, fuzzy
 msgid ""
 "<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.committers."
 "xml</filename> — Add an entry to the <quote>Developers</quote> section of "
@@ -4236,106 +4184,96 @@ msgid ""
 "contributors/staff-committers.html\">Contributors List</link>. Entries are "
 "sorted by last name."
 msgstr ""
-"<filename> doc / head / pt_BR.ISO8859-1 / articles / contributors / contrib."
-"committers.xml </filename> - Adicione uma entrada à seção <quote> "
-"Desenvolvedores </quote> do <link xlink:href=\" @@URL_RELPREFIX@@/doc / "
-"pt_PT.ISO8859-1 / articles / contributors / staff-committers.html \"> Lista "
-"de contribuidores </link>. As entradas são classificadas pelo sobrenome."
+"<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.committers."
+"xml</filename> - Adicione uma entrada à seção <quote>Desenvolvedores</quote> "
+"da <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributors/staff-committers.html\">Lista de Contribuidores</link>. As "
+"entradas são classificadas pelo sobrenome."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2070
-#, fuzzy
 msgid ""
 "<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.additional."
 "xml</filename> — <emphasis>Remove</emphasis> the entry from the "
 "<quote>Additional Contributors</quote> section. Entries are sorted by first "
 "name."
 msgstr ""
-"<filename> doc / head / pt_BR.ISO8859-1 / articles / contributors / contrib."
-"additional.xml </filename> - <emphasis> Remove </emphasis> a entrada da "
-"seção <quote> Contribuintes Adicionais </quote>. As entradas são "
-"classificadas pelo primeiro nome."
+"<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.additional."
+"xml</filename> - <emphasis>Remova</emphasis> a entrada da seção "
+"<quote>Contribuidores Adicionais</quote>. As entradas são classificadas pelo "
+"primeiro nome."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2077
-#, fuzzy
 msgid "Add a News Item"
-msgstr "Adicionar um item de notícias"
+msgstr "Adicione um item de notícias"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2079
-#, fuzzy
 msgid ""
 "<filename>doc/head/share/xml/news.xml</filename> — Add an entry. Look for "
 "the other entries that announce new committers and follow the format. Use "
 "the date from the commit bit approval email from <email>core@FreeBSD.org</"
 "email>."
 msgstr ""
-"<filename> doc / head / share / xml / news.xml </filename> - Adicione uma "
-"entrada. Procure as outras entradas que anunciam novos committers e sigam o "
-"formato. Use a data do email de aprovação do bit de confirmação de <email> "
-"core@FreeBSD.org </email>."
+"<filename>doc/head/share/xml/news.xml</filename> - Adicione uma entrada. "
+"Procure por outras entradas que anunciam novos committers e siga o formato. "
+"Use a data do email de aprovação do <email>core@FreeBSD.org</email> para o "
+"commit bit."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2087
-#, fuzzy
 msgid "Add a <acronym>PGP</acronym> Key"
-msgstr "Adicione uma chave <acronym> PGP </acronym>"
+msgstr "Adicione uma chave <acronym>PGP</acronym>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2089
-#, fuzzy
 msgid ""
 "<filename>doc/head/share/pgpkeys/pgpkeys.ent</filename> and <filename>doc/"
 "head/share/pgpkeys/pgpkeys-developers.xml</filename> - Add your "
 "<acronym>PGP</acronym> or Gnu<acronym>PG</acronym> key. Those who do not yet "
 "have a key should see <xref linkend=\"pgpkeys-creating\"/>."
 msgstr ""
-"<filename> doc / head / share / pgpkeys / pgpkeys.ent </filename> e "
-"<filename> doc / head / share / pgpkeys / pgpkeys-developers.xml </filename> "
-"- Adicione seu <acronym> PGP </acronym> ou a tecla Gnu <acronym> PG </"
-"acronym>. Aqueles que ainda não têm uma chave devem ver <xref linkend="
-"\"pgpkeys-creating\"/>."
+"<filename>doc/head/share/pgpkeys/pgpkeys.ent</filename> e <filename>doc/head/"
+"share/pgpkeys/pgpkeys-developers.xml</filename> - Adicione a sua chave "
+"<acronym>PGP</acronym> ou Gnu<acronym>PG</acronym>. Aqueles que ainda não "
+"têm uma chave devem ver <xref linkend=\"pgpkeys-creating\"/>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2096
-#, fuzzy
 msgid ""
 "Dag-Erling Smørgrav <email>des@FreeBSD.org</email> has written a shell "
 "script (<filename>doc/head/share/pgpkeys/addkey.sh</filename>) to make this "
 "easier. See the <link xlink:href=\"http://svnweb.FreeBSD.org/doc/head/share/"
 "pgpkeys/README\">README</link> file for more information."
 msgstr ""
-"Dag-Erling Smørgrav <email> des@FreeBSD.org </email> escreveu um script de "
-"shell (<filename> doc / head / share / pgpkeys / addkey.sh </filename>) para "
-"tornar isso mais fácil. Consulte o arquivo <link xlink:href=\"http://svnweb."
-"FreeBSD.org/doc/head/share/pgpkeys/README\"> README </link> para obter mais "
+"O Dag-Erling Smørgrav <email>des@FreeBSD.org</email> escreveu um script de "
+"shell (<filename>doc/head/share/pgpkeys/addkey.sh</filename>) para tornar "
+"isto mais fácil. Consulte o arquivo <link xlink:href=\"http://svnweb.FreeBSD."
+"org/doc/head/share/pgpkeys/README\">README</link> para obter mais "
 "informações."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2101
-#, fuzzy
 msgid ""
 "Use <filename>doc/head/share/pgpkeys/checkkey.sh</filename> to verify that "
 "keys meet minimal best-practices standards."
 msgstr ""
-"Use o <filename> doc / head / share / pgpkeys / checkkey.sh </filename> para "
-"verificar se as chaves atendem aos padrões mínimos de práticas recomendadas."
+"Use o <filename>doc/head/share/pgpkeys/checkkey.sh</filename> para verificar "
+"se as chaves atendem aos padrões mínimos das boas práticas recomendadas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2106
-#, fuzzy
 msgid ""
 "After adding and checking a key, add both updated files to source control "
 "and then commit them. Entries in this file are sorted by last name."
 msgstr ""
 "Depois de adicionar e verificar uma chave, adicione os dois arquivos "
-"atualizados ao controle de origem e, em seguida, confirme-os. As entradas "
-"neste arquivo são classificadas pelo sobrenome."
+"atualizados ao controle de versão do código fonte, e em seguida faça o "
+"commit. As entradas neste arquivo são classificadas pelo sobrenome."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2111
-#, fuzzy
 msgid ""
 "It is very important to have a current <acronym>PGP</acronym>/"
 "Gnu<acronym>PG</acronym> key in the repository. The key may be required for "
@@ -4346,24 +4284,22 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/pgpkeyring.txt\">https://www.FreeBSD.org/doc/"
 "pgpkeyring.txt</link>."
 msgstr ""
-"É muito importante ter uma chave <acronym> PGP </acronym> / Gnu <acronym> PG "
-"</acronym> atual no repositório. A chave pode ser necessária para a "
+"É muito importante ter uma chave <acronym>PGP</acronym>/Gnu<acronym>PG</"
+"acronym> atualizada no repositório. A chave pode ser necessária para a "
 "identificação positiva de um committer. Por exemplo, os Administradores do "
-"FreeBSD <email> admins@FreeBSD.org </email> podem precisar dele para "
-"recuperação da conta. Um chaveiro completo de <systemitem class="
-"\"fqdomainname\"> usuários do FreeBSD.org </systemitem> está disponível para "
-"download em <link xlink:href=\"@@URL_RELPREFIX@@/doc / pgpkeyring.txt\"> "
-"https: // www .FreeBSD.org / doc / pgpkeyring.txt </link>."
+"FreeBSD <email>admins@FreeBSD.org </email>podem precisar dela para a "
+"recuperação da conta. Um chaveiro completo dos usuários do <systemitem class="
+"\"fqdomainname\">FreeBSD.org</systemitem> está disponível para download em "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/pgpkeyring.txt\">https://www."
+"FreeBSD.org/doc/pgpkeyring.txt</link>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2122
-#, fuzzy
 msgid "Update Mentor and Mentee Information"
 msgstr "Atualize as informações do Mentor e do Mentee"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2124
-#, fuzzy
 msgid ""
 "<filename>base/head/share/misc/committers-<replaceable>repository</"
 "replaceable>.dot</filename> — Add an entry to the current committers "
@@ -4371,49 +4307,44 @@ msgid ""
 "literal>, <literal>ports</literal>, or <literal>src</literal>, depending on "
 "the commit privileges granted."
 msgstr ""
-"<filename> base / head / share / misc / committers- <replaceable> "
-"repositório </replaceable> .dot </filename> - Adiciona uma entrada à seção "
-"committers atual, onde <replaceable> repository </replaceable> é <literal> "
-"doc </literal>, <literal> ports </literal>, ou <literal> src </literal>, "
-"dependendo dos privilégios de confirmação concedidos."
+"<filename>base/head/share/misc/committers-<replaceable>repository</"
+"replaceable>.dot</filename> - Adicione uma entrada à seção committers "
+"atuais, onde <replaceable>repository</replaceable> é <literal>doc</literal>, "
+"<literal>ports</literal>, ou <literal>src</literal>, dependendo dos "
+"privilégios de commit concedidos."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2131
-#, fuzzy
 msgid ""
 "Add an entry for each additional mentor/mentee relationship in the bottom "
 "section."
 msgstr ""
-"Adicione uma entrada para cada relacionamento adicional de mentor / mentee "
-"na seção inferior."
+"Adicione uma entrada para cada relacionamento adicional de mentor/mentee na "
+"seção inferior."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2136
-#, fuzzy
 msgid "Generate a <application>Kerberos</application> Password"
-msgstr "Gerar uma senha do <application> Kerberos </application>"
+msgstr "Gere uma senha do <application>Kerberos</application>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2139
-#, fuzzy
 msgid ""
 "See <xref linkend=\"kerberos-ldap\"/> to generate or set a "
 "<application>Kerberos</application> for use with other FreeBSD services like "
 "the bug tracking database."
 msgstr ""
 "Veja <xref linkend=\"kerberos-ldap\"/> para gerar ou definir um "
-"<application> Kerberos </application> para uso com outros serviços do "
-"FreeBSD, como o banco de dados de rastreamento de bugs."
+"<application>Kerberos</application> para uso com outros serviços do FreeBSD, "
+"como o banco de dados de rastreamento de bugs."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2145
-#, fuzzy
 msgid "Optional: Enable Wiki Account"
-msgstr "Opcional: Ativar conta da Wiki"
+msgstr "Opcional: Ative a sua conta na Wiki"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2147
-#, fuzzy
 msgid ""
 "<link xlink:href=\"https://wiki.freebsd.org\">FreeBSD Wiki</link> Account — "
 "A wiki account allows sharing projects and ideas. Those who do not yet have "
@@ -4422,22 +4353,20 @@ msgid ""
 "<email>clusteradm@FreeBSD.org</email> if you need help with your Wiki "
 "account."
 msgstr ""
-"<link xlink:href=\"https://wiki.freebsd.org\"> Conta do FreeBSD Wiki </link> "
-"- Uma conta wiki permite compartilhar projetos e idéias. Aqueles que ainda "
-"não têm uma conta podem seguir as instruções na <link xlink:href=\"https://"
-"wiki.freebsd.org/AboutWiki\"> Página Sobre a Wiki </link> para obter uma. "
-"Entre em contato com <email> clusteradm@FreeBSD.org </email> se precisar de "
-"ajuda com sua conta no Wiki."
+"<link xlink:href=\"https://wiki.freebsd.org\">Conta no Wiki do FreeBSD</"
+"link> - Uma conta no wiki permite que  compartilhe projetos e ideias. "
+"Aqueles que ainda não têm uma conta podem seguir as instruções da <link "
+"xlink:href=\"https://wiki.freebsd.org/AboutWiki\">Página Sobre a Wiki</link> "
+"para obter uma. Entre em contato com <email>clusteradm@FreeBSD.org</email> "
+"se precisar de ajuda com sua conta no Wiki."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2157
-#, fuzzy
 msgid "Optional: Update Wiki Information"
-msgstr "Opcional: atualizar informações do Wiki"
+msgstr "Opcional: Atualize informações do Wiki"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2159
-#, fuzzy
 msgid ""
 "Wiki Information - After gaining access to the wiki, some people add entries "
 "to the <link xlink:href=\"https://wiki.freebsd.org/HowWeGotHere\">How We Got "
@@ -4446,40 +4375,36 @@ msgid ""
 "Dogs\"> Dogs of FreeBSD</link> pages."
 msgstr ""
 "Informações do Wiki - Depois de obter acesso ao wiki, algumas pessoas "
-"adicionam entradas ao <link xlink:href=\"https://wiki.freebsd.org/"
-"HowWeGotHere\"> Como chegamos aqui </link>, <link xlink:href=\"https://wiki."
-"freebsd.org/IRC/Nicknames\"> IRC Nicks </link> e <link xlink:href=\"https://"
-"wiki.freebsd.org/Community/Dogs\"> Cães do FreeBSD </link> páginas."
+"adicionam entradas nas páginas <link xlink:href=\"https://wiki.freebsd.org/"
+"HowWeGotHere\">How We Got Here</link>, <link xlink:href=\"https://wiki."
+"freebsd.org/IRC/Nicknames\">IRC Nicks</link> e <link xlink:href=\"https://"
+"wiki.freebsd.org/Community/Dogs\">Dogs of FreeBSD</link> páginas."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2167
-#, fuzzy
 msgid "Optional: Update Ports with Personal Information"
-msgstr "Opcional: Atualizar Portas com Informações Pessoais"
+msgstr "Opcional: Atualize o Ports com as suas Informações Pessoais"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2170
-#, fuzzy
 msgid ""
 "<filename>ports/astro/xearth/files/freebsd.committers.markers</filename> and "
 "<filename>src/usr.bin/calendar/calendars/calendar.freebsd</filename> - Some "
 "people add entries for themselves to these files to show where they are "
 "located or the date of their birthday."
 msgstr ""
-"<filename> ports / astro / xearth / files / freebsd.committers.markers </"
-"filename> e <filename> src / usr.bin / calendar / calendars / calendar."
-"freebsd </filename> - Algumas pessoas adicionam entradas para elas arquivos "
-"para mostrar onde eles estão localizados ou a data de seu aniversário."
+"<filename>ports/astro/xearth/files/freebsd.committers.markers</filename> e "
+"<filename>src/usr.bin/calendar/calendars/calendar.freebsd</filename> - "
+"Algumas pessoas adicionam entradas para elas nestes arquivos para mostrar "
+"onde estão localizadas ou a data de seu aniversário."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2179
-#, fuzzy
 msgid "Optional: Prevent Duplicate Mailings"
-msgstr "Opcional: Evitar Correspondências Duplicadas"
+msgstr "Opcional: Evite Correspondências Duplicadas"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2181
-#, fuzzy
 msgid ""
 "Subscribers to <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "svn-src-all\">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD."
@@ -4488,22 +4413,20 @@ msgid ""
 "link> might wish to unsubscribe to avoid receiving duplicate copies of "
 "commit messages and followups."
 msgstr ""
-"Assinantes do <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"svn-src-all\"> svn-src-all </link>, <link xlink:href=\"http://lists.FreeBSD."
-"org/mailman/listinfo/svn-ports-all \"> svn-ports-all </link> ou <link xlink:"
-"href=\" http://lists.FreeBSD.org/mailman/listinfo/svn -doc-all \"> svn-doc-"
-"all </link> pode desejar cancelar a assinatura para evitar receber cópias "
-"duplicadas de mensagens de confirmação e acompanhamentos."
+"Assinantes das listas <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/svn-src-all\">svn-src-all</link>, <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/svn-ports-all\">svn-ports-all</link> ou da "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-"
+"all\">svn-doc-all</link> podem desejar cancelar a assinatura para evitar "
+"receber cópias duplicadas de mensagens de commit e de followups."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2190
-#, fuzzy
 msgid "For Everyone"
 msgstr "Para todos"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2194
-#, fuzzy
 msgid ""
 "Introduce yourself to the other developers, otherwise no one will have any "
 "idea who you are or what you are working on. The introduction need not be a "
@@ -4513,15 +4436,14 @@ msgid ""
 "be on your way!"
 msgstr ""
 "Apresente-se aos outros desenvolvedores, caso contrário, ninguém fará a "
-"menor ideia de quem você é ou do que está trabalhando. A introdução não "
+"menor ideia de quem você é ou no que você está trabalhando. A introdução não "
 "precisa ser uma biografia abrangente, basta escrever um parágrafo ou dois "
 "sobre quem você é, em que você planeja trabalhar como desenvolvedor no "
-"FreeBSD e quem será seu mentor. Envie um e-mail para a lista de discussão "
-"dos desenvolvedores do FreeBSD e você estará a caminho!"
+"FreeBSD e quem será seu mentor. Envie os parágrafos por e-mail para a lista "
+"de discussão dos desenvolvedores do FreeBSD e você estará a caminho!"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2204
-#, fuzzy
 msgid ""
 "Log into <systemitem>freefall.FreeBSD.org</systemitem> and create a "
 "<filename>/var/forward/<replaceable>user</replaceable></filename> (where "
@@ -4534,21 +4456,20 @@ msgid ""
 "may get truncated without warning if space needs to be freed, so forward it "
 "or save it elsewhere."
 msgstr ""
-"Entre em <systemitem> freefall.FreeBSD.org </systemitem> e crie um "
-"<filename> / var / forward / <replaceable> user </replaceable> </filename> "
-"(onde <replaceable> user </replaceable> é seu nome de usuário ) arquivo "
-"contendo o endereço de e-mail onde você deseja que o correio endereçado para "
-"<replaceable> yourusername </replaceable> @ FreeBSD.org seja encaminhado. "
-"Isto inclui todas as mensagens de commit assim como qualquer outro email "
-"endereçado à lista de discussão do commit do FreeBSD e à lista de discussão "
-"dos desenvolvedores do FreeBSD. Caixas de correio realmente grandes que "
-"tenham residido permanentemente em <systemitem> queda livre </systemitem> "
-"podem ficar truncadas sem aviso se o espaço precisar ser liberado, então "
-"encaminhe ou salve em outro lugar."
+"Entre na <systemitem>freefall.FreeBSD.org</systemitem> e crie um arquivo "
+"<filename>/var/forward/<replaceable>user</replaceable></filename> (no qual "
+"<replaceable>user</replaceable> é seu nome de usuário) contendo o endereço "
+"de e-mail para o qual você deseja que o correio endereçado para "
+"<replaceable>yourusername</replaceable>@FreeBSD.org seja encaminhado. Isto "
+"inclui todas as mensagens de commit assim como qualquer outro email "
+"endereçado à lista de discussão dos commiters do FreeBSD e à lista de "
+"discussão dos desenvolvedores do FreeBSD. Caixas de correio realmente "
+"grandes que tenham residência permanente na <systemitem>freefall</"
+"systemitem> podem ser truncadas sem aviso se o espaço precisar ser liberado, "
+"então encaminhe suas mensagens ou salve-as em outro lugar."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2219
-#, fuzzy
 msgid ""
 "Due to the severe load dealing with SPAM places on the central mail servers "
 "that do the mailing list processing, the front-end server does do some basic "
@@ -4559,37 +4480,34 @@ msgid ""
 "<filename>~/.spam_lover</filename> on <systemitem class="
 "\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 msgstr ""
-"Devido à carga severa que lida com locais de SPAM nos servidores de correio "
-"centrais que fazem o processamento da lista de discussão, o servidor front-"
-"end faz algumas verificações básicas e solta algumas mensagens com base "
-"nessas verificações. No momento, as informações de DNS adequadas para o host "
-"de conexão são a única verificação no lugar, mas isso pode mudar. Algumas "
-"pessoas culpam esses cheques por rejeitar e-mails válidos. Para que essas "
-"verificações sejam desativadas no seu email, crie um arquivo chamado "
-"<filename> ~ / .spam_lover </filename> em <systemitem class="
-"\"fqdomainname\"> freefall.FreeBSD.org </systemitem>."
+"Devido ao load severo imposto aos servidores centrais que fazem o "
+"processamento da lista de discussão devido ao grande volume de SPAMs, o "
+"servidor de front-end faz algumas verificações básicas e descarta algumas "
+"mensagens com base nessas verificações. No momento, as informações de DNS "
+"adequadas para o host de conexão são a única verificação ativa, mas isso "
+"pode mudar. Algumas pessoas culpam estas verificações por rejeitar e-mails "
+"válidos. Para que essas verificações sejam desativadas no seu email, crie um "
+"arquivo chamado <filename>~/.spam_lover</filename> no servidor <systemitem "
+"class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2233
-#, fuzzy
 msgid ""
 "Those who are developers but not committers will not be subscribed to the "
 "committers or developers mailing lists. The subscriptions are derived from "
 "the access rights."
 msgstr ""
-"Aqueles que são desenvolvedores, mas não committers, não serão inscritos nas "
-"listas de discussão de desenvolvedores ou committers. As assinaturas são "
-"derivadas dos direitos de acesso."
+"Aqueles que são desenvolvedores, mas não são committers, não serão inscritos "
+"nas listas de discussão de desenvolvedores ou de committers. As assinaturas "
+"são derivadas dos direitos de acesso."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2241
-#, fuzzy
 msgid "Mentors"
 msgstr "Mentores"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2243
-#, fuzzy
 msgid ""
 "All new developers have a mentor assigned to them for the first few months. "
 "A mentor is responsible for teaching the mentee the rules and conventions of "
@@ -4601,89 +4519,78 @@ msgstr ""
 "meses. Um mentor é responsável por ensinar ao aprendiz as regras e "
 "convenções do projeto e orientar seus primeiros passos na comunidade de "
 "desenvolvedores. O mentor também é pessoalmente responsável pelas ações do "
-"mentorando durante este período inicial."
+"aprendiz durante este período inicial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2250
-#, fuzzy
 msgid ""
 "For committers: do not commit anything without first getting mentor approval."
 " Document that approval with an <literal>Approved by:</literal> line in the "
 "commit message."
 msgstr ""
-"Para committers: não confirme nada sem antes obter a aprovação do mentor. "
-"Documente essa aprovação com uma linha <literal> Aprovado por: </literal> na "
-"mensagem de confirmação."
+"Para committers: não faça nenhum commit sem antes obter a aprovação do seu "
+"mentor. Documente essa aprovação com uma linha <literal>Approved by:</"
+"literal> na mensagem de commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2255
-#, fuzzy
 msgid ""
 "When the mentor decides that a mentee has learned the ropes and is ready to "
 "commit on their own, the mentor announces it with a commit to <filename>conf/"
 "mentors</filename>. This file is in the <filename>svnadmin</filename> branch "
 "of each repository:"
 msgstr ""
-"Quando o mentor decide que um aprendiz aprendeu as cordas e está pronto para "
-"se comprometer sozinho, o mentor o anuncia com um commit para os <filename> "
-"conf / mentors </filename>. Este arquivo está na ramificação <filename> "
-"svnadmin </filename> de cada repositório:"
+"Quando o mentor decide que um aprendiz já aprendeu o necessário e está "
+"pronto para fazer commits por conta própria, o mentor anuncia o fato com um "
+"commit no <filename>conf/mentors</filename>. Este arquivo está na branch "
+"<filename>svnadmin</filename> de cada repositório:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2266
-#, fuzzy
 msgid "<literal>src</literal>"
-msgstr "<literal> src </literal>"
+msgstr "<literal>src</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2267
-#, fuzzy
 msgid "<filename>base/svnadmin/conf/mentors</filename>"
-msgstr "<filename> base / svnadmin / conf / mentors </filename>"
+msgstr "<filename>base/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2271
-#, fuzzy
 msgid "<literal>doc</literal>"
-msgstr "<literal> doc </literal>"
+msgstr "<literal>doc</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2272
-#, fuzzy
 msgid "<filename>doc/svnadmin/conf/mentors</filename>"
-msgstr "<filename> doc / svnadmin / conf / mentors </filename>"
+msgstr "<filename>doc/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2276
-#, fuzzy
 msgid "<literal>ports</literal>"
-msgstr "<literal> portas </literal>"
+msgstr "<literal>ports</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2277
-#, fuzzy
 msgid "<filename>ports/svnadmin/conf/mentors</filename>"
-msgstr "<filename> ports / svnadmin / conf / mentors </filename>"
+msgstr "<filename>ports/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2286
-#, fuzzy
 msgid "Commit Log Messages"
-msgstr "Mensagens de registro de confirmação"
+msgstr "Mensagens de Log de Commit"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2288
-#, fuzzy
 msgid ""
 "This section contains some suggestions and traditions for how commit logs "
 "are formatted."
 msgstr ""
-"Esta seção contém algumas sugestões e tradições de como os logs de "
-"confirmação são formatados."
+"Esta seção contém algumas sugestões e tradições de como os logs de commit "
+"são formatados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2291
-#, fuzzy
 msgid ""
 "As well as including an informative message with each commit, some "
 "additional information may be needed."
@@ -4693,7 +4600,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2294
-#, fuzzy
 msgid ""
 "This information consists of one or more lines containing the key word or "
 "phrase, a colon, tabs for formatting, and then the additional information."
@@ -4704,19 +4610,16 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2298
-#, fuzzy
 msgid "The key words or phrases are:"
 msgstr "As palavras ou frases-chave são:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2304
-#, fuzzy
 msgid "<literal>PR:</literal>"
-msgstr "<literal> PR: </literal>"
+msgstr "<literal>PR:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2305
-#, fuzzy
 msgid ""
 "The problem report (if any) which is affected (typically, by being closed) "
 "by this commit. Multiple PRs may be specified on one line, separated by "
@@ -4728,13 +4631,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2312
-#, fuzzy
 msgid "<literal>Submitted by:</literal>"
-msgstr "<literal> Enviado por: </literal>"
+msgstr "<literal>Submitted by:</literal>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2314
-#, fuzzy
 msgid ""
 "The name and e-mail address of the person that submitted the fix; for "
 "developers, just the username on the FreeBSD cluster."
@@ -4744,17 +4645,15 @@ msgstr ""
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2318
-#, fuzzy
 msgid ""
 "If the submitter is the maintainer of the port being committed, include "
 "\"(maintainer)\" after the email address."
 msgstr ""
-"Se o requisitante for o mantenedor da porta que está sendo confirmada, "
-"inclua \"(mantenedor)\" após o endereço de e-mail."
+"Se o requisitante for o mantenedor do port que está sendo atualizado pelo "
+"commit, inclua \"(maintainer)\" após o endereço de e-mail."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2322
-#, fuzzy
 msgid ""
 "Avoid obfuscating the email address of the submitter as this adds additional "
 "work when searching logs."
@@ -4764,13 +4663,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2329
-#, fuzzy
 msgid "<literal>Reviewed by:</literal>"
-msgstr "<literal> Analisado por: </literal>"
+msgstr "<literal>Reviewed by:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2330
-#, fuzzy
 msgid ""
 "The name and e-mail address of the person or people that reviewed the "
 "change; for developers, just the username on the FreeBSD cluster. If a patch "
@@ -4784,13 +4681,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2339
-#, fuzzy
 msgid "<literal>Approved by:</literal>"
-msgstr "<literal> Aprovado por: </literal>"
+msgstr "<literal>Approved by:</literal>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2340
-#, fuzzy
 msgid ""
 "The name and e-mail address of the person or people that approved the "
 "change; for developers, just the username on the FreeBSD cluster. It is "
@@ -4802,34 +4697,32 @@ msgstr ""
 "O nome e endereço de e-mail da pessoa ou pessoas que aprovaram a alteração; "
 "para desenvolvedores, apenas o nome de usuário no cluster do FreeBSD. É "
 "costume obter aprovação prévia para um commit se for para uma área da árvore "
-"na qual você normalmente não se compromete. Além disso, durante a preparação "
-"para uma nova versão, todas as confirmações <emphasis> devem </emphasis> ser "
-"aprovadas pela equipe de engenharia da versão."
+"na qual você normalmente não faz commit. Além disso, durante a preparação "
+"para uma nova versão, todos os commits <emphasis>devem</emphasis> ser "
+"aprovados pela equipe de engenharia de release."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2349
-#, fuzzy
 msgid ""
 "While under mentorship, get mentor approval before the commit. Enter the "
 "mentor's username in this field, and note that they are a mentor:"
 msgstr ""
 "Enquanto estiver sob orientação, obtenha aprovação do mentor antes do commit."
-" Digite o nome de usuário do mentor neste campo e observe que ele é um "
-"mentor:"
+" Digite o nome de usuário do mentor neste campo e adicione uma nota de que "
+"ele é um mentor:"
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:2353
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Approved by: <userinput><replaceable>username-of-mentor</replaceable> "
 "<literal>(mentor)</literal></userinput>"
 msgstr ""
-"Aprovado por: <userinput> <replaceable> nome-do-usuário-do-mentor </"
-"replaceable> <literal> (mentor) </literal> </userinput>"
+"Approved by: <userinput><replaceable>username-of-mentor</replaceable> "
+"<literal>(mentor)</literal></userinput>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2355
-#, fuzzy
 msgid ""
 "If a team approved these commits then include the team name followed by the "
 "username of the approver in parentheses. For example:"
@@ -4839,23 +4732,21 @@ msgstr ""
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:2359
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Approved by: <userinput><literal>re</literal> (<replaceable>username</"
 "replaceable>)</userinput>"
 msgstr ""
-"Aprovado por: <userinput> <literal> re </literal> (<replaceable> username </"
-"replaceable>) </userinput>"
+"Approved by: <userinput><literal>re</literal> (<replaceable>username</"
+"replaceable>)</userinput>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2363
-#, fuzzy
 msgid "<literal>Obtained from:</literal>"
-msgstr "<literal> Obtido de: </literal>"
+msgstr "<literal>Obtained from:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2364
-#, fuzzy
 msgid ""
 "The name of the project (if any) from which the code was obtained. Do not "
 "use this line for the name of an individual person."
@@ -4865,13 +4756,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2370
-#, fuzzy
 msgid "<literal>Sponsored by:</literal>"
-msgstr "<literal> Patrocinado por: </literal>"
+msgstr "<literal>Sponsored by:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2371
-#, fuzzy
 msgid ""
 "Sponsoring organizations for this change, if any. Separate multiple "
 "organizations with commas. If only a portion of the work was sponsored, or "
@@ -4887,90 +4776,80 @@ msgstr ""
 "organizações com vírgulas. Se apenas uma parte do trabalho foi patrocinada, "
 "ou diferentes montantes de patrocínio foram fornecidos a diferentes autores, "
 "por favor, forneça os devidos créditos entre parênteses após cada nome de "
-"patrocinador. Por exemplo, <literal> Example.com (alice, refatoração de "
-"código), Wormulon (bob), Momcorp (cindy) </literal> mostra que Alice foi "
+"patrocinador. Por exemplo, <literal>Example.com (alice, refatoração de "
+"código), Wormulon (bob), Momcorp (cindy)</literal> mostra que Alice foi "
 "patrocinada pela Example.com para refatoração de código, enquanto Wormulon "
-"patrocinou o trabalho de Bob e a Momcorp. patrocinou o trabalho de Cindy. "
-"Outros autores não foram patrocinados ou optaram por não listar patrocínio."
+"patrocinou o trabalho de Bob e a Momcorp patrocinou o trabalho de Cindy. "
+"Outros autores não foram patrocinados ou optaram por não listar o patrocínio."
+""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2387
-#, fuzzy
 msgid "<literal>MFC after:</literal>"
-msgstr "<literal> MFC depois: </literal>"
+msgstr "<literal>MFC after:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2388
-#, fuzzy
 msgid ""
 "To receive an e-mail reminder to <acronym>MFC</acronym> at a later date, "
 "specify the number of days, weeks, or months after which an <acronym>MFC</"
 "acronym> is planned."
 msgstr ""
-"Para receber um lembrete por e-mail para o <acronym> MFC </acronym> em uma "
+"Para receber um lembrete por e-mail para o <acronym>MFC</acronym> em uma "
 "data posterior, especifique o número de dias, semanas ou meses após os quais "
-"um <acronym> MFC </acronym> é planejado."
+"um <acronym>MFC</acronym> está planejado."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2395
-#, fuzzy
 msgid "<literal>MFC to:</literal>"
-msgstr "<literal> MFC para: </literal>"
+msgstr "<literal>MFC to:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2396
-#, fuzzy
 msgid ""
 "If the commit should be merged to a subset of stable branches, specify the "
 "branch names."
 msgstr ""
-"Se a confirmação deve ser mesclada em um subconjunto de ramificações "
-"estáveis, especifique os nomes das ramificações."
+"Se o commit deve ser mesclado em um subconjunto de branches estáveis, "
+"especifique os nomes das branchs."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2401
-#, fuzzy
 msgid "<literal>MFC with:</literal>"
-msgstr "<literal> MFC com: </literal>"
+msgstr "<literal>MFC with:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2402
-#, fuzzy
 msgid ""
 "If the commit should be merged together with a previous one in a single "
 "<acronym>MFC</acronym> commit (for example, where this commit corrects a bug "
 "in the previous change), specify the corresponding revision number."
 msgstr ""
-"Se a consolidação deve ser mesclada com uma anterior em uma única "
-"consolidação de <acronym> MFC </acronym> (por exemplo, onde esta confirmação "
-"corrige um bug na alteração anterior), especifique o número de revisão "
-"correspondente."
+"Se o commit deve ser mesclado junto com um commit anterior em um único "
+"<acronym>MFC</acronym> (por exemplo, onde o commit corrige um bug da "
+"alteração anterior), especifique o número de revisão correspondente."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2410
-#, fuzzy
 msgid "<literal>Relnotes:</literal>"
-msgstr "Notas <literal>: </literal>"
+msgstr "<literal>Relnotes:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2411
-#, fuzzy
 msgid ""
 "If the change is a candidate for inclusion in the release notes for the next "
 "release from the branch, set to <literal>yes</literal>."
 msgstr ""
 "Se a alteração for candidata a inclusão nas notas de lançamento da próxima "
-"versão da ramificação, defina como <literal> yes </literal>."
+"versão da branch, defina como <literal>yes</literal>."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2417
-#, fuzzy
 msgid "<literal>Security:</literal>"
-msgstr "<literal> Segurança: </literal>"
+msgstr "<literal>Security:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2418
-#, fuzzy
 msgid ""
 "If the change is related to a security vulnerability or security exposure, "
 "include one or more references or a description of the issue. If possible, "
@@ -4982,43 +4861,39 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2425
-#, fuzzy
 msgid "<literal>Differential Revision:</literal>"
-msgstr "Revisão literal <literal>: </literal>"
+msgstr "<literal>Differential Revision:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2426
-#, fuzzy
 msgid ""
 "The full URL of the Phabricator review. This line <emphasis>must be the last "
 "line</emphasis>. For example: <literal>https://reviews.freebsd.org/D1708</"
 "literal>."
 msgstr ""
 "A URL completa da revisão do Phabricator. Esta linha <emphasis> deve ser a "
-"última linha </emphasis>. Por exemplo: <literal> https://reviews.freebsd.org/"
-"D1708 </literal>."
+"última linha </emphasis>. Por exemplo: <literal>https://reviews.freebsd.org/"
+"D1708</literal>."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2436
-#, fuzzy
 msgid "Commit Log for a Commit Based on a PR"
-msgstr "Registrar log de uma confirmação com base em um PR"
+msgstr "Commit Log para um commit baseado em um PR"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2438
-#, fuzzy
 msgid ""
 "The commit is based on a patch from a PR submitted by John Smith. The commit "
 "message <quote>PR</quote> and <quote>Submitted by</quote> fields are filled.."
 ""
 msgstr ""
-"O commit é baseado em um patch de um PR enviado por John Smith. Os campos de "
-"mensagem de confirmação <quote> PR </quote> e <quote> Submetido por </quote> "
-"são preenchidos."
+"O commit é baseado em um patch de um PR enviado por John Smith. Os campos da "
+"mensagem de commit <quote>PR</quote> e <quote>Submitted by</quote> são "
+"preenchidos."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2442
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "...\n"
 "\n"
@@ -5027,129 +4902,120 @@ msgid ""
 msgstr ""
 "...\n"
 "\n"
-"PR: 12345\n"
-"Enviado por: John Smith &lt; John.Smith@example.com&gt;"
+"\t    PR:                    12345\n"
+"\t    Submitted by:\t   John Smith &lt;John.Smith@example.com&gt;"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2449
-#, fuzzy
 msgid "Commit Log for a Commit Needing Review"
-msgstr "Registrar log de um commit que precisa de revisão"
+msgstr "Commit log de um commit que precisa de revisão"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2451
-#, fuzzy
 msgid ""
 "The virtual memory system is being changed. After posting patches to the "
 "appropriate mailing list (in this case, <literal>freebsd-arch</literal>) and "
 "the changes have been approved."
 msgstr ""
 "O sistema de memória virtual está sendo alterado. Depois de enviar os "
-"patches para a lista de discussão apropriada (neste caso, <literal> freebsd-"
-"arch </literal>) e as mudanças foram aprovadas."
+"patches para a lista de discussão apropriada (neste caso, <literal>freebsd-"
+"arch</literal>) e as mudanças foram aprovadas."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2456
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "...\n"
 "\n"
 "\t    Reviewed by:       -arch"
 msgstr "...\n"
 "\n"
-"Analisado por: -arch"
+"\t    Reviewed by:       -arch"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2462
-#, fuzzy
 msgid "Commit Log for a Commit Needing Approval"
-msgstr "Registrar log de um commit que precisa de aprovação"
+msgstr "Commit log de um commit que precisa de aprovação"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2464
-#, fuzzy
 msgid ""
 "Commit a port, after working with the listed MAINTAINER, who said to go "
 "ahead and commit."
 msgstr ""
-"Commit um porto, depois de trabalhar com o MAINTAINER listado, que disse "
-"para ir em frente e se comprometer."
+"Commit um port, depois de trabalhar com o MAINTAINER, que disse para ir em "
+"frente e executar o commit."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2468
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "...\n"
 "\n"
 "\t    Approved by:\t    <replaceable>abc</replaceable> (maintainer)"
-msgstr "...\n"
+msgstr ""
+"...\n"
 "\n"
-"Aprovado por: <replaceable> abc </replaceable> (mantenedor)"
+"\t    Approved by:\t    <replaceable>abc</replaceable> (maintainer)"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2472
-#, fuzzy
 msgid ""
 "Where <replaceable>abc</replaceable> is the account name of the person who "
 "approved."
 msgstr ""
-"Onde <replaceable> abc </replaceable> é o nome da conta da pessoa que "
+"No qual o <replaceable>abc</replaceable> é o nome da conta da pessoa que "
 "aprovou."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2477
-#, fuzzy
 msgid "Commit Log for a Commit Bringing in Code from OpenBSD"
-msgstr "Registrar log de um commit trazendo código do OpenBSD"
+msgstr "Commit log de um commit que importa código do OpenBSD"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2480
-#, fuzzy
 msgid "Committing some code based on work done in the OpenBSD project."
 msgstr ""
-"Confirmando algum código baseado no trabalho feito no projeto OpenBSD."
+"Efetuando o commit de códigos baseados no trabalho feito no projeto OpenBSD."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2483
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "...\n"
 "\n"
 "\t    Obtained from:      OpenBSD"
 msgstr "...\n"
 "\n"
-"Obtido de: OpenBSD"
+"\t    Obtained from:      OpenBSD"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2489
-#, fuzzy
 msgid ""
 "Commit Log for a Change to FreeBSD-CURRENT with a Planned Commit to FreeBSD-"
 "STABLE to Follow at a Later Date."
 msgstr ""
-"Confirmar Log para uma Mudança para o FreeBSD-CURRENT com um Commit "
-"Planejado para o FreeBSD-STABLE para Seguir em uma Data Posterior."
+"Commit Log para uma mudança no FreeBSD-CURRENT com um commit planejado para "
+"o FreeBSD-STABLE para seguir em uma data posterior."
 
 #. (itstool) path: example/para
 #: article.translate.xml:2492
-#, fuzzy
 msgid ""
 "Committing some code which will be merged from FreeBSD-CURRENT into the "
 "FreeBSD-STABLE branch after two weeks."
 msgstr ""
-"Confirmando algum código que será mesclado do FreeBSD-CURRENT na ramificação "
-"do FreeBSD-STABLE após duas semanas."
+"Efetuando o commit de códigos que serão mesclados do FreeBSD-CURRENT na "
+"branch do FreeBSD-STABLE após duas semanas."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2496
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "...\n"
 "\n"
 "MFC after:      <replaceable>2 weeks</replaceable>"
 msgstr "...\n"
 "\n"
-"MFC após: <replaceable> 2 semanas </replaceable>"
+"MFC after:      <replaceable>2 weeks</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2500
-#, fuzzy
 msgid ""
 "Where <replaceable>2</replaceable> is the number of days, weeks, or months "
 "after which an <acronym>MFC</acronym> is planned. The <replaceable>weeks</"
@@ -5157,21 +5023,19 @@ msgid ""
 "<literal>week</literal>, <literal>weeks</literal>, <literal>month</literal>, "
 "<literal>months</literal>."
 msgstr ""
-"Onde <replaceable> 2 </replaceable> é o número de dias, semanas ou meses "
-"após o qual um <acronym> MFC </acronym> é planejado. A opção <replaceable> "
-"weeks </replaceable> pode ser <literal> day </literal>, <literal> dias </"
-"literal>, <literal> semana </literal>, <literal> semanas </literal>, "
-"<literal > mês </literal>, <literal> meses </literal>."
+"Onde <replaceable>2</replaceable> é o número de dias, semanas ou meses após "
+"o qual um <acronym>MFC</acronym> é planejado. A opção <replaceable>weeks</"
+"replaceable> pode ser <literal>day</literal>, <literal>dias</literal>, "
+"<literal>semana</literal>, <literal>semanas</literal>, <literal>mês</"
+"literal>, <literal>meses</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2508
-#, fuzzy
 msgid "It is often necessary to combine these."
 msgstr "Muitas vezes é necessário combinar isso."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2510
-#, fuzzy
 msgid ""
 "Consider the situation where a user has submitted a PR containing code from "
 "the NetBSD project. Looking at the PR, the developer sees it is not an area "
@@ -5183,26 +5047,24 @@ msgstr ""
 "Considere a situação em que um usuário enviou um código contendo o PR do "
 "projeto NetBSD. Olhando para o PR, o desenvolvedor vê que não é uma área da "
 "árvore na qual eles normalmente trabalham, então eles têm a mudança revisada "
-"pela lista de discussão <literal> arch </literal>. Como a mudança é "
-"complexa, o desenvolvedor opta pelo <acronym> MFC </acronym> após um mês "
-"para permitir testes adequados."
+"pela lista de discussão <literal>arch</literal>. Como a mudança é complexa, "
+"o desenvolvedor opta pelo <acronym>MFC</acronym> após um mês para permitir "
+"testes adequados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2518
-#, fuzzy
 msgid ""
 "The extra information to include in the commit would look something like"
 msgstr "A informação extra para incluir no commit seria algo como"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2522
-#, fuzzy
 msgid "Example Combined Commit Log"
-msgstr "Exemplo de log de confirmação combinada"
+msgstr "Exemplo de log de commit combinado"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2524
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "PR:                 54321\n"
 "Submitted by:       John Smith &lt;John.Smith@example.com&gt;\n"
@@ -5211,22 +5073,20 @@ msgid ""
 "MFC after:          1 month\n"
 "Relnotes:           yes"
 msgstr ""
-"PR: 54321\n"
-"Enviado por: John Smith &lt; John.Smith@example.com&gt;\n"
-"Analisado por: -arch\n"
-"Obtido de: NetBSD\n"
-"MFC depois: 1 mês\n"
-"Notas: sim"
+"PR:                 54321\n"
+"Submitted by:       John Smith &lt;John.Smith@example.com&gt;\n"
+"Reviewed by:        -arch\n"
+"Obtained from:      NetBSD\n"
+"MFC after:          1 month\n"
+"Relnotes:           yes"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2534
-#, fuzzy
 msgid "Preferred License for New Files"
 msgstr "Licença preferida para novos arquivos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2536
-#, fuzzy
 msgid ""
 "The FreeBSD Project suggests and uses this text as the preferred license "
 "scheme:"
@@ -5236,7 +5096,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:2539
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*-\n"
 " * SPDX-License-Identifier: BSD-2-Clause-FreeBSD\n"
@@ -5270,42 +5130,37 @@ msgid ""
 " * [id for your version control system, if any]\n"
 " */"
 msgstr ""
-"/ * -\n"
-" * SPDX-License-Identifier: BSD-2-Clause-FreeBSD\n"
-" *\n"
-" * Copyright (c) [ano] [seu nome]\n"
-" *\n"
-" * Redistribuição e uso nas formas fonte e binária, com ou sem\n"
-" * modificações, são permitidas desde que as seguintes condições\n"
-" * são atendidas:\n"
-" * 1. As redistribuições do código-fonte devem manter os direitos autorais "
-"acima\n"
-" * Observe, esta lista de condições e o seguinte aviso.\n"
-" * 2. As redistribuições na forma binária devem reproduzir os direitos "
-"autorais acima\n"
-" * observe, esta lista de condições e a seguinte declaração de "
-"responsabilidade\n"
-" * documentação e / ou outros materiais fornecidos com a distribuição.\n"
-" *\n"
-" * ESTE SOFTWARE É FORNECIDO PELO AUTOR E CONTRIBUIDORES \"COMO ESTÁ\" E\n"
-" * QUALQUER GARANTIA EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO "
-"À\n"
-" * GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO A UMA FINALIDADE "
-"ESPECÍFICA\n"
-" * SÃO REJEITADOS. EM NENHUM CASO, O AUTOR OU CONTRIBUIDOR SERÁ RESPONSÁVEL\n"
-" * PARA QUALQUER DIRETO, INDIRETO, INCIDENTAL, ESPECIAL, EXEMPLAR OU "
-"CONSEQÜENCIAL\n"
-" * DANOS (INCLUINDO, MAS NÃO SE LIMITANDO A, AQUISIÇÃO DE BENS SUBSTITUTOS\n"
-" * OU SERVIÇOS; PERDA DE USO, DADOS OU LUCROS; OU INTERRUPÇÃO DE NEGÓCIOS)\n"
-" * PORÉM CAUSADO E EM QUALQUER TEORIA DE RESPONSABILIDADE, SEJA EM CONTRATO, "
-"ESTRITA\n"
-" * RESPONSABILIDADE, OU DELITO (INCLUINDO NEGLIGÊNCIA OU DE OUTRA FORMA) "
-"DECORRENTE DE QUALQUER FORMA\n"
-" * FORA DO USO DESTE SOFTWARE, MESMO QUE AVISADA DA POSSIBILIDADE DE\n"
-" * TAL DANO\n"
-" *\n"
-" * [id para o seu sistema de controle de versão, se houver]\n"
-" * /"
+"/*-\n"
+" * SPDX-License-Identifier: BSD-2-Clause-FreeBSD\n"
+" *\n"
+" * Copyright (c) [year] [your name]\n"
+" *\n"
+" * Redistribution and use in source and binary forms, with or without\n"
+" * modification, are permitted provided that the following conditions\n"
+" * are met:\n"
+" * 1. Redistributions of source code must retain the above copyright\n"
+" *    notice, this list of conditions and the following disclaimer.\n"
+" * 2. Redistributions in binary form must reproduce the above copyright\n"
+" *    notice, this list of conditions and the following disclaimer in the\n"
+" *    documentation and/or other materials provided with the distribution.\n"
+" *\n"
+" * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
+" * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE\n"
+" * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"CONSEQUENTIAL\n"
+" * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
+" * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
+"STRICT\n"
+" * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
+" * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
+" * SUCH DAMAGE.\n"
+" *\n"
+" * [id for your version control system, if any]\n"
+" */"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2568
@@ -5508,9 +5363,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2664
-#, fuzzy
 msgid "Developer Relations"
-msgstr "Relações de Desenvolvedor"
+msgstr "Relações entre os Desenvolvedores"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2666
@@ -5643,7 +5497,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2731
-#, fuzzy
 msgid "If in Doubt..."
 msgstr "Se em dúvida..."
 
