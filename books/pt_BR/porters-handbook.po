@@ -1,6 +1,7 @@
 # $FreeBSD$
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Eduardo Elias El Assais <eassais@gmail.com>, 2018. #zanata
 # Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-22 11:12+0000\n"
-"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
+"PO-Revision-Date: 2018-09-23 10:18+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -4029,14 +4030,14 @@ msgid ""
 "linkend=\"porting-categories\">current list of categories</link> and pick "
 "the ones that are suitable for the port."
 msgstr ""
-"Quando um pacote é criado, ele é colocado sob <filename>/usr/ports/packages/"
+"Quando um pacote é criado, ele é colocado em <filename>/usr/ports/packages/"
 "All</filename> e links são feitos de um ou mais subdiretórios de <filename>/"
 "usr/ports/packages</filename>. Os nomes desses subdiretórios são "
 "especificados pela variável <varname>CATEGORIES</varname>. O objetivo é "
 "facilitar a vida do usuário quando ele estiver vasculhando a pilha de "
 "pacotes no site FTP ou no CD-ROM. Por favor, dê uma olhada na <link linkend="
-"\"porting-categories\">lista atual de categorias</link> e escolha os que são "
-"adequados para o port."
+"\"porting-categories\">lista atual de categorias</link> e escolha as que são "
+"adequadas para o port."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2158
@@ -4047,10 +4048,10 @@ msgid ""
 "\"choosing-categories\">below</link> for more discussion about how to pick "
 "the right categories."
 msgstr ""
-"Esta lista também determina de onde, na árvore de ports, o port é importado. "
-"Se houver mais de uma categoria aqui, os arquivos do port devem ser "
-"colocados no subdiretório com o nome da primeira categoria. Veja <link "
-"linkend=\"choosing-categories\">abaixo </link> para mais discussão sobre "
+"Esta lista também determina de onde, na árvore de ports, o port será "
+"importado. Se houver mais de uma categoria aqui, os arquivos do port devem "
+"ser colocados no subdiretório com o nome da primeira categoria. Veja <link "
+"linkend=\"choosing-categories\">abaixo</link> para mais informação sobre "
 "como escolher as categorias certas."
 
 #. (itstool) path: sect2/title
@@ -4069,7 +4070,7 @@ msgstr ""
 "Aqui está a lista atual de categorias de ports. As marcadas com um asterisco "
 "(<literal>*</literal>) são categorias <emphasis>virtuais</emphasis> - "
 "aquelas que não possuem um subdiretório correspondente na árvore de ports. "
-"Eles são usados ​​apenas como categorias secundárias e apenas para fins de "
+"Elas são usadas ​​apenas como categorias secundárias e apenas para fins de "
 "pesquisa."
 
 #. (itstool) path: note/para
@@ -4307,7 +4308,7 @@ msgstr "Software relacionado ao DNS."
 #. (itstool) path: row/entry
 #: book.translate.xml:2298
 msgid "<filename>docs</filename> <literal>*</literal>"
-msgstr "<filename>docs</filename><literal>*</literal>"
+msgstr "<filename>docs</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2300
@@ -4338,7 +4339,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2315
 msgid "<filename>elisp</filename> <literal>*</literal>"
-msgstr "<filename>elisp</filename><literal>*</literal>"
+msgstr "<filename>elisp</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2317
@@ -4442,7 +4443,7 @@ msgstr "Suporte ao idioma alemão."
 #. (itstool) path: row/entry
 #: book.translate.xml:2375
 msgid "<filename>gnome</filename> <literal>*</literal>"
-msgstr "<filename>gnome</filename><literal>*</literal>"
+msgstr "<filename>gnome</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2377
@@ -4454,7 +4455,7 @@ msgstr "Ports do Projeto<link xlink:href=\"http://www.gnome.org\">GNOME</link>."
 #. (itstool) path: row/entry
 #: book.translate.xml:2384
 msgid "<filename>gnustep</filename> <literal>*</literal>"
-msgstr "<filename>gnustep</filename><literal>*</literal>"
+msgstr "<filename>gnustep</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2386
@@ -4484,7 +4485,7 @@ msgstr "Software para rádio amador."
 #. (itstool) path: row/entry
 #: book.translate.xml:2405
 msgid "<filename>haskell</filename> <literal>*</literal>"
-msgstr "<filename>haskell</filename><literal>*</literal>"
+msgstr "<filename>haskell</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2407
@@ -4514,7 +4515,7 @@ msgstr "Suporte de idioma húngaro."
 #. (itstool) path: row/entry
 #: book.translate.xml:2425
 msgid "<filename>ipv6</filename> <literal>*</literal>"
-msgstr "<filename>ipv6</filename><literal>*</literal>"
+msgstr "<filename>ipv6</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2427
@@ -4567,7 +4568,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2455
 msgid "<filename>kde</filename> <literal>*</literal>"
-msgstr "<filename>kde</filename><literal>*</literal>"
+msgstr "<filename>kde</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2457
@@ -4578,7 +4579,7 @@ msgstr "Ports do Projeto<link xlink:href=\"http://www.kde.org\">KDE</link>."
 #. (itstool) path: row/entry
 #: book.translate.xml:2464
 msgid "<filename>kld</filename> <literal>*</literal>"
-msgstr "<filename>kld</filename><literal>*</literal>"
+msgstr "<filename>kld</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2466
@@ -4608,7 +4609,7 @@ msgstr "Linguagens de programação."
 #. (itstool) path: row/entry
 #: book.translate.xml:2483
 msgid "<filename>linux</filename> <literal>*</literal>"
-msgstr "<filename>linux</filename><literal>*</literal>"
+msgstr "<filename>linux</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2485
@@ -4618,7 +4619,7 @@ msgstr "Aplicações Linux e utilitários de suporte."
 #. (itstool) path: row/entry
 #: book.translate.xml:2491
 msgid "<filename>lisp</filename> <literal>*</literal>"
-msgstr "<filename>lisp</filename><literal>*</literal>"
+msgstr "<filename>lisp</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2493
@@ -4648,7 +4649,7 @@ msgstr "Software de computação numérica e outras utilidades para matemática.
 #. (itstool) path: row/entry
 #: book.translate.xml:2511
 msgid "<filename>mbone</filename> <literal>*</literal>"
-msgstr "<filename>mbone</filename><literal>*</literal>"
+msgstr "<filename>mbone</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2513
@@ -4753,7 +4754,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2571
 msgid "<filename>parallel</filename> <literal>*</literal>"
-msgstr "<filename>parallel</filename><literal>*</literal>"
+msgstr "<filename>parallel</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2573
@@ -4763,7 +4764,7 @@ msgstr "Aplicativos que lidam com o paralelismo na computação."
 #. (itstool) path: row/entry
 #: book.translate.xml:2579
 msgid "<filename>pear</filename> <literal>*</literal>"
-msgstr "<filename>pear</filename><literal>*</literal>"
+msgstr "<filename>pear</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2581
@@ -4773,7 +4774,7 @@ msgstr "Ports relacionados ao framework PHP Pear."
 #. (itstool) path: row/entry
 #: book.translate.xml:2587
 msgid "<filename>perl5</filename> <literal>*</literal>"
-msgstr "<filename>perl5</filename><literal>*</literal>"
+msgstr "<filename>perl5</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2589
@@ -4783,7 +4784,7 @@ msgstr "Ports que exigem <application>Perl</application> versão 5 para rodar."
 #. (itstool) path: row/entry
 #: book.translate.xml:2596
 msgid "<filename>plan9</filename> <literal>*</literal>"
-msgstr "<filename>plan9</filename><literal>*</literal>"
+msgstr "<filename>plan9</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2599
@@ -4846,7 +4847,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2629
 msgid "<filename>python</filename> <literal>*</literal>"
-msgstr "<filename>python</filename><literal>*</literal>"
+msgstr "<filename>python</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2632
@@ -4860,7 +4861,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2638
 msgid "<filename>ruby</filename> <literal>*</literal>"
-msgstr "<filename>ruby</filename><literal>*</literal>"
+msgstr "<filename>ruby</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2640
@@ -4874,7 +4875,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2646
 msgid "<filename>rubygems</filename> <literal>*</literal>"
-msgstr "<filename>rubygems</filename><literal>*</literal>"
+msgstr "<filename>rubygems</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2649
@@ -4898,7 +4899,7 @@ msgstr "Suporte de idioma russo."
 #. (itstool) path: row/entry
 #: book.translate.xml:2661
 msgid "<filename>scheme</filename> <literal>*</literal>"
-msgstr "<filename>scheme</filename><literal>*</literal>"
+msgstr "<filename>scheme</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2663
@@ -4964,7 +4965,7 @@ msgstr "Utilidades do sistema."
 #. (itstool) path: row/entry
 #: book.translate.xml:2703
 msgid "<filename>tcl</filename> <literal>*</literal>"
-msgstr "<filename>tcl</filename><literal>*</literal>"
+msgstr "<filename>tcl</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2705
@@ -4993,7 +4994,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2717
 msgid "<filename>tk</filename> <literal>*</literal>"
-msgstr "<filename>tk</filename><literal>*</literal>"
+msgstr "<filename>tk</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2719
@@ -5023,7 +5024,7 @@ msgstr "Suporte de idioma Vietnamita."
 #. (itstool) path: row/entry
 #: book.translate.xml:2736
 msgid "<filename>windowmaker</filename> <literal>*</literal>"
-msgstr "<filename>windowmaker</filename><literal>*</literal>"
+msgstr "<filename>windowmaker</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2738
@@ -5149,7 +5150,7 @@ msgstr "Gerentes de janela do X11."
 #. (itstool) path: row/entry
 #: book.translate.xml:2809
 msgid "<filename>xfce</filename> <literal>*</literal>"
-msgstr "<filename>xfce</filename><literal>*</literal>"
+msgstr "<filename>xfce</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2811
@@ -5163,7 +5164,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:2818
 msgid "<filename>zope</filename> <literal>*</literal>"
-msgstr "<filename>zope</filename><literal>*</literal>"
+msgstr "<filename>zope</filename> <literal>*</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2820
@@ -5195,10 +5196,10 @@ msgid ""
 "categories\">above</link>). This is necessary to make the packaging work. "
 "Virtual categories and physical categories may be intermixed after that."
 msgstr ""
-"A primeira categoria deve ser uma categoria física (ver<link linkend="
-"\"porting-categories\"> acima</link>). Isso é necessário para fazer a "
-"empacotamento funcionar. Categorias virtuais e categorias físicas podem ser "
-"misturadas depois disso."
+"A primeira categoria deve ser uma categoria física (veja <link linkend="
+"\"porting-categories\">acima</link>). Isso é necessário para o empacotamento "
+"funcionar. Categorias virtuais e categorias físicas podem ser misturadas "
+"depois disso."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2848
@@ -5209,7 +5210,7 @@ msgid ""
 msgstr ""
 "As categorias específicas de idioma sempre vêm em primeiro lugar. Por "
 "exemplo, se o port instalar fontes X11 em japonês, a linha "
-"<varname>CATEGORIES</varname> deveria ler <filename>x11-fontes japonesas</"
+"<varname>CATEGORIES</varname> deve ser <filename>japanese x11-fonts</"
 "filename>."
 
 #. (itstool) path: listitem/para
@@ -5223,12 +5224,12 @@ msgid ""
 "<filename>net</filename> is included implicitly."
 msgstr ""
 "Categorias específicas são listadas antes de outras menos específicas. Por "
-"exemplo, um editor de HTML é listado como <filename>editores www</filename>, "
-"não o contrário. Além disso, não liste <filename>net</filename> quando o "
-"port pertence a qualquer um dos <filename>irc</filename>, <filename>mail</"
-"filename>, <filename>news</filename>, <filename>security</filename> ou "
-"<filename>www</filename>, como <filename>net</filename> está incluído "
-"implicitamente."
+"exemplo, um editor de HTML é listado como <filename>www editors</filename>, "
+"e não ao contrário. Além disso, não insira <filename>net</filename> quando o "
+"port pertencer a qualquer uma das categorias <filename>irc</filename>, "
+"<filename>mail</filename>, <filename>news</filename>, <filename>security</"
+"filename> ou <filename>www</filename>, pois <filename>net</filename> está "
+"incluída implicitamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2867
@@ -5239,7 +5240,7 @@ msgid ""
 msgstr ""
 "<filename>x11</filename> é usado como uma categoria secundária somente "
 "quando a categoria principal é uma linguagem natural. Em particular, não "
-"coloque <filename>x11</filename> na linha de categoria para aplicativos X."
+"coloque <filename>x11</filename> na linha de categoria em aplicações X."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2875
@@ -5250,11 +5251,11 @@ msgid ""
 "source files of some programming language goes into <filename>lang</"
 "filename>."
 msgstr ""
-"Os modos <application>Emacs</application> são colocados na mesma categoria "
-"de ports que a aplicação suportada pelo modo, não em<filename>editors</"
-"filename>. Por exemplo, um modo <application>Emacs</application> para editar "
-"arquivos de origem de alguma linguagem de programação entra "
-"em<filename>lang</filename>."
+"Os modes <application>Emacs</application> são colocados na mesma categoria "
+"de ports que a aplicação suportada pelo mode, e não em <filename>editors</"
+"filename>. Por exemplo, um mode <application>Emacs</application> para editar "
+"código fonte de alguma linguagem de programação entra em <filename>lang</"
+"filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2885
@@ -5278,9 +5279,10 @@ msgid ""
 "be deleted and the port placed only in the other subdirectory."
 msgstr ""
 "<filename>misc</filename> não aparece com nenhuma outra categoria não "
-"virtual. Se houver <literal>misc</literal> com outra coisa em "
-"<varname>CATEGORIES</varname>, que significa <literal>misc</literal> pode "
-"ser seguramente excluído e o port colocado apenas em outro subdiretório."
+"virtual. Se houver <literal>misc</literal> com outra categoria na linha "
+"<varname>CATEGORIES</varname>, isso significa que <literal>misc</literal> "
+"pode ser seguramente excluído e o port colocado apenas no outro subdiretório."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2902
@@ -5288,7 +5290,7 @@ msgid ""
 "If the port truly does not belong anywhere else, put it in <filename>misc</"
 "filename>."
 msgstr ""
-"Se o port realmente não pertence em nenhum outro lugar, coloque em "
+"Se o port realmente não pertencer em nenhum outro lugar, coloque-o em "
 "<filename>misc</filename>."
 
 #. (itstool) path: sect2/para
@@ -5302,14 +5304,15 @@ msgid ""
 "link> so we can discuss it first. Too often, new ports are imported to the "
 "wrong category only to be moved right away."
 msgstr ""
-"Se a categoria não estiver claramente definida, por favor coloque um "
-"comentário para esse efeito na submissão <link xlink:href=\"https://bugs."
-"freebsd.org/submit/\">do port</link> no banco de dados de bugs, para que "
-"possamos discuti-lo antes de importá-lo. Como committer, envie uma nota para "
-"a <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
-"ports\"> Lista de discussão de ports do FreeBSD</link> então podemos "
-"discutir isso primeiro. Com muita frequência, novos ports são importados "
-"para a categoria errada apenas para serem movidas imediatamente."
+"Se a categoria não estiver claramente definida, por favor, insira um "
+"comentário sobre isso na submissão <link xlink:href=\"https://bugs.freebsd."
+"org/submit/\">do port</link> no banco de dados de bugs, para que possamos "
+"discuti-lo antes de importá-lo. Como committer, envie uma mensagem para a "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"ports\">lista de discussão de ports do FreeBSD</link>, para podermos "
+"discutir isso primeiro. Com muita frequência, novos ports são importados na "
+"categoria errada, e depois são movidos imediatamente para a categoria "
+"correta."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2917
@@ -5326,12 +5329,12 @@ msgid ""
 "section discusses the issues involved in creating a new physical category. "
 "Read it thouroughly before proposing a new one."
 msgstr ""
-"Como a Coleção de Ports cresceu com o tempo, várias novas categorias foram "
-"introduzidas. Novas categorias podem ser categorias <emphasis>virtuais</"
-"emphasis>- aquelas que não têm um subdiretório correspondente na árvore de "
-"ports - ou <emphasis>fisica</emphasis> - aquelas que tem. Esta seção discute "
-"os problemas envolvidos na criação de uma nova categoria física. Leia "
-"atentamente antes de propor uma nova."
+"Como a Coleção de Ports vem crescendo com o tempo, várias novas categorias "
+"também são adicionadas. Novas categorias podem ser categorias "
+"<emphasis>virtuais</emphasis>- aquelas que não possuem um subdiretório "
+"correspondente na árvore de ports - ou <emphasis>físicas</emphasis> - "
+"aquelas que possuem. Esta seção discute os problemas envolvidos na criação "
+"de uma nova categoria física. Leia atentamente antes de propor uma nova."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2928
@@ -5342,9 +5345,9 @@ msgid ""
 "limited general interest (for instance, categories related to spoken human "
 "languages), or preferably both."
 msgstr ""
-"Nossa prática atual tem sido evitar a criação de uma nova categoria física, "
-"a menos que um grande número de ports logicamente pertença a ela, ou os "
-"ports que pertenceriam a ela sejam um grupo logicamente distinto de "
+"Nossa prática atual tem sido a de evitar a criação de uma nova categoria "
+"física, a menos que um grande número de ports logicamente pertençam a ela, "
+"ou os ports que pertenceriam a ela sejam um grupo logicamente distinto de "
 "interesse geral limitado (por exemplo, categorias relacionadas com as "
 "línguas humanas faladas), ou de preferência ambas."
 
@@ -5362,13 +5365,13 @@ msgid ""
 msgstr ""
 "A razão para isto é que tal mudança cria uma <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/"
-"#ports\">quantidade justa de trabalho</link> tanto para os committers quanto "
-"para todos os usuários que rastreiam alterações na coleção de ports. Além "
-"disso, mudanças de categoria propostas parecem naturalmente atrair "
+"#ports\">quantidade grande de trabalho</link> tanto para os committers "
+"quanto para todos os usuários que rastreiam alterações na coleção de ports. "
+"Além disso, propostas de alteração de categorias parecem naturalmente atrair "
 "controvérsias. (Talvez isso seja porque não há um consenso claro sobre "
-"quando uma categoria é <quote>muito grande</quote>, nem se as categorias "
-"devem se prestar à navegação (e, portanto, qual número de categorias seria "
-"um número ideal), e assim por diante.)."
+"quando uma categoria é <quote>grande o suficiente</quote>, nem quando as "
+"categorias devem ser apenas para propósitos de busca (e, portanto, qual "
+"número de categorias seria um número ideal), e assim por diante.)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2946
@@ -5386,14 +5389,14 @@ msgid ""
 "that would fit this category, list them too.) If you are the maintainer and/"
 "or submitter, respectively, mention that as it may help the case."
 msgstr ""
-"Propor a nova categoria na <link xlink:href=\"http://lists.FreeBSD.org/"
-"mailman/listinfo/freebsd-ports\">Lista de discussão de ports do FreeBSD</"
+"Proponha a nova categoria na <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/freebsd-ports\">lista de discussão de ports do FreeBSD</"
 "link>. Inclua uma justificativa detalhada para a nova categoria, incluindo "
 "por que as categorias existentes não são suficientes, e a lista de ports "
 "existentes propostos para a mudança. (Se houver novos ports pendentes no "
 "<application>Bugzilla</application> que caberia nessa categoria, liste-os "
 "também.) Se você for o mantenedor e/ou o apresentador, respectivamente, "
-"mencione isso, pois isso pode ajudar o caso."
+"mencione isso, pois isso pode ajudar no caso."
 
 #. (itstool) path: step/para
 #: book.translate.xml:2962
@@ -5407,16 +5410,16 @@ msgid ""
 "both the rationale and the list of existing ports that need to be moved. "
 "Ideally, this PR would also include these patches:"
 msgstr ""
-"Se parece que há suporte para a idéia, registre um PR que inclua a lógica e "
-"a lista de ports existentes que precisam ser movidas. Idealmente, este PR "
-"também incluiria essas correções:"
+"Se parecer que há apoio o suficiente para a ideia, registre uma PR que "
+"inclua a lógica e a lista de ports existentes que precisam ser movidos. O "
+"ideal é que esta PR também inclua essas alterações:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2973
 msgid ""
 "<filename>Makefile</filename>s for the new ports once they are repocopied"
 msgstr ""
-"<filename>Makefile</filename> para os novos ports, uma vez que sejam "
+"<filename>Makefile</filename>s para os novos ports, uma vez que sejam "
 "recopiados "
 
 #. (itstool) path: listitem/para
@@ -5433,7 +5436,7 @@ msgstr "<filename>Makefile</filename> para as categorias dos ports antigos"
 #: book.translate.xml:2988
 msgid "<filename>Makefile</filename>s for ports that depend on the old ports"
 msgstr ""
-"<filename>Makefile</filename> para ports que dependem das ports antigas "
+"<filename>Makefile</filename>s para ports que dependem dos ports antigos "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2993
@@ -5452,10 +5455,10 @@ msgid ""
 "assign the PR to the Ports Management Team <email>portmgr@FreeBSD.org</"
 "email>."
 msgstr ""
-"Como isso afeta a infraestrutura de ports e envolve a movimentação e a "
-"correção de vários ports, mas também a possibilidade de executar testes de "
-"regressão no cluster de build, atribua o PR à Equipe de Gerenciamento de "
-"Ports <email>portmgr@FreeBSD.org</email>."
+"Como isso afeta a infraestrutura do ports e envolve a movimentação e "
+"alteração de vários ports, pode ser necessário executar testes de regressão "
+"no cluster de build, e portanto, atribua a PR para a Equipe de Gerenciamento "
+"de Ports <email>portmgr@FreeBSD.org</email>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3008
@@ -5465,9 +5468,9 @@ msgid ""
 "articles/committers-guide/article.html#PORTS\">outlined in the Committer's "
 "Guide</link>."
 msgstr ""
-"Se esse PR for aprovado, um committer precisará seguir o restante do "
+"Se essa PR for aprovada, um committer precisará seguir o restante do "
 "procedimento que é <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
-"articles/committers-guide/article.html#PORTS\">delineado no Guia do "
+"articles/committers-guide/article.html#PORTS\">descrito no Guia do "
 "Committer</link>."
 
 #. (itstool) path: sect2/para
@@ -5479,9 +5482,9 @@ msgid ""
 "<varname>CATEGORIES</varname> of the affected ports."
 msgstr ""
 "A proposta de uma nova categoria virtual é semelhante à acima, mas muito "
-"menos envolvida, já que nenhum port terá que ser movido. Nesse caso, os "
-"únicos patches a serem incluídos no PR serão aqueles para adicionar a nova "
-"categoria a <varname>CATEGORIES</varname> dos ports afetados."
+"menos trabalhoso, já que nenhum port terá que ser movido. Nesse caso, os "
+"únicos patches a serem incluídos na PR serão aqueles para adicionar a nova "
+"categoria na linha <varname>CATEGORIES</varname> dos ports afetados."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3022
@@ -5544,12 +5547,12 @@ msgid ""
 "filename>."
 msgstr ""
 "<varname>DISTNAME</varname> é o nome do port, conforme chamado pelos autores "
-"do software. <varname>DISTNAME</varname> o padrão é <literal>${PORTNAME}-"
-"${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}</literal> e, se não "
-"estiver definido, <varname>DISTVERSION</varname> o padrão é "
-"<literal>${PORTVERSION}</literal> assim substituir <varname>DISTNAME</"
+"do software. <varname>DISTNAME</varname> é derivado de <literal>${PORTNAME}-"
+"${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}</literal>, e se não "
+"estiver definido, <varname>DISTVERSION</varname> é derivado de "
+"<literal>${PORTVERSION}</literal>, portanto altere <varname>DISTNAME</"
 "varname> somente se necessário. <varname>DISTNAME</varname> é usado apenas "
-"em dois lugares. Primeiro, a lista de arquivos de distribuição "
+"em dois lugares. Primeiro, na lista de arquivos de distribuição "
 "(<varname>DISTFILES</varname>) padrão para <literal>${DISTNAME}</"
 "literal><literal>${EXTRACT_SUFX}</literal>. Em segundo lugar, espera-se que "
 "o arquivo de distribuição seja extraído em um subdiretório denominado "
@@ -5570,7 +5573,7 @@ msgstr ""
 "<literal>${PORTNAME}-${PORTVERSION}</literal>-scheme pode ser tratado "
 "automaticamente configurando <varname>DISTVERSIONPREFIX</varname>, "
 "<varname>DISTVERSION</varname> e <varname>DISTVERSIONSUFFIX</varname>."
-"<varname>PORTVERSION</varname>, será derivado de<varname>DISTVERSION</"
+"<varname>PORTVERSION</varname> será derivado de <varname>DISTVERSION</"
 "varname> automaticamente."
 
 #. (itstool) path: important/para
@@ -5583,7 +5586,7 @@ msgid ""
 msgstr ""
 "Apenas um dos <varname>PORTVERSION</varname> e <varname>DISTVERSION</"
 "varname> pode ser definido de cada vez. E se <varname>DISTVERSION</varname> "
-"não deriva um <varname>PORTVERSION</varname> correto, não use "
+"não derivar um <varname>PORTVERSION</varname> correto, não use "
 "<varname>DISTVERSION</varname>."
 
 #. (itstool) path: sect2/para
@@ -16252,7 +16255,7 @@ msgid ""
 "examples/PORTNAME</filename>."
 msgstr ""
 "<varname>EXEMPLESDIR</varname> é expandido para <filename>PREFIX/share/"
-"examples/PORTNAME</filename>."
+"examples/PORTNAME</filename>. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9075
@@ -16437,7 +16440,7 @@ msgid ""
 "varname>."
 msgstr ""
 "Quando <varname>BINARY_ALIAS</varname> é definido, ele criará links "
-"simbólicos dos comandos fornecidos em um diretório que será prefixado para "
+"simbólicos dos comandos fornecidos em um diretório que será prefixado para o "
 "<varname>PATH</varname>."
 
 #. (itstool) path: sect1/para
@@ -16544,7 +16547,7 @@ msgid ""
 "This section explains the most common things to consider when creating a "
 "port."
 msgstr ""
-"Esta seção explica as coisas mais comuns a considerar ao criar um port."
+"Esta seção explica as coisas mais comuns a se considerar ao criar um port."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9232
@@ -16918,7 +16921,7 @@ msgstr ""
 "É mais fácil para o autor separar a biblioteca upstream depois que ela é "
 "empacotada. Embora seja conveniente à primeira vista, isso significa que o "
 "código diverge do upstream, dificultando o tratamento da segurança ou outros "
-"problemas com o software. A razão para isso é que remendar se torna mais "
+"problemas com o software. A razão para isso é que o patching se torna mais "
 "difícil."
 
 #. (itstool) path: listitem/para
@@ -16950,8 +16953,8 @@ msgstr ""
 "Quando uma biblioteca é instalada no sistema, ela pode colidir com a versão "
 "empacotada. Isso pode causar erros imediatos no tempo de compilação ou link. "
 "Também pode causar erros ao executar o programa, o que pode ser mais difícil "
-"de rastrear. O último problema poderia causado porque as versões das duas "
-"bibliotecas são incompatíveis."
+"de rastrear. O último problema poderia ser causado porque as versões das "
+"duas bibliotecas são incompatíveis."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:9431
@@ -16984,7 +16987,7 @@ msgid ""
 msgstr ""
 "Bibliotecas empacotadas desperdiçam recursos em vários níveis. Demora mais "
 "para compilar o aplicativo real, especialmente se essas bibliotecas já "
-"estiverem presentes no sistema. No tempo de execução, elas podem ocupar "
+"estiverem presentes no sistema. Em tempo de execução, elas podem ocupar "
 "memória desnecessária quando a biblioteca do sistema já está carregada por "
 "um programa e a biblioteca agrupada é carregada por outro programa. "
 
@@ -17003,8 +17006,9 @@ msgid ""
 msgstr ""
 "Quando uma biblioteca precisa de patches para o FreeBSD, esses patches "
 "precisam ser duplicados novamente na biblioteca. Isso desperdiça tempo do "
-"desenvolvedor porque os patches podem não ser aplicados corretamente. Também "
-"pode ser difícil notar que esses patches são necessários em primeiro lugar."
+"desenvolvedor porque os patches podem não ser aplicados de forma limpa. "
+"Também pode ser difícil perceber que estes patches são necessários em "
+"primeiro lugar."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9469
