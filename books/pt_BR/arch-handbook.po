@@ -2,6 +2,7 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Marcos  <udialup@gmail.com>, 2018. #zanata
+# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-18 08:20+0000\n"
-"Last-Translator: Marcos  <udialup@gmail.com>\n"
+"PO-Revision-Date: 2018-09-24 11:19+0000\n"
+"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -1149,7 +1150,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:745
-#, fuzzy
 msgid ""
 "Our next block implements the actual scanning of the partition table. It "
 "prints to the screen the partition type for each of the four entries in the "
@@ -1161,15 +1161,15 @@ msgid ""
 "literal>/<literal>ufs2</literal> (FreeBSD, ID 0xa5). The implementation is "
 "fairly simple."
 msgstr ""
-"Nosso pr�ximo bloco implementa a varredura real da tabela de parti��es. Ela "
-"imprime na tela o tipo de parti��o para cada uma das quatro entradas na "
-"tabela de parti��es. Ele compara cada tipo com uma lista de sistemas de "
-"arquivos conhecidos do sistema operacional. Exemplos de tipos de parti��o "
-"reconhecidos s�o <acronym>NTFS</acronym> ( <trademark class=\"registered\"> "
-"janelas </trademark> , ID 0x7), <literal> ext2fs </literal> ( <trademark "
-"class=\"registered\"> Linux </trademark> , ID 0x83) e, claro, <literal> ffs "
-"</literal> / <literal> ufs2 </literal> (FreeBSD, ID 0xa5). A implementa��o � "
-"bastante simples \""
+"Nosso próximo bloco implementa a varredura real da tabela de partições. Ela "
+"imprime na tela o tipo de partição para cada uma das quatro entradas na "
+"tabela de partições. Ele compara cada tipo com uma lista de sistemas de "
+"arquivos conhecidos do sistema operacional. Exemplos de tipos de partição "
+"reconhecidos são <acronym>NTFS</acronym> (<trademark class="
+"\"registered\">Windows</trademark> , ID 0x7), <literal>ext2fs</literal> "
+"(<trademark class=\"registered\">Linux</trademark> , ID 0x83) e, claro, "
+"<literal>ffs</literal>/<literal>ufs2</literal> (FreeBSD, ID 0xa5). A "
+"implementação é bastante simples."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:758
@@ -1225,7 +1225,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:783
-#, fuzzy
 msgid ""
 "It is important to note that the active flag for each entry is cleared, so "
 "after the scanning, <emphasis>no</emphasis> partition entry is active in our "
@@ -1233,16 +1232,15 @@ msgid ""
 "set for the selected partition. This ensures that only one active partition "
 "exists if the user chooses to write the changes back to disk."
 msgstr ""
-"� importante observar que o sinalizador ativo de cada entrada � apagado, "
-"portanto, ap�s a varredura, <emphasis> n�o </emphasis> entrada de parti��o "
-"est� ativa em nossa c�pia da mem�ria de <filename> boot0 </filename> . Mais "
-"tarde, o sinalizador ativo ser� definido para a parti��o selecionada. Isso "
-"garante que apenas uma parti��o ativa existir� se o usu�rio optar por gravar "
-"as altera��es novamente no disco. "
+"É importante observar que a flag ativa de cada entrada é apagada, portanto, "
+"após a varredura, <emphasis>nenhuma</emphasis> entrada de partição está "
+"ativa em nossa cópia da memória de <filename>boot0</filename>. Mais tarde, a "
+"flag ativa será definida para a partição selecionada. Isso garante que "
+"apenas uma partição ativa existiré se o usuário optar por gravar as "
+"alterações novamente no disco. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:791
-#, fuzzy
 msgid ""
 "The next block tests for other drives. At startup, the <acronym>BIOS</"
 "acronym> writes the number of drives present in the computer to address "
@@ -1251,11 +1249,11 @@ msgid ""
 "command <filename>boot0</filename> to scan partitions on another drive later."
 ""
 msgstr ""
-"O pr�ximo bloco testa as outras unidades. Na inicializa��o, o <acronym>BIOS</"
-"acronym> grava o n�mero de unidades presentes no computador para endere�ar "
-"<literal> 0x475 </literal> . Se houver outras unidades presentes, <filename> "
-"boot0 </filename> imprime a unidade atual na tela. O usu�rio pode comandar "
-"<filename> boot0 </filename> para digitalizar parti��es em outra unidade "
+"O próximo bloco testa as outras unidades. Na inicialização, a <acronym>BIOS</"
+"acronym> grava o número de unidades presentes no computador para o endereço "
+"<literal>0x475</literal> . Se houver outras unidades presentes, "
+"<filename>boot0</filename> imprime a unidade atual na tela. O usuário pode "
+"comandar <filename>boot0</filename> para varrer partições em outra unidade "
 "depois. "
 
 #. (itstool) path: figure/programlisting
@@ -36327,21 +36325,18 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:23341
-#, fuzzy
 msgid "<primary>NetGear</primary>"
-msgstr " <primary> NetGear </primary> "
+msgstr "<primary>NetGear</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:23342
-#, fuzzy
 msgid "<primary>Linksys</primary>"
-msgstr " <primary> Linksys </primary> "
+msgstr "<primary>Linksys</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:23343
-#, fuzzy
 msgid "<primary>D-Link</primary>"
-msgstr " <primary> D-Link </primary> "
+msgstr "<primary>D-Link</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23345
@@ -36653,9 +36648,8 @@ msgstr "Rotina da Sonda de Amostra"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:23494
-#, fuzzy
 msgid "<primary>PC Card</primary> <secondary>probe</secondary>"
-msgstr " <primary> Cart�o PC </primary><secondary> sonda </secondary> "
+msgstr "<primary>PC Card</primary> <secondary>probe</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23499
@@ -37010,73 +37004,63 @@ msgstr "Ap�ndices"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:23711
-#, fuzzy
 msgid ""
 "<personname><firstname>Marshall</firstname><othername role=\"Middle\">Kirk</"
 "othername><surname>McKusick</surname></personname>"
 msgstr ""
-" <personname><firstname> Marechal </firstname><othername role=\"Middle\"> "
-"Kirk </othername><surname> McKusick </surname></personname> "
+"<personname><firstname>Marshall</firstname><othername role=\"Middle\">Kirk</"
+"othername><surname>McKusick</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:23712
-#, fuzzy
 msgid ""
 "<personname><firstname>Keith</firstname><surname>Bostic</surname></"
 "personname>"
 msgstr ""
-" <personname><firstname> Keith </firstname><surname> Bostic </surname></"
-"personname> "
+"<personname><firstname>Keith</firstname><surname>Bostic</surname></"
+"personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:23713
-#, fuzzy
 msgid ""
 "<personname><firstname>Michael</firstname><othername role=\"MI\">J</"
 "othername><surname>Karels</surname></personname>"
 msgstr ""
-" <personname><firstname> Michael </firstname><othername role=\"MI\"> J </"
-"othername><surname> Karels </surname></personname> "
+"<personname><firstname>Michael</firstname><othername role=\"MI\">J</"
+"othername><surname>Karels</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:23714
-#, fuzzy
 msgid ""
 "<personname><firstname>John</firstname><othername role=\"MI\">S</"
 "othername><surname>Quarterman</surname></personname>"
 msgstr ""
-" <personname><firstname> John </firstname><othername role=\"MI\"> S </"
-"othername><surname> Quarterman </surname></personname> "
+"<personname><firstname>John</firstname><othername role=\"MI\">S</"
+"othername><surname>Quarterman</surname></personname>"
 
 #. (itstool) path: biblioentry/copyright
 #: book.translate.xml:23717
-#, fuzzy
 msgid ""
 "<year>1996</year> <holder>Addison-Wesley Publishing Company, Inc.</holder>"
 msgstr ""
-" <year> 1996 </year><holder> Addison-Wesley Publishing Company, Inc. </"
-"holder> "
+"<year>1996</year> <holder>Addison-Wesley Publishing Company, Inc.</holder>"
 
 #. (itstool) path: biblioentry/biblioid
 #: book.translate.xml:23722
-#, fuzzy
 msgid "0-201-54979-4"
 msgstr "0-201-54979-4"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:23725
-#, fuzzy
 msgid "Addison-Wesley Publishing Company, Inc."
 msgstr "Addison-Wesley Publishing Company, Inc."
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:23728
-#, fuzzy
 msgid "The Design and Implementation of the 4.4 BSD Operating System"
-msgstr "O Design e Implementa��o do Sistema Operacional 4.4 BSD"
+msgstr "The Design and Implementation of the 4.4 BSD Operating System"
 
 #. (itstool) path: biblioentry/pagenums
 #: book.translate.xml:23730
-#, fuzzy
 msgid "1-2"
 msgstr "1-2"
