@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-24 11:19+0000\n"
+"PO-Revision-Date: 2018-09-25 02:46+0000\n"
 "Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -1276,24 +1276,22 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:810
-#, fuzzy
 msgid ""
 "We make the assumption that a single drive is present, so the jump to "
 "<literal>print_drive</literal> is not performed. We also assume nothing "
 "strange happened, so we jump to <literal>print_prompt</literal>."
 msgstr ""
-"Supomos que uma �nica unidade est� presente, ent�o o salto para <literal> "
-"print_drive </literal> n�o � executado. N�s tamb�m assumimos que nada de "
-"estranho aconteceu, ent�o n�s pulamos para <literal> print_prompt </literal> "
-""
+"Supomos que uma única unidade está presente, então o salto para "
+"<literal>print_drive</literal> não é executado. Nós também assumimos que "
+"nada de estranho aconteceu, então nós pulamos para <literal>print_prompt</"
+"literal>. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:815
-#, fuzzy
 msgid ""
 "This next block just prints out a prompt followed by the default option:"
 msgstr ""
-"Este pr�ximo bloco apenas imprime um prompt seguido pela op��o padr�o:"
+"Este próximo bloco apenas imprime um prompt seguido pela opção padrão:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:821
@@ -1317,17 +1315,16 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:830
-#, fuzzy
 msgid ""
 "Finally, a jump is performed to <literal>start_input</literal>, where the "
 "<acronym>BIOS</acronym> services are used to start a timer and for reading "
 "user input from the keyboard; if the timer expires, the default option will "
 "be selected:"
 msgstr ""
-"Finalmente, um salto � realizado para <literal> start_input </literal> , "
-"onde os servi�os da <acronym>BIOS</acronym> s�o usados ​​para iniciar um "
-"timer e para ler a entrada do usu�rio pelo teclado; se o temporizador "
-"expirar, a op��o padr�o ser� selecionada: "
+"Finalmente, um salto é realizado para <literal>start_input</literal> , onde "
+"os serviços da <acronym>BIOS</acronym> são usados ​​para iniciar um timer e "
+"para ler a entrada do usuário a partir do teclado; se o temporizador "
+"expirar, a opção padrão será selecionada: "
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:839
@@ -1363,7 +1360,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:854
-#, fuzzy
 msgid ""
 "An interrupt is requested with number <literal>0x1a</literal> and argument "
 "<literal>0</literal> in register <literal>%ah</literal>. The <acronym>BIOS</"
@@ -1395,39 +1391,39 @@ msgid ""
 "<literal>int 0x16</literal>, argument <literal>1</literal> in <literal>%ah</"
 "literal>."
 msgstr ""
-"Uma interrup��o � solicitada com o n�mero <literal> 0x1a </literal> e "
-"argumento <literal> 0 </literal> no registo <literal> ah% </literal> . O "
-"<acronym>BIOS</acronym> possui um conjunto predefinido de servi�os, "
-"solicitados pelos aplicativos como interrup��es geradas por software "
-"<literal> int </literal> instru��o e receber argumentos em registros (neste "
-"caso, <literal> ah% </literal> ). Aqui, particularmente, estamos solicitando "
-"o n�mero de pulsos de clock desde a �ltima meia-noite; esse valor � "
-"calculado pelo <acronym>BIOS</acronym> por meio do <acronym>RTC</acronym> "
-"(Real Time Clock). Este rel�gio pode ser programado para funcionar em "
-"freq��ncias que variam de 2 Hz a 8192 Hz. O <acronym>BIOS</acronym> define a "
-"18,2 Hz na inicializa��o. Quando a solicita��o � satisfeita, um resultado de "
-"32 bits � retornado pelo <acronym>BIOS</acronym> em registros <literal> % cx "
-"</literal> e <literal> % dx </literal> (bytes inferiores em <literal> % dx </"
-"literal> ). Este resultado <literal> % dx </literal> parte) � copiado para "
-"registrar <literal> % di </literal> e o valor do <varname> TICOS </varname> "
-"vari�vel � adicionada ao <literal> % di </literal> . Esta vari�vel reside em "
-"<filename> boot0 </filename> no deslocamento <literal> _TICKS </literal> (um "
-"valor negativo) do registro <literal> % pb </literal> (que, lembre-se, "
-"aponta para <literal> 0x800 </literal> ). O valor padr�o desta vari�vel � "
-"<literal> 0xb6 </literal> (182 em decimal). Agora, a ideia � que <filename> "
-"boot0 </filename> constantemente solicita o tempo do <acronym>BIOS</acronym> "
-", e quando o valor retornou no registro <literal> % dx </literal> � maior "
-"que o valor armazenado em <literal> % di </literal> , o tempo acabou e a "
-"sele��o padr�o ser� feita. Como o RTC � de 18,2 vezes por segundo, essa "
-"condi��o ser� atendida ap�s 10 segundos (esse comportamento padr�o pode ser "
-"alterado no <filename> Makefile </filename> ). At� esse tempo j� passou "
-"<filename> boot0 </filename> continuamente pede ao <acronym>BIOS</acronym> "
-"por qualquer entrada do usu�rio; isso � feito atrav�s <literal> int 0x16 </"
-"literal> argumento <literal> 1 </literal> dentro <literal> ah% </literal> "
+"Uma interrupção é solicitada com o número <literal>0x1a</literal> e "
+"argumento <literal> </literal> no registrador <literal>%ah</literal>. A "
+"<acronym>BIOS</acronym> possui um conjunto predefinido de serviços, "
+"solicitados pelos aplicativos como interrupções geradas por software através "
+"de uma instrução <literal>int</literal> e receber argumentos nos "
+"registradores (neste caso, <literal>%ah</literal>). Aqui, particularmente, "
+"estamos solicitando o número de pulsos de clock desde a última meia-noite; "
+"esse valor é computado pela <acronym>BIOS</acronym> por meio do "
+"<acronym>RTC</acronym> (Real Time Clock). Este clock pode ser programado "
+"para funcionar em frequências que variam de 2 Hz a 8192 Hz. A <acronym>BIOS</"
+"acronym> define isso a 18,2 Hz na inicialização. Quando a solicitação é "
+"satisfeita, um resultado de 32 bits é retornado pela <acronym>BIOS</acronym> "
+"em registradores <literal>%cx</literal> e <literal>%dx</literal> (bytes "
+"inferiores em <literal>%dx</literal> ). Este resultado (a parte "
+"<literal>%dx</literal>) é copiado para registrador <literal>%di</literal> e "
+"o valor das variáveis <varname>TICKS</varname>  � adicionado ao "
+"<literal>%di</literal> . Esta variável reside em <filename>boot0</filename> "
+"no deslocamento <literal>_TICKS</literal> (um valor negativo) do registrador "
+"<literal>%pb</literal> (que, lembre-se, aponta para <literal>0x800</literal> "
+"). O valor padrão desta variável é <literal>0xb6</literal> (182 em decimal). "
+"Agora, a ideia é que <filename>boot0</filename> constantemente solicita o "
+"tempo da <acronym>BIOS</acronym>, e quando o valor retornado no registro "
+"<literal>%dx</literal> é maior que o valor armazenado em <literal>%di</"
+"literal>, o tempo acabou e a seleção padrão será feita. Como o RTC é de 18,2 "
+"vezes por segundo, essa condição será atendida após 10 segundos (esse "
+"comportamento padrão pode ser alterado no <filename>Makefile</filename> ). "
+"Até que esse tempo tenha passado <filename>boot0</filename> continuamente "
+"pede à <acronym>BIOS</acronym> por qualquer entrada do usuário; isso é feito "
+"através <literal>int 0x16</literal> argumento <literal>1</literal> em "
+"<literal>%ah</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:891
-#, fuzzy
 msgid ""
 "Whether a key was pressed or the time expired, subsequent code validates the "
 "selection. Based on the selection, the register <literal>%si</literal> is "
@@ -1438,25 +1434,23 @@ msgid ""
 "filename> with these modified values is written back to the <acronym>MBR</"
 "acronym> on disk. We leave the details of this implementation to the reader."
 msgstr ""
-"Se uma tecla foi pressionada ou o tempo expirou, o c�digo subsequente valida "
-"a sele��o. Com base na sele��o, o registro <literal> %si </literal> est� "
-"definido para apontar para a entrada de parti��o apropriada na tabela de "
-"parti��es. Essa nova sele��o substitui a padr�o anterior. De fato, ele se "
-"torna o novo padr�o. Por fim, o sinalizador ACTIVE da parti��o selecionada � "
-"definido. Se foi habilitado em tempo de compila��o, a vers�o em mem�ria do "
-"<filename> boot0 </filename> com esses valores modificados � gravado de "
-"volta para o <acronym>MBR</acronym> no disco. Deixamos os detalhes desta "
-"implementa��o para o leitor \""
+"Se uma tecla foi pressionada ou o tempo expirou, o código subsequente valida "
+"a seleção. Com base na seleção, o registro <literal>%si</literal> é definido "
+"para apontar para a entrada de partição apropriada na tabela de partições. "
+"Essa nova seleção substitui a padrão anterior. De fato, ele se torna a novo "
+"padrão. Por fim, a flag ACTIVE da partição selecionada é definida. Se foi "
+"habilitada enquanto compilava, a versão em memória do <filename>boot0</"
+"filename> com esses valores modificados é gravada de volta na <acronym>MBR</"
+"acronym> no disco. Deixamos os detalhes desta implementação para o leitor."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:903
-#, fuzzy
 msgid ""
 "We now end our study with the last code block from the <filename>boot0</"
 "filename> program:"
 msgstr ""
-"Agora terminamos nosso estudo com o �ltimo bloco de c�digo do <filename> "
-"boot0 </filename> programa:"
+"Agora terminamos nosso estudo com o último bloco de código do programa "
+"<filename>boot0</filename>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:909
@@ -1486,30 +1480,27 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:921
-#, fuzzy
 msgid ""
 "Recall that <literal>%si</literal> points to the selected partition entry. "
 "This entry tells us where the partition begins on disk. We assume, of "
 "course, that the partition selected is actually a FreeBSD slice."
 msgstr ""
-"Lembre-se que <literal> %si </literal> aponta para a entrada de parti��o "
-"selecionada. Esta entrada nos diz onde a parti��o come�a no disco. N�s "
-"assumimos, � claro, que a parti��o selecionada � na verdade uma fatia do "
+"Lembre-se que <literal>%si</literal> aponta para a entrada da partição "
+"selecionada. Esta entrada nos diz onde a partição começa no disco. Nós "
+"assumimos, é claro, que a partição selecionada é na verdade uma fatia do "
 "FreeBSD. "
 
 #. (itstool) path: note/para
 #: book.translate.xml:927
-#, fuzzy
 msgid ""
 "From now on, we will favor the use of the technically more accurate term "
 "<quote>slice</quote> rather than <quote>partition</quote>."
 msgstr ""
 "A partir de agora, favoreceremos o uso do termo tecnicamente mais preciso "
-"<quote> fatia </quote> ao inv�s de <quote> parti��o </quote> "
+"<quote>slice</quote> ao invés de <quote>partição</quote>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:932
-#, fuzzy
 msgid ""
 "The transfer buffer is set to <literal>0x7c00</literal> (register "
 "<literal>%bx</literal>), and a read for the first sector of the FreeBSD "
@@ -1521,32 +1512,29 @@ msgid ""
 "stage, and a jump is performed to address <literal>0x7c00</literal>, where "
 "execution of our next stage (the just-read block) is started."
 msgstr ""
-"O buffer de transfer�ncia est� configurado para <literal> 0x7c00 </literal> "
-"(registo <literal> % bx </literal> ), e uma leitura para o primeiro setor da "
-"fatia FreeBSD � solicitada chamando <literal> intx13 </literal> . N�s "
-"assumimos que tudo correu bem, ent�o um salto para <literal> bip </literal> "
-"n�o � executado. Em particular, o novo setor lido deve terminar com a "
-"sequ�ncia m�gica <literal> 0xaa55 </literal> . Finalmente, o valor em "
-"<literal> %si </literal> (o ponteiro para a tabela de parti��es selecionada) "
-"� preservado para uso pelo pr�ximo est�gio, e um salto � executado para "
-"endere�ar <literal> 0x7c00 </literal> , onde a execu��o do nosso pr�ximo "
-"est�gio (o bloco de leitura justa) � iniciado. "
+"O buffer de transferência está definido para <literal>0x7c00</literal> "
+"(registrador <literal>%bx</literal> ), e uma leitura para o primeiro setor "
+"da slice do FreeBSD é solicitada chamando <literal>intx13</literal> . Nós "
+"assumimos que tudo correu bem, então um salto para o <literal>beep</literal> "
+"não é executado. Em particular, o novo setor lido deve terminar com a "
+"sequência mágica <literal>0xaa55</literal>. Finalmente, o valor em "
+"<literal>%si</literal> (o ponteiro para a tabela de partições selecionada) é "
+"preservado para uso pelo próximo estágio, e um salto é executado para o "
+"endereço <literal>0x7c00</literal> , onde a execução do nosso próximo "
+"estágio (o bloco de apenas-leitura) é iniciado. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:946
-#, fuzzy
 msgid "<literal>boot1</literal> Stage"
-msgstr " <literal> boot1 </literal> Etapa"
+msgstr "Etapa <literal>boot1</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:948
-#, fuzzy
 msgid "So far we have gone through the following sequence:"
-msgstr "At� agora n�s passamos pela seguinte sequ�ncia:"
+msgstr "Até agora nós passamos pela seguinte sequência:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:952
-#, fuzzy
 msgid ""
 "The <acronym>BIOS</acronym> did some early hardware initialization, "
 "including the <acronym>POST</acronym>. The <acronym>MBR</acronym> "
@@ -1554,15 +1542,14 @@ msgid ""
 "address <literal>0x7c00</literal>. Execution control was passed to that "
 "location."
 msgstr ""
-"O <acronym>BIOS</acronym> fez algumas inicializa��es de hardware, incluindo "
-"o <acronym>POST</acronym> . O <acronym>MBR</acronym> ( <filename> boot0 </"
-"filename> ) foi carregado a partir do setor de disco absoluto para endere�ar "
-"<literal> 0x7c00 </literal> . O controle de execu��o foi passado para esse "
-"local \""
+"A <acronym>BIOS</acronym> fez algumas inicializações de hardware, incluindo "
+"o <acronym>POST</acronym> . O <acronym>MBR</acronym> (<filename>boot0</"
+"filename>) foi carregado a partir do primeiro setor de disco absoluto para "
+"endereço <literal>0x7c00</literal> . O controle de execução foi passado para "
+"essa localização."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:961
-#, fuzzy
 msgid ""
 "<filename>boot0</filename> relocated itself to the location it was linked to "
 "execute (<literal>0x600</literal>), followed by a jump to continue execution "
@@ -1570,12 +1557,12 @@ msgid ""
 "first disk sector from the FreeBSD slice to address <literal>0x7c00</"
 "literal>. Execution control was passed to that location."
 msgstr ""
-" <filename> boot0 </filename> mudou-se para o local que estava ligado para "
-"executar ( <literal> 0x600 </literal> ), seguido por um salto para continuar "
-"a execu��o no local apropriado. Finalmente, <filename> boot0 </filename> "
-"carregou o primeiro setor de disco da fatia do FreeBSD para endere�ar "
-"<literal> 0x7c00 </literal> . O controle de execu��o foi passado para esse "
-"local \""
+"<filename>boot0</filename> realocado para o local que estava lincado para "
+"executar (<literal>0x600</literal>), seguido por um salto para continuar a "
+"execução no local apropriado. Finalmente, <filename>boot0</filename> "
+"carregou o primeiro setor de disco da slice do FreeBSD para endereço "
+"<literal>0x7c00</literal>. O controle de execução foi passado para essa "
+"localização."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:985
@@ -1680,9 +1667,8 @@ msgstr ""
 #: book.translate.xml:1176
 #: book.translate.xml:1205
 #: book.translate.xml:1311
-#, fuzzy
 msgid "<filename>sys/boot/i386/boot2/boot1.S</filename>"
-msgstr " <filename> sys / boot / i386 / boot2 / boot1.S </filename> "
+msgstr "<filename>sys/boot/i386/boot2/boot1.S</filename>"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1020
@@ -3044,7 +3030,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1709
-#, fuzzy
 msgid ""
 "Next, the real-mode <acronym>IVT</acronym> (Interrupt Vector Table is "
 "updated. The <acronym>IVT</acronym> is an array of segment/offset pairs for "
@@ -3063,24 +3048,24 @@ msgid ""
 "<acronym>BTX</acronym> server sets up a mechanism to effectively use the "
 "handlers provided by the <acronym>BIOS</acronym>:"
 msgstr ""
-"Em seguida, o <acronym>IVT em</acronym> modo real (tabela de vetores de "
-"interrup��o � atualizado. O <acronym>IVT</acronym> � uma matriz de pares de "
-"segmento / deslocamento para manipuladores de exce��o e interrup��es. O "
-"<acronym>BIOS</acronym> normalmente mapeia interrup��es de hardware para "
-"interromper vetores <literal> 0x8 </literal> para <literal> 0xf </literal> e "
-"<literal> 0x70 </literal> para <literal> 0x77 </literal> mas, como ser� "
-"visto, o Controlador de Interrup��o Program�vel 8259A, o chip que controla o "
-"mapeamento real de interrup��es de hardware para vetores de interrup��o, � "
-"programado para remapear esses vetores de interrup��o de <literal> 0x8-0xf </"
-"literal> para <literal> 0x20-0x27 </literal> e de <literal> 0x70-0x77 </"
-"literal> para <literal> 0x28-0x2f </literal> . Assim, manipuladores de "
-"interrup��o s�o fornecidos para vetores de interrup��o <literal> 0x20-0x2f </"
-"literal> . A raz�o pela qual os manipuladores fornecidos pelo <acronym>BIOS</"
-"acronym> n�o s�o usados ​​diretamente � porque eles funcionam no modo real "
-"de 16 bits, mas n�o no modo protegido de 32 bits. O modo do processador ser� "
-"alternado para o modo protegido de 32 bits em breve. No entanto, o servidor "
-"<acronym>BTX</acronym> configura um mecanismo para usar efetivamente os "
-"manipuladores fornecidos pelo <acronym>BIOS</acronym> : "
+"Em seguida, a <acronym>IVT</acronym> em modo real (Tabela de Vetores de "
+"Interrupções) é atualizado. O <acronym>IVT</acronym> é uma matriz de pares "
+"de segmento/deslocamento para manipuladores de exceção e interrupções. A "
+"<acronym>BIOS</acronym> normalmente mapeia interrupções de hardware para "
+"vetores de interrupção <literal>0x8</literal> para <literal>0xf</literal> e "
+"<literal>0x70</literal> para <literal>0x77</literal> mas, como será visto, o "
+"Controlador de Interrupção Programável 8259A, o chip que controla o "
+"mapeamento real de interrupções de hardware para vetores de interrupção, é "
+"programado para remapear esses vetores de interrupção de <literal>0x8-0xf</"
+"literal> para <literal>0x20-0x27</literal> e de <literal>0x70-0x77</literal> "
+"para <literal>0x28-0x2f</literal> . Assim, manipuladores de interrupção são "
+"fornecidos para vetores de interrupção <literal>0x20-0x2f</literal>. A razão "
+"pela qual os manipuladores fornecidos pela <acronym>BIOS</acronym> não são "
+"usados ​​diretamente é porque eles funcionam no modo real de 16 bits, mas "
+"não no modo protegido de 32 bits. O modo do processador será alternado para "
+"o modo protegido de 32 bits em breve. No entanto, o servidor <acronym>BTX</"
+"acronym> define um mecanismo para usar efetivamente os manipuladores "
+"fornecidos pela <acronym>BIOS</acronym>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1733
@@ -3114,7 +3099,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1747
-#, fuzzy
 msgid ""
 "The next block creates the <acronym>IDT</acronym> (Interrupt Descriptor "
 "Table). The <acronym>IDT</acronym> is analogous, in protected mode, to the "
@@ -3125,14 +3109,14 @@ msgid ""
 "complex, because segments in protected mode are different than in real mode, "
 "and various protection mechanisms apply:"
 msgstr ""
-"O pr�ximo bloco cria o <acronym>IDT</acronym> (Interrupt Descriptor Table). "
-"O <acronym>IDT</acronym> � an�logo, no modo protegido, ao <acronym>IVT</"
-"acronym> em modo real. Ou seja, o <acronym>IDT</acronym> descreve os v�rios "
-"manipuladores de exce��o e interrup��es usados ​​quando o processador est� "
-"executando em modo protegido. Em ess�ncia, ele tamb�m consiste em uma matriz "
-"de pares segmento / offset, embora a estrutura seja um pouco mais complexa, "
-"porque os segmentos no modo protegido s�o diferentes do modo real, e v�rios "
-"mecanismos de prote��o se aplicam: "
+"O próximo bloco cria o <acronym>IDT</acronym> (Interrupt Descriptor Table). "
+"O <acronym>IDT</acronym> é análogo, no modo protegido, ao <acronym>IVT</"
+"acronym> em modo real. Ou seja, o <acronym>IDT</acronym> descreve os vários "
+"manipuladores de exceção e interrupções usados ​​quando o processador está "
+"executando em modo protegido. Em essência, ele também consiste em uma matriz "
+"de pares segmento/deslocadores, embora a estrutura seja um pouco mais "
+"complexa, porque os segmentos no modo protegido são diferentes do modo real, "
+"e vários mecanismos de proteção se aplicam: "
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1761
@@ -3190,7 +3174,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1787
-#, fuzzy
 msgid ""
 "Each entry in the <literal>IDT</literal> is 8 bytes long. Besides the "
 "segment/offset information, they also describe the segment type, privilege "
@@ -3217,35 +3200,34 @@ msgid ""
 "<emphasis>always</emphasis> handled adequately, regardless of the actual "
 "privileges involved."
 msgstr ""
-"Cada entrada no <literal> IDT </literal> tem 8 bytes de comprimento. Al�m "
-"das informa��es de segmento / deslocamento, elas tamb�m descrevem o tipo de "
-"segmento, n�vel de privil�gio e se o segmento est� presente na mem�ria ou "
-"n�o. A constru��o � tal que interrompe vetores de <literal> 0 </literal> "
-"para <literal> 0xf </literal> (exce��es) s�o tratadas por fun��o <literal> "
-"intx00 </literal> ; vetor <literal> 0x10 </literal> (tamb�m uma exce��o) � "
-"tratado por <literal> intx10 </literal> ; interrup��es de hardware, que s�o "
-"configuradas posteriormente para iniciar no vetor de interrup��o <literal> "
-"0x20 </literal> todo o caminho para interromper o vetor <literal> 0x2f </"
-"literal> , s�o manipulados por fun��o <literal> intx20 </literal> . Por fim, "
-"vetor de interrup��o <literal> 0x30 </literal> , que � usado para chamadas "
-"do sistema, � manipulado por <literal> intx30 </literal> e vetores <literal> "
-"0x31 </literal> e <literal> 0x32 </literal> s�o manipulados por <literal> "
-"intx31 </literal> . Deve-se notar que apenas descritores para vetores de "
-"interrup��o <literal> 0x30 </literal> , <literal> 0x31 </literal> e "
-"<literal> 0x32 </literal> recebem o n�vel de privil�gio 3, o mesmo n�vel de "
-"privil�gio que o <filename> boot2 </filename> cliente, o que significa que o "
-"cliente pode executar uma interrup��o gerada por software para esses vetores "
-"<literal> int </literal> instru��o sem falhar (este � o caminho <filename> "
-"boot2 </filename> usar os servi�os fornecidos pelo servidor <acronym>BTX</"
-"acronym> ). Al�m disso, note que <emphasis> s� </emphasis> interrup��es "
-"geradas por software s�o protegidas do c�digo executado em n�veis de "
-"privil�gios menores. Interrup��es geradas por hardware e exce��es geradas "
-"pelo processador s�o <emphasis> sempre </emphasis> manuseado de forma "
-"adequada, independentemente dos privil�gios reais envolvidos. "
+"Cada entrada no <literal>IDT</literal> tem 8 bytes de comprimento. Além das "
+"informações de segmento/deslocamento, elas também descrevem o tipo de "
+"segmento, nível de privilégio e se o segmento está presente na memória ou "
+"não. A construção é tal que vetores de interrupção de <literal>0</literal> "
+"para <literal>0xf</literal> (exceções) são manipulados por função "
+"<literal>intx00</literal>; vetor <literal>0x10</literal> (também uma "
+"exceção) é manipulado por <literal>intx10</literal>; interrupções de "
+"hardware, que são configuradas posteriormente para iniciar no vetor de "
+"interrupção <literal>0x20</literal> de toda forma para o vetor interrupção "
+"<literal>0x2f</literal> , são manipulados pela função <literal>intx20</"
+"literal>. Por fim, vetor de interrupção <literal>0x30</literal>, que é usado "
+"para chamadas do sistema, é manipulado por <literal>intx30</literal> e "
+"vetores <literal>0x31</literal> e <literal>0x32</literal> são manipulados "
+"por <literal>intx31</literal>. Deve-se notar que apenas descritores para "
+"vetores de interrupção <literal>0x30</literal> , <literal>0x31</literal> e "
+"<literal>0x32</literal> recebem o nível de privilégio 3, o mesmo nível de "
+"privilégio que o cliente <filename>boot2</filename>, o que significa que o "
+"cliente pode executar uma interrupção gerada por software para esses vetores "
+"através da instrução <literal>int</literal> sem falhar (este é o modo como o "
+"<filename>boot2</filename> usa os serviços fornecidos pelo servidor "
+"<acronym>BTX</acronym>). Além disso, note que <emphasis>apenas</emphasis> "
+"interrupções geradas por software são protegidas do código sendo executado "
+"em níveis de privilégios menores. Interrupções geradas por hardware e "
+"exceções geradas pelo processador <emphasis>sempre</emphasis> são manuseado "
+"de forma adequada, independentemente dos privilégios reais envolvidos. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1817
-#, fuzzy
 msgid ""
 "The next step is to initialize the <acronym>TSS</acronym> (Task-State "
 "Segment). The <acronym>TSS</acronym> is a hardware feature that helps the "
@@ -3257,15 +3239,16 @@ msgid ""
 "3, but the <acronym>BTX</acronym> server does in privilege level 0, a "
 "<acronym>TSS</acronym> must be defined:"
 msgstr ""
-"O pr�ximo passo � inicializar o <acronym>TSS</acronym> (Task-State Segment). "
-"O <acronym>TSS</acronym> � um recurso de hardware que ajuda o sistema "
+"O próximo passo é inicializar o <acronym>TSS</acronym> (Task-State Segment). "
+"O <acronym>TSS</acronym> é um recurso de hardware que ajuda o sistema "
 "operacional ou o software executivo a implementar a funcionalidade "
-"multitarefa por meio da abstra��o do processo. A arquitetura IA-32 exige a "
-"cria��o eo uso de <emphasis> finalmente </emphasis> um <acronym>TSS</"
-"acronym> se forem usados ​​recursos multitarefa ou se forem definidos n�veis "
-"de privil�gios diferentes. Porque o <filename> boot2 </filename> cliente � "
-"executado no n�vel de privil�gio 3, mas o servidor <acronym>BTX</acronym> "
-"faz no n�vel de privil�gio 0, um <acronym>TSS</acronym> deve ser definido: "
+"multitarefa por meio da abstração do processo. A arquitetura IA-32 exige a "
+"criação e o uso de <emphasis>ao menos</emphasis> um <acronym>TSS</acronym> "
+"se forem usados ​​recursos multitarefa ou se forem definidos níveis de "
+"privilégios diferentes. Porque o  cliente <filename>boot2</filename> é "
+"executado no nível de privilégio 3, mas o servidor <acronym>BTX</acronym> "
+"executado no nível de privilégio 0, um <acronym>TSS</acronym> deve ser "
+"definido:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1832
@@ -3287,7 +3270,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1840
-#, fuzzy
 msgid ""
 "Note that a value is given for the Privilege Level 0 stack pointer and stack "
 "segment in the <acronym>TSS</acronym>. This is needed because, if an "
@@ -3299,27 +3281,26 @@ msgid ""
 "<acronym>TSS</acronym> to the I/O Permission Bitmap and the Interrupt "
 "Redirection Bitmap."
 msgstr ""
-"Note que um valor � dado para o ponteiro de pilha e segmento de pilha do "
-"Privilege Level 0 no <acronym>TSS</acronym> . Isso � necess�rio porque, se "
-"uma interrup��o ou exce��o for recebida durante a execu��o <filename> boot2 "
-"</filename> No Privilege Level 3, uma altera��o no Privilege Level 0 � "
-"executada automaticamente pelo processador, portanto, � necess�ria uma nova "
-"pilha de trabalho. Finalmente, o campo Endere�o de Mapeamento de E / S do "
-"<acronym>TSS</acronym> recebe um valor, que � um deslocamento de 16 bits "
-"desde o in�cio do <acronym>TSS</acronym> at� o Bitmap de Permiss�o de E / S "
-"e o Bitmap de Redirecionamento de Interrup��es. "
+"Note que um valor é dado para o ponteiro da pilha de Privilégio de Nível 0 e "
+"segmento da pilha no <acronym>TSS</acronym> . Isso é necessário porque, se "
+"uma interrupção ou exceção for recebida durante o <filename>boot2</filename> "
+"estiver executando no Privilege de Nível 3, uma alteração no Privilege de "
+"Nível 0 é executada automaticamente pelo processador, portanto, é necessária "
+"uma nova pilha de trabalho. Finalmente, o campo Map Base Addess de I/O do "
+"<acronym>TSS</acronym> recebe um valor, que é um deslocamento de 16 bits "
+"desde o início do <acronym>TSS</acronym> até o Bitmap de Permissão de I/O e "
+"o Bitmap de Redirecionamento de Interrupções. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1850
-#, fuzzy
 msgid ""
 "After the <acronym>IDT</acronym> and <acronym>TSS</acronym> are created, the "
 "processor is ready to switch to protected mode. This is done in the next "
 "block:"
 msgstr ""
-"Depois que o <acronym>IDT</acronym> e o <acronym>TSS</acronym> s�o criados, "
-"o processador est� pronto para mudar para o modo protegido. Isso � feito no "
-"pr�ximo bloco:"
+"Depois que o <acronym>IDT</acronym> e o <acronym>TSS</acronym> são criados, "
+"o processador está pronto para mudar para o modo protegido. Isso é feito no "
+"próximo bloco:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1857
@@ -3585,9 +3566,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1994
-#, fuzzy
 msgid "<application>boot2</application> Stage"
-msgstr " <application> boot2 </application> Etapa"
+msgstr "Etapa <application>boot2</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1996
@@ -3709,9 +3689,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2051
-#, fuzzy
 msgid "<application>loader</application> Stage"
-msgstr " <application> carregador </application> Etapa"
+msgstr "<application>loader</application> Stage"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2053
@@ -3753,9 +3732,8 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2068
-#, fuzzy
 msgid "Kernel Initialization"
-msgstr "Inicializa��o do Kernel"
+msgstr "Inicialização do Kernel"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2070
@@ -3785,9 +3763,8 @@ msgstr ""
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2080
-#, fuzzy
 msgid "<primary>ELF</primary>"
-msgstr " <primary> DUENDE </primary> "
+msgstr "<primary>ELF</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2081
@@ -3927,9 +3904,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2144
-#, fuzzy
 msgid "<function>identify_cpu</function>"
-msgstr " <function> identify_cpu </function> "
+msgstr "<function>identify_cpu</function>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2145
@@ -3943,9 +3919,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2151
-#, fuzzy
 msgid "<function>create_pagetables</function>"
-msgstr " <function> create_pagetables </function> "
+msgstr "<function>create_pagetables</function>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2152
