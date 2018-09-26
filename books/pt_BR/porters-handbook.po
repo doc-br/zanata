@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-25 12:57+0000\n"
+"PO-Revision-Date: 2018-09-26 03:35+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -17081,18 +17081,17 @@ msgid ""
 "shared library immediately and de-installation will not cause the system to "
 "still believe the library is there."
 msgstr ""
-"Se o port instalar uma ou mais bibliotecas compartilhadas, defina um "
-"<varname>USE_LDCONFIG</varname> make variável, que irá instruir um "
-"<filename>bsd.port.mk</filename> para rodar <literal>${LDCONFIG} -m</"
-"literal> no diretório onde a nova biblioteca está instalada "
-"(geralmente<filename>PREFIX/lib</filename>) durante o destino <_:buildtarget-"
-"1/> para registrá-lo no cache da biblioteca compartilhada. Esta variável, "
-"quando definida, também facilitará a adição de um par <literal>@exec /sbin/"
-"ldconfig -m</literal> e <literal>@unexec /sbin/ldconfig -R</literal> em "
-"<filename>pkg-plist</filename>, para que um usuário que instalou o pacote "
-"possa começar a usar a biblioteca compartilhada imediatamente e a "
-"desinstalação não faça com que o sistema ainda acredite que a biblioteca "
-"esteja lá."
+"Se o port instalar uma ou mais bibliotecas compartilhadas, defina a variável "
+"<varname>USE_LDCONFIG</varname> para o make , a qual irá instruir o "
+"<filename>bsd.port.mk</filename> para executar o <literal>${LDCONFIG} -m</"
+"literal> no diretório onde a nova biblioteca está instalada (geralmente em "
+"<filename>PREFIX/lib</filename>) durante o target <_:buildtarget-1/> para "
+"registrá-la no cache da biblioteca compartilhada. Esta variável, quando "
+"definida, também facilitará a adição do par <literal>@exec /sbin/ldconfig -"
+"m</literal> e <literal>@unexec /sbin/ldconfig -R</literal> no <filename>pkg-"
+"plist</filename>, para que o usuário que instalou o pacote possa começar a "
+"usar a biblioteca compartilhada imediatamente e para que a desinstalação não "
+"faça com que o sistema acredite que a biblioteca ainda está lá."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:9513
@@ -17109,11 +17108,11 @@ msgid ""
 "<filename>PREFIX/lib/foo</filename> and <filename>PREFIX/lib/bar</filename> "
 "use this in <filename>Makefile</filename>:"
 msgstr ""
-"O diretório padrão pode ser substituído pela configuração "
+"O diretório padrão pode ser substituído configurando a variável "
 "<varname>USE_LDCONFIG</varname> para uma lista de diretórios nos quais as "
 "bibliotecas compartilhadas devem ser instaladas. Por exemplo, se o port "
 "instalar bibliotecas compartilhadas em <filename>PREFIX/lib/foo</filename> e "
-"<filename>PREFIXO/lib/bar</filename> use isso em <filename>Makefile</"
+"<filename>PREFIXO/lib/bar</filename> utilize isso no <filename>Makefile</"
 "filename>: "
 
 #. (itstool) path: sect1/programlisting
@@ -17132,12 +17131,13 @@ msgid ""
 "varname> before invoking the binary, like <package role=\"port\">www/"
 "seamonkey</package> does."
 msgstr ""
-"Por favor, verifique novamente, muitas vezes isso não é necessário em tudo "
-"ou pode ser evitado através de <literal>-rpath</literal> ou estabelecendo "
-"<envar>LD_RUN_PATH</envar> durante a ligação (consulte <package role="
-"\"port\">lang/mosml</package> para um exemplo), ou através de um invólucro "
-"que define <varname>LD_LIBRARY_PATH</varname> antes de invocar o binário, "
-"como <package role=\"port\">www/seamonkey</package> faz."
+"Por favor, verifique novamente, muitas vezes isso não é necessário ou é algo "
+"que pode ser evitado através do uso da opção <literal>-rpath</literal> ou da "
+"configuração da variável <envar>LD_RUN_PATH</envar> durante a fase de "
+"vinculação (consulte <package role=\"port\">lang/mosml</package> para um "
+"exemplo), ou através de um shell-wrapper que defina o "
+"<varname>LD_LIBRARY_PATH</varname> antes de executar o binário, como por "
+"exemplo o  <package role=\"port\">www/seamonkey</package> faz."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9535
@@ -17145,7 +17145,7 @@ msgid ""
 "When installing 32-bit libraries on 64-bit system, use "
 "<varname>USE_LDCONFIG32</varname> instead."
 msgstr ""
-"Ao instalar bibliotecas de 32 bits no sistema de 64 bits, use "
+"Ao instalar bibliotecas de 32 bits em um sistema de 64 bits, use "
 "<varname>USE_LDCONFIG32</varname> como alternativa."
 
 #. (itstool) path: sect1/para
@@ -17155,9 +17155,9 @@ msgid ""
 "specifically <command>libtool</command>, add <link linkend=\"uses-"
 "libtool\"><literal>USES=libtool</literal></link>."
 msgstr ""
-"Se o software usa <link linkend=\"using-autotools\">autotools</link> e, "
-"especificamente, <command>libtool</command>, adicionar<link linkend=\"uses-"
-"libtool\"><literal>USES = libtool</literal></link>"
+"Se o software usa o <link linkend=\"using-autotools\">autotools</link>, e "
+"especificamente, o <command>libtool</command>, adicione <link linkend=\"uses-"
+"libtool\"><literal>USES=libtool</literal></link>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9541
@@ -17168,8 +17168,8 @@ msgid ""
 "with the new library version."
 msgstr ""
 "Quando o número da versão da biblioteca principal aumenta na atualização "
-"para a nova versão do port, todas os outros ports que se vinculam à "
-"biblioteca afetada devem ter seus <varname>PORTREVISION</varname> "
+"para a nova versão do port, todos os outros ports que se vinculam à "
+"biblioteca afetada devem ter seu <varname>PORTREVISION</varname> "
 "incrementado, para forçar a recompilação com a nova versão da biblioteca. "
 
 #. (itstool) path: sect1/title
@@ -17197,12 +17197,12 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports "
 "mailing list</link>."
 msgstr ""
-"É de responsabilidade de um mantenedor do port ler os termos de "
+"É de responsabilidade de um mantenedor de um port ler os termos de "
 "licenciamento do software e certificar-se de que o projeto do FreeBSD não "
-"será responsabilizado por violá-los, redistribuindo os binários fonte ou "
-"compilados via FTP/HTTP ou CD-ROM. dúvida, entre em contato com a <link "
-"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">Lista "
-"de discussão de ports do FreeBSD</link>"
+"será responsabilizado por violá-los, redistribuindo o código fonte ou os "
+"binários compilados via FTP/HTTP ou CD-ROM. Se estiver em dúvida, entre em "
+"contato com a <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-ports\">Lista de discussão de ports do FreeBSD</link>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9565
@@ -17227,7 +17227,7 @@ msgid ""
 msgstr ""
 "Esta variável indica que não podemos gerar um pacote binário da aplicação. "
 "Por exemplo, a licença pode proibir a redistribuição binária, ou pode "
-"proibir a distribuição de pacotes criados a partir de fontes corrigidas."
+"proibir a distribuição de pacotes criados a partir de código adaptado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9577
@@ -17238,8 +17238,8 @@ msgid ""
 msgstr ""
 "No entanto, o <varname>DISTFILES</varname> do port pode ser livremente "
 "espelhado no FTP/HTTP. Eles também podem ser distribuídos em um CD-ROM (ou "
-"mídia similar), a menos que <varname>NO_CDROM</varname> está definido também."
-" "
+"mídia similar), a menos que a variável  <varname>NO_CDROM</varname> esteja "
+"definida também. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9582
@@ -17250,11 +17250,11 @@ msgid ""
 "specific hard coded into it at compile time, set <varname>NO_PACKAGE</"
 "varname>."
 msgstr ""
-"Se o pacote binário não é geralmente útil, e o aplicativo sempre deve ser "
-"compilado a partir do código-fonte, use <varname>NO_PACKAGE</varname>. Por "
-"exemplo, se o aplicativo tiver informações de configuração que são "
-"codificadas em um local específico em tempo de compilação, defina "
-"<varname>NO_PACKAGE</varname>"
+"Se o pacote binário geralmente não é útil, e o aplicativo sempre deve ser "
+"compilado a partir do código-fonte, use o <varname>NO_PACKAGE</varname>. Por "
+"exemplo, se o aplicativo tiver informações de configuração específicas do "
+"site codificadas nele em tempo de compilação, defina o <varname>NO_PACKAGE</"
+"varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9590
@@ -17262,8 +17262,8 @@ msgid ""
 "Set <varname>NO_PACKAGE</varname> to a string describing the reason why the "
 "package cannot be generated."
 msgstr ""
-"Defina <varname>NO_PACKAGE</varname> para uma string descrevendo o motivo "
-"pelo qual o pacote não pode ser gerado. "
+"Defina a variável <varname>NO_PACKAGE</varname> para uma string descrevendo "
+"o motivo pelo qual o pacote não pode ser gerado. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9596
@@ -17283,7 +17283,7 @@ msgstr ""
 "pacotes binários, não podemos colocar nem esses pacotes nem o "
 "<varname>DISTFILES</varname> em um CD-ROM (ou mídia similar) para revenda. "
 "No entanto, os pacotes binários e os <varname>DISTFILES</varname> do ports "
-"ainda estará disponível via FTP/HTTP. "
+"ainda estarão disponíveis via FTP/HTTP. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9605
@@ -17303,9 +17303,10 @@ msgid ""
 "port cannot be redistributed on CD-ROM. For instance, use this if the port's "
 "license is for <quote>non-commercial</quote> use only."
 msgstr ""
-"Setar <varname>NO_CDROM</varname> para uma string descrevendo o motivo pelo "
-"qual o port não pode ser redistribuída em CD-ROM. Por exemplo, use isto se a "
-"licença do port for para <quote>não comercial</quote> usarem apenas."
+"Defina a variável <varname>NO_CDROM</varname> para uma string descrevendo o "
+"motivo pelo qual o port não pode ser redistribuído em CD-ROM. Por exemplo, "
+"use isto se a licença do port for somente para uso <quote>não comercial</"
+"quote>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9618
@@ -17319,9 +17320,9 @@ msgid ""
 "of <varname>MASTER_SITES</varname>. An example of such a file is when the "
 "file is supplied on CD-ROM by the vendor."
 msgstr ""
-"Arquivos definidos em <varname>NOFETCHFILES</varname> não são pesquisáveis "
-"​​de nenhum dos <varname>MASTER_SITES</varname>. Um exemplo de tal arquivo é "
-"quando o arquivo é fornecido em CD-ROM pelo fornecedor. "
+"Arquivos definidos em <varname>NOFETCHFILES</varname> não podem ser obtidos "
+"de nenhum dos <varname>MASTER_SITES</varname>. Um exemplo de tal tipo de "
+"arquivo é quando o arquivo é fornecido apenas em CD-ROM pelo fornecedor. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9625
@@ -17330,9 +17331,9 @@ msgid ""
 "<varname>MASTER_SITES</varname> have to ignore these files and not report "
 "about them."
 msgstr ""
-"Ferramentas que verificam a disponibilidade desses arquivos em "
-"<varname>MASTER_SITES</varname> tem que ignorar esses arquivos e não relatar "
-"sobre eles. "
+"Ferramentas que verificam a disponibilidade desses arquivos nos "
+"<varname>MASTER_SITES</varname> devem ignorar estes arquivos e não informar "
+"nada sobre eles."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9631
@@ -17347,8 +17348,8 @@ msgid ""
 "the binary package in any way."
 msgstr ""
 "Defina esta variável sozinha, se a licença do aplicativo não permitir o "
-"espelhamento do <varname>DISTFILES</varname> do aplicativo nem distribuir o "
-"pacote binário de qualquer forma. "
+"espelhamento do <varname>DISTFILES</varname> e nem a distribuição do pacote "
+"binário de forma alguma."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9638
@@ -17357,9 +17358,9 @@ msgid ""
 "along with <varname>RESTRICTED</varname>, since the latter variable implies "
 "the former ones."
 msgstr ""
-"Não defina <varname>NO_CDROM</varname> ou <varname>NO_PACKAGE</varname> "
-"junto com <varname>RESTRICT</varname>, uma vez que a última variável implica "
-"o antigo."
+"Não defina as variáveis <varname>NO_CDROM</varname> ou <varname>NO_PACKAGE</"
+"varname> juntamente  com a variável <varname>RESTRICT</varname>, uma vez que "
+"esta última variável implica as anteriores."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9643
@@ -17370,11 +17371,12 @@ msgid ""
 "download the <varname>DISTFILES</varname>, possibly after registering for "
 "the software or agreeing to accept the terms of an <acronym>EULA</acronym>."
 msgstr ""
-"<varname>DISTFILES</varname>pelo qual o port não pode ser redistribuída. "
-"Normalmente, isso indica que o port contém software proprietário e que o "
-"usuário precisará baixar manualmente o<varname>DISTFILES</varname>, "
-"possivelmente após se registrar para o software ou concordar em aceitar os "
-"termos de um <acronym>EULA</acronym>."
+"Defina a variável <varname>RESTRICTED</varname> para uma string que descreva "
+"o motivo pelo qual o port não pode ser redistribuído. Normalmente, isso "
+"indica que o port contém software proprietário e que o usuário precisará "
+"baixar manualmente o <varname>DISTFILES</varname>, possivelmente após se "
+"registrar para ter acesso ao software ou após concordar em aceitar os termos "
+"de um <acronym>EULA</acronym>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9653
@@ -17389,10 +17391,11 @@ msgid ""
 "otherwise it is empty. If only some of the distribution files are "
 "restricted, then set this variable to list them."
 msgstr ""
-"Quando <varname>RESTRICT</varname> ou <varname>NO_CDROM</varname> está "
-"definido, esta variável é padronizada <literal>${DISTFILES}${PATCHFILES}</"
-"literal> caso contrário, fica vazia. Se apenas alguns dos arquivos de "
-"distribuição forem restritos, defina essa variável para listá-los. "
+"Quando a variável <varname>RESTRICT</varname> ou a <varname>NO_CDROM</"
+"varname> está definida, o valor padrão normalmente contém "
+"<literal>${DISTFILES}${PATCHFILES}</literal> caso contrário, ela fica vazia. "
+"Se apenas alguns dos arquivos da distribuição forem restritos, defina essa "
+"variável para listá-los. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9664
@@ -17407,10 +17410,11 @@ msgid ""
 "example, if special permission was obtained for FreeBSD to redistribute the "
 "binary, this variable must indicate so."
 msgstr ""
-"Se o port tiver preocupações legais não abordadas pelas variáveis ​​acima, "
-"defina <varname>LEGAL_TEXT</varname> para uma string explicando a "
-"preocupação. Por exemplo, se permissão especial foi obtida para o FreeBSD "
-"redistribuir o binário, esta variável deve indicar isso. "
+"Se o port tem preocupações legais as quais não foram abordadas pelas "
+"variáveis ​​acima, defina a variável <varname>LEGAL_TEXT</varname> para uma "
+"string explicando a preocupação. Por exemplo, se o FreeBSD obteve uma "
+"permissão especial para redistribuir o binário, esta variável deve indicar "
+"isso. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9675
@@ -17425,10 +17429,11 @@ msgid ""
 "matches the restricted distfiles. The second column is the port's origin. "
 "The third column is the output of <command>make -VLEGAL</command>."
 msgstr ""
-"Um port que define qualquer uma das variáveis ​​acima também deve ser "
-"adicionado a <filename>/usr/ports/LEGAL</filename>. A primeira coluna é uma "
+"Um port que defina qualquer uma das variáveis ​​acima também deverá ser "
+"adicionado ao <filename>/usr/ports/LEGAL</filename>. A primeira coluna é uma "
 "glob que corresponde aos distfiles restritos. A segunda coluna é a origem do "
-"port. A terceira coluna é a saída de <command>make -VLEGAL</command>."
+"port. A terceira coluna é a saída do comando <command>make -VLEGAL</command>."
+""
 
 # auto translated by TM merge from project: FreeBSD, version: head, DocId: books/fdp-primer
 #. (itstool) path: sect2/title
@@ -17442,8 +17447,8 @@ msgid ""
 "The preferred way to state \"the distfiles for this port must be fetched "
 "manually\" is as follows:"
 msgstr ""
-"A maneira preferida de declarar \"os distfiles para este port deve ser "
-"buscado manualmente\" é a seguinte:"
+"A maneira preferida de declarar \"os distfiles para este port devem ser "
+"obtidos manualmente\" é a seguinte:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9692
@@ -17467,8 +17472,8 @@ msgid ""
 "This both informs the user, and sets the proper metadata on the user's "
 "machine for use by automated programs."
 msgstr ""
-"Isso informa o usuário e define os metadados apropriados na máquina do "
-"usuário para uso por programas automatizados."
+"Isso tanto informa o usuário, quanto define os metadados apropriados na "
+"máquina do usuário para uso por programas automatizados."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9699
@@ -17497,11 +17502,11 @@ msgid ""
 "systems to utilize all of their available <acronym>CPU</acronym> power, "
 "allowing port builds to be faster and more effective."
 msgstr ""
-"A estrutura de ports do FreeBSD suporta construção paralela usando múltiplos "
-"subprocessos <command>make</command>, o que permite que os sistemas "
-"<acronym>SMP</acronym> utilizem toda a energia disponível da <acronym>CPU</"
-"acronym>, permitindo que as compilações de ports sejam mais rápidas e "
-"eficazes. "
+"O framework de ports do FreeBSD suporta compilação paralela usando múltiplos "
+"subprocessos do comando <command>make</command>, o que permite que os "
+"sistemas <acronym>SMP</acronym> utilizem todo o poder disponível da "
+"<acronym>CPU</acronym>, permitindo que as compilações dos ports sejam mais "
+"rápidas e eficazes. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9716
@@ -17514,14 +17519,14 @@ msgid ""
 "<literal>MAKE_JOBS_UNSAFE=yes</literal> variable. It is used when a port is "
 "known to be broken with <varname>-jX</varname>."
 msgstr ""
-"Isso é conseguido passando a flag <varname>-jX</varname> para "
+"Isso é alcançado passando-se a flag <varname>-jX</varname> para o "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> executando no código do fornecedor. Esse é o comportamento de "
+"citerefentry> executando no código do fornecedor. Este é o comportamento de "
 "compilação padrão dos ports. Infelizmente, nem todos os ports lidam bem com "
-"construções paralelas e pode ser necessário desabilitar explicitamente esse "
-"recurso adicionando a variavel <literal>MAKE_JOBS_UNSAFE = yes</literal>. É "
-"usado quando um port é conhecido por ser quebrado com <varname>-jX</varname>."
-""
+"compilações paralelas e pode ser necessário desabilitar explicitamente esse "
+"recurso adicionando a variável <literal>MAKE_JOBS_UNSAFE=yes</literal>. Ela "
+"é usada quando um port é conhecido por não funcionar com a opção <varname>-"
+"jX</varname>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:9726
@@ -17533,12 +17538,12 @@ msgid ""
 "problem, or test if it has been fixed when committing an update at a later "
 "date."
 msgstr ""
-"Ao definir <varname>MAKE_JOBS_UNSAFE</varname>, é muito importante explicar "
-"com um comentário no <filename>Makefile</filename>, ou pelo menos na "
-"mensagem de commit, <emphasis>porque</emphasis> o port não é construído "
-"quando ativo. Caso contrário, é quase impossível corrigir o problema ou "
-"testar se ele foi corrigido ao confirmar uma atualização em uma data "
-"posterior. "
+"Ao definir a variável <varname>MAKE_JOBS_UNSAFE</varname>, é muito "
+"importante explicar com um comentário no <filename>Makefile</filename>, ou "
+"pelo menos na mensagem de commit, <emphasis>porque</emphasis> o port não "
+"pode ser compilado quando ela está ativa. Caso contrário, é quase impossível "
+"corrigir o problema ou testar se ele foi corrigido ao efetuar o commit de "
+"uma atualização em uma data posterior. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9737
@@ -17557,9 +17562,9 @@ msgid ""
 "acronym> <command>make</command>, known in FreeBSD as <command>gmake</"
 "command>."
 msgstr ""
-"Várias implementações diferentes de <literal>make</literal> existem. O "
+"Existem várias implementações diferentes do <literal>make</literal>. O "
 "software portado geralmente requer uma implementação específica, como o "
-"<acronym>GNU</acronym><command>make</command>, conhecido no FreeBSD como "
+"<acronym>GNU</acronym> <command>make</command>, conhecido no FreeBSD como "
 "<command>gmake</command>."
 
 #. (itstool) path: sect2/para
@@ -17568,8 +17573,8 @@ msgid ""
 "If the port uses <application>GNU make</application>, add <literal>gmake</"
 "literal> to <literal>USES</literal>."
 msgstr ""
-"Se o port usa <application>GNU make</application>, adicionar <literal>gmake</"
-"literal> em <literal>USES</literal>."
+"Se o port usa o <application>GNU make</application>, adicione o "
+"<literal>gmake</literal> no <literal>USES</literal>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9750
@@ -17581,12 +17586,12 @@ msgid ""
 "to call the <command>make</command> implementation expected by the ported "
 "software."
 msgstr ""
-"<varname>MAKE_CMD</varname>pode ser usado para referenciar o comando "
-"específico configurado pelo<literal>USES</literal>configurado no "
-"<filename>Makefile</filename> do port. Usar apenas<varname>MAKE_CMD</"
-"varname> dentro <filename>Makefile</filename> do aplicativo no "
-"<varname>WRKSRC</varname>chamar o<command>make</command> para implementação "
-"esperada pelo software portado."
+"A variável <varname>MAKE_CMD</varname> pode ser usada para referenciar o "
+"comando específico configurado pelo <literal>USES</literal> no "
+"<filename>Makefile</filename> do port. Use o <varname>MAKE_CMD</varname> "
+"apenas dentro dos <filename>Makefile</filename>s do aplicativo no "
+"<varname>WRKSRC</varname> para chamar  o comando <command>make</command> "
+"para a implementação esperada pelo software portado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9759
@@ -17597,10 +17602,10 @@ msgid ""
 "\"uses-imake\"><literal>USES=imake</literal></link> section of <xref linkend="
 "\"uses\"/> for more details."
 msgstr ""
-"Se o port é um aplicativo X que usa <application>Imake</application> para "
-"criar o <filename>Makefile</filename> de <filename>Imakefile</filename>, "
-"defina <literal>USES=imake</literal>.. Veja o <link linkend=\"uses-"
-"imake\"><literal>USES = imake</literal></link> Seção de <xref linkend="
+"Se o port é um aplicativo X que usa o <application>Imake</application> para "
+"criar o <filename>Makefile</filename> do <filename>Imakefile</filename>, "
+"defina <literal>USES=imake</literal>. Veja a seção sobre  <link linkend="
+"\"uses-imake\"><literal>USES=imake</literal></link> no <xref linkend="
 "\"uses\"/> para mais detalhes."
 
 #. (itstool) path: para/buildtarget
@@ -17617,7 +17622,7 @@ msgid ""
 "<varname>INSTALL_TARGET</varname>."
 msgstr ""
 "Se o <filename>Makefile</filename> do port tem algo diferente de <_:"
-"buildtarget-1/> como o target de compilação principal, defina "
+"buildtarget-1/> como o target de compilação principal, defina a variável "
 "<varname>ALL_TARGET</varname> adequadamente. O mesmo vale para <_:"
 "buildtarget-2/> e <varname>INSTALL_TARGET</varname>."
 
@@ -17650,7 +17655,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:9791
 msgid "Variables for Ports That Use <command>configure</command>"
-msgstr "Variáveis ​​para ports que usam <command>configure</command>"
+msgstr "Variáveis ​​para ports que usam o <command>configure</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9804
@@ -39891,11 +39896,11 @@ msgid ""
 "keywords-shared-mime-info\"><literal>@shared-mime-info</literal></link> para "
 "to the plist."
 msgstr ""
-"Usos do <application>update-mime-database</application> a partir de <package "
-"role=\"port\">misc/shared-mime-info</package>. Esses usos adicionarão "
+"Usos de <application>update-mime-database</application> a partir de <package "
+"role=\"port\">misc/shared-mime-info</package>. Esses usos irão adicionar "
 "automaticamente uma etapa de pós-instalação de tal forma que o próprio port "
 "ainda possa especificar sua própria etapa de pós-instalação, se necessário. "
-"Também adiciona um <link linkend=\"plist-keywords-shared-mime-"
+"Também adiciona uma entrada <link linkend=\"plist-keywords-shared-mime-"
 "info\"><literal>@shared-mime-info</literal></link> para o plist."
 
 #. (itstool) path: sect1/title
@@ -39916,7 +39921,7 @@ msgstr ""
 "principalmente <filename>/usr/bin/perl</filename> e <filename>/bin/bash</"
 "filename>. A macro shebangfix corrige linhas shebang em scripts listados em "
 "<varname>SHEBANG_REGEX</varname>, <varname>SHEBANG_GLOB</varname> ou "
-"<varname>SHEBANG_FILES</varname>"
+"<varname>SHEBANG_FILES</varname>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22583
@@ -39931,8 +39936,8 @@ msgid ""
 "<citerefentry><refentrytitle>find</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>. See <xref linkend=\"uses-shebangfix-ex-regex\"/>."
 msgstr ""
-"Contém <emphasis>uma </emphasis> expressão regular estendida e é usado com o "
-"argumento <literal>-iregex</literal> de <citerefentry><refentrytitle>find</"
+"Contém <emphasis>uma</emphasis> expressão regular estendida e é usado com o "
+"argumento <literal>-iregex</literal> do <citerefentry><refentrytitle>find</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>. Veja <xref linkend="
 "\"uses-shebangfix-ex-regex\"/>."
 
@@ -39973,8 +39978,8 @@ msgstr ""
 "executada a partir de <literal>${WRKSRC}</literal>, assim "
 "<varname>SHEBANG_FILES</varname> pode conter caminhos relativos a "
 "<literal>${WRKSRC}</literal>. Ele também pode lidar com caminhos absolutos "
-"se arquivos fora de <literal>${WRKSRC}</literal> requisitarem patch. Veja "
-"<xref linkend=\"uses-shebangfix-ex-files\"/>."
+"se arquivos fora de <literal>${WRKSRC}</literal> requisitarem uma correção. "
+"Veja <xref linkend=\"uses-shebangfix-ex-files\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22617
@@ -39986,12 +39991,12 @@ msgid ""
 "<application>Tcl</application>, and <application>Tk</application> are "
 "supported by default."
 msgstr ""
-"Atualmente <application>Festança</application>, <application>Java</"
-"application>, <application>Ksh</application>, <application>Lua</"
-"application>, <application>Perl</application>, <application>PHP</"
-"application>, <application>Python</application>, <application>Rubi</"
-"application>, <application>Tcl</application> e <application>Tk</application> "
-"são suportados por padrão. "
+"Atualmente <application>Bash</application>, <application>Java</application>, "
+"<application>Ksh</application>, <application>Lua</application>, "
+"<application>Perl</application>, <application>PHP</application>, "
+"<application>Python</application>, <application>Rubi</application>, "
+"<application>Tcl</application> e <application>Tk</application> são "
+"suportados por padrão."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22627
@@ -40037,8 +40042,8 @@ msgid ""
 msgstr ""
 "A lista de invocações erradas de interpretadores. Estes são tipicamente "
 "caminhos obsoletos, ou caminhos usados ​​em outros sistemas operacionais que "
-"estão incorretos no FreeBSD. Eles serão substituídos pelo caminho correto em "
-"<varname><replaceable>interp</replaceable>_CMD</varname>."
+"estão incorretos no FreeBSD. Eles serão substituídos pelo caminho correto na "
+"variável <varname><replaceable>interp</replaceable>_CMD</varname>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:22658
@@ -40049,10 +40054,10 @@ msgid ""
 "replaceable> /usr/bin/<replaceable>interp</replaceable> /usr/local/bin/"
 "<replaceable>interp</replaceable></literal>."
 msgstr ""
-"Estes vão <emphasis>sempre</emphasis> ser parte de "
-"<varname><replaceable>interp</replaceable>_OLD_CMD</varname>: <literal>\"/"
-"usr/bin/env<replaceable>interp</replaceable>\" /bin/<replaceable>interp</"
-"replaceable>/usr/bin/<replaceable>interp</replaceable> /usr/local/bin/"
+"Estes vão <emphasis>sempre</emphasis> ser parte da variável "
+"<varname><replaceable>interp</replaceable>_OLD_CMD</varname>:<literal>\"/usr/"
+"bin/env<replaceable>interp</replaceable>\" /bin/<replaceable>interp</"
+"replaceable> /usr/bin/<replaceable>interp</replaceable> /usr/local/bin/"
 "<replaceable>interp</replaceable></literal>."
 
 #. (itstool) path: tip/para
@@ -40062,9 +40067,9 @@ msgid ""
 "multiple values. Any entry with spaces must be quoted. See <xref linkend="
 "\"uses-shebangfix-ex-ksh\"/>."
 msgstr ""
-"<varname><replaceable>interp</replaceable>_OLD_CMD</varname> contém vários "
-"valores. Qualquer entrada com espaços deve ser citada. Veja <xref linkend="
-"\"uses-shebangfix-ex-ksh\"/>."
+"A variável <varname><replaceable>interp</replaceable>_OLD_CMD</varname> "
+"contém vários valores. Qualquer entrada com espaços deve ser citada. Veja "
+"<xref linkend=\"uses-shebangfix-ex-ksh\"/>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:22677
@@ -40077,9 +40082,9 @@ msgid ""
 "<varname>CONFIGURE_ARGS</varname>, <varname>MAKE_ENV</varname>, or "
 "<varname>MAKE_ARGS</varname>) to generate the right shebangs."
 msgstr ""
-"A fixação de shebangs é feita durante a fase <_:buildtarget-1/>. Se os "
+"A correção de shebangs é feita durante a fase <_:buildtarget-1/>. Se os "
 "scripts forem criados com shebangs incorretos durante a fase <_:buildtarget-"
-"2/>, o processo de compilação (por exemplo, o script <filename>configure</"
+"2/>, o processo de build (por exemplo, o script <filename>configure</"
 "filename>, ou o <filename>Makefiles</filename>) deve ser corrigido ou ter o "
 "caminho certo (por exemplo, com <varname>CONFIGURE_ENV</varname>, "
 "<varname>CONFIGURE_ARGS</varname>, <varname>MAKE_ENV</varname> ou "
@@ -40104,8 +40109,8 @@ msgid ""
 msgstr ""
 "Quando usado com <link linkend=\"uses-python\"><literal>USES=python</"
 "literal></link>, e o objetivo é apenas consertar os shebangs, mas a "
-"dependência de <application>Python</application> em si não é desejado, use "
-"<literal>PYTHON_NO_DEPENDS=yes</literal>."
+"dependência de <application>Python</application> em si não é desejada, use a "
+"variável <literal>PYTHON_NO_DEPENDS=yes</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:22702
@@ -40119,8 +40124,8 @@ msgid ""
 "To add another interpreter, set <varname>SHEBANG_LANG</varname>. For example:"
 ""
 msgstr ""
-"Para adicionar outro interpretador, defina <varname>SHEBANG_LANG</varname>. "
-"Por exemplo:"
+"Para adicionar outro interpretador, defina a variável <varname>SHEBANG_LANG</"
+"varname>. Por exemplo:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22708
@@ -40134,7 +40139,7 @@ msgid ""
 "Specifying all the Paths When Adding an Interpreter to <literal>USES="
 "shebangfix</literal>"
 msgstr ""
-"Especificando todos os caminhos ao adicionar um interpretador a "
+"Especificando todos os Caminhos ao Adicionar um Interpretador à "
 "<literal>USES=shebangfix</literal>"
 
 #. (itstool) path: example/para
@@ -40176,10 +40181,9 @@ msgid ""
 "be declared in the port <filename>Makefile</filename>:"
 msgstr ""
 "Alguns softwares usam locais estranhos para um interpretador. Por exemplo, "
-"um aplicativo pode esperar <application>Python</application> estar "
+"um aplicativo pode esperar que <application>Python</application> esteja "
 "localizado em <filename>/opt/bin/python2.7</filename>. O caminho estranho a "
-"ser substituído pode ser declarado no <filename>Makefile</filename> do port: "
-""
+"ser substituído pode ser declarado no <filename>Makefile</filename> do port:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22737
@@ -40192,7 +40196,8 @@ msgstr "python_OLD_CMD=\t/opt/bin/python2.7"
 msgid ""
 "<literal>USES=shebangfix</literal> with <varname>SHEBANG_REGEX</varname>"
 msgstr ""
-"<literal>USES=shebangfix</literal> com <varname>SHEBANG_REGEX</varname>"
+"<literal>USES=shebangfix</literal> com a variável <varname>SHEBANG_REGEX</"
+"varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:22744
@@ -40202,8 +40207,8 @@ msgid ""
 "filename> do:"
 msgstr ""
 "Para corrigir todos os arquivos em <literal>${WRKSRC}/scripts</literal> "
-"acabando em <filename>.pl</filename>, <filename>.sh</filename> ou <filename>."
-"cgi</filename> faça:"
+"finalizados com <filename>.pl</filename>, <filename>.sh</filename> ou "
+"<filename>.cgi</filename> faça assim:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22749
@@ -40232,7 +40237,8 @@ msgstr ""
 msgid ""
 "<literal>USES=shebangfix</literal> with <varname>SHEBANG_GLOB</varname>"
 msgstr ""
-"<literal>USES=shebangfix</literal> com <varname>SHEBANG_GLOB</varname>"
+"<literal>USES=shebangfix</literal> com a variável <varname>SHEBANG_GLOB</"
+"varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:22764
@@ -40240,8 +40246,8 @@ msgid ""
 "To fix all the files in <literal>${WRKSRC}</literal> ending in <filename>."
 "pl</filename> or <filename>.sh</filename>, do:"
 msgstr ""
-"Para corrigir todos os arquivos em <literal>${WRKSRC}</literal> acabando "
-"<filename>.pl</filename> ou <filename>.sh</filename>, faça:"
+"Para corrigir todos os arquivos em <literal>${WRKSRC}</literal> finalizados "
+"com <filename>.pl</filename> ou <filename>.sh</filename>, faça assim:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22768
@@ -40256,7 +40262,8 @@ msgstr "USES=\tshebangfix\n"
 msgid ""
 "<literal>USES=shebangfix</literal> with <varname>SHEBANG_FILES</varname>"
 msgstr ""
-"<literal>USES=shebangfix</literal> com <varname>SHEBANG_FILES</varname>"
+"<literal>USES=shebangfix</literal> com a variável <varname>SHEBANG_FILES</"
+"varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:22776
@@ -40265,8 +40272,8 @@ msgid ""
 "*.sh</filename> in <literal>${WRKSRC}</literal>, do:"
 msgstr ""
 "Para corrigir os arquivos <filename>script/foobar.pl</filename> e "
-"<filename>script/*. sh</filename> dentro de <literal>${WRKSRC}</literal>, "
-"faça:"
+"<filename>script/*.sh</filename> dentro de <literal>${WRKSRC}</literal>, "
+"faça assim:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22780
@@ -40295,8 +40302,8 @@ msgid ""
 "modifier."
 msgstr ""
 "Adicionar uma dependência ao <application>SQLite</application>. A versão "
-"padrão usada é 3, mas a versão 2 também é possível usando o modificador "
-"<literal>: 2</literal>."
+"padrão usada é 3, mas usar a versão 2 também é possível usando o modificador "
+"<literal>:2</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22797
@@ -40320,10 +40327,10 @@ msgid ""
 "they are also added to <varname>MAKE_ENV</varname>:"
 msgstr ""
 "Fornecer suporte para <application>OpenSSL</application>. Uma dependência "
-"somente de construção ou tempo de execução pode ser especificada usando "
-"<literal>build</literal> ou <literal>run</literal>. Estas variáveis ​​estão "
-"disponíveis para o uso do port, elas também são adicionadas em "
-"<varname>MAKE_ENV</varname>: "
+"apenas de build ou run-time pode ser especificada usando <literal>build</"
+"literal> ou <literal>run</literal>. Estas variáveis ​​estão disponíveis para "
+"uso do port, elas também são adicionadas na variável <varname>MAKE_ENV</"
+"varname>:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22810
@@ -40344,8 +40351,7 @@ msgstr "<varname>OPENSSLDIR</varname>"
 #: book.translate.xml:22821
 msgid "Path to <application>OpenSSL</application>'s configuration files."
 msgstr ""
-"Caminho para arquivos de configuração do <application>OpenSSL</application>. "
-""
+"Caminho para arquivos de configuração do <application>OpenSSL</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22827
@@ -40355,7 +40361,7 @@ msgstr "<varname>OPENSSLLIB</varname>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:22830
 msgid "Path to the <application>OpenSSL</application> libraries."
-msgstr "Caminho para as bibliotecas <application>OpenSSL</application>."
+msgstr "Caminho para as bibliotecas do <application>OpenSSL</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22836
@@ -40365,7 +40371,7 @@ msgstr "<varname>OPENSSLINC</varname>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:22839
 msgid "Path to the <application>OpenSSL</application> includes."
-msgstr "Caminho para includes do <application>OpenSSL</application>. "
+msgstr "Caminho para os includes do <application>OpenSSL</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22845
@@ -40379,7 +40385,7 @@ msgid ""
 "<application>OpenSSL</application> libraries."
 msgstr ""
 "Se definido, o caminho que o vinculador precisa usar para localizar as "
-"bibliotecas <application>OpenSSL</application>. "
+"bibliotecas do <application>OpenSSL</application>. "
 
 #. (itstool) path: tip/para
 #: book.translate.xml:22855
@@ -40388,9 +40394,9 @@ msgid ""
 "set the <varname>BROKEN_SSL</varname> variable, and possibly the "
 "<varname>BROKEN_SSL_REASON_<replaceable>flavor</replaceable></varname>:"
 msgstr ""
-"Se um port não for construído com um flavor <application>OpenSSL</"
+"Se um port não for compilado com um flavor <application>OpenSSL</"
 "application>, defina a variável <varname>BROKEN_SSL</varname>, e "
-"possivelmente o flavor <varname>BROKEN_SSL_REASON_<replaceable></"
+"possivelmente a variável <varname>BROKEN_SSL_REASON_<replaceable>flavor</"
 "replaceable></varname>:"
 
 #. (itstool) path: tip/programlisting
@@ -40468,17 +40474,17 @@ msgid ""
 "filename> the port can inspect the results using these variables:"
 msgstr ""
 "Adicionar uma dependência ao <application>Tcl</application>. Uma versão "
-"específica pode ser solicitada usando <replaceable>version</replaceable>. A "
-"versão pode estar vazia, um ou mais números de versão exatos (atualmente "
+"específica pode ser requisitada usando <replaceable>version</replaceable>. A "
+"versão pode estar vazia, um ou mais números de exatos versão (atualmente "
 "<literal>84</literal>, <literal>85</literal> ou <literal>86</literal>), ou "
-"um número de versão mínima (atualmente<literal>84+</literal>, <literal>85+</"
-"literal> ou <literal>86+</literal>). Para solicitar apenas um wrapper não "
-"específico da versão, use <literal>wrapper</literal>. Uma dependência "
-"somente de compilação ou tempo de execução pode ser especificada usando "
-"<literal>build</literal> ou <literal>run</literal>. Para compilar o port "
-"usando a <application>Arquitetura de Extensão Tcl</application>, use o "
-"<literal>tea</literal>. Depois de incluir <filename>bsd.port.pre.mk</"
-"filename> o port pode inspecionar os resultados usando estas variáveis: "
+"um número mínimo de versão (atualmente<literal>84+</literal>, <literal>85+</"
+"literal> ou <literal>86+</literal>). Para solicitar apenas um wrapper sem "
+"uma versão especifica, use <literal>wrapper</literal>. Uma dependência "
+"somente de build ou run-time pode ser especificada usando <literal>build</"
+"literal> ou <literal>run</literal>. Para compilar o port usando "
+"<application>Tcl Extension Architecture</application>, use o <literal>tea</"
+"literal>. Depois de incluir <filename>bsd.port.pre.mk</filename> o port pode "
+"inspecionar os resultados usando estas variáveis:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22909
@@ -40486,7 +40492,7 @@ msgid ""
 "<varname>TCL_VER</varname>: chosen major.minor version of <application>Tcl</"
 "application>"
 msgstr ""
-"<varname>TCL_VER</varname>: escolhido versão major.minor do "
+"<varname>TCL_VER</varname>: selecionada a versão major.minor do "
 "<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
@@ -40495,8 +40501,8 @@ msgid ""
 "<varname>TCLSH</varname>: full path of the <application>Tcl</application> "
 "interpreter"
 msgstr ""
-"<varname>TCLSH</varname>: caminho completo do interpretador<application>Tcl</"
-"application>"
+"<varname>TCLSH</varname>: caminho completo do interpretador da "
+"<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22919
@@ -40513,7 +40519,7 @@ msgid ""
 "<varname>TCL_INCLUDEDIR</varname>: path of the <application>Tcl</"
 "application> C header files"
 msgstr ""
-"<varname>TCL_INCLUDEDIR</varname>: caminho dos arquivos de cabeçalho C "
+"<varname>TCL_INCLUDEDIR</varname>: caminho dos arquivos C header da "
 "<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
@@ -40522,8 +40528,8 @@ msgid ""
 "<varname>TK_VER</varname>: chosen major.minor version of <application>Tk</"
 "application>"
 msgstr ""
-"<varname>TK_VER</varname>: escolhido major.minor versão do<application>Tk</"
-"application>"
+"<varname>TK_VER</varname>: selecionada versão major.minor do "
+"<application>Tk</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22934
@@ -40531,8 +40537,8 @@ msgid ""
 "<varname>WISH</varname>: full path of the <application>Tk</application> "
 "interpreter"
 msgstr ""
-"<varname>WISH</varname>: caminho completo do interpretador <application>Tk</"
-"application>"
+"<varname>WISH</varname>: caminho completo do interpretador do "
+"<application>Tk</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22939
@@ -40549,7 +40555,7 @@ msgid ""
 "<varname>TK_INCLUDEDIR</varname>: path of the <application>Tk</application> "
 "C header files"
 msgstr ""
-"<varname>TK_INCLUDEDIR</varname>: caminho dos arquivos de cabeçalho C do "
+"<varname>TK_INCLUDEDIR</varname>: caminho dos arquivos C header do "
 "<application>Tk</application>"
 
 #. (itstool) path: sect1/title
@@ -40566,9 +40572,9 @@ msgid ""
 "<filename>${PREFIX}/share/misc</filename>."
 msgstr ""
 "Adiciona <link linkend=\"plist-keywords-terminfo\"><literal>@terminfo</"
-"literal></link> ao <filename>plist</filename>. Use quando o port for "
-"instaladar arquivos <filename><replaceable>*</replaceable>.terminfo</"
-"filename> em <filename>${PREFIX}/share/misc</filename>."
+"literal></link> para o <filename>plist</filename>. Use quando o port "
+"instalar arquivos <filename><replaceable>*</replaceable>.terminfo</filename> "
+"em <filename>${PREFIX}/share/misc</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22962
@@ -40578,7 +40584,7 @@ msgstr "<literal>tk</literal>"
 #. (itstool) path: sect1/para
 #: book.translate.xml:22964
 msgid "Same as arguments for <literal>tcl</literal>"
-msgstr "O mesmo argumentos para <literal>tcl</literal>"
+msgstr "O mesmo que argumentos para <literal>tcl</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22966
@@ -40587,9 +40593,9 @@ msgid ""
 "<application>Tk</application>. The same variables are returned as when using "
 "<application>Tcl</application>."
 msgstr ""
-"Small wrapper ao usar os dois <application>Tcl</application> e "
-"<application>Tk</application>. As mesmas variáveis ​​são retornadas como ao "
-"usar <application>Tcl</application>"
+"Um pequeno wrapper ao usar os dois <application>Tcl</application> e "
+"<application>Tk</application>. As mesmas variáveis ​​são retornadas assim "
+"como ao usar <application>Tcl</application>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22972
@@ -40604,9 +40610,9 @@ msgid ""
 "using <link linkend=\"uses-fakeroot\">USES=fakeroot</link> or patching."
 msgstr ""
 "Altera algum comportamento padrão (principalmente variáveis) do sistema de "
-"compilação para permitir a instalação deste port como um usuário normal. "
-"Tente isso no port antes de usar <link linkend=\"uses-fakeroot\">USES="
-"fakeroot</link> ou empacotar."
+"compilação para permitir instalar este port como um usuário normal. Tente "
+"isso no port antes de usar <link linkend=\"uses-fakeroot\">USES=fakeroot</"
+"link> ou de corrigir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22983
@@ -40633,7 +40639,8 @@ msgstr ""
 "prefixo (e apenas um prefixo) baseado em <varname>UNIQUE_PREFIX</varname> "
 "para diretórios padrão <varname>DOCSDIR</varname>, <varname>EXEMPLESDIR</"
 "varname>, <varname>DATADIR</varname>, <varname>WWWDIR</varname>, "
-"<varname>ETCDIR</varname>. Estas variáveis ​​estão disponíveis para ports: "
+"<varname>ETCDIR</varname>. Estas variáveis ​​estão disponíveis para os ports:"
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22998
@@ -40659,8 +40666,8 @@ msgid ""
 "<varname>UNIQUE_SUFFIX</varname>: The suffix to be used for files. Default: "
 "<varname>${PKGNAMESUFFIX}</varname>."
 msgstr ""
-"<varname>UNIQUE_SUFFIX</varname>: O sufixo a ser usado para arquivos. Padrão:"
-" <varname>${PKGNAMESUFFIX}</varname>."
+"<varname>UNIQUE_SUFFIX</varname>: O sufixo para ser usado por arquivos. "
+"Padrão: <varname>${PKGNAMESUFFIX}</varname>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23015
@@ -40669,7 +40676,7 @@ msgid ""
 "suffixed. Default: empty."
 msgstr ""
 "<varname>UNIQUE_SUFFIX_FILES</varname>: Uma lista de arquivos que precisam "
-"ser sufixados. Padrão: vazio."
+"estar com um sufixo. Padrão: vazio."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23022
@@ -40690,9 +40697,9 @@ msgid ""
 "\"port\">www/varnish5</package>."
 msgstr ""
 "Manipular dependências no <application>Varnish Cache</application>. "
-"<literal>4</literal> irá adicionar uma dependência em <package role="
+"<literal>4</literal> irá adicionar uma dependência no port <package role="
 "\"port\">www/varnish4</package>. <literal>5</literal> irá adicionar uma "
-"dependência em <package role=\"port\">www/varnish5</package>."
+"dependência no port <package role=\"port\">www/varnish5</package>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23034
@@ -40711,20 +40718,20 @@ msgid ""
 "supports the webplugin framework. <literal>ARGS</literal> can be one of:"
 msgstr ""
 "Crie e remova automaticamente links simbólicos para cada aplicação que "
-"suporte o framework webplugin. <literal>ARGS</literal> pode ser um dos: "
+"suporte o framework do webplugin. <literal>ARGS</literal> pode ser um dos: "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23044
 msgid "<literal>gecko</literal>: support plug-ins based on Gecko"
-msgstr "<literal>lagartixa</literal>: suporte a plug-ins baseados no Gecko "
+msgstr "<literal>gecko</literal>: suporte a plug-ins baseados no Gecko"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23049
 msgid ""
 "<literal>native</literal>: support plug-ins for Gecko, Opera, and WebKit-GTK"
 msgstr ""
-"<literal>nativo</literal>: suporte a plug-ins para Gecko, Opera e WebKit-GTK "
-""
+"<literal>native</literal>: suporte a plug-ins para o Gecko, Opera e WebKit-"
+"GTK "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23054
@@ -40736,7 +40743,7 @@ msgstr "<literal>linux</literal>: suporte a plug-ins do Linux "
 msgid "<literal>all</literal> (default, implicit): support all plug-in types"
 msgstr ""
 "<literal>all</literal>(padrão, implícito): suporta todos os tipos de plug-"
-"ins "
+"ins"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23063
@@ -40754,7 +40761,7 @@ msgid ""
 "<varname>WEBPLUGIN_FILES</varname>: No default, must be set manually. The "
 "plug-in files to install."
 msgstr ""
-"<varname>WEBPLUGIN_FILES</varname>: Não padrão, deve ser definido "
+"<varname>WEBPLUGIN_FILES</varname>: Sem padrão, deve ser definido "
 "manualmente. Os arquivos de plug-in para instalar."
 
 #. (itstool) path: listitem/para
@@ -40768,9 +40775,9 @@ msgid ""
 msgstr ""
 "<varname>WEBPLUGIN_DIR</varname>: O diretório para instalar os arquivos de "
 "plug-in, padrão <filename><replaceable>PREFIX</replaceable>/lib/"
-"browser_plugins /<replaceable>WEBPLUGIN_NAME</replaceable></filename>. "
-"Defina isso se o port instalar arquivos de plug-in fora do diretório padrão "
-"para evitar links simbólicos quebrados."
+"browser_plugins/<replaceable>WEBPLUGIN_NAME</replaceable></filename>. Defina "
+"isso se o port instalar arquivos de plug-in fora do diretório padrão para "
+"previnir links simbólicos quebrados."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23085
@@ -40797,7 +40804,7 @@ msgid ""
 "Provide support for <application>Xfce</application> related ports. See <xref "
 "linkend=\"using-xfce\"/> for details."
 msgstr ""
-"Fornecer suporte para ports <application>Xfce</application> relacionados. "
+"Fornecer suporte para ports relacionados à <application>Xfce</application>. "
 "Veja <xref linkend=\"using-xfce\"/> para detalhes."
 
 #. (itstool) path: sect1/para
@@ -40809,10 +40816,11 @@ msgid ""
 "libxfce4menu</package> and <package role=\"port\">x11-wm/xfce4-panel</"
 "package>."
 msgstr ""
-"O argumento <literal>gtk3</literal> especifica que o port requer suporte "
+"O argumento <literal>gtk3</literal> especifica que o port requer suporte a "
 "<application>GTK3</application>. Ele adiciona recursos adicionais fornecidos "
 "por alguns componentes principais, por exemplo, <package role=\"port\">x11/"
-"libxfce4menu</package> e <package role=\"port\">x11-wm/xfce4-panel</package>"
+"libxfce4menu</package> e <package role=\"port\">x11-wm/xfce4-panel</package>."
+""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23108
@@ -40848,11 +40856,11 @@ msgid ""
 "<varname>ZOPE_VERSION</varname> can be used by a port to indicate that a "
 "specific version of <application>zope</application> shall be used."
 msgstr ""
-"Usos do <filename>www/zope<replaceable>XY</replaceable></filename>. Usado "
-"principalmente para a construção de ports relacionados ao <application>zope</"
+"Usos de <filename>www/zope<replaceable>XY</replaceable></filename>. Usado "
+"principalmente para a compilação de ports relacionados ao <application>zope</"
 "application>. <varname>ZOPE_VERSION</varname> pode ser usado por um port "
 "para indicar que uma versão específica do <application>zope</application> "
-"deva ser usado."
+"deve ser usado."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:23170
@@ -50066,7 +50074,7 @@ msgstr "11 de novembro de 2010"
 #. (itstool) path: row/entry
 #: book.translate.xml:26677
 msgid "9.0-CURRENT after libgcc.a was replaced by libcompiler_rt.a."
-msgstr "9.0-CURRENT after libgcc.a was replaced by libcompiler_rt.a."
+msgstr "9.0-CURRENT depois que libgcc.a foi trocado por libcompiler_rt.a."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26682
@@ -54690,7 +54698,7 @@ msgstr "804506"
 #: book.translate.xml:28470
 msgid "8.4-STABLE after FreeBSD-SA-14:21 (rev <revnumber>273413</revnumber>)."
 msgstr ""
-"8.4-STABLE after FreeBSD-SA-14:21 (rev <revnumber>273413</revnumber>)."
+"8.4-STABLE depois de FreeBSD-SA-14:21 (rev <revnumber>273413</revnumber>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28475
