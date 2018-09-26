@@ -2,6 +2,7 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Eduardo Elias El Assais <eassais@gmail.com>, 2018. #zanata
+# Lucas Andrade <lucassandrade98@gmail.com>, 2018. #zanata
 # Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-26 03:35+0000\n"
+"PO-Revision-Date: 2018-09-26 11:20+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -39182,7 +39183,7 @@ msgid ""
 "Needs the <application>Apache</application> module for <application>PHP</"
 "application>."
 msgstr ""
-"Precisa do módulo <application>Apache</application> para <application>PHP</"
+"Precisa do módulo <application>Apache</application> para o <application>PHP</"
 "application>."
 
 #. (itstool) path: varlistentry/term
@@ -39197,7 +39198,7 @@ msgid ""
 "acronym> version of <application>PHP</application>."
 msgstr ""
 "Precisa do módulo <application>Apache</application> ou a versão "
-"<acronym>CGI</acronym> de <application>PHP</application>."
+"<acronym>CGI</acronym> do <application>PHP</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22094
@@ -39208,7 +39209,7 @@ msgstr "<literal>embed</literal>"
 #: book.translate.xml:22096
 msgid "Needs the embedded library version of <application>PHP</application>."
 msgstr ""
-"Precisa da versão da biblioteca incorporada<application>PHP</application>"
+"Precisa da versão da biblioteca embarcada do <application>PHP</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22102
@@ -39339,9 +39340,9 @@ msgid ""
 "will always install the header files that are present in the same directory "
 "as the extension."
 msgstr ""
-"Uma lista de subdiretórios dos quais instalar arquivos de cabeçalho. A "
-"estrutura sempre instalará os arquivos de cabeçalho que estão presentes no "
-"mesmo diretório da extensão."
+"Uma lista de subdiretórios dos quais instalar arquivos header. O framework "
+"sempre irá instalar os arquivos header que estão presentes no mesmo "
+"diretório que a extensão."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22185
@@ -39355,7 +39356,7 @@ msgid ""
 "<literal>00</literal> and <literal>99</literal>."
 msgstr ""
 "A prioridade na qual carregar a extensão. É um número entre <literal>00</"
-"literal> e <literal>99</literal>"
+"literal> e <literal>99</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22191
@@ -39376,8 +39377,8 @@ msgstr ""
 "outras extensões, por exemplo <package role=\"port\">www/php56-opcache</"
 "package>. Alguns podem precisar ser carregados após uma extensão com "
 "prioridade de <literal>30</literal>. Nesse caso, adicione "
-"<literal>PHP_MOD_PRIO =<replaceable>XX</replaceable></literal> no Makefile "
-"do port. Por exemplo:"
+"<literal>PHP_MOD_PRIO=<replaceable>XX</replaceable></literal> no Makefile do "
+"port. Por exemplo:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:22202
@@ -39396,7 +39397,7 @@ msgid ""
 "<varname>PKGNAMESUFFIX</varname>:"
 msgstr ""
 "Estas variáveis ​​estão disponíveis para uso em <varname>PKGNAMEPREFIX</"
-"varname> ou <varname>PKGNAMESUFFIX</varname>: "
+"varname> ou <varname>PKGNAMESUFFIX</varname>:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22215
@@ -39411,8 +39412,8 @@ msgid ""
 "PHP extensions and modules."
 msgstr ""
 "Contém <literal>php<replaceable>XY</replaceable>-</literal> onde "
-"<replaceable>XY</replaceable> é a versão do PHP atual. Use com extensões e "
-"módulos PHP. "
+"<replaceable>XY</replaceable> é a versão do PHP atual. Use com módulos e "
+"extensões  PHP. "
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22225
@@ -39427,8 +39428,8 @@ msgid ""
 "PHP applications."
 msgstr ""
 "Contém <literal>-php<replaceable>XY</replaceable></literal> onde "
-"<replaceable>XY</replaceable> é a versão do PHP atual. Use com aplicativos "
-"PHP. "
+"<replaceable>XY</replaceable> é a versão do PHP atual do flavor. Use com "
+"aplicativos PHP."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22235
@@ -39443,8 +39444,8 @@ msgid ""
 "<application>PECL</application> modules."
 msgstr ""
 "Contém <literal>php<replaceable>XY</replaceable>-pecl</literal> onde "
-"<replaceable>XY</replaceable> é a versão do PHP atual. Usar com módulos "
-"<application>PECL</application>. "
+"<replaceable>XY</replaceable> é a versão atual do PHP do flavor. Usar com "
+"módulos <application>PECL</application>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:22247
@@ -39456,7 +39457,7 @@ msgid ""
 msgstr ""
 "Com flavors, todas as extensões PHP, extensões PECL, módulos PEAR "
 "<emphasis>devem ter</emphasis> um nome de pacote diferente, então todos "
-"devem usar uma dessas três variáveis ​​em sua váriavel "
+"devem usar uma dessas três variáveis ​​em suas váriaveis "
 "<varname>PKGNAMEPREFIX</varname> ou <varname>PKGNAMESUFFIX</varname>."
 
 #. (itstool) path: sect1/title
@@ -39483,10 +39484,10 @@ msgid ""
 "time dependencies."
 msgstr ""
 "Usos de <package role=\"port\">devel/pkgconf</package>. Sem argumentos ou "
-"com o argumento <literal>build</literal>, isso implica <command>pkg-config</"
-"command> como uma dependência de tempo de construção. <literal>run</literal> "
-"implica uma dependência em tempo de execução e <literal>both</literal> "
-"implica em dependências de tempo de execução e de tempo de construção."
+"com o argumento <literal>build</literal>, implica em <command>pkg-config</"
+"command> como uma dependência de build-time. <literal>run</literal> implica "
+"em uma dependência em run-time e <literal>both</literal> implica em "
+"dependências de run-time e build-time."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22271
@@ -39506,10 +39507,10 @@ msgid ""
 "literal> argument, it implies <package role=\"port\">devel/pure-ffi</"
 "package> as a run-time dependency."
 msgstr ""
-"Usos do <package role=\"port\">lang/pure</package>. Usado largamente para "
+"Usos de <package role=\"port\">lang/pure</package>. Usado largamente para "
 "build relacionado com ports <application>pure</application>. Com o argumento "
-"<literal>ffi</literal>, isso implica <package role=\"port\">devel/pure-ffi</"
-"package> como uma dependência em tempo de execução."
+"<literal>ffi</literal>, isso implica em <package role=\"port\">devel/pure-"
+"ffi</package> como uma dependência em run-time."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22282
@@ -39529,10 +39530,10 @@ msgid ""
 "set <varname>PYQT_DIST</varname>. Use <varname>USE_PYQT</varname> to select "
 "the components the port needs. The available components are:"
 msgstr ""
-"Usos do <application>PyQt</application>. Se o port é parte do próprio PyQT, "
-"defina <varname>PYQT_DIST</varname>. Usar <varname>USE_PYQT</varname> para "
-"selecionar os componentes que o port precisa. Os componentes disponíveis são:"
-""
+"Usos de <application>PyQt</application>. Se o port é parte do próprio PyQT, "
+"defina <varname>PYQT_DIST</varname>. Use a variável <varname>USE_PYQT</"
+"varname> para selecionar os componentes que o port precisa. Os componentes "
+"disponíveis são:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22302
@@ -39589,12 +39590,12 @@ msgstr "<literal>xmlpatterns</literal>"
 msgid ""
 "These components are only available with <application>PyQT4</application>:"
 msgstr ""
-"Estes componentes só estão disponíveis com<application>PyQT4</application>: "
+"Estes componentes só estão disponíveis com <application>PyQT4</application>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22375
 msgid "<literal>assistant</literal>"
-msgstr "<literal>assistente</literal>"
+msgstr "<literal>assistant</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22379
@@ -39621,7 +39622,7 @@ msgstr "<literal>scripttools</literal>"
 msgid ""
 "These components are only available with <application>PyQT5</application>:"
 msgstr ""
-"Estes componentes só estão disponíveis com<application>PyQT5</application>: "
+"Estes componentes só estão disponíveis com <application>PyQT5</application>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22404
@@ -39660,10 +39661,9 @@ msgid ""
 "only build or run, add <literal>_build</literal> or <literal>_run</literal> "
 "to the component name. For example:"
 msgstr ""
-"A dependência padrão para cada componente é tempo de execução e de "
-"compilação, para selecionar apenas compilar ou executar, adicionar "
-"<literal>_build</literal> ou <literal>_run</literal> para o nome do "
-"componente. Por exemplo:"
+"A dependência padrão para cada componente são build e run-time, para "
+"selecionar apenas build ou run, adicione <literal>_build</literal> ou "
+"<literal>_run</literal> para o nome do componente. Por exemplo:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:22433
@@ -39698,14 +39698,13 @@ msgid ""
 " If Python is also needed during the patch phase, use <literal>patch</"
 "literal>. See <xref linkend=\"using-python\"/> for more information."
 msgstr ""
-"Usos do <application>Python</application>. Uma versão suportada ou um "
-"intervalo de versão pode ser especificado. Se o Python for necessário apenas "
-"em tempo de compilação, tempo de execução ou para os testes, ele pode ser "
-"definido como uma dependência de construção, execução ou teste com "
-"<literal>build</literal>, <literal>run</literal> ou <literal>test</literal>. "
-"Se o Python também for necessário durante a fase de patch, use "
-"<literal>patch</literal>. Veja <xref linkend=\"using-python\"/> Para maiores "
-"informações."
+"Usos de <application>Python</application>. Uma versão suportada ou um "
+"intervalo de versões podem ser especificados. Se o Python for necessário "
+"apenas no momento da build, run-time ou para os testes, ele pode ser "
+"definido como uma dependência de build, run ou teste com <literal>build</"
+"literal>, <literal>run</literal> ou <literal>test</literal>. Se o Python "
+"também for necessário durante a fase de patch, use <literal>patch</literal>. "
+"Veja <xref linkend=\"using-python\"/> para maiores informações."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22458
@@ -39718,11 +39717,11 @@ msgid ""
 "<application>Python</application>."
 msgstr ""
 "<literal>PYTHON_NO_DEPENDS=yes</literal> pode ser usado quando as variáveis "
-"​​exportadas pela estrutura são necessárias, mas uma dependência "
-"<application>Python</application> não é. Pode acontecer quando usando com "
-"<link linkend=\"uses-shebangfix\"><literal>USES=shebangfix</literal></link>, "
-"e o objetivo é apenas consertar os shebangs, mas não adicionar uma "
-"dependência <application>Python</application>."
+"​​exportadas pelo framework precisarem, mas uma dependência "
+"<application>Python</application> não. Pode acontecer quando usado com <link "
+"linkend=\"uses-shebangfix\"><literal>USES=shebangfix</literal></link>, e o "
+"objetivo é apenas consertar os shebangs, mas não adicionar uma dependência "
+"do <application>Python</application>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22467
@@ -39749,12 +39748,11 @@ msgid ""
 "variables for the port to use."
 msgstr ""
 "Usos do <package role=\"port\">mail/qmail</package>. Com o argumento "
-"<literal>build</literal>, implica <command>qmail</command> como uma "
-"dependência de tempo de construção. <literal>run</literal> implica uma "
-"dependência de tempo de execução. Usando nenhum argumento ou o argumento "
-"<literal>both</literal> implica em dependências de tempo de execução e tempo "
-"de compilação. <literal>vars</literal> só configurará variáveis ​​QMAIL para "
-"o port usar. "
+"<literal>build</literal>, implica no <command>qmail</command> como uma "
+"dependência de build-time. <literal>run</literal> implica em uma dependência "
+"de run-time. Usando nenhum argumento ou o argumento <literal>both</literal> "
+"implica em dependências de run-time e build-time. <literal>vars</literal> só "
+"ira definir variáveis ​​QMAIL para o port usar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22485
@@ -39793,11 +39791,11 @@ msgid ""
 "in the base system, add a dependency on <package role=\"port\">devel/"
 "readline</package>"
 msgstr ""
-"Usos do <application>readline</application> como uma dependência de "
-"biblioteca e define <varname>CPPFLAGS</varname> e <varname>LDFLAGS</varname> "
-"como necessário. Se o argumento <literal>port</literal> é usado ou se "
-"readline não estiver presente no sistema base, adicione uma dependência em "
-"<package role=\"port\">devel/readline</package>."
+"Usa <application>readline</application> como uma dependência de biblioteca e "
+"define <varname>CPPFLAGS</varname> e <varname>LDFLAGS</varname> como "
+"necessários. Se o argumento <literal>port</literal> é usado ou se readline "
+"não estiver presente no sistema base, adiciona uma dependência em <package "
+"role=\"port\">devel/readline</package>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22505
@@ -39810,8 +39808,8 @@ msgid ""
 "Possible arguments: <literal>build</literal>, <literal>env</literal>, "
 "<literal>lib</literal>, <literal>run</literal>"
 msgstr ""
-"Argumentos possíveis: <literal>build</literal>, <literal>env</literal>, "
-"<literal>lib</literal>, <literal> run </literal>"
+"Possíveis argumentos: <literal>build</literal>, <literal>env</literal>, "
+"<literal>lib</literal>, <literal>run</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22511
@@ -39823,13 +39821,12 @@ msgid ""
 "will add a dependency on <filename>libsmbclient.so</filename>. The variables "
 "that are exported are:"
 msgstr ""
-"Lidar com a dependência do <application>Samba</application>. <literal>env</"
-"literal> não adicionará nenhuma dependência e apenas configurará as "
-"variáveis. <literal>build</literal> e <literal> run </literal> irão "
-"adicionar dependência de tempo de execução e tempo de execução no "
-"<filename>smbd</filename>. <literal>lib</literal> irá adicionar uma "
-"dependência em <filename>libsmbclient.so</filename>. As variáveis ​​que são "
-"exportadas são:"
+"Manipular dependências no <application>Samba</application>. <literal>env</"
+"literal> não irá adicionar qualquer dependência e apenas irá configurar as "
+"variáveis. <literal>build</literal> e <literal>run</literal> irão adicionar "
+"dependências de run-time e build-time no <filename>smbd</filename>. "
+"<literal>lib</literal> irá adicionar uma dependência em "
+"<filename>libsmbclient.so</filename>. As variáveis ​​que são exportadas são:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22521
@@ -39850,8 +39847,7 @@ msgstr "<varname>SAMBAINCLUDES</varname>"
 #: book.translate.xml:22531
 msgid "The location of the <application>Samba</application> header files."
 msgstr ""
-"A localização dos cabeçalhos de arquivo com <application>Samba</application>."
-""
+"A localização dos arquivos header do <application>Samba</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22537
@@ -39864,8 +39860,8 @@ msgid ""
 "The directory where the <application>Samba</application> shared libraries "
 "are available."
 msgstr ""
-"O diretório onde as bibliotecas <application>Samba</application> "
-"compartilhadas estão disponíveis. "
+"O diretório onde as bibliotecas compartilhadas do <application>Samba</"
+"application> estão disponíveis. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22548
@@ -39878,7 +39874,7 @@ msgid ""
 "Provide support for the use of <package role=\"port\">devel/scons</package>. "
 "See <xref linkend=\"using-scons\"/> for more information."
 msgstr ""
-"Fornecer suporte para o uso de <package role=\"port\">devel/scons</package>. "
+"Fornecer suporte para o uso do <package role=\"port\">devel/scons</package>. "
 "Veja <xref linkend=\"using-scons\"/> para maiores informações."
 
 #. (itstool) path: sect1/title
