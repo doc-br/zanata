@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-27 02:36+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-09-27 11:21+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -5571,9 +5571,9 @@ msgid ""
 "varname> automatically."
 msgstr ""
 "Alguns nomes de distribuição de fornecedores que não se encaixam no "
-"<literal>${PORTNAME}-${PORTVERSION}</literal>-scheme pode ser tratado "
+"<literal>${PORTNAME}-${PORTVERSION}</literal>-scheme podem ser tratados "
 "automaticamente configurando <varname>DISTVERSIONPREFIX</varname>, "
-"<varname>DISTVERSION</varname> e <varname>DISTVERSIONSUFFIX</varname>."
+"<varname>DISTVERSION</varname> e <varname>DISTVERSIONSUFFIX</varname>. "
 "<varname>PORTVERSION</varname> será derivado de <varname>DISTVERSION</"
 "varname> automaticamente."
 
@@ -5600,11 +5600,10 @@ msgid ""
 "you created, and set <varname>DISTNAME</varname> accordingly."
 msgstr ""
 "Se o esquema de versão upstream puder ser derivado em um esquema de versão "
-"compatível com ports, defina uma variável para a versão upstream, "
-"<emphasis>não</emphasis> usar <varname>DISTVERSION</varname> como o nome da "
-"variável. Setar <varname>PORTVERSION</varname> para a versão computada com "
-"base na variável <varname>DISTNAME</varname> criada e definida adequadamente."
-""
+"compatível com o ports, defina uma variável para a versão upstream, "
+"<emphasis>não</emphasis> use <varname>DISTVERSION</varname> como o nome da "
+"variável. Defina <varname>PORTVERSION</varname> para a versão computada com "
+"base na variável criada, e defina <varname>DISTNAME</varname> adequadamente."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3088
@@ -5614,10 +5613,10 @@ msgid ""
 "and set <varname>DISTNAME</varname> with <varname>PORTNAME</varname> with "
 "the verbatim upstream version."
 msgstr ""
-"Se o esquema de versão upstream não puder ser facilmente coagido para um "
-"valor compatível, sete <varname>PORTVERSION</varname>para um valor sensato, "
-"e defina <varname>DISTNAME</varname>com <varname>PORTNAME</varname> com a "
-"versão literal do upstream."
+"Se o esquema de versão upstream não puder ser facilmente configurado para um "
+"valor compatível com o ports, defina <varname>PORTVERSION</varname> para um "
+"valor sensato, e defina <varname>DISTNAME</varname> com <varname>PORTNAME</"
+"varname> com a versão literal do upstream."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3095
@@ -5640,12 +5639,12 @@ msgstr ""
 "<application>BIND9</application> usa um esquema de versão que não é "
 "compatível com as versões de ports (tem <literal>-</literal> em suas "
 "versões) e não pode ser derivado usando <varname>DISTVERSION</varname> "
-"porque após a versão 9.9.9, ele lançará um <quote>patchlevels</quote> na "
-"forma de<literal>9.9.9-P1</literal>. DISTVERSION iria traduzir isso para "
-"<literal>9.9.9.p1</literal>, que, no esquema de versionamento de ports "
-"significa 9.9.9 pré-release 1, que é antes de 9.9.9 e não depois. Assim "
-"<varname>PORTVERSION</varname> é derivado manualmente de uma variavel "
-"<varname>ISCVERSION</varname> para saída <literal>9.9.9p1</literal>."
+"porque após a versão 9.9.9, será lançado <quote>patchlevels</quote> na forma "
+"<literal>9.9.9-P1</literal>. DISTVERSION iria traduzir isso para <literal>9."
+"9.9.p1</literal>, que no esquema de versionamento de ports significa 9.9.9 "
+"pré-release 1, que vem antes de 9.9.9 e não depois. Assim "
+"<varname>PORTVERSION</varname> é derivado manualmente de uma variável "
+"<varname>ISCVERSION</varname> para retornar <literal>9.9.9p1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3111
@@ -5655,7 +5654,7 @@ msgid ""
 "<citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>:"
 msgstr ""
-"A ordem na qual a estrutura de ports, e o pkg, ordenará as versões, é "
+"A ordem na qual o framework do ports e o pkg ordenará as versões, é "
 "verificada usando o argumento <literal>-t</literal> do "
 "<citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>:"
@@ -5683,7 +5682,7 @@ msgid ""
 msgstr ""
 "O sinal <literal>&gt;</literal> significa que o primeiro argumento passado "
 "em <literal>-t</literal> é maior que o segundo argumento. <literal>9.9.9</"
-"literal> está depois <literal>9.9.9.p1</literal>."
+"literal> é maior que <literal>9.9.9.p1</literal>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3130
@@ -5694,7 +5693,7 @@ msgid ""
 msgstr ""
 "O sinal <literal>&lt;</literal> significa que o primeiro argumento passado "
 "em <literal>-t</literal> é menor que o segundo argumento. <literal>9.9.9</"
-"literal> está é antes <literal>9.9.9p1</literal>."
+"literal> é menor que <literal>9.9.9p1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3137
@@ -5753,7 +5752,7 @@ msgid ""
 "Define upstream version in <varname>ISCVERSION</varname>, with a comment "
 "saying <emphasis>why</emphasis> it is needed."
 msgstr ""
-"Definir versão upstream em <varname>ISCVERSION</varname>, com um comentário "
+"Defina a versão upstream em <varname>ISCVERSION</varname>, com um comentário "
 "dizendo <emphasis>porque</emphasis> é necessário."
 
 #. (itstool) path: callout/para
@@ -5762,8 +5761,8 @@ msgid ""
 "Use <varname>ISCVERSION</varname> to get a ports-compatible "
 "<varname>PORTVERSION</varname>."
 msgstr ""
-"Use <varname>ISCVERSION</varname> para obter um compatíbilidade com o "
-"<varname>PORTVERSION</varname> do port."
+"Use <varname>ISCVERSION</varname> para obter um <varname>PORTVERSION</"
+"varname> compatível com o ports."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3169
@@ -5772,7 +5771,7 @@ msgid ""
 "acronym> for fetching the distribution file."
 msgstr ""
 "Use <varname>ISCVERSION</varname> diretamente para obter a <acronym>URL</"
-"acronym> correta para buscar o arquivo de distribuição."
+"acronym> correta para baixar o arquivo de distribuição."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3175
@@ -5888,7 +5887,7 @@ msgid ""
 msgstr ""
 "No <package role=\"port\">comms/librs232</package>, o arquivo de "
 "distribuição não é versionado, portanto, <link linkend=\"makefile-"
-"dist_subdir\"><varname>DIST_SUBDIR</varname></link> é preciso:"
+"dist_subdir\"><varname>DIST_SUBDIR</varname></link> é necessário:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3232
@@ -5921,13 +5920,13 @@ msgid ""
 "<varname>EXTRACT_SUFX</varname>)."
 msgstr ""
 "<varname>PKGNAMEPREFIX</varname> e <varname>PKGNAMESUFFIX</varname> não "
-"afeta <varname>DISTNAME</varname>. Observe também que se <varname>WRKSRC</"
-"varname> é igual a <filename>${WRKDIR}/${DISTNAME}</filename> enquanto o "
-"arquivo fonte original é nomeado algo diferente de <literal>${PORTNAME}-"
+"afetam o <varname>DISTNAME</varname>. Observe também que se <varname>WRKSRC</"
+"varname> for igual a <filename>${WRKDIR}/${DISTNAME}</filename> enquanto o "
+"arquivo fonte original é nomeado para algo diferente de <literal>${PORTNAME}-"
 "${PORTVERSION}${EXTRACT_SUFX}</literal>, deixe <varname>DISTNAME</varname> "
-"sozinho— definindo apenas <varname>DISTFILES</varname> é mais fácil que "
-"ambos <varname>DISTNAME</varname> e <varname>WRKSRC</varname> (e "
-"possivelmente <varname>EXTRACT_SUFX</varname>)."
+"sozinho— definir apenas <varname>DISTFILES</varname> é mais fácil que ambos "
+"<varname>DISTNAME</varname> e <varname>WRKSRC</varname> (e possivelmente "
+"<varname>EXTRACT_SUFX</varname>)."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -5955,8 +5954,8 @@ msgid ""
 "find it already on the system."
 msgstr ""
 "A macro <command>make</command> irá tentar usar esta especificação para "
-"pegar o arquivo de distribuição com <varname>FETCH</varname> se eles não "
-"puderem encontrá-lo já no sistema."
+"baixar o arquivo de distribuição com <varname>FETCH</varname> se não for "
+"possível encontrá-lo já no sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3268
@@ -5966,8 +5965,7 @@ msgid ""
 "problems."
 msgstr ""
 "Recomenda-se que vários sites sejam incluídos nesta lista, de preferência em "
-"diferentes continentes. Isso irá proteger contra problemas de rede de área "
-"ampla."
+"diferentes continentes. Isso irá proteger contra problemas de rede amplos."
 
 #. (itstool) path: important/para
 #: book.translate.xml:3273
@@ -5984,15 +5982,15 @@ msgstr ""
 "apontar para web archives ou para os sites de cache dos arquivos de "
 "distribuição do FreeBSD. A única exceção a essa regra são ports que não "
 "possuem arquivos de distribuição. Por exemplo, meta-ports não possuem "
-"arquivos de distribuição, <varname>MASTER_SITES</varname> não precisa ser "
-"definido."
+"arquivos de distribuição, assim o <varname>MASTER_SITES</varname> não "
+"precisa ser definido."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3284
 msgid ""
 "Using <varname>MASTER_SITE_<replaceable>*</replaceable></varname> Variables"
 msgstr ""
-"Usando variáveis <varname>MASTER_SITE_<replaceable>*</replaceable></"
+"Usando Variáveis <varname>MASTER_SITE_<replaceable>*</replaceable></"
 "varname>​​"
 
 #. (itstool) path: sect3/para
@@ -6041,7 +6039,7 @@ msgid ""
 msgstr ""
 "Estes valores e variáveis ​​são definidos em <link xlink:href=\"https://"
 "svnweb.freebsd.org/ports/head/Mk/bsd.sites.mk?view=markup\"><filename>Mk/bsd."
-"sites.mk</filename></link>. Novas entradas são adicionadas com freqüência, "
+"sites.mk</filename></link>. Novas entradas são adicionadas com frequência, "
 "portanto, verifique a versão mais recente deste arquivo antes de enviar um "
 "port."
 
@@ -6052,9 +6050,9 @@ msgid ""
 "variable, the shorthand <literal><replaceable>FOO</replaceable></literal> "
 "can be used. For example, use:"
 msgstr ""
-"Para qualquer <varname>MASTER_SITE_<replaceable>FOO</replaceable></varname> "
-"variável, a taquigrafia <literal><replaceable>FOO</replaceable></literal> "
-"pode ser usado. Por exemplo, use: "
+"Para qualquer variável <varname>MASTER_SITE_<replaceable>FOO</replaceable></"
+"varname> , a versão abreviada <literal><replaceable>FOO</replaceable></"
+"literal> pode ser utilizada. Por exemplo, use: "
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:3315
@@ -6183,7 +6181,7 @@ msgstr "<varname>SF</varname>"
 #. (itstool) path: sect3/title
 #: book.translate.xml:3384
 msgid "Magic MASTER_SITES Macros"
-msgstr "Magic MASTER_SITES Macros"
+msgstr " Macros Mágicas de MASTER_SITES"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3386
@@ -6194,11 +6192,11 @@ msgid ""
 "<literal>Stardict</literal>, of version <literal>1.2.3</literal>, and hosted "
 "on SourceForge, adding this line:"
 msgstr ""
-"Várias macros <quote>magic</quote> existem para sites populares com uma "
+"Várias macros <quote>mágicas</quote> existem para sites populares com uma "
 "estrutura de diretórios previsível. Para isso, basta usar a abreviação e o "
 "sistema escolherá um subdiretório automaticamente. Para um port nomeado "
-"<literal>Stardict</literal>, da versão<literal>1.2.3</literal> e hospedado "
-"no SourceForge, adicionando esta linha:"
+"<literal>Stardict</literal>, de versão <literal>1.2.3</literal> e hospedado "
+"no SourceForge, adicione esta linha:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3394
@@ -6212,9 +6210,8 @@ msgid ""
 "infers a subdirectory named <literal>/project/stardict/stardict/1.2.3</"
 "literal>. If the inferred directory is incorrect, it can be overridden:"
 msgstr ""
-"infere um subdiretório chamado <literal>/project/stardict/stardict/1.2.3</"
-"literal>. Se o diretório inferido estiver incorreto, ele poderá ser "
-"substituído:"
+"Implica em um subdiretório chamado <literal>/project/stardict/stardict/1.2."
+"3</literal>. Se o diretório estiver incorreto, ele poderá ser substituído:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3401
@@ -6240,12 +6237,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:3409
 msgid "Magic <varname>MASTER_SITES</varname> Macros"
-msgstr "Macros Magicos <varname>MASTER_SITES</varname>"
+msgstr "Macros Mágicas de <varname>MASTER_SITES</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3416
 msgid "Assumed subdirectory"
-msgstr "Subdiretório assumido"
+msgstr "Subdiretório deduzido"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3422
@@ -6584,10 +6581,10 @@ msgid ""
 "examples in <xref linkend=\"makefile-master_sites-github-multiple\"/> for "
 "more information."
 msgstr ""
-"Quando o software precisa de um arquivo de distribuição adicional para ser "
-"extraído <varname>${WRKSRC}</varname>, esta variável pode ser usada. Veja os "
-"exemplos em <xref linkend=\"makefile-master_sites-github-multiple\"/> para "
-"maiores informações."
+"Quando o software precisa que um arquivo de distribuição adicional seja "
+"extraído em <varname>${WRKSRC}</varname>, esta variável pode ser usada. Veja "
+"os exemplos em <xref linkend=\"makefile-master_sites-github-multiple\"/> "
+"para maiores informações."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3614
@@ -6621,9 +6618,9 @@ msgstr ""
 "<replaceable>conta</replaceable><literal>:</literal><replaceable>projeto</"
 "replaceable><literal>:</literal><replaceable>tagname</replaceable><literal>:"
 "</literal><replaceable>grupo</replaceable><literal>/</"
-"literal><replaceable>subdiretório</replaceable>. O <replaceable>subdiretório "
-"</replaceable> <literal>/</literal> é opcional. É útil quando há mais de um "
-"projeto do GitHub para buscar."
+"literal><replaceable>subdiretório</replaceable>. O <literal>/</"
+"literal><replaceable>subdiretório </replaceable> é opcional. Isso é útil "
+"quando mais de um projeto no GitHub precisa ser utilizado."
 
 #. (itstool) path: important/para
 #: book.translate.xml:3636
@@ -6649,9 +6646,9 @@ msgid ""
 ""
 msgstr ""
 "Ao tentar fazer um port para a versão <literal>1.2.7</literal> do "
-"<application>pkg</application> do usuário do FreeBSD no github, em <link "
-"xlink:href=\"https://github.com/freebsd/pkg\"/>, O <filename>Makefile</"
-"filename> acabaria ficando assim (levemente despojado para o exemplo):"
+"<application>pkg</application> do usuário FreeBSD no github, em <link xlink:"
+"href=\"https://github.com/freebsd/pkg\"/>, O <filename>Makefile</filename> "
+"acabaria ficando assim (levemente simplificado para o exemplo):"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3649
@@ -6674,7 +6671,7 @@ msgid ""
 "<literal>GH GHC</literal> and <varname>WRKSRC</varname> to "
 "<literal>${WRKDIR}/pkg-1.2.7</literal>."
 msgstr ""
-"Ele terá automaticamente <varname>MASTER_SITES</varname> definido como "
+"<varname>MASTER_SITES</varname> será automaticamente definido como "
 "<literal>GH GHC</literal> e <varname>WRKSRC</varname> para "
 "<literal>${WRKDIR}/pkg-1.2.7</literal>."
 
@@ -6691,10 +6688,10 @@ msgid ""
 "xlink:href=\"https://github.com/freebsd/pkg\"/>, the <filename>Makefile</"
 "filename> ends up looking like this (slightly stripped for the example):"
 msgstr ""
-"Ao tentar fazer um port para a versão de ponta do <application>pkg</"
-"application> do usuário do FreeBSD no github, em <link xlink:href=\"https://"
-"github.com/freebsd/pkg\"/>, o <filename>Makefile</filename> acaba ficando "
-"assim (levemente despojado para o exemplo):"
+"Ao tentar fazer um port para uma versão de desenvolvimento do "
+"<application>pkg</application> do usuário FreeBSD no github, em <link xlink:"
+"href=\"https://github.com/freebsd/pkg\"/>, o <filename>Makefile</filename> "
+"acaba ficando assim (levemente simplificado para o exemplo):"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3671
@@ -6723,7 +6720,7 @@ msgid ""
 "<literal>GH GHC</literal> and <varname>WRKSRC</varname> to "
 "<literal>${WRKDIR}/pkg-6dbb17b</literal>."
 msgstr ""
-"Ele terá <varname>MASTER_SITES</varname> automaticamente definido para "
+"<varname>MASTER_SITES</varname> será automaticamente definido para "
 "<literal>GH GHC</literal> e <varname>WRKSRC</varname> para "
 "<literal>${WRKDIR}/pkg-6dbb17b</literal>."
 
@@ -6734,8 +6731,8 @@ msgid ""
 "<varname>GH_TAGNAME</varname>, not the date the <filename>Makefile</"
 "filename> is edited, or the date the commit is made."
 msgstr ""
-"<literal>20140411</literal>é a data do commit referenciada "
-"em<varname>GH_TAGNAME</varname>, não a data em que é editado o "
+"<literal>20140411</literal> é a data do commit referenciada em "
+"<varname>GH_TAGNAME</varname>, não a data em que é editado o "
 "<filename>Makefile</filename>, ou a data em que o commit é feito. "
 
 #. (itstool) path: example/title
@@ -6758,7 +6755,7 @@ msgid ""
 msgstr ""
 "De tempos em tempos, <varname>GH_TAGNAME</varname> é uma ligeira variação de "
 "<varname>DISTVERSION</varname>. Por exemplo, se a versão for <literal>1.0.2</"
-"literal>, a tag é<literal>v1.0.2</literal>. Nesses casos, é possível usar "
+"literal>, e a tag <literal>v1.0.2</literal>. Nesses casos, é possível usar "
 "<varname>DISTVERSIONPREFIX</varname> ou <varname>DISTVERSIONSUFFIX</varname>:"
 ""
 
@@ -6784,16 +6781,16 @@ msgid ""
 "literal>, while <varname>WRKSRC</varname> will be kept to <varname>${WRKDIR}/"
 "foo-1.0.2</varname>."
 msgstr ""
-"Ele irá definir automaticamente o <varname>GH_TAGNAME</varname> para "
-"<literal>v1.0.2</literal>, enquanto <varname>WRKSRC</varname> será mantido "
-"para<varname>${WRKDIR} /foo-1.0.2</varname>."
+"<varname>GH_TAGNAME</varname> será automaticamente definido para <literal>v1."
+"0.2</literal>, enquanto <varname>WRKSRC</varname> será mantido como "
+"<varname>${WRKDIR} /foo-1.0.2</varname>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3717
 msgid ""
 "Using <varname>USE_GITHUB</varname> When Upstream Does Not Use Versions"
 msgstr ""
-"Usando <varname>USE_GITHUB</varname> Quando o Upstream não usa versões"
+"Usando <varname>USE_GITHUB</varname> Quando o Upstream Não Usa Versões"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3720
@@ -6807,10 +6804,10 @@ msgid ""
 "replaceable><replaceable>DD</replaceable></literal> represents the date the "
 "commit referenced in <varname>GH_TAGNAME</varname>."
 msgstr ""
-"Se nunca houve uma versão upstream, não invente um como <literal>0.1</"
+"Se nunca houve uma versão upstream, não invente uma como <literal>0.1</"
 "literal> ou <literal>1.0</literal>. Crie o port com um <varname>DISTVERSION</"
 "varname> de <literal>g<replaceable>YYYY</replaceable><replaceable>MM</"
-"replaceable><replaceable>DD</replaceable></literal>, Onde <literal>g</"
+"replaceable><replaceable>DD</replaceable></literal>, onde <literal>g</"
 "literal> é para <application>Git</application> e <literal><replaceable>YYYY</"
 "replaceable><replaceable>MM</replaceable><replaceable>DD</replaceable></"
 "literal> representa a data em que o commit é referenciado em "
@@ -37725,7 +37722,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:21103
 msgid "These variables are exported for the ports to use:"
-msgstr "Essas variáveis ​​são exportadas para os ports a serem usadas:"
+msgstr "Essas variáveis ​​são exportadas para os ports para serem usadas:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21107
@@ -37968,12 +37965,12 @@ msgstr "Preenche o boilerplate para os ports do módulo do kernel, atualmente:"
 #. (itstool) path: listitem/para
 #: book.translate.xml:21236
 msgid "Add <literal>kld</literal> to <varname>CATEGORIES</varname>."
-msgstr "Adicionar <literal>kld</literal> para <varname>CATEGORIES</varname>"
+msgstr "Adicione <literal>kld</literal> em <varname>CATEGORIES</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21241
 msgid "Set <varname>SSP_UNSAFE</varname>."
-msgstr "Setar <varname>SSP_UNSAFE</varname>"
+msgstr "Define <varname>SSP_UNSAFE</varname>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21245
@@ -38124,9 +38121,9 @@ msgid ""
 "application> 7 packages. The available packages are:"
 msgstr ""
 "Framework de compatibilidade de ports com <application>Linux</application>. "
-"Especificamos <literal>c6</literal> para depender de pacotes do "
-"<application>CentOS</application>6. Especificamos <literal>c7</literal> para "
-"depender de pacotes do <application>CentOS</application>7. Os pacotes "
+"Especifique <literal>c6</literal> para depender de pacotes do "
+"<application>CentOS</application> 6. Especifique <literal>c7</literal> para "
+"depender de pacotes do <application>CentOS</application> 7. Os pacotes "
 "disponíveis são: "
 
 #. (itstool) path: listitem/para
@@ -38547,8 +38544,8 @@ msgid ""
 "Add a build-time dependency on <command>makeinfo</command> if it is not "
 "present in the base system."
 msgstr ""
-"Adicionar uma dependência de tempo de construção em <command>makeinfo</"
-"command> se não estiver presente no sistema básico."
+"Adiciona uma dependência build-time em <command>makeinfo</command> se o "
+"mesmo não estiver presente no sistema básico."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21686
@@ -38578,7 +38575,7 @@ msgid ""
 msgstr ""
 "Fornece uma maneira fácil para depender de componentes do <application>MATE</"
 "application>. Os componentes devem ser listados em <varname>USE_MATE</"
-"varname>. Os componentes disponíveis são: "
+"varname>. Os componentes disponíveis são:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21706
@@ -38750,16 +38747,15 @@ msgstr ""
 "<literal>56p</literal>, <literal>56w</literal>, <literal>57</literal>, "
 "<literal>57p</literal>, <literal>80</literal>, <literal>100m</literal>, "
 "<literal>101m</literal> e <literal>102m</literal>. Os sufixos <literal>m</"
-"literal> e <literal>p</literal> são para o <application>MariaDB</"
-"application> e <application>Percona</application> variantes do "
+"literal> e <literal>p</literal> são para o banco <application>MariaDB</"
+"application> e <application>Percona</application>, variantes do "
 "<application>MySQL</application>. <literal>server</literal> e "
-"<literal>embbeded</literal> adicionam uma dependência de compilação e tempo "
-"de execução do servidor <application>MySQL</application>. Ao usar "
-"<literal>server</literal> ou <literal>embbeded</literal>,  "
-"adicionar<literal>client</literal> para também adicionar uma dependência em "
-"<filename>libmysqlclient.so</filename>. Um port pode definir "
-"<varname>IGNORE_WITH_MYSQL</varname> se algumas versões não forem suportadas."
-" "
+"<literal>embbeded</literal> adicionam uma dependência de build e run-time do "
+"servidor <application>MySQL</application>. Ao usar <literal>server</literal> "
+"ou <literal>embbeded</literal>,  adicione <literal>client</literal> para "
+"também adicionar uma dependência no arquivo <filename>libmysqlclient.so</"
+"filename>. Um port pode definir <varname>IGNORE_WITH_MYSQL</varname> se "
+"algumas versões não forem suportadas. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21843
@@ -38886,8 +38882,8 @@ msgid ""
 "Add objective C dependencies (compiler, runtime library) if the base system "
 "does not support it."
 msgstr ""
-"Adicionar dependências de objetive C (compilador, biblioteca de tempo de "
-"execução) se o sistema básico não suportar isto."
+"Adicionar dependências de objetive C (compilador, biblioteca de runtime) se "
+"o sistema básico não suportar isto."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21912
@@ -38896,7 +38892,7 @@ msgid ""
 "(default), <literal>si</literal>, <literal>alut</literal>"
 msgstr ""
 "Argumentos possíveis: <literal>al</literal>, <literal>soft</"
-"literal>(padrão),<literal>yes</literal>, <literal>alut</literal>"
+"literal>(padrão), <literal>yes</literal>, <literal>alut</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21916
@@ -38929,13 +38925,12 @@ msgid ""
 "<filename>Makefile.am</filename> will be added to "
 "<varname>PATHFIX_MAKEFILEIN</varname> automatically."
 msgstr ""
-"Olhar para o <filename>Makefile.in</filename> e <filename>configure</"
-"filename> dentro <varname>PATHFIX_WRKSRC</varname> (padrão é "
-"<varname>WRKSRC</varname>) e consertar caminhos comuns para garantir que "
-"eles respeitem a hierarquia do FreeBSD. Por exemplo, ele corrige o diretório "
-"de instalação dos arquivos <command>pkgconfig</command>'s<filename>.pc</"
-"filename> para <filename>${PREFIX}/libdata/pkgconfig</filename>. Se o port "
-"usa \n"
+"Procure por <filename>Makefile.in</filename> e <filename>configure</"
+"filename> em <varname>PATHFIX_WRKSRC</varname> (padrão é <varname>WRKSRC</"
+"varname>) e consertar caminhos comuns para garantir que eles respeitem a "
+"hierarquia do FreeBSD. Por exemplo, ele corrige o diretório de instalação "
+"dos arquivos <command>pkgconfig</command>'s<filename>.pc</filename> para "
+"<filename>${PREFIX}/libdata/pkgconfig</filename>. Se o port usa \n"
 "<literal>USES=autoreconf</literal>, <filename>Makefile.am</filename> será "
 "adicionado a <varname>PATHFIX_MAKEFILEIN</varname> automaticamente. "
 
