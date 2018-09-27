@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-26 11:20+0000\n"
+"PO-Revision-Date: 2018-09-27 02:36+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -13355,7 +13355,7 @@ msgstr ".if ${VARIABLE:MVALUE}"
 #. (itstool) path: sect2/title
 #: book.translate.xml:7429
 msgid "Options Helpers"
-msgstr "Options Helpers"
+msgstr "Assistentes de Opções"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7431
@@ -38132,7 +38132,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:21343
 msgid "<literal>allegro</literal>"
-msgstr "<literal>Allegro</literal>"
+msgstr "<literal>allegro</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21347
@@ -38743,7 +38743,7 @@ msgid ""
 "also add a dependency on <filename>libmysqlclient.so</filename>. A port can "
 "set <varname>IGNORE_WITH_MYSQL</varname> if some versions are not supported."
 msgstr ""
-"Fornecer suporte para <application>MySQL</application>. Se nenhuma versão "
+"Fornecer suporte para o <application>MySQL</application>. Se nenhuma versão "
 "for dada, tente encontrar a versão atual instalada. Volte para a versão "
 "padrão, MySQL-5.6. As possíveis versões são <literal>55</literal>, "
 "<literal>55m</literal>, <literal>55p</literal>, <literal>56</literal>, "
@@ -38767,8 +38767,8 @@ msgid ""
 "The framework sets <varname>MYSQL_VER</varname> to the detected MySQL "
 "version."
 msgstr ""
-"O framework define <varname>MYSQL_VER</varname> para a versão detectada do "
-"MySQL. "
+"O framework define a variável <varname>MYSQL_VER</varname> para a versão "
+"detectada do MySQL. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21848
@@ -38800,12 +38800,12 @@ msgid ""
 "<replaceable>version</replaceable>:<replaceable>origin</replaceable></"
 "literal>."
 msgstr ""
-"Especificamos <literal>nuget</literal> quando o port usa pacotes nuget."
+"Especifique <literal>nuget</literal> quando o port usa pacotes nuget."
 "<varname>NUGET_DEPENDS</varname> precisa ser definido com os nomes e versões "
-"dos pacotes nuget no formato <literal><replaceable>nome</replaceable>="
-"<replaceable>versão</replaceable></literal>. Uma origem de pacote opcional "
-"pode ser adicionada usando <literal><replaceable>nome</replaceable>="
-"<replaceable>versão</replaceable>:<replaceable>origem</replaceable></"
+"dos pacotes nuget no formato <literal><replaceable>name</replaceable>="
+"<replaceable>version</replaceable></literal>. Uma pacote de origem opcional "
+"pode ser adicionado usando <literal><replaceable>name</replaceable>="
+"<replaceable>version</replaceable>:<replaceable>origin</replaceable></"
 "literal>."
 
 #. (itstool) path: para/buildtarget
@@ -38820,9 +38820,9 @@ msgid ""
 "<varname>NUGET_DEPENDS</varname> based on the provided <filename>packages."
 "config</filename>."
 msgstr ""
-"O alvo auxiliar, <_:buildtarget-1/>, exibirá o conteúdo do "
-"<varname>NUGET_DEPENDS</varname> com base no <filename>packages.config</"
-"filename> fornecido."
+"O target auxiliar, <_:buildtarget-1/>, exibirá o conteúdo da variável "
+"<varname>NUGET_DEPENDS</varname> com base no arquivo <filename>packages."
+"config</filename> fornecido."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21870
@@ -38947,10 +38947,11 @@ msgid ""
 "<varname>PATHFIX_WRKSRC</varname>. If needed, that default filename can be "
 "changed with <varname>PATHFIX_CMAKELISTSTXT</varname>."
 msgstr ""
-"Se o port <link linkend=\"uses-cmake\"><literal>USES=cmake</literal></link> "
-"ele vai procurar <filename>CMakeLists.txt</filename> dentro "
-"<varname>PATHFIX_WRKSRC</varname>. Se necessário, esse nome de arquivo "
-"padrão pode ser alterado com <varname>PATHFIX_CMAKELISTSTXT</varname>."
+"Se o port tem definido <link linkend=\"uses-cmake\"><literal>USES=cmake</"
+"literal></link> ele vai procurar pelo arquivo <filename>CMakeLists.txt</"
+"filename> dentro da variável <varname>PATHFIX_WRKSRC</varname>. Se "
+"necessário, esse nome de arquivo padrão pode ser alterado com "
+"<varname>PATHFIX_CMAKELISTSTXT</varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21949
@@ -38971,10 +38972,10 @@ msgid ""
 "arguments only sets up the <application>PEAR</application> environment "
 "variables. See <xref linkend=\"php-pear\"/> for more information."
 msgstr ""
-"Adiciona uma dependência em <package role=\"port\">devel/pear</package>. Ele "
+"Adiciona uma dependência do <package role=\"port\">devel/pear</package>. Ele "
 "irá configurar o comportamento padrão do software usando o repositório de "
-"extensão e aplicativo <application>PHP</application>. Usando os argumentos "
-"<literal>env</literal> apenas configura as váriaveis de ambiente "
+"extensão e aplicativos do <application>PHP</application>. Usando os "
+"argumentos <literal>env</literal> apenas configura as váriaveis de ambiente "
 "<application>PEAR</application>. Veja <xref linkend=\"php-pear\"/> para "
 "maiores informações."
 
@@ -38989,8 +38990,8 @@ msgid ""
 "Depends on <application>Perl</application>. The configuration is done using "
 "<varname>USE_PERL5</varname>."
 msgstr ""
-"Depende do <application>Perl</application>. A configuração é feita usando "
-"<varname>USE_PERL5</varname>."
+"Depende do <application>Perl</application>. A configuração é feita usando a "
+"variável <varname>USE_PERL5</varname>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21969
@@ -39000,9 +39001,9 @@ msgid ""
 "<literal>patch</literal>, <literal>build</literal>, <literal>run</literal>, "
 "or <literal>test</literal>."
 msgstr ""
-"<varname>USE_PERL5</varname> pode conter as fases em que usar "
+"<varname>USE_PERL5</varname> pode conter as fases onde usar "
 "<application>Perl</application>, pode ser<literal>extract</literal>, "
-"<literal>patch</literal>, <literal>build</literal>, <literal> run </literal> "
+"<literal>patch</literal>, <literal>build</literal>, <literal>run</literal> "
 "ou <literal>test</literal>."
 
 #. (itstool) path: sect1/para
@@ -39028,10 +39029,10 @@ msgid ""
 "<literal>modbuildtiny</literal>, <literal>build</literal> and <literal>run</"
 "literal> are implied."
 msgstr ""
-"<varname>USE_PERL5</varname>o padrão é<literal>build run</literal>. Ao "
-"usar<literal>configure</literal>, <literal>modbuild</literal> ou "
-"<literal>modbuildtiny</literal>, <literal>build</literal> e <literal> run </"
-"literal>estão implícitas."
+"O padrão de <varname>USE_PERL5</varname> é <literal>build run</literal>. Ao "
+"usar <literal>configure</literal>, <literal>modbuild</literal> ou "
+"<literal>modbuildtiny</literal>, uso de <literal>build</literal> e "
+"<literal>run</literal> são implícitos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21989
@@ -39061,8 +39062,8 @@ msgid ""
 "and maximum versions can be specified; for example, 9.0-, 8.4+."
 msgstr ""
 "Fornecer suporte ao PostgreSQL. O mantenedor pode definir a versão "
-"necessária. Versões mínima e máxima podem ser especificadas, por exemplo, 9."
-"0-, 8.4+."
+"requisitada. Versões mínimas e máximas podem ser especificadas, por exemplo, "
+"9.0-, 8.4+."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22005
@@ -39073,9 +39074,9 @@ msgid ""
 "command>."
 msgstr ""
 "Adicionar dependência de componente do PostgreSQL, usando "
-"<literal>WANT_PGSQL=componente[:alvo]</literal>. Por "
-"exemplo,<literal>WANT_PGSQL=servidor:configure pltcl plperl</literal>. Para "
-"a lista completa use <command>make -V _USE_PGSQL_DEP</command>."
+"<literal>WANT_PGSQL=component[:target]</literal>. Por "
+"exemplo,<literal>WANT_PGSQL=server:configure pltcl plperl</literal>. Para a "
+"lista completa use <command>make -V _USE_PGSQL_DEP</command>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22013
@@ -39103,9 +39104,9 @@ msgid ""
 "Provide support for <application>PHP</application>. Add a runtime dependency "
 "on the default PHP version, <package role=\"port\">lang/php56</package>."
 msgstr ""
-"Fornecer suporte para <application>PHP</application>. Adicione uma "
-"dependência de tempo de execução na versão padrão do PHP, <package role="
-"\"port\">lang/php56</package>."
+"Fornecer suporte para o <application>PHP</application>. Adicione uma "
+"dependência em run-time na versão padrão do PHP, <package role=\"port\">lang/"
+"php56</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22028
@@ -39117,7 +39118,7 @@ msgstr "<literal>phpize</literal>"
 msgid ""
 "Use to build a <application>PHP</application> extension. Enables flavors."
 msgstr ""
-"Use para compilar uma extensão <application>PHP</application>. Habilita "
+"Use para compilar uma extensão do <application>PHP</application>. Habilita "
 "flavors."
 
 #. (itstool) path: varlistentry/term
@@ -39131,7 +39132,7 @@ msgid ""
 "Use to build, install and register a <application>PHP</application> "
 "extension. Enables flavors."
 msgstr ""
-"Use para compilar, instalar e registrar uma extensão <application>PHP</"
+"Use para compilar, instalar e registrar uma extensão do <application>PHP</"
 "application>. Habilita flavors."
 
 #. (itstool) path: varlistentry/term
@@ -39143,7 +39144,7 @@ msgstr "<literal>zend</literal>"
 #: book.translate.xml:22047
 msgid "Use to build, install and register a Zend extension. Enables flavors."
 msgstr ""
-"Use para criar, instalar e registrar uma extensão Zend. Ativa os flavors."
+"Use para criar, instalar e registrar uma extensão do Zend. Habilita flavors."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22055
@@ -39160,7 +39161,7 @@ msgstr "<literal>cli</literal>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:22063
 msgid "Needs the CLI version of <application>PHP</application>."
-msgstr "Precisa da versão CLI do<application>PHP</application>"
+msgstr "Precisa da versão CLI do <application>PHP</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22069
@@ -39170,7 +39171,7 @@ msgstr "<literal>cgi</literal>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:22071
 msgid "Needs the CGI version of <application>PHP</application>."
-msgstr "Precisa da versão CGI do<application>PHP</application>"
+msgstr "Precisa da versão CGI do <application>PHP</application>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22077
@@ -39222,8 +39223,8 @@ msgid ""
 "Provide defaults for fetching <application>PHP</application> extensions from "
 "the PECL repository. Enables flavors."
 msgstr ""
-"Fornecer padrões para buscar extensões <application>PHP</application> do "
-"repositório PECL. Permite flavors."
+"Fornecer padrões para buscar extensões do <application>PHP</application> do "
+"repositório PECL. Habilita flavors."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22111
@@ -39238,9 +39239,9 @@ msgid ""
 "PHP versions, except the ones present in <link linkend=\"uses-php-"
 "ignore\"><varname>IGNORE_WITH_PHP</varname></link>."
 msgstr ""
-"Ativar geração de <link linkend=\"flavors-auto-php\"><application>PHP</"
+"Habilitar geração de <link linkend=\"flavors-auto-php\"><application>PHP</"
 "application>flavors</link> automática. Flavors serão gerados para todas as "
-"versões do PHP, exceto as presentes no <link linkend=\"uses-php-"
+"versões do PHP, exceto as presentes na variável <link linkend=\"uses-php-"
 "ignore\"><varname>IGNORE_WITH_PHP</varname></link>."
 
 #. (itstool) path: varlistentry/term
@@ -39255,9 +39256,9 @@ msgid ""
 "<emphasis>Must only</emphasis> be used with extensions provided by "
 "<application>PHP</application> itself."
 msgstr ""
-"Desativar geração de flavors <application>PHP</application> automática. "
+"Desativar geração automática de flavors do <application>PHP</application>. "
 "<emphasis>Deve apenas</emphasis> ser usado com extensões fornecidas pelo "
-"<application>PHP</application> em si. "
+"próprio <application>PHP</application>. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22131
@@ -39282,10 +39283,10 @@ msgid ""
 "Add <literal>:build</literal> to the extension name to add a build-time "
 "dependency. Example: <literal>pcre xml:build gettext</literal>"
 msgstr ""
-"A lista de requisitos de extensões <application>PHP</application> em tempo "
-"de execução. Adicionar <literal>:build</literal> ao nome da extensão para "
-"adicionar uma dependência de tempo de construção. Exemplo: <literal>pcre xml:"
-"build gettext</literal>"
+"A lista das extensões <application>PHP</application> requisitadas em run-"
+"time. Adicione <literal>:build</literal> ao nome da extensão para adicionar "
+"uma dependência em build-time. Exemplo: <literal>pcre xml:build gettext</"
+"literal>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22148
@@ -39299,9 +39300,10 @@ msgid ""
 "version. For possible values look at the content of "
 "<varname>_ALL_PHP_VERSIONS</varname> in <filename>Mk/Uses/php.mk</filename>."
 msgstr ""
-"O port não funciona com o <application>PHP</application> da versão dada. "
-"Para valores possíveis, observe o conteúdo de <varname>_ALL_PHP_VERSIONS</"
-"varname> dentro <filename>Mk/Uses/php.mk</filename>."
+"O port não funciona com a versão do <application>PHP</application> fornecida."
+" Para possíveis valores, observe o conteúdo da variável "
+"<varname>_ALL_PHP_VERSIONS</varname> no arquivo <filename>Mk/Uses/php.mk</"
+"filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22159
@@ -39310,7 +39312,7 @@ msgid ""
 "application> extension with <literal>:ext</literal> or <literal>:zend</"
 "literal>, these variables can be set:"
 msgstr ""
-"Ao compilar uma extensão <application>PHP</application> ou "
+"Ao compilar uma extensão do <application>PHP</application> ou "
 "<application>Zend</application> com <literal>:ext</literal> ou <literal>:"
 "zend</literal>, estas variáveis ​​podem ser definidas:"
 
@@ -39325,8 +39327,8 @@ msgid ""
 "The name of the <application>PHP</application> or <application>Zend</"
 "application> extension. Default value is <literal>${PORTNAME}</literal>."
 msgstr ""
-"O nome da extensão <application>PHP</application> ou <application>Zend</"
-"application>. O valor padrão é <literal>${PORTNAME}</literal>"
+"O nome da extensão do <application>PHP</application> ou <application>Zend</"
+"application>. O valor padrão é <literal>${PORTNAME}</literal>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22175
