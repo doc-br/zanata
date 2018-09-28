@@ -1,4 +1,5 @@
 # $FreeBSD$
+# André Franciosi <andre@franciosi.org>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Eduardo Elias El Assais <eassais@gmail.com>, 2018. #zanata
@@ -12,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-28 02:25+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-09-28 07:43+0000\n"
+"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -24,7 +25,8 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "kanazuchi, contato@kanazuchi.com, 2018\n"
-"Mauro Risonho de Paula Assumpção, mauro risonho@gmail.com, 2018"
+"Mauro Risonho de Paula Assumpção, mauro risonho@gmail.com, 2018\n"
+"André Franciosi, andre@franciosi.org, 2018"
 
 #. (itstool) path: info/title
 #: book.translate.xml:39
@@ -13673,7 +13675,7 @@ msgstr ""
 "replaceable></varname> correspondente . E se <replaceable>valor</"
 "replaceable> tem espaços, substitua-os por vírgulas e eles serão alterados "
 "de volta para espaços durante o processamento. <varname><replaceable>OPT</"
-"replaceable>_USE_OFF</varname>funciona da mesma maneira, mas quando "
+"replaceable>_USE_OFF</varname> funciona da mesma maneira, mas quando "
 "<literal>OPT</literal> <emphasis>não é</emphasis> selecionado. Por exemplo:"
 
 #. (itstool) path: sect3/programlisting
@@ -14047,16 +14049,16 @@ msgid ""
 "<literal>-D<replaceable>entry</replaceable>:BOOL=true</literal> when the "
 "option is <emphasis>not</emphasis> selected. For example:"
 msgstr ""
-"Quando opção <replaceable>OPT</replaceable> é selecionado, para cada "
+"Quando opção <replaceable>OPT</replaceable> é selecionada, para cada "
 "<replaceable>entrada</replaceable> dentro de <varname><replaceable>OPT</"
 "replaceable>_CMAKE_BOOL</varname> então a entrada <literal>-D<replaceable> </"
-"replaceable>:BOOL=true</literal> é anexado a <varname>CMAKE_ARGS</varname>. "
+"replaceable>:BOOL=true</literal> é anexada a <varname>CMAKE_ARGS</varname>. "
 "Quando opção <replaceable>OPT</replaceable> <emphasis>não é</emphasis> "
-"selecionado, a entrada <literal>-D<replaceable></replaceable>:BOOL=false</"
+"selecionada, a entrada <literal>-D<replaceable></replaceable>:BOOL=false</"
 "literal> é anexado a <varname>CONFIGURE_ARGS</varname>. "
 "<varname><replaceable>OPT</replaceable>_CMAKE_BOOL_OFF</varname> é o oposto, "
 "a entrada <literal>-D<replaceable> </replaceable>:BOOL=false</literal> é "
-"anexado a <varname>CMAKE_ARGS</varname> quando a opção é selecionada, e a "
+"anexada a <varname>CMAKE_ARGS</varname> quando a opção é selecionada, e a "
 "entrada <literal>-D<replaceable> </replaceable>:BOOL=true</literal> quando a "
 "opção <emphasis>não é</emphasis> selecionado. Por exemplo:"
 
@@ -14192,14 +14194,14 @@ msgstr ""
 "<replaceable>entrada</replaceable> dentro de <varname><replaceable>OPT</"
 "replaceable>_MESON_TRUE</varname>então a entrada <literal>-D<replaceable></"
 "replaceable>=true</literal> é anexado a <varname>CMAKE_ARGS</varname>. "
-"Quando opção <replaceable>OPT</replaceable> <emphasis>não é</"
-"emphasis>selecionado, a entrada <literal>-D<replaceable></replaceable>="
-"false</literal> é anexado a <varname>CONFIGURE_ARGS</varname>. "
+"Quando a opção <replaceable>OPT</replaceable> <emphasis>não é</"
+"emphasis>selecionada, a entrada <literal>-D<replaceable></replaceable>="
+"false</literal> é anexada a <varname>CONFIGURE_ARGS</varname>. "
 "<varname><replaceable>OPT</replaceable>_MESON_FALSE</varname> é o oposto, a "
-"entrada <literal>-D<replaceable></replaceable>= false</literal> é anexado a "
+"entrada <literal>-D<replaceable></replaceable>= false</literal> é anexada a "
 "<varname>CMAKE_ARGS</varname> quando a opção é selecionada e a entrada "
 "<literal>-D<replaceable></replaceable>=true</literal> quando a opção "
-"<emphasis>não é</emphasis> selecionado. Por exemplo:"
+"<emphasis>não é</emphasis> selecionada. Por exemplo:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:7896
@@ -16618,7 +16620,7 @@ msgstr ""
 "apenas de outros ports, devem evitar extrair desnecessariamente "
 "<citerefentry><refentrytitle>mtree</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> para o diretório de estágio. Este é o layout básico do "
-"diretório do pacote, e esses diretórios vazios serão vistos como órfãos. "
+"diretório do pacote, e estes diretórios vazios serão vistos como órfãos. "
 "Para prevenir extração do  <citerefentry><refentrytitle>mtree</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, adicione esta linha: "
 
@@ -16695,7 +16697,7 @@ msgstr ""
 #: book.translate.xml:9305
 msgid "Inside <filename>${PREFIX}</filename>, Create Relative Symbolic Links"
 msgstr ""
-"Dentro <filename>${PREFIX}</filename>, Criar links simbólicos relativos "
+"Dentro <filename>${PREFIX}</filename>, Criar Links Simbólicos Relativos "
 
 #. (itstool) path: example/para
 #: book.translate.xml:9308
@@ -16723,7 +16725,7 @@ msgstr ""
 #: book.translate.xml:9314
 #: book.translate.xml:9342
 msgid "Will generate:"
-msgstr "Irá Gerar:"
+msgstr "Irá gerar:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:9316
@@ -18305,7 +18307,7 @@ msgid ""
 "applied easily."
 msgstr ""
 "Localização do diretório do fornecedor onde todas os crates serão extraídos. "
-"Tente manter isso sob <varname>PATCH_WRKSRC</varname>, para que os patches "
+"Tente manter isto sob <varname>PATCH_WRKSRC</varname>, para que os patches "
 "possam ser aplicados facilmente."
 
 #. (itstool) path: row/entry
@@ -19062,7 +19064,7 @@ msgstr "<varname>PERL_VERSION</varname>"
 msgid ""
 "The full version of Perl installed (for example, <literal>5.8.9</literal>)."
 msgstr ""
-"A versão completa do Perl instalado (por exemplo,<literal>5,8,9</literal>)."
+"A versão completa do Perl instalada (por exemplo, <literal>5,8,9</literal>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10558
@@ -19089,7 +19091,7 @@ msgid ""
 "Where Perl stores architecture dependent libraries. Defaults to "
 "<literal>${ARCH}-freebsd</literal>."
 msgstr ""
-"Onde o Perl armazena bibliotecas dependentes da arquitetura. "
+"Onde o Perl armazena bibliotecas dependentes da arquitetura. Padrões para "
 "<literal>${ARCH}-freebsd</literal>."
 
 #. (itstool) path: row/entry
@@ -19279,7 +19281,7 @@ msgstr "USES=\t\tperl5\n"
 #: book.translate.xml:10668
 msgid "A Perl Module Which Needs <literal>Module::Build</literal> to Build"
 msgstr ""
-"Um Módulo Perl Que Precisa <literal>Módulo::Build</literal> para compilar"
+"Um Módulo Perl Que Precisa <literal>Módulo::Build</literal> para Compilar"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10671
@@ -19335,7 +19337,7 @@ msgid ""
 "are:"
 msgstr ""
 "A implementação do X11 disponível na Coleção de Ports é o X.Org. Se o "
-"aplicativo depender de componentes X, defina <varname>USE_XORG</varname> à "
+"aplicativo depender de componentes X, defina <varname>USE_XORG</varname> a "
 "lista de componentes necessários. Componentes disponíveis, no momento da "
 "escrita, são: "
 
@@ -19927,7 +19929,7 @@ msgid ""
 "install and deinstall."
 msgstr ""
 "Lista de todos os arquivos de esquema de glib que o port instala. A macro "
-"adicionará os arquivos ao plist do port e manipulará o registro desses "
+"adicionará os arquivos ao plist do port e manipulará o registro destes "
 "arquivos na instalação e desinstalação."
 
 #. (itstool) path: listitem/para
@@ -20454,8 +20456,7 @@ msgstr "x11-toolkits/gtksourceview3"
 #. (itstool) path: row/entry
 #: book.translate.xml:11264
 msgid "Text widget that adds syntax highlighting to the GtkTextView widget"
-msgstr ""
-"Widget de texto que adiciona sintaxe highlighting ao widget GtkTextView"
+msgstr "Widget de texto que adiciona sintaxe destacada ao widget GtkTextView"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20507,7 +20508,7 @@ msgstr "textproc/intltool"
 #. (itstool) path: row/entry
 #: book.translate.xml:11283
 msgid "Tool for internationalization (also see intlhack)"
-msgstr "Ferramenta para internacionalização (veja também intlhack)"
+msgstr "Ferramenta para Internacionalização (veja também intlhack)"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21059,7 +21060,7 @@ msgstr "devel/gnome-vfs"
 #. (itstool) path: row/entry
 #: book.translate.xml:11520
 msgid "GNOME 2 Virtual File System"
-msgstr "Sistema de arquivos virtual do GNOME 2"
+msgstr "Sistema de Arquivos Virtual do GNOME 2"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21698,7 +21699,7 @@ msgid ""
 msgstr ""
 "Alguns scripts de configuração não suportam os argumentos acima. Para "
 "suprimir a modificação de <varname>CONFIGURE_ENV</varname> e "
-"<varname>CONFIGURE_ARGS</varname> defina <varname>QT_NONSTANDARD</varname>"
+"<varname>CONFIGURE_ARGS</varname> defina <varname>QT_NONSTANDARD</varname>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11832
@@ -33251,8 +33252,8 @@ msgid ""
 "This section contains references to relevant documents. As many references "
 "as apply are encouraged."
 msgstr ""
-"Esta seção contém referências a documentos relevantes. Quanto maior o número "
-"de referências, melhor."
+"Esta seção contém referências a documentos relevantes. Quanto mais "
+"referências aplicadas, melhor."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18326
@@ -33260,8 +33261,8 @@ msgid ""
 "This is a <link xlink:href=\"https://www.freebsd.org/security/#adv\">FreeBSD "
 "security advisory</link>."
 msgstr ""
-"Isto é uma <link xlink:href=\"https://www.freebsd.org/security/"
-"#adv\">FreeBSD security advisory</link>."
+"Isto é uma <link xlink:href=\"https://www.freebsd.org/security/#adv\">aviso "
+"de segurança do FreeBSD</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18331
@@ -33361,7 +33362,7 @@ msgid ""
 "This is the date when the entry was added (<replaceable>YYYY-MM-DD</"
 "replaceable>)."
 msgstr ""
-"Esta é a data em que a entrada foi adicionada (<replaceable>YYYY-MM-DD</"
+"Esta é a data quando a entrada foi adicionada (<replaceable>YYYY-MM-DD</"
 "replaceable>)."
 
 #. (itstool) path: callout/para
@@ -33408,8 +33409,8 @@ msgid ""
 "package, <literal>2013.58</literal>:"
 msgstr ""
 "Primeiro, verifique se já existe uma entrada para esta vulnerabilidade. Se "
-"houvesse essa entrada, ela corresponderia à versão anterior do pacote, "
-"<literal>2013.58</literal>:"
+"houvesse essa entrada, ela deveria corresponder com a versão anterior do "
+"pacote, <literal>2013.58</literal>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18415
@@ -33461,7 +33462,7 @@ msgid ""
 "Verify that the <literal>&lt;affected&gt;</literal> section of the entry "
 "will match the correct packages:"
 msgstr ""
-"Verifique se a seção <literal>&lt;affected&gt;</literal> da entrada irá "
+"Verifique que a seção <literal>&lt;affected&gt;</literal> da entrada irá "
 "coincidir com os pacotes corretos:"
 
 #. (itstool) path: sect2/screen
@@ -33519,7 +33520,7 @@ msgstr "A versão anterior é encontrada enquanto a última não."
 #. (itstool) path: chapter/title
 #: book.translate.xml:18468
 msgid "Dos and Don'ts"
-msgstr "Dos and Don'ts"
+msgstr "O Que Fazer e Não Fazer"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18473
@@ -33608,7 +33609,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:18518
 msgid "Differentiating Operating Systems and OS Versions"
-msgstr "Diferenciando Sistemas Operacionais e Versões"
+msgstr "Diferenciando Sistemas Operacionais e Versões de OS"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18520
@@ -33678,7 +33679,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:18548
 msgid "Writing Something After <filename>bsd.port.mk</filename>"
-msgstr "Escrevendo Algo Depois de <filename>bsd.port.mk</filename>"
+msgstr "Escrevendo Algo Depois do <filename>bsd.port.mk</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18551
@@ -33780,7 +33781,7 @@ msgid ""
 "\"versions\"><literal>__FreeBSD_version</literal></link>."
 msgstr ""
 "A versão numérica do sistema operacional; o mesmo que <link linkend="
-"\"versions\"><literal>__FreeBSD_version</literal></link>"
+"\"versions\"><literal>__FreeBSD_version</literal></link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:18613
@@ -33794,7 +33795,7 @@ msgid ""
 "literal>)"
 msgstr ""
 "A base da árvore <quote>local</quote> (por exemplo, <literal>/usr/local</"
-"literal>) "
+"literal>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:18619
@@ -33807,8 +33808,8 @@ msgid ""
 "Where the port installs itself (see <link linkend=\"porting-prefix\">more on "
 "<varname>PREFIX</varname></link>)."
 msgstr ""
-"Onde o port se instala (veja <link linkend=\"porting-prefix\">mais sobre "
-"<varname>PREFIX</varname></link>)."
+"Onde o port se instala (veja <link linkend=\"porting-prefix\">mais sobre a "
+"variável <varname>PREFIX</varname></link>)."
 
 #. (itstool) path: note/para
 #: book.translate.xml:18630
@@ -33816,7 +33817,7 @@ msgid ""
 "When <varname>MASTERDIR</varname> is needed, always define it before "
 "including <filename>bsd.port.pre.mk</filename>."
 msgstr ""
-"Quando <varname>MASTERDIR</varname> for necessário,  sempre defina-o antes "
+"Quando <varname>MASTERDIR</varname> for necessário,  sempre o defina antes "
 "de incluir o <filename>bsd.port.pre.mk</filename>."
 
 #. (itstool) path: sect1/para
@@ -33825,8 +33826,8 @@ msgid ""
 "Here are some examples of things that can be added after <filename>bsd.port."
 "pre.mk</filename>:"
 msgstr ""
-"Aqui estão alguns exemplos de coisas que podem ser adicionadas depois "
-"<filename>bsd.port.pre.mk</filename>: "
+"Aqui estão alguns exemplos de coisas que podem ser adicionadas depois do "
+"<filename>bsd.port.pre.mk</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:18638
@@ -33845,7 +33846,9 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:18643
 msgid "Always use tab instead of spaces after <literal>BROKEN=</literal>."
-msgstr "Sempre use tab em vez de espaços após <literal>BROKEN=</literal>."
+msgstr ""
+"Sempre use tab em vez de espaços após o argumento <literal>BROKEN=</literal>."
+""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18648
@@ -33926,7 +33929,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:18690
 msgid "Respect Both <varname>CC</varname> and <varname>CXX</varname>"
-msgstr "Respeite ambos <varname>CC</varname> e <varname>CXX</varname>"
+msgstr "Respeite Ambos <varname>CC</varname> e <varname>CXX</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18693
@@ -33984,7 +33987,7 @@ msgid ""
 "<varname>CXX</varname>:"
 msgstr ""
 "Aqui está um exemplo que não respeita nem <varname>CC</varname> nem "
-"<varname>CXX</varname>: "
+"<varname>CXX</varname>:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:18716
@@ -34117,7 +34120,7 @@ msgstr "CFLAGS+= -DHAVE_SOUND"
 #. (itstool) path: sect1/title
 #: book.translate.xml:18777
 msgid "Verbose Build Logs"
-msgstr "Verbose Build Logs"
+msgstr "Logs de Compilação Detalhados"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18779
@@ -34132,7 +34135,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:18783
 msgid "Non-informative build log example (bad):"
-msgstr "Exemplo de log de construção não informativo (ruim):"
+msgstr "Exemplo de log de compilação não informativo (ruim):"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:18785
@@ -34299,7 +34302,7 @@ msgstr "não compila"
 #. (itstool) path: listitem/para
 #: book.translate.xml:18875
 msgid "fails its configuration or installation process"
-msgstr "falha na configuração ou no processo de instalação"
+msgstr "falha em sua configuração ou no processo de instalação"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:18880
@@ -34493,7 +34496,9 @@ msgstr "IGNORE=\tnão suportada em versões recentes"
 #. (itstool) path: sect2/para
 #: book.translate.xml:19001
 msgid "resulting in this output from <command>make describe</command>:"
-msgstr "resultando nesta saída de <command>make describe</command>: "
+msgstr ""
+"resultando nesta saída a partir do comando <command>make describe</command>: "
+""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19004
@@ -34501,14 +34506,14 @@ msgstr "resultando nesta saída de <command>make describe</command>: "
 msgid ""
 "===&gt;  foobar-0.1 is marked as broken: fails to link with base -lcrypto."
 msgstr ""
-"===&gt;  foobar-0.1 é marcado como quebrado: falha para linkar com a base -"
+"===&gt;  foobar-0.1 é marcado como quebrado: falha para conectar com a base -"
 "lcrypto."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19006
 #, no-wrap
 msgid "===&gt;  foobar-0.1 is unsupported on recent versions."
-msgstr "===&gt;  foobar-0.1 ão é suportado em versões recentes."
+msgstr "===&gt;  foobar-0.1 não é suportado em versões recentes."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19011
@@ -34611,7 +34616,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:19059
 msgid "How to Avoid Using <literal>.error</literal>"
-msgstr "Como evitar o uso de <literal>.error</literal>"
+msgstr "Como Evitar o Uso de <literal>.error</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:19061
@@ -34637,7 +34642,7 @@ msgstr "IGNORE=option is not supported"
 #. (itstool) path: sect1/title
 #: book.translate.xml:19073
 msgid "Usage of <filename>sysctl</filename>"
-msgstr "Uso de <filename>sysctl</filename>"
+msgstr "Uso do <filename>sysctl</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19075
@@ -34704,7 +34709,7 @@ msgid ""
 "Be sure to summarize the differences in the PR and commit log, so that other "
 "people know that nothing bad has happened."
 msgstr ""
-"Certifique-se de resumir as diferenças no log do PR e commit, para que "
+"Certifique-se de resumir as diferenças no log do PR e do commit, para que "
 "outras pessoas saibam que nada de ruim aconteceu."
 
 #. (itstool) path: sect1/para
@@ -34715,7 +34720,7 @@ msgstr "Contate os autores do software e confirme as alterações com eles."
 #. (itstool) path: sect1/title
 #: book.translate.xml:19113
 msgid "Use <acronym>POSIX</acronym> Standards"
-msgstr "Use Padrões <acronym>POSIX</acronym>"
+msgstr "Use <acronym>POSIX</acronym> Padronizados"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19115
@@ -34855,7 +34860,7 @@ msgid ""
 "A list of common <application>bash</application>isms is available <link "
 "xlink:href=\"https://wiki.ubuntu.com/DashAsBinSh\">here</link>."
 msgstr ""
-"Uma lista de comum funções do <application>bash</application> está "
+"Uma lista de comum funções comuns do <application>bash</application> está "
 "disponível <link xlink:href=\"https://wiki.ubuntu.com/DashAsBinSh\">aqui</"
 "link>."
 
@@ -34876,7 +34881,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19178
 msgid "Miscellanea"
-msgstr "Diversos"
+msgstr "Miscelânea"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19180
@@ -34894,8 +34899,8 @@ msgid ""
 "Do not copy more copies of the GNU General Public License into our system, "
 "please."
 msgstr ""
-"Não copie mais cópias da Licença Pública Geral GNU em nosso sistema. "
-"Obrigado, de nada."
+"Não faça mais cópias da Licença GNU General Public License em nosso sistema. "
+"Obrigado."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19188
@@ -34903,13 +34908,13 @@ msgid ""
 "Please be careful to note any legal issues! Do not let us illegally "
 "distribute software!"
 msgstr ""
-"Por favor, tenha cuidado ao anotar quaisquer questões legais! Não nos "
-"permita distribuir software ilegalmente!"
+"Por favor, tenha cuidado ao notar quaisquer questões legais! Não nos deixe "
+"distribuir software ilegalmente!"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:19202
 msgid "A Sample <filename>Makefile</filename>"
-msgstr "Um exemplo de <filename>Makefile</filename>"
+msgstr "Um Exemplo de <filename>Makefile</filename>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:19204
@@ -35126,7 +35131,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:19316
 msgid "Order of Variables in Port Makefiles"
-msgstr "Ordem das Variáveis ​​nos Makefiles de Ports"
+msgstr "Ordem das Variáveis ​​nos Makefiles dos Ports"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:19318
@@ -35164,8 +35169,8 @@ msgid ""
 "In existing ports, <application>Subversion</application> has expanded it to "
 "look like this:"
 msgstr ""
-"Nos ports existentes, <application>Subversion</application> expandiu para "
-"ficar assim: "
+"Nos ports existentes, <application>Subversion</application> teve uma "
+"expansão para ficar assim:"
 
 #. (itstool) path: chapter/programlisting
 #: book.translate.xml:19334
@@ -35207,7 +35212,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19353
 msgid "<varname>PORTNAME</varname> Block"
-msgstr "<varname>PORTNAME</varname> Block"
+msgstr "Bloco <varname>PORTNAME</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19355
@@ -35360,13 +35365,13 @@ msgid ""
 "Only one of <varname>PORTVERSION</varname> and <varname>DISTVERSION</"
 "varname> can be used."
 msgstr ""
-"Apenas um dos <varname>PORTVERSION</varname> e <varname>DISTVERSION</"
-"varname> podem ser usados."
+"Apenas uma das variáveis <varname>PORTVERSION</varname> e "
+"<varname>DISTVERSION</varname> podem ser usadas."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19437
 msgid "<varname>PATCHFILES</varname> Block"
-msgstr "<varname>PATCHFILES</varname> Block"
+msgstr "Bloco <varname>PATCHFILES</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19439
@@ -35401,7 +35406,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19457
 msgid "<varname>MAINTAINER</varname> Block"
-msgstr "<varname>MAINTAINER</varname> Block"
+msgstr "Bloco <varname>MAINTAINER</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19459
@@ -35510,9 +35515,9 @@ msgid ""
 "If there are multiple licenses, sort the different LICENSE_<replaceable>VAR</"
 "replaceable>_<replaceable>NAME</replaceable> variables by license name."
 msgstr ""
-"Se houver várias licenças, ordene as diferentes variáveis "
-"LICENSE_<replaceable>VAR</replaceable>_<replaceable>NAME</replaceable> ​​por "
-"nome de licença. "
+"Se houver várias licenças, ordene as variáveis LICENSE_<replaceable>VAR</"
+"replaceable>_<replaceable>NAME</replaceable> diferentes  ​​por nome de "
+"licença."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19530
@@ -35730,8 +35735,9 @@ msgid ""
 "Start this section with defining <varname>USES</varname>, and then possible "
 "<varname>USE_<replaceable>x</replaceable></varname>."
 msgstr ""
-"Comece esta seção com a definição de <varname>USES</varname> e, em seguida, "
-"possíveis <varname>USE_<replaceable>x</replaceable></varname>"
+"Comece esta seção com a definição da variável <varname>USES</varname> e, em "
+"seguida, possíveis variáveis <varname>USE_<replaceable>x</replaceable></"
+"varname>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19661
@@ -35742,9 +35748,9 @@ msgid ""
 "right after it."
 msgstr ""
 "Mantenha as variáveis ​​relacionadas juntas. Por exemplo, se estiver usando "
-"<link linkend=\"makefile-master_sites-github\"><varname>USE_GITHUB</"
-"varname></link>, coloque sempre as variáveis <varname>GH_<replaceable>*</"
-"replaceable></varname> ​​logo após. "
+"a variável <link linkend=\"makefile-master_sites-"
+"github\"><varname>USE_GITHUB</varname></link>, coloque sempre as variáveis "
+"<varname>GH_<replaceable>*</replaceable></varname> ​​logo após."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19669
@@ -35781,7 +35787,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19686
 msgid "Options and Helpers"
-msgstr "Opções e Helpers"
+msgstr "Opções e Assistentes"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19688
@@ -35803,7 +35809,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:19698
 msgid "Options Variables Order Example"
-msgstr "Exemplo de Ordem de Variáveis ​​de Opções"
+msgstr "Exemplo de Ordem das Variáveis ​​de Opções"
 
 #. (itstool) path: example/para
 #: book.translate.xml:19700
@@ -35867,11 +35873,11 @@ msgstr ""
 "\n"
 "post-install-DOCS-on:\n"
 "      ${MKDIR} ${STAGEDIR}${DOCSDIR}\n"
-"      cd ${WRKSRC}/doc &amp;&amp; ${COPYTREE_SHARE} .${STAGEDIR}${DOCSDIR}\n"
+"      cd ${WRKSRC}/doc &amp;&amp; ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}\n"
 "\n"
 "post-install-EXAMPLES-on:\n"
 "      ${MKDIR} ${STAGEDIR}${EXAMPLESDIR}\n"
-"      cd ${WRKSRC}/ex &amp;&amp; ${COPYTREE_SHARE} .${STAGEDIR}${DOCSDIR}"
+"      cd ${WRKSRC}/ex &amp;&amp; ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19736
@@ -35884,7 +35890,7 @@ msgid ""
 "And then, the rest of the variables that are not mentioned in the previous "
 "blocks."
 msgstr ""
-"E então, o resto das variáveis ​​que não são mencionadas nos blocos "
+"E então, o restante das variáveis ​​que não são mencionadas nos blocos "
 "anteriores."
 
 #. (itstool) path: sect1/title
@@ -35995,7 +36001,7 @@ msgid ""
 "information on how to keep up."
 msgstr ""
 "A coleção de Ports do FreeBSD está em constante mudança. Aqui estão algumas "
-"informações sobre como acompanhar."
+"informações sobre como se manter atualizado."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19819
@@ -36061,7 +36067,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19850
 msgid "The Web Interface to the Source Repository"
-msgstr "A interface Web para o Repositório de Código Fonte"
+msgstr "A interface Web para o Repositório do Código Fonte"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19852
@@ -36089,7 +36095,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19863
 msgid "The FreeBSD Ports Mailing List"
-msgstr "A lista de discussão de Ports do FreeBSD"
+msgstr "A lista de discussão dos Ports do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19865
@@ -36347,7 +36353,7 @@ msgstr "USES=\tdrupal:7,theme"
 #. (itstool) path: example/title
 #: book.translate.xml:20017
 msgid "Mixing it All Together"
-msgstr "Tudo Junto e Misturado"
+msgstr "Entrelaçando Tudo Isso Junto"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:20019
@@ -36477,7 +36483,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:20086
 msgid "Adds dependencies on Blas / Lapack libraries."
-msgstr "Adiciona dependências em bibliotecas Blas/Lapack."
+msgstr "Adiciona dependências das bibliotecas Blas/Lapack."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20090
@@ -36703,11 +36709,11 @@ msgid ""
 "relative to <varname>WRKSRC</varname> if <filename>charset.alias</filename> "
 "is not installed by <filename>${WRKSRC}/Makefile.in</filename>."
 msgstr ""
-"Impede que o port instale <filename>charset.alias</filename>. Isso deve ser "
-"instalado apenas por <package role=\"port\">converters/libiconv</package>.  "
-"<varname>CHARSETFIX_MAKEFILEIN</varname> pode ser definido para um caminho "
-"relativo <varname>WRKSRC</varname> e se <filename>charset.alias</filename> "
-"não é instalado por <filename>${WRKSRC}/Makefile.in</filename>."
+"Previne que o port instale arquivos <filename>charset.alias</filename>. Isso "
+"deve ser instalado apenas pelo <package role=\"port\">converters/libiconv</"
+"package>.  <varname>CHARSETFIX_MAKEFILEIN</varname> pode ser definido para "
+"um caminho relativo a <varname>WRKSRC</varname> se <filename>charset.alias</"
+"filename> não for instalado por <filename>${WRKSRC}/Makefile.in</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20211
@@ -36732,15 +36738,15 @@ msgid ""
 "is registered. For more information see <xref linkend=\"using-cmake\"/>."
 msgstr ""
 "Usos do <application>CMake</application> para configuração e compilação.  "
-"Com o argumento <literal>outsource</literal>, uma compilação fora da fonte "
-"será executada. Com o argumento <literal>run</literal>, uma dependência de "
-"tempo de execução é registrada. Para mais informações, veja <xref linkend="
-"\"using-cmake\"/>."
+"Com o argumento <literal>outsource</literal>, uma compilação fora do código "
+"fonte será executada. Com o argumento <literal>run</literal>, uma "
+"dependência em run-time é registrada. Para mais informações, veja <xref "
+"linkend=\"using-cmake\"/>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20224
 msgid "<literal>compiler</literal>"
-msgstr "<literal>compilador</literal>"
+msgstr "<literal>compiler</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20226
@@ -36769,14 +36775,15 @@ msgid ""
 "understanding C++0X, C11, OpenMP, or nested functions, the corresponding "
 "parameters should be used."
 msgstr ""
-"Determina qual compilador usar com base em qualquer desejo determinado. Use "
+"Determina qual compilador usar com base em qualquer um desejado. Use "
 "<literal>c++14-lang</literal> se o port precisar de um compilador compatível "
 "com C++4, <literal>c++11-lang</literal> se o port precisar de um compilador "
 "compatível com C++11, <literal>gcc-c++11-lib</literal> se o port precisar do "
 "compilador <command>g++</command> com uma biblioteca C++11, ou <literal>c++-"
 "lib</literal> se o port precisar de uma biblioteca padrão pronta para C++11. "
 "Se o port precisar de um compilador que compreenda as funções C++0X, C11, "
-"OpenMP ou aninhadas, os parâmetros correspondentes deverão ser usados."
+"OpenMP ou funções aninhadas, os parâmetros correspondentes deverão ser "
+"usados."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20244
@@ -36785,9 +36792,10 @@ msgid ""
 "the default compiler. After including <filename>bsd.port.pre.mk</filename> "
 "the port can inspect the results using these variables:"
 msgstr ""
-"Usar <literal>features</literal> para solicitar uma lista de recursos "
-"suportados pelo compilador padrão. Depois de incluir <filename>bsd.port.pre."
-"mk</filename> o port pode inspecionar os resultados usando estas variáveis: "
+"Use <literal>features</literal> para solicitar uma lista de recursos "
+"suportados pelo compilador padrão. Depois de incluir o arquivo <filename>bsd."
+"port.pre.mk</filename> o port pode inspecionar os resultados usando estas "
+"variáveis: "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20252
@@ -36859,12 +36867,12 @@ msgid ""
 "acronym> specification</link> for details. To add <acronym>CPE</acronym> "
 "information to a port, follow these steps:"
 msgstr ""
-"Incluir informações do Common Platform Enumeration (<acronym>CPE</acronym>) "
-"no manifesto do pacote como uma string formatada. Veja as especificações "
-"<acronym>CPE</acronym>2.3.<link xlink:href=\"http://scap.nist.gov/"
-"specifications/cpe/\"><acronym>CPE</acronym></link> para mais detalhes. Para "
+"Incluir informações da Common Platform Enumeration (<acronym>CPE</acronym>) "
+"no manifesto do pacote como uma string <acronym>CPE</acronym>2.3 formatada. "
+"Veja as <link xlink:href=\"http://scap.nist.gov/specifications/cpe/"
+"\">especificações <acronym>CPE</acronym></link> para mais detalhes. Para "
 "adicionar informações de <acronym>CPE</acronym> a um port, siga estas etapas:"
-" "
+""
 
 #. (itstool) path: step/para
 #: book.translate.xml:20300
@@ -36877,12 +36885,12 @@ msgid ""
 "(warning, very large <acronym>XML</acronym> file). <emphasis>Do not ever "
 "make up <acronym>CPE</acronym> data.</emphasis>"
 msgstr ""
-"Procure o par oficial de CPE para o produto de software usando o NVD <link "
-"xlink:href=\"http://web.nvd.nist.gov/view/cpe/search\">Mecanismo de "
-"pesquisa<acronym> CPE </acronym></link> ou no <link xlink:href=\"http://"
-"static.nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3."
-"xml\"> dicionário oficial de <acronym>CPE</acronym></link>(aviso, "
-"arquivo<acronym>XML</acronym>muito grande). <emphasis>Nunca crie dados de "
+"Procure o para oficial da CPE para o produto de software tanto usando o "
+"<link xlink:href=\"http://web.nvd.nist.gov/view/cpe/search\">Mecanismo de "
+"pesquisa<acronym> CPE </acronym></link> do NVD ou no <link xlink:href=\"http:"
+"//static.nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3."
+"xml\"> dicionário oficial da <acronym>CPE</acronym></link> (aviso, o arquivo "
+"<acronym>XML</acronym> é muito grande). <emphasis>Nunca crie os dados da "
 "<acronym>CPE</acronym>.</emphasis>"
 
 #. (itstool) path: step/para
@@ -36893,10 +36901,10 @@ msgid ""
 "dictionary para. Continue one step at a time until <command>make -V CPE_STR</"
 "command> is correct."
 msgstr ""
-"Adicione <literal>cpe</literal> em <varname>USES</varname> e compare o "
-"resultado de <command>make -V CPE_STR</command> para o dicionário "
-"<acronym>CPE</acronym>. Continue com um passo de cada vez até <command>make -"
-"V CPE_STR</command> estar correto."
+"Adicione <literal>cpe</literal> na variável <varname>USES</varname> e "
+"compare o resultado de <command>make -V CPE_STR</command> para o dicionário "
+"<acronym>CPE</acronym> para. Continue com um passo de cada vez até "
+"<command>make -V CPE_STR</command> estar correto."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20317
@@ -36904,8 +36912,9 @@ msgid ""
 "If the product name (second field, defaults to <varname>PORTNAME</varname>) "
 "is incorrect, define <varname>CPE_PRODUCT</varname>."
 msgstr ""
-"Se o nome do produto (segundo campo, padrão <varname>PORTNAME</varname>) "
-"estiver incorreto, defina <varname>CPE_PRODUCT</varname>."
+"Se o nome do produto (segundo campo, com o valor padrão da variável "
+"<varname>PORTNAME</varname>) estiver incorreto, defina <varname>CPE_PRODUCT</"
+"varname>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20323
@@ -36913,8 +36922,9 @@ msgid ""
 "If the vendor name (first field, defaults to <varname>CPE_PRODUCT</varname>) "
 "is incorrect, define <varname>CPE_VENDOR</varname>."
 msgstr ""
-"Se o nome do fornecedor (primeiro campo, padrão <varname>CPE_PRODUCT</"
-"varname>) estiver incorreto, defina <varname>CPE_VENDOR</varname>."
+"Se o nome do fornecedor (primeiro campo, valor padrão da variável  "
+"<varname>CPE_PRODUCT</varname>) estiver incorreto, defina "
+"<varname>CPE_VENDOR</varname>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20329
@@ -36922,8 +36932,9 @@ msgid ""
 "If the version field (third field, defaults to <varname>PORTVERSION</"
 "varname>) is incorrect, define <varname>CPE_VERSION</varname>."
 msgstr ""
-"Se o campo de versão (terceiro campo, padrão <varname>PORTVERSION</varname>) "
-"estiver incorreto, defina <varname>CPE_VERSION</varname>."
+"Se o campo de versão (terceiro campo, valor padrão da variável "
+"<varname>PORTVERSION</varname>) estiver incorreto, defina "
+"<varname>CPE_VERSION</varname>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20335
@@ -36931,8 +36942,8 @@ msgid ""
 "If the update field (fourth field, defaults to empty) is incorrect, define "
 "<varname>CPE_UPDATE</varname>."
 msgstr ""
-"Se o campo de atualização (quarto campo, padrão vazio) estiver incorreto, "
-"defina <varname>CPE_UPDATE</varname>."
+"Se o campo de atualização (quarto campo, valor padrão vazio) estiver "
+"incorreto, defina <varname>CPE_UPDATE</varname>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20340
@@ -36941,9 +36952,9 @@ msgid ""
 "additional details, or contact the Ports Security Team <email>ports-"
 "secteam@FreeBSD.org</email>."
 msgstr ""
-"Se ainda não estiver correto, verifique <filename>Mk/Uses/cpe.mk</filename> "
-"para detalhes adicionais, ou entre em contato com o Ports Security Team "
-"<email>ports-secteam@FreeBSD.org</email>."
+"Se ainda não estiver correto, verifique o arquivo <filename>Mk/Uses/cpe.mk</"
+"filename> para detalhes adicionais, ou entre em contato com o Ports Security "
+"Team <email>ports-secteam@FreeBSD.org</email>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20346
@@ -36954,9 +36965,10 @@ msgid ""
 "variables rather than hardcoding the name."
 msgstr ""
 "Derive o máximo possível do nome do <acronym>CPE</acronym> a partir de "
-"variáveis ​​existentes, como <varname>PORTNAME</varname> e "
+"variáveis ​​existentes, tal como as variáveis <varname>PORTNAME</varname> e "
 "<varname>PORTVERSION</varname>. Use modificadores de variáveis ​​para "
-"extrair as partes relevantes dessas variáveis, em vez de codificar o nome. "
+"extrair as partes relevantes dessas delas, em vez de colocar o nome direto "
+"no código."
 
 #. (itstool) path: step/para
 #: book.translate.xml:20355
@@ -36966,10 +36978,11 @@ msgid ""
 "varname> or <varname>PORTVERSION</varname> or any other variable which is "
 "used to derive <varname>CPE_STR</varname>."
 msgstr ""
-"<emphasis>Sempre</emphasis> rode <command>make -V CPE_STR</command> e "
+"<emphasis>Sempre</emphasis> execute <command>make -V CPE_STR</command> e "
 "verifique a saída antes de fazer o commit de qualquer coisa que mude o "
 "<varname>PORTNAME</varname> ou <varname>PORTVERSION</varname> ou qualquer "
-"outra variável que é usada para derivar <varname>CPE_STR</varname>."
+"outra variável que é usada para derivar a variável <varname>CPE_STR</"
+"varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20365
@@ -36993,9 +37006,9 @@ msgid ""
 "<literal>compiles</literal> if the port has code that need to be compiled."
 msgstr ""
 "Utiliza a Rede Abrangente de Arquivo R. Especifique <varname>auto-plist</"
-"varname> para gerar automaticamente o <filename>pkg-plist</filename>. "
-"Especificamos <literal>compiles</literal> se o port tiver código que precise "
-"ser compilado. "
+"varname> para gerar automaticamente o arquivo <filename>pkg-plist</filename>."
+" Especifique <literal>compiles</literal> se o port tiver código que precise "
+"ser compilado."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20379
@@ -37012,12 +37025,12 @@ msgid ""
 "desktop-file-utils\"><literal>@desktop-file-utils</literal></link> will be "
 "added to the plist."
 msgstr ""
-"Usos <application>update-desktop-database</application> a partir de <package "
-"role=\"port\">devel/desktop-file-utils</package>. Uma etapa extra de pós-"
-"instalação será executada sem interferir em nenhuma etapa de pós-instalação "
+"Usos de <application>update-desktop-database</application> a partir de "
+"<package role=\"port\">devel/desktop-file-utils</package>. Uma etapa extra "
+"de pos-isntall será executada sem interferir em nenhuma etapa de pos-install "
 "que já esteja no <filename>Makefile</filename> do port. Uma linha com <link "
 "linkend=\"plist-keywords-desktop-file-utils\"><literal>@desktop-file-utils</"
-"literal></link> será adicionado ao plist."
+"literal></link> será adicionada ao plist."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20392
@@ -37030,8 +37043,9 @@ msgid ""
 "Changes the behavior of GNU configure to properly support <varname>DESTDIR</"
 "varname> in case the original software does not."
 msgstr ""
-"Altera o comportamento do GNU configure para suportar corretamente "
-"<varname>DESTDIR</varname> no caso do software original não. "
+"Altera o comportamento do GNU configure para suportar corretamente a "
+"variável <varname>DESTDIR</varname> no caso do software original não "
+"suportar. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20402
@@ -37054,11 +37068,11 @@ msgid ""
 "parameter defaults to <literal>install</literal> and controls the phase "
 "around which to start and stop the virtual display."
 msgstr ""
-"Configurar um ambiente de exibição virtual. Se a variável de ambiente "
+"Define um ambiente de exibição virtual. Se a variável de ambiente "
 "<varname>DISPLAY</varname> não estiver definida, então <application>Xvfb</"
-"application> é adicionado como uma dependência de compilação e "
-"<varname>CONFIGURE_ENV</varname> é estendido com o número do port da "
-"instância <application>Xvfb</application> em execução no momento . O "
+"application> é adicionado como uma dependência de compilação e a variável "
+"<varname>CONFIGURE_ENV</varname> é estendida com o número do port da "
+"instância do <application>Xvfb</application> em execução no momento . O "
 "parâmetro <replaceable>ARGS</replaceable> é padronizado para "
 "<literal>install</literal> e controla a fase em torno da qual iniciar e "
 "parar a exibição virtual."
@@ -37077,11 +37091,11 @@ msgid ""
 "including binaries. See <xref linkend=\"slow-patch-automatic-replacements\"/"
 "> for examples."
 msgstr ""
-"O port tem arquivos com terminações de linha no formato <acronym>DOS</"
-"acronym> que precisam ser convertidos. Várias variáveis ​​podem ser "
+"O port tem arquivos com terminações de linha no formato do <acronym>DOS</"
+"acronym> que precisam ser convertidos. Inúmeras variáveis ​​podem ser "
 "definidas para controlar quais arquivos serão convertidos. O padrão é "
 "converter <emphasis>todos</emphasis> arquivos, incluindo binários. Veja "
-"<xref linkend=\"slow-patch-automatic-replacements\"/> por exemplo."
+"<xref linkend=\"slow-patch-automatic-replacements\"/> para exemplos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20433
@@ -37089,21 +37103,21 @@ msgid ""
 "<varname>DOS2UNIX_REGEX</varname>: match file names based on a regular "
 "expression."
 msgstr ""
-"<varname>DOS2UNIX_REGEX</varname>: combina nomes de arquivos com base em uma "
+"<varname>DOS2UNIX_REGEX</varname>: casa nomes de arquivos com base em uma "
 "expressão regular."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20438
 msgid "<varname>DOS2UNIX_FILES</varname>: match literal file names."
 msgstr ""
-"<varname>DOS2UNIX_FILES</varname>: corresponde a nomes de arquivos literais."
+"<varname>DOS2UNIX_FILES</varname>: casa com nomes de arquivos literais."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20443
 msgid ""
 "<varname>DOS2UNIX_GLOB</varname>: match file names based on a glob pattern."
 msgstr ""
-"<varname>DOS2UNIX_GLOB</varname>: combina nomes de arquivos com base em um "
+"<varname>DOS2UNIX_GLOB</varname>: casa com nomes de arquivos baseados em um "
 "padrão glob."
 
 #. (itstool) path: listitem/para
@@ -37113,7 +37127,7 @@ msgid ""
 "conversions. Defaults to <literal>${WRKSRC}</literal>."
 msgstr ""
 "<varname>DOS2UNIX_WRKSRC</varname>: o diretório onde iniciar as conversões. "
-"Padrão para<literal>${WRKSRC}</literal>."
+"Padrão é <literal>${WRKSRC}</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20456
@@ -37138,11 +37152,11 @@ msgid ""
 "creates a Drupal 6 module. A Drupal 7 theme can be specified with "
 "<literal>USES=drupal:7,theme</literal>."
 msgstr ""
-"Automatizar a instalação de um port que é um tema ou módulo "
+"Automatizar a instalação de um port que é um tema ou módulo do "
 "<application>Drupal</application>. Use com a versão do Drupal que o port "
-"está esperando. Por exemplo, <literal>USES=drupal:7, módulo</literal> diz "
+"está esperando. Por exemplo, <literal>USES=drupal:7, module</literal> diz "
 "que este port cria um módulo do Drupal 6. Um tema do Drupal 7 pode ser "
-"especificado com <literal>USES=drupal:7, tema</literal>."
+"especificado com <literal>USES=drupal:7, theme</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20471
@@ -37156,8 +37170,8 @@ msgid ""
 " See <link xlink:href=\"http://fakeroot.alioth.debian.org/\"/>for more "
 "information on <command>fakeroot</command>."
 msgstr ""
-"Altera algum comportamento padrão dos sistemas de compilação para permitir a "
-"instalação como um usuário. Veja <link xlink:href=\"http://fakeroot.alioth."
+"Altera alguns comportamentos padrão dos sistemas de compilação para permitir "
+"instalar como um usuário. Veja <link xlink:href=\"http://fakeroot.alioth."
 "debian.org/\"/> para mais informações sobre <command>fakeroot</command>."
 
 #. (itstool) path: sect1/title
@@ -37180,10 +37194,10 @@ msgid ""
 "\"port\">devel/fam</package> or <package role=\"port\">devel/gamin</package>."
 " End users can set WITH_FAM_SYSTEM to specify their preference."
 msgstr ""
-"Usa um Monitor de Alteração de Arquivos como uma dependência de biblioteca, "
-"<package role=\"port\">devel/fam</package> ou <package role=\"port\">devel/"
-"gamin</package>. Usuários finais podem definir WITH_FAM_SYSTEM para "
-"especificar sua preferência. "
+"Usa um Monitor de Alteração de Arquivos (FAM) como uma dependência de "
+"biblioteca, qualquer um, <package role=\"port\">devel/fam</package> ou "
+"<package role=\"port\">devel/gamin</package>. Usuários finais podem definir "
+"WITH_FAM_SYSTEM para especificar sua preferência."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20492
@@ -37199,7 +37213,8 @@ msgstr "Argumentos possíveis: (none), <literal>25</literal>"
 #: book.translate.xml:20496
 msgid "Add a dependency to the client library of the Firebird database."
 msgstr ""
-"Adicione uma dependência à biblioteca cliente do banco de dados do Firebird."
+"Adiciona uma dependência à biblioteca do client do banco de dados do "
+"Firebird."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20501
@@ -37249,7 +37264,7 @@ msgstr "<literal>fortran</literal>"
 #. (itstool) path: sect1/para
 #: book.translate.xml:20523
 msgid "Possible arguments: <literal>gcc</literal> (default)"
-msgstr "Argumentos possíveis: <literal>gcc</literal>(padrão)"
+msgstr "Argumentos possíveis: <literal>gcc</literal> (padrão)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20525
@@ -37266,7 +37281,7 @@ msgstr "<literal>fuse</literal>"
 msgid ""
 "Possible arguments: <literal>2</literal> (default), <literal>3</literal>"
 msgstr ""
-"Argumentos possíveis: <literal>2</literal>(padrão),<literal>3</literal>"
+"Argumentos possíveis: <literal>2</literal> (padrão), <literal>3</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20534
@@ -37274,8 +37289,8 @@ msgid ""
 "The port will depend on the FUSE library and handle the dependency on the "
 "kernel module depending on the version of FreeBSD."
 msgstr ""
-"O port dependerá da biblioteca FUSE e lidará com a dependência do módulo do "
-"kernel dependendo da versão do FreeBSD."
+"O port irá depender da biblioteca FUSE e irá manipular a dependência do "
+"módulo do kernel dependendo da versão do FreeBSD."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20540
@@ -37290,8 +37305,8 @@ msgid ""
 "<literal>build</literal>, <literal><replaceable>XY</replaceable></literal>, "
 "<literal><replaceable>XY</replaceable>+</literal>"
 msgstr ""
-"Argumentos possíveis: <literal>libxul</literal>(padrão),<literal>firefox</"
-"literal>, <literal>seamonkey</literal>, <literal>Thunderbird</literal>, "
+"Argumentos possíveis: <literal>libxul</literal> (padrão), <literal>firefox</"
+"literal>, <literal>seamonkey</literal>, <literal>thunderbird</literal>, "
 "<literal>build</literal>, <literal><replaceable>XY</replaceable></literal>, "
 "<literal><replaceable>XY</replaceable>+</literal>"
 
@@ -37307,13 +37322,13 @@ msgid ""
 "literal>/<literal><replaceable>XY</replaceable>+</literal> version arguments."
 ""
 msgstr ""
-"Adicionar uma dependência em diferentes aplicativos baseados em  "
-"<application>libxul</application>. E se <literal>libxul</literal> é usado, é "
-"o único argumento permitido. Quando o argumento não é <literal>libxul</"
-"literal>, os argumentos <literal>firefox</literal>, <literal>seamonkey</"
-"literal> ou <literal>Thunderbird</literal> podem ser usados, juntamente com "
-"argumentos de versão <literal>build</literal> e <literal><replaceable>XY</"
-"replaceable></literal>/<literal><replaceable>XY</replaceable>+</literal>. "
+"Adiciona uma dependência de diferentes aplicações baseadas em  "
+"<application>libxul</application>. Se <literal>libxul</literal> for usado, é "
+"o único argumento permitido. Quando o argumento não for <literal>libxul</"
+"literal>, os argumentos do <literal>firefox</literal>, <literal>seamonkey</"
+"literal> ou <literal>thunderbird</literal> podem ser usados, juntamente com "
+"argumentos de opcionais <literal>build</literal> e <literal><replaceable>XY</"
+"replaceable></literal>/<literal><replaceable>XY</replaceable>+</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20560
@@ -37332,7 +37347,7 @@ msgid ""
 "<literal>noautoplist</literal> is used, the packing list is not generated "
 "automatically."
 msgstr ""
-"Manipule a construção com <application>RubyGems</application>. E se "
+"Manipula a compilação com <application>RubyGems</application>. Se "
 "<literal>noautoplist</literal> for usado, a lista de empacotameno não será "
 "gerada automaticamente. "
 
@@ -37375,12 +37390,11 @@ msgid ""
 "literal> and <literal>run</literal> implies, respectively a build-time and a "
 "run-time dependency on <filename>gettext</filename>."
 msgstr ""
-"Usos de <package role=\"port\">devel/gettext-runtime</package>. Por padrão, "
+"Usos do <package role=\"port\">devel/gettext-runtime</package>. Por padrão, "
 "sem argumentos ou com o argumento <literal>lib</literal>, implica uma "
 "dependência da biblioteca <filename>libintl.so</filename>.<literal>build</"
-"literal> e <literal>run</literal> implica, respectivamente, um tempo de "
-"construção e uma dependência em tempo de execução <filename>gettext</"
-"filename>."
+"literal> e <literal>run</literal> implica, respectivamente, uma dependencia "
+"de <filename>gettext</filename> em build-time e run-time."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20595
@@ -37406,9 +37420,8 @@ msgid ""
 msgstr ""
 "Usos do <package role=\"port\">devel/gettext-tools</package>. Por padrão, "
 "sem argumento ou com o argumento <literal>build</literal>, uma dependência "
-"de tempo de construção <filename>msgfmt</filename> é registrada. Com o "
-"argumento <literal>run</literal>, uma dependência em tempo de execução é "
-"registrada."
+"de <filename>msgfmt</filename> em build-time é registrada. Com o argumento "
+"<literal>run</literal>, uma dependência em run-time é registrada."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20608
@@ -37422,7 +37435,7 @@ msgid ""
 "<literal>run</literal>, <literal>nox11</literal>"
 msgstr ""
 "Argumentos possíveis: <replaceable>X</replaceable>, <literal>build</"
-"literal>, <literal> run </literal>, <literal>nox11</literal>"
+"literal>, <literal>run</literal>, <literal>nox11</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20614
@@ -37435,13 +37448,13 @@ msgid ""
 "dependencies on <application>Ghostscript</application>. The default is both "
 "build- and run-time dependencies."
 msgstr ""
-"Uma versão específica <replaceable>X</replaceable> pode ser usada. Versões "
+"Uma versão <replaceable>X</replaceable> específica pode ser usada. Versões "
 "possíveis são <literal>7</literal>, <literal>8</literal>, <literal>9</"
 "literal> e <literal>agpl</literal> (padrão). <literal>nox11</literal> indica "
 "que a versão <literal>-nox11</literal> do port é necessária. <literal>build</"
-"literal> e <literal>run</literal> adicionam dependências de construção e "
-"tempo de execução no <application>Ghostscript</application>. O padrão é "
-"tanto as dependências de construção quanto de tempo de execução. "
+"literal> e <literal>run</literal> adicionam dependências de "
+"<application>Ghostscript</application> em build-time e run-time. O padrão é "
+"tanto as dependências em build-time quanto em run-time."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20627
@@ -37455,9 +37468,9 @@ msgid ""
 "and sets up the environment to use <command>gmake</command> as the default "
 "<command>make</command> for the build."
 msgstr ""
-"Usos de <package role=\"port\">devel/gmake</package> como uma dependência de "
-"tempo de construção e configurar o ambiente para usar <command>gmake</"
-"command> como padrão <command>make</command> para a construção."
+"Usos do <package role=\"port\">devel/gmake</package> como uma dependência em "
+"run-time e configurar o ambiente para usar <command>gmake</command> como "
+"<command>make</command> padrão para a compilação."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20638
@@ -37471,9 +37484,9 @@ msgid ""
 "components. The components should be listed in <varname>USE_GNOME</varname>. "
 "The available components are:"
 msgstr ""
-"Fornece uma maneira fácil de depender dos componentes <application>GNOME</"
-"application>. Os componentes devem ser listados em <varname>USE_GNOME</"
-"varname>. Os componentes disponíveis são: "
+"Fornece uma maneira fácil para depender dos componentes do "
+"<application>GNOME</application>. Os componentes devem ser listados na "
+"variável <varname>USE_GNOME</varname>. Os componentes disponíveis são: "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20722
@@ -37492,8 +37505,8 @@ msgid ""
 "The default dependency is build- and run-time, it can be changed with "
 "<literal>:build</literal> or <literal>:run</literal>. For example:"
 msgstr ""
-"A dependência padrão é de construção e tempo de execução, pode ser alterada "
-"com <literal>:build</literal> ou <literal>:run</literal>. Por exemplo:"
+"A dependência padrão é em built-time e run-time, pode ser alterada com "
+"<literal>:build</literal> ou <literal>:run</literal>. Por exemplo:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:20982
@@ -37519,8 +37532,8 @@ msgid ""
 "Ports should not be created for Go libs, see <xref linkend=\"go-libs\"/> for "
 "more information."
 msgstr ""
-"Ports não devem ser criadas para Go libs, veja <xref linkend=\"go-libs\"/> "
-"para maiores informações."
+"Ports não devem ser criados po bibliotecas Go, veja <xref linkend=\"go-"
+"libs\"/> para maiores informações."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20999
@@ -37529,10 +37542,10 @@ msgid ""
 "software. A build-time dependency on <package role=\"port\">lang/go</"
 "package> is added. The build process is controlled by several variables:"
 msgstr ""
-"Define valores e destinos padrão usados ​​para compilar programas "
-"<application>Go</application>. Uma dependência de tempo de compilação "
-"<package role=\"port\">lang/go</package> é adicionada. O processo de "
-"compilação é controlado por várias variáveis: "
+"Define valores e targets padrão usados ​​para compilar aplicações "
+"<application>Go</application>. Uma dependência <package role=\"port\">lang/"
+"go</package> em build-time é adicionada. O processo de compilação é "
+"controlado por inumeras variáveis:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:21006
@@ -37547,7 +37560,7 @@ msgid ""
 "<varname>${PORTNAME}</varname>."
 msgstr ""
 "O nome do pacote <application>Go</application>. Este é o diretório que será "
-"criado em <literal>GOPATH/src</literal>. O valor padrão é "
+"criado em <literal>GOPATH/src</literal>. O valor padrão é o da variável "
 "<varname>${PORTNAME}</varname>."
 
 #. (itstool) path: varlistentry/term
@@ -37561,7 +37574,7 @@ msgid ""
 "The name of the packages to build. The default value is "
 "<varname>${GO_PKGNAME}</varname>."
 msgstr ""
-"O nome dos pacotes a serem construídos. O valor padrão é "
+"O nome dos pacotes a serem compilados. O valor padrão é o valor da variável  "
 "<varname>${GO_PKGNAME}</varname>"
 
 #. (itstool) path: varlistentry/term
@@ -37575,8 +37588,8 @@ msgid ""
 "Additional <varname>CFLAGS</varname> values to be passed to the "
 "<application>C</application> compiler by <command>go</command>."
 msgstr ""
-"Valores adicionais <varname>CFLAGS</varname> a serem passados ​​para o "
-"compilador <application>C</application> pelo <command>Go</command>"
+"Valores adicionais da variável <varname>CFLAGS</varname> a serem passados "
+"​​para o compilador <application>C</application> pelo <command>Go</command>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:21036
@@ -37589,8 +37602,8 @@ msgid ""
 "Additional <varname>LDFLAGS</varname> values to be passed to the "
 "<application>C</application> compiler by <command>go</command>."
 msgstr ""
-"Valores adicionais <varname>LDFLAGS</varname> a serem passados ​​para o "
-"compilador <application>C</application> pelo <command>Go</command>."
+"Valores adicionais da variável <varname>LDFLAGS</varname> a serem passados "
+"​​para o compilador <application>C</application> pelo <command>Go</command>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21048
@@ -37603,9 +37616,8 @@ msgid ""
 "Add a buildtime dependency on <package role=\"port\">devel/gperf</package> "
 "if <command>gperf</command> is not present in the base system."
 msgstr ""
-"Adicionar uma dependência de buildtime em <package role=\"port\">devel/"
-"gperf</package> se <command>gperf</command> não estiver presente no sistema "
-"básico. "
+"Adicionar uma dependência de <package role=\"port\">devel/gperf</package> em "
+"buildtime se <command>gperf</command> não estiver presente no sistema base."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21057
@@ -37633,14 +37645,14 @@ msgid ""
 "\"port\">devel/grantlee</package> and <package role=\"port\">devel/"
 "grantlee5</package> to get their versions numbers."
 msgstr ""
-"Lidar com a dependência de <application>Grantlee</application>. "
-"Especificamos <literal>4</literal> para depender da versão baseada "
-"<application>Qt4</application>, <package role=\"port\">devel/grantlee</"
-"package>. Especificamos <literal>5</literal> para depender da versão baseada "
-"<application>Qt5</application>, <package role=\"port\">devel/grantlee5</"
-"package>. <literal>selfbuild</literal> é usado internamente por <package "
-"role=\"port\">devel/grantlee</package> e <package role=\"port\">devel/"
-"grantlee5</package> para obter os números das suas versões. "
+"Manipular dependência de <application>Grantlee</application>. Especifique "
+"<literal>4</literal> para depender da versão baseada em <application>Qt4</"
+"application>, <package role=\"port\">devel/grantlee</package>. Especifique "
+"<literal>5</literal> para depender da versão baseada em <application>Qt5</"
+"application>, <package role=\"port\">devel/grantlee5</package>. "
+"<literal>selfbuild</literal> é usado internamente por <package role="
+"\"port\">devel/grantlee</package> e <package role=\"port\">devel/grantlee5</"
+"package> para obter os números das suas versões. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21072
@@ -37653,8 +37665,8 @@ msgid ""
 "Possible arguments: <literal>build</literal>, <literal>run</literal>, "
 "<literal>both</literal>"
 msgstr ""
-"Argumentos possíveis: <literal>build</literal>, <literal> run </literal>, "
-"<literal>ambos</literal>"
+"Argumentos possíveis: <literal>build</literal>, <literal>run</literal>, "
+"<literal>both</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21077
@@ -37662,8 +37674,8 @@ msgid ""
 "Registers a dependency on <package role=\"port\">textproc/groff</package> if "
 "not present in the base system."
 msgstr ""
-"Registra uma dependência em <package role=\"port\">textproc/groff</package> "
-"se não estiver presente no sistema básico. "
+"Registra uma dependência de <package role=\"port\">textproc/groff</package> "
+"se não estiver presente no sistema base. "
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21082
@@ -37916,13 +37928,13 @@ msgid ""
 "generate a <_:buildtarget-3/> target, add the <literal>noman</literal> "
 "argument."
 msgstr ""
-"Adicionar <package role=\"port\">devel/imake</package> como uma dependência "
-"de tempo de construção e executar <command>xmkmf -a</command> durante o "
-"estágio <_:buildtarget-1/>. Se o argumento é dado <literal>env</literal>, o "
-"destino <_:buildtarget-2/> não é definido. Se a flag  <option>-a</option> é "
-"um problema para o port, adicione o argumento <literal>notall</literal>. E "
-"se <command>xmkmf</command> não gera um destino <_:buildtarget-3/>, adicione "
-"o argumento <literal>noman</literal>."
+"Adiciona <package role=\"port\">devel/imake</package> como uma dependência "
+"de built-time e executa <command>xmkmf -a</command> durante o estágio <_:"
+"buildtarget-1/>. Se o argumento <literal>env</literal> é passado, o target "
+"<_:buildtarget-2/> não é definido. Se a flag <option>-a</option> for um "
+"problema para o port, adicione o argumento <literal>notall</literal>. E se "
+"<command>xmkmf</command> não gera um target <_:buildtarget-3/>, adicione o "
+"argumento <literal>noman</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21218
@@ -37940,8 +37952,8 @@ msgid ""
 "Add dependency on <application>KDE</application> components. See <xref "
 "linkend=\"using-kde\"/> for more information."
 msgstr ""
-"Adicionar dependência em componentes <application>KDE</application>. Veja "
-"<xref linkend=\"using-kde\"/> Para maiores informações."
+"Adiciona dependência de componentes <application>KDE</application>. Veja "
+"<xref linkend=\"using-kde\"/> para maiores informações."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21227
@@ -37988,14 +38000,14 @@ msgid ""
 "kernel due to <filename>/boot/kernel</filename> being renamed to <filename>/"
 "boot/kernel.old</filename> in the process."
 msgstr ""
-"Definir <varname>KMODDIR</varname> para <filename>/boot/modules</filename> "
-"por padrão, adicione-o para <varname>PLIST_SUB</varname> e "
-"<varname>MAKE_ENV</varname> e crie-o após a instalação. E se "
-"<varname>KMODDIR</varname> está configurado para <filename>/boot/kernel</"
-"filename>, será reescrito para <filename>/boot/modules</filename>. Isso "
-"evita quebrar pacotes ao atualizar o kernel devido a <filename>/boot/kernel</"
-"filename> sendo renomeado para <filename>/boot/kernel.old</filename> no "
-"processo."
+"Define <varname>KMODDIR</varname> para <filename>/boot/modules</filename> "
+"por padrão, adicione isso para a variável <varname>PLIST_SUB</varname> e "
+"<varname>MAKE_ENV</varname>, e o crie após a instalação. Se a variável "
+"<varname>KMODDIR</varname> está definida para o <filename>/boot/kernel</"
+"filename>, será reescrito no <filename>/boot/modules</filename>. Isso evita "
+"quebrar pacotes ao atualizar o kernel devido ao <filename>/boot/kernel</"
+"filename> estar sendo renomeado para <filename>/boot/kernel.old</filename> "
+"no processo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21263
@@ -38004,8 +38016,9 @@ msgid ""
 "deinstallation, using <link linkend=\"plist-keywords-kld\"><literal>@kld</"
 "literal></link>."
 msgstr ""
-"Lidar com os módulos do kernel referentes à instalação e desinstalação, "
-"usando <link linkend=\"plist-keywords-kld\"><literal>@kld</literal></link>."
+"Manipular módulos cross-referencing do kernel acerca da instalação e "
+"desinstalação, usando <link linkend=\"plist-keywords-kld\"><literal>@kld</"
+"literal></link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21268
@@ -38017,12 +38030,12 @@ msgid ""
 "debug</filename>. The framework will take care of creating and removing any "
 "required directories."
 msgstr ""
-"Se o argumento <literal>debug</literal> é dado, o port pode instalar uma "
-"versão de depuração do módulo em <filename>KERN_DEBUGDIR</filename>/"
-"<filename>KMODDIR</filename>. Por padrão, <varname>KERN_DEBUGDIR</varname> é "
-"copiado de <varname>DEBUGDIR</varname> e definido para <filename>/usr/lib/"
-"debug</filename>. O framework cuidará de criar e remover quaisquer "
-"diretórios necessários. "
+"Se o argumento <literal>debug</literal> é passado, o port pode instalar uma "
+"versão de debug do módulo no arquivo <filename>KERN_DEBUGDIR</filename>/"
+"<filename>KMODDIR</filename>. Por padrão, a variável <varname>KERN_DEBUGDIR</"
+"varname> é copiada da <varname>DEBUGDIR</varname> e definido para <filename>/"
+"usr/lib/debug</filename>. O framework irá cuidar de criar e remover "
+"quaisquer diretórios necessários."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21281
@@ -38046,9 +38059,9 @@ msgid ""
 "package>. Any ports depending on <application>libarchive</application> must "
 "include <literal>USES=libarchive</literal>."
 msgstr ""
-"Registra uma dependência em <package role=\"port\">archivers/libarchive</"
-"package>. Quaisquer ports dependendo <application>libarchive</application> "
-"deve incluir <literal>USES=libarchive</literal>"
+"Registra uma dependência de <package role=\"port\">archivers/libarchive</"
+"package>. Quaisquer ports dependendo de <application>libarchive</"
+"application> deve incluir <literal>USES=libarchive</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21300
@@ -38062,9 +38075,9 @@ msgid ""
 "Any ports depending on <application>libedit</application> must include "
 "<literal>USES=libedit</literal>."
 msgstr ""
-"Registra uma dependência em <package role=\"port\">devel/libedit</package>. "
+"Registra uma dependência de <package role=\"port\">devel/libedit</package>. "
 "Quaisquer ports dependendo de <application>libedit</application> deve "
-"incluir <literal>USES=libedit</literal>"
+"incluir <literal>USES=libedit</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21310
@@ -38090,13 +38103,13 @@ msgid ""
 "role=\"port\">devel/libtool</package>, use the <literal>:build</literal> "
 "argument to add such dependency."
 msgstr ""
-"Scripts de patches <command>libtool</command>. Isso deve ser adicionado a "
+"Scripts <command>libtool</command> de patches. Isso deve ser adicionado a "
 "todos os ports que usam <command>libtool</command>. O argumento "
 "<literal>keepla</literal> pode ser usado para manter arquivos <filename>.la</"
 "filename>. Alguns ports não vêm com sua própria cópia da libtool e precisam "
-"de uma dependência de tempo de compilação <package role=\"port\">devel/"
-"libtool</package>, use o argumento <literal>:build</literal> para adicionar "
-"essa dependência. "
+"de uma dependência de <package role=\"port\">devel/libtool</package> em "
+"build time, use o argumento <literal>:build</literal> para adicionar essa "
+"dependência."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21326
@@ -38480,11 +38493,12 @@ msgid ""
 "internally by a few other <varname>USES</varname>."
 msgstr ""
 "Garante que as bibliotecas de dependências em <varname>LOCALBASE</varname> "
-"sejam usadas ​​em vez das do sistema base. Especificamos <literal>ldflags</"
-"literal>add <literal>-L${LOCALBASE}/lib</literal> para <varname>LDFLAGS</"
-"varname> ao invés de <varname>LIBS</varname>. Ports que dependem de "
-"bibliotecas que também estão presentes no sistema base devem usar isso. "
-"Também é usado internamente por alguns outros <varname>USES</varname>."
+"sejam usadas ​​em vez das do sistema base. Especifique <literal>ldflags</"
+"literal> para adicionar <literal>-L${LOCALBASE}/lib</literal> para a "
+"variável <varname>LDFLAGS</varname> ao invés de <varname>LIBS</varname>. "
+"Ports que dependem de bibliotecas que também estão presentes no sistema base "
+"devem usar isso. Também é usado internamente por algumas outras variáveis "
+"<varname>USES</varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21650
@@ -38511,11 +38525,12 @@ msgid ""
 "<literal><replaceable>XY</replaceable></literal> parameter (for example, "
 "<literal>51</literal> or <literal>52+</literal>)."
 msgstr ""
-"Adiciona uma dependência em <application>Lua</application>. Por padrão, esta "
-"é uma dependência de biblioteca, a menos que seja uma opção <literal>build</"
-"literal> ou <literal>run</literal>. A versão padrão é 5.2, a menos que seja "
-"definido pelo parâmetro <literal><replaceable>XY</replaceable></literal> "
-"(por exemplo,<literal>51</literal> ou <literal>52+</literal>)."
+"Adiciona uma dependência de <application>Lua</application>. Por padrão, esta "
+"é uma dependência de biblioteca, a menos que seja invalidado por uma opção "
+"<literal>build</literal> ou <literal>run</literal>. A versão padrão é 5.2, a "
+"menos que seja definido pelo parâmetro <literal><replaceable>XY</"
+"replaceable></literal> (por exemplo, <literal>51</literal> ou <literal>52+</"
+"literal>)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21671
@@ -38525,9 +38540,10 @@ msgid ""
 "needed for the port. See <xref linkend=\"using-lxqt\"/> for more information."
 ""
 msgstr ""
-"Manipular dependências para o <application>LXQt Desktop</application>. Usar "
-"<varname>USE_LXQT</varname> para selecionar os componentes necessários para "
-"o port. Veja <xref linkend=\"using-lxqt\"/> Para maiores informações."
+"Manipular dependências para a aplicação <application>LXQt Desktop</"
+"application>. Use a variável <varname>USE_LXQT</varname> para selecionar os "
+"componentes necessários para o port. Veja <xref linkend=\"using-lxqt\"/> "
+"para maiores informações."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21677
@@ -38554,8 +38570,8 @@ msgid ""
 "Indicates that the distribution files are makeself archives and sets the "
 "appropriate dependencies."
 msgstr ""
-"Indica que os arquivos de distribuição são arquivos do tipo \"faça você "
-"mesmo\" e define as dependências apropriadas."
+"Indica que os arquivos de distribuição são arquivos makeself e define as "
+"dependências apropriadas."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:21695
