@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-01 11:18+0000\n"
-"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
+"PO-Revision-Date: 2018-10-02 01:40+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -11762,7 +11762,7 @@ msgid ""
 msgstr ""
 "irá verificar se há uma biblioteca jpeg compartilhada com qualquer versão no "
 "subdiretório <filename>graphics/jpeg</filename> da árvore de ports para "
-"compilar ou instalar se não for encontrado."
+"compilar e instalar se não for encontrado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6592
@@ -11774,12 +11774,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>) will automatically "
 "install it if it is not on the user's system."
 msgstr ""
-"A dependência é verificada duas vezes, uma vez dentro do alvo <_:buildtarget-"
-"1/> e depois dentro do alvo <_:buildtarget-2/>. Além disso, o nome da "
-"dependência é colocado no pacote para que <command>pkg-install</command> "
-"(Veja <citerefentry><refentrytitle>pkg-install</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>) instale automaticamente se não estiver no sistema "
-"do usuário. "
+"A dependência é verificada duas vezes, uma vez dentro do target <_:"
+"buildtarget-1/> e depois dentro do target <_:buildtarget-2/>. Além disso, o "
+"nome da dependência é colocado no pacote para que o <command>pkg-install</"
+"command> (veja <citerefentry><refentrytitle>pkg-install</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>) a instale "
+"automaticamente se a mesma não estiver no sistema do usuário. "
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -11805,15 +11805,15 @@ msgid ""
 msgstr ""
 "Esta variável especifica arquivos executáveis ​​ou arquivos para os quais "
 "este port depende durante o tempo de execução. É uma lista de tuplas "
-"<replaceable>caminho</replaceable>:<replaceable>dir</replaceable><optional>:"
-"<replaceable>target</replaceable></optional> onde <replaceable>caminho</"
+"<replaceable>path</replaceable>:<replaceable>dir</replaceable><optional>:"
+"<replaceable>target</replaceable></optional> onde <replaceable>path</"
 "replaceable> é o nome do executável ou arquivo,<replaceable>dir</"
 "replaceable> é o diretório no qual encontrá-lo, caso não esteja disponível, "
-"e o <replaceable>alvo</replaceable> é o alvo para chamar nesse diretório. E "
-"se<replaceable>caminho</replaceable> começa com uma barra (<literal>/</"
-"literal>), é tratado como um arquivo e sua existência é testada com "
+"e o <replaceable>target</replaceable> é o target para chamar nesse diretório."
+" E se o <replaceable>path</replaceable> começar com uma barra (<literal>/</"
+"literal>), ele será tratado como um arquivo e sua existência é testada com "
 "<command>test -e</command>; caso contrário, é assumido como um executável e "
-"<command>which -s</command>é usado para determinar se o programa existe no "
+"<command>which -s</command> é usado para determinar se o programa existe no "
 "caminho de pesquisa. "
 
 #. (itstool) path: sect2/para
@@ -11842,11 +11842,11 @@ msgid ""
 "install it if it is not found."
 msgstr ""
 "irá verificar se o arquivo ou diretório <filename>/usr/local/news/bin/innd</"
-"filename> existe, e buildar e instalá-lo a partir do subdiretório "
+"filename> existe, e compilar e instalá-lo a partir do subdiretório "
 "<filename>news/inn</filename> da árvore de ports, caso não seja encontrado. "
 "Ele também verá se um executável chamado <command>xmlcatmgr</command> está "
 "no caminho de pesquisa em <filename>textproc/xmlcatmgr</filename> para "
-"compilar ou instalar se não for encontrado. "
+"compilar e instalar se não for encontrado. "
 
 #. (itstool) path: note/para
 #: book.translate.xml:6633
@@ -11884,13 +11884,13 @@ msgid ""
 "replaceable> part can be omitted if it is the same as "
 "<varname>DEPENDS_TARGET</varname>."
 msgstr ""
-"A dependência é verificada a partir do alvo <_:buildtarget-1/>. Além disso, "
-"o nome da dependência é colocado no pacote para que <command>pkg-install</"
-"command> (Veja <citerefentry><refentrytitle>pkg-install</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>) instale "
-"automaticamente se não estiver no sistema do usuário. A parte "
-"<replaceable>alvo</replaceable> pode ser omitida se for igual a "
-"<varname>DEPENDS_TARGET</varname>"
+"A dependência é verificada a partir do target <_:buildtarget-1/>. Além "
+"disso, o nome da dependência é colocado no pacote para que o <command>pkg-"
+"install</command> (veja <citerefentry><refentrytitle>pkg-install</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>) a instale "
+"automaticamente se a mesma não estiver no sistema do usuário. A parte "
+"<replaceable>target</replaceable> pode ser omitida se for igual a "
+"<varname>DEPENDS_TARGET</varname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6654
@@ -11903,7 +11903,7 @@ msgid ""
 msgstr ""
 "Uma situação bastante comum é quando <varname>RUN_DEPENDS</varname> é "
 "literalmente o mesmo que <varname>BUILD_DEPENDS</varname>, especialmente se "
-"software portado é escrito em uma linguagem de script ou se requer o mesmo "
+"o software portado é escrito em uma linguagem de script ou se requer o mesmo "
 "ambiente de compilação e tempo de execução. Neste caso, é tentador e "
 "intuitivo atribuir diretamente um ao outro: "
 
@@ -11936,13 +11936,13 @@ msgstr ""
 "variáveis do <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>. Considere um <filename>Makefile</filename> com "
 "<varname>USES_<replaceable>*</replaceable></varname>, que são processados "
-"​​por <filename>ports/Mk/bsd. *. mk</filename> para aumentar as dependências "
-"iniciais de compilação. Por exemplo,<literal>USES=gmake</literal> adiciona "
+"​​por <filename>ports/Mk/bsd.*.mk</filename> para aumentar as dependências "
+"iniciais de compilação. Por exemplo, <literal>USES=gmake</literal> adiciona "
 "<package role=\"port\">devel/gmake</package> para <varname>BUILD_DEPENDS</"
 "varname>. Para evitar que essas dependências adicionais poluam "
 "<varname>RUN_DEPENDS</varname>, crie outra variável com o conteúdo atual de "
-"<varname>BUILD_DEPENDS</varname> e atribua ambos <varname>BUILD_DEPENDS</"
-"varname> e <varname>RUN_DEPENDS</varname>:"
+"<varname>BUILD_DEPENDS</varname> e atribua-a para ambos "
+"<varname>BUILD_DEPENDS</varname> e <varname>RUN_DEPENDS</varname>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6681
@@ -11966,7 +11966,7 @@ msgid ""
 "versa. All variables are expanded immediately, which is exactly the wrong "
 "thing to do and almost always a failure."
 msgstr ""
-"<emphasis> Não </emphasis> usar <literal> := </literal> para atribuir "
+"<emphasis>Não</emphasis> use <literal>:=</literal> para atribuir "
 "<varname>BUILD_DEPENDS</varname> para <varname>RUN_DEPENDS</varname> ou vice-"
 "versa. Todas as variáveis ​​são expandidas imediatamente, o que é exatamente "
 "a coisa errada a fazer e quase sempre um fracasso."
@@ -11987,9 +11987,10 @@ msgid ""
 "replaceable></optional> tuples. For example,"
 msgstr ""
 "Esta variável especifica executáveis ​​ou arquivos que este port requer para "
-"ser compilado. <varname>RUN_DEPENDS</varname>, é uma lista de "
-"<replaceable>path</replaceable>:<replaceable>dir</replaceable><optional>:"
-"<replaceable>target</replaceable></optional> tuples. Por exemplo,"
+"ser compilado. Como <varname>RUN_DEPENDS</varname>, ela é uma lista de "
+"tuplas <replaceable>path</replaceable>:<replaceable>dir</"
+"replaceable><optional>:<replaceable>target</replaceable></optional>. Por "
+"exemplo,"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6704
@@ -12005,9 +12006,9 @@ msgid ""
 "into the <filename>archivers/unzip</filename> subdirectory of the ports tree "
 "to build and install it if it is not found."
 msgstr ""
-"irá procurar por um executável chamado <command>unzip</command> e descer "
-"para o subdiretório <filename>archivers/unzip</filename> da árvore de ports "
-"para compilar ou instalar se não for encontrado. "
+"irá procurar por um executável chamado <command>unzip</command>, e ir para o "
+"subdiretório <filename>archivers/unzip</filename> da árvore de ports para "
+"compilar e instalar se não for encontrado."
 
 #. (itstool) path: note/para
 #: book.translate.xml:6712
@@ -12018,9 +12019,9 @@ msgid ""
 "<varname>DEPENDS_TARGET</varname>"
 msgstr ""
 "<quote>build</quote> aqui significa tudo, desde a extração até a compilação. "
-"A dependência é verificada a partir do destino <_:buildtarget-1/>. A parte "
-"do <replaceable>alvo</replaceable> pode ser omitida se for igual "
-"a<varname>DEPENDS_TARGET</varname>"
+"A dependência é verificada a partir do target <_:buildtarget-1/>. A parte do "
+"<replaceable>target</replaceable> pode ser omitida se for igual a "
+"<varname>DEPENDS_TARGET</varname>"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -12038,9 +12039,9 @@ msgid ""
 "optional> tuples. For example,"
 msgstr ""
 "Esta variável especifica executáveis ​​ou arquivos que este port requer para "
-"buscar. Como os dois anteriores, é uma lista de tuplas <replaceable>caminho</"
-"replaceable>:<replaceable>dir</replaceable><optional>:<replaceable>alvo</"
-"replaceable></optional>. Por exemplo,"
+"fazer os downloads. Como os dois anteriores, é uma lista de tuplas "
+"<replaceable>path</replaceable>:<replaceable>dir</replaceable><optional>:"
+"<replaceable>target</replaceable></optional>. Por exemplo,"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6728
@@ -12055,9 +12056,9 @@ msgid ""
 "into the <filename>net/ncftp2</filename> subdirectory of the ports tree to "
 "build and install it if it is not found."
 msgstr ""
-"irá procurar por um executável chamado <command>ncftp2</command> e descer "
-"para o subdiretório <filename>net/ncftp2</filename> da árvore de ports para "
-"compilar ou instalar se não for encontrado. "
+"irá procurar por um executável chamado <command>ncftp2</command> e ir para o "
+"subdiretório <filename>net/ncftp2</filename> da árvore de ports para "
+"compilar e instalar se não for encontrado. "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6735
@@ -12068,9 +12069,9 @@ msgid ""
 "<replaceable>target</replaceable> part can be omitted if it is the same as "
 "<varname>DEPENDS_TARGET</varname>."
 msgstr ""
-"A dependência é verificada a partir do alvo <_:buildtarget-1/>. A parte "
-"<replaceable>alvo</replaceable> pode ser omitida se for igual a "
-"<varname>DEPENDS_TARGET</varname>"
+"A dependência é verificada a partir do target <_:buildtarget-1/>. A parte "
+"<replaceable>target</replaceable> pode ser omitida se for igual a "
+"<varname>DEPENDS_TARGET</varname>."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -12088,7 +12089,7 @@ msgid ""
 "replaceable></optional> tuples. For example,"
 msgstr ""
 "Esta variável especifica executáveis ​​ou arquivos que este port requer para "
-"extração. Como no anterior, é uma lista de tuplas <replaceable>caminho</"
+"extração. Como no anterior, é uma lista de tuplas <replaceable>path</"
 "replaceable>:<replaceable>dir</replaceable><optional>:<replaceable>target</"
 "replaceable></optional>. Por exemplo,"
 
@@ -12106,10 +12107,10 @@ msgid ""
 "<literal>USES=tar</literal>, <literal>USES=lha</literal> or <literal>USES="
 "zip</literal> described in <xref linkend=\"uses\"/>."
 msgstr ""
-"Use esta variável somente se a extração ainda não funcionar (o padrão assume "
-"<command>tar</command>) e não pode ser feito para trabalhar usando "
-"<literal>USES=tar</literal>, <literal>USES=lha</literal> ou <literal>USES="
-"zip</literal> descrito em <xref linkend=\"uses\"/>"
+"Use esta variável somente se a extração ainda não funcionar (o padrão usa "
+"<command>tar</command>) e não funciona com <literal>USES=tar</literal>, "
+"<literal>USES=lha</literal> ou <literal>USES=zip</literal> descrito em <xref "
+"linkend=\"uses\"/>."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -12127,7 +12128,7 @@ msgid ""
 "optional> tuples. For example,"
 msgstr ""
 "Esta variável especifica executáveis ​​ou arquivos que este port requer para "
-"correção. Como no anterior, é uma lista de <replaceable>caminho</"
+"aplicar patches. Como no anterior, é uma lista de <replaceable>path</"
 "replaceable>:<replaceable>dir</replaceable><optional>:<replaceable>target</"
 "replaceable></optional>. Por exemplo,"
 
@@ -12162,7 +12163,7 @@ msgid ""
 msgstr ""
 "Parâmetros podem ser adicionados para definir diferentes recursos e "
 "dependências usados ​​pelo port. Eles são especificados adicionando esta "
-"linha ao<filename>Makefile</filename>: "
+"linha ao <filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6796
@@ -12174,7 +12175,7 @@ msgstr "USES= feature[:arguments]"
 #: book.translate.xml:6798
 msgid "For the complete list of values, please see <xref linkend=\"uses\"/>."
 msgstr ""
-"Para a lista completa de valores, por favor veja <xref linkend=\"uses\"/>"
+"Para a lista completa de valores, por favor veja o <xref linkend=\"uses\"/>."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:6802
@@ -12206,11 +12207,11 @@ msgid ""
 "<varname>PORT_OPTIONS</varname> for that purpose."
 msgstr ""
 "Diversas variáveis ​​existem para definir dependências comuns compartilhadas "
-"por muitos ports. Seu uso é opcional, mas ajuda a reduzir o detalhamento do "
-"<filename>Makefile</filename> do port . Cada um deles é denominado como "
+"por muitos ports. O uso é opcional, mas ajuda a reduzir a verbosidade dos "
+"<filename>Makefile</filename>s de port . Cada um deles é denominado como "
 "<varname>USES_<replaceable>*</replaceable></varname>. Essas variáveis "
 "​​podem ser usadas apenas no <filename>Makefile</filename> do port e "
-"<filename>ports/Mk/bsd. *. mk</filename>. Eles não são destinados a opções "
+"<filename>ports/Mk/bsd.*.mk</filename>. Elas não são destinadas a opções "
 "configuráveis ​​pelo usuário - use <varname>PORT_OPTIONS</varname> para esse "
 "propósito."
 
@@ -12237,8 +12238,8 @@ msgid ""
 "(where X.Y is version number) would add a dependency on gccXY for every "
 "port, including <literal>lang/gccXY</literal> itself!"
 msgstr ""
-"(onde XY é o número da versão) adicionaria uma dependência no gccXY para "
-"cada port, incluindo <literal>lang/gccXY</literal>em si!"
+"(onde XY é o número da versão) adicionaria uma dependência do gccXY para "
+"cada port, incluindo <literal>lang/gccXY</literal> em si!"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6841
@@ -12277,14 +12278,14 @@ msgstr ""
 "versões modernas e recentes. Normalmente, é configurado para "
 "<literal>qualquer</literal> (neste caso, o GCC da base seria usado em "
 "versões do FreeBSD que ainda o possuem, ou o port <literal>lang/gcc</"
-"literal> seria instalado quando o compilador C/C ++ padrão for o Clang); ou "
+"literal> seria instalado quando o compilador C/C++ padrão for o Clang); ou "
 "<literal>yes</literal> (significa usar sempre GCC estável e moderno do port "
 "<literal>lang/gcc</literal>). A versão exata também pode ser especificada, "
-"com um valor como <literal>4,7</literal>. A versão mínima exigida pode ser "
-"especificada como <literal>4,6+</literal>. O GCC do sistema básico é usado "
+"com um valor como <literal>4.7</literal>. A versão mínima exigida pode ser "
+"especificada como <literal>4.6+</literal>. O GCC do sistema base é usado "
 "quando satisfaz a versão solicitada, caso contrário, um compilador "
-"apropriado é construído a partir do port, e<varname>CC</varname> e "
-"<varname>CXX</varname> são ajustados em conformidade. "
+"apropriado é compilado a partir do port, e <varname>CC</varname> e "
+"<varname>CXX</varname> são ajustados em conformidade."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6871
@@ -12306,23 +12307,22 @@ msgid ""
 "<application>SDL</application> applications and finally, <xref linkend="
 "\"using-xfce\"/> contains information on <application>Xfce</application>."
 msgstr ""
-"Variáveis ​​relacionadas a <application>gmake</application> e "
+"Variáveis ​​relacionadas ao <application>gmake</application> e "
 "<filename>configure</filename> são descritos em <xref linkend=\"building\"/"
 ">, enquanto <application>autoconf</application>, <application>automake </"
 "application> e <application>libtool</application> são descritos em <xref "
-"linkend=\"using-autotools\"/>. Variáveis <application>Perl</application> "
-"​relacionadas são descritas em <xref linkend=\"using-perl\"/>. Variáveis "
+"linkend=\"using-autotools\"/>. Variáveis relacionadas ao <application>Perl</"
+"application> ​são descritas em <xref linkend=\"using-perl\"/>. Variáveis "
 "​​X11 são listadas em <xref linkend=\"using-x11\"/>. <xref linkend=\"using-"
 "gnome\"/> lida com o GNOME e <xref linkend=\"using-kde\"/> com variáveis "
 "​​relacionadas ao KDE. <xref linkend=\"using-java\"/> documenta variáveis "
 "​​Java, enquanto <xref linkend=\"using-php\"/> contém informações sobre "
 "<application>Apache</application>, <application>PHP</application> e módulos "
 "PEAR. <application>Python </application> é discutido em <xref linkend="
-"\"using-python\"/>, enquanto <application>Rubi</application> dentro <xref "
-"linkend=\"using-ruby\"/>. <xref linkend=\"using-sdl\"/> fornece variáveis "
-"​​usadas para aplicações <application>SDL</application> e, finalmente, <xref "
-"linkend=\"using-xfce\"/> contém informações sobre <application>Xfce</"
-"application>"
+"\"using-python\"/>, e <application>Ruby</application> em <xref linkend="
+"\"using-ruby\"/>. <xref linkend=\"using-sdl\"/> fornece variáveis ​​usadas "
+"para aplicações <application>SDL</application> e, finalmente, <xref linkend="
+"\"using-xfce\"/> contém informações sobre o <application>Xfce</application>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6898
@@ -12337,8 +12337,8 @@ msgid ""
 "<varname>LIB_DEPENDS</varname> using this syntax:"
 msgstr ""
 "Uma versão mínima de uma dependência pode ser especificada em qualquer "
-"<varname><replaceable>*</replaceable>_DEPENDS </varname>exceto<varname> "
-"LIB_DEPENDS </varname>usando esta sintaxe:"
+"<varname><replaceable>*</replaceable>_DEPENDS</varname>, exceto "
+"<varname>LIB_DEPENDS</varname>, usando esta sintaxe:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6905
@@ -12355,7 +12355,7 @@ msgid ""
 "machine."
 msgstr ""
 "O primeiro campo contém um nome de pacote dependente, que deve corresponder "
-"à entrada no banco de dados do pacote, um sinal de comparação e uma versão "
+"à entrada no banco de dados de pacotes, um sinal de comparação e uma versão "
 "do pacote. A dependência é satisfeita se o p5-Spiffy-0.26 ou mais recente "
 "estiver instalado na máquina."
 
@@ -12379,13 +12379,13 @@ msgid ""
 "target</literal> part of <varname><replaceable>*</replaceable>_DEPENDS</"
 "varname> instead of redefining <varname>DEPENDS_TARGET</varname>."
 msgstr ""
-"Como mencionado acima, o alvo padrão para chamar quando uma dependência é "
-"necessária é <_:buildtarget-1/>. Padrão para <literal>install</literal>. "
-"Esta é uma variável de usuário; nunca é definido em um <filename>Makefile</"
-"filename> do port. Se o port precisar de uma maneira especial de lidar com "
+"Como mencionado acima, o target padrão para chamar quando uma dependência é "
+"necessária é o <_:buildtarget-1/>. Seu padrão é o <literal>install</literal>."
+" Esta é uma variável de usuário; nunca é definido em um <filename>Makefile</"
+"filename> de port. Se o port precisar de uma maneira especial de lidar com "
 "uma dependência, use a parte <literal>:target</literal> de "
 "<varname><replaceable>*</replaceable>_DEPENDS</varname> em vez de redefinir "
-"<varname>DEPENDS_TARGET</varname>"
+"<varname>DEPENDS_TARGET</varname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6927
@@ -12399,8 +12399,8 @@ msgstr ""
 "Quando rodar <command>make clean</command>, as dependências de port também "
 "são limpas automaticamente. Se isso não for desejável, defina "
 "<varname>NOCLEANDEPENDS</varname> no ambiente. Isto pode ser particularmente "
-"desejável se o port tiver algo que demore muito tempo para reconstruir em "
-"sua lista de dependências, como o KDE, o GNOME ou o Mozilla. "
+"desejável se o port tiver algo que demore muito tempo para recompilar em sua "
+"lista de dependências, como o KDE, o GNOME ou o Mozilla."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6935
@@ -12412,10 +12412,10 @@ msgid ""
 "saved by specifying the target too. For instance"
 msgstr ""
 "Para depender de outro port incondicionalmente, use a variável "
-"<literal>${NONEXISTENT}</literal> como o primeiro campo do "
+"<literal>${NONEXISTENT}</literal> no primeiro campo do "
 "<varname>BUILD_DEPENDS</varname> ou <varname>RUN_DEPENDS</varname>. Use isto "
-"somente quando a fonte do outro port for necessária. O tempo de compilação "
-"pode ser salvo especificando o alvo também. Por exemplo"
+"somente quando o código fonte do outro port for necessário. Tempo de "
+"compilação pode ser economizado especificando o target também. Por exemplo"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6943
@@ -12450,14 +12450,14 @@ msgid ""
 "can be quite slow on older machines, but it may be able to save a large "
 "number of people, including yourself, a lot of grief in the process."
 msgstr ""
-"A tecnologia de construção de ports não tolera dependências circulares. Se "
+"A tecnologia de compilação de ports não tolera dependências circulares. Se "
 "uma for inserida, alguém, em algum lugar do mundo, terá sua instalação do "
-"FreeBSD quebrada quase imediatamente, com muitos outros rapidamente a serem "
-"seguidos. Estes podem ser realmente difíceis de detectar. Em caso de dúvida "
-", antes de fazer essa alteração, certifique-se de executar: <command>cd/usr/"
-"ports; make index</command>. Esse processo pode ser muito lento em máquinas "
-"mais antigas, mas pode salvar um grande número de pessoas, incluindo você, "
-"muito sofrimento no processo."
+"FreeBSD quebrada quase que imediatamente, e muitos outros rapidamente terão "
+"o mesmo problema. Estes erros podem ser realmente difíceis de serem "
+"detectados. Em caso de dúvida, antes de fazer qualquer alteração, certifique-"
+"se de executar: <command>cd /usr/ports; make index</command>. Esse processo "
+"pode ser muito lento em máquinas mais antigas, mas pode evitar dor de cabeça "
+"para um grande número de pessoas, incluindo você."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6970
@@ -12511,12 +12511,12 @@ msgid ""
 msgstr ""
 "O problema em tentar adicionar dependências automaticamente é que os "
 "arquivos e configurações fora de um port individual podem ser alterados a "
-"qualquer momento. Por exemplo: um índice é construído e um lote de ports é "
-"instalado. Mas um dos ports instala o arquivo testado. O índice agora está "
-"incorreto, porque um port instalado inesperadamente tem uma nova dependência."
-" O índice ainda pode estar errado mesmo após a recriação, se outros ports "
-"também determinarem a necessidade de dependências com base na existência de "
-"outros arquivos. "
+"qualquer momento. Por exemplo: um índice é construído, depois um lote de  "
+"ports é instalado. Mas um dos ports instala o arquivo testado. O índice "
+"então fica incorreto, porque um port instalado inesperadamente tem uma nova "
+"dependência. O índice ainda pode estar errado mesmo após a recriação, se "
+"outros ports também determinarem a necessidade de dependências com base na "
+"existência de outros arquivos. "
 
 #. (itstool) path: example/title
 #: book.translate.xml:7000
@@ -12549,7 +12549,7 @@ msgstr ""
 "Testar variáveis ​​de opções é o método correto. Ele não causará "
 "inconsistências no índice de um lote de ports, desde que as opções tenham "
 "sido definidas antes da construção do índice. Scripts simples podem ser "
-"usados ​​para automatizar a construção, instalação e atualização de essas "
+"usados ​​para automatizar a compilação, instalação e atualização desses "
 "ports e seus pacotes."
 
 #. (itstool) path: sect1/title
@@ -17645,11 +17645,11 @@ msgid ""
 "using <varname>CONFIGURE_ENV</varname>."
 msgstr ""
 "Se o port usa o script <command>configure</command> para gerar "
-"<filename>Makefile</filename> a partir de <filename>Makefile.in</filename> "
+"<filename>Makefile</filename>s a partir do  <filename>Makefile.in</filename> "
 "defina <literal>GNU_CONFIGURE=yes</literal>. Para dar argumentos extras ao "
 "script <command>configure</command> (o argumento padrão é <literal>--prefix="
 "${PREFIX} --infodir=${PREFIX}/${INFO_PATH} --mandir = ${MANPREFIX}/man --"
-"build = ${CONFIGURE_TARGET}</literal>), defina esses argumentos extras em "
+"build = ${CONFIGURE_TARGET}</literal>), defina estes argumentos extras em "
 "<varname>CONFIGURE_ARGS</varname>. Variáveis ​​de ambiente extras podem ser "
 "passadas usando <varname>CONFIGURE_ENV</varname>."
 
@@ -17710,13 +17710,13 @@ msgid ""
 "Override default configure target. Default value is <literal>${MACHINE_ARCH}-"
 "portbld-freebsd${OSREL}</literal>."
 msgstr ""
-"Substituir o target de configuração padrão. O valor padrão é "
+"Substitui o target de configuração padrão. O valor padrão é "
 "<literal>${MACHINE_ARCH}-portbld-freebsd${OSREL}</literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9840
 msgid "Using <command>cmake</command>"
-msgstr "Usando <command>cmake</command>"
+msgstr "Usando o <command>cmake</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9842
@@ -17725,14 +17725,14 @@ msgid ""
 "cmake</literal>, or <literal>USES= cmake:outsource</literal> to build in a "
 "separate directory (see below)."
 msgstr ""
-"Para ports que usam <application>CMake</application>, definir <literal>USES="
+"Para ports que usam o <application>CMake</application>, defina <literal>USES="
 "cmake</literal> ou <literal>USES=cmake:outsource</literal> para compilar em "
 "um diretório separado (veja abaixo)."
 
 #. (itstool) path: table/title
 #: book.translate.xml:9848
 msgid "Variables for Ports That Use <command>cmake</command>"
-msgstr "Variáveis ​​para ports que usam<command>cmake</command>"
+msgstr "Variáveis ​​para ports que usam o <command>cmake</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9862
@@ -17740,8 +17740,8 @@ msgid ""
 "Port specific <application>CMake</application> flags to be passed to the "
 "<command>cmake</command> binary."
 msgstr ""
-"Port específico<application>CMake</application>flags a serem passadas para "
-"o<command>cmake</command>binário."
+"Flags do <application>CMake</application> especificas para o port a serem "
+"passadas para o binário do <command>cmake</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9868
@@ -17787,9 +17787,10 @@ msgid ""
 "Default is <literal>Release</literal>, or <literal>Debug</literal> if "
 "<varname>WITH_DEBUG</varname> is set."
 msgstr ""
-"Tipo de compilação (perfis de construção predefinidos <application>CMake</"
-"application>). O padrão é <literal>Release</literal> ou <literal>Debug</"
-"literal> E se <varname>WITH_DEBUG</varname> está definido. "
+"Tipo de compilação (perfis de compilação predefinidos para o "
+"<application>CMake</application>). O padrão é <literal>Release</literal> ou "
+"<literal>Debug</literal> se a variável <varname>WITH_DEBUG</varname> estiver "
+"definida."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9891
@@ -17800,7 +17801,7 @@ msgstr "<varname>CMAKE_SOURCE_PATH</varname>"
 #: book.translate.xml:9892
 msgid "Path to the source directory. Default is <literal>${WRKSRC}</literal>."
 msgstr ""
-"Caminho para o diretório de origem. O padrão é<literal>${WRKSRC}</literal>."
+"Caminho para o diretório do fonte. O padrão é <literal>${WRKSRC}</literal>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9898
@@ -17808,14 +17809,14 @@ msgid ""
 "Additional environment variables to be set for the <command>cmake</command> "
 "binary."
 msgstr ""
-"Variáveis ​​de ambiente adicionais a serem definidas para o<command>cmake</"
-"command>binário."
+"Variáveis ​​de ambiente adicionais a serem definidas para o binário do "
+"<command>cmake</command>."
 
 #. (itstool) path: table/title
 #: book.translate.xml:9906
 msgid "Variables the Users Can Define for <command>cmake</command> Builds"
 msgstr ""
-"Variáveis ​​que os Usuários Podem Definir para Compilações com "
+"Variáveis ​​que os usuários podem definir para compilações com "
 "<command>cmake</command>"
 
 #. (itstool) path: row/entry
@@ -17829,9 +17830,9 @@ msgid ""
 "Enable verbose build output. Default not set, unless <varname>BATCH</"
 "varname> or <varname>PACKAGE_BUILDING</varname> are set."
 msgstr ""
-"Ativar saída de compilação detalhada. Padrão não definido, a menos que "
-"<varname>BATCH</varname> ou <varname>PACKAGE_BUILDING</varname> estão "
-"definidos."
+"Ativa o output detalhado da compilação. Não é definido por padrão, a menos "
+"que <varname>BATCH</varname> ou <varname>PACKAGE_BUILDING</varname> esteja "
+"definido."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9926
@@ -17844,9 +17845,9 @@ msgid ""
 "Disables color build output. Default not set, unless <varname>BATCH</"
 "varname> or <varname>PACKAGE_BUILDING</varname> are set."
 msgstr ""
-"Desativa a saída  de cor da compilação. O padrão não está definido, a menos "
-"que <varname>BATCH</varname> ou <varname>PACKAGE_BUILDING</varname> estão "
-"definidos."
+"Desativa o output colorido na compilação. Não é definido por padrão, a menos "
+"que <varname>BATCH</varname> ou <varname>PACKAGE_BUILDING</varname> esteja "
+"definido."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9935
@@ -17899,19 +17900,19 @@ msgid ""
 "literal> and this directory will be used to keep all files generated during "
 "configuration and build stages, leaving the source directory intact."
 msgstr ""
-"A maioria dos projetos <application>CMake</application> baseados em software "
-"suportam um método de construção fora da fonte. A construção fora da fonte "
-"de um port pode ser solicitada usando o sufixo <literal>:outsource</literal>."
-" Quando ativado <varname>CONFIGURE_WRKSRC</varname>, <varname>BUILD_WRKSRC</"
-"varname> e <varname>INSTALL_WRKSRC</varname> será definido para "
-"<literal>${WRKDIR}/.Build</literal> e esse diretório será usado para manter "
-"todos os arquivos gerados durante a configuração e os estágios de "
-"construção, deixando o diretório de origem intacto. "
+"A maioria dos projetos baseados no <application>CMake</application> suportam "
+"um método de compilação fora da fonte. A compilação fora da fonte de um port "
+"pode ser solicitada usando o sufixo <literal>:outsource</literal>. Quando "
+"ativado, as variáveis <varname>CONFIGURE_WRKSRC</varname>, "
+"<varname>BUILD_WRKSRC</varname> e <varname>INSTALL_WRKSRC</varname> serão "
+"definidas para <literal>${WRKDIR}/.Build</literal> e esse diretório será "
+"usado para manter todos os arquivos gerados durante a configuração e os "
+"estágios de compilação, deixando o diretório de origem intacto. "
 
 #. (itstool) path: example/title
 #: book.translate.xml:9973
 msgid "<literal>USES= cmake</literal> Example"
-msgstr "Exemplo <literal>USES=cmake</literal>"
+msgstr "Exemplo de <literal>USES=cmake</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:9975
@@ -17921,10 +17922,10 @@ msgid ""
 "be set when the sources are not located in the top directory, or if only a "
 "subset of the project is intended to be built by the port."
 msgstr ""
-"Este trecho demonstra o uso de <application>CMake</application> para um port."
-" <varname>CMAKE_SOURCE_PATH</varname> geralmente não é necessário, mas pode "
-"ser definido quando as fontes não estão localizadas no diretório superior ou "
-"se apenas um subconjunto do projeto for criado pelo port. "
+"Este trecho demonstra o uso do <application>CMake</application> para um port."
+"  O <varname>CMAKE_SOURCE_PATH</varname> geralmente não é necessário, mas "
+"pode ser definido quando os  fontes não estão localizados no diretório "
+"superior ou se apenas um subconjunto do projeto for compilado pelo port. "
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:9982
@@ -17946,9 +17947,9 @@ msgid ""
 "use the <varname>CMAKE_ON</varname> and <varname>CMAKE_OFF</varname> "
 "variables instead. This:"
 msgstr ""
-"Ao adicionar valores booleanos a <varname>CMAKE_ARGS</varname>, é mais fácil "
-"usar as variáveis <varname>CMAKE_ON</varname> e <varname>CMAKE_OFF</varname> "
-"​​em vez disso. Este:"
+"Ao adicionar valores booleanos a variável <varname>CMAKE_ARGS</varname>, "
+"será mais fácil usar as variáveis <varname>CMAKE_ON</varname> e "
+"<varname>CMAKE_OFF</varname> ​​em vez disso. Desta forma:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:9995
@@ -17971,9 +17972,9 @@ msgid ""
 "helpers described in <xref linkend=\"options-cmake_bool\"/> use the same "
 "semantics, but for optional values."
 msgstr ""
-"Isto é apenas para os valores padrão desativados <varname>CMAKE_ARGS</"
-"varname>. As ajudas descritos em <xref linkend=\"options-cmake_bool\"/> usam "
-"a mesma semântica, mas para valores opcionais. "
+"Isto é apenas para os valores padrão desativados do <varname>CMAKE_ARGS</"
+"varname>. Os helpers descritos em <xref linkend=\"options-cmake_bool\"/> "
+"usam a mesma semântica, mas para valores opcionais. "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10012
@@ -17997,10 +17998,11 @@ msgid ""
 "<varname>CC/CXX/CFLAGS/CXXFLAGS</varname>), patch <filename>SConstruct</"
 "filename> so build <literal>Environment</literal> is constructed like this:"
 msgstr ""
-"Para fazer terceiros <filename>SConstruct</filename> respeitar tudo o que é "
-"passado para SCons no ambiente (isto é, mais importante, <varname>CC/CXX/"
-"CFLAGS/CXXFLAGS</varname>), altere o <filename>SConstruct</filename> para "
-"compilar o <literal>Evironment</literal> que será construído assim: "
+"Para fazer os <filename>SConstruct</filename> de terceiros respeitarem tudo "
+"o que é passado para SCons no ambiente (isto é, o mais importante, "
+"<varname>CC/CXX/CFLAGS/CXXFLAGS</varname>), altere o <filename>SConstruct</"
+"filename> para que o <literal>Evironment</literal> de compilação fique da "
+"seguinte forma: "
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10025
@@ -18014,8 +18016,8 @@ msgid ""
 "It may be then modified with <literal>env.Append</literal> and <literal>env."
 "Replace</literal>."
 msgstr ""
-"Pode então ser modificado com<literal>env.Append</literal> e <literal>env."
-"Replace</literal>"
+"Ele poderá então ser modificado com <literal>env.Append</literal> e "
+"<literal>env.Replace</literal>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10033
@@ -18054,10 +18056,10 @@ msgid ""
 msgstr ""
 "Lista de crates que o port depende. Cada entrada precisa ter um formato como "
 "<literal>cratename-semver</literal> por exemplo, <literal>libc-0.2.40</"
-"literal>. Os mantenedores de ports podem gerar essa lista de <filename>Cargo."
-"lock</filename> usando <command> make cargo-crates</command>. Versões de "
-"crates manualmente soltas são possíveis, mas tenha em mente as dependências "
-"transitivas."
+"literal>. Os mantenedores de ports podem gerar essa lista a partir do  "
+"<filename>Cargo.lock</filename> usando o comando <command>make cargo-crates</"
+"command>. É possível  alterar manualmente as versões dos crates, mas tenha "
+"em mente as dependências transitivas."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10067
@@ -18083,7 +18085,7 @@ msgstr "<literal>${WRKSRC}/Cargo.toml</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:10076
 msgid "The path to the <filename>Cargo.toml</filename> to use."
-msgstr "O caminho para o <filename>Cargo.toml</filename> usar."
+msgstr "O caminho para o <filename>Cargo.toml</filename> que será usado."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10081
@@ -18102,9 +18104,9 @@ msgid ""
 "cargo-crates</command>. It is possible to specify more than one lock file "
 "when necessary."
 msgstr ""
-"O caminho para o <filename>Cargo.lock</filename> para usar <command>make "
-"cargo-crates</command>. É possível especificar mais de um arquivo de "
-"bloqueio quando necessário. "
+"O caminho para o <filename>Cargo.lock</filename> que será utilizado para o "
+"<command>make cargo-crates</command>. É possível especificar mais de um "
+"arquivo de bloqueio quando necessário. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10090
@@ -18117,7 +18119,7 @@ msgid ""
 "A list of environment variables to pass to Cargo similar to "
 "<varname>MAKE_ENV</varname>."
 msgstr ""
-"Uma lista de variáveis ​​de ambiente para passar para Cargo semelhante a "
+"Uma lista de variáveis ​​de ambiente para passar para o Cargo semelhante a "
 "<varname>MAKE_ENV</varname>."
 
 #. (itstool) path: row/entry
@@ -18163,9 +18165,9 @@ msgid ""
 "Extra arguments to pass to Cargo during the configure phase. Valid arguments "
 "can be looked up with <command>cargo update --help</command>."
 msgstr ""
-"Argumentos extras para passar para Cargo durante a fase de configuração. Os "
-"argumentos válidos podem ser consultados com <command>cargo update --help</"
-"command>."
+"Argumentos extras para passar para o Cargo durante a fase de configuração. "
+"Os argumentos válidos podem ser consultados com <command>cargo update --"
+"help</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10118
@@ -18176,7 +18178,7 @@ msgstr "<varname>CARGO_BUILDDEP</varname>"
 #: book.translate.xml:10120
 msgid "Add a build dependency on <package role=\"port\">lang/rust</package>."
 msgstr ""
-"Adicionar uma dependência de compilação em <package role=\"port\">lang/rust</"
+"Adiciona uma dependência de compilação em <package role=\"port\">lang/rust</"
 "package>."
 
 #. (itstool) path: row/entry
@@ -18210,8 +18212,8 @@ msgid ""
 "Extra arguments to pass to Cargo during the build phase. Valid arguments can "
 "be looked up with <command>cargo build --help</command>."
 msgstr ""
-"Argumentos extras para passar para Cargo durante a fase de construção. "
-"Argumentos válidos podem ser consultados <command>cargo buil --help</"
+"Argumentos extras para passar para o Cargo durante a fase de compilação. "
+"Argumentos válidos podem ser consultados com <command>cargo buil --help</"
 "command>."
 
 #. (itstool) path: row/entry
@@ -18230,7 +18232,7 @@ msgid ""
 "Extra arguments to pass to Cargo during the install phase. Valid arguments "
 "can be looked up with <command>cargo install --help</command>."
 msgstr ""
-"Argumentos extras para passar para a Cargo durante a fase de instalação. Os "
+"Argumentos extras para passar para o Cargo durante a fase de instalação. Os "
 "argumentos válidos podem ser consultados com <command>cargo isntall --help</"
 "command>."
 
@@ -18255,7 +18257,7 @@ msgid ""
 "Extra arguments to pass to Cargo during the test phase. Valid arguments can "
 "be looked up with <command>cargo test --help</command>."
 msgstr ""
-"Argumentos extras para passar para a Cargo durante a fase de teste. Os "
+"Argumentos extras para passar para o Cargo durante a fase de teste. Os "
 "argumentos válidos podem ser consultados com <command>cargo test --help</"
 "command>."
 
