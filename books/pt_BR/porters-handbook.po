@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-05 02:08+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-10-06 12:26+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -26,7 +26,7 @@ msgid "translator-credits"
 msgstr ""
 "kanazuchi, contato@kanazuchi.com, 2018\n"
 "Mauro Risonho de Paula Assumpção, mauro risonho@gmail.com, 2018\n"
-"André Franciosi, andre@franciosi.org, 2018"
+"André Franciosi, andre@franciosi.org, 201880"
 
 #. (itstool) path: info/title
 #: book.translate.xml:39
@@ -19042,7 +19042,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:10534
 msgid "Read only variables"
-msgstr "Variáveis ​​Somente Leitura"
+msgstr "Variáveis ​​Somente de Leitura"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10541
@@ -19060,9 +19060,9 @@ msgid ""
 msgstr ""
 "O caminho completo do interpretador Perl 5, seja no sistema ou instalado a "
 "partir de um port, mas sem o número da versão. Use isso quando o software "
-"precisar do caminho para o interprete <application>Perl</application>. Para "
-"substituir linhas <quote><literal>#!</literal></quote> em scripts, use <link "
-"linkend=\"uses-shebangfix\">USES=shebangfix</link>."
+"precisar do caminho para o interpretador <application>Perl</application>. "
+"Para substituir as linhas <quote><literal>#!</literal></quote> em scripts, "
+"use <link linkend=\"uses-shebangfix\">USES=shebangfix</link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10552
@@ -19087,8 +19087,8 @@ msgid ""
 "The installed Perl version as an integer of the form <literal>MNNNPP</"
 "literal> (for example, <literal>500809</literal>)."
 msgstr ""
-"A versão do Perl instalada como um inteiro da forma <literal>MNNNPP</"
-"literal>(por exemplo,<literal>500809</literal>)."
+"A versão do Perl instalada como um inteiro no formato <literal>MNNNPP</"
+"literal> (por exemplo,<literal>500809</literal>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10565
@@ -19101,8 +19101,8 @@ msgid ""
 "Where Perl stores architecture dependent libraries. Defaults to "
 "<literal>${ARCH}-freebsd</literal>."
 msgstr ""
-"Onde o Perl armazena bibliotecas dependentes da arquitetura. Padrões para "
-"<literal>${ARCH}-freebsd</literal>."
+"Local no qual o Perl armazena as bibliotecas dependentes da arquitetura. O "
+"valor padrão aponta para <literal>${ARCH}-freebsd</literal>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10572
@@ -19139,8 +19139,8 @@ msgid ""
 "Module-Name/</literal> (including the trailing slash)."
 msgstr ""
 "Ports de Módulos Perl que não possuem um site oficial devem linkar para "
-"<systemitem>cpan.org</systemitem> na linha WWW de <filename>pkg-descr</"
-"filename>. O formulário de URL preferido é <literal>http://search.cpan.org/"
+"<systemitem>cpan.org</systemitem> na linha WWW do <filename>pkg-descr</"
+"filename>. O formato preferido para a URL é <literal>http://search.cpan.org/"
 "dist/Module-Name/</literal> (incluindo a barra final)."
 
 #. (itstool) path: note/para
@@ -19153,7 +19153,7 @@ msgid ""
 "declare Perl module dependencies is shown in the example below."
 msgstr ""
 "Não use <literal>${SITE_PERL}</literal> em declarações de dependência. Fazê-"
-"lo pressupõe que <filename>perl5.mk</filename> foi incluído, o que nem "
+"lo pressupõe que o <filename>perl5.mk</filename> foi incluído, o que nem "
 "sempre é verdade. Os ports que dependem desse port terão dependências "
 "incorretas se os arquivos desse port forem movidos posteriormente em uma "
 "atualização. O caminho certo para declarar as dependências do módulo Perl é "
@@ -19212,10 +19212,10 @@ msgid ""
 "and <literal>4</literal> to <literal>9</literal>) because those get "
 "installed in the regular directories."
 msgstr ""
-"Não há macros <varname>PERL5_MAN<replaceable>x</replaceable></varname> para "
-"as outras secções (<replaceable>x</replaceable> dentro <literal>2</literal> "
-"e <literal>4</literal>para<literal>9</literal>) porque esses são instalados "
-"nos diretórios comuns. "
+"Não existem macros <varname>PERL5_MAN<replaceable>x</replaceable></varname> "
+"para as outras seções (sendo <replaceable>x</replaceable> igual a "
+"<literal>2</literal> e de <literal>4</literal> até <literal>9</literal>) "
+"porque estes são instalados nos diretórios comuns. "
 
 #. (itstool) path: example/title
 #: book.translate.xml:10636
@@ -19225,7 +19225,7 @@ msgstr "Um Port Que Requer Perl Apenas para Compilar"
 #. (itstool) path: example/para
 #: book.translate.xml:10638
 msgid "As the default USE_PERL5 value is build and run, set it to:"
-msgstr "Como o valor padrão USE_PERL5 é para build e run, configure-o para:"
+msgstr "Como o valor padrão para USE_PERL5 é build e run, configure-o para:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10641
