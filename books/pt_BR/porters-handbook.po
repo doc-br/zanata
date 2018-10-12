@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-11 03:56+0000\n"
+"PO-Revision-Date: 2018-10-12 11:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -19479,7 +19479,7 @@ msgstr ""
 "Se o port requer uma biblioteca Motif, defina <varname>USES=motif</varname> "
 "no <filename>Makefile</filename>. A implementação padrão do Motif é <package "
 "role=\"port\">x11-toolkits/open-motif</package>. Os usuários podem escolher "
-"<package role=\"port\">x11-toolkits/lesstif</package> em vez disso, "
+"o <package role=\"port\">x11-toolkits/lesstif</package> em vez disso, "
 "definindo <varname>WANT_LESSTIF</varname> no seu <filename>make.conf</"
 "filename>."
 
@@ -19492,11 +19492,11 @@ msgid ""
 "referenced in the original <filename>Makefile</filename> or "
 "<filename>Imakefile</filename>."
 msgstr ""
-"<varname>MOTIFLIB</varname> será definido por <filename>motif.mk</filename> "
-"para referenciar a biblioteca Motif apropriada. Por favor, corrija a fonte "
-"do port para usar <literal>${MOTIFLIB}</literal> onde quer que a biblioteca "
-"Motif seja referenciada no <filename>Makefile</filename> original ou "
-"<filename>Imakefile</filename>."
+"O <varname>MOTIFLIB</varname> será definido por <filename>motif.mk</"
+"filename> para referenciar a biblioteca Motif apropriada. Por favor, corrija "
+"o fonte do port para usar <literal>${MOTIFLIB}</literal> onde quer que a "
+"biblioteca Motif seja referenciada no <filename>Makefile</filename> original "
+"ou no <filename>Imakefile</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10782
@@ -19531,7 +19531,7 @@ msgid ""
 "so there is no need to add <literal>-L</literal> or <literal>-l</literal> in "
 "front."
 msgstr ""
-"Observe que <varname>MOTIFLIB</varname> (geralmente) se expande para "
+"Observe que o <varname>MOTIFLIB</varname> (geralmente) se expande para "
 "<literal>-L/usr/local/lib -lXm -lXp</literal> ou <literal>/usr/local/lib/"
 "libXm.a</literal>, então não há necessidade de adicionar <literal>-L</"
 "literal> ou <literal>-l</literal> na frente."
@@ -19567,10 +19567,10 @@ msgid ""
 msgstr ""
 "Algumas aplicações requerem uma tela X11 funcional para que a compilação "
 "seja bem-sucedida. Isso representa um problema para as máquinas que operam "
-"sem cabeça. Quando essa variável é usada, a infraestrutura de compilação "
-"iniciará o servidor virtual framebuffer X. O construtor <envar>DISPLAY</"
-"envar> é então passado para a construção. Veja <link linkend=\"uses-"
-"display\"> <literal>USES=exibição</literal></link> para os possíveis "
+"sem um monitor. Quando essa variável é usada, a infraestrutura de compilação "
+"iniciará o X virtual framebuffer. Um <envar>DISPLAY</envar> funcional é "
+"então passado para a compilação. Veja <link linkend=\"uses-"
+"display\"><literal>USES=exibição</literal></link> para os possíveis "
 "argumentos."
 
 #. (itstool) path: sect2/programlisting
@@ -19582,7 +19582,7 @@ msgstr "USES=\tdisplay"
 #. (itstool) path: sect2/title
 #: book.translate.xml:10831
 msgid "Desktop Entries"
-msgstr "Entradas Desktop"
+msgstr "Entradas de Desktop"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10833
@@ -19598,17 +19598,17 @@ msgid ""
 "of automation provides a real benefit to the user, and desktop entries are "
 "encouraged for applications which can be used in a desktop environment."
 msgstr ""
-"Entradas desktop (<link xlink:href=\"http://standards.freedesktop.org/"
+"Entradas de desktop (<link xlink:href=\"http://standards.freedesktop.org/"
 "desktop-entry-spec/latest/\">um padrão Freedesktop</link>) fornecem uma "
 "maneira de ajustar automaticamente os recursos do desktop quando um novo "
 "programa é instalado, sem a necessidade de intervenção do usuário. Por "
 "exemplo, programas recém-instalados aparecem automaticamente nos menus de "
-"aplicativos de ambientes de desktop compatíveis. Entradas Desktop originadas "
-"no ambiente de desktop <application>GNOME</application>, mas agora são um "
-"padrão e também funcionam com o <application>KDE</application> e "
-"<application>Xfce</application>. Esse pouco de automação fornece um "
-"benefício real para o usuário, e as entradas desktop são incentivadas para "
-"aplicativos que podem ser usados ​​em um ambiente desktop. "
+"aplicativos de ambientes de desktop compatíveis. Entradas de Desktop "
+"surgiram no ambiente de desktop <application>GNOME</application>, mas agora "
+"são um padrão e também funcionam com o <application>KDE</application> e o "
+"<application>Xfce</application>. Esta pitada de automação fornece um "
+"benefício real para o usuário, e as entradas de desktop são incentivadas "
+"para aplicativos que podem ser usados ​​em um ambiente desktop. "
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10849
@@ -19626,7 +19626,7 @@ msgid ""
 "installing these files."
 msgstr ""
 "Ports que incluem <filename><replaceable>*</replaceable>.desktop</filename> "
-"pré-definidos devem incluir esses arquivos em <filename>pkg-plist</filename> "
+"pré-definidos devem incluir estes arquivos no <filename>pkg-plist</filename> "
 "e instalá-los no diretório <filename>$LOCALBASE/share/applications</"
 "filename>. A macro <link linkend=\"install-macros\"><varname>INSTALL_DATA</"
 "varname></link> é útil para instalar esses arquivos. "
@@ -19647,12 +19647,12 @@ msgstr ""
 "Se um port tiver uma entrada MimeType em seu "
 "<filename><replaceable>portname</replaceable>.desktop</filename>, o banco de "
 "dados do desktop deve ser atualizado após a instalação e desinstalação. Para "
-"fazer isso, defina<varname>USES</varname>= desktop-file-utils. "
+"fazer isso, defina <varname>USES</varname>= desktop-file-utils. "
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10873
 msgid "Creating Desktop Entries with <varname>DESKTOP_ENTRIES</varname>"
-msgstr "Criando Entradas Desktop com <varname>DESKTOP_ENTRIES</varname>"
+msgstr "Criando Entradas de Desktop com <varname>DESKTOP_ENTRIES</varname>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10876
@@ -19785,8 +19785,8 @@ msgid ""
 msgstr ""
 "Adicionar esta variável ao port permite o uso das macros e componentes "
 "definidos em <filename>bsd.gnome.mk</filename>. O código em <filename>bsd."
-"gnome.mk</filename> adiciona as dependências de tempo de criação, tempo de "
-"execução ou biblioteca necessárias ou o tratamento de arquivos especiais. "
+"gnome.mk</filename> adiciona as dependências de tempo de compilação, tempo "
+"de execução ou biblioteca necessárias ou o tratamento de arquivos especiais. "
 "Aplicativos <acronym>GNOME</acronym> sob o FreeBSD usam o framework "
 "<varname>USE_GNOME</varname>. Inclua todos os componentes necessários como "
 "uma lista separada por espaço. Os componentes <varname>USE_GNOME</varname> "
@@ -19878,9 +19878,9 @@ msgid ""
 "any dependencies to the port. <varname>USE_GNOME</varname> cannot be set "
 "after <filename>bsd.port.pre.mk</filename>."
 msgstr ""
-"A macro <varname>USE_GNOME</varname> sem nenhum argumento não adiciona "
-"nenhuma dependência ao port. <varname>USE_GNOME</varname> não pode ser "
-"definido depois de  <filename>bsd.port.pre.mk</filename>."
+"A macro <varname>USE_GNOME</varname> se utilizada sem nenhum argumento não "
+"irá adicionar nenhuma dependência ao port. O <varname>USE_GNOME</varname> "
+"não pode ser definido depois do   <filename>bsd.port.pre.mk</filename>."
 
 # auto translated by TM merge from project: ManageIQ Classic UI, version: fine, DocId: ManageIQ_UI_Classic
 #. (itstool) path: sect2/title
@@ -19898,9 +19898,9 @@ msgid ""
 "for these macros to be of use."
 msgstr ""
 "Esta seção explica quais macros estão disponíveis e como elas são usadas. "
-"Como elas são usadas no exemplo acima. <xref linkend=\"gnome-components\"/> "
-"tem uma explicação mais detalhada. <varname>USE_GNOME</varname> precisa ser "
-"definido para que essas macros sejam úteis. "
+"Como elas são usadas no exemplo acima. A <xref linkend=\"gnome-components\"/"
+"> tem uma explicação mais detalhada. A variável  <varname>USE_GNOME</"
+"varname> precisa ser definido para que essas macros sejam úteis. "
 
 #. (itstool) path: varlistentry/term
 #. (itstool) id: book.translate.xml#gnome-icons
@@ -19958,11 +19958,11 @@ msgid ""
 msgstr ""
 "Os arquivos de esquema do glib são escritos em <acronym>XML</acronym> e "
 "terminam com a extensão <filename>gschema.xml</filename>. Eles estão "
-"instalados no diretório <filename>share/glib-2.0/schemas /</filename>. Esses "
+"instalados no diretório <filename>share/glib-2.0/schemas/</filename>. Esses "
 "arquivos de esquema contêm todos os valores de configuração do aplicativo "
 "com as configurações padrão. O banco de dados real usado pelos aplicativos é "
-"construído por <application>esquema de compilação simplificada</"
-"application>, que é executado pela macro <varname>GLIB_SCHEMAS</varname>. "
+"construído por <application>glib-compile-schema</application>, que é "
+"executado pela macro <varname>GLIB_SCHEMAS</varname>. "
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:11039
@@ -20011,8 +20011,8 @@ msgstr ""
 "praticamente todos os aplicativos GNOME usam para armazenar suas "
 "configurações. Esses arquivos são instalados no banco de dados no diretório "
 "<filename>etc/gconf/schemas</filename>. Esse banco de dados é definido pelos "
-"arquivos de esquema instalados que são usados ​​para gerar <filename>% gconf."
-"xml</filename> arquivos chave. Para cada arquivo de esquema instalado pelo "
+"arquivos de esquema instalados que são usados ​​para gerar os arquivos chave "
+"<filename>%gconf.xml</filename>. Para cada arquivo de esquema instalado pelo "
 "port, existe uma entrada no <filename>Makefile</filename>: "
 
 #. (itstool) path: listitem/programlisting
@@ -20030,7 +20030,7 @@ msgid ""
 "applications might not work properly."
 msgstr ""
 "Os esquemas do Gconf estão listados na macro <varname>GCONF_SCHEMAS</"
-"varname> em vez de <filename>pkg-plist</filename>. Se eles estiverem "
+"varname> em vez do  <filename>pkg-plist</filename>. Se eles estiverem "
 "listados em <filename>pkg-plist</filename>, eles não serão registrados e os "
 "aplicativos podem não funcionar corretamente."
 
@@ -20054,11 +20054,11 @@ msgstr ""
 "Os arquivos do Open Source Metadata Framework (<acronym>OMF</acronym>) são "
 "comumente usados ​​pelos aplicativos GNOME 2. Esses arquivos contêm as "
 "informações do arquivo de ajuda do aplicativo e requerem processamento "
-"especial pelo ScrollKeeper. Para registrar adequadamente arquivos "
-"<acronym>OMF</acronym> ao instalar aplicativos GNOME de pacotes, certifique-"
-"se de que arquivos <varname>omf</varname> são listados em <varname>pkg-"
-"plist</varname> e que o <filename>Makefile</filename> do port tem "
-"<varname>INSTALLS_OMF</varname> definido:"
+"especial pelo ScrollKeeper/rarian. Para registrar adequadamente arquivos "
+"<acronym>OMF</acronym> ao instalar aplicativos GNOME a partir de pacotes, "
+"certifique-se de que os arquivos <varname>omf</varname> estão listados em "
+"<varname>pkg-plist</varname> e que o <filename>Makefile</filename> do port "
+"tem o <varname>INSTALLS_OMF</varname> definido:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:11098
@@ -20075,7 +20075,7 @@ msgid ""
 "to track in the <acronym>OMF</acronym> registration database."
 msgstr ""
 "Quando definido, <filename>bsd.gnome.mk</filename> digitaliza "
-"automaticamente <filename>pkg-plist</filename> e adiciona diretivas  "
+"automaticamente o <filename>pkg-plist</filename> e adiciona diretivas  "
 "<literal>@exec</literal> e <literal>@unexec</literal> para cada <filename>."
 "omf</filename>para rastrear no banco de dados de registro do <acronym>OMF</"
 "acronym>."
@@ -20100,7 +20100,7 @@ msgid ""
 "defaults to adding to both build and run dependencies."
 msgstr ""
 "Para mais ajuda com um port GNOME, veja alguns dos <link xlink:href="
-"\"@@URL_RELPREFIX@@/ports/gnome.html\"> ports existentes</link> por exemplo. "
+"\"@@URL_RELPREFIX@@/ports/gnome.html\">ports existentes</link> por exemplo. "
 "A pagina <link xlink:href=\"@@URL_RELPREFIX@@/gnome/\"> GNOME do FreeBSD</"
 "link> tem informações de contato, se precisar de mais ajuda. Os componentes "
 "são divididos em componentes GNOME que estão atualmente em uso e componentes "
@@ -20452,7 +20452,7 @@ msgstr "x11-toolkits/gtksourceview2"
 #: book.translate.xml:11257
 #: book.translate.xml:11553
 msgid "Widget that adds syntax highlighting to GtkTextView"
-msgstr "Widget que adiciona sintaxe highlighting para o GtkTextView"
+msgstr "Widget que adiciona destaque de sintaxe para o GtkTextView"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20469,7 +20469,8 @@ msgstr "x11-toolkits/gtksourceview3"
 #. (itstool) path: row/entry
 #: book.translate.xml:11264
 msgid "Text widget that adds syntax highlighting to the GtkTextView widget"
-msgstr "Widget de texto que adiciona sintaxe destacada ao widget GtkTextView"
+msgstr ""
+"Widget de texto que adiciona destaque de sintaxe ao widget GtkTextView"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20543,8 +20544,8 @@ msgid ""
 "that use introspection bindings. (both, build, run)"
 msgstr ""
 "Ligações de introspecção e ferramentas básicas para gerar ligações de "
-"introspecção. Na maioria das vezes: build é suficiente, :both/:run só é "
-"necessário para aplicativos que usam ligações de introspecção. (both, buil, "
+"introspecção. Na maioria das vezes: build é suficiente, e :both/:run só é "
+"necessário para aplicativos que usam ligações de introspecção. (both, build, "
 "run)"
 
 #. (itstool) path: row/entry
@@ -20615,7 +20616,7 @@ msgstr "devel/libgsf"
 #: book.translate.xml:11319
 msgid "Extensible I/O abstraction for dealing with structured file formats"
 msgstr ""
-"Abstração de E/S extensível para lidar com formatos de arquivo estruturados"
+"Abstração extensível de I/O para lidar com formatos de arquivo estruturados"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20650,7 +20651,7 @@ msgstr "devel/libsigc++20"
 #: book.translate.xml:11333
 #: book.translate.xml:11651
 msgid "Callback Framework for C++"
-msgstr "Callback Framework para C++"
+msgstr "Framework de Callback para C++"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20685,7 +20686,7 @@ msgstr "textproc/libxml2"
 #. (itstool) path: row/entry
 #: book.translate.xml:11345
 msgid "XML parser library (both, build, run)"
-msgstr "biblioteca XML parser (both, build, run)"
+msgstr "Biblioteca do parser XML (both, build, run)"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20857,9 +20858,9 @@ msgid ""
 "filename> is used. Please only use when <literal>intltool</literal> alone is "
 "not enough."
 msgstr ""
-"O mesmo que intltool, mas os patches para garantir <filename>share/locale/</"
-"filename> é usado. Por favor, use somente quando <literal>intltool</literal> "
-"sozinho não for suficiente."
+"O mesmo que intltool, porém com os patches necessários para garantir o "
+"<filename>share/locale/</filename>. Por favor, use somente quando "
+"<literal>intltool</literal> sozinho não for suficiente."
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20912,7 +20913,7 @@ msgstr "audio/esound"
 #. (itstool) path: row/entry
 #: book.translate.xml:11459
 msgid "Enlightenment sound package"
-msgstr "pacote de som Enlightenment"
+msgstr "Pacote de som do Enlightenment"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11463
@@ -20927,7 +20928,7 @@ msgstr "x11-toolkits/gal2"
 #. (itstool) path: row/entry
 #: book.translate.xml:11465
 msgid "Collection of widgets taken from GNOME 2 gnumeric"
-msgstr "Coleção de widgets do GNOME 2 gnumeric"
+msgstr "Coleção de widgets obtidos do GNOME 2 gnumeric"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20961,7 +20962,7 @@ msgstr "devel/gconfmm26"
 #. (itstool) path: row/entry
 #: book.translate.xml:11478
 msgid "c++ bindings for gconf2"
-msgstr "c++ bindings para gconf2"
+msgstr "c++ bindings para o gconf2"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -20990,7 +20991,7 @@ msgstr "devel/glib12"
 #. (itstool) path: row/entry
 #: book.translate.xml:11490
 msgid "glib 1.2 core library"
-msgstr "biblioteca glib 1.2 core"
+msgstr "biblioteca principal glib 1.2"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21007,7 +21008,7 @@ msgstr "textproc/gnome-doc-utils"
 #. (itstool) path: row/entry
 #: book.translate.xml:11496
 msgid "GNOME doc utils"
-msgstr "GNOME doc utils"
+msgstr "Utilitários de documentação para o GNOME"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21109,7 +21110,7 @@ msgstr "www/gtkhtml3"
 #: book.translate.xml:11539
 #: book.translate.xml:11631
 msgid "Lightweight HTML rendering/printing/editing engine"
-msgstr "Lightweight HTML rendering/printing/editing engine"
+msgstr "Mecanismo leve de renderização/impressão/edição de HTML"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21226,7 +21227,7 @@ msgstr "devel/libglade2"
 #. (itstool) path: row/entry
 #: book.translate.xml:11587
 msgid "GNOME 2 glade library"
-msgstr "Biblioteca de glade do GNOME 2"
+msgstr "Biblioteca glade do GNOME 2"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21260,7 +21261,7 @@ msgstr "graphics/libgnomecanvas"
 #. (itstool) path: row/entry
 #: book.translate.xml:11600
 msgid "Graphics library for GNOME 2"
-msgstr "Biblioteca de Gráficos para o GNOME 2"
+msgstr "Biblioteca Gráfica para o GNOME 2"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21370,7 +21371,7 @@ msgstr "devel/libIDL"
 #. (itstool) path: row/entry
 #: book.translate.xml:11644
 msgid "Library for creating trees of CORBA IDL file"
-msgstr "Biblioteca para criação de árvores do arquivo CORBA IDL"
+msgstr "Biblioteca para criação de árvores de arquivo do CORBA IDL"
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -21529,7 +21530,7 @@ msgid ""
 "<application>pangox-compat</application> has been deprecated and split off "
 "from the <application>pango</application> package."
 msgstr ""
-"<application>pangox-compat</application>foi descontinuado e separado do "
+"O <application>pangox-compat</application>foi descontinuado e separado do "
 "pacote <application>pango</application>."
 
 #. (itstool) path: sect1/title
@@ -21540,7 +21541,7 @@ msgstr "Usando o Qt"
 #. (itstool) path: sect2/title
 #: book.translate.xml:11737
 msgid "Ports That Require Qt"
-msgstr "Ports que Exigem Qt"
+msgstr "Ports que requerem o Qt"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11739
@@ -21553,13 +21554,13 @@ msgid ""
 "frameworks are quite similar. The main difference is the set of supported "
 "components."
 msgstr ""
-"A coleção de Ports fornece suporte para frameworks Qt 4 e Qt 5 com "
-"<varname>USE_QT<replaceable>x</replaceable></varname>, Onde <replaceable>x</"
+"A coleção de Ports fornece suporte para os frameworks Qt 4 e Qt 5 com "
+"<varname>USE_QT<replaceable>x</replaceable></varname>, onde <replaceable>x</"
 "replaceable> é <literal>4</literal> ou <literal>5</literal>. Defina "
-"<varname>USE_QT<replaceable>x</replaceable></varname> à lista de componentes "
-"obrigatórios do Qt (bibliotecas, ferramentas, plugins). As estruturas do Qt "
-"4 e Qt 5 são bastante semelhantes. A principal diferença é o conjunto de "
-"componentes suportados."
+"<varname>USE_QT<replaceable>x</replaceable></varname> para a  lista de "
+"componentes obrigatórios do Qt (bibliotecas, ferramentas, plugins). As "
+"estruturas do Qt 4 e Qt 5 são bastante semelhantes. A principal diferença é "
+"o conjunto de componentes suportados."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11750
@@ -21573,7 +21574,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:11754
 msgid "Variables Provided to Ports That Use Qt"
-msgstr "Variáveis ​​Fornecidas aos Ports Que Usam Qt"
+msgstr "Variáveis ​​Fornecidas aos Ports Que Usam o Qt"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11759
@@ -21736,7 +21737,7 @@ msgid ""
 "varname>, and <varname>_USE_QT5_ONLY</varname> in <filename>/usr/ports/Mk/"
 "bsd.qt.mk</filename>):"
 msgstr ""
-"Dependências individuais de ferramentas e bibliotecas Qt devem ser "
+"Dependências individuais de ferramentas e bibliotecas do Qt devem ser "
 "especificadas em <varname>USE_QT<replaceable>x</replaceable></varname>. Cada "
 "componente pode ser sufixado com <literal>_build</literal> ou <literal>_run</"
 "literal>, o sufixo indica se a dependência no componente está no buildtime "
@@ -21889,14 +21890,14 @@ msgid ""
 "To determine the libraries an application depends on, run <command>ldd</"
 "command> on the main executable after a successful compilation."
 msgstr ""
-"Para determinar as bibliotecas das quais um aplicativo depende, "
-"execute<command>ldd</command>no executável principal após uma compilação bem "
+"Para determinar as bibliotecas das quais um aplicativo depende, execute o "
+"<command>ldd</command> no executável principal após uma compilação bem "
 "sucedida. "
 
 #. (itstool) path: table/title
 #: book.translate.xml:11927
 msgid "Available Qt Tool Components"
-msgstr "Componentes Disponíveis de Ferramenta Qt "
+msgstr "Componentes Disponíveis da Ferramenta Qt "
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect1/title
@@ -21908,7 +21909,7 @@ msgstr "<literal>qmake</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:11940
 msgid "Makefile generator/build utility"
-msgstr "Utilitario gerador/compilador de Makefile"
+msgstr "Utilitário gerador/compilador de Makefile"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11944
@@ -21922,7 +21923,7 @@ msgid ""
 "build tools (<command>moc</command>, <command>rcc</command>), needed for "
 "almost every Qt application (Qt 5 only)"
 msgstr ""
-"Ferramentas de build (<command>moc</command>, <command>rcc</command>), "
+"Ferramentas de compilação (<command>moc</command>, <command>rcc</command>), "
 "necessária para quase todas as aplicações do Qt (apenas no Qt 5) "
 
 #. (itstool) path: row/entry
@@ -21979,7 +21980,7 @@ msgid ""
 "filename> or <filename>*.qrc</filename> files (Qt 4 only)"
 msgstr ""
 "compilador de recursos, necessário se o aplicativo vier com arquivos "
-"<filename>* .rc</filename> ou <filename>* .qrc </filename> (apenas Qt 4) "
+"<filename>*.rc</filename> ou <filename>*.qrc </filename> (apenas Qt 4) "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11976
@@ -21994,7 +21995,7 @@ msgid ""
 "only)"
 msgstr ""
 "compilador de interface de usuário, necessário se o aplicativo vier com "
-"arquivos <filename>*.ui</filename>, na prática, cada aplicativo Qt com uma "
+"arquivos <filename>*.ui</filename>, na prática, todo aplicativo Qt com uma "
 "GUI (apenas Qt 4)"
 
 #. (itstool) path: table/title
@@ -22044,10 +22045,10 @@ msgid ""
 "thus they are specified with the <literal>_build</literal> suffix:"
 msgstr ""
 "Neste exemplo, o aplicativo portado usa a biblioteca de interface gráfica do "
-"usuário Qt 4, a biblioteca principal do Qt 4, todas as ferramentas de "
-"geração de código do Qt 4 e o gerador Makefile do Qt 4. Desde que a "
-"biblioteca <literal>gui</literal> implica uma dependência na biblioteca "
-"principal,<literal>corelib</literal> não precisa ser especificado. As "
+"usuário do Qt 4, a biblioteca principal do Qt 4, todas as ferramentas de "
+"geração de código do Qt 4 e o gerador de Makefile do Qt 4. Uma vez que a "
+"biblioteca <literal>gui</literal> implica na dependência da biblioteca "
+"principal, o <literal>corelib</literal> não precisa ser especificado. As "
 "ferramentas de geração de código do Qt 4 <literal>moc</literal>, "
 "<literal>uic</literal> e <literal>rcc</literal>, bem como o gerador de "
 "Makefile <literal>qmake</literal> são necessários apenas no buildtime, assim "
@@ -22084,16 +22085,17 @@ msgstr ""
 "literal> junto com <literal>USE_QT<replaceable>x</replaceable></literal>. "
 "Observe que <literal>USES=qmake</literal> já implica uma dependência de "
 "compilação no qmake, portanto, o componente qmake pode ser omitido de "
-"<literal>USE_QT<replaceable>x</replaceable></literal>. Igual a <link linkend="
-"\"using-cmake\"><application>CMake</application></link>, <application>qmake</"
-"application> suporta compilações out-of-source, que podem ser ativadas "
-"especificando o argumento <literal>outsource</literal>  (ver<link linkend="
-"\"using-qmake-example\"><literal>USES=qmake</literal>exemplo</link>) ."
+"<literal>USE_QT<replaceable>x</replaceable></literal>. Igual ao <link "
+"linkend=\"using-cmake\"><application>CMake</application></link>, o "
+"<application>qmake</application> suporta compilações out-of-source, que "
+"podem ser ativadas especificando o argumento <literal>outsource</literal>  "
+"(ver<link linkend=\"using-qmake-example\"><literal>USES=qmake</"
+"literal>exemplo</link>) ."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12052
 msgid "Variables for Ports That Use <command>qmake</command>"
-msgstr "Variáveis ​​para Ports Que Usam <command>qmake</command>"
+msgstr "Variáveis ​​para Ports Que Usam o <command>qmake</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12066
@@ -22102,7 +22104,7 @@ msgid ""
 "<command>qmake</command> binary."
 msgstr ""
 "Flags específicas do port <application>qmake</application> a serem passadas "
-"para o binario <command>qmake</command>."
+"para o binario do <command>qmake</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12072
@@ -22145,7 +22147,7 @@ msgid ""
 "This snippet demonstrates the use of <application>qmake</application> for a "
 "Qt 4 port:"
 msgstr ""
-"Este trecho demonstra o uso de <application>qmake</application> para um port "
+"Este trecho demonstra o uso do <application>qmake</application> para um port "
 "Qt 4: "
 
 #. (itstool) path: example/programlisting
@@ -22215,9 +22217,9 @@ msgid ""
 "a template on how to remedy this directly in the <command>qmake</command> "
 "project file."
 msgstr ""
-"<emphasis>Caminhos de instalação falsos.</emphasis> Às vezes, dados como "
+"<emphasis>Caminhos falsos de instalação.</emphasis> Às vezes, dados como "
 "ícones ou arquivos .desktop são instalados por padrão em diretórios que não "
-"são verificados por aplicativos compatíveis com XDG. <package role="
+"são verificados por aplicativos compatíveis com XDG. O <package role="
 "\"port\">editors/texmaker</package> é um exemplo disso - veja "
 "<filename>patch-texmaker.pro</filename> no diretório de <filename>arquivos</"
 "filename> desse port para um modelo sobre como remediar isso diretamente no "
@@ -22321,7 +22323,7 @@ msgstr "<literal>soprano</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:12201
 msgid "Library for Resource Description Framework (RDF)"
-msgstr "Biblioteca para Resource Description Framework (RDF)"
+msgstr "Biblioteca para o Resource Description Framework (RDF)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12206
@@ -22351,7 +22353,7 @@ msgstr "<literal>libkcompactdisc</literal>"
 #. (itstool) path: row/entry
 #: book.translate.xml:12217
 msgid "KDE library for interfacing with audio CDs"
-msgstr "Biblioteca do KDE de interface com CDs de áudio"
+msgstr "Biblioteca do KDE para interfaceamento com CDs de áudio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12222
@@ -22517,9 +22519,9 @@ msgstr ""
 "Os ports do KDE 4 são instalados em <varname>KDE_PREFIX</varname>. Isto "
 "acontece especificando o componente <literal>kdeprefix</literal>, que "
 "substitui o padrão <varname>PREFIX</varname>. Os ports, no entanto, "
-"respeitam qualquer <varname>PREFIX</varname> definido através de variável de "
-"ambiente <envar>MAKEFLAGS</envar> e/ou argumentos <command>make</command>. "
-"Atualmente <varname>KDE_PREFIX</varname> é idêntico ao padrão "
+"respeitam qualquer <varname>PREFIX</varname> definido através de uma "
+"variável de ambiente <envar>MAKEFLAGS</envar> e/ou argumentos <command>make</"
+"command>. Atualmente <varname>KDE_PREFIX</varname> é idêntico ao padrão "
 "<varname>PREFIX</varname>, <literal>${LOCALBASE}</literal>."
 
 #. (itstool) path: example/title
@@ -22541,13 +22543,13 @@ msgid ""
 "them in <varname>USE_QT4</varname>."
 msgstr ""
 "Este é um exemplo simples para um port do KDE 4. <literal>USES=cmake:"
-"outsource</literal> instrui o port a utilizar <application>CMake</"
+"outsource</literal> instrui o port a utilizar o <application>CMake</"
 "application>, uma ferramenta de configuração amplamente usada pelos projetos "
 "do KDE 4 (veja <xref linkend=\"using-cmake\"/>para uso detalhado). "
-"<varname>USE_KDE</varname> traz dependência nas bibliotecas do KDE e "
-"constrói o port usando <command>automoc4</command> no estágio de construção. "
-"Componentes necessários do KDE e outras dependências podem ser determinadas "
-"através do log de configuração. <varname>USE_KDE</varname> não implica "
+"<varname>USE_KDE</varname> traz dependência nas bibliotecas do KDE e compila "
+"o port usando <command>automoc4</command> no estágio de compilação. Os "
+"componentes necessários do KDE e outras dependências podem ser determinadas "
+"através do log de configuração. <varname>USE_KDE</varname> não implica no "
 "<varname>USE_QT4</varname>. Se um port requer alguns componentes do Qt 4, "
 "especifique-os em <varname>USE_QT4</varname>."
 
@@ -22575,9 +22577,9 @@ msgid ""
 "set <varname>USE_LXQT</varname> to the list of required components from the "
 "table below"
 msgstr ""
-"Aplicações dependendo do LXQt devem definir <literal>USES+= lxqt</literal> E "
-"definir <varname>USE_LXQT</varname> à lista de componentes necessários da "
-"tabela abaixo "
+"As aplicações que dependem do LXQt devem definir <literal>USES+= lxqt</"
+"literal> e definir a variável <varname>USE_LXQT</varname> para a lista de "
+"componentes necessários da tabela abaixo "
 
 #. (itstool) path: table/title
 #: book.translate.xml:12346
@@ -22683,9 +22685,9 @@ msgstr ""
 "Existem vários <acronym>JDKs</acronym> na coleção de ports, de vários "
 "fornecedores e em várias versões. Se o port precisar usar uma versão "
 "específica, especifique-a usando a variável <varname>JAVA_VERSION</varname>. "
-"A versão mais atual é <package role=\"port\"> \n"
-"java/openjdk8</package>, <package role=\"port\">java/openjdk6</package> e "
-"<package role=\"port\">java/openjdk7</package> também estão disponíveis."
+"A versão mais atual é <package role=\"port\">java/openjdk8</package>, "
+"<package role=\"port\">java/openjdk6</package> e <package role=\"port\">java/"
+"openjdk7</package> também estão disponíveis."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12417
@@ -22714,7 +22716,7 @@ msgid ""
 "<literal>\"+\"</literal> allows specifying a range of versions (allowed "
 "values: <literal>1.5[+] 1.6[+] 1.7[+]</literal>)."
 msgstr ""
-"Lista de versões Java adequadas separadas por espaço para o port. Um "
+"Lista das versões Java adequadas separadas por espaço para o port. Um "
 "opcional <literal>\"+\"</literal> permite especificar um intervalo de "
 "versões (valores permitidos: <literal>1.5[+] 1.6[+] 1.7[+]</literal>)."
 
@@ -22759,7 +22761,7 @@ msgid ""
 "When set, add the selected <acronym>JDK</acronym> port to the build "
 "dependencies."
 msgstr ""
-"Quando definido, adicione o port <acronym>JDK</acronym> selecionado às "
+"Quando definido, adiciona o port <acronym>JDK</acronym> selecionado às "
 "dependências de compilação."
 
 #. (itstool) path: row/entry
@@ -23120,12 +23122,12 @@ msgid ""
 "in a consistent way:"
 msgstr ""
 "Além disso, essas constantes são definidas para que todos os ports Java "
-"possam ser instaladas de maneira consistente:"
+"possam ser instalados de maneira consistente:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:12655
 msgid "Constants Defined for Ports That Use Java"
-msgstr "Constantes Definidas para Ports Que Usam Java"
+msgstr "Constantes definidas para os ports que usam Java"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12660
@@ -23230,7 +23232,7 @@ msgstr ""
 "${PORTNAME}</filename> (exceto para a documentação, veja abaixo). Para "
 "reduzir o tamanho do arquivo de empacotamento, faça referência aos arquivos "
 "JAR diretamente no <filename>Makefile</filename>. Use esta declaração (onde "
-"<filename><replaceable>myport</replaceable>.jar</filename> é o nome do "
+"<filename> <replaceable>myport</replaceable>.jar</filename> é o nome do "
 "arquivo JAR instalado como parte do port): "
 
 #. (itstool) path: sect2/programlisting
@@ -23273,15 +23275,15 @@ msgid ""
 msgstr ""
 "Ao portar um aplicativo <trademark>Java</trademark> que requer um servidor "
 "de aplicação, como o <package role=\"port\">www/tomcat7</package> para "
-"executar o serviço, é bastante comum que um fornecedor distribua um "
+"executar o serviço, é bastante comum que o fornecedor distribua um "
 "<filename>.war</filename>. Um <filename>.war</filename> é uma aplicação Web "
-"ARchive e é extraído quando chamado pelo aplicativo. Evite adicionar um "
-"<filename>.war</filename> em <filename>pkg-plist</filename>. Isto não é "
+"ARchive a qual é extraído quando chamado pelo aplicativo. Evite adicionar um "
+"<filename>.war</filename> no <filename>pkg-plist</filename>. Isto não é "
 "considerado a melhor prática. Um servidor de aplicação irá expandir o "
-"archive <application>war</application> mas não irá remove-lo se o port for "
+"arquivo <application>war</application> mas não irá remove-lo se o port for "
 "desinstalado. Uma forma mais desejável de trabalhar com este arquivo é "
-"extrair o archive, depois instalar os arquivos e, por fim, adicionar esses "
-"arquivos em <filename>pkg-plist</filename>."
+"extrair o seu conteudo, depois instalar os arquivos e, por fim, adicionar "
+"esses arquivos ao <filename>pkg-plist</filename>."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12752
