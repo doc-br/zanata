@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-15 10:24+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 01:43+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -12715,7 +12715,7 @@ msgstr ""
 "<varname>PREFIX</varname>, use <varname>MANDIRS</varname> para especificar "
 "esses diretórios. Note que os arquivos correspondentes às páginas de manual "
 "devem ser colocados no <filename>pkg-plist</filename> junto com o resto dos "
-"arquivos. O propósito de <varname>MANDIRS</varname> é ativar a compactação "
+"arquivos. O propósito do <varname>MANDIRS</varname> é ativar a compactação "
 "automática de páginas de manual, portanto, os nomes dos arquivos são "
 "sufixados com <filename>.gz</filename>."
 
@@ -12816,7 +12816,7 @@ msgstr ""
 "disponíveis e, em seguida, salva essas opções em <filename>${PORT_DBDIR}/"
 "${OPTIONS_NAME}/options</filename>. Na próxima vez que o port for compilado, "
 "as opções serão reutilizadas. O padrão de <varname>PORT_DBDIR</varname> é "
-"<filename>/var/db/ports</filename>. <varname>OPTIONS_NAME</varname> é para a "
+"<filename>/var/db/ports</filename>. <varname>OPTIONS_NAME</varname> é a "
 "origem do port com um underline como o separador de espaço, por exemplo, "
 "<package role=\"port\">dns/bind99</package> será <literal>dns_bind99</"
 "literal>."
@@ -12837,8 +12837,8 @@ msgstr ""
 "<filename>${PORT_DBDIR}/${OPTIONS_NAME}/options</filename>. Se esse arquivo "
 "não existir, os valores de <varname>OPTIONS_<replaceable>*</replaceable></"
 "varname> são usados ​​e uma caixa de diálogo é exibida onde as opções podem "
-"ser ativadas ou desativadas. Então as <filename>opções</filename> são salvas "
-"e as variáveis ​​configuradas são utilizadas ao compilar o port."
+"ser ativadas ou desativadas. Então as <filename>options</filename> são "
+"salvas e as variáveis ​​configuradas são utilizadas ao compilar o port."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7160
@@ -12946,7 +12946,7 @@ msgid ""
 "lowercase."
 msgstr ""
 "Os nomes das opções são sempre em letras maiúsculas. Não podem estar "
-"misturados ou apenas em minúsculo."
+"misturadas ou apenas em minúsculo."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7213
@@ -12954,8 +12954,8 @@ msgid ""
 "<varname>OPTIONS</varname> can be grouped as radio choices, where only one "
 "choice from each group is allowed:"
 msgstr ""
-"Variáveis <varname>OPTIONS</varname> podem ser agrupadas como opções radio, "
-"onde apenas uma escolha de cada grupo é permitida:"
+"<varname>OPTIONS</varname> podem ser agrupadas como opções radio, onde "
+"apenas uma escolha de cada grupo é permitida:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7217
@@ -12973,10 +12973,10 @@ msgid ""
 "of each group <emphasis>must</emphasis> be added to "
 "<varname>OPTIONS_DEFAULT</varname>."
 msgstr ""
-"Lá <emphasis>deve</emphasis> ser um grupo de cada <literal>OPTIONS_SINGLE</"
-"literal> selecionado em todos os momentos para as opções serem válidas. Uma "
-"opção de cada grupo <emphasis>deve</emphasis> ser adicionado a "
-"<varname>OPTIONS_DEFAULT</varname>"
+"<emphasis>Deve</emphasis> estar sempre selecionada uma de cada "
+"<literal>OPTIONS_SINGLE</literal> para as opções serem válidas. Uma opção de "
+"cada grupo <emphasis>deve</emphasis> ser adicionada a "
+"<varname>OPTIONS_DEFAULT</varname>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7228
@@ -12984,7 +12984,7 @@ msgid ""
 "<varname>OPTIONS</varname> can be grouped as radio choices, where none or "
 "only one choice from each group is allowed:"
 msgstr ""
-"<varname>OPTIONS</varname> podem ser agrupados como opções de escolha, onde "
+"<varname>OPTIONS</varname> podem ser agrupadas como opções radio, onde "
 "nenhuma ou apenas uma escolha de cada grupo é permitida:"
 
 #. (itstool) path: sect3/programlisting
@@ -13002,8 +13002,8 @@ msgid ""
 "quote> lists, where <emphasis>at least one</emphasis> option must be enabled:"
 ""
 msgstr ""
-"<varname>OPTIONS</varname> também pode ser agrupado como listas de "
-"<quote>múltipla escolha</quote>, onde <emphasis>pelo menos uma</emphasis> "
+"<varname>OPTIONS</varname> também pode ser agrupadas como listas de "
+"<quote>múltipla-escolha</quote>, onde <emphasis>pelo menos uma</emphasis> "
 "opção deve estar habilitada:"
 
 #. (itstool) path: sect3/programlisting
@@ -13020,8 +13020,8 @@ msgid ""
 "<varname>OPTIONS</varname> can also be grouped as <quote>multiple-choice</"
 "quote> lists, where none or any option can be enabled:"
 msgstr ""
-"<varname>OPTIONS</varname> também pode ser agrupado como listas de "
-"<quote>múltipla escolha</quote>, onde nenhuma ou qualquer opção pode ser "
+"<varname>OPTIONS</varname> também pode ser agrupadas como listas de "
+"<quote>múltipla-escolha</quote>, onde nenhuma ou qualquer opção pode ser "
 "ativada:"
 
 #. (itstool) path: sect3/programlisting
@@ -13038,8 +13038,8 @@ msgid ""
 "<varname>OPTIONS</varname> are unset by default, unless they are listed in "
 "<varname>OPTIONS_DEFAULT</varname>:"
 msgstr ""
-"<varname>OPTIONS</varname> são desativados por padrão, a menos que estejam "
-"listados em <varname>OPTIONS_DEFAULT</varname>:"
+"<varname>OPTIONS</varname> são desativadas por padrão, a menos que estejam "
+"listadas em <varname>OPTIONS_DEFAULT</varname>:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7254
@@ -13060,9 +13060,9 @@ msgid ""
 "<filename>bsd.port.pre.mk</filename>, typically some "
 "<varname>USE_<replaceable>*</replaceable></varname> flags."
 msgstr ""
-"Definições de <varname>OPTIONS</varname> devem aparecer antes da inclusão do "
+"Definições de <varname>OPTIONS</varname> devem aparecer antes da inclusão de "
 "<filename>bsd.port.options.mk</filename>. Valores de <varname>PORT_OPTIONS</"
-"varname> só podem ser testados após a inclusão de<filename>bsd.port.options."
+"varname> só podem ser testados após a inclusão de <filename>bsd.port.options."
 "mk</filename>. Inclusão de <filename>bsd.port.pre.mk</filename> pode ser "
 "usado também, e ainda é amplamente usado em ports escritos antes da "
 "introdução de <filename>bsd.port.options.mk</filename>. Mas esteja ciente de "
@@ -13106,7 +13106,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:7288
 msgid "Check for Unset Port <varname>OPTIONS</varname>"
-msgstr "Verificar   Port como Desmarcado <varname>OPTIONS</varname> "
+msgstr "Verificar <varname>OPTIONS</varname> Desmacadas"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:7291
@@ -13126,9 +13126,8 @@ msgid ""
 "The form shown above is discouraged. The preferred method is using a "
 "configure knob to really enable and disable the feature to match the option:"
 msgstr ""
-"O formulário mostrado acima é desencorajado. O método preferido é usar um "
-"botão de configuração para realmente ativar e desativar o recurso para "
-"coincidir com a opção:"
+"O formato acima não é recomendado. O método preferido é usar um configure "
+"knob para realmente ativar e desativar o recurso coincidindo com a opção:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:7299
@@ -13143,7 +13142,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:7304
 msgid "Practical Use of <varname>OPTIONS</varname>"
-msgstr "Practical Use of <varname>OPTIONS</varname>"
+msgstr "Uso Prático de <varname>OPTIONS</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:7306
@@ -13226,12 +13225,12 @@ msgstr "Essas opções estão sempre ativadas por padrão."
 #. (itstool) path: listitem/para
 #: book.translate.xml:7347
 msgid "<literal>DOCS</literal> — build and install documentation."
-msgstr "<literal>DOCS</literal>— criar e instalar documentação. "
+msgstr "<literal>DOCS</literal> — build and install documentation."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7352
 msgid "<literal>NLS</literal> — Native Language Support."
-msgstr "<literal>NLS</literal>- Suporte a idiomas nativos. "
+msgstr "<literal>NLS</literal> — Native Language Support."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7357
@@ -13250,9 +13249,9 @@ msgid ""
 "them active, and show up in the options selection dialog, however, they must "
 "be added to <varname>OPTIONS_DEFINE</varname>."
 msgstr ""
-"Não há necessidade de adicioná-los a<varname>OPTIONS_DEFAULT</varname>. Para "
-"ativá-los e aparecer na caixa de diálogo de seleção de opções, eles devem "
-"ser adicionados a <varname>OPTIONS_DEFINE</varname>"
+"Não há necessidade de adicioná-las em <varname>OPTIONS_DEFAULT</varname>. "
+"Para ativá-las e mostra-las na caixa de diálogo de seleção de opções, elas "
+"devem ser adicionadas em <varname>OPTIONS_DEFINE</varname>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7377
@@ -13267,11 +13266,11 @@ msgid ""
 "are not needed by adding <literal>--without-xxx</literal> or <literal>--"
 "disable-xxx</literal> in <varname>CONFIGURE_ARGS</varname>."
 msgstr ""
-"Ao usar um script de configuração GNU, fique de olho em quais recursos "
-"opcionais são ativados pela detecção automática. Desative explicitamente os "
-"recursos opcionais que não são necessários ao adicionar <literal>--without-"
-"xxx</literal> ou <literal>--disable-xxx</literal> em "
-"<varname>CONFIGURE_ARGS</varname>"
+"Ao usar um script configure GNU, fique de olho em quais recursos opcionais "
+"são ativados por detecção automática. Desative explicitamente os recursos "
+"opcionais que não são necessários, adicionando <literal>--without-xxx</"
+"literal> ou <literal>--disable-xxx</literal> em <varname>CONFIGURE_ARGS</"
+"varname>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:7387
@@ -13305,11 +13304,11 @@ msgid ""
 msgstr ""
 "No exemplo acima, imagine que uma biblioteca libfoo está instalada no "
 "sistema. O usuário não quer que este aplicativo use libfoo, então ele "
-"desabilitou a opção no diálogo do <literal>make config</literal>. Mas o "
-"script de configuração do aplicativo detecta a biblioteca presente no "
+"desabilitou a opção na caixa de diálogo do <literal>make config</literal>. "
+"Mas o script configure do aplicativo detecta a biblioteca presente no "
 "sistema e inclui seu suporte no executável resultante. Agora, quando o "
-"usuário decide remover o libfoo do sistema, o sistema de ports não protesta "
-"(nenhuma dependência de libfoo foi registrada), mas o aplicativo quebra. "
+"usuário decide remover libfoo do sistema, o sistema de ports não protesta "
+"(nenhuma dependência de libfoo foi registrada), e então o aplicativo quebra."
 
 #. (itstool) path: example/title
 #: book.translate.xml:7406
@@ -13337,7 +13336,7 @@ msgid ""
 msgstr ""
 "Sob algumas circunstâncias, a sintaxe condicional abreviada pode causar "
 "problemas com construções complexas. Os erros são geralmente "
-"<literal>Malformed conditional</literal>, uma sintaxe alternativa pode ser "
+"<literal>Malformed conditional</literal>, e uma sintaxe alternativa pode ser "
 "usada."
 
 #. (itstool) path: note/programlisting
@@ -13384,14 +13383,14 @@ msgid ""
 "<literal>%%NO_<replaceable>OPT</replaceable>%%</literal> generation, see "
 "<xref linkend=\"options_sub\"/>."
 msgstr ""
-"Para geração automática <literal>%%<replaceable>OPT</replaceable>%%</"
+"Para geração automática de <literal>%%<replaceable>OPT</replaceable>%%</"
 "literal> e <literal>%%NO_<replaceable>OPT</replaceable>%%</literal>, veja "
-"<xref linkend=\"options_sub\"/>"
+"<xref linkend=\"options_sub\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7447
 msgid "For more complex usage, see <xref linkend=\"options-variables\"/>."
-msgstr "Para uso mais complexo, veja <xref linkend=\"options-variables\"/>"
+msgstr "Para uso mais complexo, veja <xref linkend=\"options-variables\"/>."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -13408,8 +13407,8 @@ msgid ""
 "configure_enable\"/>."
 msgstr ""
 "Para <literal>--enable-<replaceable>x</replaceable></literal> e <literal>--"
-"disable-<replaceable>x</replaceable></literal>, Veja <xref linkend=\"options-"
-"configure_enable\"/>"
+"disable-<replaceable>x</replaceable></literal>, veja <xref linkend=\"options-"
+"configure_enable\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7461
@@ -13419,13 +13418,14 @@ msgid ""
 "configure_with\"/>."
 msgstr ""
 "Para <literal>--with-<replaceable>x</replaceable></literal> e <literal>--"
-"without-<replaceable>x</replaceable></literal>, Veja <xref linkend=\"options-"
-"configure_with\"/>"
+"without-<replaceable>x</replaceable></literal>, veja <xref linkend=\"options-"
+"configure_with\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7467
 msgid "For all other cases, see <xref linkend=\"options-configure_on\"/>."
-msgstr "Para todos os outros casos, ver<xref linkend=\"options-configure_on\"/>"
+msgstr ""
+"Para todos os outros casos, veja <xref linkend=\"options-configure_on\"/>."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -13441,14 +13441,14 @@ msgid ""
 "literal>, <literal>true</literal>, <literal>false</literal>, <literal>0</"
 "literal>, <literal>1</literal>) see <xref linkend=\"options-cmake_bool\"/>."
 msgstr ""
-"Para argumentos que são booleanos (<literal>em</literal>, <literal>fora</"
+"Para argumentos que são booleanos (<literal>on</literal>, <literal>off</"
 "literal>, <literal>true</literal>, <literal>false</literal>, <literal>0</"
-"literal>, <literal>1</literal>) Veja <xref linkend=\"options-cmake_bool\"/>"
+"literal>, <literal>1</literal>) veja <xref linkend=\"options-cmake_bool\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7480
 msgid "For all other cases, see <xref linkend=\"options-cmake_on\"/>."
-msgstr "Para todos os outros casos, ver<xref linkend=\"options-cmake_on\"/>"
+msgstr "Para todos os outros casos, veja <xref linkend=\"options-cmake_on\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7485
@@ -13461,8 +13461,8 @@ msgid ""
 "For arguments that take <literal>true</literal> or <literal>false</literal>, "
 "see <xref linkend=\"options-meson_true\"/>."
 msgstr ""
-"Para argumentos que levam <literal>true</literal> ou <literal>false</"
-"literal>, Veja <xref linkend=\"options-meson_true\"/>"
+"Para argumentos que precisam de <literal>true</literal> ou <literal>false</"
+"literal>, veja <xref linkend=\"options-meson_true\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7490
@@ -13470,13 +13470,13 @@ msgid ""
 "For arguments that take <literal>yes</literal> or <literal>no</literal>, use "
 "<xref linkend=\"options-meson_yes\"/>."
 msgstr ""
-"Para argumentos que levam <literal>yes</literal> ou <literal>no</literal>, "
-"usar <xref linkend=\"options-meson_yes\"/>"
+"Para argumentos que precisam de <literal>yes</literal> ou <literal>no</"
+"literal>, use <xref linkend=\"options-meson_yes\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7493
 msgid "For all other cases, use <xref linkend=\"options-meson_on\"/>."
-msgstr "Para todos os outros casos, use <xref linkend=\"options-meson_on\"/>"
+msgstr "Para todos os outros casos, use <xref linkend=\"options-meson_on\"/>."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -13488,12 +13488,12 @@ msgstr "<varname>QMAKE_ARGS</varname>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:7501
 msgid "See <xref linkend=\"options-qmake_on\"/>."
-msgstr "Veja <xref linkend=\"options-qmake_on\"/>"
+msgstr "Veja <xref linkend=\"options-qmake_on\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7509
 msgid "See <xref linkend=\"options-use\"/>."
-msgstr "Veja <xref linkend=\"options-use\"/>"
+msgstr "Veja <xref linkend=\"options-use\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7514
@@ -13503,12 +13503,12 @@ msgstr "<varname><replaceable>*</replaceable>_DEPENDS</varname>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:7517
 msgid "See <xref linkend=\"options-dependencies\"/>."
-msgstr "Veja <xref linkend=\"options-dependencies\"/>"
+msgstr "Veja <xref linkend=\"options-dependencies\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7522
 msgid "<replaceable>*</replaceable> (Any variable)"
-msgstr "<replaceable>*</replaceable>(Qualquer variável) "
+msgstr "<replaceable>*</replaceable> (Qualquer variável)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7525
@@ -13516,8 +13516,8 @@ msgid ""
 "The most used variables have direct helpers, see <xref linkend=\"options-"
 "variables\"/>."
 msgstr ""
-"As variáveis ​​mais usadas têm ajuda direta, veja <xref linkend=\"options-"
-"variables\"/>"
+"As variáveis ​​mais usadas possuem assistentes diretos, veja <xref linkend="
+"\"options-variables\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7528
@@ -13525,8 +13525,8 @@ msgid ""
 "For any variable without a specific helper, see <xref linkend=\"options-"
 "vars\"/>."
 msgstr ""
-"Para qualquer variável sem uma ajuda específica, veja <xref linkend="
-"\"options-vars\"/>"
+"Para qualquer variável sem um assistente específico, veja <xref linkend="
+"\"options-vars\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7534
@@ -13539,8 +13539,8 @@ msgid ""
 "When an option need another option to work, see <xref linkend=\"options-"
 "implies\"/>."
 msgstr ""
-"Quando uma opção precisa de outra opção para trabalhar, veja <xref linkend="
-"\"options-implies\"/>"
+"Quando uma opção precisa de outra opção para funcionar, veja <xref linkend="
+"\"options-implies\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7543
@@ -13553,8 +13553,8 @@ msgid ""
 "When an option cannot work if another is also enabled, see <xref linkend="
 "\"options-prevents\"/>."
 msgstr ""
-"Quando uma opção não pode funcionar se outra também estiver ativada, "
-"consulte<xref linkend=\"options-prevents\"/>"
+"Quando uma opção não funciona se outra também estiver ativada, consulte "
+"<xref linkend=\"options-prevents\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7552
@@ -13568,7 +13568,7 @@ msgid ""
 "targets\"/>."
 msgstr ""
 "Quando uma opção precisa de algum processamento extra, veja <xref linkend="
-"\"options-targets\"/>"
+"\"options-targets\"/>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7561
@@ -13582,9 +13582,9 @@ msgid ""
 "of the options added to <varname>OPTIONS_DEFINE</varname> will be added to "
 "<varname>PLIST_SUB</varname> and <varname>SUB_LIST</varname>, for example:"
 msgstr ""
-"E se <varname>OPTIONS_SUB</varname> está configurado para <literal>yes</"
-"literal> então cada uma das opções adicionadas a <varname>OPTIONS_DEFINE</"
-"varname> será adicionado a <varname>PLIST_SUB</varname> e <varname>SUB_LIST</"
+"Se <varname>OPTIONS_SUB</varname> está definido com <literal>yes</literal> "
+"então cada uma das opções adicionadas a <varname>OPTIONS_DEFINE</varname> "
+"será adicionada em <varname>PLIST_SUB</varname> e <varname>SUB_LIST</"
 "varname>, por exemplo:"
 
 #. (itstool) path: sect3/programlisting
@@ -13650,9 +13650,9 @@ msgid ""
 "value will add <varname>PLIST_SUB</varname> and <varname>SUB_LIST</varname> "
 "entries for <emphasis>all</emphasis> options."
 msgstr ""
-"O valor de <varname>OPTIONS_SUB</varname> é ignorado. A configuração para "
-"qualquer valor adicionará para <varname>PLIST_SUB</varname> e "
-"<varname>SUB_LIST</varname> para <emphasis>all</emphasis> opções."
+"O valor de <varname>OPTIONS_SUB</varname> é ignorado. Definindo-o com "
+"qualquer valor irá adicionar entradas <varname>PLIST_SUB</varname> e "
+"<varname>SUB_LIST</varname> para <emphasis>todas</emphasis> as opções."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7596
