@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-17 10:18+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-10-18 03:49+0000\n"
+"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -13729,7 +13729,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7634
 msgid "<varname>CONFIGURE_ARGS</varname> Helpers"
-msgstr "<varname>CONFIGURE_ARGS</varname>Assistentes"
+msgstr "Assistentes <varname>CONFIGURE_ARGS</varname>"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7637
@@ -14531,18 +14531,17 @@ msgstr "Fornece uma maneira de adicionar conflitos entre as opções."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8049
-#, fuzzy
 msgid ""
 "When <replaceable>OPT</replaceable> is selected, all the options listed in "
 "this variable must be un-selected. If <varname><replaceable>OPT</"
 "replaceable>_PREVENTS_MSG</varname> is also selected, its content will be "
 "shown, explaining why they conflict. For example:"
 msgstr ""
-"Quando <replaceable>OPT</replaceable> for selecionado, todas as opções "
-"listadas nessa variável devem ser desmarcadas. E se "
-"<varname><replaceable>OPT</replaceable>_PREVENTS_MSG</varname> também é "
-"selecionado, seu conteúdo será exibido, explicando por que eles entram em "
-"conflito. Por exemplo:"
+"Quando <replaceable>OPT</replaceable> for selecionada, todas as opções "
+"listadas nessa variável devem estar desmarcadas. E se "
+"<varname><replaceable>OPT</replaceable>_PREVENTS_MSG</varname> estiver "
+"definido, seu conteúdo será exibido, explicando o por que do conflito. Por "
+"exemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8055
@@ -14587,7 +14586,7 @@ msgid ""
 "The only difference is that the first one will write an error after running "
 "<command>make config</command>, suggesting changing the selected options."
 msgstr ""
-"A única diferença é que o primeiro escreverá um erro depois de executar "
+"A única diferença é que o primeiro irá apresentar um erro depois de executar "
 "<command>make config</command>, sugerindo alterar as opções selecionadas. "
 
 #. (itstool) path: example/title
@@ -14604,7 +14603,7 @@ msgid ""
 "Both options add patches, but the patches conflict with each other, so they "
 "cannot be selected at the same time."
 msgstr ""
-"Este port tem opções <literal>X509</literal> e <literal>SCTP</literal>. "
+"Este port tem as opções <literal>X509</literal> e <literal>SCTP</literal>. "
 "Ambas as opções adicionam patches, mas os patches entram em conflito uns com "
 "os outros, então eles não podem ser selecionados ao mesmo tempo. "
 
@@ -14644,7 +14643,8 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:8099
 msgid "Provides a generic way to set and append to variables."
-msgstr "Fornece uma maneira genérica de definir e anexar variáveis."
+msgstr ""
+"Fornece uma maneira genérica de definir e acrescentar valores em variáveis."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:8102
@@ -14655,9 +14655,9 @@ msgid ""
 "variables\"/>."
 msgstr ""
 "Antes de usar <varname><replaceable>OPT</replaceable>_VARS</varname> e "
-"<varname><replaceable>OPT</replaceable>_VARS_OFF</varname>, veja se já "
-"existe um auxiliar mais específico disponível em <xref linkend=\"options-"
-"variables\"/>"
+"<varname><replaceable>OPT</replaceable>_VARS_OFF</varname>, veja se já não "
+"existe um assistente mais específico disponível em <xref linkend=\"options-"
+"variables\"/>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8108
@@ -14674,15 +14674,15 @@ msgid ""
 "<emphasis>not</emphasis> selected."
 msgstr ""
 "Quando a opção <replaceable>OPT</replaceable> está selecionada e "
-"<varname><replaceable>OPT</replaceable>_VARS</varname> definida, "
+"<varname><replaceable>OPT</replaceable>_VARS</varname> definido, os pares "
 "<literal><replaceable>chave</replaceable>=<replaceable>valor</replaceable></"
 "literal> e <literal> <replaceable>chave</replaceable>+=<replaceable>valor</"
 "replaceable></literal> são avaliados a partir da variável "
 "<varname><replaceable>OPT</replaceable>_VARS</varname>. Um <literal>=</"
-"literal> sobreescreve o valor existente da <literal>CHAVE</literal>, um "
-"<literal>+=</literal> acrescenta ao valor. <varname><replaceable>OPT</"
-"replaceable>_VARS_OFF</varname> funciona da mesma maneira, mas quando a "
-"opção <literal>OPT</literal> <emphasis>não é</emphasis> selecionada."
+"literal> sobrescreve o valor existente da <literal>CHAVE</literal>, um "
+"<literal>+=</literal> acrescenta o valor a chave. <varname><replaceable>OPT</"
+"replaceable>_VARS_OFF</varname> funciona da mesma maneira, quando a opção "
+"<literal>OPT</literal> <emphasis>não for</emphasis> selecionada."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8123
@@ -14772,11 +14772,11 @@ msgid ""
 msgstr ""
 "Isso se deve ao jeito que a variável de expansão "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> lida com espaço em branco. Quando a opção <literal> OPT_VARS="
+"citerefentry> lida com espaço em branco. Quando a opção <literal>OPT_VARS="
 "foo=bar baz</literal> é expandida, a variável acaba contendo duas strings, "
 "<literal>foo=bar</literal> e <literal>baz</literal>. Mas quem está "
 "submetendo o código provavelmente pretendia que houvesse apenas uma string, "
-"<literal>foo=bar baz</literal>. Colcoar o valor entre aspas impede que o "
+"<literal>foo=bar baz</literal>. Inserir o valor entre aspas impede que o "
 "espaço em branco seja usado como um delimitador. "
 
 #. (itstool) path: important/para
@@ -14787,10 +14787,10 @@ msgid ""
 "value, it would also be split into two strings. <emphasis>This will not "
 "work</emphasis>:"
 msgstr ""
-"Além disso, <emphasis>não</emphasis> adicione espaços extras após o "
-"<literal><replaceable>var</replaceable>=</literal> assignado e antes do "
-"valor, também seria dividido em duas seqüências. <emphasis>Isso não vai "
-"funcionar</emphasis>: "
+"Além disso, <emphasis>não</emphasis> adicione espaços extras após o símbolo "
+"<literal><replaceable>var</replaceable>=</literal> e antes do valor, pois "
+"assim também seria dividido o valor em duas strings. <emphasis>Isso não irá "
+"funcionar</emphasis>:"
 
 #. (itstool) path: important/programlisting
 #: book.translate.xml:8174
@@ -14830,13 +14830,13 @@ msgid ""
 "same, but when <literal>OPT</literal> is <emphasis>not</emphasis> selected. "
 "For example:"
 msgstr ""
-"Quando opção <replaceable>OPT</replaceable> é selecionado, o valor de "
+"Quando opção <replaceable>OPT</replaceable> é selecionada, o valor de "
 "<varname><replaceable>OPT</replaceable>_<replaceable>DEPTYPE</replaceable></"
 "varname>, se definido, é anexado a <literal><replaceable>DEPTYPE</"
 "replaceable></literal>. <varname><replaceable>OPT</"
 "replaceable>_<replaceable>DEPTYPE</replaceable>_OFF</varname> funciona da "
-"mesma forma, mas quando <literal>OPT</literal> <emphasis>não é</emphasis> "
-"selecionado. Por exemplo:"
+"mesma forma, quando <literal>OPT</literal> <emphasis>não for</emphasis> "
+"selecionada. Por exemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8226
@@ -15057,8 +15057,8 @@ msgstr ""
 "replaceable></varname>, se definido, é anexado a "
 "<literal><replaceable>ABOVEVARIABLE</replaceable></literal>. "
 "<varname><replaceable>OPT</replaceable>_<replaceable>ABOVEVARIABLE</"
-"replaceable>_OFF</varname> funciona da mesma maneira, mas quando "
-"<literal>OPT</literal> <emphasis>não é</emphasis> selecionada. Por exemplo:"
+"replaceable>_OFF</varname> funciona da mesma maneira, quando <literal>OPT</"
+"literal> <emphasis>não for</emphasis> selecionada. Por exemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8447
@@ -15103,8 +15103,8 @@ msgid ""
 msgstr ""
 "Algumas variáveis ​​não estão nesta lista, em particular "
 "<varname>PKGNAMEPREFIX</varname> e <varname>PKGNAMESUFFIX</varname>. Isso é "
-"intencional. Um port <emphasis>Não deve</emphasis>mudar seu nome quando sua "
-"opção for alterada."
+"intencional. Um port <emphasis>não deve</emphasis> mudar seu nome quando "
+"alguma de suas opções forem alteradas."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:8472
@@ -15141,16 +15141,16 @@ msgid ""
 "varname> will have a final value of <literal>all doc</literal>; if the "
 "option is disabled, it would have a value of <literal>all</literal>."
 msgstr ""
-"Se o a opção <literal>DOCS</literal> ativada,<varname>ALL_TARGET</varname> "
-"terá um valor final de <literal>all doc</literal>; se a opção estiver "
-"desativada, ela teria um valor de <literal>all</literal>"
+"Se a opção <literal>DOCS</literal> estiver ativada, <varname>ALL_TARGET</"
+"varname> terá o valor <literal>all doc</literal>; se a opção estiver "
+"desativada, ela terá o valor <literal>all</literal>."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:8491
 msgid ""
 "With only the options helper line in the <filename>Makefile</filename>:"
 msgstr ""
-"Com apenas a linha auxiliar de opções no <filename>Makefile</filename>: "
+"Com apenas a linha do assistente de opções no <filename>Makefile</filename>:"
 
 #. (itstool) path: warning/programlisting
 #: book.translate.xml:8494
@@ -15165,9 +15165,9 @@ msgid ""
 "varname> will have a final value of <literal>doc</literal>; if the option is "
 "disabled, it would have a value of <literal>all</literal>."
 msgstr ""
-"Se a opção <literal>DOCS</literal>está ativada, <varname>ALL_TARGET</"
-"varname> terá um valor final de <literal>doc</literal>; se a opção estiver "
-"desativada, ela teria um valor de <literal>all</literal>"
+"Se a opção <literal>DOCS</literal> estiver ativada, <varname>ALL_TARGET</"
+"varname> terá o valor <literal>doc</literal>; se a opção estiver desativada, "
+"ela terá o valor <literal>all</literal>."
 
 #. (itstool) path: title/buildtarget
 #: book.translate.xml:8506
@@ -15182,7 +15182,8 @@ msgstr "<replaceable>target</replaceable>-<replaceable>OPT</replaceable>-off"
 #. (itstool) path: sect3/title
 #: book.translate.xml:8505
 msgid "Additional Build Targets, <_:buildtarget-1/> and <_:buildtarget-2/>"
-msgstr "Destino de builds adicionais, <_:buildtarget-1/> e <_:buildtarget-2/>"
+msgstr ""
+"Targets Adicionais de Compilação, <_:buildtarget-1/> e <_:buildtarget-2/>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8510
@@ -15190,8 +15191,8 @@ msgid ""
 "These <filename>Makefile</filename> targets can accept optional extra build "
 "targets:"
 msgstr ""
-"Estes <filename>Makefile</filename>alvos podem aceitar destinos de "
-"construção extra opcionais: "
+"Estes targets de <filename>Makefile</filename> podem aceitar targets extras "
+"de compilação:"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:8515
@@ -15335,10 +15336,10 @@ msgid ""
 "buildtarget-3/> works the same way, but when <literal>OPT</literal> is "
 "<emphasis>not</emphasis> selected. For example:"
 msgstr ""
-"Quando a opção <replaceable>OPT</replaceable> é selecionada, o destino <_:"
+"Quando a opção <replaceable>OPT</replaceable> é selecionada, o target <_:"
 "buildtarget-1/>, se definido, é executado após <_:buildtarget-2/>. <_:"
-"buildtarget-3/> funciona da mesma maneira, mas quando <literal>OPT</literal> "
-"<emphasis>não é</emphasis> selecionado. Por exemplo:"
+"buildtarget-3/> funciona da mesma maneira, quando <literal>OPT</literal> "
+"<emphasis>não for</emphasis> selecionada. Por exemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8612
@@ -15411,10 +15412,10 @@ msgid ""
 "directory called <literal>${DISTNAME}</literal>. In other words, if the "
 "<filename>Makefile</filename> has:"
 msgstr ""
-"Cada port é extraído em um diretório de trabalho, que deve ser gravável. O "
-"sistema de ports padrão tem <varname>DISTFILES</varname> descompactado em um "
-"diretório chamado <literal>${DISTNAME}</literal>. Em outras palavras, se o "
-"<filename>Makefile</filename> tem:"
+"Cada port é extraído em um diretório de trabalho, que deve ter permissão de "
+"escrita. O sistema de ports padrão tem <varname>DISTFILES</varname> "
+"descompactado em um diretório chamado <literal>${DISTNAME}</literal>. Em "
+"outras palavras, se o <filename>Makefile</filename> tem:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:8649
@@ -15438,7 +15439,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8656
 msgid "A number of variables can be overridden if that is not the case."
-msgstr "Um número de variáveis ​​pode ser substituído se não for esse o caso."
+msgstr "Diversas variáveis ​​podem ser substituídas se não for esse o caso."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8660
@@ -15453,10 +15454,10 @@ msgid ""
 "into a directory called <filename>foo</filename> (and not <filename>foo-1.0</"
 "filename>) write:"
 msgstr ""
-"A variável lista o nome do diretório que é criado quando as distfiles do "
-"aplicativo são extraídas. Se nosso exemplo anterior foi extraído em um "
-"diretório chamado <filename>foo</filename> (e não <filename>foo-1.0</"
-"filename>) escreva:"
+"A variável lista o nome do diretório que é criado quando os distfiles do "
+"aplicativo são extraídos. Se o exemplo anterior for extraído em um diretório "
+"chamado <filename>foo</filename> (e não <filename>foo-1.0</filename>) "
+"escreva:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8668
@@ -15487,9 +15488,9 @@ msgid ""
 "extracted distribution file, set <varname>WRKSRC_SUBDIR</varname> to that "
 "directory."
 msgstr ""
-"Se os arquivos de origem necessários para o port estiverem em um "
-"subdiretório do arquivo de distribuição extraído, defina "
-"<varname>WRKSRC_SUBDIR</varname> para esse diretório. "
+"Se o código fonte necessário para o port estiver em um subdiretório extraído "
+"do arquivo de distribuição, defina <varname>WRKSRC_SUBDIR</varname> para "
+"esse diretório."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8682
@@ -15508,8 +15509,8 @@ msgid ""
 "If the port does not extract in to a subdirectory at all, then set "
 "<varname>NO_WRKSUBDIR</varname> to indicate that."
 msgstr ""
-"Se o port não extrair para um subdiretório, então configure "
-"<varname>NO_WRKSUBDIR</varname> para indicar isso. "
+"Se o port não extrair para nenhum subdiretório, então configure "
+"<varname>NO_WRKSUBDIR</varname> para indicar isso."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8692
@@ -25132,12 +25133,12 @@ msgstr ""
 "Existem outras aplicações que, apesar de não serem bibliotecas "
 "<application>wxWidgets</application>, estão relacionadas a eles. Estas "
 "aplicações podem ser especificadas em <varname>WX_COMPS</varname>. Estes "
-"componentes estão disponíveis: "
+"componentes estão disponíveis:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13826
 msgid "Available <application>wxWidgets</application> Components"
-msgstr "Componentes <application>wxWidgets</application> Disponíveis "
+msgstr "Componentes <application>wxWidgets</application> Disponíveis"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13834
@@ -25186,7 +25187,7 @@ msgid ""
 "bindings)"
 msgstr ""
 "<application>wxPython</application>(ligações <application>Python</"
-"application>) "
+"application>)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13861
@@ -25198,7 +25199,7 @@ msgstr ""
 "O tipo de dependência pode ser selecionado para cada componente, adicionando-"
 "se um sufixo separado por um ponto-e-vírgula. Se não estiver presente, será "
 "usado um tipo padrão (veja <xref linkend=\"wx-def-dep-types\"/>). Estes "
-"tipos estão disponíveis: "
+"tipos estão disponíveis:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:13868
@@ -25263,7 +25264,7 @@ msgstr "Os valores padrão para os componentes estão detalhados nesta tabela:"
 #. (itstool) path: table/title
 #: book.translate.xml:13905
 msgid "Default <application>wxWidgets</application> Dependency Types"
-msgstr "Tipos de Dependência Padrão do <application>wxWidgets</application> "
+msgstr "Tipos de Dependência Padrão do <application>wxWidgets</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13912
@@ -25285,7 +25286,7 @@ msgstr "<literal>svg</literal>"
 #. (itstool) path: example/title
 #: book.translate.xml:13946
 msgid "Selecting <application>wxWidgets</application> Components"
-msgstr "Selecionando Componentes <application>wxWidgets</application> "
+msgstr "Selecionando Componentes <application>wxWidgets</application>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:13949
@@ -25319,7 +25320,7 @@ msgstr ""
 "Para detectar uma versão instalada, defina <varname>WANT_WX</varname>. Se "
 "não estiver definido para uma versão específica, os componentes terão um "
 "sufixo de versão. O <varname>HAVE_WX</varname> será preenchido após a "
-"detecção. "
+"detecção."
 
 #. (itstool) path: example/title
 #: book.translate.xml:13969
@@ -25328,7 +25329,7 @@ msgid ""
 "Components"
 msgstr ""
 "Detectando as versões instaladas <application>wxWidgets</application> e seus "
-"componentes "
+"componentes"
 
 #. (itstool) path: example/para
 #: book.translate.xml:13973
@@ -25337,7 +25338,7 @@ msgid ""
 "application> if it is installed, or an option is selected."
 msgstr ""
 "Este fragmento pode ser usado em um port que usa <application>wxWidgets</"
-"application> se estiver instalado ou uma opção estiver selecionada. "
+"application> se estiver instalado ou uma opção estiver selecionada."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:13977
@@ -25415,7 +25416,7 @@ msgid ""
 "linkend=\"wx-ver-sel-table\"/>)."
 msgstr ""
 "Estas variáveis ​​estão disponíveis no port (depois de definir uma de <xref "
-"linkend=\"wx-ver-sel-table\"/>) "
+"linkend=\"wx-ver-sel-table\"/>)."
 
 #. (itstool) path: table/title
 #: book.translate.xml:14013
@@ -25437,7 +25438,7 @@ msgid ""
 "command> script (with different name)"
 msgstr ""
 "O caminho para o script <application>wxWidgets</application> <command>wx-"
-"config</command> (com nome diferente) "
+"config</command> (com nome diferente)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14034
@@ -25451,7 +25452,7 @@ msgid ""
 "program (with different name)"
 msgstr ""
 "O caminho para o programa <application>wxWidgets</application> "
-"<command>wxrc</command> (com nome diferente) "
+"<command>wxrc</command> (com nome diferente)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14042
@@ -25465,7 +25466,7 @@ msgid ""
 "(for example, <literal>2.6</literal>)"
 msgstr ""
 "A versão do <application>wxWidgets</application> que será usada (por "
-"exemplo,<literal>2.6</literal>) "
+"exemplo,<literal>2.6</literal>)"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14053
