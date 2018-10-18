@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-18 03:49+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-10-18 11:18+0000\n"
+"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -15413,7 +15413,7 @@ msgid ""
 "<filename>Makefile</filename> has:"
 msgstr ""
 "Cada port é extraído em um diretório de trabalho, que deve ter permissão de "
-"escrita. O sistema de ports padrão tem <varname>DISTFILES</varname> "
+"escrita. O sistema de ports tem por padrão os <varname>DISTFILES</varname> "
 "descompactado em um diretório chamado <literal>${DISTNAME}</literal>. Em "
 "outras palavras, se o <filename>Makefile</filename> tem:"
 
@@ -15433,7 +15433,7 @@ msgid ""
 "that directory."
 msgstr ""
 "então os arquivos de distribuição do port contêm um diretório de nível "
-"superior, <filename>foo-1.0</filename> e o resto dos arquivos estão "
+"superior, <filename>foo-1.0</filename>, e o resto dos arquivos estão "
 "localizados nesse diretório. "
 
 #. (itstool) path: sect1/para
@@ -15488,9 +15488,9 @@ msgid ""
 "extracted distribution file, set <varname>WRKSRC_SUBDIR</varname> to that "
 "directory."
 msgstr ""
-"Se o código fonte necessário para o port estiver em um subdiretório extraído "
-"do arquivo de distribuição, defina <varname>WRKSRC_SUBDIR</varname> para "
-"esse diretório."
+"Se o código fonte necessário para o port estiver em um subdiretório do "
+"arquivo de distribuição extraído, defina <varname>WRKSRC_SUBDIR</varname> "
+"para esse diretório."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8682
@@ -15526,10 +15526,10 @@ msgid ""
 "status of the build, the port's extraction will be forced into a "
 "subdirectory."
 msgstr ""
-"Porque <varname>WRKDIR</varname> é o único diretório que deve ser gravável "
-"durante a compilação e é usado para armazenar muitos arquivos que registram "
-"o status da compilação, a extração do port será forçada para um subdiretório."
-" "
+"Porque <varname>WRKDIR</varname> é o único diretório que deve ter permissão "
+"de escrita durante a compilação e é usado para armazenar muitos arquivos que "
+"registram o status da compilação, a extração do port será forçada para um "
+"subdiretório."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8705
@@ -15555,7 +15555,7 @@ msgid ""
 ">."
 msgstr ""
 "As variáveis ​​de conflito definem automaticamente a variável "
-"<varname>IGNORE</varname>, que é mais completamente documentado em <xref "
+"<varname>IGNORE</varname>, que é mais amplamente documentada em <xref "
 "linkend=\"dads-noinstall\"/>."
 
 #. (itstool) path: sect1/para
@@ -15565,9 +15565,9 @@ msgid ""
 "<varname>CONFLICTS</varname> in those other ports for a few months to cater "
 "for users who only update once in a while."
 msgstr ""
-"Ao remover um dos vários ports em conflito, é aconselhável reter "
-"<varname>CONFLICTS</varname> nesses outros ports por alguns meses para "
-"atender usuários que só atualizam de vez em quando. "
+"Ao remover um dos vários ports conflitados, é aconselhável reter "
+"<varname>CONFLICTS</varname> nos outros ports por alguns meses para atender "
+"usuários que apenas fazem atualizações de vez em quando. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8727
@@ -15578,8 +15578,8 @@ msgid ""
 msgstr ""
 "Se o pacote não puder coexistir com outros pacotes (devido a conflitos de "
 "arquivos, incompatibilidades de tempo de execução, etc.). A checagem "
-"<varname>CONFLICTS_INSTALL</varname> é feita após o estágio de construção e "
-"antes do estágio de instalação. "
+"<varname>CONFLICTS_INSTALL</varname> é feita após o estágio de compilação e "
+"antes do estágio de instalação."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8738
@@ -15587,9 +15587,9 @@ msgid ""
 "If the port cannot be built when other specific ports are already installed. "
 "Build conflicts are not recorded in the resulting package."
 msgstr ""
-"Se o port não puder ser construído quando outros ports específicos já "
-"estiverem instaladas. Conflitos de compilação não serão registrados no "
-"pacote resultante."
+"Se o port não puder ser compilado quando outros ports específicos já "
+"estiverem instalados. Conflitos de compilação não serão registrados no "
+"pacote final."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8749
@@ -15599,10 +15599,10 @@ msgid ""
 "varname> check is done prior to the build stage and prior to the install "
 "stage."
 msgstr ""
-"Se o port não puder ser construído por causa de um certo port já estar "
-"instalado e o pacote resultante não puder coexistir com o outro pacote. A "
-"checagem <varname>CONFLICTS</varname> é feita antes do estágio de construção "
-"e antes do estágio de instalação. "
+"Se o port não puder ser compilado quando um certo port estiver instalado e o "
+"pacote final não puder coexistir com o outro pacote. A checagem "
+"<varname>CONFLICTS</varname> é feita antes do estágio de compilação e antes "
+"do estágio de instalação. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8758
@@ -15611,9 +15611,9 @@ msgid ""
 "another port. The package base is the package name without the appended "
 "version, it can be obtained by running <command>make -V PKGBASE</command>."
 msgstr ""
-"O conteúdo mais comum de uma dessas variáveis ​​é o pacote base de outra "
-"porta. A base do pacote é o nome do pacote sem a versão anexada, ele pode "
-"ser obtido executando <command>make -V PKGBASE</command>."
+"O conteúdo mais comum de uma dessas variáveis ​​é o pacote base de outro "
+"port. A pacote base é o nome do pacote sem a versão, ele pode ser obtido "
+"executando <command>make -V PKGBASE</command>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:8764
@@ -15630,8 +15630,8 @@ msgid ""
 "files. First gather the package base to use:"
 msgstr ""
 "<package role=\"port\">dns/bind99</package> não pode ser instalado se "
-"<package role=\"port\">dns/bind910</package> está presente porque instalam "
-"os mesmos arquivos. Primeiro, reúna a base do pacote para usar:"
+"<package role=\"port\">dns/bind910</package> está presente porque eles "
+"instalam os mesmos arquivos. Primeiro, reúna o pacote base para usar:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:8772
@@ -15688,14 +15688,14 @@ msgstr ""
 "Às vezes, apenas uma versão de outro port é incompatível, neste caso, use o "
 "nome completo do pacote, com a versão, e use shell globs, como <literal>*</"
 "literal> e <literal>?</literal> para garantir que todas as versões possíveis "
-"sejam correspondidas. "
+"sejam correspondidas."
 
 #. (itstool) path: example/title
 #: book.translate.xml:8793
 msgid ""
 "Using <varname>CONFLICTS<replaceable>*</replaceable></varname> With Globs."
 msgstr ""
-"Usando <varname>CONFLICTS<replaceable>*</replaceable></varname> com Globs."
+"Usando <varname>CONFLICTS<replaceable>*</replaceable></varname> Com Globs."
 
 #. (itstool) path: example/para
 #: book.translate.xml:8795
