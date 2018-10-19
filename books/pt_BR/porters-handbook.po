@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-19 01:55+0000\n"
-"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
+"PO-Revision-Date: 2018-10-19 02:24+0000\n"
+"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -15612,7 +15612,7 @@ msgid ""
 "version, it can be obtained by running <command>make -V PKGBASE</command>."
 msgstr ""
 "O conteúdo mais comum de uma dessas variáveis ​​é o pacote base de outro "
-"port. A pacote base é o nome do pacote sem a versão, ele pode ser obtido "
+"port. O pacote base é o nome do pacote sem a versão, ele pode ser obtido "
 "executando <command>make -V PKGBASE</command>."
 
 #. (itstool) path: example/title
@@ -16215,7 +16215,7 @@ msgid ""
 "<xref linkend=\"options-targets\"/>."
 msgstr ""
 "Por outro lado, se houver uma opção DOCS no port, instale a documentação em "
-"um taget <_:buildtarget-1/>. Esses targets são descritos nem <xref linkend="
+"um taget <_:buildtarget-1/>. Esses targets são descritos em <xref linkend="
 "\"options-targets\"/>."
 
 #. (itstool) path: sect2/para
@@ -25639,7 +25639,7 @@ msgid ""
 "flags to the compiler and linker."
 msgstr ""
 "A desvantagem óbvia disso é que cada aplicativo precisa ser modificado para "
-"encontrar a versão esperada. Mas isso pode ser resolvido adicionando alguns "
+"encontrar a versão esperada. Mas isto pode ser resolvido adicionando alguns "
 "sinalizadores adicionais ao compilador e ao linker."
 
 #. (itstool) path: sect2/para
@@ -25689,7 +25689,7 @@ msgid ""
 "example, <literal>5.1</literal>)"
 msgstr ""
 "A versão <application>Lua</application> que será usada (por "
-"exemplo,<literal>5,1</literal>) "
+"exemplo,<literal>5,1</literal>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14200
@@ -25717,7 +25717,7 @@ msgid ""
 "installed"
 msgstr ""
 "O prefixo onde o <application>Lua</application> (e os seus componentes) é "
-"instalado "
+"instalado"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14213
@@ -25747,7 +25747,7 @@ msgid ""
 "application> header files are installed"
 msgstr ""
 "O diretório no qual o <application>Lua</application> e os arquivos de "
-"cabeçalho <application>tolua</application> são instalados "
+"cabeçalho <application>tolua</application> são instalados"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14230
@@ -25761,7 +25761,7 @@ msgid ""
 "application> libraries are installed"
 msgstr ""
 "O diretório no qual o <application>Lua</application> e as bibliotecas "
-"<application>tolua</application> são instalados "
+"<application>tolua</application> são instalados"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14238
@@ -25775,7 +25775,7 @@ msgid ""
 "(<filename>.so</filename>) are installed"
 msgstr ""
 "O diretório no qual as bibliotecas dos módulos <application>Lua</"
-"application> (<filename>.so</filename>) são instalados "
+"application> (<filename>.so</filename>) são instalados"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14245
@@ -25789,7 +25789,7 @@ msgid ""
 "filename>) are installed"
 msgstr ""
 "O diretório no qual os módulos <application>Lua</application> (<filename>."
-"lua</filename>) são instalados "
+"lua</filename>) são instalados"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14252
@@ -25800,8 +25800,7 @@ msgstr "<varname>LUA_PKGNAMEPREFIX</varname>"
 #: book.translate.xml:14253
 msgid "The package name prefix used by <application>Lua</application> modules"
 msgstr ""
-"O prefixo do nome do pacote usado por módulos <application>Lua</application> "
-""
+"O prefixo do nome do pacote usado por módulos <application>Lua</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14258
@@ -25838,7 +25837,7 @@ msgid ""
 msgstr ""
 "Após 2013-10-08 (<revnumber>254273</revnumber>), o FreeBSD 10-CURRENT e as "
 "versões mais recentes têm um <command>iconv</command> nativo no sistema "
-"operacional. Em versões anteriores, o <package role=\"port\"> converters/"
+"operacional. Em versões anteriores, o <package role=\"port\">converters/"
 "libiconv</package> era usado como dependência."
 
 #. (itstool) path: sect1/para
@@ -25852,7 +25851,7 @@ msgid ""
 msgstr ""
 "Para softwares que precisam do <command>iconv</command>, defina "
 "<literal>USES=iconv</literal>. As versões do FreeBSD antes do 10-CURRENT em "
-"2013-08-13 (<revnumber>254273</revnumber>) não tem um  <command>iconv</"
+"2013-08-13 (<revnumber>254273</revnumber>) não tem um <command>iconv</"
 "command> nativo. Nestas versões anteriores, uma dependência do <package role="
 "\"port\">converters/libiconv</package> será adicionada automaticamente. "
 
@@ -25863,7 +25862,7 @@ msgid ""
 "available:"
 msgstr ""
 "Quando um port define <literal>USES=iconv</literal>, estas variáveis "
-"​​estarão disponíveis: "
+"​​estarão disponíveis:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14298
@@ -25880,7 +25879,7 @@ msgstr "Propósito"
 msgid ""
 "Value before FreeBSD 10-CURRENT <revnumber>254273</revnumber> (2013-08-13)"
 msgstr ""
-"Valor antes do FreeBSD 10-CURRENT <revnumber>254273</revnumber>(2013-08-13) "
+"Valor antes do FreeBSD 10-CURRENT <revnumber>254273</revnumber>(2013-08-13)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14302
@@ -25897,7 +25896,7 @@ msgstr "<varname>ICONV_CMD</varname>"
 #. (itstool) path: row/entry
 #: book.translate.xml:14310
 msgid "Directory where the <command>iconv</command> binary resides"
-msgstr "Diretório onde o binário <command>iconv</command> reside "
+msgstr "Diretório onde o binário <command>iconv</command> reside"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14312
@@ -25940,7 +25939,7 @@ msgid ""
 "for configure scripts)"
 msgstr ""
 "Diretório onde a implementação do <command>iconv</command> reside (útil para "
-"configurar scripts) "
+"configurar scripts)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14329
@@ -26026,7 +26025,7 @@ msgstr ""
 "Como mostrado acima, a variável <varname>ICONV_LIB</varname> estará vazia "
 "quando um <command>iconv</command> nativo estiver presente. Isso pode ser "
 "usado para detectar o <command>iconv</command> nativo e responder "
-"adequadamente. "
+"adequadamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14377
@@ -26037,12 +26036,12 @@ msgid ""
 msgstr ""
 "Às vezes um programa tem um argumento <command>ld</command> ou caminho de "
 "pesquisa codificado em um <filename>Makefile</filename> ou no script "
-"configure. Essa abordagem pode ser usada para resolver esse problema: "
+"configure. Essa abordagem pode ser usada para resolver esse problema:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:14383
 msgid "Fixing Hardcoded <literal>-liconv</literal>"
-msgstr "Corrigindo Hardcoded<literal>-liconv</literal>"
+msgstr "Corrigindo Hardcoded <literal>-liconv</literal>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:14385
@@ -26069,7 +26068,7 @@ msgstr ""
 "Em alguns casos, é necessário definir valores alternativos ou executar "
 "operações dependendo se há um <command>iconv</command> nativo. O "
 "<filename>bsd.port.pre.mk</filename> deve ser incluído antes de testar o "
-"valor de <varname>ICONV_LIB</varname>: "
+"valor de <varname>ICONV_LIB</varname>:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:14398
@@ -26129,7 +26128,7 @@ msgstr ""
 "Dependencias específicas de bibliotecas e aplicativos <application>Xfce</"
 "application> são definidas com valores atribuídos a <varname>USE_XFCE</"
 "varname>. Eles são definidos em <filename>/usr/ports/Mk/Uses/xfce.mk</"
-"filename>. Os valores possíveis são: "
+"filename>. Os valores possíveis são:"
 
 #. (itstool) path: variablelist/title
 #: book.translate.xml:14428
@@ -26281,7 +26280,7 @@ msgid ""
 "panel</package> needs itself like this:"
 msgstr ""
 "Não há necessidade de listar os componentes que o <package role=\"port\">x11-"
-"wm/xfce4-panel</package> precisa para ele mesmo, desta forma: "
+"wm/xfce4-panel</package> precisa para ele mesmo, desta forma:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:14525
@@ -26401,7 +26400,7 @@ msgid ""
 "When a port needs the <application>MySQL</application> client library add"
 msgstr ""
 "Quando um port precisa da biblioteca cliente do <application>MySQL</"
-"application>, adicione "
+"application>, adicione"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:14593
@@ -26426,7 +26425,7 @@ msgid ""
 "6 or later add"
 msgstr ""
 "Quando um port precisar do servidor <application>PostgreSQL</application> "
-"versão 9.6 ou posterior, adicione "
+"versão 9.6 ou posterior, adicione"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:14606
@@ -26460,7 +26459,7 @@ msgstr "Veja <xref linkend=\"uses-sqlite\"/> para mais informações."
 #. (itstool) path: sect1/title
 #: book.translate.xml:14624
 msgid "Starting and Stopping Services (<literal>rc</literal> Scripts)"
-msgstr "Iniciando e Parando Serviços (com scripts <literal>rc</literal>) "
+msgstr "Iniciando e Parando Serviços (com scripts <literal>rc</literal>)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14627
@@ -26501,7 +26500,7 @@ msgid ""
 msgstr ""
 "Com um port mítico chamado<replaceable>doorman</replaceable>, o qual precisa "
 "iniciar um daemon <replaceable>doormand</replaceable>. Adicione o seguinte "
-"ao <filename>Makefile</filename>: "
+"ao <filename>Makefile</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14644
@@ -26548,7 +26547,7 @@ msgid ""
 "daemon:"
 msgstr ""
 "Um exemplo simples de script <filename>rc.d</filename> para iniciar o daemon "
-"doormand: "
+"doormand:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14665
@@ -26676,7 +26675,7 @@ msgstr ""
 "variável padrão é preferível ao estilo \":=\", já que o primeiro define um "
 "valor padrão apenas se a variável não estiver definida, e o segundo define "
 "um se a variável não está definida <emphasis>ou</emphasis> se ela é nula. Um "
-"usuário pode muito bem incluir algo como: "
+"usuário pode muito bem incluir algo como:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:14720
@@ -26706,10 +26705,10 @@ msgid ""
 "starting or stopping services."
 msgstr ""
 "Os Ports <emphasis>não devem</emphasis> iniciar e parar seus serviços "
-"durante a instalação e desinstalação. Não abuse das keywords  "
+"durante a instalação e desinstalação. Não abuse das keywords "
 "<filename>plist</filename> descritas em <xref linkend=\"plist-keywords-base-"
 "exec\"/> executando comandos que modificam o sistema em execução, incluindo "
-"iniciar ou interromper serviços. "
+"iniciar ou interromper serviços."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14737
@@ -26747,12 +26746,12 @@ msgstr ""
 "Se este é um novo arquivo, ele tem uma extensão <filename>.sh</filename>? Se "
 "assim for, isso deve ser mudado para apenas <filename><replaceable>file</"
 "replaceable>.in</filename> uma vez que os arquivos <filename>rc.d</filename> "
-"não podem terminar com essa extensão. "
+"não podem terminar com essa extensão."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14759
 msgid "Does the file have a <literal>$FreeBSD$</literal> tag?"
-msgstr "O arquivo tem uma tag <literal>$FreeBSD$</literal> ? "
+msgstr "O arquivo tem uma tag <literal>$FreeBSD$</literal>?"
 
 #. (itstool) path: step/para
 #: book.translate.xml:14764
@@ -26776,7 +26775,7 @@ msgstr ""
 "arquivo e o <literal>$</literal><replaceable>name</replaceable> torna mais "
 "fácil descobrir quais variáveis ​​são relevantes no <filename>rc.conf[."
 "local]</filename>. Isso também é uma política para todos os novos scripts, "
-"incluindo aqueles no sistema base. "
+"incluindo aqueles no sistema base."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14781
@@ -26796,7 +26795,7 @@ msgstr ""
 "executado depois para que os scripts locais possam ser agrupados em um ponto "
 "no <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> depois que quase tudo no sistema base já estiver "
-"rodando. "
+"rodando."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14792
@@ -26818,7 +26817,7 @@ msgstr ""
 "Certifique-se de que não há um <literal>KEYWORD: FreeBSD</literal> presente. "
 "Isto não foi necessário nem desejável durante anos. Isto também é uma "
 "indicação de que o novo script foi copiado/colado de um script antigo, "
-"portanto, um cuidado extra deve ser dado à revisão. "
+"portanto, um cuidado extra deve ser dado à revisão."
 
 #. (itstool) path: step/para
 #: book.translate.xml:14807
