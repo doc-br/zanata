@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-18 11:18+0000\n"
+"PO-Revision-Date: 2018-10-19 01:55+0000\n"
 "Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -15704,9 +15704,9 @@ msgid ""
 "gnotime</package> used to install a bundled version of <package role="
 "\"port\">databases/qof</package>."
 msgstr ""
-"Das versões de 2.0 até 2.4.1_2, <package role=\"port\">deskutils/gnotime</"
-"package> usado para instalar uma versão integrada de <package role="
-"\"port\">databases/qof</package>."
+"Nas versões 2.0 até 2.4.1_2, <package role=\"port\">deskutils/gnotime</"
+"package> instalava uma versão integrada de <package role=\"port\">databases/"
+"qof</package>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:8798
@@ -15714,8 +15714,8 @@ msgid ""
 "To reflect this past, the <filename>Makefile</filename> of <package role="
 "\"port\">databases/qof</package> contains:"
 msgstr ""
-"Para refletir este passado, o<filename>Makefile</filename> do <package role="
-"\"port\">database/qof</package>contém: "
+"Para refletir este passado, o <filename>Makefile</filename> do <package role="
+"\"port\">database/qof</package> contém:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:8801
@@ -15737,10 +15737,11 @@ msgid ""
 "third the exact <literal>2.4.1</literal> version, and the last the first and "
 "second revisions of the <literal>2.4.1</literal> version."
 msgstr ""
-"As primeiras versões de correspondidas <literal>2,0</literal> através de "
-"<literal>2,3</literal>, o segundo todas as revisões de <literal>2.4.0</"
-"literal>, o terceiro a versão exata<literal>2.4.1</literal>, e a última a "
-"primeira e segunda revisões do versão <literal>2.4.1</literal>."
+"As primeira entrada corresponde as versões <literal>2.0</literal> até "
+"<literal>2.3</literal>, a segunda corresponde todas as revisões de "
+"<literal>2.4.0</literal>, a terceira corresponde a versão exata <literal>2.4."
+"1</literal>, e a última corresponde a primeira e segunda revisão da versão "
+"<literal>2.4.1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:8812
@@ -15749,8 +15750,8 @@ msgid ""
 "conflicts line because its current version does not conflict with anything "
 "else."
 msgstr ""
-"<package role=\"port\">deskutils/gnotime</package>não tem nenhuma linha de "
-"conflitos porque sua versão atual não está em conflito com mais nada. "
+"<package role=\"port\">deskutils/gnotime</package> não possui nenhuma linha "
+"de conflitos porque sua versão atual não conflita com mais nada."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8819
@@ -15773,15 +15774,15 @@ msgid ""
 "<literal>@</literal> or <literal>.SILENT</literal>."
 msgstr ""
 "O estágio <_:buildtarget-1/> é muito importante para o usuário final porque "
-"adiciona arquivos ao sistema. Todos os comandos adicionais são executados no "
-"<filename>Makefile</filename> do port. Os targets <_:buildtarget-2/> devem "
-"ser mostrados na tela. <emphasis> Não </emphasis> silencie esses comandos "
-"com <literal>@</literal> ou <literal>.SILENT</literal>."
+"ele adiciona arquivos ao sistema. Todos os comandos adicionais de estágios "
+"<_:buildtarget-2/> dos <filename>Makefile</filename>'s de port devem ser "
+"mostrados na tela. <emphasis>Não</emphasis> silencie esses comandos com "
+"<literal>@</literal> ou <literal>.SILENT</literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8833
 msgid "<varname>INSTALL_<replaceable>*</replaceable></varname> Macros"
-msgstr "<varname>INSTALL_<replaceable>*</replaceable></varname>Macros"
+msgstr "Macros <varname>INSTALL_<replaceable>*</replaceable></varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8836
@@ -15798,17 +15799,17 @@ msgid ""
 "<literal>root:wheel</literal>. See <xref linkend=\"plist-keywords-base\"/> "
 "for more information."
 msgstr ""
-"Use as macros fornecidas em <filename>bsd.port.mk</filename> para garantir "
-"modos corretos de arquivos nos destinos <_:buildtarget-1/> do port. Defina a "
-"propriedade diretamente em <filename>pkg-plist</filename> com as entradas "
-"correspondentes, como <literal>@(<replaceable>owner</replaceable>, "
-"<replaceable>group</replaceable>,) </literal>, <literal>@owner<replaceable> "
-"proprietário</replaceable></literal> e <literal>@group<replaceable> grupo</"
-"replaceable></literal>. Esses operadores funcionam até serem substituídos, "
-"ou até o final do <filename>pkg-plist</filename>, lembre-se de redefini-los "
-"depois que eles não forem mais necessários. A propriedade padrão é "
-"<literal>root:wheel</literal>. Veja <xref linkend=\"plist-keywords-base\"/> "
-"para maiores informações."
+"Use as macros fornecidas em <filename>bsd.port.mk</filename> para garantir a "
+"propriedade correta dos arquivos nos targets <_:buildtarget-1/> do port. "
+"Defina a propriedade diretamente em <filename>pkg-plist</filename> com as "
+"entradas correspondentes, como <literal>@(<replaceable>owner</"
+"replaceable>,<replaceable>group</replaceable>,)</literal>, <literal>@owner "
+"<replaceable>owner</replaceable></literal>, e <literal>@group "
+"<replaceable>group</replaceable></literal>. Esses operadores funcionam até "
+"serem substituídos, ou até o final do <filename>pkg-plist</filename>, lembre-"
+"se de redefini-los depois que eles não forem mais necessários. O valor de "
+"propriedade padrão é <literal>root:wheel</literal>. Veja <xref linkend="
+"\"plist-keywords-base\"/> para maiores informações."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8853
@@ -15846,8 +15847,8 @@ msgid ""
 msgstr ""
 "<varname>INSTALL_KLD</varname> é um comando para instalar módulos "
 "carregáveis ​​do kernel. Algumas arquiteturas não gostam de ter os módulos "
-"removidos, então use este comando em vez de <varname>INSTALL_PROGRAM</"
-"varname>."
+"otimizados (stripped), então use este comando em vez de "
+"<varname>INSTALL_PROGRAM</varname>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8876
@@ -15865,7 +15866,7 @@ msgid ""
 "documentation (it does not compress anything)."
 msgstr ""
 "<varname>INSTALL_MAN</varname> é um comando para instalar manpages e outras "
-"documentações (não compacta nada)."
+"documentações (ele não realiza nenhuma compactação)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8887
@@ -15874,9 +15875,9 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> command with the "
 "appropriate flags for each situation."
 msgstr ""
-"Estas variáveis ​​são definidas para o comando "
+"Estas variáveis ​​parametrizam o comando "
 "<citerefentry><refentrytitle>install</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> com as flags apropriadas para cada situação. "
+"manvolnum></citerefentry> com as flags apropriadas para cada situação."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8891
@@ -15886,13 +15887,13 @@ msgid ""
 "varname> instead."
 msgstr ""
 "Não use <varname>INSTALL_LIB</varname> para instalar bibliotecas estáticas, "
-"porque extraí-las torna-as inúteis. Usar <varname>INSTALL_DATA</varname> em "
-"vez de."
+"porque otimiza-las (strip) torna-as sem utilidade. Use "
+"<varname>INSTALL_DATA</varname> neste caso."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8899
 msgid "Stripping Binaries and Shared Libraries"
-msgstr "Descartando Binários e Bibliotecas Compartilhadas"
+msgstr "Otimizando (Stripping) Binários e Bibliotecas Compartilhadas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8901
@@ -15902,11 +15903,11 @@ msgid ""
 "and strips a binary at the same time. The <varname>INSTALL_LIB</varname> "
 "macro does the same thing to shared libraries."
 msgstr ""
-"Os binários instalados devem ser removidos. Não remova os binários "
-"manualmente, a menos que seja absolutamente necessário. A macro "
-"<varname>INSTALL_PROGRAM</varname> instala e retira um binário ao mesmo "
-"tempo. A macro <varname>INSTALL_LIB</varname> faz o mesmo com bibliotecas "
-"compartilhadas."
+"Os binários instalados devem ser otimizados (stripped). Não otimize (strip) "
+"os binários manualmente, a menos que seja absolutamente necessário. A macro "
+"<varname>INSTALL_PROGRAM</varname> instala e otimiza (strip) o binário ao "
+"mesmo tempo. A macro <varname>INSTALL_LIB</varname> faz o mesmo com as "
+"bibliotecas compartilhadas."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8908
@@ -15916,11 +15917,11 @@ msgid ""
 "<literal>${STRIP_CMD}</literal> strips the program or shared library. This "
 "is typically done within the <_:buildtarget-1/> target. For example:"
 msgstr ""
-"Quando um arquivo deve ser removido, mas nenhuma das macros "
-"<varname>INSTALL_PROGRAM</varname> nem <varname>INSTALL_LIB</varname> são "
-"desejáveis, <literal>${STRIP_CMD}</literal>retira o programa ou a biblioteca "
-"compartilhada. Isso geralmente é feito no destino <_:buildtarget-1/>. Por "
-"exemplo:"
+"Quando um arquivo deve ser otimizado (stripped), mas as macros "
+"<varname>INSTALL_PROGRAM</varname> e <varname>INSTALL_LIB</varname> não são "
+"desejadas, <literal>${STRIP_CMD}</literal> otimiza (strips) o programa ou a "
+"biblioteca compartilhada. Isso geralmente é feito no target <_:buildtarget-1/"
+">. Por exemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8916
@@ -15933,7 +15934,7 @@ msgstr "post-install:\n"
 #. (itstool) path: sect2/para
 #: book.translate.xml:8919
 msgid "When multiple files need to be stripped:"
-msgstr "Quando vários arquivos precisam ser removidos:"
+msgstr "Quando vários arquivos precisam ser otimizados (stripped):"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8921
@@ -15961,14 +15962,14 @@ msgid ""
 "citerefentry> will detect programs that have already been stripped and exit "
 "cleanly."
 msgstr ""
-"Usar <citerefentry><refentrytitle>file</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> em um arquivo para determinar se ele foi removido. "
-"Binários são relatados por <citerefentry><refentrytitle>file</"
+"Use <citerefentry><refentrytitle>file</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> em um arquivo para determinar se ele foi otimizado "
+"(stripped). Binários são relatados por <citerefentry><refentrytitle>file</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> como "
 "<literal>stripped</literal> ou <literal>not stripped</literal>. Além "
 "disso,<citerefentry><refentrytitle>strip</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> irá detectar programas que já foram retirados e "
-"sair corretamente. "
+"manvolnum></citerefentry> irá detectar programas que já foram otimizados "
+"(stripped) e retornar o comando sem erros."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8934
@@ -15976,8 +15977,8 @@ msgid ""
 "When <varname>WITH_DEBUG</varname> is defined, elf files <emphasis>must not</"
 "emphasis> be stripped."
 msgstr ""
-"Quando <varname>WITH_DEBUG</varname> é definido, arquivos elf <emphasis>Não "
-"devem</emphasis> ser strippados."
+"Quando <varname>WITH_DEBUG</varname> estiver definido, os arquivos elf "
+"<emphasis>não devem</emphasis> ser otimizados (stripped)."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8937
@@ -15989,7 +15990,7 @@ msgid ""
 msgstr ""
 "As variáveis ​​(<varname>STRIP_CMD</varname>, <varname>INSTALL_PROGRAM</"
 "varname>, <varname>INSTALL_LIB</varname>, ...) e <link linkend="
-"\"uses\"><varname>USES</varname></link> fornecidas pelo framework lidar com "
+"\"uses\"><varname>USES</varname></link> fornecidas pelo framework lidam com "
 "isso automaticamente."
 
 #. (itstool) path: important/para
@@ -16000,10 +16001,10 @@ msgid ""
 "<varname>WITH_DEBUG</varname> is set, or remove it unconditionally and use "
 "<varname>STRIP_CMD</varname> in <_:buildtarget-1/>."
 msgstr ""
-"Alguns softwares, adicionam <literal>-s</literal> para o seu "
-"<varname>LDFLAGS</varname>, neste caso, ou remova <literal>-s</literal> se "
-"<varname>WITH_DEBUG</varname> está definido, ou remova o  incondicionalmente "
-"e use <varname>STRIP_CMD</varname> em <_:buildtarget-1/>."
+"Alguns softwares, adicionam <literal>-s</literal> em seus <varname>LDFLAGS</"
+"varname>, neste caso, ou remova o <literal>-s</literal> se "
+"<varname>WITH_DEBUG</varname> estiver definido, ou remova o "
+"incondicionalmente e use <varname>STRIP_CMD</varname> em <_:buildtarget-1/>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8952
@@ -16022,12 +16023,12 @@ msgid ""
 "linkend=\"staging\"/>)."
 msgstr ""
 "Às vezes, um grande número de arquivos devem ser instalados preservando sua "
-"organização hierárquica. Por exemplo, copiando em uma árvore de diretórios "
-"inteira de <varname>WRKSRC</varname> para um diretório de destino sob "
+"organização hierárquica. Por exemplo, copiando de uma árvore de diretórios "
+"inteira do <varname>WRKSRC</varname> para um diretório de destino sob "
 "<varname>PREFIX</varname>. Observe que <varname>PREFIX</varname>, "
 "<varname>EXEMPLESDIR</varname>, <varname>DATADIR</varname> e outras "
 "variáveis ​​de caminho sempre devem ser precedidas por <varname>STAGEDIR</"
-"varname> para respeitar o estadiamento (ver<xref linkend=\"staging\"/>) "
+"varname> para respeitar o staging (ver <xref linkend=\"staging\"/>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8964
@@ -16042,12 +16043,12 @@ msgid ""
 "files under <filename>PREFIX/share</filename> target."
 msgstr ""
 "Existem duas macros para essa situação. A vantagem de usar essas macros em "
-"vez de <command>cp</command> é que eles garantem a propriedade adequada de "
-"arquivos e permissões nos arquivos de destino. A primeira macro, "
+"vez de <command>cp</command> é que elas garantem a propriedade e permissão "
+"adequada dos arquivos nos arquivos de destino. A primeira macro, "
 "<varname>COPYTREE_BIN</varname>, irá definir todos os arquivos instalados "
-"para ser executável, sendo assim adequado para instalação em "
+"como sendo executáveis, sendo assim, adequado para instalações em "
 "<filename>PREFIX/bin</filename>.  A segunda macro,<varname>COPYTREE_SHARE</"
-"varname>, não define permissões executáveis ​​em arquivos e, portanto, é "
+"varname>, não define permissões de execução nos arquivos e, portanto, é "
 "adequado para instalar arquivos sob o destino <filename>PREFIX/share</"
 "filename>."
 
@@ -16073,7 +16074,7 @@ msgid ""
 ""
 msgstr ""
 "Este exemplo irá instalar o conteúdo do diretório <filename>exemples</"
-"filename> no distfile do fornecedor para o local de exemplos apropriado do "
+"filename> do distfile do fornecedor para o local de exemplos apropriado do "
 "port. "
 
 #. (itstool) path: sect2/programlisting
@@ -16096,8 +16097,8 @@ msgid ""
 "And this example will install the data of summer months to the "
 "<filename>summer</filename> subdirectory of a <filename>DATADIR</filename>."
 msgstr ""
-"E este exemplo irá instalar os dados dos meses de verão para o subdiretório "
-"<filename>summer</filename> de um <filename>DATADIR</filename>"
+"E este exemplo irá instalar os dados dos meses de verão no subdiretório "
+"<filename>summer</filename> de um <filename>DATADIR</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8991
@@ -16107,7 +16108,7 @@ msgid ""
 "For example, to install all files from the first example except Makefiles, "
 "one can use these commands."
 msgstr ""
-"Argumentos adicionais <command>find</command> podem ser passados ​​através "
+"Argumentos <command>find</command> adicionais podem ser passados ​​através "
 "do terceiro argumento para <varname>COPYTREE_<replaceable>*</replaceable></"
 "varname>. Por exemplo, para instalar todos os arquivos do primeiro exemplo, "
 "exceto Makefiles, é possível usar esses comandos. "
@@ -16138,10 +16139,10 @@ msgid ""
 msgstr ""
 "Essas macros não adicionam os arquivos instalados em <filename>pkg-plist</"
 "filename>. Eles devem ser adicionados manualmente. Para documentação "
-"opcional (<varname>PORTDOCS</varname>, Veja <xref linkend=\"install-"
+"opcional (<varname>PORTDOCS</varname>, veja <xref linkend=\"install-"
 "documentation\"/>) e exemplos (<varname>PORTEXAMPLES</varname>), os prefixos "
 "<literal>%%PORTDOCS%%</literal> ou <literal>%%PORTEXAMPLES%%</literal> devem "
-"ser prefixados em <filename>pkg-plist</filename>"
+"ser prefixados no <filename>pkg-plist</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9014
@@ -16157,8 +16158,9 @@ msgid ""
 "target."
 msgstr ""
 "Se o software tiver alguma documentação diferente do manual padrão e páginas "
-"de informações úteis para o usuário, instale-o em <varname>DOCSDIR</varname> "
-"Isso pode ser feito, como no item anterior, no destino <_:buildtarget-1/>."
+"de informações úteis para o usuário, instale-os em <varname>DOCSDIR</"
+"varname>. Isso pode ser feito como no item anterior, no target <_:"
+"buildtarget-1/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9022
@@ -16182,12 +16184,11 @@ msgid ""
 "only needed when the installed files are large enough to cause significant I/"
 "O overhead."
 msgstr ""
-"Desde que apenas os arquivos listados no <filename>pkg-plist</filename> "
-"estão instalados, é seguro sempre instalar a documentação para "
-"<varname>STAGEDIR</varname> (Veja <xref linkend=\"staging\"/>). "
-"Consequentemente blocos <literal>.if</literal> são necessários apenas quando "
-"os arquivos instalados são grandes o suficiente para causar sobrecarga "
-"significativa de E/S. "
+"Já que apenas os arquivos listados no <filename>pkg-plist</filename> são "
+"instalados, é seguro sempre instalar documentações no <varname>STAGEDIR</"
+"varname> (veja <xref linkend=\"staging\"/>). Por isso, blocos <literal>.if</"
+"literal> são necessários apenas quando os arquivos forem grandes o "
+"suficiente para causarem sobrecarga significativa de I/O."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9036
@@ -16214,7 +16215,7 @@ msgid ""
 "<xref linkend=\"options-targets\"/>."
 msgstr ""
 "Por outro lado, se houver uma opção DOCS no port, instale a documentação em "
-"um destino <_:buildtarget-1/>. Esses destinos são descritos em<xref linkend="
+"um taget <_:buildtarget-1/>. Esses targets são descritos nem <xref linkend="
 "\"options-targets\"/>."
 
 #. (itstool) path: sect2/para
@@ -16232,7 +16233,7 @@ msgid ""
 "<varname>DATADIR</varname> gets expanded to <filename>PREFIX/share/PORTNAME</"
 "filename>."
 msgstr ""
-"<varname>DATADIR</varname>é expandido para<filename>PREFIX/share/PORTNAME</"
+"<varname>DATADIR</varname> é expandido para <filename>PREFIX/share/PORTNAME</"
 "filename>."
 
 #. (itstool) path: listitem/para
@@ -16241,7 +16242,7 @@ msgid ""
 "<varname>DATADIR_REL</varname> gets expanded to <filename>share/PORTNAME</"
 "filename>."
 msgstr ""
-"<varname>DATADIR_REL</varname>é expandido para<filename>share/PORTNAME</"
+"<varname>DATADIR_REL</varname> é expandido para <filename>share/PORTNAME</"
 "filename>."
 
 #. (itstool) path: listitem/para
@@ -16290,7 +16291,7 @@ msgid ""
 msgstr ""
 "A opção <literal>DOCS</literal> controla apenas a documentação adicional "
 "instalada em <varname>DOCSDIR</varname>. Não se aplica a páginas de manual e "
-"páginas de informações padrão. Coisas instaladas em <varname>EXEMPLESDIR</"
+"páginas de informações padrão. Arquivos instalados em <varname>EXEMPLESDIR</"
 "varname> são controlados pela opção <literal>EXEMPLES</literal>."
 
 #. (itstool) path: sect2/para
@@ -16303,12 +16304,12 @@ msgid ""
 "default, and so on. (See more on <filename>pkg-plist</filename> substitution "
 "<link linkend=\"plist-sub\">here</link>.)"
 msgstr ""
-"Essas variáveis ​​são exportadas para <varname>PLIST_SUB</varname>. Seus "
-"valores aparecerão como nomes de caminho relativos ao <filename>PREFIX</"
-"filename> se possível. Isso é, <filename>share/doc/PORTNAME</filename> será "
-"substituído por <literal>%%DOCSDIR%%</literal> na lista de empacotamento por "
-"padrão e assim por diante. (Veja mais em <filename>pkg-plist</filename> "
-"substituição <link linkend=\"plist-sub\"> Aqui</link>."
+"Essas variáveis ​​são exportadas para <varname>PLIST_SUB</varname>. Quando "
+"possível, seus valores aparecerão como nomes de caminho relativos ao "
+"<filename>PREFIX</filename>. Isso é, por padrão <filename>share/doc/"
+"PORTNAME</filename> será substituído por <literal>%%DOCSDIR%%</literal> na "
+"lista de empacotamento e assim por diante. (Saiba mais sobre substituições "
+"<filename>pkg-plist</filename> <link linkend=\"plist-sub\">aqui</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9098
@@ -16319,7 +16320,7 @@ msgid ""
 msgstr ""
 "Todos os arquivos e diretórios de documentação instalados condicionalmente "
 "são incluídos no <filename>pkg-plist</filename> com o prefixo "
-"<literal>%%PORTDOCS%%</literal>, por exemplo: "
+"<literal>%%PORTDOCS%%</literal>, por exemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9103
@@ -16347,21 +16348,21 @@ msgid ""
 "<varname>PORTDOCS</varname> as shown above remains up to the port itself. A "
 "typical example of utilizing <varname>PORTDOCS</varname>:"
 msgstr ""
-"Como uma alternativa para enumerar os arquivos de documentação em "
+"Como uma alternativa para listar os arquivos de documentação em "
 "<filename>pkg-plist</filename>, um port pode definir a variável "
-"<varname>PORTDOCS</varname> para uma lista de nomes de arquivo e padrões de "
-"globalização para adicionar à lista de empacotamento final. Os nomes serão "
+"<varname>PORTDOCS</varname> com uma lista de nomes de arquivo e padrões "
+"shell glob para adicionar à lista de empacotamento final. Os nomes serão "
 "relativos a <varname>DOCSDIR</varname>. Portanto, um port que utiliza "
 "<varname>PORTDOCS</varname> e usa um local não padrão para sua documentação, "
 "deve definir <varname>DOCSDIR</varname> adequadamente. Se um diretório "
-"estiver listado em <varname>PORTDOCS</varname> ou correspondido por um "
-"padrão glob dessa variável, toda a subárvore de arquivos e diretórios "
-"contidos será registrada na lista final de pacotes. Se a opção "
-"<literal>DOCS</literal> foi desfeita, em seguida, arquivos e diretórios "
-"listados em <varname>PORTDOCS</varname> não seriam instalado ou adicionado à "
-"lista de empacotamento do port. Instalando a documentação em "
-"<varname>PORTDOCS</varname> como mostrado acima mantém até o port em si. Um "
-"exemplo típico de utilização <varname>PORTDOCS</varname>: "
+"estiver listado em <varname>PORTDOCS</varname> ou ser correspondido por um "
+"padrão glob dessa variável, toda a sub árvore de arquivos e diretórios "
+"contidos serão registrados na lista final de empacotamento. Se a opção "
+"<literal>DOCS</literal> estiver desmarcada, os arquivos e diretórios "
+"listados em <varname>PORTDOCS</varname> não serão instalados ou adicionados "
+"à lista de empacotamento do port. A instalação da documentação em "
+"<varname>PORTDOCS</varname> como mostrado acima fica a cargo do port. Um "
+"exemplo típico de utilização <varname>PORTDOCS</varname>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9125
@@ -16377,10 +16378,10 @@ msgid ""
 "<varname>PORTDATA</varname> and <varname>PORTEXAMPLES</varname>, "
 "respectively."
 msgstr ""
-"Os equivalentes de <varname>PORTDOCS</varname>para arquivos instalados em "
+"O equivalente de <varname>PORTDOCS</varname> para arquivos instalados em "
 "<varname>DATADIR</varname> e <varname>EXEMPLESDIR</varname> são "
 "<varname>PORTDATA</varname> e <varname>PORTEXAMPLES</varname>, "
-"respectivamente. "
+"respectivamente."
 
 #. (itstool) path: note/para
 #: book.translate.xml:9134
@@ -16390,10 +16391,10 @@ msgid ""
 "<filename>pkg-message</filename></link> for details. <filename>pkg-message</"
 "filename> does not need to be added to <filename>pkg-plist</filename>."
 msgstr ""
-"O conteúdo de <filename>pkg-message</filename> são exibidos na instalação. "
-"Veja <link linkend=\"porting-message\"> a seção sobre o uso <filename>pkg-"
-"message</filename></link> para detalhes.<filename>pkg-message</filename> não "
-"precisa ser adicionado a <filename>pkg-plist</filename>."
+"O conteúdo de <filename>pkg-message</filename> é exibido na instalação. Veja "
+"<link linkend=\"porting-message\">a seção sobre o uso do <filename>pkg-"
+"message</filename></link> para mais detalhes. <filename>pkg-message</"
+"filename> não precisa ser adicionado ao <filename>pkg-plist</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9144
@@ -16419,23 +16420,22 @@ msgid ""
 "ports dealing with USENET <quote>news</quote>. They may use <filename>PREFIX/"
 "news</filename> as a destination for their files."
 msgstr ""
-"Tente deixar o port colocar as coisas nos subdiretórios corretos de "
-"<varname>PREFIX</varname>. Alguns ports acumulam tudo e colocam no "
-"subdiretório com o nome do port, o que é incorreto. Além disso, muitos ports "
-"colocam tudo, exceto binários, arquivos de cabeçalho e páginas de manual em "
-"um subdiretório de <filename>lib</filename>, o que não funciona bem com o "
-"paradigma BSD. Muitos dos arquivos devem ser movidos para um desses "
-"diretórios: <filename>etc</filename> (arquivos de configuração/"
-"configuração), <filename>libexec</filename> (executáveis ​​iniciados "
-"internamente), <filename>sbin</filename> (executáveis ​​para superusuários/"
-"gerentes), <filename>info</filename> (documentação para o navegador de "
-"informações) ou<filename>share</filename> (arquivos independentes de "
-"arquitetura). Veja <citerefentry><refentrytitle>hier</"
-"refentrytitle><manvolnum>7</manvolnum></citerefentry>para detalhes; as "
-"regras que regem <filename>/usr</filename> praticamente se aplicam a "
-"<filename>/usr/local</filename> também. A exceção são os ports que lidam com "
-"<quote>notícias</quote> USENET. Eles podem usar <filename>PREFIX/news</"
-"filename> como um destino para seus arquivos. "
+"Tente deixar o port colocar os arquivos nos subdiretórios corretos de "
+"<varname>PREFIX</varname>. Alguns ports juntam tudo e colocam os arquivos em "
+"um subdiretório com o nome do port, o que é incorreto. Além disso, muitos "
+"ports colocam todos arquivos, exceto binários, arquivos header e páginas de "
+"manual, em um subdiretório de <filename>lib</filename>, o que não funciona "
+"bem com o paradigma BSD. Muitos dos arquivos devem ser movidos para um "
+"desses diretórios: <filename>etc</filename>(setup/arquivos de configuração), "
+"<filename>libexec</filename> (executáveis ​​iniciados internamente), "
+"<filename>sbin</filename> (executáveis ​​para super-usuários/gerentes), "
+"<filename>info</filename> (documentação para o navegador de informações) ou "
+"<filename>share</filename> (arquivos independentes de arquitetura). Veja "
+"<citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></"
+"citerefentry> para detalhes; as regras que regem <filename>/usr</filename> "
+"praticamente se aplicam a <filename>/usr/local</filename> também. A exceção "
+"são os ports que lidam com <quote>notícias</quote> USENET. Eles podem usar "
+"<filename>PREFIX/news</filename> como um destino para seus arquivos."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9168
@@ -16444,7 +16444,7 @@ msgid ""
 "the Build"
 msgstr ""
 "Use <varname>BINARY_ALIAS</varname> para Renomear Comandos Em Vez de Aplicar "
-"Patch na Compilação "
+"Patch na Compilação"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9171
@@ -16454,8 +16454,8 @@ msgid ""
 "varname>."
 msgstr ""
 "Quando <varname>BINARY_ALIAS</varname> é definido, ele criará links "
-"simbólicos dos comandos fornecidos em um diretório que será prefixado para o "
-"<varname>PATH</varname>."
+"simbólicos dos comandos fornecidos, em um diretório que será prefixado para "
+"o <varname>PATH</varname>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9175
@@ -16463,8 +16463,8 @@ msgid ""
 "Use it to substitute hardcoded commands the build phase relies on without "
 "having to patch any build files."
 msgstr ""
-"Use-o para substituir comandos codificados na fase de compilação sem ter que "
-"corrigir nenhum arquivo de compilação."
+"Use-o para substituir comandos codificados na fase de compilação sem ter "
+"aplicar nenhum patch nos arquivos de compilação."
 
 #. (itstool) path: example/title
 #: book.translate.xml:9179
@@ -16472,8 +16472,8 @@ msgid ""
 "Using <varname>BINARY_ALIAS</varname> to Make <command>gsed</command> "
 "Available as <command>sed</command>"
 msgstr ""
-"Usando <varname>BINARY_ALIAS</varname> para fazer <command>gsed</command> "
-"disponível como <command>sed</command>"
+"Usando <varname>BINARY_ALIAS</varname> para Deixar <command>gsed</command> "
+"Disponível como <command>sed</command>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:9183
@@ -16484,11 +16484,11 @@ msgid ""
 "<application>GNU sed</application> is available from <package role="
 "\"port\">textproc/gsed</package> on FreeBSD."
 msgstr ""
-"Alguns ports esperam <command>sed</command> se comportar como "
-"<application>Sed GNU</application> e usar recursos que "
+"Alguns ports esperam que o <command>sed</command> se comporte como o "
+"<application>GNU sed</application> e utilizam recursos que o "
 "<citerefentry><refentrytitle>sed</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> não fornece. <application>Sed GNU</application> está "
-"disponível  em <package role=\"port\">textproc/gsed</package> no FreeBSD. "
+"citerefentry> não possui. <application>GNU sed</application> está disponível "
+" em <package role=\"port\">textproc/gsed</package> no FreeBSD."
 
 #. (itstool) path: example/para
 #: book.translate.xml:9189
@@ -16496,8 +16496,8 @@ msgid ""
 "Use <varname>BINARY_ALIAS</varname> to substitute <command>sed</command> "
 "with <command>gsed</command> for the duration of the build:"
 msgstr ""
-"Usar <varname>BINARY_ALIAS</varname> para substituir <command>sed</command> "
-"com <command> gsed </command> para a duração da compilação: "
+"Use <varname>BINARY_ALIAS</varname> para substituir <command>sed</command> "
+"com <command>gsed</command> durante a compilação:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:9193
@@ -16527,9 +16527,9 @@ msgid ""
 "points to the right Python 3 binary:"
 msgstr ""
 "Um port que possui uma referência codificada para <command>python3</command> "
-"em seus scripts de compilação precisará ter disponível em <varname>PATH</"
-"varname> no tempo de compilação. Usar <varname>BINARY_ALIAS</varname> para "
-"criar um alias que aponte para o binário certo do Python 3: "
+"em seus scripts de compilação precisará ter ele disponível no <varname>PATH</"
+"varname> em tempo de compilação. Use <varname>BINARY_ALIAS</varname> para "
+"criar um alias que aponte para o binário certo do Python 3:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:9208
@@ -16548,7 +16548,7 @@ msgid ""
 "<literal>USES=python</literal>."
 msgstr ""
 "Veja <xref linkend=\"using-python\"/> para mais informações sobre "
-"<literal>USES=python</literal>"
+"<literal>USES=python</literal>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:9226
@@ -16587,13 +16587,13 @@ msgstr ""
 "<quote>stage directory</quote>. Isso significa que um port não deve instalar "
 "arquivos diretamente nos diretórios de destino regulares (isto é, sob o "
 "<varname>PREFIX</varname>, por exemplo), mas em um diretório separado a "
-"partir do qual o pacote é construído. Em muitos casos, isso não requer "
+"partir do qual o pacote será construído. Em muitos casos, isso não requer "
 "privilégios de root, tornando possível criar pacotes como um usuário não "
-"privilegiado. Com a preparação, o port é construído e instalado no diretório "
-"de estágio, <varname>STAGEDIR</varname>. Um pacote é criado a partir do "
-"diretório de estágio e, em seguida, instalado no sistema. As ferramentas do "
+"privilegiado. Com o staging, o port é compilado e instalado no diretório sde "
+"estágio, <varname>STAGEDIR</varname>. Um pacote é criado a partir do "
+"diretório de estágio e, em seguida, instalado no sistema. As ferramentas "
 "Automake referem-se a este conceito como <varname>DESTDIR</varname>, mas no "
-"FreeBSD, <varname>DESTDIR</varname> tem um significado diferente (ver<xref "
+"FreeBSD, <varname>DESTDIR</varname> tem um significado diferente (veja <xref "
 "linkend=\"porting-prefix\"/>)."
 
 #. (itstool) path: note/para
@@ -16619,7 +16619,7 @@ msgstr ""
 "proprietário ou grupo com <citerefentry><refentrytitle>install</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> então use <link "
 "linkend=\"uses-fakeroot\"><literal>USES=fakeroot</literal></link> para "
-"falsificar essas chamadas. Algumas modificações no <filename>Makefile</"
+"enganar essas chamadas. Algumas modificações no <filename>Makefile</"
 "filename> do port serão necessárias."
 
 #. (itstool) path: sect1/para
@@ -16633,13 +16633,13 @@ msgid ""
 "<citerefentry><refentrytitle>mtree</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> extraction, add this line:"
 msgstr ""
-"Os meta ports, ou ports que não instalam os arquivos em si, mas dependem "
-"apenas de outros ports, devem evitar extrair desnecessariamente "
+"Os meta ports, ou ports que não instalam arquivos por si mesmos e apenas "
+"dependem de outros ports, devem evitar extrair desnecessariamente "
 "<citerefentry><refentrytitle>mtree</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> para o diretório de estágio. Este é o layout básico do "
 "diretório do pacote, e estes diretórios vazios serão vistos como órfãos. "
-"Para prevenir extração do  <citerefentry><refentrytitle>mtree</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, adicione esta linha: "
+"Para prevenir extração do <citerefentry><refentrytitle>mtree</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, adicione esta linha:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:9266
@@ -16655,7 +16655,7 @@ msgid ""
 "install anything."
 msgstr ""
 "Metaports devem usar <link linkend=\"uses-metaport\"><literal>USES=metaport</"
-"literal></link>. Ele configura padrões para ports que não buscam, criam ou "
+"literal></link>. Ele configura padrões para ports que não baixam, criam ou "
 "instalam nada."
 
 #. (itstool) path: sect1/para
@@ -16671,7 +16671,7 @@ msgid ""
 "possible."
 msgstr ""
 "Staging é ativado pré-fixando a variável <varname>STAGEDIR</varname> para "
-"caminhos usados ​​nos destinos <_:buildtarget-1/>, <_:buildtarget-2/> e <_:"
+"caminhos usados ​​nos targets <_:buildtarget-1/>, <_:buildtarget-2/> e <_:"
 "buildtarget-3/> (veja os exemplos no livro). Normalmente, isso inclui as "
 "variáveis <varname>PREFIX</varname>, <varname>ETCDIR</varname>, "
 "<varname>DATADIR</varname>, <varname>EXEMPLESDIR</varname>, "
@@ -16686,7 +16686,7 @@ msgid ""
 "to their destination, by default <filename>/boot/modules</filename>."
 msgstr ""
 "Ports que instalam módulos do kernel devem preceder a variável "
-"<varname>STAGEDIR</varname> ao seu destino, por padrão <filename>/boot/"
+"<varname>STAGEDIR</varname> em seus destinos, padrão <filename>/boot/"
 "modules</filename>."
 
 #. (itstool) path: sect2/title
@@ -16707,15 +16707,15 @@ msgstr ""
 "Ao criar um link simbólico, há dois casos, tanto a origem quanto o destino "
 "estão dentro de <filename>${PREFIX}</filename>. Nesse caso, use "
 "<command>${RLN}</command>. No outro caso, se um ou ambos os caminhos "
-"estiverem fora do <filename>${PREFIX}</filename> usar <command>${LN}-s</"
-"command> e apenas prefixar <filename>${STAGEDIR}</filename> para o caminho "
-"do alvo."
+"estiverem fora de <filename>${PREFIX}</filename> use <command>${LN} -s</"
+"command> e apenas prefixe <filename>${STAGEDIR}</filename> para o caminho de "
+"destino."
 
 #. (itstool) path: example/title
 #: book.translate.xml:9305
 msgid "Inside <filename>${PREFIX}</filename>, Create Relative Symbolic Links"
 msgstr ""
-"Dentro <filename>${PREFIX}</filename>, Criar Links Simbólicos Relativos "
+"Criar Links Simbólicos Relativos, Dentro de <filename>${PREFIX}</filename>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:9308
@@ -16724,7 +16724,7 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>'s relative symbolic "
 "feature which frees the porter of computing the relative path."
 msgstr ""
-"<command>${RLN}</command> usa o recurso simbólico relativo de "
+"<command>${RLN}</command> usa o recurso simbólico relativo do "
 "<citerefentry><refentrytitle>install</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> que libera o mantenedor do port de computar o "
 "caminho relativo."
@@ -16795,7 +16795,7 @@ msgstr ""
 #: book.translate.xml:9332
 msgid "Outside <filename>${PREFIX}</filename>, Create Absolute Symbolic Links"
 msgstr ""
-"Fora de <filename>${PREFIX}</filename>, Criar links simbólicos absolutos "
+"Criar Links Simbólicos Absolutos, Fora de <filename>${PREFIX}</filename>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:9335
@@ -16804,8 +16804,9 @@ msgid ""
 "source must not contain <filename>${STAGEDIR}</filename>, the target, "
 "however, must:"
 msgstr ""
-"Ao criar um link simbólico fora de <filename>${PREFIX}</filename>, a fonte "
-"não deve conter <filename>${STAGEDIR}</filename>, o alvo, no entanto, deve: "
+"Ao criar um link simbólico fora de <filename>${PREFIX}</filename>, a origem "
+"não deve conter <filename>${STAGEDIR}</filename>, o destino no entanto, deve:"
+""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:9340
@@ -16832,7 +16833,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:9351
 msgid "Bundled Libraries"
-msgstr "Bibliotecas Empacotadas"
+msgstr "Bibliotecas Empacotadas (Bundled)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9353
@@ -16840,13 +16841,13 @@ msgid ""
 "This section explains why bundled dependencies are considered bad and what "
 "to do about them."
 msgstr ""
-"Esta seção explica porque as dependências agrupadas são consideradas ruins e "
-"o que fazer com elas. "
+"Esta seção explica porque as dependências agrupadas(bundled) são "
+"consideradas ruins e o que fazer com elas."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9357
 msgid "Why Bundled Libraries Are Bad"
-msgstr "Por Que as Bibliotecas Agrupadas São Ruins"
+msgstr "Por Que as Bibliotecas Agrupadas(Bundled) São Ruins"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9359
@@ -16857,10 +16858,10 @@ msgid ""
 "first, but there are some serious drawbacks:"
 msgstr ""
 "Alguns softwares requerem que o mantenedor do port localize bibliotecas de "
-"terceiros e adicione as dependências necessárias à porta. Outro software "
-"agrupa todas as bibliotecas necessárias no arquivo de distribuição. A "
+"terceiros e adicione as dependências necessárias ao port. Outros softwares "
+"agrupam todas as bibliotecas necessárias no arquivo de distribuição. A "
 "segunda abordagem parece mais fácil no começo, mas há algumas desvantagens "
-"sérias: "
+"sérias:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9365
@@ -16871,10 +16872,10 @@ msgid ""
 "wikis, both licensed under the <link xlink:href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">CC-BY-SA 3.0</link> license."
 msgstr ""
-"Esta lista é vagamente baseada na wiki <link xlink:href=\"https://"
+"Esta lista é vagamente baseada nas wikis <link xlink:href=\"https://"
 "fedoraproject.org/wiki/Packaging:No_Bundled_Libraries\">Fedora</link> e "
 "<link xlink:href=\"http://wiki.gentoo.org/wiki/"
-"Why_not_bundle_dependencies\">Gentoo</link>, ambos licenciados sob <link "
+"Why_not_bundle_dependencies\">Gentoo</link>, ambas licenciadas sob <link "
 "xlink:href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA 3.0</"
 "link>."
 
@@ -16897,12 +16898,12 @@ msgid ""
 "longer than necessary. This in turn makes it harder to coordinate a fix "
 "without unnecessarily leaking information about the vulnerability."
 msgstr ""
-"Se vulnerabilidades forem encontradas na biblioteca upstream e fixas lá, "
+"Se vulnerabilidades forem encontradas na biblioteca e arrumadas no upstream, "
 "elas podem não ser consertadas na biblioteca empacotada com o port. Uma "
 "razão pode ser que o autor não esteja ciente do problema. Isto significa que "
 "o mantenedor do port deve consertá-las, ou atualizar para uma versão não "
 "vulnerável e enviar um patch para o autor. Isso tudo leva tempo, o que "
-"resulta em software vulnerável por mais tempo do que o necessário.Isso, por "
+"resulta em software vulnerável por mais tempo do que o necessário. Isso, por "
 "sua vez, torna mais difícil coordenar uma correção sem vazamento "
 "desnecessário de informações sobre a vulnerabilidade."
 
@@ -16917,8 +16918,8 @@ msgid ""
 "This problem is similar to the problem with security in the last paragraph, "
 "but generally less severe."
 msgstr ""
-"Esse problema é semelhante ao problema com segurança no último parágrafo, "
-"mas geralmente menos grave."
+"Esse problema é semelhante ao problema de segurança no último parágrafo, mas "
+"geralmente menos grave."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:9398
@@ -16933,7 +16934,7 @@ msgid ""
 "upstream making it harder to address security or other problems with the "
 "software. A reason for this is that patching becomes harder."
 msgstr ""
-"É mais fácil para o autor separar a biblioteca upstream depois que ela é "
+"É mais fácil para o autor criar um fork da biblioteca depois que ela é "
 "empacotada. Embora seja conveniente à primeira vista, isso significa que o "
 "código diverge do upstream, dificultando o tratamento da segurança ou outros "
 "problemas com o software. A razão para isso é que o patching se torna mais "
@@ -16946,10 +16947,9 @@ msgid ""
 "get solved over and over again instead of just once at a central location. "
 "This defeats the idea of open source software in the first place."
 msgstr ""
-"Outro problema de bifurcação é que, como o código diverge do upstream, os "
-"bugs são resolvidos repetidamente em vez de apenas uma vez em um local "
-"central. Isso, em primeiro lugar, anula a idéia de software de código aberto."
-""
+"Outro problema de forking é que, como o código diverge do upstream, os bugs "
+"são resolvidos repetidamente em vez de apenas uma vez em um local central. "
+"Isso, em primeiro lugar, anula a ideia de software de código aberto."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:9417
