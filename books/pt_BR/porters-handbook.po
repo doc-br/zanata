@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-19 02:24+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-10-20 02:39+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -32672,7 +32672,7 @@ msgid ""
 "If a port was removed but has since been restored, delete the line in this "
 "file that states that it was removed."
 msgstr ""
-"Se um port foi removido, mas já foi restaurado, exclua a linha neste arquivo "
+"Se um port foi removido, e depois restaurado, exclua a linha neste arquivo "
 "que informa que ele foi removido."
 
 #. (itstool) path: sect2/para
@@ -32682,9 +32682,9 @@ msgid ""
 "one with the intermediate name to the old name, and remove the old entry as "
 "to not create a loop."
 msgstr ""
-"Se um port foi renomeado e depois renomeado para seu nome original, adicione "
-"um novo com o nome intermediário ao nome antigo e remova a entrada antiga "
-"para não criar um loop."
+"Se um port foi renomeado e depois renomeado de volta para seu nome original, "
+"adicione uma nova entrada com o nome intermediário para o nome antigo e "
+"remova a entrada antiga para não criar um loop."
 
 #. (itstool) path: note/para
 #: book.translate.xml:17980
@@ -32720,7 +32720,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:18007
 msgid "Why Security is So Important"
-msgstr "Por que Segurança é Tão Importante"
+msgstr "Por Que Segurança é Tão Importante"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18009
@@ -32731,7 +32731,7 @@ msgid ""
 "the bugs that caused them. However, the policies for handling mere bugs and "
 "security vulnerabilities are very different."
 msgstr ""
-"Bugs ocasionalmente são inseridos no software. Indiscutivelmente, os mais "
+"Bugs ocasionalmente são inseridos em software. Indiscutivelmente, os mais "
 "perigosos deles são aqueles que abrem vulnerabilidades de segurança. Do "
 "ponto de vista técnico, tais vulnerabilidades devem ser fechadas "
 "exterminando os bugs que as causam. No entanto, as políticas para lidar com "
@@ -32808,12 +32808,12 @@ msgstr ""
 "arquivos do port. No primeiro caso, o desenvolvedor de software original "
 "provavelmente lançará um patch ou uma nova versão instantaneamente. Atualize "
 "o port prontamente com relação à correção do autor. Se a correção for "
-"atrasada por algum motivo, <link linkend=\"dads-noinstall\"> marque o port "
-"como <varname>FORBIDDEN</varname></link> ou introduza um arquivo de correção "
-"no port. No caso de um port vulnerável, basta consertar o port o mais rápido "
-"possível. Em ambos os casos, siga <link linkend=\"port-upgrading\">o "
-"procedimento padrão para enviar alterações</link> a menos que tenha direitos "
-"para enviá-lo diretamente para a árvore de ports."
+"atrasada por algum motivo, <link linkend=\"dads-noinstall\">marque o port "
+"como <varname>FORBIDDEN</varname></link> ou adicione um arquivo patch no "
+"port. No caso de um port vulnerável, conserte o port o mais rápido possível. "
+"Em ambos os casos, siga <link linkend=\"port-upgrading\">o procedimento "
+"padrão para enviar alterações</link> a menos que tenha direitos para enviá-"
+"lo diretamente para a árvore de ports."
 
 #. (itstool) path: important/para
 #: book.translate.xml:18061
@@ -32842,14 +32842,14 @@ msgid ""
 msgstr ""
 "Por favor, certifique-se de que a revisão do port é incrementada assim que a "
 "vulnerabilidade for fechada. É assim que os usuários que atualizam pacotes "
-"instalados regularmente verão que precisam executar uma atualização. Além "
-"disso, um novo pacote será compilado e distribuído por FTP e mirrors WWW, "
-"substituindo o vulnerável. Atualize <varname>PORTREVISION</varname> a menos "
-"que tenha mudado o <varname>DISTVERSION</varname> durante a correção da "
+"regularmente verão que precisam executar uma atualização. Além disso, um "
+"novo pacote será compilado e distribuído por FTP e mirrors WWW, substituindo "
+"o vulnerável. Atualize <varname>PORTREVISION</varname> a menos que tenha "
+"mudado o <varname>DISTVERSION</varname> durante a correção da "
 "vulnerabilidade. Isso é, incremente <varname>PORTREVISION</varname> se "
-"adicionar um arquivo de patch ao port, mas não incremente se atualizar o "
-"port para a versão mais recente do software e, portanto, já mudou "
-"<varname>DISTVERSION</varname>. Por favor, consulte a <link linkend="
+"adicionar um arquivo de patch ao port, mas não o incremente se atualizar o "
+"port para a versão mais recente do software, pois <varname>DISTVERSION</"
+"varname> já terá sido alterado. Por favor, consulte a <link linkend="
 "\"makefile-naming-revepoch\">seção correspondente</link> para mais "
 "informações."
 
@@ -32876,16 +32876,16 @@ msgid ""
 "notification that they <emphasis>must</emphasis> update the package without "
 "delay as soon as a corrected version is available."
 msgstr ""
-"Uma medida muito importante e urgente a ser tomada o quanto antes possível "
-"ao descobrir uma vulnerabilidade de segurança é notificar a comunidade de "
-"usuários do port sobre o perigo. Essa notificação serve a dois propósitos. "
+"Uma medida muito importante e urgente a ser tomada o mais cedo possível ao "
+"descobrir uma vulnerabilidade de segurança é notificar a comunidade de "
+"usuários de port sobre o perigo. Essa notificação serve a dois propósitos. "
 "Primeiro, se o perigo for realmente severo, será prudente aplicar uma "
 "solução instantânea. Por exemplo, parar o serviço de rede afetado ou até "
 "mesmo desinstalar o port completamente até que a vulnerabilidade seja "
 "fechada. Segundo, muitos usuários tendem a atualizar pacotes instalados "
-"apenas ocasionalmente. Eles saberão da notificação que eles <emphasis>devem</"
-"emphasis> atualizar o pacote sem demora assim que uma versão corrigida "
-"estiver disponível."
+"apenas ocasionalmente. Eles saberão pela notificação que eles "
+"<emphasis>devem</emphasis> atualizar o pacote o quanto antes assim que uma "
+"versão com a correção estiver disponível."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18101
@@ -32935,14 +32935,14 @@ msgid ""
 "existing entry fitting the case at hand, then copy it and use it as a "
 "template."
 msgstr ""
-"O banco de dados VuXML é um documento <acronym>XML</acronym>. Seu arquivo de "
-"origem <filename>vuln.xml</filename> é mantido dentro do port <package role="
+"O banco de dados VuXML é um documento <acronym>XML</acronym>. Seu arquivo "
+"fonte <filename>vuln.xml</filename> é mantido dentro do port <package role="
 "\"port\">security/vuxml</package>. Portanto, o caminho completo do arquivo "
 "será <filename>PORTSDIR/security/vuxml/vuln.xml</filename>. Toda vez que uma "
 "vulnerabilidade de segurança é descoberta em um port, favor adicionar uma "
 "entrada para ela nesse arquivo. Até que esteja familiarizado com o VuXML, a "
-"melhor coisa a fazer é encontrar uma entrada existente que o caso se "
-"encaixe, depois copiá-la e usá-la como modelo."
+"melhor coisa a fazer é encontrar uma entrada existente que seja parecida, "
+"depois copiá-la e usá-la como modelo."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18133
@@ -32971,11 +32971,12 @@ msgstr ""
 "&lt;tag&gt; deve ter um fechamento correspondente &lt;/tag&gt;. As tags "
 "podem ser aninhadas. Se aninhadas, as tags internas devem ser fechadas antes "
 "das externas. Há uma hierarquia de tags, ou seja, regras mais complexas de "
-"aninhamento delas. Isso é semelhante ao HTML. A principal diferença é que o "
-"XML é e<emphasis>X</emphasis>tensivel, isto é, com base na definição de tags "
+"aninhamento. Isso é semelhante ao HTML. A principal diferença é que o XML é "
+"e<emphasis>X</emphasis>tensible, isto é, com base na definição de tags "
 "personalizadas. Devido à sua estrutura intrínseca, o XML por outro lado "
-"coloca dados de forma amórfica em forma. O VuXML é especialmente adaptado "
-"para marcar descrições de vulnerabilidades de segurança."
+"coloca dados amórficos de uma maneira mais organizada. O VuXML é "
+"especialmente adaptado para marcar descrições de vulnerabilidades de "
+"segurança."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18150
@@ -33132,7 +33133,7 @@ msgstr ""
 "obrigatório, <literal>vid</literal>, especificando um identificador "
 "universalmente único (UUID) para essa entrada (entre aspas). Gere um UUID "
 "para cada nova entrada VuXML (e não se esqueça de substituí-lo pelo modelo "
-"UUID, a menos que esteja escrevendo a entrada desde o início). Usar "
+"UUID, a menos que esteja escrevendo a entrada desde o início). Use "
 "<citerefentry><refentrytitle>uuidgen</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> para gerar um UUID VuXML."
 
@@ -33150,11 +33151,11 @@ msgid ""
 "versions, and slave ports featuring different choices of important build-"
 "time configuration options."
 msgstr ""
-"Os nomes dos pacotes afetados são listados ali. Vários nomes podem ser "
-"fornecidos, pois vários pacotes podem ser baseados em um único port master "
+"Os nomes dos pacotes afetados são listados nesta tag. Vários nomes podem ser "
+"fornecidos, pois vários pacotes podem ser baseados em um único master port "
 "ou produto de software. Isso pode incluir branches stable ​​e de "
-"desenvolvimento, versões localizadas e ports slave com diferentes escolhas "
-"importantes de opções de configuração em build-time."
+"desenvolvimento, versões de localidade e slave ports englobando diferentes "
+"escolhas de opções importantes de configuração em build-time."
 
 #. (itstool) path: important/para
 #: book.translate.xml:18230
@@ -33165,7 +33166,7 @@ msgid ""
 msgstr ""
 "É responsabilidade do submitter encontrar todos os pacotes relacionados ao "
 "escrever uma entrada VuXML. Tenha em mente que <literal>make search name="
-"foo</literal> é útil. Os principais pontos a procurar são:"
+"foo</literal> pode ajudar. Os principais pontos a procurar são:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:18237
@@ -33195,7 +33196,7 @@ msgid ""
 "of the ports collection."
 msgstr ""
 "<literal>jp-</literal>, <literal>ru-</literal>, <literal>zh-</literal> e "
-"outras possíveis variantes localizadas nas categorias nacionais "
+"outras possíveis variantes de localidade nas categorias nacionais "
 "correspondentes da coleção de ports."
 
 #. (itstool) path: callout/para
@@ -33233,7 +33234,7 @@ msgstr ""
 "literal>, <literal>beta</literal> e <literal>RC</literal>. Por "
 "exemplo,<literal>&lt;ge&gt;2.*&lt;/ge&gt;&lt;lt&gt;3.*&lt;/lt&gt;</literal> "
 "irá seletivamente corresponder a cada versão <literal>2.x</literal> enquanto "
-"<literal>&lt;ge&gt;2.0&lt;/ge&gt;&lt;lt&gt;3.0&lt;/lt&gt;</literal> não irá "
+"<literal>&lt;ge&gt;2.0&lt;/ge&gt;&lt;lt&gt;3.0&lt;/lt&gt;</literal> não irá, "
 "pois a versão <literal>2.r3</literal> será ignorada e a versão <literal>3.b</"
 "literal> estará dentro do range."
 
@@ -33278,7 +33279,7 @@ msgid ""
 msgstr ""
 "Os intervalos de versão têm que incluir <varname>PORTEPOCH</varname> e "
 "<varname>PORTREVISION</varname> se aplicáveis. Lembre-se que, de acordo com "
-"as regras de agrupamento, uma versão com um valor diferente de zero psts o "
+"as regras de agrupamento, uma versão com um valor diferente de zero para o "
 "<varname>PORTEPOCH</varname> é maior que qualquer versão sem "
 "<varname>PORTEPOCH</varname>, por exemplo, <literal>3.0,1</literal> é maior "
 "que <literal>3.1</literal> ou até mesmo do que <literal>8.9</literal>."
@@ -33294,7 +33295,7 @@ msgstr ""
 "Este é um resumo do problema. XHTML é usado neste campo. Pelo menos "
 "<literal>&lt;p&gt;</literal> e <literal>&lt;/p&gt;</literal> tem que "
 "aparecer. Marcações mais complexas podem ser usadas, mas apenas por uma "
-"questão de precisão e clareza: sem enfeitar."
+"questão de precisão e clareza: Sem enfeitar, por favor."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18320
@@ -33311,7 +33312,7 @@ msgid ""
 "This is a <link xlink:href=\"https://www.freebsd.org/security/#adv\">FreeBSD "
 "security advisory</link>."
 msgstr ""
-"Isto é uma <link xlink:href=\"https://www.freebsd.org/security/#adv\">aviso "
+"Isto é um <link xlink:href=\"https://www.freebsd.org/security/#adv\">aviso "
 "de segurança do FreeBSD</link>."
 
 #. (itstool) path: callout/para
@@ -33321,7 +33322,7 @@ msgid ""
 "problem report</link>."
 msgstr ""
 "Isto é um <link xlink:href=\"https://www.freebsd.org/support."
-"html\">Relatório de problemas do FreeBSD</link>."
+"html\">relatório de problemas do FreeBSD</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18336
@@ -33347,8 +33348,8 @@ msgid ""
 "This is a <link xlink:href=\"http://www.cert.org/\">US-CERT</link> security "
 "advisory."
 msgstr ""
-"Isto é um <link xlink:href=\"http://www.cert.org/\">US-CERT</link> de aviso "
-"de segurança."
+"Isto é um aviso de segurança <link xlink:href=\"http://www.cert.org/\">US-"
+"CERT</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18353
@@ -33356,8 +33357,8 @@ msgid ""
 "This is a <link xlink:href=\"http://www.cert.org/\">US-CERT</link> "
 "vulnerability note."
 msgstr ""
-"Isto é uma <link xlink:href=\"http://www.cert.org/\">US-CERT</link> de nota "
-"de vulnerabilidade."
+"Isto é uma nota de vulnerabilidade <link xlink:href=\"http://www.cert.org/"
+"\">US-CERT</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18359
@@ -33365,8 +33366,8 @@ msgid ""
 "This is a <link xlink:href=\"http://www.cert.org/\">US-CERT</link> Cyber "
 "Security Alert."
 msgstr ""
-"Isto é um <link xlink:href=\"http://www.cert.org/\">US-CERT</link> de alerta "
-"de Cyber Segurança."
+"Isto é um alerta de Cyber Segurança <link xlink:href=\"http://www.cert.org/"
+"\">US-CERT</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18365
@@ -33374,8 +33375,8 @@ msgid ""
 "This is a <link xlink:href=\"http://www.cert.org/\">US-CERT</link> Technical "
 "Cyber Security Alert."
 msgstr ""
-"Isto é um <link xlink:href=\"http://www.cert.org/\">US-CERT</link> de uma "
-"Alerta Técnico de Cyber Segurança."
+"Isto é um Alerta Técnico de Cyber Segurança <link xlink:href=\"http://www."
+"cert.org/\">US-CERT</link>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:18371
@@ -33424,7 +33425,7 @@ msgid ""
 msgstr ""
 "Esta é a data em que qualquer informação na entrada foi modificada pela "
 "última vez (<replaceable>YYYY-MM-DD</replaceable>). Novas entradas não devem "
-"incluir este campo. Adicione-o ao editar uma entrada existente."
+"incluir este campo. Adicione-a ao editar uma entrada existente."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18401
@@ -33512,7 +33513,7 @@ msgid ""
 "Verify that the <literal>&lt;affected&gt;</literal> section of the entry "
 "will match the correct packages:"
 msgstr ""
-"Verifique que a seção <literal>&lt;affected&gt;</literal> da entrada irá "
+"Verifique se a seção <literal>&lt;affected&gt;</literal> da entrada irá "
 "coincidir com os pacotes corretos:"
 
 #. (itstool) path: sect2/screen
@@ -33529,7 +33530,7 @@ msgstr ""
 #: book.translate.xml:18438
 msgid "Make sure that the entry produces no spurious matches in the output."
 msgstr ""
-"Certifique-se de que a entrada não produza correspondências falsas na saída."
+"Certifique-se de que a entrada não produza correspondências incorretas."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18441
@@ -33588,12 +33589,12 @@ msgstr ""
 "processo de portabilidade. Verifique o port com relação a essa lista, mas "
 "também verifique os ports no <link xlink:href=\"https://bugs.FreeBSD.org/"
 "search/\">banco de dados  de PR's</link> que outros enviaram. Envie "
-"quaisquer comentários sobre os ports, conforme descrito nos <link xlink:href="
+"quaisquer comentários sobre os ports, conforme descrito em <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributing/contrib-how."
 "html#CONTRIB-GENERAL\">Relatórios de Bugs e Comentários Gerais</link>. "
-"Verificar os ports no banco de dados de PR's irá fazer ambos, tornar o "
-"processo mais rápido para que possamos fazer o seu commit e para provar que "
-"você sabe o que está fazendo. "
+"Verificar os ports no banco de dados de PR's irá tornar o processo mais "
+"rápido para que possamos fazer o seu commit e para provar que você sabe o "
+"que está fazendo."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18484
@@ -33612,14 +33613,14 @@ msgid ""
 "modified by <link linkend=\"pkg-names\">redefining a variable</link> rather "
 "than overwriting the file."
 msgstr ""
-"Não escreva nada em arquivos fora de <varname>WRKDIR</varname>. "
-"<varname>WRKDIR</varname> é o único lugar que é garantido para ser escrito "
+"Não escreva nada em arquivos fora do <varname>WRKDIR</varname>. "
+"<varname>WRKDIR</varname> é o único lugar garantido com permissão de escrita "
 "durante a compilação do port (consulte <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/books/handbook/ports-using.html#PORTS-CD\">Instalando "
-"Ports a partir de um CD-ROM</link> para um exemplo de construção de ports de "
+"doc/en_US.ISO8859-1/books/handbook/ports-using.html#PORTS-CD\">instalando "
+"ports a partir de um CDROM</link> para um exemplo de construção de ports de "
 "uma árvore somente leitura). Os arquivos <filename>pkg-<replaceable>*</"
-"replaceable></filename> podem ser modificados por <link linkend=\"pkg-"
-"names\">redefinindo uma variável</link> em vez de sobrescrever o arquivo. "
+"replaceable></filename> podem ser modificados pela <link linkend=\"pkg-"
+"names\">redefinição de uma variável</link> em vez de sobrescrever o arquivo."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18498
@@ -33642,11 +33643,11 @@ msgstr ""
 " A maioria dos ports não precisa se preocupar com isso. Em particular, "
 "quando se refere a uma variável <varname>WRKDIR</varname> de outro port, "
 "observe que o local correto é <filename>WRKDIRPREFIXPORTSDIR/"
-"<replaceable>sub-diretório</replaceable>/<replaceable>nome</replaceable>/"
-"work</filename> não <filename>PORTSDIR/<replaceable>sub-diretório</"
-"replaceable>/<replaceable>nome</replaceable>/work</filename> ou <filename>."
-"CURDIR/../../<replaceable>sub-diretório</replaceable>/<replaceable>nome</"
-"replaceable>/work</filename> ou algo assim."
+"<replaceable>subdir</replaceable>/<replaceable>name</replaceable>/work</"
+"filename> e não <filename>PORTSDIR/<replaceable>subdir</replaceable>/"
+"<replaceable>name</replaceable>/work</filename> ou <filename>.CURDIR/../../"
+"<replaceable>subdir</replaceable>/<replaceable>name</replaceable>/work</"
+"filename> ou algo assim."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18511
@@ -33654,7 +33655,7 @@ msgid ""
 "Also, if defining <varname>WRKDIR</varname>, make sure to prepend "
 "<literal>${WRKDIRPREFIX}${.CURDIR}</literal> in the front."
 msgstr ""
-"Além disso, se definir<varname>WRKDIR</varname>, certifique-se de preceder "
+"Além disso, se definir <varname>WRKDIR</varname>, certifique-se de adicionar "
 "<literal>${WRKDIRPREFIX}${.CURDIR}</literal> na frente."
 
 #. (itstool) path: sect1/title
@@ -33699,8 +33700,8 @@ msgid ""
 "<literal>__FreeBSD__</literal> is defined to be <literal>9</literal>."
 msgstr ""
 "<literal>__FreeBSD__</literal> é definido em todas as versões do FreeBSD "
-"como seu principal número de versão. Por exemplo, no FreeBSD 9.x, "
-"<literal>__FreeBSD__</literal> é definido para ser <literal>9</literal>"
+"para seu principal número de versão. Por exemplo, no FreeBSD 9.x, "
+"<literal>__FreeBSD__</literal> é definido para <literal>9</literal>."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:18537
@@ -33817,7 +33818,7 @@ msgid ""
 "The release version of the operating system (for example, <literal>2.1.5</"
 "literal> or <literal>2.2.7</literal>)"
 msgstr ""
-"A versão de lançamento do sistema operacional (por exemplo,<literal>2.1.5</"
+"A versão de lançamento do sistema operacional (por exemplo, <literal>2.1.5</"
 "literal> ou <literal>2.2.7</literal>)"
 
 #. (itstool) path: row/entry
@@ -33868,8 +33869,8 @@ msgid ""
 "When <varname>MASTERDIR</varname> is needed, always define it before "
 "including <filename>bsd.port.pre.mk</filename>."
 msgstr ""
-"Quando <varname>MASTERDIR</varname> for necessário,  sempre o defina antes "
-"de incluir o <filename>bsd.port.pre.mk</filename>."
+"Quando <varname>MASTERDIR</varname> for necessário, sempre o defina antes de "
+"incluir o <filename>bsd.port.pre.mk</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18635
@@ -33904,7 +33905,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:18648
 msgid "Use the <function>exec</function> Statement in Wrapper Scripts"
-msgstr "Use <function>exec</function> em Declarações de Scripts Wrapper"
+msgstr "Uso de Declarações <function>exec</function> em Wrapper Scripts"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18651
@@ -33938,7 +33939,7 @@ msgstr ""
 "A declaração de <function>exec</function> substitui o processo do shell pelo "
 "programa especificado. E se <function>exec</function> for omitido, o "
 "processo do shell permanece na memória enquanto o programa está sendo "
-"executado e consome desnecessariamente os recursos do sistema."
+"executado e consome desnecessariamente recursos do sistema."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18668
@@ -33959,10 +33960,10 @@ msgstr ""
 "O <filename>Makefile</filename> deve fazer as coisas de uma maneira simples "
 "e razoável. Tornar algumas linhas mais curtas ou mais legíveis é sempre "
 "melhor. Exemplos incluem usar um construtor <literal>.if</literal> do make "
-"em vez de um construtor <literal>if</literal> do shell, não redefinindo <_:"
-"buildtarget-1/> se redefinindo <varname>EXTRACT*</varname> é o suficiente e "
-"usando <varname>GNU_CONFIGURE</varname> ao invés de <literal>CONFIGURE_ARGS "
-"+= --prefix=${PREFIX}</literal>."
+"em vez de um construtor <literal>if</literal> do shell, não redefinir <_:"
+"buildtarget-1/> se redefinir <varname>EXTRACT*</varname> é o suficiente e "
+"usar <varname>GNU_CONFIGURE</varname> ao invés de <literal>CONFIGURE_ARGS += "
+"--prefix=${PREFIX}</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18681
@@ -34259,7 +34260,7 @@ msgid ""
 "<command>make readme</command>. Do not include this file in patches or "
 "commits."
 msgstr ""
-"<filename>README.html</filename> não faz parte do port, mas gerado com o "
+"<filename>README.html</filename> não faz parte do port, mas é gerado com o "
 "comando <command>make readme</command>. Não inclua este arquivo em patches "
 "ou commits."
 
@@ -39930,7 +39931,7 @@ msgid ""
 "are available."
 msgstr ""
 "O diretório onde as bibliotecas compartilhadas do <application>Samba</"
-"application> estão disponíveis. "
+"application> estão disponíveis."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22548
@@ -39943,7 +39944,7 @@ msgid ""
 "Provide support for the use of <package role=\"port\">devel/scons</package>. "
 "See <xref linkend=\"using-scons\"/> for more information."
 msgstr ""
-"Fornecer suporte para o uso do <package role=\"port\">devel/scons</package>. "
+"Fornece suporte para o uso do <package role=\"port\">devel/scons</package>. "
 "Veja <xref linkend=\"using-scons\"/> para maiores informações."
 
 #. (itstool) path: sect1/title
@@ -40018,8 +40019,8 @@ msgid ""
 "of <citerefentry><refentrytitle>find</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>. See <xref linkend=\"uses-shebangfix-ex-glob\"/>."
 msgstr ""
-"Contém uma lista de padrões usados ​​com o argumento <literal>-name</"
-"literal> do <citerefentry><refentrytitle>find</refentrytitle><manvolnum>1</"
+"Contém uma lista de padrões usados com o argumento <literal>-name</literal> "
+"do <citerefentry><refentrytitle>find</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>. Veja <xref linkend=\"uses-shebangfix-ex-glob\"/>."
 
 #. (itstool) path: varlistentry/term
@@ -40066,7 +40067,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:22627
 msgid "There are three configuration variables:"
-msgstr "Aqui estão três variáveis ​​de configuração:"
+msgstr "Aqui estão três variáveis de configuração:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22631
@@ -40175,13 +40176,13 @@ msgstr ""
 "Quando usado com <link linkend=\"uses-python\"><literal>USES=python</"
 "literal></link>, e o objetivo é apenas consertar os shebangs, mas a "
 "dependência de <application>Python</application> em si não é desejada, use a "
-"variável <literal>PYTHON_NO_DEPENDS=yes</literal>."
+"variável  <literal>PYTHON_NO_DEPENDS=yes</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:22702
 msgid "Adding Another Interpreter to <literal>USES=shebangfix</literal>"
 msgstr ""
-"Adicionando outro interpretadoror no <literal>USES=shebangfix</literal>"
+"Adicionando outro interpretadoror para <literal>USES=shebangfix</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:22705
@@ -40204,7 +40205,7 @@ msgid ""
 "Specifying all the Paths When Adding an Interpreter to <literal>USES="
 "shebangfix</literal>"
 msgstr ""
-"Especificando todos os Caminhos ao Adicionar um Interpretador à "
+"Especificando todos os Caminhos ao Adicionar um Interpretador para "
 "<literal>USES=shebangfix</literal>"
 
 #. (itstool) path: example/para
@@ -40215,10 +40216,10 @@ msgid ""
 "<varname><replaceable>interp</replaceable>_CMD</varname> the "
 "<application>Ksh</application> entry could be defined as:"
 msgstr ""
-"Se ainda não estava definido, e não havia valores padrão para "
+"Se isto não estiver definido ainda, e não tiver valores padrão para "
 "<varname><replaceable>interp</replaceable>_OLD_CMD</varname> e "
-"<varname><replaceable>interp</replaceable>_CMD</varname> \n"
-"a entrada <application>Ksh</application> pode ser definida como: "
+"<varname><replaceable>interp</replaceable>_CMD</varname> a entrada "
+"<application>Ksh</application> deveria ser definida como:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22722
@@ -40235,7 +40236,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:22728
 msgid "Adding a Strange Location for an Interpreter"
-msgstr "Adicionando um Local Estranho para um Interpretador"
+msgstr "Adicionando uma Localização Estranha para um Interpretador"
 
 #. (itstool) path: example/para
 #: book.translate.xml:22730
@@ -40245,10 +40246,11 @@ msgid ""
 "<filename>/opt/bin/python2.7</filename>. The strange path to be replaced can "
 "be declared in the port <filename>Makefile</filename>:"
 msgstr ""
-"Alguns softwares usam locais estranhos para um interpretador. Por exemplo, "
-"um aplicativo pode esperar que <application>Python</application> esteja "
-"localizado em <filename>/opt/bin/python2.7</filename>. O caminho estranho a "
-"ser substituído pode ser declarado no <filename>Makefile</filename> do port:"
+"Alguns softwares usam localizações estranhas para um interpretador. Por "
+"exemplo, um aplicativo pode esperar que <application>Python</application> "
+"esteja localizado em <filename>/opt/bin/python2.7</filename>. O caminho "
+"estranho a ser substituído pode ser declarado no <filename>Makefile</"
+"filename> do port:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:22737
@@ -40291,11 +40293,11 @@ msgid ""
 "regular expressions. See <citerefentry><refentrytitle>re_format</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> for more information."
 msgstr ""
-"<varname>SHEBANG_REGEX</varname> é usado rodando <command>find -E</command>, "
-"que usa expressões regulares modernas, também conhecidas como expressões "
-"regulares estendidas. Veja <citerefentry><refentrytitle>re_format</"
-"refentrytitle><manvolnum>7</manvolnum></citerefentry> para maiores "
-"informações."
+"<varname>SHEBANG_REGEX</varname> é usada executando <command>find -E</"
+"command>, que usa expressões regulares modernas, também conhecidas como "
+"expressões regulares estendidas. Veja "
+"<citerefentry><refentrytitle>re_format</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry> para maiores informações."
 
 #. (itstool) path: example/title
 #: book.translate.xml:22761
@@ -40366,7 +40368,7 @@ msgid ""
 "used is 3, but version 2 is also possible using the <literal>:2</literal> "
 "modifier."
 msgstr ""
-"Adicionar uma dependência ao <application>SQLite</application>. A versão "
+"Adiciona uma dependência para <application>SQLite</application>. A versão "
 "padrão usada é 3, mas usar a versão 2 também é possível usando o modificador "
 "<literal>:2</literal>."
 
@@ -40391,11 +40393,11 @@ msgid ""
 "<literal>run</literal>. These variables are available for the port's use, "
 "they are also added to <varname>MAKE_ENV</varname>:"
 msgstr ""
-"Fornecer suporte para <application>OpenSSL</application>. Uma dependência "
-"apenas de build ou run-time pode ser especificada usando <literal>build</"
-"literal> ou <literal>run</literal>. Estas variáveis ​​estão disponíveis para "
-"uso do port, elas também são adicionadas na variável <varname>MAKE_ENV</"
-"varname>:"
+"Fornece suporte para <application>OpenSSL</application>. Uma dependência "
+"apenas de compilação ou run-time pode ser especificada usando "
+"<literal>build</literal> ou <literal>run</literal>. Estas variáveis estão "
+"disponíveis para uso do port, elas também são adicionadas para a variável  "
+"<varname>MAKE_ENV</varname>:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22810
@@ -40501,11 +40503,11 @@ msgid ""
 "literal>, <literal>.tgz</literal>, <literal>.txz</literal> or <literal>.tar."
 "xz</literal> respectively."
 msgstr ""
-"Setar <varname>EXTRACT_SUFX</varname> para <literal>.alcatrão</literal>, "
-"<literal>.tar.Z</literal>, <literal>.tar.bz2</literal>, <literal>.tar.bz2</"
-"literal>, <literal>.tar.lzma</literal>, <literal>.tbz</literal>, <literal>."
-"tbz2</literal>, <literal>.tgz</literal>, <literal>.txz</literal> ou "
-"<literal>.tar.xz</literal> respectivamente."
+"Defina a variável <varname>EXTRACT_SUFX</varname> para <literal>.tar</"
+"literal>, <literal>.tar.Z</literal>, <literal>.tar.bz2</literal>, <literal>."
+"tar.bz2</literal>, <literal>.tar.lzma</literal>, <literal>.tbz</literal>, "
+"<literal>.tbz2</literal>, <literal>.tgz</literal>, <literal>.txz</literal> "
+"ou <literal>.tar.xz</literal> respectivamente."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22885
@@ -40538,18 +40540,18 @@ msgid ""
 "use <literal>tea</literal>. After including <filename>bsd.port.pre.mk</"
 "filename> the port can inspect the results using these variables:"
 msgstr ""
-"Adicionar uma dependência ao <application>Tcl</application>. Uma versão "
+"Adiciona uma dependência para o <application>Tcl</application>. Uma versão "
 "específica pode ser requisitada usando <replaceable>version</replaceable>. A "
-"versão pode estar vazia, um ou mais números de exatos versão (atualmente "
+"versão pode estar vazia, um ou mais números exatos de versão (atualmente "
 "<literal>84</literal>, <literal>85</literal> ou <literal>86</literal>), ou "
 "um número mínimo de versão (atualmente<literal>84+</literal>, <literal>85+</"
 "literal> ou <literal>86+</literal>). Para solicitar apenas um wrapper sem "
 "uma versão especifica, use <literal>wrapper</literal>. Uma dependência "
-"somente de build ou run-time pode ser especificada usando <literal>build</"
-"literal> ou <literal>run</literal>. Para compilar o port usando "
-"<application>Tcl Extension Architecture</application>, use o <literal>tea</"
-"literal>. Depois de incluir <filename>bsd.port.pre.mk</filename> o port pode "
-"inspecionar os resultados usando estas variáveis:"
+"somente de compilação ou run-time pode ser especificada usando "
+"<literal>build</literal> ou <literal>run</literal>. Para compilar o port "
+"usando <application>Tcl Extension Architecture</application>, use o "
+"<literal>tea</literal>. Depois de incluir <filename>bsd.port.pre.mk</"
+"filename> o port pode inspecionar os resultados usando estas variáveis:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22909
@@ -40557,7 +40559,7 @@ msgid ""
 "<varname>TCL_VER</varname>: chosen major.minor version of <application>Tcl</"
 "application>"
 msgstr ""
-"<varname>TCL_VER</varname>: selecionada a versão major.minor do "
+"<varname>TCL_VER</varname>: seleciona a versão major.minor do "
 "<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
@@ -40566,7 +40568,7 @@ msgid ""
 "<varname>TCLSH</varname>: full path of the <application>Tcl</application> "
 "interpreter"
 msgstr ""
-"<varname>TCLSH</varname>: caminho completo do interpretador da "
+"<varname>TCLSH</varname>: caminho completo do interpretador do  "
 "<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
@@ -40575,7 +40577,7 @@ msgid ""
 "<varname>TCL_LIBDIR</varname>: path of the <application>Tcl</application> "
 "libraries"
 msgstr ""
-"<varname>TCL_LIBDIR</varname>: caminho das bibliotecas <application>Tcl</"
+"<varname>TCL_LIBDIR</varname>: caminho das bibliotecas do  <application>Tcl</"
 "application>"
 
 #. (itstool) path: listitem/para
@@ -40584,7 +40586,7 @@ msgid ""
 "<varname>TCL_INCLUDEDIR</varname>: path of the <application>Tcl</"
 "application> C header files"
 msgstr ""
-"<varname>TCL_INCLUDEDIR</varname>: caminho dos arquivos C header da "
+"<varname>TCL_INCLUDEDIR</varname>: caminho dos arquivos de cabeçalho C do "
 "<application>Tcl</application>"
 
 #. (itstool) path: listitem/para
@@ -40593,8 +40595,8 @@ msgid ""
 "<varname>TK_VER</varname>: chosen major.minor version of <application>Tk</"
 "application>"
 msgstr ""
-"<varname>TK_VER</varname>: selecionada versão major.minor do "
-"<application>Tk</application>"
+"<varname>TK_VER</varname>: selecion a versão major.minor do <application>Tk</"
+"application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22934
@@ -40602,7 +40604,7 @@ msgid ""
 "<varname>WISH</varname>: full path of the <application>Tk</application> "
 "interpreter"
 msgstr ""
-"<varname>WISH</varname>: caminho completo do interpretador do "
+"<varname>WISH</varname>: caminho completo do interpretador do  "
 "<application>Tk</application>"
 
 #. (itstool) path: listitem/para
@@ -40620,7 +40622,7 @@ msgid ""
 "<varname>TK_INCLUDEDIR</varname>: path of the <application>Tk</application> "
 "C header files"
 msgstr ""
-"<varname>TK_INCLUDEDIR</varname>: caminho dos arquivos C header do "
+"<varname>TK_INCLUDEDIR</varname>: caminho dos arquivos de cabeçalho C do "
 "<application>Tk</application>"
 
 #. (itstool) path: sect1/title
@@ -40637,7 +40639,7 @@ msgid ""
 "<filename>${PREFIX}/share/misc</filename>."
 msgstr ""
 "Adiciona <link linkend=\"plist-keywords-terminfo\"><literal>@terminfo</"
-"literal></link> para o <filename>plist</filename>. Use quando o port "
+"literal></link> ao arquivo <filename>plist</filename>. Use quando o port "
 "instalar arquivos <filename><replaceable>*</replaceable>.terminfo</filename> "
 "em <filename>${PREFIX}/share/misc</filename>."
 
@@ -40658,9 +40660,9 @@ msgid ""
 "<application>Tk</application>. The same variables are returned as when using "
 "<application>Tcl</application>."
 msgstr ""
-"Um pequeno wrapper ao usar os dois <application>Tcl</application> e "
-"<application>Tk</application>. As mesmas variáveis ​​são retornadas assim "
-"como ao usar <application>Tcl</application>."
+"Um pequeno empacotamento ao usar os dois <application>Tcl</application> e "
+"<application>Tk</application>. As mesmas variáveis são retornadas assim como "
+"quando estiver usando <application>Tcl</application>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22972
@@ -40674,10 +40676,10 @@ msgid ""
 "allow installing this port as a normal user. Try this in the port before "
 "using <link linkend=\"uses-fakeroot\">USES=fakeroot</link> or patching."
 msgstr ""
-"Altera algum comportamento padrão (principalmente variáveis) do sistema de "
-"compilação para permitir instalar este port como um usuário normal. Tente "
-"isso no port antes de usar <link linkend=\"uses-fakeroot\">USES=fakeroot</"
-"link> ou de corrigir."
+"Altera algum comportamento padrão (principalmente de variáveis) do sistema "
+"de compilação para permitir instalar este port como um usuário normal. Tente "
+" isso no port antes de usar <link linkend=\"uses-fakeroot\">USES=fakeroot</"
+"link> ou de aplicar o patch."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22983
@@ -40699,13 +40701,12 @@ msgid ""
 "<varname>DATADIR</varname>, <varname>WWWDIR</varname>, <varname>ETCDIR</"
 "varname>. These variables are available for ports:"
 msgstr ""
-"Tornar arquivos ou diretórios 'exclusivos', adicionando um prefixo ou sufixo."
-" Se o argumento <literal>dirs</literal> é usado, o port precisa de um "
-"prefixo (e apenas um prefixo) baseado em <varname>UNIQUE_PREFIX</varname> "
-"para diretórios padrão <varname>DOCSDIR</varname>, <varname>EXEMPLESDIR</"
+"Torna arquivos ou diretórios 'exclusivos', adicionando um prefixo ou sufixo. "
+"Se o argumento <literal>dirs</literal> é usado, o port precisa de um prefixo "
+"(e apenas um prefixo) baseado em <varname>UNIQUE_PREFIX</varname>  para "
+"diretórios padrão <varname>DOCSDIR</varname>, <varname>EXEMPLESDIR</"
 "varname>, <varname>DATADIR</varname>, <varname>WWWDIR</varname>, "
-"<varname>ETCDIR</varname>. Estas variáveis ​​estão disponíveis para os ports:"
-""
+"<varname>ETCDIR</varname>. Estas variáveis estão disponíveis para os ports:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22998
@@ -40762,9 +40763,9 @@ msgid ""
 "\"port\">www/varnish5</package>."
 msgstr ""
 "Manipular dependências no <application>Varnish Cache</application>. "
-"<literal>4</literal> irá adicionar uma dependência no port <package role="
-"\"port\">www/varnish4</package>. <literal>5</literal> irá adicionar uma "
-"dependência no port <package role=\"port\">www/varnish5</package>."
+"<literal>4</literal> irá adicionar uma dependência no port para <package "
+"role=\"port\">www/varnish4</package>. <literal>5</literal> irá adicionar uma "
+"dependência no port para <package role=\"port\">www/varnish5</package>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23034
@@ -40782,8 +40783,8 @@ msgid ""
 "Automatically create and remove symbolic links for each application that "
 "supports the webplugin framework. <literal>ARGS</literal> can be one of:"
 msgstr ""
-"Crie e remova automaticamente links simbólicos para cada aplicação que "
-"suporte o framework do webplugin. <literal>ARGS</literal> pode ser um dos: "
+"Cria e remove automaticamente links simbólicos para cada aplicação que "
+"suporta o framework do webplugin. <literal>ARGS</literal> pode ser um dos:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23044
@@ -40807,7 +40808,7 @@ msgstr "<literal>linux</literal>: suporte a plug-ins do Linux "
 #: book.translate.xml:23058
 msgid "<literal>all</literal> (default, implicit): support all plug-in types"
 msgstr ""
-"<literal>all</literal>(padrão, implícito): suporta todos os tipos de plug-"
+"<literal>all</literal> (padrão, implícito): suporta todos os tipos de plug-"
 "ins"
 
 #. (itstool) path: listitem/para
@@ -40818,7 +40819,7 @@ msgstr "(entradas individuais): suporta apenas os navegadores listados"
 #. (itstool) path: sect1/para
 #: book.translate.xml:23068
 msgid "These variables can be adjusted:"
-msgstr "Essas variáveis ​​podem ser ajustadas:"
+msgstr "Essas variáveis podem ser ajustadas:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23072
@@ -40923,9 +40924,9 @@ msgid ""
 msgstr ""
 "Usos de <filename>www/zope<replaceable>XY</replaceable></filename>. Usado "
 "principalmente para a compilação de ports relacionados ao <application>zope</"
-"application>. <varname>ZOPE_VERSION</varname> pode ser usado por um port "
+"application>. <varname>ZOPE_VERSION</varname>  pode ser usado por um port "
 "para indicar que uma versão específica do <application>zope</application> "
-"deve ser usado."
+"deve ser usada."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:23170
@@ -40939,9 +40940,9 @@ msgid ""
 "defined in <link xlink:href=\"http://svnweb.FreeBSD.org/base/head/sys/sys/"
 "param.h?view=markup\">sys/param.h</link>:"
 msgstr ""
-"Aqui está uma lista conveniente dos valores <literal>__FreeBSD_version</"
+"Aqui está uma lista conveniente dos valores  <literal>__FreeBSD_version</"
 "literal> definidos em <link xlink:href=\"http://svnweb.FreeBSD.org/base/head/"
-"sys/sys/param.h?view=markup\">sys/param.h</link>: "
+"sys/sys/param.h?view=markup\">sys/param.h</link>:"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23177
