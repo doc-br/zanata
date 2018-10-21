@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-21 06:35+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-10-21 01:58+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -34285,8 +34285,8 @@ msgid ""
 "Ports that do not have any architecture-dependent files or requirements are "
 "identified by setting <literal>NO_ARCH=yes</literal>."
 msgstr ""
-"Os ports que não possuem arquivos dependentes de arquitetura ou requisitos "
-"são identificados pela setando <literal>NO_ARCH=yes</literal>."
+"Os ports que não possuem requisitos ou arquivos dependentes de arquitetura "
+"são identificados com <literal>NO_ARCH=yes</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18833
@@ -34315,11 +34315,11 @@ msgstr ""
 "Existem várias variáveis ​​que podem ser usadas no <filename>Makefile</"
 "filename> de um port para informar ao usuário que o port não pode ser "
 "instalado. O valor dessas variáveis ​​make será o motivo que é mostrado aos "
-"usuários pelo porque o port se recusa a se instalar. Por favor, use a "
-"variável correta. Cada variável transmite significados radicalmente "
-"diferentes, tanto para usuários quanto para sistemas automatizados que "
-"dependem do <filename>Makefile</filename>, assim como <link linkend=\"build-"
-"cluster\">o cluster de compilação de ports</link>, <link linkend="
+"usuários do porque o port se recusa a se instalar. Por favor, use a variável "
+"correta. Cada variável transmite significados radicalmente diferentes, tanto "
+"para usuários quanto para sistemas automatizados que dependem do "
+"<filename>Makefile</filename>, assim como <link linkend=\"build-cluster\">o "
+"cluster de compilação de ports</link>, <link linkend="
 "\"freshports\">FreshPorts</link> e <link linkend=\"portsmon\">portsmon</"
 "link>."
 
@@ -34405,11 +34405,11 @@ msgstr ""
 "varname> assim que um determinado software tiver uma vulnerabilidade e não "
 "houver atualização liberada. Idealmente, atualize os ports o mais rápido "
 "possível quando uma vulnerabilidade de segurança for descoberta para reduzir "
-"o número de hosts vulneráveis ​​do FreeBSD (gostamos de ser conhecidos por "
-"serem seguros), mas às vezes há um intervalo de tempo entre a divulgação de "
-"uma vulnerabilidade e uma versão atualizada do software vulnerável. Não "
-"marque um port como <varname>FORBIDDEN</varname> por qualquer outro motivo "
-"que não a segurança."
+"o número de hosts vulneráveis ​​do FreeBSD (gostamos de ser conhecidos pela "
+"segurança), mas às vezes há um intervalo de tempo entre a divulgação de uma "
+"vulnerabilidade e uma versão atualizada do software vulnerável. Não marque "
+"um port como <varname>FORBIDDEN</varname> por qualquer outro motivo que não "
+"seja segurança."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:18917
@@ -34421,7 +34421,7 @@ msgid ""
 "varname> when a port:"
 msgstr ""
 "A variável <varname>IGNORE</varname> é reservada para ports que não devem "
-"ser construídos por algum outro motivo. Use-a para ports em que o problema é "
+"ser compilados por algum outro motivo. Use-a para ports em que o problema é "
 "considerado estrutural. O cluster de build não criará, sob nenhuma "
 "circunstância, ports marcados com a variável <varname>IGNORE</varname>. Por "
 "exemplo, use <varname>IGNORE</varname> quando um port:"
@@ -34459,11 +34459,11 @@ msgid ""
 "<link linkend=\"conflicts\">use <varname>CONFLICTS</varname> instead</link>. "
 "<varname>CONFLICTS</varname> will set <varname>IGNORE</varname> by itself."
 msgstr ""
-"Se um port entrar em conflito com um port atualmente instalado (por exemplo, "
-"se eles instalarem um arquivo no mesmo local que executa uma função "
+"Se um port entrar em conflito com um port que está atualmente instalado (por "
+"exemplo, se eles instalam um arquivo no mesmo local que executa uma função "
 "diferente), <link linkend=\"conflicts\">use a variável <varname>CONFLICTS</"
 "varname> como uma alternativa</link>. <varname>CONFLICTS</varname> ajustará "
-"<varname>IGNORE</varname> por si própria."
+"<varname>IGNORE</varname> por si próprio."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:18957
@@ -34473,7 +34473,7 @@ msgid ""
 "<varname>IGNORE</varname>: <varname>ONLY_FOR_ARCHS</varname> and "
 "<varname>NOT_FOR_ARCHS</varname>. Examples:"
 msgstr ""
-"Para marcar um port como <varname>IGNORE</varname> apenas em determinadas "
+"Para marcar um port com <varname>IGNORE</varname> apenas em determinadas "
 "arquiteturas, existem duas outras variáveis ​​de conveniência que irão setar "
 "automaticamente <varname>IGNORE</varname>: <varname>ONLY_FOR_ARCHS</varname> "
 "e <varname>NOT_FOR_ARCHS</varname>. Exemplos:"
@@ -34499,12 +34499,12 @@ msgid ""
 "<varname>ONLY_FOR_ARCHS_REASON_<replaceable>ARCH</replaceable></varname> and "
 "<varname>NOT_FOR_ARCHS_REASON_<replaceable>ARCH</replaceable></varname>."
 msgstr ""
-"Uma mensagem costomizada de <varname>IGNORE</varname> pode ser definida "
+"Uma mensagem de <varname>IGNORE</varname> customizada pode ser definida "
 "usando as variáveis <varname>ONLY_FOR_ARCHS_REASON</varname> e "
-"<varname>NOT_FOR_ARCHS_REASON</varname>. Por entradas de arquitetura é "
-"possíveil com as variáveis <varname>ONLY_FOR_ARCHS_REASON_<replaceable>ARCH</"
-"replaceable></varname> e <varname>NOT_FOR_ARCHS_REASON_<replaceable>ARCH</"
-"replaceable></varname>."
+"<varname>NOT_FOR_ARCHS_REASON</varname>. É possível definir entradas por "
+"arquitetura com as variáveis "
+"<varname>ONLY_FOR_ARCHS_REASON_<replaceable>ARCH</replaceable></varname> e "
+"<varname>NOT_FOR_ARCHS_REASON_<replaceable>ARCH</replaceable></varname>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:18978
@@ -34515,12 +34515,12 @@ msgid ""
 "kernel must support IA32 compatibility. If one of these two dependencies is "
 "not satisfied, <varname>IGNORE</varname> will be set automatically."
 msgstr ""
-"Se um port buscar binários i386 e instalar eles, defina a variável "
+"Se um port baixar e instalar binários i386, defina a variável "
 "<varname>IA32_BINARY_PORT</varname>. Se esta variável estiver "
 "definida,<filename>/usr/lib32</filename> deve estar presente para versões "
 "IA32 de bibliotecas e o kernel deve suportar compatibilidade com IA32. Se "
-"uma dessas duas dependências não for satisfeita, <varname>IGNORE</varname> "
-"será definido automaticamente."
+"uma dessas duas dependências não forem satisfeitas, <varname>IGNORE</"
+"varname> será definido automaticamente."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18990
@@ -34535,9 +34535,9 @@ msgid ""
 "the user, the wording of messages for each variable differ:"
 msgstr ""
 "Não coloque os valores de <varname>BROKEN</varname>, <varname>IGNORE</"
-"varname> e variáveis ​​relacionadas como citações. Devido à forma como a "
+"varname> e variáveis ​​relacionadas entre aspas. Devido à forma como a "
 "informação é mostrada ao usuário, o texto das mensagens para cada variável é "
-"diferente: "
+"diferente:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:18997
@@ -34549,7 +34549,7 @@ msgstr "BROKEN=\tfails to link with base -lcrypto"
 #: book.translate.xml:18999
 #, no-wrap
 msgid "IGNORE=\tunsupported on recent versions"
-msgstr "IGNORE=\tnão suportada em versões recentes"
+msgstr "IGNORE=\tunsupported on recent versions"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19001
@@ -34564,14 +34564,13 @@ msgstr ""
 msgid ""
 "===&gt;  foobar-0.1 is marked as broken: fails to link with base -lcrypto."
 msgstr ""
-"===&gt;  foobar-0.1 é marcado como quebrado: falha para conectar com a base -"
-"lcrypto."
+"===&gt;  foobar-0.1 is marked as broken: fails to link with base -lcrypto."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19006
 #, no-wrap
 msgid "===&gt;  foobar-0.1 is unsupported on recent versions."
-msgstr "===&gt;  foobar-0.1 não é suportado em versões recentes."
+msgstr "===&gt;  foobar-0.1 is unsupported on recent versions."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19011
@@ -34589,10 +34588,9 @@ msgid ""
 "are to be used as a temporary resort if a port is not working. Permanently "
 "broken ports will be removed from the tree entirely."
 msgstr ""
-"Lembre-se disso <varname>BROKEN</varname> e <varname>FORBIDDEN</varname> "
-"devem ser usados ​​como um recurso temporário se um port não estiver "
-"funcionando. Ports permanentemente quebrados serão removidos da árvore por "
-"completo."
+"Lembre-se que <varname>BROKEN</varname> e <varname>FORBIDDEN</varname> devem "
+"ser usados ​​como um recurso temporário se um port não estiver funcionando. "
+"Ports permanentemente quebrados serão removidos da árvore por completo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19020
@@ -34603,11 +34601,11 @@ msgid ""
 "removal; the latter is a string in ISO 8601 format (YYYY-MM-DD). Both will "
 "be shown to the user."
 msgstr ""
-"Quando faz sentido fazê-lo, os usuários podem ser avisados ​​sobre uma "
-"remoção de port pendente com as variáveis <varname>DEPRECATED</varname> e "
+"Quando fizer sentido, os usuários podem ser avisados ​​sobre uma remoção de "
+"port pendente com as variáveis <varname>DEPRECATED</varname> e "
 "<varname>EXPIRATION_DATE</varname>. A primeira é uma string que indica "
-"porque o port está programado para remoção; o último é uma string no formato "
-"ISO 8601 (YYYY-MM-DD). Ambos serão mostrados ao usuário."
+"porque o port está programado para remoção; a segunda é uma string no "
+"formato ISO 8601 (YYYY-MM-DD). Ambos serão mostrados ao usuário."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19027
@@ -34627,7 +34625,7 @@ msgid ""
 "be one month for security-related issues and two months for build issues. "
 "This also gives any interested committers a little time to fix the problems."
 msgstr ""
-"Não existe uma política definida sobre a quantidade de aviso a ser dado. A "
+"Não existe uma política definida sobre o tempo de aviso a ser dado. A "
 "prática atual parece ser de um mês para problemas relacionados à segurança e "
 "dois meses para problemas de compilação. Isso também dá a algum interessado "
 "um pouco de tempo para resolver os problemas."
@@ -34663,7 +34661,7 @@ msgid ""
 "<command>make maintainer</command> also fail in this scenario. This is not "
 "acceptable."
 msgstr ""
-"É um erro comum usar <literal>.error</literal> para esse propósito. O "
+"É um equívoco comum usar <literal>.error</literal> para esse propósito. O "
 "problema com isso é que muitas ferramentas automatizadas que funcionam com a "
 "árvore de ports falharão nessa situação. A ocorrência mais comum disso é "
 "encontrada ao tentar construir o arquivo <filename>/usr/ports/INDEX</"
@@ -34682,7 +34680,7 @@ msgid ""
 "The first of the next two <filename>Makefile</filename> snippets will cause "
 "<command>make index</command> to fail, while the second one will not:"
 msgstr ""
-"O primeiro dos próximos dois trechos do <filename>Makefile</filename> irá "
+"O primeiro dos próximos dois trechos de <filename>Makefile</filename> irá "
 "fazer o <command>make index</command> falhar, enquanto o segundo não:"
 
 #. (itstool) path: example/programlisting
@@ -34700,7 +34698,7 @@ msgstr "IGNORE=option is not supported"
 #. (itstool) path: sect1/title
 #: book.translate.xml:19073
 msgid "Usage of <filename>sysctl</filename>"
-msgstr "Uso do <filename>sysctl</filename>"
+msgstr "Uso de <filename>sysctl</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19075
@@ -34711,9 +34709,9 @@ msgid ""
 "further slowing down that process."
 msgstr ""
 "O uso de <filename>sysctl</filename> é desencorajado, exceto nos targets. "
-"Isso porque a estimativa de qualquer <literal>makevar</literal>, como usados "
-"durante um <command>make index</command>, é ter que executar o comando, "
-"retardando ainda mais esse processo."
+"Isso porque ele seria processado na execução de qualquer <literal>makevar</"
+"literal>, como os usados durante um <command>make index</command>, e assim "
+"teria que executar o comando, retardando ainda mais esse processo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19081
@@ -34725,8 +34723,8 @@ msgid ""
 msgstr ""
 "Use apenas <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> através de <varname>SYSCTL</varname>, pois contém "
-"o caminho completo e pode ser substituído, se alguém tiver uma necessidade "
-"especial. "
+"o caminho completo e pode ser modificado, se alguém tiver uma necessidade "
+"especial."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19088
@@ -34742,10 +34740,10 @@ msgid ""
 "distfile was silently altered on the download servers with the intent to "
 "cause harm or compromise end user security."
 msgstr ""
-"Algumas vezes os autores do software alteram o conteúdo dos distfiles "
+"De vez em quando os autores de software alteram o conteúdo dos distfiles "
 "liberados sem alterar o nome do arquivo. Verifique se as alterações são "
-"oficiais e foram realizadas pelo autor. Já aconteceu no passado em que o "
-"distfile foi silenciosamente alterado nos servidores de download com o "
+"oficiais e se foram realizadas pelo autor. Já aconteceu no passado em que o "
+"distfile foi silenciosamente alterado nos servidores de download com a "
 "intenção de prejudicar ou comprometer a segurança do usuário final."
 
 #. (itstool) path: sect1/para
@@ -34778,7 +34776,7 @@ msgstr "Contate os autores do software e confirme as alterações com eles."
 #. (itstool) path: sect1/title
 #: book.translate.xml:19113
 msgid "Use <acronym>POSIX</acronym> Standards"
-msgstr "Use <acronym>POSIX</acronym> Padronizados"
+msgstr "Uso de Padrões <acronym>POSIX</acronym>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19115
@@ -34842,12 +34840,12 @@ msgid ""
 "Do not rely on them being cheap in performance-critical applications. In "
 "general, try hard to avoid syscalls if possible."
 msgstr ""
-"Um numero razoável de syscalls simples (por exemplo "
+"Um número razoável de syscalls simples (por exemplo "
 "<citerefentry><refentrytitle>gettimeofday</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>getpid</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>) são muito mais "
 "rápidos no <trademark class=\"registered\">Linux</trademark> do que em "
-"qualquer outro sistema operacional devido ao armazenamento em cache e às "
+"qualquer outro sistema operacional, devido ao armazenamento em cache e às "
 "otimizações de desempenho do vsyscall. Não confie que seus custos sejam "
 "baratos em aplicativos de desempenho crítico. Em geral, tente evitar as "
 "syscalls se possível."
@@ -34867,14 +34865,14 @@ msgid ""
 msgstr ""
 "Não confie no comportamento de sockets específicos do <trademark class="
 "\"registered\">Linux</trademark>. Em particular, os tamanhos padrão do "
-"buffer de socket são diferentes. (Chamadas "
+"buffer de socket são diferentes (chamadas "
 "<citerefentry><refentrytitle>setsockopt</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> com <literal>SO_SNDBUF</literal> e "
 "<literal>SO_RCVBUF</literal>, e enquanto o "
 "<citerefentry><refentrytitle>send</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> do <trademark class=\"registered\">Linux</trademark>'s "
 "bloqueia quando o buffer do socket está cheio, o do FreeBSD falhará e "
-"definirá <literal>ENOBUFS</literal> no errno.)"
+"definirá <literal>ENOBUFS</literal> no errno)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19151
@@ -34894,9 +34892,10 @@ msgid ""
 "pages</link> to see if the function used is a <acronym>POSIX</acronym> "
 "interface (in the <quote>STANDARDS</quote> section of the man page)."
 msgstr ""
-"Verifica as <link xlink:href=\"https://www.freebsd.org/cgi/man.cgi\">páginas "
-"de manual</link> para ver se a função usada é uma interface <acronym>POSIX</"
-"acronym> (na seção <quote>STANDARDS</quote> da página de manual)."
+"Verifique as <link xlink:href=\"https://www.freebsd.org/cgi/man."
+"cgi\">páginas de manual</link> para ver se a função usada é uma interface "
+"<acronym>POSIX</acronym> (na seção <quote>STANDARDS</quote> da página de "
+"manual)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19162
@@ -34918,9 +34917,8 @@ msgid ""
 "A list of common <application>bash</application>isms is available <link "
 "xlink:href=\"https://wiki.ubuntu.com/DashAsBinSh\">here</link>."
 msgstr ""
-"Uma lista de comum funções comuns do <application>bash</application> está "
-"disponível <link xlink:href=\"https://wiki.ubuntu.com/DashAsBinSh\">aqui</"
-"link>."
+"Uma lista de <application>bash</application>ismos comum está disponível "
+"<link xlink:href=\"https://wiki.ubuntu.com/DashAsBinSh\">aqui</link>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19170
@@ -34947,7 +34945,7 @@ msgid ""
 "filename>. If reviewing a port and a better wording can be achieved, do so."
 msgstr ""
 "Sempre verifique duas vezes os arquivos <filename>pkg-descr</filename> e "
-"<filename>pkg-plist</filename>. Se a revisão de um port e uma melhor "
+"<filename>pkg-plist</filename>. Se estiver revisando um port e uma melhor "
 "formulação puder ser alcançada, faça isso."
 
 #. (itstool) path: sect1/para
@@ -34982,7 +34980,7 @@ msgid ""
 msgstr ""
 "Aqui está um exemplo de <filename>Makefile</filename> que pode ser usado "
 "para criar um novo port. Certifique-se de remover todos os comentários "
-"extras  (entre parênteses)."
+"extras (entre colchetes)."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:19208
@@ -34993,10 +34991,10 @@ msgid ""
 "\"porting-portlint\">portlint</link> to check the <filename>Makefile</"
 "filename>."
 msgstr ""
-"O formato mostrado é o recomendado para ordenar variáveis, linhas vazias "
+"O formato apresentado é o recomendado para ordenar variáveis, linhas vazias "
 "entre seções e assim por diante. Esse formato é projetado para que as "
-"informações mais importantes sejam fáceis de localizar. Recomendamos usar o "
-"<link linkend=\"porting-portlint\">portlint</link> para verificar o "
+"informações mais importantes sejam fáceis de serem localizadas. Recomendamos "
+"usar o <link linkend=\"porting-portlint\">portlint</link> para verificar o "
 "<filename>Makefile</filename>."
 
 #. (itstool) path: chapter/programlisting
@@ -35188,7 +35186,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:19316
 msgid "Order of Variables in Port Makefiles"
-msgstr "Ordem das Variáveis ​​nos Makefiles dos Ports"
+msgstr "Ordem das Variáveis ​​nos Makefiles de Port"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:19318
@@ -35226,8 +35224,8 @@ msgid ""
 "In existing ports, <application>Subversion</application> has expanded it to "
 "look like this:"
 msgstr ""
-"Nos ports existentes, <application>Subversion</application> teve uma "
-"expansão para ficar assim:"
+"Nos ports existentes, o <application>Subversion</application> expandiu essa "
+"entrada ficando assim:"
 
 #. (itstool) path: chapter/programlisting
 #: book.translate.xml:19334
@@ -35357,7 +35355,7 @@ msgid ""
 "shorthand\"><varname>MASTER_SITE_SUBDIR</varname></link> (deprecated)"
 msgstr ""
 "<link linkend=\"makefile-master_sites-"
-"shorthand\"><varname>MASTER_SITE_SUBDIR</varname></link>(descontinuada)"
+"shorthand\"><varname>MASTER_SITE_SUBDIR</varname></link> (descontinuado)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19402
@@ -35485,7 +35483,7 @@ msgstr "<link linkend=\"makefile-comment\"><varname>COMMENT</varname></link>"
 #. (itstool) path: sect1/title
 #: book.translate.xml:19473
 msgid "<varname>LICENSE</varname> Block"
-msgstr "O Bloco <varname>LICENSE</varname>"
+msgstr "Bloco <varname>LICENSE</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19475
@@ -35573,8 +35571,7 @@ msgid ""
 "replaceable>_<replaceable>NAME</replaceable> variables by license name."
 msgstr ""
 "Se houver várias licenças, ordene as variáveis LICENSE_<replaceable>VAR</"
-"replaceable>_<replaceable>NAME</replaceable> diferentes  ​​por nome de "
-"licença."
+"replaceable>_<replaceable>NOME</replaceable> pelo nome de licença."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19530
@@ -35582,7 +35579,7 @@ msgid ""
 "Generic <varname>BROKEN</varname>/<varname>IGNORE</varname>/"
 "<varname>DEPRECATED</varname> Messages"
 msgstr ""
-"Mensagens genéricas <varname>BROKEN</varname>/<varname>IGNORE</varname>/"
+"Mensagens Genéricas <varname>BROKEN</varname>/<varname>IGNORE</varname>/"
 "<varname>DEPRECATED</varname>"
 
 #. (itstool) path: listitem/para
@@ -35667,7 +35664,7 @@ msgid ""
 "link> is set."
 msgstr ""
 "<varname>BROKEN_<replaceable>*</replaceable></varname> e "
-"<varname>IGNORE_<replaceable>*</replaceable></varname> pode ser qualquer "
+"<varname>IGNORE_<replaceable>*</replaceable></varname> podem ser qualquer "
 "variável genérica, por exemplo, <varname>IGNORE_amd64</varname>, "
 "<varname>BROKEN_FreeBSD_10</varname>, etc. Com exceção das variáveis ​​que "
 "dependem de uma variável <link linkend=\"uses\"><varname>USES</varname></"
@@ -35763,9 +35760,9 @@ msgid ""
 "the possible Flavors helpers. See <xref linkend=\"flavors-using\"/> for more "
 "Information."
 msgstr ""
-"Comece esta seção com definições das variáveis <varname>FLAVORS</varname>. "
-"Continue com as possíveis variáveis assistentes de Flavors. Veja <xref "
-"linkend=\"flavors-using\"/> para maiores informações."
+"Comece esta seção com as definições de <varname>FLAVORS</varname>. Continue "
+"com as possíveis variáveis assistentes de Flavors. Veja <xref linkend="
+"\"flavors-using\"/> para maiores informações."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19648
@@ -35773,9 +35770,9 @@ msgid ""
 "Constructs setting variables not available as helpers using <literal>.if "
 "${FLAVOR:U} == foo</literal> should go in their respective sections below."
 msgstr ""
-"Variáveis ​​de definição de construção não disponíveis como assitentes "
-"usando <literal>.if ${FLAVOR:U} == foo</literal> devem ir em suas "
-"respectivas seções abaixo. "
+"Variáveis ​​de definição de construção não disponíveis como assistentes, "
+"usando <literal>.if ${FLAVOR:U} == foo</literal> devem ir em abaixo de suas "
+"respectivas seções."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19654
@@ -35807,7 +35804,7 @@ msgstr ""
 "Mantenha as variáveis ​​relacionadas juntas. Por exemplo, se estiver usando "
 "a variável <link linkend=\"makefile-master_sites-"
 "github\"><varname>USE_GITHUB</varname></link>, coloque sempre as variáveis "
-"<varname>GH_<replaceable>*</replaceable></varname> ​​logo após."
+"<varname>GH_<replaceable>*</replaceable></varname> ​​logo após ela."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19669
@@ -35822,7 +35819,7 @@ msgid ""
 msgstr ""
 "Este bloco de seção é para variáveis ​​que podem ser definidas em "
 "<filename>bsd.port.mk</filename> que não pertencem a nenhum dos blocos de "
-"seção anteriores. "
+"seção anteriores."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19675
@@ -35836,10 +35833,10 @@ msgid ""
 msgstr ""
 "A ordem não é importante, no entanto, tente manter variáveis ​​semelhantes "
 "juntas. Por exemplo, variáveis ​​<varname>USERS</varname> e <varname>GROUPS</"
-"varname> uid e gid . Variáveis ​​de configuração "
-"<varname>CONFIGURE_<replaceable>*</replaceable></varname> e "
-"<varname><replaceable>*</replaceable>_CONFIGURE</varname>. Lista de arquivos "
-"e diretórios <varname>PORTDOCS</varname> e <varname>PORTEXAMPLES</varname>."
+"varname>. Variáveis ​​de configuração <varname>CONFIGURE_<replaceable>*</"
+"replaceable></varname> e <varname><replaceable>*</replaceable>_CONFIGURE</"
+"varname>. Lista de arquivos e diretórios <varname>PORTDOCS</varname> e "
+"<varname>PORTEXAMPLES</varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19686
@@ -35856,18 +35853,17 @@ msgid ""
 "then the <varname><replaceable>*</replaceable>_DESC</varname> descriptions, "
 "then the options helpers. Try and sort all of those alphabetically."
 msgstr ""
-"Se o port usa o <link linkend=\"makefile-options\">opções do framwork</"
+"Se o port usa o <link linkend=\"makefile-options\">framework de opções</"
 "link>, defina <varname>OPTIONS_DEFINE</varname> e <varname>OPTIONS_DEFAULT</"
-"varname> primeiro, então as outras variáveis "
-"<varname>OPTIONS_<replaceable>*</replaceable></varname> ​​primeiro, depois "
-"as de descrições <varname><replaceable>*</replaceable>_DESC</varname>, "
-"depois os assistentes de opções. Tente e ordene todas essas variáveis "
-"alfabeticamente."
+"varname>, então as outras variáveis <varname>OPTIONS_<replaceable>*</"
+"replaceable></varname>, depois as de descrições <varname><replaceable>*</"
+"replaceable>_DESC</varname>, e então os assistentes de opções. Tente e "
+"ordene todas essas variáveis alfabeticamente."
 
 #. (itstool) path: example/title
 #: book.translate.xml:19698
 msgid "Options Variables Order Example"
-msgstr "Exemplo de Ordem das Variáveis ​​de Opções"
+msgstr "Exemplo de Ordenamento das Variáveis ​​de Opções"
 
 #. (itstool) path: example/para
 #: book.translate.xml:19700
@@ -35882,8 +35878,8 @@ msgid ""
 msgstr ""
 "As opções <literal>FOO</literal> e <literal>BAR</literal> não possuem uma "
 "descrição padrão, portanto, é necessário escrever uma. As outras opções já "
-"têm uma em <filename>Mk/bsd.options.desc.mk</filename> então escrever uma "
-"não é necessário. Opções <literal>DOCS</literal> e <literal>EXEMPLES</"
+"possuem em <filename>Mk/bsd.options.desc.mk</filename> então escrever uma "
+"não é necessário. Opções <literal>DOCS</literal> e <literal>EXAMPLES</"
 "literal> usam os assistentes de destino para instalar seus arquivos, eles "
 "são mostrados aqui por completo, apesar de pertencerem a <xref linkend="
 "\"porting-order-targets\"/>, então outras variáveis ​​e destinos podem ser "
@@ -36081,7 +36077,7 @@ msgid ""
 "overlooked or impractical. Also, in some cases, the changes are very minor "
 "in nature. We expect everyone to use their best judgement in these cases.)"
 msgstr ""
-"Uma das maneiras mais fáceis de aprender sobre atualizações que já foram "
+"Uma das maneiras mais fáceis de saber sobre atualizações que já foram "
 "submetidas é assinando o <link xlink:href=\"http://www.FreshPorts.org/"
 "\">FreshPorts</link>. Múltiplos ports podem ser monitoradas. Os mantenedores "
 "são fortemente encorajados a se inscrever, porque eles receberão uma "
@@ -36107,8 +36103,8 @@ msgstr ""
 "email registrados <literal>@FreeBSD.org</literal> verão um link opt-in no "
 "lado direito das páginas web. Aqueles que já possuem uma conta no "
 "FreshPorts, mas não estão usando endereço de email <literal>@FreeBSD.org</"
-"literal> podem alterar o e-mail para <literal>@FreeBSD.org</literal>, "
-"inscreva-se, e então altere-o novamente."
+"literal> podem alterar o e-mail para <literal>@FreeBSD.org</literal>, se "
+"inscrever, e então alterar o email novamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19842
@@ -36121,7 +36117,7 @@ msgstr ""
 "O FreshPorts também possui um recurso de teste de sanidade que testa "
 "automaticamente cada commit na árvore de ports do FreeBSD. Se inscrito neste "
 "serviço, um committer receberá notificações de quaisquer erros que o "
-"FreshPorts detecta durante o teste de sanidade de seus commits."
+"FreshPorts detectar durante o teste de sanidade de seus commits."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19850
@@ -36141,7 +36137,7 @@ msgid ""
 "svnweb.FreeBSD.org/ports/head/Mk/bsd.port.mk\">bsd.port.mk</link>, and "
 "associated files."
 msgstr ""
-"É possível procurar os arquivos no repositório de código fonte usando uma "
+"É possível visualizar os arquivos no repositório de código fonte usando uma "
 "interface web. As alterações que afetam todo o sistema de ports agora são "
 "documentadas no arquivo <link xlink:href=\"http://svnweb.FreeBSD.org/ports/"
 "head/CHANGES\">CHANGES</link>. As alterações que afetam os ports individuais "
@@ -36154,7 +36150,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:19863
 msgid "The FreeBSD Ports Mailing List"
-msgstr "A lista de discussão dos Ports do FreeBSD"
+msgstr "A Lista de Discussão de Ports do FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19865
@@ -36165,9 +36161,9 @@ msgid ""
 "there, and then committed to <filename>CHANGES</filename>."
 msgstr ""
 "Como um mantenedor de ports, considere assinar a <link xlink:href=\"http://"
-"lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">Lista de discussão de "
+"lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">lista de discussão de "
 "ports do FreeBSD</link>. Mudanças importantes na maneira como os ports "
-"funcionam serão anunciadas lá e depois são inseridas no arquivo "
+"funcionam serão anunciadas nela e depois serão inseridas no arquivo "
 "<filename>CHANGES</filename>."
 
 #. (itstool) path: sect1/para
@@ -36180,8 +36176,8 @@ msgid ""
 msgstr ""
 "Se o volume de mensagens nesta lista de discussão for muito alto, considere "
 "seguir a <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"freebsd-ports-announce\">Lista de discussão do Ports do FreeBSD</link> que "
-"contém apenas os anuncios."
+"freebsd-ports-announce\">lista de anúncios de ports do FreeBSD</link> que "
+"contém apenas os anúncios."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:19876
@@ -36195,9 +36191,9 @@ msgid ""
 "of machines is dedicated to continually building the Ports Collection, for "
 "each of the major OS releases and for each Tier-1 architecture."
 msgstr ""
-"Um dos pontos fortes menos divulgados do FreeBSD é que um conjunto inteiro "
-"de máquinas é dedicado na compilação continua da Coleção de Ports, para cada "
-"um dos principais releases do SO e para cada arquitetura Tier-1."
+"Um dos pontos fortes menos divulgados do FreeBSD é que um cluster inteiro de "
+"máquinas é dedicado na compilação continua da Coleção de Ports, para cada um "
+"dos principais releases do SO e para cada arquitetura Tier-1."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19883
@@ -36233,12 +36229,12 @@ msgid ""
 "subscribed, maintainers are asked to check periodically for changes, either "
 "by hand or using the <acronym>RSS</acronym> feed."
 msgstr ""
-"O cluster de build é dedicado a compilar a última versão de cada port com os "
-"distfiles que já foram baixados. No entanto, como a Internet muda "
-"continuamente, os distfiles podem desaparecer rapidamente. <link xlink:href="
-"\"http://portscout.FreeBSD.org\">Portscout</link>, o scanner de distfile do "
-"Ports do FreeBSD, tenta consultar cada site de download para cada port e "
-"assim descobrir se cada distfile ainda está disponível."
+"O cluster de compilação é dedicado na compilação da última versão de cada "
+"port com os distfiles que já foram baixados. No entanto, como a Internet "
+"muda continuamente, os distfiles podem desaparecer rapidamente. <link xlink:"
+"href=\"http://portscout.FreeBSD.org\">Portscout</link>, o scanner de "
+"distfile de Ports do FreeBSD, tenta consultar cada site de download para "
+"cada port e assim descobrir se cada distfile ainda está disponível."
 "<application>Portscout</application> pode gerar relatórios em <acronym>HTML</"
 "acronym> e enviar emails sobre novos ports disponíveis para aqueles que os "
 "solicitam. A menos que não seja assinado de outra forma, os mantenedores são "
@@ -36256,11 +36252,11 @@ msgid ""
 "of-date ports are shown."
 msgstr ""
 "A primeira página do <application>Portscout</application> fornece o endereço "
-"de e-mail do mantenedor do port, o número de ports pelos quais o mantenedor "
-"é responsável, o número desses ports com novos distfiles e a porcentagem "
-"desses ports que estão desatualizados. A função de pesquisa permite "
-"pesquisar por endereço de e-mail de um mantenedor específico e permite "
-"também selecionar se apenas os ports desatualizados serão mostradas."
+"de e-mail do mantenedor de port, o número de ports pelos quais o mantenedor "
+"é responsável, o número desses ports com novos distfiles e a porcentagem dos "
+"ports que estão desatualizados. A função de pesquisa permite pesquisar por "
+"endereço de email de um mantenedor específico e permite também selecionar se "
+"apenas os ports desatualizados serão mostrados."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19915
@@ -36271,11 +36267,11 @@ msgid ""
 "it was last checked. A search function on this page allows the user to "
 "search for a specific port."
 msgstr ""
-"Ao clicar no endereço de e-mail de um mantenedor, uma lista de todos os seus "
+"Ao clicar no endereço de email de um mantenedor, uma lista de todos os seus "
 "ports é exibida, junto com a categoria do port, o número da versão atual, se "
 "há ou não uma nova versão, quando o port foi atualizado e finalmente quando "
 "foi sua última checagem. Uma função de pesquisa nesta página permite que o "
-"usuário pesquise um port específico. "
+"usuário pesquise por um port específico. "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19922
@@ -36304,13 +36300,13 @@ msgid ""
 "as well as other sources."
 msgstr ""
 "Outro recurso útil é o <link xlink:href=\"http://portsmon.FreeBSD."
-"org\">Sistema de Monitoramento do Ports FreeBSD</link> (também conhecido "
-"como <literal>portsmon</literal>). Este sistema compreende um banco de dados "
-"que processa informações de várias fontes e permite que ele seja acessado "
-"através de uma interface web. Atualmente, os Relatórios de Problemas (PRs) "
-"dos ports, os logs de erros do cluster de build e os arquivos individuais da "
-"coleção de ports são usados. No futuro, isso será expandido para incluir a "
-"pesquisa de distfile, bem como outras fontes."
+"org\">Sistema de Monitoramento de Ports do FreeBSD</link> (também conhecido "
+"como <literal>portsmon</literal>). Este sistema compreende em um banco de "
+"dados que processa informações de várias fontes e permite que ele seja "
+"acessado através de uma interface web. Atualmente, os Relatórios de "
+"Problemas (PRs) dos ports, os logs de erros do cluster de compilação e os "
+"arquivos individuais da coleção de ports são usados. No futuro, isso será "
+"expandido para incluir pesquisa de distfile, bem como outras fontes."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19939
@@ -36320,7 +36316,7 @@ msgid ""
 "information about a port."
 msgstr ""
 "Para começar, use a página de busca <link xlink:href=\"http://portsmon."
-"FreeBSD.org/portoverview.py\">Visão Geral de Um Port</link> para encontrar "
+"FreeBSD.org/portoverview.py\">Overview of One Port</link> para encontrar "
 "todas as informações sobre um port. "
 
 #. (itstool) path: sect1/para
@@ -36359,8 +36355,8 @@ msgid ""
 ""
 msgstr ""
 "As macros <varname>USES</varname> facilitam declarar requisitos e "
-"configurações de um port. Eles podem adicionar dependências, alterar o "
-"comportamento da compilação do port, adicionar metadados a pacotes e assim "
+"configurações de um port. Elas podem adicionar dependências, alterar o "
+"comportamento de compilação do port, adicionar metadados a pacotes e assim "
 "por diante, tudo selecionando valores simples e predefinidos."
 
 #. (itstool) path: sect1/para
@@ -36372,8 +36368,8 @@ msgid ""
 "by commas (<literal>,</literal>)."
 msgstr ""
 "Cada seção deste capítulo descreve um possível valor para <varname>USES</"
-"varname>, juntamente com seus possíveis argumentos. Argumentos são indicados "
-"para o valor após dois pontos (<literal>:</literal>). Vários argumentos são "
+"varname>, juntamente com seus possíveis argumentos. Argumentos são anexados "
+"ao valor após dois pontos (<literal>:</literal>). Vários argumentos são "
 "separados por vírgulas (<literal>,</literal>)."
 
 #. (itstool) path: example/title
@@ -36431,7 +36427,7 @@ msgid ""
 "Possible arguments: (none), <literal>p7zip</literal>, <literal>partial</"
 "literal>"
 msgstr ""
-"Argumentos possíveis: (none), <literal>p7zip</literal>,  <literal>partial</"
+"Argumentos possíveis: (none), <literal>p7zip</literal>, <literal>partial</"
 "literal>"
 
 #. (itstool) path: sect1/para
@@ -36451,7 +36447,7 @@ msgstr ""
 "Extrair usando <citerefentry vendor=\"ports\"><refentrytitle>7z</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> ao invés de "
 "<citerefentry><refentrytitle>bsdtar</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> e conjuntos <literal>EXTRACT_SUFX=.7z</literal>.  A opção "
+"citerefentry> e definir <literal>EXTRACT_SUFX=.7z</literal>.  A opção "
 "<literal>p7zip</literal> força uma dependência do <command>7z</command> a "
 "partir de <package role=\"port\">archivers/p7zip</package> se aquele do "
 "sistema base não for capaz de extrair os arquivos. <varname>EXTRACT_SUFX</"
@@ -36479,10 +36475,10 @@ msgid ""
 "literal> version option to force building with a different version."
 msgstr ""
 "Depende de um compilador capaz de usar <application>Ada</application> e "
-"definir uma variável <varname>CC</varname> adequadamente. Padronizado para "
-"usar <application>gcc</application> 5 do ports. Use a opção de versão "
-"<literal>:<replaceable>X</replaceable></literal> para forçar a compilação "
-"com uma versão diferente."
+"define a variável <varname>CC</varname> de acordo. O padrão é usar "
+"<application>gcc</application> 5 do ports. Use a opção de versão <literal>:"
+"<replaceable>X</replaceable></literal> para forçar a compilação com uma "
+"versão diferente."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20055
@@ -36521,7 +36517,7 @@ msgstr ""
 "<filename>configure.ac</filename> usando <literal>AC_CONFIG_SUBDIRS</"
 "literal>, <command>autoreconf</command> irá recursivamente atualizar aqueles "
 "também. O argumento <literal>:build</literal> só adiciona dependências de "
-"build-time sobre essas ferramentas, mas não é executado <command>autoreconf</"
+"build-time sobre essas ferramentas, mas não executa o <command>autoreconf</"
 "command>. Um port pode definir <varname>AUTORECONF_WRKSRC</varname> se "
 "<varname>WRKSRC</varname> não contiver o caminho para o <filename>configure."
 "ac</filename>."
@@ -36537,13 +36533,13 @@ msgid ""
 "Possible arguments: (none), <literal>atlas</literal>, <literal>netlib</"
 "literal> (default), <literal>gotoblas</literal>, <literal>openblas</literal>"
 msgstr ""
-"Argumentos possíveis: (none), <literal>Atlas</literal>, <literal>netlib</"
+"Argumentos possíveis: (none), <literal>atlas</literal>, <literal>netlib</"
 "literal>(padrão), <literal>gotoblas</literal>, <literal>openblas</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20086
 msgid "Adds dependencies on Blas / Lapack libraries."
-msgstr "Adiciona dependências das bibliotecas Blas/Lapack."
+msgstr "Adiciona dependências das bibliotecas Blas / Lapack."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20090
@@ -36574,15 +36570,15 @@ msgid ""
 "the port:"
 msgstr ""
 "Adiciona uma dependência à biblioteca <application>Berkeley DB</application>."
-" Padronizado para usar <package role=\"port\">databases/db5</package>. "
-"Também pode depender de <package role=\"port\">databases/db48</package> ao "
-"usar o argumento <literal>:48</literal> ou <package role=\"port\">databases/"
-"db6</package> com <literal>:6</literal>. É possível declarar um intervalo de "
-"valores aceitáveis, <literal>:48+</literal> encontra a versão mais alta "
-"instalada e volta para 4.8 se nada mais estiver instalado. "
+" O padrão utiliza <package role=\"port\">databases/db5</package>. Também "
+"pode depender de <package role=\"port\">databases/db48</package> ao usar o "
+"argumento <literal>:48</literal> ou <package role=\"port\">databases/db6</"
+"package> com <literal>:6</literal>. É possível declarar um intervalo de "
+"valores aceitáveis, <literal>:48+</literal> procura pela versão maior "
+"instalada e utiliza a 4.8 se nenhuma outra estiver instalada. "
 "<varname>INVALID_BDB_VER</varname> pode ser usado para especificar versões "
-"que não funcionam com este port. O framework expõe as seguintes variáveis "
-"​​no port:"
+"que não funcionam com este port. O framework expõe as seguintes variáveis ao "
+"port:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20108
@@ -36612,9 +36608,9 @@ msgid ""
 "application> library. For example, when using <package role="
 "\"port\">databases/db5</package>, it contains <literal>db_cxx-5.3</literal>."
 msgstr ""
-"O nome da biblioteca <application>Berkeley DB</application><application>C++</"
-"application>. Por exemplo, ao usar <package role=\"port\">databases/db5</"
-"package>, contém <literal>db_cxx-5.3</literal>."
+"O nome da biblioteca <application>Berkeley DB</application> "
+"<application>C++</application>. Por exemplo, ao usar <package role="
+"\"port\">databases/db5</package>, contém <literal>db_cxx-5.3</literal>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20129
@@ -36629,8 +36625,8 @@ msgid ""
 "will contain <literal>${LOCALBASE}/include/db5</literal>."
 msgstr ""
 "A localização do diretório incluso <application>Berkeley DB</application>. "
-"Por exemplo, ao usar <package role=\"port\">databases/db5</package>, ele "
-"conterá <literal>${LOCALBASE}/include/db5</literal>."
+"Por exemplo, ao usar <package role=\"port\">databases/db5</package>, ele irá "
+"conter <literal>${LOCALBASE}/include/db5</literal>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20141
@@ -36662,7 +36658,7 @@ msgid ""
 msgstr ""
 "A versão detectada de <application>Berkeley DB</application>. Por exemplo, "
 "se estiver usando <literal>USES=bdb:48+</literal> e <application>Berkeley "
-"DB</application>5 está instalado, contém <literal>5</literal>."
+"DB</application> 5 estiver instalado, irá conter <literal>5</literal>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:20166
@@ -36696,10 +36692,10 @@ msgid ""
 "implies a run-time dependency, and <literal>both</literal> implies both run-"
 "time and build-time dependencies."
 msgstr ""
-"Use <package role=\"port\">devel/bison</package> por padrão, sem argumentos "
-"ou com o argumento <literal>build</literal>, isso implica que "
+"Utiliza <package role=\"port\">devel/bison</package> por padrão, sem "
+"argumentos ou com o argumento <literal>build</literal>, isso implica que "
 "<command>bison</command> seja uma dependência de build-time, <literal>run</"
-"literal> implica uma dependência de run-time e <literal>both</literal> "
+"literal> implica como dependência de run-time e <literal>both</literal> "
 "implica em dependências build-time e run-time."
 
 #. (itstool) path: sect1/title
