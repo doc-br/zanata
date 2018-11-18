@@ -1,37 +1,35 @@
 
 # Lista de Artigos e Livros para Tradução
 
-Existe tradução completa ou parcial para os documentos abaixo que possuem links:
-
 ## articles
 
 ─ ~~bsdl-gpl~~ - **completo**
 
 ─ ~~building-products~~ - **completo**
 
-─ committers-guide
+─ ~~committers-guide~~ - **completo**
 
 ─ ~~contributing~~ - **completo**
 
-─ contributors
+─ ~~contributors~~ = **completo**
 
 ─ ~~cups~~ - **completo**
 
 ─ ~~explaining-bsd~~ - **completo**
 
-─ filtering-bridges
+─ ~~filtering-bridges~~ - **completo**
 
 ─ ~~fonts~~ - **completo**
 
 ─ ~~freebsd-questions~~ - **completo**
 
-─ freebsd-releng
+─ ~~freebsd-releng~~ = **completo**
 
 ─ ~~freebsd-update-server~~ - **completo**
 
-─ geom-class
+─ ~~geom-class~~ - **completo**
 
-─ gjournal-desktop
+─ ~~gjournal-desktop~~ - **completo**
 
 ─ ~~hubs~~ - **completo**
 
@@ -63,11 +61,11 @@ Existe tradução completa ou parcial para os documentos abaixo que possuem link
 
 ─ ~~rc-scripting~~ - **completo**
 
-─ releng
+─ ~~releng~~ - **completo**
 
 ─ ~~remote-install~~ - **completo**
 
-─ serial-uart
+─ ~~serial-uart~~ - **completo**
 
 ─ ~~solid-state~~ - **completo**
 
@@ -80,7 +78,7 @@ Existe tradução completa ou parcial para os documentos abaixo que possuem link
 
 ─ arch-handbook
 
-─ dev-model
+─ ~~dev-model~~ - **completo**
 
 ─ developers-handbook
 
@@ -88,13 +86,10 @@ Existe tradução completa ou parcial para os documentos abaixo que possuem link
 
 ─ ~~fdp-primer~~ - **completo**
 
-─ [handbook](https://github.com/freebsd/freebsd-doc/tree/master/pt_BR.ISO8859-1/books/handbook)
+─ handbook
 
-─ porters-handbook
+─ ~~porters-handbook~~ - **completo**
 
-
-As traduções informadas estão no formato `SGML` e precisam ser copiadas para
-os arquivos `.po`, seja pelo Zanata ou por outro aplicativo de sua escolha.
 
 Se for traduzir por outro aplicativo que não seja o Zanata, utilize sempre os
 arquivos `.po`, ignore os arquivos `.pot` pois estes são apenas templates.
