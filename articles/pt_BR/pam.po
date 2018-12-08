@@ -1,18 +1,19 @@
+# $FreeBSD$
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:16-0200\n"
+"PO-Revision-Date: 2018-09-14 01:45+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
-"Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-14 01:45+0000\n"
-"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
-"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -24,7 +25,7 @@ msgstr ""
 "Silvio Ap Silva, contato@kanazuchi.com, 2018"
 
 #. (itstool) path: info/title
-#: article.translate.xml:37
+#: article.translate.xml:38
 msgid "Pluggable Authentication Modules"
 msgstr "Módulos de Autenticação Plugáveis"
 
@@ -51,15 +52,16 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:55
+#, fuzzy
 msgid ""
-"<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></"
-"personname><contrib>Contributed by </contrib>"
+"<personname> <firstname>Dag-Erling</firstname> <surname>Smørgrav</surname> </"
+"personname> <contrib>Contributed by </contrib>"
 msgstr ""
 "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></"
 "personname><contrib>Contributed by </contrib>"
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:59
+#: article.translate.xml:65
 msgid ""
 "This article was written for the FreeBSD Project by ThinkSec AS and Network "
 "Associates Laboratories, the Security Research Division of Network "
@@ -72,17 +74,17 @@ msgstr ""
 "quote>), as part of the DARPA CHATS research program."
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:67
+#: article.translate.xml:73
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
 msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:69
+#: article.translate.xml:75
 msgid "Linux is a registered trademark of Linus Torvalds."
 msgstr "Linux is a registered trademark of Linus Torvalds."
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:71
+#: article.translate.xml:77
 msgid ""
 "Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The "
 "Open Group are trademarks of The Open Group in the United States and other "
@@ -93,7 +95,7 @@ msgstr ""
 "countries."
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:75
+#: article.translate.xml:81
 msgid ""
 "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
 "Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or "
@@ -106,7 +108,7 @@ msgstr ""
 "other countries."
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:80
+#: article.translate.xml:86
 msgid ""
 "Many of the designations used by manufacturers and sellers to distinguish "
 "their products are claimed as trademarks. Where those designations appear in "
@@ -121,20 +123,21 @@ msgstr ""
 "quote> symbol."
 
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:88
+#: article.translate.xml:94
+#, fuzzy
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/pam/article.xml 48488 2016-03-28 17:"
-"29:21Z jgh $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/pam/article.xml 52137 2018-08-16 "
+"14:45:06Z bcr $"
 msgstr "$FreeBSD$"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-intro.title
-#: article.translate.xml:92
+#: article.translate.xml:98
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: section/para
-#: article.translate.xml:94
+#: article.translate.xml:100
 msgid ""
 "The Pluggable Authentication Modules (PAM) library is a generalized API for "
 "authentication-related services which allows a system administrator to add "
@@ -148,7 +151,7 @@ msgstr ""
 "de autenticação pela edição do arquivo de configuração."
 
 #. (itstool) path: section/para
-#: article.translate.xml:100
+#: article.translate.xml:106
 msgid ""
 "PAM was defined and developed in 1995 by Vipin Samar and Charlie Lai of Sun "
 "Microsystems, and has not changed much since. In 1997, the Open Group "
@@ -165,7 +168,7 @@ msgstr ""
 "não tinha sido adotada como padrão."
 
 #. (itstool) path: section/para
-#: article.translate.xml:108
+#: article.translate.xml:114
 msgid ""
 "Although this article focuses primarily on FreeBSD 5.x, which uses OpenPAM, "
 "it should be equally applicable to FreeBSD 4.x, which uses Linux-PAM, and "
@@ -178,18 +181,19 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-terms.title
-#: article.translate.xml:115
-msgid "Terms and conventions"
+#: article.translate.xml:121
+#, fuzzy
+msgid "Terms and Conventions"
 msgstr "Termos e convenções"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-definitions.title
-#: article.translate.xml:118
+#: article.translate.xml:124
 msgid "Definitions"
 msgstr "Definições"
 
 #. (itstool) path: section/para
-#: article.translate.xml:120
+#: article.translate.xml:126
 msgid ""
 "The terminology surrounding PAM is rather confused. Neither Samar and Lai's "
 "original paper nor the XSSO specification made any attempt at formally "
@@ -215,34 +219,33 @@ msgstr ""
 "no PAM."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:136
+#: article.translate.xml:142
 msgid "account"
 msgstr "conta (account)"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:138
-msgid ""
-"The set of credentials the applicant is requesting from the arbitrator."
+#: article.translate.xml:144
+msgid "The set of credentials the applicant is requesting from the arbitrator."
 msgstr ""
 "Um conjunto de credenciais que o requerente está solicitando ao mediador."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:144
+#: article.translate.xml:150
 msgid "applicant"
 msgstr "requerente (applicant)"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:146
+#: article.translate.xml:152
 msgid "The user or entity requesting authentication."
 msgstr "Usuário ou entidade que solicita autenticação"
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:151
+#: article.translate.xml:157
 msgid "arbitrator"
 msgstr "Mediador (arbitrator)"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:153
+#: article.translate.xml:159
 msgid ""
 "The user or entity who has the privileges necessary to verify the "
 "applicant's credentials and the authority to grant or deny the request."
@@ -251,12 +254,12 @@ msgstr ""
 "credenciais do requerente e autorizar ou não a solicitação"
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:160
+#: article.translate.xml:166
 msgid "chain"
 msgstr "chain"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:162
+#: article.translate.xml:168
 msgid ""
 "A sequence of modules that will be invoked in response to a PAM request. The "
 "chain includes information about the order in which to invoke the modules, "
@@ -267,12 +270,12 @@ msgstr ""
 "quais argumentos foram passados e como interpretar os resultados."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:171
+#: article.translate.xml:177
 msgid "client"
 msgstr "client"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:173
+#: article.translate.xml:179
 msgid ""
 "The application responsible for initiating an authentication request on "
 "behalf of the applicant and for obtaining the necessary authentication "
@@ -283,12 +286,12 @@ msgstr ""
 "dele."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:181
+#: article.translate.xml:187
 msgid "facility"
 msgstr "recursos "
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:183
+#: article.translate.xml:189
 msgid ""
 "One of the four basic groups of functionality provided by PAM: "
 "authentication, account management, session management and authentication "
@@ -299,12 +302,12 @@ msgstr ""
 "de token de autenticação."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:191
+#: article.translate.xml:197
 msgid "module"
 msgstr "módulo"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:193
+#: article.translate.xml:199
 msgid ""
 "A collection of one or more related functions implementing a particular "
 "authentication facility, gathered into a single (normally dynamically "
@@ -315,12 +318,12 @@ msgstr ""
 "carregável dinamicamente) e identificadas por um único nome."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:201
+#: article.translate.xml:207
 msgid "policy"
 msgstr "política"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:203
+#: article.translate.xml:209
 msgid ""
 "The complete set of configuration statements describing how to handle PAM "
 "requests for a particular service. A policy normally consists of four "
@@ -333,12 +336,12 @@ msgstr ""
 "utilizem os quatro recursos."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:212
+#: article.translate.xml:218
 msgid "server"
 msgstr "servidor"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:214
+#: article.translate.xml:220
 msgid ""
 "The application acting on behalf of the arbitrator to converse with the "
 "client, retrieve authentication information, verify the applicant's "
@@ -349,12 +352,12 @@ msgstr ""
 "requerente e conceder ou negar solicitações."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:222
+#: article.translate.xml:228
 msgid "service"
 msgstr "serviço"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:224
+#: article.translate.xml:230
 msgid ""
 "A class of servers providing similar or related functionality and requiring "
 "similar authentication. PAM policies are defined on a per-service basis, so "
@@ -367,12 +370,12 @@ msgstr ""
 "serviço estarão sujeitos à mesma política."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:233
+#: article.translate.xml:239
 msgid "session"
 msgstr "sessão"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:235
+#: article.translate.xml:241
 msgid ""
 "The context within which service is rendered to the applicant by the server. "
 "One of PAM's four facilities, session management, is concerned exclusively "
@@ -383,12 +386,12 @@ msgstr ""
 "concedido exclusivamente configurando e derrubando esse contexto."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:243
+#: article.translate.xml:249
 msgid "token"
 msgstr "token"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:245
+#: article.translate.xml:251
 msgid ""
 "A chunk of information associated with the account, such as a password or "
 "passphrase, which the applicant must provide to prove his identity."
@@ -397,12 +400,12 @@ msgstr ""
 "ou uma frase, que o solicitante deve fornecer para provar sua identidade."
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:252
+#: article.translate.xml:258
 msgid "transaction"
 msgstr "transação"
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:254
+#: article.translate.xml:260
 msgid ""
 "A sequence of requests from the same applicant to the same instance of the "
 "same server, beginning with authentication and session set-up and ending "
@@ -414,12 +417,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-usage-examples.title
-#: article.translate.xml:264
-msgid "Usage examples"
+#: article.translate.xml:270
+#, fuzzy
+msgid "Usage Examples"
 msgstr "Exemplos de uso"
 
 #. (itstool) path: section/para
-#: article.translate.xml:266
+#: article.translate.xml:272
 msgid ""
 "This section aims to illustrate the meanings of some of the terms defined "
 "above by way of a handful of simple examples."
@@ -428,12 +432,13 @@ msgstr ""
 "definidos acima por meio de alguns exemplos simples."
 
 #. (itstool) path: section/title
-#: article.translate.xml:271
-msgid "Client and server are one"
+#: article.translate.xml:277
+#, fuzzy
+msgid "Client and Server Are One"
 msgstr "O cliente e o servidor são um"
 
 #. (itstool) path: section/para
-#: article.translate.xml:273
+#: article.translate.xml:279
 msgid ""
 "This simple example shows <literal>alice</literal> "
 "<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
@@ -444,8 +449,8 @@ msgstr ""
 "para se tornar <literal>root</literal>."
 
 #. (itstool) path: section/screen
-#: article.translate.xml:276
-#, no-wrap
+#: article.translate.xml:282
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>whoami</userinput>\n"
 "alice\n"
@@ -454,7 +459,7 @@ msgid ""
 "<prompt>%</prompt> <userinput>su -</userinput>\n"
 "Password: <userinput>xi3kiune</userinput>\n"
 "<prompt>#</prompt> whoami\n"
-"root\n"
+"root"
 msgstr ""
 "<prompt>%</prompt> <userinput>whoami</userinput>\n"
 "alice\n"
@@ -466,17 +471,17 @@ msgstr ""
 "root\n"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:288
+#: article.translate.xml:293
 msgid "The applicant is <literal>alice</literal>."
 msgstr "O requerente é <literal>alice</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:291
+#: article.translate.xml:296
 msgid "The account is <literal>root</literal>."
 msgstr "A conta é <literal>root</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:294
+#: article.translate.xml:299
 msgid ""
 "The <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> process is both client and server."
@@ -485,12 +490,12 @@ msgstr ""
 "manvolnum></citerefentry> é ao mesmo tempo, o cliente e o servidor."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:298
+#: article.translate.xml:303
 msgid "The authentication token is <literal>xi3kiune</literal>."
 msgstr "O token de autenticação é <literal>xi3kiune</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:302
+#: article.translate.xml:307
 msgid ""
 "The arbitrator is <literal>root</literal>, which is why "
 "<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
@@ -501,12 +506,13 @@ msgstr ""
 "citerefentry> possui setuid para <literal>root</literal>."
 
 #. (itstool) path: section/title
-#: article.translate.xml:309
-msgid "Client and server are separate"
+#: article.translate.xml:314
+#, fuzzy
+msgid "Client and Server Are Separate"
 msgstr "O cliente e o servidor são separados"
 
 #. (itstool) path: section/para
-#: article.translate.xml:311
+#: article.translate.xml:316
 msgid ""
 "The example below shows <literal>eve</literal> try to initiate an "
 "<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
@@ -521,7 +527,7 @@ msgstr ""
 "escolhido uma senha melhor!"
 
 #. (itstool) path: section/screen
-#: article.translate.xml:317
+#: article.translate.xml:322
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>whoami</userinput>\n"
@@ -549,12 +555,12 @@ msgstr ""
 "<prompt>%</prompt>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:331
+#: article.translate.xml:336
 msgid "The applicant is <literal>eve</literal>."
 msgstr "O requerente é <literal>eve</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:334
+#: article.translate.xml:339
 msgid ""
 "The client is Eve's <citerefentry><refentrytitle>ssh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> process."
@@ -563,7 +569,7 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> de Eve."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:337
+#: article.translate.xml:342
 msgid ""
 "The server is the <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> process on "
@@ -574,17 +580,17 @@ msgstr ""
 "example.com</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:341
+#: article.translate.xml:346
 msgid "The account is <literal>bob</literal>."
 msgstr "A conta é <literal>bob</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:344
+#: article.translate.xml:349
 msgid "The authentication token is <literal>god</literal>."
 msgstr "O token de autenticação é <literal>god</literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:348
+#: article.translate.xml:353
 msgid ""
 "Although this is not shown in this example, the arbitrator is <literal>root</"
 "literal>."
@@ -593,17 +599,18 @@ msgstr ""
 "literal>."
 
 #. (itstool) path: section/title
-#: article.translate.xml:355
-msgid "Sample policy"
+#: article.translate.xml:360
+#, fuzzy
+msgid "Sample Policy"
 msgstr "Exemplo de política"
 
 #. (itstool) path: section/para
-#: article.translate.xml:357
+#: article.translate.xml:362
 msgid "The following is FreeBSD's default policy for <literal>sshd</literal>:"
 msgstr "A seguir, a política padrão do FreeBSD para <literal>sshd</literal>:"
 
 #. (itstool) path: section/programlisting
-#: article.translate.xml:360
+#: article.translate.xml:365
 #, no-wrap
 msgid ""
 "sshd\tauth\t\trequired\tpam_nologin.so\tno_warn\n"
@@ -621,7 +628,7 @@ msgstr ""
 "sshd\tpassword\trequired\tpam_permit.so"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:369
+#: article.translate.xml:374
 msgid ""
 "This policy applies to the <literal>sshd</literal> service (which is not "
 "necessarily restricted to the <citerefentry><refentrytitle>sshd</"
@@ -632,7 +639,7 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>)."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:374
+#: article.translate.xml:379
 msgid ""
 "<literal>auth</literal>, <literal>account</literal>, <literal>session</"
 "literal> and <literal>password</literal> are facilities."
@@ -641,7 +648,7 @@ msgstr ""
 "literal> e <literal>password</literal> são recursos."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:379
+#: article.translate.xml:384
 msgid ""
 "<filename>pam_nologin.so</filename>, <filename>pam_unix.so</filename>, "
 "<filename>pam_login_access.so</filename>, <filename>pam_lastlog.so</"
@@ -657,18 +664,19 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-essentials.title
-#: article.translate.xml:403
+#: article.translate.xml:408
 msgid "PAM Essentials"
 msgstr "PAM Essencial"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-facilities-primitives.title
-#: article.translate.xml:406
-msgid "Facilities and primitives"
+#: article.translate.xml:411
+#, fuzzy
+msgid "Facilities and Primitives"
 msgstr "Recursos e primitivos"
 
 #. (itstool) path: section/para
-#: article.translate.xml:409
+#: article.translate.xml:414
 msgid ""
 "The PAM API offers six different authentication primitives grouped in four "
 "facilities, which are described below."
@@ -677,12 +685,12 @@ msgstr ""
 "quatro recursos, descritos abaixo."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:414
+#: article.translate.xml:419
 msgid "<literal>auth</literal>"
 msgstr "<literal>auth</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:416
+#: article.translate.xml:421
 msgid ""
 "<emphasis>Authentication.</emphasis> This facility concerns itself with "
 "authenticating the applicant and establishing the account credentials. It "
@@ -693,7 +701,7 @@ msgstr ""
 "primitivas:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:423
+#: article.translate.xml:428
 msgid ""
 "<citerefentry><refentrytitle>pam_authenticate</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> authenticates the applicant, usually by requesting "
@@ -706,7 +714,7 @@ msgstr ""
 "dados ou obtido de um servidor de autenticação."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:431
+#: article.translate.xml:436
 msgid ""
 "<citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> establishes account credentials such as user ID, "
@@ -717,12 +725,12 @@ msgstr ""
 "usuário, associação de grupo e limites de recursos."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:440
+#: article.translate.xml:445
 msgid "<literal>account</literal>"
 msgstr "<literal>account</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:442
+#: article.translate.xml:447
 msgid ""
 "<emphasis>Account management.</emphasis> This facility handles non-"
 "authentication-related issues of account availability, such as access "
@@ -735,7 +743,7 @@ msgstr ""
 "servidor. Ele fornece uma única primitiva:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:450
+#: article.translate.xml:455
 msgid ""
 "<citerefentry><refentrytitle>pam_acct_mgmt</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> verifies that the requested account is available."
@@ -744,12 +752,12 @@ msgstr ""
 "manvolnum></citerefentry> verifica se a conta solicitada está disponível."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:458
+#: article.translate.xml:463
 msgid "<literal>session</literal>"
 msgstr "<literal>session</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:460
+#: article.translate.xml:465
 msgid ""
 "<emphasis>Session management.</emphasis> This facility handles tasks "
 "associated with session set-up and tear-down, such as login accounting. It "
@@ -760,7 +768,7 @@ msgstr ""
 "login. Ele fornece duas primitivas:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:467
+#: article.translate.xml:472
 msgid ""
 "<citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> performs tasks associated with session set-up: add "
@@ -773,7 +781,7 @@ msgstr ""
 "<filename>wtmp</filename>, inicia um agente SSH, etc."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:475
+#: article.translate.xml:480
 msgid ""
 "<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> performs tasks associated with session tear-down: "
@@ -781,17 +789,17 @@ msgid ""
 "databases, stop the SSH agent, etc."
 msgstr ""
 "<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</"
-"manvolnum></citerefentry> executa tarefas associadas à desmontagem da sessão:"
-" adiciona uma entrada nos bancos de dados <filename>utmp</filename> e "
+"manvolnum></citerefentry> executa tarefas associadas à desmontagem da "
+"sessão: adiciona uma entrada nos bancos de dados <filename>utmp</filename> e "
 "<filename>wtmp</filename>, pare o agente SSH, etc."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:486
+#: article.translate.xml:491
 msgid "<literal>password</literal>"
 msgstr "<literal>password</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:488
+#: article.translate.xml:493
 msgid ""
 "<emphasis>Password management.</emphasis> This facility is used to change "
 "the authentication token associated with an account, either because it has "
@@ -803,7 +811,7 @@ msgstr ""
 "porque o usuário deseja alterá-lo. Ele fornece uma única primitiva:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:496
+#: article.translate.xml:501
 msgid ""
 "<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry> changes the authentication token, optionally "
@@ -817,12 +825,12 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules.title
-#: article.translate.xml:509
+#: article.translate.xml:514
 msgid "Modules"
 msgstr "Módulos"
 
 #. (itstool) path: section/para
-#: article.translate.xml:511
+#: article.translate.xml:516
 msgid ""
 "Modules are a very central concept in PAM; after all, they are the <quote>M</"
 "quote> in <quote>PAM</quote>. A PAM module is a self-contained piece of "
@@ -840,12 +848,12 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-naming.title
-#: article.translate.xml:520
+#: article.translate.xml:525
 msgid "Module Naming"
 msgstr "Nomeação de Módulos"
 
 #. (itstool) path: section/para
-#: article.translate.xml:522
+#: article.translate.xml:527
 msgid ""
 "FreeBSD implements each mechanism in a single module, named "
 "<literal>pam_<replaceable>mechanism</replaceable>.so</literal> (for "
@@ -858,22 +866,21 @@ msgid ""
 msgstr ""
 "O FreeBSD implementa cada mecanismo em um único módulo, chamado "
 "<literal>pam_<replaceable>mechanism</replaceable>.so</literal> (por exemplo, "
-"<literal>pam_unix.so</literal> para o mecanismo <trademark class="
-"\"registered\">UNIX</trademark>. Outras implementações às vezes possuem "
-"módulos separados para instalações separadas e incluem o nome do recurso, "
-"bem como o nome do mecanismo no nome do módulo. Para citar um exemplo, "
+"<literal>pam_unix.so</literal> para o mecanismo <trademark class=\"registered"
+"\">UNIX</trademark>. Outras implementações às vezes possuem módulos "
+"separados para instalações separadas e incluem o nome do recurso, bem como o "
+"nome do mecanismo no nome do módulo. Para citar um exemplo, "
 "<trademark>Solaris</trademark> tem um módulo <literal>pam_dial_auth.so.1</"
 "literal> que é comumente usado para autenticar usuários de conexões discadas."
-""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-versioning.title
-#: article.translate.xml:535
+#: article.translate.xml:540
 msgid "Module Versioning"
 msgstr "Versionando Módulos"
 
 #. (itstool) path: section/para
-#: article.translate.xml:537
+#: article.translate.xml:543
 msgid ""
 "FreeBSD's original PAM implementation, based on Linux-PAM, did not use "
 "version numbers for PAM modules. This would commonly cause problems with "
@@ -888,7 +895,7 @@ msgstr ""
 "versão correspondente dos módulos necessários."
 
 #. (itstool) path: section/para
-#: article.translate.xml:544
+#: article.translate.xml:550
 msgid ""
 "OpenPAM, on the other hand, looks for modules that have the same version "
 "number as the PAM library (currently 2), and only falls back to an "
@@ -904,7 +911,7 @@ msgstr ""
 "recentes."
 
 #. (itstool) path: section/para
-#: article.translate.xml:552
+#: article.translate.xml:558
 msgid ""
 "Although <trademark>Solaris</trademark> PAM modules commonly have a version "
 "number, they are not truly versioned, because the number is a part of the "
@@ -916,12 +923,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-chains-policies.title
-#: article.translate.xml:560
-msgid "Chains and policies"
+#: article.translate.xml:566
+#, fuzzy
+msgid "Chains and Policies"
 msgstr "Chains e Políticas"
 
 #. (itstool) path: section/para
-#: article.translate.xml:563
+#: article.translate.xml:569
 msgid ""
 "When a server initiates a PAM transaction, the PAM library tries to load a "
 "policy for the service specified in the "
@@ -936,19 +944,18 @@ msgstr ""
 "uma política para o serviço especificado na chamada "
 "<citerefentry><refentrytitle>pam_start</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>. A política especifica como as solicitações de "
-"autenticação devem ser processadas e definidas em um arquivo de configuração."
-" Este é o outro conceito central no PAM: a possibilidade de o administrador "
-"ajustar a política de segurança do sistema (no sentido mais amplo da "
-"palavra) simplesmente editando um arquivo de texto."
+"autenticação devem ser processadas e definidas em um arquivo de "
+"configuração. Este é o outro conceito central no PAM: a possibilidade de o "
+"administrador ajustar a política de segurança do sistema (no sentido mais "
+"amplo da palavra) simplesmente editando um arquivo de texto."
 
 #. (itstool) path: section/para
-#: article.translate.xml:572
+#: article.translate.xml:578
 msgid ""
 "A policy consists of four chains, one for each of the four PAM facilities. "
 "Each chain is a sequence of configuration statements, each specifying a "
 "module to invoke, some (optional) parameters to pass to the module, and a "
 "control flag that describes how to interpret the return code from the module."
-""
 msgstr ""
 "Uma política consiste em quatro cadeias, uma para cada uma dos quatro "
 "recursos do PAM. Cada chain é uma sequência de instruções de configuração, "
@@ -957,7 +964,7 @@ msgstr ""
 "interpretar o código de retorno do módulo."
 
 #. (itstool) path: section/para
-#: article.translate.xml:579
+#: article.translate.xml:585
 msgid ""
 "Understanding the control flags is essential to understanding PAM "
 "configuration files. There are four different control flags:"
@@ -966,12 +973,12 @@ msgstr ""
 "de configuração do PAM. Existem quatro diferentes flags de controle:"
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:585
+#: article.translate.xml:591
 msgid "<literal>binding</literal>"
 msgstr "<literal>binding</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:587
+#: article.translate.xml:593
 msgid ""
 "If the module succeeds and no earlier module in the chain has failed, the "
 "chain is immediately terminated and the request is granted. If the module "
@@ -984,7 +991,7 @@ msgstr ""
 "final."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:593
+#: article.translate.xml:599
 msgid ""
 "This control flag was introduced by Sun in <trademark>Solaris</trademark> 9 "
 "(<trademark>SunOS</trademark> 5.9), and is also supported by OpenPAM."
@@ -994,12 +1001,12 @@ msgstr ""
 "OpenPAM."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:599
+#: article.translate.xml:606
 msgid "<literal>required</literal>"
 msgstr "<literal>required</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:601
+#: article.translate.xml:608
 msgid ""
 "If the module succeeds, the rest of the chain is executed, and the request "
 "is granted unless some other module fails. If the module fails, the rest of "
@@ -1011,12 +1018,12 @@ msgstr ""
 "final."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:610
+#: article.translate.xml:617
 msgid "<literal>requisite</literal>"
 msgstr "<literal>requisite</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:612
+#: article.translate.xml:619
 msgid ""
 "If the module succeeds, the rest of the chain is executed, and the request "
 "is granted unless some other module fails. If the module fails, the chain is "
@@ -1028,12 +1035,12 @@ msgstr ""
 "negada."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:620
+#: article.translate.xml:627
 msgid "<literal>sufficient</literal>"
 msgstr "<literal>sufficient</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:622
+#: article.translate.xml:629
 msgid ""
 "If the module succeeds and no earlier module in the chain has failed, the "
 "chain is immediately terminated and the request is granted. If the module "
@@ -1044,7 +1051,7 @@ msgstr ""
 "módulo falhar, o módulo será ignorado e o resto da chain será executado."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:628
+#: article.translate.xml:635
 msgid ""
 "As the semantics of this flag may be somewhat confusing, especially when it "
 "is used for the last module in a chain, it is recommended that the "
@@ -1057,12 +1064,12 @@ msgstr ""
 "implementação o suportar."
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:637
+#: article.translate.xml:644
 msgid "<literal>optional</literal>"
 msgstr "<literal>optional</literal>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:639
+#: article.translate.xml:646
 msgid ""
 "The module is executed, but its result is ignored. If all modules in a chain "
 "are marked <literal>optional</literal>, all requests will always be granted."
@@ -1072,7 +1079,7 @@ msgstr ""
 "solicitações serão sempre concedidas."
 
 #. (itstool) path: section/para
-#: article.translate.xml:647
+#: article.translate.xml:654
 msgid ""
 "When a server invokes one of the six PAM primitives, PAM retrieves the chain "
 "for the facility the primitive belongs to, and invokes each of the modules "
@@ -1093,7 +1100,7 @@ msgstr ""
 "módulos não opcionais tiveram exito."
 
 #. (itstool) path: section/para
-#: article.translate.xml:658
+#: article.translate.xml:665
 msgid ""
 "Note that it is possible, though not very common, to have the same module "
 "listed several times in the same chain. For instance, a module that looks up "
@@ -1111,12 +1118,12 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-transactions.title
-#: article.translate.xml:668
+#: article.translate.xml:675
 msgid "Transactions"
 msgstr "Transações"
 
 #. (itstool) path: section/para
-#: article.translate.xml:670
+#: article.translate.xml:677
 msgid ""
 "The lifecycle of a typical PAM transaction is described below. Note that if "
 "any of these steps fails, the server should report a suitable error message "
@@ -1127,7 +1134,7 @@ msgstr ""
 "mensagem de erro adequada ao cliente e anular a transação."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:677
+#: article.translate.xml:684
 msgid ""
 "If necessary, the server obtains arbitrator credentials through a mechanism "
 "independent of PAM—most commonly by virtue of having been started by "
@@ -1139,7 +1146,7 @@ msgstr ""
 "literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:685
+#: article.translate.xml:692
 msgid ""
 "The server calls <citerefentry><refentrytitle>pam_start</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to initialize the PAM "
@@ -1152,7 +1159,7 @@ msgstr ""
 "registrar uma função de conversação adequada."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:692
+#: article.translate.xml:699
 msgid ""
 "The server obtains various information relating to the transaction (such as "
 "the applicant's user name and the name of the host the client runs on) and "
@@ -1165,7 +1172,7 @@ msgstr ""
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:699
+#: article.translate.xml:706
 msgid ""
 "The server calls <citerefentry><refentrytitle>pam_authenticate</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to authenticate the "
@@ -1176,7 +1183,7 @@ msgstr ""
 "requerente."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:704
+#: article.translate.xml:711
 msgid ""
 "The server calls <citerefentry><refentrytitle>pam_acct_mgmt</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to verify that the "
@@ -1195,7 +1202,7 @@ msgstr ""
 "literal>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:712
+#: article.translate.xml:719
 msgid ""
 "If the previous step returned <literal>PAM_NEW_AUTHTOK_REQD</literal>, the "
 "server now calls <citerefentry><refentrytitle>pam_chauthtok</"
@@ -1208,7 +1215,7 @@ msgstr ""
 "a alterar o token de autenticação para a conta solicitada."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:719
+#: article.translate.xml:726
 msgid ""
 "Now that the applicant has been properly authenticated, the server calls "
 "<citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</"
@@ -1223,7 +1230,7 @@ msgstr ""
 "credenciais do madiador."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:727
+#: article.translate.xml:734
 msgid ""
 "Once the correct credentials have been established, the server calls "
 "<citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</"
@@ -1234,7 +1241,7 @@ msgstr ""
 "manvolnum></citerefentry> para configurar a sessão."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:733
+#: article.translate.xml:740
 msgid ""
 "The server now performs whatever service the client requested—for instance, "
 "provide the applicant with a shell."
@@ -1243,7 +1250,7 @@ msgstr ""
 "exemplo, fornecer ao requerente um shell."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:739
+#: article.translate.xml:746
 msgid ""
 "Once the server is done serving the client, it calls "
 "<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</"
@@ -1254,7 +1261,7 @@ msgstr ""
 "manvolnum></citerefentry> para derrubar a sessão."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:744
+#: article.translate.xml:751
 msgid ""
 "Finally, the server calls <citerefentry><refentrytitle>pam_end</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to notify the PAM "
@@ -1268,24 +1275,26 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config.title
-#: article.translate.xml:754
+#: article.translate.xml:761
 msgid "PAM Configuration"
 msgstr "Configuração do PAM"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-file.title
-#: article.translate.xml:757
-msgid "PAM policy files"
+#: article.translate.xml:764
+#, fuzzy
+msgid "PAM Policy Files"
 msgstr "Arquivos de política do PAM"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-pam.conf.title
-#: article.translate.xml:760
-msgid "The <filename>/etc/pam.conf</filename> file"
+#: article.translate.xml:767
+#, fuzzy
+msgid "The <filename>/etc/pam.conf</filename>"
 msgstr "O arquivo <filename>/etc/pam.conf</filename>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:763
+#: article.translate.xml:770
 msgid ""
 "The traditional PAM policy file is <filename>/etc/pam.conf</filename>. This "
 "file contains all the PAM policies for your system. Each line of the file "
@@ -1297,13 +1306,13 @@ msgstr ""
 "abaixo:"
 
 #. (itstool) path: section/programlisting
-#: article.translate.xml:768
+#: article.translate.xml:775
 #, no-wrap
 msgid "login   auth    required        pam_nologin.so  no_warn"
 msgstr "login   auth    required        pam_nologin.so  no_warn"
 
 #. (itstool) path: section/para
-#: article.translate.xml:770
+#: article.translate.xml:777
 msgid ""
 "The fields are, in order: service name, facility name, control flag, module "
 "name, and module arguments. Any additional fields are interpreted as "
@@ -1314,7 +1323,7 @@ msgstr ""
 "são interpretados como argumentos adicionais do módulo."
 
 #. (itstool) path: section/para
-#: article.translate.xml:775
+#: article.translate.xml:782
 msgid ""
 "A separate chain is constructed for each service / facility pair, so while "
 "the order in which lines for the same service and facility appear is "
@@ -1336,12 +1345,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-pam.d.title
-#: article.translate.xml:787
-msgid "The <filename>/etc/pam.d</filename> directory"
+#: article.translate.xml:794
+#, fuzzy
+msgid "The <filename>/etc/pam.d</filename>"
 msgstr "O diretório <filename>/etc/pam.d</filename>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:790
+#: article.translate.xml:797
 msgid ""
 "OpenPAM and Linux-PAM support an alternate configuration mechanism, which is "
 "the preferred mechanism in FreeBSD. In this scheme, each policy is contained "
@@ -1354,7 +1364,7 @@ msgstr ""
 "Esses arquivos são armazenados em <filename>/etc/pam.d/</filename>."
 
 #. (itstool) path: section/para
-#: article.translate.xml:796
+#: article.translate.xml:803
 msgid ""
 "These per-service policy files have only four fields instead of "
 "<filename>pam.conf</filename>'s five: the service name field is omitted. "
@@ -1363,19 +1373,19 @@ msgid ""
 "login</filename>:"
 msgstr ""
 "Esses arquivos de políticas por serviço possuem apenas quatro campos, em vez "
-"de cinco no <filename>pam.conf</filename>: o campo nome do serviço é omitido."
-" Assim, em vez da linha de exemplo no <filename>pam.conf</filename> da seção "
-"anterior, a seguinte linha deve estar em <filename>/etc/pam.d/login</"
-"filename>:"
+"de cinco no <filename>pam.conf</filename>: o campo nome do serviço é "
+"omitido. Assim, em vez da linha de exemplo no <filename>pam.conf</filename> "
+"da seção anterior, a seguinte linha deve estar em <filename>/etc/pam.d/"
+"login</filename>:"
 
 #. (itstool) path: section/programlisting
-#: article.translate.xml:803
+#: article.translate.xml:810
 #, no-wrap
 msgid "auth    required        pam_nologin.so  no_warn"
 msgstr "auth    required        pam_nologin.so  no_warn"
 
 #. (itstool) path: section/para
-#: article.translate.xml:805
+#: article.translate.xml:812
 msgid ""
 "As a consequence of this simplified syntax, it is possible to use the same "
 "policy for multiple services by linking each service name to a same policy "
@@ -1389,7 +1399,7 @@ msgstr ""
 "seguinte:"
 
 #. (itstool) path: section/screen
-#: article.translate.xml:812
+#: article.translate.xml:819
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /etc/pam.d</userinput>\n"
@@ -1399,7 +1409,7 @@ msgstr ""
 "<prompt>#</prompt> <userinput>ln -s su sudo</userinput>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:815
+#: article.translate.xml:822
 msgid ""
 "This works because the service name is determined from the file name rather "
 "than specified in the policy file, so the same file can be used for multiple "
@@ -1410,7 +1420,7 @@ msgstr ""
 "mesmo arquivo pode ser usado para vários serviços com nomes diferentes."
 
 #. (itstool) path: section/para
-#: article.translate.xml:820
+#: article.translate.xml:827
 msgid ""
 "Since each service's policy is stored in a separate file, the <filename>pam."
 "d</filename> mechanism also makes it very easy to install additional "
@@ -1422,12 +1432,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-file-order.title
-#: article.translate.xml:827
-msgid "The policy search order"
+#: article.translate.xml:834
+#, fuzzy
+msgid "The Policy Search Order"
 msgstr "A ordem de pesquisa da política"
 
 #. (itstool) path: section/para
-#: article.translate.xml:830
+#: article.translate.xml:837
 msgid ""
 "As we have seen above, PAM policies can be found in a number of places. What "
 "happens if policies for the same service exist in multiple places?"
@@ -1437,7 +1448,7 @@ msgstr ""
 "vários lugares?"
 
 #. (itstool) path: section/para
-#: article.translate.xml:834
+#: article.translate.xml:841
 msgid ""
 "It is essential to understand that PAM's configuration system is centered on "
 "chains."
@@ -1447,12 +1458,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-breakdown.title
-#: article.translate.xml:841
-msgid "Breakdown of a configuration line"
+#: article.translate.xml:848
+#, fuzzy
+msgid "Breakdown of a Configuration Line"
 msgstr "Quebra de uma linha de configuração"
 
 #. (itstool) path: section/para
-#: article.translate.xml:844
+#: article.translate.xml:851
 msgid ""
 "As explained in <xref linkend=\"pam-config-file\"/>, each line in <filename>/"
 "etc/pam.conf</filename> consists of four or more fields: the service name, "
@@ -1465,7 +1477,7 @@ msgstr ""
 "ou mais argumentos do módulo."
 
 #. (itstool) path: section/para
-#: article.translate.xml:849
+#: article.translate.xml:857
 msgid ""
 "The service name is generally (though not always) the name of the "
 "application the statement applies to. If you are unsure, refer to the "
@@ -1477,7 +1489,7 @@ msgstr ""
 "aplicativo individual para determinar qual nome de serviço ele usa."
 
 #. (itstool) path: section/para
-#: article.translate.xml:854
+#: article.translate.xml:862
 msgid ""
 "Note that if you use <filename>/etc/pam.d/</filename> instead of <filename>/"
 "etc/pam.conf</filename>, the service name is specified by the name of the "
@@ -1490,7 +1502,7 @@ msgstr ""
 "que então começam com o nome da instalação."
 
 #. (itstool) path: section/para
-#: article.translate.xml:860
+#: article.translate.xml:868
 msgid ""
 "The facility is one of the four facility keywords described in <xref linkend="
 "\"pam-facilities-primitives\"/>."
@@ -1499,7 +1511,7 @@ msgstr ""
 "linkend=\"pam-facilities-primitives\"/>."
 
 #. (itstool) path: section/para
-#: article.translate.xml:863
+#: article.translate.xml:871
 msgid ""
 "Likewise, the control flag is one of the four keywords described in <xref "
 "linkend=\"pam-chains-policies\"/>, describing how to interpret the return "
@@ -1521,12 +1533,12 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-policies.title
-#: article.translate.xml:875
+#: article.translate.xml:883
 msgid "Policies"
 msgstr "Políticas"
 
 #. (itstool) path: section/para
-#: article.translate.xml:877
+#: article.translate.xml:885
 msgid ""
 "To configure PAM correctly, it is essential to understand how policies are "
 "interpreted."
@@ -1535,7 +1547,7 @@ msgstr ""
 "são interpretadas."
 
 #. (itstool) path: section/para
-#: article.translate.xml:880
+#: article.translate.xml:888
 msgid ""
 "When an application calls <citerefentry><refentrytitle>pam_start</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>, the PAM library loads "
@@ -1552,7 +1564,7 @@ msgstr ""
 "literal> serviço são substituídas."
 
 #. (itstool) path: section/para
-#: article.translate.xml:887
+#: article.translate.xml:895
 msgid ""
 "When the application later calls one of the six PAM primitives, the PAM "
 "library retrieves the chain for the corresponding facility and calls the "
@@ -1571,83 +1583,77 @@ msgstr ""
 "exceções, discutidas abaixo, a tabela a seguir se aplica:"
 
 #. (itstool) path: table/title
-#: article.translate.xml:898
-msgid "PAM chain execution summary"
+#: article.translate.xml:906
+#, fuzzy
+msgid "PAM Chain Execution Summary"
 msgstr "Resumo de execução da chain de PAM"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:907
+#: article.translate.xml:916
 msgid "<literal>PAM_SUCCESS</literal>"
 msgstr "<literal>PAM_SUCCESS</literal>"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:908
+#: article.translate.xml:917
 msgid "<literal>PAM_IGNORE</literal>"
 msgstr "<literal>PAM_IGNORE</literal>"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:909
+#: article.translate.xml:918
 msgid "<literal>other</literal>"
 msgstr "<literal>other</literal>"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:914
+#: article.translate.xml:923
 msgid "binding"
 msgstr "binding"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:915
-#: article.translate.xml:933
+#: article.translate.xml:924 article.translate.xml:945
 msgid "if (!fail) break;"
 msgstr "if (!fail) break;"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:916
-#: article.translate.xml:921
-#: article.translate.xml:922
-#: article.translate.xml:927
-#: article.translate.xml:928
-#: article.translate.xml:934
-#: article.translate.xml:935
-#: article.translate.xml:939
-#: article.translate.xml:940
-#: article.translate.xml:941
+#: article.translate.xml:925 article.translate.xml:931
+#: article.translate.xml:932 article.translate.xml:938
+#: article.translate.xml:939 article.translate.xml:946
+#: article.translate.xml:947 article.translate.xml:952
+#: article.translate.xml:953 article.translate.xml:954
 msgid "-"
 msgstr "-"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:917
-#: article.translate.xml:923
+#: article.translate.xml:926 article.translate.xml:933
 msgid "fail = true;"
 msgstr "fail = true;"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:920
+#: article.translate.xml:930
 msgid "required"
 msgstr "required"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:926
+#: article.translate.xml:937
 msgid "requisite"
 msgstr "requisite"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:929
+#: article.translate.xml:940
 msgid "fail = true; break;"
 msgstr "fail = true; break;"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:932
+#: article.translate.xml:944
 msgid "sufficient"
 msgstr "sufficient"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:938
+#: article.translate.xml:951
 msgid "optional"
 msgstr "optional"
 
 #. (itstool) path: section/para
-#: article.translate.xml:947
+#: article.translate.xml:960
 msgid ""
 "If <varname>fail</varname> is true at the end of a chain, or when a "
 "<quote>break</quote> is reached, the dispatcher returns the error code "
@@ -1660,7 +1666,7 @@ msgstr ""
 "<literal>PAM_SUCCESS</literal>."
 
 #. (itstool) path: section/para
-#: article.translate.xml:953
+#: article.translate.xml:966
 msgid ""
 "The first exception of note is that the error code "
 "<literal>PAM_NEW_AUTHTOK_REQD</literal> is treated like a success, except "
@@ -1674,7 +1680,7 @@ msgstr ""
 "dispatcher retornará <literal>PAM_NEW_AUTHTOK_REQD</literal>."
 
 #. (itstool) path: section/para
-#: article.translate.xml:960
+#: article.translate.xml:973
 msgid ""
 "The second exception is that <citerefentry><refentrytitle>pam_setcred</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> treats "
@@ -1687,7 +1693,7 @@ msgstr ""
 "fossem <literal>required</literal>."
 
 #. (itstool) path: section/para
-#: article.translate.xml:965
+#: article.translate.xml:977
 msgid ""
 "The third and final exception is that "
 "<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</"
@@ -1705,13 +1711,13 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-freebsd-modules.title
-#: article.translate.xml:976
+#: article.translate.xml:987
 msgid "FreeBSD PAM Modules"
 msgstr "Módulos PAM do FreeBSD"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-deny.title
-#: article.translate.xml:979
+#: article.translate.xml:991
 msgid ""
 "<citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1720,7 +1726,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:981
+#: article.translate.xml:993
 msgid ""
 "The <citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module is one of the simplest modules available; "
@@ -1736,7 +1742,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-echo.title
-#: article.translate.xml:990
+#: article.translate.xml:1002
 msgid ""
 "<citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1745,7 +1751,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:992
+#: article.translate.xml:1004
 msgid ""
 "The <citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module simply passes its arguments to the "
@@ -1763,7 +1769,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-exec.title
-#: article.translate.xml:1001
+#: article.translate.xml:1013
 msgid ""
 "<citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1772,7 +1778,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1003
+#: article.translate.xml:1015
 msgid ""
 "The <citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module takes its first argument to be the name of "
@@ -1789,7 +1795,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ftpusers.title
-#: article.translate.xml:1011
+#: article.translate.xml:1023
 msgid ""
 "<citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1798,7 +1804,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1013
+#: article.translate.xml:1025
 msgid ""
 "The <citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -1808,7 +1814,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-group.title
-#: article.translate.xml:1017
+#: article.translate.xml:1029
 msgid ""
 "<citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1817,7 +1823,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1019
+#: article.translate.xml:1031
 msgid ""
 "The <citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module accepts or rejects applicants on the basis "
@@ -1840,7 +1846,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-guest.title
-#: article.translate.xml:1028
+#: article.translate.xml:1040
 msgid ""
 "<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1849,11 +1855,11 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1030
+#: article.translate.xml:1042
 msgid ""
 "The <citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry> module allows guest logins using fixed login names."
-" Various requirements can be placed on the password, but the default "
+"manvolnum></citerefentry> module allows guest logins using fixed login "
+"names. Various requirements can be placed on the password, but the default "
 "behavior is to allow any password as long as the login name is that of a "
 "guest account. The <citerefentry><refentrytitle>pam_guest</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> module can easily be "
@@ -1870,7 +1876,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-krb5.title
-#: article.translate.xml:1039
+#: article.translate.xml:1051
 msgid ""
 "<citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1879,7 +1885,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1041
+#: article.translate.xml:1053
 msgid ""
 "The <citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -1889,7 +1895,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ksu.title
-#: article.translate.xml:1045
+#: article.translate.xml:1057
 msgid ""
 "<citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1898,7 +1904,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1047
+#: article.translate.xml:1059
 msgid ""
 "The <citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -1908,7 +1914,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-lastlog.title
-#: article.translate.xml:1051
+#: article.translate.xml:1063
 msgid ""
 "<citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1917,7 +1923,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1053
+#: article.translate.xml:1065
 msgid ""
 "The <citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -1927,7 +1933,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-login-access.title
-#: article.translate.xml:1057
+#: article.translate.xml:1069
 msgid ""
 "<citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1936,7 +1942,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1059
+#: article.translate.xml:1071
 msgid ""
 "The <citerefentry><refentrytitle>pam_login_access</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> module provides an "
@@ -1953,7 +1959,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-nologin.title
-#: article.translate.xml:1066
+#: article.translate.xml:1078
 msgid ""
 "<citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1962,7 +1968,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1068
+#: article.translate.xml:1080
 msgid ""
 "The <citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module refuses non-root logins when <filename>/var/"
@@ -1980,7 +1986,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opie.title
-#: article.translate.xml:1075
+#: article.translate.xml:1087
 msgid ""
 "<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -1989,7 +1995,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1077
+#: article.translate.xml:1089
 msgid ""
 "The <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module implements the "
@@ -2019,7 +2025,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opieaccess.title
-#: article.translate.xml:1089
+#: article.translate.xml:1101
 msgid ""
 "<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2028,7 +2034,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1091
+#: article.translate.xml:1103
 msgid ""
 "The <citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module is a companion module to "
@@ -2053,7 +2059,7 @@ msgstr ""
 "é usado para proibir o uso de autenticação de senha de hosts não confiáveis."
 
 #. (itstool) path: section/para
-#: article.translate.xml:1099
+#: article.translate.xml:1111
 msgid ""
 "In order to be effective, the <citerefentry><refentrytitle>pam_opieaccess</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> module must be listed "
@@ -2071,7 +2077,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-passwdqc.title
-#: article.translate.xml:1107
+#: article.translate.xml:1119
 msgid ""
 "<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2080,7 +2086,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1109
+#: article.translate.xml:1121
 msgid ""
 "The <citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -2090,7 +2096,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-permit.title
-#: article.translate.xml:1113
+#: article.translate.xml:1125
 msgid ""
 "<citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2099,7 +2105,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1115
+#: article.translate.xml:1127
 msgid ""
 "The <citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module is one of the simplest modules available; "
@@ -2115,7 +2121,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-radius.title
-#: article.translate.xml:1123
+#: article.translate.xml:1135
 msgid ""
 "<citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2124,7 +2130,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1125
+#: article.translate.xml:1137
 msgid ""
 "The <citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -2134,7 +2140,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-rhosts.title
-#: article.translate.xml:1129
+#: article.translate.xml:1141
 msgid ""
 "<citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2143,7 +2149,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1131
+#: article.translate.xml:1143
 msgid ""
 "The <citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -2153,7 +2159,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-rootok.title
-#: article.translate.xml:1135
+#: article.translate.xml:1147
 msgid ""
 "<citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2162,7 +2168,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1137
+#: article.translate.xml:1149
 msgid ""
 "The <citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module reports success if and only if the real "
@@ -2185,7 +2191,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-securetty.title
-#: article.translate.xml:1146
+#: article.translate.xml:1158
 msgid ""
 "<citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2194,7 +2200,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1148
+#: article.translate.xml:1160
 msgid ""
 "The <citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -2204,7 +2210,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-self.title
-#: article.translate.xml:1152
+#: article.translate.xml:1164
 msgid ""
 "<citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2213,7 +2219,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1154
+#: article.translate.xml:1166
 msgid ""
 "The <citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module reports success if and only if the names of "
@@ -2231,7 +2237,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ssh.title
-#: article.translate.xml:1162
+#: article.translate.xml:1174
 msgid ""
 "<citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2240,7 +2246,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1164
+#: article.translate.xml:1176
 msgid ""
 "The <citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module provides both authentication and session "
@@ -2269,7 +2275,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-tacplus.title
-#: article.translate.xml:1177
+#: article.translate.xml:1189
 msgid ""
 "<citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2278,7 +2284,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1179
+#: article.translate.xml:1191
 msgid ""
 "The <citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
@@ -2288,7 +2294,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-unix.title
-#: article.translate.xml:1183
+#: article.translate.xml:1195
 msgid ""
 "<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
@@ -2297,7 +2303,7 @@ msgstr ""
 "manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1185
+#: article.translate.xml:1197
 msgid ""
 "The <citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module implements traditional <trademark class="
@@ -2323,30 +2329,29 @@ msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-appl-prog.title
-#: article.translate.xml:1198
+#: article.translate.xml:1210
 msgid "PAM Application Programming"
 msgstr "Programação de Aplicação PAM"
 
 #. (itstool) path: section/para
-#: article.translate.xml:1200
-#: article.translate.xml:1220
+#: article.translate.xml:1213 article.translate.xml:1234
 msgid "This section has not yet been written."
 msgstr "Esta seção ainda não foi escrita."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-prog.title
-#: article.translate.xml:1218
+#: article.translate.xml:1231
 msgid "PAM Module Programming"
 msgstr "Programação de Módulos PAM"
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-appl.title
-#: article.translate.xml:1224
+#: article.translate.xml:1238
 msgid "Sample PAM Application"
 msgstr "Exemplo de Aplicação PAM"
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1226
+#: article.translate.xml:1241
 msgid ""
 "The following is a minimal implementation of "
 "<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
@@ -2356,8 +2361,8 @@ msgid ""
 "<filename>security/openpam.h</filename>. If you wish build this application "
 "on a system with a different PAM library, you will have to provide your own "
 "conversation function. A robust conversation function is surprisingly "
-"difficult to implement; the one presented in <xref linkend=\"pam-sample-"
-"conv\"/> is a good starting point, but should not be used in real-world "
+"difficult to implement; the one presented in <xref linkend=\"pam-sample-conv"
+"\"/> is a good starting point, but should not be used in real-world "
 "applications."
 msgstr ""
 "O que vem a seguir é uma implementação mínima de "
@@ -2373,7 +2378,7 @@ msgstr ""
 "aplicações do mundo real."
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1237
+#: article.translate.xml:1251
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -2399,22 +2404,18 @@ msgid ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
 " * $P4: //depot/projects/openpam/bin/su/su.c#10 $\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/su.c 38826 2012-05-17 19:12:"
-"14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/su.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;sys/param.h&gt;\n"
@@ -2590,22 +2591,18 @@ msgstr ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
 " * $P4: //depot/projects/openpam/bin/su/su.c#10 $\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/su.c 38826 2012-05-17 19:12:"
-"14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/su.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;sys/param.h&gt;\n"
@@ -2760,12 +2757,12 @@ msgstr ""
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-module.title
-#: article.translate.xml:1427
+#: article.translate.xml:1441
 msgid "Sample PAM Module"
 msgstr "Exemplo do módulo PAM"
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1429
+#: article.translate.xml:1443
 msgid ""
 "The following is a minimal implementation of "
 "<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
@@ -2785,7 +2782,7 @@ msgstr ""
 "enormemente solicitando ao usuário uma senha."
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1436
+#: article.translate.xml:1450
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -2811,22 +2808,18 @@ msgid ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
 " * $P4: //depot/projects/openpam/modules/pam_unix/pam_unix.c#3 $\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/pam_unix.c 38826 2012-05-17 "
-"19:12:14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/pam_unix.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;sys/param.h&gt;\n"
@@ -2884,8 +2877,7 @@ msgid ""
 "\t\t    (const char **)&amp;password, NULL);\n"
 "#else\n"
 "\t\tresp = NULL;\n"
-"\t\tpam_err = (*conv-&gt;conv)(1, &amp;msgp, &amp;resp, conv-"
-"&gt;appdata_ptr);\n"
+"\t\tpam_err = (*conv-&gt;conv)(1, &amp;msgp, &amp;resp, conv-&gt;appdata_ptr);\n"
 "\t\tif (resp != NULL) {\n"
 "\t\t\tif (pam_err == PAM_SUCCESS)\n"
 "\t\t\t\tpassword = resp-&gt;resp;\n"
@@ -2903,8 +2895,7 @@ msgid ""
 "\t\treturn (PAM_AUTH_ERR);\n"
 "\n"
 "\t/* compare passwords */\n"
-"\tif ((!pwd-&gt;pw_passwd[0] &amp;&amp; (flags &amp; "
-"PAM_DISALLOW_NULL_AUTHTOK)) ||\n"
+"\tif ((!pwd-&gt;pw_passwd[0] &amp;&amp; (flags &amp; PAM_DISALLOW_NULL_AUTHTOK)) ||\n"
 "\t    (crypt_password = crypt(password, pwd-&gt;pw_passwd)) == NULL ||\n"
 "\t    strcmp(crypt_password, pwd-&gt;pw_passwd) != 0)\n"
 "\t\tpam_err = PAM_AUTH_ERR;\n"
@@ -2983,22 +2974,18 @@ msgstr ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
 " * $P4: //depot/projects/openpam/modules/pam_unix/pam_unix.c#3 $\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/pam_unix.c 38826 2012-05-17 "
-"19:12:14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/pam_unix.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;sys/param.h&gt;\n"
@@ -3056,8 +3043,7 @@ msgstr ""
 "\t\t    (const char **)&amp;password, NULL);\n"
 "#else\n"
 "\t\tresp = NULL;\n"
-"\t\tpam_err = (*conv-&gt;conv)(1, &amp;msgp, &amp;resp, conv-"
-"&gt;appdata_ptr);\n"
+"\t\tpam_err = (*conv-&gt;conv)(1, &amp;msgp, &amp;resp, conv-&gt;appdata_ptr);\n"
 "\t\tif (resp != NULL) {\n"
 "\t\t\tif (pam_err == PAM_SUCCESS)\n"
 "\t\t\t\tpassword = resp-&gt;resp;\n"
@@ -3075,8 +3061,7 @@ msgstr ""
 "\t\treturn (PAM_AUTH_ERR);\n"
 "\n"
 "\t/* compare passwords */\n"
-"\tif ((!pwd-&gt;pw_passwd[0] &amp;&amp; (flags &amp; "
-"PAM_DISALLOW_NULL_AUTHTOK)) ||\n"
+"\tif ((!pwd-&gt;pw_passwd[0] &amp;&amp; (flags &amp; PAM_DISALLOW_NULL_AUTHTOK)) ||\n"
 "\t    (crypt_password = crypt(password, pwd-&gt;pw_passwd)) == NULL ||\n"
 "\t    strcmp(crypt_password, pwd-&gt;pw_passwd) != 0)\n"
 "\t\tpam_err = PAM_AUTH_ERR;\n"
@@ -3134,12 +3119,12 @@ msgstr ""
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-conv.title
-#: article.translate.xml:1605
+#: article.translate.xml:1619
 msgid "Sample PAM Conversation Function"
 msgstr "Exemplo de função de conversação PAM"
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1608
+#: article.translate.xml:1622
 msgid ""
 "The conversation function presented below is a greatly simplified version of "
 "OpenPAM's <citerefentry><refentrytitle>openpam_ttyconv</"
@@ -3163,7 +3148,7 @@ msgstr ""
 "para tty pode razoavelmente ser."
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1617
+#: article.translate.xml:1632
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -3189,21 +3174,17 @@ msgid ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/converse.c 38826 2012-05-17 "
-"19:12:14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/converse.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;stdio.h&gt;\n"
@@ -3296,21 +3277,17 @@ msgstr ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
-"STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
 " *\n"
-" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/converse.c 38826 2012-05-17 "
-"19:12:14Z hrs $\n"
+" * $FreeBSD: head/en_US.ISO8859-1/articles/pam/converse.c 38826 2012-05-17 19:12:14Z hrs $\n"
 " */\n"
 "\n"
 "#include &lt;stdio.h&gt;\n"
@@ -3382,86 +3359,84 @@ msgstr ""
 
 #. (itstool) path: info/title
 #. (itstool) id: article.translate.xml#pam-further.title
-#: article.translate.xml:1723
+#: article.translate.xml:1739
 msgid "Further Reading"
 msgstr "Leitura Adicional"
 
 #. (itstool) path: abstract/para
-#: article.translate.xml:1727
+#: article.translate.xml:1742
 msgid ""
 "This is a list of documents relevant to PAM and related issues. It is by no "
 "means complete."
 msgstr ""
-"Esta é uma lista de documentos relevantes para o PAM e questões relacionadas."
-" Não está de modo algum completo."
+"Esta é uma lista de documentos relevantes para o PAM e questões "
+"relacionadas. Não está de modo algum completo."
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1733
+#: article.translate.xml:1748
 msgid "Papers"
 msgstr "Papers"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1736
+#: article.translate.xml:1751
 msgid ""
-"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external."
-"pdf\"> Making Login Services Independent of Authentication Technologies</"
-"link>"
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external.pdf"
+"\"> Making Login Services Independent of Authentication Technologies</link>"
 msgstr ""
-"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external."
-"pdf\">Tornando os serviços de login independentes das tecnologias de "
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external.pdf"
+"\">Tornando os serviços de login independentes das tecnologias de "
 "autenticação</link>"
 
 #. (itstool) path: authorgroup/author
-#: article.translate.xml:1740
+#: article.translate.xml:1755
+#, fuzzy
 msgid ""
-"<personname><surname>Samar</surname><firstname>Vipin</firstname></"
+"<personname> <surname>Samar</surname> <firstname>Vipin</firstname> </"
 "personname>"
 msgstr ""
-"<personname><surname>Samar</surname><firstname>Vipin</firstname></"
-"personname>"
+"<personname><surname>Samar</surname><firstname>Vipin</firstname></personname>"
 
 #. (itstool) path: authorgroup/author
-#: article.translate.xml:1741
+#: article.translate.xml:1761
+#, fuzzy
 msgid ""
-"<personname><surname>Lai</surname><firstname>Charlie</firstname></"
+"<personname> <surname>Lai</surname> <firstname>Charlie</firstname> </"
 "personname>"
 msgstr ""
-"<personname><surname>Lai</surname><firstname>Charlie</firstname></"
-"personname>"
+"<personname><surname>Lai</surname><firstname>Charlie</firstname></personname>"
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1743
-#: article.translate.xml:1768
-#: article.translate.xml:1788
+#: article.translate.xml:1768 article.translate.xml:1800
+#: article.translate.xml:1834
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1747
+#: article.translate.xml:1772
 msgid ""
 "<link xlink:href=\"http://www.opengroup.org/pubs/catalog/p702.htm\">X/Open "
 "Single Sign-on Preliminary Specification</link>"
 msgstr ""
-"<link xlink:href=\"http://www.opengroup.org/pubs/catalog/p702."
-"htm\">Especificação Preliminar do X/Open Single Sign-on</link>"
+"<link xlink:href=\"http://www.opengroup.org/pubs/catalog/p702.htm"
+"\">Especificação Preliminar do X/Open Single Sign-on</link>"
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1749
+#: article.translate.xml:1775
 msgid "The Open Group"
 msgstr "O grupo aberto"
 
 #. (itstool) path: biblioentry/biblioid
-#: article.translate.xml:1750
+#: article.translate.xml:1776
 msgid "1-85912-144-6"
 msgstr "1-85912-144-6"
 
 #. (itstool) path: biblioentry/pubdate
-#: article.translate.xml:1751
+#: article.translate.xml:1777
 msgid "June 1997"
 msgstr "Junho de 1997"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1755
+#: article.translate.xml:1781
 msgid ""
 "<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/pre/doc/current-"
 "draft.txt\"> Pluggable Authentication Modules</link>"
@@ -3470,41 +3445,42 @@ msgstr ""
 "draft.txt\">Módulos de autenticação plugáveis​​</link>"
 
 #. (itstool) path: biblioentry/author
-#: article.translate.xml:1757
-#: article.translate.xml:1783
+#: article.translate.xml:1783 article.translate.xml:1822
+#, fuzzy
 msgid ""
-"<personname><surname>Morgan</surname><firstname>Andrew</firstname><othername "
-"role=\"mi\">G.</othername></personname>"
+"<personname> <surname>Morgan</surname> <firstname>Andrew</firstname> "
+"<othername role=\"mi\">G.</othername> </personname>"
 msgstr ""
 "<personname><surname>Morgan</surname><firstname>Andrew</firstname><othername "
 "role=\"mi\">G.</othername></personname>"
 
 #. (itstool) path: biblioentry/pubdate
-#: article.translate.xml:1758
+#: article.translate.xml:1790
 msgid "1999-10-06"
 msgstr "06-10-1999"
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1763
+#: article.translate.xml:1795
 msgid "User Manuals"
 msgstr "Manuais do usuário"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1766
+#: article.translate.xml:1798
 msgid ""
-"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin."
-"pdf\">PAM Administration</link>"
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin.pdf"
+"\">PAM Administration</link>"
 msgstr ""
-"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin."
-"pdf\">Administração do PAM</link>"
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin.pdf"
+"\">Administração do PAM</link>"
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1773
-msgid "Related Web pages"
+#: article.translate.xml:1805
+#, fuzzy
+msgid "Related Web Pages"
 msgstr "Páginas Web relacionadas"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1776
+#: article.translate.xml:1808
 msgid ""
 "<link xlink:href=\"http://openpam.sourceforge.net/\">OpenPAM homepage</link>"
 msgstr ""
@@ -3512,21 +3488,22 @@ msgstr ""
 "link>"
 
 #. (itstool) path: biblioentry/author
-#: article.translate.xml:1777
+#: article.translate.xml:1810
+#, fuzzy
 msgid ""
-"<personname><surname>Smørgrav</surname><firstname>Dag-Erling</firstname></"
+"<personname> <surname>Smørgrav</surname> <firstname>Dag-Erling</firstname> </"
 "personname>"
 msgstr ""
 "<personname><surname>Smørgrav</surname><firstname>Dag-Erling</firstname></"
 "personname>"
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1778
+#: article.translate.xml:1816
 msgid "ThinkSec AS"
 msgstr "ThinkSec AS"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1782
+#: article.translate.xml:1820
 msgid ""
 "<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/\">Linux-PAM "
 "homepage</link>"
@@ -3535,7 +3512,7 @@ msgstr ""
 "inicial do Linux-PAM</link>"
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1787
+#: article.translate.xml:1832
 msgid ""
 "<link xlink:href=\"http://wwws.sun.com/software/solaris/pam/\">Solaris PAM "
 "homepage</link>"

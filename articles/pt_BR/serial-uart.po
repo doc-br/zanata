@@ -1,17 +1,18 @@
+# $FreeBSD$
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:16-0200\n"
+"PO-Revision-Date: 2018-09-18 03:01+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
-"Language: pt_BR\n"
-"PO-Revision-Date: 2018-09-18 03:01+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -72,11 +73,10 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:28
-#: article.translate.xml:30
+#: article.translate.xml:28 article.translate.xml:30
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 2014-"
-"04-29 02:46:48Z wblock $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
+"2014-04-29 02:46:48Z wblock $"
 msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
@@ -109,8 +109,8 @@ msgid ""
 msgstr ""
 "O controlador UART (Universal Asynchronous Receiver / Transmitter) é o "
 "componente chave do subsistema de comunicação serial de um computador. O "
-"UART pega bytes de dados e transmite os bits individuais de forma seqüencial."
-" No destino, um segundo UART reúne os bits em bytes completos."
+"UART pega bytes de dados e transmite os bits individuais de forma "
+"seqüencial. No destino, um segundo UART reúne os bits em bytes completos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
@@ -378,10 +378,10 @@ msgid ""
 msgstr ""
 "Além do trabalho básico de conversão de dados de paralelo para serial para "
 "transmissão e de serial para paralelo na recepção, um UART normalmente "
-"fornecerá circuitos adicionais para sinais que podem ser usados ​​para "
-"indicar o estado da mídia de transmissão, e para regular o fluxo de dados no "
-"caso de o dispositivo remoto não estar preparado para aceitar mais dados. "
-"Por exemplo, quando o dispositivo conectado à UART é um modem, o modem pode "
+"fornecerá circuitos adicionais para sinais que podem ser usados ​​para indicar "
+"o estado da mídia de transmissão, e para regular o fluxo de dados no caso de "
+"o dispositivo remoto não estar preparado para aceitar mais dados. Por "
+"exemplo, quando o dispositivo conectado à UART é um modem, o modem pode "
 "informar a presença de uma operadora na linha telefônica enquanto o "
 "computador pode instruir o modem a reinicializar a si mesmo ou a não atender "
 "chamadas, aumentando ou diminuindo mais um desses sinais extras. A função de "
@@ -660,9 +660,9 @@ msgid ""
 "confusion.)"
 msgstr ""
 "Dependendo do fabricante do computador, um DB25, um DB9 ou ambos os tipos de "
-"conectores podem ser usados ​​para comunicações RS232-C. (O IBM PC também "
-"usa um conector DB25 para a interface de impressora paralela, o que causa "
-"alguma confusão.)"
+"conectores podem ser usados ​​para comunicações RS232-C. (O IBM PC também usa "
+"um conector DB25 para a interface de impressora paralela, o que causa alguma "
+"confusão.)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:341
@@ -704,70 +704,43 @@ msgid "Signal Source"
 msgstr "Fonte de sinal"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:352
-#: article.translate.xml:1177
+#: article.translate.xml:352 article.translate.xml:1177
 #: article.translate.xml:1489
 msgid "Description"
 msgstr "Descrição"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:358
-#: article.translate.xml:429
-#: article.translate.xml:1347
-#: article.translate.xml:1352
-#: article.translate.xml:1357
-#: article.translate.xml:1363
-#: article.translate.xml:1364
-#: article.translate.xml:1486
-#: article.translate.xml:1494
-#: article.translate.xml:1495
-#: article.translate.xml:1503
-#: article.translate.xml:1510
-#: article.translate.xml:1511
-#: article.translate.xml:1521
-#: article.translate.xml:1639
-#: article.translate.xml:1654
-#: article.translate.xml:1660
-#: article.translate.xml:1667
+#: article.translate.xml:358 article.translate.xml:429
+#: article.translate.xml:1347 article.translate.xml:1352
+#: article.translate.xml:1357 article.translate.xml:1363
+#: article.translate.xml:1364 article.translate.xml:1486
+#: article.translate.xml:1494 article.translate.xml:1495
+#: article.translate.xml:1503 article.translate.xml:1510
+#: article.translate.xml:1511 article.translate.xml:1521
+#: article.translate.xml:1639 article.translate.xml:1654
+#: article.translate.xml:1660 article.translate.xml:1667
 #: article.translate.xml:1668
 msgid "1"
 msgstr "1"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:359
-#: article.translate.xml:363
-#: article.translate.xml:423
-#: article.translate.xml:439
-#: article.translate.xml:440
-#: article.translate.xml:441
-#: article.translate.xml:442
-#: article.translate.xml:443
-#: article.translate.xml:449
-#: article.translate.xml:450
-#: article.translate.xml:451
-#: article.translate.xml:452
-#: article.translate.xml:453
-#: article.translate.xml:459
-#: article.translate.xml:460
-#: article.translate.xml:461
-#: article.translate.xml:462
-#: article.translate.xml:463
-#: article.translate.xml:469
-#: article.translate.xml:479
-#: article.translate.xml:489
-#: article.translate.xml:499
-#: article.translate.xml:509
-#: article.translate.xml:519
-#: article.translate.xml:529
-#: article.translate.xml:530
-#: article.translate.xml:539
-#: article.translate.xml:559
-#: article.translate.xml:560
-#: article.translate.xml:561
-#: article.translate.xml:579
-#: article.translate.xml:589
-#: article.translate.xml:599
-#: article.translate.xml:600
+#: article.translate.xml:359 article.translate.xml:363
+#: article.translate.xml:423 article.translate.xml:439
+#: article.translate.xml:440 article.translate.xml:441
+#: article.translate.xml:442 article.translate.xml:443
+#: article.translate.xml:449 article.translate.xml:450
+#: article.translate.xml:451 article.translate.xml:452
+#: article.translate.xml:453 article.translate.xml:459
+#: article.translate.xml:460 article.translate.xml:461
+#: article.translate.xml:462 article.translate.xml:463
+#: article.translate.xml:469 article.translate.xml:479
+#: article.translate.xml:489 article.translate.xml:499
+#: article.translate.xml:509 article.translate.xml:519
+#: article.translate.xml:529 article.translate.xml:530
+#: article.translate.xml:539 article.translate.xml:559
+#: article.translate.xml:560 article.translate.xml:561
+#: article.translate.xml:579 article.translate.xml:589
+#: article.translate.xml:599 article.translate.xml:600
 #: article.translate.xml:602
 msgid "-"
 msgstr "-"
@@ -793,15 +766,13 @@ msgid "Frame/Protective Ground"
 msgstr "Quadro / aterramento de proteção"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:368
-#: article.translate.xml:379
+#: article.translate.xml:368 article.translate.xml:379
 #: article.translate.xml:1485
 msgid "2"
 msgstr "2"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:369
-#: article.translate.xml:378
+#: article.translate.xml:369 article.translate.xml:378
 #: article.translate.xml:1061
 msgid "3"
 msgstr "3"
@@ -822,14 +793,10 @@ msgid "TD"
 msgstr "TD"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:373
-#: article.translate.xml:393
-#: article.translate.xml:493
-#: article.translate.xml:533
-#: article.translate.xml:543
-#: article.translate.xml:553
-#: article.translate.xml:563
-#: article.translate.xml:583
+#: article.translate.xml:373 article.translate.xml:393
+#: article.translate.xml:493 article.translate.xml:533
+#: article.translate.xml:543 article.translate.xml:553
+#: article.translate.xml:563 article.translate.xml:583
 #: article.translate.xml:593
 msgid "DTE"
 msgstr "DTE"
@@ -855,16 +822,11 @@ msgid "RD"
 msgstr "RD"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:383
-#: article.translate.xml:403
-#: article.translate.xml:413
-#: article.translate.xml:433
-#: article.translate.xml:473
-#: article.translate.xml:483
-#: article.translate.xml:503
-#: article.translate.xml:513
-#: article.translate.xml:523
-#: article.translate.xml:573
+#: article.translate.xml:383 article.translate.xml:403
+#: article.translate.xml:413 article.translate.xml:433
+#: article.translate.xml:473 article.translate.xml:483
+#: article.translate.xml:503 article.translate.xml:513
+#: article.translate.xml:523 article.translate.xml:573
 #: article.translate.xml:603
 msgid "DCE"
 msgstr "DCE"
@@ -875,15 +837,13 @@ msgid "Receive Data"
 msgstr "Receive Data"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:388
-#: article.translate.xml:549
+#: article.translate.xml:388 article.translate.xml:549
 #: article.translate.xml:1353
 msgid "4"
 msgstr "4"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:389
-#: article.translate.xml:418
+#: article.translate.xml:389 article.translate.xml:418
 #: article.translate.xml:1338
 msgid "7"
 msgstr "7"
@@ -909,14 +869,12 @@ msgid "Request to Send"
 msgstr "Request to Send"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:398
-#: article.translate.xml:419
+#: article.translate.xml:398 article.translate.xml:419
 msgid "5"
 msgstr "5"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:399
-#: article.translate.xml:428
+#: article.translate.xml:399 article.translate.xml:428
 #: article.translate.xml:1359
 msgid "8"
 msgstr "8"
@@ -942,8 +900,7 @@ msgid "Clear to Send"
 msgstr "Clear to Send"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:408
-#: article.translate.xml:409
+#: article.translate.xml:408 article.translate.xml:409
 #: article.translate.xml:1339
 msgid "6"
 msgstr "6"
@@ -1009,14 +966,12 @@ msgid "Data Carrier Detect"
 msgstr "Data Carrier Detect"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:438
-#: article.translate.xml:569
+#: article.translate.xml:438 article.translate.xml:569
 msgid "9"
 msgstr "9"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:444
-#: article.translate.xml:454
+#: article.translate.xml:444 article.translate.xml:454
 #: article.translate.xml:464
 msgid "Reserved for Test"
 msgstr "Reserved for Test"
@@ -1082,8 +1037,7 @@ msgid "Secondary Clear to Send"
 msgstr "Secondary Clear to Send"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:488
-#: article.translate.xml:1365
+#: article.translate.xml:488 article.translate.xml:1365
 msgid "14"
 msgstr "14"
 
@@ -1123,14 +1077,12 @@ msgid "114"
 msgstr "114"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:502
-#: article.translate.xml:592
+#: article.translate.xml:502 article.translate.xml:592
 msgid "TSET"
 msgstr "TSET"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:504
-#: article.translate.xml:594
+#: article.translate.xml:504 article.translate.xml:594
 msgid "Trans. Sig. Element Timing"
 msgstr "Trans. Sig. Element Timing"
 
@@ -1205,8 +1157,7 @@ msgid "Local Loopback"
 msgstr "Local Loopback"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:538
-#: article.translate.xml:1067
+#: article.translate.xml:538 article.translate.xml:1067
 msgid "19"
 msgstr "19"
 
@@ -1296,8 +1247,7 @@ msgid "Ring Indicator"
 msgstr "Ring Indicator"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:578
-#: article.translate.xml:1073
+#: article.translate.xml:578 article.translate.xml:1073
 msgid "23"
 msgstr "23"
 
@@ -1410,12 +1360,12 @@ msgid ""
 "the serial stream of bits from the UART in the host computer (even when "
 "internal modems are used the data is still frequently serialized) and "
 "converts the bits back into bytes. These bytes are then combined into "
-"packets and sent over the phone line using a Synchronous transmission method."
-" This means that the Stop, Start, and Parity bits added by the UART in the "
-"DTE (the computer) were removed by the modem before transmission by the "
-"sending modem. When these bytes are received by the remote modem, the remote "
-"modem adds Start, Stop and Parity bits to the words, converts them to a "
-"serial format and then sends them to the receiving UART in the remote "
+"packets and sent over the phone line using a Synchronous transmission "
+"method. This means that the Stop, Start, and Parity bits added by the UART "
+"in the DTE (the computer) were removed by the modem before transmission by "
+"the sending modem. When these bytes are received by the remote modem, the "
+"remote modem adds Start, Stop and Parity bits to the words, converts them to "
+"a serial format and then sends them to the receiving UART in the remote "
 "computer, who then strips the Start, Stop and Parity bits."
 msgstr ""
 "A fórmula para converter bytes por segundo em uma taxa de transmissão e vice-"
@@ -1860,8 +1810,8 @@ msgstr ""
 msgid ""
 "The <replaceable>p</replaceable> is the package-type field. The types are:"
 msgstr ""
-"O <replaceable>p</replaceable> é o campo que define o tipo de encapsulamento."
-" Os tipos são:"
+"O <replaceable>p</replaceable> é o campo que define o tipo de "
+"encapsulamento. Os tipos são:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:912
@@ -1956,18 +1906,18 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:957
 msgid ""
-"In internal modems, the modem designer will frequently emulate the 8250A/"
-"16450 with the modem microprocessor, and the emulated UART will frequently "
-"have a hidden buffer consisting of several hundred bytes. Because of the "
-"size of the buffer, these emulations can be as reliable as a 16550A in their "
-"ability to handle high speed data. However, most operating systems will "
-"still report that the UART is only a 8250A or 16450, and may not make "
+"In internal modems, the modem designer will frequently emulate the "
+"8250A/16450 with the modem microprocessor, and the emulated UART will "
+"frequently have a hidden buffer consisting of several hundred bytes. Because "
+"of the size of the buffer, these emulations can be as reliable as a 16550A "
+"in their ability to handle high speed data. However, most operating systems "
+"will still report that the UART is only a 8250A or 16450, and may not make "
 "effective use of the extra buffering present in the emulated UART unless "
 "special drivers are used."
 msgstr ""
-"Nos modems internos, o projetista de modem freqüentemente emula o 8250A/"
-"16450 com o microprocessador de modem, e o UART emulado frequentemente terá "
-"um buffer oculto que consiste em várias centenas de bytes. Por causa do "
+"Nos modems internos, o projetista de modem freqüentemente emula o "
+"8250A/16450 com o microprocessador de modem, e o UART emulado frequentemente "
+"terá um buffer oculto que consiste em várias centenas de bytes. Por causa do "
 "tamanho do buffer, essas emulações podem ser tão confiáveis ​​quanto uma "
 "16550A em sua capacidade de lidar com dados de alta velocidade. No entanto, "
 "a maioria dos sistemas operacionais ainda relatará que o UART é apenas um "
@@ -2028,10 +1978,10 @@ msgid ""
 "others can prevent the device from being used at all with a given operating "
 "system or driver. These differences may show up when using other drivers, or "
 "when particular combinations of events occur that were not well tested or "
-"considered in the <trademark class=\"registered\">Windows</trademark> driver."
-" This is because most modem vendors and 16550-clone makers use the Microsoft "
-"drivers from <trademark class=\"registered\">Windows</trademark> for "
-"Workgroups 3.11 and the <trademark class=\"registered\">Microsoft</"
+"considered in the <trademark class=\"registered\">Windows</trademark> "
+"driver. This is because most modem vendors and 16550-clone makers use the "
+"Microsoft drivers from <trademark class=\"registered\">Windows</trademark> "
+"for Workgroups 3.11 and the <trademark class=\"registered\">Microsoft</"
 "trademark> <trademark class=\"registered\">MS-DOS</trademark> utility as the "
 "primary tests for compatibility with the NS16550A. This over-simplistic "
 "criteria means that if a different operating system is used, problems could "
@@ -2116,8 +2066,7 @@ msgid "Errors (aka \"differences\" reported)"
 msgstr "Erros (também conhecidos como \"diferenças\")"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1041
-#: article.translate.xml:1047
+#: article.translate.xml:1041 article.translate.xml:1047
 #: article.translate.xml:1053
 msgid "National"
 msgstr "National"
@@ -2128,28 +2077,17 @@ msgid "(PC16550DV)"
 msgstr "(PC16550DV)"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1043
-#: article.translate.xml:1049
-#: article.translate.xml:1055
-#: article.translate.xml:1345
-#: article.translate.xml:1346
-#: article.translate.xml:1351
-#: article.translate.xml:1358
-#: article.translate.xml:1487
-#: article.translate.xml:1493
-#: article.translate.xml:1502
-#: article.translate.xml:1504
-#: article.translate.xml:1512
-#: article.translate.xml:1519
-#: article.translate.xml:1520
-#: article.translate.xml:1528
-#: article.translate.xml:1529
-#: article.translate.xml:1530
-#: article.translate.xml:1640
-#: article.translate.xml:1646
-#: article.translate.xml:1647
-#: article.translate.xml:1653
-#: article.translate.xml:1661
+#: article.translate.xml:1043 article.translate.xml:1049
+#: article.translate.xml:1055 article.translate.xml:1345
+#: article.translate.xml:1346 article.translate.xml:1351
+#: article.translate.xml:1358 article.translate.xml:1487
+#: article.translate.xml:1493 article.translate.xml:1502
+#: article.translate.xml:1504 article.translate.xml:1512
+#: article.translate.xml:1519 article.translate.xml:1520
+#: article.translate.xml:1528 article.translate.xml:1529
+#: article.translate.xml:1530 article.translate.xml:1640
+#: article.translate.xml:1646 article.translate.xml:1647
+#: article.translate.xml:1653 article.translate.xml:1661
 msgid "0"
 msgstr "0"
 
@@ -2200,8 +2138,7 @@ msgstr "Rockwell"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1078
-msgid ""
-"Reference modem with internal 16550 or an emulation (RC144DPi/C3000-25)"
+msgid "Reference modem with internal 16550 or an emulation (RC144DPi/C3000-25)"
 msgstr ""
 "Modem de referência com 16550 interno ou uma emulação (RC144DPi / C3000-25)"
 
@@ -2391,8 +2328,7 @@ msgid "Access Allowed"
 msgstr "Acesso permitido"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1183
-#: article.translate.xml:1192
+#: article.translate.xml:1183 article.translate.xml:1192
 #: article.translate.xml:1201
 msgid "+0x00"
 msgstr "+0x00"
@@ -2436,8 +2372,7 @@ msgstr ""
 "acessadas pelo host lendo esta porta."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1202
-#: article.translate.xml:1213
+#: article.translate.xml:1202 article.translate.xml:1213
 msgid "write/read (DLAB==1)"
 msgstr "write/read (DLAB==1)"
 
@@ -2458,8 +2393,7 @@ msgstr ""
 "transmissão do UART. Este registrador contém os bits de 0 a 7 do divisor."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1212
-#: article.translate.xml:1223
+#: article.translate.xml:1212 article.translate.xml:1223
 msgid "+0x01"
 msgstr "+0x01"
 
@@ -2510,71 +2444,51 @@ msgstr ""
 "verdadeira(s) da interrupção."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1248
-#: article.translate.xml:1325
-#: article.translate.xml:1436
-#: article.translate.xml:1566
-#: article.translate.xml:1691
-#: article.translate.xml:1765
+#: article.translate.xml:1248 article.translate.xml:1325
+#: article.translate.xml:1436 article.translate.xml:1566
+#: article.translate.xml:1691 article.translate.xml:1765
 #: article.translate.xml:1846
 msgid "Bit 7"
 msgstr "Bit 7"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1249
-#: article.translate.xml:1254
-#: article.translate.xml:1259
-#: article.translate.xml:1264
-#: article.translate.xml:1370
-#: article.translate.xml:1375
-#: article.translate.xml:1449
-#: article.translate.xml:1454
-#: article.translate.xml:1692
-#: article.translate.xml:1697
+#: article.translate.xml:1249 article.translate.xml:1254
+#: article.translate.xml:1259 article.translate.xml:1264
+#: article.translate.xml:1370 article.translate.xml:1375
+#: article.translate.xml:1449 article.translate.xml:1454
+#: article.translate.xml:1692 article.translate.xml:1697
 #: article.translate.xml:1702
 msgid "Reserved, always 0."
 msgstr "Reserved, always 0."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1253
-#: article.translate.xml:1330
-#: article.translate.xml:1442
-#: article.translate.xml:1578
-#: article.translate.xml:1696
-#: article.translate.xml:1773
+#: article.translate.xml:1253 article.translate.xml:1330
+#: article.translate.xml:1442 article.translate.xml:1578
+#: article.translate.xml:1696 article.translate.xml:1773
 #: article.translate.xml:1852
 msgid "Bit 6"
 msgstr "6 bits"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1258
-#: article.translate.xml:1369
-#: article.translate.xml:1448
-#: article.translate.xml:1587
-#: article.translate.xml:1701
-#: article.translate.xml:1781
+#: article.translate.xml:1258 article.translate.xml:1369
+#: article.translate.xml:1448 article.translate.xml:1587
+#: article.translate.xml:1701 article.translate.xml:1781
 #: article.translate.xml:1858
 msgid "Bit 5"
 msgstr "Bit 5"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1263
-#: article.translate.xml:1374
-#: article.translate.xml:1453
-#: article.translate.xml:1594
-#: article.translate.xml:1706
-#: article.translate.xml:1790
+#: article.translate.xml:1263 article.translate.xml:1374
+#: article.translate.xml:1453 article.translate.xml:1594
+#: article.translate.xml:1706 article.translate.xml:1790
 #: article.translate.xml:1864
 msgid "Bit 4"
 msgstr "Bit 4"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1268
-#: article.translate.xml:1379
-#: article.translate.xml:1458
-#: article.translate.xml:1602
-#: article.translate.xml:1718
-#: article.translate.xml:1796
+#: article.translate.xml:1268 article.translate.xml:1379
+#: article.translate.xml:1458 article.translate.xml:1602
+#: article.translate.xml:1718 article.translate.xml:1796
 #: article.translate.xml:1870
 msgid "Bit 3"
 msgstr "Bit 3"
@@ -2591,12 +2505,9 @@ msgstr ""
 "das linhas de status."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1276
-#: article.translate.xml:1387
-#: article.translate.xml:1464
-#: article.translate.xml:1611
-#: article.translate.xml:1727
-#: article.translate.xml:1804
+#: article.translate.xml:1276 article.translate.xml:1387
+#: article.translate.xml:1464 article.translate.xml:1611
+#: article.translate.xml:1727 article.translate.xml:1804
 #: article.translate.xml:1878
 msgid "Bit 2"
 msgstr "Bit 2"
@@ -2613,12 +2524,9 @@ msgstr ""
 "sinal BREAK) for detectado nos dados de entrada."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1284
-#: article.translate.xml:1396
-#: article.translate.xml:1469
-#: article.translate.xml:1621
-#: article.translate.xml:1734
-#: article.translate.xml:1810
+#: article.translate.xml:1284 article.translate.xml:1396
+#: article.translate.xml:1469 article.translate.xml:1621
+#: article.translate.xml:1734 article.translate.xml:1810
 #: article.translate.xml:1886
 msgid "Bit 1"
 msgstr "Bit 1"
@@ -2636,12 +2544,9 @@ msgstr ""
 "transmitidos."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1293
-#: article.translate.xml:1405
-#: article.translate.xml:1537
-#: article.translate.xml:1627
-#: article.translate.xml:1741
-#: article.translate.xml:1820
+#: article.translate.xml:1293 article.translate.xml:1405
+#: article.translate.xml:1537 article.translate.xml:1627
+#: article.translate.xml:1741 article.translate.xml:1820
 #: article.translate.xml:1894
 msgid "Bit 0"
 msgstr "Bit 0"
@@ -2662,8 +2567,7 @@ msgstr ""
 "tiver sido recebido quando o FIFO está desativado."
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1307
-#: article.translate.xml:1417
+#: article.translate.xml:1307 article.translate.xml:1417
 msgid "+0x02"
 msgstr "+0x02"
 
@@ -2679,7 +2583,6 @@ msgid ""
 "UART.)"
 msgstr ""
 "Registro de Controle FIFO (FCR) (Esta porta não existe no UART 8250 e 16450)."
-""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1326
@@ -2710,7 +2613,6 @@ msgstr "Quantas palavras são recebidas antes que uma interrupção seja gerada"
 msgid ""
 "DMA Mode Select. If Bit 0 is set to \"1\" (FIFOs enabled), setting this bit "
 "changes the operation of the -RXRDY and -TXRDY signals from Mode 0 to Mode 1."
-""
 msgstr ""
 "DMA Mode Select. Se o Bit 0 for ajustado para \"1\" (FIFOs habilitado), a "
 "configuração deste bit altera a operação dos sinais -RXRDY e -TXRDY do Modo "
@@ -2741,9 +2643,9 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1406
 msgid ""
-"16550 FIFO Enable. When set, both the transmit and receive FIFOs are enabled."
-" Any contents in the holding register, shift registers or FIFOs are lost "
-"when FIFOs are enabled or disabled."
+"16550 FIFO Enable. When set, both the transmit and receive FIFOs are "
+"enabled. Any contents in the holding register, shift registers or FIFOs are "
+"lost when FIFOs are enabled or disabled."
 msgstr ""
 "16550 FIFO Enable. Quando configurado, os FIFOs de transmissão e recepção "
 "estão ativados. Qualquer conteúdo no registro de espera, registradores de "
@@ -2761,8 +2663,7 @@ msgid "Interrupt Identification Register"
 msgstr "Registro de identificação de interrupção"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1437
-#: article.translate.xml:1443
+#: article.translate.xml:1437 article.translate.xml:1443
 msgid "FIFOs enabled. On the 8250/16450 UART, this bit is zero."
 msgstr "FIFOs habilitado. No 8250/16450 UART, esse bit é zero."
 
@@ -2812,8 +2713,7 @@ msgid "Received Error (OE, PE, BI, or FE)"
 msgstr "Received Error (OE, PE, BI, or FE)"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1505
-#: article.translate.xml:1513
+#: article.translate.xml:1505 article.translate.xml:1513
 msgid "Second"
 msgstr "Segundo"
 
@@ -2863,10 +2763,8 @@ msgid "+0x03"
 msgstr "+0x03"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1548
-#: article.translate.xml:1678
-#: article.translate.xml:1752
-#: article.translate.xml:1833
+#: article.translate.xml:1548 article.translate.xml:1678
+#: article.translate.xml:1752 article.translate.xml:1833
 #: article.translate.xml:1906
 msgid "write/read"
 msgstr "write/read"
@@ -3169,8 +3067,7 @@ msgstr "Indicador de anel (RI). Reflete o estado da linha RI no UART."
 #. (itstool) path: row/entry
 #: article.translate.xml:1859
 msgid "Data Set Ready (DSR). Reflects the state of the DSR line on the UART."
-msgstr ""
-"Conjunto de dados pronto (DSR). Reflete o estado da linha DSR no UART."
+msgstr "Conjunto de dados pronto (DSR). Reflete o estado da linha DSR no UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1865
@@ -3310,7 +3207,6 @@ msgid ""
 "of communication system, it is not necessary for the vendor to use UARTs "
 "that are compatible with the 8250, 16450, or the 16550 UART. This leaves the "
 "designer free to components that may have better performance characteristics."
-""
 msgstr ""
 "Além desses UARTs <quote>dumb</quote>, muitos fornecedores produzem placas "
 "de comunicação serial inteligentes. Esse tipo de design geralmente fornece "
@@ -3429,9 +3325,10 @@ msgstr ""
 #: article.translate.xml:2021
 msgid ""
 "You either need the kernel sources installed so you can recompile the "
-"necessary options or you will need someone else to compile it for you. The 2."
-"0.5 default kernel does <emphasis>not</emphasis> come with multiport support "
-"enabled and you will need to add a device entry for each port anyways."
+"necessary options or you will need someone else to compile it for you. The "
+"2.0.5 default kernel does <emphasis>not</emphasis> come with multiport "
+"support enabled and you will need to add a device entry for each port "
+"anyways."
 msgstr ""
 "Você precisa do código fonte do kernel instalado para poder recompilar as "
 "opções necessárias ou precisará de alguém para compilá-las para você. O "
@@ -3528,9 +3425,11 @@ msgstr ""
 #. (itstool) path: para/programlisting
 #: article.translate.xml:2085
 #, no-wrap
-msgid " flags\n"
+msgid ""
+" flags\n"
 "\t      0x1005"
-msgstr " flags\n"
+msgstr ""
+" flags\n"
 "\t      0x1005"
 
 #. (itstool) path: step/para
@@ -3555,11 +3454,11 @@ msgstr ""
 "indica o número menor da porta principal (a última porta em uma Boca 16) e "
 "<replaceable>YY</replaceable> indica se o FIFO está ativado ou desativado "
 "(ativado), o compartilhamento de IRQ é usado (sim) e se há um registro de "
-"controle de IRQ compatível com AST/4 (não). Neste exemplo, <_:programlisting-"
-"1/> indica que a porta principal é a sio16. Se eu adicionasse outra placa e "
-"atribuísse do sio17 até sio28, os sinalizadores para todas as 16 portas "
-"<emphasis>nesta</emphasis> placa seriam 0x1C05, onde 1C indica o menor "
-"número da porta principal. Não altere a configuração 05."
+"controle de IRQ compatível com AST/4 (não). Neste exemplo, <_:"
+"programlisting-1/> indica que a porta principal é a sio16. Se eu adicionasse "
+"outra placa e atribuísse do sio17 até sio28, os sinalizadores para todas as "
+"16 portas <emphasis>nesta</emphasis> placa seriam 0x1C05, onde 1C indica o "
+"menor número da porta principal. Não altere a configuração 05."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2095
@@ -3570,11 +3469,11 @@ msgid ""
 "successful probe of the Boca ports as follows: (obviously the sio numbers, "
 "IO and IRQ could be different)"
 msgstr ""
-"Salve e complete a configuração do kernel, recompile, instale e reinicialize."
-" Presumindo que você tenha instalado com sucesso o kernel recompilado e "
-"configurado para o endereço e IRQ correto, sua mensagem de boot deve indicar "
-"o teste bem-sucedido das portas Boca da seguinte forma: (obviamente os "
-"números sio, IO e IRQ podem ser diferentes)"
+"Salve e complete a configuração do kernel, recompile, instale e "
+"reinicialize. Presumindo que você tenha instalado com sucesso o kernel "
+"recompilado e configurado para o endereço e IRQ correto, sua mensagem de "
+"boot deve indicar o teste bem-sucedido das portas Boca da seguinte forma: "
+"(obviamente os números sio, IO e IRQ podem ser diferentes)"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:2103
@@ -3781,7 +3680,6 @@ msgstr ""
 "desperdício de recursos de IRQ, já que deve ser basicamente possível "
 "executar ambas as portas da placa de extensão usando um único IRQ com a "
 "configuração <literal>COM_MULTIPORT</literal> descrita nas seções anteriores."
-""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2204
@@ -4052,12 +3950,10 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
-"<prompt>#</prompt> <userinput>for i in 0 1 2 3 4 5 6 7;do ./MAKEDEV cuac$i "
-"ttyc$i;done</userinput>"
+"<prompt>#</prompt> <userinput>for i in 0 1 2 3 4 5 6 7;do ./MAKEDEV cuac$i ttyc$i;done</userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
-"<prompt>#</prompt> <userinput>for i in 0 1 2 3 4 5 6 7;do ./MAKEDEV cuac$i "
-"ttyc$i;done</userinput>"
+"<prompt>#</prompt> <userinput>for i in 0 1 2 3 4 5 6 7;do ./MAKEDEV cuac$i ttyc$i;done</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2334
@@ -4261,12 +4157,10 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
-"<prompt>#</prompt> <userinput>./MAKEDEV ttyA<replaceable>nn</replaceable> "
-"cuaA<replaceable>nn</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>./MAKEDEV ttyA<replaceable>nn</replaceable> cuaA<replaceable>nn</replaceable></userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>cd /dev</userinput>\n"
-"<prompt>#</prompt> <userinput>./MAKEDEV ttyA<replaceable>nn</replaceable> "
-"cuaA<replaceable>nn</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>./MAKEDEV ttyA<replaceable>nn</replaceable> cuaA<replaceable>nn</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2426
