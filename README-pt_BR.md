@@ -78,6 +78,8 @@
 
 ─ arch-handbook
 
+─ design-44bsd
+
 ─ ~~dev-model~~ - **completo**
 
 ─ developers-handbook
@@ -87,6 +89,8 @@
 ─ ~~fdp-primer~~ - **completo**
 
 ─ handbook
+
+─ pmake
 
 ─ ~~porters-handbook~~ - **completo**
 
