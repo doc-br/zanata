@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-08 14:16-0200\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2018-09-16 01:04+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -164,16 +164,15 @@ msgstr "Como instalar"
 #. (itstool) path: sect1/para
 #: article.translate.xml:73
 msgid ""
-"Adding bridge functionalities to a FreeBSD system is not difficult. Since "
-"4.5 release it is possible to load such functionalities as modules instead "
-"of having to rebuild the kernel, simplifying the procedure a great deal. In "
-"the following subsections I will explain both installation ways."
+"Adding bridge functionalities to a FreeBSD system is not difficult. Since 4."
+"5 release it is possible to load such functionalities as modules instead of "
+"having to rebuild the kernel, simplifying the procedure a great deal. In the "
+"following subsections I will explain both installation ways."
 msgstr ""
 "Adicionar funcionalidades de bridge a um sistema FreeBSD não é difícil. "
 "Desde a versão 4.5 é possível carregar tais funcionalidades como módulos ao "
-"invés de ter que reconstruir o kernel, simplificando bastante o "
-"procedimento. Nas subseções seguintes, explicarei as duas formas de "
-"instalação."
+"invés de ter que reconstruir o kernel, simplificando bastante o procedimento."
+" Nas subseções seguintes, explicarei as duas formas de instalação."
 
 #. (itstool) path: important/para
 #: article.translate.xml:80
@@ -229,12 +228,10 @@ msgstr ""
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:103
 #, no-wrap
-msgid ""
-"options BRIDGE\n"
+msgid "options BRIDGE\n"
 "options IPFIREWALL\n"
 "options IPFIREWALL_VERBOSE"
-msgstr ""
-"options BRIDGE\n"
+msgstr "options BRIDGE\n"
 "options IPFIREWALL\n"
 "options IPFIREWALL_VERBOSE"
 
@@ -458,13 +455,19 @@ msgstr ""
 #: article.translate.xml:207
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.config=fxp0:0,xl0:0</userinput>\n"
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.ipfw=1</userinput>\n"
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</userinput>"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.config=fxp0:0,xl0:"
+"0</userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.ipfw=1</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</"
+"userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.config=fxp0:0,xl0:0</userinput>\n"
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.ipfw=1</userinput>\n"
-"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</userinput>"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.config=fxp0:0,xl0:"
+"0</userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.ipfw=1</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:211
@@ -730,8 +733,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:332
 msgid ""
-"Those of you who have set up firewalls before may notice some things "
-"missing. In particular, there are no anti-spoofing rules, in fact we did "
+"Those of you who have set up firewalls before may notice some things missing."
+" In particular, there are no anti-spoofing rules, in fact we did "
 "<emphasis>not</emphasis> add:"
 msgstr ""
 "Aqueles de vocês que já configuraram firewalls antes podem notar algumas "

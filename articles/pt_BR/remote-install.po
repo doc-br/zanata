@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-08 14:16-0200\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2018-09-05 01:01+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -26,17 +26,16 @@ msgstr ""
 #: article.translate.xml:5
 msgid ""
 "Remote Installation of the FreeBSD Operating System Without a Remote Console"
-msgstr "Instalação Remota do Sistema Operacional FreeBSD Sem um Console Remoto"
+msgstr ""
+"Instalação Remota do Sistema Operacional FreeBSD Sem um Console Remoto"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
 #, no-wrap
-msgid ""
-"\n"
+msgid "\n"
 "\t  <email>danger@FreeBSD.org</email>\n"
 "\t"
-msgstr ""
-"\n"
+msgstr "\n"
 "\t  <email>danger@FreeBSD.org</email>\n"
 "\t"
 
@@ -317,13 +316,19 @@ msgstr ""
 #: article.translate.xml:165
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</userinput>"
+"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-"
+"<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>."
+"tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</"
+"userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
-"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</userinput>"
+"<prompt>#</prompt> <userinput>fetch http://mfsbsd.vx.sk/release/mfsbsd-"
+"<replaceable>2.1</replaceable>.tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>tar xvzf mfsbsd-<replaceable>2.1</replaceable>."
+"tar.gz</userinput>\n"
+"<prompt>#</prompt> <userinput>cd mfsbsd-<replaceable>2.1</replaceable>/</"
+"userinput>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:170
@@ -443,11 +448,9 @@ msgstr ""
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:224
 #, no-wrap
-msgid ""
-"defaultrouter=\"192.168.0.1\"\n"
+msgid "defaultrouter=\"192.168.0.1\"\n"
 "ifconfig_re0=\"inet 192.168.0.2/24\""
-msgstr ""
-"defaultrouter=\"192.168.0.1\"\n"
+msgstr "defaultrouter=\"192.168.0.1\"\n"
 "ifconfig_re0=\"inet 192.168.0.2/24\""
 
 #. (itstool) path: sect2/title
@@ -487,10 +490,12 @@ msgstr ""
 #: article.translate.xml:246
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f <replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f "
+"<replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>mount_cd9660 /dev/md10 /cdrom</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f <replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>mdconfig -a -t vnode -u 10 -f "
+"<replaceable>FreeBSD-10.1-RELEASE-amd64-disc1.iso</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>mount_cd9660 /dev/md10 /cdrom</userinput>"
 
 #. (itstool) path: sect2/para
@@ -508,13 +513,19 @@ msgstr ""
 #: article.translate.xml:254
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C <replaceable>DIST</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C "
+"<replaceable>DIST</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C "
+"<replaceable>DIST</replaceable></userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C <replaceable>DIST</replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C <replaceable>DIST</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>mkdir <replaceable>DIST</replaceable></"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/base.txz -C "
+"<replaceable>DIST</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C "
+"<replaceable>DIST</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:258
@@ -526,8 +537,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:261
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></userinput>"
-msgstr "<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>make BASE=<replaceable>DIST</replaceable></"
+"userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:264
@@ -562,8 +577,10 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:280
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>scp disk.img root@192.168.0.2:.</userinput>"
-msgstr "<prompt>#</prompt> <userinput>scp disk.img root@192.168.0.2:.</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>scp disk.img root@192.168.0.2:.</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>scp disk.img root@192.168.0.2:.</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:282
@@ -581,8 +598,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:288
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</userinput>"
-msgstr "<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>dd if=/root/disk.img of=/dev/sda bs=1m</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:290
@@ -667,8 +688,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:324
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</replaceable> count=2</userinput>"
-msgstr "<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</replaceable> count=2</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</"
+"replaceable> count=2</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/<replaceable>ad0</"
+"replaceable> count=2</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:326
@@ -703,10 +728,10 @@ msgstr ""
 "<citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, o qual também será abordado nesta seção. A "
 "primeira opção está bem documentada no capítulo <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/install-steps.html"
-"\">Instalando o FreeBSD</link> do Handbook do FreeBSD. Como foi mencionado "
-"na introdução, este artigo apresentará como configurar um sistema com "
-"recursos RAID-1 e <application>ZFS</application>. Nossa configuração "
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/install-steps."
+"html\">Instalando o FreeBSD</link> do Handbook do FreeBSD. Como foi "
+"mencionado na introdução, este artigo apresentará como configurar um sistema "
+"com recursos RAID-1 e <application>ZFS</application>. Nossa configuração "
 "consistirá de uma pequena partição <filename>/</filename> (root) , de um "
 "dataset  composto por um <filename>/usr</filename> e  um <filename>/var</"
 "filename> , todos espelhados com o <citerefentry><refentrytitle>gmirror</"
@@ -735,31 +760,47 @@ msgstr ""
 #: article.translate.xml:351
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id=\"fdisk\"/>\n"
+"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id="
+"\"fdisk\"/>\n"
 "<prompt>#</prompt> <userinput>fdisk -BI /dev/ad1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-writing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-writing\"/>\n"
 "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad1s1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-editing\"/>\n"
-"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt &amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id=\"bsdlabel-restore\"/>\n"
-"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> <co xml:id=\"gmirror1\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-editing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt "
+"&amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id="
+"\"bsdlabel-restore\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> "
+"<co xml:id=\"gmirror1\"/>\n"
 "<prompt>#</prompt> <userinput>gmirror label var /dev/ad[01]s1d</userinput>\n"
 "<prompt>#</prompt> <userinput>gmirror label usr /dev/ad[01]s1e</userinput>\n"
-"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</userinput> <co xml:id=\"gmirror2\"/>\n"
-"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id=\"newfs\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</"
+"userinput> <co xml:id=\"gmirror2\"/>\n"
+"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id="
+"\"newfs\"/>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/var</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/usr</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id=\"fdisk\"/>\n"
+"<prompt>#</prompt> <userinput>fdisk -BI /dev/ad0</userinput> <co xml:id="
+"\"fdisk\"/>\n"
 "<prompt>#</prompt> <userinput>fdisk -BI /dev/ad1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-writing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-writing\"/>\n"
 "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/ad1s1</userinput>\n"
-"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id=\"bsdlabel-editing\"/>\n"
-"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt &amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id=\"bsdlabel-restore\"/>\n"
-"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> <co xml:id=\"gmirror1\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel -e /dev/ad0s1</userinput> <co xml:id="
+"\"bsdlabel-editing\"/>\n"
+"<prompt>#</prompt> <userinput>bsdlabel /dev/ad0s1 &gt; /tmp/bsdlabel.txt "
+"&amp;&amp; bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt</userinput> <co xml:id="
+"\"bsdlabel-restore\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label root /dev/ad[01]s1a</userinput> "
+"<co xml:id=\"gmirror1\"/>\n"
 "<prompt>#</prompt> <userinput>gmirror label var /dev/ad[01]s1d</userinput>\n"
 "<prompt>#</prompt> <userinput>gmirror label usr /dev/ad[01]s1e</userinput>\n"
-"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</userinput> <co xml:id=\"gmirror2\"/>\n"
-"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id=\"newfs\"/>\n"
+"<prompt>#</prompt> <userinput>gmirror label -F swap /dev/ad[01]s1b</"
+"userinput> <co xml:id=\"gmirror2\"/>\n"
+"<prompt>#</prompt> <userinput>newfs /dev/mirror/root</userinput> <co xml:id="
+"\"newfs\"/>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/var</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs /dev/mirror/usr</userinput>"
 
@@ -1009,8 +1050,12 @@ msgstr ""
 #. (itstool) path: listitem/screen
 #: article.translate.xml:496
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</userinput>"
-msgstr "<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>cp -Rp /boot/GENERIC/* /boot/kernel</"
+"userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
@@ -1031,14 +1076,16 @@ msgstr ""
 #: article.translate.xml:509
 #, no-wrap
 msgid ""
-"# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
+"# Device                Mountpoint      FStype  Options         Dump    "
+"Pass#\n"
 "/dev/mirror/swap        none            swap    sw              0       0\n"
 "/dev/mirror/root        /               ufs     rw              1       1\n"
 "/dev/mirror/usr         /usr            ufs     rw              2       2\n"
 "/dev/mirror/var         /var            ufs     rw              2       2\n"
 "/dev/cd0                /cdrom          cd9660  ro,noauto       0       0"
 msgstr ""
-"# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
+"# Device                Mountpoint      FStype  Options         Dump    "
+"Pass#\n"
 "/dev/mirror/swap        none            swap    sw              0       0\n"
 "/dev/mirror/root        /               ufs     rw              1       1\n"
 "/dev/mirror/usr         /usr            ufs     rw              2       2\n"
@@ -1049,16 +1096,15 @@ msgstr ""
 #: article.translate.xml:518
 msgid ""
 "Create <filename>/boot/loader.conf</filename> with the following contents:"
-msgstr "Crie o <filename>/boot/loader.conf</filename> com o seguinte conteúdo:"
+msgstr ""
+"Crie o <filename>/boot/loader.conf</filename> com o seguinte conteúdo:"
 
 #. (itstool) path: listitem/programlisting
 #: article.translate.xml:521
 #, no-wrap
-msgid ""
-"geom_mirror_load=\"YES\"\n"
+msgid "geom_mirror_load=\"YES\"\n"
 "zfs_load=\"YES\""
-msgstr ""
-"geom_mirror_load=\"YES\"\n"
+msgstr "geom_mirror_load=\"YES\"\n"
 "zfs_load=\"YES\""
 
 #. (itstool) path: listitem/para
@@ -1073,8 +1119,12 @@ msgstr ""
 #. (itstool) path: listitem/screen
 #: article.translate.xml:530
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc.conf </userinput>"
-msgstr "<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc.conf </userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc."
+"conf </userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>echo 'zfs_enable=\"YES\"' &gt;&gt; /etc/rc."
+"conf </userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:534
@@ -1141,8 +1191,12 @@ msgstr ""
 #. (itstool) path: sect1/screen
 #: article.translate.xml:562
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</userinput>"
-msgstr "<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>zpool create tank mirror /dev/ad[01]s1f</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:564
@@ -1155,17 +1209,23 @@ msgstr "Em seguida, crie alguns sistemas de arquivos:"
 msgid ""
 "<prompt>#</prompt> <userinput>zfs create tank/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>zfs create tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</"
+"userinput>\n"
 "<prompt>#</prompt> <userinput>zfs set compression=on tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</userinput>"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</"
+"userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>zfs create tank/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>zfs create tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set compression=gzip tank/ports</"
+"userinput>\n"
 "<prompt>#</prompt> <userinput>zfs set compression=on tank/src</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</userinput>\n"
-"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</userinput>"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/ports tank/ports</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>zfs set mountpoint=/usr/src tank/src</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:573
