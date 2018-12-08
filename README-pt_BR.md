@@ -41,7 +41,7 @@
 
 ─ ~~linux-emulation~~ - **completo**
 
-─ ~~linux-users~~ - **completo**
+─ linux-users (Alterado em r52615)
 
 ─ ~~mailing-list-faq~~ - **completo**
 
@@ -84,15 +84,15 @@
 
 ─ developers-handbook
 
-─ ~~faq~~ - **completo**
+─ faqs (Alterado em r52615)
 
-─ ~~fdp-primer~~ - **completo**
+─ fdp-primer (Alterado em r52615)
 
 ─ handbook
 
 ─ pmake
 
-─ ~~porters-handbook~~ - **completo**
+─ porters-handbook (Alterado em r52615)
 
 
 Se for traduzir por outro aplicativo que não seja o Zanata, utilize sempre os
