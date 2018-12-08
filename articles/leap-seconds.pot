@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,9 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:8
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 2017-11-30 14:49:53Z ygy $"
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 "
+"2017-11-30 14:49:53Z ygy $"
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -33,22 +35,36 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:14
-msgid "A <emphasis>leap second</emphasis> is an one second adjustment made at specific times of year to UTC to synchronize atomic time scales with variations in the rotation of the Earth. This article describes how FreeBSD interacts with leap seconds."
+msgid ""
+"A <emphasis>leap second</emphasis> is an one second adjustment made at "
+"specific times of year to UTC to synchronize atomic time scales with "
+"variations in the rotation of the Earth. This article describes how FreeBSD "
+"interacts with leap seconds."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:20
-msgid "As of this writing, the next leap second will occur at 2015-Jun-30 23:59:60 UTC. This leap second will occur during a business day for North and South America and the Asia/Pacific region."
+msgid ""
+"As of this writing, the next leap second will occur at 2015-Jun-30 23:59:60 "
+"UTC. This leap second will occur during a business day for North and South "
+"America and the Asia/Pacific region."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:25
-msgid "Leap seconds are announced by <link xlink:href=\"http://datacenter.iers.org/\"><acronym>IERS</acronym></link> on <link xlink:href=\"http://datacenter.iers.org/web/guest/bulletins/-/somos/5Rgv/product/16\">Bulletin C</link>."
+msgid ""
+"Leap seconds are announced by <link xlink:href=\"http://datacenter.iers.org/"
+"\"><acronym>IERS</acronym></link> on <link xlink:href=\"http://datacenter."
+"iers.org/web/guest/bulletins/-/somos/5Rgv/product/16\">Bulletin C</link>."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:29
-msgid "Standard leap second behavior is described in <link xlink:href=\"https://tools.ietf.org/html/rfc7164#section-3\">RFC 7164</link>. Also see <citerefentry><refentrytitle>time2posix</refentrytitle><manvolnum>3</manvolnum></citerefentry>."
+msgid ""
+"Standard leap second behavior is described in <link xlink:href=\"https://"
+"tools.ietf.org/html/rfc7164#section-3\">RFC 7164</link>. Also see "
+"<citerefentry><refentrytitle>time2posix</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -58,17 +74,32 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:36
-msgid "The easiest way to handle leap seconds is with the <acronym>POSIX</acronym> time rules FreeBSD uses by default, combined with <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-ntp.html\"><acronym>NTP</acronym></link>. When <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is running and the time is synchronized with upstream <acronym>NTP</acronym> servers that handle leap seconds correctly, the leap second will cause the system time to automatically repeat the last second of the day. No other adjustments are necessary."
+msgid ""
+"The easiest way to handle leap seconds is with the <acronym>POSIX</acronym> "
+"time rules FreeBSD uses by default, combined with <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-ntp.html"
+"\"><acronym>NTP</acronym></link>. When <citerefentry><refentrytitle>ntpd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> is running and the "
+"time is synchronized with upstream <acronym>NTP</acronym> servers that "
+"handle leap seconds correctly, the leap second will cause the system time to "
+"automatically repeat the last second of the day. No other adjustments are "
+"necessary."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:45
-msgid "If the upstream <acronym>NTP</acronym> servers do not handle leap seconds correctly, <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></citerefentry> will step the time by one second after the errant upstream server has noticed and stepped itself."
+msgid ""
+"If the upstream <acronym>NTP</acronym> servers do not handle leap seconds "
+"correctly, <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> will step the time by one second after the errant "
+"upstream server has noticed and stepped itself."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
-msgid "If <acronym>NTP</acronym> is not being used, manual adjustment of the system clock will be required after the leap second has passed."
+msgid ""
+"If <acronym>NTP</acronym> is not being used, manual adjustment of the system "
+"clock will be required after the leap second has passed."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -78,32 +109,50 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:58
-msgid "Leap seconds are inserted at the same instant all over the world: <acronym>UTC</acronym> midnight. In Japan that is mid-morning, in the Pacific mid-day, in the Americas late afternoon, and in Europe at night."
+msgid ""
+"Leap seconds are inserted at the same instant all over the world: "
+"<acronym>UTC</acronym> midnight. In Japan that is mid-morning, in the "
+"Pacific mid-day, in the Americas late afternoon, and in Europe at night."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:63
-msgid "We believe and expect that FreeBSD, if provided correct and stable <acronym>NTP</acronym> service, will work as designed during this leap second, as it did during the previous ones."
+msgid ""
+"We believe and expect that FreeBSD, if provided correct and stable "
+"<acronym>NTP</acronym> service, will work as designed during this leap "
+"second, as it did during the previous ones."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
-msgid "However, we caution that practically no applications have ever asked the kernel about leap seconds. Our experience is that, as designed, leap seconds are essentially a replay of the second before the leap second, and this is a surprise to most application programmers."
+msgid ""
+"However, we caution that practically no applications have ever asked the "
+"kernel about leap seconds. Our experience is that, as designed, leap seconds "
+"are essentially a replay of the second before the leap second, and this is a "
+"surprise to most application programmers."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
-msgid "Other operating systems and other computers may or may not handle the leap-second the same way as FreeBSD, and systems without correct and stable <acronym>NTP</acronym> service will not know anything about leap seconds at all."
+msgid ""
+"Other operating systems and other computers may or may not handle the leap-"
+"second the same way as FreeBSD, and systems without correct and stable "
+"<acronym>NTP</acronym> service will not know anything about leap seconds at "
+"all."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
-msgid "It is not unheard of for computers to crash because of leap seconds, and experience has shown that a large fraction of all public <acronym>NTP</acronym> servers might handle and announce the leap second incorrectly."
+msgid ""
+"It is not unheard of for computers to crash because of leap seconds, and "
+"experience has shown that a large fraction of all public <acronym>NTP</"
+"acronym> servers might handle and announce the leap second incorrectly."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
-msgid "Please try to make sure nothing horrible happens because of the leap second."
+msgid ""
+"Please try to make sure nothing horrible happens because of the leap second."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -113,19 +162,26 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
-msgid "It is possible to test whether a leap second will be used. Due to the nature of <acronym>NTP</acronym>, the test might work up to 24 hours before the leap second. Some major reference clock sources only announce leap seconds one hour ahead of the event. Query the <acronym>NTP</acronym> daemon:"
+msgid ""
+"It is possible to test whether a leap second will be used. Due to the nature "
+"of <acronym>NTP</acronym>, the test might work up to 24 hours before the "
+"leap second. Some major reference clock sources only announce leap seconds "
+"one hour ahead of the event. Query the <acronym>NTP</acronym> daemon:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:97
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>ntpq -c 'rv 0 leap'</userinput>"
+msgid "<prompt>%</prompt> <userinput>ntpq -c 'rv 0 leap'</userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:99
-msgid "Output that includes <literal>leap_add_sec</literal> indicates proper support of the leap second. Before the 24 hours leading up to the leap second, or after the leap second has passed, <literal>leap_none</literal> will be shown."
+msgid ""
+"Output that includes <literal>leap_add_sec</literal> indicates proper "
+"support of the leap second. Before the 24 hours leading up to the leap "
+"second, or after the leap second has passed, <literal>leap_none</literal> "
+"will be shown."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -135,6 +191,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:108
-msgid "In practice, leap seconds are usually not a problem on FreeBSD. We hope that this overview helps clarify what to expect and how to make the leap second event proceed more smoothly."
+msgid ""
+"In practice, leap seconds are usually not a problem on FreeBSD. We hope that "
+"this overview helps clarify what to expect and how to make the leap second "
+"event proceed more smoothly."
 msgstr ""
-

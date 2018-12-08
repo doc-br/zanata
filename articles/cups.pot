@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,13 +24,14 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:8
 #, no-wrap
-msgid ""
-"<email>chess@chessgriffin.com</email>"
+msgid "<email>chess@chessgriffin.com</email>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:7
-msgid "<personname><firstname>Chess</firstname><surname>Griffin</surname></personname><affiliation> <_:address-1/> </affiliation>"
+msgid ""
+"<personname><firstname>Chess</firstname><surname>Griffin</surname></"
+"personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -40,14 +41,20 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:15
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:23
-#: article.translate.xml:25
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 46469 2015-04-04 23:31:59Z eadler $"
+#: article.translate.xml:23 article.translate.xml:25
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 46469 2015-04-04 "
+"23:31:59Z eadler $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -72,17 +79,36 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:38
-msgid "<application>CUPS</application>, the Common UNIX Printing System, provides a portable printing layer for <trademark class=\"registered\">UNIX</trademark>-based operating systems. It has been developed by Easy Software Products to promote a standard printing solution for all <trademark class=\"registered\">UNIX</trademark> vendors and users."
+msgid ""
+"<application>CUPS</application>, the Common UNIX Printing System, provides a "
+"portable printing layer for <trademark class=\"registered\">UNIX</trademark>-"
+"based operating systems. It has been developed by Easy Software Products to "
+"promote a standard printing solution for all <trademark class=\"registered"
+"\">UNIX</trademark> vendors and users."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:44
-msgid "<application>CUPS</application> uses the Internet Printing Protocol (<acronym>IPP</acronym>) as the basis for managing print jobs and queues. The Line Printer Daemon (<acronym>LPD</acronym>), Server Message Block (<acronym>SMB</acronym>), and AppSocket (aka JetDirect) protocols are also supported with reduced functionality. <application>CUPS</application> adds network printer browsing and PostScript Printer Description (<acronym>PPD</acronym>) based printing options to support real-world printing under <trademark class=\"registered\">UNIX</trademark>. As a result, <application>CUPS</application> is ideally-suited for sharing and accessing printers in mixed environments of FreeBSD, <trademark class=\"registered\">Linux</trademark>, <trademark class=\"registered\">Mac OS</trademark> X, or <trademark class=\"registered\">Windows</trademark>."
+msgid ""
+"<application>CUPS</application> uses the Internet Printing Protocol "
+"(<acronym>IPP</acronym>) as the basis for managing print jobs and queues. "
+"The Line Printer Daemon (<acronym>LPD</acronym>), Server Message Block "
+"(<acronym>SMB</acronym>), and AppSocket (aka JetDirect) protocols are also "
+"supported with reduced functionality. <application>CUPS</application> adds "
+"network printer browsing and PostScript Printer Description (<acronym>PPD</"
+"acronym>) based printing options to support real-world printing under "
+"<trademark class=\"registered\">UNIX</trademark>. As a result, "
+"<application>CUPS</application> is ideally-suited for sharing and accessing "
+"printers in mixed environments of FreeBSD, <trademark class=\"registered"
+"\">Linux</trademark>, <trademark class=\"registered\">Mac OS</trademark> X, "
+"or <trademark class=\"registered\">Windows</trademark>."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:57
-msgid "The main site for <application>CUPS</application> is <uri xlink:href=\"http://www.cups.org/\">http://www.cups.org/</uri>."
+msgid ""
+"The main site for <application>CUPS</application> is <uri xlink:href="
+"\"http://www.cups.org/\">http://www.cups.org/</uri>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -92,19 +118,25 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:63
-msgid "To install <application>CUPS</application> using a precompiled binary, issue the following command from a root terminal:"
+msgid ""
+"To install <application>CUPS</application> using a precompiled binary, issue "
+"the following command from a root terminal:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:66
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>pkg install cups</userinput>"
+msgid "<prompt>#</prompt> <userinput>pkg install cups</userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
-msgid "Other optional, but recommended, packages are <package>print/gutenprint-cups</package> and <package>print/hplip</package>, both of which add drivers and utilities for a variety of printers. Once installed, the <application>CUPS</application> configuration files can be found in the directory <filename>/usr/local/etc/cups</filename>."
+msgid ""
+"Other optional, but recommended, packages are <package>print/gutenprint-"
+"cups</package> and <package>print/hplip</package>, both of which add drivers "
+"and utilities for a variety of printers. Once installed, the "
+"<application>CUPS</application> configuration files can be found in the "
+"directory <filename>/usr/local/etc/cups</filename>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -114,7 +146,13 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:80
-msgid "After installation, a few files must be edited in order to configure the <application>CUPS</application> server. First, create or modify, as the case may be, the file <filename>/etc/devfs.rules</filename> and add the following information to set the proper permissions on all potential printer devices and to associate printers with the <systemitem class=\"groupname\">cups</systemitem> user group:"
+msgid ""
+"After installation, a few files must be edited in order to configure the "
+"<application>CUPS</application> server. First, create or modify, as the case "
+"may be, the file <filename>/etc/devfs.rules</filename> and add the following "
+"information to set the proper permissions on all potential printer devices "
+"and to associate printers with the <systemitem class=\"groupname\">cups</"
+"systemitem> user group:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
@@ -130,7 +168,15 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:95
-msgid "Note that <replaceable>X</replaceable>, <replaceable>Y</replaceable>, and <replaceable>Z</replaceable> should be replaced with the target USB device listed in the <filename>/dev/usb</filename> directory that corresponds to the printer. To find the correct device, examine the output of <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry>, where <filename>ugen<replaceable>X</replaceable>.<replaceable>Y</replaceable></filename> lists the printer device, which is a symbolic link to a USB device in <filename>/dev/usb</filename>."
+msgid ""
+"Note that <replaceable>X</replaceable>, <replaceable>Y</replaceable>, and "
+"<replaceable>Z</replaceable> should be replaced with the target USB device "
+"listed in the <filename>/dev/usb</filename> directory that corresponds to "
+"the printer. To find the correct device, examine the output of "
+"<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, where <filename>ugen<replaceable>X</replaceable>."
+"<replaceable>Y</replaceable></filename> lists the printer device, which is a "
+"symbolic link to a USB device in <filename>/dev/usb</filename>."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -148,24 +194,34 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:112
-msgid "These two entries will start the <application>CUPS</application> print server on boot and invoke the local devfs rule created above, respectively."
+msgid ""
+"These two entries will start the <application>CUPS</application> print "
+"server on boot and invoke the local devfs rule created above, respectively."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:116
-msgid "In order to enable <application>CUPS</application> printing under certain <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> clients, the line below should be uncommented in <filename>/usr/local/etc/cups/mime.types</filename> and <filename>/usr/local/etc/cups/mime.convs</filename>:"
+msgid ""
+"In order to enable <application>CUPS</application> printing under certain "
+"<trademark class=\"registered\">Microsoft</trademark> <trademark class="
+"\"registered\">Windows</trademark> clients, the line below should be "
+"uncommented in <filename>/usr/local/etc/cups/mime.types</filename> and "
+"<filename>/usr/local/etc/cups/mime.convs</filename>:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:122
 #, no-wrap
-msgid ""
-"application/octet-stream"
+msgid "application/octet-stream"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:124
-msgid "Once these changes have been made, the <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> and <application>CUPS</application> systems must both be restarted, either by rebooting the computer or issuing the following two commands in a root terminal:"
+msgid ""
+"Once these changes have been made, the <citerefentry><refentrytitle>devfs</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> and <application>CUPS</"
+"application> systems must both be restarted, either by rebooting the "
+"computer or issuing the following two commands in a root terminal:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
@@ -183,17 +239,48 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:136
-msgid "After the <application>CUPS</application> system has been installed and configured, the administrator can begin configuring the local printers attached to the <application>CUPS</application> print server. This part of the process is very similar, if not identical, to configuring <application>CUPS</application> printers on other <trademark class=\"registered\">UNIX</trademark>-based operating systems, such as a <trademark class=\"registered\">Linux</trademark> distribution."
+msgid ""
+"After the <application>CUPS</application> system has been installed and "
+"configured, the administrator can begin configuring the local printers "
+"attached to the <application>CUPS</application> print server. This part of "
+"the process is very similar, if not identical, to configuring "
+"<application>CUPS</application> printers on other <trademark class="
+"\"registered\">UNIX</trademark>-based operating systems, such as a "
+"<trademark class=\"registered\">Linux</trademark> distribution."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:144
-msgid "The primary means for managing and administering the <application>CUPS</application> server is through the web-based interface, which can be found by launching a web browser and entering <uri xlink:href=\"http://localhost:631\">http://localhost:631</uri> in the browser's URL bar. If the <application>CUPS</application> server is on another machine on the network, substitute the server's local <acronym>IP</acronym> address for <systemitem>localhost</systemitem>. The <application>CUPS</application> web interface is fairly self-explanatory, as there are sections for managing printers and print jobs, authorizing users, and more. Additionally, on the right-hand side of the Administration screen are several check-boxes allowing easy access to commonly-changed settings, such as whether to share published printers connected to the system, whether to allow remote administration of the <application>CUPS</application> server, and whether to allow users additional access and privileges to the printers and print jobs."
+msgid ""
+"The primary means for managing and administering the <application>CUPS</"
+"application> server is through the web-based interface, which can be found "
+"by launching a web browser and entering <uri xlink:href=\"http://"
+"localhost:631\">http://localhost:631</uri> in the browser's URL bar. If the "
+"<application>CUPS</application> server is on another machine on the network, "
+"substitute the server's local <acronym>IP</acronym> address for "
+"<systemitem>localhost</systemitem>. The <application>CUPS</application> web "
+"interface is fairly self-explanatory, as there are sections for managing "
+"printers and print jobs, authorizing users, and more. Additionally, on the "
+"right-hand side of the Administration screen are several check-boxes "
+"allowing easy access to commonly-changed settings, such as whether to share "
+"published printers connected to the system, whether to allow remote "
+"administration of the <application>CUPS</application> server, and whether to "
+"allow users additional access and privileges to the printers and print jobs."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:162
-msgid "Adding a printer is generally as easy as clicking <quote>Add Printer</quote> at the Administration screen of the <application>CUPS</application> web interface, or clicking one of the <quote>New Printers Found</quote> buttons also at the Administration screen. When presented with the <quote>Device</quote> drop-down box, simply select the desired locally-attached printer, and then continue through the process. If one has added the <package>print/gutenprint-cups</package> or <package>print/hplip</package> ports or packages as referenced above, then additional print drivers will be available in the subsequent screens that might provide more stability or features."
+msgid ""
+"Adding a printer is generally as easy as clicking <quote>Add Printer</quote> "
+"at the Administration screen of the <application>CUPS</application> web "
+"interface, or clicking one of the <quote>New Printers Found</quote> buttons "
+"also at the Administration screen. When presented with the <quote>Device</"
+"quote> drop-down box, simply select the desired locally-attached printer, "
+"and then continue through the process. If one has added the <package>print/"
+"gutenprint-cups</package> or <package>print/hplip</package> ports or "
+"packages as referenced above, then additional print drivers will be "
+"available in the subsequent screens that might provide more stability or "
+"features."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -203,7 +290,13 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:178
-msgid "Once the <application>CUPS</application> server has been configured and printers have been added and published to the network, the next step is to configure the clients, or the machines that are going to access the <application>CUPS</application> server. If one has a single desktop machine that is acting as both server and client, then much of this information may not be needed."
+msgid ""
+"Once the <application>CUPS</application> server has been configured and "
+"printers have been added and published to the network, the next step is to "
+"configure the clients, or the machines that are going to access the "
+"<application>CUPS</application> server. If one has a single desktop machine "
+"that is acting as both server and client, then much of this information may "
+"not be needed."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -213,39 +306,58 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:189
-msgid "<application>CUPS</application> will also need to be installed on your <trademark class=\"registered\">UNIX</trademark> clients. Once <application>CUPS</application> is installed on the clients, then <application>CUPS</application> printers that are shared across the network are often automatically discovered by the printer managers for various desktop environments such as <application>GNOME</application> or <application>KDE</application>. Alternatively, one can access the local <application>CUPS</application> interface on the client machine at <uri xlink:href=\"http://localhost:631\">http://localhost:631</uri> and click on <quote>Add Printer</quote> in the Administration section. When presented with the <quote>Device</quote> drop-down box, simply select the networked <application>CUPS</application> printer, if it was automatically discovered, or select <literal>ipp</literal> or <literal>http</literal> and enter the <acronym>IPP</acronym> or <acronym>HTTP</acronym> <acronym>URI</acronym> of the networked <application>CUPS</application> printer, usually in one of the two following syntaxes:"
+msgid ""
+"<application>CUPS</application> will also need to be installed on your "
+"<trademark class=\"registered\">UNIX</trademark> clients. Once "
+"<application>CUPS</application> is installed on the clients, then "
+"<application>CUPS</application> printers that are shared across the network "
+"are often automatically discovered by the printer managers for various "
+"desktop environments such as <application>GNOME</application> or "
+"<application>KDE</application>. Alternatively, one can access the local "
+"<application>CUPS</application> interface on the client machine at <uri "
+"xlink:href=\"http://localhost:631\">http://localhost:631</uri> and click on "
+"<quote>Add Printer</quote> in the Administration section. When presented "
+"with the <quote>Device</quote> drop-down box, simply select the networked "
+"<application>CUPS</application> printer, if it was automatically discovered, "
+"or select <literal>ipp</literal> or <literal>http</literal> and enter the "
+"<acronym>IPP</acronym> or <acronym>HTTP</acronym> <acronym>URI</acronym> of "
+"the networked <application>CUPS</application> printer, usually in one of the "
+"two following syntaxes:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:209
 #, no-wrap
-msgid ""
-"ipp://<replaceable>server-name-or-ip</replaceable>/printers/<replaceable>printername</replaceable>"
+msgid "ipp://<replaceable>server-name-or-ip</replaceable>/printers/<replaceable>printername</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: article.translate.xml:211
-#: article.translate.xml:240
+#: article.translate.xml:211 article.translate.xml:240
 #, no-wrap
-msgid ""
-"http://<replaceable>server-name-or-ip</replaceable>:631/printers/<replaceable>printername</replaceable>"
+msgid "http://<replaceable>server-name-or-ip</replaceable>:631/printers/<replaceable>printername</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
-msgid "If the <application>CUPS</application> clients have difficulty finding other <application>CUPS</application> printers shared across the network, sometimes it is helpful to add or create a file <filename>/usr/local/etc/cups/client.conf</filename> with a single entry as follows:"
+msgid ""
+"If the <application>CUPS</application> clients have difficulty finding other "
+"<application>CUPS</application> printers shared across the network, "
+"sometimes it is helpful to add or create a file <filename>/usr/local/etc/"
+"cups/client.conf</filename> with a single entry as follows:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:220
 #, no-wrap
-msgid ""
-"ServerName <replaceable>server-ip</replaceable>"
+msgid "ServerName <replaceable>server-ip</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:222
-msgid "In this case, <replaceable>server-ip</replaceable> would be replaced by the local <acronym>IP</acronym> address of the <application>CUPS</application> server on the network."
+msgid ""
+"In this case, <replaceable>server-ip</replaceable> would be replaced by the "
+"local <acronym>IP</acronym> address of the <application>CUPS</application> "
+"server on the network."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -255,12 +367,27 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:230
-msgid "Versions of <trademark class=\"registered\">Windows</trademark> prior to XP did not have the capability to natively network with <acronym>IPP</acronym>-based printers. However, <trademark class=\"registered\">Windows</trademark> XP and later versions do have this capability. Therefore, to add a <application>CUPS</application> printer in these versions of <trademark class=\"registered\">Windows</trademark> is quite easy. Generally, the <trademark class=\"registered\">Windows</trademark> administrator will run the <trademark class=\"registered\">Windows</trademark> <literal>Add Printer</literal> wizard, select <literal>Network Printer</literal> and then enter the <acronym>URI</acronym> in the following syntax:"
+msgid ""
+"Versions of <trademark class=\"registered\">Windows</trademark> prior to XP "
+"did not have the capability to natively network with <acronym>IPP</acronym>-"
+"based printers. However, <trademark class=\"registered\">Windows</"
+"trademark> XP and later versions do have this capability. Therefore, to add "
+"a <application>CUPS</application> printer in these versions of <trademark "
+"class=\"registered\">Windows</trademark> is quite easy. Generally, the "
+"<trademark class=\"registered\">Windows</trademark> administrator will run "
+"the <trademark class=\"registered\">Windows</trademark> <literal>Add "
+"Printer</literal> wizard, select <literal>Network Printer</literal> and then "
+"enter the <acronym>URI</acronym> in the following syntax:"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:242
-msgid "If one has an older version of <trademark class=\"registered\">Windows</trademark> without native <acronym>IPP</acronym> printing support, then the general means of connecting to a <application>CUPS</application> printer is to use <package>net/samba3</package> and <application>CUPS</application> together, which is a topic outside the scope of this chapter."
+msgid ""
+"If one has an older version of <trademark class=\"registered\">Windows</"
+"trademark> without native <acronym>IPP</acronym> printing support, then the "
+"general means of connecting to a <application>CUPS</application> printer is "
+"to use <package>net/samba3</package> and <application>CUPS</application> "
+"together, which is a topic outside the scope of this chapter."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -270,7 +397,24 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:254
-msgid "Difficulties with <application>CUPS</application> often lies in permissions. First, double check the <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> permissions as outlined above. Next, check the actual permissions of the devices created in the file system. It is also helpful to make sure your user is a member of the <systemitem class=\"groupname\">cups</systemitem> group. If the permissions check boxes in the Administration section of the <application>CUPS</application> web interface do not seem to be working, another fix might be to manually backup the main <application>CUPS</application> configuration file located at <filename>/usr/local/etc/cups/cupsd.conf</filename> and edit the various configuration options and try different combinations of configuration options. One sample <filename>/usr/local/etc/cups/cupsd.conf</filename> to test is listed below. Please note that this sample <filename>cupsd.conf</filename> file sacrifices security for easier configuration; once the administrator successfully connects to the <application>CUPS</application> server and configures the clients, it is advisable to revisit this configuration file and begin locking down access."
+msgid ""
+"Difficulties with <application>CUPS</application> often lies in permissions. "
+"First, double check the <citerefentry><refentrytitle>devfs</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> permissions as "
+"outlined above. Next, check the actual permissions of the devices created in "
+"the file system. It is also helpful to make sure your user is a member of "
+"the <systemitem class=\"groupname\">cups</systemitem> group. If the "
+"permissions check boxes in the Administration section of the "
+"<application>CUPS</application> web interface do not seem to be working, "
+"another fix might be to manually backup the main <application>CUPS</"
+"application> configuration file located at <filename>/usr/local/etc/cups/"
+"cupsd.conf</filename> and edit the various configuration options and try "
+"different combinations of configuration options. One sample <filename>/usr/"
+"local/etc/cups/cupsd.conf</filename> to test is listed below. Please note "
+"that this sample <filename>cupsd.conf</filename> file sacrifices security "
+"for easier configuration; once the administrator successfully connects to "
+"the <application>CUPS</application> server and configures the clients, it is "
+"advisable to revisit this configuration file and begin locking down access."
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
@@ -357,4 +501,3 @@ msgid ""
 "  &lt;/Limit&gt;\n"
 "&lt;/Policy&gt;"
 msgstr ""
-

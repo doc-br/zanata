@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,251 +17,338 @@ msgid "translator-credits"
 msgstr ""
 
 #. (itstool) path: info/title
-#: article.translate.xml:37
+#: article.translate.xml:38
 msgid "Pluggable Authentication Modules"
 msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:41
-msgid "This article describes the underlying principles and mechanisms of the Pluggable Authentication Modules (PAM) library, and explains how to configure PAM, how to integrate PAM into applications, and how to write PAM modules."
+msgid ""
+"This article describes the underlying principles and mechanisms of the "
+"Pluggable Authentication Modules (PAM) library, and explains how to "
+"configure PAM, how to integrate PAM into applications, and how to write PAM "
+"modules."
 msgstr ""
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:47
-msgid "<year>2001</year> <year>2002</year> <year>2003</year> <holder>Networks Associates Technology, Inc.</holder>"
+msgid ""
+"<year>2001</year> <year>2002</year> <year>2003</year> <holder>Networks "
+"Associates Technology, Inc.</holder>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:55
-msgid "<personname><firstname>Dag-Erling</firstname><surname>Smørgrav</surname></personname><contrib>Contributed by </contrib>"
+msgid ""
+"<personname> <firstname>Dag-Erling</firstname> <surname>Smørgrav</surname> </"
+"personname> <contrib>Contributed by </contrib>"
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:59
-msgid "This article was written for the FreeBSD Project by ThinkSec AS and Network Associates Laboratories, the Security Research Division of Network Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (<quote>CBOSS</quote>), as part of the DARPA CHATS research program."
+#: article.translate.xml:65
+msgid ""
+"This article was written for the FreeBSD Project by ThinkSec AS and Network "
+"Associates Laboratories, the Security Research Division of Network "
+"Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (<quote>CBOSS</"
+"quote>), as part of the DARPA CHATS research program."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:67
+#: article.translate.xml:73
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:69
+#: article.translate.xml:75
 msgid "Linux is a registered trademark of Linus Torvalds."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:71
-msgid "Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The Open Group are trademarks of The Open Group in the United States and other countries."
+#: article.translate.xml:77
+msgid ""
+"Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The "
+"Open Group are trademarks of The Open Group in the United States and other "
+"countries."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:75
-msgid "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries."
+#: article.translate.xml:81
+msgid ""
+"Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
+"Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or "
+"registered trademarks of Sun Microsystems, Inc. in the United States and "
+"other countries."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:80
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+#: article.translate.xml:86
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
 
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:88
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/pam/article.xml 48488 2016-03-28 17:29:21Z jgh $"
+#: article.translate.xml:94
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/pam/article.xml 52137 2018-08-16 "
+"14:45:06Z bcr $"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-intro.title
-#: article.translate.xml:92
+#: article.translate.xml:98
 msgid "Introduction"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:94
-msgid "The Pluggable Authentication Modules (PAM) library is a generalized API for authentication-related services which allows a system administrator to add new authentication methods simply by installing new PAM modules, and to modify authentication policies by editing configuration files."
-msgstr ""
-
-#. (itstool) path: section/para
 #: article.translate.xml:100
-msgid "PAM was defined and developed in 1995 by Vipin Samar and Charlie Lai of Sun Microsystems, and has not changed much since. In 1997, the Open Group published the X/Open Single Sign-on (XSSO) preliminary specification, which standardized the PAM API and added extensions for single (or rather integrated) sign-on. At the time of this writing, this specification has not yet been adopted as a standard."
+msgid ""
+"The Pluggable Authentication Modules (PAM) library is a generalized API for "
+"authentication-related services which allows a system administrator to add "
+"new authentication methods simply by installing new PAM modules, and to "
+"modify authentication policies by editing configuration files."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:108
-msgid "Although this article focuses primarily on FreeBSD 5.x, which uses OpenPAM, it should be equally applicable to FreeBSD 4.x, which uses Linux-PAM, and other operating systems such as Linux and <trademark>Solaris</trademark>."
+#: article.translate.xml:106
+msgid ""
+"PAM was defined and developed in 1995 by Vipin Samar and Charlie Lai of Sun "
+"Microsystems, and has not changed much since. In 1997, the Open Group "
+"published the X/Open Single Sign-on (XSSO) preliminary specification, which "
+"standardized the PAM API and added extensions for single (or rather "
+"integrated) sign-on. At the time of this writing, this specification has not "
+"yet been adopted as a standard."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:114
+msgid ""
+"Although this article focuses primarily on FreeBSD 5.x, which uses OpenPAM, "
+"it should be equally applicable to FreeBSD 4.x, which uses Linux-PAM, and "
+"other operating systems such as Linux and <trademark>Solaris</trademark>."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-terms.title
-#: article.translate.xml:115
-msgid "Terms and conventions"
+#: article.translate.xml:121
+msgid "Terms and Conventions"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-definitions.title
-#: article.translate.xml:118
+#: article.translate.xml:124
 msgid "Definitions"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:120
-msgid "The terminology surrounding PAM is rather confused. Neither Samar and Lai's original paper nor the XSSO specification made any attempt at formally defining terms for the various actors and entities involved in PAM, and the terms that they do use (but do not define) are sometimes misleading and ambiguous. The first attempt at establishing a consistent and unambiguous terminology was a whitepaper written by Andrew G. Morgan (author of Linux-PAM) in 1999. While Morgan's choice of terminology was a huge leap forward, it is in this author's opinion by no means perfect. What follows is an attempt, heavily inspired by Morgan, to define precise and unambiguous terms for all actors and entities involved in PAM."
+#: article.translate.xml:126
+msgid ""
+"The terminology surrounding PAM is rather confused. Neither Samar and Lai's "
+"original paper nor the XSSO specification made any attempt at formally "
+"defining terms for the various actors and entities involved in PAM, and the "
+"terms that they do use (but do not define) are sometimes misleading and "
+"ambiguous. The first attempt at establishing a consistent and unambiguous "
+"terminology was a whitepaper written by Andrew G. Morgan (author of Linux-"
+"PAM) in 1999. While Morgan's choice of terminology was a huge leap forward, "
+"it is in this author's opinion by no means perfect. What follows is an "
+"attempt, heavily inspired by Morgan, to define precise and unambiguous terms "
+"for all actors and entities involved in PAM."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:136
+#: article.translate.xml:142
 msgid "account"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:138
+#: article.translate.xml:144
 msgid "The set of credentials the applicant is requesting from the arbitrator."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:144
+#: article.translate.xml:150
 msgid "applicant"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:146
+#: article.translate.xml:152
 msgid "The user or entity requesting authentication."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:151
+#: article.translate.xml:157
 msgid "arbitrator"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:153
-msgid "The user or entity who has the privileges necessary to verify the applicant's credentials and the authority to grant or deny the request."
+#: article.translate.xml:159
+msgid ""
+"The user or entity who has the privileges necessary to verify the "
+"applicant's credentials and the authority to grant or deny the request."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:160
+#: article.translate.xml:166
 msgid "chain"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:162
-msgid "A sequence of modules that will be invoked in response to a PAM request. The chain includes information about the order in which to invoke the modules, what arguments to pass to them, and how to interpret the results."
+#: article.translate.xml:168
+msgid ""
+"A sequence of modules that will be invoked in response to a PAM request. The "
+"chain includes information about the order in which to invoke the modules, "
+"what arguments to pass to them, and how to interpret the results."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:171
+#: article.translate.xml:177
 msgid "client"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:173
-msgid "The application responsible for initiating an authentication request on behalf of the applicant and for obtaining the necessary authentication information from him."
+#: article.translate.xml:179
+msgid ""
+"The application responsible for initiating an authentication request on "
+"behalf of the applicant and for obtaining the necessary authentication "
+"information from him."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:181
+#: article.translate.xml:187
 msgid "facility"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:183
-msgid "One of the four basic groups of functionality provided by PAM: authentication, account management, session management and authentication token update."
+#: article.translate.xml:189
+msgid ""
+"One of the four basic groups of functionality provided by PAM: "
+"authentication, account management, session management and authentication "
+"token update."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:191
+#: article.translate.xml:197
 msgid "module"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:193
-msgid "A collection of one or more related functions implementing a particular authentication facility, gathered into a single (normally dynamically loadable) binary file and identified by a single name."
+#: article.translate.xml:199
+msgid ""
+"A collection of one or more related functions implementing a particular "
+"authentication facility, gathered into a single (normally dynamically "
+"loadable) binary file and identified by a single name."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:201
+#: article.translate.xml:207
 msgid "policy"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:203
-msgid "The complete set of configuration statements describing how to handle PAM requests for a particular service. A policy normally consists of four chains, one for each facility, though some services do not use all four facilities."
+#: article.translate.xml:209
+msgid ""
+"The complete set of configuration statements describing how to handle PAM "
+"requests for a particular service. A policy normally consists of four "
+"chains, one for each facility, though some services do not use all four "
+"facilities."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:212
+#: article.translate.xml:218
 msgid "server"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:214
-msgid "The application acting on behalf of the arbitrator to converse with the client, retrieve authentication information, verify the applicant's credentials and grant or deny requests."
+#: article.translate.xml:220
+msgid ""
+"The application acting on behalf of the arbitrator to converse with the "
+"client, retrieve authentication information, verify the applicant's "
+"credentials and grant or deny requests."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:222
+#: article.translate.xml:228
 msgid "service"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:224
-msgid "A class of servers providing similar or related functionality and requiring similar authentication. PAM policies are defined on a per-service basis, so all servers that claim the same service name will be subject to the same policy."
+#: article.translate.xml:230
+msgid ""
+"A class of servers providing similar or related functionality and requiring "
+"similar authentication. PAM policies are defined on a per-service basis, so "
+"all servers that claim the same service name will be subject to the same "
+"policy."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:233
+#: article.translate.xml:239
 msgid "session"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:235
-msgid "The context within which service is rendered to the applicant by the server. One of PAM's four facilities, session management, is concerned exclusively with setting up and tearing down this context."
+#: article.translate.xml:241
+msgid ""
+"The context within which service is rendered to the applicant by the server. "
+"One of PAM's four facilities, session management, is concerned exclusively "
+"with setting up and tearing down this context."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:243
+#: article.translate.xml:249
 msgid "token"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:245
-msgid "A chunk of information associated with the account, such as a password or passphrase, which the applicant must provide to prove his identity."
+#: article.translate.xml:251
+msgid ""
+"A chunk of information associated with the account, such as a password or "
+"passphrase, which the applicant must provide to prove his identity."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
-#: article.translate.xml:252
+#: article.translate.xml:258
 msgid "transaction"
 msgstr ""
 
 #. (itstool) path: glossdef/para
-#: article.translate.xml:254
-msgid "A sequence of requests from the same applicant to the same instance of the same server, beginning with authentication and session set-up and ending with session tear-down."
+#: article.translate.xml:260
+msgid ""
+"A sequence of requests from the same applicant to the same instance of the "
+"same server, beginning with authentication and session set-up and ending "
+"with session tear-down."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-usage-examples.title
-#: article.translate.xml:264
-msgid "Usage examples"
+#: article.translate.xml:270
+msgid "Usage Examples"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:266
-msgid "This section aims to illustrate the meanings of some of the terms defined above by way of a handful of simple examples."
+#: article.translate.xml:272
+msgid ""
+"This section aims to illustrate the meanings of some of the terms defined "
+"above by way of a handful of simple examples."
 msgstr ""
 
 #. (itstool) path: section/title
-#: article.translate.xml:271
-msgid "Client and server are one"
+#: article.translate.xml:277
+msgid "Client and Server Are One"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:273
-msgid "This simple example shows <literal>alice</literal> <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>'ing to <literal>root</literal>."
+#: article.translate.xml:279
+msgid ""
+"This simple example shows <literal>alice</literal> "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>'ing to <literal>root</literal>."
 msgstr ""
 
 #. (itstool) path: section/screen
-#: article.translate.xml:276
+#: article.translate.xml:282
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>whoami</userinput>\n"
@@ -271,47 +358,56 @@ msgid ""
 "<prompt>%</prompt> <userinput>su -</userinput>\n"
 "Password: <userinput>xi3kiune</userinput>\n"
 "<prompt>#</prompt> whoami\n"
-"root\n"
-""
+"root"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:288
+#: article.translate.xml:293
 msgid "The applicant is <literal>alice</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:291
+#: article.translate.xml:296
 msgid "The account is <literal>root</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:294
-msgid "The <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> process is both client and server."
+#: article.translate.xml:299
+msgid ""
+"The <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> process is both client and server."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:298
+#: article.translate.xml:303
 msgid "The authentication token is <literal>xi3kiune</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:302
-msgid "The arbitrator is <literal>root</literal>, which is why <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> is setuid <literal>root</literal>."
+#: article.translate.xml:307
+msgid ""
+"The arbitrator is <literal>root</literal>, which is why "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> is setuid <literal>root</literal>."
 msgstr ""
 
 #. (itstool) path: section/title
-#: article.translate.xml:309
-msgid "Client and server are separate"
+#: article.translate.xml:314
+msgid "Client and Server Are Separate"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:311
-msgid "The example below shows <literal>eve</literal> try to initiate an <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> connection to <literal>login.example.com</literal>, ask to log in as <literal>bob</literal>, and succeed. Bob should have chosen a better password!"
+#: article.translate.xml:316
+msgid ""
+"The example below shows <literal>eve</literal> try to initiate an "
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> connection to <literal>login.example.com</literal>, ask to log "
+"in as <literal>bob</literal>, and succeed. Bob should have chosen a better "
+"password!"
 msgstr ""
 
 #. (itstool) path: section/screen
-#: article.translate.xml:317
+#: article.translate.xml:322
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>whoami</userinput>\n"
@@ -328,47 +424,54 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:331
+#: article.translate.xml:336
 msgid "The applicant is <literal>eve</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:334
-msgid "The client is Eve's <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> process."
+#: article.translate.xml:339
+msgid ""
+"The client is Eve's <citerefentry><refentrytitle>ssh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> process."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:337
-msgid "The server is the <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> process on <literal>login.example.com</literal>"
+#: article.translate.xml:342
+msgid ""
+"The server is the <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> process on "
+"<literal>login.example.com</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:341
+#: article.translate.xml:346
 msgid "The account is <literal>bob</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:344
+#: article.translate.xml:349
 msgid "The authentication token is <literal>god</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:348
-msgid "Although this is not shown in this example, the arbitrator is <literal>root</literal>."
+#: article.translate.xml:353
+msgid ""
+"Although this is not shown in this example, the arbitrator is <literal>root</"
+"literal>."
 msgstr ""
 
 #. (itstool) path: section/title
-#: article.translate.xml:355
-msgid "Sample policy"
+#: article.translate.xml:360
+msgid "Sample Policy"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:357
+#: article.translate.xml:362
 msgid "The following is FreeBSD's default policy for <literal>sshd</literal>:"
 msgstr ""
 
 #. (itstool) path: section/programlisting
-#: article.translate.xml:360
+#: article.translate.xml:365
 #, no-wrap
 msgid ""
 "sshd\tauth\t\trequired\tpam_nologin.so\tno_warn\n"
@@ -380,377 +483,570 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:369
-msgid "This policy applies to the <literal>sshd</literal> service (which is not necessarily restricted to the <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> server.)"
-msgstr ""
-
-#. (itstool) path: listitem/para
 #: article.translate.xml:374
-msgid "<literal>auth</literal>, <literal>account</literal>, <literal>session</literal> and <literal>password</literal> are facilities."
+msgid ""
+"This policy applies to the <literal>sshd</literal> service (which is not "
+"necessarily restricted to the <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> server.)"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:379
-msgid "<filename>pam_nologin.so</filename>, <filename>pam_unix.so</filename>, <filename>pam_login_access.so</filename>, <filename>pam_lastlog.so</filename> and <filename>pam_permit.so</filename> are modules. It is clear from this example that <filename>pam_unix.so</filename> provides at least two facilities (authentication and account management.)"
+msgid ""
+"<literal>auth</literal>, <literal>account</literal>, <literal>session</"
+"literal> and <literal>password</literal> are facilities."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:384
+msgid ""
+"<filename>pam_nologin.so</filename>, <filename>pam_unix.so</filename>, "
+"<filename>pam_login_access.so</filename>, <filename>pam_lastlog.so</"
+"filename> and <filename>pam_permit.so</filename> are modules. It is clear "
+"from this example that <filename>pam_unix.so</filename> provides at least "
+"two facilities (authentication and account management.)"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-essentials.title
-#: article.translate.xml:403
+#: article.translate.xml:408
 msgid "PAM Essentials"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-facilities-primitives.title
-#: article.translate.xml:406
-msgid "Facilities and primitives"
+#: article.translate.xml:411
+msgid "Facilities and Primitives"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:409
-msgid "The PAM API offers six different authentication primitives grouped in four facilities, which are described below."
+#: article.translate.xml:414
+msgid ""
+"The PAM API offers six different authentication primitives grouped in four "
+"facilities, which are described below."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:414
+#: article.translate.xml:419
 msgid "<literal>auth</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:416
-msgid "<emphasis>Authentication.</emphasis> This facility concerns itself with authenticating the applicant and establishing the account credentials. It provides two primitives:"
+#: article.translate.xml:421
+msgid ""
+"<emphasis>Authentication.</emphasis> This facility concerns itself with "
+"authenticating the applicant and establishing the account credentials. It "
+"provides two primitives:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:423
-msgid "<citerefentry><refentrytitle>pam_authenticate</refentrytitle><manvolnum>3</manvolnum></citerefentry> authenticates the applicant, usually by requesting an authentication token and comparing it with a value stored in a database or obtained from an authentication server."
+#: article.translate.xml:428
+msgid ""
+"<citerefentry><refentrytitle>pam_authenticate</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> authenticates the applicant, usually by requesting "
+"an authentication token and comparing it with a value stored in a database "
+"or obtained from an authentication server."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:431
-msgid "<citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</manvolnum></citerefentry> establishes account credentials such as user ID, group membership and resource limits."
+#: article.translate.xml:436
+msgid ""
+"<citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> establishes account credentials such as user ID, "
+"group membership and resource limits."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:440
+#: article.translate.xml:445
 msgid "<literal>account</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:442
-msgid "<emphasis>Account management.</emphasis> This facility handles non-authentication-related issues of account availability, such as access restrictions based on the time of day or the server's work load. It provides a single primitive:"
+#: article.translate.xml:447
+msgid ""
+"<emphasis>Account management.</emphasis> This facility handles non-"
+"authentication-related issues of account availability, such as access "
+"restrictions based on the time of day or the server's work load. It provides "
+"a single primitive:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:450
-msgid "<citerefentry><refentrytitle>pam_acct_mgmt</refentrytitle><manvolnum>3</manvolnum></citerefentry> verifies that the requested account is available."
+#: article.translate.xml:455
+msgid ""
+"<citerefentry><refentrytitle>pam_acct_mgmt</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> verifies that the requested account is available."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:458
+#: article.translate.xml:463
 msgid "<literal>session</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:460
-msgid "<emphasis>Session management.</emphasis> This facility handles tasks associated with session set-up and tear-down, such as login accounting. It provides two primitives:"
+#: article.translate.xml:465
+msgid ""
+"<emphasis>Session management.</emphasis> This facility handles tasks "
+"associated with session set-up and tear-down, such as login accounting. It "
+"provides two primitives:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:467
-msgid "<citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</manvolnum></citerefentry> performs tasks associated with session set-up: add an entry in the <filename>utmp</filename> and <filename>wtmp</filename> databases, start an SSH agent, etc."
+#: article.translate.xml:472
+msgid ""
+"<citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> performs tasks associated with session set-up: add "
+"an entry in the <filename>utmp</filename> and <filename>wtmp</filename> "
+"databases, start an SSH agent, etc."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:475
-msgid "<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</manvolnum></citerefentry> performs tasks associated with session tear-down: add an entry in the <filename>utmp</filename> and <filename>wtmp</filename> databases, stop the SSH agent, etc."
+#: article.translate.xml:480
+msgid ""
+"<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> performs tasks associated with session tear-down: "
+"add an entry in the <filename>utmp</filename> and <filename>wtmp</filename> "
+"databases, stop the SSH agent, etc."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:486
+#: article.translate.xml:491
 msgid "<literal>password</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:488
-msgid "<emphasis>Password management.</emphasis> This facility is used to change the authentication token associated with an account, either because it has expired or because the user wishes to change it. It provides a single primitive:"
+#: article.translate.xml:493
+msgid ""
+"<emphasis>Password management.</emphasis> This facility is used to change "
+"the authentication token associated with an account, either because it has "
+"expired or because the user wishes to change it. It provides a single "
+"primitive:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:496
-msgid "<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</manvolnum></citerefentry> changes the authentication token, optionally verifying that it is sufficiently hard to guess, has not been used previously, etc."
+#: article.translate.xml:501
+msgid ""
+"<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> changes the authentication token, optionally "
+"verifying that it is sufficiently hard to guess, has not been used "
+"previously, etc."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules.title
-#: article.translate.xml:509
+#: article.translate.xml:514
 msgid "Modules"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:511
-msgid "Modules are a very central concept in PAM; after all, they are the <quote>M</quote> in <quote>PAM</quote>. A PAM module is a self-contained piece of program code that implements the primitives in one or more facilities for one particular mechanism; possible mechanisms for the authentication facility, for instance, include the <trademark class=\"registered\">UNIX</trademark> password database, NIS, LDAP and Radius."
+#: article.translate.xml:516
+msgid ""
+"Modules are a very central concept in PAM; after all, they are the <quote>M</"
+"quote> in <quote>PAM</quote>. A PAM module is a self-contained piece of "
+"program code that implements the primitives in one or more facilities for "
+"one particular mechanism; possible mechanisms for the authentication "
+"facility, for instance, include the <trademark class=\"registered\">UNIX</"
+"trademark> password database, NIS, LDAP and Radius."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-naming.title
-#: article.translate.xml:520
+#: article.translate.xml:525
 msgid "Module Naming"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:522
-msgid "FreeBSD implements each mechanism in a single module, named <literal>pam_<replaceable>mechanism</replaceable>.so</literal> (for instance, <literal>pam_unix.so</literal> for the <trademark class=\"registered\">UNIX</trademark> mechanism.) Other implementations sometimes have separate modules for separate facilities, and include the facility name as well as the mechanism name in the module name. To name one example, <trademark>Solaris</trademark> has a <literal>pam_dial_auth.so.1</literal> module which is commonly used to authenticate dialup users."
+#: article.translate.xml:527
+msgid ""
+"FreeBSD implements each mechanism in a single module, named "
+"<literal>pam_<replaceable>mechanism</replaceable>.so</literal> (for "
+"instance, <literal>pam_unix.so</literal> for the <trademark class="
+"\"registered\">UNIX</trademark> mechanism.) Other implementations sometimes "
+"have separate modules for separate facilities, and include the facility name "
+"as well as the mechanism name in the module name. To name one example, "
+"<trademark>Solaris</trademark> has a <literal>pam_dial_auth.so.1</literal> "
+"module which is commonly used to authenticate dialup users."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-versioning.title
-#: article.translate.xml:535
+#: article.translate.xml:540
 msgid "Module Versioning"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:537
-msgid "FreeBSD's original PAM implementation, based on Linux-PAM, did not use version numbers for PAM modules. This would commonly cause problems with legacy applications, which might be linked against older versions of the system libraries, as there was no way to load a matching version of the required modules."
+#: article.translate.xml:543
+msgid ""
+"FreeBSD's original PAM implementation, based on Linux-PAM, did not use "
+"version numbers for PAM modules. This would commonly cause problems with "
+"legacy applications, which might be linked against older versions of the "
+"system libraries, as there was no way to load a matching version of the "
+"required modules."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:544
-msgid "OpenPAM, on the other hand, looks for modules that have the same version number as the PAM library (currently 2), and only falls back to an unversioned module if no versioned module could be loaded. Thus legacy modules can be provided for legacy applications, while allowing new (or newly built) applications to take advantage of the most recent modules."
+#: article.translate.xml:550
+msgid ""
+"OpenPAM, on the other hand, looks for modules that have the same version "
+"number as the PAM library (currently 2), and only falls back to an "
+"unversioned module if no versioned module could be loaded. Thus legacy "
+"modules can be provided for legacy applications, while allowing new (or "
+"newly built) applications to take advantage of the most recent modules."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:552
-msgid "Although <trademark>Solaris</trademark> PAM modules commonly have a version number, they are not truly versioned, because the number is a part of the module name and must be included in the configuration."
+#: article.translate.xml:558
+msgid ""
+"Although <trademark>Solaris</trademark> PAM modules commonly have a version "
+"number, they are not truly versioned, because the number is a part of the "
+"module name and must be included in the configuration."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-chains-policies.title
-#: article.translate.xml:560
-msgid "Chains and policies"
+#: article.translate.xml:566
+msgid "Chains and Policies"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:563
-msgid "When a server initiates a PAM transaction, the PAM library tries to load a policy for the service specified in the <citerefentry><refentrytitle>pam_start</refentrytitle><manvolnum>3</manvolnum></citerefentry> call. The policy specifies how authentication requests should be processed, and is defined in a configuration file. This is the other central concept in PAM: the possibility for the admin to tune the system security policy (in the wider sense of the word) simply by editing a text file."
+#: article.translate.xml:569
+msgid ""
+"When a server initiates a PAM transaction, the PAM library tries to load a "
+"policy for the service specified in the "
+"<citerefentry><refentrytitle>pam_start</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> call. The policy specifies how authentication "
+"requests should be processed, and is defined in a configuration file. This "
+"is the other central concept in PAM: the possibility for the admin to tune "
+"the system security policy (in the wider sense of the word) simply by "
+"editing a text file."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:572
-msgid "A policy consists of four chains, one for each of the four PAM facilities. Each chain is a sequence of configuration statements, each specifying a module to invoke, some (optional) parameters to pass to the module, and a control flag that describes how to interpret the return code from the module."
+#: article.translate.xml:578
+msgid ""
+"A policy consists of four chains, one for each of the four PAM facilities. "
+"Each chain is a sequence of configuration statements, each specifying a "
+"module to invoke, some (optional) parameters to pass to the module, and a "
+"control flag that describes how to interpret the return code from the module."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:579
-msgid "Understanding the control flags is essential to understanding PAM configuration files. There are four different control flags:"
+#: article.translate.xml:585
+msgid ""
+"Understanding the control flags is essential to understanding PAM "
+"configuration files. There are four different control flags:"
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:585
+#: article.translate.xml:591
 msgid "<literal>binding</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:587
-msgid "If the module succeeds and no earlier module in the chain has failed, the chain is immediately terminated and the request is granted. If the module fails, the rest of the chain is executed, but the request is ultimately denied."
+#: article.translate.xml:593
+msgid ""
+"If the module succeeds and no earlier module in the chain has failed, the "
+"chain is immediately terminated and the request is granted. If the module "
+"fails, the rest of the chain is executed, but the request is ultimately "
+"denied."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:593
-msgid "This control flag was introduced by Sun in <trademark>Solaris</trademark> 9 (<trademark>SunOS</trademark> 5.9), and is also supported by OpenPAM."
+#: article.translate.xml:599
+msgid ""
+"This control flag was introduced by Sun in <trademark>Solaris</trademark> 9 "
+"(<trademark>SunOS</trademark> 5.9), and is also supported by OpenPAM."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:599
+#: article.translate.xml:606
 msgid "<literal>required</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:601
-msgid "If the module succeeds, the rest of the chain is executed, and the request is granted unless some other module fails. If the module fails, the rest of the chain is also executed, but the request is ultimately denied."
+#: article.translate.xml:608
+msgid ""
+"If the module succeeds, the rest of the chain is executed, and the request "
+"is granted unless some other module fails. If the module fails, the rest of "
+"the chain is also executed, but the request is ultimately denied."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:610
+#: article.translate.xml:617
 msgid "<literal>requisite</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:612
-msgid "If the module succeeds, the rest of the chain is executed, and the request is granted unless some other module fails. If the module fails, the chain is immediately terminated and the request is denied."
+#: article.translate.xml:619
+msgid ""
+"If the module succeeds, the rest of the chain is executed, and the request "
+"is granted unless some other module fails. If the module fails, the chain is "
+"immediately terminated and the request is denied."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:620
+#: article.translate.xml:627
 msgid "<literal>sufficient</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:622
-msgid "If the module succeeds and no earlier module in the chain has failed, the chain is immediately terminated and the request is granted. If the module fails, the module is ignored and the rest of the chain is executed."
+#: article.translate.xml:629
+msgid ""
+"If the module succeeds and no earlier module in the chain has failed, the "
+"chain is immediately terminated and the request is granted. If the module "
+"fails, the module is ignored and the rest of the chain is executed."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:628
-msgid "As the semantics of this flag may be somewhat confusing, especially when it is used for the last module in a chain, it is recommended that the <literal>binding</literal> control flag be used instead if the implementation supports it."
+#: article.translate.xml:635
+msgid ""
+"As the semantics of this flag may be somewhat confusing, especially when it "
+"is used for the last module in a chain, it is recommended that the "
+"<literal>binding</literal> control flag be used instead if the "
+"implementation supports it."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: article.translate.xml:637
+#: article.translate.xml:644
 msgid "<literal>optional</literal>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:639
-msgid "The module is executed, but its result is ignored. If all modules in a chain are marked <literal>optional</literal>, all requests will always be granted."
+#: article.translate.xml:646
+msgid ""
+"The module is executed, but its result is ignored. If all modules in a chain "
+"are marked <literal>optional</literal>, all requests will always be granted."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:647
-msgid "When a server invokes one of the six PAM primitives, PAM retrieves the chain for the facility the primitive belongs to, and invokes each of the modules listed in the chain, in the order they are listed, until it reaches the end, or determines that no further processing is necessary (either because a <literal>binding</literal> or <literal>sufficient</literal> module succeeded, or because a <literal>requisite</literal> module failed.) The request is granted if and only if at least one module was invoked, and all non-optional modules succeeded."
+#: article.translate.xml:654
+msgid ""
+"When a server invokes one of the six PAM primitives, PAM retrieves the chain "
+"for the facility the primitive belongs to, and invokes each of the modules "
+"listed in the chain, in the order they are listed, until it reaches the end, "
+"or determines that no further processing is necessary (either because a "
+"<literal>binding</literal> or <literal>sufficient</literal> module "
+"succeeded, or because a <literal>requisite</literal> module failed.) The "
+"request is granted if and only if at least one module was invoked, and all "
+"non-optional modules succeeded."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:658
-msgid "Note that it is possible, though not very common, to have the same module listed several times in the same chain. For instance, a module that looks up user names and passwords in a directory server could be invoked multiple times with different parameters specifying different directory servers to contact. PAM treat different occurrences of the same module in the same chain as different, unrelated modules."
+#: article.translate.xml:665
+msgid ""
+"Note that it is possible, though not very common, to have the same module "
+"listed several times in the same chain. For instance, a module that looks up "
+"user names and passwords in a directory server could be invoked multiple "
+"times with different parameters specifying different directory servers to "
+"contact. PAM treat different occurrences of the same module in the same "
+"chain as different, unrelated modules."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-transactions.title
-#: article.translate.xml:668
+#: article.translate.xml:675
 msgid "Transactions"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:670
-msgid "The lifecycle of a typical PAM transaction is described below. Note that if any of these steps fails, the server should report a suitable error message to the client and abort the transaction."
-msgstr ""
-
-#. (itstool) path: listitem/para
 #: article.translate.xml:677
-msgid "If necessary, the server obtains arbitrator credentials through a mechanism independent of PAM—most commonly by virtue of having been started by <literal>root</literal>, or of being setuid <literal>root</literal>."
+msgid ""
+"The lifecycle of a typical PAM transaction is described below. Note that if "
+"any of these steps fails, the server should report a suitable error message "
+"to the client and abort the transaction."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:685
-msgid "The server calls <citerefentry><refentrytitle>pam_start</refentrytitle><manvolnum>3</manvolnum></citerefentry> to initialize the PAM library and specify its service name and the target account, and register a suitable conversation function."
+#: article.translate.xml:684
+msgid ""
+"If necessary, the server obtains arbitrator credentials through a mechanism "
+"independent of PAM—most commonly by virtue of having been started by "
+"<literal>root</literal>, or of being setuid <literal>root</literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:692
-msgid "The server obtains various information relating to the transaction (such as the applicant's user name and the name of the host the client runs on) and submits it to PAM using <citerefentry><refentrytitle>pam_set_item</refentrytitle><manvolnum>3</manvolnum></citerefentry>."
+msgid ""
+"The server calls <citerefentry><refentrytitle>pam_start</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> to initialize the PAM "
+"library and specify its service name and the target account, and register a "
+"suitable conversation function."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:699
-msgid "The server calls <citerefentry><refentrytitle>pam_authenticate</refentrytitle><manvolnum>3</manvolnum></citerefentry> to authenticate the applicant."
+msgid ""
+"The server obtains various information relating to the transaction (such as "
+"the applicant's user name and the name of the host the client runs on) and "
+"submits it to PAM using <citerefentry><refentrytitle>pam_set_item</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:704
-msgid "The server calls <citerefentry><refentrytitle>pam_acct_mgmt</refentrytitle><manvolnum>3</manvolnum></citerefentry> to verify that the requested account is available and valid. If the password is correct but has expired, <citerefentry><refentrytitle>pam_acct_mgmt</refentrytitle><manvolnum>3</manvolnum></citerefentry> will return <literal>PAM_NEW_AUTHTOK_REQD</literal> instead of <literal>PAM_SUCCESS</literal>."
+#: article.translate.xml:706
+msgid ""
+"The server calls <citerefentry><refentrytitle>pam_authenticate</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> to authenticate the "
+"applicant."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:712
-msgid "If the previous step returned <literal>PAM_NEW_AUTHTOK_REQD</literal>, the server now calls <citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</manvolnum></citerefentry> to force the client to change the authentication token for the requested account."
+#: article.translate.xml:711
+msgid ""
+"The server calls <citerefentry><refentrytitle>pam_acct_mgmt</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> to verify that the "
+"requested account is available and valid. If the password is correct but has "
+"expired, <citerefentry><refentrytitle>pam_acct_mgmt</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> will return "
+"<literal>PAM_NEW_AUTHTOK_REQD</literal> instead of <literal>PAM_SUCCESS</"
+"literal>."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:719
-msgid "Now that the applicant has been properly authenticated, the server calls <citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</manvolnum></citerefentry> to establish the credentials of the requested account. It is able to do this because it acts on behalf of the arbitrator, and holds the arbitrator's credentials."
+msgid ""
+"If the previous step returned <literal>PAM_NEW_AUTHTOK_REQD</literal>, the "
+"server now calls <citerefentry><refentrytitle>pam_chauthtok</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> to force the client to "
+"change the authentication token for the requested account."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:727
-msgid "Once the correct credentials have been established, the server calls <citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</manvolnum></citerefentry> to set up the session."
+#: article.translate.xml:726
+msgid ""
+"Now that the applicant has been properly authenticated, the server calls "
+"<citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> to establish the credentials of the requested "
+"account. It is able to do this because it acts on behalf of the arbitrator, "
+"and holds the arbitrator's credentials."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:733
-msgid "The server now performs whatever service the client requested—for instance, provide the applicant with a shell."
+#: article.translate.xml:734
+msgid ""
+"Once the correct credentials have been established, the server calls "
+"<citerefentry><refentrytitle>pam_open_session</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> to set up the session."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:739
-msgid "Once the server is done serving the client, it calls <citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</manvolnum></citerefentry> to tear down the session."
+#: article.translate.xml:740
+msgid ""
+"The server now performs whatever service the client requested—for instance, "
+"provide the applicant with a shell."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:744
-msgid "Finally, the server calls <citerefentry><refentrytitle>pam_end</refentrytitle><manvolnum>3</manvolnum></citerefentry> to notify the PAM library that it is done and that it can release whatever resources it has allocated in the course of the transaction."
+#: article.translate.xml:746
+msgid ""
+"Once the server is done serving the client, it calls "
+"<citerefentry><refentrytitle>pam_close_session</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> to tear down the session."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:751
+msgid ""
+"Finally, the server calls <citerefentry><refentrytitle>pam_end</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> to notify the PAM "
+"library that it is done and that it can release whatever resources it has "
+"allocated in the course of the transaction."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config.title
-#: article.translate.xml:754
+#: article.translate.xml:761
 msgid "PAM Configuration"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-file.title
-#: article.translate.xml:757
-msgid "PAM policy files"
+#: article.translate.xml:764
+msgid "PAM Policy Files"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-pam.conf.title
-#: article.translate.xml:760
-msgid "The <filename>/etc/pam.conf</filename> file"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:763
-msgid "The traditional PAM policy file is <filename>/etc/pam.conf</filename>. This file contains all the PAM policies for your system. Each line of the file describes one step in a chain, as shown below:"
-msgstr ""
-
-#. (itstool) path: section/programlisting
-#: article.translate.xml:768
-#, no-wrap
-msgid ""
-"login   auth    required        pam_nologin.so  no_warn"
+#: article.translate.xml:767
+msgid "The <filename>/etc/pam.conf</filename>"
 msgstr ""
 
 #. (itstool) path: section/para
 #: article.translate.xml:770
-msgid "The fields are, in order: service name, facility name, control flag, module name, and module arguments. Any additional fields are interpreted as additional module arguments."
+msgid ""
+"The traditional PAM policy file is <filename>/etc/pam.conf</filename>. This "
+"file contains all the PAM policies for your system. Each line of the file "
+"describes one step in a chain, as shown below:"
+msgstr ""
+
+#. (itstool) path: section/programlisting
+#: article.translate.xml:775
+#, no-wrap
+msgid "login   auth    required        pam_nologin.so  no_warn"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:775
-msgid "A separate chain is constructed for each service / facility pair, so while the order in which lines for the same service and facility appear is significant, the order in which the individual services and facilities are listed is not. The examples in the original PAM paper grouped configuration lines by facility, and the <trademark>Solaris</trademark> stock <filename>pam.conf</filename> still does that, but FreeBSD's stock configuration groups configuration lines by service. Either way is fine; either way makes equal sense."
+#: article.translate.xml:777
+msgid ""
+"The fields are, in order: service name, facility name, control flag, module "
+"name, and module arguments. Any additional fields are interpreted as "
+"additional module arguments."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:782
+msgid ""
+"A separate chain is constructed for each service / facility pair, so while "
+"the order in which lines for the same service and facility appear is "
+"significant, the order in which the individual services and facilities are "
+"listed is not. The examples in the original PAM paper grouped configuration "
+"lines by facility, and the <trademark>Solaris</trademark> stock "
+"<filename>pam.conf</filename> still does that, but FreeBSD's stock "
+"configuration groups configuration lines by service. Either way is fine; "
+"either way makes equal sense."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-pam.d.title
-#: article.translate.xml:787
-msgid "The <filename>/etc/pam.d</filename> directory"
+#: article.translate.xml:794
+msgid "The <filename>/etc/pam.d</filename>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:790
-msgid "OpenPAM and Linux-PAM support an alternate configuration mechanism, which is the preferred mechanism in FreeBSD. In this scheme, each policy is contained in a separate file bearing the name of the service it applies to. These files are stored in <filename>/etc/pam.d/</filename>."
+#: article.translate.xml:797
+msgid ""
+"OpenPAM and Linux-PAM support an alternate configuration mechanism, which is "
+"the preferred mechanism in FreeBSD. In this scheme, each policy is contained "
+"in a separate file bearing the name of the service it applies to. These "
+"files are stored in <filename>/etc/pam.d/</filename>."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:796
-msgid "These per-service policy files have only four fields instead of <filename>pam.conf</filename>'s five: the service name field is omitted. Thus, instead of the sample <filename>pam.conf</filename> line from the previous section, one would have the following line in <filename>/etc/pam.d/login</filename>:"
+#: article.translate.xml:803
+msgid ""
+"These per-service policy files have only four fields instead of "
+"<filename>pam.conf</filename>'s five: the service name field is omitted. "
+"Thus, instead of the sample <filename>pam.conf</filename> line from the "
+"previous section, one would have the following line in <filename>/etc/pam.d/"
+"login</filename>:"
 msgstr ""
 
 #. (itstool) path: section/programlisting
-#: article.translate.xml:803
+#: article.translate.xml:810
 #, no-wrap
-msgid ""
-"auth    required        pam_nologin.so  no_warn"
+msgid "auth    required        pam_nologin.so  no_warn"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:805
-msgid "As a consequence of this simplified syntax, it is possible to use the same policy for multiple services by linking each service name to a same policy file. For instance, to use the same policy for the <literal>su</literal> and <literal>sudo</literal> services, one could do as follows:"
+#: article.translate.xml:812
+msgid ""
+"As a consequence of this simplified syntax, it is possible to use the same "
+"policy for multiple services by linking each service name to a same policy "
+"file. For instance, to use the same policy for the <literal>su</literal> and "
+"<literal>sudo</literal> services, one could do as follows:"
 msgstr ""
 
 #. (itstool) path: section/screen
-#: article.translate.xml:812
+#: article.translate.xml:819
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /etc/pam.d</userinput>\n"
@@ -758,474 +1054,717 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:815
-msgid "This works because the service name is determined from the file name rather than specified in the policy file, so the same file can be used for multiple differently-named services."
+#: article.translate.xml:822
+msgid ""
+"This works because the service name is determined from the file name rather "
+"than specified in the policy file, so the same file can be used for multiple "
+"differently-named services."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:820
-msgid "Since each service's policy is stored in a separate file, the <filename>pam.d</filename> mechanism also makes it very easy to install additional policies for third-party software packages."
+#: article.translate.xml:827
+msgid ""
+"Since each service's policy is stored in a separate file, the <filename>pam."
+"d</filename> mechanism also makes it very easy to install additional "
+"policies for third-party software packages."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-file-order.title
-#: article.translate.xml:827
-msgid "The policy search order"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:830
-msgid "As we have seen above, PAM policies can be found in a number of places. What happens if policies for the same service exist in multiple places?"
-msgstr ""
-
-#. (itstool) path: section/para
 #: article.translate.xml:834
-msgid "It is essential to understand that PAM's configuration system is centered on chains."
+msgid "The Policy Search Order"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:837
+msgid ""
+"As we have seen above, PAM policies can be found in a number of places. What "
+"happens if policies for the same service exist in multiple places?"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:841
+msgid ""
+"It is essential to understand that PAM's configuration system is centered on "
+"chains."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-breakdown.title
-#: article.translate.xml:841
-msgid "Breakdown of a configuration line"
+#: article.translate.xml:848
+msgid "Breakdown of a Configuration Line"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:844
-msgid "As explained in <xref linkend=\"pam-config-file\"/>, each line in <filename>/etc/pam.conf</filename> consists of four or more fields: the service name, the facility name, the control flag, the module name, and zero or more module arguments."
+#: article.translate.xml:851
+msgid ""
+"As explained in <xref linkend=\"pam-config-file\"/>, each line in <filename>/"
+"etc/pam.conf</filename> consists of four or more fields: the service name, "
+"the facility name, the control flag, the module name, and zero or more "
+"module arguments."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:849
-msgid "The service name is generally (though not always) the name of the application the statement applies to. If you are unsure, refer to the individual application's documentation to determine what service name it uses."
+#: article.translate.xml:857
+msgid ""
+"The service name is generally (though not always) the name of the "
+"application the statement applies to. If you are unsure, refer to the "
+"individual application's documentation to determine what service name it "
+"uses."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:854
-msgid "Note that if you use <filename>/etc/pam.d/</filename> instead of <filename>/etc/pam.conf</filename>, the service name is specified by the name of the policy file, and omitted from the actual configuration lines, which then start with the facility name."
+#: article.translate.xml:862
+msgid ""
+"Note that if you use <filename>/etc/pam.d/</filename> instead of <filename>/"
+"etc/pam.conf</filename>, the service name is specified by the name of the "
+"policy file, and omitted from the actual configuration lines, which then "
+"start with the facility name."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:860
-msgid "The facility is one of the four facility keywords described in <xref linkend=\"pam-facilities-primitives\"/>."
+#: article.translate.xml:868
+msgid ""
+"The facility is one of the four facility keywords described in <xref linkend="
+"\"pam-facilities-primitives\"/>."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:863
-msgid "Likewise, the control flag is one of the four keywords described in <xref linkend=\"pam-chains-policies\"/>, describing how to interpret the return code from the module. Linux-PAM supports an alternate syntax that lets you specify the action to associate with each possible return code, but this should be avoided as it is non-standard and closely tied in with the way Linux-PAM dispatches service calls (which differs greatly from the way <trademark>Solaris</trademark> and OpenPAM do it.) Unsurprisingly, OpenPAM does not support this syntax."
+#: article.translate.xml:871
+msgid ""
+"Likewise, the control flag is one of the four keywords described in <xref "
+"linkend=\"pam-chains-policies\"/>, describing how to interpret the return "
+"code from the module. Linux-PAM supports an alternate syntax that lets you "
+"specify the action to associate with each possible return code, but this "
+"should be avoided as it is non-standard and closely tied in with the way "
+"Linux-PAM dispatches service calls (which differs greatly from the way "
+"<trademark>Solaris</trademark> and OpenPAM do it.) Unsurprisingly, OpenPAM "
+"does not support this syntax."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-policies.title
-#: article.translate.xml:875
+#: article.translate.xml:883
 msgid "Policies"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:877
-msgid "To configure PAM correctly, it is essential to understand how policies are interpreted."
+#: article.translate.xml:885
+msgid ""
+"To configure PAM correctly, it is essential to understand how policies are "
+"interpreted."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:880
-msgid "When an application calls <citerefentry><refentrytitle>pam_start</refentrytitle><manvolnum>3</manvolnum></citerefentry>, the PAM library loads the policy for the specified service and constructs four module chains (one for each facility.) If one or more of these chains are empty, the corresponding chains from the policy for the <literal>other</literal> service are substituted."
+#: article.translate.xml:888
+msgid ""
+"When an application calls <citerefentry><refentrytitle>pam_start</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>, the PAM library loads "
+"the policy for the specified service and constructs four module chains (one "
+"for each facility.) If one or more of these chains are empty, the "
+"corresponding chains from the policy for the <literal>other</literal> "
+"service are substituted."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:887
-msgid "When the application later calls one of the six PAM primitives, the PAM library retrieves the chain for the corresponding facility and calls the appropriate service function in each module listed in the chain, in the order in which they were listed in the configuration. After each call to a service function, the module type and the error code returned by the service function are used to determine what happens next. With a few exceptions, which we discuss below, the following table applies:"
+#: article.translate.xml:895
+msgid ""
+"When the application later calls one of the six PAM primitives, the PAM "
+"library retrieves the chain for the corresponding facility and calls the "
+"appropriate service function in each module listed in the chain, in the "
+"order in which they were listed in the configuration. After each call to a "
+"service function, the module type and the error code returned by the service "
+"function are used to determine what happens next. With a few exceptions, "
+"which we discuss below, the following table applies:"
 msgstr ""
 
 #. (itstool) path: table/title
-#: article.translate.xml:898
-msgid "PAM chain execution summary"
-msgstr ""
-
-#. (itstool) path: row/entry
-#: article.translate.xml:907
-msgid "<literal>PAM_SUCCESS</literal>"
-msgstr ""
-
-#. (itstool) path: row/entry
-#: article.translate.xml:908
-msgid "<literal>PAM_IGNORE</literal>"
-msgstr ""
-
-#. (itstool) path: row/entry
-#: article.translate.xml:909
-msgid "<literal>other</literal>"
-msgstr ""
-
-#. (itstool) path: row/entry
-#: article.translate.xml:914
-msgid "binding"
-msgstr ""
-
-#. (itstool) path: row/entry
-#: article.translate.xml:915
-#: article.translate.xml:933
-msgid "if (!fail) break;"
+#: article.translate.xml:906
+msgid "PAM Chain Execution Summary"
 msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:916
-#: article.translate.xml:921
-#: article.translate.xml:922
-#: article.translate.xml:927
-#: article.translate.xml:928
-#: article.translate.xml:934
-#: article.translate.xml:935
-#: article.translate.xml:939
-#: article.translate.xml:940
-#: article.translate.xml:941
-msgid "-"
+msgid "<literal>PAM_SUCCESS</literal>"
 msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:917
+msgid "<literal>PAM_IGNORE</literal>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:918
+msgid "<literal>other</literal>"
+msgstr ""
+
+#. (itstool) path: row/entry
 #: article.translate.xml:923
+msgid "binding"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:924 article.translate.xml:945
+msgid "if (!fail) break;"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:925 article.translate.xml:931
+#: article.translate.xml:932 article.translate.xml:938
+#: article.translate.xml:939 article.translate.xml:946
+#: article.translate.xml:947 article.translate.xml:952
+#: article.translate.xml:953 article.translate.xml:954
+msgid "-"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:926 article.translate.xml:933
 msgid "fail = true;"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:920
+#: article.translate.xml:930
 msgid "required"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:926
+#: article.translate.xml:937
 msgid "requisite"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:929
+#: article.translate.xml:940
 msgid "fail = true; break;"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:932
+#: article.translate.xml:944
 msgid "sufficient"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:938
+#: article.translate.xml:951
 msgid "optional"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:947
-msgid "If <varname>fail</varname> is true at the end of a chain, or when a <quote>break</quote> is reached, the dispatcher returns the error code returned by the first module that failed. Otherwise, it returns <literal>PAM_SUCCESS</literal>."
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:953
-msgid "The first exception of note is that the error code <literal>PAM_NEW_AUTHTOK_REQD</literal> is treated like a success, except that if no module failed, and at least one module returned <literal>PAM_NEW_AUTHTOK_REQD</literal>, the dispatcher will return <literal>PAM_NEW_AUTHTOK_REQD</literal>."
-msgstr ""
-
-#. (itstool) path: section/para
 #: article.translate.xml:960
-msgid "The second exception is that <citerefentry><refentrytitle>pam_setcred</refentrytitle><manvolnum>3</manvolnum></citerefentry> treats <literal>binding</literal> and <literal>sufficient</literal> modules as if they were <literal>required</literal>."
+msgid ""
+"If <varname>fail</varname> is true at the end of a chain, or when a "
+"<quote>break</quote> is reached, the dispatcher returns the error code "
+"returned by the first module that failed. Otherwise, it returns "
+"<literal>PAM_SUCCESS</literal>."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:965
-msgid "The third and final exception is that <citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</manvolnum></citerefentry> runs the entire chain twice (once for preliminary checks and once to actually set the password), and in the preliminary phase it treats <literal>binding</literal> and <literal>sufficient</literal> modules as if they were <literal>required</literal>."
+#: article.translate.xml:966
+msgid ""
+"The first exception of note is that the error code "
+"<literal>PAM_NEW_AUTHTOK_REQD</literal> is treated like a success, except "
+"that if no module failed, and at least one module returned "
+"<literal>PAM_NEW_AUTHTOK_REQD</literal>, the dispatcher will return "
+"<literal>PAM_NEW_AUTHTOK_REQD</literal>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:973
+msgid ""
+"The second exception is that <citerefentry><refentrytitle>pam_setcred</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> treats "
+"<literal>binding</literal> and <literal>sufficient</literal> modules as if "
+"they were <literal>required</literal>."
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:977
+msgid ""
+"The third and final exception is that "
+"<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> runs the entire chain twice (once for preliminary "
+"checks and once to actually set the password), and in the preliminary phase "
+"it treats <literal>binding</literal> and <literal>sufficient</literal> "
+"modules as if they were <literal>required</literal>."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-freebsd-modules.title
-#: article.translate.xml:976
+#: article.translate.xml:987
 msgid "FreeBSD PAM Modules"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-deny.title
-#: article.translate.xml:979
-msgid "<citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:991
+msgid ""
+"<citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:981
-msgid "The <citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</manvolnum></citerefentry> module is one of the simplest modules available; it responds to any request with <literal>PAM_AUTH_ERR</literal>. It is useful for quickly disabling a service (add it to the top of every chain), or for terminating chains of <literal>sufficient</literal> modules."
+#: article.translate.xml:993
+msgid ""
+"The <citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module is one of the simplest modules available; "
+"it responds to any request with <literal>PAM_AUTH_ERR</literal>. It is "
+"useful for quickly disabling a service (add it to the top of every chain), "
+"or for terminating chains of <literal>sufficient</literal> modules."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-echo.title
-#: article.translate.xml:990
-msgid "<citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1002
+msgid ""
+"<citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:992
-msgid "The <citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</manvolnum></citerefentry> module simply passes its arguments to the conversation function as a <literal>PAM_TEXT_INFO</literal> message. It is mostly useful for debugging, but can also serve to display messages such as <quote>Unauthorized access will be prosecuted</quote> before starting the authentication procedure."
+#: article.translate.xml:1004
+msgid ""
+"The <citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module simply passes its arguments to the "
+"conversation function as a <literal>PAM_TEXT_INFO</literal> message. It is "
+"mostly useful for debugging, but can also serve to display messages such as "
+"<quote>Unauthorized access will be prosecuted</quote> before starting the "
+"authentication procedure."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-exec.title
-#: article.translate.xml:1001
-msgid "<citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1013
+msgid ""
+"<citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1003
-msgid "The <citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</manvolnum></citerefentry> module takes its first argument to be the name of a program to execute, and the remaining arguments are passed to that program as command-line arguments. One possible application is to use it to run a program at login time which mounts the user's home directory."
+#: article.translate.xml:1015
+msgid ""
+"The <citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module takes its first argument to be the name of "
+"a program to execute, and the remaining arguments are passed to that program "
+"as command-line arguments. One possible application is to use it to run a "
+"program at login time which mounts the user's home directory."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ftpusers.title
-#: article.translate.xml:1011
-msgid "<citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1023
+msgid ""
+"<citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1013
-msgid "The <citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
+#: article.translate.xml:1025
+msgid ""
+"The <citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-group.title
-#: article.translate.xml:1017
-msgid "<citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1029
+msgid ""
+"<citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1019
-msgid "The <citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</manvolnum></citerefentry> module accepts or rejects applicants on the basis of their membership in a particular file group (normally <literal>wheel</literal> for <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>). It is primarily intended for maintaining the traditional behavior of BSD <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>, but has many other uses, such as excluding certain groups of users from a particular service."
+#: article.translate.xml:1031
+msgid ""
+"The <citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module accepts or rejects applicants on the basis "
+"of their membership in a particular file group (normally <literal>wheel</"
+"literal> for <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>). It is primarily intended for maintaining the "
+"traditional behavior of BSD <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, but has many other "
+"uses, such as excluding certain groups of users from a particular service."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-guest.title
-#: article.translate.xml:1028
-msgid "<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1040
+msgid ""
+"<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1030
-msgid "The <citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</manvolnum></citerefentry> module allows guest logins using fixed login names. Various requirements can be placed on the password, but the default behavior is to allow any password as long as the login name is that of a guest account. The <citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</manvolnum></citerefentry> module can easily be used to implement anonymous FTP logins."
+#: article.translate.xml:1042
+msgid ""
+"The <citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module allows guest logins using fixed login "
+"names. Various requirements can be placed on the password, but the default "
+"behavior is to allow any password as long as the login name is that of a "
+"guest account. The <citerefentry><refentrytitle>pam_guest</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> module can easily be "
+"used to implement anonymous FTP logins."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-krb5.title
-#: article.translate.xml:1039
-msgid "<citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:1041
-msgid "The <citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
-msgstr ""
-
-#. (itstool) path: section/title
-#. (itstool) id: article.translate.xml#pam-modules-ksu.title
-#: article.translate.xml:1045
-msgid "<citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:1047
-msgid "The <citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
-msgstr ""
-
-#. (itstool) path: section/title
-#. (itstool) id: article.translate.xml#pam-modules-lastlog.title
 #: article.translate.xml:1051
-msgid "<citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+msgid ""
+"<citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
 #: article.translate.xml:1053
-msgid "The <citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
+msgid ""
+"The <citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
 msgstr ""
 
 #. (itstool) path: section/title
-#. (itstool) id: article.translate.xml#pam-modules-login-access.title
+#. (itstool) id: article.translate.xml#pam-modules-ksu.title
 #: article.translate.xml:1057
-msgid "<citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+msgid ""
+"<citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
 #: article.translate.xml:1059
-msgid "The <citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</manvolnum></citerefentry> module provides an implementation of the account management primitive which enforces the login restrictions specified in the <citerefentry><refentrytitle>login.access</refentrytitle><manvolnum>5</manvolnum></citerefentry> table."
+msgid ""
+"The <citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) id: article.translate.xml#pam-modules-lastlog.title
+#: article.translate.xml:1063
+msgid ""
+"<citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:1065
+msgid ""
+"The <citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) id: article.translate.xml#pam-modules-login-access.title
+#: article.translate.xml:1069
+msgid ""
+"<citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:1071
+msgid ""
+"The <citerefentry><refentrytitle>pam_login_access</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> module provides an "
+"implementation of the account management primitive which enforces the login "
+"restrictions specified in the <citerefentry><refentrytitle>login.access</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> table."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-nologin.title
-#: article.translate.xml:1066
-msgid "<citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1078
+msgid ""
+"<citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1068
-msgid "The <citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</manvolnum></citerefentry> module refuses non-root logins when <filename>/var/run/nologin</filename> exists. This file is normally created by <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry> when less than five minutes remain until the scheduled shutdown time."
+#: article.translate.xml:1080
+msgid ""
+"The <citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module refuses non-root logins when <filename>/var/"
+"run/nologin</filename> exists. This file is normally created by "
+"<citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> when less than five minutes remain until the "
+"scheduled shutdown time."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opie.title
-#: article.translate.xml:1075
-msgid "<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1087
+msgid ""
+"<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1077
-msgid "The <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</manvolnum></citerefentry> module implements the <citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></citerefentry> authentication method. The <citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></citerefentry> system is a challenge-response mechanism where the response to each challenge is a direct function of the challenge and a passphrase, so the response can be easily computed <quote>just in time</quote> by anyone possessing the passphrase, eliminating the need for password lists. Moreover, since <citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></citerefentry> never reuses a challenge that has been correctly answered, it is not vulnerable to replay attacks."
+#: article.translate.xml:1089
+msgid ""
+"The <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module implements the "
+"<citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> authentication method. The <citerefentry><refentrytitle>opie</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> system is a challenge-"
+"response mechanism where the response to each challenge is a direct function "
+"of the challenge and a passphrase, so the response can be easily computed "
+"<quote>just in time</quote> by anyone possessing the passphrase, eliminating "
+"the need for password lists. Moreover, since "
+"<citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> never reuses a challenge that has been correctly answered, it "
+"is not vulnerable to replay attacks."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opieaccess.title
-#: article.translate.xml:1089
-msgid "<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1101
+msgid ""
+"<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1091
-msgid "The <citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</manvolnum></citerefentry> module is a companion module to <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Its purpose is to enforce the restrictions codified in <citerefentry><refentrytitle>opieaccess</refentrytitle><manvolnum>5</manvolnum></citerefentry>, which regulate the conditions under which a user who would normally authenticate herself using <citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></citerefentry> is allowed to use alternate methods. This is most often used to prohibit the use of password authentication from untrusted hosts."
+#: article.translate.xml:1103
+msgid ""
+"The <citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module is a companion module to "
+"<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Its purpose is to enforce the restrictions "
+"codified in <citerefentry><refentrytitle>opieaccess</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>, which regulate the "
+"conditions under which a user who would normally authenticate herself using "
+"<citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> is allowed to use alternate methods. This is most often used "
+"to prohibit the use of password authentication from untrusted hosts."
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1099
-msgid "In order to be effective, the <citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</manvolnum></citerefentry> module must be listed as <literal>requisite</literal> immediately after a <literal>sufficient</literal> entry for <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</manvolnum></citerefentry>, and before any other modules, in the <literal>auth</literal> chain."
+#: article.translate.xml:1111
+msgid ""
+"In order to be effective, the <citerefentry><refentrytitle>pam_opieaccess</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> module must be listed "
+"as <literal>requisite</literal> immediately after a <literal>sufficient</"
+"literal> entry for <citerefentry><refentrytitle>pam_opie</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, and before any other "
+"modules, in the <literal>auth</literal> chain."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-passwdqc.title
-#: article.translate.xml:1107
-msgid "<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1119
+msgid ""
+"<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1109
-msgid "The <citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
+#: article.translate.xml:1121
+msgid ""
+"The <citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-permit.title
-#: article.translate.xml:1113
-msgid "<citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1125
+msgid ""
+"<citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1115
-msgid "The <citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</manvolnum></citerefentry> module is one of the simplest modules available; it responds to any request with <literal>PAM_SUCCESS</literal>. It is useful as a placeholder for services where one or more chains would otherwise be empty."
+#: article.translate.xml:1127
+msgid ""
+"The <citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module is one of the simplest modules available; "
+"it responds to any request with <literal>PAM_SUCCESS</literal>. It is useful "
+"as a placeholder for services where one or more chains would otherwise be "
+"empty."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-radius.title
-#: article.translate.xml:1123
-msgid "<citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:1125
-msgid "The <citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
-msgstr ""
-
-#. (itstool) path: section/title
-#. (itstool) id: article.translate.xml#pam-modules-rhosts.title
-#: article.translate.xml:1129
-msgid "<citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
-
-#. (itstool) path: section/para
-#: article.translate.xml:1131
-msgid "The <citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
-msgstr ""
-
-#. (itstool) path: section/title
-#. (itstool) id: article.translate.xml#pam-modules-rootok.title
 #: article.translate.xml:1135
-msgid "<citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+msgid ""
+"<citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
 #: article.translate.xml:1137
-msgid "The <citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</manvolnum></citerefentry> module reports success if and only if the real user id of the process calling it (which is assumed to be run by the applicant) is 0. This is useful for non-networked services such as <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> or <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>, to which the <literal>root</literal> should have automatic access."
+msgid ""
+"The <citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) id: article.translate.xml#pam-modules-rhosts.title
+#: article.translate.xml:1141
+msgid ""
+"<citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:1143
+msgid ""
+"The <citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) id: article.translate.xml#pam-modules-rootok.title
+#: article.translate.xml:1147
+msgid ""
+"<citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: section/para
+#: article.translate.xml:1149
+msgid ""
+"The <citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module reports success if and only if the real "
+"user id of the process calling it (which is assumed to be run by the "
+"applicant) is 0. This is useful for non-networked services such as "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> or <citerefentry><refentrytitle>passwd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, to which the "
+"<literal>root</literal> should have automatic access."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-securetty.title
-#: article.translate.xml:1146
-msgid "<citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1158
+msgid ""
+"<citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1148
-msgid "The <citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
+#: article.translate.xml:1160
+msgid ""
+"The <citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-self.title
-#: article.translate.xml:1152
-msgid "<citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1164
+msgid ""
+"<citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1154
-msgid "The <citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</manvolnum></citerefentry> module reports success if and only if the names of the applicant matches that of the target account. It is most useful for non-networked services such as <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>, where the identity of the applicant can be easily verified."
+#: article.translate.xml:1166
+msgid ""
+"The <citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module reports success if and only if the names of "
+"the applicant matches that of the target account. It is most useful for non-"
+"networked services such as <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, where the identity of "
+"the applicant can be easily verified."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ssh.title
-#: article.translate.xml:1162
-msgid "<citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1174
+msgid ""
+"<citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1164
-msgid "The <citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</manvolnum></citerefentry> module provides both authentication and session services. The authentication service allows users who have passphrase-protected SSH secret keys in their <filename>~/.ssh</filename> directory to authenticate themselves by typing their passphrase. The session service starts <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> and preloads it with the keys that were decrypted in the authentication phase. This feature is particularly useful for local logins, whether in X (using <citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> or another PAM-aware X login manager) or at the console."
+#: article.translate.xml:1176
+msgid ""
+"The <citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module provides both authentication and session "
+"services. The authentication service allows users who have passphrase-"
+"protected SSH secret keys in their <filename>~/.ssh</filename> directory to "
+"authenticate themselves by typing their passphrase. The session service "
+"starts <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> and preloads it with the keys that were decrypted "
+"in the authentication phase. This feature is particularly useful for local "
+"logins, whether in X (using <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> or another PAM-aware X login manager) or at the console."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-tacplus.title
-#: article.translate.xml:1177
-msgid "<citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1189
+msgid ""
+"<citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1179
-msgid "The <citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</manvolnum></citerefentry> module"
+#: article.translate.xml:1191
+msgid ""
+"The <citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module"
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-unix.title
-#: article.translate.xml:1183
-msgid "<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+#: article.translate.xml:1195
+msgid ""
+"<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1185
-msgid "The <citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</manvolnum></citerefentry> module implements traditional <trademark class=\"registered\">UNIX</trademark> password authentication, using <citerefentry><refentrytitle>getpwnam</refentrytitle><manvolnum>3</manvolnum></citerefentry> to obtain the target account's password and compare it with the one provided by the applicant. It also provides account management services (enforcing account and password expiration times) and password-changing services. This is probably the single most useful module, as the great majority of admins will want to maintain historical behavior for at least some services."
+#: article.translate.xml:1197
+msgid ""
+"The <citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> module implements traditional <trademark class="
+"\"registered\">UNIX</trademark> password authentication, using "
+"<citerefentry><refentrytitle>getpwnam</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> to obtain the target account's password and "
+"compare it with the one provided by the applicant. It also provides account "
+"management services (enforcing account and password expiration times) and "
+"password-changing services. This is probably the single most useful module, "
+"as the great majority of admins will want to maintain historical behavior "
+"for at least some services."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-appl-prog.title
-#: article.translate.xml:1198
+#: article.translate.xml:1210
 msgid "PAM Application Programming"
 msgstr ""
 
 #. (itstool) path: section/para
-#: article.translate.xml:1200
-#: article.translate.xml:1220
+#: article.translate.xml:1213 article.translate.xml:1234
 msgid "This section has not yet been written."
 msgstr ""
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-module-prog.title
-#: article.translate.xml:1218
+#: article.translate.xml:1231
 msgid "PAM Module Programming"
 msgstr ""
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-appl.title
-#: article.translate.xml:1224
+#: article.translate.xml:1238
 msgid "Sample PAM Application"
 msgstr ""
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1226
-msgid "The following is a minimal implementation of <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> using PAM. Note that it uses the OpenPAM-specific <citerefentry><refentrytitle>openpam_ttyconv</refentrytitle><manvolnum>3</manvolnum></citerefentry> conversation function, which is prototyped in <filename>security/openpam.h</filename>. If you wish build this application on a system with a different PAM library, you will have to provide your own conversation function. A robust conversation function is surprisingly difficult to implement; the one presented in <xref linkend=\"pam-sample-conv\"/> is a good starting point, but should not be used in real-world applications."
+#: article.translate.xml:1241
+msgid ""
+"The following is a minimal implementation of "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> using PAM. Note that it uses the OpenPAM-specific "
+"<citerefentry><refentrytitle>openpam_ttyconv</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> conversation function, which is prototyped in "
+"<filename>security/openpam.h</filename>. If you wish build this application "
+"on a system with a different PAM library, you will have to provide your own "
+"conversation function. A robust conversation function is surprisingly "
+"difficult to implement; the one presented in <xref linkend=\"pam-sample-conv"
+"\"/> is a good starting point, but should not be used in real-world "
+"applications."
 msgstr ""
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1237
+#: article.translate.xml:1251
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -1414,22 +1953,29 @@ msgid ""
 "\tpam_end(pamh, pam_err);\n"
 "\texit(1);\n"
 "}\n"
-""
 msgstr ""
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-module.title
-#: article.translate.xml:1427
+#: article.translate.xml:1441
 msgid "Sample PAM Module"
 msgstr ""
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1429
-msgid "The following is a minimal implementation of <citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</manvolnum></citerefentry>, offering only authentication services. It should build and run with most PAM implementations, but takes advantage of OpenPAM extensions if available: note the use of <citerefentry><refentrytitle>pam_get_authtok</refentrytitle><manvolnum>3</manvolnum></citerefentry>, which enormously simplifies prompting the user for a password."
+#: article.translate.xml:1443
+msgid ""
+"The following is a minimal implementation of "
+"<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, offering only authentication services. It should "
+"build and run with most PAM implementations, but takes advantage of OpenPAM "
+"extensions if available: note the use of "
+"<citerefentry><refentrytitle>pam_get_authtok</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry>, which enormously simplifies prompting the user "
+"for a password."
 msgstr ""
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1436
+#: article.translate.xml:1450
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -1597,22 +2143,30 @@ msgid ""
 "#ifdef PAM_MODULE_ENTRY\n"
 "PAM_MODULE_ENTRY(\"pam_unix\");\n"
 "#endif\n"
-""
 msgstr ""
 
 #. (itstool) path: appendix/title
 #. (itstool) id: article.translate.xml#pam-sample-conv.title
-#: article.translate.xml:1605
+#: article.translate.xml:1619
 msgid "Sample PAM Conversation Function"
 msgstr ""
 
 #. (itstool) path: appendix/para
-#: article.translate.xml:1608
-msgid "The conversation function presented below is a greatly simplified version of OpenPAM's <citerefentry><refentrytitle>openpam_ttyconv</refentrytitle><manvolnum>3</manvolnum></citerefentry>. It is fully functional, and should give the reader a good idea of how a conversation function should behave, but it is far too simple for real-world use. Even if you are not using OpenPAM, feel free to download the source code and adapt <citerefentry><refentrytitle>openpam_ttyconv</refentrytitle><manvolnum>3</manvolnum></citerefentry> to your uses; we believe it to be as robust as a tty-oriented conversation function can reasonably get."
+#: article.translate.xml:1622
+msgid ""
+"The conversation function presented below is a greatly simplified version of "
+"OpenPAM's <citerefentry><refentrytitle>openpam_ttyconv</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>. It is fully "
+"functional, and should give the reader a good idea of how a conversation "
+"function should behave, but it is far too simple for real-world use. Even if "
+"you are not using OpenPAM, feel free to download the source code and adapt "
+"<citerefentry><refentrytitle>openpam_ttyconv</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> to your uses; we believe it to be as robust as a "
+"tty-oriented conversation function can reasonably get."
 msgstr ""
 
 #. (itstool) path: appendix/programlisting
-#: article.translate.xml:1617
+#: article.translate.xml:1632
 #, no-wrap
 msgid ""
 "/*-\n"
@@ -1717,120 +2271,139 @@ msgid ""
 "\t*resp = NULL;\n"
 "\treturn (PAM_CONV_ERR);\n"
 "}\n"
-""
 msgstr ""
 
 #. (itstool) path: info/title
 #. (itstool) id: article.translate.xml#pam-further.title
-#: article.translate.xml:1723
+#: article.translate.xml:1739
 msgid "Further Reading"
 msgstr ""
 
 #. (itstool) path: abstract/para
-#: article.translate.xml:1727
-msgid "This is a list of documents relevant to PAM and related issues. It is by no means complete."
+#: article.translate.xml:1742
+msgid ""
+"This is a list of documents relevant to PAM and related issues. It is by no "
+"means complete."
 msgstr ""
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1733
+#: article.translate.xml:1748
 msgid "Papers"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1736
-msgid "<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external.pdf\"> Making Login Services Independent of Authentication Technologies</link>"
+#: article.translate.xml:1751
+msgid ""
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.external.pdf"
+"\"> Making Login Services Independent of Authentication Technologies</link>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: article.translate.xml:1740
-msgid "<personname><surname>Samar</surname><firstname>Vipin</firstname></personname>"
+#: article.translate.xml:1755
+msgid ""
+"<personname> <surname>Samar</surname> <firstname>Vipin</firstname> </"
+"personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: article.translate.xml:1741
-msgid "<personname><surname>Lai</surname><firstname>Charlie</firstname></personname>"
+#: article.translate.xml:1761
+msgid ""
+"<personname> <surname>Lai</surname> <firstname>Charlie</firstname> </"
+"personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1743
-#: article.translate.xml:1768
-#: article.translate.xml:1788
+#: article.translate.xml:1768 article.translate.xml:1800
+#: article.translate.xml:1834
 msgid "Sun Microsystems"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1747
-msgid "<link xlink:href=\"http://www.opengroup.org/pubs/catalog/p702.htm\">X/Open Single Sign-on Preliminary Specification</link>"
+#: article.translate.xml:1772
+msgid ""
+"<link xlink:href=\"http://www.opengroup.org/pubs/catalog/p702.htm\">X/Open "
+"Single Sign-on Preliminary Specification</link>"
 msgstr ""
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1749
+#: article.translate.xml:1775
 msgid "The Open Group"
 msgstr ""
 
 #. (itstool) path: biblioentry/biblioid
-#: article.translate.xml:1750
+#: article.translate.xml:1776
 msgid "1-85912-144-6"
 msgstr ""
 
 #. (itstool) path: biblioentry/pubdate
-#: article.translate.xml:1751
+#: article.translate.xml:1777
 msgid "June 1997"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1755
-msgid "<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/pre/doc/current-draft.txt\"> Pluggable Authentication Modules</link>"
+#: article.translate.xml:1781
+msgid ""
+"<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/pre/doc/current-"
+"draft.txt\"> Pluggable Authentication Modules</link>"
 msgstr ""
 
 #. (itstool) path: biblioentry/author
-#: article.translate.xml:1757
-#: article.translate.xml:1783
-msgid "<personname><surname>Morgan</surname><firstname>Andrew</firstname><othername role=\"mi\">G.</othername></personname>"
+#: article.translate.xml:1783 article.translate.xml:1822
+msgid ""
+"<personname> <surname>Morgan</surname> <firstname>Andrew</firstname> "
+"<othername role=\"mi\">G.</othername> </personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/pubdate
-#: article.translate.xml:1758
+#: article.translate.xml:1790
 msgid "1999-10-06"
 msgstr ""
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1763
+#: article.translate.xml:1795
 msgid "User Manuals"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1766
-msgid "<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin.pdf\">PAM Administration</link>"
+#: article.translate.xml:1798
+msgid ""
+"<link xlink:href=\"http://www.sun.com/software/solaris/pam/pam.admin.pdf"
+"\">PAM Administration</link>"
 msgstr ""
 
 #. (itstool) path: bibliodiv/title
-#: article.translate.xml:1773
-msgid "Related Web pages"
+#: article.translate.xml:1805
+msgid "Related Web Pages"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1776
-msgid "<link xlink:href=\"http://openpam.sourceforge.net/\">OpenPAM homepage</link>"
+#: article.translate.xml:1808
+msgid ""
+"<link xlink:href=\"http://openpam.sourceforge.net/\">OpenPAM homepage</link>"
 msgstr ""
 
 #. (itstool) path: biblioentry/author
-#: article.translate.xml:1777
-msgid "<personname><surname>Smørgrav</surname><firstname>Dag-Erling</firstname></personname>"
+#: article.translate.xml:1810
+msgid ""
+"<personname> <surname>Smørgrav</surname> <firstname>Dag-Erling</firstname> </"
+"personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/orgname
-#: article.translate.xml:1778
+#: article.translate.xml:1816
 msgid "ThinkSec AS"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1782
-msgid "<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/\">Linux-PAM homepage</link>"
+#: article.translate.xml:1820
+msgid ""
+"<link xlink:href=\"http://www.kernel.org/pub/linux/libs/pam/\">Linux-PAM "
+"homepage</link>"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: article.translate.xml:1787
-msgid "<link xlink:href=\"http://wwws.sun.com/software/solaris/pam/\">Solaris PAM homepage</link>"
+#: article.translate.xml:1832
+msgid ""
+"<link xlink:href=\"http://wwws.sun.com/software/solaris/pam/\">Solaris PAM "
+"homepage</link>"
 msgstr ""
-

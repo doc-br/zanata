@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-08-12 23:11+0000\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,18 +24,21 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:16
 #, no-wrap
-msgid ""
-"Jason Helfman <email>jgh@FreeBSD.org</email>"
+msgid "Jason Helfman <email>jgh@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: info/author
 #: article.translate.xml:10
-msgid "<personname> <firstname>Jason</firstname> <surname>Helfman</surname> </personname> <affiliation> <_:address-1/> </affiliation>"
+msgid ""
+"<personname> <firstname>Jason</firstname> <surname>Helfman</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:20
-msgid "<year>2009</year> <year>2010</year> <year>2011</year> <year>2013</year> <holder role=\"mailto:jgh@FreeBSD.org\">Jason Helfman</holder>"
+msgid ""
+"<year>2009</year> <year>2010</year> <year>2011</year> <year>2013</year> "
+"<holder role=\"mailto:jgh@FreeBSD.org\">Jason Helfman</holder>"
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -45,29 +48,50 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:31
-msgid "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the <quote>™</quote> or the <quote>®</quote> symbol."
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:37
-msgid "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries."
+msgid ""
+"Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, "
+"and Xeon are trademarks or registered trademarks of Intel Corporation or its "
+"subsidiaries in the United States and other countries."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:41
-msgid "AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
+msgid ""
+"AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, "
+"Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
 msgstr ""
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:46
-#: article.translate.xml:48
-msgid "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-update-server/article.xml 51862 2018-06-17 16:40:13Z bcr $"
+#: article.translate.xml:46 article.translate.xml:48
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-update-server/article.xml "
+"51862 2018-06-17 16:40:13Z bcr $"
 msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:51
-msgid "This article describes building an internal <application>FreeBSD Update Server</application>. The <link xlink:href=\"https://svnweb.freebsd.org/base/user/cperciva/freebsd-update-build/\">freebsd-update-server</link> is written by Colin Percival <email>cperciva@FreeBSD.org</email>, Security Officer Emeritus of FreeBSD. For users that think it is convenient to update their systems against an official update server, building their own <application>FreeBSD Update Server</application> may help to extend its functionality by supporting manually-tweaked FreeBSD releases or by providing a local mirror that will allow faster updates for a number of machines."
+msgid ""
+"This article describes building an internal <application>FreeBSD Update "
+"Server</application>. The <link xlink:href=\"https://svnweb.freebsd.org/base/"
+"user/cperciva/freebsd-update-build/\">freebsd-update-server</link> is "
+"written by Colin Percival <email>cperciva@FreeBSD.org</email>, Security "
+"Officer Emeritus of FreeBSD. For users that think it is convenient to update "
+"their systems against an official update server, building their own "
+"<application>FreeBSD Update Server</application> may help to extend its "
+"functionality by supporting manually-tweaked FreeBSD releases or by "
+"providing a local mirror that will allow faster updates for a number of "
+"machines."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -77,7 +101,9 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
-msgid "This article was subsequently printed at <link xlink:href=\"http://bsdmag.org/magazine/1021-bsd-as-a-desktop\">BSD Magazine</link>."
+msgid ""
+"This article was subsequently printed at <link xlink:href=\"http://bsdmag."
+"org/magazine/1021-bsd-as-a-desktop\">BSD Magazine</link>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -87,7 +113,16 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:75
-msgid "Experienced users or administrators are often responsible for several machines or environments. They understand the difficult demands and challenges of maintaining such an infrastructure. Running a <application>FreeBSD Update Server</application> makes it easier to deploy security and software patches to selected test machines before rolling them out to production. It also means a number of systems can be updated from the local network rather than a potentially slower Internet connection. This article outlines the steps involved in creating an internal <application>FreeBSD Update Server</application>."
+msgid ""
+"Experienced users or administrators are often responsible for several "
+"machines or environments. They understand the difficult demands and "
+"challenges of maintaining such an infrastructure. Running a "
+"<application>FreeBSD Update Server</application> makes it easier to deploy "
+"security and software patches to selected test machines before rolling them "
+"out to production. It also means a number of systems can be updated from the "
+"local network rather than a potentially slower Internet connection. This "
+"article outlines the steps involved in creating an internal "
+"<application>FreeBSD Update Server</application>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -97,7 +132,9 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:92
-msgid "To build an internal <application>FreeBSD Update Server</application> some requirements should be met."
+msgid ""
+"To build an internal <application>FreeBSD Update Server</application> some "
+"requirements should be met."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -107,27 +144,42 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:101
-msgid "At a minimum, updates require building on a FreeBSD release greater than or equal to the target release version for distribution."
+msgid ""
+"At a minimum, updates require building on a FreeBSD release greater than or "
+"equal to the target release version for distribution."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
-msgid "A user account with at least 4 GB of available space. This will allow the creation of updates for 7.1 and 7.2, but the exact space requirements may change from version to version."
+msgid ""
+"A user account with at least 4 GB of available space. This will allow the "
+"creation of updates for 7.1 and 7.2, but the exact space requirements may "
+"change from version to version."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:115
-msgid "An <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> account on a remote machine to upload distributed updates."
+msgid ""
+"An <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> account on a remote machine to upload distributed updates."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:120
-msgid "A web server, like <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-apache.html\">Apache</link>, with over half of the space required for the build. For instance, test builds for 7.1 and 7.2 consume a total amount of 4 GB, and the webserver space needed to distribute these updates is 2.6 GB."
+msgid ""
+"A web server, like <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
+"books/handbook/network-apache.html\">Apache</link>, with over half of the "
+"space required for the build. For instance, test builds for 7.1 and 7.2 "
+"consume a total amount of 4 GB, and the webserver space needed to distribute "
+"these updates is 2.6 GB."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:129
-msgid "Basic knowledge of shell scripting with Bourne shell, <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
+msgid ""
+"Basic knowledge of shell scripting with Bourne shell, "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -137,24 +189,31 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
-msgid "Download the <link xlink:href=\"https://svnweb.freebsd.org/base/user/cperciva/freebsd-update-build/\"> freebsd-update-server</link> software by installing <package>devel/subversion</package> and <package>security/ca_root_nss</package>, and execute:"
+msgid ""
+"Download the <link xlink:href=\"https://svnweb.freebsd.org/base/user/"
+"cperciva/freebsd-update-build/\"> freebsd-update-server</link> software by "
+"installing <package>devel/subversion</package> and <package>security/"
+"ca_root_nss</package>, and execute:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:143
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>svn co https://svn.freebsd.org/base/user/cperciva/freebsd-update-build freebsd-update-server</userinput>"
+msgid "<prompt>%</prompt> <userinput>svn co https://svn.freebsd.org/base/user/cperciva/freebsd-update-build freebsd-update-server</userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:145
-msgid "Update <filename>scripts/build.conf</filename> appropriately. It is sourced during all build operations."
+msgid ""
+"Update <filename>scripts/build.conf</filename> appropriately. It is sourced "
+"during all build operations."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:149
-msgid "Here is the default <filename>build.conf</filename>, which should be modified to suit your environment."
+msgid ""
+"Here is the default <filename>build.conf</filename>, which should be "
+"modified to suit your environment."
 msgstr ""
 
 #. (itstool) path: informalexample/programlisting
@@ -191,34 +250,54 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:180
-msgid "This is the location where ISO images are downloaded from (by the <function>fetchiso()</function> subroutine of <filename>scripts/build.subr</filename>). The location configured is not limited to FTP URIs. Any URI scheme supported by standard <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> utility should work fine."
+msgid ""
+"This is the location where ISO images are downloaded from (by the "
+"<function>fetchiso()</function> subroutine of <filename>scripts/build.subr</"
+"filename>). The location configured is not limited to FTP URIs. Any URI "
+"scheme supported by standard <citerefentry><refentrytitle>fetch</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> utility should work "
+"fine."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:187
-msgid "Customizations to the <function>fetchiso()</function> code can be installed by copying the default <filename>build.subr</filename> script to the release and architecture-specific area at <filename>scripts/RELEASE/ARCHITECTURE/build.subr</filename> and applying local changes."
+msgid ""
+"Customizations to the <function>fetchiso()</function> code can be installed "
+"by copying the default <filename>build.subr</filename> script to the release "
+"and architecture-specific area at <filename>scripts/RELEASE/ARCHITECTURE/"
+"build.subr</filename> and applying local changes."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:196
-msgid "The name of the build host. This information will be displayed on updated systems when issuing:"
+msgid ""
+"The name of the build host. This information will be displayed on updated "
+"systems when issuing:"
 msgstr ""
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:199
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>uname -v</userinput>"
+msgid "<prompt>%</prompt> <userinput>uname -v</userinput>"
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:203
-msgid "The <application>SSH</application> key for uploading files to the update server. A key pair can be created by typing <command>ssh-keygen -t dsa</command>. This parameter is optional; standard password authentication will be used as a fallback authentication method when <literal>SSHKEY</literal> is not defined."
+msgid ""
+"The <application>SSH</application> key for uploading files to the update "
+"server. A key pair can be created by typing <command>ssh-keygen -t dsa</"
+"command>. This parameter is optional; standard password authentication will "
+"be used as a fallback authentication method when <literal>SSHKEY</literal> "
+"is not defined."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:210
-msgid "The <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry> manual page has more detailed information about <application>SSH</application> and the appropriate steps for creating and using one."
+msgid ""
+"The <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> manual page has more detailed information about "
+"<application>SSH</application> and the appropriate steps for creating and "
+"using one."
 msgstr ""
 
 #. (itstool) path: callout/para
@@ -233,7 +312,12 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:225
-msgid "The default <filename>build.conf</filename> shipped with the <application>freebsd-update-server</application> sources is suitable for building i386 releases of FreeBSD. As an example of building an update server for other architectures, the following steps outline the configuration changes needed for amd64:"
+msgid ""
+"The default <filename>build.conf</filename> shipped with the "
+"<application>freebsd-update-server</application> sources is suitable for "
+"building i386 releases of FreeBSD. As an example of building an update "
+"server for other architectures, the following steps outline the "
+"configuration changes needed for amd64:"
 msgstr ""
 
 #. (itstool) path: step/para
@@ -244,13 +328,15 @@ msgstr ""
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:237
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/scripts/7.2-RELEASE/amd64</userinput>"
+msgid "<prompt>%</prompt> <userinput>mkdir -p /usr/local/freebsd-update-server/scripts/7.2-RELEASE/amd64</userinput>"
 msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:242
-msgid "Install a <filename>build.conf</filename> in the newly created build directory. The build configuration options for FreeBSD 7.2-RELEASE on amd64 should be similar to:"
+msgid ""
+"Install a <filename>build.conf</filename> in the newly created build "
+"directory. The build configuration options for FreeBSD 7.2-RELEASE on amd64 "
+"should be similar to:"
 msgstr ""
 
 #. (itstool) path: informalexample/programlisting
@@ -273,19 +359,28 @@ msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:264
-msgid "The <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> hash key for the desired release, is published within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/\">release announcement</link>."
+msgid ""
+"The <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> hash key for the desired release, is published "
+"within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
+"\">release announcement</link>."
 msgstr ""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:270
-msgid "To generate the \"End of Life\" number for <filename>build.conf</filename>, refer to the \"Estimated EOL\" posted on the <link xlink:href=\"@@URL_RELPREFIX@@/security/security.html\">FreeBSD Security Website</link>. The value of <literal>EOL</literal> can be derived from the date listed on the web site, using the <citerefentry><refentrytitle>date</refentrytitle><manvolnum>1</manvolnum></citerefentry> utility, for example:"
+msgid ""
+"To generate the \"End of Life\" number for <filename>build.conf</filename>, "
+"refer to the \"Estimated EOL\" posted on the <link xlink:href="
+"\"@@URL_RELPREFIX@@/security/security.html\">FreeBSD Security Website</"
+"link>. The value of <literal>EOL</literal> can be derived from the date "
+"listed on the web site, using the <citerefentry><refentrytitle>date</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> utility, for example:"
 msgstr ""
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:278
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>date -j -f '%Y%m%d-%H%M%S' '20090401-000000' '+%s'</userinput>"
+msgid "<prompt>%</prompt> <userinput>date -j -f '%Y%m%d-%H%M%S' '20090401-000000' '+%s'</userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -295,7 +390,11 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
-msgid "The first step is to run <filename>scripts/make.sh</filename>. This will build some binaries, create directories, and generate an RSA signing key used for approving builds. In this step, a passphrase will have to be supplied for the final creation of the signing key."
+msgid ""
+"The first step is to run <filename>scripts/make.sh</filename>. This will "
+"build some binaries, create directories, and generate an RSA signing key "
+"used for approving builds. In this step, a passphrase will have to be "
+"supplied for the final creation of the signing key."
 msgstr ""
 
 #. (itstool) path: sect1/screen
@@ -325,7 +424,9 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:315
-msgid "Keep a note of the generated key fingerprint. This value is required in <filename>/etc/freebsd-update.conf</filename> for binary updates."
+msgid ""
+"Keep a note of the generated key fingerprint. This value is required in "
+"<filename>/etc/freebsd-update.conf</filename> for binary updates."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -392,12 +493,23 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:369
-msgid "Then the build of the world is performed again, with world patches. A more detailed explanation may be found in <filename>scripts/build.subr</filename>."
+msgid ""
+"Then the build of the world is performed again, with world patches. A more "
+"detailed explanation may be found in <filename>scripts/build.subr</filename>."
 msgstr ""
 
 #. (itstool) path: warning/para
 #: article.translate.xml:374
-msgid "During this second build cycle, the network time protocol daemon, <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></citerefentry>, is turned off. Per Colin Percival <email>cperciva@FreeBSD.org</email>, Security Officer Emeritus of FreeBSD, \"the <link xlink:href=\"https://svnweb.freebsd.org/base/user/cperciva/freebsd-update-build/\">freebsd-update-server</link> build code needs to identify timestamps which are stored in files so that they can be ignored when comparing builds to determine which files need to be updated. This timestamp-finding works by doing two builds 400 days apart and comparing the results.\""
+msgid ""
+"During this second build cycle, the network time protocol daemon, "
+"<citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, is turned off. Per Colin Percival <email>cperciva@FreeBSD."
+"org</email>, Security Officer Emeritus of FreeBSD, \"the <link xlink:href="
+"\"https://svnweb.freebsd.org/base/user/cperciva/freebsd-update-build/"
+"\">freebsd-update-server</link> build code needs to identify timestamps "
+"which are stored in files so that they can be ignored when comparing builds "
+"to determine which files need to be updated. This timestamp-finding works by "
+"doing two builds 400 days apart and comparing the results.\""
 msgstr ""
 
 #. (itstool) path: sect1/screen
@@ -484,7 +596,12 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:453
-msgid "Approve the build if everything is correct. More information on determining this can be found in the distributed source file named <filename>USAGE</filename>. Execute <filename>scripts/approve.sh</filename>, as directed. This will sign the release, and move components into a staging area suitable for uploading."
+msgid ""
+"Approve the build if everything is correct. More information on determining "
+"this can be found in the distributed source file named <filename>USAGE</"
+"filename>. Execute <filename>scripts/approve.sh</filename>, as directed. "
+"This will sign the release, and move components into a staging area suitable "
+"for uploading."
 msgstr ""
 
 #. (itstool) path: informalexample/screen
@@ -509,7 +626,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:472
-msgid "After the approval process is complete, the upload procedure may be started."
+msgid ""
+"After the approval process is complete, the upload procedure may be started."
 msgstr ""
 
 #. (itstool) path: informalexample/screen
@@ -522,7 +640,10 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:481
-msgid "In the event update code needs to be re-uploaded, this may be done by changing to the public distributions directory for the target release and updating attributes of the <emphasis>uploaded</emphasis> file."
+msgid ""
+"In the event update code needs to be re-uploaded, this may be done by "
+"changing to the public distributions directory for the target release and "
+"updating attributes of the <emphasis>uploaded</emphasis> file."
 msgstr ""
 
 #. (itstool) path: informalexample/screen
@@ -535,22 +656,42 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:496
-msgid "The uploaded files will need to be in the document root of the webserver in order for updates to be distributed. The exact configuration will vary depending on the web server used. For the <application>Apache</application> web server, please refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-apache.html\">Configuration of Apache servers</link> section in the Handbook."
+msgid ""
+"The uploaded files will need to be in the document root of the webserver in "
+"order for updates to be distributed. The exact configuration will vary "
+"depending on the web server used. For the <application>Apache</application> "
+"web server, please refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/books/handbook/network-apache.html\">Configuration of Apache "
+"servers</link> section in the Handbook."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:523
-msgid "Update client's <literal>KeyPrint</literal> and <literal>ServerName</literal> in <filename>/etc/freebsd-update.conf</filename>, and perform updates as instructed in the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html\">FreeBSD Update</link> section of the Handbook."
+msgid ""
+"Update client's <literal>KeyPrint</literal> and <literal>ServerName</"
+"literal> in <filename>/etc/freebsd-update.conf</filename>, and perform "
+"updates as instructed in the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html\">FreeBSD "
+"Update</link> section of the Handbook."
 msgstr ""
 
 #. (itstool) path: important/para
 #: article.translate.xml:539
-msgid "In order for <application>FreeBSD Update Server</application> to work properly, updates for both the <emphasis>current</emphasis> release and the release <emphasis>one wants to upgrade to</emphasis> need to be built. This is necessary for determining the differences of files between releases. For example, when upgrading a FreeBSD system from 7.1-RELEASE to 7.2-RELEASE, updates will need to be built and uploaded to your distribution server for both versions."
+msgid ""
+"In order for <application>FreeBSD Update Server</application> to work "
+"properly, updates for both the <emphasis>current</emphasis> release and the "
+"release <emphasis>one wants to upgrade to</emphasis> need to be built. This "
+"is necessary for determining the differences of files between releases. For "
+"example, when upgrading a FreeBSD system from 7.1-RELEASE to 7.2-RELEASE, "
+"updates will need to be built and uploaded to your distribution server for "
+"both versions."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:550
-msgid "For reference, the entire run of <link xlink:href=\"init.txt\"><filename>init.sh</filename></link> is attached."
+msgid ""
+"For reference, the entire run of <link xlink:href=\"init.txt"
+"\"><filename>init.sh</filename></link> is attached."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -560,7 +701,11 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:557
-msgid "Every time a <link xlink:href=\"@@URL_RELPREFIX@@/security/advisories.html\">security advisory</link> or <link xlink:href=\"@@URL_RELPREFIX@@/security/notices.html\">security notice</link> is announced, a patch update can be built."
+msgid ""
+"Every time a <link xlink:href=\"@@URL_RELPREFIX@@/security/advisories.html"
+"\">security advisory</link> or <link xlink:href=\"@@URL_RELPREFIX@@/security/"
+"notices.html\">security notice</link> is announced, a patch update can be "
+"built."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -585,7 +730,9 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:578
-msgid "Create the patch directory of the respective release under <filename>/usr/local/freebsd-update-server/patches/</filename>."
+msgid ""
+"Create the patch directory of the respective release under <filename>/usr/"
+"local/freebsd-update-server/patches/</filename>."
 msgstr ""
 
 #. (itstool) path: informalexample/screen
@@ -598,39 +745,63 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:586
-msgid "As an example, take the patch for <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Read the advisory, and grab the necessary file from <link xlink:href=\"@@URL_RELPREFIX@@/security/advisories.html\">FreeBSD Security Advisories</link>. More information on interpreting the advisory, can be found in the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/security-advisories.html\">FreeBSD Handbook</link>."
+msgid ""
+"As an example, take the patch for <citerefentry><refentrytitle>named</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Read the advisory, "
+"and grab the necessary file from <link xlink:href=\"@@URL_RELPREFIX@@/"
+"security/advisories.html\">FreeBSD Security Advisories</link>. More "
+"information on interpreting the advisory, can be found in the <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/security-"
+"advisories.html\">FreeBSD Handbook</link>."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:592
-msgid "In the <link xlink:href=\"https://security.freebsd.org/advisories/FreeBSD-SA-09:12.bind.asc\">security brief</link>, this advisory is called <literal>SA-09:12.bind</literal>. After downloading the file, it is required to rename the file to an appropriate patch level. It is suggested to keep this consistent with official FreeBSD patch levels, but its name may be freely chosen. For this build, let us follow the currently established practice of FreeBSD and call this <literal>p7</literal>. Rename the file:"
+msgid ""
+"In the <link xlink:href=\"https://security.freebsd.org/advisories/FreeBSD-"
+"SA-09:12.bind.asc\">security brief</link>, this advisory is called "
+"<literal>SA-09:12.bind</literal>. After downloading the file, it is required "
+"to rename the file to an appropriate patch level. It is suggested to keep "
+"this consistent with official FreeBSD patch levels, but its name may be "
+"freely chosen. For this build, let us follow the currently established "
+"practice of FreeBSD and call this <literal>p7</literal>. Rename the file:"
 msgstr ""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:602
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7.1-RELEASE/; mv bind.patch 7-SA-09:12.bind </userinput>"
+msgid "<prompt>%</prompt> <userinput>cd /usr/local/freebsd-update-server/patches/7.1-RELEASE/; mv bind.patch 7-SA-09:12.bind </userinput>"
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:606
-msgid "When running a patch level build, it is assumed that previous patches are in place. When a patch build is run, it will run all patches contained in the patch directory."
+msgid ""
+"When running a patch level build, it is assumed that previous patches are in "
+"place. When a patch build is run, it will run all patches contained in the "
+"patch directory."
 msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:610
-msgid "There can be custom patches added to any build. Use the number zero, or any other number."
+msgid ""
+"There can be custom patches added to any build. Use the number zero, or any "
+"other number."
 msgstr ""
 
 #. (itstool) path: warning/para
 #: article.translate.xml:615
-msgid "It is up to the administrator of the <application>FreeBSD Update Server</application> to take appropriate measures to verify the authenticity of every patch."
+msgid ""
+"It is up to the administrator of the <application>FreeBSD Update Server</"
+"application> to take appropriate measures to verify the authenticity of "
+"every patch."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:621
-msgid "At this point, a <emphasis>diff</emphasis> is ready to be built. The software checks first to see if a <filename>scripts/init.sh</filename> has been run on the respective release prior to running the diff build."
+msgid ""
+"At this point, a <emphasis>diff</emphasis> is ready to be built. The "
+"software checks first to see if a <filename>scripts/init.sh</filename> has "
+"been run on the respective release prior to running the diff build."
 msgstr ""
 
 #. (itstool) path: informalexample/screen
@@ -643,7 +814,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:631
-msgid "What follows is a sample of a <emphasis>differential</emphasis> build run."
+msgid ""
+"What follows is a sample of a <emphasis>differential</emphasis> build run."
 msgstr ""
 
 #. (itstool) path: sect1/screen
@@ -788,7 +960,9 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:748
-msgid "For reference, the entire run of <link xlink:href=\"diff.txt\"><filename>diff.sh</filename></link> is attached."
+msgid ""
+"For reference, the entire run of <link xlink:href=\"diff.txt"
+"\"><filename>diff.sh</filename></link> is attached."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -798,7 +972,20 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:774
-msgid "If a custom release is built using the native <command>make release</command> <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/releng/release-build.html\">procedure</link>, <application>freebsd-update-server</application> code will work from your release. As an example, a release without ports or documentation can be built by clearing functionality pertaining to documentation subroutines <function> findextradocs ()</function>, <function>addextradocs ()</function> and altering the download location in <function>fetchiso ()</function>, respectively, in <filename>scripts/build.subr</filename>. As a last step, change the <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> hash in <filename>build.conf</filename> under your respective release and architecture and you are ready to build off your custom release."
+msgid ""
+"If a custom release is built using the native <command>make release</"
+"command> <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"releng/release-build.html\">procedure</link>, <application>freebsd-update-"
+"server</application> code will work from your release. As an example, a "
+"release without ports or documentation can be built by clearing "
+"functionality pertaining to documentation subroutines <function> "
+"findextradocs ()</function>, <function>addextradocs ()</function> and "
+"altering the download location in <function>fetchiso ()</function>, "
+"respectively, in <filename>scripts/build.subr</filename>. As a last step, "
+"change the <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> hash in <filename>build.conf</filename> under your "
+"respective release and architecture and you are ready to build off your "
+"custom release."
 msgstr ""
 
 #. (itstool) path: listitem/programlisting
@@ -828,7 +1015,12 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:800
-msgid "Adding <option>-j <replaceable>NUMBER</replaceable></option> flags to <_:buildtarget-1/> and <_:buildtarget-2/> targets in the <filename>scripts/build.subr</filename> script may speed up processing depending on the hardware used, however it is not necessary. Using these flags in other targets is not recommended, as it may cause the build to become unreliable."
+msgid ""
+"Adding <option>-j <replaceable>NUMBER</replaceable></option> flags to <_:"
+"buildtarget-1/> and <_:buildtarget-2/> targets in the <filename>scripts/"
+"build.subr</filename> script may speed up processing depending on the "
+"hardware used, however it is not necessary. Using these flags in other "
+"targets is not recommended, as it may cause the build to become unreliable."
 msgstr ""
 
 #. (itstool) path: listitem/programlisting
@@ -849,7 +1041,12 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:823
-msgid "Create an appropriate <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-dns.html\">DNS</link> SRV record for the update server, and put others behind it with variable weights. Using this facility will provide update mirrors, however this tip is not necessary unless you wish to provide a redundant service."
+msgid ""
+"Create an appropriate <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/network-dns.html\">DNS</link> SRV record for the "
+"update server, and put others behind it with variable weights. Using this "
+"facility will provide update mirrors, however this tip is not necessary "
+"unless you wish to provide a redundant service."
 msgstr ""
 
 #. (itstool) path: listitem/programlisting
@@ -860,4 +1057,3 @@ msgid ""
 "\t\t\t\t\tIN SRV   0 1 80   host2.myserver.com.\n"
 "\t\t\t\t\tIN SRV   0 0 80   host3.myserver.com."
 msgstr ""
-
