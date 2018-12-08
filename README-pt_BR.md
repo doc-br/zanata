@@ -7,11 +7,11 @@
 
 ─ ~~building-products~~ - **completo**
 
-─ ~~committers-guide~~ - **completo**
+─ committers-guide (Alterado em r52615)
 
-─ ~~contributing~~ - **completo**
+─ contributing (Alterado em r52615)
 
-─ ~~contributors~~ = **completo**
+─ contributors (Alterado em r52615)
 
 ─ ~~cups~~ - **completo**
 
@@ -21,9 +21,9 @@
 
 ─ ~~fonts~~ - **completo**
 
-─ ~~freebsd-questions~~ - **completo**
+─ freebsd-questions (Alterado em r52615)
 
-─ ~~freebsd-releng~~ = **completo**
+─ freebsd-releng (Alterado em r52615)
 
 ─ ~~freebsd-update-server~~ - **completo**
 
@@ -31,9 +31,9 @@
 
 ─ ~~gjournal-desktop~~ - **completo**
 
-─ ~~hubs~~ - **completo**
+─ hubs (Alterado em r52615)
 
-─ ~~ipsec-must~~ - **completo**
+─ ipsec-must (Alterado em r52615)
 
 ─ ~~ldap-auth~~ - **completo**
 
@@ -47,9 +47,9 @@
 
 ─ ~~nanobsd~~ - **completo**
 
-─ ~~new-users~~ - **completo**
+─ new-users (Alterado em r52615)
 
-─ ~~pam~~ - **completo**
+─ pam (Alterado em r52615)
 
 ─ ~~pgpkeys~~ - **completo**
 
@@ -57,7 +57,7 @@
 
 ─ ~~pr-guidelines~~ - **completo**
 
-─ ~~problem-reports~~ - **completo**
+─ problem-reports (Alterado em r52615)
 
 ─ ~~rc-scripting~~ - **completo**
 
