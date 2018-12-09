@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-12-08 08:21+0000\n"
+"PO-Revision-Date: 2018-12-09 02:03+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -7011,7 +7011,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:3877 book.translate.xml:4255
-#, fuzzy
 msgid ""
 "As this is only syntactic sugar above <varname>DISTFILES</varname> and "
 "<varname>MASTER_SITES</varname>, the group names must adhere to the "
@@ -9339,7 +9338,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:5182
-#, fuzzy
 msgid ""
 "Blanket approval for most ports applies to fixes like infrastructure "
 "changes, or trivial and <emphasis>tested</emphasis> build and runtime fixes. "
@@ -9347,10 +9345,12 @@ msgid ""
 "en_US.ISO8859-1/articles/committers-guide/ports.html#ports-qa-misc-blanket-"
 "approval\">Ports section of the Committer's Guide</link>."
 msgstr ""
-"Se esse PR for aprovado, um committer precisará seguir o restante do "
-"procedimento que é <link xlink:href=\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/"
-"articles/committers-guide/article.html#PORTS\">descrito no Guia do "
-"Committer</link>."
+"Aprovação implícita para maioria dos ports se aplicam para correções como "
+"mudanças de infraestrutura, trivialidades e correções  <emphasis>testadas</"
+"emphasis> de compilação e execução. A lista atual está disponibilizada em "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/pt_BR.ISO8859-1/articles/committers-"
+"guide/ports.html#ports-qa-misc-blanket-approval\">Seção Ports do Guia dos "
+"Committers</link>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5189
@@ -10955,6 +10955,8 @@ msgid ""
 "Some missing permissions will prevent a port (and all ports depending on it) "
 "from being usable by package users:"
 msgstr ""
+"Algumas permissões perdidas impedirão que um port (e todos os ports "
+"dependendo dele) sejam utilizados pelos usuários do pacote:"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:6291
@@ -10962,6 +10964,8 @@ msgid ""
 "A port without the <literal>auto-accept</literal> permission will never be "
 "be built and all the ports depending on it will be ignored."
 msgstr ""
+"Um port sem a permissão <literal>auto-accept</literal> nunca será compilado "
+"e todos os ports dependendo dele serão ignorados."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:6295
@@ -10970,6 +10974,9 @@ msgid ""
 "as well as all the ports depending on it, after the build and they will ever "
 "end up being distributed."
 msgstr ""
+"Um port sem a permissão <literal>pkg-mirror</literal> será removido, assim "
+"como todos os ports que dependam dele, isso depois da compilação e então "
+"eles nunca serão distribuídos."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6302
@@ -14257,7 +14264,6 @@ msgstr "Fornece uma maneira de adicionar conflitos entre as opções."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8051
-#, fuzzy
 msgid ""
 "When <replaceable>OPT</replaceable> is selected, all the options listed in "
 "<varname><replaceable>OPT</replaceable>_PREVENTS</varname> must be un-"
@@ -14266,10 +14272,10 @@ msgid ""
 "they conflict. For example:"
 msgstr ""
 "Quando <replaceable>OPT</replaceable> for selecionada, todas as opções "
-"listadas nessa variável devem estar desmarcadas. E se "
-"<varname><replaceable>OPT</replaceable>_PREVENTS_MSG</varname> estiver "
-"definido, seu conteúdo será exibido, explicando o por que do conflito. Por "
-"exemplo:"
+"listadas em <varname><replaceable>OPT</replaceable>_PREVENTS</varname> devem "
+"estar desmarcadas. Se <varname><replaceable>OPT</replaceable>_PREVENTS_MSG</"
+"varname> estiver definido e um conflito for acionado, seu conteúdo será "
+"exibido explicando o por que do conflito. Por exemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8057
@@ -17229,7 +17235,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9718
-#, fuzzy
 msgid ""
 "This is achieved by passing <literal>-jX</literal> flag to "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
@@ -17247,7 +17252,8 @@ msgstr ""
 "compilações paralelas e pode ser necessário desabilitar explicitamente esse "
 "recurso adicionando a variável <literal>MAKE_JOBS_UNSAFE=yes</literal>. Ela "
 "é usada quando um port é conhecido por não funcionar com a opção <varname>-"
-"jX</varname>."
+"jX</varname> devido a race conditions e problemas de compilação "
+"intermitentes."
 
 #. (itstool) path: important/para
 #: book.translate.xml:9729
@@ -19103,7 +19109,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10720
-#, fuzzy
 msgid ""
 "The Mesa Project is an effort to provide free OpenGL implementation. To "
 "specify a dependency on various components of this project, use "
@@ -19114,10 +19119,10 @@ msgid ""
 msgstr ""
 "O Projeto Mesa é um esforço para fornecer implementação gratuita do OpenGL. "
 "Para especificar uma dependência em vários componentes deste projeto, use a "
-"variável <varname>USE_GL</varname>. Opções válidas são: <literal>egl, gl, "
-"glesv2, glew, glu, glut, glw</literal> e <literal>linux</literal>. Para "
-"compatibilidade com versões anteriores, o valor de <literal>yes</literal> "
-"direciona para <literal>glu</literal>."
+"variável <varname>USE_GL</varname>. Veja <xref linkend=\"uses-gl\"/> para a "
+"lista completa dos componentes disponíveis. Para compatibilidade com versões "
+"anteriores, o valor <literal>yes</literal> direciona para <literal>glu</"
+"literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:10729
@@ -19126,12 +19131,13 @@ msgstr "Exemplo <varname>USE_XORG</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10731
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USES=\t\tgl\n"
 "USE_GL=\t\tglu\n"
 "USE_XORG=\txrender xft xkbfile xt xaw"
-msgstr "USE_XORG=\txrender xft xkbfile xt xaw\n"
-"USE_GL=\t\tglu"
+msgstr "USES=\t\tgl\n"
+"USE_GL=\t\tglu\n"
+"USE_XORG=\txrender xft xkbfile xt xaw"
 
 #. (itstool) path: table/title
 #: book.translate.xml:10737
@@ -19140,9 +19146,8 @@ msgstr "Variáveis ​​para Ports Que Usam X"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10742
-#, fuzzy
 msgid "<literal>USES= imake</literal>"
-msgstr "<literal>imake</literal>"
+msgstr "<literal>USES= imake</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10743
@@ -21158,7 +21163,6 @@ msgstr "Ports que requerem o Qt"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11742
-#, fuzzy
 msgid ""
 "The Ports Collection provides support for Qt 4 and Qt 5 frameworks with "
 "<varname>USES+=qt:<replaceable>x</replaceable></varname>, where "
@@ -21167,13 +21171,13 @@ msgid ""
 "(libraries, tools, plugins). The Qt 4 and Qt 5 frameworks are quite similar. "
 "The main difference is the set of supported components."
 msgstr ""
-"A coleção de Ports fornece suporte para os frameworks Qt 4 e Qt 5 com "
-"<varname>USE_QT<replaceable>x</replaceable></varname>, onde <replaceable>x</"
-"replaceable> é <literal>4</literal> ou <literal>5</literal>. Defina "
-"<varname>USE_QT<replaceable>x</replaceable></varname> para a  lista de "
-"componentes obrigatórios do Qt (bibliotecas, ferramentas, plugins). As "
-"estruturas do Qt 4 e Qt 5 são bastante semelhantes. A principal diferença é "
-"o conjunto de componentes suportados."
+"A Coleção de Ports fornece suporte para os frameworks Qt 4 e Qt 5 com "
+"<varname>USES+=qt:<replaceable>x</replaceable></varname>, onde "
+"<replaceable>x</replaceable> é <literal>4</literal> ou <literal>5</literal>. "
+"Defina <varname>USE_QT</varname> para a  lista de componentes obrigatórios "
+"do Qt (bibliotecas, ferramentas, plugins). As estruturas do Qt 4 e Qt 5 são "
+"bastante semelhantes. A principal diferença é o conjunto de componentes "
+"suportados."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11752
@@ -21276,7 +21280,6 @@ msgstr "Seleção de Componentes"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11810
-#, fuzzy
 msgid ""
 "Individual Qt tool and library dependencies must be specified in "
 "<varname>USE_QT</varname>. Every component can be suffixed with "
@@ -21292,18 +21295,18 @@ msgid ""
 "filename>):"
 msgstr ""
 "Dependências individuais de ferramentas e bibliotecas do Qt devem ser "
-"especificadas em <varname>USE_QT<replaceable>x</replaceable></varname>. Cada "
-"componente pode ser sufixado com <literal>_build</literal> ou <literal>_run</"
-"literal>, o sufixo indica se a dependência no componente está no buildtime "
-"ou no runtime. Se não tiver o sufixo, o componente dependerá de ambos, "
-"buildtime e runtime. Normalmente, os componentes da biblioteca são "
-"especificados sem sufixo, os componentes da ferramenta são principalmente "
-"especificados com os sufixos <literal>_build</literal> e componentes do "
-"plugin são especificados com o sufixo <literal>_run</literal>. Os "
-"componentes mais usados ​​estão listados abaixo (todos os componentes "
-"disponíveis estão listados em <varname>_USE_QT_ALL</varname>, "
-"<varname>_USE_QT4_ONLY</varname> e <varname>_USE_QT5_ONLY</varname> no "
-"arquivo <filename>/usr/ports/Mk/bsd.qt.mk</filename>):"
+"especificadas em <varname>USE_QT</varname>. Cada componente pode ser "
+"sufixado com <literal>_build</literal> ou <literal>_run</literal>, o sufixo "
+"indica se a dependência no componente está no buildtime ou no runtime. Se "
+"não tiver o sufixo, o componente dependerá de ambos, buildtime e runtime. "
+"Normalmente, os componentes da biblioteca são especificados sem sufixo, os "
+"componentes da ferramenta são principalmente especificados com os sufixos "
+"<literal>_build</literal> e componentes do plugin são especificados com o "
+"sufixo <literal>_run</literal>. Os componentes mais usados ​​estão listados "
+"abaixo (todos os componentes disponíveis estão listados em "
+"<varname>_USE_QT_ALL</varname>, <varname>_USE_QT4_ONLY</varname> e "
+"<varname>_USE_QT5_ONLY</varname> no arquivo <filename>/usr/ports/Mk/Uses/qt."
+"mk</filename>):"
 
 #. (itstool) path: table/title
 #: book.translate.xml:11828
@@ -21599,10 +21602,11 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12003
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USES=\tqt:4\n"
 "USE_QT=\tgui moc_build qmake_build rcc_build uic_build"
-msgstr "USE_QT4=\tgui moc_build qmake_build rcc_build uic_build"
+msgstr "USES=\tqt:4\n"
+"USE_QT=\tgui moc_build qmake_build rcc_build uic_build"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12009
@@ -21611,7 +21615,6 @@ msgstr "Usando <command>qmake</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12011
-#, fuzzy
 msgid ""
 "If the application provides a <application>qmake</application> project file "
 "(<filename>*.pro</filename>), define <literal>USES= qmake</literal> along "
@@ -21629,24 +21632,21 @@ msgstr ""
 "literal> junto com <literal>USE_QT<replaceable>x</replaceable></literal>. "
 "Observe que <literal>USES=qmake</literal> já implica uma dependência de "
 "compilação no qmake, portanto, o componente qmake pode ser omitido de "
-"<literal>USE_QT<replaceable>x</replaceable></literal>. Igual ao <link "
-"linkend=\"using-cmake\"><application>CMake</application></link>, o "
-"<application>qmake</application> suporta compilações out-of-source, que "
-"podem ser ativadas especificando o argumento <literal>outsource</literal>  "
-"(ver<link linkend=\"using-qmake-example\"><literal>USES=qmake</"
-"literal>exemplo</link>) ."
+"<literal>USE_QT</literal>. Igual ao <link linkend=\"using-"
+"cmake\"><application>CMake</application></link>, o <application>qmake</"
+"application> suporta compilações out-of-source, que podem ser ativadas "
+"especificando o argumento <literal>outsource</literal>  (ver<link linkend="
+"\"using-qmake-example\"><literal>USES=qmake</literal>exemplo</link>) ."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12025
-#, fuzzy
 msgid "Possible Arguments for <literal>USES= qmake</literal>"
-msgstr "Argumentos possíveis: <literal>env</literal>"
+msgstr "Argumentos Possíveis para <literal>USES= qmake</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12038
-#, fuzzy
 msgid "<literal>no_configure</literal>"
-msgstr "<literal>fontconfig</literal>"
+msgstr "<literal>no_configure</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12039
@@ -21656,12 +21656,16 @@ msgid ""
 "the build only needs the environment setup from <literal>USES= qmake</"
 "literal>, but otherwise runs <command>qmake</command> on its own."
 msgstr ""
+"Não adicione o target configure. Isso é implícito pelo "
+"<literal>HAS_CONFIGURE=yes</literal> e <literal>GNU_CONFIGURE=yes</literal>. "
+"Isso é requerido quando a compilação apenas precisa do ambiente de setup do "
+"<literal>USES= qmake</literal>, e dessa forma, executa-se o <command>qmake</"
+"command> por si próprio."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12049
-#, fuzzy
 msgid "<literal>no_env</literal>"
-msgstr "<literal>none</literal>"
+msgstr "<literal>no_env</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12050
@@ -21671,12 +21675,15 @@ msgid ""
 "the build fails to understand the environment setup by <literal>USES= qmake</"
 "literal>."
 msgstr ""
+"Suprime modificações dos ambientes configure e make. É necessário somente "
+"quando <command>qmake</command> é usado para configurar o software e a "
+"compilação falha em entender a configuração do ambiente pelo <literal>USES= "
+"qmake</literal>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12059
-#, fuzzy
 msgid "<literal>norecursive</literal>"
-msgstr "<literal>ncurses</literal>"
+msgstr "<literal>norecursive</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12060
@@ -21684,17 +21691,18 @@ msgid ""
 "Do not pass the <literal>-recursive</literal> argument to <command>qmake</"
 "command>."
 msgstr ""
+"Não passe o argumento <literal>-recursive</literal> para o <command>qmake</"
+"command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12065
-#, fuzzy
 msgid "<literal>outsource</literal>"
-msgstr "<literal>gtksourceview</literal>"
+msgstr "<literal>outsource</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12066
 msgid "Perform an out-of-source build."
-msgstr ""
+msgstr "Realiza uma compilação out-of-source."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12074
@@ -21742,10 +21750,11 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12113
-#, fuzzy
 msgid ""
 "When using <literal>USES= qmake</literal>, these settings are deployed:"
-msgstr "Ao usar o framework Qt, estas configurações são implementadas:"
+msgstr ""
+"Ao usar <literal>USES= qmake</literal>, estas configurações são "
+"implementadas:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12116
@@ -21779,7 +21788,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12129
-#, fuzzy
 msgid ""
 "Some configure scripts do not support the arguments above. To suppress "
 "modification of <varname>CONFIGURE_ENV</varname> and "
@@ -21788,7 +21796,8 @@ msgid ""
 msgstr ""
 "Alguns scripts de configuração não suportam os argumentos acima. Para "
 "suprimir a modificação de <varname>CONFIGURE_ENV</varname> e "
-"<varname>CONFIGURE_ARGS</varname> defina <varname>QT_NONSTANDARD</varname>."
+"<varname>CONFIGURE_ARGS</varname> defina <literal>USES= qmake:no_env</"
+"literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:12135
@@ -21806,11 +21815,11 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12140
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USES=\tqmake:outsource qt:4\n"
 "USE_QT=\tmoc_build"
-msgstr "USES=\t\tqmake:outsource\n"
-"USE_QT4=\tmoc_build"
+msgstr "USES=\tqmake:outsource qt:4\n"
+"USE_QT=\tmoc_build"
 
 #. (itstool) path: example/para
 #: book.translate.xml:12143
@@ -21819,11 +21828,11 @@ msgstr "Para um port Qt 5:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12144
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USES=\tqmake:outsource qt:5\n"
 "USE_QT=\tbuildtools_build"
-msgstr "USES=\t\tqmake:outsource\n"
-"USE_QT5=\tbuildtools_build"
+msgstr "USES=\tqmake:outsource qt:5\n"
+"USE_QT=\tbuildtools_build"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12148
@@ -22185,7 +22194,6 @@ msgstr "Exemplo <varname>USE_KDE</varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:12358
-#, fuzzy
 msgid ""
 "This is a simple example for a KDE 4 port. <literal>USES= cmake:outsource</"
 "literal> instructs the port to utilize <application>CMake</application>, a "
@@ -22206,19 +22214,19 @@ msgstr ""
 "componentes necessários do KDE e outras dependências podem ser determinadas "
 "através do log de configuração. <varname>USE_KDE</varname> não implica no "
 "<varname>USE_QT4</varname>. Se um port requer alguns componentes do Qt 4, "
-"especifique-os em <varname>USE_QT4</varname>."
+"especifique-os em <varname>USE_QT</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12373
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "USES=\t\tcmake:outsource kde:4 qt:4\n"
 "USE_KDE=\tkdelibs kdeprefix automoc4\n"
 "USE_QT=\t\tmoc_build qmake_build rcc_build uic_build"
 msgstr ""
-"USES=\t\tcmake:outsource kde:4\n"
+"USES=\t\tcmake:outsource kde:4 qt:4\n"
 "USE_KDE=\tkdelibs kdeprefix automoc4\n"
-"USE_QT4=\tmoc_build qmake_build rcc_build uic_build"
+"USE_QT=\t\tmoc_build qmake_build rcc_build uic_build"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:12381
@@ -22295,15 +22303,15 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:12432
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "USES=\tcmake:outsource lxqt qt:5 tar:xz\n"
 "USE_QT=\t\tcore dbus widgets buildtools_build qmake_build\n"
 "USE_LXQT=\tbuildtools libfmqt"
 msgstr ""
-"USES=   cmake:outsource lxqt tar:xz\n"
-"USE_QT5=        buildtools_build qmake_build core dbus widgets\n"
-"USE_LXQT=       buildtools libfmqt"
+"USES=\tcmake:outsource lxqt qt:5 tar:xz\n"
+"USE_QT=\t\tcore dbus widgets buildtools_build qmake_build\n"
+"USE_LXQT=\tbuildtools libfmqt"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:12439
@@ -28307,12 +28315,14 @@ msgid ""
 "If a keyword is used on an <link linkend=\"makefile-options\">optional</"
 "link> entry, it must to be added after the helper:"
 msgstr ""
+"Se uma keyword for utilizada em uma entrada de <link linkend=\"makefile-"
+"options\">opção</link>, ela precisa ser adicionada após o assistente:"
 
 #. (itstool) path: warning/programlisting
 #: book.translate.xml:15855
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "%%FOO%%@sample etc/orbit.conf.sample"
-msgstr "@sample etc/orbit.conf.sample"
+msgstr "%%FOO%%@sample etc/orbit.conf.sample"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:15857
@@ -28321,6 +28331,9 @@ msgid ""
 "so they need to be put first. See <xref linkend=\"options_sub\"/> for more "
 "information."
 msgstr ""
+"Isso é porque os assistentes plist das opções são utilizados para comentar "
+"as linhas, e por isso eles precisam ser inseridos no início. Veja <xref "
+"linkend=\"options_sub\"/> para maiores informações."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:15867
@@ -35174,87 +35187,83 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19569
-#, fuzzy
 msgid "<link linkend=\"dads-deprecated\"><varname>DEPRECATED</varname></link>"
-msgstr "<link linkend=\"dads-deprecated\">DEPRECATED</link>"
+msgstr "<link linkend=\"dads-deprecated\"><varname>DEPRECATED</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19573
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-deprecated\"><varname>EXPIRATION_DATE</varname></link>"
-msgstr "<link linkend=\"dads-deprecated\">EXPIRATION_DATE</link>"
+msgstr ""
+"<link linkend=\"dads-deprecated\"><varname>EXPIRATION_DATE</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19577
-#, fuzzy
 msgid "<link linkend=\"dads-noinstall\"><varname>FORBIDDEN</varname></link>"
-msgstr "<link linkend=\"dads-noinstall\">FORBIDDEN</link>"
+msgstr "<link linkend=\"dads-noinstall\"><varname>FORBIDDEN</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19581
-#, fuzzy
 msgid "<link linkend=\"dads-noinstall\"><varname>BROKEN</varname></link>"
-msgstr "<link linkend=\"dads-noinstall\">BROKEN</link>"
+msgstr "<link linkend=\"dads-noinstall\"><varname>BROKEN</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19585
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-noinstall\"><varname>BROKEN_<replaceable>*</"
 "replaceable></varname></link>"
 msgstr ""
-"<link linkend=\"dads-noinstall\">BROKEN_<replaceable>*</replaceable></link>"
+"<link linkend=\"dads-noinstall\"><varname>BROKEN_<replaceable>*</"
+"replaceable></varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19589
-#, fuzzy
 msgid "<link linkend=\"dads-noinstall\"><varname>IGNORE</varname></link>"
-msgstr "<link linkend=\"dads-noinstall\">IGNORE</link>"
+msgstr "<link linkend=\"dads-noinstall\"><varname>IGNORE</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19593
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-noinstall\"><varname>IGNORE_<replaceable>*</"
 "replaceable></varname></link>"
 msgstr ""
-"<link linkend=\"dads-noinstall\">IGNORE_<replaceable>*</replaceable></link>"
+"<link linkend=\"dads-noinstall\"><varname>IGNORE_<replaceable>*</"
+"replaceable></varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19597
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-noinstall\"><varname>ONLY_FOR_ARCHS</varname></link>"
-msgstr "<link linkend=\"dads-noinstall\">ONLY_FOR_ARCHS</link>"
+msgstr ""
+"<link linkend=\"dads-noinstall\"><varname>ONLY_FOR_ARCHS</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19601
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-"
 "noinstall\"><varname>ONLY_FOR_ARCHS_REASON<replaceable>*</replaceable></"
 "varname></link>"
 msgstr ""
-"<link linkend=\"dads-noinstall\">ONLY_FOR_ARCHS_REASON<replaceable>*</"
-"replaceable></link>"
+"<link linkend=\"dads-"
+"noinstall\"><varname>ONLY_FOR_ARCHS_REASON<replaceable>*</replaceable></"
+"varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19605
-#, fuzzy
 msgid "<link linkend=\"dads-noinstall\"><varname>NOT_FOR_ARCHS</varname></link>"
-msgstr "<link linkend=\"dads-noinstall\">NOT_FOR_ARCHS</link>"
+msgstr ""
+"<link linkend=\"dads-noinstall\"><varname>NOT_FOR_ARCHS</varname></link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19609
-#, fuzzy
 msgid ""
 "<link linkend=\"dads-"
 "noinstall\"><varname>NOT_FOR_ARCHS_REASON<replaceable>*</replaceable></"
 "varname></link>"
 msgstr ""
-"<link linkend=\"dads-noinstall\">NOT_FOR_ARCHS_REASON<replaceable>*</"
-"replaceable></link>"
+"<link linkend=\"dads-"
+"noinstall\"><varname>NOT_FOR_ARCHS_REASON<replaceable>*</replaceable></"
+"varname></link>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:19614
@@ -36393,7 +36402,6 @@ msgstr "<literal>compiler</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20257
-#, fuzzy
 msgid ""
 "Possible arguments: (none), <literal>env</literal> (default, implicit), "
 "<literal>c++17-lang</literal>, <literal>c++14-lang</literal>, <literal>c++11-"
@@ -36402,14 +36410,13 @@ msgid ""
 "literal>, <literal>nestedfct</literal>, <literal>features</literal>"
 msgstr ""
 "Argumentos possíveis: (none), <literal>env</literal> (padrão, implícito) "
-"<literal>c++14-lang</literal>, <literal>c++11-lang</literal>, <literal>gcc-"
-"c++11-lib</literal>, <literal>c++11-lib</literal>, <literal>c++0x</literal>, "
-"<literal>c11</literal>, <literal>openmp</literal>, <literal>nestedfct</"
-"literal>, <literal>features</literal>"
+"<literal>c++17-lang</literal>, <literal>c++14-lang</literal>, <literal>c++11-"
+"lang</literal>, <literal>gcc-c++11-lib</literal>, <literal>c++11-lib</"
+"literal>, <literal>c++0x</literal>, <literal>c11</literal>, <literal>openmp</"
+"literal>, <literal>nestedfct</literal>, <literal>features</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20265
-#, fuzzy
 msgid ""
 "Determines which compiler to use based on any given wishes. Use "
 "<literal>c++17-lang</literal> if the port needs a C++17-capable compiler, "
@@ -36422,10 +36429,11 @@ msgid ""
 "parameters should be used."
 msgstr ""
 "Determina qual compilador usar com base em qualquer um desejo. Use "
-"<literal>c++14-lang</literal> se o port precisar de um compilador compatível "
-"com C++14, <literal>c++11-lang</literal> se o port precisar de um compilador "
-"compatível com C++11, <literal>gcc-c++11-lib</literal> se o port precisar do "
-"compilador <command>g++</command> com uma biblioteca C++11, ou "
+"<literal>c++17-lang</literal> se o port precisar de um compilador compatível "
+"com C++17, <literal>c++14-lang</literal> se o port precisar de um compilador "
+"compatível com C++14, <literal>c++11-lang</literal> se o port precisar de um "
+"compilador compatível com C++11, <literal>gcc-c++11-lib</literal> se o port "
+"precisar do compilador <command>g++</command> com uma biblioteca C++11, ou "
 "<literal>c++11-lib</literal> se o port precisar de uma biblioteca padrão "
 "C++11-ready. Se o port precisar de um compilador que compreenda as funções "
 "C++0X, C11, OpenMP ou funções aninhadas, os parâmetros correspondentes "
@@ -36522,7 +36530,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:20334
-#, fuzzy
 msgid ""
 "Search for the official CPE entry for the software product either by using "
 "the NVD's <link xlink:href=\"http://web.nvd.nist.gov/view/cpe/"
@@ -36542,7 +36549,6 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:20343
-#, fuzzy
 msgid ""
 "Add <literal>cpe</literal> to <varname>USES</varname> and compare the result "
 "of <command>make -V CPE_STR</command> to the <acronym>CPE</acronym> "
@@ -37107,143 +37113,126 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20661 book.translate.xml:20690
-#, fuzzy
 msgid "<literal>gl</literal>"
-msgstr "<literal>gal2</literal>"
+msgstr "<literal>gl</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:20665
-#, fuzzy
 msgid ""
 "Provides an easy way to depend on <application>GL</application> components. "
 "The components should be listed in <varname>USE_GL</varname>. The available "
 "components are:"
 msgstr ""
-"Fornece uma maneira fácil para depender dos componentes do "
-"<application>GNOME</application>. Os componentes devem ser listados na "
-"variável <varname>USE_GNOME</varname>. Os componentes disponíveis são: "
+"Fornece uma maneira fácil para depender dos componentes <application>GL</"
+"application>. Os componentes devem ser listados na variável <varname>USE_GL</"
+"varname>. Os componentes disponíveis são: "
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20672
-#, fuzzy
 msgid "<literal>egl</literal>"
-msgstr "<literal>opengl</literal>"
+msgstr "<literal>egl</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20675
-#, fuzzy
 msgid ""
 "add a library dependency on <filename>libEGL.so</filename> from <package "
 "role=\"port\">graphics/mesa-libs</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"adiciona uma dependência de biblioteca <filename>libEGL.so</filename> de "
+"<package role=\"port\">graphics/mesa-libs</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20681
-#, fuzzy
 msgid "<literal>gbm</literal>"
-msgstr "<literal>gem</literal>"
+msgstr "<literal>gbm</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20684
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libgbm.so</filename> from <package "
 "role=\"port\">graphics/mesa-libs</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libgbm.so</filename> de "
+"<package role=\"port\">graphics/mesa-libs</package>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20693
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libGL.so</filename> from <package role="
 "\"port\">graphics/mesa-libs</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libGL.so</filename> de "
+"<package role=\"port\">graphics/mesa-libs</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20699
-#, fuzzy
 msgid "<literal>glesv2</literal>"
-msgstr "<literal>gal2</literal>"
+msgstr "<literal>glesv2</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20702
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libGLESv2.so</filename> from <package "
 "role=\"port\">graphics/mesa-libs</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libGLESv2.so</filename> de "
+"<package role=\"port\">graphics/mesa-libs</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20708
-#, fuzzy
 msgid "<literal>glew</literal>"
-msgstr "<literal>gem</literal>"
+msgstr "<literal>glew</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20711
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libGLEW.so</filename> from <package "
 "role=\"port\">graphics/glew</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libGLEW.so</filename> de "
+"<package role=\"port\">graphics/glew</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20717
-#, fuzzy
 msgid "<literal>glu</literal>"
-msgstr "<literal>gui</literal>"
+msgstr "<literal>glu</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20720
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libGLU.so</filename> from <package "
 "role=\"port\">graphics/libGLU</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libGLU.so</filename> de "
+"<package role=\"port\">graphics/libGLU</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20726
-#, fuzzy
 msgid "<literal>glut</literal>"
-msgstr "<literal>gui</literal>"
+msgstr "<literal>glut</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20729
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libglut.so</filename> from <package "
 "role=\"port\">graphics/freeglut</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libglut.so</filename> de "
+"<package role=\"port\">graphics/freeglut</package>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:20735
-#, fuzzy
 msgid "<literal>glw</literal>"
-msgstr "<literal>gal2</literal>"
+msgstr "<literal>glw</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20738
-#, fuzzy
 msgid ""
 "Add a library dependency on <filename>libGLw.so</filename> from <package "
 "role=\"port\">graphics/libGLw</package>"
 msgstr ""
-"E adicione ao <filename>Makefile</filename> do <package role=\"port\">dns/"
-"bind910</package>:"
+"Adiciona uma dependência de biblioteca <filename>libGLw.so</filename> de "
+"<package role=\"port\">graphics/libGLw</package>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20746
@@ -39555,14 +39544,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22605
-#, fuzzy
 msgid ""
 "Possible arguments: (none), <literal>norecursive</literal>, "
 "<literal>outsource</literal>, <literal>no_env</literal>, "
 "<literal>no_configure</literal>"
 msgstr ""
-"Argumentos possíveis: (none), <literal>build</literal>, <literal>run</"
-"literal>, <literal>both</literal>, <literal>vars</literal>"
+"Argumentos possíveis: (none), <literal>norecursive</literal>, "
+"<literal>outsource</literal>, <literal>no_env</literal>, "
+"<literal>no_configure</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22609
@@ -39575,24 +39564,23 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22616
-#, fuzzy
 msgid ""
 "Possible arguments: <literal>4</literal>, <literal>5</literal>, "
 "<literal>no_env</literal>"
 msgstr ""
 "Argumentos possíveis: <literal>4</literal>, <literal>5</literal>, "
-"<literal>selfbuild</literal>"
+"<literal>no_env</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22619
-#, fuzzy
 msgid ""
 "Add dependency on <application>Qt</application> components. <literal>no_env</"
 "literal> is passed directly to <literal>USES= qmake</literal>. See <xref "
 "linkend=\"using-qt\"/> for more information."
 msgstr ""
-"Adiciona dependência de componentes <application>KDE</application>. Veja "
-"<xref linkend=\"using-kde\"/> para maiores informações."
+"Adiciona dependência de componentes <application>Qt</application>. "
+"<literal>no_env</literal> é passado diretamente para <literal>USES= qmake</"
+"literal>. Veja <xref linkend=\"using-qt\"/> para maiores informações."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22626
@@ -39706,7 +39694,6 @@ msgstr "<literal>shared-mime-info</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22693
-#, fuzzy
 msgid ""
 "Uses <application>update-mime-database</application> from <package role="
 "\"port\">misc/shared-mime-info</package>. This uses will automatically add a "
@@ -40694,15 +40681,13 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23310
-#, fuzzy
 msgid "FreeBSD 13 Versions"
-msgstr "Versões do FreeBSD 3"
+msgstr "Versões do FreeBSD 13"
 
 #. (itstool) path: table/title
 #: book.translate.xml:23313
-#, fuzzy
 msgid "FreeBSD 13 <literal>__FreeBSD_version</literal> Values"
-msgstr "Valores do <literal>__FreeBSD_version</literal> para o FreeBSD 3"
+msgstr "Valores do <literal>__FreeBSD_version</literal> para o FreeBSD 13"
 
 # auto translated by TM merge from project: DocBook locales, version: 1, DocId: locale
 #. (itstool) path: row/entry
@@ -40735,123 +40720,103 @@ msgstr "Release"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23331
-#, fuzzy
 msgid "1300000"
-msgstr "300000"
+msgstr "1300000"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23332
-#, fuzzy
 msgid "<revnumber>339436</revnumber>"
-msgstr "<revnumber>153936</revnumber>"
+msgstr "<revnumber>339436</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23333 book.translate.xml:24148
-#, fuzzy
 msgid "October 19, 2018"
-msgstr "19 de outubro de 2013"
+msgstr "19 de outubro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23334
-#, fuzzy
 msgid "13.0-CURRENT."
-msgstr "12.0-CURRENT."
+msgstr "13.0-CURRENT."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23338
-#, fuzzy
 msgid "1300001"
-msgstr "300001"
+msgstr "1300001"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23339
-#, fuzzy
 msgid "<revnumber>339730</revnumber>"
-msgstr "<revnumber>r334930</revnumber>"
+msgstr "<revnumber>339730</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23340 book.translate.xml:23348 book.translate.xml:24157
-#, fuzzy
 msgid "October 25, 2018"
-msgstr "25 de outubro de 2017"
+msgstr "25 de outubro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23341
-#, fuzzy
 msgid "13.0-CURRENT after bumping OpenSSL shared library version numbers."
-msgstr ""
-"7.0-CURRENT after bump of all shared library versions that had not been "
-"changed since RELENG_5."
+msgstr "13.0-CURRENT after bumping OpenSSL shared library version numbers."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23346
-#, fuzzy
 msgid "1300002"
-msgstr "300002"
+msgstr "1300002"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23347
-#, fuzzy
 msgid "<revnumber>339765</revnumber>"
-msgstr "<revnumber>304395</revnumber>"
+msgstr "<revnumber>339765</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23349
-#, fuzzy
 msgid "13.0-CURRENT after restoration of <filename>sys/joystick.h</filename>."
-msgstr "12.0-CURRENT after removal of <filename>pcap-int.h</filename>"
+msgstr ""
+"13.0-CURRENT after restoration of <filename>sys/joystick.h</filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23354
-#, fuzzy
 msgid "1300003"
-msgstr "300003"
+msgstr "1300003"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23355
-#, fuzzy
 msgid "<revnumber>340055</revnumber>"
-msgstr "<revnumber>30053</revnumber>"
+msgstr "<revnumber>340055</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23356
-#, fuzzy
 msgid "November 2, 2018"
-msgstr "2 de novembro de 2015"
+msgstr "2 de novembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23357
-#, fuzzy
 msgid ""
 "13.0-CURRENT after vop_symlink API change (<literal>a_target</literal> is "
 "now <literal>const</literal>.)"
 msgstr ""
-"11.0-CURRENT after <literal>cnt</literal> rename to <literal>vm_cnt</"
-"literal>."
+"13.0-CURRENT after vop_symlink API change (<literal>a_target</literal> is "
+"now <literal>const</literal>.)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23363
-#, fuzzy
 msgid "1300004"
-msgstr "300004"
+msgstr "1300004"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23364
-#, fuzzy
 msgid "<revnumber>340841</revnumber>"
-msgstr "<revnumber>43041</revnumber>"
+msgstr "<revnumber>340841</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23365
-#, fuzzy
 msgid "November 23, 2018"
-msgstr "3 de novembro de 2014"
+msgstr "23 de novembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23366
-#, fuzzy
 msgid "13.0-CURRENT after enabling crtbegin and crtend code"
-msgstr "11.0-CURRENT after string collation and locales rework."
+msgstr "13.0-CURRENT after enabling crtbegin and crtend code"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23375
@@ -42731,9 +42696,8 @@ msgstr "1200077"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24079
-#, fuzzy
 msgid "<revnumber>r337576</revnumber>"
-msgstr "<revnumber>233757</revnumber>"
+msgstr "<revnumber>r337576</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24080
@@ -42747,45 +42711,38 @@ msgstr "12.0-CURRENT after timespec_get was added to the system."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24086
-#, fuzzy
 msgid "1200078"
-msgstr "1200007"
+msgstr "1200078"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24087
-#, fuzzy
 msgid "<revnumber>r337863</revnumber>"
-msgstr "<revnumber>r332363</revnumber>"
+msgstr "<revnumber>r337863</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24088
-#, fuzzy
 msgid "August 15, 2018"
-msgstr "15 de agosto de 2013"
+msgstr "15 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24089
-#, fuzzy
 msgid "12.0-CURRENT after exec.created hook for jails."
-msgstr "8.0-CURRENT after removal of sgtty."
+msgstr "12.0-CURRENT after exec.created hook for jails."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24094
-#, fuzzy
 msgid "1200079"
-msgstr "1200007"
+msgstr "1200079"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24095
-#, fuzzy
 msgid "<revnumber>r338061</revnumber>"
-msgstr "<revnumber>r334461</revnumber>"
+msgstr "<revnumber>r338061</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24096
-#, fuzzy
 msgid "August 19, 2018"
-msgstr "19 de agosto de 2013"
+msgstr "19 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24097
@@ -42794,201 +42751,177 @@ msgid ""
 "Chacha20 algorithm and deprecating <function>arc4random_stir</function> and "
 "<function>arc4random_addrandom</function>."
 msgstr ""
+"12.0-CURRENT after converting <function>arc4random</function> to using the "
+"Chacha20 algorithm and deprecating <function>arc4random_stir</function> and "
+"<function>arc4random_addrandom</function>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24105
-#, fuzzy
 msgid "1200080"
-msgstr "1200008"
+msgstr "1200080"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24106
-#, fuzzy
 msgid "<revnumber>r338172</revnumber>"
-msgstr "<revnumber>r334892</revnumber>"
+msgstr "<revnumber>r338172</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24107
-#, fuzzy
 msgid "August 22, 2018"
-msgstr "22 de agosto de 2016"
+msgstr "22 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24108
-#, fuzzy
 msgid "12.0-CURRENT after removing the drm drivers."
-msgstr "12.0-CURRENT after removing MCA and EISA support."
+msgstr "12.0-CURRENT after removing the drm drivers."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24113
-#, fuzzy
 msgid "1200081"
-msgstr "1200008"
+msgstr "1200081"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24114
-#, fuzzy
 msgid "<revnumber>r338182</revnumber>"
-msgstr "<revnumber>r334892</revnumber>"
+msgstr "<revnumber>r338182</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24115
-#, fuzzy
 msgid "August 21, 2018"
-msgstr "21 de agosto de 2017"
+msgstr "21 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24116
-#, fuzzy
 msgid "12.0-CURRENT after KPI changes to NVMe."
-msgstr "12.0-CURRENT after KPI changes to timespecadd."
+msgstr "12.0-CURRENT after KPI changes to NVMe."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24120
-#, fuzzy
 msgid "1200082"
-msgstr "1200008"
+msgstr "1200082"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24121
-#, fuzzy
 msgid "<revnumber>r338285</revnumber>"
-msgstr "<revnumber>r334892</revnumber>"
+msgstr "<revnumber>r338285</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24122
-#, fuzzy
 msgid "August 24, 2018"
-msgstr "24 de agosto de 2016"
+msgstr "24 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24123
-#, fuzzy
 msgid "12.0-CURRENT after reverting the removal of the drm drivers."
-msgstr "5.0-CURRENT after removal of the old rc system."
+msgstr "12.0-CURRENT after reverting the removal of the drm drivers."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24128
-#, fuzzy
 msgid "1200083"
-msgstr "1200008"
+msgstr "1200083"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24129
-#, fuzzy
 msgid "<revnumber>r338331</revnumber>"
-msgstr "<revnumber>r323431</revnumber>"
+msgstr "<revnumber>r338331</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24130
-#, fuzzy
 msgid "August 26, 2018"
-msgstr "26 de agosto de 2016"
+msgstr "26 de agosto de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24131
-#, fuzzy
 msgid ""
 "12.0-CURRENT after removing <function>arc4random_stir</function> and "
 "<function>arc4random_addrandom</function>."
 msgstr ""
-"12.0-CURRENT after removing <function>fgetsock</function> and "
-"<function>fputsock</function>."
+"12.0-CURRENT after removing <function>arc4random_stir</function> and "
+"<function>arc4random_addrandom</function>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24137
-#, fuzzy
 msgid "1200084"
-msgstr "1200008"
+msgstr "1200084"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24138
-#, fuzzy
 msgid "<revnumber>r338478</revnumber>"
-msgstr "<revnumber>r331838</revnumber>"
+msgstr "<revnumber>r338478</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24139
-#, fuzzy
 msgid "September 5, 2018"
-msgstr "5 de setembro de 2016"
+msgstr "5 de setembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24140
-#, fuzzy
 msgid ""
 "12.0-CURRENT after updating <citerefentry><refentrytitle>objcopy</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to properly handle "
 "little-endian MIPS64 object files."
 msgstr ""
-"8.0-CURRENT after changing <citerefentry><refentrytitle>bpf</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry> to use a single device "
-"node, instead of device cloning."
+"12.0-CURRENT after updating <citerefentry><refentrytitle>objcopy</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> to properly handle "
+"little-endian MIPS64 object files."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24146
-#, fuzzy
 msgid "1200085"
-msgstr "1200008"
+msgstr "1200085"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24147
-#, fuzzy
 msgid "<revnumber>r339270</revnumber>"
-msgstr "<revnumber>r332100</revnumber>"
+msgstr "<revnumber>r339270</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24149
-#, fuzzy
 msgid ""
 "12.0-STABLE after updating <application>OpenSSL</application> to version 1.1."
 "1."
 msgstr ""
-"Caminho para arquivos de configuração do <application>OpenSSL</application>."
+"12.0-STABLE after updating <application>OpenSSL</application> to version 1.1."
+"1."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24155
-#, fuzzy
 msgid "1200086"
-msgstr "1200008"
+msgstr "1200086"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24156
-#, fuzzy
 msgid "<revnumber>r339732</revnumber>"
-msgstr "<revnumber>r334892</revnumber>"
+msgstr "<revnumber>r339732</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24158
-#, fuzzy
 msgid ""
 "12.0-STABLE after updating <application>OpenSSL</application> shared library "
 "version numbers."
-msgstr "Caminho para as bibliotecas do <application>OpenSSL</application>."
+msgstr ""
+"12.0-STABLE after updating <application>OpenSSL</application> shared library "
+"version numbers."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24164
-#, fuzzy
 msgid "1200500"
-msgstr "1200050"
+msgstr "1200500"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24165
-#, fuzzy
 msgid "<revnumber>r340471</revnumber>"
-msgstr "<revnumber>r334461</revnumber>"
+msgstr "<revnumber>r340471</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24166
-#, fuzzy
 msgid "November 16, 2018"
-msgstr "16 de novembro de 2011"
+msgstr "16 de novembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:24167
-#, fuzzy
 msgid "12-STABLE after releng/12.0 was branched."
-msgstr "11-STABLE after releng/11.2 branched."
+msgstr "12-STABLE after releng/12.0 was branched."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:24175
@@ -46100,13 +46033,12 @@ msgstr "11 de maio de 2017"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25360
-#, fuzzy
 msgid ""
 "11.0-STABLE after merging the addition of the <filename>&lt;dev/mmc/"
 "mmc_ioctl.h&gt;</filename> header."
 msgstr ""
-"10-STABLE after merging the addition of the <filename>&lt;dev/mmc/mmc_ioctl."
-"h&gt;</filename> header."
+"11.0-STABLE after merging the addition of the <filename>&lt;dev/mmc/"
+"mmc_ioctl.h&gt;</filename> header."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25366
@@ -46587,11 +46519,10 @@ msgstr "<revnumber>r334459</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25547
-#, fuzzy
 msgid ""
 "<literal>releng/11.2</literal> branched from <literal>stable/11</literal>."
 msgstr ""
-"<literal>releng/11.1</literal> branched from <literal>stable/11</literal>."
+"<literal>releng/11.2</literal> branched from <literal>stable/11</literal>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25552
@@ -46610,21 +46541,18 @@ msgstr "11-STABLE after releng/11.2 branched."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25559
-#, fuzzy
 msgid "1102501"
-msgstr "1102500"
+msgstr "1102501"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25560
-#, fuzzy
 msgid "<revnumber>r335436</revnumber>"
-msgstr "<revnumber>r333446</revnumber>"
+msgstr "<revnumber>r335436</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25561
-#, fuzzy
 msgid "June 20, 2018"
-msgstr "20 de junho de 2014"
+msgstr "20 de junho de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25562
@@ -46632,24 +46560,23 @@ msgid ""
 "11-STABLE after LinuxKPI updates requiring recompilation of external kernel "
 "modules."
 msgstr ""
+"11-STABLE after LinuxKPI updates requiring recompilation of external kernel "
+"modules."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25567
-#, fuzzy
 msgid "1102502"
-msgstr "1102500"
+msgstr "1102502"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25568
-#, fuzzy
 msgid "<revnumber>r338617</revnumber>"
-msgstr "<revnumber>r335873</revnumber>"
+msgstr "<revnumber>r338617</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25569
-#, fuzzy
 msgid "September 12, 2018"
-msgstr "12 de setembro de 2016"
+msgstr "12 de setembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25570
@@ -46658,35 +46585,35 @@ msgid ""
 "system call to properly down-convert layout of the 64-bit structures to "
 "match what 32-bit app(s) expect."
 msgstr ""
+"11-STABLE after adding a socket option SO_TS_CLOCK and fixing recvmsg32() "
+"system call to properly down-convert layout of the 64-bit structures to "
+"match what 32-bit app(s) expect."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25577
-#, fuzzy
 msgid "1102503"
-msgstr "1102500"
+msgstr "1102503"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25578
-#, fuzzy
 msgid "<revnumber>r338931</revnumber>"
-msgstr "<revnumber>r323431</revnumber>"
+msgstr "<revnumber>r338931</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25579
-#, fuzzy
 msgid "September 25, 2018"
-msgstr "5 de setembro de 2016"
+msgstr "25 de setembro de 2018"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25580
-#, fuzzy
 msgid ""
 "11-STABLE after merging a TCP checksum fix to "
 "<citerefentry><refentrytitle>iflib</refentrytitle><manvolnum>9</manvolnum></"
 "citerefentry> and adding new media types to if_media.h"
 msgstr ""
-"10-STABLE after merge of API change to <citerefentry><refentrytitle>dpv</"
-"refentrytitle><manvolnum>3</manvolnum></citerefentry>."
+"11-STABLE after merging a TCP checksum fix to "
+"<citerefentry><refentrytitle>iflib</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> and adding new media types to if_media.h"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25586
