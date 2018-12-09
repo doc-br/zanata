@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-12-09 01:55+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-12-09 08:29+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -120,11 +120,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:65 article.translate.xml:67
-#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 52611 "
 "2018-12-06 16:04:59Z mat $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 52611 "
+"2018-12-06 16:04:59Z mat $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:70
@@ -393,14 +394,14 @@ msgstr "Criando uma chave"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
-#, fuzzy
 msgid ""
 "Existing keys can be used, but should be checked with <filename>doc/head/"
 "share/pgpkeys/checkkey.sh</filename> first. In this case, make sure the key "
 "has a FreeBSD user ID."
 msgstr ""
 "As chaves existentes podem ser usadas, mas elas devem ser obtidas com o "
-"<filename>doc/head/share/pgpkeys/checkkey.sh</filename> primeiro."
+"<filename>doc/head/share/pgpkeys/checkkey.sh</filename> primeiro. Neste "
+"caso, certifique-se que a chave contenha um ID de usuário FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:217
@@ -5785,7 +5786,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:2902
-#, fuzzy
 msgid ""
 "Glen Barber <email>gjb@FreeBSD.org</email>, Konstantin Belousov "
 "<email>kib@FreeBSD.org</email>, Bryan Drewery <email>bdrewery@FreeBSD.org</"
@@ -5801,7 +5801,7 @@ msgstr ""
 "<email>rgrimes@FreeBSD.org</email>, Xin Li <email>delphij@FreeBSD.org</"
 "email>, Hiroki Sato <email>hrs@FreeBSD.org</email>, Gleb Smirnoff "
 "<email>glebius@FreeBSD.org</email>, Marius Strobl <email>marius@FreeBSD.org</"
-"email>, Robert Watson <email>rwatson@FreeBSD.org</email>"
+"email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2905
@@ -6254,14 +6254,12 @@ msgstr "Teste suas alterações antes de fazer o commit."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3152 article.translate.xml:3458
-#, fuzzy
 msgid ""
 "Do not commit to contributed software without <emphasis>explicit</emphasis> "
 "approval from the respective maintainers."
 msgstr ""
-"Não faça o commit de nada sob as árvores <filename>src/contrib</filename>, "
-"<filename>src/crypto</filename>, e <filename>src/sys/contrib</filename> sem "
-"a aprovação <emphasis>explicita</emphasis> dos respectivos mantenedores."
+"Não commit em software contribuído sem a aprovação <emphasis>explicita</"
+"emphasis> dos respectivos mantenedores."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3158
@@ -6739,19 +6737,17 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3462
-#, fuzzy
 msgid ""
 "Contributed software is anything under the <filename>src/contrib</filename>, "
 "<filename>src/crypto</filename>, or <filename>src/sys/contrib</filename> "
 "trees."
 msgstr ""
-"Não faça commit de nada sob as árvores  <filename>src/contrib</filename>, "
-"<filename>src/crypto</filename>, ou <filename>src/sys/contrib</filename> sem "
-"aprovação <emphasis>explicita</emphasis> dos respectivos mantenedores."
+"Software contribuído é qualquer código que esteja sob as árvores  "
+"<filename>src/contrib</filename>, <filename>src/crypto</filename>, ou "
+"<filename>src/sys/contrib</filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3467
-#, fuzzy
 msgid ""
 "The trees mentioned above are for contributed software usually imported onto "
 "a vendor branch. Committing something there may cause unnecessary headaches "
@@ -6760,12 +6756,11 @@ msgid ""
 "with permission of the maintainer."
 msgstr ""
 "As árvores mencionadas acima são para software contribuído geralmente "
-"importado para um branch de fornecedor. fazer o commit de algo lá, mesmo que "
-"não retire o arquivo branch do fornecedor, pode causar dores de cabeça "
-"desnecessárias para os responsáveis ​​pela manutenção desse software em "
-"particular. Assim, a menos que você tenha aprovação <emphasis>explícita</"
-"emphasis> do mantenedor (ou você é o mantenedor), <emphasis>não</emphasis> "
-"faça commit lá!"
+"importado para um branch de fornecedor. Fazer o commit de algo lá pode "
+"causar dores de cabeça desnecessárias quando for importado novas versões do "
+"software. Uma regra geral é considerar enviar os patches upstream "
+"diretamente para o fornecedor. Patches podem ser committados primeiramente "
+"no FreeBSD, desde que tenha a permissão do mantenedor."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3475
@@ -6778,6 +6773,13 @@ msgid ""
 "merge thereafter more difficult: such patches need to be manually re-"
 "verified every import."
 msgstr ""
+"As razões para modificar o software upstream variam entre querer controle "
+"estrito sobre uma dependência fortemente acoplada à falta de portabilidade "
+"na distribuição do repositório canônico do seu código. Independentemente do "
+"motivo, o esforço para minimizar a carga de manutenção do fork é útil para "
+"outros mantenedores. Evite realizar commits de alterações triviais ou "
+"cosméticas nos arquivos, pois isso dificulta cada merge: esses patches "
+"precisam ser verificados manualmente a cada importação."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3485
@@ -6787,6 +6789,11 @@ msgid ""
 "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
 "arch\">FreeBSD architecture and design mailing list</link> and ask."
 msgstr ""
+"Se uma parte específica do software não tiver mantenedor, você é encorajado "
+"para assumir como mantenedor. Se você não tiver certeza sobre o mantenedor "
+"atual, envie um email para a <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/freebsd-arch\">lista de email de arquitetura e design do "
+"FreeBSD</link> e pergunte."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3494
@@ -8245,18 +8252,18 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: article.translate.xml:4366
-#, fuzzy
 msgid "Are there any changes that can be merged without asking for approval?"
 msgstr ""
 "Existe alguma alteração para a qual possa ser feito o commit sem aprovação?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4371
-#, fuzzy
 msgid ""
 "The following blanket approvals for merging to the quarterly branches are in "
 "effect:"
-msgstr "As seguintes aprovações gerais estão em vigor:"
+msgstr ""
+"As seguintes aprovações implícitas para merge nas branches trimestrais estão "
+"em vigor:"
 
 #. (itstool) path: important/para
 #: article.translate.xml:4375
@@ -8347,15 +8354,14 @@ msgstr ""
 
 #. (itstool) path: important/para
 #: article.translate.xml:4435
-#, fuzzy
 msgid ""
 "Commits that are not covered by these blanket approvals always require "
 "explicit approval of either Ports Security Team <email>ports-secteam@FreeBSD."
 "org</email> or Ports Management Team <email>portmgr@FreeBSD.org</email>."
 msgstr ""
-"Commits que não são cobertos por essas aprovações gerais sempre exigem "
+"Commits que não são cobertos por essas aprovações implícitas sempre exigem "
 "aprovação explícita da Equipe de Segurança do Ports <email>ports-"
-"secteam@FreeBSD.org</email> ou da Equipe de Gerenciamento de Ports "
+"secteam@FreeBSD.org</email> ou da Equipe de Gerenciamento do Ports "
 "<email>portmgr@FreeBSD.org</email>."
 
 #. (itstool) path: question/para
@@ -8374,7 +8380,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4453
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
 "userinput>\n"
@@ -8474,7 +8480,7 @@ msgstr ""
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
 " # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
-"52061 2018-07-26 05:18:49Z eadler $\n"
+"52611 2018-12-06 16:04:59Z mat $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
@@ -8538,7 +8544,6 @@ msgstr "Host *.freebsd.org\n"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4528
-#, fuzzy
 msgid ""
 "The script is also able to merge more than one revision at a time. If there "
 "have been other updates to the port since the branch was created that have "
@@ -8880,10 +8885,10 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4769
-#, fuzzy
 msgid "Blanket approval for most ports applies to these types of fixes:"
 msgstr ""
-"A aprovação geral da maioria dos ports se aplica a estes tipos de correções:"
+"A aprovação implícita para a maioria dos ports se aplica a estes tipos de "
+"correções:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4774
@@ -8893,25 +8898,30 @@ msgid ""
 "new <varname>USES</varname> macros, enabling verbose builds, and switching "
 "to new ports system syntaxes."
 msgstr ""
+"A maioria das alterações de infraestrutura para um port (isso é, modernizar, "
+"sem alterar funcionalidades). Por exemplo, a aprovação implícita inclui a "
+"conversão de novas macros <varname>USES</varname>, ativar verbosidade de "
+"compilação e alterações para novas sintaxes de sistema do ports."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4783
 msgid "Trivial and <emphasis>tested</emphasis> build and runtime fixes."
 msgstr ""
+"Trivialidades e correções <emphasis>testadas</emphasis> de compilação e "
+"execução."
 
 #. (itstool) path: important/para
 #: article.translate.xml:4789
-#, fuzzy
 msgid ""
 "Exceptions to this are anything maintained by the Ports Management Team "
 "<email>portmgr@FreeBSD.org</email>, or the Security Officer Team "
 "<email>security-officer@FreeBSD.org</email>. No unauthorized commits may "
 "ever be made to ports maintained by those groups."
 msgstr ""
-"Ele notificará automaticamente a Equipe de Segurança do Ports <email>ports-"
-"secteam@FreeBSD.org</email> e a Equipe de Gerenciamento de Ports "
-"<email>portmgr@FreeBSD.org</email>. Eles então decidirão se o commit pode "
-"ser aplicado e responder com o procedimento."
+"Exceções para isso são qualquer coisa que seja mantido pela Equipe de "
+"Gerenciamento do Ports <email>portmgr@FreeBSD.org</email> ou pelo Time de "
+"Oficiais de Segurança <email>security-officer@FreeBSD.org</email>. Nenhum "
+"commit não autorizado pode ser feito em ports mantidos por esses grupos."
 
 #. (itstool) path: warning/para
 #: article.translate.xml:4796
@@ -8923,6 +8933,13 @@ msgid ""
 "use external repositories and can have work that would conflict with changes "
 "that would normally fall under blanket approval."
 msgstr ""
+"Aprovação implícita não se aplica a ports que são mantidos por equipes como "
+"<email role=\"nolink\">autotools@FreeBSD.org</email>, <email role="
+"\"nolink\">x11@FreeBSD.org</email>, <email role=\"nolink\">gnome@FreeBSD."
+"org</email>, ou <email role=\"nolink\">kde@FreeBSD.org</email>. Essas "
+"equipes usam repositórios externos e podem ter trabalhos que entrariam em "
+"conflito com mudanças que normalmente seriam abrangidas pela aprovação "
+"implícita."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4807
