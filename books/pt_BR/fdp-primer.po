@@ -1,6 +1,5 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Lucas Andrade <lucassandrade98@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -8,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-12-10 07:19+0000\n"
-"Last-Translator: Lucas Andrade <lucassandrade98@gmail.com>\n"
+"PO-Revision-Date: 2018-12-11 06:18+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -4329,7 +4328,6 @@ msgstr "Identificadores Públicos Formais (<acronym>FPI</acronym>s)"
 
 #. (itstool) path: note/para
 #: book.translate.xml:2554
-#, fuzzy
 msgid ""
 "It is not necessary to know this, but it is useful background, and might "
 "help debug problems when the <acronym>XML</acronym> processor cannot locate "
@@ -4934,7 +4932,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2876
-#, fuzzy
 msgid ""
 "Parameter entity definitions are similar to those for general entities. "
 "However, parameter entities are included with <literal>%<replaceable>entity-"
@@ -4964,7 +4961,7 @@ msgstr "Definindo Entidades de Parâmetro"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:2891
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n"
 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\" [\n"
@@ -4975,8 +4972,9 @@ msgid ""
 msgstr ""
 "&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n"
 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\" [\n"
-"&lt;!ENTITY current.version    \"3.0-RELEASE\"&gt;\n"
-"&lt;!ENTITY last.version       \"2.2.7-RELEASE\"&gt;\n"
+"&lt;!ENTITY % entity \"&lt;!ENTITY version '1.0'&gt;\"&gt;\n"
+"&lt;!-- use the parameter entity --&gt;\n"
+"%entity;\n"
 "]&gt;"
 
 #. (itstool) path: sect2/para
@@ -4986,6 +4984,9 @@ msgid ""
 "possible to <link linkend=\"xml-primer-include\">include other files</link> "
 "into an XML document."
 msgstr ""
+"À primeira vista, as entidades de parâmetros não parecem muito úteis, mas "
+"elas tornam possível <link linkend=\"xml-primer-include\">incluir outros "
+"arquivos </link> em um documento XML."
 
 #. (itstool) path: step/para
 #: book.translate.xml:2909
@@ -16289,7 +16290,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9018
-#, fuzzy
 msgid ""
 "Keep explanations as short, simple, and clear as possible. Avoid empty "
 "phrases like <quote>in order to</quote>, which usually just means <quote>to</"
