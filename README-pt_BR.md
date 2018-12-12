@@ -2,7 +2,9 @@
 
 # Lista de Artigos e Livros para Tradução
 
-Os documentos marcados como [x] estão finalizados e o conteudo dos documentos em pt_BR está sincronizado com o conteudo dos documentos en_US.
+Os documentos marcados como [x] estão com sua tradução finalizada e o seu conteudo em pt_BR está sincronizado com o conteudo dos documentos originais en_US (revisão r52615).
+
+Os esforços de tradução no momento estão voltados ao Handbook.
 
 ## articles
 
@@ -16,7 +18,7 @@ Os documentos marcados como [x] estão finalizados e o conteudo dos documentos e
 - [x] filtering-bridge
 - [x] fonts
 - [x] freebsd-questions
-- [ ] freebsd-releng
+- [x] freebsd-releng
 - [x] freebsd-update-server
 - [x] geom-class 
 - [x] gjournal-desktop
@@ -28,7 +30,7 @@ Os documentos marcados como [x] estão finalizados e o conteudo dos documentos e
 - [x] linux-users
 - [x] mailing-list-faq 
 - [x] nanobsd
-- [ ] new-users
+- [x] new-users
 - [x] pam
 - [x] pgpkeys 
 - [x] port-mentor-guidelines
