@@ -2,6 +2,8 @@
 
 # Lista de Artigos e Livros para Tradução
 
+Os documentos marcados como [x] estão finalizados e o conteudo dos documentos em pt_BR está sincronizado com o conteudo dos documentos en_US.
+
 ## articles
 
 - [x] bsdl-gpl 
@@ -13,25 +15,25 @@
 - [x] explaining-bsd
 - [x] filtering-bridge
 - [x] fonts
-- [ ] freebsd-questions
+- [x] freebsd-questions
 - [ ] freebsd-releng
 - [x] freebsd-update-server
 - [x] geom-class 
 - [x] gjournal-desktop
-- [ ] hubs
-- [ ] ipsec-must
+- [x] hubs
+- [x] ipsec-must
 - [x] ldap-auth 
 - [x] leap-seconds
 - [x] linux-emulation
-- [ ] linux-users
+- [x] linux-users
 - [x] mailing-list-faq 
 - [x] nanobsd
 - [ ] new-users
-- [ ] pam
+- [x] pam
 - [x] pgpkeys 
 - [x] port-mentor-guidelines
 - [x] pr-guidelines
-- [ ] problem-reports
+- [x] problem-reports
 - [x] rc-scripting
 - [x] releng
 - [x] remote-install
