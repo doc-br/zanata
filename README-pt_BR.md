@@ -1,99 +1,57 @@
+[![Build Status - Cirrus](https://api.cirrus-ci.com/github/doc-br/zanata.svg)](https://cirrus-ci.com/github/doc-br/zanata/master)
 
 # Lista de Artigos e Livros para Tradução
 
 ## articles
 
-─ ~~bsdl-gpl~~ - **completo**
-
-─ ~~building-products~~ - **completo**
-
-─ committers-guide (Alterado em r52615)
-
-─ contributing (Alterado em r52615)
-
-─ contributors (Alterado em r52615)
-
-─ ~~cups~~ - **completo**
-
-─ ~~explaining-bsd~~ - **completo**
-
-─ ~~filtering-bridges~~ - **completo**
-
-─ ~~fonts~~ - **completo**
-
-─ freebsd-questions (Alterado em r52615)
-
-─ freebsd-releng (Alterado em r52615)
-
-─ ~~freebsd-update-server~~ - **completo**
-
-─ ~~geom-class~~ - **completo**
-
-─ ~~gjournal-desktop~~ - **completo**
-
-─ hubs (Alterado em r52615)
-
-─ ipsec-must (Alterado em r52615)
-
-─ ~~ldap-auth~~ - **completo**
-
-─ ~~leap-seconds~~ - **completo**
-
-─ ~~linux-emulation~~ - **completo**
-
-─ linux-users (Alterado em r52615)
-
-─ ~~mailing-list-faq~~ - **completo**
-
-─ ~~nanobsd~~ - **completo**
-
-─ new-users (Alterado em r52615)
-
-─ pam (Alterado em r52615)
-
-─ ~~pgpkeys~~ - **completo**
-
-─ ~~port-mentor-guidelines~~ - **completo**
-
-─ ~~pr-guidelines~~ - **completo**
-
-─ problem-reports (Alterado em r52615)
-
-─ ~~rc-scripting~~ - **completo**
-
-─ ~~releng~~ - **completo**
-
-─ ~~remote-install~~ - **completo**
-
-─ ~~serial-uart~~ - **completo**
-
-─ ~~solid-state~~ - **completo**
-
-─ ~~vinum~~ - **completo**
-
-─ ~~vm-design~~ - **completo**
-
+- [x] bsdl-gpl 
+- [x] building-products
+- [x] committers-guide
+- [x] contributing
+- [x] contributors
+- [x] cups
+- [x] explaining-bsd
+- [x] filtering-bridge
+- [x] fonts
+- [ ] freebsd-questions
+- [ ] freebsd-releng
+- [x] freebsd-update-server
+- [x] geom-class 
+- [x] gjournal-desktop
+- [ ] hubs
+- [ ] ipsec-must
+- [x] ldap-auth 
+- [x] leap-seconds
+- [x] linux-emulation
+- [ ] linux-users
+- [x] mailing-list-faq 
+- [x] nanobsd
+- [ ] new-users
+- [ ] pam
+- [x] pgpkeys 
+- [x] port-mentor-guidelines
+- [x] pr-guidelines
+- [ ] problem-reports
+- [x] rc-scripting
+- [x] releng
+- [x] remote-install
+- [x] serial-uart
+- [x] solid-state
+- [x] vinum
+- [x] vm-design
 
 ## books
 
-─ arch-handbook
-
-─ design-44bsd
-
-─ ~~dev-model~~ - **completo**
-
-─ developers-handbook
-
-─ faqs (Alterado em r52615)
-
-─ fdp-primer (Alterado em r52615)
-
-─ handbook
-
-─ pmake
-
-─ porters-handbook (Alterado em r52615)
-
+- [ ] arch-handbook
+- [ ] design-44bsd
+- [x] dev-model
+- [ ] developers-handbook
+- [x] faq
+- [x] fdp-primer
+- [ ] handbook
+- [ ] pmake
+- [x] porters-handbook
 
 Se for traduzir por outro aplicativo que não seja o Zanata, utilize sempre os
 arquivos `.po`, ignore os arquivos `.pot` pois estes são apenas templates.
+
