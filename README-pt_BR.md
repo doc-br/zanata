@@ -8,7 +8,7 @@ Os esforços de tradução no momento estão voltados ao Handbook.
 
 ## articles
 
-- [x] bsdl-gpl 
+- [x] bsdl-gpl
 - [x] building-products
 - [x] committers-guide
 - [x] contributing
@@ -20,19 +20,19 @@ Os esforços de tradução no momento estão voltados ao Handbook.
 - [x] freebsd-questions
 - [x] freebsd-releng
 - [x] freebsd-update-server
-- [x] geom-class 
+- [x] geom-class
 - [x] gjournal-desktop
 - [x] hubs
 - [x] ipsec-must
-- [x] ldap-auth 
+- [x] ldap-auth
 - [x] leap-seconds
 - [x] linux-emulation
 - [x] linux-users
-- [x] mailing-list-faq 
+- [x] mailing-list-faq
 - [x] nanobsd
 - [x] new-users
 - [x] pam
-- [x] pgpkeys 
+- [x] pgpkeys
 - [x] port-mentor-guidelines
 - [x] pr-guidelines
 - [x] problem-reports
@@ -52,8 +52,8 @@ Os esforços de tradução no momento estão voltados ao Handbook.
 - [ ] developers-handbook
 - [x] faq
 - [x] fdp-primer
-- [ ] handbook
-- [ ] pmake
+- [ ] handbook - [Página de status das traduções e revisão](https://github.com/doc-br/zanata/blob/master/README-pt_BR-handbook.md)
+- [ ] ~~pmake~~ - Removido do índice de livros do FreeBSD em [r52714](https://svnweb.freebsd.org/doc/head/en_US.ISO8859-1/books/Makefile?revision=52714&view=markup).
 - [x] porters-handbook
 
 Se for traduzir por outro aplicativo que não seja o Zanata, utilize sempre os
