@@ -21,7 +21,7 @@ para facilitar as traduções e revisão.
 | 11. Configuration and Tuning             | 125-146 | 0%        | -         |
 | 12. The FreeBSD Booting Process          | 146-153 | 0%        | -         |
 | 13. Security                             | 153-178 | 0%        | -         |
-| 14. Jails                                | 178-190 | 0%        | -         |
+| 14. Jails                                | 178-190 | 100%      | -         |
 | 15. Mandatory Access Control             | 190-202 | 0%        | -         |
 | 16. Security Event Auditing              | 202-209 | 0%        | -         |
 | 17. Storage                              | 209-236 | 0%        | -         |
