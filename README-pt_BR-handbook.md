@@ -29,7 +29,7 @@ para facilitar as traduções e revisão.
 | 19. The Z File System (ZFS)              | 247-268 | 0%        | -         |
 | 20. Other File Systems                   | 268-269 | 0%        | -         |
 | 21. Virtualization                       | 269-281 | 0%        | -         |
-| 22. Localization - i18n/L10n Usage and.  | 281-289 | 0%        | -         |
+| 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | -         |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 0%        | -         |
 | 24. DTrace                               | 302-303 | 0%        | -         |
 | 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         |
