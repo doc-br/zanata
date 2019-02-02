@@ -7,7 +7,7 @@ para facilitar as traduções e revisão.
 
 | Capítulo                                 | Zanata  | Tradução  | Revisão   |
 | ---------------------------------------- | :-----: | :-------: | :-------: |
-| Preface                                  | 2-7     | 100%      | -         |
+| Preface                                  | 2-7     | 100%      | 100%      |
 | 1. Introduction                          | 7-14    | 100%      | -         |
 | 2. Installing FreeBSD                    | 14-32   | 100%      | -         |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         |
@@ -20,7 +20,7 @@ para facilitar as traduções e revisão.
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         |
 | 11. Configuration and Tuning             | 125-146 | 0%        | -         |
 | 12. The FreeBSD Booting Process          | 146-153 | 0%        | -         |
-| 13. Security                             | 153-178 | 0%        | -         |
+| 13. Security                             | 153-178 | Andamento | -         |
 | 14. Jails                                | 178-190 | 100%      | -         |
 | 15. Mandatory Access Control             | 190-202 | 0%        | -         |
 | 16. Security Event Auditing              | 202-209 | 0%        | -         |
@@ -31,7 +31,7 @@ para facilitar as traduções e revisão.
 | 21. Virtualization                       | 269-281 | 0%        | -         |
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | -         |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 0%        | -         |
-| 24. DTrace                               | 302-303 | 0%        | -         |
+| 24. DTrace                               | 302-303 | 100%      | -         |
 | 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         |
 | 26. Serial Communications                | 306-319 | 0%        | -         |
 | 27. PPP                                  | 319-330 | 0%        | -         |
