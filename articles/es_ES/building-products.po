@@ -1,0 +1,1984 @@
+# $FreeBSD$
+# Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-12-08 14:45-0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-02-14 09:52+0000\n"
+"Language: es_ES\n"
+"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
+"Language-Team: \n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Manuel Megías joramsinkin@hotmail.com, 2018"
+
+#. (itstool) path: info/title
+#: article.translate.xml:4
+msgid "Building Products with FreeBSD"
+msgstr "Construyendo productos con FreeBSD"
+
+#. (itstool) path: affiliation/address
+#: article.translate.xml:9
+#, no-wrap
+msgid "<email>jkoshy@FreeBSD.org</email>"
+msgstr "<email>jkoshy@FreeBSD.org</email>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:7
+msgid ""
+"<personname><firstname>Joseph</firstname><surname>Koshy</surname></"
+"personname><affiliation> <orgname>The FreeBSD Project</orgname> <_:address-1/"
+"> </affiliation>"
+msgstr ""
+"<personname><firstname>Joseph</firstname><surname>Koshy</surname></"
+"personname><affiliation> <orgname>El proyecto FreeBSD</orgname> <_:address-1/"
+"> </affiliation>"
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:14
+msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:16
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
+msgstr ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
+
+#. (itstool) path: info/pubdate
+#. (itstool) path: info/releaseinfo
+#: article.translate.xml:24 article.translate.xml:26
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/building-products/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
+msgstr "$FreeBSD$"
+
+#. (itstool) path: abstract/title
+#: article.translate.xml:29
+msgid "Abstract"
+msgstr "Resumen"
+
+#. (itstool) path: abstract/para
+#: article.translate.xml:31
+msgid ""
+"The FreeBSD project is a worldwide, volunteer based, and collaborative "
+"project, which develops a portable and high-quality operating system. The "
+"FreeBSD project distributes the source code for its product under a liberal "
+"license, with the intention of encouraging the use of its code. "
+"Collaborating with the FreeBSD project can help organizations reduce their "
+"time to market, reduce engineering costs and improve their product quality."
+msgstr ""
+"El proyecto FreeBSD es un proyecto mundial, basado en el voluntariado y la "
+"colaboración, que desarrolla un sistema operativo portable y de alta calidad."
+" El proyecto FreeBSD distribuye el código fuente de su producto bajo una "
+"licencia permisiva, con la intención de fomentar el uso de su código. "
+"Colaborar con el proyecto FreeBSD puede ayudar a las organizaciones a "
+"reducir su tiempo de comercialización, reducir los costes de ingeniería y "
+"mejorar la calidad de sus productos."
+
+#. (itstool) path: abstract/para
+#: article.translate.xml:40
+msgid ""
+"This article examines the issues in using FreeBSD code in appliances and "
+"software products. It highlights the characteristics of FreeBSD that make it "
+"an excellent substrate for product development. The article concludes by "
+"suggesting a few <quote>best practices</quote> for organizations "
+"collaborating with the FreeBSD project."
+msgstr ""
+"Este artículo examina los problemas al usar el código de FreeBSD en "
+"dispositivos y productos de software. Se destacan las características que "
+"convierten a FreeBSD en una excelente base para el desarrollo de productos. "
+"El artículo concluye sugiriendo algunas <quote> mejores prácticas </quote> "
+"para las organizaciones que colaboran con el proyecto FreeBSD."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:50
+msgid "Introduction"
+msgstr "Introducción"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:52
+msgid ""
+"FreeBSD today is well-known as a high-performance server operating system. "
+"It is deployed on millions of web servers and internet-facing hosts "
+"worldwide. FreeBSD code also forms an integral part of many products, "
+"ranging from appliances such as network routers, firewalls, and storage "
+"devices, to personal computers. Portions of FreeBSD have also been used in "
+"commercial shrink-wrapped software (see <xref linkend=\"freebsd-intro\"/>)."
+msgstr ""
+"FreeBSD es hoy en día bien conocido como un sistema operativo de servidor de "
+"alto rendimiento. Está desplegado en millones de servidores web y hosts de "
+"Internet en todo el mundo. El código de FreeBSD también forma una parte "
+"integral de muchos productos, desde dispositivos como routers de red, "
+"cortafuegos y dispositivos de almacenamiento, hasta ordenadores personales. "
+"Partes de FreeBSD también han sido usadas en software comercial  (ver <xref "
+"linkend=\"freebsd-intro\"/>"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:61
+msgid ""
+"In this article we look at the <link xlink:href=\"@@URL_RELPREFIX@@/"
+"\">FreeBSD project</link> as a software engineering resource—as a collection "
+"of building blocks and processes which you can use to build products."
+msgstr ""
+"En este artículo analizamos el <link xlink:href=\"@@URL_RELPREFIX@@/"
+"\">Proyecto FreeBSD</link> como un recurso de ingeniería de software y como "
+"una colección de bloques de construcción y procesos que usted puede usar "
+"para construir productos."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:65
+msgid ""
+"While FreeBSD's source is distributed freely to the public, to fully enjoy "
+"the benefits of the project's work, organizations need to "
+"<emphasis>collaborate</emphasis> with the project. In subsequent sections of "
+"this article we discuss effective means of collaboration with the project "
+"and the pitfalls that need to be avoided while doing so."
+msgstr ""
+"Mientras que el código fuente de FreeBSD se distribuye libremente al "
+"público, para disfrutar plenamente de los beneficios del trabajo del "
+"proyecto, las organizaciones necesitan <emphasis>colaborar</emphasis> con el "
+"proyecto. En las secciones siguientes de este artículo tratamos de los "
+"medios eficaces para colaborar con el proyecto y los escollos que deben "
+"evitarse al hacerlo."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:73
+msgid "Caveat Reader"
+msgstr "Advertencia al lector"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:74
+msgid ""
+"The author believes that the characteristics of the FreeBSD Project listed "
+"in this article were substantially true at the time the article was "
+"conceived and written (2005). However, the reader should keep in mind that "
+"the practices and processes used by open-source communities can change over "
+"time, and that the information in this article should therefore be taken as "
+"indicative rather than normative."
+msgstr ""
+"El autor cree que las características del proyecto FreeBSD enumeradas en "
+"este artículo eran sustancialmente ciertas en el momento en que el artículo "
+"fue concebido y escrito (2005). Sin embargo, el lector debe tener en cuenta "
+"que las prácticas y procesos utilizados por las comunidades de código "
+"abierto pueden cambiar con el tiempo y que, por lo tanto, la información "
+"contenida en este artículo debe tomarse como indicativa y no como normativa."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:84
+msgid "Target Audience"
+msgstr "Público al que va dirigido"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:85
+msgid ""
+"This document would be of interest to the following broad groups of people:"
+msgstr ""
+"Este documento puede ser de interés para los siguientes amplios grupos de "
+"personas:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:89
+msgid ""
+"Decision makers in product companies looking at ways to improve their "
+"product quality, reduce their time to market and lower engineering costs in "
+"the long term."
+msgstr ""
+"Los responsables de la toma de decisiones en las empresas de productos que "
+"buscan formas de mejorar la calidad de sus productos, reducir su tiempo de "
+"lanzamiento al mercado y reducir los costes de ingeniería a largo plazo."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:95
+msgid ""
+"Technology consultants looking for best-practices in leveraging <quote>open-"
+"source</quote>."
+msgstr ""
+"Consultores de tecnología que buscan las mejores prácticas para sacar "
+"partido al <quote> código abierto </quote>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:99
+msgid ""
+"Industry observers interested in understanding the dynamics of open-source "
+"projects."
+msgstr ""
+"Observadores de la industria interesados en entender la dinámica de los "
+"proyectos de código abierto."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:103
+msgid ""
+"Software developers seeking to use FreeBSD and looking for ways to "
+"contribute back."
+msgstr ""
+"Desarrolladores de software que quieren usar FreeBSD y buscan formas de "
+"contribuir a él."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:110
+msgid "Article Goals"
+msgstr "Metas del proyecto"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:111
+msgid "After reading this article you should have:"
+msgstr "Después de leer este artículo deberías tener:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:114
+msgid ""
+"An understanding of the goals of the FreeBSD Project and its organizational "
+"structure."
+msgstr ""
+"Comprensión de los objetivos del proyecto FreeBSD y su estructura "
+"organizativa."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:118
+msgid ""
+"An understanding of its development model and release engineering processes."
+msgstr ""
+"Comprensión de su modelo de desarrollo y de los procesos de ingeniería de "
+"lanzamiento."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:122
+msgid ""
+"An understanding of how conventional corporate software development "
+"processes differ from that used in the FreeBSD project."
+msgstr ""
+"Una comprensión de cómo los procesos convencionales de desarrollo de "
+"software corporativo difieren de los utilizados en el proyecto FreeBSD."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:127
+msgid ""
+"Awareness of the communication channels used by the project and the level of "
+"transparency you can expect."
+msgstr ""
+"Conocimiento de los canales de comunicación utilizados por el proyecto y del "
+"nivel de transparencia que puede esperar."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:132
+msgid ""
+"Awareness of optimal ways of working with the project—how best to reduce "
+"engineering costs, improve time to market, manage security vulnerabilities, "
+"and preserve future compatibility with your product as the FreeBSD project "
+"evolves."
+msgstr ""
+"Conocimiento de las formas óptimas de trabajar con el proyecto y de la mejor "
+"manera de reducir los costes de ingeniería, mejorar el tiempo de "
+"comercialización, gestionar las vulnerabilidades de seguridad y preservar la "
+"compatibilidad futura con su producto a medida que evolucione el proyecto "
+"FreeBSD."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:142
+msgid "Article Structure"
+msgstr "Estructura del artículo"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:143
+msgid "The rest of the article is structured as follows:"
+msgstr "El resto del artículo está estructurado de la siguiente manera:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:146
+msgid ""
+"<xref linkend=\"freebsd-intro\"/> introduces the FreeBSD project, explores "
+"its organizational structure, key technologies and release engineering "
+"processes."
+msgstr ""
+"<xref linkend=\"freebsd-intro\"/> presenta el proyecto FreeBSD, explora su "
+"estructura organizativa, tecnologías clave y procesos de ingeniería de "
+"lanzamiento."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:152
+msgid ""
+"<xref linkend=\"freebsd-collaboration\"/> describes ways to collaborate with "
+"the FreeBSD project. It examines common pitfalls encountered by corporates "
+"working with voluntary projects like FreeBSD."
+msgstr ""
+"<xref linkend=\"freebsd-collaboration\"/> describe las formas de colaborar "
+"con el proyecto FreeBSD. Examina los escollos más comunes a los que se "
+"enfrentan las empresas que trabajan con proyectos voluntarios como FreeBSD."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:158
+msgid "<xref linkend=\"conclusion\"/> concludes."
+msgstr "<xref linkend=\"conclusion\"/> concluye."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:165
+msgid "FreeBSD as a set of building blocks"
+msgstr "FreeBSD como un conjunto de bloques de construcción"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:167
+msgid "FreeBSD makes an excellent foundation on which to build products:"
+msgstr ""
+"FreeBSD constituye una excelente base sobre la que construir productos:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:172
+msgid ""
+"FreeBSD source code is distributed under a liberal BSD license facilitating "
+"its adoption in commercial products <citation>Mon2005</citation> with "
+"minimum hassle."
+msgstr ""
+"El código fuente de FreeBSD se distribuye bajo una licencia BSD liberal que "
+"facilita su adopción en productos comerciales <citation>Mon2005</citation> "
+"con las mínimas molestias."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:177
+msgid ""
+"The FreeBSD project has excellent engineering practices that can be "
+"leveraged."
+msgstr ""
+"El proyecto FreeBSD tiene excelentes prácticas de ingeniería que pueden ser "
+"aprovechadas."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:181
+msgid ""
+"The project offers exceptional transparency into its workings, allowing "
+"organizations using its code to plan effectively for the future."
+msgstr ""
+"El proyecto ofrece una transparencia excepcional en su funcionamiento, "
+"permitiendo a las organizaciones que utilizan su código planificar "
+"eficazmente para el futuro."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:186
+msgid ""
+"The culture of the FreeBSD project, carried over from the Computer Science "
+"Research Group at The University of California, Berkeley <citation>McKu1999-"
+"1</citation>, fosters high-quality work. Some features in FreeBSD define the "
+"state of the art."
+msgstr ""
+"La cultura del proyecto FreeBSD, heredada del Computer Science Research "
+"Group de la Universidad de California, Berkeley <citation>McKu1999-1</"
+"citation>, fomenta el trabajo de alta calidad. Algunas características de "
+"FreeBSD definen el  estado actual."
+
+#. (itstool) path: sect1/simpara
+#: article.translate.xml:194
+msgid ""
+"<citation>GoldGab2005</citation> examines the business reasons for using "
+"open-source in greater detail. For organizations, the benefits of using "
+"FreeBSD components in their products include a shorter time to market, lower "
+"development costs and lower development risks."
+msgstr ""
+"<citation>GoldGab2005</citation> examina con mayor detalle las razones "
+"comerciales para utilizar el código abierto. Para las organizaciones, los "
+"beneficios de usar componentes FreeBSD en sus productos incluyen un menor "
+"tiempo de lanzamiento al mercado, menores costes de desarrollo y menores "
+"riesgos de desarrollo."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:201
+msgid "Building with FreeBSD"
+msgstr "Haciendo productos con FreeBSD"
+
+#. (itstool) path: sect2/simpara
+#: article.translate.xml:203
+msgid "Here are a few ways organizations have used FreeBSD:"
+msgstr ""
+"Estas son algunas de las formas en que las organizaciones han usado FreeBSD:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:208
+msgid "As an upstream source for tested code for libraries and utilities."
+msgstr ""
+"Como una fuente de código probado para librerías y empresas de servicios "
+"públicos."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:210
+msgid ""
+"By being <quote>downstream</quote> of the project, organizations leverage "
+"the new features, bug fixes and testing that the upstream code receives."
+msgstr ""
+"Al ser <quote>receptoras</quote> del proyecto, las organizaciones aprovechan "
+"las nuevas características, las correcciones de errores y las pruebas que "
+"recibe el código."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:215
+msgid ""
+"As an embedded OS (for example, for an OEM router and firewall device). In "
+"this model, organizations use a customized FreeBSD kernel and application "
+"program set along with a proprietary management layer for their device. OEMs "
+"benefit from new hardware support being added by the FreeBSD project "
+"upstream, and from the testing that the base system receives."
+msgstr ""
+"Como un sistema operativo integrado (por ejemplo, para un router OEM y un "
+"dispositivo de cortafuegos). En este modelo, las organizaciones emplean  un "
+"kernel personalizado de FreeBSD  y el programa  junto con una capa de "
+"gestión propia para su dispositivo. Los OEMs se benefician del nuevo soporte "
+"de hardware añadido por el proyecto FreeBSD y de las pruebas que recibe el "
+"sistema base."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:222
+msgid ""
+"FreeBSD ships with a self-hosting development environment that allows easy "
+"creation of such configurations."
+msgstr ""
+"FreeBSD viene con un entorno de desarrollo auto alojado que permite crear "
+"fácilmente estas configuraciones."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:227
+msgid ""
+"As a Unix compatible environment for the management functions of high-end "
+"storage and networking devices, running on a separate processor "
+"<quote>blade</quote>."
+msgstr ""
+"Como un entorno compatible con Unix para las funciones de gestión de "
+"dispositivos de almacenamiento y de red de gama alta, que se ejecutan en un  "
+"<quote>blade</quote> separado de procesador."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:230
+msgid ""
+"FreeBSD provides the tools for creating dedicated OS and application program "
+"images. Its implementation of a BSD unix API is mature and tested. FreeBSD "
+"can also provide a stable cross-development environment for the other "
+"components of the high-end device."
+msgstr ""
+"FreeBSD proporciona las herramientas para crear imágenes dedicadas de "
+"sistemas operativos y programas. Su implementación de una API unix BSD es "
+"madura y está probada. FreeBSD también puede proporcionar un entorno estable "
+"de desarrollo cruzado para los otros componentes del dispositivo de gama "
+"alta."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:237
+msgid ""
+"As a vehicle to get widespread testing and support from a worldwide team of "
+"developers for non-critical <quote>intellectual property</quote>."
+msgstr ""
+"Como vehículo para obtener pruebas y apoyo generalizados por parte de un "
+"equipo mundial de desarrolladores para una <quote>propiedad intelectual</"
+"quote> no crítica."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:240
+msgid ""
+"In this model, organizations contribute useful infrastructural frameworks to "
+"the FreeBSD project (for example, see <citerefentry><refentrytitle>netgraph</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>). The widespread "
+"exposure that the code gets helps to quickly identify performance issues and "
+"bugs. The involvement of top-notch developers also leads to useful "
+"extensions to the infrastructure that the contributing organization also "
+"benefits from."
+msgstr ""
+"En este modelo, las organizaciones aportan marcos de inraestructura útiles "
+"al proyecto FreeBSD (por ejemplo, ver <citerefentry><refentrytitle>netgraph</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>). La exposición "
+"generalizada que recibe el código ayuda a identificar rápidamente problemas "
+"de rendimiento y errores. La participación de desarrolladores de primera "
+"categoría también conduce a extensiones útiles de la infraestructura de la "
+"que también se beneficia la organización contribuyente."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:251
+msgid ""
+"As a development environment supporting cross-development for embedded OSes "
+"like <link xlink:href=\"http://www.rtems.com/\">RTEMS</link> and <link xlink:"
+"href=\"http://ecos.sourceware.org/\">eCOS</link>."
+msgstr ""
+"Como un entorno de desarrollo que soporta el desarrollo cruzado para "
+"sistemas operativos integrados como <link xlink:href=\"http://www.rtems.com/"
+"\">RTEMS</link> y <link xlink:href=\"http://ecos.sourceware.org/\">eCOS</"
+"link>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:253
+msgid ""
+"There are many full-fledged development environments in the 24,000-strong "
+"collection of applications ported and packaged with FreeBSD."
+msgstr ""
+"Hay muchos entornos de desarrollo completos en la sólida colección de 24.000 "
+"aplicaciones portadas y empaquetadas con FreeBSD."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:259
+msgid ""
+"As a way to support a Unix-like API in an otherwise proprietary OS, "
+"increasing its palatability for application developers."
+msgstr ""
+"Como una forma de soportar una API similar a Unix en un sistema operativo "
+"que de otro modo sería propietario, aumentando su atractivo para los "
+"desarrolladores de aplicaciones."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:262
+msgid ""
+"Here parts of FreeBSD's kernel and application programs are <quote>ported</"
+"quote> to run alongside other tasks in the proprietary OS. The availability "
+"of a stable and well tested <trademark>Unix</trademark> API implementation "
+"can reduce the effort needed to port popular applications to the proprietary "
+"OS. As FreeBSD ships with high-quality documentation for its internals and "
+"has effective vulnerability management and release engineering processes, "
+"the costs of keeping upto-date are kept low."
+msgstr ""
+"Aquí partes del kernel de FreeBSD y de los programas son <quote>portadas</"
+"quote> para que se ejecuten junto con otras tareas en el sistema operativo "
+"propietario. La disponibilidad de una implementación de API  de "
+"<trademark>Unix</trademark> estable y bien probada puede reducir el esfuerzo "
+"necesario para portar aplicaciones populares al sistema operativo "
+"propietario. Como FreeBSD incluye documentación de alta calidad para sus "
+"sistemas internos y dispone de una gestión eficaz de vulnerabilidades y "
+"procesos de ingeniería de versiones, los costes de actualizados se mantienen "
+"bajos."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:277
+msgid "Technologies"
+msgstr "Tecnologías"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:279
+msgid ""
+"There are a large number of technologies supported by the FreeBSD project. A "
+"selection of these are listed below:"
+msgstr ""
+"Hay un gran número de tecnologías soportadas por el proyecto FreeBSD. A "
+"continuación se enumeran una selección de ellos:"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:285
+msgid ""
+"A complete system that can cross-host itself for <link xlink:href="
+"\"@@URL_RELPREFIX@@/platforms/\">many architectures:</link>"
+msgstr ""
+"Un sistema completo que puede alojarse en <link xlink:href="
+"\"@@URL_RELPREFIX@@/platforms/\">muchas arquitecturas:</link>"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:290
+msgid ""
+"A modular symmetric multiprocessing capable kernel, with loadable kernel "
+"modules and a flexible and easy to use configuration system."
+msgstr ""
+"Un núcleo modular con capacidad de multiprocesamiento simétrico, con módulos "
+"integrables  en el núcleo  y un sistema de configuración flexible y fácil de "
+"usar."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:295
+msgid ""
+"Support for emulation of <trademark>Linux</trademark> and SVR4 binaries at "
+"near machine speeds. Support for binary <trademark>Windows</trademark> "
+"(<acronym>NDIS</acronym>) network drivers."
+msgstr ""
+"Soporte para emulación de binarios de <trademark>Linux</trademark> y de SVR4 "
+"a velocidades cercanas a las de la máquina. Soporte para controladores de "
+"red binarios de <trademark>Windows</trademark> (<acronym>NDIS</acronym>)."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:302
+msgid ""
+"Libraries for many programming tasks: archivers, FTP and HTTP support, "
+"thread support, in addition to a full <trademark>POSIX</trademark> like "
+"programming environment."
+msgstr ""
+"Bibliotecas para muchas tareas de programación: archivadores, soporte para "
+"FTP y HTTP, soporte de hilos, además de un completo entorno de programación "
+"<trademark>POSIX</trademark>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:308
+msgid ""
+"Security features: Mandatory Access Control "
+"(<citerefentry><refentrytitle>mac</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>), jails (<citerefentry><refentrytitle>jail</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>), <acronym>ACL</"
+"acronym>s, and in-kernel cryptographic device support."
+msgstr ""
+"Elementos de seguridad: Control de acceso obligatorio "
+"(<citerefentry><refentrytitle>mac</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>), jails (<citerefentry><refentrytitle>jail</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>), <acronym>ACL</"
+"acronym>s, y soporte de dispositivos criptográficos en el kernel"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:314
+msgid ""
+"Networking features: firewall-ing, QoS management, high-performance TCP/IP "
+"networking with support for many extensions."
+msgstr ""
+"Funciones de red: cortafuegos, gestión de la calidad de servicio (QoS), "
+"conexiones de red TCP/IP de alto rendimiento con soporte para muchas "
+"extensiones"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:317
+msgid ""
+"FreeBSD's in-kernel Netgraph (<citerefentry><refentrytitle>netgraph</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>) framework allows "
+"kernel networking modules to be connected together in flexible ways."
+msgstr ""
+"El marco de trabajo Netgraph (<citerefentry><refentrytitle>netgraph</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>) del kernel de FreeBSD "
+"permite que los módulos de red del núcleo se conecten entre sí de forma "
+"flexible."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:322
+msgid ""
+"Support for storage technologies: Fibre Channel, <acronym>SCSI</acronym>, "
+"software and hardware RAID, <acronym>ATA</acronym> and <acronym>SATA</"
+"acronym>."
+msgstr ""
+"Soporte para tecnologías de almacenamiento: Fibre Channel, <acronym>SCSI</"
+"acronym>, software y hardware RAID , <acronym>ATA</acronym> y <acronym>SATA</"
+"acronym>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:326
+msgid ""
+"FreeBSD supports a number of filesystems, and its native UFS2 filesystem "
+"supports soft updates, snapshots and very large filesystem sizes (16TB per "
+"filesystem) <citation>McKu1999</citation>."
+msgstr ""
+"FreeBSD soporta varios sistemas de ficheros, y su sistema de ficheros nativo "
+"UFS2 soporta actualizaciones, instantáneas y tamaños de sistema de ficheros "
+"muy grandes (16TB por sistema de ficheros) <citation>McKu1999</citation>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:330
+msgid ""
+"FreeBSD's in-kernel <acronym>GEOM</acronym> "
+"(<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>) framework allows kernel storage modules to be composed in "
+"flexible ways."
+msgstr ""
+"El marco de trabajo  <acronym>GEOM</acronym> "
+"(<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>) incluido en el kernel de FreeBSD permite que los módulos de "
+"almacenamiento del núcleo se compongan de manera flexible."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:335
+msgid ""
+"Over 24,000 ported applications, both commercial and open-source, managed "
+"via the FreeBSD ports collection."
+msgstr ""
+"Más de 24.000 aplicaciones portadas, tanto comerciales como de código "
+"abierto, gestionadas a través de la colección de puertos de FreeBSD."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:343
+msgid "Organizational Structure"
+msgstr "Estructura de la organización"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:344
+msgid "FreeBSD's organizational structure is non-hierarchical."
+msgstr "La estructura organizativa de FreeBSD no es jerárquica."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:347
+msgid ""
+"There are essentially two kinds of contributors to FreeBSD, general users of "
+"FreeBSD, and developers with write access (known as <firstterm>committers</"
+"firstterm> in the jargon) to the source base."
+msgstr ""
+"Hay esencialmente dos tipos de contribuyentes a FreeBSD, usuarios regulares "
+"de FreeBSD, y desarrolladores con acceso de escritura (conocidos como "
+"<firstterm>committers</firstterm> en la jerga) a la base de código fuente."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:352
+msgid ""
+"There are many thousands of contributors in the first group; the vast "
+"majority of contributions to FreeBSD come from individuals in this group. "
+"Commit rights (write access) to the repository are granted to individuals "
+"who contribute consistently to the project. Commit rights come with "
+"additional responsibilities, and new committers are assigned mentors to help "
+"them learn the ropes."
+msgstr ""
+"Hay muchos miles de contribuyentes en el primer grupo; la gran mayoría de "
+"las contribuciones a FreeBSD provienen de individuos de este grupo. Los "
+"derechos de escritura (acceso de escritura) al repositorio se conceden a las "
+"personas que contribuyen de forma consistente al proyecto (denominados "
+"committers). Los derechos de escritura conllevan responsabilidades "
+"adicionales, y se asignan mentores a los nuevos committers para ayudarles a "
+"aprender lo que hay que hacer."
+
+#. (itstool) path: figure/title
+#: article.translate.xml:361
+msgid "FreeBSD Organization"
+msgstr "Organización de FreeBSD"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: article.translate.xml:364
+msgctxt "_"
+msgid "external ref='freebsd-organization' md5='__failed__'"
+msgstr "referencia externa='freebsd-organization' md5='__failed__'"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:369
+msgid ""
+"Conflict resolution is performed by a nine member <quote>Core Team</quote> "
+"that is elected from the group of committers."
+msgstr ""
+"La resolución de conflictos se lleva a cabo por un <quote>Equipo Base</"
+"quote> de nueve miembros  que es elegido entre el grupo de committers."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:373
+msgid ""
+"FreeBSD does not have <quote>corporate</quote> committers. Individual "
+"committers are required to take responsibility for the changes they "
+"introduce to the code. The <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/articles/committers-guide\">FreeBSD Committer's guide</link> "
+"<citation>ComGuide</citation> documents the rules and responsibilities for "
+"committers."
+msgstr ""
+"FreeBSD no tiene <quote>corporativos</quote> committers. Se exige a cada "
+"committer  que asuman la responsabilidad de los cambios que introducen en el "
+"código. La <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/articles/"
+"committers-guide\">Guía para los committers de FreeBSD</link> "
+"<citation>ComGuide</citation> documenta las reglas y responsabilidades de "
+"los committers."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:379
+msgid ""
+"FreeBSD's project model is examined in detail in <citation>Nik2005</"
+"citation>."
+msgstr ""
+"El modelo de proyecto de FreeBSD se examina en detalle en <citation>Nik2005</"
+"citation>."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:384
+msgid "FreeBSD Release Engineering Processes"
+msgstr "Procesos de ingeniería de lanzamiento de versiones de FreeBSD"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:386
+msgid ""
+"FreeBSD's release engineering processes play a major role in ensuring that "
+"its released versions are of a high quality. At any point of time, FreeBSD's "
+"volunteers support multiple code lines (<xref linkend=\"fig-freebsd-"
+"branches\"/>):"
+msgstr ""
+"Los procesos de ingeniería de los lanzamientos de FreeBSD juegan un papel "
+"importante a la hora de asegurar que sus versiones publicadas sean de alta "
+"calidad. En todo momento, los voluntarios de FreeBSD mantienen múltiples "
+"líneas de código (<xref linkend=\"fig-freebsd-branches\"/>):"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:393
+msgid ""
+"New features and disruptive code enters on the development branch, also "
+"known as the <firstterm>-CURRENT</firstterm> branch."
+msgstr ""
+"Las nuevas características y el código que introduce grandes cambios entran "
+"en la rama de desarrollo, también conocida como la rama <firstterm>-CURRENT</"
+"firstterm>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:398
+msgid ""
+"<firstterm>-STABLE</firstterm> branches are code lines that are branched "
+"from HEAD at regular intervals. Only tested code is allowed onto a -STABLE "
+"branch. New features are allowed once they have been tested and stabilized "
+"in the -CURRENT branch."
+msgstr ""
+"Las ramas <firstterm>-STABLE</firstterm> son líneas de código que se "
+"ramifican desde HEAD a intervalos regulares. Sólo  el código probado se "
+"permite en una rama -STABLE. Las nuevas características se permiten una vez "
+"que han sido probadas y estabilizadas en la rama -CURRENT."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:405
+msgid ""
+"<firstterm>-RELEASE</firstterm> branches are maintained by the FreeBSD "
+"security team. Only bug fixes for critical issues are permitted onto -"
+"RELEASE branches."
+msgstr ""
+"Las ramas <firstterm>-RELEASE</firstterm> son mantenidas por el equipo de "
+"seguridad de FreeBSD. Sólo se permiten correcciones de errores de problemas "
+"críticos en las ramas -RELEASE."
+
+#. (itstool) path: figure/title
+#: article.translate.xml:413
+msgid "FreeBSD Release Branches"
+msgstr "Ramas  RELEASE de  FreeBSD"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: article.translate.xml:416
+msgctxt "_"
+msgid "external ref='freebsd-branches' md5='__failed__'"
+msgstr "referencia externa ='freebsd-branches' md5='__failed__'"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:421
+msgid ""
+"Code lines are kept alive for as long as there is user and developer "
+"interest in them."
+msgstr ""
+"Las líneas de código se mantienen vivas mientras haya interés en ellas por "
+"parte del usuario y del desarrollador."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:424
+msgid ""
+"Machine architectures are grouped into <quote>tiers</quote>; <firstterm>Tier "
+"1</firstterm> architectures are fully supported by the project's release "
+"engineering and security teams, <firstterm>Tier 2</firstterm> architectures "
+"are supported on a best effort basis, and experimental architectures "
+"comprise <firstterm>Tier 3</firstterm>. The list of <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/archs."
+"html\">supported architectures</link> is part of the FreeBSD documentation "
+"collection."
+msgstr ""
+"Las arquitecturas de las máquinas se agrupan en <quote>niveles</quote>; las "
+"arquitecturas de <firstterm>Nivel 1</firstterm>   están totalmente "
+"soportadas por los equipos de ingenieros de publicación y seguridad del "
+"proyecto, las arquitecturas de <firstterm>Nivel 2</firstterm>  se soportan "
+"con el mejor esfuerzo, y las arquitecturas experimentales comprenden el "
+"<firstterm>Nivel 3</firstterm>. La lista de <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/archs."
+"html\">arquitecturas soportadas</link> forma parte de la colección de la "
+"documentación de FreeBSD."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:434
+msgid ""
+"The release engineering team publishes a <link xlink:href="
+"\"@@URL_RELPREFIX@@/releng/\">road map</link> for future releases of FreeBSD "
+"on the project's web site. The dates laid down in the road map are not "
+"deadlines; FreeBSD is released when its code and documentation are ready."
+msgstr ""
+"El equipo de ingenieros de lanzamiento de versiones publica un <link xlink:"
+"href=\"@@URL_RELPREFIX@@/releng/\">hoja de ruta</link> para futuras "
+"versiones de FreeBSD en el sitio web del proyecto. Las fechas establecidas "
+"en la hoja de ruta no son fechas límite; FreeBSD se publica cuando su código "
+"y documentación están listos."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:439
+msgid ""
+"FreeBSD's release engineering processes are described in "
+"<citation>RelEngDoc</citation>."
+msgstr ""
+"Los procesos técnicos de lanzamiento  de versiones de FreeBSD se describen "
+"en <citation>RelEngDoc</citation>."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:446
+msgid "Collaborating with FreeBSD"
+msgstr "Colaborando con FreeBSD"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:448
+msgid ""
+"Open-source projects like FreeBSD offer finished code of a very high quality "
+"<citation>Cov2005</citation>. Previous studies have examined the effect of "
+"source code availability on software development <citation>Com2004</"
+"citation>."
+msgstr ""
+"Los proyectos de código abierto como FreeBSD ofrecen código definitivo de "
+"muy alta calidad <citation>Cov2005</citation>. Estudios anteriores han "
+"examinado el efecto de la disponibilidad del código fuente en el desarrollo "
+"de software <citation>Com2004</citation>."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:453
+msgid ""
+"While access to quality source code can reduce the cost of initial "
+"development, in the long-term the costs of managing change begin to dominate."
+" As computing environments change over the years and new security "
+"vulnerabilities are discovered, your product too needs to change and adapt. "
+"Using open-source code is best viewed not as a one-off activity, but as an "
+"<emphasis>ongoing process</emphasis>. The best projects to collaborate with "
+"are the ones that are <emphasis>live</emphasis>; i.e., with an active "
+"community, clear goals and a transparent working style."
+msgstr ""
+"Mientras que el acceso al código fuente de calidad puede reducir el coste "
+"del desarrollo inicial, a largo plazo los costes de gestión del cambio "
+"comienzan a dominar. A medida que los entornos informáticos cambian con el "
+"paso de los años y se descubren nuevas vulnerabilidades de seguridad, su "
+"producto también necesita cambiar y adaptarse. El uso de código abierto no "
+"se ve mejor como una actividad aislada, sino como un <emphasis>proceso en "
+"curso</emphasis>. Los mejores proyectos con los que se puede colaborar son "
+"los que son <emphasis>vivos</emphasis>; es decir, con una comunidad activa, "
+"objetivos claros y un estilo de trabajo transparente."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:466
+msgid ""
+"FreeBSD has an active developer community around it. At the time of writing "
+"there are many thousands of contributors from every populated continent in "
+"the world and over 300 individuals with write access to the project's source "
+"repositories."
+msgstr ""
+"FreeBSD tiene una comunidad de desarrolladores activa a su alrededor. En el "
+"momento de escribir este artículo hay muchos miles de contribuyentes de "
+"todos los continentes del mundo y más de 300 personas con acceso de "
+"escritura a los repositorios de fuentes del proyecto."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:473
+msgid "The goals of the FreeBSD project are <citation>Hub1994</citation>:"
+msgstr "Los objetivos del proyecto FreeBSD son <citation>Hub1994</citation>:"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:477
+msgid ""
+"To develop a high-quality operating system for popular computer hardware, "
+"and,"
+msgstr ""
+"Desarrollar un sistema operativo de alta calidad para los equipos "
+"informáticos más utilizados, y,"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:481
+msgid "To make our work available to all under a liberal license."
+msgstr ""
+"Poner nuestro trabajo a disposición de todos bajo una licencia liberal."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:487
+msgid ""
+"FreeBSD enjoys an open and transparent working culture. Nearly all "
+"discussion in the project happens by email, on <link xlink:href=\"http://"
+"lists.FreeBSD.org/mailman/listinfo\">public mailing lists</link> that are "
+"also archived for posterity. The project's policies are <link xlink:href="
+"\"@@URL_RELPREFIX@@/internal/policies.html\">documented</link> and "
+"maintained under revision control. Participation in the project is open to "
+"all."
+msgstr ""
+"FreeBSD disfruta de una cultura de trabajo abierta y transparente. Casi toda "
+"la discusión en el proyecto ocurre por correo electrónico, en <link xlink:"
+"href=\"http://lists.FreeBSD.org/mailman/listinfo\">listas de correo "
+"públicas</link> que también se archivan para la posteridad. Las políticas "
+"del proyecto son <link xlink:href=\"@@URL_RELPREFIX@@/internal/policies."
+"html\">documentadas</link> y mantenidas bajo control de revisión. La "
+"participación en el proyecto está abierta a todos."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:498
+msgid "Understanding FreeBSD culture"
+msgstr "Comprendiendo la cultura de FreeBSD"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:500
+msgid ""
+"To be able to work effectively with the FreeBSD project, you need to "
+"understand the project's culture."
+msgstr ""
+"Para poder trabajar eficazmente con el proyecto FreeBSD necesita entender la "
+"cultura del proyecto."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:503
+msgid ""
+"Volunteer driven projects operate under different rules than for-profit "
+"corporates. A common mistake that companies make when venturing into the "
+"open-source world is that of underplaying these differences."
+msgstr ""
+"Los proyectos impulsados por voluntarios operan bajo reglas diferentes a las "
+"de las corporaciones con fines de lucro. Un error común que cometen las "
+"empresas al aventurarse en el mundo del software libre es subestimar estas "
+"diferencias."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:511
+msgid "Motivation"
+msgstr "Motivación"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:513
+msgid ""
+"Most contributions to FreeBSD are done voluntarily without monetary rewards "
+"entering the picture. The factors that motivate individuals are complex, "
+"ranging from altruism, to an interest in solving the kinds of problems that "
+"FreeBSD attempts to solve. In this environment, <quote>elegance is never "
+"optional</quote> <citation>Nor1993</citation>."
+msgstr ""
+"La mayoría de las contribuciones a FreeBSD se hacen voluntariamente sin que "
+"las recompensas económicas entren en escena. Los factores que motivan a los "
+"individuos son complejos, desde el altruismo hasta el interés por resolver "
+"los tipos de problemas que FreeBSD intenta resolver. En este entorno, la "
+"<quote>elegancia nunca es opcional </quote> <citation>Nor1993</citation>."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:523
+msgid "The Long Term View"
+msgstr "La Visión a Largo Plazo"
+
+#. (itstool) path: footnote/simpara
+#: article.translate.xml:527
+msgid ""
+"FreeBSD's <link xlink:href=\"https://svnweb.freebsd.org/\">source "
+"repository</link> contains a history of the project since its inception, and "
+"there are <link xlink:href=\"http://www.mckusick.com/csrg/\">CDROMs "
+"available</link> that contain earlier code from the CSRG."
+msgstr ""
+"El <link xlink:href=\"https://svnweb.freebsd.org/\">repositorio fuente</"
+"link> de FreeBSD contiene un historial del proyecto desde su inicio, y hay "
+"<link xlink:href=\"http://www.mckusick.com/csrg/\">CDROMs disponibles</link> "
+"que contienen código anterior del CSRG."
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:524
+msgid ""
+"FreeBSD traces its roots back nearly twenty years to the work of the "
+"Computer Science Research Group at the University of California Berkeley.<_:"
+"footnote-1/> A number of the original CSRG developers remain associated with "
+"the project."
+msgstr ""
+"FreeBSD remonta sus inicios hasta hace casi veinte años en el trabajo del "
+"Grupo de Investigación en Ciencia Computacional (CSRG) de la Universidad de "
+"California en Berkeley.<_:footnote-1/> Algunos de los desarrolladores "
+"originales de CSRG siguen asociados al proyecto."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:536
+msgid ""
+"The project values long-term perspectives <citation>Nor2001</citation>. A "
+"frequent acronym encountered in the project is <acronym>DTRT</acronym>, "
+"which stands for <quote>Do The Right Thing</quote>."
+msgstr ""
+"El proyecto valora las perspectivas a largo plazo <citation>Nor2001</"
+"citation>. Un acrónimo frecuente en el proyecto es <acronym>DTRT</acronym>, "
+"que significa <quote>Hacer lo Correcto</quote> (Do The Right Things)."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:542
+msgid "Development Processes"
+msgstr "Proceso de Desarrollo"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:543
+msgid ""
+"Computer programs are tools for communication: at one level programmers "
+"communicate their intentions using a precise notation to a tool (a compiler) "
+"that translates their instructions to executable code. At another level, the "
+"same notation is used for communication of intent between two programmers."
+msgstr ""
+"Los programas de ordenador son herramientas de comunicación: en un nivel los "
+"programadores comunican sus intenciones utilizando una notación precisa a "
+"una herramienta (un compilador) que traduce sus instrucciones a código "
+"ejecutable. En otro nivel, la misma notación se utiliza para la comunicación "
+"de intenciones entre dos programadores."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:551
+msgid ""
+"Formal specifications and design documents are seldom used in the project. "
+"Clear and well-written code and well-written change logs (<xref linkend="
+"\"fig-change-log\"/>) are used in their place. FreeBSD development happens "
+"by <quote>rough consensus and running code</quote> <citation>Carp1996</"
+"citation>."
+msgstr ""
+"Las especificaciones formales y los documentos de diseño rara vez se "
+"utilizan en el proyecto. En su lugar se utilizan códigos claros y bien "
+"escritos y registros de cambios bien escritos (<xref linkend=\"fig-change-"
+"log\"/>). El desarrollo de FreeBSD se realiza mediante <quote> consenso "
+"aproximado  y código en ejecución </quote> <citation>Carp1996</citation>."
+
+#. (itstool) path: figure/title
+#: article.translate.xml:559
+msgid "A sample change log entry"
+msgstr "Un ejemplo de entrada en el registro de cambios"
+
+#. (itstool) path: figure/programlisting
+#: article.translate.xml:560
+#, no-wrap
+msgid ""
+"\n"
+"r151864 | bde | 2005-10-29 09:34:50 -0700 (Sat, 29 Oct 2005) | 13 lines\n"
+"Changed paths:\n"
+"   M /head/lib/msun/src/e_rem_pio2f.c\n"
+"\n"
+"Use double precision to simplify and optimize arg reduction for small\n"
+"and medium size args too: instead of conditionally subtracting a float\n"
+"17+24, 17+17+24 or 17+17+17+24 bit approximation to pi/2, always\n"
+"subtract a double 33+53 bit one.  The float version is now closer to\n"
+"the double version than to old versions of itself -- it uses the same\n"
+"33+53 bit approximation as the simplest cases in the double version,\n"
+"and where the float version had to switch to the slow general case at\n"
+"|x| == 2^7*pi/2, it now switches at |x| == 2^19*pi/2 the same as the\n"
+"double version.\n"
+"\n"
+"This speeds up arg reduction by a factor of 2 for |x| between 3*pi/4 and\n"
+"2^7*pi/4, and by a factor of 7 for |x| between 2^7*pi/4 and 2^19*pi/4.\n"
+"        "
+msgstr ""
+"\n"
+"r151864 | bde | 2005-10-29 09:34:50 -0700 (Sat, 29 Oct 2005) | 13 lines\n"
+"Changed paths:\n"
+"   M /head/lib/msun/src/e_rem_pio2f.c\n"
+"\n"
+"Use double precision to simplify and optimize arg reduction for small\n"
+"and medium size args too: instead of conditionally subtracting a float\n"
+"17+24, 17+17+24 or 17+17+17+24 bit approximation to pi/2, always\n"
+"subtract a double 33+53 bit one.  The float version is now closer to\n"
+"the double version than to old versions of itself -- it uses the same\n"
+"33+53 bit approximation as the simplest cases in the double version,\n"
+"and where the float version had to switch to the slow general case at\n"
+"|x| == 2^7*pi/2, it now switches at |x| == 2^19*pi/2 the same as the\n"
+"double version.\n"
+"\n"
+"This speeds up arg reduction by a factor of 2 for |x| between 3*pi/4 and\n"
+"2^7*pi/4, and by a factor of 7 for |x| between 2^7*pi/4 and 2^19*pi/4."
+
+#. (itstool) path: sect2/simpara
+#: article.translate.xml:580
+msgid ""
+"Communication between programmers is enhanced by the use of a common coding "
+"standard <citerefentry><refentrytitle>style</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>."
+msgstr ""
+"La comunicación entre programadores se mejora mediante el uso de un "
+"<citerefentry><refentrytitle>style</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> estándar de codificación común."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:584
+msgid "Communication Channels"
+msgstr "Vías de comunicación"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:585
+msgid ""
+"FreeBSD's contributors are spread across the world. Email (and to a lesser "
+"extent, IRC) is the preferred means of communication in the project."
+msgstr ""
+"Los contribuyentes a FreeBSD están repartidos por todo el mundo. El correo "
+"electrónico (y en menor medida IRC) es el medio de comunicación preferido en "
+"el proyecto."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:592
+msgid "Best Practices for collaborating with the FreeBSD project"
+msgstr "Mejores Prácticas para colaborar con el proyecto FreeBSD"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:595
+msgid ""
+"We now look at a few best practices for making the best use of FreeBSD in "
+"product development."
+msgstr ""
+"A continuación presentamos algunas de las mejores prácticas para hacer el "
+"mejor uso de FreeBSD en el desarrollo de productos."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:600
+msgid "Plan for the long term"
+msgstr "Planificar a largo plazo"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:602
+msgid ""
+"Setup processes that help in tracking the development of FreeBSD. For "
+"example:"
+msgstr ""
+"Establecer procesos que ayuden a hacer el seguimiento del desarrollo de "
+"FreeBSD. Por ejemplo:"
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:605
+msgid "Track FreeBSD source code"
+msgstr "Seguimiento del código fuente de FreeBSD"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:606
+msgid ""
+"The project makes it easy to mirror its SVN repository using <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/"
+"article.html#svn-advanced-use-setting-up-svnsync\"><application>svnsync</"
+"application></link>. Having the complete history of the source is useful "
+"when debugging complex problems and offers valuable insight into the "
+"intentions of the original developers. Use a capable source control system "
+"that allows you to easily merge changes between the upstream FreeBSD code "
+"base and your own in-house code."
+msgstr ""
+"El proyecto facilita la duplicación de su repositorio SVN utilizando <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/"
+"article.html#svn-advanced-use-setting-up-svnsync\"><application>svnsyncnc</"
+"application></link>. Tener el historial completo del código fuente es útil "
+"para depurar problemas complejos y ofrece una valiosa perspectiva de las "
+"intenciones de los desarrolladores iniciales. Utilice un sistema de control "
+"de código fuente capaz que le permita combinar fácilmente los cambios entre "
+"la base de código de FreeBSD y su propio código interno."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:616
+msgid ""
+"<xref linkend=\"fig-svn-blame\"/> shows a portion of an annotated listing of "
+"the file referenced by the change log in <xref linkend=\"fig-change-log\"/>. "
+"The ancestry of each line of the source is clearly visible. Annotated "
+"listings showing the history of every file that is part of FreeBSD are <link "
+"xlink:href=\"https://svnweb.freebsd.org/\">available on the web</link>."
+msgstr ""
+"<xref linkend=\"fig-svn-blame\"/> muestra una parte de un listado anotado "
+"del archivo referenciado por el registro de cambios en <xref linkend=\"fig-"
+"change-log\"/>. La ascendencia de cada línea de la fuente es claramente "
+"visible. Los listados anotados que muestran el historial de cada fichero que "
+"forma parte de FreeBSD están <link xlink:href=\"https://svnweb.freebsd.org/"
+"\">disponibles en la web</link>."
+
+#. (itstool) path: figure/title
+#: article.translate.xml:624
+msgid ""
+"An annotated source listing generated using <command>svn blame</command>"
+msgstr ""
+"Un listado de fuentes anotado generado usando <command>svn blame</command>"
+
+#. (itstool) path: figure/programlisting
+#: article.translate.xml:625
+#, no-wrap
+msgid ""
+"\n"
+"\n"
+"#REV         #WHO #DATE                                        #TEXT\n"
+"\n"
+"176410        bde 2008-02-19 07:42:46 -0800 (Tue, 19 Feb 2008) #include "
+"&lt;sys/cdefs.h&gt;\n"
+"176410        bde 2008-02-19 07:42:46 -0800 (Tue, 19 Feb 2008) "
+"__FBSDID(\"$FreeBSD: head/en_US.ISO8859-1/articles/building-products/article."
+"xml 51348 2017-12-30 22:56:56Z eadler $\");\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) \n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) /* "
+"__ieee754_rem_pio2f(x,y)\n"
+"  8870    rgrimes 1995-05-29 22:51:47 -0700 (Mon, 29 May 1995)  *\n"
+"176552        bde 2008-02-25 05:33:20 -0800 (Mon, 25 Feb 2008)  * return the "
+"remainder of x rem pi/2 in *y\n"
+"176552        bde 2008-02-25 05:33:20 -0800 (Mon, 25 Feb 2008)  * use double "
+"precision for everything except passing x\n"
+"152535        bde 2005-11-16 18:20:04 -0800 (Wed, 16 Nov 2005)  * use "
+"__kernel_rem_pio2() for large x\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994)  */\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) \n"
+"176465        bde 2008-02-22 07:55:14 -0800 (Fri, 22 Feb 2008) #include "
+"&lt;float.h&gt;\n"
+"176465        bde 2008-02-22 07:55:14 -0800 (Fri, 22 Feb 2008) \n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) #include "
+"\"math.h\"\n"
+"\n"
+"              "
+msgstr ""
+"\n"
+"\n"
+"#REV         #WHO #DATE                                        #TEXT\n"
+"\n"
+"176410        bde 2008-02-19 07:42:46 -0800 (Tue, 19 Feb 2008) #include "
+"&lt;sys/cdefs.h&gt;\n"
+"176410        bde 2008-02-19 07:42:46 -0800 (Tue, 19 Feb 2008) "
+"__FBSDID(\"$FreeBSD: head/en_US.ISO8859-1/articles/building-products/article."
+"xml 51348 2017-12-30 22:56:56Z eadler $\");\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) \n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) /* "
+"__ieee754_rem_pio2f(x,y)\n"
+"  8870    rgrimes 1995-05-29 22:51:47 -0700 (Mon, 29 May 1995)  *\n"
+"176552        bde 2008-02-25 05:33:20 -0800 (Mon, 25 Feb 2008)  * return the "
+"remainder of x rem pi/2 in *y\n"
+"176552        bde 2008-02-25 05:33:20 -0800 (Mon, 25 Feb 2008)  * use double "
+"precision for everything except passing x\n"
+"152535        bde 2005-11-16 18:20:04 -0800 (Wed, 16 Nov 2005)  * use "
+"__kernel_rem_pio2() for large x\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994)  */\n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) \n"
+"176465        bde 2008-02-22 07:55:14 -0800 (Fri, 22 Feb 2008) #include "
+"&lt;float.h&gt;\n"
+"176465        bde 2008-02-22 07:55:14 -0800 (Fri, 22 Feb 2008) \n"
+"  2116        jkh 1994-08-19 02:40:01 -0700 (Fri, 19 Aug 1994) #include "
+"\"math.h\"\n"
+"\n"
+"              "
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:647
+msgid "Use a gatekeeper"
+msgstr "Usar un controlador de acceso"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:648
+msgid ""
+"Appoint a <firstterm>gatekeeper</firstterm> to monitor FreeBSD development, "
+"to keep an eye out for changes that could potentially impact your products."
+msgstr ""
+"Designe un <firstterm>controlador de acceso</firstterm> para monitorizar el "
+"desarrollo de FreeBSD, para estar al tanto de los cambios que podrían "
+"afectar a sus productos."
+
+#. (itstool) path: formalpara/title
+#: article.translate.xml:654
+msgid "Report bugs upstream"
+msgstr "Informar de errores a los desarrolladores"
+
+#. (itstool) path: formalpara/para
+#: article.translate.xml:655
+msgid ""
+"If you notice bug in the FreeBSD code that you are using, file a <link xlink:"
+"href=\"https://www.FreeBSD.org/support/bugreports.html\">bug report</link>. "
+"This step helps ensure that you do not have to fix the bug the next time you "
+"take a code drop from upstream."
+msgstr ""
+"Si nota un error en el código de FreeBSD que está usando, rellene un  <link "
+"xlink:href=\"https://www.FreeBSD.org/support/bugreports.html\">informe de "
+"errores</link>. Este paso ayuda a asegurar que usted no tenga que arreglar "
+"el error la próxima vez que coja el código desde el proyecto."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:665
+msgid "Leverage FreeBSD's release engineering efforts"
+msgstr "Aproveche los esfuerzos de ingeniería del lanzamiento de FreeBSD"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:667
+msgid ""
+"Use code from a -STABLE development branch of FreeBSD. These development "
+"branches are formally supported by FreeBSD's release engineering and "
+"security teams and comprise of tested code."
+msgstr ""
+"Utilice código de una rama de desarrollo -ESTABLE de FreeBSD. Estas ramas de "
+"desarrollo están formalmente soportadas por los equipos de seguridad e "
+"ingeniería de lanzamiento de FreeBSD y se componen de código probado."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:676
+msgid "Donate code to reduce costs"
+msgstr "Donar código para reducir costes"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:678
+msgid ""
+"A major proportion of the costs associated with developing products is that "
+"of doing maintenance. By donating non-critical code to the project, you "
+"benefit by having your code see much wider exposure than it would otherwise "
+"get. This in turn leads to more bugs and security vulnerabilities being "
+"flushed out and performance anomalies being identified and fixed."
+msgstr ""
+"Una parte importante de los costes asociados al desarrollo de productos es "
+"el mantenimiento. Al donar código no crítico al proyecto, te beneficias de "
+"que tu código tenga una exposición mucho más amplia de la que tendría de "
+"otro modo. Esto, a su vez, lleva a que se eliminen más errores y "
+"vulnerabilidades de seguridad y a que se identifiquen y solucionen las "
+"anomalías de rendimiento."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:690
+msgid "Get support effectively"
+msgstr "Obtenga apoyo de manera efectiva"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:692
+msgid ""
+"For products with tight deadlines, it is recommended that you hire or enter "
+"into a consulting agreement with a developer or firm with FreeBSD experience."
+" The <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"jobs\">FreeBSD related employment mailing list</link> is a useful "
+"communication channel to find talent. The FreeBSD project maintains a <link "
+"xlink:href=\"@@URL_RELPREFIX@@/commercial/consult_bycat.html\">gallery of "
+"consultants and consulting firms</link> undertaking FreeBSD work. The <link "
+"xlink:href=\"http://www.bsdcertification.org/\">BSD Certification Group</"
+"link> offers certification for all the major BSD derived OSes."
+msgstr ""
+"Para productos con plazos de entrega ajustados, se recomienda que contrate o "
+"haga un acuerdo de consultoría con un desarrollador o empresa con "
+"experiencia en FreeBSD. La <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/freebsd-jobs\">lista de correo de empleo relacionada con "
+"FreeBSD</link> es un canal de comunicación útil para encontrar talento. El "
+"proyecto FreeBSD mantiene una <link xlink:href=\"@@URL_RELPREFIX@@/"
+"commercial/consult_bycat.html\">lista de consultores y empresas consultoras</"
+"link> que realizan trabajos en FreeBSD. El <link xlink:href=\"http://www."
+"bsdcertification.org/\">Grupo de Certificación BSD</link> ofrece "
+"certificación para todos los principales Sistemas Operativos derivados de "
+"BSD."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:703
+msgid ""
+"For less critical needs, you can ask for help on the <link xlink:href=\"http:"
+"//lists.FreeBSD.org/mailman/listinfo\">project mailing lists</link>. A "
+"useful guide to follow when asking for help is given in <citation>Ray2004</"
+"citation>."
+msgstr ""
+"Para necesidades menos críticas, puede pedir ayuda en las <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo\">listas de correo del proyecto</"
+"link>. Una guía útil para pedir ayuda se encuentra en <citation>Ray2004</"
+"citation>."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:713
+msgid "Publicize your involvement"
+msgstr "Publicite su participación"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:715
+msgid ""
+"You are not required to publicize your use of FreeBSD, but doing so helps "
+"both your effort as well as that of the project."
+msgstr ""
+"No es necesario que publicite su uso de FreeBSD, pero hacerlo ayuda tanto a "
+"su esfuerzo como al del proyecto."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:718
+msgid ""
+"Letting the FreeBSD community know that your company uses FreeBSD helps "
+"improve your chances of attracting high quality talent. A large roster of "
+"support for FreeBSD also means more mind share for it among developers. This "
+"in turn yields a healthier foundation for your future."
+msgstr ""
+"Hacer saber a la comunidad FreeBSD que su empresa utiliza FreeBSD ayuda a "
+"mejorar sus posibilidades de atraer talento de alta calidad. Una amplia "
+"nómina de soporte a FreeBSD también significa más intercambio de ideas para "
+"los desarrolladores. Esto a su vez produce una base más saludable para su "
+"futuro."
+
+#. (itstool) path: varlistentry/term
+#: article.translate.xml:728
+msgid "Support FreeBSD developers"
+msgstr "Soporte a los desarrolladores de FreeBSD"
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:730
+msgid ""
+"Sometimes the most direct way to get a desired feature into FreeBSD is to "
+"support a developer who is already looking at a related problem. Help can "
+"range from hardware donations to direct financial assistance. In some "
+"countries, donations to the FreeBSD project enjoy tax benefits. The project "
+"has a dedicated <link xlink:href=\"@@URL_RELPREFIX@@/donations/\">donations "
+"liaison</link> to assist donors. The project also maintains a web page where "
+"developers <link xlink:href=\"@@URL_RELPREFIX@@/donations/wantlist."
+"html\">list their needs</link>."
+msgstr ""
+"A veces la forma más directa de obtener una característica deseada en "
+"FreeBSD es apoyar a un desarrollador que ya está buscando un problema "
+"relacionado. La ayuda puede ir desde donaciones de hardware hasta asistencia "
+"financiera directa. En algunos países, las donaciones al proyecto FreeBSD "
+"gozan de beneficios fiscales. El proyecto cuenta con un enlace para <link "
+"xlink:href=\"@@URL_RELPREFIX@@/donations/\">donaciones</link> para informar "
+"a los donantes. El proyecto también mantiene una página web donde los "
+"desarrolladores tienen una <link xlink:href=\"@@URL_RELPREFIX@@/donations/"
+"wantlist.html\"> lista con sus necesidades </link>."
+
+#. (itstool) path: listitem/simpara
+#: article.translate.xml:740
+msgid ""
+"As a policy the FreeBSD project <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/articles/contributors\">acknowledges</link> all "
+"contributions received on its web site."
+msgstr ""
+"Como política, el proyecto FreeBSD <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/articles/contributors\">reconoce</link>en su sitio web  "
+"todas las contribuciones recibidas."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:749
+msgid "Conclusion"
+msgstr "Conclusión"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:750
+msgid ""
+"The FreeBSD project's goals are to create and give away the source code for "
+"a high-quality operating system. By working with the FreeBSD project you can "
+"reduce development costs and improve your time to market in a number of "
+"product development scenarios."
+msgstr ""
+"Los objetivos del proyecto FreeBSD son crear y obsequiar el código fuente de "
+"un sistema operativo de alta calidad. Trabajando con el proyecto FreeBSD "
+"puede reducir los costes de desarrollo y mejorar su tiempo de lanzamiento al "
+"mercado en una variedad de escenarios de desarrollo del producto."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:755
+msgid ""
+"We examined the characteristics of the FreeBSD project that make it an "
+"excellent choice for being part of an organization's product strategy. We "
+"then looked at the prevailing culture of the project and examined effective "
+"ways of interacting with its developers. The article concluded with a list "
+"of best-practices that could help organizations collaborating with the "
+"project."
+msgstr ""
+"Hemos examinado las características del proyecto FreeBSD que lo convierten "
+"en una excelente elección para formar parte de la estrategia de un producto "
+"de una organización. A continuación, examinamos la cultura predominante en "
+"el proyecto y las formas efectivas de interactuar con sus desarrolladores. "
+"El artículo ha concluido con una lista de buenas prácticas que podrían "
+"ayudar a las organizaciones que colaboran con el proyecto."
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:766
+msgid "Carp1996"
+msgstr "Carp1996"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:767
+msgid ""
+"<link xlink:href=\"http://www.ietf.org/rfc/rfc1958.txt\">The Architectural "
+"Principles of the Internet</link>"
+msgstr ""
+"<link xlink:href=\"http://www.ietf.org/rfc/rfc1958.txt\">The Architectural "
+"Principles of the Internet</link>."
+
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:769
+msgid ""
+"<personname><firstname>B.</firstname><surname>Carpenter</surname></"
+"personname><affiliation> <orgname>The Internet Architecture Board</orgname> "
+"</affiliation>"
+msgstr ""
+"<personname><firstname>B.</firstname><surname>Carpenter</surname></"
+"personname><affiliation> <orgname>El Consejo Arquitectónico de Internet</"
+"orgname> </affiliation>"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:772
+msgid "<year>1996</year>"
+msgstr "<year>1996</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:777
+msgid "Com2004"
+msgstr "Com2004"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:778
+msgid ""
+"<link xlink:href=\"http://csdl.computer.org/comp/mags/so/2004/01/s1028."
+"pdf\">How is Open-Source Affecting Software Development?</link>"
+msgstr ""
+"<link xlink:href=\"http://csdl.computer.org/comp/mags/so/2004/01/s1028."
+"pdf\">¿Cómo está afectando el código abierto al desarrollo de software?</"
+"link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:782
+msgid ""
+"<personname><firstname>Diomidis</firstname><surname>Spinellis</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Diomidis</firstname><surname>Spinellis</surname></"
+"personname>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:783
+msgid ""
+"<personname><firstname>Clemens</firstname><surname>Szyperski</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Clemens</firstname><surname>Szyperski</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:785
+msgid "IEEE Computer"
+msgstr "IEEE Computer"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:786
+msgid "<year>Jan/Feb 2004</year>"
+msgstr "<year>Enero/Febrero 2004</year>"
+
+#. (itstool) path: publisher/publishername
+#: article.translate.xml:790
+msgid "IEEE Computer Society"
+msgstr "Sociedad de Computación IEEE"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:794
+msgid "ComGuide"
+msgstr "ComGuide"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:795
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-"
+"guide\">Committer's Guide</link>"
+msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-"
+"guide\">Guía de Desarrolladores</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:798
+msgid "<orgname>The FreeBSD Project</orgname>"
+msgstr "<orgname>El proyecto FreeBSD</orgname>"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:800 article.translate.xml:811
+#: article.translate.xml:822 article.translate.xml:886
+#: article.translate.xml:895
+msgid "<year>2005</year>"
+msgstr "<year>2005</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:805
+msgid "Cov2005"
+msgstr "Cov2005"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:806
+msgid ""
+"<link xlink:href=\"http://www.coverity.com/news/nf_news_06_27_05_story_9."
+"html\">Coverity study on kernel security holes in Linux and FreeBSD</link>"
+msgstr ""
+"<link xlink:href=\"http://www.coverity.com/news/nf_news_06_27_05_story_9."
+"html\">Estudios de Coverity sobre los agujeros de seguridad del kernel en "
+"Linux y FreeBSD</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:809
+msgid "<orgname>Coverity Inc.</orgname>"
+msgstr "<orgname>Coverity Inc.</orgname>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:816
+msgid "GoldGab2005"
+msgstr "GoldGab2005"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:816
+msgid ""
+"<link xlink:href=\"http://dreamsongs.com/IHE/IHE.html\">Innovation Happens "
+"Elsewhere: Open Source as Business Strategy</link>"
+msgstr ""
+"<link xlink:href=\"http://dreamsongs.com/IHE/IHE.html\">La innovación ocurre "
+"en otras partes: El Código Abierto como Estrategia de Negocio</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:819
+msgid ""
+"<personname><firstname>Ron</firstname><surname>Goldman</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Ron</firstname><surname>Goldman</surname></"
+"personname>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:820
+msgid ""
+"<personname><firstname>Richard</firstname><surname>Gabriel</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Richard</firstname><surname>Gabriel</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/biblioid
+#: article.translate.xml:825
+msgid "ISBN 1558608893"
+msgstr "ISBN 1558608893"
+
+#. (itstool) path: publisher/publishername
+#: article.translate.xml:827
+msgid "Morgan-Kaufmann"
+msgstr "Morgan-Kaufmann"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:832
+msgid "Hub1994"
+msgstr "Hub1994"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:833
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributing\">Contributing to the FreeBSD Project</link>"
+msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributing\">Contribuyendo al proyecto FreeBSD</link>"
+
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:835
+msgid ""
+"<personname><firstname>Jordan</firstname><surname>Hubbard</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Jordan</firstname><surname>Hubbard</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:836
+msgid "<year>1994—2005</year>"
+msgstr "<year>1994—2005</year>"
+
+#. (itstool) path: publisher/publishername
+#: article.translate.xml:840 article.translate.xml:884
+#: article.translate.xml:899 article.translate.xml:943
+msgid "The FreeBSD Project"
+msgstr "El Proyecto FreeBSD"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:844
+msgid "McKu1999"
+msgstr "McKu1999"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:845
+msgid ""
+"<link xlink:href=\"http://www.usenix.org/publications/library/proceedings/"
+"usenix99/mckusick.html\">Soft Updates: A Technique for Eliminating Most "
+"Synchronous Writes in the Fast Filesystem</link>"
+msgstr ""
+"<link xlink:href=\"http://www.usenix.org/publications/library/proceedings/"
+"usenix99/mckusick.html\">Soft Updates: A Technique for Eliminating Most "
+"Synchronous Writes in the Fast Filesystem</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:849
+msgid ""
+"<personname><firstname>Kirk</firstname><surname>McKusick</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Kirk</firstname><surname>McKusick</surname></"
+"personname>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:850
+msgid ""
+"<personname><firstname>Gregory</firstname><surname>Ganger</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Gregory</firstname><surname>Ganger</surname></"
+"personname>"
+
+#. (itstool) path: confgroup/conftitle
+#: article.translate.xml:853
+msgid "USENIX Annual Technical Conference"
+msgstr "Conferencia Técnica Anual USENIX"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:855
+msgid "<year>1999</year>"
+msgstr "<year>1999</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:860
+msgid "McKu1999-1"
+msgstr "McKu1999-1"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:861
+msgid ""
+"<link xlink:href=\"http://www.oreilly.com/catalog/opensources/book/kirkmck."
+"html\">Twenty Years of Berkeley Unix: From AT&amp;T-Owned to Freely "
+"Redistributable</link>"
+msgstr ""
+"<link xlink:href=\"http://www.oreilly.com/catalog/opensources/book/kirkmck."
+"html\">Twenty Years of Berkeley Unix: From AT&amp;T-Owned to Freely "
+"Redistributable</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:864
+msgid ""
+"<personname><firstname>Marshall Kirk</firstname><surname>McKusick</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Marshall Kirk</firstname><surname>McKusick</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:866
+msgid ""
+"<link xlink:href=\"http://www.oreilly.com/catalog/opensources/book/toc."
+"html\">Open Sources: Voices from the Open Source Revolution</link>"
+msgstr ""
+"<link xlink:href=\"http://www.oreilly.com/catalog/opensources/book/toc."
+"html\">Open Sources: Voices from the Open Source Revolution</link>"
+
+#. (itstool) path: biblioentry/biblioid
+#: article.translate.xml:869
+msgid "ISBN 1-56592-582-3"
+msgstr "ISBN 1-56592-582-3"
+
+#. (itstool) path: publisher/publishername
+#: article.translate.xml:871
+msgid "O'Reilly Inc."
+msgstr "O'Reilly Inc."
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:873 article.translate.xml:910
+msgid "<year>1993</year>"
+msgstr "<year>1993</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:878
+msgid "Mon2005"
+msgstr "Mon2005"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:879
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/bsdl-gpl/"
+"article.html\">Why you should use a BSD style license for your Open Source "
+"Project</link>"
+msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/bsdl-gpl/"
+"article.html\">¿Por qué debería usar una licencia estilo BSD para su "
+"Proyecto de Código Abierto</link>"
+
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:882
+msgid ""
+"<personname><firstname>Bruce</firstname><surname>Montague</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Bruce</firstname><surname>Montague</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:891
+msgid "Nik2005"
+msgstr "Nik2005"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:892
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/dev-model/"
+"book.html\">A project model for the FreeBSD Project</link>"
+msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/dev-model/"
+"book.html\">A project model for the FreeBSD Project</link>"
+
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:894
+msgid ""
+"<personname><firstname>Niklas</firstname><surname>Saers</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Niklas</firstname><surname>Saers</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:903
+msgid "Nor1993"
+msgstr "Nor1993"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:904
+msgid ""
+"<link xlink:href=\"http://www.norvig.com/luv-slides.ps\">Tutorial on Good "
+"Lisp Programming Style</link>"
+msgstr ""
+"<link xlink:href=\"http://www.norvig.com/luv-slides.ps\">Tutorial sobre el "
+"Buen Estilo de Programación de Lisp</link>"
+
+#. (itstool) path: authorgroup/author
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:907 article.translate.xml:918
+msgid ""
+"<personname><firstname>Peter</firstname><surname>Norvig</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Peter</firstname><surname>Norvig</surname></"
+"personname>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:908
+msgid ""
+"<personname><firstname>Kent</firstname><surname>Pitman</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Kent</firstname><surname>Pitman</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:915
+msgid "Nor2001"
+msgstr "Nor2001"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:916
+msgid ""
+"<link xlink:href=\"http://www.norvig.com/21-days.html\">Teach Yourself "
+"Programming in Ten Years</link>"
+msgstr ""
+"<link xlink:href=\"http://www.norvig.com/21-days.html\">Enséñese a Programar "
+"Usted Mismo en Diez Años</link>"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:919 article.translate.xml:939
+msgid "<year>2001</year>"
+msgstr "<year>2001</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:924
+msgid "Ray2004"
+msgstr "Ray2004"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:925
+msgid ""
+"<link xlink:href=\"http://www.catb.org/~esr/faqs/smart-questions.html\">How "
+"to ask questions the smart way</link>"
+msgstr ""
+"<link xlink:href=\"http://www.catb.org/~esr/faqs/smart-questions."
+"html\">¿Cómo hacer preguntas de manera inteligente?</link>"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:928
+msgid ""
+"<personname><firstname>Eric Steven</firstname><surname>Raymond</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Eric Steven</firstname><surname>Raymond</surname></"
+"personname>"
+
+#. (itstool) path: biblioentry/copyright
+#: article.translate.xml:930
+msgid "<year>2004</year>"
+msgstr "<year>2004</year>"
+
+#. (itstool) path: biblioentry/abbrev
+#: article.translate.xml:935
+msgid "RelEngDoc"
+msgstr "RelEngDoc"
+
+#. (itstool) path: biblioentry/citetitle
+#: article.translate.xml:936
+msgid ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"releng\">FreeBSD Release Engineering</link>"
+msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"releng\">Ingeniería de Publicación de versiones de FreeBSD</link>"
+
+#. (itstool) path: biblioentry/author
+#: article.translate.xml:938
+msgid ""
+"<personname><firstname>Murray</firstname><surname>Stokely</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Murray</firstname><surname>Stokely</surname></"
+"personname>"
