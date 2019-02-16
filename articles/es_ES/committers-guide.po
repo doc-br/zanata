@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-10 05:17+0000\n"
+"PO-Revision-Date: 2019-02-16 08:00+0000\n"
 "Last-Translator: Manuel Megías <joramsinkin@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -2790,6 +2790,9 @@ msgid ""
 "command>. Make sure all the files that should have been added or deleted "
 "were in fact added or deleted."
 msgstr ""
+"Compruebe los cambios con <command>svn diff</command> y <command>svn stat</"
+"command>. Asegúrese de que todos los archivos que deberían haber sido "
+"añadidos o borrados hayan sido realmente añadidos o borrados."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1397
@@ -2799,16 +2802,20 @@ msgid ""
 "mergeinfo properties should be anywhere except the target directory (or "
 "directories)."
 msgstr ""
+"Eche un vistazo con más atención a cualquier cambio de propiedad (marcado "
+"con un <literal>M</literal> en la segunda columna de <command>svn stat</"
+"command>). Normalmente, ninguna propiedad de svn:mergeinfo debería estar en "
+"otro lugar excepto en el directorio (o directorios) de destino."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1403
 msgid "If something looks fishy, ask for help."
-msgstr ""
+msgstr "Si algo parece sospechoso, pida ayuda."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1407
 msgid "Committing"
-msgstr ""
+msgstr "Enviando"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1409
@@ -2818,21 +2825,27 @@ msgid ""
 "information about committing files in general, see the relevant section of "
 "this primer."
 msgstr ""
+"Asegúrese de enviar a un directorio de nivel superior para incluir también "
+"el mergeinfo. No especifique archivos individuales en la línea de comandos. "
+"Para obtener más información sobre el envío de archivos en general, consulte "
+"la sección pertinente de este manual."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1418
 msgid "Vendor Imports with <acronym>SVN</acronym>"
-msgstr ""
+msgstr "Importaciones de proveedores con <acronym>SVN</acronym>"
 
 #. (itstool) path: important/para
 #: article.translate.xml:1421
 msgid "Please read this entire section before starting a vendor import."
 msgstr ""
+"Por favor, lea toda esta sección antes de iniciar la importación de un "
+"proveedor."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1426
 msgid "Patches to vendor code fall into two categories:"
-msgstr ""
+msgstr "Los parches al código de proveedor se dividen en dos categorías:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1431
@@ -2841,6 +2854,10 @@ msgid ""
 "that have been extracted from the vendor's version control system, which "
 "address issues which cannot wait until the next vendor release."
 msgstr ""
+"Parches de proveedor: son parches que han sido publicados por el proveedor, "
+"o que han sido extraídos del sistema de control de versiones del proveedor, "
+"que resuelven problemas que no pueden esperar hasta la próxima versión del "
+"proveedor."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1439
@@ -2848,11 +2865,13 @@ msgid ""
 "FreeBSD patches: these are patches that modify the vendor code to address "
 "FreeBSD-specific issues."
 msgstr ""
+"Parches de FreeBSD: son parches que modifican el código de proveedor para "
+"resolver problemas específicos de FreeBSD."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1444
 msgid "The nature of a patch dictates where it should be committed:"
-msgstr ""
+msgstr "La naturaleza de un parche dicta dónde debe ser enviado:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1449
@@ -2864,16 +2883,24 @@ msgid ""
 "can be applied and committed. There is no need to re-tag the vendor sources "
 "after committing the patch."
 msgstr ""
+"Los parches del proveedor deben enviarse a la rama del proveedor y "
+"fusionarse de allí a head. Si el parche resuelve un problema en una nueva "
+"versión que se está importando actualmente, <emphasis>no debe</emphasis> ser "
+"eviado junto con la nueva versión: la versión se debe importar y etiquetar "
+"primero, entonces el parche se puede aplicar y enviar. No hay necesidad de "
+"volver a etiquetar las fuentes del proveedor después de confirmar el parche.\n"
+"\n"
+"Traducción realizada con el traductor www.DeepL.com/Translator"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1460
 msgid "FreeBSD patches are committed directly to head."
-msgstr ""
+msgstr "Los parches de FreeBSD se envían directamente a head."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1467
 msgid "Preparing the Tree"
-msgstr ""
+msgstr "Preparación del Árbol"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1469
@@ -2882,11 +2909,14 @@ msgid ""
 "and cleaning up the vendor tree is necessary, as well as bootstrapping the "
 "merge history in the main tree."
 msgstr ""
+"Si importa por primera vez después del cambio a Subversion, es necesario "
+"aplanar y limpiar el árbol de proveedores, así como realizar un inicio del "
+"historial de fusiones en el árbol principal."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1475
 msgid "Flattening"
-msgstr ""
+msgstr "Aplanar"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1477
@@ -2897,11 +2927,17 @@ msgid ""
 "pf/dist/contrib/pf</filename>. The vendor source is best directly in "
 "<filename>vendor/pf/dist</filename>."
 msgstr ""
+"Durante la conversión de <acronym>CVS</acronym> a Subversion, las ramas de "
+"los proveedores se importaron con el mismo esquema que el árbol principal. "
+"Esto significa que las fuentes del proveedor <literal>pf</literal> "
+"terminaron en <filename>vendor/pf/dist/contrib/pf</filename>. La fuente del "
+"proveedor es mejor si está directamente en <filename>vendor/pf/dist</"
+"filename>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1485
 msgid "To flatten the <literal>pf</literal> tree:"
-msgstr ""
+msgstr "Para aplanar el árbol <literal>pf</literal>:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1487
@@ -2915,6 +2951,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn mv $(svn list) ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>svn rm contrib</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1494
@@ -2924,6 +2967,10 @@ msgid ""
 "directory that is copied or moved. In this case, as nothing is being merged "
 "from the deleted tree, they just get in the way."
 msgstr ""
+"El bit <literal>propdel</literal> es necesario porque comenzando con 1.5, "
+"Subversion se añade automáticamente <literal>svn:mergeinfo</literal> a "
+"cualquier directorio que se copie o mueva. En este caso, como no se está "
+"fusionando nada del árbol eliminado, simplemente es un estorbo."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1501
@@ -2933,11 +2980,15 @@ msgid ""
 "similar, and putting the <command>svn commit</command> off until the end of "
 "the process."
 msgstr ""
+"Las etiquetas también pueden ser aplanadas (3, 4, 3.5 etc.); el "
+"procedimiento es exactamente el mismo, sólo cambiando <literal>dist</"
+"literal> a <literal>3.5</literal> o similar, y posponiendo el  <command>svn "
+"commit</command> hasta el final del proceso."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1509
 msgid "Cleaning Up"
-msgstr ""
+msgstr "Limpieza"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1511
@@ -2948,6 +2999,12 @@ msgid ""
 "application>, for example, includes two files that originated with FreeBSD "
 "and still contain the original version tags. To do this:"
 msgstr ""
+"El árbol <literal>dist</literal> puede ser limpiado según sea necesario. Se "
+"recomienda desactivar la expansión de palabras clave, ya que no tiene "
+"sentido en el código de proveedor que no se ha modificado y en algunos casos "
+"puede incluso ser perjudicial. <application>OpenSSH</application>, por "
+"ejemplo, incluye dos ficheros que se originaron en FreeBSD y que aún "
+"contienen las etiquetas de la versión original. Para hacer esto:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1519
@@ -2956,11 +3013,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1524
 msgid "Bootstrapping Merge History"
-msgstr ""
+msgstr "Iniciando el Historial de Fusiones"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1526
@@ -2970,6 +3029,10 @@ msgid ""
 "the revision that corresponds to the last related change to the vendor tree, "
 "prior to importing new sources:"
 msgstr ""
+"Si se importa por primera vez después del cambio a Subversion, inicie "
+"<literal>svn:mergeinfo</literal> en el directorio de destino en el árbol "
+"principal  la revisión que corresponde al último cambio relacionado con el "
+"árbol de proveedores, antes de importar nuevas fuentes:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1532
@@ -2981,11 +3044,16 @@ msgid ""
 "org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd."
+"org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1539
 msgid "Importing New Sources"
-msgstr ""
+msgstr "Importar nuevas fuentes"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1541
@@ -2994,11 +3062,14 @@ msgid ""
 "optionally be repeated for every upstream release between the last import "
 "and the current import."
 msgstr ""
+"Con dos envíos, uno para la importación en sí y otro para la etiqueta, este "
+"paso puede repetirse opcionalmente para cada versión anterior entre la "
+"última importación y la importación actual."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1547
 msgid "Preparing the Vendor Sources"
-msgstr ""
+msgstr "Preparar las Fuentes del Proveedor"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1549
@@ -3006,6 +3077,9 @@ msgid ""
 "Subversion is able to store a full distribution in the vendor tree. So, "
 "import everything, but merge only what is required."
 msgstr ""
+"Subversion es capaz de almacenar una distribución completa en el árbol de "
+"proveedores. Por lo tanto, importe todo, pero fusione sólo lo que sea "
+"necesario."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1553
@@ -3016,6 +3090,12 @@ msgid ""
 "of the vendor tree and of the sources that are about to be imported is "
 "recommended, to facilitate the process."
 msgstr ""
+"Se requiere un <command>svn add</command> para añadir cualquier archivo que "
+"se haya añadido desde la última importación del proveedor, y un <command>svn "
+"rm</command> para eliminar cualquier archivo que se haya eliminado desde "
+"entonces. Se recomienda preparar listas clasificadas del contenido del árbol "
+"de proveedores y de las fuentes que se van a importar para facilitar el "
+"proceso."
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1561
@@ -3030,6 +3110,14 @@ msgid ""
 "<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
+"userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1566
