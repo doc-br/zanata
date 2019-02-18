@@ -6,8 +6,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-12 10:50+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2019-02-18 01:11+0000\n"
+"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -21,7 +21,7 @@ msgstr "Sergio Carlavilla carlavilla@mailbox.org, 2019"
 #. (itstool) path: info/title
 #: article.translate.xml:5
 msgid "Problem Report Handling Guidelines"
-msgstr ""
+msgstr "Guía para el manejo de informes de problemas"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:9
@@ -59,6 +59,10 @@ msgid ""
 "<email>freebsd-bugbusters@FreeBSD.org</email>, these guidelines should be "
 "followed by anyone working with FreeBSD PRs."
 msgstr ""
+"Esta guía describe las prácticas recomendadas para manejar los Informes de "
+"Problemas (PRs) de FreeBSD. Aunque se desarrolló para el FreeBSD PR Database "
+"Maintenance Team <email>freebsd-bugbusters@FreeBSD.org</email>, cualquier "
+"que trabaje con PRs de FreeBSD debe seguir estas pautas."
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:33
@@ -91,6 +95,10 @@ msgid ""
 "quality, the correct use of the software is essential to the forward "
 "progress of the Project."
 msgstr ""
+"Bugzilla es un sistema de gestión de errores utilizado por el Proyecto "
+"FreeBSD. El seguimiento preciso de los defectos de software pendientes es "
+"importante para la calidad de FreeBSD, el uso correcto del software es "
+"esencial para el progreso del Proyecto."
 
 #. (itstool) path: section/para
 #: article.translate.xml:49
@@ -101,11 +109,16 @@ msgid ""
 "management such as presenting followup, handling close requests, and so "
 "forth."
 msgstr ""
+"El acceso a Bugzilla está disponible para toda la comunidad de FreeBSD. Con "
+"el fin de mantener la coherencia dentro de la base de datos y proporcionar "
+"una experiencia de usuario consistente, se han establecido pautas que cubren "
+"aspectos comunes de la gestión de errores, como la presentación del "
+"seguimiento, el manejo de las solicitudes de cierre, etc."
 
 #. (itstool) path: section/title
 #: article.translate.xml:58
 msgid "Problem Report Life-cycle"
-msgstr ""
+msgstr "Ciclo de vida de un Informe de Problemas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:62
@@ -113,6 +126,8 @@ msgid ""
 "The Reporter submits a bug report on the website. The bug is in the "
 "<literal>Needs Triage</literal> state."
 msgstr ""
+"El Reporter envía un reporte de error al sitio web. El error está en el "
+"estado <literal>Needs Triage</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:67
@@ -180,7 +195,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: article.translate.xml:126
 msgid "Problem Report State"
-msgstr ""
+msgstr "Estados de los Informes de Errores"
 
 #. (itstool) path: section/para
 #: article.translate.xml:128
@@ -188,11 +203,13 @@ msgid ""
 "It is important to update the state of a PR when certain actions are taken. "
 "The state should accurately reflect the current state of work on the PR."
 msgstr ""
+"Es importante actualizar el estado de un PR cuando se toman ciertas acciones."
+" El estado debe reflejar con precisión el estado actual en el PR."
 
 #. (itstool) path: example/title
 #: article.translate.xml:133
 msgid "A small example on when to change PR state"
-msgstr ""
+msgstr "Un pequeño ejemplo de cuándo cambiar el estado de un PR."
 
 #. (itstool) path: example/para
 #: article.translate.xml:135
@@ -212,7 +229,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:148
 msgid "open"
-msgstr ""
+msgstr "open"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:150
@@ -223,7 +240,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:156
 msgid "analyzed"
-msgstr ""
+msgstr "analyzed"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:158
@@ -233,7 +250,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:164
 msgid "feedback"
-msgstr ""
+msgstr "feedback"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:166
@@ -245,7 +262,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:173
 msgid "patched"
-msgstr ""
+msgstr "patched"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:175
@@ -257,7 +274,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:181
 msgid "suspended"
-msgstr ""
+msgstr "suspended"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:183
@@ -273,7 +290,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:195
 msgid "closed"
-msgstr ""
+msgstr "closed"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:197
