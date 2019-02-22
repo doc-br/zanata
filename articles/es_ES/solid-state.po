@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-21 11:13+0000\n"
+"PO-Revision-Date: 2019-02-22 01:58+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -163,6 +163,10 @@ msgid ""
 "the generally low disk space available in the system and the durability of "
 "the storage medium."
 msgstr ""
+"Los sistemas embebidos tienen la ventaja de una mayor estabilidad por falta "
+"de partes móviles (discos duros). Sin embargo, se debe tener en cuenta que "
+"generalmente el espacio en disco disponible para el sistema es menor, y la "
+"durabilidad del medio de almacenamiento."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:124
@@ -175,11 +179,18 @@ msgid ""
 "will conclude with some general strategies for small and read-only FreeBSD "
 "environments."
 msgstr ""
+"Los temas específicos que se abordaran incluyen los tipos y atributos de los "
+"dispositivos de estado sólido adecuados para su uso como disco en FreeBSD, "
+"las opciones del kernel que son interesantes para dicho entorno, los "
+"mecanismos de <filename>rc.initdiskless</filename> que automatizan el inicio "
+"de dichos sistemas, la necesidad de sistemas  de archivos de sólo lectura y "
+"hacer sistemas de archivosdesde cero. El artículo concluirá con algunas "
+"estrategias generales para entornos pequeños y de sólo lectura de FreeBSD ."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
 msgid "Solid State Disk Devices"
-msgstr ""
+msgstr "Dispositivos de Disco de Estado Sólido"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
@@ -201,6 +212,16 @@ msgid ""
 "units have between 1,000,000 and 10,000,000 writes per sector in their "
 "specification. This figure varies due to the temperature of the environment."
 msgstr ""
+"El alcance de este artículo se limitará a dispositivos de estado sólido "
+"basados en memoria flash. La memoria flash es una memoria de estado sólido "
+"(sin partes móviles) que no es volátil (la memoria mantiene los datos "
+"incluso después de que se hayan desconectado todas las fuentes de "
+"alimentación). La memoria flash puede soportar un enorme impacto físico y es "
+"bastante rápida (las soluciones de memoria flash que se tratan en este "
+"artículo son un poco más lentas que un disco duro EIDE en operaciones de "
+"escritura y mucho más rápidos en operaciones de lectura). Un aspecto muy "
+"importante de la memoria flash, cuyas repercusiones se tratarán más "
+"adelante, es que cada sector tiene una capacidad de reescritura limitada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:159
