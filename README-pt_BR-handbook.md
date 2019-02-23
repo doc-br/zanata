@@ -8,7 +8,7 @@ para facilitar as traduções e revisão.
 | Capítulo                                 | Zanata  | Tradução  | Revisão   |
 | ---------------------------------------- | :-----: | :-------: | :-------: |
 | Preface                                  | 2-7     | 100%      | 100%      |
-| 1. Introduction                          | 7-14    | 100%      | -         |
+| 1. Introduction                          | 7-14    | 100%      | 100%      |
 | 2. Installing FreeBSD                    | 14-32   | 100%      | -         |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         |
 | 4. Installing... Packages and Ports      | 59-71   | 0%        | -         |
