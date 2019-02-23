@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-17 01:01+0000\n"
+"PO-Revision-Date: 2019-02-23 08:00+0000\n"
 "Last-Translator: Manuel Megías <joramsinkin@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -3469,6 +3469,14 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/"
+"vendor</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1732
@@ -3478,6 +3486,11 @@ msgid ""
 "<command>svn commit</command> and tag the imported version. To save time and "
 "bandwidth, direct remote committing and tagging is possible:"
 msgstr ""
+"Ahora, importe las fuentes en el directorio <filename>dist</filename>. Una "
+"vez que los archivos están en su lugar, <command>svn add</command> los "
+"nuevos, luego <command>svn commit</command> y etiquete la versión importada. "
+"Para ahorrar tiempo y ancho de banda, es posible el envío y etiquetado "
+"remoto directo."
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1739
@@ -3487,16 +3500,19 @@ msgid ""
 "replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
 "<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</"
+"replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1743
 msgid "Merging to <literal>head</literal>"
-msgstr ""
+msgstr "Fusión con <literal>head</literal>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1745
 msgid "Due to this being a new file, copy it for the merge:"
-msgstr ""
+msgstr "Debido a que se trata de un nuevo archivo, cópielo para la fusión:"
 
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1748
@@ -3506,21 +3522,26 @@ msgid ""
 "contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
 "<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to "
+"contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1750
 msgid "Working normally on newly imported sources is still possible."
 msgstr ""
+"Todavía es posible trabajar normalmente con fuentes recientemente importadas."
+""
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1757
 msgid "Reverting a Commit"
-msgstr ""
+msgstr "Anulación de un envío"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1759
 msgid "Reverting a commit to a previous version is fairly easy:"
-msgstr ""
+msgstr "Revertir un envío a una versión anterior es bastante fácil:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1762
@@ -3530,6 +3551,9 @@ msgid ""
 "userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1765
@@ -3537,6 +3561,8 @@ msgid ""
 "Change number syntax, with negative meaning a reverse change, can also be "
 "used:"
 msgstr ""
+"También se puede utilizar la sintaxis del cambio de número, significando un "
+"número negativo una reversión:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1768
@@ -3545,11 +3571,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn merge -c -179454 ROADMAP.txt</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn merge -c -179454 ROADMAP.txt</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1771
 msgid "This can also be done directly in the repository:"
-msgstr ""
+msgstr "Esto también se puede hacer directamente en el repositorio:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1773
@@ -3558,6 +3586,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
 "freebsd.org/base/ROADMAP.txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
+"freebsd.org/base/ROADMAP.txt</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1776
@@ -3566,6 +3596,9 @@ msgid ""
 "file to permit <command>svn mergeinfo --eligible</command> to work as "
 "expected."
 msgstr ""
+"Es importante asegurarse de que el mergeinfo es correcto al revertir un "
+"archivo para permitir que <command>svn mergeinfo --elegible</command> "
+"funcione como se espera."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1782
@@ -3574,6 +3607,9 @@ msgid ""
 "of the file that predates the deletion is required. For example, to restore "
 "a file that was deleted in revision N, restore version N-1:"
 msgstr ""
+"Revertir la eliminación de un archivo es ligeramente diferente. Es necesario "
+"copiar la versión del fichero anterior al borrado. Por ejemplo, para "
+"restaurar un fichero borrado en la revisión N, restaurar la versión N-1:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1787
@@ -3583,11 +3619,14 @@ msgid ""
 "ROADMAP.txt@179454</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1790
 msgid "or, equally:"
-msgstr ""
+msgstr "o, igualmente:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1792
@@ -3596,18 +3635,23 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
 "ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1794
+#, fuzzy
 msgid ""
 "Do <emphasis>not</emphasis> simply recreate the file manually and "
 "<command>svn add</command> it—this will cause history to be lost."
 msgstr ""
+"<emphasis>Not</emphasis> vuelva a simplemente crear  el archivo manualmente  "
+"y <command>svn add</command>  causará que se pierda la historia."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1800
 msgid "Fixing Mistakes"
-msgstr ""
+msgstr "Corrección de errores"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1802
@@ -3617,12 +3661,18 @@ msgid ""
 "sure to check the output of <command>svn status</command> and <command>svn "
 "diff</command> before committing."
 msgstr ""
+"Aunque podemos hacer cirugía en una emergencia, no planee arreglar errores "
+"entre bastidores. Planee que los errores permanezcan en los registros para "
+"siempre. Asegúrese de comprobar la salida de <command>svn status</command> y "
+"<command>svn diff</command> antes de enviar."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1808
 msgid ""
 "Mistakes will happen but, they can generally be fixed without disruption."
 msgstr ""
+"Los errores ocurrirán pero, por lo general, pueden ser corregidos sin "
+"perturbaciones."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1812
@@ -3632,6 +3682,10 @@ msgid ""
 "This causes just a couple of lines of metadata in the repository journal, "
 "and the logs are all linked up correctly."
 msgstr ""
+"Tome por caso añadir un archivo en la ubicación equivocada. Lo correcto es "
+"<command>svn move</command> el archivo a la ubicación correcta y confirmarlo."
+" Esto causa sólo un par de líneas de metadatos en el diario del repositorio, "
+"y los registros están todos conectados correctamente."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1818
@@ -3641,11 +3695,15 @@ msgid ""
 "lines of text, the repository journal grows an entire new copy of the file. "
 "This is a waste."
 msgstr ""
+"Lo incorrecto es borrar el archivo y luego <command>svn add</command> una "
+"copia independiente en la ubicación correcta. En lugar de un par de líneas "
+"de texto, el diario del repositorio hace crecer una nueva copia completa del "
+"archivo. Esto es un desperdicio."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1826
 msgid "Using a Subversion Mirror"
-msgstr ""
+msgstr "Usando un Espejo de Subversion"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1828
@@ -3658,11 +3716,18 @@ msgid ""
 "local repository's UUID has to occur before it is possible to start using it."
 ""
 msgstr ""
+"Hay una seria desventaja en este método: cada vez que algo va a ser "
+"confirmado, se tiene que hacer un <command>svn relocate</command> al "
+"repositorio maestro, recordando <command>svn relocate</command> de vuelta al "
+"espejo después de la confirmación. Además, dado que <command>svn relocate</"
+"command> sólo funciona entre repositorios que tienen el mismo UUID, tiene "
+"que haber algo de hacking del UUID del repositorio local antes de que sea "
+"posible empezar a usarlo."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1839
 msgid "Checkout from a Mirror"
-msgstr ""
+msgstr "Comprobar desde un Espejo"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1841
@@ -3672,11 +3737,15 @@ msgid ""
 "literal>. This can be an official mirror or a mirror maintained by using "
 "<command>svnsync</command>."
 msgstr ""
+"Compruebe una copia de trabajo desde una réplica sustituyendo <acronym>URL</"
+"acronym> por <literal>svn+ssh://repo.freebsd.org/base</literal>. Puede ser "
+"una réplica oficial o una réplica mantenida mediante el uso de "
+"<command>svnsync</command>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1849
 msgid "Setting up a <application>svnsync</application> Mirror"
-msgstr ""
+msgstr "Configuración de una Réplica <application>svnsync</application>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1852
@@ -3688,6 +3757,12 @@ msgid ""
 "international links are involved, expect this to take four to ten times "
 "longer."
 msgstr ""
+"Evite configurar una réplica <application>svnsync</application> a menos que "
+"haya una buena razón para ello. La mayoría de las veces una réplica "
+"<command>git</command> es una alternativa mejor. Comenzar una réplica nueva "
+"desde cero lleva mucho tiempo. Se espera un mínimo de 10 horas para la "
+"conectividad de alta velocidad. Si se trata de enlaces internacionales, es "
+"de esperar que esto lleve entre cuatro y diez veces más tiempo."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1861
@@ -3697,11 +3772,15 @@ msgid ""
 "large (~1GB) but will consume less network traffic and take less time to "
 "fetch than svnsync will."
 msgstr ""
+"Una forma de limitar el tiempo requerido es tomar un <link xlink:href="
+"\"https://download.freebsd.org/ftp/development/subversion/\">archivo "
+"semilla</link>. Es grande (~1GB) pero consumirá menos tráfico de red y "
+"tardará menos tiempo en obtenerlo que svnsync."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1866
 msgid "Extract the file and update it:"
-msgstr ""
+msgstr "Extraiga el archivo y actualícelo:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1868
@@ -3712,6 +3791,10 @@ msgid ""
 "<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
+"userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1871
@@ -3720,6 +3803,10 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, do checkouts locally, "
 "set up a svnserve server for local machines to talk to, etc."
 msgstr ""
+"Ahora, configúrelo para que se ejecute desde "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, realice las comprobaciones localmente, configure un servidor "
+"svnserve para que las máquinas locales puedan hablar con él, etc."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1875
@@ -3728,6 +3815,10 @@ msgid ""
 "literal>. The configuration for the mirror is stored in <literal>revprop 0</"
 "literal> on the local mirror. To see the configuration, try:"
 msgstr ""
+"La réplica semilla está configurada para obtener desde <literal>svn://svn."
+"freebsd.org/base</literal>. La configuración de la réplica se guarda en "
+"<literal>revprop 0</literal> en la réplica local. Para ver la configuración, "
+"intente:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1881
@@ -3736,16 +3827,18 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
 "svnmirror/base</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
+"svnmirror/base</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1883
 msgid "Use <literal>svn propset</literal> to change things."
-msgstr ""
+msgstr "Use <literal>svn propset</literal> para cambiar  cosas."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1889
 msgid "Committing High-<acronym>ASCII</acronym> Data"
-msgstr ""
+msgstr "Enviando Datos High-<acronym>ASCII</acronym>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1891
@@ -3760,6 +3853,16 @@ msgid ""
 "set the <literal>fbsd:notbinary</literal> property with <literal>propset</"
 "literal>:"
 msgstr ""
+"Los archivos que tienen bits <acronym>ASCII</acronym>-high se consideran "
+"archivos binarios en <acronym>SVN</acronym>, por lo que las comprobaciones "
+"previas fallan e indican que la propiedad <literal>mime-type</literal> debe "
+"configurarse a <literal>application/octet-stream</literal>. Sin embargo, se "
+"desaconseja el uso de esta opción, así que por favor no la configure. La "
+"mejor manera es siempre evitar los datos de <acronym>ASCII</acronym>-high, "
+"para que pueda ser leído en cualquier lugar con cualquier editor de texto, "
+"pero si no es posible evitarlo, en lugar de cambiar el tipo mime, establezca "
+"la propiedad <literal>fbsd:notbinary</literal> con <literal>propset</"
+"literal>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1903
@@ -3768,11 +3871,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1907
 msgid "Maintaining a Project Branch"
-msgstr ""
+msgstr "Mantenimiento de una Rama del Proyecto"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1909
@@ -3786,6 +3891,15 @@ msgid ""
 "After the branch is committed back at the end, it is dead (although a new "
 "branch with the same name can be created after the dead one is deleted)."
 msgstr ""
+"Una rama del proyecto es aquella que está sincronizada con head (u otra "
+"rama) y se utiliza para desarrollar un proyecto y luego volver a enviarlo a "
+"la head. En <acronym>SVN</acronym>, <quote>dolphin</quote> se utiliza para "
+"esto.  Una rama <quote>dolphin</quote> es aquella que se diverge por un "
+"tiempo y finalmente se vuelve a enviar a la rama original. Durante el "
+"desarollo es código migra en una dirección (de la cabecera a la rama "
+"solamente). Ningún código es enviado de nuevo a head hasta el final. Una vez "
+"enviada la rama, está muerta (aunque se puede crear una nueva rama con el "
+"mismo nombre después de que se haya eliminado la rama muerta)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1921
