@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-23 08:00+0000\n"
+"PO-Revision-Date: 2019-02-24 06:52+0000\n"
 "Last-Translator: Manuel Megías <joramsinkin@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -3913,11 +3913,19 @@ msgid ""
 "filename>. <link xlink:href=\"https://svnweb.freebsd.org/base/projects/"
 "GUIDELINES.txt\">This page</link> contains further details."
 msgstr ""
+"Según <link xlink:href=\"https://people.FreeBSD.org/~peter/svn_notes."
+"txt\">https://people.FreeBSD.org/~peter/svn_notes.txt</link>, el trabajo que "
+"se pretende fusionar de vuelta con HEAD debe estar en <filename>base/"
+"projects/</filename>. Si el trabajo es beneficioso para la comunidad FreeBSD "
+"de alguna manera pero no se pretende que se fusione directamente con HEAD, "
+"entonces la ubicación correcta es <filename>base/user/<replaceable>username</"
+"replaceable>/</filename>. <link xlink:href=\"https://svnweb.freebsd.org/base/"
+"projects/GUIDELINES.txt\">This page</link> contiene más detalles."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1931
 msgid "To create a project branch:"
-msgstr ""
+msgstr "Para crear una rama de proyecto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1933
@@ -3926,11 +3934,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
 "svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1935
 msgid "To merge changes from HEAD back into the project branch:"
-msgstr ""
+msgstr "Para fusionar los cambios de HEAD de nuevo en la rama del proyecto:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1938
@@ -3941,16 +3951,21 @@ msgid ""
 "head</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd copy_of_spif</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/"
+"head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1942
 msgid "It is important to resolve any merge conflicts before committing."
 msgstr ""
+"Es importante resolver cualquier conflicto de fusión antes de comprometerse."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1954
 msgid "Some Tips"
-msgstr ""
+msgstr "Algunos consejos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1956
@@ -3958,6 +3973,8 @@ msgid ""
 "In commit logs etc., <quote>rev 179872</quote> is spelled <quote>r179872</"
 "quote> as per convention."
 msgstr ""
+"En los registros de envíos etc., <quote>rev 179872</quote> se escribe "
+"<quote>r179872</quote> según la convención."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1959
@@ -3965,6 +3982,8 @@ msgid ""
 "Speeding up svn is possible by adding these entries to <filename>~/.ssh/"
 "config</filename>:"
 msgstr ""
+"Es posible acelerar svn añadiendo estas entradas a <filename>~/.ssh/config</"
+"filename>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1962
@@ -3975,17 +3994,21 @@ msgid ""
 "ControlMaster auto\n"
 "ControlPersist yes"
 msgstr ""
+"Host *\n"
+"ControlPath ~/.ssh/sockets/master-%l-%r@%h:%p\n"
+"ControlMaster auto\n"
+"ControlPersist yes"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1967
 msgid "and then typing"
-msgstr ""
+msgstr "y luego escribiendo"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1969
 #, no-wrap
 msgid "<userinput>mkdir ~/.ssh/sockets</userinput>"
-msgstr ""
+msgstr "<userinput>mkdir ~/.ssh/sockets</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1971
@@ -3996,6 +4019,11 @@ msgid ""
 "correct version has been installed, trick Subversion into expanding them "
 "like so:"
 msgstr ""
+"Comprobar una copia de trabajo con un cliente stock de Subversion sin "
+"parches específicos de FreeBSD (<varname>OPTIONS_SET=FREEBSD_TEMPLATE</"
+"varname>) significará que las etiquetas <literal>$FreeBSD$</literal> no se "
+"expandirán. Una vez que se ha instalado la versión correcta, engañe a "
+"Subversion para que las expanda así:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1978
@@ -4004,11 +4032,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:keywords .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn revert -R .</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propdel -R svn:keywords .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn revert -R .</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1981
 msgid "This will wipe out uncommitted patches."
-msgstr ""
+msgstr "Esto eliminará los parches no confirmados."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1983
@@ -4018,6 +4048,11 @@ msgid ""
 "after\" fields in the \"[miscellany]\" section of the <filename>~/."
 "subversion/config</filename> configuration file. For example:"
 msgstr ""
+"Es posible rellenar automáticamente los campos de registro de envíos "
+"\"Patrocinado por\" y \"MFC después\" configurando los campos \"freebsd-"
+"sponsored-by\" y \"freebsd-mfc-after\" en la sección \"[miscellany]\" del "
+"archivo de configuración <filename>~/.subversion/config</filename>. Por "
+"ejemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:1990
@@ -4026,11 +4061,13 @@ msgid ""
 "freebsd-sponsored-by = The FreeBSD Foundation\n"
 "freebsd-mfc-after = 2 weeks"
 msgstr ""
+"freebsd-sponsored-by = The FreeBSD Foundation\n"
+"freebsd-mfc-after = 2 weeks"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1996
 msgid "Setup, Conventions, and Traditions"
-msgstr ""
+msgstr "Configuración, Convenciones y Tradiciones"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1998
@@ -4039,11 +4076,14 @@ msgid ""
 "steps is specific to committers only. These steps must be done by a mentor "
 "for those who are not committers."
 msgstr ""
+"Hay una serie de cosas que hacer como nuevo desarrollador. La primera serie "
+"de pasos es específica para los committers solamente. Estos pasos deben ser "
+"realizados por un mentor para aquellos que no son committers."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2004
 msgid "For New Committers"
-msgstr ""
+msgstr "Para los Nuevos Committers"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2006
@@ -4051,11 +4091,15 @@ msgid ""
 "Those who have been given commit rights to the FreeBSD repositories must "
 "follow these steps."
 msgstr ""
+"Aquellos a los que se les han concedido derechos de envío a los repositorios "
+"de FreeBSD deben seguir estos pasos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2011
 msgid "Get mentor approval before committing each of these changes!"
 msgstr ""
+"¡Obtenga la aprobación de los mentores antes de realizar cada uno de estos "
+"cambios!"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2016
@@ -4064,6 +4108,10 @@ msgid ""
 "below exist in the FreeBSD Documentation Project SVN repository at "
 "<literal>svn+ssh://repo.FreeBSD.org/doc/</literal>."
 msgstr ""
+"Los archivos <filename>.ent</filename> y <filename>.xml</filename>  "
+"mencionados a continuación existen en el repositorio SVN del Proyecto de "
+"Documentación de FreeBSD en <literal>svn+ssh://repo.FreeBSD.org/doc/</"
+"literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2023
@@ -4075,6 +4123,13 @@ msgid ""
 "subversion/config</filename> contains the necessary <quote>auto-props</"
 "quote> entries from <filename>auto-props.txt</filename> mentioned there."
 msgstr ""
+"Los nuevos ficheros que no tengan la propiedad <literal>FreeBSD=%H</literal> "
+"<command>svn:keywords</command> serán rechazados cuando se intente enviarlos "
+"al repositorio. Asegúrese de leer <xref linkend=\"svn-daily-use-adding-and-"
+"removing\"/> con respecto a la adición y eliminación de archivos. Compruebe "
+"que <filename>~/.subversion/config</filename> contiene las entradas "
+"<quote>auto-props</quote>  necesarias de <filename>auto-props.txt</filename> "
+"mencionadas allí."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2037
@@ -4084,16 +4139,21 @@ msgid ""
 "<acronym>ABI</acronym> and <acronym>API</acronym> compatibility with earlier "
 "versions of that branch. Do not merge changes that break this compatibility."
 msgstr ""
+"Todas las confirmaciones  <filename>src</filename> van primero a FreeBSD-"
+"CURRENT antes de ser fusionadas con FreeBSD-STABLE. La rama FreeBSD-STABLE "
+"debe mantener la compatibilidad <acronym>ABI</acronym> y <acronym>API</"
+"acronym> con versiones anteriores de esa rama. No fusione los cambios que "
+"rompan esta compatibilidad."
 
 #. (itstool) path: procedure/title
 #: article.translate.xml:2047
 msgid "Steps for New Committers"
-msgstr ""
+msgstr "Pasos para los Nuevos Committers"
 
 #. (itstool) path: step/title
 #: article.translate.xml:2050
 msgid "Add an Author Entity"
-msgstr ""
+msgstr "Añadir una Entidad de Autor"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2052
@@ -4103,11 +4163,16 @@ msgid ""
 "<filename>doc/</filename> build to fail. This is a relatively easy task, but "
 "remains a good first test of version control skills."
 msgstr ""
+"<filename>doc/head/share/xml/authors.ent</filename> — Añadir una entidad de "
+"autor. Los pasos posteriores dependen de esta entidad, y la falta de este "
+"paso hará que el proceso de construcción de <filename>doc/</filename> falle. "
+"Esta es una tarea relativamente fácil, pero sigue siendo una buena primera "
+"prueba de las habilidades acerca del control de versiones."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2061
 msgid "Update the List of Developers and Contributors"
-msgstr ""
+msgstr "Actualizar la lista de Desarrolladores y Colaboradores"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2064
@@ -4118,6 +4183,11 @@ msgid ""
 "contributors/staff-committers.html\">Contributors List</link>. Entries are "
 "sorted by last name."
 msgstr ""
+"<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.committers."
+"xml</filename> — Añada una entrada a la sección <quote>Desarrolladores</"
+"quote> de la <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
+"articles/contributors/staff-committers.html\">Lista de colaboradores</link>. "
+"Las entradas están ordenadas por apellido."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2070
@@ -4127,11 +4197,15 @@ msgid ""
 "<quote>Additional Contributors</quote> section. Entries are sorted by first "
 "name."
 msgstr ""
+"<filename>doc/head/en_US.ISO8859-1/articles/contributors/contrib.additional."
+"xml</filename> — <emphasis>Elimine</emphasis> la entrada de la sección "
+"<quote>Colaboradores Adicionales</quote>. Las entradas se clasifican por "
+"nombre."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2077
 msgid "Add a News Item"
-msgstr ""
+msgstr "Añadir una entrada de Novedades"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2079
@@ -4141,11 +4215,15 @@ msgid ""
 "the date from the commit bit approval email from <email>core@FreeBSD.org</"
 "email>."
 msgstr ""
+"<filename>doc/head/share/xml/news.xml</filename> — Añadir una entrada. "
+"Busque las otras entradas que anuncian nuevos committers y siga el formato. "
+"Use la fecha del correo electrónico de aprobación de <email>core@FreeBSD."
+"org</email>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2087
 msgid "Add a <acronym>PGP</acronym> Key"
-msgstr ""
+msgstr "Agregue una clave <acronym>PGP</acronym>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2089
@@ -4155,6 +4233,10 @@ msgid ""
 "<acronym>PGP</acronym> or Gnu<acronym>PG</acronym> key. Those who do not yet "
 "have a key should see <xref linkend=\"pgpkeys-creating\"/>."
 msgstr ""
+"<filename>doc/head/share/pgpkeys/pgpkeys.ent</filename> y <filename>doc/head/"
+"share/pgpkeys/pgpkeys-developers.xml</filename> - Añada su clave "
+"<acronym>PGP</acronym> o Gnu<acronym>PG</acronym>. Aquellos que aún no "
+"tienen una clave deben ver <xref linkend=\"pgpkeys-creating\"/>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2096
@@ -4164,6 +4246,10 @@ msgid ""
 "easier. See the <link xlink:href=\"http://svnweb.FreeBSD.org/doc/head/share/"
 "pgpkeys/README\">README</link> file for more information."
 msgstr ""
+"Dag-Erling Smørgrav <email>des@FreeBSD.org</email> ha escrito un script "
+"(<filename>doc/head/share/pgpkeys/addkey.sh</filename>) para hacer esto más "
+"fácil. Para más información, consulte el archivo <link xlink:href=\"http://"
+"svnweb.FreeBSD.org/doc/head/share/pgpkeys/README\">README</link>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2101
@@ -4171,6 +4257,9 @@ msgid ""
 "Use <filename>doc/head/share/pgpkeys/checkkey.sh</filename> to verify that "
 "keys meet minimal best-practices standards."
 msgstr ""
+"Utilice <filename>doc/head/share/pgpkeys/checkkey.sh</filename> para "
+"verificar que las claves cumplen con los estándares mínimos de mejores "
+"prácticas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2106
@@ -4178,6 +4267,9 @@ msgid ""
 "After adding and checking a key, add both updated files to source control "
 "and then commit them. Entries in this file are sorted by last name."
 msgstr ""
+"Después de añadir y comprobar una clave, añada ambos archivos actualizados "
+"al control de fuente y, a continuación, confírmelos. Las entradas en este "
+"archivo están ordenadas por apellido."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2111
@@ -4191,11 +4283,19 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/pgpkeyring.txt\">https://www.FreeBSD.org/doc/"
 "pgpkeyring.txt</link>."
 msgstr ""
+"Es muy importante tener una clave <acronym>PGP</acronym>/Gnu<acronym>PG</"
+"acronym> actualizada en el repositorio. La clave puede ser necesaria para la "
+"identificación positiva de un committer. Por ejemplo, los administradores de "
+"FreeBSD <email>admins@FreeBSD.org</email> podrían necesitarlo para recuperar "
+"la cuenta. Un juego de llaves completo de los usuarios de <systemitem class="
+"\"fqdomainname\">FreeBSD.org</systemitem> está disponible para su descarga "
+"en <link xlink:href=\"@@URL_RELPREFIX@@/doc/pgpkeyring.txt\">https://www."
+"FreeBSD.org/doc/pgpkeyring.txt</link>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2122
 msgid "Update Mentor and Mentee Information"
-msgstr ""
+msgstr "Actualizar la Información del Mentor y del Aprendiz."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2124
