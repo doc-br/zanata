@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-22 01:58+0000\n"
+"PO-Revision-Date: 2019-02-26 09:00+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -221,7 +221,16 @@ msgstr ""
 "artículo son un poco más lentas que un disco duro EIDE en operaciones de "
 "escritura y mucho más rápidos en operaciones de lectura). Un aspecto muy "
 "importante de la memoria flash, cuyas repercusiones se tratarán más "
-"adelante, es que cada sector tiene una capacidad de reescritura limitada."
+"adelante, es que cada sector tiene una capacidad de reescritura limitada. "
+"Solo puede escribir, borrar y volver a escribir en un sector de la memoria "
+"flash varias veces antes de que quede permanentemente inutilizable. Aunque "
+"muchos productos de memoria flash mapean automáticamente los bloques "
+"defectuosos y algunos incluso distribuyen las operaciones de escritura de "
+"manera uniforme en toda la unidad, la verdad es que hay un límite en la "
+"cantidad de escrituras que se pueden hacer al dispositivo. Las unidades más "
+"competitivas tienen entre 1.000.000 y 10.000.000 millones de escrituras por "
+"sector en sus especificaciones. Esta cifra varía debido a la temperatura del "
+"ambiente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:159
@@ -234,6 +243,14 @@ msgid ""
 "computer. Once implemented in this manner, operating systems such as FreeBSD "
 "see the device as a normal hard disk (albeit small)."
 msgstr ""
+"Específicamente, discutiremos las unidades flash compactas compatibles con "
+"ATA, las cuales son bastante populares como medios de almacenamiento para "
+"cámaras digitales. Es de particular interés el hecho de que se conecten "
+"directamente al bus IDE y sean compatibles con el conjunto de comandos ATA. "
+"Por lo tanto, con un adaptador muy simple y de bajo coste, estos "
+"dispositivos se pueden conectar directamente al bus IDE en un ordenador. Una "
+"vez implementado de esta forma, los sistemas operativos como FreeBSD ven el "
+"dispositivo como un disco duro normal (aunque sea pequeño)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:169
@@ -241,11 +258,14 @@ msgid ""
 "Other solid state disk solutions do exist, but their expense, obscurity, and "
 "relative unease of use places them beyond the scope of this article."
 msgstr ""
+"Existen otras soluciones de disco de estado sólido, pero su coste, opacidad "
+"y su relativa dificultad de uso los colocan más allá del alcance de este "
+"artículo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:175
 msgid "Kernel Options"
-msgstr ""
+msgstr "Opciones del Kernel"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:177
@@ -253,6 +273,8 @@ msgid ""
 "A few kernel options are of specific interest to those creating an embedded "
 "FreeBSD system."
 msgstr ""
+"Algunas opciones del kernel son de especial interés para aquellos que crean "
+"un sistema FreeBSD embebido."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
