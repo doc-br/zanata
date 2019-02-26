@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-26 09:00+0000\n"
+"PO-Revision-Date: 2019-02-26 04:39+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -288,6 +288,17 @@ msgid ""
 "create logs and update counters and temporary files. Memory filesystems are "
 "a critical component to a successful solid state FreeBSD implementation."
 msgstr ""
+"Todos los sistemas FreeBSD embebidos que utilizan memori flash como disco "
+"para el sistema estarán interesados en utilizar discos y sistemas de "
+"archivos cargados en memoria. Debido al número limitado de escrituras que se "
+"pueden hacer en la memoria flash, el disco y los sistemas de archivos "
+"probablemente se montarán como de sólo lectura. En este entorno, los "
+"sistemas de archivos como <filename>/tmp</filename> y <filename>/var</"
+"filename> se montan como sistemas de archivos en memoria\n"
+"para permitir que el sistema cree registros y actualice los contadores y los "
+"archivos temporales. Los sistemas de archivos en memoria son un componente "
+"crítico para una implementación exitosa de FreeBSD en dispositivos de estado "
+"sólido."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:191
@@ -295,6 +306,8 @@ msgid ""
 "You should make sure the following lines exist in your kernel configuration "
 "file:"
 msgstr ""
+"Asegúrese de que existen las siguientes líneas en el archivo de "
+"configuración del kernel:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:194
@@ -314,6 +327,8 @@ msgstr ""
 #: article.translate.xml:200
 msgid "The <literal>rc</literal> Subsystem and Read-Only Filesystems"
 msgstr ""
+"El subsistema <literal>rc</literal> y los sistemas de archivos de solo "
+"lectura"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:203
@@ -321,6 +336,8 @@ msgid ""
 "The post-boot initialization of an embedded FreeBSD system is controlled by "
 "<filename>/etc/rc.initdiskless</filename>."
 msgstr ""
+"La inicialización posterior al arranque de un sistema FreeBSD embebido es "
+"controlada por <filename>/etc/rc.initdiskless</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
@@ -335,6 +352,16 @@ msgid ""
 "created by <filename>/etc/rc.d/var</filename> based on the value of this "
 "variable in <filename>rc.conf</filename>:"
 msgstr ""
+"<filename>/etc/rc.d/var</filename> monta <filename>/var</filename> como "
+"sistema de archivos en memoria, crea una listado configurable de directorios "
+"en <filename>/var</filename> con el comando "
+"<citerefentry><refentrytitle>mkdir</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> y cambia los modos en algunos de esos directorios. En la "
+"ejecución de <filename>/etc/rc.d/var</filename>, otra variable de "
+"<filename>rc.conf</filename> entra en juego: <literal>varsize</literal>. "
+"<filename>/etc/rc.d/var</filename> crea una partición <filename>/var</"
+"filename> basándose en el valor de la variable en <filename>rc.conf</"
+"filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:218
@@ -345,7 +372,7 @@ msgstr "varsize=8192"
 #. (itstool) path: sect1/para
 #: article.translate.xml:220
 msgid "Remember that this value is in sectors by default."
-msgstr ""
+msgstr "Recuerde que por defecto este valor está en sectores"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:222
@@ -363,6 +390,19 @@ msgid ""
 "etc/fstab</filename>, you should also change the Options field for each "
 "filesystem to <literal>ro</literal> as follows:"
 msgstr ""
+"El hecho de que <filename>/var</filename> sea un sistema de archivos de "
+"lectura y escritura es una distinción importante, ya que la partición "
+"<filename>/</filename> (y cualquier otra partición que pueda tener en su "
+"medio de flash) se debe montar como sólo lectura. Recuerde que en <xref "
+"linkend=\"intro\"/> detallamos las limitaciones de la memoria flash, "
+"específicamente la capacidad de escritura limitada. La importancia de no "
+"montar sistemas de archivos en medios flash de lectura-escritura, y la "
+"importancia de no usar swap, no es exagerada. Un archivo swap en un sistema "
+"concurrido puede deteriorar un medio flash en menos de un año. Un logging "
+"intenso o la creación y destrucción de archivos temporales puede hacer lo "
+"mismo. Por lo tanto, además de quitar la entrada <literal>swap</literal> de "
+"su <filename>/etc/fstab</filename>, también debe cambiar el campo Options "
+"para cada sistema de archivos a <literal>ro</literal> de la siguiente forma:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:239
@@ -389,6 +429,8 @@ msgid ""
 "to the execution of other common software packages in <xref linkend="
 "\"strategies\"/>."
 msgstr ""
+"Algunas aplicaciones en el sistema comenzar a fallar inmediatamente como "
+"resultado de este cambio. "
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:254
