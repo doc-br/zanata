@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-27 04:56+0000\n"
+"PO-Revision-Date: 2019-02-28 04:38+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -556,6 +556,20 @@ msgid ""
 "keycap> to quit the partition menu. You will be shown the boot manager menu "
 "once more - repeat the choice you made earlier."
 msgstr ""
+"Después de arrancar con los disquetes kern y mfsroot, seleccione "
+"<literal>custom</literal> en el menú de instalación. En el menú de "
+"instalación personalizada, seleccione <literal>partition</literal>. En el "
+"menú de particiones, debe borrar todas las particiones existentes mediante "
+"la tecla <keycap>d</keycap>. Después de eliminar todas las particiones "
+"existentes, cree una partición utilizando la tecla <keycap>c</keycap> y "
+"acepte el valor predeterminado para el tamaño de la partición. Cuando se le "
+"pregunte el tipo de partición, asegúrese de que el valor esté establecido en "
+"<literal>165</literal>. Ahora escriba la tabla de particiones en el disco "
+"presionando <keycap>w</keycap> (es una opción oculta en esta pantalla). Si "
+"está utilizando una tarjeta Compact Flash compatible con ATA, debe elegir el "
+"FreeBSD Boot Manager. Ahora presione <keycap>q</keycap> para salir del menú "
+"de partición. Verá de nuevo el menú del gestor de arranque - repita la "
+"opción hecha anteriormente."
 
 #. (itstool) path: step/title
 #: article.translate.xml:319
@@ -569,6 +583,9 @@ msgid ""
 "choose the <literal>fixit</literal> option. After entering the fixit "
 "environment, enter the following command:"
 msgstr ""
+"Salga del menú de instalación personalizado y, en el menú de instalación "
+"principal, elija la opción <literal>fixit</literal>. Después de entrar en el "
+"entorno de fixit, escriba el siguiente comando:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:327
@@ -583,6 +600,9 @@ msgid ""
 "disklabel command. Next, you need to add an <literal>a:</literal> line at "
 "the end of the file. This <literal>a:</literal> line should look like:"
 msgstr ""
+"En este punto, habrá accedido al editor vi guiado por el comando disklabel. "
+"A continuación, debe agregar una línea <literal>a:</literal> al final del "
+"archivo. La línea <literal>a:</literal> debería ser similar a la siguiente:"
 
 #. (itstool) path: step/programlisting
 #: article.translate.xml:334
@@ -613,12 +633,12 @@ msgstr ""
 #. (itstool) path: step/title
 #: article.translate.xml:348
 msgid "Placing Your Filesystem on the Flash Media"
-msgstr ""
+msgstr "Colocando su sistema de archivos en el medio Flash"
 
 #. (itstool) path: step/para
 #: article.translate.xml:350
 msgid "Mount the newly prepared flash media:"
-msgstr ""
+msgstr "Monte el medio flash recién preparado:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:352
@@ -633,6 +653,9 @@ msgid ""
 "explode it onto our flash media filesystem. One example of how to do this is:"
 ""
 msgstr ""
+"Coloque esta máquina en la red para poder transferir nuestro archivo tar y "
+"extraerlo en nuestro sistema de archivos del medio flash. Un ejemplo de cómo "
+"hacerlo es:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:358
@@ -658,6 +681,14 @@ msgid ""
 "perform your transfer in this manner, you will never have the tar file and "
 "the tar contents on your disk at the same time:"
 msgstr ""
+"Ahora que la máquina está en la red, transfiera su archivo tar. Es posible "
+"que se enfrente a un pequeño dilema en este punto - si su memoria flash "
+"tiene por ejemplo 128 megabytes, y su archivo tar tiene más de 64 megabytes, "
+"no podrá tener el archivo tar  en el medio de flash al mismo tiempo que "
+"realiza la descompresión - se quedará sin espacio. Una solución a este "
+"problema, si está utilizando FTP, es descomprimir el archivo mientras se "
+"transfiere por FTP. Si realiza la transferencia de esta forma, nunca tendrá "
+"el archivo tar y los contenidos en el disco al mismo tiempo:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:373
@@ -673,6 +704,7 @@ msgstr ""
 #: article.translate.xml:375
 msgid "If your tarfile is gzipped, you can accomplish this as well:"
 msgstr ""
+"Si su archivo tar está comprimido en gzip, puede hacerlo de esta forma:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:378
@@ -690,6 +722,9 @@ msgid ""
 "After the contents of your tarred filesystem are on your flash memory "
 "filesystem, you can unmount the flash memory and reboot:"
 msgstr ""
+"Una vez que el contenido de su sistema de archivos comprimido por tar está "
+"en el sistema de archivos de la memoria flash, puede desmontar la memoria "
+"flash y reiniciar:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:384
@@ -715,7 +750,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:398
 msgid "System Strategies for Small and Read Only Environments"
-msgstr ""
+msgstr "Estrategias para entornos pequeños y de solo lectura"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:401
@@ -790,7 +825,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:453
 msgid "Ports Installation"
-msgstr ""
+msgstr "Instalación de Ports"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:455
@@ -807,7 +842,7 @@ msgstr ""
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:466 article.translate.xml:489
 msgid "install"
-msgstr ""
+msgstr "install"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
@@ -863,7 +898,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:498
 msgid "Apache Web Server"
-msgstr ""
+msgstr "Servidor Web Apache"
 
 #. (itstool) path: note/para
 #: article.translate.xml:501
@@ -873,6 +908,10 @@ msgid ""
 "Apache keeps its pid file in <filename>/var/run/httpd.pid</filename> and its "
 "log files in <filename>/var/log</filename>."
 msgstr ""
+"Los pasos de esta sección solo son necesarios si Apache está configurado "
+"para escribir su pid o registro log fuera de <filename>/var</filename>. Por "
+"defecto, Apache guarda su archivo pid en <filename>/var/run/httpd.pid</"
+"filename> y sus registros de log en <filename>/var/log</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:508
@@ -887,6 +926,16 @@ msgid ""
 "replaceable></filename> to <filename>/var/log/apache</filename>. It is also "
 "necessary to set permissions and ownership on this new directory."
 msgstr ""
+"Se supone que Apache guarda sus archivos de logs en un directorio "
+"<filename><replaceable>apache_log_dir</replaceable></filename> fuera de "
+"<filename>/var</filename>. Cuando este directorio reside en un sistema de "
+"archivos de sólo lectura, Apache no puede guardar ningún archivo de log y "
+"puede tener problemas para funcionar. Si es así, debe agregar un nuevo "
+"directorio al listado de directorios en <filename>/etc/rc.d/var</filename> a "
+"crear en <filename>/var</filename> y vincular "
+"<filename><replaceable>apache_log_dir</replaceable></filename> a <filename>/"
+"var/log/apache</filename>. También es necesario establecer permisos y "
+"propietarios a este nuevo directorio."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:521
@@ -894,6 +943,8 @@ msgid ""
 "First, add the directory <literal>log/apache</literal> to the list of "
 "directories to be created in <filename>/etc/rc.d/var</filename>."
 msgstr ""
+"En primer lugar, agregue el directorio <literal>log/apache</literal> a la "
+"lsita de directorios que se crearán en <filename>/etc/rc.d/var</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:525
@@ -901,6 +952,8 @@ msgid ""
 "Second, add these commands to <filename>/etc/rc.d/var</filename> after the "
 "directory creation section:"
 msgstr ""
+"En segundo lugar, agregue estos comandos a <filename>/etc/rc.d/var</"
+"filename> después de la sección de creación del directorio:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:529
@@ -920,6 +973,8 @@ msgid ""
 "Finally, remove the existing <filename><replaceable>apache_log_dir</"
 "replaceable></filename> directory, and replace it with a link:"
 msgstr ""
+"Por último, elimine el directorio <filename><replaceable>apache_log_dir</"
+"replaceable></filename> y reemplácelo por un enlace:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:536
