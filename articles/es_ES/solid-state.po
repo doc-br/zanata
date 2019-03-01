@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-01 09:02+0000\n"
+"PO-Revision-Date: 2019-03-01 01:50+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -619,6 +619,10 @@ msgid ""
 "<literal>a:</literal> line, making sure that fstype is <literal>4.2BSD</"
 "literal>. Save the file and exit."
 msgstr ""
+"Donde <replaceable>123456</replaceable> es exactamente el mismo número que "
+"la entrada <literal>c:</literal>. Básicamente, está duplicando la línea "
+"<literal>c:</literal> como <literal>a:</literal>, asegúrese de que el fstype "
+"es <literal>4.2BSD</literal>. Guarde el archivo y cierrelo."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:343
@@ -746,6 +750,10 @@ msgid ""
 "necessary options compiled into the kernel) you should now be successfully "
 "booting your FreeBSD embedded system."
 msgstr ""
+"Suponiendo que configuró correctamente su sistema de archivos cuando lo "
+"construyó en su disco duro normal, (con sus sistemas de archivos montados en "
+"modo solo lectura, y con las opciones necesarias compiladas en el kernel) "
+"ahora se debería iniciar con éxito su sistema embebido FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:398
@@ -762,6 +770,12 @@ msgid ""
 "successfully running cron, syslog, ports installations, and the Apache web "
 "server will be provided."
 msgstr ""
+"En <xref linkend=\"ro-fs\"/>, se indicó que el sistema de archivos "
+"<filename>/var</filename> construido por <filename>/etc/rc.d/var</filename> "
+"y que el sistema de archivos raíz este montado en modo solo lectura causa "
+"problemas con muchos paquetes de software utilizados en FreeBSD. En este "
+"artículo, se proporcionarán sugerencias para ejecutar con éxito cron, "
+"syslog, instalación de ports y el servidor web Apache."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:410
@@ -776,6 +790,11 @@ msgid ""
 "filename>, so the <filename>cron</filename>, <filename>cron/tabs</filename>, "
 "<filename>at</filename>, and a few other standard directories get created."
 msgstr ""
+"Tras el arranque, <filename>/var</filename> se llena con <filename>/etc/rc.d/"
+"var</filename> usando la lista disponible en <filename>/etc/mtree/BSD.var."
+"dist</filename>, por lo que <filename>cron</filename>, <filename>cron/tabs</"
+"filename>, <filename>at</filename> y algunos otros directorios estándar son "
+"creados."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:419
@@ -838,6 +857,14 @@ msgid ""
 "done with any maintenance - unnecessary writes to the flash media could "
 "considerably shorten its lifespan."
 msgstr ""
+"Antes de analizar los cambios necesarios para utilizar con éxito el árbol de "
+"ports, es necesario recordar que su sistema de archivos en el medio flash es "
+"de solo lectura. Dado que es de solo lectura, necesitará montarlo "
+"temporalmente en modo lectura-escritura utilizando la sintaxis que se "
+"muestra en <xref linkend=\"ro-fs\"/>. Siempre debe volver a montar estos "
+"sistemas de archivos en modo solo lectura cuando haya terminado cualquier "
+"mantenimiento - las escrituras innecesarias en el medio flash podrían "
+"acortar considerablemente su vida útil."
 
 #. (itstool) path: para/buildtarget
 #: article.translate.xml:466 article.translate.xml:489
@@ -855,6 +882,13 @@ msgid ""
 "that an area on the flash media can also be used for package information to "
 "be written to."
 msgstr ""
+"Para que sea posible entrar en el directorio de ports y ejecutar con éxito "
+"el comando <command>make</command> <_:buildtarget-1/>, debemos crear un "
+"directorio para los paquetes en un sistema de archivos que no se encuentre "
+"en la memoria para que mantenga nuestros paquetes durante los reinicios. "
+"Como es necesario montar sus sistemas de archivos en modo lectura-escritura "
+"para la instalación de un paquete, es apropiado suponer que también se puede "
+"usar un área en el medio flash para escribir la información del paquete."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:474
@@ -901,6 +935,12 @@ msgid ""
 "which will always be available to the operating system as <filename>/var/db/"
 "pkg</filename>."
 msgstr ""
+"Ahora, cada vez que monte su sistema de archivos en modo lectura-escritura e "
+"instale un paquete, el comando <command>make</command> <_:buildtarget-1/> "
+"funcionará, y la información del paquete se escribirá correctamente en /"
+"<filename>/etc/pkg</filename> (porque el sistema de archivos, en ese "
+"momento, estará montado en modo lectura-escritura) que siempre estará "
+"disponible para el sistema operativo como <filename>/var/db/pkg</filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:498
