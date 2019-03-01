@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-28 04:38+0000\n"
+"PO-Revision-Date: 2019-03-01 09:02+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -863,6 +863,10 @@ msgid ""
 "var/db/pkg</filename>, but we cannot place it there as it will disappear "
 "every time the system is booted."
 msgstr ""
+"Primero, cree el directorio para la base de datos de los paquetes. "
+"Normalmente se encuentra en <filename>/var/db/pkg</filename>, pero no "
+"podemos colocarlo allí ya que desaparecerá cada vez que se inicie el sistema."
+""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:479
@@ -877,6 +881,9 @@ msgid ""
 "<filename>/etc/pkg</filename> directory to <filename>/var/db/pkg</filename>. "
 "An example:"
 msgstr ""
+"Ahora, agregue una línea al archivo <filename>/etc/rc.d/var</filename> que "
+"enlace <filename>/etc/pkg</filename> a <filename>/var/db/pkg</filename>. Un "
+"ejemplo:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:485
