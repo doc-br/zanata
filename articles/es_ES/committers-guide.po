@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-24 06:52+0000\n"
+"PO-Revision-Date: 2019-03-02 09:59+0000\n"
 "Last-Translator: Manuel Megías <joramsinkin@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -4306,6 +4306,11 @@ msgid ""
 "literal>, <literal>ports</literal>, or <literal>src</literal>, depending on "
 "the commit privileges granted."
 msgstr ""
+"<filename>base/head/share/misc/committers-<replaceable>repositorio</"
+"replaceable>.dot</filename> — Añada una entrada a la sección actual de "
+"committers, donde <replaceable>repositorio</replaceable> es <literal>doc</"
+"literal>, <literal>ports</literal>, o <literal>src</literal>, dependiendo de "
+"los privilegios concedidos al envío."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2131
@@ -4313,11 +4318,13 @@ msgid ""
 "Add an entry for each additional mentor/mentee relationship in the bottom "
 "section."
 msgstr ""
+"Agregue una entrada para cada relación adicional de mentor/aprendiz en la "
+"sección inferior."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2136
 msgid "Generate a <application>Kerberos</application> Password"
-msgstr ""
+msgstr "Generar una Contraseña <application>Kerberos</application>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2139
@@ -4326,11 +4333,14 @@ msgid ""
 "<application>Kerberos</application> for use with other FreeBSD services like "
 "the bug tracking database."
 msgstr ""
+"Vea <xref linkend=\"kerberos-ldap\"/> para generar o configurar un "
+"<application>Kerberos</application> para su uso con otros servicios de "
+"FreeBSD como la base de datos de seguimiento de errores."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2145
 msgid "Optional: Enable Wiki Account"
-msgstr ""
+msgstr "Opcional: Habilitar Cuenta Wiki"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2147
@@ -4342,11 +4352,17 @@ msgid ""
 "<email>clusteradm@FreeBSD.org</email> if you need help with your Wiki "
 "account."
 msgstr ""
+"<link xlink:href=\"https://wiki.freebsd.org\">FreeBSD Wiki</link> Cuenta - "
+"Una cuenta wiki permite compartir proyectos e ideas. Aquellos que aún no "
+"tienen una cuenta pueden seguir las instrucciones en el <link xlink:href="
+"\"https://wiki.freebsd.org/AboutWiki\">Página AboutWiki</link> para obtener "
+"una. Contacte con <email>clusteradm@FreeBSD.org</email> si necesita ayuda "
+"con su cuenta Wiki."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2157
 msgid "Optional: Update Wiki Information"
-msgstr ""
+msgstr "Opcional: Actualizar la Información de la Wiki"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2159
@@ -4357,11 +4373,16 @@ msgid ""
 "Nicks</link>, and <link xlink:href=\"https://wiki.freebsd.org/Community/"
 "Dogs\"> Dogs of FreeBSD</link> pages."
 msgstr ""
+"Información Wiki - Después de acceder al wiki, algunas personas añaden "
+"entradas a las páginas <link xlink:href=\"https://wiki.freebsd.org/"
+"HowWeGotHere\">Cómo  llegamos aquí</link>, <link xlink:href=\"https://wiki."
+"freebsd.org/IRC/Nicknames\">IRC Nicks</link>, y <link xlink:href=\"https://"
+"wiki.freebsd.org/Community/Dogs\"> Dogs of FreeBSD</link>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2167
 msgid "Optional: Update Ports with Personal Information"
-msgstr ""
+msgstr "Opcional: Actualizar Puertos con Información Personal"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2170
@@ -4371,11 +4392,15 @@ msgid ""
 "people add entries for themselves to these files to show where they are "
 "located or the date of their birthday."
 msgstr ""
+"<filename>ports/astro/xearth/files/freebsd.committers.markers</filename> y "
+"<filename>src/usr.bin/calendar/calendars/calendar.freebsd</filename>  - "
+"Algunas personas añaden entradas para sí mismas a estos archivos para "
+"mostrar dónde se encuentran o la fecha de su cumpleaños."
 
 #. (itstool) path: step/title
 #: article.translate.xml:2179
 msgid "Optional: Prevent Duplicate Mailings"
-msgstr ""
+msgstr "Opcional: Prevenir Correos Duplicados"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2181
@@ -4387,11 +4412,17 @@ msgid ""
 "link> might wish to unsubscribe to avoid receiving duplicate copies of "
 "commit messages and followups."
 msgstr ""
+"Los suscriptores de <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/svn-src-all\">svn-src-all</link>, <link xlink:href=\"http://lists."
+"FreeBSD.org/mailman/listinfo/svn-ports-all\">svn-ports-all</link> o a <link "
+"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-"
+"all</link>  podrían darse de baja para evitar recibir copias duplicadas de "
+"los mensajes de envíos y seguimiento."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2190
 msgid "For Everyone"
-msgstr ""
+msgstr "Para Todos"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2194
@@ -4403,6 +4434,12 @@ msgid ""
 "your mentor. Email this to the FreeBSD developers mailing list and you will "
 "be on your way!"
 msgstr ""
+"Preséntese a los otros desarrolladores, de lo contrario nadie tendrá idea de "
+"quién es usted o en qué está trabajando. La introducción no tiene por qué "
+"ser una biografía exhaustiva, sólo tiene que escribir uno o dos párrafos "
+"sobre quién es usted, en qué piensa trabajar como desarrollador en FreeBSD y "
+"quién será su mentor. Envíe este mensaje a la lista de correo de "
+"desarrolladores de FreeBSD y ¡estará en camino!"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2204
@@ -4418,6 +4455,17 @@ msgid ""
 "may get truncated without warning if space needs to be freed, so forward it "
 "or save it elsewhere."
 msgstr ""
+"Inicie sesión en<systemitem>freefall.FreeBSD.org</systemitem> y cree un "
+"archivo <filename>/var/forward/<replaceable>usuario</replaceable></filename> "
+"(donde <replaceable>usuario</replaceable> es su nombre de usuario) que "
+"contenga la dirección de correo electrónico a la que desea que se reenvíe el "
+"correo dirigido a <replaceable>su nombre de usuario</replaceable>@FreeBSD."
+"org. Esto incluye todos los mensajes de envío, así como cualquier otro "
+"correo dirigido a la lista de correo de committers de FreeBSD y a la lista "
+"de correo de los desarrolladores de FreeBSD. Los buzones de correo realmente "
+"grandes que han fijado su residencia permanente en <systemitem>freefall</"
+"systemitem> pueden quedar truncados sin previo aviso si es necesario liberar "
+"espacio, así que reenvíelo o guárdelo en otro lugar."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2219
@@ -4431,6 +4479,16 @@ msgid ""
 "<filename>~/.spam_lover</filename> on <systemitem class="
 "\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 msgstr ""
+"Debido a la severa carga que implica el manejo de los lugares de SPAM en los "
+"servidores de correo centrales que realizan el procesamiento de las listas "
+"de correo, el servidor de entrada realiza algunas comprobaciones básicas y "
+"dejará caer algunos mensajes basados en estas comprobaciones. Por el "
+"momento, la única comprobación que existe es la información DNS adecuada "
+"para el host que se conecta, pero eso puede cambiar. Algunas personas culpan "
+"a estos cheques por rebotar correos electrónicos válidos. Para desactivar "
+"estas comprobaciones en su correo electrónico, cree un archivo llamado "
+"<filename>~/.spam_lover</filename> en <systemitem class="
+"\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2233
@@ -4439,11 +4497,14 @@ msgid ""
 "committers or developers mailing lists. The subscriptions are derived from "
 "the access rights."
 msgstr ""
+"Aquellos que son desarrolladores pero no son committers no serán suscritos a "
+"las listas de correo de committers o desarrolladores. Las suscripciones se "
+"derivan de los derechos de acceso."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2241
 msgid "Mentors"
-msgstr ""
+msgstr "Mentores"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2243
@@ -4454,6 +4515,11 @@ msgid ""
 "mentor is also personally responsible for the mentee's actions during this "
 "initial period."
 msgstr ""
+"Todos los nuevos desarrolladores tienen un mentor asignado durante los "
+"primeros meses. Un mentor es responsable de enseñar a los alumnos las reglas "
+"y convenciones del proyecto y de guiar sus primeros pasos en la comunidad de "
+"desarrolladores. El mentor también es personalmente responsable de las "
+"acciones de los aprendices durante este período inicial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2250
@@ -4462,6 +4528,9 @@ msgid ""
 " Document that approval with an <literal>Approved by:</literal> line in the "
 "commit message."
 msgstr ""
+"Para los committers: no envíen nada sin obtener primero la aprobación del "
+"mentor. Documente esa aprobación con una línea <literal>Aprobado por:</"
+"literal> en el mensaje de confirmación."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2255
@@ -4471,41 +4540,45 @@ msgid ""
 "mentors</filename>. This file is in the <filename>svnadmin</filename> branch "
 "of each repository:"
 msgstr ""
+"Cuando el mentor decide que un aprendiz ha aprendido las reglas y está listo "
+"para hacer envíos por su cuenta, el mentor lo anuncia con un envío de "
+"<filename>conf/mentors</filename>. Este archivo está en la rama "
+"<filename>svnadmin</filename> de cada repositorio:."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2266
 msgid "<literal>src</literal>"
-msgstr ""
+msgstr "<literal>src</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2267
 msgid "<filename>base/svnadmin/conf/mentors</filename>"
-msgstr ""
+msgstr "<filename>base/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2271
 msgid "<literal>doc</literal>"
-msgstr ""
+msgstr "<literal>doc</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2272
 msgid "<filename>doc/svnadmin/conf/mentors</filename>"
-msgstr ""
+msgstr "<filename>doc/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2276
 msgid "<literal>ports</literal>"
-msgstr ""
+msgstr "<literal>ports</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2277
 msgid "<filename>ports/svnadmin/conf/mentors</filename>"
-msgstr ""
+msgstr "<filename>ports/svnadmin/conf/mentors</filename>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2286
 msgid "Commit Log Messages"
-msgstr ""
+msgstr "Mensajes de Registro de Envíos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2288
@@ -4513,6 +4586,8 @@ msgid ""
 "This section contains some suggestions and traditions for how commit logs "
 "are formatted."
 msgstr ""
+"Esta sección contiene algunas sugerencias y tradiciones sobre cómo se "
+"formatean los registros de envíos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2291
@@ -4520,6 +4595,8 @@ msgid ""
 "As well as including an informative message with each commit, some "
 "additional information may be needed."
 msgstr ""
+"Además de incluir un mensaje informativo con cada envío, es posible que se "
+"necesite información adicional."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2294
@@ -4527,16 +4604,19 @@ msgid ""
 "This information consists of one or more lines containing the key word or "
 "phrase, a colon, tabs for formatting, and then the additional information."
 msgstr ""
+"Esta información consta de una o más líneas que contienen la palabra o frase "
+"clave, dos puntos, pestañas para formatear y, a continuación, la información "
+"adicional."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2298
 msgid "The key words or phrases are:"
-msgstr ""
+msgstr "Las palabras o frases clave son:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2304
 msgid "<literal>PR:</literal>"
-msgstr ""
+msgstr "<literal>PR:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2305
@@ -4545,11 +4625,14 @@ msgid ""
 "by this commit. Multiple PRs may be specified on one line, separated by "
 "commas or spaces."
 msgstr ""
+"El informe del problema (si lo hay) que se ve afectado (normalmente, por "
+"estar cerrado) por este envío. Se pueden especificar varias PRs en una "
+"línea, separadas por comas o espacios."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2312
 msgid "<literal>Submitted by:</literal>"
-msgstr ""
+msgstr "<literal>Enviado por:</literal>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2314
@@ -4557,6 +4640,9 @@ msgid ""
 "The name and e-mail address of the person that submitted the fix; for "
 "developers, just the username on the FreeBSD cluster."
 msgstr ""
+"El nombre y la dirección de correo electrónico de la persona que envió el "
+"parche; para los desarrolladores, sólo el nombre de usuario en el clúster de "
+"FreeBSD."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2318
@@ -4564,13 +4650,19 @@ msgid ""
 "If the submitter is the maintainer of the port being committed, include "
 "\"(maintainer)\" after the email address."
 msgstr ""
+"Si el remitente es el encargado de mantener el puerto al que se están "
+"haciendo los envíos, incluya \"(mantainer)\" después de la dirección de "
+"correo electrónico."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2322
+#, fuzzy
 msgid ""
 "Avoid obfuscating the email address of the submitter as this adds additional "
 "work when searching logs."
 msgstr ""
+"Evite confundir la dirección de correo electrónico del remitente, ya que "
+"esto añade trabajo adicional al buscar los registros."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2329
