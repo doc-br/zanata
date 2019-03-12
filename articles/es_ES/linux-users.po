@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-09 04:36+0000\n"
+"PO-Revision-Date: 2019-03-12 09:28+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -131,7 +131,7 @@ msgid ""
 msgstr ""
 "Este documento destaca algunas de las diferencias técnicas entre FreeBSD y "
 "<trademark class=\"registered\">Linux</trademark> para que los usuarios "
-"intermedios a avanzados de <trademark class=\"registered\">Linux</trademark> "
+"intermedios y avanzados de <trademark class=\"registered\">Linux</trademark> "
 "puedan familiarizarse rápidamente con los conceptos básicos de FreeBSD."
 
 #. (itstool) path: sect1/para
@@ -173,7 +173,7 @@ msgstr ""
 "Los usuarios de <trademark class=\"registered\">Linux</trademark> a menudo "
 "se sorprenden al descubrir que <application>Bash</application> no es la "
 "shell por defecto en FreeBSD. De hecho, <application>Bash</application> no "
-"está incluido en la instalación predeterminada. En su lugar, FreeBSD usa "
+"está incluido en la instalación predeterminada. En su lugar, FreeBSD utiliza "
 "<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> como shell predeterminada para el usuario root y "
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
@@ -197,7 +197,7 @@ msgstr ""
 "Sin embargo, <application>Bash</application> y otras shells están "
 "disponibles para la instalación utilizando los <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/ports.html\">paquetes "
-"de FreeBSD y la colección de Ports</link>."
+"de FreeBSD y la Colección de Ports</link>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:81
@@ -227,7 +227,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:93
 msgid "Packages and Ports: Adding Software in FreeBSD"
-msgstr "Packages y Ports: Instalar software en FreeBSD"
+msgstr "Paquetes y Ports: Instalar software en FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:95
@@ -235,13 +235,13 @@ msgid ""
 "FreeBSD provides two methods for installing applications: binary packages "
 "and compiled ports. Each method has its own benefits:"
 msgstr ""
-"FreeBSD proporciona dos métodos para instalar aplicaciones: binary packages "
-"y ports compilados. Cada método tiene sus propias ventajas:"
+"FreeBSD proporciona dos métodos para instalar aplicaciones: paquetes "
+"binarios y ports compilados. Cada método tiene sus propias ventajas:"
 
 #. (itstool) path: itemizedlist/title
 #: article.translate.xml:100
 msgid "Binary Packages"
-msgstr "Binary Packages"
+msgstr "Paquetes binarios"
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:103
@@ -293,7 +293,7 @@ msgstr ""
 "Si la instalación de una aplicación no requiere de ninguna personalización, "
 "con la instalación del paquete es suficiente. Compile el port siempre que "
 "una aplicación requiera la personalización de las opciones predeterminadas. "
-"Si fuera necesario, se puede compilar un package personalizado desde los "
+"Si fuera necesario, se puede compilar un paquete personalizado desde los "
 "ports usando <command>make</command> <_:buildtarget-1/>."
 
 #. (itstool) path: sect1/para
@@ -302,14 +302,14 @@ msgid ""
 "A complete list of all available ports and packages can be found <link xlink:"
 "href=\"https://www.freebsd.org/ports/master-index.html\">here</link>."
 msgstr ""
-"Una lista completa de todos los ports y packages disponibles se puede "
+"Una lista completa de todos los ports y paquetes disponibles se puede "
 "encontrar <link xlink:href=\"https://www.freebsd.org/ports/master-index."
 "html\">aquí</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:140
 msgid "Packages"
-msgstr "Packages"
+msgstr "Paquetes"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:142
@@ -320,10 +320,10 @@ msgid ""
 "are installed using <command>pkg</command>. For example, the following "
 "command installs <application>Apache 2.4</application>:"
 msgstr ""
-"Los Packages son aplicaciones precompiladas, el equivalente de FreeBSD a los "
+"Los paquetes son aplicaciones precompiladas, el equivalente de FreeBSD a los "
 "ficheros <filename>.deb</filename> en los sistemas basados en Debian/Ubuntu "
 "y a los ficheros <filename>.rpm</filename> en los sistemas basados en Red "
-"Hat/Fedora. Los Packages se instalan usando <command>pkg</command>. Por "
+"Hat/Fedora. Los paquetes se instalan usando <command>pkg</command>. Por "
 "ejemplo, el siguiente comando instala <application>Apache 2.4</application>:"
 
 #. (itstool) path: sect2/screen
@@ -347,7 +347,7 @@ msgstr ""
 "Para obtener más información sobre los paquetes, consulte la sección 5.4 del "
 "Manual de FreeBSD: <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
 "books/handbook/pkgng-intro.html\">Uso de pkgng para la administración de "
-"packages binarios</link>."
+"paquetes binarios</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:160
@@ -378,10 +378,10 @@ msgstr ""
 "La Colección de Ports, a veces llamada el árbol de ports, se puede instalar "
 "en <filename>/usr/ports</filename> utilizando "
 "<citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>. Instrucciones detalladas para instalar la "
-"Colección de Ports se pueden encontrar en la <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/ports-using."
-"html\">sección 5.5</link> del Manual de FreeBSD."
+"manvolnum></citerefentry>. \n"
+"Se pueden encontrar instrucciones detalladas para instalar la Colección de "
+"Ports en la <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"handbook/ports-using.html\">sección 5.5</link> del Manual de FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:173
@@ -390,7 +390,7 @@ msgid ""
 "process. The following example installs <application>Apache 2.4</"
 "application> from the Ports Collection:"
 msgstr ""
-"Para compilar un port, acceda al directorio del post e inicie el proceso de "
+"Para compilar un port, acceda al directorio del port e inicie el proceso de "
 "build. El siguiente ejemplo instala <application>Apache 2.4</application> de "
 "la colección de ports:"
 
@@ -434,9 +434,9 @@ msgid ""
 "handbook/ports-using.html\">Using the Ports Collection</link> for more "
 "information."
 msgstr ""
-"Consulte Usando la <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
-"books/handbook/ports-using.html\">Colección de Ports</link> para obtener más "
-"información."
+"Consulte <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"handbook/ports-using.html\">Usando la Colección de Ports</link> para obtener "
+"más información."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:195
@@ -519,8 +519,8 @@ msgstr ""
 "aplicaciones instaladas por el usuario no se consideran parte del sistema "
 "<quote>base</quote>. Las aplicaciones instaladas por el usuario generalmente "
 "se instalan utilizando <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES."
-"ISO8859-1/books/handbook/ports-using.html\">Packages or Ports</link>. Para "
-"mantenerlss separadss del sistema base, las aplicaciones instaladas por el "
+"ISO8859-1/books/handbook/ports-using.html\">Paquetes o Ports</link>. Para "
+"mantenerlas separadas del sistema base, las aplicaciones instaladas por el "
 "usuario se instalan en <filename>/usr/local/</filename>. Por lo tanto, los "
 "binarios instalados por el usuario están ubicados en <filename>/usr/local/"
 "bin/</filename>, los archivos de configuración están en <filename>/usr/local/"
@@ -557,10 +557,11 @@ msgid ""
 "that <application>Apache</application> should be started with <acronym>SSL</"
 "acronym>."
 msgstr ""
-"Las siguientes entradas en <filename>/etc/rc.conf</filename> activa "
+"Las siguientes entradas en <filename>/etc/rc.conf</filename> activan "
 "<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>, activa <application>Apache 2.4</application> y especifica que "
-"<application>Apache</application> debe iniciarse con <acronym>SSL</acronym>."
+"citerefentry>, activan <application>Apache 2.4</application> y especifican "
+"que <application>Apache</application> debe iniciarse con <acronym>SSL</"
+"acronym>."
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:248
@@ -572,9 +573,9 @@ msgid ""
 "apache24_enable=\"YES\"\n"
 "apache24_flags=\"-DSSL\""
 msgstr ""
-"# enable SSHD\n"
+"# activa SSHD\n"
 "sshd_enable=\"YES\"\n"
-"# enable Apache with SSL\n"
+"# activa Apache con SSL\n"
 "apache24_enable=\"YES\"\n"
 "apache24_flags=\"-DSSL\""
 
@@ -776,7 +777,7 @@ msgid ""
 "paired with <citerefentry><refentrytitle>altq</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> to provide <acronym>QoS</acronym> features."
 msgstr ""
-"<application>PF</application> está desarrollado por el proyecto OpenBSD y es "
+"<application>PF</application> está desarrollado por el proyecto OpenBSD y "
 "portado a FreeBSD. <application>PF</application> fue creado como un "
 "reemplazo para <application>IPFILTER</application> y su sintaxis es similar. "
 "<application>PF</application> se puede combinar con "
@@ -807,7 +808,7 @@ msgid ""
 msgstr ""
 "<application>IPFILTER</application> es el firewall desarrollado por Darren "
 "Reed.  No es específico de FreeBSD y se ha portado a varios sistemas "
-"operativos, incluidos NetBSD, OpenBSD, SunOS, HP / UX y Solaris."
+"operativos, incluidos NetBSD, OpenBSD, SunOS, HP/UX y Solaris."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:346
@@ -836,7 +837,7 @@ msgstr ""
 "por FreeBSD. Se puede combinar con <citerefentry><refentrytitle>dummynet</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> para proporcionar  "
 "traffic shaping y simular\n"
-"diferentes tipos de conexiones"
+"diferentes tipos de conexiones."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:356
@@ -845,7 +846,7 @@ msgid ""
 "<application>SSH</application> would be:"
 msgstr ""
 "La sintaxis de <application>IPFW</application> para permitir la entrada de "
-"tráfico en <application>SSH</application> sería:"
+"tráfico <application>SSH</application> sería:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:359
@@ -940,7 +941,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:396
 msgid "procfs: Gone But Not Forgotten"
-msgstr "procfs: Gone But Not Forgotten"
+msgstr "procfs: Desaparecido pero no olvidado"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:398
@@ -1038,7 +1039,7 @@ msgstr "Algunos equivalentes de los comandos comunes son los siguientes:"
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> command (Red Hat/Debian)"
 msgstr ""
-"<trademark class=\"registered\">Linux</trademark> comando (Red Hat/Debian)"
+"Comando <trademark class=\"registered\">Linux</trademark> (Red Hat/Debian)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:440

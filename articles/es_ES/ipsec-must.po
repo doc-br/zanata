@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-02-05 03:45+0000\n"
+"PO-Revision-Date: 2019-03-12 08:15+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -93,7 +93,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:43
 msgid "The Problem"
-msgstr "El Problema"
+msgstr "El problema"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:45
@@ -111,18 +111,18 @@ msgstr ""
 "\"caveat\">funcionando</link>? Claro, su conexión no funcionará si está mal "
 "configurada, y funcionará cuando finalmente lo haga bien. "
 "<citerefentry><refentrytitle>netstat</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> lo listará. ¿Pero puedes confirmarlo "
-"independientemente?"
+"manvolnum></citerefentry> la listará. ¿Pero puede confirmarlo de forma "
+"independiente?"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:54
 msgid "The Solution"
-msgstr "La Solución"
+msgstr "La solución"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
 msgid "First, some crypto-relevant info theory:"
-msgstr "Primero, alguna información teorica relevante de criptografía:"
+msgstr "Primero, alguna información teórica relevante sobre criptografía:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:60
@@ -140,7 +140,7 @@ msgid ""
 ""
 msgstr ""
 "Los datos sin procesar y sin comprimir suelen ser redundantes, es decir, "
-"tienen una entropía sub-máxima."
+"tienen una entropía submáxima."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:70
@@ -151,11 +151,11 @@ msgid ""
 "<quote>encrypted mode</quote> was not encrypted---as the outermost IP header "
 "must be if the packet is to be routable."
 msgstr ""
-"Suponga que usted pudiera medir la entropía de los datos que van hacia- y "
+"Suponga que usted pudiera medir la entropía de los datos que van hacia -y "
 "desde- su interfaz de red. Entonces podría ver la diferencia entre los datos "
 "no cifrados y los cifrados. Esto sería verdad incluso si algunos de los "
-"datos en <quote>modo cifrado</quote> no lo estuvieran--- ya que el "
-"encabezado IP más externo debe estarlo para que el paquete sea enrutable."
+"datos en <quote>modo cifrado</quote> no lo estuvieran---ya que el encabezado "
+"IP más externo debe estarlo para que el paquete sea enrutable."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:78
@@ -175,11 +175,11 @@ msgid ""
 msgstr ""
 "<quote>Universal Statistical Test for Random Bit Generators</quote>(<link "
 "xlink:href=\"https://web.archive.org/web/20011115002319/http://www.geocities."
-"com/SiliconValley/Code/4704/universal.pdf\"> <acronym>MUST</acronym></link>) "
+"com/SiliconValley/Code/4704/universal.pdf\"><acronym>MUST</acronym></link>) "
 "mide rápidamente la entropía de una muestra. Utiliza un algoritmo de "
 "compresión. <link linkend=\"code\">El código se proporciona a continuación</"
-"link> para una variante que mide partes sucesivas (~ cuarto megabyte) de un "
-"archivo"
+"link> para una variante que mide partes sucesivas (~cuarto de megabyte) de "
+"un archivo"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:89
@@ -223,13 +223,13 @@ msgid ""
 "to 10,000 bytes per packet will be captured in this example."
 msgstr ""
 "capturará 4000 paquetes sin procesar en el fichero <replaceable>dumpfile."
-"bin</replaceable>. En este ejemplo se capturarán hasta 10,000 bytes por "
+"bin</replaceable>. En este ejemplo se capturarán hasta 10.000 bytes por "
 "paquete."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:108
 msgid "The Experiment"
-msgstr "El Experimento"
+msgstr "El experimento"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:110
@@ -244,7 +244,7 @@ msgstr "Abra una ventana a un host IPsec y otra ventana a un host inseguro."
 #. (itstool) path: step/para
 #: article.translate.xml:119
 msgid "Now start <link linkend=\"tcpdump\">capturing packets</link>."
-msgstr "Ahora empieza a <link linkend=\"tcpdump\">capturar paquetes</link>."
+msgstr "Ahora empiece a <link linkend=\"tcpdump\">capturar paquetes</link>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:124
@@ -258,8 +258,8 @@ msgstr ""
 "En la ventana <quote>segura</quote>, ejecute el comando <trademark class="
 "\"registered\">UNIX</trademark> <citerefentry><refentrytitle>yes</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, que transmitirá el "
-"carácter <literal>y</literal>. Después de un rato, deten el comando. Cambia "
-"a la ventana insegura, y repite. Después de un rato, deten el comando."
+"carácter <literal>y</literal>. Después de un rato, detenga el comando. "
+"Cambie a la ventana insegura, y repita. Espere un poco, detenga el comando."
 
 #. (itstool) path: step/para
 #: article.translate.xml:131
@@ -271,8 +271,8 @@ msgid ""
 msgstr ""
 "Ahora ejecute <link linkend=\"code\">MUST</link> en los paquetes capturados. "
 "Debería ver algo como lo siguiente. Lo importante a tener en cuenta es que "
-"la conexión segura tiene un 93% (6.7) del valor esperado (7.18), y la "
-"conexión <quote>normal</quote> tiene un 29% (2.1) del valor esperado."
+"la conexión segura tiene un 93% (6,7) del valor esperado (7,18), y la "
+"conexión <quote>normal</quote> tiene un 29% (2,1) del valor esperado."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:138
@@ -330,12 +330,12 @@ msgid ""
 msgstr ""
 "Este experimento muestra que IPsec <emphasis>parece</emphasis> estar "
 "distribuyendo los datos de la carga útil <emphasis>uniformemente</emphasis>, "
-"como lo debe hacer el cifrado. Sin embargo, el experimento aquí descrito "
+"como debe hacerlo el cifrado. Sin embargo, el experimento aquí descrito "
 "<emphasis>puede no</emphasis> detectar muchas de las posibles fallas del "
-"sistema (ninguna de las cuales tengo evidencia) Esto incluye la generación o "
+"sistema (para las cuales no tengo evidencias). Esto incluye la generación o "
 "intercambio de claves deficientes, datos o claves visibles para otros, uso "
-"de algoritmos débiles, kernel subversion, etc. Estudie el código; conozca el "
-"código."
+"de algoritmos débiles, subversión dek kernel, etc. Estudie el código; "
+"conozca el código."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:171
@@ -352,11 +352,10 @@ msgid ""
 "specified file or message. IPsec encrypts everything between two hosts."
 msgstr ""
 "Extensiones de seguridad del Protocolo de Internet para IPv4; requerido para "
-"IPv6. Un protocolo para negociar el cifrado y la autenticación al nivel de "
-"IP (host a host). SSL solo protege un socket de aplicación. "
-"<application>SSH</application> protege sólo el login. <application>PGP</"
-"application> protege un archivo o mensaje específico. IPsec encripta todo "
-"entre dos hosts."
+"IPv6. Un protocolo para negociar el cifrado y la autenticación a nivel de IP "
+"(host a host). SSL solo protege un socket de aplicación. <application>SSH</"
+"application> protege solo el login. <application>PGP</application> protege "
+"un archivo o mensaje específico. IPsec encripta todo entre dos hosts."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:182
@@ -408,7 +407,7 @@ msgstr ""
 "capturar datos de red con <citerefentry><refentrytitle>tcpdump</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>. Asegúrese de ejecutar "
 "<citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> después de agregar esto, y recompilar y reinstalar."
+"citerefentry> después de agregar esto, recompilar y reinstalar."
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:203
@@ -419,7 +418,7 @@ msgstr "device\tbpf"
 #. (itstool) path: sect1/title
 #: article.translate.xml:207
 msgid "Maurer's Universal Statistical Test (for block size=8 bits)"
-msgstr "Maurer's Universal Statistical Test (for block size=8 bits)"
+msgstr "Maurer's Universal Statistical Test (tamaño de bloque=8 bits)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:210
@@ -428,7 +427,7 @@ msgid ""
 "20031204230654/http://www.geocities.com:80/SiliconValley/Code/4704/uliscanc."
 "txt\"> this link</link>."
 msgstr ""
-"Puedes encontrar el mismo código fuente en <link xlink:href=\"https://web."
+"Puede encontrar el mismo código fuente en <link xlink:href=\"https://web."
 "archive.org/web/20031204230654/http://www.geocities.com:80/SiliconValley/"
 "Code/4704/uliscanc.txt\">este enlace</link>."
 
