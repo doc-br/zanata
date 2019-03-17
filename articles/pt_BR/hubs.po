@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-08 14:45-0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-03-17 17:19-0300\n"
 "PO-Revision-Date: 2018-12-12 01:24+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -30,10 +30,12 @@ msgstr "Espelhando o FreeBSD"
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
 #, no-wrap
-msgid "\n"
+msgid ""
+"\n"
 "\t    <email>kuriyama@FreeBSD.org</email>\n"
 "\t  "
-msgstr "\n"
+msgstr ""
+"\n"
 "\t    <email>kuriyama@FreeBSD.org</email>\n"
 "\t  "
 
@@ -49,10 +51,12 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:25
 #, no-wrap
-msgid "\n"
+msgid ""
+"\n"
 "\t    <email>logo@FreeBSD.org</email>\n"
 "\t  "
-msgstr "\n"
+msgstr ""
+"\n"
 "\t    <email>logo@FreeBSD.org</email>\n"
 "\t  "
 
@@ -68,10 +72,12 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:36
 #, no-wrap
-msgid "\n"
+msgid ""
+"\n"
 "\t    <email>dl@leo.org</email>\n"
 "\t  "
-msgstr "\n"
+msgstr ""
+"\n"
 "\t    <email>dl@leo.org</email>\n"
 "\t  "
 
@@ -87,10 +93,12 @@ msgstr ""
 #. (itstool) path: affiliation/address
 #: article.translate.xml:47
 #, no-wrap
-msgid "\n"
+msgid ""
+"\n"
 "\t    <email>kensmith@FreeBSD.org</email>\n"
 "\t  "
-msgstr "\n"
+msgstr ""
+"\n"
 "\t    <email>kensmith@FreeBSD.org</email>\n"
 "\t  "
 
@@ -126,18 +134,13 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:65 article.translate.xml:67
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/hubs/article.xml 52296 2018-09-24 09:"
-"34:54Z bcr $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/hubs/article.xml 52296 2018-09-24 09:"
-"34:54Z bcr $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:70
 msgid ""
 "An in-progress article on how to mirror FreeBSD, aimed at hub administrators."
-""
 msgstr ""
 "Um artigo em andamento sobre como espelhar o FreeBSD, destinado à "
 "administradores de hubs."
@@ -177,13 +180,14 @@ msgstr "Espaço em disco"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:93
+#, fuzzy
 msgid ""
 "Disk space is one of the most important requirements. Depending on the set "
 "of releases, architectures, and degree of completeness you want to mirror, a "
 "huge amount of disk space may be consumed. Also keep in mind that "
 "<emphasis>official</emphasis> mirrors are probably required to be complete. "
 "The web pages should always be mirrored completely. Also note that the "
-"numbers stated here are reflecting the current state (at 10.4-RELEASE/11.2-"
+"numbers stated here are reflecting the current state (at 10.4-RELEASE/12.0-"
 "RELEASE). Further development and releases will only increase the required "
 "amount. Also make sure to keep some (ca. 10-20%) extra space around just to "
 "be sure. Here are some approximate figures:"
@@ -409,7 +413,6 @@ msgstr ""
 #: article.translate.xml:220
 msgid ""
 "<package>ftp/oftpd</package>: An ftpd designed with security as a main focus."
-""
 msgstr ""
 "<package>ftp/oftpd</package>: Um ftpd projetado tendo a segurança como foco "
 "principal."
@@ -698,12 +701,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:396
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD."
-"org/FreeBSD/ /pub/FreeBSD/</userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD."
-"org/FreeBSD/ /pub/FreeBSD/</userinput>"
+msgid "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD.org/FreeBSD/ /pub/FreeBSD/</userinput>"
+msgstr "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://ftp4.de.FreeBSD.org/FreeBSD/ /pub/FreeBSD/</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:398
@@ -744,18 +743,13 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:415
 msgid "A command line to mirror the FreeBSD web site might look like:"
-msgstr ""
-"Uma linha de comando para espelhar o site do FreeBSD pode parecer com:"
+msgstr "Uma linha de comando para espelhar o site do FreeBSD pode parecer com:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:418
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west."
-"freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west."
-"freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
+msgid "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west.freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
+msgstr "<prompt>%</prompt> <userinput>rsync -vaHz --delete rsync://bit0.us-west.freebsd.org/FreeBSD-www-data/ /usr/local/www/</userinput>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:422
@@ -783,12 +777,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:432
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>pkg fetch -d -o <replaceable>/usr/local/"
-"mirror</replaceable> <replaceable>vim</replaceable></userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>pkg fetch -d -o <replaceable>/usr/local/"
-"mirror</replaceable> <replaceable>vim</replaceable></userinput>"
+msgid "<prompt>%</prompt> <userinput>pkg fetch -d -o <replaceable>/usr/local/mirror</replaceable> <replaceable>vim</replaceable></userinput>"
+msgstr "<prompt>%</prompt> <userinput>pkg fetch -d -o <replaceable>/usr/local/mirror</replaceable> <replaceable>vim</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:434
@@ -802,12 +792,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:437
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>pkg repo <replaceable>/usr/local/mirror</"
-"replaceable></userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>pkg repo <replaceable>/usr/local/mirror</"
-"replaceable></userinput>"
+msgid "<prompt>%</prompt> <userinput>pkg repo <replaceable>/usr/local/mirror</replaceable></userinput>"
+msgstr "<prompt>%</prompt> <userinput>pkg repo <replaceable>/usr/local/mirror</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:439
@@ -889,8 +875,8 @@ msgstr ""
 "manvolnum></citerefentry> do usuário apropriado. Este deve ser um usuário "
 "diferente daquele sob o qual o daemon FTP está sendo executado, de forma "
 "que, se as permissões de arquivo dentro de sua área FTP não forem legíveis "
-"por todos, esses arquivos não poderão ser acessados ​​por FTP anônimo. Isto "
-"é usado para fazer o <quote>stage</quote> de uma release - assegurando que "
+"por todos, esses arquivos não poderão ser acessados ​​por FTP anônimo. Isto é "
+"usado para fazer o <quote>stage</quote> de uma release - assegurando que "
 "todos os sites espelhos oficiais tenham todos os arquivos necessários da "
 "release no dia do lançamento."
 
@@ -924,8 +910,8 @@ msgid ""
 msgstr ""
 "Esta é uma questão importante. Então, esta seção vai gastar algum esforço "
 "para explicar mais a fundo. Nós diremos isso várias vezes: sob nenhuma "
-"circunstância você deve espelhar a partir do <systemitem class="
-"\"fqdomainname\">ftp.FreeBSD.org</systemitem>."
+"circunstância você deve espelhar a partir do <systemitem class=\"fqdomainname"
+"\">ftp.FreeBSD.org</systemitem>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:505
@@ -936,11 +922,11 @@ msgstr "Algumas palavras sobre a organização"
 #: article.translate.xml:507
 msgid ""
 "Mirrors are organized by country. All official mirrors have a DNS entry of "
-"the form <systemitem class=\"fqdomainname\">ftpN.CC.FreeBSD.org</systemitem>."
-" <emphasis>CC</emphasis> (i.e., country code) is the <emphasis>top level "
-"domain</emphasis> (TLD) of the country where this mirror is located. "
-"<emphasis>N</emphasis> is a number, telling that the host would be the "
-"<emphasis>Nth</emphasis> mirror in that country. (Same applies to "
+"the form <systemitem class=\"fqdomainname\">ftpN.CC.FreeBSD.org</"
+"systemitem>. <emphasis>CC</emphasis> (i.e., country code) is the "
+"<emphasis>top level domain</emphasis> (TLD) of the country where this mirror "
+"is located. <emphasis>N</emphasis> is a number, telling that the host would "
+"be the <emphasis>Nth</emphasis> mirror in that country. (Same applies to "
 "<systemitem>wwwN.CC.FreeBSD.org</systemitem>, etc.) There are mirrors with "
 "no <emphasis>CC</emphasis> part. These are the mirror sites that are very "
 "well connected and allow a large number of concurrent users. <systemitem "
@@ -1090,11 +1076,11 @@ msgid ""
 "to one of the master sites. Access to these sites is generally restricted, "
 "and there are special policies for access. If you are already an "
 "<emphasis>official</emphasis> mirror, this certainly helps you getting "
-"access. In any other case make sure your country really needs another mirror."
-" If it already has three or more, ask the <quote>zone administrator</quote> "
-"(<email>hostmaster@CC.FreeBSD.org</email>) or <link xlink:href=\"http://"
-"lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\">FreeBSD mirror sites "
-"mailing lists</link> first."
+"access. In any other case make sure your country really needs another "
+"mirror. If it already has three or more, ask the <quote>zone administrator</"
+"quote> (<email>hostmaster@CC.FreeBSD.org</email>) or <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\">FreeBSD mirror "
+"sites mailing lists</link> first."
 msgstr ""
 "Se você tiver boas razões e pré-requisitos, poderá querer e obter acesso a "
 "um dos sites mestres. O acesso a esses sites é geralmente restrito e existem "
@@ -1153,8 +1139,8 @@ msgid ""
 "for the FTP contents, since they are <emphasis>Tier-1</emphasis>-mirrors."
 msgstr ""
 "Os espelhos também são encorajados a permitir acesso por <application>rsync</"
-"application> para o conteúdo FTP, já que eles são espelhos de <emphasis>Tier-"
-"1</emphasis>."
+"application> para o conteúdo FTP, já que eles são espelhos de "
+"<emphasis>Tier-1</emphasis>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:632
@@ -1210,8 +1196,8 @@ msgid ""
 msgstr ""
 "Não é tão fácil declarar os requisitos para todos os sites espelhos "
 "oficiais, uma vez que o projeto é um pouco tolerante aqui. É mais fácil "
-"dizer o que um <emphasis>site espelho oficial Tier-1 </emphasis> precisa ter."
-" Todos os outros sites espelhos oficiais podem considerar isto como um "
+"dizer o que um <emphasis>site espelho oficial Tier-1 </emphasis> precisa "
+"ter. Todos os outros sites espelhos oficiais podem considerar isto como um "
 "grande <emphasis>deve</emphasis>."
 
 #. (itstool) path: sect2/para
@@ -1322,9 +1308,9 @@ msgstr "Estatísticas do site FTP"
 msgid ""
 "ftp.is.FreeBSD.org - <email>hostmaster@is.FreeBSD.org</email> - <link xlink:"
 "href=\"http://www.rhnet.is/status/draupnir/draupnir.html\"> (Bandwidth)</"
-"link> <link xlink:href=\"http://www.rhnet.is/status/ftp/ftp-notendur."
-"html\">(FTP processes)</link> <link xlink:href=\"http://www.rhnet.is/status/"
-"ftp/http-notendur.html\">(HTTP processes)</link>"
+"link> <link xlink:href=\"http://www.rhnet.is/status/ftp/ftp-notendur.html"
+"\">(FTP processes)</link> <link xlink:href=\"http://www.rhnet.is/status/ftp/"
+"http-notendur.html\">(HTTP processes)</link>"
 msgstr ""
 "ftp.is.FreeBSD.org - <email> hostmaster@is.FreeBSD.org </email> - <link "
 "xlink:href=\"http://www.rhnet.is/status/draupnir/draupnir.html\">(Largura de "
@@ -1336,11 +1322,11 @@ msgstr ""
 #: article.translate.xml:784
 msgid ""
 "ftp2.ru.FreeBSD.org - <email>mirror@macomnet.ru</email> - <link xlink:href="
-"\"http://mirror.macomnet.net/mrtg/mirror.macomnet.net_195.128.64.25."
-"html\">(Bandwidth)</link> <link xlink:href=\"http://mirror.macomnet.net/mrtg/"
+"\"http://mirror.macomnet.net/mrtg/mirror.macomnet.net_195.128.64.25.html"
+"\">(Bandwidth)</link> <link xlink:href=\"http://mirror.macomnet.net/mrtg/"
 "mirror.macomnet.net_proc.html\">(HTTP and FTP users)</link>"
 msgstr ""
 "ftp2.ru.FreeBSD.org - <email> mirror@macomnet.ru </email> - <link xlink:href="
-"\"http://mirror.macomnet.net/mrtg/mirror.macomnet.net_195.128.64.25."
-"html\">(Largura de Banda)</link> <link xlink:href=\"http://mirror.macomnet."
-"net/mrtg/mirror.macomnet.net_proc.html\">(Usuários HTTP e FTP)</link>"
+"\"http://mirror.macomnet.net/mrtg/mirror.macomnet.net_195.128.64.25.html"
+"\">(Largura de Banda)</link> <link xlink:href=\"http://mirror.macomnet.net/"
+"mrtg/mirror.macomnet.net_proc.html\">(Usuários HTTP e FTP)</link>"

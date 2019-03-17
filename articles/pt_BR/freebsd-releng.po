@@ -7,14 +7,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-08 14:45-0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-03-17 17:19-0300\n"
 "PO-Revision-Date: 2018-12-12 04:22+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -85,12 +85,8 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:57
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
-"2018-10-18 16:11:27Z gjb $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
-"2018-10-18 16:11:27Z gjb $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:60
@@ -128,7 +124,6 @@ msgstr ""
 "Após um período razoável de testes, as alterações podem ser fundidas na "
 "branch <literal>stable/</literal>. O período de tempo mínimo padrão antes da "
 "fusão das alterações na branch <literal>stable/</literal> é de três (3) dias."
-""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
@@ -189,8 +184,7 @@ msgstr "As seções a seguir deste artigo descrevem:"
 #. (itstool) path: listitem/para
 #: article.translate.xml:109
 msgid "General information and preparation before starting the release cycle."
-msgstr ""
-"Informações gerais e preparativos antes de iniciar o ciclo de release."
+msgstr "Informações gerais e preparativos antes de iniciar o ciclo de release."
 
 #. (itstool) path: listitem/para
 #. (itstool) path: sect1/title
@@ -624,7 +618,6 @@ msgid ""
 "work for a new device driver that is otherwise isolated from the rest of the "
 "tree may be granted an extension. A new scheduler, however, may not be "
 "feasible, especially if such dramatic changes do not exist in another branch."
-""
 msgstr ""
 "O mesmo se aplica às extensões de trabalho em andamento. Por exemplo, o "
 "trabalho em andamento para um novo driver de dispositivo que de outra forma "
@@ -741,7 +734,6 @@ msgstr ""
 "Embora o code slush não seja um congelamento mandatório da árvore, a Equipe "
 "de Engenharia de Release do FreeBSD solicita que resoluções dos bugs "
 "existentes no código tenham prioridade sobre implementação de novos recursos."
-""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
@@ -805,12 +797,12 @@ msgstr ""
 #: article.translate.xml:481
 msgid ""
 "During the code freeze, FreeBSD committers are urged to follow the <link "
-"xlink:href=\"https://wiki.freebsd.org/Releng/"
-"ChangeRequestGuidelines\">Change Request Guidelines</link>."
+"xlink:href=\"https://wiki.freebsd.org/Releng/ChangeRequestGuidelines"
+"\">Change Request Guidelines</link>."
 msgstr ""
 "Durante o code freeze, os committers do FreeBSD devem seguir as <link xlink:"
-"href=\"https://wiki.freebsd.org/Releng/"
-"ChangeRequestGuidelines\">Recomendações de Requisição de Mudanças</link>."
+"href=\"https://wiki.freebsd.org/Releng/ChangeRequestGuidelines"
+"\">Recomendações de Requisição de Mudanças</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:488
@@ -928,8 +920,7 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:570
-msgid ""
-"Website Changes During <literal>BETA</literal> or <literal>RC</literal>"
+msgid "Website Changes During <literal>BETA</literal> or <literal>RC</literal>"
 msgstr ""
 "Alterações na página web durante a fase <literal>BETA</literal> ou "
 "<literal>RC</literal>"
@@ -939,8 +930,8 @@ msgstr ""
 msgid ""
 "When transitioning from <literal>PRERELEASE</literal> to <literal>BETA</"
 "literal>, these files need to be updated to enable the \"Help Test\" block "
-"on the download page. All files are relative to <filename class="
-"\"directory\">head/</filename> in the <literal>doc</literal> repository:"
+"on the download page. All files are relative to <filename class=\"directory"
+"\">head/</filename> in the <literal>doc</literal> repository:"
 msgstr ""
 "Ao fazer a transição de <literal>PRERELEASE</literal> para <literal>BETA</"
 "literal>, esses arquivos precisam ser atualizados para ativar o bloco "
@@ -950,8 +941,7 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:590
-msgid ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+msgid "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgstr ""
 "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 
@@ -1160,12 +1150,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:699
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</"
-"replaceable>/</literal></userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</"
-"replaceable>/</literal></userinput>"
+msgid "<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:701
@@ -1202,10 +1188,12 @@ msgstr ""
 #. (itstool) path: entry/screen
 #: article.translate.xml:722
 #, no-wrap
-msgid "#ifndef MALLOC_PRODUCTION\n"
+msgid ""
+"#ifndef MALLOC_PRODUCTION\n"
 "#define MALLOC_PRODUCTION\n"
 "#endif"
-msgstr "#ifndef MALLOC_PRODUCTION\n"
+msgstr ""
+"#ifndef MALLOC_PRODUCTION\n"
 "#define MALLOC_PRODUCTION\n"
 "#endif"
 
@@ -1226,11 +1214,9 @@ msgstr "Remova o comentário <literal>-DNDEBUG</literal>"
 #. (itstool) path: row/entry
 #: article.translate.xml:733
 msgid ""
-"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</filename>"
 msgstr ""
-"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:734 article.translate.xml:739
@@ -1289,11 +1275,9 @@ msgstr "Remova as opções de depuração"
 #. (itstool) path: row/entry
 #: article.translate.xml:758 article.translate.xml:1013
 msgid ""
-"<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</filename>"
 msgstr ""
-"<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:759
@@ -1377,8 +1361,7 @@ msgstr "<filename>head/Makefile.inc1</filename>"
 #. (itstool) path: row/entry
 #: article.translate.xml:807
 msgid ""
-"Update <literal>TARGET_TRIPLE</literal> and <literal>MACHINE_TRIPLE</"
-"literal>"
+"Update <literal>TARGET_TRIPLE</literal> and <literal>MACHINE_TRIPLE</literal>"
 msgstr ""
 "Atualize o <literal>TARGET_TRIPLE</literal> e o <literal>MACHINE_TRIPLE</"
 "literal>"
@@ -1400,8 +1383,7 @@ msgstr "<filename>head/gnu/usr.bin/cc/cc_tools/freebsd-native.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:818
-msgid ""
-"Update <literal>FBSD_MAJOR</literal> and <literal>FBSD_CC_VER</literal>"
+msgid "Update <literal>FBSD_MAJOR</literal> and <literal>FBSD_CC_VER</literal>"
 msgstr ""
 "Atualize o <literal>FBSD_MAJOR</literal> e o <literal>FBSD_CC_VER</literal>"
 
@@ -1598,10 +1580,11 @@ msgid ""
 "any files other than <filename>sys/conf/newvers.sh</filename>, incrementing "
 "the <literal>BETA</literal> build number."
 msgstr ""
-"Feito isso, o primeiro conjunto de builds <literal>BETA</literal> é iniciado."
-" Builds <literal>BETA</literal> subseqüentes não requerem atualizações em "
-"nenhum arquivo diferente do <filename>sys/conf/newvers.sh</filename>, "
-"incrementando o número de compilação da versão <literal>BETA</literal>."
+"Feito isso, o primeiro conjunto de builds <literal>BETA</literal> é "
+"iniciado. Builds <literal>BETA</literal> subseqüentes não requerem "
+"atualizações em nenhum arquivo diferente do <filename>sys/conf/newvers.sh</"
+"filename>, incrementando o número de compilação da versão <literal>BETA</"
+"literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:964
@@ -1631,14 +1614,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:974
 #, no-wrap
-msgid ""
-"<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</"
-"replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</"
-"literal></userinput>"
-msgstr ""
-"<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</"
-"replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</"
-"literal></userinput>"
+msgid "<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:987
@@ -1731,19 +1708,13 @@ msgstr ""
 #: article.translate.xml:1033
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/"
-"<replaceable>12.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</"
-"replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</"
-"replaceable>/</literal></userinput>"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/"
-"<replaceable>12.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</"
-"replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</"
-"replaceable>/</literal></userinput>"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1037
@@ -1809,8 +1780,8 @@ msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
-"Esta seção descreve os scripts de build usados ​​pela Equipe de Engenharia "
-"de Release do FreeBSD para produzir snapshots da versão em desenvolvimento e "
+"Esta seção descreve os scripts de build usados ​​pela Equipe de Engenharia de "
+"Release do FreeBSD para produzir snapshots da versão em desenvolvimento e "
 "das releases"
 
 #. (itstool) path: sect3/title
@@ -1869,12 +1840,8 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1098
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</"
-"userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</"
-"userinput>"
+msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
+msgstr "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1100
@@ -1914,12 +1881,8 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1114
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c "
-"<replaceable>$HOME/release.conf</replaceable></userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c "
-"<replaceable>$HOME/release.conf</replaceable></userinput>"
+msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c <replaceable>$HOME/release.conf</replaceable></userinput>"
+msgstr "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c <replaceable>$HOME/release.conf</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1116
@@ -1991,15 +1954,15 @@ msgstr ""
 "Cada arquitetura e kernel individual tem seu próprio arquivo de configuração "
 "usado pelo <filename>release.sh</filename>. Cada branch tem sua própria "
 "configuração <filename>defaults-X.conf</filename> que contém entradas comuns "
-"em cada arquitetura, onde substituições ou variáveis ​​especiais são "
-"definidas e/ou substituídas nos arquivos por compilação."
+"em cada arquitetura, onde substituições ou variáveis ​​especiais são definidas "
+"e/ou substituídas nos arquivos por compilação."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1150
 msgid ""
-"The per-build configuration file naming scheme is in the form of "
-"<filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</filename>, "
-"where the uppercase variables are equivalent to what "
+"The per-build configuration file naming scheme is in the form of <filename>"
+"${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</filename>, where the "
+"uppercase variables are equivalent to what "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> uses in the build system, and lowercase variables are set "
 "within the configuration files, mapping to the major version of the "
@@ -2132,9 +2095,9 @@ msgid ""
 msgstr ""
 "Existe um dataset (conjunto de dados) separado para as imagens finais de "
 "compilação, <filename class=\"directory\">/snap/ftp</filename>. Este "
-"diretório contém diretórios de snapshots e releases. Eles são usados "
-"​​apenas se a variável <literal>EVERYTHINGISFINE</literal> estiver definida "
-"em <filename>main.conf</filename>."
+"diretório contém diretórios de snapshots e releases. Eles são usados ​​apenas "
+"se a variável <literal>EVERYTHINGISFINE</literal> estiver definida em "
+"<filename>main.conf</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1223
@@ -2186,23 +2149,15 @@ msgstr ""
 #: article.translate.xml:1244
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/"
-"<replaceable>12</replaceable>/</literal></userinput>\n"
-"<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</"
-"replaceable>.conf</userinput>\n"
-"<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</"
-"replaceable>.conf</userinput>"
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
+"<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/<replaceable>12</replaceable>/</literal></userinput>\n"
+"<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
+"<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/"
-"<replaceable>12</replaceable>/</literal></userinput>\n"
-"<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</"
-"replaceable>.conf</userinput>\n"
-"<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</"
-"replaceable>.conf</userinput>"
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
+"<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/<replaceable>12</replaceable>/</literal></userinput>\n"
+"<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
+"<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1249
@@ -2220,17 +2175,11 @@ msgstr ""
 #: article.translate.xml:1254
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>./get-checksums.sh -c ./builds-"
-"<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; snapshot-"
-"<replaceable>12</replaceable>-mail</userinput>"
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
+"<prompt>#</prompt> <userinput>./get-checksums.sh -c ./builds-<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; snapshot-<replaceable>12</replaceable>-mail</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>./get-checksums.sh -c ./builds-"
-"<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; snapshot-"
-"<replaceable>12</replaceable>-mail</userinput>"
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
+"<prompt>#</prompt> <userinput>./get-checksums.sh -c ./builds-<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; snapshot-<replaceable>12</replaceable>-mail</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1258
@@ -2289,7 +2238,6 @@ msgid ""
 "must be changed from <literal>snap</literal> to <literal>release</literal> "
 "in <filename>defaults-<replaceable>12</replaceable>.conf</filename> and "
 "<filename>builds-<replaceable>12</replaceable>.conf</filename>, respectively."
-""
 msgstr ""
 "Além disso, <literal>BUILDTYPE</literal> e <literal>types</literal> devem "
 "ser alterados de <literal>snap</literal> para <literal>release</literal> em "
@@ -2325,8 +2273,8 @@ msgstr ""
 "<literal>HEAD</literal> pela última revisão alterada. Também defina "
 "<literal>releasesrc</literal> em <filename>builds-<replaceable>12</"
 "replaceable>.conf </filename> para a branch relevante, como <literal>stable/"
-"<replaceable>12</replaceable>/</literal> ou <literal>releng/<replaceable>12."
-"0</replaceable>/</literal>."
+"<replaceable>12</replaceable>/</literal> ou <literal>releng/"
+"<replaceable>12.0</replaceable>/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1307
@@ -2370,17 +2318,11 @@ msgstr ""
 #: article.translate.xml:1325
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</"
-"replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/"
-"<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0."
-"0</replaceable>/</literal></userinput>"
+"<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</"
-"replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/"
-"<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0."
-"0</replaceable>/</literal></userinput>"
+"<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1337
@@ -2445,27 +2387,23 @@ msgstr ""
 #. (itstool) path: listitem/screen
 #: article.translate.xml:1362
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors "
-"EVERYTHINGISFINE=1 ftp-stage</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors "
-"EVERYTHINGISFINE=1 ftp-stage</userinput>"
+msgid "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage</userinput>"
+msgstr "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage</userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1364
 msgid ""
 "After each architecture is built, <filename>thermite.sh</filename> will "
-"<application>rsync</application> the <filename class="
-"\"directory\">${DESTDIR}/R/ftp-stage</filename> from the build "
+"<application>rsync</application> the <filename class=\"directory\">"
+"${DESTDIR}/R/ftp-stage</filename> from the build "
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to <filename class=\"directory\">/snap/ftp/snapshots</"
 "filename> or <filename class=\"directory\">/snap/ftp/releases</filename> on "
 "the build host, respectively."
 msgstr ""
 "Depois que cada arquitetura é compilada, o <filename>thermite.sh</filename> "
-"irá fazer um <application>rsync</application> do <filename class="
-"\"directory\">${DESTDIR}/R/ftp-stage</filename> da compilação "
+"irá fazer um <application>rsync</application> do <filename class=\"directory"
+"\">${DESTDIR}/R/ftp-stage</filename> da compilação "
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> para o diretório <filename class=\"directory\">/snap/ftp/"
 "snapshots</filename> ou <filename class=\"directory\">/snap/ftp/releases</"
@@ -2479,9 +2417,9 @@ msgid ""
 "filename> to begin propagation to the Project mirrors"
 msgstr ""
 "Copiando os arquivos para um diretório temporário em <systemitem>ftp-master "
-"</systemitem> antes de mover os arquivos para <filename class="
-"\"directory\">pub/</filename> para iniciar a propagação para os servidores "
-"espelhos do Projeto"
+"</systemitem> antes de mover os arquivos para <filename class=\"directory"
+"\">pub/</filename> para iniciar a propagação para os servidores espelhos do "
+"Projeto"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1378
@@ -2534,7 +2472,6 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> é usado para criar "
 "links físicos a partir de <filename class=\"directory\">/archive/tmp</"
 "filename> para <filename class=\"directory\">/archive/pub/FreeBSD</filename>."
-""
 
 #. (itstool) path: note/para
 #: article.translate.xml:1406
@@ -2572,11 +2509,10 @@ msgstr ""
 msgid ""
 "As with the staging steps, this requires <literal>root</literal> level "
 "access, as this step must be executed as the <literal>archive</literal> user."
-""
 msgstr ""
 "Assim como nas etapas de preparação, isto requer acesso em nível de "
-"<literal>root</literal>, já que essa etapa deve ser executada como o usuário "
-" <literal>archive</literal>."
+"<literal>root</literal>, já que essa etapa deve ser executada como o "
+"usuário  <literal>archive</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1422
@@ -2587,21 +2523,13 @@ msgstr "Como o usuário <literal>archive</literal>:"
 #: article.translate.xml:1424
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</"
-"replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/"
-"<replaceable>snapshots</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/"
-"<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/"
-"<replaceable>snapshots</replaceable>/</userinput>"
+"<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/<replaceable>snapshots</replaceable>/</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</"
-"replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/"
-"<replaceable>snapshots</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/"
-"<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/"
-"<replaceable>snapshots</replaceable>/</userinput>"
+"<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/<replaceable>snapshots</replaceable>/</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1428
