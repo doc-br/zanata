@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-17 17:19-0300\n"
+"POT-Creation-Date: 2019-03-17 16:32-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2018-12-12 12:56+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -29,8 +29,8 @@ msgid ""
 "FreeBSD Quickstart Guide for <trademark class=\"registered\">Linux</"
 "trademark> Users"
 msgstr ""
-"Guia rápido de FreeBSD para usuários de <trademark class=\"registered"
-"\">Linux</trademark>"
+"Guia rápido de FreeBSD para usuários de <trademark class="
+"\"registered\">Linux</trademark>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:7
@@ -205,14 +205,14 @@ msgstr ""
 msgid ""
 "After installing another shell, use <citerefentry><refentrytitle>chsh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to change a user's "
-"default shell. It is recommended that the <systemitem class=\"username"
-"\">root</systemitem> user's default shell remain unchanged since shells "
-"which are not included in the base distribution are installed to <filename>/"
-"usr/local/bin</filename>. In the event of a problem, the file system where "
-"<filename>/usr/local/bin</filename> is located may not be mounted. In this "
-"case, <systemitem class=\"username\">root</systemitem> would not have access "
-"to its default shell, preventing <systemitem class=\"username\">root</"
-"systemitem> from logging in and fixing the problem."
+"default shell. It is recommended that the <systemitem class="
+"\"username\">root</systemitem> user's default shell remain unchanged since "
+"shells which are not included in the base distribution are installed to "
+"<filename>/usr/local/bin</filename>. In the event of a problem, the file "
+"system where <filename>/usr/local/bin</filename> is located may not be "
+"mounted. In this case, <systemitem class=\"username\">root</systemitem> "
+"would not have access to its default shell, preventing <systemitem class="
+"\"username\">root</systemitem> from logging in and fixing the problem."
 msgstr ""
 "Depois de instalar um novo shell, use o comando "
 "<citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></"
@@ -223,8 +223,8 @@ msgstr ""
 "ocorrer algum problema com o sistema de arquivos onde o diretório <filename>/"
 "usr/local/bin</filename> está localizado e este não puder ser utilizado, o "
 "usuário <systemitem class=\"username\">root</systemitem> poderá não ter "
-"acesso ao shell padrão, evitando que o usuário <systemitem class=\"username"
-"\">root</systemitem> entre no sistema para corrigir o problema."
+"acesso ao shell padrão, evitando que o usuário <systemitem class="
+"\"username\">root</systemitem> entre no sistema para corrigir o problema."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:93
@@ -331,8 +331,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:150
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</replaceable></userinput>"
-msgstr "<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</replaceable></userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</"
+"replaceable></userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:152
@@ -340,11 +344,11 @@ msgid ""
 "For more information on packages refer to section 5.4 of the FreeBSD "
 "Handbook: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/pkgng-intro.html\">Using pkgng for Binary Package Management</link>."
+""
 msgstr ""
-"Para mais informações sobre pacotes, veja a seção 5.4 do Handbook do "
-"FreeBSD: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
-"handbook/pkgng-intro.html\">Usando pkgng para gerenciar pacotes binários</"
-"link>."
+"Para mais informações sobre pacotes, veja a seção 5.4 do Handbook do FreeBSD:"
+" <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"pkgng-intro.html\">Usando pkgng para gerenciar pacotes binários</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:160
@@ -419,10 +423,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/apache24</userinput>\n"
-"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</userinput>"
+"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</"
+"userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/apache24</userinput>\n"
-"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</userinput>"
+"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:189
@@ -504,14 +510,14 @@ msgstr ""
 #: article.translate.xml:221
 msgid ""
 "Since FreeBSD is developed as a complete operating system, user-installed "
-"applications are not considered to be part of the <quote>base</quote> "
-"system. User-installed applications are generally installed using <link "
-"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-"
-"using.html\">Packages or Ports</link>. In order to keep them separate from "
-"the base system, user-installed applications are installed under <filename>/"
-"usr/local/</filename>. Therefore, user-installed binaries reside in "
-"<filename>/usr/local/bin/</filename>, configuration files are in <filename>/"
-"usr/local/etc/</filename>, and so on."
+"applications are not considered to be part of the <quote>base</quote> system."
+" User-installed applications are generally installed using <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using."
+"html\">Packages or Ports</link>. In order to keep them separate from the "
+"base system, user-installed applications are installed under <filename>/usr/"
+"local/</filename>. Therefore, user-installed binaries reside in <filename>/"
+"usr/local/bin/</filename>, configuration files are in <filename>/usr/local/"
+"etc/</filename>, and so on."
 msgstr ""
 "Uma vez que o FreeBSD é desenvolvido como um sistema completo, aplicações "
 "instaladas pelos usuários não são consideradas parte do sistema <quote>base</"
@@ -591,11 +597,15 @@ msgstr ""
 #: article.translate.xml:258
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</userinput>\n"
-"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> start</userinput>"
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> "
+"start</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</userinput>\n"
-"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> start</userinput>"
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> "
+"start</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:261
@@ -609,8 +619,12 @@ msgstr ""
 #. (itstool) path: sect1/screen
 #: article.translate.xml:264
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> onestart</userinput>"
-msgstr "<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> onestart</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> "
+"onestart</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> "
+"onestart</userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:268
@@ -685,6 +699,7 @@ msgstr ""
 "acronym> deve ser incluído no arquivo <filename>/etc/rc.conf</filename>. A "
 "seguinte entrada no arquivo <filename>/etc/rc.conf</filename> especifica o "
 "nome da máquina, o endereço <acronym>IP</acronym> e o gateway padrão da rede:"
+""
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:298
@@ -710,11 +725,9 @@ msgstr ""
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:305
 #, no-wrap
-msgid ""
-"hostname=\"server1.example.com\"\n"
+msgid "hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"DHCP\""
-msgstr ""
-"hostname=\"server1.example.com\"\n"
+msgstr "hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"DHCP\""
 
 #. (itstool) path: sect1/title
@@ -1172,8 +1185,8 @@ msgstr "Conclusão"
 #: article.translate.xml:505
 msgid ""
 "This document has provided an overview of FreeBSD. Refer to the <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html"
-"\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index."
+"html\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
 "well as the many topics not covered by this document."
 msgstr ""
 "Este documento forneceu uma visão geral do FreeBSD. Veja o <link xlink:href="
