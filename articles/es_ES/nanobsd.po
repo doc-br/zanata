@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-13 04:27+0000\n"
+"PO-Revision-Date: 2019-03-18 03:18+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -62,7 +62,7 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:26 article.translate.xml:28
 msgid "$FreeBSD$"
-msgstr ""
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:31
@@ -665,6 +665,14 @@ msgid ""
 ")\n"
 "customize_cmd install_packages"
 msgstr ""
+"install_packages () (\n"
+"mkdir -p ${NANO_WORLDDIR}/packages\n"
+"cp /usr/src/tools/tools/nanobsd/packages/* ${NANO_WORLDDIR}/packages\n"
+"cp $(which pkg-static) ${NANO_WORLDDIR}/\n"
+"chroot ${NANO_WORLDDIR} sh -c 'cd packages; /pkg-static add *;cd ..;'\n"
+"rm -rf ${NANO_WORLDDIR}/packages ${NANO_WORLDDIR}/pkg-static\n"
+")\n"
+"customize_cmd install_packages"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:360
