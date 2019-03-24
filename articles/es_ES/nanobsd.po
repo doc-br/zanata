@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-18 03:18+0000\n"
+"PO-Revision-Date: 2019-03-24 08:35+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -16,7 +16,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Federico Caminiti demian.fc@gmail.com, 2015"
+msgstr ""
+"Federico Caminiti demian.fc@gmail.com, 2015\n"
+"Sergio Carlavilla carlavilla@mailbox.org, 2019"
 
 #. (itstool) path: info/title
 #. (itstool) path: sect1/title
@@ -126,7 +128,7 @@ msgid ""
 "installed and used in a <application>NanoBSD</application> image, the same "
 "way as in FreeBSD."
 msgstr ""
-"Los ports y packages funcionan de la misma manera que en FreeBSD — Cada "
+"Los ports y paquetes funcionan de la misma manera que en FreeBSD — Cada "
 "aplicación puede ser instalada y usada en una imagen de "
 "<application>NanoBSD</application>, de la misma manera que en FreeBSD."
 
@@ -154,7 +156,7 @@ msgstr ""
 "Todo es de solo lectura en tiempo de ejecución — Es seguro desconectar el "
 "cable del enchufe. No hay necesidad de ejecutar "
 "<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> después de que el sistema se apague de manera brusca."
+"citerefentry> después de que el sistema se apague de una forma brusca."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:85
@@ -186,7 +188,7 @@ msgid ""
 msgstr ""
 "Una vez que la imagen se encuentra presente en el medio es posible arrancar "
 "<application>NanoBSD</application>. El medio de almacenamiento masivo está "
-"dividido en tres partes por defecto:"
+"dividido por defecto en tres partes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:105
@@ -407,7 +409,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
 msgid "Customization is done in two ways:"
-msgstr "La personalización puede hacerse de dos maneras:"
+msgstr "La personalización puede realizarse de dos formas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:217
@@ -449,13 +451,13 @@ msgid ""
 "and two or three files in the userland."
 msgstr ""
 "Con las preferencias de configuración, es posible configurar las opciones "
-"pasadas a las etapas <_:buildtarget-1/> y <_:buildtarget-2/> del proceso de "
+"pasadas a las etapas <_:buildtarget-1/> e <_:buildtarget-2/> del proceso de "
 "compilación de <application>NanoBSD</application>, así como también opciones "
 "internas pasadas al proceso de compilación principal de "
 "<application>NanoBSD</application>. A través de estas opciones es posible "
-"reducir el sistema, para que pueda caber en un espacio tan pequeño como 64MB."
-" Pude utilizar estas opciones de configuración para reducir el tamaño de "
-"FreeBSD aun más, hasta que consista únicamente del kernel y dos o tres "
+"reducir el sistema, para que pueda entrar en un espacio tan pequeño como "
+"64MB. Puede utilizar estas opciones de configuración para reducir el tamaño "
+"de FreeBSD aun más, hasta que consista únicamente en el kernel y dos o tres "
 "archivos en espacio de usuario."
 
 #. (itstool) path: sect3/para
@@ -482,7 +484,7 @@ msgid ""
 "<literal>NANO_SRC</literal> — Path to the source tree used to build the "
 "image."
 msgstr ""
-"<literal>NANO_SRC</literal>. Ruta al archivo fuente utilizada para compilar "
+"<literal>NANO_SRC</literal> — Ruta al archivo fuente utilizada para compilar "
 "la imagen."
 
 #. (itstool) path: listitem/para
@@ -519,7 +521,7 @@ msgid ""
 "> and the <_:buildtarget-2/> stage of the build."
 msgstr ""
 "<literal>CONF_WORLD</literal> — Opciones pasadas a las etapas <_:buildtarget-"
-"1/> y <_:buildtarget-2/>  del proceso de compilación."
+"1/> e <_:buildtarget-2/>  del proceso de compilación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:280
@@ -608,7 +610,7 @@ msgstr ""
 "<literal>cust_comconsole</literal> — Deshabilita "
 "<citerefentry><refentrytitle>getty</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> en los dispositivos VGA (los nodos de dispositivo <filename>/"
-"dev/ttyv*</filename>) y habilita el uso del puerto en serie COM1 como la "
+"dev/ttyv*</filename>) y habilita el uso del puerto serie COM1 como la "
 "consola del sistema."
 
 #. (itstool) path: listitem/para
@@ -638,7 +640,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:341
 msgid "Adding Packages"
-msgstr "Agregando Packages"
+msgstr "Agregando paquetes"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:343
@@ -647,7 +649,7 @@ msgid ""
 "custom function. The following function will install all the packages "
 "located in <filename>/usr/src/tools/tools/nanobsd/packages</filename>:"
 msgstr ""
-"Pueden agregarse packages a la imagen de <application>NanoBSD</application> "
+"Pueden agregarse paquetes a la imagen de <application>NanoBSD</application> "
 "utilizando una funcion personalizada. La siguiente función instalará todos "
 "los paquetes situdados en <filename>/usr/src/tools/tools/nanobsd/packages</"
 "filename>:"
@@ -677,7 +679,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:360
 msgid "Configuration File Example"
-msgstr "Ejemplo de archivo de Configuración"
+msgstr "Ejemplo de archivo de configuración"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:362
@@ -842,8 +844,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: article.translate.xml:445
 msgid "Reboot, and start the system from the newly installed partition."
-msgstr ""
-"Reinicie y arranque el sistema desde la partición recientemente instalada."
+msgstr "Reinicie y arranque el sistema desde la partición recién instalada."
 
 #. (itstool) path: step/para
 #: article.translate.xml:450
@@ -874,7 +875,7 @@ msgstr ""
 "Para instalar la nueva imagen en el sistema <application>NanoBSD</"
 "application> actual, es posible usar los scripts <filename>updatep1</"
 "filename> o <filename>updatep2</filename> que se encuentran en el directorio "
-"<filename>/root</filename>, dependiendo de la partición desde la que esté "
+"<filename>/root</filename>, dependiendo de la partición desde la que este "
 "ejecutando el sistema actual."
 
 #. (itstool) path: sect2/para
@@ -985,7 +986,7 @@ msgid ""
 "Make sure that the used port is not blocked to receive incoming connections "
 "from <application>NanoBSD</application> host by firewall."
 msgstr ""
-"Asegúrese de que el puerto usado no esté bloqueado para recibir conexiones "
+"Asegúrese de que el puerto usado no este bloqueado para recibir conexiones "
 "entrantes del huésped <application>NanoBSD</application> por el firewall."
 
 #. (itstool) path: step/para
