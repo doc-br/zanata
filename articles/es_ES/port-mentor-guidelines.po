@@ -6,8 +6,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-26 10:06+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
+"PO-Revision-Date: 2019-04-04 09:52+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -93,18 +93,18 @@ msgid ""
 "The usual punishment applies because you are sick and tired of committing "
 "somebody else's good work!"
 msgstr ""
-"¡Es un castigo habitual, y está cansado de hacer los commits del buen "
-"trabajo de otra persona!"
+"¡Es un castigo habitual y está cansado de hacer los commits del buen trabajo "
+"de otra persona!"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:60
 msgid "Mentor/Co-Mentor"
-msgstr "Mentor/Co-Mentor"
+msgstr "Mentor/Comentor"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:62
 msgid "Reasons for a co-mentorship:"
-msgstr "Razones para una co-orientación:"
+msgstr "Razones para una coorientación:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:66
@@ -169,7 +169,7 @@ msgstr "Prefiere tener una relación de uno a uno."
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
 msgid "The reasons for co-mentorship do not apply to you."
-msgstr "Los razones para la co-tutoría no le interesan."
+msgstr "Los razones para la cotutoría no le interesan."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:114 article.translate.xml:222
@@ -212,13 +212,13 @@ msgid ""
 msgstr ""
 "Esperamos que los mentores se aseguren de que sus aprendices lean el <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-"
-"handbook\">Porter's Handbook</link>, el <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/articles/pr-guidelines\">PR handling guide</link>, y la "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-"
-"guide\">Guía del Committer</link>. Si bien no es necesario memorizar todos "
-"los detalles, cada persona debe tener una visión general de estas cosas para "
-"ser una parte efectiva de la comunidad (y evitar tantos errores de novato "
-"como sea posible)."
+"handbook\">Manual del Porter</link>, la<link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/articles/pr-guidelines\">Guía para el manejo de informes "
+"de problemas</link>, y la <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/articles/committers-guide\">Guía del Committer</link>. Si bien no "
+"es necesario memorizar todos los detalles, cada persona debe tener una "
+"visión general de estas cosas para ser parte efectiva de la comunidad (y "
+"evitar tantos errores de novato como sea posible)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:135
@@ -260,12 +260,12 @@ msgid ""
 "maintainer submit a few PRs, show up in IRC and ask when they will be given "
 "a commit bit."
 msgstr ""
-"Debe haber un historial de compromiso, ya que se entiende ampliamente que la "
-"capacitación de un committer requiere tiempo y esfuerzo. Si alguien ha "
-"estado más tiempo, y ha observado cómo se hacen las cosas, hay cierto "
+"Debe haber un historial de compromiso, ya que es ampliamente entendido que "
+"la capacitación de un committer requiere tiempo y esfuerzo. Si alguien ha "
+"estado más tiempo, y ha observado cómo se hacen las cosas, hay un cierto "
 "conocimiento acumulado previamente. Con demasiada frecuencia, hemos visto a "
 "un maintaner enviar algunos PRs, aparecer en el IRC y preguntar cuándo "
-"recibirán un commit bit."
+"recibirán derechos de commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:158
@@ -276,8 +276,8 @@ msgid ""
 "insights into the knowledge of a candidate as well how they interact with "
 "others. Similarly participating in IRC can give somebody a higher profile."
 msgstr ""
-"Estar suscrito y seguir las listas de correo es muy beneficioso. No hay "
-"ninguna esperanza de que el envío de publicaciones a las listas convierta a "
+"Estar suscrito y seguir las listas de correo es muy beneficioso. No hay una "
+"expectativa real de que el envío de publicaciones a las listas convierta a "
 "alguien en un committer, pero demuestra compromiso. Algunos correos "
 "electrónicos ofrecen información sobre el conocimiento de un candidato y "
 "también cómo interactúan con otras personas. Del mismo modo, participar en "
@@ -321,11 +321,10 @@ msgstr ""
 "recibir derechos de commit <quote>implícitos</quote>. Esto puede incluir "
 "cambios triviales en un <filename>Makefile</filename>, <filename>pkg-descr</"
 "filename>, etc. De manera similar, puede incluir actualizaciones de "
-"<varname>PORTVERSION</varname> que no incluyen cambios de <varname>plist</"
-"varname>. Otras circunstancias pueden ser formuladas a criterio del Mentor. "
-"Sin embargo, durante el período de orientación, un aumento de versión en un "
-"port que afecte a otros ports que dependan de él debe ser verificado por un "
-"mentor."
+"<varname>PORTVERSION</varname> que no incluyan cambios de <varname>plist</"
+"varname>. Otras circunstancias pueden ser formuladas a criterio del mentor. "
+"Sin embargo, durante el período de orientación, un mentor debe verificar un "
+"aumento en la versión de un port que afecte a los ports que dependan de él."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:189
@@ -339,20 +338,20 @@ msgid ""
 "made, QATs received etc. If they are still making rookie mistakes, they "
 "still require mentor guidance."
 msgstr ""
-"Así como todos somos individuos diferentes, cada mente tiene una curva de "
-"aprendizaje diferente, el tiempo de dedicación al proyecto y otros factores "
-"de influencia que contribuirán al tiempo requerido antes de que puedan "
-"<quote>volar en solitario</quote>. Empíricamente, un aprendiz debe ser "
-"observado por al menos 3 meses. 90-100 commits es otro objetivo que un "
-"mentor podría usar antes de finalizar con un aprendiz. Otros factores a "
-"considerar antes de finalizar con un aprendiz son el número de errores que "
-"pueden haber cometido, QATs recibidos, etc. Si aún están cometiendo errores "
-"de novato, aún requieren la guía de un mentor."
+"Cada persona es diferente, cada aprendiz tiene una curva de aprendizaje "
+"diferente, el tiempo de dedicación y otros factores influyen en el tiempo "
+"requerido antes de que puedan <quote>volar en solitario</quote>. "
+"Empíricamente, un aprendiz debe ser observado por al menos 3 meses. 90-100 "
+"commits es otro objetivo que un mentor podría usar antes de finalizar con un "
+"aprendiz. Otros factores a considerar antes de finalizar con un aprendiz son "
+"el número de errores que pueden haber cometido, QATs recibidos, etc. Si "
+"todavía están cometiendo errores de novato, todavía requieren la guía de un "
+"mentor."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:202
 msgid "Mentor/Co-Mentor Debate"
-msgstr "Debate Mentor/Co-Mentor"
+msgstr "Debate Mentor/Comentor"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:204
@@ -361,9 +360,9 @@ msgid ""
 "for a ports commit bit, I will co-mentor with 'bar'</quote>. Proposal "
 "received, voted, and carried."
 msgstr ""
-"Cuando una solicitud llega a portmgr, generalmente viene como, <quote>yo "
-"propongo 'foo' para un port commit bit, yo seré el co-mentor con 'bar'</"
-"quote>. Propuesta recibida, votada y ejecutada."
+"Cuando una solicitud llega a Portmgr, generalmente viene como, <quote>yo "
+"propongo a 'foo' para que obtenga derechos de commit en los ports, yo seré "
+"el comentor con 'bar'</quote>. Propuesta recibida, votada y ejecutada."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:209
@@ -372,7 +371,7 @@ msgid ""
 "quote>, the co-mentor is the backup."
 msgstr ""
 "El mentor es el principal punto de contacto o el <quote>primero entre los "
-"iguales</quote>, el co-mentor es el respaldo."
+"iguales</quote>, el comentor es el respaldo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
@@ -385,8 +384,8 @@ msgid ""
 msgstr ""
 "Algunas personas, cuyo nombre será omitido, hicieron el <link xlink:href="
 "\"https://lists.freebsd.org/pipermail/cvs-ports/2007-September/134614."
-"html\">primer commit aprobado por un co-mentor registrado</link>. Commits "
-"similares aprobados por un co-mentor fueron vistos en el árbol src. ¿Es "
+"html\">primer commit aprobado por un comentor registrado</link>. Commits "
+"similares, aprobados por un comentor fueron vistos en el árbol src. ¿Es "
 "correcto? ¿Es incorrecto? Parece parte de la evolución de cómo se hacen las "
 "cosas."
 
@@ -400,10 +399,10 @@ msgid ""
 "mailing lists."
 msgstr ""
 "Esperamos que los aprendices estén preparados para las críticas "
-"constructivas de la comunidad. Todavía hay un montón de <quote>sabiduría "
-"popular</quote> que no está escrita. Responder bien a una critica "
-"constructiva es lo que esperamos al analizar sus contribuciones existentes "
-"en el IRC y en las listas de correo."
+"constructivas de la comunidad. Todavía hay mucha <quote>sabiduría popular</"
+"quote> que no está escrita. Responder bien a una critica constructiva es lo "
+"que esperamos al analizar sus contribuciones existentes en el IRC y en las "
+"listas de correo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:231
