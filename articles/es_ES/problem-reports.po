@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-25 04:06+0000\n"
+"PO-Revision-Date: 2019-04-07 09:14+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -252,6 +252,12 @@ msgid ""
 "becomes available. Actual patches to update a port to the latest version are "
 "welcome."
 msgstr ""
+"Por favor, no envíe informes de problemas que simplemente indiquen la "
+"disponibilidad de una nueva versión de una aplicación. Los maintainers de "
+"ports son notificados automáticamente por <application>portscout</"
+"application> cuando una nueva versión de una aplicación este disponible. "
+"Parches actuales para actualizar un port a la última versión son bienvenidos."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:130
@@ -262,6 +268,11 @@ msgid ""
 "unmaintained port, submit a PR with the request (patch preferred but not "
 "required)."
 msgstr ""
+"Para los puertos que no están mantenidos (el <varname>MAINTAINER</varname> "
+"es <literal>ports@FreeBSD.org</literal>), es poco probable que un PR sin un "
+"parche adjunto sea cogido por un committer. Para convertirse en el "
+"maintainer de un port que no este mantenido, envíe un PR con la petición "
+"(sería ideal si viene con un parche adjunto, pero no es requerido)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:139
@@ -273,6 +284,12 @@ msgid ""
 "ISO8859-1/articles/contributing/ports-contributing.html\">Contributing to "
 "the FreeBSD Ports Collection</link>.)"
 msgstr ""
+"En cualquier caso, seguir el proceso descrito en el <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/porters-handbook/port-"
+"upgrading.html\">Manual del Porter</link> dará los mejores resultados. (Es "
+"posible que también desee leer <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"es_ES.ISO8859-1/articles/contributing/ports-contributing.html\">Cómo "
+"contribuir a la colección de ports de FreeBSD</link>)."
 
 #. (itstool) path: section/para
 #: article.translate.xml:146
@@ -286,6 +303,15 @@ msgid ""
 "caused by failing hard drives or overheating processors — you should always "
 "try to rule out these causes, whenever possible, before submitting a PR."
 msgstr ""
+"Un error que no se puede reproducir rara vez se podrá arreglar. Si el error "
+"solo ocurrió una vez y no puede reproducirlo, y no parece que le ocurra a "
+"nadie más, es probable que ninguno de los desarrolladores pueda reproducirlo "
+"o descubrir qué es lo que está mal. Eso no significa que no haya ocurrido, "
+"significa que las posibilidades de que su informe de problemas lleve a la "
+"corrección del error son muy escasas. Para empeorar las cosas, a menudo, "
+"este tipo de errores son en realidad causados por fallos en los discos duros "
+"o procesadores con sobrecalentamiento — siempre debe intentar descartar "
+"estas causas, siempre que sea posible, antes de enviar un PR."
 
 #. (itstool) path: section/para
 #: article.translate.xml:157
@@ -294,6 +320,9 @@ msgid ""
 "understand that the software that makes up FreeBSD is composed of several "
 "different elements:"
 msgstr ""
+"A continuación, para decidir a quién debe presentar su informe de problemas, "
+"debe comprender que el software que compone FreeBSD está compuesto de varios "
+"elementos diferentes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:163
@@ -305,6 +334,13 @@ msgid ""
 "literal>); and the web pages (<literal>www</literal>). All bugs in these "
 "areas should be reported to the FreeBSD developers."
 msgstr ""
+"El código en el sistema base que escriben y mantienen los colaboradores de "
+"FreeBSD, como el kernel, la biblioteca de C y los controladores de "
+"dispositivos (categorizados como <literal>kern</literal>); las utilidades "
+"binarias (<literal>bin</literal>); las páginas del manual y documentación "
+"(<literal>docs</literal>); y las páginas web (<literal>www</literal>). Todos "
+"los errores en estas áreas deben informarse a los desarrolladores de FreeBSD."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:173
@@ -318,6 +354,14 @@ msgid ""
 "may need to be reported to the original authors instead if the problems are "
 "not FreeBSD-specific."
 msgstr ""
+"El código en el sistema base escrito y mantenido por otros, e importado y "
+"adaptado a FreeBSD. Los ejemplos incluyen "
+"<citerefentry><refentrytitle>clang</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>sendmail</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. La mayoría de los "
+"errores en estas áreas deben informarse a los desarrolladores de FreeBSD; "
+"pero en algunos casos es posible que deban informarse a los autores "
+"originales si los problemas no son específicos de FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:183
@@ -329,6 +373,14 @@ msgid ""
 "only report a problem to the FreeBSD developers when the problem is believed "
 "to be FreeBSD-specific; otherwise, report it to the authors of the software."
 msgstr ""
+"Las aplicaciones individuales que no están en el sistema base, sino que "
+"forman parte de la colección de ports de FreeBSD (categoría <literal>ports</"
+"literal>). La mayoría de estas aplicaciones no están escritas por los "
+"desarrolladores de FreeBSD; lo que proporciona FreeBSD es simplemente un "
+"framework para instalar la aplicación. Por lo tanto, solo informe de un "
+"problema a los desarrolladores de FreeBSD cuando crea que el problema es "
+"específico de FreeBSD; de lo contrario, repórtelo a los autores del software."
+""
 
 #. (itstool) path: section/para
 #: article.translate.xml:194
@@ -337,6 +389,9 @@ msgid ""
 "will annoy a developer more than receiving a problem report about a bug she "
 "has already fixed."
 msgstr ""
+"Después, averigüe si el problema es oportuno. Existen pocas cosas que "
+"molesten más a un desarrollador que recibir un informe de problemas sobre un "
+"error que ya ha solucionado."
 
 #. (itstool) path: section/para
 #: article.translate.xml:198
@@ -351,6 +406,16 @@ msgid ""
 "recurs. The Security Officer team maintains the <link xlink:href="
 "\"@@URL_RELPREFIX@@/security/\">list of supported versions</link>."
 msgstr ""
+"Si el problema está en el sistema base, primero lea la sección de preguntas "
+"frecuentes sobre las <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
+"1/books/faq/introduction.html#LATEST-VERSION\">versiones de FreeBSD</link>, "
+"si aún no está familiarizado con el tema. FreeBSD no puede solucionar "
+"problemas en otras ramas que no sean las más recientes del sistema base, por "
+"lo que presenatr un informe de error sobre una versión anterior "
+"probablemente hará que un desarrollador le aconseje que use actualice a una "
+"versión soportada para comprobar si el problema todavía sucede. El equipo "
+"Security Officer mantiene <link xlink:href=\"@@URL_RELPREFIX@@/security/"
+"\">la lista de versiones soportadas</link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:210
@@ -358,6 +423,8 @@ msgid ""
 "If the problem is in a port, consider filing a bug with the upstream. The "
 "FreeBSD Project can not fix all bugs in all software."
 msgstr ""
+"Si el problema está en un port, considere enviar el error al upstream. El "
+"proyecto FreeBSD no puede corregir todos los errores en todo el software."
 
 #. (itstool) path: section/title
 #: article.translate.xml:216
@@ -374,6 +441,13 @@ msgid ""
 "check all the obvious places before submitting your problem report. For "
 "FreeBSD, this means:"
 msgstr ""
+"Una buena regla que se puede seguir consiste en realizar siempre una "
+"búsqueda antes de enviar un informe de problemas. Quizá nuestro problema ya "
+"ha sido reportado; quizá se está discutiendo en las listas de correo o fue "
+"discutido hace poco; incluso puede que ya esté arreglado en una versión más "
+"nueva que la que está ejecutando. Por lo tanto, se deben consultar los "
+"sitios y fuentes más obvias antes de proceder con el envío del informe de "
+"errores. En FreeBSD, esto significa:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:228
@@ -387,6 +461,15 @@ msgid ""
 "applications</link>, and <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
 "ISO8859-1/books/faq/kernelconfig.html\">kernel configuration</link>."
 msgstr ""
+"La lista de <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"faq/index.html\">preguntas más frecuentes</link> (FAQ) de FreeBSD. Las "
+"preguntas frecuentes intentan proporcionar respuestas a una amplia gama de "
+"preguntas, como las relacionadas con la <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/es_ES.ISO8859-1/books/faq/hardware.html\">compatibilidad del hardware</"
+"link>, las <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"faq/applications.html\">aplicaciones de usuario</link> y la <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/faq/kernelconfig."
+"html\">configuración del kernel</link>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:241
@@ -399,6 +482,14 @@ msgid ""
 "message about it and waiting a few days to see if someone can spot something "
 "that has been overlooked."
 msgstr ""
+"Las <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/"
+"eresources.html#ERESOURCES-MAIL\">listas de correo</link> — si no está "
+"suscrito, utilice la <link xlink:href=\"https://www.FreeBSD.org/search/"
+"search.html#mailinglists\">búsqueda en los archivos</link> del sitio web de "
+"FreeBSD. Si el problema no se ha discutido con anterioridad en las listas, "
+"se puede intentar enviar un mensaje y esperar unos pocos días para ver si "
+"alguien puede aconsejarle adecuadamente sobre algún punto que quizá haya "
+"pasado por alto en relación con el problema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:250
@@ -407,6 +498,10 @@ msgid ""
 "references to the problem. You may even get hits from archived mailing lists "
 "or newsgroups you did not know of or had not thought to search through."
 msgstr ""
+"Opcionalmente, toda la web: utilice su motor de búsqueda favorito para "
+"localizar cualquier referencia al problema. Incluso puede obtener visitas de "
+"listas de correo archivadas o grupos de noticias que no conocía o en los que "
+"no había pensado buscar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:258
@@ -415,6 +510,10 @@ msgid ""
 "query.cgi\">FreeBSD PR database</link> (Bugzilla). Unless the problem is "
 "recent or obscure, there is a fair chance it has already been reported."
 msgstr ""
+"A continuación, la búsqueda a través de la <link xlink:href=\"https://bugs."
+"freebsd.org/bugzilla/query.cgi\">base de datos de PR de FreeBSD</link> "
+"(Bugzilla). A menos que el problema sea muy reciente o rebuscado, existe un "
+"gran número de posibilidades de que ya haya sido informado o reportado."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:265
@@ -422,6 +521,8 @@ msgid ""
 "Most importantly, attempt to see if existing documentation in the source "
 "base addresses your problem."
 msgstr ""
+"Lo más importante, se debería intentar comprobar si la documentación "
+"existente en el código fuente del programa puede resolver el problema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:269
@@ -433,6 +534,13 @@ msgid ""
 "vital information if you are upgrading from one version to "
 "another—especially if you are upgrading to the FreeBSD-CURRENT branch)."
 msgstr ""
+"Para el código base de FreeBSD, debe estudiar cuidadosamente el conteido del "
+"fichero <filename>/usr/src/UPDATING</filename> del sistema o la versión más "
+"reciente en <uri xlink:href=\"https://svnweb.freebsd.org/base/head/"
+"UPDATING?view=log\">https://svnweb.freebsd.org/base/head/UPDATING?view=log</"
+"uri>. (Esta información se considera de vital importancia si se está "
+"actualizando de una versión a otra — especialmente si está actualizando a la "
+"rama de FreeBSD-CURRENT)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:276
@@ -446,11 +554,20 @@ msgid ""
 "svnweb.freebsd.org/ports/head/CHANGES?view=log\">https://svnweb.freebsd.org/"
 "ports/head/CHANGES?view=log</uri> are also available via svnweb."
 msgstr ""
+"No obstante, si el problema se encuentra en algo que se instaló como parte "
+"de la colección de ports de FreeBSD, se debe consultar el archivo <filename>/"
+"usr/ports/UPDATING</filename> (para ports individuales) o el archivo "
+"<filename>/usr/ports/CHANGES</filename> (para cambios que afectan a la "
+"colección de ports completa). <uri xlink:href=\"https://svnweb.freebsd.org/"
+"ports/head/UPDATING?view=log\">https://svnweb.freebsd.org/port/head/"
+"UPDATING?view=log</uri> y <uri xlink:href=\"https://svnweb.freebsd.org/ports/"
+"head/CHANGES?view=log\">https://svnweb.freebsd.org/ports/head/CHANGES?view="
+"log</uri> también están disponibles a través de svnweb."
 
 #. (itstool) path: section/title
 #: article.translate.xml:288
 msgid "Writing the Problem Report"
-msgstr ""
+msgstr "Escribiendo el informe de problemas"
 
 #. (itstool) path: section/para
 #: article.translate.xml:290
@@ -461,11 +578,16 @@ msgid ""
 "PRs, here are some tips and tricks to help make sure that your PR will be "
 "most effective."
 msgstr ""
+"Ahora que ha decidido que su problema merece un informe de problemas y que "
+"es un problema de FreeBSD, es el momento de escribir el informe de problemas "
+"propiamente dicho. Antes de pasar a describir los mecanismos utilizados por "
+"el programa encargado de generar y enviar los informes PR, aquí hay algunos "
+"consejos y trucos para ayudarlo a asegurarse de que su PR sea más efectivo."
 
 #. (itstool) path: section/title
 #: article.translate.xml:298
 msgid "Tips and Tricks for Writing a Good Problem Report"
-msgstr ""
+msgstr "Consejos y trucos para escribir un buen informe de problemas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:302
