@@ -3,7 +3,7 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-17 08:42+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2019-04-09 02:17+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -39,7 +39,6 @@ msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:14
-#, fuzzy
 msgid ""
 "<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
 "<year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> "
@@ -53,7 +52,7 @@ msgstr ""
 "<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
 "<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
 "<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
-"<holder>Projeto de Documentação do FreeBSD</holder>"
+"<year>2019</year> <holder>Projeto de Documentação do FreeBSD</holder>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:40
@@ -122,9 +121,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:66 article.translate.xml:68
-#, fuzzy
 msgid "$FreeBSD$"
-msgstr "FreeBSD Mall"
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:71
@@ -194,20 +192,17 @@ msgstr "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:108
-#, fuzzy
 msgid "<emphasis>SMTP Host</emphasis>"
-msgstr "<emphasis>Servidor Principal de Shell</emphasis>"
+msgstr "<emphasis>Servidor SMTP</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:109
-#, fuzzy
 msgid ""
 "<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</systemitem>:"
 "587</literal> (see also <xref linkend=\"smtp-setup\"/>)."
 msgstr ""
-"<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/doc</filename> (veja também <xref linkend=\"svn-"
-"getting-started-doc-layout\"/>)."
+"<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</systemitem>:"
+"587</literal> (veja também <xref linkend=\"smtp-setup\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:114
@@ -4495,6 +4490,9 @@ msgid ""
 "<systemitem class=\"fqdomainname\">mx2.FreeBSD.org</systemitem> from SPF "
 "checks."
 msgstr ""
+"Se o seu sistema de e-mail usa SPF com regras estritas, você deve colocar o "
+"host <systemitem class=\"fqdomainname\">mx2.FreeBSD.org</systemitem> na "
+"whitelist de verificações do SPF."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2232
@@ -4532,7 +4530,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:2253
 msgid "SMTP Access Setup"
-msgstr ""
+msgstr "Configuração de acesso SMTP"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2255
@@ -4540,29 +4538,31 @@ msgid ""
 "For those willing to send e-mail messages through the FreeBSD.org "
 "infrastructure, follow the instructions below:"
 msgstr ""
+"Para aqueles dispostos a enviar mensagens de e-mail através da "
+"infraestrutura do FreeBSD.org, siga as instruções abaixo:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:2261
-#, fuzzy
 msgid ""
 "Point your mail client at <literal><systemitem class=\"fqdomainname\">smtp."
 "FreeBSD.org</systemitem>:587</literal>."
-msgstr "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
+msgstr ""
+"Aponte seu cliente de e-mail para <literal><systemitem class="
+"\"fqdomainname\">smtp.FreeBSD.org</systemitem>:587</literal>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2265
 msgid "Enable STARTTLS."
-msgstr ""
+msgstr "Habilite o STARTTLS."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2269
-#, fuzzy
 msgid ""
 "Ensure your <literal>From:</literal> address is set to "
 "<literal><replaceable>yourusername</replaceable>@FreeBSD.org</literal>."
 msgstr ""
-"Approved by: <userinput><literal>re</literal> (<replaceable>username</"
-"replaceable>)</userinput>"
+"Assegure-se de que seu endereço <literal>From:</literal> esteja configurado "
+"para <literal><replaceable>yourusername</replaceable>@FreeBSD.org</literal>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2275
@@ -4572,6 +4572,10 @@ msgid ""
 "<literal><replaceable>yourusername</replaceable>/mail</literal> principal is "
 "preferred, as it is only valid for authenticating to mail resources."
 msgstr ""
+"Para autenticação, você pode usar o seu nome de usuário e a sua senha do "
+"Kerberos no cluster do FreeBSD (veja <xref linkend=\"kerberos-ldap\"/>). O "
+"principal <literal><replaceable>yourusername</replaceable>/mail</literal> é "
+"o preferido, pois é válido apenas para autenticação dos recursos de correio."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2282
@@ -4579,11 +4583,12 @@ msgid ""
 "Do not include <literal>@FreeBSD.org</literal> when entering in your "
 "username."
 msgstr ""
+"Não inclua <literal>@FreeBSD.org</literal> ao digitar seu nome de usuário."
 
 #. (itstool) path: note/title
 #: article.translate.xml:2289
 msgid "Additional notes"
-msgstr ""
+msgstr "Notas Adicionais"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2293
@@ -4592,6 +4597,9 @@ msgid ""
 "replaceable>@FreeBSD.org</literal>. If you are authenticated as one user, "
 "you are not permitted to send mail from another."
 msgstr ""
+"Aceitará apenas mensagens de <literal><replaceable>yourusername</"
+"replaceable>@FreeBSD.org</literal>. Se você for autenticado como um usuário, "
+"não terá permissão para enviar e-mails como outro."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2300
@@ -4599,12 +4607,17 @@ msgid ""
 "A header will be appended with the SASL username: (<literal>Authenticated "
 "sender: <replaceable>username</replaceable></literal>)."
 msgstr ""
+"Um cabeçalho será anexado com o nome de usuário do SASL: "
+"(<literal>Authenticated sender: <replaceable>username</replaceable></"
+"literal>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2306
 msgid ""
 "Host has various rate limits in place to cut down on brute force attempts."
 msgstr ""
+"O host possui vários limites de taxa para reduzir as tentativas de força "
+"bruta."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2315
@@ -4683,7 +4696,7 @@ msgstr "<filename>ports/svnadmin/conf/mentors</filename>"
 #. (itstool) path: sect1/title
 #: article.translate.xml:2360
 msgid "Pre-Commit Review"
-msgstr ""
+msgstr "Revisão pré-commit"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2362
@@ -4695,6 +4708,12 @@ msgid ""
 "review policies, but these guidelines generally apply to commits requiring "
 "review:"
 msgstr ""
+"A revisão de código é uma maneira de aumentar a qualidade do software. As "
+"seguintes diretrizes se aplicam a commits na ramificação <literal>head</"
+"literal> (-CURRENT) do repositório <literal>src</literal>. Outras "
+"ramificações e as árvores do <literal>ports</literal> e do <literal>docs</"
+"literal> têm suas próprias políticas de revisão, mas essas diretrizes "
+"geralmente se aplicam a commits que exigem revisão:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2371
@@ -4702,6 +4721,8 @@ msgid ""
 "All non-trivial changes should be reviewed before they are committed to the "
 "repository."
 msgstr ""
+"Todas as alterações não triviais devem ser revisadas antes de serem "
+"cometidas no repositório."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2376
@@ -4710,6 +4731,9 @@ msgid ""
 "in <application>Phabricator</application>, or by another mechanism. Where "
 "possible, reviews should be public."
 msgstr ""
+"As revisões podem ser conduzidas por e-mail, pelo <application>Bugzilla</"
+"application>, pelo <application>Phabricator</application> ou por outro "
+"mecanismo. Sempre que possível, as revisões devem ser públicas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2383
@@ -4717,6 +4741,8 @@ msgid ""
 "The developer responsible for a code change is also responsible for making "
 "all necessary review-related changes."
 msgstr ""
+"O desenvolvedor responsável por uma mudança de código também é responsável "
+"por fazer todas as alterações necessárias relacionadas à revisão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2389
@@ -4727,11 +4753,17 @@ msgid ""
 "So long as it is explicit, this can take whatever form makes sense for the "
 "review method."
 msgstr ""
+"A revisão de código pode ser um processo iterativo, que continua até que o "
+"patch esteja pronto para o commit. Especificamente, uma vez que um patch é "
+"enviado para revisão, ele deve receber um explícito <quote>looks good</"
+"quote> antes que o commit possa ser feito. Desde que a aprovação seja "
+"explícita, ela pode ser formalizada de qualquer forma que faça sentido para "
+"o método de revisão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2398
 msgid "Timeouts are not a substitute for review."
-msgstr ""
+msgstr "Timeouts não são um substituto para revisão."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2402
@@ -4740,6 +4772,9 @@ msgid ""
 "for larger features. Accepted ways to speed up review times for your patches "
 "are:"
 msgstr ""
+"Às vezes, as revisões de código demoram mais tempo do que você esperaria, "
+"especialmente para recursos maiores. As formas aceitas de acelerar os tempos "
+"de revisão dos seus patches são:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2408
@@ -4747,6 +4782,8 @@ msgid ""
 "Review other people's patches. If you help out, everybody will be more "
 "willing to do the same for you; goodwill is our currency."
 msgstr ""
+"Revise os patches de outras pessoas. Se você ajudar, todos estarão mais "
+"dispostos a fazer o mesmo por você; A boa vontade é a nossa moeda."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2414
@@ -4756,6 +4793,10 @@ msgid ""
 "urgent, the common courtesy ping rate is one week. Remember that you are "
 "asking for valuable time from other professional developers."
 msgstr ""
+"Ping o patch. Se for urgente, forneça as razões pelas quais é importante "
+"para você finalizá-lo e faça o ping a cada dois dias. Se não for urgente, a "
+"frequência adequada de ping é de uma vez por semana. Lembre-se de que você "
+"está pedindo um tempo valioso de outros desenvolvedores profissionais."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2423
@@ -4763,6 +4804,8 @@ msgid ""
 "Ask for help on mailing lists, IRC, etc. Others may be able to either help "
 "you directly, or suggest a reviewer."
 msgstr ""
+"Peça ajuda em listas de discussão, IRC, etc. Outros podem ajudá-lo "
+"diretamente ou sugerir um revisor."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2429
@@ -4771,6 +4814,9 @@ msgid ""
 "smaller your patch, the higher the probability that somebody will take a "
 "quick look at it."
 msgstr ""
+"Dividir seu patch em vários patches pequenos os quais se aplicam uns sobre "
+"os outros. Quanto menor o seu patch, maior a probabilidade de alguém dar uma "
+"rápida olhada nele."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2434
@@ -4779,6 +4825,9 @@ msgid ""
 "beginning of the effort as breaking large changes into smaller ones is often "
 "difficult after the fact."
 msgstr ""
+"Ao fazer grandes mudanças, é útil ter isso em mente desde o início do "
+"esforço, pois quebrar grandes alterações em pequenas é geralmente difícil "
+"depois que estão prontas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2441
@@ -4790,6 +4839,13 @@ msgid ""
 "approve a change. This will usually be a committer who works with the code "
 "in question on a regular basis."
 msgstr ""
+"Os desenvolvedores devem participar de revisões de código fazendo revisões e "
+"recebendo revisões. Se alguém tiver a gentileza de revisar seu código, você "
+"deve devolver o favor a outra pessoa. Observe que, embora qualquer pessoa "
+"seja bem-vinda para revisar e dar feedback sobre um patch, apenas um "
+"especialista no assunto apropriado pode aprovar uma alteração. Geralmente, "
+"este especialista será um committer que trabalha com o código em questão "
+"regularmente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2449
@@ -4798,6 +4854,9 @@ msgid ""
 "review by an experienced developer is sufficient when coupled with "
 "appropriate testing."
 msgstr ""
+"Em alguns casos, nenhum especialista no assunto pode estar disponível. "
+"Nesses casos, uma revisão por um desenvolvedor experiente é suficiente "
+"quando associada a testes apropriados."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2455
@@ -5318,6 +5377,12 @@ msgid ""
 "to help you get started. As a rule, when in doubt, ask. It is much easier to "
 "give advice than to fix the source tree."
 msgstr ""
+"A política de licença completa do Projeto FreeBSD pode ser encontrada em "
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/software-license.html\">https:/"
+"/www.FreeBSD.org/internal/software-license.html</link>. O restante desta "
+"seção destina-se a ajudá-lo a começar. Por via de regra, quando em dúvida, "
+"pergunte. É muito mais fácil dar conselhos do que consertar a árvore de "
+"código fonte."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2709
@@ -8501,6 +8566,8 @@ msgid ""
 "This blanket approval also applies to direct commits for ports that have "
 "been removed from <literal>head</literal>."
 msgstr ""
+"Essa aprovação geral também se aplica aos commits diretos para ports que "
+"foram removidos do <literal>head</literal>."
 
 #. (itstool) path: important/para
 #: article.translate.xml:4555
@@ -8617,7 +8684,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4633
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
 "userinput>\n"
@@ -8715,8 +8782,7 @@ msgstr ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
-"52611 2018-12-06 16:04:59Z mat $\n"
+" # $FreeBSD$\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
@@ -9661,7 +9727,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:5326
-#, fuzzy
 msgid "Benefits and Perks for FreeBSD Committers"
 msgstr "Benefícios e vantagens para os Commiters do FreeBSD"
 

@@ -7,6 +7,7 @@
 # Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>, 2018. #zanata
 # Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -14,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-17 08:49+0000\n"
+"PO-Revision-Date: 2019-04-09 02:34+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -949,7 +950,6 @@ msgstr ""
 
 #. (itstool) path: important/para
 #: book.translate.xml:552
-#, fuzzy
 msgid ""
 "We do not need the <filename>work</filename> directory or the "
 "<filename>pkgname.txz</filename> package, so delete them now."
@@ -12047,6 +12047,8 @@ msgid ""
 "<varname>USE_GCC</varname> will register a build-time and a run-time "
 "dependency."
 msgstr ""
+"<varname>USE_GCC</varname> irá registrar uma dependência de tempo de "
+"compilação e uma de tempo de execução."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6881
@@ -12834,7 +12836,7 @@ msgstr "Uso Simples de <varname>OPTIONS</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:7284
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tFOO BAR\n"
 "OPTIONS_DEFAULT=FOO\n"
@@ -12849,12 +12851,12 @@ msgid ""
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
 "OPTIONS_DEFINE=\tFOO BAR\n"
+"OPTIONS_DEFAULT=FOO\n"
+"\n"
 "FOO_DESC=\tOption foo support\n"
 "BAR_DESC=\tFeature bar support\n"
 "\n"
-"OPTIONS_DEFAULT=FOO\n"
-"\n"
-"# Will add --with-foo/--without-foo\n"
+"# Will add --with-foo / --without-foo\n"
 "FOO_CONFIGURE_WITH=\tfoo\n"
 "BAR_RUN_DEPENDS=\tbar:bar/bar\n"
 "\n"
@@ -12903,7 +12905,7 @@ msgstr "Uso Prático de <varname>OPTIONS</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:7316
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\t\tEXAMPLES\n"
 "OPTIONS_DEFAULT=\tPGSQL LDAP SSL\n"
@@ -12937,6 +12939,7 @@ msgid ""
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
 "OPTIONS_DEFINE=\t\tEXAMPLES\n"
+"OPTIONS_DEFAULT=\tPGSQL LDAP SSL\n"
 "\n"
 "OPTIONS_SINGLE=\t\tBACKEND\n"
 "OPTIONS_SINGLE_BACKEND=\tMYSQL PGSQL BDB\n"
@@ -12952,16 +12955,14 @@ msgstr ""
 "PAM_DESC=\t\tBuild with PAM support\n"
 "SSL_DESC=\t\tBuild with OpenSSL support\n"
 "\n"
-"OPTIONS_DEFAULT=\tPGSQL LDAP SSL\n"
-"\n"
 "# Will add USE_PGSQL=yes\n"
 "PGSQL_USE=\tpgsql=yes\n"
-"# Will add --enable-postgres/--disable-postgres\n"
+"# Will add --enable-postgres / --disable-postgres\n"
 "PGSQL_CONFIGURE_ENABLE=\tpostgres\n"
 "\n"
 "ICU_LIB_DEPENDS=\tlibicuuc.so:devel/icu\n"
 "\n"
-"# Will add --with-examples/--without-examples\n"
+"# Will add --with-examples / --without-examples\n"
 "EXAMPLES_CONFIGURE_WITH=\texamples\n"
 "\n"
 "# Check other OPTIONS\n"
@@ -14067,7 +14068,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:7957
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
@@ -14086,22 +14087,21 @@ msgstr ""
 ".include &lt;bsd.port.options.mk&gt;\n"
 "\n"
 ".if ${PORT_OPTIONS:MOPT1}\n"
-"CMAKE_ARGS+=\t-Dtest=yes -Ddebug=yes \\\n"
+"MESON_ARGS+=\t-Dtest=yes -Ddebug=yes \\\n"
 "\t\t-Doptimize=no\n"
 ".else\n"
-"CMAKE_ARGS+=\t-Dtest=no -Ddebug=no \\\n"
+"MESON_ARGS+=\t-Dtest=no -Ddebug=no \\\n"
 "\t\t-Doptimize=yes\n"
 ".endif"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7971
-#, fuzzy
 msgid ""
 "<varname><replaceable>OPT</replaceable>_MESON_ENABLED</varname> and "
 "<varname><replaceable>OPT</replaceable>_MESON_DISABLED</varname>"
 msgstr ""
-"<varname><replaceable>OPT</replaceable>_MESON_TRUE</varname> e "
-"<varname><replaceable>OPT</replaceable>_MESON_FALSE</varname>"
+"<varname><replaceable>OPT</replaceable>_MESON_ENABLED</varname> e "
+"<varname><replaceable>OPT</replaceable>_MESON_DISABLED</varname>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7975
@@ -14135,19 +14135,19 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:7994
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "OPT1_MESON_ENABLED=\ttest\n"
 "OPT1_MESON_DISABLED=\tdebug"
 msgstr ""
 "OPTIONS_DEFINE=\tOPT1\n"
-"OPT1_MESON_TRUE=\ttest debug\n"
-"OPT1_MESON_FALSE=\toptimize"
+"OPT1_MESON_ENABLED=\ttest\n"
+"OPT1_MESON_DISABLED=\tdebug"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:8000
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
@@ -14164,11 +14164,9 @@ msgstr ""
 ".include &lt;bsd.port.options.mk&gt;\n"
 "\n"
 ".if ${PORT_OPTIONS:MOPT1}\n"
-"MESON_ARGS+=\t-Dtest=true -Ddebug=true \\\n"
-"\t\t-Doptimize=false\n"
+"MESON_ARGS+=\t-Dtest=enabled -Ddebug=disabled\n"
 ".else\n"
-"MESON_ARGS+=\t-Dtest=false -Ddebug=false \\\n"
-"\t\t-Doptimize=true\n"
+"MESON_ARGS+=\t-Dtest=disabled -Ddebug=enabled\n"
 ".endif"
 
 #. (itstool) path: sect3/title
@@ -17758,10 +17756,10 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10035
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "USES=\t\t\tcmake\n"
 "CMAKE_SOURCE_PATH=\t${WRKSRC}/subproject"
-msgstr "USES=\t\t\tcmake:outsource\n"
+msgstr "USES=\t\t\tcmake\n"
 "CMAKE_SOURCE_PATH=\t${WRKSRC}/subproject"
 
 #. (itstool) path: example/title
@@ -18544,25 +18542,22 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10425
-#, fuzzy
 msgid "Using <command>meson</command>"
-msgstr "Usando <command>scons</command>"
+msgstr "Usando <command>meson</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10427
-#, fuzzy
 msgid ""
 "For ports that use <application>Meson</application>, define <literal>USES="
 "meson</literal>."
 msgstr ""
-"Para ports que usam <application>Cargo</application>, defina <literal>USES="
-"cargo</literal>"
+"Para ports que usam <application>Meson</application>, defina <literal>USES="
+"meson</literal>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:10431
-#, fuzzy
 msgid "Variables for Ports That Use <command>meson</command>"
-msgstr "Variáveis ​​para ports que usam o <command>cmake</command>"
+msgstr "Variáveis ​​para ports que usam o <command>meson</command>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10445
@@ -18576,9 +18571,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10451
-#, fuzzy
 msgid "<varname>MESON_BUILD_DIR</varname>"
-msgstr "<varname>MESON_ARGS</varname>"
+msgstr "<varname>MESON_BUILD_DIR</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10452
@@ -18591,9 +18585,8 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:10461
-#, fuzzy
 msgid "<literal>USES=meson</literal> Example"
-msgstr "Exemplo de <literal>USES=cmake</literal>"
+msgstr "Exemplo de <literal>USES=meson</literal>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10463
@@ -18610,7 +18603,8 @@ msgstr ""
 #, no-wrap
 msgid "USES=\t\tmeson\n"
 "MESON_ARGS=\t-Dfoo=enabled"
-msgstr ""
+msgstr "USES=\t\tmeson\n"
+"MESON_ARGS=\t-Dfoo=enabled"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10473
@@ -21482,9 +21476,8 @@ msgstr "Componentes da Biblioteca Qt Disponíveis"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11931
-#, fuzzy
 msgid "<literal>3d</literal>"
-msgstr "<literal>3.0</literal>"
+msgstr "<literal>3d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11932
@@ -21505,9 +21498,8 @@ msgstr "GNU Free Documentation License"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11941
-#, fuzzy
 msgid "<literal>canvas3d</literal>"
-msgstr "<literal>caja</literal>"
+msgstr "<literal>canvas3d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11942
@@ -21516,9 +21508,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11946
-#, fuzzy
 msgid "<literal>charts</literal>"
-msgstr "<literal>cairo</literal>"
+msgstr "<literal>charts</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11947
@@ -21527,9 +21518,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11951
-#, fuzzy
 msgid "<literal>concurrent</literal>"
-msgstr "<literal>core</literal>"
+msgstr "<literal>concurrent</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11952
@@ -21538,9 +21528,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11956
-#, fuzzy
 msgid "<literal>connectivity</literal>"
-msgstr "<literal>contrib</literal>"
+msgstr "<literal>connectivity</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11957
@@ -21560,9 +21549,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11966
-#, fuzzy
 msgid "<literal>datavis3d</literal>"
-msgstr "<literal>nautilus3</literal>"
+msgstr "<literal>datavis3d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11967
@@ -21605,9 +21593,8 @@ msgstr "biblioteca de interface gráfica do usuário"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11988
-#, fuzzy
 msgid "<literal>diag</literal>"
-msgstr "<literal>dialogs</literal>"
+msgstr "<literal>diag</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11989
@@ -21628,9 +21615,8 @@ msgstr "Instalar Documentação Adicional"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11999
-#, fuzzy
 msgid "<literal>examples</literal>"
-msgstr "<literal>xml</literal>"
+msgstr "<literal>examples</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12000
@@ -21639,9 +21625,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12004
-#, fuzzy
 msgid "<literal>gamepad</literal>"
-msgstr "<literal>gmake</literal>"
+msgstr "<literal>gamepad</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12005
@@ -21650,9 +21635,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12009
-#, fuzzy
 msgid "<literal>graphicaleffects</literal>"
-msgstr "<literal>graphite2</literal>"
+msgstr "<literal>graphicaleffects</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12010
@@ -21684,9 +21668,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12024
-#, fuzzy
 msgid "<literal>l10n</literal>"
-msgstr "<literal>no</literal>"
+msgstr "<literal>l10n</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12025
@@ -21705,9 +21688,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12034
-#, fuzzy
 msgid "<literal>location</literal>"
-msgstr "<literal>action</literal>"
+msgstr "<literal>location</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12035
@@ -21738,9 +21720,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12050
-#, fuzzy
 msgid "<literal>networkauth</literal>"
-msgstr "<literal>network</literal>"
+msgstr "<literal>networkauth</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12051
@@ -21760,9 +21741,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12060
-#, fuzzy
 msgid "<literal>paths</literal>"
-msgstr "<literal>pathfix</literal>"
+msgstr "<literal>paths</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12061
@@ -21771,9 +21751,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12065
-#, fuzzy
 msgid "<literal>phonon4</literal>"
-msgstr "<literal>phonon</literal>"
+msgstr "<literal>phonon4</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12066
@@ -21782,9 +21761,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12070
-#, fuzzy
 msgid "<literal>pixeltool</literal>"
-msgstr "<literal>intltool</literal>"
+msgstr "<literal>pixeltool</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12071
@@ -21793,9 +21771,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12075
-#, fuzzy
 msgid "<literal>plugininfo</literal>"
-msgstr "<literal>webplugin</literal>"
+msgstr "<literal>plugininfo</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12076
@@ -21816,9 +21793,8 @@ msgstr "Biblioteca de suporte de impressão do Gnome 2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12085
-#, fuzzy
 msgid "<literal>qdbus</literal>"
-msgstr "<literal>dbus</literal>"
+msgstr "<literal>qdbus</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12086
@@ -21827,9 +21803,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12090
-#, fuzzy
 msgid "<literal>qdbusviewer</literal>"
-msgstr "<literal>dbus</literal>"
+msgstr "<literal>qdbusviewer</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12091
@@ -21839,9 +21814,8 @@ msgstr "biblioteca de interface gráfica do usuário"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12095
-#, fuzzy
 msgid "<literal>qdoc</literal>"
-msgstr "<literal>doc</literal>"
+msgstr "<literal>qdoc</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12096
@@ -21851,9 +21825,8 @@ msgstr "GNU Free Documentation License"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12100
-#, fuzzy
 msgid "<literal>qdoc-data</literal>"
-msgstr "<literal>doc</literal>"
+msgstr "<literal>qdoc-data</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12101
@@ -21863,9 +21836,8 @@ msgstr "Arquivos de Configuração"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12105
-#, fuzzy
 msgid "<literal>qev</literal>"
-msgstr "<literal>qt</literal>"
+msgstr "<literal>qev</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12106
@@ -21886,9 +21858,8 @@ msgstr "Utilitário gerador/compilador de Makefile"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12115
-#, fuzzy
 msgid "<literal>quickcontrols</literal>"
-msgstr "<literal>contrib</literal>"
+msgstr "<literal>quickcontrols</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12116 book.translate.xml:12122
@@ -21897,15 +21868,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12121
-#, fuzzy
 msgid "<literal>quickcontrols2</literal>"
-msgstr "<literal>contrib</literal>"
+msgstr "<literal>quickcontrols2</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12127
-#, fuzzy
 msgid "<literal>remoteobjects</literal>"
-msgstr "<literal>objc</literal>"
+msgstr "<literal>remoteobjects</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12128 book.translate.xml:12143
@@ -21936,15 +21905,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12142
-#, fuzzy
 msgid "<literal>scxml</literal>"
-msgstr "<literal>xml</literal>"
+msgstr "<literal>scxml</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12147
-#, fuzzy
 msgid "<literal>sensors</literal>"
-msgstr "<literal>nss</literal>"
+msgstr "<literal>sensors</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12148
@@ -21953,9 +21920,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12152
-#, fuzzy
 msgid "<literal>serialbus</literal>"
-msgstr "<literal>serialport</literal>"
+msgstr "<literal>serialbus</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12153
@@ -21975,9 +21941,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12163
-#, fuzzy
 msgid "<literal>speech</literal>"
-msgstr "<literal>pecl</literal>"
+msgstr "<literal>speech</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12164
@@ -21997,9 +21962,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12173
-#, fuzzy
 msgid "<literal>sql-ibase</literal>"
-msgstr "<literal>sqlite</literal>"
+msgstr "<literal>sql-ibase</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12174
@@ -22008,9 +21972,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12178
-#, fuzzy
 msgid "<literal>sql-mysql</literal>"
-msgstr "<literal>mysql</literal>"
+msgstr "<literal>sql-mysql</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12179
@@ -22019,9 +21982,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12183
-#, fuzzy
 msgid "<literal>sql-odbc</literal>"
-msgstr "<literal>sql</literal>"
+msgstr "<literal>sql-odbc</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12184
@@ -22030,9 +21992,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12188
-#, fuzzy
 msgid "<literal>sql-pgsql</literal>"
-msgstr "<literal>pgsql</literal>"
+msgstr "<literal>sql-pgsql</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12189
@@ -22041,9 +22002,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12193
-#, fuzzy
 msgid "<literal>sql-sqlite2</literal>"
-msgstr "<literal>sqlite</literal>"
+msgstr "<literal>sql-sqlite2</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12194
@@ -22052,9 +22012,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12198
-#, fuzzy
 msgid "<literal>sql-sqlite3</literal>"
-msgstr "<literal>sqlite3</literal>"
+msgstr "<literal>sql-sqlite3</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12199
@@ -22063,9 +22022,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12203
-#, fuzzy
 msgid "<literal>sql-tds</literal>"
-msgstr "<literal>sql</literal>"
+msgstr "<literal>sql-tds</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12204
@@ -22096,9 +22054,8 @@ msgstr "biblioteca de testes unitários"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12219
-#, fuzzy
 msgid "<literal>uiplugin</literal>"
-msgstr "<literal>webplugin</literal>"
+msgstr "<literal>uiplugin</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12220
@@ -22107,9 +22064,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12225
-#, fuzzy
 msgid "<literal>uitools</literal>"
-msgstr "<literal>buildtools</literal>"
+msgstr "<literal>uitools</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12226
@@ -22118,9 +22074,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12230
-#, fuzzy
 msgid "<literal>virtualkeyboard</literal>"
-msgstr "<literal>firebird</literal>"
+msgstr "<literal>virtualkeyboard</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12231
@@ -22129,9 +22084,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12235 book.translate.xml:13522
-#, fuzzy
 msgid "<literal>wayland</literal>"
-msgstr "<literal>ada</literal>"
+msgstr "<literal>wayland</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12236
@@ -22140,9 +22094,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12240
-#, fuzzy
 msgid "<literal>webchannel</literal>"
-msgstr "<literal>panel</literal>"
+msgstr "<literal>webchannel</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12241
@@ -22151,9 +22104,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12246
-#, fuzzy
 msgid "<literal>webengine</literal>"
-msgstr "<literal>webplugin</literal>"
+msgstr "<literal>webengine</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12247
@@ -22173,9 +22125,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12257
-#, fuzzy
 msgid "<literal>websockets</literal>"
-msgstr "<literal>webkit</literal>"
+msgstr "<literal>websockets</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12258
@@ -22184,9 +22135,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12262
-#, fuzzy
 msgid "<literal>websockets-qml</literal>"
-msgstr "<literal>webkit</literal>"
+msgstr "<literal>websockets-qml</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12263
@@ -22195,9 +22145,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12268
-#, fuzzy
 msgid "<literal>webview</literal>"
-msgstr "<literal>web</literal>"
+msgstr "<literal>webview</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12269
@@ -22217,9 +22166,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12278
-#, fuzzy
 msgid "<literal>x11extras</literal>"
-msgstr "<literal>ext</literal>"
+msgstr "<literal>x11extras</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12279
@@ -22661,9 +22609,8 @@ msgstr "Componentes Disponíveis do KDE 4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12578
-#, fuzzy
 msgid "<literal>activities</literal>"
-msgstr "<literal>vte</literal>"
+msgstr "<literal>activities</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12579
@@ -22672,9 +22619,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12584
-#, fuzzy
 msgid "<literal>activities-stats</literal>"
-msgstr "<literal>assistant</literal>"
+msgstr "<literal>activities-stats</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12585
@@ -22683,9 +22629,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12589
-#, fuzzy
 msgid "<literal>activitymanagerd</literal>"
-msgstr "<literal>action</literal>"
+msgstr "<literal>activitymanagerd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12590
@@ -22705,9 +22650,8 @@ msgstr "Servidor de armazenamento para dados do KDE PIM"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12600
-#, fuzzy
 msgid "<literal>akonadicalendar</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadicalendar</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12601
@@ -22716,9 +22660,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12605
-#, fuzzy
 msgid "<literal>akonadiconsole</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadiconsole</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12606
@@ -22727,9 +22670,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12610
-#, fuzzy
 msgid "<literal>akonadicontacts</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadicontacts</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12611
@@ -22738,9 +22680,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12616
-#, fuzzy
 msgid "<literal>akonadiimportwizard</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadiimportwizard</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12617
@@ -22749,9 +22690,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12622
-#, fuzzy
 msgid "<literal>akonadimime</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadimime</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12623
@@ -22760,9 +22700,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12628
-#, fuzzy
 msgid "<literal>akonadinotes</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadinotes</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12629 book.translate.xml:13274
@@ -22771,9 +22710,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12634
-#, fuzzy
 msgid "<literal>akonadisearch</literal>"
-msgstr "<literal>akonadi</literal>"
+msgstr "<literal>akonadisearch</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12635
@@ -22782,9 +22720,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12640
-#, fuzzy
 msgid "<literal>akregator</literal>"
-msgstr "<literal>cargo</literal>"
+msgstr "<literal>akregator</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12641
@@ -22793,9 +22730,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12645
-#, fuzzy
 msgid "<literal>alarmcalendar</literal>"
-msgstr "<literal>allegro</literal>"
+msgstr "<literal>alarmcalendar</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12646
@@ -22804,9 +22740,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12650
-#, fuzzy
 msgid "<literal>apidox</literal>"
-msgstr "<literal>atspi</literal>"
+msgstr "<literal>apidox</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12651
@@ -22815,9 +22750,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12655
-#, fuzzy
 msgid "<literal>archive</literal>"
-msgstr "<literal>libarchive</literal>"
+msgstr "<literal>archive</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12656
@@ -22826,9 +22760,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12661
-#, fuzzy
 msgid "<literal>attica</literal>"
-msgstr "<literal>atspi</literal>"
+msgstr "<literal>attica</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12662 book.translate.xml:12668
@@ -22837,15 +22770,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12667
-#, fuzzy
 msgid "<literal>attica5</literal>"
-msgstr "<literal>atspi</literal>"
+msgstr "<literal>attica5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12673
-#, fuzzy
 msgid "<literal>auth</literal>"
-msgstr "<literal>atk</literal>"
+msgstr "<literal>auth</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12674
@@ -22854,9 +22785,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12679
-#, fuzzy
 msgid "<literal>baloo</literal>"
-msgstr "<literal>base</literal>"
+msgstr "<literal>baloo</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12680 book.translate.xml:12691
@@ -22865,9 +22795,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12685
-#, fuzzy
 msgid "<literal>baloo-widgets</literal>"
-msgstr "<literal>widgets</literal>"
+msgstr "<literal>baloo-widgets</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12686
@@ -22877,15 +22806,13 @@ msgstr "biblioteca principal"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12690
-#, fuzzy
 msgid "<literal>baloo5</literal>"
-msgstr "<literal>base</literal>"
+msgstr "<literal>baloo5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12696
-#, fuzzy
 msgid "<literal>blog</literal>"
-msgstr "<literal>libogg</literal>"
+msgstr "<literal>blog</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12697
@@ -22894,9 +22821,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12701
-#, fuzzy
 msgid "<literal>bookmarks</literal>"
-msgstr "<literal>okular</literal>"
+msgstr "<literal>bookmarks</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12702
@@ -22905,9 +22831,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12707
-#, fuzzy
 msgid "<literal>breeze</literal>"
-msgstr "<literal>base</literal>"
+msgstr "<literal>breeze</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12708
@@ -22916,9 +22841,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12713
-#, fuzzy
 msgid "<literal>breeze-gtk</literal>"
-msgstr "<literal>gtk2</literal>"
+msgstr "<literal>breeze-gtk</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12714
@@ -22927,9 +22851,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12718
-#, fuzzy
 msgid "<literal>breeze-icons</literal>"
-msgstr "<literal>-liconv</literal>"
+msgstr "<literal>breeze-icons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12719
@@ -22938,9 +22861,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12723
-#, fuzzy
 msgid "<literal>calendarcore</literal>"
-msgstr "<literal>core</literal>"
+msgstr "<literal>calendarcore</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12724
@@ -22950,9 +22872,8 @@ msgstr "Bibliotecas principais do KDE"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12728
-#, fuzzy
 msgid "<literal>calendarsupport</literal>"
-msgstr "<literal>dbussupport</literal>"
+msgstr "<literal>calendarsupport</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12729
@@ -22961,9 +22882,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12733
-#, fuzzy
 msgid "<literal>calendarutils</literal>"
-msgstr "<literal>nautilus3</literal>"
+msgstr "<literal>calendarutils</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12734
@@ -22972,9 +22892,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12739
-#, fuzzy
 msgid "<literal>codecs</literal>"
-msgstr "<literal>core</literal>"
+msgstr "<literal>codecs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12740
@@ -22984,9 +22903,8 @@ msgstr "Biblioteca do KDE para interfaceamento com CDs de áudio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12744
-#, fuzzy
 msgid "<literal>completion</literal>"
-msgstr "<literal>compiler</literal>"
+msgstr "<literal>completion</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12745
@@ -22995,9 +22913,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12749
-#, fuzzy
 msgid "<literal>config</literal>"
-msgstr "<literal>pkgconfig</literal>"
+msgstr "<literal>config</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12750 book.translate.xml:12755
@@ -23006,15 +22923,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12754
-#, fuzzy
 msgid "<literal>configwidgets</literal>"
-msgstr "<literal>widgets</literal>"
+msgstr "<literal>configwidgets</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12759
-#, fuzzy
 msgid "<literal>contacts</literal>"
-msgstr "<literal>fonts</literal>"
+msgstr "<literal>contacts</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12760
@@ -23023,9 +22938,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12764
-#, fuzzy
 msgid "<literal>coreaddons</literal>"
-msgstr "<literal>core</literal>"
+msgstr "<literal>coreaddons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12765
@@ -23034,9 +22948,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12769
-#, fuzzy
 msgid "<literal>crash</literal>"
-msgstr "<literal>cran</literal>"
+msgstr "<literal>crash</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12770
@@ -23045,9 +22958,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12775
-#, fuzzy
 msgid "<literal>dbusaddons</literal>"
-msgstr "<literal>dbus</literal>"
+msgstr "<literal>dbusaddons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12776 book.translate.xml:13497
@@ -23056,9 +22968,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12780
-#, fuzzy
 msgid "<literal>decoration</literal>"
-msgstr "<literal>action</literal>"
+msgstr "<literal>decoration</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12781
@@ -23078,9 +22989,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12792
-#, fuzzy
 msgid "<literal>discover</literal>"
-msgstr "<literal>iconv</literal>"
+msgstr "<literal>discover</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12793
@@ -23089,9 +22999,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12797
-#, fuzzy
 msgid "<literal>dnssd</literal>"
-msgstr "<literal>nss</literal>"
+msgstr "<literal>dnssd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12798
@@ -23100,9 +23009,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12802
-#, fuzzy
 msgid "<literal>doctools</literal>"
-msgstr "<literal>devtools</literal>"
+msgstr "<literal>doctools</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12803
@@ -23111,9 +23019,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12807
-#, fuzzy
 msgid "<literal>drkonqi</literal>"
-msgstr "<literal>dri</literal>"
+msgstr "<literal>drkonqi</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12808
@@ -23122,9 +23029,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12812
-#, fuzzy
 msgid "<literal>ecm</literal>"
-msgstr "<literal>gem</literal>"
+msgstr "<literal>ecm</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12813
@@ -23133,9 +23039,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12817
-#, fuzzy
 msgid "<literal>emoticons</literal>"
-msgstr "<literal>scons</literal>"
+msgstr "<literal>emoticons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12818
@@ -23144,9 +23049,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12822
-#, fuzzy
 msgid "<literal>eventviews</literal>"
-msgstr "<literal>vte</literal>"
+msgstr "<literal>eventviews</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12823
@@ -23155,9 +23059,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12827
-#, fuzzy
 msgid "<literal>filemetadata</literal>"
-msgstr "<literal>file</literal>"
+msgstr "<literal>filemetadata</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12828
@@ -23167,9 +23070,8 @@ msgstr "Biblioteca do KDE para interfaceamento com CDs de áudio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12832
-#, fuzzy
 msgid "<literal>frameworkintegration</literal>"
-msgstr "<literal>fortran</literal>"
+msgstr "<literal>frameworkintegration</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12833
@@ -23178,9 +23080,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12838
-#, fuzzy
 msgid "<literal>gapi</literal>"
-msgstr "<literal>gssapi</literal>"
+msgstr "<literal>gapi</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12839
@@ -23189,9 +23090,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12844
-#, fuzzy
 msgid "<literal>globalaccel</literal>"
-msgstr "<literal>localbase</literal>"
+msgstr "<literal>globalaccel</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12845
@@ -23200,9 +23100,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12850
-#, fuzzy
 msgid "<literal>grantlee-editor</literal>"
-msgstr "<literal>grantlee</literal>"
+msgstr "<literal>grantlee-editor</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12851
@@ -23211,9 +23110,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12855
-#, fuzzy
 msgid "<literal>grantleetheme</literal>"
-msgstr "<literal>grantlee</literal>"
+msgstr "<literal>grantleetheme</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12856
@@ -23222,9 +23120,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12860
-#, fuzzy
 msgid "<literal>gravatar</literal>"
-msgstr "<literal>tar</literal>"
+msgstr "<literal>gravatar</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12861
@@ -23233,9 +23130,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12865
-#, fuzzy
 msgid "<literal>guiaddons</literal>"
-msgstr "<literal>gui</literal>"
+msgstr "<literal>guiaddons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12866
@@ -23244,9 +23140,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12870
-#, fuzzy
 msgid "<literal>holidays</literal>"
-msgstr "<literal>libgda5</literal>"
+msgstr "<literal>holidays</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12871
@@ -23255,9 +23150,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12875
-#, fuzzy
 msgid "<literal>hotkeys</literal>"
-msgstr "<literal>test</literal>"
+msgstr "<literal>hotkeys</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12876
@@ -23266,9 +23160,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12880
-#, fuzzy
 msgid "<literal>i18n</literal>"
-msgstr "<literal>no</literal>"
+msgstr "<literal>i18n</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12881
@@ -23278,9 +23171,8 @@ msgstr "Framework avançado de editor de texto"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12886
-#, fuzzy
 msgid "<literal>iconthemes</literal>"
-msgstr "<literal>icontheme</literal>"
+msgstr "<literal>iconthemes</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12887
@@ -23289,9 +23181,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12892
-#, fuzzy
 msgid "<literal>identitymanagement</literal>"
-msgstr "<literal>sdlimage</literal>"
+msgstr "<literal>identitymanagement</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12893
@@ -23300,9 +23191,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12897
-#, fuzzy
 msgid "<literal>idletime</literal>"
-msgstr "<literal>sdlimage</literal>"
+msgstr "<literal>idletime</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12898
@@ -23311,9 +23201,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12902
-#, fuzzy
 msgid "<literal>imap</literal>"
-msgstr "<literal>imake</literal>"
+msgstr "<literal>imap</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12903
@@ -23322,9 +23211,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12907
-#, fuzzy
 msgid "<literal>incidenceeditor</literal>"
-msgstr "<literal>libedit</literal>"
+msgstr "<literal>incidenceeditor</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12908
@@ -23333,9 +23221,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12912
-#, fuzzy
 msgid "<literal>infocenter</literal>"
-msgstr "<literal>controlcenter</literal>"
+msgstr "<literal>infocenter</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12913
@@ -23344,9 +23231,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12918
-#, fuzzy
 msgid "<literal>init</literal>"
-msgstr "<literal>linguist</literal>"
+msgstr "<literal>init</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12919
@@ -23355,9 +23241,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12924
-#, fuzzy
 msgid "<literal>itemmodels</literal>"
-msgstr "<literal>setmode</literal>"
+msgstr "<literal>itemmodels</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12925
@@ -23366,9 +23251,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12929
-#, fuzzy
 msgid "<literal>itemviews</literal>"
-msgstr "<literal>test</literal>"
+msgstr "<literal>itemviews</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12930
@@ -23377,9 +23261,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12934
-#, fuzzy
 msgid "<literal>jobwidgets</literal>"
-msgstr "<literal>widgets</literal>"
+msgstr "<literal>jobwidgets</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12935
@@ -23388,9 +23271,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12939
-#, fuzzy
 msgid "<literal>js</literal>"
-msgstr "<literal>yes</literal>"
+msgstr "<literal>js</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12940
@@ -23399,9 +23281,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12945
-#, fuzzy
 msgid "<literal>jsembed</literal>"
-msgstr "<literal>embed</literal>"
+msgstr "<literal>jsembed</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12946
@@ -23410,9 +23291,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12951
-#, fuzzy
 msgid "<literal>kaddressbook</literal>"
-msgstr "<literal>kde</literal>"
+msgstr "<literal>kaddressbook</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12952
@@ -23421,9 +23301,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12956 book.translate.xml:12961
-#, fuzzy
 msgid "<literal>kalarm</literal>"
-msgstr "<literal>okular</literal>"
+msgstr "<literal>kalarm</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12957 book.translate.xml:12962
@@ -23442,9 +23321,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12971
-#, fuzzy
 msgid "<literal>kcmutils</literal>"
-msgstr "<literal>docutils</literal>"
+msgstr "<literal>kcmutils</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12972
@@ -23454,9 +23332,8 @@ msgstr "Variáveis ​​Úteis para Portar Módulos do Apache"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12976
-#, fuzzy
 msgid "<literal>kde-cli-tools</literal>"
-msgstr "<literal>devtools</literal>"
+msgstr "<literal>kde-cli-tools</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12977
@@ -23465,9 +23342,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12981
-#, fuzzy
 msgid "<literal>kde-gtk-config</literal>"
-msgstr "<literal>pkgconfig</literal>"
+msgstr "<literal>kde-gtk-config</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12982
@@ -23476,9 +23352,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12986
-#, fuzzy
 msgid "<literal>kdeclarative</literal>"
-msgstr "<literal>declarative</literal>"
+msgstr "<literal>kdeclarative</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12987
@@ -23487,9 +23362,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12992
-#, fuzzy
 msgid "<literal>kded</literal>"
-msgstr "<literal>kde</literal>"
+msgstr "<literal>kded</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12993
@@ -23498,9 +23372,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12998
-#, fuzzy
 msgid "<literal>kdelibs4support</literal>"
-msgstr "<literal>dbussupport</literal>"
+msgstr "<literal>kdelibs4support</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12999
@@ -23509,9 +23382,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13003
-#, fuzzy
 msgid "<literal>kdepim-addons</literal>"
-msgstr "<literal>pixman</literal>"
+msgstr "<literal>kdepim-addons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13004
@@ -23520,9 +23392,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13008
-#, fuzzy
 msgid "<literal>kdepim-apps-libs</literal>"
-msgstr "<literal>kdelibs</literal>"
+msgstr "<literal>kdepim-apps-libs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13009
@@ -23532,9 +23403,8 @@ msgstr "Bibliotecas principais do KDE"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13013
-#, fuzzy
 msgid "<literal>kdepim-runtime5</literal>"
-msgstr "<literal>gettext-runtime</literal>"
+msgstr "<literal>kdepim-runtime5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13014
@@ -23543,9 +23413,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13018
-#, fuzzy
 msgid "<literal>kdeplasma-addons</literal>"
-msgstr "<literal>demo</literal>"
+msgstr "<literal>kdeplasma-addons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13019
@@ -23554,9 +23423,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13024
-#, fuzzy
 msgid "<literal>kdesu</literal>"
-msgstr "<literal>kde</literal>"
+msgstr "<literal>kdesu</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13025
@@ -23565,9 +23433,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13030
-#, fuzzy
 msgid "<literal>kdewebkit</literal>"
-msgstr "<literal>webkit</literal>"
+msgstr "<literal>kdewebkit</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13031
@@ -23576,9 +23443,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13036
-#, fuzzy
 msgid "<literal>kgamma5</literal>"
-msgstr "<literal>libgdamm5</literal>"
+msgstr "<literal>kgamma5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13037
@@ -23587,9 +23453,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13041
-#, fuzzy
 msgid "<literal>khtml</literal>"
-msgstr "<literal>gtkhtml3</literal>"
+msgstr "<literal>khtml</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13042
@@ -23598,9 +23463,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13046
-#, fuzzy
 msgid "<literal>kimageformats</literal>"
-msgstr "<literal>imageformats</literal>"
+msgstr "<literal>kimageformats</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13047
@@ -23609,9 +23473,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13052
-#, fuzzy
 msgid "<literal>kio</literal>"
-msgstr "<literal>kmod</literal>"
+msgstr "<literal>kio</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13053
@@ -23620,9 +23483,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13058
-#, fuzzy
 msgid "<literal>kirigami2</literal>"
-msgstr "<literal>strigi</literal>"
+msgstr "<literal>kirigami2</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13059
@@ -23631,9 +23493,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13063
-#, fuzzy
 msgid "<literal>kitinerary</literal>"
-msgstr "<literal>tar</literal>"
+msgstr "<literal>kitinerary</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13064
@@ -23642,9 +23503,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13069 book.translate.xml:13074
-#, fuzzy
 msgid "<literal>kmail</literal>"
-msgstr "<literal>qmail</literal>"
+msgstr "<literal>kmail</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13070 book.translate.xml:13075
@@ -23653,9 +23513,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13079
-#, fuzzy
 msgid "<literal>kmail-account-wizard</literal>"
-msgstr "<literal>kmod</literal>"
+msgstr "<literal>kmail-account-wizard</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13080
@@ -23664,9 +23523,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13084
-#, fuzzy
 msgid "<literal>kmenuedit</literal>"
-msgstr "<literal>menus</literal>"
+msgstr "<literal>kmenuedit</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13085
@@ -23675,9 +23533,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13089
-#, fuzzy
 msgid "<literal>knotes</literal>"
-msgstr "<literal>kate</literal>"
+msgstr "<literal>knotes</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13090
@@ -23686,9 +23543,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13094 book.translate.xml:13099
-#, fuzzy
 msgid "<literal>kontact</literal>"
-msgstr "<literal>kate</literal>"
+msgstr "<literal>kontact</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13095 book.translate.xml:13100
@@ -23843,9 +23699,8 @@ msgstr "Gerentes de janela do X11."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13174
-#, fuzzy
 msgid "<literal>kwrited</literal>"
-msgstr "<literal>kate</literal>"
+msgstr "<literal>kwrited</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13175
@@ -23854,9 +23709,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13180
-#, fuzzy
 msgid "<literal>ldap</literal>"
-msgstr "<literal>lha</literal>"
+msgstr "<literal>ldap</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13181
@@ -23896,9 +23750,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13201
-#, fuzzy
 msgid "<literal>libkdegames</literal>"
-msgstr "<literal>libkdeedu</literal>"
+msgstr "<literal>libkdegames</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13202
@@ -23908,9 +23761,8 @@ msgstr "Bibliotecas usadas por aplicativos educacionais"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13206
-#, fuzzy
 msgid "<literal>libkdepim</literal>"
-msgstr "<literal>libkipi</literal>"
+msgstr "<literal>libkdepim</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13207
@@ -23920,9 +23772,8 @@ msgstr "Bibliotecas do KDE SMOKE"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13211
-#, fuzzy
 msgid "<literal>libkeduvocdocument</literal>"
-msgstr "<literal>libkdeedu</literal>"
+msgstr "<literal>libkeduvocdocument</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13212
@@ -23953,9 +23804,8 @@ msgstr "Interface de Plugin de Imagem do KDE"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13227
-#, fuzzy
 msgid "<literal>libkleo</literal>"
-msgstr "<literal>libkonq</literal>"
+msgstr "<literal>libkleo</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13228
@@ -23975,15 +23825,13 @@ msgstr "Biblioteca do KDE para interfaceamento com CDs de áudio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13237
-#, fuzzy
 msgid "<literal>libkscreen</literal>"
-msgstr "<literal>libksane</literal>"
+msgstr "<literal>libkscreen</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13242
-#, fuzzy
 msgid "<literal>libksieve</literal>"
-msgstr "<literal>libksane</literal>"
+msgstr "<literal>libksieve</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13243
@@ -23992,9 +23840,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13247
-#, fuzzy
 msgid "<literal>libksysguard</literal>"
-msgstr "<literal>libksane</literal>"
+msgstr "<literal>libksysguard</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13248
@@ -24003,9 +23850,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13253
-#, fuzzy
 msgid "<literal>mailcommon</literal>"
-msgstr "<literal>common</literal>"
+msgstr "<literal>mailcommon</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13254 book.translate.xml:13357
@@ -24014,9 +23860,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13258
-#, fuzzy
 msgid "<literal>mailimporter</literal>"
-msgstr "<literal>metaport</literal>"
+msgstr "<literal>mailimporter</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13259 book.translate.xml:13280
@@ -24025,9 +23870,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13263
-#, fuzzy
 msgid "<literal>mailtransport</literal>"
-msgstr "<literal>metaport</literal>"
+msgstr "<literal>mailtransport</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13264
@@ -24048,21 +23892,18 @@ msgstr "Globo virtual e atlas mundial"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13273
-#, fuzzy
 msgid "<literal>mbox</literal>"
-msgstr "<literal>moc</literal>"
+msgstr "<literal>mbox</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13279
-#, fuzzy
 msgid "<literal>mbox-importer</literal>"
-msgstr "<literal>compiler</literal>"
+msgstr "<literal>mbox-importer</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13284
-#, fuzzy
 msgid "<literal>mediaplayer</literal>"
-msgstr "<literal>display</literal>"
+msgstr "<literal>mediaplayer</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13285
@@ -24071,9 +23912,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13290
-#, fuzzy
 msgid "<literal>messagelib</literal>"
-msgstr "<literal>testlib</literal>"
+msgstr "<literal>messagelib</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13291
@@ -24082,9 +23922,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13295
-#, fuzzy
 msgid "<literal>milou</literal>"
-msgstr "<literal>qmail</literal>"
+msgstr "<literal>milou</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13296
@@ -24093,9 +23932,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13300
-#, fuzzy
 msgid "<literal>mime</literal>"
-msgstr "<literal>imake</literal>"
+msgstr "<literal>mime</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13301
@@ -24104,9 +23942,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13305
-#, fuzzy
 msgid "<literal>newstuff</literal>"
-msgstr "<literal>tiff</literal>"
+msgstr "<literal>newstuff</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13306
@@ -24115,9 +23952,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13311
-#, fuzzy
 msgid "<literal>notifications</literal>"
-msgstr "<literal>notificationdaemon</literal>"
+msgstr "<literal>notifications</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13312
@@ -24126,9 +23962,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13316
-#, fuzzy
 msgid "<literal>notifyconfig</literal>"
-msgstr "<literal>fontconfig</literal>"
+msgstr "<literal>notifyconfig</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13317
@@ -24149,9 +23984,8 @@ msgstr "Visualizador universal de documentos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13326
-#, fuzzy
 msgid "<literal>oxygen</literal>"
-msgstr "<literal>autogen</literal>"
+msgstr "<literal>oxygen</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13327
@@ -24160,9 +23994,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13331
-#, fuzzy
 msgid "<literal>oxygen-icons5</literal>"
-msgstr "<literal>-liconv</literal>"
+msgstr "<literal>oxygen-icons5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13332
@@ -24171,9 +24004,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13336
-#, fuzzy
 msgid "<literal>package</literal>"
-msgstr "<literal>kate</literal>"
+msgstr "<literal>package</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13337
@@ -24182,9 +24014,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13341
-#, fuzzy
 msgid "<literal>parts</literal>"
-msgstr "<literal>pear</literal>"
+msgstr "<literal>parts</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13342
@@ -24193,9 +24024,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13346
-#, fuzzy
 msgid "<literal>people</literal>"
-msgstr "<literal>pecl</literal>"
+msgstr "<literal>people</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13347
@@ -24204,9 +24034,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13351
-#, fuzzy
 msgid "<literal>pim-data-exporter</literal>"
-msgstr "<literal>metaport</literal>"
+msgstr "<literal>pim-data-exporter</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13352
@@ -24215,15 +24044,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13356
-#, fuzzy
 msgid "<literal>pimcommon</literal>"
-msgstr "<literal>common</literal>"
+msgstr "<literal>pimcommon</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13361
-#, fuzzy
 msgid "<literal>pimtextedit</literal>"
-msgstr "<literal>libedit</literal>"
+msgstr "<literal>pimtextedit</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13362
@@ -24232,9 +24059,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13367
-#, fuzzy
 msgid "<literal>plasma-browser-integration</literal>"
-msgstr "<literal>pre-install</literal>"
+msgstr "<literal>plasma-browser-integration</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13368
@@ -24243,9 +24069,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13373
-#, fuzzy
 msgid "<literal>plasma-desktop</literal>"
-msgstr "<literal>desktop</literal>"
+msgstr "<literal>plasma-desktop</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13374
@@ -24254,9 +24079,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13378
-#, fuzzy
 msgid "<literal>plasma-framework</literal>"
-msgstr "<literal>network</literal>"
+msgstr "<literal>plasma-framework</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13379
@@ -24265,9 +24089,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13384
-#, fuzzy
 msgid "<literal>plasma-integration</literal>"
-msgstr "<literal>pango</literal>"
+msgstr "<literal>plasma-integration</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13385
@@ -24276,9 +24099,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13390
-#, fuzzy
 msgid "<literal>plasma-pa</literal>"
-msgstr "<literal>pluma</literal>"
+msgstr "<literal>plasma-pa</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13391
@@ -24287,9 +24109,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13395
-#, fuzzy
 msgid "<literal>plasma-sdk</literal>"
-msgstr "<literal>pluma</literal>"
+msgstr "<literal>plasma-sdk</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13396
@@ -24298,9 +24119,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13401
-#, fuzzy
 msgid "<literal>plasma-workspace</literal>"
-msgstr "<literal>blaslapack</literal>"
+msgstr "<literal>plasma-workspace</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13402
@@ -24309,9 +24129,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13406
-#, fuzzy
 msgid "<literal>plasma-workspace-wallpapers</literal>"
-msgstr "<literal>localbase</literal>"
+msgstr "<literal>plasma-workspace-wallpapers</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13407
@@ -24320,9 +24139,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13411
-#, fuzzy
 msgid "<literal>plotting</literal>"
-msgstr "<literal>png</literal>"
+msgstr "<literal>plotting</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13412
@@ -24331,9 +24149,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13416
-#, fuzzy
 msgid "<literal>polkit-kde-agent-1</literal>"
-msgstr "<literal>polkit</literal>"
+msgstr "<literal>polkit-kde-agent-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13417
@@ -24342,9 +24159,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13422
-#, fuzzy
 msgid "<literal>powerdevil</literal>"
-msgstr "<literal>perlkde</literal>"
+msgstr "<literal>powerdevil</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13423
@@ -24353,9 +24169,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13428
-#, fuzzy
 msgid "<literal>prison</literal>"
-msgstr "<literal>bison</literal>"
+msgstr "<literal>prison</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13429
@@ -24364,9 +24179,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13433
-#, fuzzy
 msgid "<literal>pty</literal>"
-msgstr "<literal>pyqt</literal>"
+msgstr "<literal>pty</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13434
@@ -24375,9 +24189,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13438
-#, fuzzy
 msgid "<literal>purpose</literal>"
-msgstr "<literal>pure</literal>"
+msgstr "<literal>purpose</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13439
@@ -24386,9 +24199,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13444
-#, fuzzy
 msgid "<literal>qqc2-desktop-style</literal>"
-msgstr "<literal>desktop</literal>"
+msgstr "<literal>qqc2-desktop-style</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13445
@@ -24397,9 +24209,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13449
-#, fuzzy
 msgid "<literal>runner</literal>"
-msgstr "<literal>run</literal>"
+msgstr "<literal>runner</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13450
@@ -24408,9 +24219,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13454
-#, fuzzy
 msgid "<literal>service</literal>"
-msgstr "<literal>vte</literal>"
+msgstr "<literal>service</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13455
@@ -24419,9 +24229,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13460
-#, fuzzy
 msgid "<literal>solid</literal>"
-msgstr "<literal>sql</literal>"
+msgstr "<literal>solid</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13461
@@ -24430,9 +24239,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13465
-#, fuzzy
 msgid "<literal>sonnet</literal>"
-msgstr "<literal>none</literal>"
+msgstr "<literal>sonnet</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13466
@@ -24441,9 +24249,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13470
-#, fuzzy
 msgid "<literal>syndication</literal>"
-msgstr "<literal>action</literal>"
+msgstr "<literal>syndication</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13471
@@ -24452,9 +24259,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13475
-#, fuzzy
 msgid "<literal>syntaxhighlighting</literal>"
-msgstr "<literal>strigi</literal>"
+msgstr "<literal>syntaxhighlighting</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13476
@@ -24463,9 +24269,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13481
-#, fuzzy
 msgid "<literal>systemsettings</literal>"
-msgstr "<literal>test</literal>"
+msgstr "<literal>systemsettings</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13482
@@ -24474,9 +24279,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13486
-#, fuzzy
 msgid "<literal>texteditor</literal>"
-msgstr "<literal>dir</literal>"
+msgstr "<literal>texteditor</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13487
@@ -24485,9 +24289,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13491
-#, fuzzy
 msgid "<literal>textwidgets</literal>"
-msgstr "<literal>widgets</literal>"
+msgstr "<literal>textwidgets</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13492
@@ -24497,15 +24300,13 @@ msgstr "Framework avançado de editor de texto"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13496
-#, fuzzy
 msgid "<literal>threadweaver</literal>"
-msgstr "<literal>horde</literal>"
+msgstr "<literal>threadweaver</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13501
-#, fuzzy
 msgid "<literal>tnef</literal>"
-msgstr "<literal>vte</literal>"
+msgstr "<literal>tnef</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13502
@@ -24514,9 +24315,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13506
-#, fuzzy
 msgid "<literal>unitconversion</literal>"
-msgstr "<literal>iconv</literal>"
+msgstr "<literal>unitconversion</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13507
@@ -24525,9 +24325,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13511
-#, fuzzy
 msgid "<literal>user-manager</literal>"
-msgstr "<literal>setowner</literal>"
+msgstr "<literal>user-manager</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13512
@@ -24536,9 +24335,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13516
-#, fuzzy
 msgid "<literal>wallet</literal>"
-msgstr "<literal>allegro</literal>"
+msgstr "<literal>wallet</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13517
@@ -24552,9 +24350,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13528
-#, fuzzy
 msgid "<literal>widgetsaddons</literal>"
-msgstr "<literal>widgets</literal>"
+msgstr "<literal>widgetsaddons</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13529
@@ -24563,9 +24360,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13533
-#, fuzzy
 msgid "<literal>windowsystem</literal>"
-msgstr "<literal>nss</literal>"
+msgstr "<literal>windowsystem</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13534
@@ -24574,9 +24370,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13539
-#, fuzzy
 msgid "<literal>xmlgui</literal>"
-msgstr "<literal>gui</literal>"
+msgstr "<literal>xmlgui</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13540
@@ -24585,9 +24380,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13544
-#, fuzzy
 msgid "<literal>xmlrpcclient</literal>"
-msgstr "<literal>xml</literal>"
+msgstr "<literal>xmlrpcclient</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13545
@@ -38788,7 +38582,6 @@ msgstr "<literal>cmake</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21453
-#, fuzzy
 msgid ""
 "Possible arguments: (none), <literal>insource</literal>, <literal>noninja</"
 "literal>, <literal>run</literal>"
@@ -39845,9 +39638,9 @@ msgstr "<literal>grantlee</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22404
-#, fuzzy
 msgid "Possible arguments: <literal>5</literal>, <literal>selfbuild</literal>"
-msgstr "Argumentos possíveis: <literal>4</literal>, <literal>5</literal>"
+msgstr ""
+"Argumentos possíveis: <literal>5</literal>, <literal>selfbuild</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22407
@@ -40157,9 +39950,8 @@ msgstr "<literal>kde</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22563
-#, fuzzy
 msgid "Possible arguments: <literal>5</literal>"
-msgstr "Argumentos possíveis: <literal>env</literal>"
+msgstr "Argumentos possíveis: <literal>5</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22565
@@ -41308,45 +41100,38 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23356
-#, fuzzy
 msgid "<literal>client</literal>"
-msgstr "<literal>cli</literal>"
+msgstr "<literal>client</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23364
-#, fuzzy
 msgid "<literal>docs</literal>"
-msgstr "<literal>doc</literal>"
+msgstr "<literal>docs</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23368
-#, fuzzy
 msgid "<literal>pgtcl</literal>"
-msgstr "<literal>tcl</literal>"
+msgstr "<literal>pgtcl</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23372
-#, fuzzy
 msgid "<literal>plperl</literal>"
-msgstr "<literal>perl5</literal>"
+msgstr "<literal>plperl</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23376
-#, fuzzy
 msgid "<literal>plpython</literal>"
-msgstr "<literal>python</literal>"
+msgstr "<literal>plpython</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23380
-#, fuzzy
 msgid "<literal>pltcl</literal>"
-msgstr "<literal>tcl</literal>"
+msgstr "<literal>pltcl</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23384
-#, fuzzy
 msgid "<literal>server</literal>"
-msgstr "<literal>svg</literal>"
+msgstr "<literal>server</literal>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:23390
@@ -41989,9 +41774,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:23873
-#, fuzzy
 msgid "Possible arguments: <literal>5</literal>, <literal>no_env</literal>"
-msgstr "Argumentos possíveis: <literal>4</literal>, <literal>5</literal>"
+msgstr "Argumentos possíveis: <literal>5</literal>, <literal>no_env</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:23876
