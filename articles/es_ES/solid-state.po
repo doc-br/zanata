@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-04-14 10:20+0000\n"
+"PO-Revision-Date: 2019-04-15 09:23+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -370,7 +370,7 @@ msgstr "varsize=8192"
 #. (itstool) path: sect1/para
 #: article.translate.xml:220
 msgid "Remember that this value is in sectors by default."
-msgstr "Recuerde que por defecto este valor está en sectores"
+msgstr "Recuerde que por defecto este valor está en sectores."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:222
@@ -427,7 +427,7 @@ msgid ""
 "to the execution of other common software packages in <xref linkend="
 "\"strategies\"/>."
 msgstr ""
-"Algunas aplicaciones en el sistema comenzar a fallar inmediatamente como "
+"Algunas aplicaciones en el sistema comenzarán a fallar inmediatamente como "
 "resultado de este cambio. Por ejemplo, cron no se ejecutará correctamente al "
 "faltar las cron tabs en <filename>/var</filename> creadas por <filename>/etc/"
 "rc.d/var</filename>, además, syslog y dhcp encontrarán como resultado de "
@@ -435,7 +435,7 @@ msgstr ""
 "en <filename>/var</filename> que ha creado <filename>/etc/rc.d/var</"
 "filename>. Sin embargo, esto son solo problemas temporales y se tratan, "
 "junto con las soluciones para la ejecución de otros programas de uso común "
-"en <xref linkend=\"strategies\"/>."
+"en la <xref linkend=\"strategies\"/>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:254
@@ -768,12 +768,12 @@ msgid ""
 "successfully running cron, syslog, ports installations, and the Apache web "
 "server will be provided."
 msgstr ""
-"En <xref linkend=\"ro-fs\"/>, se indicó que el sistema de archivos "
+"En la <xref linkend=\"ro-fs\"/>, se indicó que el sistema de archivos "
 "<filename>/var</filename> construido por <filename>/etc/rc.d/var</filename> "
-"y que el sistema de archivos raíz este montado en modo solo lectura causa "
-"problemas con muchos paquetes de software utilizados en FreeBSD. En este "
-"artículo, se proporcionarán sugerencias para ejecutar con éxito cron, "
-"syslog, instalación de ports y el servidor web Apache."
+"y la presencia de un sistema de archivos raíz montado en modo solo lectura "
+"causa problemas con muchos paquetes de software utilizados en FreeBSD. En "
+"este artículo, se proporcionarán sugerencias para ejecutar con éxito cron, "
+"syslog, la instalación de ports y el servidor web Apache."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:410
@@ -788,11 +788,11 @@ msgid ""
 "filename>, so the <filename>cron</filename>, <filename>cron/tabs</filename>, "
 "<filename>at</filename>, and a few other standard directories get created."
 msgstr ""
-"Tras el arranque, <filename>/var</filename> se llena con <filename>/etc/rc.d/"
-"var</filename> usando la lista disponible en <filename>/etc/mtree/BSD.var."
-"dist</filename>, por lo que <filename>cron</filename>, <filename>cron/tabs</"
-"filename>, <filename>at</filename> y algunos otros directorios estándar son "
-"creados."
+"Tras el arranque, <filename>/var</filename> será llenado con <filename>/etc/"
+"rc.d/var</filename> usando la lista disponible en <filename>/etc/mtree/BSD."
+"var.dist</filename>, por lo que <filename>cron</filename>, <filename>cron/"
+"tabs</filename>, <filename>at</filename> y algunos otros directorios "
+"estándar son creados."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:419
@@ -861,7 +861,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:453
 msgid "Ports Installation"
-msgstr "Instalación de Ports"
+msgstr "Instalación de ports"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:455
@@ -878,7 +878,7 @@ msgstr ""
 "ports, es necesario recordar que su sistema de archivos en el medio flash es "
 "de solo lectura. Dado que es de solo lectura, necesitará montarlo "
 "temporalmente en modo lectura-escritura utilizando la sintaxis que se "
-"muestra en <xref linkend=\"ro-fs\"/>. Siempre debe volver a montar estos "
+"muestra en la <xref linkend=\"ro-fs\"/>. Siempre debe volver a montar estos "
 "sistemas de archivos en modo solo lectura cuando haya terminado cualquier "
 "mantenimiento - las escrituras innecesarias en el medio flash podrían "
 "acortar considerablemente su vida útil."
@@ -954,7 +954,7 @@ msgid ""
 msgstr ""
 "Ahora, cada vez que monte su sistema de archivos en modo lectura-escritura e "
 "instale un paquete, el comando <command>make</command> <_:buildtarget-1/> "
-"funcionará, y la información del paquete se escribirá correctamente en /"
+"funcionará, y la información del paquete se escribirá correctamente en "
 "<filename>/etc/pkg</filename> (porque el sistema de archivos, en ese "
 "momento, estará montado en modo lectura-escritura) que siempre estará "
 "disponible para el sistema operativo como <filename>/var/db/pkg</filename>."
