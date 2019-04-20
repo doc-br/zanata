@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-04-19 06:44+0000\n"
+"PO-Revision-Date: 2019-04-20 10:43+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -747,11 +747,16 @@ msgid ""
 "to fill up the database, but you should include excerpts that you think "
 "might be relevant):"
 msgstr ""
+"Si se trata de un problema relacionado con los ports, prepárese para poder "
+"proporcionar la información que se muestra a continuación. (No es necesario "
+"incluir esta información por defecto, ya que esto solo produce un "
+"crecimiento indeseado de la base de datos, pero debe incluir extractos que "
+"considere que pueden ser relevantes):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:454
 msgid "which ports you have installed"
-msgstr ""
+msgstr "Qué ports ha instalado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:458
@@ -759,6 +764,8 @@ msgid ""
 "any environment variables that override the defaults in <filename>bsd.port."
 "mk</filename>, such as <varname>PORTSDIR</varname>"
 msgstr ""
+"Cualquier variable de entorno que sobreescriba los valores por defecto del "
+"archivo <filename>bsd.port.mk</filename>, como <varname>PORTSDIR</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:464
@@ -766,6 +773,8 @@ msgid ""
 "the fact that you have read <filename>ports/UPDATING</filename> and that "
 "your problem is not listed there (someone is guaranteed to ask)"
 msgstr ""
+"El hecho de que ha leído los ports/UPDATING y que su problema no se "
+"encuentra en la lista (puede preguntar a alguien)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:475
@@ -779,6 +788,15 @@ msgid ""
 "<literal>freebsd-questions</literal> than an entry in the PR database, as "
 "discussed above."
 msgstr ""
+"<emphasis>Evitar peticiones de características vagas.</emphasis> Los PRs del "
+"estilo <quote>alguien debería implementar algo que haga esto, aquello y lo "
+"de más allá</quote> son informes con pocas probabilidades de obtener "
+"resultados positivos. Recuerde, el código fuente se encuentra disponible "
+"para todo el mundo, por lo tanto, si desea una característica, ¡la mejor "
+"manera de asegurarse de que se incluya es ponerse a trabajar en ella! "
+"También tenga en cuenta que para discutir este tipo de problemas resulta más "
+"adecuado utilizar la lista <literal>freebsd-questions</literal>, que una "
+"entrada en la base de datos de PR, como ya se ha comentado anteriormente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:489
@@ -790,6 +808,12 @@ msgid ""
 "freebsd.org/bugzilla/query.cgi</uri>. (Of course, everyone is guilty of "
 "forgetting to do this now and then.)"
 msgstr ""
+"<emphasis>Asegúrese que nadie más ha enviado un PR similar.</emphasis> "
+"Aunque esto ya se ha mencionado anteriormente, vale la pena repetirlo aquí. "
+"Sólamente lleva uno o dos minutos realizar una búsqueda basada en un motor "
+"web en <uri xlink:href=\"https://bugs.freebsd.org/bugzilla/query.cgi\">https:"
+"//bugs.freebsd.org/bugzilla/query.cgi</uri>.  (Por supuesto, todo el mundo "
+"es culpable de olvidarse de hacerlo de vez en cuando)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:498
@@ -800,6 +824,11 @@ msgid ""
 "multiple bugs in the same PR unless they are closely related—such PRs often "
 "take longer to resolve."
 msgstr ""
+"<emphasis>Informe un solo problema por informe.</emphasis> Evige incluir dos "
+"o más problemas dentro del mismo informe, a menos que estén relacionados. Al "
+"enviar parches, evite agregar múltiples funciones o corregir varios errores "
+"en el mismo PR, a menos que estén estrechamente relacionados — ya que los PR "
+"suelen tardar más en resolverse."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:508
@@ -812,6 +841,14 @@ msgid ""
 "www.FreeBSD.org/search/search.html#mailinglists\">https://www.FreeBSD.org/"
 "search/search.html#mailinglists</uri> is always good preparation."
 msgstr ""
+"<emphasis>Evite peticiones controvertidas.</emphasis> Si su PR se dirige a "
+"un área que ha sido controvertida en el pasado, probablemente debería estar "
+"preparado para no solo ofrecer parches, sino también una justificación de "
+"por qué los parches son la <quote>forma correcta de hacerlo</quote>. Como se "
+"avisó anteriormente, una búsqueda meticulosa en la listas de correo "
+"utilizando los archivos históricos en <uri xlink:href=\"https://www.FreeBSD."
+"org/search/search.html#mailinglists\">https://www.FreeBSD.org/search/search."
+"html#mailinglists</uri> siempre son una buena preparación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:519
@@ -822,11 +859,16 @@ msgid ""
 "monetary gain. This is a good thing to keep in mind at all times on Open "
 "Source projects."
 msgstr ""
+"<emphasis>Sea educado.</emphasis> Casi cualquier persona que se encarge de "
+"tratar su PR es un voluntario. A nadie le gusta que le digan que tiene que "
+"hacer algo cuando ya lo están haciendo por alguna otra motivación que no sea "
+"la monetaria. Es bueno tenerlo en cuenta en todo momento en los proyectos de "
+"código abierto."
 
 #. (itstool) path: section/title
 #: article.translate.xml:530
 msgid "Before Beginning"
-msgstr ""
+msgstr "Antes de comenzar"
 
 #. (itstool) path: section/para
 #: article.translate.xml:532
@@ -836,6 +878,10 @@ msgid ""
 "careful of cut-and-paste operations that might change whitespace or other "
 "text formatting."
 msgstr ""
+"Se aplican consideraciones similares al uso del formulario de envío de PR "
+"<link xlink:href=\"https://bugs.freebsd.org/bugzilla/enter_bug.cgi\">por la "
+"aplicación web</link>. Tenga cuidado con las operaciones de cortar y pegar "
+"que puedan cambiar los espacios en blanco u otro formato de texto."
 
 #. (itstool) path: section/para
 #: article.translate.xml:538
@@ -843,11 +889,13 @@ msgid ""
 "Finally, if the submission is lengthy, prepare the work offline so that "
 "nothing will be lost if there is a problem submitting it."
 msgstr ""
+"Finalmente, si el envío es largo, prepare el trabajo sin conexión, de forma "
+"que no se pierda nada si hay un problema al enviarlo."
 
 #. (itstool) path: section/title
 #: article.translate.xml:544
 msgid "Attaching Patches or Files"
-msgstr ""
+msgstr "Adjuntar parches o archivos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:546
@@ -907,7 +955,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: article.translate.xml:591
 msgid "Filling out the Form"
-msgstr ""
+msgstr "Rellenar el formulario"
 
 #. (itstool) path: note/para
 #: article.translate.xml:594
@@ -1194,6 +1242,10 @@ msgid ""
 "a comment saying that the problem report can be closed, and, if possible, "
 "explaining how or when the problem was fixed."
 msgstr ""
+"Si el informe de problemas permanece abierto una vez que dicho problema ha "
+"desaparecido, solo agregue un comentario que indique que el informe de "
+"problemas se puede cerrar y,  a ser posible, explique cómo o cuándo se "
+"solucionó el problema."
 
 #. (itstool) path: section/para
 #: article.translate.xml:847
@@ -1204,6 +1256,12 @@ msgid ""
 "When a problem report has not received attention after several weeks, it is "
 "worth finding a committer particularly interested in working on it."
 msgstr ""
+"A veces hay un retraso de una o dos semanas en las cuales el informe del "
+"problema está sin cambios, sin asignar ni comentado por nadie. Esto puede "
+"suceder cuando hay una acumulación de informes de problemas o durante la "
+"temporada de vacaciones. Cuando un informe de problemas no ha recibido "
+"atención después de varias semanas, vale la pena encontrar a un committer "
+"que este interesado en trabajar en él."
 
 #. (itstool) path: section/para
 #: article.translate.xml:855
@@ -1211,6 +1269,8 @@ msgid ""
 "There are a few ways to do so, ideally in the following order, with a few "
 "days between attempting each communication channel:"
 msgstr ""
+"Hay varias formas de hacerlo, lo ideal es el orden siguiente, con algunos "
+"días entre cada intento:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:861
@@ -1220,6 +1280,11 @@ msgid ""
 "html#ERESOURCES-MAIL\">list in the Handbook</link> and send a message to "
 "that list asking about assistance or comments on the problem report."
 msgstr ""
+"Encuentre la lista de correo de FreeBSD que sea relevante para el informe de "
+"problemas en  <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"handbook/eresources.html#ERESOURCES-MAIL\"la lista del Manual</link> y envíe "
+"un mensaje a esa lista preguntando por asistencia o comentarios sobre el "
+"informe de problemas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:869
@@ -1230,6 +1295,12 @@ msgid ""
 "patient and stay in the channel after posting, so that the people from "
 "different time zones around the world have a chance to catch up."
 msgstr ""
+"Únase a los canales de <acronym>IRC</acronym> relevantes. Aquí un listado "
+"parcial: <link xlink:href=\"https://wiki.freebsd.org/IrcChannels\"/>. "
+"Informe a las personas en ese canal sobre el informe del problema y solicite "
+"asistencia. Sea paciente y permanezca en el canal después de la publicación, "
+"para que las personas de diferentes zonas horarias de todo el mundo tengan "
+"la oportunidad de ponerse al día."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:878
@@ -1243,6 +1314,15 @@ msgid ""
 "en_US.ISO8859-1/articles/contributors\">Contributors to FreeBSD</link> "
 "article."
 msgstr ""
+"Encuentre a committers interesados en el problema que reportó. Si el "
+"problema estaba en una herramienta, binario, port, documento o un fichero de "
+"código fuente en particular,  verifique el <link xlink:href=\"http://svnweb."
+"FreeBSD.org\">repositorio SVN</link>. Localice a los últimos committers que "
+"realizaron cambios sustanciales en el archivo e intente acceder a ellos a "
+"través de <acronym>IRC</acronym> o correo electrónico. Puede encontrar una "
+"lista de los committers y sus correos electrónicos en el artículo <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/articles/"
+"contributors\">Colaboradores de FreeBSD</link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:889
@@ -1254,6 +1334,12 @@ msgid ""
 "process, finding a committer to take care of the problem report is just a "
 "matter of time."
 msgstr ""
+"Recuerde que estas personas son voluntarios, al igual que los maintainers y "
+"usuarios, por lo que es posible que no estén disponibles de inmediato para "
+"ayudar con el informe del problema. La paciencia y la consistencia en los "
+"siguimientos son altamente recomendadas y apreciadas. Con suficiente cuidado "
+"y esfuerzo dedicado al proceso de seguimiento, encontrar un committer para "
+"encargarse del informe del problema es solo cuestión de tiempo."
 
 #. (itstool) path: section/title
 #: article.translate.xml:899
