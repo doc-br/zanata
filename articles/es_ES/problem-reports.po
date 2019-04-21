@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-04-20 10:43+0000\n"
+"PO-Revision-Date: 2019-04-21 09:47+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -623,6 +623,17 @@ msgid ""
 "literal>. (In the case of ports, it is especially helpful to have both the "
 "category and portname in the <quote>Synopsis</quote> line.)"
 msgstr ""
+"<emphasis>Evite utilizar una línea de <quote>sinopsis</quote> débil.</"
+"emphasis> No debe asumir que quien lea el PR conoce el contexto adecuado en "
+"el que su mensaje tiene sentido, así que cuanta más información se "
+"proporcione, mejor que mejor. Por ejemplo, ¿qué parte del sistema se ve "
+"afectado por el informe?, ¿el problema aparece cuando se está instalando o "
+"cuando se está ejecutando? Como aclaración, en lugar de <literal>sinopsis: "
+"portupgrade está roto</literal>, se pueden ver las ventajas que proporciona "
+"una línea como la siguiente: <literal>sinopsis: port sysutils/portupgrade "
+"produce un coredump en -current</literal>. (En el caso de los ports, es "
+"especialmente útil tener tanto la categoría como el nombre del port en la "
+"línea de <quote>sinopsis</quote>)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:332
@@ -633,6 +644,11 @@ msgid ""
 "the beginning of the <quote>Synopsis</quote>. (Although it is not mandatory "
 "to use that exact string, by convention, that is the one that is used.)"
 msgstr ""
+"<emphasis>Si dispone de un parche, dígalo.</emphasis> Un PR con un parche "
+"incluido tiene muchas más posibilidades de ser tratado que uno que no lo "
+"tiene.  Si está incluyendo uno, ponga la cadena <literal>[patch]</literal> "
+"(incluidos los corchetes) al comienzo de la <quote>sinopsis</quote>. (Aunque "
+"no es obligatorio usar esa cadena exacta, por convención, es la que se usa)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:342
@@ -644,6 +660,13 @@ msgid ""
 "<quote>Class</quote> of your PR to <literal>maintainer-update</literal>. "
 "This way any committer that handles your PR will not have to check."
 msgstr ""
+"<emphasis>Si es un mantenedor, dígalo.</emphasis> Si se está manteniendo el "
+"código fuente de una aplicación (por ejemplo, de un port), podría considerar "
+"agregar la cadena <literal>[maintainer update]</literal> (incluidos los "
+"corchetes) al comienzo de su línea de sinopsis, y definitivamente debe "
+"asignar el campo <quote>Class</quote> del PR a la cadena <literal>maintainer-"
+"update</literal>. De esta forma, cualquier committer que maneje su PR no "
+"tendrá que verificarlo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:354
@@ -651,6 +674,8 @@ msgid ""
 "<emphasis>Be specific.</emphasis> The more information you supply about what "
 "problem you are having, the better your chance of getting a response."
 msgstr ""
+"<emphasis>Sea concreto.</emphasis> Cuanta más información se proporcione "
+"sobre el problema que tiene, más posiblidades de obtener una respuesta."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:360
@@ -664,6 +689,15 @@ msgid ""
 "high-profile problems) tend to get committed very quickly, and FreeBSD-"
 "CURRENT users are expected to keep up."
 msgstr ""
+"Incluya la versión de FreeBSD que está ejecutando (existe un lugar donde "
+"escribir esta información, vea a continuación) y en qué arquitectura. Debe "
+"incluir si se está ejecutando desde una release (por ejemplo, desde un "
+"<acronym>CD-ROM</acronym> o descarga), o si es desde un sistema mantenido "
+"por Subversion (y, si es así, en qué número de revisión se encuentra). Si "
+"está siguiendo la rama FreeBSD-CURRENT, esa es la primera pregunta que le "
+"harán, porque las correcciones (especialmente para problemas de alto nivel) "
+"tienden a aplicarse muy rápidamente, y se espera que los usuarios de FreeBSD-"
+"CURRENT se mantengan al día."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:375
@@ -673,6 +707,10 @@ msgid ""
 "filename>. Given the infinite number of options, not every combination may "
 "be fully supported."
 msgstr ""
+"Incluya qué opciones globales ha especificado en su fichero <filename>make."
+"conf</filename>, <filename>src.conf</filename> y <filename>src-env.conf</"
+"filename>. Dado el número infinito de opciones, no todas las combinaciones "
+"pueden ser totalmente compatibles."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:384
@@ -684,6 +722,12 @@ msgid ""
 "cannot be made public, then do try to create a minimal file that exhibits "
 "the same issue and that can be included within the PR."
 msgstr ""
+"Si el problema se puede reproducir fácilmente, incluya información que ayude "
+"al desarrollador a reproducirlo por sí mismo. Si se puede hacer una "
+"demostración con un input específico, incluya un ejemplo con ese input, si "
+"es posible, e incliya el output real y el esperado. Si la información es "
+"grande o no se puede hacer pública, intente crear un archivo con lo mínimo "
+"que muestre el mismo problema y que pueda incluirse en el PR."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:396
@@ -693,6 +737,11 @@ msgid ""
 "to fill up the database, but you should include excerpts that you think "
 "might be relevant):"
 msgstr ""
+"Si se trata de un problema del kernel, prepárese para proporcionar la "
+"siguiente información. (No es necesario incluir esta información por "
+"defecto, puesto que lo único que produce es un crecimiento desmesurado de la "
+"base de datos, pero sí puede merecer la pena incluir extractos que usted "
+"considere importantes):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:404
@@ -700,6 +749,8 @@ msgid ""
 "your kernel configuration (including which hardware devices you have "
 "installed)"
 msgstr ""
+"la configuración del kernel (incluidos los dispositivos de hardware que ha "
+"instalado)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:409
@@ -970,7 +1021,7 @@ msgstr ""
 #. (itstool) path: section/para
 #: article.translate.xml:603
 msgid "When you file a bug, you will find the following fields:"
-msgstr ""
+msgstr "Cuando presente un error, encontrará los siguientes campos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
