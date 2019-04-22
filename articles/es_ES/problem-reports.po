@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-04-21 09:47+0000\n"
+"PO-Revision-Date: 2019-04-22 06:02+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -240,7 +240,7 @@ msgid ""
 "Consider these factors when submitting PRs about ports or other software "
 "that is not part of FreeBSD itself:"
 msgstr ""
-"Tenga en cuenta estos factores al enviar PR sobre ports u otro software que "
+"Tenga en cuenta estos factores al enviar PRs sobre ports u otro software que "
 "no sea parte de FreeBSD:"
 
 #. (itstool) path: listitem/para
@@ -759,6 +759,9 @@ msgid ""
 "literal>), and if so, whether the problem persists when you change the sense "
 "of that option"
 msgstr ""
+"si tiene o no opciones de depuración activadas (como <literal>WITNESS</"
+"literal>), y si es así, si el problema persiste cuando se cambia el valor de "
+"dichas opciones"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:416
@@ -766,6 +769,8 @@ msgid ""
 "the full text of any backtrace, panic or other console output, or entries in "
 "<filename>/var/log/messages</filename>, if any were generated"
 msgstr ""
+"el texto completo de cualquier backtrace, panic u otra salida por consola, o "
+"entradas en <filename>/var/log/messages</filename>, si se generó alguna"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:423
@@ -774,6 +779,9 @@ msgid ""
 "<command>dmesg</command> output if your problem relates to a specific piece "
 "of hardware"
 msgstr ""
+"el output de <command>pciconf -l</command> y partes relevantes de su salida "
+"<command>dmesg</command> si su problema se relaciona con una pieza "
+"específica de hardware"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:430
@@ -781,6 +789,9 @@ msgid ""
 "the fact that you have read <filename>src/UPDATING</filename> and that your "
 "problem is not listed there (someone is guaranteed to ask)"
 msgstr ""
+"el hecho de que haya leído <filename>src/UPDATING</filename> y que su "
+"problema no esté listado (se garantiza que alguién le preguntará sobre este "
+"punto)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:437
@@ -789,6 +800,10 @@ msgid ""
 "out hardware-related issues such as failing disks and overheating CPUs, "
 "which can masquerade as kernel problems)"
 msgstr ""
+"si puede o no ejecutar otro kernel de respaldo sin problemas (se trata de "
+"descartar problemas relacionados con el hardware, como discos con errores o "
+"CPUs con sobrecalentamiento, que pueden confundirse fácilmente con problemas "
+"del kernel)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:446
@@ -961,6 +976,16 @@ msgid ""
 "first. After appropriate or substantial testing has been done, the code will "
 "be merged/migrated to the FreeBSD-STABLE branch."
 msgstr ""
+"Al adjuntar un parche, asegúrese de usar la opción <option>-u</option> con "
+"<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para crear o unificar diff y asegúrese de especificar los "
+"números de revisión de SVN exactos de los archivos que modificó para que los "
+"desarrolladores qe lean su informe puedan aplicarlos fácilmente. Para "
+"problemas con el kernel o las utilidades del sistema base, se prefiere un "
+"parte contra FreeBSD-CURRENT (la rama HEAD de Subversion) ya que todo el "
+"código nuevo debe aplicarse y probarse ahí primero. Una vez que se hayan "
+"realizado las pruebas apropiadas o considerables, el código se fusionará/"
+"migrará a la rama FreeBSD-STABLE."
 
 #. (itstool) path: section/para
 #: article.translate.xml:558
@@ -970,6 +995,11 @@ msgid ""
 "tabs as spaces, which will completely ruin anything intended to be part of a "
 "Makefile."
 msgstr ""
+"Si adjunta un parche como parte del mensaje, en lugar de como adjunto, tenga "
+"en cuenta que el problema más común es la tendencia de algunos programas de "
+"correo electrónico de mostrar las tabulaciones como espacios, lo cual "
+"estropeará completamente todo lo que pretenda que forme parte de un Makefile."
+""
 
 #. (itstool) path: section/para
 #: article.translate.xml:564
@@ -978,6 +1008,9 @@ msgid ""
 "quoted-printable</command>. These will perform character escaping and the "
 "entire patch will be useless."
 msgstr ""
+"No envíe parches como archivos adjuntos usando <command>Content-Transfer-"
+"Encoding: quoted-printable</command>. Esto realizará el escape del caracter "
+"y todo el parche sería inútil."
 
 #. (itstool) path: section/para
 #: article.translate.xml:569
@@ -994,6 +1027,18 @@ msgid ""
 "database, since closed PRs are not actually deleted but instead kept and "
 "simply marked as complete."
 msgstr ""
+"También tenga en cuenta que, incluir pequeños parches en un PR, en general "
+"está bien, especialmente cuando soluciona el problema descrito en el PR, los "
+"parches grandes y especialmente el nuevo código que puede requerir una "
+"revisión sustancial antes de realizar el commit deben colocarse en un "
+"servidor web o ftp, y la URL debe incluirse en el PR en lugar del parche. "
+"Los parches en el correo electrónico tienden a ser destrozados, y cuanto más "
+"grande sea el parche, más difícil será para las partes interesadas "
+"desenmarañarlo. Además, la publicación de un parche en la web le permite "
+"modificarlo sin tener que volver a enviar el parche completo en un "
+"seguimiento al PR original. Finalmente, los parches grandes simplemente "
+"aumentan el tamaño de la base de datos, ya que los PR cerrados no se "
+"eliminan, sino que se guardan y simplemente se marcan como completos."
 
 #. (itstool) path: section/para
 #: article.translate.xml:584
@@ -1002,6 +1047,10 @@ msgid ""
 "your PR or in the patch itself, any patches you submit will be assumed to be "
 "licensed under the same terms as the original file you modified."
 msgstr ""
+"También debe tener en cuenta que, a menos que se especifique explícitamente "
+"lo contrario en su PR o en el propio parche, se asumirá que los parches que "
+"envíe se licenciarán en los mismos términos que el archivo original que "
+"modificó."
 
 #. (itstool) path: section/title
 #: article.translate.xml:591
@@ -1017,6 +1066,11 @@ msgid ""
 "not use a valid email account at all, we will not be able to ask you "
 "questions about your PR."
 msgstr ""
+"La dirección de correo electrónico que utilice pasará a ser pública y podrá "
+"estar disponible para los spammers. Debe tener implementados procedimientos "
+"de manejo de spam o usar una cuenta de correo electrónico temporal. Sin "
+"embargo, tenga en cuenta que si no utiliza una cuenta de correo electrónico "
+"válida, no podremos hacerle preguntas sobre su PR."
 
 #. (itstool) path: section/para
 #: article.translate.xml:603
@@ -1031,6 +1085,11 @@ msgid ""
 "problem report email, and is used in problem report listings and summaries; "
 "problem reports with obscure synopses tend to get ignored."
 msgstr ""
+"<emphasis>Synopsis:</emphasis> Rellene este campo con una descripción corta "
+"y precisa del problema. La sinopsis se utiliza como subject del correo "
+"electrónico del informe de problemas, y también se utiliza en los listados y "
+"resúmenes de informes de la base de datos; informes de problemas con "
+"obscuras sinopsis tienden a ser completamente ignorados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:615
@@ -1215,6 +1274,12 @@ msgid ""
 "general questions mailing list</link> first. You may be advised that one of "
 "the existing categories really is a better choice."
 msgstr ""
+"Si realmente no sabe dónde está el problema (o la explicación no parece "
+"encajar en los anteriores), use la categoría <literal>misc</literal>. Antes "
+"de hacerlo, es posible que desee solicitar primero ayuda en la <link xlink:"
+"href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">lista "
+"de correo de preguntas generales de FreeBSD</link>. Es posible que sea "
+"advertido de que una de las categorías ya existentes es mejor opción."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
@@ -1227,6 +1292,13 @@ msgid ""
 "etc.—quite simply everything a developer needs to know to reconstruct the "
 "environment in which the problem occurs."
 msgstr ""
+"<emphasis>Environment:</emphasis> Esto debe describir, con la mayor "
+"precisión posible, el entorno en el que se ha observado el problema. Esto "
+"incluye la versión del sistema operativo, la versión del programa o archivo "
+"específico que contiene el problema y cualquier otro elemento relevante como "
+"la configuración del sistema, otro software instalado que influya en el "
+"problema, etc. — simplemente todo lo que un desarrollador necesita saber "
+"para reconstruir el entorno en el que se produce el problema."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:804
@@ -1240,6 +1312,15 @@ msgid ""
 "same problem work around it, but may also help a developer understand the "
 "cause for the problem."
 msgstr ""
+"<emphasis>Description:</emphasis> Una descripción completa y precisa del "
+"problema que está experimentando. Intente evitar especular sobre las "
+"posibles causas del problema a menos que se tenga la seguridad de que el "
+"camino descrito es el correcto, ya que puede inducir a error a un "
+"desarrollador a hacer suposiciones incorrectas sobre el problema.  Debe "
+"incluir las acciones que hay que realizar para reproducir el problema. Si "
+"conoce alguna solución, inclúyala. No solo ayuda a otras personas con el "
+"mismo problema a solucionarlo, sino que también puede ayudar a un "
+"desarrollador a entender la causa del problema."
 
 #. (itstool) path: section/title
 #: article.translate.xml:821
