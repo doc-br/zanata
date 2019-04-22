@@ -14,7 +14,7 @@ para facilitar as traduções e revisão.
 | 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         |
 | 5. The X Window System                   | 71-88   | Andamento | -         | dial_up   | -         |
 | 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         |
-| 7. Multimedia                            | 96-109  | 0%        | -         | -         | -         |
+| 7. Multimedia                            | 96-109  | Andamento | -         | renatofreerider | -         |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | -         | -         | -         |
 | 9. Printing                              | 113-122 | 100%      | -         | -         | -         |
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         | -         | -         |
