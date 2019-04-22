@@ -18,7 +18,7 @@ para facilitar as traduções e revisão.
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | -         | -         | -         |
 | 9. Printing                              | 113-122 | 100%      | -         | -         | -         |
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         | -         | -         |
-| 11. Configuration and Tuning             | 125-146 | 0%        | -         | -         | -         |
+| 11. Configuration and Tuning             | 125-146 | Andamento | -         | franciosi | -         |
 | 12. The FreeBSD Booting Process          | 146-153 | 0%        | -         | -         | -         |
 | 13. Security                             | 153-178 | Andamento | -         | -         | -         |
 | 14. Jails                                | 178-190 | 100%      | -         | -         | -         |
