@@ -38,7 +38,7 @@ para facilitar as traduções e revisão.
 | 28. Electronic Mail                      | 330-342 | 0%        | -         | -         | -         |
 | 29. Network Servers                      | 342-373 | 0%        | -         | -         | -         |
 | 30. Firewalls                            | 373-398 | 100%      | -         | -         | -         |
-| 31. Advanced Networking                  | 398-431 | 0%        | -         | -         | -         |
+| 31. Advanced Networking                  | 398-431 | Andamento | -         | Visudade  | -         |
 | Appendices                               | 431-467 | 0%        | -         | -         | -         |
 | FreeBSD Glossary                         | 467-481 | 0%        | -         | -         | -         |
 
