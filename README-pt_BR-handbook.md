@@ -12,7 +12,7 @@ para facilitar as traduções e revisão.
 | 2. Installing FreeBSD                    | 14-32   | 100%      | -         | -         | -         |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         | -         | -         |
 | 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         |
-| 5. The X Window System                   | 71-88   | 0%        | -         | -         | -         |
+| 5. The X Window System                   | 71-88   | Andamento | -         | dial_up   | -         |
 | 6. Desktop Applications                  | 88-96   | 0%        | -         | -         | -         |
 | 7. Multimedia                            | 96-109  | 0%        | -         | -         | -         |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | -         | -         | -         |
