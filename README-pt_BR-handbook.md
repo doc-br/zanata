@@ -11,7 +11,7 @@ para facilitar as traduções e revisão.
 | 1. Introduction                          | 7-14    | 100%      | 100%      | -         | -         |
 | 2. Installing FreeBSD                    | 14-32   | 100%      | -         | -         | -         |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         | -         | -         |
-| 4. Installing... Packages and Ports      | 59-71   | 0%        | -         | -         | -         |
+| 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         |
 | 5. The X Window System                   | 71-88   | 0%        | -         | -         | -         |
 | 6. Desktop Applications                  | 88-96   | 0%        | -         | -         | -         |
 | 7. Multimedia                            | 96-109  | 0%        | -         | -         | -         |
