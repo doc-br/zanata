@@ -27,7 +27,7 @@ para facilitar as traduções e revisão.
 | 17. Storage                              | 209-236 | 0%        | -         | -         | -         |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | -         | -         |
 | 19. The Z File System (ZFS)              | 247-268 | 0%        | -         | -         | -         |
-| 20. Other File Systems                   | 268-269 | 0%        | Andamento | -         | -         |
+| 20. Other File Systems                   | 268-269 | Andamento | -         | -         | -         |
 | 21. Virtualization                       | 269-281 | Andamento | -         | ebrandi   | -         |
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | -         | -         | -         |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 0%        | -         | -         | -         |
