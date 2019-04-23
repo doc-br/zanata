@@ -35,7 +35,7 @@ para facilitar as traduções e revisão.
 | 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         | -         | -         |
 | 26. Serial Communications                | 306-319 | 0%        | -         | -         | -         |
 | 27. PPP                                  | 319-330 | 0%        | -         | -         | -         |
-| 28. Electronic Mail                      | 330-342 | 0%        | -         | -         | -         |
+| 28. Electronic Mail                      | 330-342 | Andamento | -         | snowiee   | -         |
 | 29. Network Servers                      | 342-373 | 0%        | -         | -         | -         |
 | 30. Firewalls                            | 373-398 | 100%      | -         | -         | -         |
 | 31. Advanced Networking                  | 398-431 | Andamento | -         | Visudade  | -         |
