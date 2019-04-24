@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-04-23 09:37+0000\n"
+"PO-Revision-Date: 2019-04-24 09:17+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1140,11 +1140,18 @@ msgid ""
 "first need to decide if the problem is in the base system or something "
 "installed via the Ports Collection."
 msgstr ""
+"Lo primero que debe hacer es decidir en qué parte del sistema se encuentra "
+"su problema. Recuerde, FreeBSD es un sistema operativo completo, instala un "
+"kernel, la biblioteca estándar, muchos controladores de periféricos y un "
+"gran número de utilidades (el <quote>sistema base</quote>). Sin embargo, hay "
+"miles de aplicaciones adicionales en la colección de ports. Primero deberá "
+"decidir si el problema está en el sistema base o en algo instalado a través "
+"de la colección de ports."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:651
 msgid "Here is a description of the major categories:"
-msgstr ""
+msgstr "Aquí una descripción de las principales categorías:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:655
@@ -1155,6 +1162,11 @@ msgid ""
 "exceptions; see below). In general these are things that are described in "
 "section 2, 3, or 4 of the manual pages."
 msgstr ""
+"Si hay un problema con el kernel, las bibliotecas (como la biblioteca "
+"estándar de C <literal>libc</literal>) of en un controlador de un periférico "
+"en el sistema base, en general, utilizará la categoría <literal>kern</"
+"literal>. (Hay algunas excepciones; vea más abajo). En general, estas son "
+"las cosas que se describen en la sección 2, 3 ó 4 de las páginas del manual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:665
@@ -1177,6 +1189,23 @@ msgid ""
 "<literal>bin</literal> category. These are all things that are described in "
 "section 1 or 8 of the manual pages."
 msgstr ""
+"Si un problema es con un binario como <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> o "
+"<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, primero deberá determinar si estos programas se encuentran en "
+"el sistema base o se añadieron a través de la colección de ports. Si no está "
+"seguro, puede hacer <command>whereis <replaceable>programname</replaceable></"
+"command>. La convención de FreeBSD para la colección de ports es instalar "
+"todo lo que está por debajo de <filename class=\"directory\">/usr/local</"
+"filename>, aunque un administrador del sistema puede sobreescribirlo. Para "
+"estos, utilizará la categoría de <literal>ports</literal> (sí, incluso si la "
+"categoría del port es <literal>www</literal>; vea más abajo). Si la "
+"ubicación es <filename class=\"directory\">/bin</filename>, <filename class="
+"\"directory\">/usr/bin</filename>, <filename class=\"directory\">/sbin</"
+"filename>, o <filename class=\"directory\">/usr/sbin</filename>, es parte "
+"del sistema base, y debe usar la categoría <literal>bin</literal>. Estas son "
+"todas las cosas que son descritas en las secciones 1 u 8 de las páginas del "
+"manual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:690
@@ -1186,6 +1215,10 @@ msgid ""
 "the right category is <literal>conf</literal> (configuration). These are "
 "things that are described in section 5 of the manual pages."
 msgstr ""
+"Si cree que el error está en los scripts de inicio <literal>(rc)</literal>, "
+"o en algún otro tipo de archivo de configuración no ejecutable, entonces la "
+"categoría correcta es <literal>conf</literal>(configuración). Estas son las "
+"cosas que se describen en la sección 5 de las páginas del manual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:699
@@ -1193,6 +1226,9 @@ msgid ""
 "If you have found a problem in the documentation set (articles, books, man "
 "pages) or website the correct choice is <literal>docs</literal>."
 msgstr ""
+"Si ha encontrado un problema en el conjunto de la documentación (artículos, "
+"libros, man pages) o en el sitio web, la elección correcta es <literal>docs</"
+"literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:704
@@ -1201,11 +1237,14 @@ msgid ""
 "<replaceable>someportname</replaceable></literal>, this nevertheless goes in "
 "the <literal>ports</literal> category."
 msgstr ""
+"Si tiene un problema con un port llamado <literal>www/"
+"<replaceable>algunnombredeport</replaceable></literal>, esto entra en la "
+"categoría de <literal>ports</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:713
 msgid "There are a few more specialized categories."
-msgstr ""
+msgstr "Hay algunas categorías más especializadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:717
@@ -1213,6 +1252,9 @@ msgid ""
 "If the problem would otherwise be filed in <literal>kern</literal> but has "
 "to do with the USB subsystem, the correct choice is <literal>usb</literal>."
 msgstr ""
+"Si el problema se catalogará en <literal>kern</literal> pero estuviera "
+"relacionado con el subsistema USB, la elección correcta es <literal>usb</"
+"literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:724
@@ -1221,6 +1263,9 @@ msgid ""
 "to do with the threading libraries, the correct choice is <literal>threads</"
 "literal>."
 msgstr ""
+"Si el problema se catalogará en <literal>kern</literal> pero estuviera "
+"relacionado con las bibliotecas de threading, la elección correcta es "
+"<literal>threads</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:731
@@ -1229,6 +1274,10 @@ msgid ""
 "adherence to standards such as <trademark class=\"registered\">POSIX</"
 "trademark>, the correct choice is <literal>standards</literal>."
 msgstr ""
+"Si el problema se catalogará en el sistema base, pero estuviera relacionado "
+"con nuestra interpretación de estándares como <trademark class="
+"\"registered\">POSIX</trademark>, la elección correcta es "
+"<literal>standards</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:738
@@ -1241,6 +1290,14 @@ msgid ""
 "and less commonly <literal>arm</literal>, <literal>ia64</literal>, and "
 "<literal>powerpc</literal>."
 msgstr ""
+"Si está convencido de que el problema solo ocurre en la arquitectura del "
+"procesador que está utilizando, seleccione una de las categorías específicas "
+"de la arquitectura:  comúnmente <literal>i386</literal> para máquinas "
+"compatibles con Intel en modo de 32 bits; <literal>amd64</literal> para "
+"máquinas AMD que se ejecutan en modo de 64 bits (esto también incluye "
+"máquinas compatibles con Intel que se ejecutan en modo EMT64); y menos "
+"comúnmente <literal>arm</literal>, <literal>ia64</literal>, y "
+"<literal>powerpc</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:750
@@ -1248,11 +1305,13 @@ msgid ""
 "These categories are quite often misused for <quote>I do not know</quote> "
 "problems. Rather than guessing, please just use <literal>misc</literal>."
 msgstr ""
+"Estas categorías se utilizan con frecuencia para los problemas <quote>No lo "
+"sé</quote>. En lugar de suponer, utilice <literal>misc</literal>."
 
 #. (itstool) path: example/title
 #: article.translate.xml:757
 msgid "Correct Use of Arch-Specific Category"
-msgstr "Uso correcto de la categoría específica de arquitectura"
+msgstr "Uso correcto de la categoría de arquitectura específica"
 
 #. (itstool) path: example/para
 #: article.translate.xml:759
@@ -1265,7 +1324,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: article.translate.xml:767
 msgid "Incorrect Use of Arch-Specific Category"
-msgstr ""
+msgstr "Uso incorrecto de la categoría de arquitectura específica"
 
 #. (itstool) path: example/para
 #: article.translate.xml:769
