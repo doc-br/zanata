@@ -26,7 +26,7 @@ para facilitar as traduções e revisão.
 | 16. Security Event Auditing              | 202-209 | 0%        | -         | -         | -         |
 | 17. Storage                              | 209-236 | Andamento | -         | nferreira | -         |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | -         | -         |
-| 19. The Z File System (ZFS)              | 247-268 | 0%        | -         | -         | -         |
+| 19. The Z File System (ZFS)              | 247-268 | Andamento | -         | mvleandro | -         |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   |
 | 21. Virtualization                       | 269-281 | Andamento | -         | ebrandi   | -         |
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | -         | -         | -         |
