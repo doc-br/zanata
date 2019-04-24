@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-18 03:44+0000\n"
+"PO-Revision-Date: 2019-04-24 01:48+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -109,6 +109,11 @@ msgid ""
 "bits and pieces (some of them seriously outdated) floating around that "
 "should be studied before beginning to code:"
 msgstr ""
+"La documentación sobre la programación del kernel es escasa — es una de las "
+"pocas áreas donde casi no hay tutoriales amigables, y la frase <quote>¡usa "
+"el código fuente!</quote> es realmente cierta. Sin embargo, hay algunos "
+"trozos (algunos de ellos muy desactualizados) flotando alrededor que deben "
+"estudiarse antes de comenzar a programar:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:64
@@ -118,6 +123,10 @@ msgid ""
 "of the documentation project, it does not contain anything specific to "
 "kernel programming, but rather some general useful information."
 msgstr ""
+"El <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/developers-"
+"handbook/index.html\">Manual del desarrollador de FreeBSD</link> — parte del "
+"proyecto de documentación, no contiene nada específico sobre la programación "
+"del kernel, sino más bien información general de utilidad."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:72
@@ -129,6 +138,13 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-handbook/driverbasics."
 "html\">Writing FreeBSD device drivers</link>."
 msgstr ""
+"El <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-"
+"handbook/index.html\">Manual de arquitectura de FreeBSD</link> — también del "
+"proyecto de documentación, contiene descripciones de varios recursos y "
+"procedimientos de bajo nivel. El capítulo más importante es el 13, <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-handbook/"
+"driverbasics.html\">Escribir controladores de dispositivos en FreeBSD</link>."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:81
@@ -137,6 +153,9 @@ msgid ""
 "org\">FreeBSD Diary</link> web site — contains several interesting articles "
 "on kernel facilities."
 msgstr ""
+"La sección Blueprints del sitio web <link xlink:href=\"http://www."
+"freebsddiary.org\">FreeBSD Diary</link> — contiene varios artículos "
+"interesantes sobre recursos del kernel."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:88
@@ -144,6 +163,8 @@ msgid ""
 "The man pages in section 9 — for important documentation on kernel functions."
 ""
 msgstr ""
+"Las páginas man en la sección 9 - para documentación importante sobre las "
+"funciones del kernel."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:93
@@ -153,6 +174,10 @@ msgid ""
 "dk/pubs/\">PHK's GEOM slides</link> — for general introduction of the GEOM "
 "subsystem."
 msgstr ""
+"La página man de <citerefentry><refentrytitle>geom</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> y <link xlink:href="
+"\"http://phk.freebsd.dk/pubs/\">las diapositivas GEOM de PHK</link> — para "
+"la introducción general del subsistema GEOM."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:99
@@ -170,6 +195,18 @@ msgid ""
 "manvolnum></citerefentry> &amp; others linked from those, for documentation "
 "on specific functionalities."
 msgstr ""
+"Las páginas man de <citerefentry><refentrytitle>g_bio</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>g_event</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>g_data</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>g_geom</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>g_provider</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>g_consumer</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>g_access</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> &amp; otras vinculadas "
+"a partir de ellas, para documentación sobre funcionalidades específicas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
@@ -179,11 +216,16 @@ msgid ""
 "conventions which must be followed for any code which is to be committed to "
 "the FreeBSD Subversion tree."
 msgstr ""
+"La página man de <citerefentry><refentrytitle>style</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> — para la "
+"documentación sobre las convenciones de estilo de codificación que se deben "
+"seguir para cualquier código con el que se haga commit en el árbol de "
+"Subversion de FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:117
 msgid "Preliminaries"
-msgstr ""
+msgstr "Preliminares"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:119
