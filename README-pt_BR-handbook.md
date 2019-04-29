@@ -29,7 +29,7 @@ para facilitar as traduções e revisão.
 | 19. The Z File System (ZFS)              | 247-268 | Andamento | -         | mvleandro | -         |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   |
-| 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | -         | -         | -         |
+| 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | Andamento | -         | ebrandi   |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | Andamento | -         | ebrandi   | -         |
 | 24. DTrace                               | 302-303 | 100%      | -         | -         | -         |
 | 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         | -         | -         |
