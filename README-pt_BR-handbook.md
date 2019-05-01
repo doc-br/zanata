@@ -20,7 +20,7 @@ para facilitar as traduções e revisão.
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         | -         | -         | :construction: |
 | 11. Configuration and Tuning             | 125-146 | Andamento | -         | franciosi | -         | :construction: |
 | 12. The FreeBSD Booting Process          | 146-153 | Andamento | -         | clkw      | -         | :construction: |
-| 13. Security                             | 153-178 | Andamento | -         | -         | -         | :construction: |
+| 13. Security                             | 153-178 | Andamento | -         | kanazuchi | -         | :construction: |
 | 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         |:black_nib: |
 | 15. Mandatory Access Control             | 190-202 | 0%        | -         | -         | -         | :x: |
 | 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
@@ -30,9 +30,9 @@ para facilitar as traduções e revisão.
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 23. Updating and Upgrading FreeBSD       | 289-301 | Andamento | -         | ebrandi   | -         | :construction: |
-| 24. DTrace                               | 302-303 | 100%      | -         | dbaio     | -         | :black_nib: |
-| 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         | -         | -         | :x: |
+| 23. Updating and Upgrading FreeBSD       | 289-301 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
+| 24. DTrace                               | 302-303 | 100%      | 100%      | dbaio     | ebrandi   | :heavy_check_mark: |
+| 25. USB Device Mode / USB OTG            | 303-306 | Andamento | -         | ebrandi   | -         | :construction: |
 | 26. Serial Communications                | 306-319 | 0%        | -         | -         | -         | :x: |
 | 27. PPP                                  | 319-330 | 0%        | -         | -         | -         | :x: |
 | 28. Electronic Mail                      | 330-342 | Andamento | -         | snowiee   | -         | :construction: |
