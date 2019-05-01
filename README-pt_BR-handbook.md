@@ -7,7 +7,7 @@ para facilitar as traduções e revisão.
 
 | Capítulo                                 | Zanata  | Tradução  | Revisão   | Tradutor  | Revisor   | Status    |
 | ---------------------------------------- | :-----: | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Preface                                  | 2-7     | 100%      | 100%      | -         | -         | :heavy_check_mark: |
+| Preface                                  | 2-7     | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 1. Introduction                          | 7-14    | 100%      | 100%      | -         | -         | :heavy_check_mark: |
 | 2. Installing FreeBSD                    | 14-32   | 100%      | -         | -         | -         | :black_nib: |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         | -         | -         | :black_nib: |
