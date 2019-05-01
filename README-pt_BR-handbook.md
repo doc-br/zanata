@@ -20,7 +20,7 @@ para facilitar as traduções e revisão.
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         | -         | -         | :construction: |
 | 11. Configuration and Tuning             | 125-146 | Andamento | -         | franciosi | -         | :construction: |
 | 12. The FreeBSD Booting Process          | 146-153 | Andamento | -         | clkw      | -         | :construction: |
-| 13. Security                             | 153-178 | Andamento | -         | -         | -         | :construction: |
+| 13. Security                             | 153-178 | Andamento | -         | kanazuchi | -         | :construction: |
 | 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         |:black_nib: |
 | 15. Mandatory Access Control             | 190-202 | 0%        | -         | -         | -         | :x: |
 | 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
