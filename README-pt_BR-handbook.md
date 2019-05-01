@@ -23,7 +23,7 @@ para facilitar as traduções e revisão.
 | 13. Security                             | 153-178 | Andamento | -         | -         | -         | :construction: |
 | 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         |:black_nib: |
 | 15. Mandatory Access Control             | 190-202 | 0%        | -         | -         | -         | :x: |
-| 16. Security Event Auditing              | 202-209 | 0%        | -         | -         | -         | :x: |
+| 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
 | 17. Storage                              | 209-236 | Andamento | -         | nferreira | -         | :construction: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | -         | -         | :x: |
 | 19. The Z File System (ZFS)              | 247-268 | Andamento | -         | mvleandro | -         | :construction: |
