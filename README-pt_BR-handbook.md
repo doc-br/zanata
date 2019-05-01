@@ -32,7 +32,7 @@ para facilitar as traduções e revisão.
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 24. DTrace                               | 302-303 | 100%      | -         | dbaio     | -         | :black_nib: |
-| 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         | -         | -         | :x: |
+| 25. USB Device Mode / USB OTG            | 303-306 | Andamento | -         | ebrandi   | -         | :construction: |
 | 26. Serial Communications                | 306-319 | 0%        | -         | -         | -         | :x: |
 | 27. PPP                                  | 319-330 | 0%        | -         | -         | -         | :x: |
 | 28. Electronic Mail                      | 330-342 | Andamento | -         | snowiee   | -         | :construction: |
