@@ -8,8 +8,8 @@ para facilitar as traduções e revisão.
 | Capítulo                                 | Zanata  | Tradução  | Revisão   | Tradutor  | Revisor   | Status    |
 | ---------------------------------------- | :-----: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Preface                                  | 2-7     | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 1. Introduction                          | 7-14    | 100%      | 100%      | -         | -         | :heavy_check_mark: |
-| 2. Installing FreeBSD                    | 14-32   | 100%      | -         | -         | -         | :black_nib: |
+| 1. Introduction                          | 7-14    | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
+| 2. Installing FreeBSD                    | 14-32   | 100%      | Andamento | -         | ebrandi   | :black_nib: |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         | -         | -         | :black_nib: |
 | 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         | :construction: |
 | 5. The X Window System                   | 71-88   | Andamento | -         | dial_up   | -         | :construction: |
@@ -32,7 +32,7 @@ para facilitar as traduções e revisão.
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 24. DTrace                               | 302-303 | 100%      | 100%      | dbaio     | ebrandi   | :heavy_check_mark: |
-| 25. USB Device Mode / USB OTG            | 303-306 | Andamento | -         | ebrandi   | -         | :construction: |
+| 25. USB Device Mode / USB OTG            | 303-306 | 0%        | -         | -         | -         | :x: |
 | 26. Serial Communications                | 306-319 | 0%        | -         | -         | -         | :x: |
 | 27. PPP                                  | 319-330 | 0%        | -         | -         | -         | :x: |
 | 28. Electronic Mail                      | 330-342 | Andamento | -         | snowiee   | -         | :construction: |
