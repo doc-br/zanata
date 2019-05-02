@@ -15,7 +15,7 @@ para facilitar as traduções e revisão.
 | 5. The X Window System                   | 71-88   | Andamento | -         | dial_up   | -         | :construction: |
 | 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         | :construction: |
 | 7. Multimedia                            | 96-109  | Andamento | -         | renatofreerider | -         | :construction: |
-| 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | -         | -         | -         | :black_nib: |
+| 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | -         | -         | -         | :black_nib: |
 | 10. Linux® Binary Compatibility          | 122-125 | Andamento | -         | -         | -         | :construction: |
 | 11. Configuration and Tuning             | 125-146 | Andamento | -         | franciosi | -         | :construction: |
