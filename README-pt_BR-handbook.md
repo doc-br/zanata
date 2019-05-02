@@ -40,7 +40,7 @@ para facilitar as traduções e revisão.
 | 30. Firewalls                            | 373-398 | 100%      | -         | dbaio     | -         | :black_nib: |
 | 31. Advanced Networking                  | 398-431 | Andamento | -         | Visudade  | -         | :construction: |
 | Appendices                               | 431-467 | 0%        | -         | -         | -         | :x: |
-| FreeBSD Glossary                         | 467-481 | 0%        | -         | -         | -         | :x: |
+| FreeBSD Glossary                         | 467-481 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 
 [Tabela oficial de conteúdos do Handbook FreeBSD](https://www.freebsd.org/doc/handbook/).
 
