@@ -25,7 +25,7 @@ para facilitar as traduções e revisão.
 | 15. Mandatory Access Control             | 190-202 | Andamento | -         | renatofreerider | -         | :construction: |
 | 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
 | 17. Storage                              | 209-236 | Andamento | -         | nferreira | -         | :construction: |
-| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | -         | -         | :x: |
+| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | kanazuchi | -         | :construction: |
 | 19. The Z File System (ZFS)              | 247-268 | Andamento | -         | mvleandro | -         | :construction: |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
