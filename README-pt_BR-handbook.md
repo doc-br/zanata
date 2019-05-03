@@ -14,7 +14,7 @@ para facilitar as traduções e revisão.
 | 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         | :construction: |
 | 5. The X Window System                   | 71-88   | 100%      | -         | dial_up   | -         | :black_nib: |
 | 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         | :construction: |
-| 7. Multimedia                            | 96-109  | Andamento | -         | renatofreerider | -         | :construction: |
+| 7. Multimedia                            | 96-109  | 100%      | -         | renatofreerider | -         | :black_nib: |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | -         | -         | -         | :black_nib: |
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
@@ -22,7 +22,7 @@ para facilitar as traduções e revisão.
 | 12. The FreeBSD Booting Process          | 146-153 | Andamento | -         | clkw      | -         | :construction: |
 | 13. Security                             | 153-178 | 100%      | -         | kanazuchi | -         | :black_nib: |
 | 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         |:black_nib: |
-| 15. Mandatory Access Control             | 190-202 | 0%        | -         | -         | -         | :x: |
+| 15. Mandatory Access Control             | 190-202 | Andamento | -         | renatofreerider | -         | :construction: |
 | 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
 | 17. Storage                              | 209-236 | Andamento | -         | nferreira | -         | :construction: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 0%        | -         | -         | -         | :x: |
