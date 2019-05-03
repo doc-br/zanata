@@ -39,7 +39,7 @@ para facilitar as traduções e revisão.
 | 29. Network Servers                      | 342-373 | Andamento | -         | Rafa13bb  | -         | :construction: |
 | 30. Firewalls                            | 373-398 | 100%      | -         | dbaio     | -         | :black_nib: |
 | 31. Advanced Networking                  | 398-431 | Andamento | -         | Visudade  | -         | :construction: |
-| Appendices                               | 431-467 | Andamento | -         | ebrandi   | -         | :construction: |
+| Appendices                               | 431-467 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | FreeBSD Glossary                         | 467-481 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 
 [Tabela oficial de conteúdos do Handbook FreeBSD](https://www.freebsd.org/doc/handbook/).
