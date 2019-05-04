@@ -9,7 +9,7 @@ para facilitar as traduções e revisão.
 | ---------------------------------------- | :-----: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | Preface                                  | 2-7     | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 1. Introduction                          | 7-14    | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 2. Installing FreeBSD                    | 14-32   | 100%      | Andamento | -         | ebrandi   | :black_nib: |
+| 2. Installing FreeBSD                    | 14-32   | 100%      | 40%       | -         | ebrandi   | :black_nib: |
 | 3. FreeBSD Basics                        | 32-59   | 100%      | -         | -         | -         | :black_nib: |
 | 4. Installing... Packages and Ports      | 59-71   | Andamento | -         | Amapires  | -         | :construction: |
 | 5. The X Window System                   | 71-88   | 100%      | -         | dial_up   | -         | :black_nib: |
