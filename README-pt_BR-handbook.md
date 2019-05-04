@@ -34,7 +34,7 @@ para facilitar as traduções e revisão.
 | 24. DTrace                               | 302-303 | 100%      | 100%      | dbaio     | ebrandi   | :heavy_check_mark: |
 | 25. USB Device Mode / USB OTG            | 303-306 | Andamento | -         | snowiee   | -         | :construction: |
 | 26. Serial Communications                | 306-319 | Andamento | -         | dial_up   | -         | :construction: |
-| 27. PPP                                  | 319-330 | Andamento | -         | ebrandi   | -         | :construction: |
+| 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 28. Electronic Mail                      | 330-342 | 100%      | -         | snowiee   | -         | :black_nib: |
 | 29. Network Servers                      | 342-373 | Andamento | -         | Rafa13bb  | -         | :construction: |
 | 30. Firewalls                            | 373-398 | 100%      | -         | dbaio     | -         | :black_nib: |
