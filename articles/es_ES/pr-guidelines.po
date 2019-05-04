@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-03 11:35+0000\n"
+"PO-Revision-Date: 2019-05-04 06:43+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1256,6 +1256,11 @@ msgid ""
 "by anyone (but note that not every FreeBSD committer is necessarily a ports "
 "committer, so you cannot simply go by the email address alone.)"
 msgstr ""
+"Los PRs relacionados con los ports que tienen un maintainer que es un "
+"committer de ports pueden ser reasignados por cualquiera (pero tenga en "
+"cuenta que no todo committer de FreeBSD es necesariamente un committer de "
+"ports, por lo que no puede guiarse únicamente por la dirección de correo "
+"electrónico)."
 
 #. (itstool) path: section/para
 #: article.translate.xml:706
@@ -1266,16 +1271,21 @@ msgid ""
 "particular problem because everyone assumes that the assignee is already "
 "working on it."
 msgstr ""
+"Para otros PRs, por favor, no los reasigne a otros individuos (otros que no "
+"sean usted), a menos que esté seguro de que el responsable realmente quiere "
+"mantenerse al tanto del PR. Esto ayudará a evitar situaciones en las que "
+"nadie se dedica a solucionar un problema en particular porque todos asumen "
+"que el responsable ya está trabajando en ello."
 
 #. (itstool) path: table/title
 #: article.translate.xml:714
 msgid "Common Assignees — Other"
-msgstr ""
+msgstr "Responsables comunes -otros"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:727
 msgid "problem with PR database"
-msgstr ""
+msgstr "problema con la base de datos de PR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:729 article.translate.xml:736
@@ -1288,6 +1298,8 @@ msgid ""
 "problem with Bugzilla <link xlink:href=\"https://bugs.freebsd.org/submit/"
 "\">web form</link>."
 msgstr ""
+"problema con el <link xlink:href=\"https://bugs.freebsd.org/submit/"
+"\">formulario web</link> de Bugzilla."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:735
@@ -1297,7 +1309,7 @@ msgstr "doc"
 #. (itstool) path: section/title
 #: article.translate.xml:746
 msgid "Assigned PRs"
-msgstr ""
+msgstr "PRs asignados"
 
 #. (itstool) path: section/para
 #: article.translate.xml:748
@@ -1306,6 +1318,9 @@ msgid ""
 "a FreeBSD developer, it means that the PR has been handed over to that "
 "particular person for further work."
 msgstr ""
+"Si un PR tiene el campo <literal>responsible</literal> configurado con el "
+"nombre de usuario de un desarrollador de FreeBSD, significa que el PR se ha "
+"entregado a esa persona en particular para un trabajo adicional."
 
 #. (itstool) path: section/para
 #: article.translate.xml:753
@@ -1316,6 +1331,11 @@ msgid ""
 "assignee does not respond within two weeks, unassign the PR and do as you "
 "please."
 msgstr ""
+"Los PRs asignados no deben ser tocados por nadie más que el responsable o el "
+"bugmeister. Si tiene comentarios, envíe un followup. Sí, por algún motivo, "
+"cree que el PR debe cambiar de estado o ser reasignado, envíe un mensaje al "
+"responsable. Si el reponsable no responde en dos semanas, anule la "
+"asignación del PR y haga lo que quiera."
 
 #. (itstool) path: section/title
 #: article.translate.xml:762
@@ -1332,6 +1352,12 @@ msgid ""
 "a followup, including references to the others; then close the other PRs "
 "(which are now completely superseded)."
 msgstr ""
+"Si encuentra más de un PR que describe el mismo problema, elija el que "
+"contiene la mayor cantidad de información útil y cierre los demás, indicando "
+"claramente el número de PR sustituidos. Si varios PRs contienen información "
+"útil que no está repetida, envíe toda la información restante en un "
+"followup, incluidas las referencias a los demás; luego cierre los otros PRs "
+"(que ahora están completamente sustituidos)."
 
 #. (itstool) path: section/title
 #: article.translate.xml:774
@@ -1344,6 +1370,8 @@ msgid ""
 "A PR is considered stale if it has not been modified in more than six months."
 " Apply the following procedure to deal with stale PRs:"
 msgstr ""
+"Un PR se considera obsoleto si no ha sido modificado en más de seis meses. "
+"Realice el siguiente procedimiento para tratar los PRs obsoletos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:782
@@ -1353,6 +1381,11 @@ msgid ""
 "submit a followup detailing your findings and try to find someone to assign "
 "it to. Set the state to <quote>analyzed</quote> if appropriate."
 msgstr ""
+"Si el PR contiene suficientes detalles, intente reproducir el problema en "
+"<literal>-CURRENT</literal> y en <literal>-STABLE</literal>. Si tiene éxito, "
+"envíe un followup detallando sus descubrimientos e intente encontrar a "
+"alguien para asignarlo. Establezca el estado en <quote>analyzed</quote> si "
+"corresponde."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
@@ -1362,6 +1395,10 @@ msgid ""
 "the originator did wrong, then close the PR with the reason <quote>User "
 "error</quote> or <quote>Configuration error</quote>."
 msgstr ""
+"Si el PR describe un problema que sabe que es el resultado de un error de "
+"uso (configuración incorrecta o de otro tipo), envie un followup que "
+"explique qué hizo mal el creador, luego cierre el PR con el motivo "
+"<quote>User error</quote> o <quote>Configuration error</quote>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:800
@@ -1370,6 +1407,9 @@ msgid ""
 "<literal>-CURRENT</literal> and <literal>-STABLE</literal>, close it with a "
 "message stating when it was fixed in each branch."
 msgstr ""
+"Si el PR describe un error que sabe que ha sido corregido tanto en <literal>-"
+"CURRENT</literal> como en <literal>-STABLE</literal>, ciérrelo con un "
+"mensaje que indique cuándo se solucionó en cada rama."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:807
@@ -1380,6 +1420,12 @@ msgid ""
 "someone else (maybe yourself?) to do it. Set the state to <quote>patched</"
 "quote> and assign it to whomever will do the MFC."
 msgstr ""
+"Si el PR describe un error que sabe que ha sido corregido en <literal>-"
+"CURRENT</literal>, pero no en <literal>-STABLE</literal>, intente averiguar "
+"cuándo la persona que lo corrigió está planeando el MFC, o intente encontrar "
+"a alguien más (¿quizás usted mismo?) para hacerlo. Establezca el estado en "
+"<quote>patched</quote> y asígnele a quien quiera que se haya encargado de "
+"hacer el MFC."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:817
@@ -1388,11 +1434,14 @@ msgid ""
 "newer versions. If the originator does not reply within a month, close the "
 "PR with the notation <quote>Feedback timeout</quote>."
 msgstr ""
+"En otros casos, solicite al creador que confirme si el problema persiste en "
+"las versiones más nuevas. Si el creador no responde en un mes, cierre el PR "
+"con la anotación <quote>Feedback timeout</quote>."
 
 #. (itstool) path: section/title
 #: article.translate.xml:826
 msgid "Non-Bug PRs"
-msgstr ""
+msgstr "PRs sin errores"
 
 #. (itstool) path: section/para
 #: article.translate.xml:828
@@ -1403,6 +1452,11 @@ msgid ""
 "the submitter in a comment why this is not really a PR and where the message "
 "should be posted."
 msgstr ""
+"Los desarrolladores que se encuentren con PRs que parecen haber sido "
+"publicados en <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-bugs\">freebsd-bugs</link> o alguna otra lista, deberían cerrar el "
+"PR, informando al creador en un comentario indicando por qué el problema "
+"reportado no es realmente un PR y dónde debe publicarse el mensaje."
 
 #. (itstool) path: section/para
 #: article.translate.xml:833
@@ -1411,11 +1465,15 @@ msgid ""
 "published as part of the FreeBSD documentation, have been announced and "
 "listed on the web-site. This means that spammers found them."
 msgstr ""
+"Las direcciones de correo electrónico que utiliza Bugzilla para recibir los "
+"PR se han publicado como parte de la documentación de FreeBSD, se han "
+"anunciado y se enumeran en el sitio web. Esto significa que los spammers las "
+"encontraron."
 
 #. (itstool) path: section/para
 #: article.translate.xml:838
 msgid "Whenever you close one of these PRs, please do the following:"
-msgstr ""
+msgstr "Cuando cierre uno de estos PRs, haga lo siguiente:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:843
@@ -1423,16 +1481,18 @@ msgid ""
 "Set the component to <literal>junk</literal> (under <literal>Supporting "
 "Services</literal>."
 msgstr ""
+"Establézca el componente en <literal>junk</literal> (en <literal>Supporting "
+"Services</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:848
 msgid "Set Responsible to <literal>nobody@FreeBSD.org</literal>."
-msgstr ""
+msgstr "Establézca como responsable a <literal>nobody@FreeBSD.org</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:852
 msgid "Set State to <literal>Issue Resolved</literal>."
-msgstr ""
+msgstr "Establézca el estado en <literal>Issue Resolved</literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:856
@@ -1441,6 +1501,9 @@ msgid ""
 "is no useful content within the PR, and helps to reduce the clutter within "
 "the main categories."
 msgstr ""
+"Establecer la categoría en <literal>junk</literal> indica que no hay "
+"contenido útil dentro del PR y ayuda a reducir el desorden en las categorías "
+"principales."
 
 #. (itstool) path: section/title
 #: article.translate.xml:863
@@ -1453,6 +1516,9 @@ msgid ""
 "This is a list of resources relevant to the proper writing and processing of "
 "problem reports. It is by no means complete."
 msgstr ""
+"Esta es una lista de recursos relevantes para la correcta escritura y "
+"procesamiento de informes de problemas. De ninguna manera debe considerarse "
+"completa."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:870
@@ -1461,3 +1527,6 @@ msgid ""
 "reports/article.html\">How to Write FreeBSD Problem Reports</"
 "link>—guidelines for PR originators."
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/articles/problem-"
+"reports/article.html\">Cómo escribir informes de problemas para FreeBSD</"
+"link>— directrices para los usuarios que envían un PR."
