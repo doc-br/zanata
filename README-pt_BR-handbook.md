@@ -21,10 +21,10 @@ para facilitar as traduções e revisão.
 | 11. Configuration and Tuning             | 125-146 | Andamento | -         | franciosi | -         | :construction: |
 | 12. The FreeBSD Booting Process          | 146-153 | Andamento | -         | clkw      | -         | :construction: |
 | 13. Security                             | 153-178 | 100%      | -         | kanazuchi | -         | :black_nib: |
-| 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         |:black_nib: |
+| 14. Jails                                | 178-190 | 100%      | -         | dbaio     | -         | :black_nib: |
 | 15. Mandatory Access Control             | 190-202 | Andamento | -         | renatofreerider | -         | :construction: |
 | 16. Security Event Auditing              | 202-209 | Andamento | -         | nstepsforward | -         | :construction: |
-| 17. Storage                              | 209-236 | Andamento | -         | nferreira | -         | :construction: |
+| 17. Storage                              | 209-236 | 100%      | -         | nferreira | -         | :black_nib: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | -         | kanazuchi | -         | :black_nib: |
 | 19. The Z File System (ZFS)              | 247-268 | Andamento | -         | mvleandro | -         | :construction: |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
