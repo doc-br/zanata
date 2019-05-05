@@ -14,7 +14,7 @@ para facilitar as traduções e revisão.
 | 4. Installing... Packages and Ports      | 59-71   | 100%      | 100%      | Amapires  | ebrandi   | :heavy_check_mark: |
 | 5. The X Window System                   | 71-88   | 100%      | -         | dial_up   | -         | :black_nib: |
 | 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         | :construction: |
-| 7. Multimedia                            | 96-109  | 100%      | -         | renatofreerider | -         | :black_nib: |
+| 7. Multimedia                            | 96-109  | 100%      | 100%      | renatofreerider | kanazuchi | :heavy_check_mark: |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | -         | -         | -         | :black_nib: |
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
