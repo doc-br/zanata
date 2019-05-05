@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-04 09:26+0000\n"
+"PO-Revision-Date: 2019-05-05 10:45+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -458,6 +458,12 @@ msgid ""
 "it to filesystem). It is convenient then to limit the amount of RAM the "
 "system will use via a <filename>/boot/loader.conf</filename> tunable:"
 msgstr ""
+"Escribir volcados del kernel es lento y lleva mucho tiempo, por lo que si "
+"tiene mucha memoria (&gt;256M) y muchos kernel panics, puede ser frustrante "
+"sentarse y esperar mientras se hace (dos veces — primero escribirlo en el "
+"swap, luego reubicarlo al sistema de archivos). Es conveniente limitar la "
+"cantidad de RAM que utilizará el sistema a través de una variable en "
+"<filename>/boot/loader.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:222
@@ -472,6 +478,10 @@ msgid ""
 "softupdates+background fsck) it is advisable to turn background fsck off via "
 "<filename>/etc/rc.conf</filename> variable:"
 msgstr ""
+"Si los kernel panics son frecuentes y los sistemas de archivos son grandes "
+"(o simplemente no confía en softupdates + background fsck), es aconsejable "
+"desactivar fsck en segundo plano mediante la siguiente variable en "
+"<filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:229
@@ -487,6 +497,11 @@ msgid ""
 "disks. Again, the safest way is not to have many local filesystems by using "
 "another computer as an NFS server."
 msgstr ""
+"De esta forma, los sistemas de archivos siempre serán verificados cuando sea "
+"necesario. Tenga en cuenta que con fsck en segundo plano, podría producirse "
+"un nuevo kernel panic mientras comprueba los discos. Una vez más, la forma "
+"más segura es no tener muchos sistemas de archivos locales utilizando otro "
+"ordenador como servidor NFS."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:239
@@ -500,6 +515,9 @@ msgid ""
 "be created under an arbitrary user-accessible directory. You do not have to "
 "create the module directory under <filename>/usr/src</filename>."
 msgstr ""
+"Con el fin de crear una nueva clase GEOM, se debe crear un subdirectorio "
+"vacío bajo un directorio arbitrario que sea accesible por el usuario. No es "
+"necesario crear el directorio del módulo en <filename>/usr/src</filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:248
@@ -512,6 +530,9 @@ msgid ""
 "It is good practice to create <filename>Makefile</filename>s for every "
 "nontrivial coding project, which of course includes kernel modules."
 msgstr ""
+"Es una buena práctica crear <filename>Makefile</filename>s para cada "
+"proyecto de programación que no sea trivial, esto incluye obviamente módulos "
+"del kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:254
@@ -520,6 +541,10 @@ msgid ""
 "set of helper routines provided by the system. In short, here is how a "
 "minimal <filename>Makefile</filename> looks for a kernel module:"
 msgstr ""
+"Crear el archivo <filename>Makefile</filename> es sencillo gracias a un "
+"extenso conjunto de rutinas de ayuda proporcionadas por el sistema. En "
+"resumen, aquí un ejemplo de cómo un archivo <filename>Makefile</filename> "
+"con lo mínimo busca un módulo del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:260
@@ -541,16 +566,21 @@ msgid ""
 "more than one file is required, list it in the <envar>SRCS</envar> variable, "
 "separated with whitespace from other filenames."
 msgstr ""
+"Este <filename>Makefile</filename> (con nombres de archivo modificados) "
+"funcionará para cualquier módulo del kernel, y una clase GEOM puede residir "
+"en un solo módulo del kernel. Si se necesita más de un archivo, enumérelo en "
+"la variable <envar>SRCS</envar>, separado con espacios en blanco de otros "
+"nombres de archivo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:274
 msgid "On FreeBSD Kernel Programming"
-msgstr ""
+msgstr "Programación del kernel de FreeBSD"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:277
 msgid "Memory Allocation"
-msgstr ""
+msgstr "Asignación de memoria"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:279
@@ -561,6 +591,11 @@ msgid ""
 "function>() and <function>free</function>() accept additional parameters as "
 "is described in the man page."
 msgstr ""
+"Consulte <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>. La asignación básica de memoria es solo "
+"ligeramente diferente de su userland equivalente. En particular, "
+"<function>malloc</function>() y <function>free</function>() aceptan "
+"parámetros adicionales como se describe en la página del manual."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:285
@@ -568,6 +603,8 @@ msgid ""
 "A <quote>malloc type</quote> must be declared in the declaration section of "
 "a source file, like this:"
 msgstr ""
+"Un <quote>malloc type</quote> debe declararse en al sección de declaración "
+"del archivo del código fuente, de la siguiente forma:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:288
@@ -585,6 +622,9 @@ msgid ""
 "To use this macro, <filename>sys/param.h</filename>, <filename>sys/kernel.h</"
 "filename> and <filename>sys/malloc.h</filename> headers must be included."
 msgstr ""
+"Para usar esta macro, los headers <filename>sys/param.h</filename>, "
+"<filename>sys/kernel.h</filename> y <filename>sys/malloc.h</filename> deben "
+"ser incluidos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:295
@@ -595,6 +635,12 @@ msgid ""
 "a special type of allocator mainly used for speedy allocation of lists "
 "comprised of same-sized items (for example, dynamic arrays of structs)."
 msgstr ""
+"Hay otro mecanismo para asignar memoria, el UMA (Universal Memory Allocator)."
+" Consulte <citerefentry><refentrytitle>uma</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry> para obtener más información,  pero es un tipo "
+"especial de asignador que se usa principalmente para la asignación rápida de "
+"listas que comprenden elementos del mismo tamaño (por ejemplo, arrays "
+"dinámicos de structs)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:303
@@ -613,6 +659,8 @@ msgid ""
 "(although the speed variation is on the order of several CPU instructions "
 "more, so it should not be taken seriously)."
 msgstr ""
+"Consulte <citerefentry><refentrytitle>queue</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry>. "
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:315
@@ -622,6 +670,10 @@ msgid ""
 "citerefentry> and <citerefentry><refentrytitle>hashinit</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>."
 msgstr ""
+"Si la velocidad de recuperación de datos es muy importante, consulte "
+"<citerefentry><refentrytitle>tree</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>hashinit</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:320
@@ -668,7 +720,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:353
 msgid "On GEOM Programming"
-msgstr ""
+msgstr "Programación GEOM"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:356
