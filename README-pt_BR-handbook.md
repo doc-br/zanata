@@ -16,7 +16,7 @@ para facilitar as traduções e revisão.
 | 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         | :construction: |
 | 7. Multimedia                            | 96-109  | 100%      | 100%      | renatofreerider | kanazuchi | :heavy_check_mark: |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 9. Printing                              | 113-122 | 100%      | -         | -         | -         | :black_nib: |
+| 9. Printing                              | 113-122 | Andamento | -         | -         | ebrandi   | :black_nib: |
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 11. Configuration and Tuning             | 125-146 | Andamento | -         | nferreira | -         | :construction: |
 | 12. The FreeBSD Booting Process          | 146-153 | Andamento | -         | clkw      | -         | :construction: |
