@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-05 10:45+0000\n"
+"PO-Revision-Date: 2019-05-07 08:00+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -660,7 +660,14 @@ msgid ""
 "more, so it should not be taken seriously)."
 msgstr ""
 "Consulte <citerefentry><refentrytitle>queue</refentrytitle><manvolnum>3</"
-"manvolnum></citerefentry>. "
+"manvolnum></citerefentry>. Hay MUCHOS casos en los que se debe mantener una "
+"lista de cosas. Afortunadamente, esta estructura de datos está implementada "
+"(de varias formas) por las macros de C incluidas en el sistema. El tipo de "
+"lista más utiliado es TAILQ porque es el más flexible. También es el que "
+"tiene mayores requisitos de memoria (sus elementos están doblemente "
+"vinculados) y también el más lento (aunque la variación de la velocidad es "
+"del orden de varias instrucciones de la CPU, por lo que no debe tomarse en "
+"serio)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:315
@@ -690,6 +697,12 @@ msgid ""
 "<quote>user-specific</quote> flags and fields that can help implement "
 "various hacks."
 msgstr ""
+"La estructura <varname remap=\"structname\">bio</varname> se utiliza por "
+"todas y cada una de las operaciones de Input/Output relacionadas con GEOM. "
+"Básicamente contiene información sobre qué dispositivo ('provider') se debe "
+"encargar de la solicitud, el tipo de solicitud, offset, longitud, pointer a "
+"un buffer y un grupo de indicadores y campos <quote>específicos del usuario</"
+"quote> que pueden ayudar a implementar varios hacks."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:330
@@ -703,6 +716,15 @@ msgid ""
 "developer-supplied function is called as a notification when the request "
 "gets completed (or results in error)."
 msgstr ""
+"Lo importante aquí es que las estructuras <varname remap=\"structname\">bio</"
+"varname>s son tratados de forma asincrónica. Esto significa que, en la mayor "
+"parte del código, no hay un término análogo a las llamadas "
+"<citerefentry><refentrytitle>read</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>write</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry> que devuelvan un valor "
+"hasta que se realiza una solicitud. En su lugar, se llama a una función "
+"proporcionada por el desarrollador que actua como una notificacion cuando la "
+"solicitud se completa (o se produce un error)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:338
@@ -716,6 +738,14 @@ msgid ""
 "mutex or the internal mutex held during the <function>.start</function>() "
 "and <function>.stop</function>() functions."
 msgstr ""
+"El modelo de programación asincrónica (también llamado <quote>orientado a "
+"eventos</quote>) es un poco más difícil que el imperativo, mucho más usado "
+"en el espacio de usuario (lleva un tiempo acostumbrarse). En algunos casos, "
+"se pueden utilizar las rutinas auxiliares <function>g_write_data</"
+"function>() y <function>g_read_data</function>(), pero <emphasis>no siempre</"
+"emphasis>. En particular, no se pueden utiliar cuando se mantiene un mutex; "
+"por ejemplo, el GEOM topology mutex o el mutex interno mantenido durante las "
+"funciones <function>.start</function>() y <function>.stop</function>()."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:353
@@ -735,11 +765,16 @@ msgid ""
 "facility. Unfortunately, there is no easy way to convert between, or even "
 "share code between the two approaches."
 msgstr ""
+"Si no se necesita el máximo rendimiento, una forma mucho más sencilla de "
+"realizar una transformación de datos es implementarla en el espacio de "
+"usuario a través de la función ggate (GEOM gate). Desafortunadamente, no hay "
+"una manera fácil de convertir o incluso compartir código entre las dos "
+"aproximaciones."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:366
 msgid "GEOM Class"
-msgstr ""
+msgstr "Clase GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:368
@@ -748,6 +783,9 @@ msgid ""
 "combined in a tree-like fashion. Instances of GEOM classes are called "
 "<emphasis>geoms</emphasis>."
 msgstr ""
+"Las clases GEOM son transformaciones en los datos. Estas transformaciones se "
+"pueden combinar en forma de árbol. Las instancias de las clases GEOM se "
+"denominan <emphasis>geoms</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:373
@@ -756,6 +794,9 @@ msgid ""
 "when there is no geom instance available (or they are simply not bound to a "
 "single instance):"
 msgstr ""
+"Cada clase GEOM tiene varios <quote>métodos de clase</quote> a los que se "
+"llama cuando no hay una instancia geom disponible (o simplemente no están "
+"vinculados a una sola instancia):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:379
@@ -763,6 +804,8 @@ msgid ""
 "<function>.init</function> is called when GEOM becomes aware of a GEOM class "
 "(when the kernel module gets loaded.)"
 msgstr ""
+"Se llama a <function>.init</function> cuando GEOM se da cuenta de una clase "
+"GEOM (cuando se carga el módulo del kernel)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:385
@@ -770,6 +813,8 @@ msgid ""
 "<function>.fini</function> gets called when GEOM abandons the class (when "
 "the module gets unloaded)"
 msgstr ""
+"Se llama a <function>.fini</function> cuando GEOM abandona la clase (cuando "
+"el módulo se descarga)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:391
@@ -778,6 +823,9 @@ msgid ""
 "system has available. If applicable, this function will usually create and "
 "start a geom instance."
 msgstr ""
+"A continuación se llama a <function>.taste</function>, una vez por cada "
+"proveedor que el sistema tenga disponible. Si corresponde, esta función "
+"generalmente creará e iniciará una instancia geom."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:398
@@ -785,6 +833,7 @@ msgid ""
 "<function>.destroy_geom</function> is called when the geom should be "
 "disbanded"
 msgstr ""
+"Se llama a <function>.destroy_geom</function> cuando geom debe ser destruido"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:403
@@ -792,6 +841,8 @@ msgid ""
 "<function>.ctlconf</function> is called when user requests reconfiguration "
 "of existing geom"
 msgstr ""
+"Se llama a <function>.ctlconf</function> cuando el usuario solicita la "
+"reconfiguración del geom existente"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:409
@@ -799,6 +850,8 @@ msgid ""
 "Also defined are the GEOM event functions, which will get copied to the geom "
 "instance."
 msgstr ""
+"También se definen las funciones de eventos GEOM, que se copiarán en la "
+"instancia de geom."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:412
@@ -807,16 +860,19 @@ msgid ""
 "\"structname\">g_class</varname> structure is a LIST of geoms instantiated "
 "from the class."
 msgstr ""
+"El campo <function>.geom</function> en la estructura <varname remap="
+"\"structname\">g_class</varname> es un LIST de geoms instanciados de la "
+"clase."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:415
 msgid "These functions are called from the g_event kernel thread."
-msgstr ""
+msgstr "Estas funciones son llamadas desde el thread del kernel g_event."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:420
 msgid "Softc"
-msgstr ""
+msgstr "Softc"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:422
@@ -828,6 +884,13 @@ msgid ""
 "hold whatever data is private to the geom instance. Most GEOM classes have "
 "the following members:"
 msgstr ""
+"El nombre <quote>softc</quote> es un término legado para <quote>driver "
+"private data</quote>. El nombre probablemente proviene del término arcaico "
+"<quote>software control block</quote>. En GEOM, es una estructura (para ser "
+"más precisos: un pointer a una estructura) que se puede adjuntar a una "
+"instancia de geom para mantener cualquier información que sea privada para "
+"la instancia de geom. La mayoría de las clases de GEOM tienen los siguientes "
+"elementos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:433
@@ -835,12 +898,15 @@ msgid ""
 "<varname>struct g_provider *provider</varname> : The <quote>provider</quote> "
 "this geom instantiates"
 msgstr ""
+"<varname>struct g_provider *provider</varname> : El <quote>provider</quote> "
+"de esta instancia GEOM"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:439
 msgid ""
 "<varname>uint16_t n_disks</varname> : Number of consumer this geom consumes"
 msgstr ""
+"<varname>uint16_t n_disks</varname> : Número de consumidores que usa GEOM"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:444
@@ -849,6 +915,9 @@ msgid ""
 "g_consumer*</varname>. (It is not possible to use just single indirection "
 "because struct g_consumer* are created on our behalf by GEOM)."
 msgstr ""
+"<varname>struct g_consumer **disks</varname> : Array de <varname>struct "
+"g_consumer*</varname>. (No es posible usar solo direccionamiento indirecto "
+"porque struct g_consumer* ha sido creado en nuestro nombre por GEOM)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
@@ -856,27 +925,33 @@ msgid ""
 "The <varname remap=\"structname\">softc</varname> structure contains all the "
 "state of geom instance. Every geom instance has its own softc."
 msgstr ""
+"La estructura <varname remap=\"structname\">softc</varname> contiene todo el "
+"estado de la instancia geom. Cada instancia de geom tiene su propio softc."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:458
 msgid "Metadata"
-msgstr ""
+msgstr "Metadata"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:460
 msgid ""
 "Format of metadata is more-or-less class-dependent, but MUST start with:"
 msgstr ""
+"El formato de los metadatos es más o menos dependiente de la clase, pero "
+"DEBE comenzar por:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:465
 msgid "16 byte buffer for null-terminated signature (usually the class name)"
 msgstr ""
+"Un buffer de 16 bytes para la firma terminada en null (normalmente el nombre "
+"de la clase)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:470
 msgid "uint32 version ID"
-msgstr ""
+msgstr "ID de la versión del tipo uint32"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:474
@@ -884,6 +959,8 @@ msgid ""
 "It is assumed that geom classes know how to handle metadata with version "
 "ID's lower than theirs."
 msgstr ""
+"Se supone que las clases de geom saben cómo manejar los metadatos con ID de "
+"versión menores que los los suyos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:477
@@ -891,6 +968,8 @@ msgid ""
 "Metadata is located in the last sector of the provider (and thus must fit in "
 "it)."
 msgstr ""
+"Los metadatos se encuentran en el último sector del provider (y, por lo "
+"tanto, deben encajar en él)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:480
@@ -898,16 +977,18 @@ msgid ""
 "(All this is implementation-dependent but all existing code works like that, "
 "and it is supported by libraries.)"
 msgstr ""
+"Todo depende de la implementación, pero todo el código existente funciona "
+"así, y es compatible con las bibliotecas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:486
 msgid "Labeling/creating a GEOM"
-msgstr ""
+msgstr "Etiquetar/crear un GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
 msgid "The sequence of events is:"
-msgstr ""
+msgstr "La secuencia de eventos es:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
@@ -915,6 +996,9 @@ msgid ""
 "user calls <citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> utility (or one of its hardlinked friends)"
 msgstr ""
+"el usuario llama a la utilidad <citerefentry><refentrytitle>geom</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>  (o uno de sus "
+"equivalentes hardlinked)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:497
@@ -923,6 +1007,9 @@ msgid ""
 "searches for <filename>geom_<replaceable>CLASSNAME</replaceable>.so</"
 "filename> library (usually in <filename>/lib/geom</filename>)."
 msgstr ""
+"la utilidad determina qué clase geom se supone que debe manejar y busca la "
+"biblioteca <filename>geom_<replaceable>CLASSNAME</replaceable>.so</filename> "
+"(normalmente en <filename>/lib/geom</filename>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:505
@@ -931,11 +1018,14 @@ msgid ""
 "manvolnum></citerefentry>-s the library, extracts the definitions of command-"
 "line parameters and helper functions."
 msgstr ""
+"<citerefentry><refentrytitle>dlopen</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>-s abre la biblioteca, extrae la definición de los parámetros "
+"de la línea de comandos y funciones auxiliares."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:511
 msgid "In the case of creating/labeling a new geom, this is what happens:"
-msgstr ""
+msgstr "En el caso de crear/etiquetar un nuevo geom, esto es lo que sucede:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:516
@@ -944,6 +1034,9 @@ msgid ""
 "citerefentry> looks in the command-line argument for the command (usually "
 "<option>label</option>), and calls a helper function."
 msgstr ""
+"<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> busca en el argumento de la línea de comandos el comando "
+"(generalmente <option>label</option>), y llama a una función auxiliar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
@@ -951,6 +1044,8 @@ msgid ""
 "The helper function checks parameters and gathers metadata, which it "
 "proceeds to write to all concerned providers."
 msgstr ""
+"La función auxiliar comprueba los parámetros y recopila los metadatos, que "
+"procede a escribir a todos los providers interesados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:528
@@ -959,6 +1054,9 @@ msgid ""
 "round of <quote>tasting</quote> of the providers. The intended geom class "
 "recognizes the metadata and brings the geom up."
 msgstr ""
+"Esto <quote>estropea</quote> los geoms existentes (si existen) e inicia una "
+"nueva ronda de <quote>cata</quote> de los providers. La clase geom deseada "
+"reconoce los metadatos y carga la clase geom."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:535
@@ -966,11 +1064,13 @@ msgid ""
 "(The above sequence of events is implementation-dependent but all existing "
 "code works like that, and it is supported by libraries.)"
 msgstr ""
+"(La secuencia de eventos anterior depende de la implementación, pero todo el "
+"código existente funciona así, y es compatible con las bibliotecas)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:541
 msgid "GEOM Command Structure"
-msgstr ""
+msgstr "Estructura del comando GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:543
@@ -980,17 +1080,21 @@ msgid ""
 "of <varname remap=\"structname\">struct g_command</varname> elements. "
 "Commands are of uniform format and look like:"
 msgstr ""
+"La biblioteca auxiliar <filename>geom_CLASSNAME.so</filename> exporta la "
+"estructura <varname remap=\"structname\">class_commands</varname>, que es un "
+"array de elementos <varname remap=\"structname\">struct g_command</varname>. "
+"Los comandos son de formato uniforme y se muestran de la siguiente forma:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:548
 #, no-wrap
 msgid "  verb [-options] geomname [other]"
-msgstr ""
+msgstr "  verb [-options] geomname [other]"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:550
 msgid "Common verbs are:"
-msgstr ""
+msgstr "Los verbos comunes son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:554
@@ -998,26 +1102,28 @@ msgid ""
 "label — to write metadata to devices so they can be recognized at tasting "
 "and brought up in geoms"
 msgstr ""
+"label — para escribir metadatos en los dispositivos para que puedan ser "
+"reconocidos en la cata y creados en geoms"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:560
 msgid "destroy — to destroy metadata, so the geoms get destroyed"
-msgstr ""
+msgstr "destroy — para destruir los metadatos, así se destruyen los geoms."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:565
 msgid "Common options are:"
-msgstr ""
+msgstr "Las opciones comunes son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:569
 msgid "<literal>-v</literal> : be verbose"
-msgstr ""
+msgstr "<literal>-v</literal> : be verbose"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:573
 msgid "<literal>-f</literal> : force"
-msgstr ""
+msgstr "<literal>-f</literal> : force"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:577
@@ -1029,11 +1135,18 @@ msgid ""
 "<varname>gc_func</varname> is NULL, the command will be passed to kernel "
 "module, to <function>.ctlreq</function> function of the geom class."
 msgstr ""
+"Muchas acciones, como etiquetar y destruir metadatos, se pueden ejecutar en "
+"el espacio de usuario, Para ello, <varname remap=\"structname\">struct "
+"g_command</varname> proporciona el campo <varname>gc_func</varname> que se "
+"puede establecer en una función (en el mismo <filename>.so</filename>) que "
+"se llamará para procesar un verbo. Si <varname>gc_func</varname> es NULL, el "
+"comando se pasará al módulo del kernel, a la función <function>.ctlreq</"
+"function> de la clase geom."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:588
 msgid "Geoms"
-msgstr ""
+msgstr "Geoms"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:590
@@ -1041,17 +1154,22 @@ msgid ""
 "Geoms are instances of GEOM classes. They have internal data (a softc "
 "structure) and some functions with which they respond to external events."
 msgstr ""
+"Los Geoms son instancias de clases GEOM. Tienen datos internos (una "
+"estructura softc) y algunas funciones con las que responden a eventos "
+"externos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:594
 msgid "The event functions are:"
-msgstr ""
+msgstr "Las funciones del evento son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:598
 msgid ""
 "<function>.access</function> : calculates permissions (read/write/exclusive)"
 msgstr ""
+"<function>.access</function> : calcula permisos (lectura/escritura/"
+"exclusivo)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:603
@@ -1059,6 +1177,8 @@ msgid ""
 "<function>.dumpconf</function> : returns XML-formatted information about the "
 "geom"
 msgstr ""
+"<function>.dumpconf</function> : devuelve información en formato XML sobre "
+"el geom"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
@@ -1066,6 +1186,8 @@ msgid ""
 "<function>.orphan</function> : called when some underlying provider gets "
 "disconnected"
 msgstr ""
+"<function>.orphan</function> : se llama cuando algún provider subyacente se "
+"desconecta"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:613
@@ -1073,6 +1195,8 @@ msgid ""
 "<function>.spoiled</function> : called when some underlying provider gets "
 "written to"
 msgstr ""
+"<function>.spoiled</function> : se llama cuando se registra algún provider "
+"subyacente"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:618
@@ -1099,7 +1223,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:635
 msgid "GEOM Threads"
-msgstr ""
+msgstr "Threads GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:637
