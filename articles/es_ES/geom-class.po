@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-08 08:02+0000\n"
+"PO-Revision-Date: 2019-05-08 07:26+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1309,6 +1309,13 @@ msgid ""
 "provider fields and executes the copy with <function>g_io_request</"
 "function>()"
 msgstr ""
+"Esta instancia geom de nivel superior (por ejemplo, el slicer de "
+"particiones) determina que la solicitud debe enrutarse a una instancia de "
+"nivel inferior (por ejemplo, el controlador de disco). Se realiza una copia "
+"de la solicitud bio (¡las solicitudes bio <emphasis>SIEMPRE</emphasis> se "
+"deben copiar entre instancias, con la función <function>g_clone_bio</"
+"function>()!), modifica los campos de datos offset y los campos del provider "
+"de destino y se ejecuta la copia con <function>g_io_request</function>()"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:691
@@ -1318,6 +1325,10 @@ msgid ""
 "gets the data back, and calls <function>g_io_deliver</function>() on the bio."
 ""
 msgstr ""
+"El controlador de disco obtiene la solicitud bio también como una llamada a "
+"<function>.start</function>() en el thread <literal>g_down</literal>. Habla "
+"con el hardware, recupera los datos y llama a <function>g_io_deliver</"
+"function>() en la bio."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:700
@@ -1330,11 +1341,20 @@ msgid ""
 "function>()) and calls <function>g_io_deliver</function>() on the original "
 "request."
 msgstr ""
+"Ahora, la notificación de bio <quote>burbujea</quote> en el thread "
+"<literal>g_up</literal>. Primero, el slicer de paticiones obtiene <function>."
+"done</function>() llamando al thread <literal>g_up</literal>, utiliza la "
+"información almacenada en la bio para liberar la estructura <varname remap="
+"\"structname\">bio</varname> clonada (con <function>g_destroy_bio</"
+"function>()) y llama a <function>g_io_deliver</function>() en la solicitud "
+"original."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:711
 msgid "The filesystem gets the data and transfers it to userland."
 msgstr ""
+"El sistema de archivos obtiene los datos y los transfiere al espacio de "
+"usuario."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:716
@@ -1345,6 +1365,12 @@ msgid ""
 "(note in particular the <varname>bio_parent</varname> and "
 "<varname>bio_children</varname> fields and how they are handled)."
 msgstr ""
+"Consulte la página del manual <citerefentry><refentrytitle>g_bio</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> para obtener "
+"información sobre cómo se transfieren los datos en la estructura <varname "
+"remap=\"structname\">bio</varname> (en particular, tenga en cuenta los "
+"campos <varname>bio_parent</varname> y <varname>bio_children</varname> y "
+"cómo se manejan)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:722
@@ -1354,6 +1380,10 @@ msgid ""
 "be done in those threads (the list is of course not complete, but only "
 "informative):"
 msgstr ""
+"Una característica importante es: <emphasis>NO SE PUEDE DORMIR (SLEEPING) EN "
+"LOS THREADS G_UP Y G_DOWN</emphasis>. Esto significa que no se puede hacer "
+"nada de lo siguiente en esos threads (la lista, por supuesto, no está "
+"completa, es solo informativa):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:730
@@ -1361,6 +1391,8 @@ msgid ""
 "Calls to <function>msleep</function>() and <function>tsleep</function>(), "
 "obviously."
 msgstr ""
+"Las llamadas a <function>msleep</function>() y <function>tsleep</"
+"function>(), obviamente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
@@ -1369,6 +1401,8 @@ msgid ""
 "function>(), because these sleep between passing the data to consumers and "
 "returning."
 msgstr ""
+"Las llamadas a <function>g_write_data</function>() y <function>g_read_data</"
+"function>(), porque producen sleep al pasar datos al consumidor y regresar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:743
@@ -1382,11 +1416,15 @@ msgid ""
 "manvolnum></citerefentry> and <function>uma_zalloc</function>() with "
 "<varname>M_WAITOK</varname> flag set"
 msgstr ""
+"Las llamadas a <citerefentry><refentrytitle>malloc</"
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> y "
+"<function>uma_zalloc</function>() con el flag <varname>M_WAITOK</varname> "
+"activo"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:753
 msgid "sx and other sleepable locks"
-msgstr ""
+msgstr "sx y otros sleepable locks"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:757
@@ -1398,11 +1436,18 @@ msgid ""
 "example, almost any complex thing requires memory allocation. Fortunately, "
 "there is a way out: creating additional kernel threads."
 msgstr ""
+"Esta restricción está aquí para impedir que el código GEOM obstruya la ruta "
+"de las solicitudes de I/O, ya que el sleeping no tiene limite de tiempo y "
+"puede no haber garantías sobre cuánto tiempo tardará (también hay algunas "
+"otras razones más técnicas). Esto también significa que no hay muchos que se "
+"pueda hacer en estos threads; por ejemplo, casi cualquier cosa compleja "
+"requiere asignación de memoria. Afortunadamente, hay una salida: crear "
+"threads adicionales en el kernel."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:768
 msgid "Kernel Threads for Use in GEOM Code"
-msgstr ""
+msgstr "Threads del kernel para usar en el código GEOM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:770
@@ -1414,6 +1459,13 @@ msgid ""
 "<citerefentry><refentrytitle>kthread_exit</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Los threads del kernel se crean con la función "
+"<citerefentry><refentrytitle>kthread_create</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>, y son similares en el comportamiento a los "
+"threads del espacio de usuario, solo que no pueden regresar a quien los ha "
+"llamado para indicar que ha terminado, debe llamar a "
+"<citerefentry><refentrytitle>kthread_exit</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:775
@@ -1426,6 +1478,14 @@ msgid ""
 "take the events from the list one by one and process them in a big "
 "<literal>switch</literal>() statement."
 msgstr ""
+"En el código GEOM, el uso habitual de los threads es para descargar el "
+"procesamiento de peticiones del thread <literal>g_down</literal> (la función "
+"<function>.start</function>()). Estos threads se parecen a un <quote>event "
+"handlers</quote>: tienen vinculada una lista de eventos asociados a ellos "
+"(en los cuales los eventos pueden publicarse mediante varias funciones en "
+"varios threads, por lo que deben estar protegidos por un mutex), toma los "
+"eventos de la lista, uno por uno, y los procesa en una gran instrucción "
+"<literal>switch</literal>()."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:785
@@ -1437,6 +1497,14 @@ msgid ""
 "classes probably should do all the work in <function>.start</function>() "
 "function call, taking great care to handle out-of-memory and similar errors."
 msgstr ""
+"La principal ventaja de utilizar un thread para manejar las solicitudes de I/"
+"O es que pueden dormir (sleep) cuando sea necesario. Ahora, esto suena bien, "
+"pero debe ser cuidadosamente pensado. Dormir es bueno y muy conveniente, "
+"pero puede ser muy efectivo destruyendo el rendimiento de la transformación "
+"de geom. Las clases extremadamente sensibles al rendimiento probablemente "
+"deberían de hacer todo el trabajo en la llamada a la función <function>."
+"start</function>(), teniendo mucho cuidado de manejar los errores de falta "
+"de memoria y similares."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:794
