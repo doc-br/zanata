@@ -13,7 +13,7 @@ para facilitar as traduções e revisão.
 | 3. FreeBSD Basics                        | 32-59   | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 4. Installing... Packages and Ports      | 59-71   | 100%      | 100%      | Amapires  | ebrandi   | :heavy_check_mark: |
 | 5. The X Window System                   | 71-88   | 100%      | 100%      | dial_up   | ebrandi   | :heavy_check_mark: |
-| 6. Desktop Applications                  | 88-96   | Andamento | -         | thome     | -         | :construction: |
+| 6. Desktop Applications                  | 88-96   | 100%      | 100%      | thome & ebrandi | ebrandi | :heavy_check_mark: |
 | 7. Multimedia                            | 96-109  | 100%      | 100%      | renatofreerider | kanazuchi | :heavy_check_mark: |
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | Andamento | -         | ebrandi   | :black_nib: |
