@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-07 08:00+0000\n"
+"PO-Revision-Date: 2019-05-08 08:02+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1201,7 +1201,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:618
 msgid "<function>.start</function> : handles I/O"
-msgstr ""
+msgstr "<function>.start</function> : maneja el I/O"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:622
@@ -1211,6 +1211,10 @@ msgid ""
 "sleeping elsewhere) which limits what can be done quite a bit, but forces "
 "the handling to be fast."
 msgstr ""
+"Estas funciones se llaman desde el thread <function>g_down</function> del "
+"kernel y no puede haber inactividad en este contexto, (vea la definición de "
+"inactividad en otra parte) lo que limita un poco lo que se puede hacer, pero "
+"obliga a que el manejo sea rápido."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:628
@@ -1219,6 +1223,10 @@ msgid ""
 "<function>.start</function>() function, which is called when a BIO request "
 "arrives for a provider managed by a instance of geom class."
 msgstr ""
+"De estas funciones, la más importante para realizar un trabajo útil real es "
+"la función <function>.start</function>(), que se llama cuando llega una "
+"solicitud BIO llega a un provider administrado por una instancia de la clase "
+"geom."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:635
@@ -1229,6 +1237,7 @@ msgstr "Threads GEOM"
 #: article.translate.xml:637
 msgid "There are three kernel threads created and run by the GEOM framework:"
 msgstr ""
+"Hay tres threads del kernel creados y ejecutados por el framework GEOM:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:642
@@ -1236,6 +1245,9 @@ msgid ""
 "<literal>g_down</literal> : Handles requests coming from high-level entities "
 "(such as a userland request) on the way to physical devices"
 msgstr ""
+"<literal>g_down</literal> : maneja solicitudes provenientes de entidades de "
+"alto nivel (como una solicitud de usuario) en el camino a dispositivos "
+"físicos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:648
@@ -1243,6 +1255,8 @@ msgid ""
 "<literal>g_up</literal> : Handles responses from device drivers to requests "
 "made by higher-level entities"
 msgstr ""
+"<literal>g_up</literal> : maneja las respuestas de los controladores de "
+"dispositivos a las solicitudes realizadas por entidades de nivel superior"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:654
@@ -1250,6 +1264,8 @@ msgid ""
 "<literal>g_event</literal> : Handles all other cases: creation of geom "
 "instances, access counting, <quote>spoil</quote> events, etc."
 msgstr ""
+"<literal>g_event</literal> : maneja el resto de casos: creación de "
+"instancias geom, conteo de accesos, eventos <quote>spoil</quote>, etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:660
@@ -1257,6 +1273,8 @@ msgid ""
 "When a user process issues <quote>read data X at offset Y of a file</quote> "
 "request, this is what happens:"
 msgstr ""
+"Cuando un proceso de usuario emite un pedido de <quote> lee los datos X en "
+"el offset Y de un archivo</quote>, esto es lo que sucede:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:665
@@ -1265,6 +1283,10 @@ msgid ""
 "to the GEOM subsystem. It knows what geom instance should handle it because "
 "filesystems are hosted directly on a geom instance."
 msgstr ""
+"El sistema de archivos convierte la solicitud en una instancia de struct bio "
+"y lo transmite al subsistema GEOM. Sabe qué instancia geom debería manejarlo "
+"porque los sistemas de archivos se alojan directamente en una instancia geom."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:672
@@ -1272,6 +1294,9 @@ msgid ""
 "The request ends up as a call to the <function>.start</function>() function "
 "made on the g_down thread and reaches the top-level geom instance."
 msgstr ""
+"La solicitud termina como una llamada a la función <function>.start</"
+"function>() realizada en el thread g_down y llega a la instancia de geom de "
+"nivel superior."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:679
@@ -1348,7 +1373,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:743
 msgid "Waiting for I/O."
-msgstr ""
+msgstr "Esperando I/O."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:747
