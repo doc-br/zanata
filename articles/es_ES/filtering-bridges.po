@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-09 07:01+0000\n"
+"PO-Revision-Date: 2019-05-09 07:55+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -90,10 +90,10 @@ msgid ""
 "order to act as a bridge."
 msgstr ""
 "A menudo es útil dividir una red física (como una Ethernet) en dos segmentos "
-"separados sin tener que crear subredes, y usar un enrutador para vincularlas."
-" El dispositivo que conecta las dos redes de esta forma se llama puente. Un "
+"separados sin tener que crear subredes, y usar un router para vincularlas. "
+"El dispositivo que conecta las dos redes de esta forma se llama bridge. Un "
 "sistema FreeBSD con dos interfaces de red es suficiente para actuar como un "
-"puente."
+"bridge."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:41
@@ -104,11 +104,16 @@ msgid ""
 "the source and the destination are on different segments. Under many points "
 "of view a bridge is similar to an Ethernet switch with only two ports."
 msgstr ""
+"Un brige funciona escaneando las direcciones del nivel <acronym>MAC</"
+"acronym> (direcciones Ethernet) de los dispositivos conectados a cada una de "
+"sus interfaces de red y luego reenviar el tráfico entre las dos redes solo "
+"si la fuente y el destino están en diferentes segmentos. En muchos aspectos, "
+"un bridge es similar a un switch de Ethernet con solo dos puertos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:51
 msgid "Why use a filtering bridge?"
-msgstr ""
+msgstr "¿Por qué utilizar un bridge que haga filtrado?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:53
@@ -124,6 +129,17 @@ msgid ""
 "acronym>), or because it does not support such functionalities. In these "
 "scenarios the use of a filtering bridge is highly advised."
 msgstr ""
+"Cada vez, con más frecuencia, gracias a la reducción del coste de las "
+"conexiones de banda ancha a Internet (xDSL) y también a la reducción de las "
+"direcciones IPv4 disponibles, muchas empresas están conectadas a Internet "
+"las 24 horas del día y con pocas (a veces ni siquiera 2) direcciones IP. En "
+"estas situaciones, a menudo es deseable tener un firewall  que filtre el "
+"tráfico entrante y saliente desde y hacia Internet, pero es posible que no "
+"se pueda aplicar un filtrado de paquetes como solución, ya sea por problemas "
+"de subredes, porque el router sea de propiedad del proveedor de servicios de "
+"internet (<acronym>ISP</acronym>), o porque no admite tales funcionalidades. "
+"En estos escenadios, se recomienda el uso de un brigde que realice el "
+"filtrado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -131,11 +147,14 @@ msgid ""
 "A bridge-based firewall can be configured and inserted between the xDSL "
 "router and your Ethernet hub/switch without any IP numbering issues."
 msgstr ""
+"Un firewall basado en un bridge que filtre se puede configurar e insertar "
+"entre el router xDSL y su hub/switch Ethernet sin causar ningún problema de "
+"numeración IP."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:71
 msgid "How to Install"
-msgstr ""
+msgstr "Cómo instalar"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:73
@@ -145,6 +164,10 @@ msgid ""
 "having to rebuild the kernel, simplifying the procedure a great deal. In the "
 "following subsections I will explain both installation ways."
 msgstr ""
+"Añadir funcionalidades de brigde a un sistema FreeBSD no es difícil. Desde "
+"la versión 4.5 es posible cargar funcionalidades como módulos en lugar de "
+"tener que reconstruir el kernel, simplificando mucho el procedimiento. En "
+"las siguientes subsecciones explicaré ambas formas de instalación."
 
 #. (itstool) path: important/para
 #: article.translate.xml:80
@@ -153,6 +176,9 @@ msgid ""
 "<emphasis>excludes</emphasis> the other one. Select the best choice "
 "according to your needs and abilities."
 msgstr ""
+"<emphasis>No</emphasis> siga ambas instrucciones: un procedimiento "
+"<emphasis>excluye</emphasis> el otro. Seleccione la mejor opción de acuerdo "
+"a sus necesidades y habilidades."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:85
@@ -168,11 +194,21 @@ msgid ""
 "drivers) in order to distinguish clearly which interface is connected to the "
 "router and which to the inner network."
 msgstr ""
+"Antes de continuar, asegúrese de tener al menos dos tarjetas Ethernet que "
+"admitan el modo promiscuo tanto para la recepción como para la transmisión, "
+"ya que deben poder enviar paquetes Ethernet con cualquier dirección, no solo "
+"la suya. Además, para tener una buena tasa de transferencia, las tarjetas "
+"deben ser tarjetas del bus PCI. Las mejores opciones siguen siendo Intel "
+"<trademark>EtherExpress</trademark> Pro, seguida de la <trademark class="
+"\"registered\">3Com</trademark> 3c9xx series. Para simplificar la "
+"configuración del firewall, puede ser útil tener dos tarjetas de diferentes "
+"fabricantes (con diferentes controladores) para distinguir claramente qué "
+"interfaz está conectada al enrutador y cuál a la red interna."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:97
 msgid "Kernel Configuration"
-msgstr ""
+msgstr "Configuración del kernel"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:99
@@ -180,6 +216,9 @@ msgid ""
 "So you have decided to use the older but well tested installation method. To "
 "begin, you have to add the following rows to your kernel configuration file:"
 msgstr ""
+"Entonces decidió utilizar el método de instalación más antiguo, y también el "
+"más probado. Para empezar, debe agregar las siguientes líneas a su archivo "
+"de configuración del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:103
@@ -187,7 +226,9 @@ msgstr ""
 msgid "options BRIDGE\n"
 "options IPFIREWALL\n"
 "options IPFIREWALL_VERBOSE"
-msgstr ""
+msgstr "options BRIDGE\n"
+"options IPFIREWALL\n"
+"options IPFIREWALL_VERBOSE"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:107
@@ -195,6 +236,9 @@ msgid ""
 "The first line is to compile the bridge support, the second one is the "
 "firewall and the third one is the logging functions of the firewall."
 msgstr ""
+"La primera línea añade el soporte para el brige, la segunda añade la "
+"compatibilidad con el firewall y la tercera se refiere a las funciones de "
+"logging del firewall."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:111
@@ -204,11 +248,15 @@ msgid ""
 "ISO8859-1/books/handbook/kernelconfig-building.html\">Building and "
 "Installing a Custom Kernel</link> section of the FreeBSD Handbook."
 msgstr ""
+"Ahora es necesario construir e instalar el nuevo kernel. Puede encontrar "
+"instrucciones detalladas en la sección <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/es_ES.ISO8859-1/books/handbook/kernelconfig-building.html\">construir e "
+"instalar un kernel personalizado</link> del manual de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:118
 msgid "Modules Loading"
-msgstr ""
+msgstr "Carga de módulos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:120
@@ -217,12 +265,15 @@ msgid ""
 "thing to do now is add the following row to <filename>/boot/loader.conf</"
 "filename>:"
 msgstr ""
+"Si ha elegido usar el método nuevo y más simple de instalación, lo único que "
+"debe hacer ahora es añadir la siguiente línea a <filename> /boot/loader.conf "
+"</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:124
 #, no-wrap
 msgid "bridge_load=\"YES\""
-msgstr ""
+msgstr "bridge_load=\"YES\""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:126
@@ -233,11 +284,16 @@ msgid ""
 "loaded automatically after the execution of the steps in the following "
 "section."
 msgstr ""
+"De esta forma, durante el inicio del sistema, el módulo <filename>bridge.ko</"
+"filename> se cargará junto con el kernel. No es necesario añadir una línea "
+"similar para el módulo <filename>ipfw.ko</filename>, ya que se cargará "
+"automáticamente después de la ejecución de los pasos de la siguiente sección."
+""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
 msgid "Final Preparation"
-msgstr ""
+msgstr "Preparacion final"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
@@ -252,6 +308,26 @@ msgid ""
 "to remain isolated from the network). Put these lines in <filename>/etc/rc."
 "conf</filename>:"
 msgstr ""
+"Antes de reiniciar para cargar el nuevo kernel o los módulos requeridos (de "
+"acuerdo con el método de instalación elegido anteriormente), debe realizar "
+"algunos cambios en el archivo de configuración <filename>/etc/rc.conf</"
+"filename>. La regla predeterminada del firewall es rechazar todos los "
+"paquetes IP. Inicialmente, configuraremos un firewall <option>abierto</"
+"option>, para verificar que funciona sin ningún problema en lo relacionado "
+"con el filtrado de paquetes (en el caso de que vaya a ejecutar este "
+"procedimiento de forma remota, dicha configuración evitará que permanezca "
+"aislado de la red). Coloque estas líneas en <filename>/etc/rc.conf</"
+"filename>:\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"Inicialmente, configuraremos un firewall <option>abierto</option> para "
+"verificar su funcionamiento sin ningún problema relacionado con el filtrado "
+"de paquetes (en caso de que vaya a ejecutar este procedimiento de forma "
+"remota, dicha configuración evitará que permanezca aislado). la red). Ponga "
+"estas líneas en <filename> /etc/rc.conf </filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:148
@@ -262,6 +338,10 @@ msgid ""
 "firewall_quiet=\"YES\"\n"
 "firewall_logging=\"YES\""
 msgstr ""
+"firewall_enable=\"YES\"\n"
+"firewall_type=\"open\"\n"
+"firewall_quiet=\"YES\"\n"
+"firewall_logging=\"YES\""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:153
@@ -272,6 +352,11 @@ msgid ""
 "<filename>/etc/rc.firewall</filename>), the third one to not show rules "
 "loading and the fourth one to enable logging support."
 msgstr ""
+"La primera línea activará el firewall (y cargará el módulo <filename>ipfw."
+"ko</filename> si no está compilado en el kernel), la segunda para "
+"configurarlo en modo <option>open</option> (como se explica en <filename>/"
+"etc/rc.firewall</filename>), el tercero para no mostrar la carga de reglas y "
+"la cuarta para habilitar el soporte de logging."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:159
@@ -293,6 +378,23 @@ msgid ""
 "start procedure, applications should access to services on both Ethernet "
 "segments."
 msgstr ""
+"En cuanto a la configuración de las interfaces de red, la forma más "
+"utilizada es asignar una IP a solo una de las tarjetas de red, pero el "
+"bridge funcionará igualmente, aunque ambas interfaces o ninguna tenga una IP "
+"configurada. En el último caso (IP-less) la máquina bridge quedará aún más "
+"oculta, ya que es inaccesible desde la red: para configurarla, debe iniciar "
+"sesion desde la consola o mediante una tercera interfaz de red separada del "
+"bridge. A veces, durante el inicio del sistema, algunos programas requieren "
+"acceso a la re, por ejemplo, para la resolución del dominio: en este caso, "
+"es necesario asignar una IP a la interfaz externa (la que está conectada a "
+"Internet, donde se encuentra el servidor <acronym>DNS</acronym>), ya que el "
+"bridge se activará al final del procedimiento de arranque. Esto significa "
+"que la interfaz <filename>fxp0</filename> (en nuestro caso) debe añadirse en "
+"la sección ifconfig del archivo <filename>/etc/rc.conf</filename>, mientras "
+"que el archivo <filename>xl0</filename> no. Asignar una IP a ambas tarjetas "
+"de red no tiene mucho sentido, a menos que, durante el procedimiento de "
+"inicio, las aplicacione tengan que acceder a servicios en ambos segmentos "
+"Ethernet."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:177
@@ -309,6 +411,17 @@ msgid ""
 "will be forwarded without being filtered, even if the firewall is configured "
 "to not permit anything."
 msgstr ""
+"Hay otra cosa importante que hay que saber. Cuando se ejecuta IP over "
+"Ethernet, en realidad hay dos protocolos Ethernet en uso: uno es IP, el otro "
+"es <acronym>ARP</acronym>. <acronym>ARP</acronym> realiza la conversión de "
+"la dirección IP de un host a su direccion de Ethernet (capa <acronym>MAC</"
+"acronym>). Para permitir la comunicación entre dos hosts separados por el "
+"bridge, es necesario que el puente reenvie los paquetes <acronym>ARP</"
+"acronym>. Dicho protocolo no está incluido en la capa IP, ya que solo existe "
+"con IP over Ethernet. El firewall de FreeBSD filtra exclusivamente en la "
+"capa IP y, por lo tanto, todos los paquetes no IP (<acronym>ARP</acronym> "
+"incluido) se reenvían sin ser filtrados, aunque el firewall este configurado "
+"para no permitir nada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:190
@@ -318,17 +431,21 @@ msgid ""
 "activated and the firewall, being in <option>open</option> mode, will not "
 "avoid any operations."
 msgstr ""
+"Ahora es el momento de reiniciar el sistema y usarlo como antes: habrá "
+"algunos mensajes nuevos sobre el bridge y el firewall, pero el bridge no se "
+"activará y el firewall, en el modo <option>open</option>, no bloqueará "
+"ninguna operación. "
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:195
 msgid ""
 "If there are any problems, you should sort them out now before proceeding."
-msgstr ""
+msgstr "Si hay algún problema, debe solucionarlo ahora antes de continuar."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:200
 msgid "Enabling the Bridge"
-msgstr ""
+msgstr "Habilitando el bridge"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:202
@@ -338,6 +455,10 @@ msgid ""
 "interfaces <filename>fxp0</filename> and <filename>xl0</filename> with your "
 "own ones):"
 msgstr ""
+"En este punto, para habilitar el bridge, debe ejecutar los siguientes "
+"comandos (teniendo la perspicacia para reemplazar los nombres de las dos "
+"interfaces de red <filename>fxp0</filename> y <filename>xl0</filename> con "
+"las suyas propias ):"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:207
@@ -350,6 +471,12 @@ msgid ""
 "<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.config=fxp0:0,xl0:"
+"0</userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.ipfw=1</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl net.link.ether.bridge.enable=1</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:211
@@ -358,6 +485,9 @@ msgid ""
 "the second one will enable the firewall on the bridge and finally the third "
 "one will enable the bridge."
 msgstr ""
+"La primera línea especifica qué interfaces deben ser activadas por el "
+"bridge, la segunda habilitará el firewall en el bridge y, finalmente, la "
+"tercera habilitará el bridge."
 
 #. (itstool) path: note/para
 #: article.translate.xml:216
@@ -366,6 +496,10 @@ msgid ""
 "differently. See <citerefentry><refentrytitle>bridge</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
 msgstr ""
+"Si tiene FreeBSD 5.1-RELEASE o anteriores, las variables de sysctl se "
+"escriben de manera diferente. Consulte <citerefentry><refentrytitle>bridge</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> para obtener más "
+"información."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:220
@@ -381,7 +515,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:229
 msgid "Configuring The Firewall"
-msgstr ""
+msgstr "Configurando el firewall"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:231
@@ -437,7 +571,7 @@ msgstr ""
 #: article.translate.xml:270
 #, no-wrap
 msgid "firewall_type=\"/etc/rc.firewall.local\""
-msgstr ""
+msgstr "firewall_type=\"/etc/rc.firewall.local\""
 
 #. (itstool) path: important/para
 #: article.translate.xml:273
@@ -521,7 +655,7 @@ msgstr ""
 #: article.translate.xml:336
 #, no-wrap
 msgid "add deny all from 1.2.3.4/8 to any in via fxp0"
-msgstr ""
+msgstr "add deny all from 1.2.3.4/8 to any in via fxp0"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:338
