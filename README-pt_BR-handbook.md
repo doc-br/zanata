@@ -33,7 +33,7 @@ para facilitar as traduções e revisão.
 | 23. Updating and Upgrading FreeBSD       | 289-301 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 24. DTrace                               | 302-303 | 100%      | 100%      | dbaio     | ebrandi   | :heavy_check_mark: |
 | 25. USB Device Mode / USB OTG            | 303-306 | 100%      | 100%      | snowiee   | ebrandi   | :heavy_check_mark: |
-| 26. Serial Communications                | 306-319 | Andamento | -         | dial_up   | -         | :construction: |
+| 26. Serial Communications                | 306-319 | 100%      | -         | dial_up   | -         | :black_nib: |
 | 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 28. Electronic Mail                      | 330-342 | 100%      | -         | snowiee   | -         | :black_nib: |
 | 29. Network Servers                      | 342-373 | Andamento | -         | Rafa13bb  | -         | :construction: |
