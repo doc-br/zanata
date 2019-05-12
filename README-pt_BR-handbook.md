@@ -18,7 +18,7 @@ para facilitar as traduções e revisão.
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | Andamento | -         | ebrandi   | :black_nib: |
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 11. Configuration and Tuning             | 125-146 | 100%      | -         | nferreira & franciosi | -         | :construction: |
+| 11. Configuration and Tuning             | 125-146 | 100%      | -         | nferreira & franciosi | -         | :black_nib: |
 | 12. The FreeBSD Booting Process          | 146-153 | 100%      | -         | clkw      | -         | :black_nib: |
 | 13. Security                             | 153-178 | 100%      | -         | kanazuchi | -         | :black_nib: |
 | 14. Jails                                | 178-190 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
@@ -36,7 +36,7 @@ para facilitar as traduções e revisão.
 | 26. Serial Communications                | 306-319 | 100%      | -         | dial_up   | -         | :black_nib: |
 | 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 28. Electronic Mail                      | 330-342 | 100%      | -         | snowiee   | -         | :black_nib: |
-| 29. Network Servers                      | 342-373 | 100%      | -         | -         | -         | :construction: |
+| 29. Network Servers                      | 342-373 | 100%      | -         | -         | -         | :black_nib: |
 | 30. Firewalls                            | 373-398 | 100%      | -         | dbaio     | -         | :black_nib: |
 | 31. Advanced Networking                  | 398-431 | 100%      | -         | ebrandi   | ebrandi   | :heavy_check_mark: |
 | Appendices                               | 431-467 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
