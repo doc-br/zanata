@@ -26,7 +26,7 @@ para facilitar as traduções e revisão.
 | 16. Security Event Auditing              | 202-209 | 100%      | -         | nstepsforward | -         | :black_nib: |
 | 17. Storage                              | 209-236 | 100%      | 100%      | nferreira | kanazuchi | :heavy_check_mark: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | -         | kanazuchi | -         | :black_nib: |
-| 19. The Z File System (ZFS)              | 247-268 | 100%      | 80%       | ebrandi   | ebrandi   | :black_nib: |
+| 19. The Z File System (ZFS)              | 247-268 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 22. Localization - i18n/L10n Usage and.  | 281-289 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
