@@ -18,9 +18,9 @@ para facilitar as traduções e revisão.
 | 8. Configuring the FreeBSD Kernel        | 109-113 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 9. Printing                              | 113-122 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
-| 11. Configuration and Tuning             | 125-146 | 100%      | -         | nferreira & franciosi | -         | :black_nib: |
+| 11. Configuration and Tuning             | 125-146 | 100%      | 100%      | nferreira & franciosi | ebrandi | :heavy_check_mark: |
 | 12. The FreeBSD Booting Process          | 146-153 | 100%      | 100%      | clkw      | ebrandi   | :heavy_check_mark: |
-| 13. Security                             | 153-178 | 100%      | -         | kanazuchi | -         | :black_nib: |
+| 13. Security                             | 153-178 | 100%      | Andamento | kanazuchi | ebrandi         | :black_nib: |
 | 14. Jails                                | 178-190 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
 | 15. Mandatory Access Control             | 190-202 | 100%      | -         | renatofreerider | -         | :black_nib: |
 | 16. Security Event Auditing              | 202-209 | 100%      | -         | nstepsforward | -         | :black_nib: |
