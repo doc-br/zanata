@@ -37,7 +37,7 @@ para facilitar as traduções e revisão.
 | 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 28. Electronic Mail                      | 330-342 | 100%      | 100%      | snowiee   | dbaio     | :heavy_check_mark: |
 | 29. Network Servers                      | 342-373 | 100%      | -         | -         | -         | :black_nib: |
-| 30. Firewalls                            | 373-398 | 100%      | Andamento | dbaio     | kanazuchi | :black_nib: |
+| 30. Firewalls                            | 373-398 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
 | 31. Advanced Networking                  | 398-431 | 100%      | -         | ebrandi   | ebrandi   | :heavy_check_mark: |
 | Appendices                               | 431-467 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | FreeBSD Glossary                         | 467-481 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
