@@ -22,10 +22,10 @@ para facilitar as traduções e revisão.
 | 12. The FreeBSD Booting Process          | 146-153 | 100%      | 100%      | clkw      | ebrandi   | :heavy_check_mark: |
 | 13. Security                             | 153-178 | 100%      | 100%      | kanazuchi | ebrandi         | :heavy_check_mark: |
 | 14. Jails                                | 178-190 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
-| 15. Mandatory Access Control             | 190-202 | 100%      | Andamento         | renatofreerider | ebrandi | :black_nib: |
-| 16. Security Event Auditing              | 202-209 | 100%      | -         | nstepsforward | -         | :black_nib: |
+| 15. Mandatory Access Control             | 190-202 | 100%      | 100%      | renatofreerider | ebrandi | :heavy_check_mark: |
+| 16. Security Event Auditing              | 202-209 | 100%      | Andamento | nstepsforward | dbaio         | :black_nib: |
 | 17. Storage                              | 209-236 | 100%      | 100%      | nferreira | kanazuchi | :heavy_check_mark: |
-| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | -         | kanazuchi | -         | :black_nib: |
+| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | Andamento | kanazuchi | ebrandi   | :black_nib: |
 | 19. The Z File System (ZFS)              | 247-268 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
@@ -35,7 +35,7 @@ para facilitar as traduções e revisão.
 | 25. USB Device Mode / USB OTG            | 303-306 | 100%      | 100%      | snowiee   | ebrandi   | :heavy_check_mark: |
 | 26. Serial Communications                | 306-319 | 100%      | Andamento | dial_up   | franciosi | :black_nib: |
 | 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
-| 28. Electronic Mail                      | 330-342 | 100%      | Andamento | snowiee   | dbaio     | :black_nib: |
+| 28. Electronic Mail                      | 330-342 | 100%      | 100%      | snowiee   | dbaio     | :heavy_check_mark: |
 | 29. Network Servers                      | 342-373 | 100%      | -         | -         | -         | :black_nib: |
 | 30. Firewalls                            | 373-398 | 100%      | Andamento | dbaio     | kanazuchi | :black_nib: |
 | 31. Advanced Networking                  | 398-431 | 100%      | -         | ebrandi   | ebrandi   | :heavy_check_mark: |
