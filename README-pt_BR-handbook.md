@@ -23,7 +23,7 @@ para facilitar as traduções e revisão.
 | 13. Security                             | 153-178 | 100%      | 100%      | kanazuchi | ebrandi         | :heavy_check_mark: |
 | 14. Jails                                | 178-190 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
 | 15. Mandatory Access Control             | 190-202 | 100%      | 100%      | renatofreerider | ebrandi | :heavy_check_mark: |
-| 16. Security Event Auditing              | 202-209 | 100%      | Andamento | nstepsforward | dbaio         | :black_nib: |
+| 16. Security Event Auditing              | 202-209 | 100%      | 100%      | nstepsforward | dbaio         | :heavy_check_mark: |
 | 17. Storage                              | 209-236 | 100%      | 100%      | nferreira | kanazuchi | :heavy_check_mark: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | Andamento | kanazuchi | ebrandi   | :black_nib: |
 | 19. The Z File System (ZFS)              | 247-268 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
