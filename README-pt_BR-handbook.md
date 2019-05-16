@@ -25,7 +25,7 @@ para facilitar as traduções e revisão.
 | 15. Mandatory Access Control             | 190-202 | 100%      | 100%      | renatofreerider | ebrandi | :heavy_check_mark: |
 | 16. Security Event Auditing              | 202-209 | 100%      | 100%      | nstepsforward | dbaio         | :heavy_check_mark: |
 | 17. Storage                              | 209-236 | 100%      | 100%      | nferreira | kanazuchi | :heavy_check_mark: |
-| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | Andamento | kanazuchi | ebrandi   | :black_nib: |
+| 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | 100%      | kanazuchi | ebrandi   | :heavy_check_mark: |
 | 19. The Z File System (ZFS)              | 247-268 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 20. Other File Systems                   | 268-269 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 21. Virtualization                       | 269-281 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
@@ -36,7 +36,7 @@ para facilitar as traduções e revisão.
 | 26. Serial Communications                | 306-319 | 100%      | Andamento | dial_up   | franciosi | :black_nib: |
 | 27. PPP                                  | 319-330 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
 | 28. Electronic Mail                      | 330-342 | 100%      | 100%      | snowiee   | dbaio     | :heavy_check_mark: |
-| 29. Network Servers                      | 342-373 | 100%      | -         | -         | -         | :black_nib: |
+| 29. Network Servers                      | 342-373 | 100%      | 100%         | - | kanazuchi | :heavy_check_mark: |
 | 30. Firewalls                            | 373-398 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
 | 31. Advanced Networking                  | 398-431 | 100%      | -         | ebrandi   | ebrandi   | :heavy_check_mark: |
 | Appendices                               | 431-467 | 100%      | 100%      | ebrandi   | ebrandi   | :heavy_check_mark: |
