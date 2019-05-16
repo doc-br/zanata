@@ -20,9 +20,9 @@ para facilitar as traduções e revisão.
 | 10. Linux® Binary Compatibility          | 122-125 | 100%      | 100%      | -         | ebrandi   | :heavy_check_mark: |
 | 11. Configuration and Tuning             | 125-146 | 100%      | 100%      | nferreira & franciosi | ebrandi | :heavy_check_mark: |
 | 12. The FreeBSD Booting Process          | 146-153 | 100%      | 100%      | clkw      | ebrandi   | :heavy_check_mark: |
-| 13. Security                             | 153-178 | 100%      | Andamento | kanazuchi | ebrandi         | :black_nib: |
+| 13. Security                             | 153-178 | 100%      | 100%      | kanazuchi | ebrandi         | :heavy_check_mark: |
 | 14. Jails                                | 178-190 | 100%      | 100%      | dbaio     | kanazuchi | :heavy_check_mark: |
-| 15. Mandatory Access Control             | 190-202 | 100%      | -         | renatofreerider | -         | :black_nib: |
+| 15. Mandatory Access Control             | 190-202 | 100%      | Andamento         | renatofreerider | ebrandi | :black_nib: |
 | 16. Security Event Auditing              | 202-209 | 100%      | -         | nstepsforward | -         | :black_nib: |
 | 17. Storage                              | 209-236 | 100%      | 100%      | nferreira | kanazuchi | :heavy_check_mark: |
 | 18. GEOM: Modular Disk Transf. Framework | 236-247 | 100%      | -         | kanazuchi | -         | :black_nib: |
