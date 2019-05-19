@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-18 09:24+0000\n"
+"PO-Revision-Date: 2019-05-19 09:05+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -95,7 +95,7 @@ msgid ""
 "progress of the Project."
 msgstr ""
 "Bugzilla es un sistema de gestión de errores utilizado por el proyecto "
-"FreeBSD. El seguimiento preciso de los defectos de software pendientes es "
+"FreeBSD. Un seguimiento preciso de los defectos de software pendientes es "
 "importante para la calidad de FreeBSD, el uso correcto del software es "
 "esencial para el progreso del proyecto."
 
@@ -160,8 +160,9 @@ msgid ""
 "Joe has a brief exchange with the originator (making sure it all goes into "
 "the audit trail) and determines the cause of the problem."
 msgstr ""
-"Joe tiene una breve conversación con el creador (asegurándose de que todo "
-"queda registrado) y determina la causa del problema."
+"Joe tiene una breve conversación con el usuario que ha enviado el informe "
+"del problema (asegurándose de que todo queda registrado) y determina la "
+"causa."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:89
@@ -171,8 +172,9 @@ msgid ""
 "then sets the PRs state to <literal>Patch Ready</literal>."
 msgstr ""
 "Joe está toda la noche trabajando y elabora un parche que cree que soluciona "
-"el problema, y lo envía en un follow-up, pidiéndole al creador que lo pruebe."
-" A continuación, fija el estado del PR en <literal>Patch Ready</literal>."
+"el problema, y lo envía en un follow-up, pidiéndole al usuario que lo ha "
+"enviado que lo pruebe. A continuación, fija el estado del PR en "
+"<literal>Patch Ready</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:96
@@ -185,13 +187,14 @@ msgid ""
 "patch) and, if appropriate, start an MFC countdown. The bug is set to the "
 "<literal>Needs MFC</literal> state."
 msgstr ""
-"Un par de iteraciones más tarde, tanto Joe como el creador están satisfechos "
-"con el parche, y Joe realiza el commit a <literal>-CURRENT</literal> (o "
-"directamente a <literal>-STABLE</literal> si el problema no existe en "
-"<literal>-CURRENT</literal>), asegúrese de hacer referencia al informe de "
-"problemas en su log del commit (y dando el crédito al originador si envió "
-"todo o parte del parche) y, si corresponde, inicie una cuenta atrás de MFC. "
-"El error se fija en el estado <literal>Needs MFC</literal>."
+"Un par de iteraciones más tarde, tanto Joe como el usuario que lo ha creado "
+"están satisfechos con el parche, y Joe realiza el commit a <literal>-"
+"CURRENT</literal> (o directamente a <literal>-STABLE</literal> si el "
+"problema no existe en <literal>-CURRENT</literal>), asegurándose de hacer "
+"referencia al informe de problemas en su log del commit (y dando el crédito "
+"al usuario si envió todo o parte del parche) y, si corresponde, iniciará una "
+"cuenta atrás de MFC. El error se fija en el estado <literal>Needs MFC</"
+"literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
@@ -230,7 +233,8 @@ msgid ""
 "The state should accurately reflect the current state of work on the PR."
 msgstr ""
 "Es importante actualizar el estado de un PR cuando se toman ciertas acciones."
-" El estado debe reflejar con precisión el estado actual en el PR."
+" El estado debe reflejar con precisión la situación actual del trabajo en el "
+"PR."
 
 #. (itstool) path: example/title
 #: article.translate.xml:133
@@ -248,8 +252,8 @@ msgid ""
 msgstr ""
 "Cuando un PR haya sido tratado y el desarrollador/es se sienta cómodo con la "
 "solución, enviará un follow-up al PR y cambiará su estado a <quote>feedback</"
-"quote>. En este punto, el creador debe evaluar la solución en su contexto y "
-"responder indicando si el defecto ha sido solucionado."
+"quote>. En este punto, el usuario que lo ha creado debe evaluar la solución "
+"en su contexto y responder indicando si el defecto ha sido solucionado."
 
 #. (itstool) path: section/para
 #: article.translate.xml:143
@@ -302,8 +306,8 @@ msgid ""
 "A patch has been committed, but something (MFC, or maybe confirmation from "
 "originator) is still pending."
 msgstr ""
-"Se ha confirmado un parche, pero aún hay algo pendiente (MFC, o tal vez "
-"confirmación del creador)."
+"Se ha realizado un commit con el parche, pero aún hay algo pendiente (MFC, o "
+"tal vez confirmación del usuario que lo creó)."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:181
@@ -325,7 +329,7 @@ msgstr ""
 "proyecto. Si el problema no se puede resolver, se cerrará, en lugar de "
 "suspenderse. El proyecto de documentación utiliza <quote>suspended</quote> "
 "para los elementos de la <quote>wish-list</quote> que implican una cantidad "
-"significativa de trabajo para la cual nadie tiene tiempo actualmente."
+"significativa de trabajo para el cual nadie tiene tiempo actualmente."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:195
@@ -350,12 +354,13 @@ msgid ""
 msgstr ""
 "El estado <quote>patched</quote> está directamente relacionado con el "
 "feedback, por lo que puede ir directamente al estado <quote>closed</quote> "
-"si el creador no puede probar el parche y funciona en sus pruebas."
+"si el usuario que lo creó no puede probar el parche y funciona en sus "
+"propias pruebas."
 
 #. (itstool) path: section/title
 #: article.translate.xml:212
 msgid "Types of Problem Reports"
-msgstr "Tipos de informes de errores"
+msgstr "Tipos de informes de problemas"
 
 #. (itstool) path: section/para
 #: article.translate.xml:214
@@ -367,26 +372,26 @@ msgid ""
 msgstr ""
 "Al tratar con informes de problemas, ya sea como desarrollador que tiene "
 "acceso directo a la base de datos de informes de problemas o como "
-"colaborador que navega por la base de datos y envía seguimientos con "
-"parches, comentarios, sugerencias o solicitudes de cambio, encontrará varios "
-"tipos diferentes de PRs."
+"colaborador que navega por la base de datos y envía followups con parches, "
+"comentarios, sugerencias o solicitudes de cambio, encontrará varios tipos "
+"diferentes de PRs."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:222
 msgid "<link linkend=\"pr-unassigned\">PRs not yet assigned to anyone.</link>"
 msgstr ""
-"<link linkend=\"pr-unassigned\">PRs que todavía no están asignados a nadie.</"
+"<link linkend=\"pr-unassigned\">PRs que todavía no están asignados a nadie</"
 "link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:225
 msgid "<link linkend=\"pr-assigned\">PRs already assigned to someone.</link>"
-msgstr "<link linkend=\"pr-assigned\">PRs asignados a alguien.</link>"
+msgstr "<link linkend=\"pr-assigned\">PRs asignados a alguien</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:228
 msgid "<link linkend=\"pr-dups\">Duplicates of existing PRs.</link>"
-msgstr "<link linkend=\"pr-dups\">Duplicados de PRs existentes.</link>"
+msgstr "<link linkend=\"pr-dups\">Duplicados de PRs existentes</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:231
@@ -426,7 +431,7 @@ msgid ""
 msgstr ""
 "Cuando los PRs llegan, inicialmente se asignan a un responsable genérico "
 "(placeholder). Estos siempre tienen el prefijo <literal>freebsd-</literal>. "
-"El valor exacto par este patrón depende de la categoría; en la mayoría de "
+"El valor exacto para este patrón depende de la categoría; en la mayoría de "
 "los casos, corresponde a una lista de correo específica de FreeBSD. Aquí "
 "está la lista actual, con las más comunes primero:"
 
@@ -529,7 +534,7 @@ msgstr "páginas web de FreeBSD (sin incluir docs)"
 #. (itstool) path: row/entry
 #: article.translate.xml:290
 msgid "Website"
-msgstr "Sitio web"
+msgstr "sitio web"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:291
@@ -544,12 +549,12 @@ msgstr "Asignaciones predeterminadas — otros"
 #. (itstool) path: row/entry
 #: article.translate.xml:310
 msgid "advocacy efforts"
-msgstr "esfuerzos de apoyo"
+msgstr "labores de promoción"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:311
 msgid "advocacy"
-msgstr "apoyo"
+msgstr "promoción"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:312
@@ -559,7 +564,7 @@ msgstr "freebsd-advocacy"
 #. (itstool) path: row/entry
 #: article.translate.xml:316
 msgid "<trademark>Java Virtual Machine</trademark> problems"
-msgstr "Problemas con la <trademark>Java Virtual Machine</trademark>"
+msgstr "problemas con la <trademark>Java Virtual Machine</trademark>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:317
@@ -607,7 +612,7 @@ msgid ""
 "<citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> subsystem"
 msgstr ""
-"subsitema <citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</"
+"subsistema <citerefentry><refentrytitle>usb</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
