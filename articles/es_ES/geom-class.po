@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-15 07:18+0000\n"
+"PO-Revision-Date: 2019-05-19 05:02+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -112,7 +112,7 @@ msgid ""
 msgstr ""
 "La documentación sobre la programación del kernel es escasa — es una de las "
 "pocas áreas donde casi no hay tutoriales amigables, y la frase <quote>¡usa "
-"el código fuente!</quote> es realmente cierta. Sin embargo, hay algunos "
+"el código fuente!</quote> realmente es cierta. Sin embargo, hay algunos "
 "trozos (algunos de ellos muy desactualizados) flotando alrededor que deben "
 "estudiarse antes de comenzar a programar:"
 
@@ -164,7 +164,7 @@ msgid ""
 "The man pages in section 9 — for important documentation on kernel functions."
 ""
 msgstr ""
-"Las páginas man en la sección 9 - para documentación importante sobre las "
+"Las páginas man en la sección 9 — para documentación importante sobre las "
 "funciones del kernel."
 
 #. (itstool) path: listitem/para
@@ -206,8 +206,8 @@ msgstr ""
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>, "
 "<citerefentry><refentrytitle>g_consumer</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>g_access</"
-"refentrytitle><manvolnum>9</manvolnum></citerefentry> &amp; otras vinculadas "
-"a partir de ellas, para documentación sobre funcionalidades específicas."
+"refentrytitle><manvolnum>9</manvolnum></citerefentry> y otras vinculadas a "
+"partir de ellas, para documentación sobre funcionalidades específicas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
@@ -279,9 +279,9 @@ msgid ""
 "For any kernel programming a kernel with <option>INVARIANTS</option> enabled "
 "is a must-have. So enter these in your kernel configuration file:"
 msgstr ""
-"Para cualquier programación del kernel, un kernel con la opción "
-"<option>INVARIANTS</option> activada es obligatorio. Así que añada estas "
-"líneas a su archivo de configuración del kernel:"
+"Para cualquier programación del kernel, es obligatoria la siguiente opción "
+"<option>INVARIANTS</option>. Así que añada estas líneas a su archivo de "
+"configuración del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:144
@@ -569,8 +569,8 @@ msgstr ""
 "Este <filename>Makefile</filename> (con nombres de archivo modificados) "
 "funcionará para cualquier módulo del kernel, y una clase GEOM puede residir "
 "en un solo módulo del kernel. Si se necesita más de un archivo, enumérelo en "
-"la variable <envar>SRCS</envar>, separado con espacios en blanco de otros "
-"nombres de archivo."
+"la variable <envar>SRCS</envar>, separado con espacios en blanco de los "
+"otros nombres de archivos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:274
@@ -698,7 +698,7 @@ msgid ""
 "various hacks."
 msgstr ""
 "La estructura <varname remap=\"structname\">bio</varname> se utiliza por "
-"todas y cada una de las operaciones de Input/Output relacionadas con GEOM. "
+"todas y cada una de las operaciones de input/output relacionadas con GEOM. "
 "Básicamente contiene información sobre qué dispositivo ('provider') se debe "
 "encargar de la solicitud, el tipo de solicitud, offset, longitud, pointer a "
 "un buffer y un grupo de indicadores y campos <quote>específicos del usuario</"
@@ -804,8 +804,8 @@ msgid ""
 "<function>.init</function> is called when GEOM becomes aware of a GEOM class "
 "(when the kernel module gets loaded.)"
 msgstr ""
-"Se llama a <function>.init</function> cuando GEOM se da cuenta de una clase "
-"GEOM (cuando se carga el módulo del kernel)."
+"Se llama a <function>.init</function> cuando GEOM se percata de una clase "
+"GEOM (cuando se carga el módulo del kernel)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:385
@@ -898,7 +898,7 @@ msgid ""
 "<varname>struct g_provider *provider</varname> : The <quote>provider</quote> "
 "this geom instantiates"
 msgstr ""
-"<varname>struct g_provider *provider</varname> : El <quote>provider</quote> "
+"<varname>struct g_provider *provider</varname> : el <quote>provider</quote> "
 "de esta instancia GEOM"
 
 #. (itstool) path: listitem/para
@@ -906,7 +906,7 @@ msgstr ""
 msgid ""
 "<varname>uint16_t n_disks</varname> : Number of consumer this geom consumes"
 msgstr ""
-"<varname>uint16_t n_disks</varname> : Número de consumidores que usa GEOM"
+"<varname>uint16_t n_disks</varname> : número de consumidores que usa GEOM"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:444
@@ -915,7 +915,7 @@ msgid ""
 "g_consumer*</varname>. (It is not possible to use just single indirection "
 "because struct g_consumer* are created on our behalf by GEOM)."
 msgstr ""
-"<varname>struct g_consumer **disks</varname> : Array de <varname>struct "
+"<varname>struct g_consumer **disks</varname> : array de <varname>struct "
 "g_consumer*</varname>. (No es posible usar solo direccionamiento indirecto "
 "porque struct g_consumer* ha sido creado en nuestro nombre por GEOM)."
 
@@ -945,8 +945,8 @@ msgstr ""
 #: article.translate.xml:465
 msgid "16 byte buffer for null-terminated signature (usually the class name)"
 msgstr ""
-"Un buffer de 16 bytes para la firma terminada en null (normalmente el nombre "
-"de la clase)"
+"Un buffer de 16 bytes para la firma terminado en null (normalmente el nombre "
+"de la clase)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:470
@@ -1009,7 +1009,7 @@ msgid ""
 msgstr ""
 "la utilidad determina qué clase geom se supone que debe manejar y busca la "
 "biblioteca <filename>geom_<replaceable>CLASSNAME</replaceable>.so</filename> "
-"(normalmente en <filename>/lib/geom</filename>)."
+"(normalmente en <filename>/lib/geom</filename>)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:505
@@ -1020,7 +1020,7 @@ msgid ""
 msgstr ""
 "<citerefentry><refentrytitle>dlopen</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry>-s abre la biblioteca, extrae la definición de los parámetros "
-"de la línea de comandos y funciones auxiliares."
+"de la línea de comandos y funciones auxiliares"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:511
