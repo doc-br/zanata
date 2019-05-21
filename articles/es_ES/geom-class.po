@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-19 05:02+0000\n"
+"PO-Revision-Date: 2019-05-21 06:08+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -111,7 +111,7 @@ msgid ""
 "should be studied before beginning to code:"
 msgstr ""
 "La documentación sobre la programación del kernel es escasa — es una de las "
-"pocas áreas donde casi no hay tutoriales amigables, y la frase <quote>¡usa "
+"pocas áreas donde casi no hay tutoriales amigables, y la frase, <quote>¡usa "
 "el código fuente!</quote> realmente es cierta. Sin embargo, hay algunos "
 "trozos (algunos de ellos muy desactualizados) flotando alrededor que deben "
 "estudiarse antes de comenzar a programar:"
@@ -265,8 +265,8 @@ msgstr ""
 "quote> para desarrollar el código del kernel. Esta configuración también es "
 "aplicable para el desarrollo en una máquina virtual <link xlink:href=\"http:/"
 "/www.vmware.com/\">VMWare</link> o <link xlink:href=\"http://www.qemu.org/"
-"\">QEMU</link> (la mejor opción después de una máquina de desarrollo "
-"dedicada)."
+"\">QEMU</link> (la mejor opción después de un ordenador de desarrollo "
+"dedicado)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:138
@@ -279,9 +279,9 @@ msgid ""
 "For any kernel programming a kernel with <option>INVARIANTS</option> enabled "
 "is a must-have. So enter these in your kernel configuration file:"
 msgstr ""
-"Para cualquier programación del kernel, es obligatoria la siguiente opción "
-"<option>INVARIANTS</option>. Así que añada estas líneas a su archivo de "
-"configuración del kernel:"
+"Para cualquier programación del kernel, es obligatoria tener activada la "
+"opción <option>INVARIANTS</option>. Así que añada estas líneas a su archivo "
+"de configuración del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:144
@@ -345,7 +345,7 @@ msgid ""
 msgstr ""
 "Otra convención es habilitar la depuración del kernel para que pueda "
 "examinar el kernel panic cuando suceda. Para esto, introduzca las siguientes "
-"líneas en su fichero de configuración del kernel:"
+"líneas en su archivo de configuración del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:170
@@ -421,11 +421,11 @@ msgid ""
 "and mounted, and before swap is enabled. This is controlled with two "
 "<filename>/etc/rc.conf</filename> variables:"
 msgstr ""
-"Para depurar los kernel panics, los dumps del kernel son necesarios. Dado "
+"Para depurar los kernel panics, los volcados del kernel son necesarios. Dado "
 "que un kernel panic podría inutilizar los sistemas de archivos, este volcado "
 "de memoria se graba primero en una partición sin formato (raw). Por lo "
 "general, esta es la partición swap. Esta partición debe ser al menos tan "
-"grande como la RAM física en la máquina. En el siguiente arranque, el "
+"grande como la RAM física del ordenador. En el siguiente arranque, el "
 "volcado se copia en un archivo normal. Esto sucede después de que los "
 "sistemas de archivos se verifiquen y monten, y antes de habilitar la swap. "
 "Esto se controla con dos variables en <filename>/etc/rc.conf</filename>:"
@@ -447,7 +447,7 @@ msgid ""
 msgstr ""
 "La variable <varname>dumpdev</varname> especifica la partición de swap y "
 "<varname>dumpdir</varname> informa al sistema dónde se encuentra en el "
-"sistema de archivos para reubicar el dump del kernel al reiniciar."
+"sistema de archivos para reubicar el volcado del kernel al reiniciar."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:214
@@ -479,9 +479,9 @@ msgid ""
 "<filename>/etc/rc.conf</filename> variable:"
 msgstr ""
 "Si los kernel panics son frecuentes y los sistemas de archivos son grandes "
-"(o simplemente no confía en softupdates + background fsck), es aconsejable "
-"desactivar fsck en segundo plano mediante la siguiente variable en "
-"<filename>/etc/rc.conf</filename>:"
+"(o simplemente no confía en softupdates + fsck en segundo plano), es "
+"aconsejable desactivar fsck en segundo plano mediante la siguiente variable "
+"en <filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:229
@@ -593,9 +593,9 @@ msgid ""
 msgstr ""
 "Consulte <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry>. La asignación básica de memoria es solo "
-"ligeramente diferente de su userland equivalente. En particular, "
-"<function>malloc</function>() y <function>free</function>() aceptan "
-"parámetros adicionales como se describe en la página del manual."
+"ligeramente diferente de su equivalente a la del espacio de usuario. En "
+"particular, <function>malloc</function>() y <function>free</function>() "
+"aceptan parámetros adicionales como se describe en la página del manual."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:285
@@ -663,7 +663,7 @@ msgstr ""
 "manvolnum></citerefentry>. Hay MUCHOS casos en los que se debe mantener una "
 "lista de cosas. Afortunadamente, esta estructura de datos está implementada "
 "(de varias formas) por las macros de C incluidas en el sistema. El tipo de "
-"lista más utilizado es TAILQ porque es el más flexible. También es el que "
+"lista más utilizado es TAILQ, porque es el más flexible. También es el que "
 "tiene mayores requisitos de memoria (sus elementos están doblemente "
 "vinculados) y también el más lento (aunque la variación de la velocidad es "
 "del orden de varias instrucciones de la CPU, por lo que no debe tomarse en "
@@ -698,7 +698,7 @@ msgid ""
 "various hacks."
 msgstr ""
 "La estructura <varname remap=\"structname\">bio</varname> se utiliza por "
-"todas y cada una de las operaciones de input/output relacionadas con GEOM. "
+"todas y cada una de las operaciones de entrada/salida relacionadas con GEOM. "
 "Básicamente contiene información sobre qué dispositivo ('provider') se debe "
 "encargar de la solicitud, el tipo de solicitud, offset, longitud, pointer a "
 "un buffer y un grupo de indicadores y campos <quote>específicos del usuario</"
@@ -825,7 +825,7 @@ msgid ""
 msgstr ""
 "A continuación se llama a <function>.taste</function>, una vez por cada "
 "proveedor que el sistema tenga disponible. Si corresponde, esta función "
-"generalmente creará e iniciará una instancia geom."
+"generalmente creará e iniciará una instancia geom"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:398
@@ -1036,7 +1036,7 @@ msgid ""
 msgstr ""
 "<citerefentry><refentrytitle>geom</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> busca en el argumento de la línea de comandos el comando "
-"(generalmente <option>label</option>), y llama a una función auxiliar."
+"(generalmente <option>label</option>), y llama a una función auxiliar"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
@@ -1045,7 +1045,7 @@ msgid ""
 "proceeds to write to all concerned providers."
 msgstr ""
 "La función auxiliar comprueba los parámetros y recopila los metadatos, que "
-"procede a escribir a todos los providers interesados."
+"procede a escribir a todos los providers interesados"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:528
@@ -1056,7 +1056,7 @@ msgid ""
 msgstr ""
 "Esto <quote>estropea</quote> los geoms existentes (si existen) e inicia una "
 "nueva ronda de <quote>cata</quote> de los providers. La clase geom deseada "
-"reconoce los metadatos y carga la clase geom."
+"reconoce los metadatos y carga la clase geom"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:535
@@ -1201,7 +1201,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:618
 msgid "<function>.start</function> : handles I/O"
-msgstr "<function>.start</function> : maneja el I/O"
+msgstr "<function>.start</function> : maneja la E/S"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:622
@@ -1224,9 +1224,8 @@ msgid ""
 "arrives for a provider managed by a instance of geom class."
 msgstr ""
 "De estas funciones, la más importante para realizar un trabajo útil real es "
-"la función <function>.start</function>(), que se llama cuando llega una "
-"solicitud BIO llega a un provider administrado por una instancia de la clase "
-"geom."
+"la función <function>.start</function>(), que se llama cuando una solicitud "
+"BIO llega a un provider administrado por una instancia de la clase geom."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:635
@@ -1265,7 +1264,7 @@ msgid ""
 "instances, access counting, <quote>spoil</quote> events, etc."
 msgstr ""
 "<literal>g_event</literal> : maneja el resto de casos: creación de "
-"instancias geom, conteo de accesos, eventos <quote>spoil</quote>, etc."
+"instancias geom, conteo de accesos, eventos <quote>spoil</quote>, etc"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:660
@@ -1285,8 +1284,7 @@ msgid ""
 msgstr ""
 "El sistema de archivos convierte la solicitud en una instancia de struct bio "
 "y lo transmite al subsistema GEOM. Sabe qué instancia geom debería manejarlo "
-"porque los sistemas de archivos se alojan directamente en una instancia geom."
-""
+"porque los sistemas de archivos se alojan directamente en una instancia geom"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:672
@@ -1296,7 +1294,7 @@ msgid ""
 msgstr ""
 "La solicitud termina como una llamada a la función <function>.start</"
 "function>() realizada en el thread g_down y llega a la instancia de geom de "
-"nivel superior."
+"nivel superior"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:679
@@ -1328,7 +1326,7 @@ msgstr ""
 "El controlador de disco obtiene la solicitud bio también como una llamada a "
 "<function>.start</function>() en el thread <literal>g_down</literal>. Habla "
 "con el hardware, recupera los datos y llama a <function>g_io_deliver</"
-"function>() en la bio."
+"function>() en la bio"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:700
@@ -1347,14 +1345,14 @@ msgstr ""
 "información almacenada en la bio para liberar la estructura <varname remap="
 "\"structname\">bio</varname> clonada (con <function>g_destroy_bio</"
 "function>()) y llama a <function>g_io_deliver</function>() en la solicitud "
-"original."
+"original"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:711
 msgid "The filesystem gets the data and transfers it to userland."
 msgstr ""
 "El sistema de archivos obtiene los datos y los transfiere al espacio de "
-"usuario."
+"usuario"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:716
@@ -1370,7 +1368,7 @@ msgstr ""
 "información sobre cómo se transfieren los datos en la estructura <varname "
 "remap=\"structname\">bio</varname> (en particular, tenga en cuenta los "
 "campos <varname>bio_parent</varname> y <varname>bio_children</varname> y "
-"cómo se manejan)"
+"cómo se manejan)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:722
@@ -1392,7 +1390,7 @@ msgid ""
 "obviously."
 msgstr ""
 "Las llamadas a <function>msleep</function>() y <function>tsleep</"
-"function>(), obviamente."
+"function>(), obviamente"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
@@ -1402,12 +1400,12 @@ msgid ""
 "returning."
 msgstr ""
 "Las llamadas a <function>g_write_data</function>() y <function>g_read_data</"
-"function>(), porque producen sleep al pasar datos al consumidor y regresar."
+"function>(), porque producen sleep al pasar datos al consumidor y regresar"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:743
 msgid "Waiting for I/O."
-msgstr "Esperando I/O."
+msgstr "Esperar E/S"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:747
@@ -1437,10 +1435,10 @@ msgid ""
 "there is a way out: creating additional kernel threads."
 msgstr ""
 "Esta restricción está aquí para impedir que el código GEOM obstruya la ruta "
-"de las solicitudes de I/O, ya que el sleeping no tiene limite de tiempo y "
+"de las solicitudes de E/S, ya que el sleeping no tiene limite de tiempo y "
 "puede no haber garantías sobre cuánto tiempo tardará (también hay algunas "
-"otras razones más técnicas). Esto también significa que no hay muchos que se "
-"pueda hacer en estos threads; por ejemplo, casi cualquier cosa compleja "
+"otras razones más técnicas). También significa que no hay mucho que se pueda "
+"hacer en estos threads; por ejemplo, prácticamente cualquier cosa compleja "
 "requiere asignación de memoria. Afortunadamente, hay una salida: crear "
 "threads adicionales en el kernel."
 
@@ -1480,11 +1478,11 @@ msgid ""
 msgstr ""
 "En el código GEOM, el uso habitual de los threads es para descargar el "
 "procesamiento de peticiones del thread <literal>g_down</literal> (la función "
-"<function>.start</function>()). Estos threads se parecen a un <quote>event "
-"handlers</quote>: tienen vinculada una lista de eventos asociados a ellos "
-"(en los cuales los eventos pueden publicarse mediante varias funciones en "
-"varios threads, por lo que deben estar protegidos por un mutex), toma los "
-"eventos de la lista, uno por uno, y los procesa en una gran instrucción "
+"<function>.start</function>()). Estos threads parecen <quote>event handlers</"
+"quote>: tienen vinculada una lista de eventos asociados a ellos (en los "
+"cuales los eventos pueden publicarse mediante varias funciones en varios "
+"threads, por lo que deben estar protegidos por un mutex), toma los eventos "
+"de la lista, uno por uno, y los procesa en una gran instrucción "
 "<literal>switch</literal>()."
 
 #. (itstool) path: sect2/para
@@ -1497,8 +1495,8 @@ msgid ""
 "classes probably should do all the work in <function>.start</function>() "
 "function call, taking great care to handle out-of-memory and similar errors."
 msgstr ""
-"La principal ventaja de utilizar un thread para manejar las solicitudes de I/"
-"O es que pueden dormir (sleep) cuando sea necesario. Ahora, esto suena bien, "
+"La principal ventaja de utilizar un thread para manejar las solicitudes de E/"
+"S es que pueden dormir (sleep) cuando sea necesario. Ahora, esto suena bien, "
 "pero debe ser cuidadosamente pensado. Dormir es bueno y muy conveniente, "
 "pero puede ser muy efectivo destruyendo el rendimiento de la transformación "
 "de geom. Las clases extremadamente sensibles al rendimiento probablemente "
