@@ -1,4 +1,5 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
+# Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -6,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-01 07:24+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2019-05-24 08:38+0000\n"
+"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -643,7 +644,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:311
 msgid "Preparation of Hard Drives"
-msgstr "Preparación de los Discos Duros"
+msgstr "Preparación de los discos duros"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:313
@@ -723,9 +724,9 @@ msgstr ""
 "html\">Instalación de FreeBSD</link> del Manual de FreeBSD. Como se mencionó "
 "en la introducción, este artículo explicará cómo configurar un sistema con "
 "RAID-1 y <application>ZFS</application>. Nuestra configuración consistirá en "
-"una pequeña partición <filename>/</filename> (raíz), con un dataset "
-"compuesto por <filename>/usr</filename> y <filename>/var</filename>, todos "
-"en mirror con <citerefentry><refentrytitle>gmirror</"
+"una pequeña partición <filename>/</filename> (raíz), con un conjunto de "
+"datos compuesto por <filename>/usr</filename> y <filename>/var</filename>, "
+"todos en mirror con <citerefentry><refentrytitle>gmirror</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> y el resto del espacio "
 "en disco asignado a un sistema de archivos <application>ZFS</application> en "
 "mirror con <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</"
@@ -801,7 +802,7 @@ msgid ""
 "contained in sector 0 of the given disk. Repeat this command for all hard "
 "drives in the system."
 msgstr ""
-"Cree un slice que use todo el disco e inicialice el boot code del sector 0 "
+"Cree una slice que use todo el disco e inicialice el boot code del sector 0 "
 "del disco seleccionado. Repita este comando para todos los discos duros en "
 "el sistema."
 
@@ -1001,7 +1002,7 @@ msgid ""
 "in order to allow FreeBSD to boot in the future and to be able to log in to "
 "the system."
 msgstr ""
-"El sistema operativo FreBSD ya debería estar instalado; Sin embargo, el "
+"El sistema operativo FreBSD ya debería estar instalado; sin embargo, el "
 "proceso aún no ha terminado. Es necesario realizar algunos pasos posteriores "
 "a la instalación para permitir que FreeBSD se inicie en el futuro y pueda "
 "iniciar sesión en el sistema."
@@ -1130,7 +1131,7 @@ msgstr ""
 "<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>. No olvide agregar un usuario al grupo <systemitem "
 "class=\"groupname\">wheel</systemitem> para que pueda obtener acceso al "
-"directorio raíz después del reinicio."
+"usuario root después del reinicio."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:541
@@ -1177,8 +1178,8 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> y crear algunos "
 "sistemas de archivos <citerefentry><refentrytitle>zfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. Crear y administrar "
-"<application>ZFS</application> es muy sencillo. Primero, cree un mirrored "
-"pool:"
+"<application>ZFS</application> es muy sencillo. Primero, cree un pool "
+"reflejado:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:562
