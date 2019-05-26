@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-25 08:49+0000\n"
+"PO-Revision-Date: 2019-05-26 12:50+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -134,11 +134,23 @@ msgid ""
 "<prompt>#</prompt> indicating <systemitem class=\"username\">root</"
 "systemitem>."
 msgstr ""
+"Inicie sesión (cuando vea <prompt>login:</prompt>) con el usuario que creó "
+"durante la instalación o como usuario <systemitem class=\"username\">root</"
+"systemitem>. (Su instalación de FreeBSD ya tendrá una cuenta para el usuario "
+"<systemitem class=\"username\">root</systemitem>; este usuario puede acceder "
+"a cualquier lugar y hacer cualquier cosa, incluyendo borrar archivos "
+"esenciales del sistema, ¡tenga cuidado!) Los símbolos <prompt>%</prompt> y "
+"<prompt>#</prompt> en el prompt (el suyo puede ser diferente) indican el "
+"tipo de usuario, el símbolo <prompt>%</prompt> indica que es un usuario "
+"común y el símbolo <prompt>#</prompt> indica que el usuario es <systemitem "
+"class=\"username\">root</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:67
 msgid "To log out (and get a new <prompt>login:</prompt> prompt) type"
 msgstr ""
+"Para cerrar sesión (y obtener un nuevo prompt de <prompt>login:</prompt>), "
+"escriba:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:71
@@ -153,11 +165,16 @@ msgid ""
 "remember that <trademark class=\"registered\">UNIX</trademark> is case-"
 "sensitive—<command>exit</command>, not <command>EXIT</command>."
 msgstr ""
+"tantas veces como sean necesarias. Presione <keysym>enter</keysym> después "
+"de escribir los comandos, y recuerde que <trademark class="
+"\"registered\">UNIX</trademark> es sensible a las mayúsculas y minúsculas "
+"(case-sensitive)—escriba <command>exit</command>, no <command>EXIT</command>."
+""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
 msgid "To shut down the machine type"
-msgstr ""
+msgstr "Para apagar el ordenador, escriba:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:82
@@ -168,24 +185,24 @@ msgstr "<prompt>#</prompt> <userinput>/sbin/shutdown -h now</userinput>"
 #. (itstool) path: sect1/para
 #: article.translate.xml:85
 msgid "Or to reboot type"
-msgstr ""
+msgstr "O para reiniciar, escriba"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:88
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/sbin/shutdown -r now</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/sbin/shutdown -r now</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:94
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/sbin/reboot</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/sbin/reboot</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:97
@@ -196,11 +213,17 @@ msgid ""
 "releases of FreeBSD and is much, much better than hitting the reset button. "
 "You do not want to have to reinstall this thing, do you?"
 msgstr ""
+"También puede reiniciar con <keycombo><keycap>Ctrl</keycap><keycap>Alt</"
+"keycap><keycap>Delete</keycap></keycombo>. Espere un poco a que termine el "
+"proceso. Esta secuencia de teclas es el equivalente a <command>/sbin/reboot</"
+"command> en las versiones recientes de FreeBSD, y por supuesto, este "
+"procedimiento es mucho, mucho mejor que pulsar el botón de reinicio. Usted "
+"no quiere tener que reinstalar el sistema, ¿no es así?"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:106
 msgid "Adding a User with Root Privileges"
-msgstr ""
+msgstr "Agregar un usuario con privilegios de root"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:108
@@ -209,12 +232,15 @@ msgid ""
 "logged in as <systemitem class=\"username\">root</systemitem>, you should "
 "probably create a user now with"
 msgstr ""
+"Si no creó ningún usuario cuando instaló el sistema y, por lo tanto, inició "
+"sesión como <systemitem class=\"username\">root</systemitem>, probablemente "
+"debería crear un usuario ahora con"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:113
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>adduser</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>adduser</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:116
@@ -228,6 +254,15 @@ msgid ""
 "each default. These defaults are saved in <filename>/etc/adduser.conf</"
 "filename>, an editable file."
 msgstr ""
+"La primera vez que use <command>adduser</command>, es posible que le "
+"solicite algunos valores por defecto para guardar. Es posible que desee "
+"hacer que <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> sea la shell predeterminada en lugar de "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, si le ha sugerido <command>sh</command> como predeterminado. "
+"De lo contrario, simplemente pulse enter para aceptar cada valor "
+"predeterminado. Estos valores predeterminados se guardan en <filename>/etc/"
+"adduser.conf</filename>, un archivo editable."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:123
@@ -238,7 +273,7 @@ msgid ""
 "might pound on the keyboard) is an issue. When it asks you if you want to "
 "invite <systemitem class=\"username\">jack</systemitem> into other groups, "
 "type <systemitem class=\"groupname\">wheel</systemitem>"
-msgstr ""
+msgstr "Supongamos que crea el usuario jack, "
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:130
@@ -320,7 +355,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:172
 msgid "<command>id</command>"
-msgstr ""
+msgstr "<command>id</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:175
