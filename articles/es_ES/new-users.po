@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-26 12:50+0000\n"
+"PO-Revision-Date: 2019-06-02 11:51+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -273,7 +273,14 @@ msgid ""
 "might pound on the keyboard) is an issue. When it asks you if you want to "
 "invite <systemitem class=\"username\">jack</systemitem> into other groups, "
 "type <systemitem class=\"groupname\">wheel</systemitem>"
-msgstr "Supongamos que crea el usuario jack, "
+msgstr ""
+"Supongamos que crea el usuario <systemitem class=\"username\">jack</"
+"systemitem>, con el nombre completo, <emphasis>Jack Benimble</emphasis>. "
+"Proporcione a <systemitem class=\"username\">jack</systemitem> una "
+"contraseña si la seguridad (incluso si hay niños alrededor que pudieran "
+"golpear el teclado) es un problema. Cuando le pregunte si desea añadir a "
+"<systemitem class=\"username\">jack</systemitem> a otros grupos, escriba "
+"<systemitem class=\"groupname\">wheel</systemitem>"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:130
@@ -282,6 +289,8 @@ msgid ""
 "Login group is ``jack''. Invite jack into other groups: <userinput>wheel</"
 "userinput>"
 msgstr ""
+"El grupo del login es \"jack\". Añadir a jack a otros grupos: "
+"<userinput>wheel</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:133
@@ -293,6 +302,12 @@ msgid ""
 "scolded any more for logging in as <systemitem class=\"username\">root</"
 "systemitem>."
 msgstr ""
+"Esto permitirá iniciar sesión como <systemitem class=\"username\">jack</"
+"systemitem> y usar el comando <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> para convertirse en el "
+"usuario <systemitem class=\"username\">root</systemitem>. De esta forma, no "
+"volverá a ser reprochado por iniciar sesión como <systemitem class="
+"\"username\">root</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:137
@@ -304,6 +319,15 @@ msgid ""
 "edit <systemitem class=\"username\">jack</systemitem>'s login files, you "
 "will have a hot spare in case something goes wrong."
 msgstr ""
+"Puede finalizar en cualquier momento el comando <command>adduser</command> "
+"pulsando la combinación de teclas <keycombo><keycap>Ctrl</keycap><keycap>C</"
+"keycap></keycombo>.\n"
+"\n"
+"Al final del comando, también tendrá la oportunidad de aprobar su nuevo "
+"usuario, o, en caso contrario, no hacerlo pulsando la tecla <keycap>n</"
+"keycap>. Es posible que desee crear un segundo usuario, de esta forma, si al "
+"editar los archivos del inicio de sesión de <systemitem class="
+"\"username\">jack</systemitem> algo va mal, tenga un usuario de reserva."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:144
@@ -314,6 +338,11 @@ msgid ""
 "user who does not have the power—and risk—of <systemitem class="
 "\"username\">root</systemitem>."
 msgstr ""
+"Una vez que haya hecho esto, utilice el comando <command>exit</command> para "
+"volver al prompt de inicio de sesión e iniciar sesión como <systemitem class="
+"\"username\">jack</systemitem>. En general, es una buena idea hacer la mayor "
+"cantidad posible de trabajo como usuario común que no tenga el poder —y el "
+"riesgo— del usuario <systemitem class=\"username\">root</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:149
@@ -329,16 +358,28 @@ msgid ""
 "<citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, installed on recent versions of FreeBSD."
 msgstr ""
+"Si ya creó un usuario y desea que sea capaz de ejecutar el comando "
+"<command>su</command>  para convertirse en <systemitem class="
+"\"username\">root</systemitem>, puede iniciar sesión como <systemitem class="
+"\"username\">root</systemitem>  y editar el archivo <filename>/etc/group</"
+"filename>, añadiendo al usuario <systemitem class=\"username\">jack</"
+"systemitem> a la primera línea (en el grupo <systemitem class="
+"\"groupname\">wheel</systemitem>). Pero primero debe practicar con "
+"<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, el editor de texto — o use un editor de texto más simple, "
+"<citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, instalado en las versiones recientes de FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:158
 msgid "To delete a user, use <command>rmuser</command>."
 msgstr ""
+"Para eliminar un usuario, utilice el comando <command>rmuser</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:162
 msgid "Looking Around"
-msgstr ""
+msgstr "Echando un vistazo"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:164
@@ -346,11 +387,13 @@ msgid ""
 "Logged in as an ordinary user, look around and try out some commands that "
 "will access the sources of help and information within FreeBSD."
 msgstr ""
+"Inicie sesión como un usuario normal, eche un vistazo y pruebe algunos "
+"comandos que accederán a las fuentes de ayuda e información de FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:168
 msgid "Here are some commands and what they do:"
-msgstr ""
+msgstr "Aquí se describen algunos comandos y lo que hacen:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:172
@@ -360,32 +403,32 @@ msgstr "<command>id</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:175
 msgid "Tells you who you are!"
-msgstr ""
+msgstr "¡Le dice quién es!"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:180
 msgid "<command>pwd</command>"
-msgstr ""
+msgstr "<command>pwd</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:183
 msgid "Shows you where you are—the current working directory."
-msgstr ""
+msgstr "Le muestra dónde está—el directorio de trabajo actual."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:189
 msgid "<command>ls</command>"
-msgstr ""
+msgstr "<command>ls</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:192
 msgid "Lists the files in the current directory."
-msgstr ""
+msgstr "Lista los archivos en el directorio actual."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:197
 msgid "<command>ls -F</command>"
-msgstr ""
+msgstr "<command>ls -F</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:200
@@ -394,21 +437,24 @@ msgid ""
 "executables, a <literal>/</literal> after directories, and an <literal>@</"
 "literal> after symbolic links."
 msgstr ""
+"Lista los archivos del directorio actual con un <literal>*</literal> después "
+"de los ejecutables, un <literal>/</literal> después de los directorios y una "
+"<literal>@</literal> después de los enlaces simbolicos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:208
 msgid "<command>ls -l</command>"
-msgstr ""
+msgstr "<command>ls -l</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:211
 msgid "Lists the files in long format—size, date, permissions."
-msgstr ""
+msgstr "Lista los archivos en el formato extendido—tamaño, fecha y permisos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:217
 msgid "<command>ls -a</command>"
-msgstr ""
+msgstr "<command>ls -a</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:220
@@ -421,7 +467,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:228
 msgid "<command>cd</command>"
-msgstr ""
+msgstr "<command>cd</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:231
@@ -437,7 +483,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:243
 msgid "<command>less <replaceable>filename</replaceable></command>"
-msgstr ""
+msgstr "<command>less <replaceable>filename</replaceable></command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:247
@@ -450,7 +496,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:255
 msgid "<command>cat <replaceable>filename</replaceable></command>"
-msgstr ""
+msgstr "<command>cat <replaceable>filename</replaceable></command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:259
@@ -479,7 +525,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:284
 msgid "Getting Help and Information"
-msgstr ""
+msgstr "Obteniendo ayuda e información"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:286
