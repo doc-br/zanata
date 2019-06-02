@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-02 11:51+0000\n"
+"PO-Revision-Date: 2019-06-02 06:58+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -463,6 +463,9 @@ msgid ""
 "<systemitem class=\"username\">root</systemitem>, the <quote>dot</quote> "
 "files show up without the <option>-a</option> switch."
 msgstr ""
+"Lista los archivos ocultos <quote>dot</quote> junto con los demás. Si es "
+"<systemitem class=\"username\">root</systemitem>, los archivos <quote>dot</"
+"quote> se mostrarán sin la opción <option>-a</option>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:228
@@ -479,6 +482,14 @@ msgid ""
 "command>, and then <command>ls</command>, to find out if your CDROM is "
 "mounted and working."
 msgstr ""
+"Cambia el directorio actual de trabajo. El comando <command>cd ..</command> "
+"sube un nivel; tenga en cuenta el espacio después del comando <command>cd</"
+"command>. El comando <command>cd /usr/local</command> le lleva a ese mismo "
+"directorio. El comando <command>cd ~</command> le lleva al directorio home "
+"de la persona que inició sesión, por ejemplo, <filename>/usr/home/jack</"
+"filename>. Pruebe el comando <command>cd /cdrom</command>, y después el "
+"comando <command>ls</command>, para comprobar si el CDROM está montado y "
+"funcionando."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:243
@@ -492,6 +503,9 @@ msgid ""
 "changing it. Try <command>less /etc/fstab</command>. Type <command>q</"
 "command> to quit."
 msgstr ""
+"Le permite ver un archivo (llamado <replaceable>filename</replaceable>) sin "
+"tener que editarlo. Pruebe con el comando <command>less /etc/fstab</command>."
+" Escriba <command>q</command> para salir."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:255
@@ -510,6 +524,15 @@ msgid ""
 "cshrc</command>, <command>cat .login</command>, <command>cat .profile</"
 "command>."
 msgstr ""
+"Muestra el contenido del archivo <replaceable>filename</replaceable> en "
+"pantalla. Si el contenido es demasiado largo y solo puede ver el final del "
+"archivo, presione <keycap>ScrollLock</keycap> y use la tecla <keycap>up-"
+"arrow</keycap> para retroceder; también puede usar <keycap>ScrollLock</"
+"keycap> en las páginas del manual. Vuelva a presionar de nuevo "
+"<keycap>ScrollLock</keycap> para dejar de desplazarse. Es posible que "
+"también desee probar el comando <command>cat</command> en algunos de los "
+"archivos dot de su directorio home — <command>cat .cshrc</command>, "
+"<command>cat .login</command>, <command>cat .profile</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:274
@@ -521,6 +544,12 @@ msgid ""
 "wide <command>csh</command> configuration file, <filename>/etc/csh.cshrc</"
 "filename>."
 msgstr ""
+"Se dará cuenta de que el archivo <filename>.cshrc</filename> contiene "
+"algunos alias para el comando <command>ls</command> (son muy convenientes). "
+"Puede añadir otros alias editando el archivo <filename>.cshrc</filename>. "
+"Puede poner estos alias a disposición de todos los usuarios del sistema "
+"colocándolos en el archivo de configuración global de <command>csh</"
+"command>, ubicado en <filename>/etc/csh.cshrc</filename>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:284
