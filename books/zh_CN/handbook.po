@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-03 07:30+0000\n"
-"Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
+"PO-Revision-Date: 2019-06-04 04:47+0000\n"
+"Last-Translator: Henry Hu <henry.hu.sh@gmail.com>\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -1438,22 +1438,21 @@ msgstr "<emphasis>Strong TCP/IP networking</emphasis> <_:indexterm-1/> -"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1740
-#, fuzzy
 msgid ""
 "<emphasis>Fully integrated OpenZFS support</emphasis>, including root-on-"
 "ZFS, ZFS Boot Environments, fault management, administrative delegation, "
 "support for jails, FreeBSD specific documentation, and system installer "
 "support."
 msgstr ""
-"<emphasis>完善的 OpenZFS 支持</emphasis> - 包括 root-on-ZFS， ZFS "
-"启动环境，故障管理，administrative delegation，jails 支持，针对 FreeBSD 的文档和系统安装器。"
+"<emphasis>完善的 OpenZFS 支持</emphasis> - 支持包括 root-on-ZFS、从 ZFS "
+"分区启动系统，错误管理，委托管理、jails 支持、FreeBSD 文档支持和系统安装器支持。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1748
 msgid ""
 "<emphasis>Extensive security features</emphasis>, from the Mandatory Access "
 "Control framework to Capsicum capability and sandbox mechanisms."
-msgstr ""
+msgstr "<emphasis>完善的安全支持</emphasis>，从强制访问控制（MAC）框架到 Capsicum 支持以及沙盒组件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1754
@@ -1461,7 +1460,7 @@ msgid ""
 "<emphasis>Over 30 thousand prebuilt packages</emphasis> for all supported "
 "architectures, and the Ports Collection which makes it easy to build your "
 "own, customized ones."
-msgstr ""
+msgstr "<emphasis>超过三万个预编译软件包</emphasis> 为所有支持的硬件架构，还有 Ports 让您更容易自定义软件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1761
@@ -2903,12 +2902,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2894
 msgid "How to create the FreeBSD installation media."
-msgstr ""
+msgstr "如何创建 FreeBSD 安装媒介。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2898
 msgid "How to start <application>bsdinstall</application>."
-msgstr ""
+msgstr "如何启动 <application>bsdinstall</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2903
@@ -2938,19 +2937,19 @@ msgstr ""
 #: book.translate.xml:46919 book.translate.xml:49121 book.translate.xml:50827
 #: book.translate.xml:57435 book.translate.xml:61134
 msgid "Before reading this chapter, you should:"
-msgstr ""
+msgstr "在阅读这个章节之前，您应当："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2921
 msgid ""
 "Read the supported hardware list that shipped with the version of FreeBSD to "
 "be installed and verify that the system's hardware is supported."
-msgstr ""
+msgstr "阅读要安装的 FreeBSD 附带的支持硬件列表，并确认系统中的硬件都被支持。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2929
 msgid "Minimum Hardware Requirements"
-msgstr ""
+msgstr "最低硬件要求"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2931
@@ -2976,12 +2975,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:2946
 msgid "These are the processor requirements for each architecture:"
-msgstr ""
+msgstr "这里是对每个架构的处理器要求："
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2951
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2953
@@ -2991,6 +2990,9 @@ msgid ""
 "<acronym>Intel64</acronym>. Other manufacturers sometimes call it "
 "<acronym>x86-64</acronym>."
 msgstr ""
+"这是最常见的桌面及笔记本处理器类型，被多数现代系统所使用。<trademark class=\"registered\">Intel</"
+"trademark> 称它为 <acronym>Intel64</acronym>。其他生产商有时将它称作 <acronym>x86-64</"
+"acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2958
@@ -3001,16 +3003,20 @@ msgid ""
 "<trademark class=\"registered\">Intel</trademark> <trademark>Core</"
 "trademark> 2 and later processors."
 msgstr ""
+"兼容 amd64 的处理器的例子有：<trademark>AMD Athlon</trademark>64, <trademark>AMD "
+"Opteron</trademark>，多核 <trademark class=\"registered\">Intel</trademark> "
+"<trademark>Xeon</trademark>，以及 <trademark class=\"registered\">Intel</"
+"trademark> <trademark>Core</trademark> 2 和之后的处理器。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2966
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2968
 msgid "Older desktops and laptops often use this 32-bit, x86 architecture."
-msgstr ""
+msgstr "更老的桌面及笔记本经常使用这个32位的 x86 架构。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2971
@@ -3019,6 +3025,8 @@ msgid ""
 "supported. All <trademark class=\"registered\">Intel</trademark> processors "
 "486 or higher are supported."
 msgstr ""
+"几乎所有的兼容 i386 并且有浮点运算单元的处理器都被支持。所有<trademark class=\"registered\">Intel</"
+"trademark> 486 及之后的处理器都被支持。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2975
@@ -3091,7 +3099,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3028
 msgid "Pre-Installation Tasks"
-msgstr ""
+msgstr "安装前的准备"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3030
@@ -3294,7 +3302,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3180
 msgid "Prepare the Installation Media"
-msgstr ""
+msgstr "准备安装媒介"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3182
@@ -3305,6 +3313,9 @@ msgid ""
 "acronym>, <acronym>DVD</acronym>, or <acronym>USB</acronym>), and boot the "
 "system to install from the inserted media."
 msgstr ""
+"FreeBSD 安装器并不是一个能在另一个操作系统中运行的应用程序。请下载一个 FreeBSD "
+"安装文件，将其烧录到与其文件类型与大小相对应的媒介上（<acronym>CD</acronym>，<acronym>DVD</"
+"acronym>，或<acronym>USB</acronym>），随后用装入的媒介启动来安装。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3189
@@ -3539,14 +3550,14 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3371
 msgid "Starting the Installation"
-msgstr ""
+msgstr "开始安装"
 
 #. (itstool) path: important/para
 #: book.translate.xml:3374
 msgid ""
 "By default, the installation will not make any changes to the disk(s) before "
 "the following message:"
-msgstr ""
+msgstr "默认情况下，安装过程在以下消息之前不会对磁盘做任何改动："
 
 #. (itstool) path: important/programlisting
 #: book.translate.xml:3377
@@ -3564,7 +3575,7 @@ msgid ""
 "The install can be exited at any time prior to this warning. If there is a "
 "concern that something is incorrectly configured, just turn the computer off "
 "before this point and no changes will be made to the system's disks."
-msgstr ""
+msgstr "在此警告之前，安装过程可随时退出。如果担心有不正确配置的项目，只要在此之前关闭计算机，那就不会对系统中的磁盘做出任何改动。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3389
@@ -3607,14 +3618,14 @@ msgstr ""
 msgid ""
 "The installation media was not inserted early enough in the boot process. "
 "Leave the media inserted and try restarting the computer."
-msgstr ""
+msgstr "安装介质在启动过程中没有被装入得足够早。保持安装介质装入的情况下尝试重启计算机。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3424
 msgid ""
 "The <acronym>BIOS</acronym> changes were incorrect or not saved. Double-"
 "check that the right boot device is selected as the first boot device."
-msgstr ""
+msgstr "<acronym>BIOS</acronym> 改动不正确或者未保存。重新检查正确的启动设备是否被设置成了优先启动设备。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3430
@@ -3646,7 +3657,7 @@ msgstr ""
 #: book.translate.xml:3458
 #, no-wrap
 msgid "<userinput>boot cd:,\\ppc\\loader cd:0</userinput>"
-msgstr ""
+msgstr "<userinput>boot cd:,\\ppc\\loader cd:0</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3462
@@ -3856,7 +3867,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3615
 msgid "Welcome Menu"
-msgstr ""
+msgstr "欢迎菜单"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4006,7 +4017,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3726 book.translate.xml:3733
 msgid "Setting the Hostname"
-msgstr ""
+msgstr "设置主机名"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3728
@@ -4037,14 +4048,14 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3747 book.translate.xml:3753
 msgid "Selecting Components to Install"
-msgstr ""
+msgstr "选择要安装的组件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3749
 msgid ""
 "Next, <application>bsdinstall</application> will prompt to select optional "
 "components to install."
-msgstr ""
+msgstr "接下来，<application>bsdinstall</application> 会提示您选择要安装的可选组件。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4056,6 +4067,7 @@ msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-config-components' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-config-components' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3762
@@ -4327,7 +4339,7 @@ msgid ""
 "average, most users rarely need more than about a gigabyte of free disk "
 "space in <filename>/var</filename>."
 msgstr ""
-"<filename>/var</filename>  分区的大小反应了机器的用途，该分区一般用于存放邮箱、日志和Printer "
+"<filename>/var</filename>  分区的大小反应了机器的用途，该分区一般用于存放邮箱、日志和 Printer "
 "Spools。邮箱和日志文件占用磁盘空间的大小取决于用户的数量及这些文件要保存多久。总之，多数用户此分区需要 1GB 以上的空闲磁盘空间。"
 
 #. (itstool) path: note/para
@@ -4414,7 +4426,7 @@ msgid ""
 "be needed, shifting them more toward the edge of the disk will not lead to a "
 "significant performance improvement over moving <filename>/var</filename> to "
 "the edge."
-msgstr ""
+msgstr "让写装载分区至靠近磁盘的边缘可以大幅增强　<acronym>I/O</acronym>　的读写性能。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4001
@@ -5307,7 +5319,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4604
 msgid "Configuring Network Interfaces"
-msgstr ""
+msgstr "配置网络接口"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4606
@@ -5327,7 +5339,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4616
 msgid "Choose a Network Interface"
-msgstr ""
+msgstr "选择一个网络接口"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -5411,7 +5423,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4671
 msgid "WPA2 Setup"
-msgstr ""
+msgstr "WPA2 设置"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
