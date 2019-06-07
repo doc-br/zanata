@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-15 01:11+0000\n"
+"PO-Revision-Date: 2019-06-07 08:16+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -19,7 +19,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Federico Caminiti demian.fc@gmail.com, 2015, 2016\n"
-"Sergio Carlavilla carlavilla@mailbox.org, 2019"
+"Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
 
 #. (itstool) path: info/title
 #: book.translate.xml:19
@@ -648,6 +648,11 @@ msgid ""
 "<emphasis>12-STABLE</emphasis> branch, and 11.<replaceable>X</replaceable> "
 "releases are made from the <emphasis>11-STABLE</emphasis> branch."
 msgstr ""
+"En cualquier punto del desarrollo de FreeBSD, puede haber múltiples ramas "
+"paralelas. Las versiones 12.<replaceable>X</replaceable> se hacen a partir "
+"de la rama <emphasis>12-STABLE</emphasis>, y las versiones 11."
+"<replaceable>X</replaceable> se hacen a partir de la rama <emphasis>11-"
+"STABLE</emphasis>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:391
@@ -658,6 +663,12 @@ msgid ""
 "will be designated for an <quote>extended support</quote> status and receive "
 "only fixes for major problems, such as security-related fixes."
 msgstr ""
+"Hasta el lanzamiento de la versión 9.0, la serie 11.<replaceable>X</"
+"replaceable> era al conocida como <emphasis>-STABLE</emphasis>. Sin embargo, "
+"a partir de la versión 13.<replaceable>X</replaceable>, la rama 11."
+"<replaceable>X</replaceable> será designada para un <quote>soporte "
+"extendido</quote> y recibirá solo correcciones para problemas importantes, "
+"como correcciones relacionadas con la seguridad."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:402
@@ -669,6 +680,12 @@ msgid ""
 "\">10.4</link> is the latest release from the <emphasis>11-STABLE</emphasis> "
 "branch; it was released in October 2017."
 msgstr ""
+"La versión <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
+"i386/i386/12.0-RELEASE/\">12.0</link> es la última versión de la rama "
+"<emphasis>12-STABLE</emphasis>; se lanzó en diciembre de 2018. La versión "
+"<link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/10.4-"
+"RELEASE/\">10.4</link> es la última de la rama <emphasis>11-STABLE</"
+"emphasis>; fue lanzada en octubre de 2017."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:408
@@ -850,6 +867,27 @@ msgid ""
 "upcoming release schedule can be found on the <link xlink:href=\"https://www."
 "FreeBSD.org/releng\">Release Engineering Information</link> page."
 msgstr ""
+"Cuando se lanzó FreeBSD 2.0.5, el desarrollo de FreeBSD se dividió en dos. "
+"Una rama se llamó <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
+"books/handbook/current-stable.html#stable\">-STABLE</link> y la otra <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/current-"
+"stable.html#current\">-CURRENT</link>. <emphasis>FreeBSD-STABLE</emphasis> "
+"es la rama de desarrollo a partir de la cual se realizan las principales "
+"versiones. Los cambios se introducen en esta rama a un ritmo más lento y con "
+"la suposición general de que primero se probaron en FreeBSD-CURRENT. Sin "
+"embargo, en cualquier momento, es posible que el código fuente de FreeBSD-"
+"STABLE pueda ser o no adecuado para el uso general, ya que se pueden "
+"descubrir errores y corner cases que aún no fueron encontrados en FreeBSD-"
+"CURRENT. Los usuarios que no tengan los recursos para realizar pruebas deben "
+"ejecutar la versión más reciente de FreeBSD. <emphasis>FreeBSD-CURRENT</"
+"emphasis>, por otro lado, ha sido una línea ininterrumpida de desarrollo "
+"desde que se lanzó la versión 2.0, hasta la versión 12.0-RELEASE y "
+"siguientes. Para obtener una información más detallada sobre las ramas, "
+"consulte <quote><link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
+"articles/releng/release-proc.html#rel-branch\">FreeBSD Release Engineering: "
+"Creating the Release Branch</link></quote>, el estado de las ramas y el "
+"calendario de lanzamiento se puede encontrar en la página <link xlink:href="
+"\"https://www.FreeBSD.org/releng\">Release Engineering Information</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:519
@@ -858,6 +896,9 @@ msgid ""
 "The latest release on the 12.0-STABLE branch is 12.0-RELEASE, which was "
 "released in December 2018."
 msgstr ""
+"12.0-STABLE es la rama que se desarrolla de forma activa en <emphasis>-"
+"STABLE</emphasis>. La última versión de la rama 12.0-STABLE es 12.0-RELEASE, "
+"que se lanzó en diciembre de 2018."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:525
@@ -982,6 +1023,9 @@ msgid ""
 "in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/"
 "i386/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 msgstr ""
+"La última versión <emphasis>12-STABLE</emphasis>, 12.0-RELEASE se puede "
+"encontrar en el <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
+"releases/i386/i386/12.0-RELEASE/\">directorio 12.0-RELEASE</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:601
@@ -1003,6 +1047,9 @@ msgid ""
 "in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/10."
 "4-RELEASE/\">10.4-RELEASE directory</link>."
 msgstr ""
+"La última versión <emphasis>11-STABLE</emphasis>, 10.4-RELEASE se puede "
+"encontrar en el <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
+"releases/i386/10.4-RELEASE/\">directorio 10.4-RELEASE</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:614
@@ -1993,12 +2040,20 @@ msgid ""
 "\"registered\">Windows</trademark> is installed afterwards, it will "
 "overwrite the boot manager. If that happens, see the next section."
 msgstr ""
+"Si <trademark class=\"registered\">Windows</trademark> se instala primero, "
+"entonces sí. El gestor de arranque de FreeBSD se las arreglará para arrancar "
+"tanto <trademark class=\"registered\">Windows</trademark> como FreeBSD. Si "
+"<trademark class=\"registered\">Windows</trademark> se instala después, se "
+"sobrescribirá el gestor de arranque. Si eso sucede, vea la siguiente sección."
+""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1256
 msgid ""
 "Another operating system destroyed my Boot Manager. How do I get it back?"
 msgstr ""
+"Otro sistema operativo destruyó mi gestor de arranque. ¿Cómo puedo "
+"recuperarlo?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1261
@@ -2008,6 +2063,10 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. For example, to "
 "restore the boot menu onto the disk <replaceable>ada0</replaceable>:"
 msgstr ""
+"Esto depende del gestor de arranque. El menú de selección de arranque de "
+"FreeBSD se puede reinstalar usando <citerefentry><refentrytitle>boot0cfg</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Por ejemplo, para "
+"restaurar el menú de arranque en el disco <replaceable>ada0</replaceable>:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1266
@@ -2022,6 +2081,9 @@ msgid ""
 "<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"El cargador de arranque no interactivo MBR puede instalarse usando "
+"<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1271
@@ -2029,6 +2091,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr ada0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr ada0</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1273
@@ -2037,11 +2100,14 @@ msgid ""
 "<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Para situaciones más complejas, incluyendo discos GPT, consulte "
+"<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1280
 msgid "Do I need to install the source?"
-msgstr ""
+msgstr "¿Necesito instalar el código fuente?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1284
@@ -2052,11 +2118,16 @@ msgid ""
 "the port builds a kernel module or directly operates on kernel structures, "
 "the source must be installed."
 msgstr ""
+"En general, no. No hay nada en el sistema base que requiera la presencia del "
+"código fuente para funcionar. Algunos ports, como <package>sysutils/lsof</"
+"package>, no compilaran a menos que el código fuente esté instalado. En "
+"particular, si el port compila un módulo del kernel u opera directamente en "
+"estructuras del kernel, el código fuente debe estar instalado."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1295
 msgid "Do I need to build a kernel?"
-msgstr ""
+msgstr "¿Necesito compilar un kernel?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1299
@@ -2069,6 +2140,15 @@ msgid ""
 "very limited RAM, such as embedded systems, it may be worthwhile to build a "
 "smaller custom kernel containing just the required drivers."
 msgstr ""
+"Normalmente no. El kernel <literal>GENERIC</literal> contiene los "
+"controladores que normalmente necesita un ordenador común. "
+"<citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, la herramienta de actualización de FreeBSD no "
+"puede actualizar kernels personalizados, otra razón para seguir utilizando "
+"el kernel <literal>GENERIC</literal> siempre que sea posible. Para los "
+"ordenadores con una cantidad de RAM muy limitada, como los sistemas "
+"embebidos, podría valer la pena compilar un kernel personalizado que sea más "
+"pequeño que contenga solo los controladores necesarios."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1312
@@ -2076,6 +2156,8 @@ msgid ""
 "Should I use DES, Blowfish, or MD5 passwords and how do I specify which form "
 "my users receive?"
 msgstr ""
+"¿Debo usar contraseñas DES, Blowfish o MD5, y cómo especifico qué formato "
+"usan mis usuarios?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1317
@@ -2091,11 +2173,23 @@ msgid ""
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page for more "
 "information about login capabilities."
 msgstr ""
+"Por defecto, FreeBSD usa <emphasis>SHA512</emphasis>. Las contraseñas en "
+"formato DES aún están disponibles para mantener la compatibilidad con "
+"sistemas operativos que todavía utilicen el formato de contraseñas menos "
+"seguro. FreeBSD también es compatible con los formatos de contraseñas "
+"Blowfish y MD5. Qué formato de contraseñas se utilizará para las nuevas "
+"contraseñas se controla mediante la opción  <literal>passwd_format</literal> "
+"del login en el archivo <filename>/etc/login.conf</filename>, que coge los "
+"valores de <literal>des</literal>, <literal>blf</literal> (si están "
+"disponibles) o <literal>md5</literal>. Consulte la página del manual de "
+"<citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> para obtener más información sobre las capacidades "
+"del login."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1336
 msgid "What are the limits for FFS file systems?"
-msgstr ""
+msgstr "¿Cuáles son los límites para los sistemas de archivos FFS?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1340
@@ -2111,6 +2205,18 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>'able filesystem is "
 "~60 TB."
 msgstr ""
+"Para los sistemas de archivos FFS, el sistema de archivos más extenso está "
+"limitado prácticamente por la cantidad de memoria necesaria para ejecutar "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> sobre el sistema de archivos. "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> necesita un bit por fragmento, que con el tamaño "
+"predeterminado para el fragmento en 4 KB equivale a 32 MB por TB de disco. "
+"Esto significa que en arquitecturas que limiten los procesos en el espacio "
+"de usuario a 2 GB (por ejemplo, <trademark>i386</trademark>), el máximo "
+"sistema de archivos sobre el cual se puede ejecutar "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>' es de ~60 TB."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1349
@@ -2120,6 +2226,10 @@ msgid ""
 "maximum filesystem size would be 2 ^ 64 (blocks) * 32 KB =&gt; 16 Exa * "
 "32 KB =&gt; 512 ZettaBytes."
 msgstr ""
+"Si no hubiera un límite de memoria en <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> , el tamaño máximo del "
+"sistema de archivos sería 2 ^ 64 (bloques) * 32 KB =&gt; 16 Exa * 32 KB ="
+"&gt; 512 ZettaBytes."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1354
@@ -2130,6 +2240,11 @@ msgid ""
 "4096^2 + 32 KB * 4096^3. Increasing the block size to 64 KB will increase "
 "the max file size by a factor of 16."
 msgstr ""
+"El tamaño máximo de un solo archivo FFS es de aproximadamente 2 PB con el "
+"tamaño de bloque predeterminado de 32 KB. Cada bloque de 32 KB puede apuntar "
+"a 4096 bloques. Con bloques triplemente indirectos, el cálculo es 32 KB * 12 "
+"+ 32 KB * 4096 + 32 KB * 4096^2 + 32 KB * 4096^3. Incrementar el tamaño de "
+"bloque a 64 KB incrementara el tamaño máximo de archivo por un factor de 16."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1366
@@ -2137,6 +2252,8 @@ msgid ""
 "Why do I get an error message, <errorname>readin failed</errorname> after "
 "compiling and booting a new kernel?"
 msgstr ""
+"¿Por qué recibo el mensaje de error, <errorname>readin failed</errorname> "
+"después de compilar e iniciar desde un nuevo kernel?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1372
@@ -2145,6 +2262,9 @@ msgid ""
 "<command>make buildworld</command> and <command>make buildkernel</command> "
 "to update the kernel."
 msgstr ""
+"El mundo y el kernel están desincronizados. Esto no está soportado. "
+"Asegurese de usar <command>make buildworld</command> y <command>make "
+"buildkernel</command> para actualizar el kernel."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1377
@@ -2153,11 +2273,16 @@ msgid ""
 "pressing any key when the <literal>|</literal> shows up before loader is "
 "started."
 msgstr ""
+"Arranque el sistema especificando el kernel directamente en la segunda "
+"etapa, presionando cualquier tecla cuando aparezca el carácter <literal>|</"
+"literal> antes de que se inicie el cargador."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1386
 msgid "Is there a tool to perform post-installation configuration tasks?"
 msgstr ""
+"¿Existe alguna herramienta para realizar tareas de configuración después de "
+"la instalación?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1391
@@ -2165,16 +2290,18 @@ msgid ""
 "Yes. <application>bsdconfig</application> provides a nice interface to "
 "configure FreeBSD post-installation."
 msgstr ""
+"Sí. <application>bsdconfig</application> proporciona una interfaz agradable "
+"para configurar FreeBSD después de la instalación."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1399
 msgid "Hardware Compatibility"
-msgstr ""
+msgstr "Compatibilidad de hardware"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1402
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1407
@@ -2182,6 +2309,8 @@ msgid ""
 "I want to get a piece of hardware for my FreeBSD system. Which model/brand/"
 "type is best?"
 msgstr ""
+"Quiero obtener una pieza de hardware para mi sistema FreeBSD. ¿Qué modelo/"
+"marca/tipo es mejor?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1412
@@ -2195,6 +2324,15 @@ msgid ""
 "before asking about the latest and greatest hardware. Chances are a "
 "discussion about that type of hardware took place just last week."
 msgstr ""
+"Esto se discute continuamente en las listas de correo de FreeBSD, pero es de "
+"esperar, dado que el hardware cambia con rapidez. Lea las notas del hardware "
+"de FreeBSD <link xlink:href=\"https://www.FreeBSD.org/releases/12.0R/"
+"hardware.html\">12.0</link>  o <link xlink:href=\"https://www.FreeBSD.org/"
+"releases/10.4R/hardware.html\">10.4</link> y busque en los <link xlink:href="
+"\"https://www.FreeBSD.org/search/#mailinglists\">archivos </link>de las "
+"listas de correo antes de preguntar acerca del último y mejor hardware. Es "
+"posible que una discusión sobre este tipo de hardware tuviera lugar la "
+"semana pasada."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1422
@@ -2205,6 +2343,12 @@ msgid ""
 "listinfo/freebsd-questions\">FreeBSD general questions mailing list</link>, "
 "or possibly a specific mailing list for a particular hardware type."
 msgstr ""
+"Antes de comprar un ordenador portatil, revise los archivos de la <link "
+"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"mobile\">lista de correo de ordenadores portatiles de FreeBSD</link> y la "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"questions\">lista de correo de preguntas generales de FreeBSD</link>, o una "
+"lista de correo específica para un tipo de hardware en particular."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1430
@@ -2212,6 +2356,8 @@ msgid ""
 "What are the limits for memory? Does FreeBSD support more than 4 GB of "
 "memory (RAM)? More than 16 GB? More than 48 GB?"
 msgstr ""
+"¿Cuáles son los límites de la memoria? ¿FreeBSD soporta más de 4 GB de "
+"memoria (RAM)? ¿Más de 16 GB? ¿Más de 48 GB?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1437
@@ -2224,6 +2370,14 @@ msgid ""
 "<trademark>i386</trademark> with PAE supports at most 64 GB memory. As of "
 "FreeBSD 10, AMD64 platforms support up to 4 TB of physical memory."
 msgstr ""
+"Generalmente, FreeBSD como sistema operativo soporta tanta memoria física "
+"(RAM) como la plataforma en la que se ejecuta. Tenga en cuenta que las "
+"diferentes plataformas tienen diferentes límites de memoria; por ejemplo, "
+"<trademark>i386</trademark> sin <acronym>PAE</acronym> admite como máximo 4 "
+"GB de memoria (generalmente, menos que eso, debido al espacio de direcciones "
+"PCI) y <trademark>i386</trademark> con PAE soporta como máximo 64 GB de "
+"memoria. A partir de FreeBSD 10, las plataformas AMD64 admiten hasta 4 TB de "
+"memoria física."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1452
@@ -2231,6 +2385,8 @@ msgid ""
 "Why does FreeBSD report less than 4 GB memory when installed on an "
 "<trademark>i386</trademark> machine?"
 msgstr ""
+"¿Por qué FreeBSD indica menos de 4 GB de memoria cuando está instalado en "
+"una máquina <trademark>i386</trademark>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1457
@@ -2244,6 +2400,15 @@ msgid ""
 "significantly less than 4 GB. Usually, 3.2 GB to 3.7 GB is the maximum "
 "usable physical memory in this configuration."
 msgstr ""
+"El espacio total de direcciones en las máquinas <trademark>i386</trademark> "
+"es de 32 bits, lo que significa que como mucho 4 GB de memoria son "
+"direccionables (pueden ser accedidos). Además, algunas direcciones en este "
+"rango están reservadas por hardware para diferentes propósitos, por ejemplo, "
+"para usar y controlar dispositivos PCI, para acceder a la memoria de video, "
+"etc. Por lo tanto, la cantidad total de memoria que puede utilizar el "
+"sistema operativo para su núcleo y sus aplicaciones está limitada a una "
+"cantidad significativamente inferior a 4 GB. Por lo general, de 3.2 GB a 3.7 "
+"GB es la memoria física máxima utilizable en esta configuración."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1469
@@ -2279,7 +2444,7 @@ msgstr ""
 #: book.translate.xml:1497
 #, no-wrap
 msgid "options       PAE"
-msgstr ""
+msgstr "options       PAE"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1499
