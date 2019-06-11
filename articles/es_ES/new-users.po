@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-11 09:12+0000\n"
+"PO-Revision-Date: 2019-06-11 02:25+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -697,6 +697,16 @@ msgid ""
 "\"username\">root</systemitem> and, for now, give each one time to finish "
 "before you start the next one."
 msgstr ""
+"¿Algunos de estos comandos no funcionan correctamente? Tanto el comando "
+"<citerefentry><refentrytitle>locate</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> como <citerefentry><refentrytitle>whatis</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> dependen de una base "
+"de adtos que se reconstruye semanalmente. Si su máquina no está encendida "
+"durante el fin de semana (y ejecuta FreeBSD), es posible que desee ejecutar "
+"los comandos para el mantenimiento diario, semanal y mensual de vez en "
+"cuando. Ejecútelos como <systemitem class=\"username\">root</systemitem> y, "
+"por ahora, déle a cada uno el tiempo necesario para que termine antes de "
+"comenzar con el siguiente."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:388
@@ -728,6 +738,14 @@ msgid ""
 "<filename>/var/mail/root</filename> and <filename>/var/log/messages</"
 "filename>."
 msgstr ""
+"Si está cansado de esperar, presione las teclas <keycombo><keycap>Alt</"
+"keycap><keycap>F2</keycap></keycombo> para abrir otra <firstterm>consola "
+"virtual</firstterm> e inicie sesión nuevamente. Después de todo, es un "
+"sistema multiusuario y multitarea. Sin embargo, probablemente, estos "
+"comandos mostrarán mensajes en su pantalla mientras se ejecutan; puede "
+"escribir <command>clear</command> en el prompt para borrar la pantalla. Una "
+"vez se hayan ejecutado, es posible que desee ver el contenido de <filename>/"
+"var/mail/root</filename> y <filename>/var/log/messages</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:407
@@ -745,11 +763,26 @@ msgid ""
 "Æleen Frisch's <citetitle>Essential System Administration</citetitle> "
 "(O'Reilly &amp; Associates, 2002, ISBN 0-596-00343-9). I used Nemeth."
 msgstr ""
+"La ejecución de estos comandos forma parte de la administración del "
+"sistema—y como principal usuario de su sistema <trademark class="
+"\"registered\">UNIX</trademark>, usted es su propio administrador. "
+"Prácticamente todo lo que necesitar hacer como <systemitem class="
+"\"username\">root</systemitem> es administrar el sistema. Tales "
+"responsabilidades no están cubiertas muy bien, ni siquiera en esos libros "
+"enormes sobre <trademark class=\"registered\">UNIX</trademark>, los cuales "
+"parecen decir mucho espacio en bajar menús en los administradores de "
+"ventanas. Es posible que desee obtener uno de los dos principales libros "
+"sobre administración de sistemas, ya sea el <citetitle>UNIX System "
+"Administration Handbook</citetitle> (Prentice-Hall, 1995, ISBN 0-13-15051-"
+"7)—la segunda edición con la cubierta roja, de Evi Nemeth et.al.'s o el "
+"<citetitle>Essential System Administration</citetitle> (O'Reilly &amp; "
+"Associates, 2002, ISBN 0-596-00343-9) de Æleen Frisch. Yo utilicé el libro "
+"de Nemeth."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:424
 msgid "Editing Text"
-msgstr ""
+msgstr "Editando texto"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:426
@@ -762,6 +795,14 @@ msgid ""
 "is an excellent tutorial on vi in <filename>/usr/src/contrib/nvi/docs/"
 "tutorial</filename>, if you have the system sources installed."
 msgstr ""
+"Para configurar su sistema, necesita editar archivos de texto. La mayoría "
+"estarán en el directorio <filename>/etc</filename>; y necesitará utilizar el "
+"comando <command>su</command> para acceder como usuario <systemitem class="
+"\"username\">root</systemitem> y así poder editarlos. Puede utiliazr un "
+"editor de texto simple, como <command>ee</command>, pero a largo plazo, se "
+"recomienda aprender a utilizar el editor de texto <command>vi</command>. Hay "
+"un excelente tutorial de vi en el directorio <filename>/usr/src/contrib/nvi/"
+"docs/tutorial</filename>, si tiene el código fuente del sistema instalado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:435
@@ -770,12 +811,16 @@ msgid ""
 "edit <filename>/etc/rc.conf</filename>. You could just use <command>cd /etc</"
 "command> to get to the <filename>/etc</filename> directory and do:"
 msgstr ""
+"Antes de editar un archivo, se recomienda crear una copia de seguridad del "
+"mismo. Suponga que desea editar el archivo <filename>/etc/rc.conf</filename>."
+" Podría usar únicamente el comando <command>cd /etc</command> para acceder "
+"al directorio <filename>/etc</filename> y utilizar el siguiente comando:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:441
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>cp rc.conf rc.conf.orig</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>cp rc.conf rc.conf.orig</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:444
@@ -814,12 +859,12 @@ msgstr "<prompt>#</prompt> <userinput>mv rc.conf.orig rc.conf</userinput>"
 #. (itstool) path: sect1/para
 #: article.translate.xml:466
 msgid "to put things back the way they were."
-msgstr ""
+msgstr "para dejar las cosas como estaban."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:468
 msgid "To edit a file, type"
-msgstr ""
+msgstr "Para editar un fichero, escriba"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:471
@@ -837,6 +882,9 @@ msgid ""
 "Move through the text with the arrow keys. <keycap>Esc</keycap> (the escape "
 "key) puts <command>vi</command> in command mode. Here are some commands:"
 msgstr ""
+"Desplacese por el texto con las teclas de desplazamiento. <keycap>Esc</"
+"keycap> (la tecla escape) pone a <command>vi</command> en modo comando. Aquí "
+"algunos comandos:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:480
@@ -904,7 +952,7 @@ msgstr "<command>:wq</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:531
 msgid "to write and quit"
-msgstr ""
+msgstr "para grabar y salir"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:536
@@ -914,7 +962,7 @@ msgstr "<command>:q!</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:539
 msgid "to quit without saving changes"
-msgstr ""
+msgstr "para salir sin grabar los cambios"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:544
@@ -937,7 +985,7 @@ msgstr "<command>G</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:558
 msgid "to go to the end of the file"
-msgstr ""
+msgstr "para ir al final del archivo"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:563
@@ -1007,7 +1055,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:629
 msgid "Other Useful Commands"
-msgstr ""
+msgstr "Otros comandos útiles"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:633
@@ -1017,7 +1065,7 @@ msgstr "<command>df</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
 msgid "shows file space and mounted systems."
-msgstr ""
+msgstr "muestra el espacio en disco y los sistemas de archivos montados"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:641
@@ -1028,6 +1076,8 @@ msgstr "<command>ps aux</command>"
 #: article.translate.xml:644
 msgid "shows processes running. <command>ps ax</command> is a narrower form."
 msgstr ""
+"muestra los procesos que hay en ejecución. <command>ps ax</command> es la "
+"forma reducida."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:650
