@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-10 09:42+0000\n"
+"PO-Revision-Date: 2019-06-11 09:12+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -643,6 +643,9 @@ msgid ""
 "manual page. Typing <command>whatis *</command> will tell you about all the "
 "binaries in the current directory."
 msgstr ""
+"Le indica qué hace el comando <replaceable>text</replaceable> y la página "
+"del manual. Escribiendo <command>whatis *</command> le indicará todos los "
+"binarios del directorio actual."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:355
@@ -653,6 +656,8 @@ msgstr "<command>whereis <replaceable>text</replaceable></command>"
 #: article.translate.xml:359
 msgid "Finds the file <replaceable>text</replaceable>, giving its full path."
 msgstr ""
+"Encuentra el archivo <replaceable>text</replaceable>, informándole de su "
+"ruta completa."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:365
@@ -667,6 +672,17 @@ msgid ""
 "command>. The <literal>*</literal> works as a wildcard—e.g., <command>ls w*</"
 "command> will show you files beginning with <literal>w</literal>."
 msgstr ""
+"Es posible que desee probar el comando <command>whatis</command> en algunos "
+"comandos útiles como <command>cat</command>, <command>more</command>, "
+"<command>grep</command>, <command>mv</command>, <command>find</command>, "
+"<command>tar</command>, <command>chmod</command>, <command>chown</command>, "
+"<command>date</command>, y <command>script</command>. El comando "
+"<command>more</command> le permite leer una página entera a la vez como en "
+"DOS, por ejemplo: <command>ls -l | more</command> o <command>more "
+"<replaceable>filename</replaceable></command>. El carácter <literal>*</"
+"literal> funciona como un carácter comodín, por ejemplo, el comando "
+"<command>ls w*</command> le mostrará los archivos que comienzan con "
+"<literal>w</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:379
@@ -777,6 +793,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>mv rc.conf rc.conf.orig</userinput>\n"
 "<prompt>#</prompt> <userinput>cp rc.conf.orig rc.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mv rc.conf rc.conf.orig</userinput>\n"
+"<prompt>#</prompt> <userinput>cp rc.conf.orig rc.conf</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:455
@@ -791,7 +809,7 @@ msgstr ""
 #: article.translate.xml:463
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mv rc.conf.orig rc.conf</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>mv rc.conf.orig rc.conf</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:466
@@ -810,6 +828,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>vi <replaceable>filename</replaceable></"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>vi <replaceable>filename</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:474
@@ -821,7 +841,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:480
 msgid "<command>x</command>"
-msgstr ""
+msgstr "<command>x</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:483
@@ -831,7 +851,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:488
 msgid "<command>dd</command>"
-msgstr ""
+msgstr "<command>dd</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:491
@@ -841,7 +861,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:497
 msgid "<command>i</command>"
-msgstr ""
+msgstr "<command>i</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
@@ -851,7 +871,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:505
 msgid "<command>a</command>"
-msgstr ""
+msgstr "<command>a</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:508
@@ -869,7 +889,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:519
 msgid "<command>:w</command>"
-msgstr ""
+msgstr "<command>:w</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
@@ -879,7 +899,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:528
 msgid "<command>:wq</command>"
-msgstr ""
+msgstr "<command>:wq</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:531
@@ -889,7 +909,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:536
 msgid "<command>:q!</command>"
-msgstr ""
+msgstr "<command>:q!</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:539
@@ -899,7 +919,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:544
 msgid "<command>/<replaceable>text</replaceable></command>"
-msgstr ""
+msgstr "<command>/<replaceable>text</replaceable></command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:547
@@ -912,7 +932,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:555
 msgid "<command>G</command>"
-msgstr ""
+msgstr "<command>G</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:558
@@ -922,7 +942,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:563
 msgid "<command><replaceable>n</replaceable>G</command>"
-msgstr ""
+msgstr "<command><replaceable>n</replaceable>G</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:566
@@ -934,7 +954,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:573
 msgid "<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>"
-msgstr ""
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:576
@@ -992,7 +1012,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:633
 msgid "<command>df</command>"
-msgstr ""
+msgstr "<command>df</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
@@ -1002,7 +1022,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:641
 msgid "<command>ps aux</command>"
-msgstr ""
+msgstr "<command>ps aux</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:644
@@ -1012,17 +1032,17 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:650
 msgid "<command>rm <replaceable>filename</replaceable> </command>"
-msgstr ""
+msgstr "<command>rm <replaceable>filename</replaceable> </command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:657
 msgid "remove <replaceable>filename</replaceable>."
-msgstr ""
+msgstr "remove <replaceable>filename</replaceable>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:662
 msgid "<command>rm -R <replaceable>dir</replaceable> </command>"
-msgstr ""
+msgstr "<command>rm -R <replaceable>dir</replaceable> </command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:669
@@ -1034,7 +1054,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:675
 msgid "<command>ls -R</command>"
-msgstr ""
+msgstr "<command>ls -R</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:678
@@ -1048,7 +1068,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:688
 msgid "<command>passwd</command>"
-msgstr ""
+msgstr "<command>passwd</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:691
@@ -1060,7 +1080,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:696
 msgid "<command>man hier</command>"
-msgstr ""
+msgstr "<command>man hier</command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:699
@@ -1083,6 +1103,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>find /usr -name \"<replaceable>filename</"
 "replaceable>\"</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>find /usr -name \"<replaceable>filename</"
+"replaceable>\"</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:712
@@ -1152,6 +1174,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cp -R /cdrom/ports/comm/kermit /usr/local</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp -R /cdrom/ports/comm/kermit /usr/local</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:760
@@ -1183,7 +1207,7 @@ msgstr ""
 #: article.translate.xml:779
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make all install</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make all install</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:782
@@ -1276,7 +1300,7 @@ msgstr ""
 #: article.translate.xml:854
 #, no-wrap
 msgid "alias su su -m"
-msgstr ""
+msgstr "alias su su -m"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:857
@@ -1304,7 +1328,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:877
 msgid "set prompt = \"%h %t %~ %# \""
-msgstr ""
+msgstr "set prompt = \"%h %t %~ %# \""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:879
@@ -1372,4 +1396,4 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:927
 msgid "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
-msgstr ""
+msgstr "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
