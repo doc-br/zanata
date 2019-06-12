@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-11 02:25+0000\n"
+"PO-Revision-Date: 2019-06-12 02:45+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -830,6 +830,10 @@ msgid ""
 "<filename>rc.conf</filename> to recover the original. But even better would "
 "be moving (renaming) and then copying back:"
 msgstr ""
+"Esto copiaría <filename>rc.conf</filename> a <filename>rc.conf.orig</"
+"filename>, y después usted podría copiar <filename>rc.conf.orig</filename> a "
+"<filename>rc.conf</filename> para recuperar el original. Pero sería todavía "
+"mejor mover (renombrar) y luego copiar de nuevo:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:451
@@ -849,6 +853,11 @@ msgid ""
 "original back, you would then <userinput>mv rc.conf rc.conf.myedit</"
 "userinput> (assuming you want to preserve your edited version) and then"
 msgstr ""
+"porque el comando <command>mv</command> conserva la fecha original y el "
+"propietario del archivo. Ahora puede editar <filename>rc.conf</filename>. Si "
+"desea recuperar el original, entonces utilice el comando <userinput>mv rc."
+"conf rc.conf.myedit</userinput> (suponiendo que desea conservar la versión "
+"que ha editado) y luego:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:463
@@ -894,7 +903,7 @@ msgstr "<command>x</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:483
 msgid "delete letter the cursor is on"
-msgstr ""
+msgstr "borra la letra que se encuentre en la posición del cursor"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:488
@@ -905,6 +914,7 @@ msgstr "<command>dd</command>"
 #: article.translate.xml:491
 msgid "delete the entire line (even if it wraps on the screen)"
 msgstr ""
+"elimina la línea entera (incluso si no aparece por completo en la pantalla)"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:497
@@ -914,7 +924,7 @@ msgstr "<command>i</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
 msgid "insert text at the cursor"
-msgstr ""
+msgstr "inserta texto en la posición del cursor"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:505
@@ -924,7 +934,7 @@ msgstr "<command>a</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:508
 msgid "insert text after the cursor"
-msgstr ""
+msgstr "inserta texto después del cursor"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:513
@@ -933,6 +943,9 @@ msgid ""
 "text. <command>Esc</command> puts you back in command mode where you can "
 "type"
 msgstr ""
+"Cuando escriba <command>i</command> o <command>a</command>, entonces podrá "
+"insertar texto. Si presiona la tecla <command>Esc</command>, le pondrá en "
+"modo comando, donde podrá insertar más comandos"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:519
@@ -942,7 +955,7 @@ msgstr "<command>:w</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
 msgid "to write your changes to disk and continue editing"
-msgstr ""
+msgstr "para guardar los cambios en el disco y continuar con la edición"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:528
@@ -976,6 +989,10 @@ msgid ""
 "command><keycap>Enter</keycap> (the enter key) to find the next instance of "
 "<replaceable>text</replaceable>."
 msgstr ""
+"para mover el cursor a la primera coincidencia de la palabra "
+"<replaceable>text</replaceable>; utilice la combinación <command>/</"
+"command><keycap>Enter</keycap> (la tecla enter) para encontrar la siguiente "
+"coincidencia de la palabra <replaceable>text</replaceable>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:555
@@ -998,6 +1015,8 @@ msgid ""
 "to go to line <replaceable>n</replaceable> in the file, where "
 "<replaceable>n</replaceable> is a number"
 msgstr ""
+"para ir a la línea <replaceable>n</replaceable> en el archivo, donde "
+"<replaceable>n</replaceable> es un número"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:573
@@ -1007,7 +1026,7 @@ msgstr "<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:576
 msgid "to redraw the screen"
-msgstr ""
+msgstr "para recargar la pantalla"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:581
@@ -1015,6 +1034,8 @@ msgid ""
 "<keycombo> <keycap>Ctrl</keycap> <keycap>b</keycap> </keycombo> and "
 "<keycombo> <keycap>Ctrl</keycap> <keycap>f</keycap> </keycombo>"
 msgstr ""
+"<keycombo> <keycap>Ctrl</keycap> <keycap>b</keycap> </keycombo> y <keycombo> "
+"<keycap>Ctrl</keycap> <keycap>f</keycap> </keycombo>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:594
@@ -1022,6 +1043,8 @@ msgid ""
 "go back and forward a screen, as they do with <command>more</command> and "
 "<command>view</command>."
 msgstr ""
+"retrocede y avanza una pantalla, como los comandos <command>more</command> y "
+"<command>view</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:601
@@ -1038,6 +1061,18 @@ msgid ""
 "with <command>:w</command>, and use <command>:q!</command> to get out and "
 "start over (from your last <command>:w</command>) when you need to."
 msgstr ""
+"Practique con el comando <command>vi</command> en su directorio personal "
+"creando un nuevo archivo con el comando <command>vi <replaceable>filename</"
+"replaceable></command>, añadiendo y quitando texto, guardando el archivo y "
+"abriendolo de nuevo. El comando <command>vi</command> ofrece algunas "
+"sorpresas debido a su complejidad y, a veces, usted ejecutará "
+"inadvertidamente un comando que hará algo que no espera. (A algunas personas "
+"les gusta  <command>vi</command>—es más poderoso que DOS EDIT—para saber más "
+"sobre el comando <command>:r</command>) Pulse la tecla <keycap>Esc</keycap> "
+"varias veces para asegurarse de estar en modo comando y proceda desde ese "
+"modo cuando tenga algun problema, guarde a menudo con <command>:w</command>, "
+"y utilice <command>:q!</command> para salir sin guardar y empezar de nuevo "
+"(desde su último<command>:w</command>) cuando lo necesite."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:617
@@ -1051,6 +1086,17 @@ msgid ""
 "wq</command> to write the file to disk and quit. Instantly effective. (You "
 "did not put a space after the comma, did you?)"
 msgstr ""
+"Ahora puede utilizar el comando <command>cd</command> para ir a <filename>/"
+"etc</filename>, utilizar el comando <command>su</command> para acceder como "
+"usuario <systemitem class=\"username\">root</systemitem>, use el comando "
+"<command>vi</command> para editar el archivo <filename>/etc/group</"
+"filename>, y añada un usuario al grupo <systemitem class="
+"\"groupname\">wheel</systemitem> para que el usuario tenga privilegios de "
+"root. Simplemente añada una coma y el nombre de usuario con el que inicia "
+"sesión al final de la primera línea del archivo, presione la tecla "
+"<keycap>Esc</keycap>, y teclee <command>:wq</command> para guardar el "
+"archivo en disco y salir. Eficacia instantanea. (No puso un espacio después "
+"de la coma, ¿verdad?)"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:629
