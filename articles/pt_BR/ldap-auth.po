@@ -1,18 +1,18 @@
+# $FreeBSD$
 # $FreeBSD: head/pt_BR.ISO8859-1/articles/ldap-auth/pt_BR.po 52213 2018-09-06 00:20:03Z ebrandi $
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 14:59-0300\n"
-"PO-Revision-Date: 2018-08-31 01:28+0000\n"
-"Last-Translator: Silvio Ap Silva <contato@kanazuchi.com>\n"
-"Language-Team: \n"
-"Language: pt_BR\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-06-15 06:31+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -32,12 +32,10 @@ msgstr "Autenticação LDAP"
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
 #, no-wrap
-msgid ""
-"\n"
+msgid "\n"
 "\t    <email>kurin@causa-sui.net</email>\n"
 "\t  "
-msgstr ""
-"\n"
+msgstr "\n"
 "\t    <email>kurin@causa-sui.net</email>\n"
 "\t  "
 
@@ -83,11 +81,11 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:38 article.translate.xml:40
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 "
-"2015-07-25 16:21:53Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 2015-07-"
+"25 16:21:53Z bcr $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 "
-"2015-07-25 16:21:53Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 2015-07-"
+"25 16:21:53Z bcr $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:43
@@ -164,14 +162,14 @@ msgstr "Configurando o LDAP"
 msgid ""
 "LDAP stands for <quote>Lightweight Directory Access Protocol</quote> and is "
 "a subset of the X.500 Directory Access Protocol. Its most recent "
-"specifications are in <link xlink:href=\"http://www.ietf.org/rfc/rfc4510.txt"
-"\">RFC4510</link> and friends. Essentially it is a database that expects to "
-"be read from more often than it is written to."
+"specifications are in <link xlink:href=\"http://www.ietf.org/rfc/rfc4510."
+"txt\">RFC4510</link> and friends. Essentially it is a database that expects "
+"to be read from more often than it is written to."
 msgstr ""
 "LDAP significa <quote>Lightweight Directory Access Protocol</quote> e é um "
 "subconjunto do X.500 Directory Access Protocol. Suas especificações mais "
-"recentes estão na <link xlink:href=\"http://www.ietf.org/rfc/rfc4510.txt"
-"\">RFC4510</link> e documentos amigaveis. Essencialmente, é um banco de "
+"recentes estão na <link xlink:href=\"http://www.ietf.org/rfc/rfc4510."
+"txt\">RFC4510</link> e documentos amigaveis. Essencialmente, é um banco de "
 "dados que espera ser lido com mais frequência do que é escrito."
 
 #. (itstool) path: sect1/para
@@ -197,10 +195,10 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:96
 msgid ""
-"There are (basically) two areas of the LDAP service which need "
-"configuration. The first is setting up a server to receive connections "
-"properly, and the second is adding entries to the server's directory so that "
-"FreeBSD tools know how to interact with it."
+"There are (basically) two areas of the LDAP service which need configuration."
+" The first is setting up a server to receive connections properly, and the "
+"second is adding entries to the server's directory so that FreeBSD tools "
+"know how to interact with it."
 msgstr ""
 "Existem (basicamente) duas áreas do serviço LDAP que precisam de "
 "configuração. A primeira é a configuração de um servidor para receber as "
@@ -237,10 +235,12 @@ msgstr "Primeiro, instale o <application>OpenLDAP</application>:"
 #: article.translate.xml:122
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</"
+"userinput>\n"
 "<prompt>#</prompt> make install clean"
 msgstr ""
-"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</"
+"userinput>\n"
 "<prompt>#</prompt> make install clean"
 
 #. (itstool) path: sect3/para
@@ -398,14 +398,16 @@ msgid ""
 "....................++++++\n"
 "...++++++\n"
 "e is 65537 (0x10001)\n"
-"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</userinput>"
+"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</"
+"userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>openssl genrsa -out cert.key 1024</userinput>\n"
 "Generating RSA private key, 1024 bit long modulus\n"
 "....................++++++\n"
 "...++++++\n"
 "e is 65537 (0x10001)\n"
-"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</userinput>"
+"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:206
@@ -442,12 +444,14 @@ msgstr "Auto-assinando o certificado"
 #: article.translate.xml:223
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -signkey cert.key -out cert.crt</userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -"
+"signkey cert.key -out cert.crt</userinput>\n"
 "Signature ok\n"
 "subject=/C=AU/ST=Some-State/O=Internet Widgits Pty Ltd\n"
 "Getting Private key"
 msgstr ""
-"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -signkey cert.key -out cert.crt</userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -"
+"signkey cert.key -out cert.crt</userinput>\n"
 "Signature ok\n"
 "subject=/C=AU/ST=Some-State/O=Internet Widgits Pty Ltd\n"
 "Getting Private key"
@@ -747,8 +751,8 @@ msgid ""
 "We also need group entries. They are as configurable as user entries, but we "
 "will use the defaults below:"
 msgstr ""
-"Também precisamos de entradas de grupo. Eles são configuráveis ​​como entradas "
-"do usuário, mas usaremos os padrões abaixo:"
+"Também precisamos de entradas de grupo. Eles são configuráveis ​​como "
+"entradas do usuário, mas usaremos os padrões abaixo:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:371
@@ -784,9 +788,8 @@ msgid ""
 "Alternatively, you can use <package>sysutils/ldapvi</package>."
 msgstr ""
 "Para inseri-los em seu banco de dados, você pode usar <command>slapadd</"
-"command> ou <command>ldapadd</command> em um arquivo contendo essas "
-"entradas. Alternativamente, você pode usar o <package>sysutils/ldapvi</"
-"package>."
+"command> ou <command>ldapadd</command> em um arquivo contendo essas entradas."
+" Alternativamente, você pode usar o <package>sysutils/ldapvi</package>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:387
@@ -873,6 +876,7 @@ msgstr ""
 "originais do <filename>openldap/ldap.conf</filename> para o novo "
 "<filename>ldap.conf</filename>. Feito isso, queremos informar ao "
 "<package>security/pam_ldap</package> o que procurar no servidor de diretório."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:430
@@ -901,18 +905,17 @@ msgstr "pam_login_attribute uid"
 #: article.translate.xml:442
 msgid ""
 "With this set, <package>security/pam_ldap</package> will search the entire "
-"LDAP directory under <literal>base</literal> for the value "
-"<literal>uid=<replaceable>username</replaceable></literal>. If it finds one "
-"and only one entry, it will attempt to bind as that user with the password "
-"it was given. If it binds correctly, then it will allow access. Otherwise it "
-"will fail."
+"LDAP directory under <literal>base</literal> for the value <literal>uid="
+"<replaceable>username</replaceable></literal>. If it finds one and only one "
+"entry, it will attempt to bind as that user with the password it was given. "
+"If it binds correctly, then it will allow access. Otherwise it will fail."
 msgstr ""
 "Com esta definição, o <package>security/pam_ldap</package> pesquisará todo o "
-"diretório LDAP na <literal>base</literal> para o valor "
-"<literal>uid=<replaceable>username</replaceable> </literal>. Se encontrar "
-"uma e apenas uma entrada, ela tentará se vincular como aquele usuário com a "
-"senha que foi fornecida. Se vincular corretamente, então permitirá o acesso. "
-"Caso contrário, falhará."
+"diretório LDAP na <literal>base</literal> para o valor <literal>uid="
+"<replaceable>username</replaceable> </literal>. Se encontrar uma e apenas "
+"uma entrada, ela tentará se vincular como aquele usuário com a senha que foi "
+"fornecida. Se vincular corretamente, então permitirá o acesso. Caso "
+"contrário, falhará."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:451
@@ -936,8 +939,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:461
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>getent passwd <replaceable>username</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>getent passwd <replaceable>username</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>getent passwd <replaceable>username</"
+"replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>getent passwd <replaceable>username</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:463
@@ -957,8 +964,12 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:471
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</userinput>"
-msgstr "<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:473
@@ -1111,6 +1122,7 @@ msgid ""
 "should enable the <literal>ignore_unknown_user</literal> attribute. Finally, "
 "you should set the <literal>ignore_authinfo_unavail</literal> option so that "
 "you are not locked out of every computer when the LDAP server is unavailable."
+""
 msgstr ""
 "Além disso, essa diretiva não é verificada no PAM durante a autenticação, "
 "ela é verificada durante o gerenciamento de contas, portanto, você precisará "
@@ -1139,22 +1151,28 @@ msgstr "Exemplo <filename>pam.d/sshd</filename>"
 #, no-wrap
 msgid ""
 "auth            required        pam_nologin.so          no_warn\n"
-"auth            sufficient      pam_opie.so             no_warn no_fake_prompts\n"
+"auth            sufficient      pam_opie.so             no_warn "
+"no_fake_prompts\n"
 "auth            requisite       pam_opieaccess.so       no_warn allow_local\n"
 "auth            sufficient      /usr/local/lib/pam_ldap.so      no_warn\n"
-"auth            required        pam_unix.so             no_warn try_first_pass\n"
+"auth            required        pam_unix.so             no_warn "
+"try_first_pass\n"
 "\n"
 "account         required        pam_login_access.so\n"
-"account         required        /usr/local/lib/pam_ldap.so      no_warn ignore_authinfo_unavail ignore_unknown_user"
+"account         required        /usr/local/lib/pam_ldap.so      no_warn "
+"ignore_authinfo_unavail ignore_unknown_user"
 msgstr ""
 "auth            required        pam_nologin.so          no_warn\n"
-"auth            sufficient      pam_opie.so             no_warn no_fake_prompts\n"
+"auth            sufficient      pam_opie.so             no_warn "
+"no_fake_prompts\n"
 "auth            requisite       pam_opieaccess.so       no_warn allow_local\n"
 "auth            sufficient      /usr/local/lib/pam_ldap.so      no_warn\n"
-"auth            required        pam_unix.so             no_warn try_first_pass\n"
+"auth            required        pam_unix.so             no_warn "
+"try_first_pass\n"
 "\n"
 "account         required        pam_login_access.so\n"
-"account         required        /usr/local/lib/pam_ldap.so      no_warn ignore_authinfo_unavail ignore_unknown_user"
+"account         required        /usr/local/lib/pam_ldap.so      no_warn "
+"ignore_authinfo_unavail ignore_unknown_user"
 
 #. (itstool) path: note/para
 #: article.translate.xml:566
@@ -1219,11 +1237,9 @@ msgstr ""
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:600
 #, no-wrap
-msgid ""
-"group: compat\n"
+msgid "group: compat\n"
 "passwd: compat"
-msgstr ""
-"group: compat\n"
+msgstr "group: compat\n"
 "passwd: compat"
 
 #. (itstool) path: sect2/para
@@ -1234,11 +1250,9 @@ msgstr "com"
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:605
 #, no-wrap
-msgid ""
-"group: files ldap\n"
+msgid "group: files ldap\n"
 "passwd: files ldap"
-msgstr ""
-"group: files ldap\n"
+msgstr "group: files ldap\n"
 "passwd: files ldap"
 
 #. (itstool) path: sect2/para
@@ -1339,8 +1353,12 @@ msgstr ""
 #. (itstool) path: caution/screen
 #: article.translate.xml:654
 #, no-wrap
-msgid "<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</userinput>"
-msgstr "<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</userinput>"
+msgid ""
+"<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
+"userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:657
@@ -1382,7 +1400,8 @@ msgid ""
 "\n"
 "  salt = rand.to_s.gsub(/0\\./, '')\n"
 "  pass = pwd1.to_s\n"
-"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1.digest(\"#{pass}#{salt}\")+salt).chomp!\n"
+"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1."
+"digest(\"#{pass}#{salt}\")+salt).chomp!\n"
 "  return hash\n"
 "end\n"
 "\n"
@@ -1419,7 +1438,8 @@ msgstr ""
 "\n"
 "  salt = rand.to_s.gsub(/0\\./, '')\n"
 "  pass = pwd1.to_s\n"
-"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1.digest(\"#{pass}#{salt}\")+salt).chomp!\n"
+"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1."
+"digest(\"#{pass}#{salt}\")+salt).chomp!\n"
 "  return hash\n"
 "end\n"
 "\n"
@@ -1488,8 +1508,8 @@ msgstr "Definindo atributos somente leitura"
 msgid ""
 "Several attributes in LDAP should be read-only. If left writable by the "
 "user, for example, a user could change his <literal>uidNumber</literal> "
-"attribute to <literal>0</literal> and get <systemitem class=\"username"
-"\">root</systemitem> access!"
+"attribute to <literal>0</literal> and get <systemitem class="
+"\"username\">root</systemitem> access!"
 msgstr ""
 "Vários atributos no LDAP devem ser somente leitura. Se deixado gravável pelo "
 "usuário, por exemplo, um usuário poderia alterar seu atributo "
@@ -1558,7 +1578,8 @@ msgstr ""
 "Além disso, você desejará impedir que os usuários alterem alguns de seus "
 "próprios atributos. Por padrão, os usuários podem alterar qualquer atributo "
 "(exceto aqueles que os próprios esquemas LDAP negam alterações), como "
-"<literal>uidNumber</literal>. Para fechar este buraco, modifique o acima para"
+"<literal>uidNumber</literal>. Para fechar este buraco, modifique o acima "
+"para"
 
 #. (itstool) path: example/title
 #: article.translate.xml:765
@@ -1888,12 +1909,16 @@ msgstr "Criando um Certificado"
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>openssl genrsa -out root.key 1024</userinput>\n"
-"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</userinput>\n"
-"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -signkey root.key -out root.crt</userinput>"
+"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -"
+"signkey root.key -out root.crt</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>openssl genrsa -out root.key 1024</userinput>\n"
-"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</userinput>\n"
-"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -signkey root.key -out root.crt</userinput>"
+"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -"
+"signkey root.key -out root.crt</userinput>"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:926

@@ -1,20 +1,18 @@
+# $FreeBSD$
 # $FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 2019-04-21 10:21:52Z ebrandi $
-# André Franciosi <andre@franciosi.org>, 2018. #zanata
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
-# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
-# Silvio Ap Silva <contato@kanazuchi.com>, 2018. #zanata
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 14:59-0300\n"
-"PO-Revision-Date: 2019-04-09 02:17+0000\n"
-"Last-Translator: Edson Brandi <ebrandi@FreeBSD.org>\n"
-"Language-Team: \n"
-"Language: pt_BR\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-06-15 06:31+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -141,11 +139,11 @@ msgstr ""
 #. (itstool) path: abstract/para
 #: article.translate.xml:76
 msgid ""
-"Almost all FreeBSD developers have commit rights to one or more "
-"repositories. However, a few developers do not, and some of the information "
-"here applies to them as well. (For instance, some people only have rights to "
-"work with the Problem Report database). Please see <xref linkend=\"non-"
-"committers\"/> for more information."
+"Almost all FreeBSD developers have commit rights to one or more repositories."
+" However, a few developers do not, and some of the information here applies "
+"to them as well. (For instance, some people only have rights to work with "
+"the Problem Report database). Please see <xref linkend=\"non-committers\"/> "
+"for more information."
 msgstr ""
 "Quase todos os desenvolvedores do FreeBSD possuem direitos de commit para um "
 "ou mais repositórios. No entanto, alguns desenvolvedores não tem, e algumas "
@@ -200,16 +198,17 @@ msgstr "<emphasis>Servidor SMTP</emphasis>"
 #. (itstool) path: row/entry
 #: article.translate.xml:109
 msgid ""
-"<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</"
-"systemitem>:587</literal> (see also <xref linkend=\"smtp-setup\"/>)."
+"<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</systemitem>:"
+"587</literal> (see also <xref linkend=\"smtp-setup\"/>)."
 msgstr ""
-"<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</"
-"systemitem>:587</literal> (veja também <xref linkend=\"smtp-setup\"/>)."
+"<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</systemitem>:"
+"587</literal> (veja também <xref linkend=\"smtp-setup\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:114
 msgid "<emphasis><literal>src/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis>Raiz do Subversion para o <literal>src/</literal></emphasis>"
+msgstr ""
+"<emphasis>Raiz do Subversion para o <literal>src/</literal></emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:116
@@ -225,7 +224,8 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:121
 msgid "<emphasis><literal>doc/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis>Raiz do Subversion para o <literal>doc/</literal></emphasis>"
+msgstr ""
+"<emphasis>Raiz do Subversion para o <literal>doc/</literal></emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:123
@@ -315,7 +315,8 @@ msgstr ""
 #: article.translate.xml:168
 msgid "<emphasis>Noteworthy <literal>src/</literal> SVN Branches</emphasis>"
 msgstr ""
-"<emphasis>Branchs SVN do <literal>src/</literal> dignas de atenção</emphasis>"
+"<emphasis>Branchs SVN do <literal>src/</literal> dignas de atenção</"
+"emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:170
@@ -442,7 +443,8 @@ msgid ""
 "fixed-list-mode\n"
 "keyid-format 0xlong\n"
 "personal-digest-preferences SHA512 SHA384 SHA256 SHA224\n"
-"default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 BZIP2 ZLIB ZIP Uncompressed\n"
+"default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 "
+"BZIP2 ZLIB ZIP Uncompressed\n"
 "use-agent\n"
 "verify-options show-uid-validity\n"
 "list-options show-uid-validity\n"
@@ -452,7 +454,8 @@ msgstr ""
 "fixed-list-mode\n"
 "keyid-format 0xlong\n"
 "personal-digest-preferences SHA512 SHA384 SHA256 SHA224\n"
-"default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 BZIP2 ZLIB ZIP Uncompressed\n"
+"default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 "
+"BZIP2 ZLIB ZIP Uncompressed\n"
 "use-agent\n"
 "verify-options show-uid-validity\n"
 "list-options show-uid-validity\n"
@@ -481,7 +484,8 @@ msgid ""
 "   (4) RSA (sign only)\n"
 "Your selection? <userinput>1</userinput>\n"
 "RSA keys may be between 1024 and 4096 bits long.\n"
-"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id=\"co-pgp-bits\"/>\n"
+"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id="
+"\"co-pgp-bits\"/>\n"
 "Requested keysize is 2048 bits\n"
 "Please specify how long the key should be valid.\n"
 "         0 = key does not expire\n"
@@ -489,14 +493,17 @@ msgid ""
 "      &lt;n&gt;w = key expires in n weeks\n"
 "      &lt;n&gt;m = key expires in n months\n"
 "      &lt;n&gt;y = key expires in n years\n"
-"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-expire\"/>\n"
+"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-"
+"expire\"/>\n"
 "Key expires at Wed Nov  4 17:20:20 2015 MST\n"
 "Is this correct? (y/N) <userinput>y</userinput>\n"
 "\n"
 "GnuPG needs to construct a user ID to identify your key.\n"
 "\n"
-"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> <co xml:id=\"co-pgp-realname\"/>\n"
-"Email address: <userinput><replaceable>notreal@example.com</replaceable></userinput>\n"
+"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> "
+"<co xml:id=\"co-pgp-realname\"/>\n"
+"Email address: <userinput><replaceable>notreal@example.com</replaceable></"
+"userinput>\n"
 "Comment:\n"
 "You selected this USER-ID:\n"
 "    \"<replaceable>Chucky Daemon &lt;notreal@example.com&gt;</replaceable>\"\n"
@@ -517,7 +524,8 @@ msgstr ""
 "   (4) RSA (sign only)\n"
 "Your selection? <userinput>1</userinput>\n"
 "RSA keys may be between 1024 and 4096 bits long.\n"
-"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id=\"co-pgp-bits\"/>\n"
+"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id="
+"\"co-pgp-bits\"/>\n"
 "Requested keysize is 2048 bits\n"
 "Please specify how long the key should be valid.\n"
 "         0 = key does not expire\n"
@@ -525,14 +533,17 @@ msgstr ""
 "      &lt;n&gt;w = key expires in n weeks\n"
 "      &lt;n&gt;m = key expires in n months\n"
 "      &lt;n&gt;y = key expires in n years\n"
-"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-expire\"/>\n"
+"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-"
+"expire\"/>\n"
 "Key expires at Wed Nov  4 17:20:20 2015 MST\n"
 "Is this correct? (y/N) <userinput>y</userinput>\n"
 "\n"
 "GnuPG needs to construct a user ID to identify your key.\n"
 "\n"
-"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> <co xml:id=\"co-pgp-realname\"/>\n"
-"Email address: <userinput><replaceable>notreal@example.com</replaceable></userinput>\n"
+"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> "
+"<co xml:id=\"co-pgp-realname\"/>\n"
+"Email address: <userinput><replaceable>notreal@example.com</replaceable></"
+"userinput>\n"
 "Comment:\n"
 "You selected this USER-ID:\n"
 "    \"<replaceable>Chucky Daemon &lt;notreal@example.com&gt;</replaceable>\"\n"
@@ -544,12 +555,13 @@ msgstr ""
 #: article.translate.xml:289
 msgid ""
 "2048-bit keys with a three-year expiration provide adequate protection at "
-"present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-"
-"sizes-2048-or-4096-bits\"/> describes the situation in more detail."
+"present (2013-12). <link xlink:href=\"http://danielpocock.com/rsa-key-sizes-"
+"2048-or-4096-bits\"/> describes the situation in more detail."
 msgstr ""
 "Chaves de 2048-bit com uma expiração de 3 anos proveem uma proteção adequada "
 "nos dias de hoje (2013-12). O artigo <link xlink:href=\"http://danielpocock."
 "com/rsa-key-sizes-2048-or-4096-bits\"/> descreve a situação em mais detalhes."
+""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:295
@@ -560,6 +572,7 @@ msgstr ""
 "Três anos é um tempo de vida para a chave que é curto o suficiente para "
 "tornar obsoletas as chaves enfraquecidas pelo avanço do poder computacional, "
 "mas é tempo suficiente para reduzir os principais problemas de gerenciamento."
+""
 
 #. (itstool) path: callout/para
 #: article.translate.xml:302
@@ -591,8 +604,8 @@ msgstr ""
 "sugerir um único caminho, aqui estão alguns links para sites que descrevem "
 "vários métodos:<link xlink:href=\"http://world.std.com/~reinhold/diceware."
 "html\"/>, <link xlink:href=\"http://www.iusmentis.com/security/passphrasefaq/"
-"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/> e <link xlink:href="
-"\"http://en.wikipedia.org/wiki/Passphrase\"/>."
+"\"/>, <link xlink:href=\"http://xkcd.com/936/\"/> e <link xlink:href=\"http:/"
+"/en.wikipedia.org/wiki/Passphrase\"/>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:320
@@ -877,6 +890,7 @@ msgstr ""
 msgid ""
 "\"Approved by\" is only acceptable from non-mentored src committers -- "
 "mentored committers can provide a \"Reviewed by\" but not an \"Approved by\"."
+""
 msgstr ""
 "O \"Approved by\" só é aceitável vindo de src committers que não estejam sob "
 "mentoria  - os committers mentorados podem fornecer um \"Reviewed by\" mas "
@@ -983,8 +997,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:527 article.translate.xml:748
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/head /usr/src</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/head /usr/src</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head /usr/src</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head /usr/src</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:529
@@ -994,8 +1012,12 @@ msgstr "Para a árvore <literal>doc</literal>, use:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:531
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/head /usr/doc</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/head /usr/doc</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/"
+"head /usr/doc</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/doc/"
+"head /usr/doc</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:533
@@ -1005,8 +1027,12 @@ msgstr "Para a árvore da coleção de <literal>ports</literal>, use:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:535
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/head /usr/ports</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/head /usr/ports</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/"
+"head /usr/ports</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/ports/"
+"head /usr/ports</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:538
@@ -1070,11 +1096,9 @@ msgstr ""
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:570
 #, no-wrap
-msgid ""
-"Host repo.freebsd.org\n"
+msgid "Host repo.freebsd.org\n"
 "\tUser jarjar"
-msgstr ""
-"Host repo.freebsd.org\n"
+msgstr "Host repo.freebsd.org\n"
 "\tUser jarjar"
 
 #. (itstool) path: sect3/para
@@ -1392,8 +1416,12 @@ msgstr "Para fazer isso, primeiro confira a raiz do repositório:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:759
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo.freebsd.org/base</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo.freebsd.org/base</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:761
@@ -1421,11 +1449,15 @@ msgstr ""
 #: article.translate.xml:770
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</userinput>\n"
-"<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release base/releng base/stable</userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release "
+"base/releng base/stable</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</userinput>\n"
-"<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release base/releng base/stable</userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/head</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=immediates base/release "
+"base/releng base/stable</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:773
@@ -1433,6 +1465,7 @@ msgid ""
 "The above command will pull down a full copy of <literal>head</literal>, "
 "plus empty copies of every <literal>release</literal> tag, every "
 "<literal>releng</literal> branch, and every <literal>stable</literal> branch."
+""
 msgstr ""
 "O comando acima irá baixar uma cópia completa do <literal>head</literal>, "
 "além de cópias vazias de cada tag de <literal>release</literal>, de cada "
@@ -1451,8 +1484,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:783
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:785
@@ -1469,11 +1506,15 @@ msgstr ""
 #: article.translate.xml:790
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7/sys</userinput>\n"
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7/sys</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7/sys</userinput>\n"
-"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</userinput>"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7/sys</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn up --set-depth=infinity base/stable/7</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:793
@@ -1506,8 +1547,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:808
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/src</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/src</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/"
+"src</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn co https://svn.FreeBSD.org/base/head /usr/"
+"src</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:810
@@ -1517,8 +1562,8 @@ msgid ""
 "Subversion</link>."
 msgstr ""
 "Mais detalhes sobre o uso do Subversion podem ser encontrados em<link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn.html"
-"\">Usando o Subversion</link>."
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn."
+"html\">Usando o Subversion</link>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:816
@@ -1539,10 +1584,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
-"<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></"
+"userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
-"<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>svn update -<replaceable>r12345</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:826
@@ -1614,8 +1661,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:856
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</"
+"replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn commit <replaceable>lib/libfetch</"
+"replaceable> <replaceable>usr/bin/fetch</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:858
@@ -1629,8 +1680,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:862
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</userinput>"
-msgstr "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/psvn commit</"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:866
@@ -1652,8 +1707,8 @@ msgid ""
 msgstr ""
 "Antes de adicionar arquivos, obtenha uma cópia do <link xlink:href=\"https://"
 "people.FreeBSD.org/~peter/auto-props.txt\">auto-props.txt</link> (há também "
-"um <link xlink:href=\"https://people.FreeBSD.org/~beat/cvs2svn/auto-props.txt"
-"\"> versão específica da árvore de ports</link>) e adicione-o ao "
+"um <link xlink:href=\"https://people.FreeBSD.org/~beat/cvs2svn/auto-props."
+"txt\"> versão específica da árvore de ports</link>) e adicione-o ao "
 "<filename>~/.subversion/config</filename> seguindo as instruções contidas no "
 "arquivo. Se você adicionou algo antes de ler isto, use o comando "
 "<command>svn rm --keep-local</command> para apenas os arquivos adicionados, "
@@ -1674,12 +1729,15 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:886
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn add <replaceable>foo</replaceable></"
+"userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:889
-#, fuzzy
 msgid ""
 "Most new source files should include a <literal>$FreeBSD$</literal> string "
 "near the start of the file. On commit, <command>svn</command> will expand "
@@ -1688,15 +1746,13 @@ msgid ""
 "which cannot be modified may be committed without the <literal>$FreeBSD$</"
 "literal> string."
 msgstr ""
-"A maioria dos novos arquivos fonte deve incluir uma string <literal>$FreeBSD"
-"$</literal> próxima ao início do arquivo. Ao efetuar o commit, o "
-"<command>svn</command> expandirá a string <literal>$FreeBSD: head/pt_BR."
-"ISO8859-1/articles/committers-guide/pt_BR.po 52949 2019-04-21 10:21:52Z "
-"ebrandi $</literal>, adicionando o caminho do arquivo, o número da revisão, "
-"a data e a hora da confirmação e o nome de usuário do committer. Arquivos "
-"que não podem ser modificados podem ser enviados sem a string <literal>"
-"$FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 "
-"2019-04-21 10:21:52Z ebrandi $</literal>."
+"A maioria dos novos arquivos fonte deve incluir uma string "
+"<literal>$FreeBSD$</literal> próxima ao início do arquivo. Ao efetuar o "
+"commit, o <command>svn</command> expandirá a string <literal>$FreeBSD$</"
+"literal>, adicionando o caminho do arquivo, o número da revisão, a data e a "
+"hora da confirmação e o nome de usuário do committer. Arquivos que não podem "
+"ser modificados podem ser enviados sem a string <literal>$FreeBSD$</literal>."
+""
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:899
@@ -1706,8 +1762,12 @@ msgstr "Os arquivos podem ser removidos com <command>svn remove</command>:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:902
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn remove <replaceable>foo</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:904
@@ -1727,11 +1787,15 @@ msgstr "É possível adicionar diretórios com <command>svn add</command>:"
 #: article.translate.xml:911
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>mkdir <replaceable>bar</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn add <replaceable>bar</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:914
@@ -1745,8 +1809,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:918
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>bar</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:920
@@ -1760,8 +1828,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:924
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn rm <replaceable>bar</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:928
@@ -1782,8 +1854,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:935
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> <replaceable>bar.c</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> <replaceable>bar.c</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn copy <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:937
@@ -1805,8 +1881,12 @@ msgstr "Para mover e renomear um arquivo:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:944
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> <replaceable>bar.c</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> <replaceable>bar.c</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn move <replaceable>foo.c</replaceable> "
+"<replaceable>bar.c</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:948
@@ -1864,8 +1944,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:972
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn diff -r179453:179454 ROADMAP.txt</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:974
@@ -1922,8 +2006,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1000
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn resolved <replaceable>foo</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1002
@@ -1933,8 +2021,12 @@ msgstr "No entanto, o procedimento preferido é:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1004
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</"
+"replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn resolve --accept=working <replaceable>foo</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1006
@@ -1976,6 +2068,7 @@ msgstr ""
 "<literal>mine-full</literal>: use o que você tinha antes do <command>svn "
 "update</command>, incluindo suas próprias mudanças, mas descartando as "
 "mudanças conflitantes, e possivelmente outras mudanças intervenientes também."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1031
@@ -2066,11 +2159,15 @@ msgstr ""
 #: article.translate.xml:1087
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>~/freebsd</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=immediates .</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1090
@@ -2092,8 +2189,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1099
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn update --set-depth=infinity <replaceable>head</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn update --set-depth=infinity <replaceable>head</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity "
+"<replaceable>head</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity "
+"<replaceable>head</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1103
@@ -2124,9 +2225,11 @@ msgstr "<literal>mkdir</literal>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:1121
 msgid ""
-"<literal>remove</literal>, <literal>copy</literal>, <literal>rename</literal>"
+"<literal>remove</literal>, <literal>copy</literal>, <literal>rename</"
+"literal>"
 msgstr ""
-"<literal>remove</literal>, <literal>copy</literal>, <literal>rename</literal>"
+"<literal>remove</literal>, <literal>copy</literal>, <literal>rename</"
+"literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1126
@@ -2154,8 +2257,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1139
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/stable/8</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1141
@@ -2170,15 +2277,19 @@ msgstr ""
 #: article.translate.xml:1145
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo.freebsd.org/base</userinput>\n"
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>\n"
 "<prompt>%</prompt> <userinput>cd base</userinput>\n"
-"<prompt>%</prompt> <userinput>svn update --set-depth=infinity head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity head</"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn copy head stable/8</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit stable/8</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo.freebsd.org/base</userinput>\n"
+"<prompt>%</prompt> <userinput>svn checkout --depth=immediates svn+ssh://repo."
+"freebsd.org/base</userinput>\n"
 "<prompt>%</prompt> <userinput>cd base</userinput>\n"
-"<prompt>%</prompt> <userinput>svn update --set-depth=infinity head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn update --set-depth=infinity head</"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn copy head stable/8</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit stable/8</userinput>"
 
@@ -2243,11 +2354,10 @@ msgid ""
 msgstr ""
 "Ele <emphasis>não</emphasis> é herdado. Por exemplo, <filename>stable/6/"
 "contrib/openpam/</filename> não herda implicitamente o mergeinfo de "
-"<filename>stable/6/</filename>, ou do <filename>stable/6/contrib/</"
-"filename>. Isso faria com que os checkouts parciais fossem difíceis de "
-"gerenciar. Em vez disso, o mergeinfo é explicitamente propagado pela árvore. "
-"Para mesclar algo em <filename>branch/foo/bar/</filename>, estas regras se "
-"aplicam:"
+"<filename>stable/6/</filename>, ou do <filename>stable/6/contrib/</filename>."
+" Isso faria com que os checkouts parciais fossem difíceis de gerenciar. Em "
+"vez disso, o mergeinfo é explicitamente propagado pela árvore. Para mesclar "
+"algo em <filename>branch/foo/bar/</filename>, estas regras se aplicam:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1190
@@ -2321,10 +2431,12 @@ msgstr ""
 #: article.translate.xml:1236
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ stable/<replaceable>11</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"stable/<replaceable>11</replaceable>\n"
 "<prompt>%</prompt> svn commit stable/<replaceable>11</replaceable>"
 msgstr ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ stable/<replaceable>11</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"stable/<replaceable>11</replaceable>\n"
 "<prompt>%</prompt> svn commit stable/<replaceable>11</replaceable>"
 
 #. (itstool) path: sect4/para
@@ -2340,10 +2452,12 @@ msgstr ""
 #: article.translate.xml:1243
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
 "<prompt>%</prompt> svn commit releng/<replaceable>11.0</replaceable>"
 msgstr ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>11</replaceable>  releng/<replaceable>11.0</replaceable>\n"
 "<prompt>%</prompt> svn commit releng/<replaceable>11.0</replaceable>"
 
 #. (itstool) path: note/para
@@ -2373,10 +2487,12 @@ msgstr ""
 #: article.translate.xml:1259
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ <replaceable>checkout</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"<replaceable>checkout</replaceable>\n"
 "<prompt>%</prompt> svn commit <replaceable>checkout</replaceable>"
 msgstr ""
-"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ <replaceable>checkout</replaceable>\n"
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/head/ "
+"<replaceable>checkout</replaceable>\n"
 "<prompt>%</prompt> svn commit <replaceable>checkout</replaceable>"
 
 #. (itstool) path: sect4/para
@@ -2391,8 +2507,12 @@ msgstr ""
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1266
 #, no-wrap
-msgid "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
-msgstr "<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
+msgid ""
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
+msgstr ""
+"<prompt>%</prompt> svn merge -c <replaceable>r123456</replaceable> ^/stable/"
+"<replaceable>10</replaceable> releng/<replaceable>10.0</replaceable>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1270
@@ -2411,6 +2531,7 @@ msgstr ""
 "muito importante nunca mesclar as alterações em uma cópia de trabalho "
 "esparsa. Sempre use um checkout completo do branch que está sendo mesclado. "
 "Por exemplo, ao mesclar de HEAD para 7, use um checkout completo de stable/7:"
+""
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1279
@@ -2450,10 +2571,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd stable/6/contrib/openpam</userinput>\n"
-"<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/contrib/openpam</userinput>"
+"<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/"
+"contrib/openpam</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd stable/6/contrib/openpam</userinput>\n"
-"<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/contrib/openpam</userinput>"
+"<prompt>%</prompt> <userinput>svn mergeinfo --show-revs=eligible $FSVN/head/"
+"contrib/openpam</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1296
@@ -2519,10 +2642,12 @@ msgstr ""
 #: article.translate.xml:1335
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
+"userinput>\n"
 "$target - /head/$source:$P,$Q"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
+"userinput>\n"
 "$target - /head/$source:$P,$Q"
 
 #. (itstool) path: sect5/para
@@ -2533,8 +2658,12 @@ msgstr "A mesclagem é feita assim:"
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1340
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn merge -c$R $FSVN/head/$source $target</"
+"userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1342
@@ -2552,10 +2681,12 @@ msgstr "O svn:mergeinfo agora se parece com:"
 #: article.translate.xml:1347
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
+"userinput>\n"
 "$target - head/$source:$P,$Q,$R"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R $target</"
+"userinput>\n"
 "$target - head/$source:$P,$Q,$R"
 
 #. (itstool) path: sect5/para
@@ -2592,8 +2723,8 @@ msgstr ""
 "acordo com o <xref linkend=\"svn-advanced-use-merging\"/>, também é onde "
 "devemos fazer a mesclagem. Note que neste exemplo todos os caminhos são "
 "relativos ao topo do repositório svn. Para obter mais informações sobre o "
-"layout do diretório, consulte <xref linkend=\"svn-getting-started-base-layout"
-"\"/>."
+"layout do diretório, consulte <xref linkend=\"svn-getting-started-base-"
+"layout\"/>."
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1370
@@ -2603,8 +2734,12 @@ msgstr "O primeiro passo é inspecionar o mergeinfo existente."
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1373
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/man/man4</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/man/man4</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/"
+"man/man4</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn propget svn:mergeinfo -R stable/9/share/"
+"man/man4</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1375
@@ -2619,14 +2754,16 @@ msgstr ""
 #: article.translate.xml:1378
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd.org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd."
+"org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
 "--- Merging r238987 into 'stable/9/share/man/man4':\n"
 "U    stable/9/share/man/man4/netmap.4\n"
 "--- Recording mergeinfo for merge of r238987 into\n"
 "'stable/9/share/man/man4':\n"
 " U   stable/9/share/man/man4"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd.org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge -c r238987 svn+ssh://repo.freebsd."
+"org/base/head/share/man/man4 stable/9/share/man/man4</userinput>\n"
 "--- Merging r238987 into 'stable/9/share/man/man4':\n"
 "U    stable/9/share/man/man4/netmap.4\n"
 "--- Recording mergeinfo for merge of r238987 into\n"
@@ -2645,8 +2782,10 @@ msgstr ""
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1389
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn commit stable/9/share/man/man4</userinput>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1394
@@ -2818,14 +2957,16 @@ msgstr "Para achatar a árvore do <literal>pf</literal>:"
 #: article.translate.xml:1494
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</"
+"replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn mv $(svn list) ../..</userinput>\n"
 "<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
 "<prompt>%</prompt> <userinput>svn rm contrib</userinput>\n"
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist/contrib/pf</"
+"replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn mv $(svn list) ../..</userinput>\n"
 "<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
 "<prompt>%</prompt> <userinput>svn rm contrib</userinput>\n"
@@ -2854,9 +2995,9 @@ msgid ""
 "the process."
 msgstr ""
 "As tags também podem ser achatadas (3, 4, 3.5 etc.); o procedimento é "
-"exatamente o mesmo, mudando apenas <literal>dist</literal> para "
-"<literal>3.5</literal> ou similar, e aguardando para executar o <command>svn "
-"commit </command> apenas no final do processo."
+"exatamente o mesmo, mudando apenas <literal>dist</literal> para <literal>3."
+"5</literal> ou similar, e aguardando para executar o <command>svn commit </"
+"command> apenas no final do processo."
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1516
@@ -2911,12 +3052,16 @@ msgstr ""
 #: article.translate.xml:1539
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd."
+"org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only svn+ssh://repo.freebsd."
+"org/base/<replaceable>vendor/pf/dist@180876</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect4/title
@@ -2969,22 +3114,30 @@ msgstr ""
 #: article.translate.xml:1568
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/dist</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt;../old</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>../pf-4.3</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt;../new</"
+"userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1573
 msgid ""
 "With these two files, <command>comm -23 ../old ../new</command> will list "
-"removed files (files only in <filename>old</filename>), while <command>comm "
-"-13 ../old ../new</command> will list added files only in <filename>new</"
+"removed files (files only in <filename>old</filename>), while <command>comm -"
+"13 ../old ../new</command> will list added files only in <filename>new</"
 "filename>."
 msgstr ""
 "Com esses dois arquivos, o <command>comm -23 ../old ../new</command> listará "
@@ -3012,17 +3165,25 @@ msgstr ""
 #: article.translate.xml:1590
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</"
+"replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>tar cf - . | tar xf - -C ../dist</userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>../dist</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>comm -23 ../old ../new | xargs svn rm</userinput>\n"
-"<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --parents</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>../dist</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>comm -23 ../old ../new | xargs svn rm</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --"
+"parents</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor/pf/pf-4.3</"
+"replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>tar cf - . | tar xf - -C ../dist</userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>../dist</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>comm -23 ../old ../new | xargs svn rm</userinput>\n"
-"<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --parents</userinput>"
+"<prompt>%</prompt> <userinput>cd <replaceable>../dist</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>comm -23 ../old ../new | xargs svn rm</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>comm -13 ../old ../new | xargs svn add --"
+"parents</userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1596
@@ -3084,8 +3245,14 @@ msgstr ""
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1624
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/4.3</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/4.3</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/4.3</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn cp svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/dist</replaceable> svn+ssh://repo.freebsd.org/base/"
+"<replaceable>vendor/pf/4.3</replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1626
@@ -3111,11 +3278,13 @@ msgstr ""
 #: article.translate.xml:1636
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn cp dist 4.3</userinput>\n"
 "<prompt>%</prompt> <userinput>svn propdel svn:mergeinfo -R 4.3</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd\t<replaceable>vendor/pf</replaceable></"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn cp dist 4.3</userinput>\n"
 "<prompt>%</prompt> <userinput>svn propdel svn:mergeinfo -R 4.3</userinput>"
 
@@ -3128,13 +3297,17 @@ msgstr "Mesclagem para o Head"
 #: article.translate.xml:1645
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn up</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo."
+"freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>head/contrib/pf</replaceable></"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn up</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone svn+ssh://repo."
+"freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> .</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1649
@@ -3171,13 +3344,19 @@ msgstr ""
 #: article.translate.xml:1668
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>cd sendmail</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge -c r<replaceable>261190</replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</userinput>"
+"<prompt>%</prompt> <userinput>svn merge -c r<replaceable>261190</"
+"replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn checkout svn+ssh://repo.freebsd.org/base/"
+"head/contrib/<replaceable>sendmail</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>cd sendmail</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge -c r<replaceable>261190</replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</userinput>"
+"<prompt>%</prompt> <userinput>svn merge -c r<replaceable>261190</"
+"replaceable> '^/vendor/<replaceable>sendmail/dist</replaceable>' .</"
+"userinput>"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:1672
@@ -3212,8 +3391,14 @@ msgstr ""
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1689
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://"
+"repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=svn+ssh://"
+"repo.freebsd.org/base/<replaceable>vendor/pf/dist</replaceable> --new=.</"
+"userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1691
@@ -3294,15 +3479,23 @@ msgstr "Primeiro, prepare o diretório em <filename>vendor</filename>:"
 #: article.translate.xml:1734
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/vendor</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/"
+"vendor</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
+"replaceable></userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/vendor</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>svn co --depth immediates <replaceable>$FSVN/"
+"vendor</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd <replaceable>vendor</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc</replaceable></"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svn mkdir <replaceable>byacc/dist</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1739
@@ -3321,8 +3514,14 @@ msgstr ""
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1746
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> <replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> <replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</"
+"replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Tag byacc 20120115\"</"
+"replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/vendor/byacc/20120115</replaceable></userinput>"
 
 #. (itstool) path: sect5/title
 #: article.translate.xml:1750
@@ -3337,8 +3536,14 @@ msgstr "Devido a este ser um novo arquivo, copie-o para a mesclagem:"
 #. (itstool) path: sect5/screen
 #: article.translate.xml:1755
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> <replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> <replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to "
+"contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn cp -m <replaceable>\"Import byacc to "
+"contrib\"</replaceable> <replaceable>$FSVN/vendor/byacc/dist</replaceable> "
+"<replaceable>$FSVN/head/contrib/byacc</replaceable></userinput>"
 
 #. (itstool) path: sect5/para
 #: article.translate.xml:1757
@@ -3359,10 +3564,12 @@ msgstr "A reversão de um commit para uma versão anterior é bem fácil:"
 #: article.translate.xml:1769
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 ROADMAP.txt</"
+"userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
@@ -3392,8 +3599,12 @@ msgstr "Isso também pode ser feito diretamente no repositório:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1780
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo.freebsd.org/base/ROADMAP.txt</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo.freebsd.org/base/ROADMAP.txt</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
+"freebsd.org/base/ROADMAP.txt</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn merge -r179454:179453 svn+ssh://repo."
+"freebsd.org/base/ROADMAP.txt</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1783
@@ -3421,10 +3632,12 @@ msgstr ""
 #: article.translate.xml:1794
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/ROADMAP.txt@179454</userinput>\n"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/ROADMAP.txt@179454</userinput>\n"
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
@@ -3435,8 +3648,12 @@ msgstr "ou, igualmente:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1799
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/"
+"ROADMAP.txt@179454 svn+ssh://repo.freebsd.org/base</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1801
@@ -3513,6 +3730,7 @@ msgid ""
 "mirror after the commit. Also, since <command>svn relocate</command> only "
 "works between repositories that have the same UUID, some hacking of the "
 "local repository's UUID has to occur before it is possible to start using it."
+""
 msgstr ""
 "Há uma séria desvantagem neste método: toda vez que for feito o commit de "
 "algo, terá que executar um <command>svn relocate</command> no repositório "
@@ -3584,11 +3802,15 @@ msgstr "Extraia o arquivo e o atualize:"
 #: article.translate.xml:1875
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</userinput>\n"
-"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</userinput>"
+"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</userinput>\n"
-"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</userinput>"
+"<prompt>%</prompt> <userinput>tar xf svnmirror-base-r261170.tar.xz</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>svnsync sync file:///home/svnmirror/base</"
+"userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1878
@@ -3609,16 +3831,20 @@ msgid ""
 "literal>. The configuration for the mirror is stored in <literal>revprop 0</"
 "literal> on the local mirror. To see the configuration, try:"
 msgstr ""
-"O mirror seed está definido para buscar o conteúdo a partir de "
-"<literal>svn://svn.freebsd.org/base</literal>. A configuração para o mirror "
-"é armazenada em <literal>revprop 0</literal> no mirror local. Para ver a "
-"configuração, tente:"
+"O mirror seed está definido para buscar o conteúdo a partir de <literal>svn:/"
+"/svn.freebsd.org/base</literal>. A configuração para o mirror é armazenada "
+"em <literal>revprop 0</literal> no mirror local. Para ver a configuração, "
+"tente:"
 
 #. (itstool) path: sect4/screen
 #: article.translate.xml:1888
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/svnmirror/base</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/svnmirror/base</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
+"svnmirror/base</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn proplist -v --revprop -r 0 file:///home/"
+"svnmirror/base</userinput>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1890
@@ -3656,8 +3882,12 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1910
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn propset fbsd:notbinary yes foo.data</"
+"userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1914
@@ -3690,8 +3920,8 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:1928
 msgid ""
-"As per <link xlink:href=\"https://people.FreeBSD.org/~peter/svn_notes.txt"
-"\">https://people.FreeBSD.org/~peter/svn_notes.txt</link>, work that is "
+"As per <link xlink:href=\"https://people.FreeBSD.org/~peter/svn_notes."
+"txt\">https://people.FreeBSD.org/~peter/svn_notes.txt</link>, work that is "
 "intended to be merged back into HEAD should be in <filename>base/projects/</"
 "filename>. If the work is beneficial to the FreeBSD community in some way "
 "but not intended to be merged directly back into HEAD then the proper "
@@ -3717,8 +3947,12 @@ msgstr "Para criar um branch de projeto:"
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1940
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
-msgstr "<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>svn copy svn+ssh://repo.freebsd.org/base/head "
+"svn+ssh://repo.freebsd.org/base/projects/spif</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1942
@@ -3730,11 +3964,13 @@ msgstr "Para mesclar as alterações do HEAD de volta ao branch de projeto:"
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd copy_of_spif</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/"
+"head</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd copy_of_spif</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/head</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge svn+ssh://repo.freebsd.org/base/"
+"head</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: sect3/para
@@ -3794,7 +4030,6 @@ msgstr "<userinput>mkdir ~/.ssh/sockets</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1978
-#, fuzzy
 msgid ""
 "Checking out a working copy with a stock Subversion client without FreeBSD-"
 "specific patches (<varname>OPTIONS_SET=FREEBSD_TEMPLATE</varname>) will mean "
@@ -3804,10 +4039,9 @@ msgid ""
 msgstr ""
 "Fazer o check-out de uma cópia de trabalho com um cliente Subversion padrão "
 "sem patches específicos do FreeBSD (<varname>OPTIONS_SET=FREEBSD_TEMPLATE</"
-"varname>) significará que as tags <literal>$FreeBSD: head/pt_BR.ISO8859-1/"
-"articles/committers-guide/pt_BR.po 52949 2019-04-21 10:21:52Z ebrandi $</"
-"literal> não serão expandidas. Uma vez que a versão correta foi instalada, "
-"engane o Subversion para expandi-las da seguinte forma:"
+"varname>) significará que as tags <literal>$FreeBSD$</literal> não serão "
+"expandidas. Uma vez que a versão correta foi instalada, engane o Subversion "
+"para expandi-las da seguinte forma:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1985
@@ -3828,9 +4062,9 @@ msgstr "Isso eliminará os patches para os quais ainda não foi feito o commit."
 #: article.translate.xml:1990
 msgid ""
 "It is possible to automatically fill the \"Sponsored by\" and \"MFC after\" "
-"commit log fields by setting \"freebsd-sponsored-by\" and \"freebsd-mfc-after"
-"\" fields in the \"[miscellany]\" section of the <filename>~/.subversion/"
-"config</filename> configuration file. For example:"
+"commit log fields by setting \"freebsd-sponsored-by\" and \"freebsd-mfc-"
+"after\" fields in the \"[miscellany]\" section of the <filename>~/."
+"subversion/config</filename> configuration file. For example:"
 msgstr ""
 "É possível preencher automaticamente os campos de log de commit \"Sponsored "
 "by\" e \"MFC after\" configurando os campos \"freebsd-sponsored-by\" e "
@@ -4152,8 +4386,8 @@ msgid ""
 "Wiki Information - After gaining access to the wiki, some people add entries "
 "to the <link xlink:href=\"https://wiki.freebsd.org/HowWeGotHere\">How We Got "
 "Here</link>, <link xlink:href=\"https://wiki.freebsd.org/IRC/Nicknames\">IRC "
-"Nicks</link>, and <link xlink:href=\"https://wiki.freebsd.org/Community/Dogs"
-"\"> Dogs of FreeBSD</link> pages."
+"Nicks</link>, and <link xlink:href=\"https://wiki.freebsd.org/Community/"
+"Dogs\"> Dogs of FreeBSD</link> pages."
 msgstr ""
 "Informações do Wiki - Depois de obter acesso ao wiki, algumas pessoas "
 "adicionam entradas nas páginas <link xlink:href=\"https://wiki.freebsd.org/"
@@ -4197,8 +4431,8 @@ msgstr ""
 "Assinantes das listas <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
 "listinfo/svn-src-all\">svn-src-all</link>, <link xlink:href=\"http://lists."
 "FreeBSD.org/mailman/listinfo/svn-ports-all\">svn-ports-all</link> ou da "
-"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all"
-"\">svn-doc-all</link> podem desejar cancelar a assinatura para evitar "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-"
+"all\">svn-doc-all</link> podem desejar cancelar a assinatura para evitar "
 "receber cópias duplicadas de mensagens de commit e de followups."
 
 #. (itstool) path: sect2/title
@@ -4267,10 +4501,10 @@ msgid ""
 "that do the mailing list processing, the front-end server does do some basic "
 "checks and will drop some messages based on these checks. At the moment "
 "proper DNS information for the connecting host is the only check in place "
-"but that may change. Some people blame these checks for bouncing valid "
-"email. To have these checks turned off for your email, create a file named "
-"<filename>~/.spam_lover</filename> on <systemitem class=\"fqdomainname"
-"\">freefall.FreeBSD.org</systemitem>."
+"but that may change. Some people blame these checks for bouncing valid email."
+" To have these checks turned off for your email, create a file named "
+"<filename>~/.spam_lover</filename> on <systemitem class="
+"\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 msgstr ""
 "Devido ao load severo imposto aos servidores centrais que fazem o "
 "processamento da lista de discussão devido ao grande volume de SPAMs, o "
@@ -4313,8 +4547,8 @@ msgid ""
 "Point your mail client at <literal><systemitem class=\"fqdomainname\">smtp."
 "FreeBSD.org</systemitem>:587</literal>."
 msgstr ""
-"Aponte seu cliente de e-mail para <literal><systemitem class=\"fqdomainname"
-"\">smtp.FreeBSD.org</systemitem>:587</literal>."
+"Aponte seu cliente de e-mail para <literal><systemitem class="
+"\"fqdomainname\">smtp.FreeBSD.org</systemitem>:587</literal>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:2265
@@ -4437,7 +4671,8 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2338
 #, no-wrap
-msgid "<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
+msgid ""
+"<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
 msgstr ""
 
 #. (itstool) path: example/para
@@ -4450,9 +4685,10 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2344
 #, fuzzy, no-wrap
-msgid "[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:<replaceable>yourpassword</replaceable>"
-msgstr ""
-"Host *.freebsd.org\n"
+msgid ""
+"[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:"
+"<replaceable>yourpassword</replaceable>"
+msgstr "Host *.freebsd.org\n"
 "    User <replaceable>freebsd-login</replaceable>"
 
 #. (itstool) path: example/para
@@ -4481,7 +4717,9 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2358
 #, fuzzy, no-wrap
-msgid "<replaceable>yourusername</replaceable>@FreeBSD.org <replaceable>yourlocalusername</replaceable>"
+msgid ""
+"<replaceable>yourusername</replaceable>@FreeBSD.org "
+"<replaceable>yourlocalusername</replaceable>"
 msgstr ""
 "MFH:  <replaceable>2014Q1 (runtime fix)</replaceable>\n"
 "MFH:  <replaceable>2014Q1 (browser blanket)</replaceable>"
@@ -4517,9 +4755,9 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:2379
 msgid ""
-"For committers: do not commit anything without first getting mentor "
-"approval. Document that approval with an <literal>Approved by:</literal> "
-"line in the commit message."
+"For committers: do not commit anything without first getting mentor approval."
+" Document that approval with an <literal>Approved by:</literal> line in the "
+"commit message."
 msgstr ""
 "Para committers: não faça nenhum commit sem antes obter a aprovação do seu "
 "mentor. Documente essa aprovação com uma linha <literal>Approved by:</"
@@ -4865,15 +5103,19 @@ msgid ""
 "While under mentorship, get mentor approval before the commit. Enter the "
 "mentor's username in this field, and note that they are a mentor:"
 msgstr ""
-"Enquanto estiver sob orientação, obtenha aprovação do mentor antes do "
-"commit. Digite o nome de usuário do mentor neste campo e adicione uma nota "
-"de que ele é um mentor:"
+"Enquanto estiver sob orientação, obtenha aprovação do mentor antes do commit."
+" Digite o nome de usuário do mentor neste campo e adicione uma nota de que "
+"ele é um mentor:"
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:2577
 #, no-wrap
-msgid "Approved by: <userinput><replaceable>username-of-mentor</replaceable> <literal>(mentor)</literal></userinput>"
-msgstr "Approved by: <userinput><replaceable>username-of-mentor</replaceable> <literal>(mentor)</literal></userinput>"
+msgid ""
+"Approved by: <userinput><replaceable>username-of-mentor</replaceable> "
+"<literal>(mentor)</literal></userinput>"
+msgstr ""
+"Approved by: <userinput><replaceable>username-of-mentor</replaceable> "
+"<literal>(mentor)</literal></userinput>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2579
@@ -4887,8 +5129,12 @@ msgstr ""
 #. (itstool) path: entry/screen
 #: article.translate.xml:2583
 #, no-wrap
-msgid "Approved by: <userinput><literal>re</literal> (<replaceable>username</replaceable>)</userinput>"
-msgstr "Approved by: <userinput><literal>re</literal> (<replaceable>username</replaceable>)</userinput>"
+msgid ""
+"Approved by: <userinput><literal>re</literal> (<replaceable>username</"
+"replaceable>)</userinput>"
+msgstr ""
+"Approved by: <userinput><literal>re</literal> (<replaceable>username</"
+"replaceable>)</userinput>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2587
@@ -4931,6 +5177,7 @@ msgstr ""
 "patrocinada pela Example.com para refatoração de código, enquanto Wormulon "
 "patrocinou o trabalho de Bob e a Momcorp patrocinou o trabalho de Cindy. "
 "Outros autores não foram patrocinados ou optaram por não listar o patrocínio."
+""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2610
@@ -5034,6 +5281,7 @@ msgstr "Commit Log para um commit baseado em um PR"
 msgid ""
 "The commit is based on a patch from a PR submitted by John Smith. The commit "
 "message <quote>PR</quote> and <quote>Submitted by</quote> fields are filled.."
+""
 msgstr ""
 "O commit é baseado em um patch de um PR enviado por John Smith. Os campos da "
 "mensagem de commit <quote>PR</quote> e <quote>Submitted by</quote> são "
@@ -5072,12 +5320,10 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2679
 #, no-wrap
-msgid ""
-"...\n"
+msgid "...\n"
 "\n"
 "\t    Reviewed by:       -arch"
-msgstr ""
-"...\n"
+msgstr "...\n"
 "\n"
 "\t    Reviewed by:       -arch"
 
@@ -5098,8 +5344,7 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2691
 #, no-wrap
-msgid ""
-"...\n"
+msgid "...\n"
 "\n"
 "\t    Approved by:\t    <replaceable>abc</replaceable> (maintainer)"
 msgstr ""
@@ -5130,12 +5375,10 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2706
 #, no-wrap
-msgid ""
-"...\n"
+msgid "...\n"
 "\n"
 "\t    Obtained from:      OpenBSD"
-msgstr ""
-"...\n"
+msgstr "...\n"
 "\n"
 "\t    Obtained from:      OpenBSD"
 
@@ -5160,12 +5403,10 @@ msgstr ""
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2719
 #, no-wrap
-msgid ""
-"...\n"
+msgid "...\n"
 "\n"
 "MFC after:      <replaceable>2 weeks</replaceable>"
-msgstr ""
-"...\n"
+msgstr "...\n"
 "\n"
 "MFC after:      <replaceable>2 weeks</replaceable>"
 
@@ -5250,11 +5491,11 @@ msgid ""
 "give advice than to fix the source tree."
 msgstr ""
 "A política de licença completa do Projeto FreeBSD pode ser encontrada em "
-"<link xlink:href=\"@@URL_RELPREFIX@@/internal/software-license.html"
-"\">https://www.FreeBSD.org/internal/software-license.html</link>. O restante "
-"desta seção destina-se a ajudá-lo a começar. Por via de regra, quando em "
-"dúvida, pergunte. É muito mais fácil dar conselhos do que consertar a árvore "
-"de código fonte."
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/software-license.html\">https:/"
+"/www.FreeBSD.org/internal/software-license.html</link>. O restante desta "
+"seção destina-se a ajudá-lo a começar. Por via de regra, quando em dúvida, "
+"pergunte. É muito mais fácil dar conselhos do que consertar a árvore de "
+"código fonte."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2764
@@ -5285,12 +5526,15 @@ msgid ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
+"STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
@@ -5314,12 +5558,15 @@ msgstr ""
 " *\n"
 " * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
 " * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE\n"
 " * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
-" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"CONSEQUENTIAL\n"
 " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
 " * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
-" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
+"STRICT\n"
 " * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n"
 " * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
 " * SUCH DAMAGE.\n"
@@ -5330,8 +5577,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:2796
 msgid ""
-"The FreeBSD project strongly discourages the so-called \"advertising clause"
-"\" in new code. Due to the large number of contributors to the FreeBSD "
+"The FreeBSD project strongly discourages the so-called \"advertising "
+"clause\" in new code. Due to the large number of contributors to the FreeBSD "
 "project, complying with this clause for many commercial vendors has become "
 "difficult. If you have code in the tree with the advertising clause, please "
 "consider removing it. In fact, please consider using the above license for "
@@ -5429,10 +5676,10 @@ msgstr ""
 "É claramente sensível manter um registro de tais concessões de licença. Para "
 "esse fim, o Core Team <email>core@FreeBSD.org</email> decidiu manter um "
 "arquivo delas. Sempre que o projeto FreeBSD receber uma licença especial, "
-"nós exigimos que o Core Team <email>core@FreeBSD.org</email> seja "
-"notificado. Qualquer desenvolvedor envolvido na obtenção de tal concessão de "
-"licença, por favor envie os detalhes para o Core Team <email>core@FreeBSD."
-"org</email> incluindo:"
+"nós exigimos que o Core Team <email>core@FreeBSD.org</email> seja notificado."
+" Qualquer desenvolvedor envolvido na obtenção de tal concessão de licença, "
+"por favor envie os detalhes para o Core Team <email>core@FreeBSD.org</email> "
+"incluindo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2848
@@ -5531,9 +5778,9 @@ msgid ""
 msgstr ""
 "Ao trabalhar diretamente em seu próprio código ou em um código que já esteja "
 "bem estabelecido como sua responsabilidade, provavelmente haverá pouca "
-"necessidade de verificar com outros committers antes de entrar com um "
-"commit. Ao trabalhar em um bug em uma área do sistema que é claramente órfã "
-"(e existem algumas dessas áreas, para nossa vergonha), o mesmo se aplica. Ao "
+"necessidade de verificar com outros committers antes de entrar com um commit."
+" Ao trabalhar em um bug em uma área do sistema que é claramente órfã (e "
+"existem algumas dessas áreas, para nossa vergonha), o mesmo se aplica. Ao "
 "modificar partes do sistema que são mantidas, formalmente ou informalmente, "
 "considere solicitar uma revisão exatamente como um desenvolvedor teria de "
 "fazer antes de se tornar um committer. Para os ports, entre em contato com o "
@@ -5559,6 +5806,7 @@ msgstr ""
 "ser encontrado na <systemitem>freefall</systemitem> em <filename>~eadler/bin/"
 "whodid</filename>. Se as consultas não forem atendidas ou se o committer "
 "indicar uma falta de interesse na área afetada, vá em frente e faça o commit."
+""
 
 #. (itstool) path: important/para
 #: article.translate.xml:2919
@@ -5767,8 +6015,8 @@ msgstr ""
 "Faça o login usando a conta do <systemitem class=\"domainname\">FreeBSD.org</"
 "systemitem> e poste um comentário no bug recém-aberto para confirmar a "
 "propriedade. Veja <xref linkend=\"kerberos-ldap\"/> para mais detalhes sobre "
-"como gerar ou definir uma senha para sua conta <systemitem class=\"domainname"
-"\">FreeBSD.org</systemitem>."
+"como gerar ou definir uma senha para sua conta <systemitem class="
+"\"domainname\">FreeBSD.org</systemitem>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3032
@@ -5812,15 +6060,15 @@ msgstr "Phabricator"
 #. (itstool) path: sect1/para
 #: article.translate.xml:3055
 msgid ""
-"The FreeBSD Project utilizes <link xlink:href=\"https://reviews.freebsd.org"
-"\">Phabricator</link> for code review requests. See the <link xlink:href="
+"The FreeBSD Project utilizes <link xlink:href=\"https://reviews.freebsd."
+"org\">Phabricator</link> for code review requests. See the <link xlink:href="
 "\"https://wiki.freebsd.org/CodeReview\">CodeReview</link> wiki page for "
 "details."
 msgstr ""
-"O projeto FreeBSD utiliza o <link xlink:href=\"https://reviews.freebsd.org"
-"\">Phabricator</link> para solicitações de revisão de código. Veja a página "
-"<link xlink:href=\"https://wiki.freebsd.org/CodeReview\">CodeReview</link> "
-"no wiki para detalhes."
+"O projeto FreeBSD utiliza o <link xlink:href=\"https://reviews.freebsd."
+"org\">Phabricator</link> para solicitações de revisão de código. Veja a "
+"página <link xlink:href=\"https://wiki.freebsd.org/CodeReview\">CodeReview</"
+"link> no wiki para detalhes."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3059
@@ -5847,14 +6095,14 @@ msgstr ""
 #. (itstool) path: step/para
 #: article.translate.xml:3072
 msgid ""
-"Open new bug on our bug tracker using your <systemitem class=\"domainname"
-"\">FreeBSD.org</systemitem> account, see <xref linkend=\"bugzilla\"/> for "
-"more information. Choose <literal>Services</literal> as the Product, and "
-"<literal>Code Review</literal> as the Component. In bug description request "
-"that your <application>Phabricator</application> account be renamed, and "
-"provide a link to your <application>Phabricator</application> user. For "
-"example, <literal>https://reviews.freebsd.org/p/<replaceable>bob_example."
-"com</replaceable>/</literal>"
+"Open new bug on our bug tracker using your <systemitem class="
+"\"domainname\">FreeBSD.org</systemitem> account, see <xref linkend="
+"\"bugzilla\"/> for more information. Choose <literal>Services</literal> as "
+"the Product, and <literal>Code Review</literal> as the Component. In bug "
+"description request that your <application>Phabricator</application> account "
+"be renamed, and provide a link to your <application>Phabricator</"
+"application> user. For example, <literal>https://reviews.freebsd.org/p/"
+"<replaceable>bob_example.com</replaceable>/</literal>"
 msgstr ""
 "Abra um novo bug em nosso bug tracker usando sua conta <systemitem class="
 "\"domainname\">FreeBSD.org</systemitem>, veja <xref linkend=\"bugzilla\"/> "
@@ -5893,7 +6141,8 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3100
 msgid "Documentation Engineering Team <email>doceng@FreeBSD.org</email>"
-msgstr "Equipe de Engenharia de Documentação <email>doceng@FreeBSD.org</email>"
+msgstr ""
+"Equipe de Engenharia de Documentação <email>doceng@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3103
@@ -5903,10 +6152,10 @@ msgid ""
 "website and documentation on the FTP site is up to date with respect to the "
 "<application>subversion</application> tree. It is not a conflict resolution "
 "body. The vast majority of documentation related discussion takes place on "
-"the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc"
-"\">FreeBSD documentation project mailing list</link>. More details regarding "
-"the doceng team can be found in its <link xlink:href=\"https://www.FreeBSD."
-"org/internal/doceng.html\">charter</link>. Committers interested in "
+"the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"doc\">FreeBSD documentation project mailing list</link>. More details "
+"regarding the doceng team can be found in its <link xlink:href=\"https://www."
+"FreeBSD.org/internal/doceng.html\">charter</link>. Committers interested in "
 "contributing to the documentation should familiarize themselves with the "
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer/"
 "index.html\">Documentation Project Primer</link>."
@@ -5919,8 +6168,8 @@ msgstr ""
 "documentação ocorre na <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
 "listinfo/freebsd-doc\">lista de discussão do projeto de documentação do "
 "FreeBSD</link>. Mais detalhes sobre a equipe doceng podem ser encontrados em "
-"seu <link xlink:href=\"https://www.FreeBSD.org/internal/doceng.html"
-"\">charter</link>. Os committers interessados ​​em contribuir com a "
+"seu <link xlink:href=\"https://www.FreeBSD.org/internal/doceng."
+"html\">charter</link>. Os committers interessados ​​em contribuir com a "
 "documentação devem se familiarizar com o <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer/index.html\">Primer "
 "do Projeto de Documentação</link>."
@@ -6024,23 +6273,23 @@ msgstr "Lista de discussão dos committers do FreeBSD"
 #. (itstool) path: listitem/para
 #: article.translate.xml:3172
 msgid ""
-"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-src-all"
-"\">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
-"listinfo/svn-ports-all\">svn-ports-all</link> and <link xlink:href=\"http://"
-"lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-all</link> are the "
-"mailing lists that the version control system uses to send commit messages "
-"to. <emphasis>Never</emphasis> send email directly to these lists. Only send "
-"replies to this list when they are short and are directly related to a "
-"commit."
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-src-"
+"all\">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/svn-ports-all\">svn-ports-all</link> and <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-all</link> "
+"are the mailing lists that the version control system uses to send commit "
+"messages to. <emphasis>Never</emphasis> send email directly to these lists. "
+"Only send replies to this list when they are short and are directly related "
+"to a commit."
 msgstr ""
-"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-src-all"
-"\">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
-"listinfo/svn-ports-all\">svn-ports-all</link> e <link xlink:href=\"http://"
-"lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-all</link> são as "
-"listas de discussão que o sistema de controle de versão usa para enviar "
-"mensagens de commit. <emphasis>Nunca</emphasis> envie e-mail diretamente "
-"para essas listas. Apenas envie respostas para esta lista quando elas forem "
-"curtas e estiverem diretamente relacionadas a um commit."
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-src-"
+"all\">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/svn-ports-all\">svn-ports-all</link> e <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-all</link> "
+"são as listas de discussão que o sistema de controle de versão usa para "
+"enviar mensagens de commit. <emphasis>Nunca</emphasis> envie e-mail "
+"diretamente para essas listas. Apenas envie respostas para esta lista quando "
+"elas forem curtas e estiverem diretamente relacionadas a um commit."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3183
@@ -6143,9 +6392,9 @@ msgstr ""
 "o <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>, certifique-se de executá-lo antes de executar os "
 "outros aplicativos. Os usuários de X, por exemplo, geralmente fazem isso a "
-"partir do <filename>.xsession</filename> ou do <filename>.xinitrc</"
-"filename>. Veja <citerefentry><refentrytitle>ssh-agent</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> para detalhes."
+"partir do <filename>.xsession</filename> ou do <filename>.xinitrc</filename>."
+" Veja <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> para detalhes."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3240
@@ -6265,8 +6514,8 @@ msgid ""
 msgstr ""
 "Todos os desenvolvedores do FreeBSD podem obter acesso aos resultados da "
 "análise do <application>Coverity</application> de todo o software do Projeto "
-"FreeBSD. Todos os interessados ​​em obter acesso aos resultados de análise das "
-"execuções automatizadas do <application>Coverity</application> podem se "
+"FreeBSD. Todos os interessados ​​em obter acesso aos resultados de análise "
+"das execuções automatizadas do <application>Coverity</application> podem se "
 "inscrever em <uri xlink:href=\"http://scan.coverity.com/\">Coverity Scan</"
 "uri>."
 
@@ -6275,19 +6524,19 @@ msgstr ""
 msgid ""
 "The FreeBSD wiki includes a mini-guide for developers who are interested in "
 "working with the <trademark class=\"registered\">Coverity</trademark> "
-"analysis reports: <uri xlink:href=\"https://wiki.freebsd.org/CoverityPrevent"
-"\">https://wiki.freebsd.org/CoverityPrevent</uri>. Please note that this "
-"mini-guide is only readable by FreeBSD developers, so if you cannot access "
-"this page, you will have to ask someone to add you to the appropriate Wiki "
-"access list."
+"analysis reports: <uri xlink:href=\"https://wiki.freebsd.org/"
+"CoverityPrevent\">https://wiki.freebsd.org/CoverityPrevent</uri>. Please "
+"note that this mini-guide is only readable by FreeBSD developers, so if you "
+"cannot access this page, you will have to ask someone to add you to the "
+"appropriate Wiki access list."
 msgstr ""
 "O wiki do FreeBSD inclui um mini-guia para desenvolvedores interessados ​​em "
-"trabalhar com os relatórios de análise do <trademark class=\"registered"
-"\">Coverity</trademark>: <uri xlink:href=\"https://wiki.freebsd.org/"
-"CoverityPrevent\">https://wiki.freebsd.org/CoverityPrevent</uri>. Por favor "
-"observe que este mini-guia só pode ser lido por desenvolvedores do FreeBSD, "
-"então se você não puder acessar esta página, você terá que pedir a alguém "
-"para adicioná-lo à lista de acesso apropriada do Wiki."
+"trabalhar com os relatórios de análise do <trademark class="
+"\"registered\">Coverity</trademark>: <uri xlink:href=\"https://wiki.freebsd."
+"org/CoverityPrevent\">https://wiki.freebsd.org/CoverityPrevent</uri>. Por "
+"favor observe que este mini-guia só pode ser lido por desenvolvedores do "
+"FreeBSD, então se você não puder acessar esta página, você terá que pedir a "
+"alguém para adicioná-lo à lista de acesso apropriada do Wiki."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3302
@@ -6754,8 +7003,8 @@ msgstr ""
 "de serem testadas pelos desenvolvedores do FreeBSD-CURRENT, então espere "
 "algum tempo antes da fusão, a menos que a correção do FreeBSD-STABLE seja "
 "crítica, sensível ao tempo ou óbvia a ponto de tornar desnecessário testes "
-"adicionais (correções ortográficas nas páginas de manual) correções de "
-"erros / erros de digitação, etc.) Em outras palavras, aplique o bom senso."
+"adicionais (correções ortográficas nas páginas de manual) correções de erros "
+"/ erros de digitação, etc.) Em outras palavras, aplique o bom senso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3593
@@ -6945,8 +7194,8 @@ msgstr ""
 msgid ""
 "If a particular piece of software lacks a maintainer, you are encouraged to "
 "take up owership. If you are unsure of the current maintainership email "
-"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-arch"
-"\">FreeBSD architecture and design mailing list</link> and ask."
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"arch\">FreeBSD architecture and design mailing list</link> and ask."
 msgstr ""
 "Se uma parte específica do software não tiver um mantenedor, você é "
 "incentivado a assumir a propriedade. Se você não tiver certeza sobre o "
@@ -7040,10 +7289,9 @@ msgstr "Outras Sugestões"
 #. (itstool) path: sect2/para
 #: article.translate.xml:3763
 msgid ""
-"When committing documentation changes, use a spell checker before "
-"committing. For all XML docs, verify that the formatting directives are "
-"correct by running <command>make lint</command> and <package>textproc/igor</"
-"package>."
+"When committing documentation changes, use a spell checker before committing."
+" For all XML docs, verify that the formatting directives are correct by "
+"running <command>make lint</command> and <package>textproc/igor</package>."
 msgstr ""
 "Ao enviar alterações na documentação, use um verificador ortográfico antes "
 "de efetuar o commit. Para todos os documentos XML, verifique se as diretivas "
@@ -7248,6 +7496,7 @@ msgstr ""
 "O acesso a determinados dados comercialmente sensíveis só pode estar "
 "disponível sob um Contrato de Não Divulgação. A equipe jurídica da Fundação "
 "FreeBSD deve ser consultado antes de qualquer acordo vinculativo ser firmado."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3885
@@ -7364,10 +7613,10 @@ msgid ""
 "platform support."
 msgstr ""
 "O projeto FreeBSD tem como objetivo a \"qualidade comercial de  produção off-"
-"the-shelf (COTS) para workstations, servidores e sistemas embarcados de ponta"
-"\". Mantendo o foco em um conjunto restrito de arquiteturas de interesse "
-"nesses ambientes, o Projeto FreeBSD é capaz de manter altos níveis de "
-"qualidade, estabilidade e desempenho, bem como de minimizar a carga de "
+"the-shelf (COTS) para workstations, servidores e sistemas embarcados de "
+"ponta\". Mantendo o foco em um conjunto restrito de arquiteturas de "
+"interesse nesses ambientes, o Projeto FreeBSD é capaz de manter altos níveis "
+"de qualidade, estabilidade e desempenho, bem como de minimizar a carga de "
 "várias equipes de suporte no projeto, como a equipe de ports, a equipe de "
 "documentação, o oficial de segurança e as equipes de engenharia de release. "
 "A diversidade no suporte de hardware amplia as opções para os consumidores "
@@ -7403,11 +7652,11 @@ msgid ""
 "engineering, and toolchain maintenance staff. New features added to the "
 "operating system must be fully functional across all Tier 1 architectures "
 "for every release (features which are inherently architecture-specific, such "
-"as support for hardware device drivers, may be exempt from this "
-"requirement). In general, all Tier 1 platforms must have build and test "
-"automation support either in the FreeBSD.org cluster, or easily available "
-"for all developers. Embedded platforms may substitute an emulator available "
-"in the FreeBSD.org cluster for actual hardware."
+"as support for hardware device drivers, may be exempt from this requirement)."
+" In general, all Tier 1 platforms must have build and test automation "
+"support either in the FreeBSD.org cluster, or easily available for all "
+"developers. Embedded platforms may substitute an emulator available in the "
+"FreeBSD.org cluster for actual hardware."
 msgstr ""
 "Plataformas de nível 1 são completamente suportadas pelas equipes de "
 "oficiais de segurança, engenharia de release e equipe de manutenção do "
@@ -7468,6 +7717,7 @@ msgid ""
 "Tier 1 embedded architectures must be able to cross-build packages on at "
 "least one other Tier 1 architecture. The packages must be the most relevant "
 "for the platform, but may be a non-empty subset of those that build natively."
+""
 msgstr ""
 "As arquiteturas embarcadas de Tier 1 devem ser capazes de criar pacotes "
 "cross-build em pelo menos uma outra arquitetura de Tier 1. Os pacotes devem "
@@ -7482,9 +7732,9 @@ msgid ""
 "documentation must also be integrated into the tree, or readily available."
 msgstr ""
 "As arquiteturas de Tier 1 devem ser totalmente documentadas. Todas as "
-"operações básicas precisam ser cobertas pelo manual ou por outros "
-"documentos. Toda a documentação de integração relevante também deve ser "
-"integrada na árvore ou estar prontamente disponível."
+"operações básicas precisam ser cobertas pelo manual ou por outros documentos."
+" Toda a documentação de integração relevante também deve ser integrada na "
+"árvore ou estar prontamente disponível."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4010
@@ -7520,12 +7770,12 @@ msgid ""
 msgstr ""
 "As plataformas de Tier 2 não são suportadas pelas equipes do oficial de "
 "segurança e pelas as equipes de engenharia de release. Os mantenedores de "
-"plataformas são responsáveis ​​pelo suporte de toolchain na árvore. Espera-se "
-"que os mantenedores de toolchain trabalhem com os mantenedores da plataforma "
-"para refinar essas mudanças. Os principais novos componentes de toolchain "
-"têm permissão para quebrar o suporte para arquiteturas de Tier 2 se as "
-"alterações locais do FreeBSD não tiverem sido incorporadas ao upstream. "
-"Espera-se que os mantenedores de toolchain forneçam uma rápida revisão de "
+"plataformas são responsáveis ​​pelo suporte de toolchain na árvore. Espera-"
+"se que os mantenedores de toolchain trabalhem com os mantenedores da "
+"plataforma para refinar essas mudanças. Os principais novos componentes de "
+"toolchain têm permissão para quebrar o suporte para arquiteturas de Tier 2 "
+"se as alterações locais do FreeBSD não tiverem sido incorporadas ao upstream."
+" Espera-se que os mantenedores de toolchain forneçam uma rápida revisão de "
 "quaisquer alterações propostas e não possam bloquear, por meio de sua "
 "inação, as mudanças que vão para a árvore. Novos recursos adicionados ao "
 "FreeBSD devem ser viáveis ​​de implementar nessas plataformas, mas uma "
@@ -7679,9 +7929,8 @@ msgid ""
 "platform is transitioning to Tier 4 status in FreeBSD 12."
 msgstr ""
 "Todos os sistemas não classificados em um nível de suporte são sistemas Tier "
-"4. A plataforma ia64 está em transição para o status de Tier 4 no FreeBSD "
-"11. A plataforma pc98 está em transição para o status de Tier 4 no FreeBSD "
-"12."
+"4. A plataforma ia64 está em transição para o status de Tier 4 no FreeBSD 11."
+" A plataforma pc98 está em transição para o status de Tier 4 no FreeBSD 12."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4114
@@ -7742,9 +7991,9 @@ msgstr ""
 "adiciona uma entrada à categoria do <filename>Makefile</filename> do port. "
 "Foi escrito por Michael Haro <email>mharo@FreeBSD.org</email>, Will Andrews "
 "<email>will@FreeBSD.org</email> e Renato Botelho <email>garga@FreeBSD.org</"
-"email>. Ao enviar perguntas sobre este script para a <link xlink:href="
-"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">lista de "
-"discussão dos ports do FreeBSD</link>, por favor também copie Chris Rees "
+"email>. Ao enviar perguntas sobre este script para a <link xlink:href=\"http:"
+"//lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">lista de discussão dos "
+"ports do FreeBSD</link>, por favor também copie Chris Rees "
 "<email>crees@FreeBSD.org</email>, o mantenedor atual."
 
 #. (itstool) path: question/para
@@ -7769,7 +8018,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make install</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>\n"
 "<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
-"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built above</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built above</"
+"replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>"
@@ -7777,7 +8027,8 @@ msgstr ""
 "<prompt>#</prompt> <userinput>make install</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>\n"
 "<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
-"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built above</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built above</"
+"replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>"
@@ -7811,13 +8062,14 @@ msgstr ""
 msgid ""
 "If the port came from a submitter who has not contributed to the Project "
 "before, add that person's name to the <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/articles/contributors/contrib-additional.html"
-"\">Additional Contributors</link> section of the FreeBSD Contributors List."
+"doc/en_US.ISO8859-1/articles/contributors/contrib-additional."
+"html\">Additional Contributors</link> section of the FreeBSD Contributors "
+"List."
 msgstr ""
 "Se o port veio de um remetente que não contribuiu para o projeto antes, "
 "adicione o nome dessa pessoa a seção  <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/articles/contributors/contrib-additional.html"
-"\">Colaboradores Adicionais</link> da Lista de Colaboradores do FreeBSD."
+"doc/en_US.ISO8859-1/articles/contributors/contrib-additional."
+"html\">Colaboradores Adicionais</link> da Lista de Colaboradores do FreeBSD."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4187
@@ -7852,7 +8104,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:4210
 msgid "Make sure there is no dependency on the port in the ports collection:"
-msgstr "Certifique-se de que não haja dependência do port na coleção de ports:"
+msgstr ""
+"Certifique-se de que não haja dependência do port na coleção de ports:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4215
@@ -7982,11 +8235,19 @@ msgstr ""
 #: article.translate.xml:4308
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@<replaceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/"
+"<replaceable>category</replaceable>/<replaceable>portname</replaceable>/"
+"@<replaceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></"
+"userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@<replaceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/"
+"<replaceable>category</replaceable>/<replaceable>portname</replaceable>/"
+"@<replaceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></"
+"userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4311
@@ -8012,11 +8273,19 @@ msgstr ""
 #: article.translate.xml:4320
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@{<replaceable>YYYY-MM-DD</replaceable>}' <replaceable>portname</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/"
+"<replaceable>category</replaceable>/<replaceable>portname</replaceable>/"
+"@{<replaceable>YYYY-MM-DD</replaceable>}' <replaceable>portname</"
+"replaceable></userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@{<replaceable>YYYY-MM-DD</replaceable>}' <replaceable>portname</replaceable></userinput>"
+"<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</"
+"replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/"
+"<replaceable>category</replaceable>/<replaceable>portname</replaceable>/"
+"@{<replaceable>YYYY-MM-DD</replaceable>}' <replaceable>portname</"
+"replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4325
@@ -8119,6 +8388,7 @@ msgstr ""
 "Outro exemplo é quando um port é movido de um subdiretório para outro, ou "
 "quando o nome de um diretório deve ser alterado porque os autores renomearam "
 "seu software mesmo sendo um descendente de um port que já esta em uma árvore."
+""
 
 #. (itstool) path: question/para
 #: article.translate.xml:4402
@@ -8292,6 +8562,7 @@ msgstr ""
 "semanas. Durante esse tempo, problemas de build foram corrigidos e os "
 "pacotes de release foram criados. Esta prática não é mais usada, já que os "
 "pacotes para os releases são compilados a partir da branch trimestral stable."
+""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4546
@@ -8417,6 +8688,7 @@ msgid ""
 "These fixes <emphasis>must</emphasis> be tested on the quarterly branch."
 msgstr ""
 "Estas correções <emphasis>devem</emphasis> ser testadas na branch trimestral."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4617
@@ -8424,8 +8696,8 @@ msgid ""
 "Fixes that do not result in a change in contents of the resulting package. "
 "For example:"
 msgstr ""
-"Correções que não resultam em uma alteração no conteúdo do pacote "
-"resultante. Por exemplo:"
+"Correções que não resultam em uma alteração no conteúdo do pacote resultante."
+" Por exemplo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4622
@@ -8527,7 +8799,8 @@ msgstr ""
 #: article.translate.xml:4688
 #, fuzzy, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
+"userinput>\n"
 " U   2015Q1\n"
 "Checked out revision 380443.\n"
 "A    2015Q1/security\n"
@@ -8546,7 +8819,8 @@ msgid ""
 " G   2015Q1/security\n"
 "--- Eliding mergeinfo from '2015Q1/security':\n"
 " U   2015Q1/security\n"
-"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-sshkit':\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-"
+"sshkit':\n"
 " G   2015Q1/security/rubygem-sshkit\n"
 "--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
 " U   2015Q1/security/rubygem-sshkit\n"
@@ -8558,7 +8832,8 @@ msgid ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 52898 2019-03-28 15:28:01Z mat $\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+"52898 2019-03-28 15:28:01Z mat $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
@@ -8571,9 +8846,11 @@ msgid ""
 "--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
 "@@ -1,2 +1,2 @@\n"
-"-SHA256 (rubygem/sshkit-1.6.1.gem) = 8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
+"-SHA256 (rubygem/sshkit-1.6.1.gem) = "
+"8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
 "-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
-"+SHA256 (rubygem/sshkit-1.7.0.gem) = 90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
+"+SHA256 (rubygem/sshkit-1.7.0.gem) = "
+"90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
 "+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
 "Index: 2015Q1\n"
 "===================================================================\n"
@@ -8586,7 +8863,8 @@ msgid ""
 "   Merged /head:r380362\n"
 "Do you want to commit? (no = start a shell) [y/n]"
 msgstr ""
-"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
+"userinput>\n"
 " U   2015Q1\n"
 "Checked out revision 380443.\n"
 "A    2015Q1/security\n"
@@ -8605,7 +8883,8 @@ msgstr ""
 " G   2015Q1/security\n"
 "--- Eliding mergeinfo from '2015Q1/security':\n"
 " U   2015Q1/security\n"
-"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-sshkit':\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-"
+"sshkit':\n"
 " G   2015Q1/security/rubygem-sshkit\n"
 "--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
 " U   2015Q1/security/rubygem-sshkit\n"
@@ -8617,7 +8896,8 @@ msgstr ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 2019-04-21 10:21:52Z ebrandi $\n"
+" # $FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 "
+"2019-04-21 10:21:52Z ebrandi $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
@@ -8630,9 +8910,11 @@ msgstr ""
 "--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
 "@@ -1,2 +1,2 @@\n"
-"-SHA256 (rubygem/sshkit-1.6.1.gem) = 8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
+"-SHA256 (rubygem/sshkit-1.6.1.gem) = "
+"8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
 "-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
-"+SHA256 (rubygem/sshkit-1.7.0.gem) = 90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
+"+SHA256 (rubygem/sshkit-1.7.0.gem) = "
+"90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
 "+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
 "Index: 2015Q1\n"
 "===================================================================\n"
@@ -8672,11 +8954,9 @@ msgstr ""
 #. (itstool) path: answer/programlisting
 #: article.translate.xml:4759
 #, no-wrap
-msgid ""
-"Host *.freebsd.org\n"
+msgid "Host *.freebsd.org\n"
 "    User <replaceable>freebsd-login</replaceable>"
-msgstr ""
-"Host *.freebsd.org\n"
+msgstr "Host *.freebsd.org\n"
 "    User <replaceable>freebsd-login</replaceable>"
 
 #. (itstool) path: tip/para
@@ -8703,8 +8983,12 @@ msgstr ""
 #. (itstool) path: tip/screen
 #: article.translate.xml:4775
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 r407722 r408567 r408943 r410728</userinput>"
-msgstr "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 r407722 r408567 r408943 r410728</userinput>"
+msgid ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 "
+"r407722 r408567 r408943 r410728</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 "
+"r407722 r408567 r408943 r410728</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:4779
@@ -8723,11 +9007,15 @@ msgstr ""
 #: article.translate.xml:4786
 #, no-wrap
 msgid ""
-"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 r407713</userinput>\n"
-"/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/n]"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 "
+"r407713</userinput>\n"
+"/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/"
+"n]"
 msgstr ""
-"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 r407713</userinput>\n"
-"/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/n]"
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 "
+"r407713</userinput>\n"
+"/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/"
+"n]"
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4794
@@ -8750,11 +9038,12 @@ msgid ""
 "approve it. If they do, it is their responsibility to:"
 msgstr ""
 "Por favor, veja <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
-"books/porters-handbook/makefile-categories.html#proposing-categories"
-"\">Propondo uma nova categoria</link> no FreeBSD Porter's Handbook. Uma vez "
-"que o procedimento tenha sido seguido e o PR tenha sido atribuído à Equipe "
-"de Gerenciamento de Ports <email>portmgr@FreeBSD.org</email>, é decisão "
-"deles aprová-lo ou não. Se eles fizerem isso, é sua responsabilidade:"
+"books/porters-handbook/makefile-categories.html#proposing-"
+"categories\">Propondo uma nova categoria</link> no FreeBSD Porter's Handbook."
+" Uma vez que o procedimento tenha sido seguido e o PR tenha sido atribuído à "
+"Equipe de Gerenciamento de Ports <email>portmgr@FreeBSD.org</email>, é "
+"decisão deles aprová-lo ou não. Se eles fizerem isso, é sua responsabilidade:"
+""
 
 #. (itstool) path: step/para
 #: article.translate.xml:4812
@@ -8851,9 +9140,9 @@ msgstr ""
 "instalados ao diretório de port do qual eles foram compilados. Se esta "
 "entrada estiver errada, ferramentas de port comuns como "
 "<citerefentry><refentrytitle>pkg_version</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> e o <citerefentry vendor=\"ports"
-"\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> irão falhar."
+"manvolnum></citerefentry> e o <citerefentry vendor="
+"\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> irão falhar."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4884
@@ -8894,9 +9183,9 @@ msgstr ""
 "compilação da nova categoria em <filename>ports/Makefile</filename>. Execute "
 "<command>make checksubdirs</command> nos diretórios de categoria afetados "
 "para verificar as entradas <varname>SUBDIR</varname>. Em seguida, no "
-"diretório <filename>ports/</filename>, execute <command>make index</"
-"command>. Isso pode levar mais de 40 minutos em sistemas modernos; no "
-"entanto, é um passo necessário para evitar problemas para outras pessoas."
+"diretório <filename>ports/</filename>, execute <command>make index</command>."
+" Isso pode levar mais de 40 minutos em sistemas modernos; no entanto, é um "
+"passo necessário para evitar problemas para outras pessoas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4916
@@ -9055,18 +9344,19 @@ msgstr ""
 #: article.translate.xml:5031
 msgid ""
 "Blanket approval does not apply to ports that are maintained by teams like "
-"<email role=\"nolink\">autotools@FreeBSD.org</email>, <email role=\"nolink"
-"\">x11@FreeBSD.org</email>, <email role=\"nolink\">gnome@FreeBSD.org</"
-"email>, or <email role=\"nolink\">kde@FreeBSD.org</email>. These teams use "
-"external repositories and can have work that would conflict with changes "
+"<email role=\"nolink\">autotools@FreeBSD.org</email>, <email role="
+"\"nolink\">x11@FreeBSD.org</email>, <email role=\"nolink\">gnome@FreeBSD."
+"org</email>, or <email role=\"nolink\">kde@FreeBSD.org</email>. These teams "
+"use external repositories and can have work that would conflict with changes "
 "that would normally fall under blanket approval."
 msgstr ""
 "Aprovação implícita não se aplica a ports que são mantidos por equipes como "
-"<email role=\"nolink\">autotools@FreeBSD.org</email>, <email role=\"nolink"
-"\">x11@FreeBSD.org</email>, <email role=\"nolink\">gnome@FreeBSD.org</"
-"email>, ou <email role=\"nolink\">kde@FreeBSD.org</email>. Essas equipes "
-"usam repositórios externos e podem ter trabalhos que entrariam em conflito "
-"com mudanças que normalmente seriam abrangidas pela aprovação implícita."
+"<email role=\"nolink\">autotools@FreeBSD.org</email>, <email role="
+"\"nolink\">x11@FreeBSD.org</email>, <email role=\"nolink\">gnome@FreeBSD."
+"org</email>, ou <email role=\"nolink\">kde@FreeBSD.org</email>. Essas "
+"equipes usam repositórios externos e podem ter trabalhos que entrariam em "
+"conflito com mudanças que normalmente seriam abrangidas pela aprovação "
+"implícita."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5042
@@ -9099,7 +9389,8 @@ msgstr ""
 msgid ""
 "I added a new port. Do I need to add it to the <filename>INDEX</filename>?"
 msgstr ""
-"Eu adicionei um novo port. Preciso adicioná-lo ao <filename>INDEX</filename>?"
+"Eu adicionei um novo port. Preciso adicioná-lo ao <filename>INDEX</"
+"filename>?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5064
@@ -9295,10 +9586,10 @@ msgstr "Problemas Específicos para Desenvolvedores Que Não São Committers"
 #. (itstool) path: sect1/para
 #: article.translate.xml:5208
 msgid ""
-"A few people who have access to the FreeBSD machines do not have commit "
-"bits. Almost all of this document will apply to these developers as well "
-"(except things specific to commits and the mailing list memberships that go "
-"with them). In particular, we recommend that you read:"
+"A few people who have access to the FreeBSD machines do not have commit bits."
+" Almost all of this document will apply to these developers as well (except "
+"things specific to commits and the mailing list memberships that go with "
+"them). In particular, we recommend that you read:"
 msgstr ""
 "Algumas pessoas que têm acesso às máquinas do FreeBSD não possuem commit "
 "bits. Quase todo este documento também será aplicado a esses desenvolvedores "
@@ -9340,8 +9631,7 @@ msgstr "<link linkend=\"ssh.guide\">Guia de início rápido do SSH</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5242
-msgid ""
-"<link linkend=\"rules\">The FreeBSD Committers' Big List of Rules</link>"
+msgid "<link linkend=\"rules\">The FreeBSD Committers' Big List of Rules</link>"
 msgstr ""
 "<link linkend=\"rules\">A Grande Lista de Regras dos Committers do FreeBSD</"
 "link>"
@@ -9394,6 +9684,7 @@ msgstr ""
 "O acesso do Google Analytics <emphasis>não</emphasis> é arbitrariamente "
 "permitido - o acesso deve ser solicitado, votado pela Equipe de Engenharia "
 "de Documentação <email>doceng@FreeBSD.org</email> e explicitamente concedido."
+""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5273
@@ -9415,16 +9706,17 @@ msgid ""
 "Conversely, <quote>to see what web browsers are most frequently used</quote> "
 "(without stating <emphasis>why</emphasis>) would be rejected."
 msgstr ""
-"Por outro lado, <quote>ver quais navegadores são usados ​​com mais freqüência</"
-"quote> (sem declarar <emphasis>por que</emphasis>) seria rejeitado."
+"Por outro lado, <quote>ver quais navegadores são usados ​​com mais "
+"freqüência</quote> (sem declarar <emphasis>por que</emphasis>) seria "
+"rejeitado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5283
 msgid ""
-"All requests must include the timeframe for which the data would be "
-"required. For example, it must be explicitly stated if the requested data "
-"would be needed for a timeframe covering a span of 3 weeks, or if the "
-"request would be one-time only."
+"All requests must include the timeframe for which the data would be required."
+" For example, it must be explicitly stated if the requested data would be "
+"needed for a timeframe covering a span of 3 weeks, or if the request would "
+"be one-time only."
 msgstr ""
 "Todas as solicitações devem incluir o período de tempo para o qual os dados "
 "seriam requisitados. Por exemplo, deve ser explicitamente declarado se os "
@@ -9447,7 +9739,8 @@ msgstr "Dados disponíveis por meio do Google Analytics"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5297
-msgid "A few examples of the types of Google Analytics data available include:"
+msgid ""
+"A few examples of the types of Google Analytics data available include:"
 msgstr ""
 "Alguns exemplos dos tipos de dados do Google Analytics disponíveis incluem:"
 
@@ -9503,11 +9796,10 @@ msgstr ""
 #: article.translate.xml:5346
 msgid ""
 "<systemitem class=\"fqdomainname\">people.FreeBSD.org</systemitem> is the "
-"same as <systemitem class=\"fqdomainname\">freefall.FreeBSD.org</"
-"systemitem>. Just create a <filename>public_html</filename> directory. "
-"Anything you place in that directory will automatically be visible under "
-"<uri xlink:href=\"https://people.FreeBSD.org/\">https://people.FreeBSD.org/</"
-"uri>."
+"same as <systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
+" Just create a <filename>public_html</filename> directory. Anything you "
+"place in that directory will automatically be visible under <uri xlink:href="
+"\"https://people.FreeBSD.org/\">https://people.FreeBSD.org/</uri>."
 msgstr ""
 "O servidor <systemitem class=\"fqdomainname\">people.FreeBSD.org</"
 "systemitem> é o mesmo que <systemitem class=\"fqdomainname\">freefall."
@@ -9541,8 +9833,8 @@ msgstr ""
 #. (itstool) path: answer/para
 #: article.translate.xml:5372
 msgid ""
-"See the <link xlink:href=\"https://www.freebsd.org/internal/new-account.html"
-"\">New Account Creation Procedure</link> document on the internal pages."
+"See the <link xlink:href=\"https://www.freebsd.org/internal/new-account."
+"html\">New Account Creation Procedure</link> document on the internal pages."
 msgstr ""
 "Consulte o documento <link xlink:href=\"https://www.freebsd.org/internal/new-"
 "account.html\">Novo Procedimento para Criação de Conta</link> nas páginas "
@@ -9614,8 +9906,8 @@ msgstr "<systemitem class=\"domainname\">Gandi.net</systemitem>"
 #. (itstool) path: sect2/para
 #: article.translate.xml:5418
 msgid ""
-"Gandi provides website hosting, cloud computing, domain registration, and "
-"X.509 certificate services."
+"Gandi provides website hosting, cloud computing, domain registration, and X."
+"509 certificate services."
 msgstr ""
 "A Gandi fornece hospedagem de sites, computação em nuvem, registro de "
 "domínio e serviços de certificados X.509."
