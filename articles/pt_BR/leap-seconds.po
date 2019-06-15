@@ -1,16 +1,18 @@
-# $FreeBSD$
-# Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
+# $FreeBSD: head/pt_BR.ISO8859-1/articles/leap-seconds/pt_BR.po 52218 2018-09-06 00:37:28Z ebrandi $
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2018. #zanata
+# Edson Brandi <ebrandi@FreeBSD.org>, 2018. #zanata
+# Nilton José Rizzo <rizzo@rizzo.eng.br>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-17 16:32-0300\n"
+"POT-Creation-Date: 2019-06-15 14:59-0300\n"
+"PO-Revision-Date: 2018-09-02 01:57+0000\n"
+"Last-Translator: Nilton Jose Rizzo <rizzo@i805.com.br>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-01 07:21+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Portuguese (Brazil)\n"
-"Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -19,7 +21,8 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Nilton José Rizzo, rizzo@rizzo.eng.br, 2018\n"
-"Edson Brandi, ebrandi@FreeBSD.org, 2018"
+"Edson Brandi, ebrandi@FreeBSD.org, 2018\n"
+"Danilo G. Baio, dbaio@FreeBSD.org, 2018"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
@@ -28,8 +31,12 @@ msgstr "Suporte do FreeBSD a Leap Seconds"
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:8
-msgid "$FreeBSD$"
-msgstr "$FreeBSD$"
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 "
+"2017-11-30 14:49:53Z ygy $"
+msgstr ""
+"$FreeBSD: head/pt_BR.ISO8859-1/articles/leap-seconds/pt_BR.po 52218 "
+"2018-09-06 00:37:28Z ebrandi $"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:12
@@ -96,13 +103,13 @@ msgstr "Manipulação padrão do leap seconds no FreeBSD"
 msgid ""
 "The easiest way to handle leap seconds is with the <acronym>POSIX</acronym> "
 "time rules FreeBSD uses by default, combined with <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-ntp."
-"html\"><acronym>NTP</acronym></link>. When "
-"<citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> is running and the time is synchronized with upstream "
-"<acronym>NTP</acronym> servers that handle leap seconds correctly, the leap "
-"second will cause the system time to automatically repeat the last second of "
-"the day. No other adjustments are necessary."
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-ntp.html"
+"\"><acronym>NTP</acronym></link>. When <citerefentry><refentrytitle>ntpd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> is running and the "
+"time is synchronized with upstream <acronym>NTP</acronym> servers that "
+"handle leap seconds correctly, the leap second will cause the system time to "
+"automatically repeat the last second of the day. No other adjustments are "
+"necessary."
 msgstr ""
 "A maneira mais fácil de manipular o leap seconds é com a regra de tempo "
 "<acronym>POSIX</acronym> que é utilizada por padrão pelo FreeBSD, combinada "
@@ -134,7 +141,7 @@ msgid ""
 "clock will be required after the leap second has passed."
 msgstr ""
 "Se o <acronym>NTP</acronym> não está sendo utilizado, será necessário um "
-"ajuste manual do relógio do sistema após o leap seconds ter passado."
+"ajuste manual do relógio do sistema apois o leap seconds ter passado."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:56
@@ -175,7 +182,6 @@ msgstr ""
 "questionou o kernel sobre leap seconds.  Nossa experiência é que, como "
 "projetado, leap seconds são, essencialmente, a repetição do último segundo "
 "antes do leap second, e isso é uma surpresa para a maioria dos programadores."
-""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
