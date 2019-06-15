@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-17 16:32-0300\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,33 @@ msgid "translator-credits"
 msgstr ""
 
 #. (itstool) path: info/title
-#: article.translate.xml:4
+#: article.translate.xml:5
 msgid "CUPS on FreeBSD"
 msgstr ""
 
 #. (itstool) path: affiliation/address
-#: article.translate.xml:8
+#: article.translate.xml:14
 #, no-wrap
-msgid "<email>chess@chessgriffin.com</email>"
+msgid ""
+"\n"
+"\t    <email>chess@chessgriffin.com</email>\n"
+"\t  "
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: article.translate.xml:7
+#: article.translate.xml:8
 msgid ""
-"<personname><firstname>Chess</firstname><surname>Griffin</surname></"
-"personname><affiliation> <_:address-1/> </affiliation>"
+"<personname> <firstname>Chess</firstname> <surname>Griffin</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:13
+#: article.translate.xml:21
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: article.translate.xml:15
+#: article.translate.xml:23
 msgid ""
 "Many of the designations used by manufacturers and sellers to distinguish "
 "their products are claimed as trademarks. Where those designations appear in "
@@ -51,32 +54,34 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
-#: article.translate.xml:23 article.translate.xml:25
-msgid "$FreeBSD$"
+#: article.translate.xml:31 article.translate.xml:33
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 52945 2019-04-19 "
+"14:54:27Z bcr $"
 msgstr ""
 
 #. (itstool) path: abstract/para
-#: article.translate.xml:28
+#: article.translate.xml:36
 msgid "An article about configuring CUPS on FreeBSD."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:33
+#: article.translate.xml:41
 msgid "An Introduction to the Common Unix Printing System (CUPS)"
 msgstr ""
 
 #. (itstool) path: sect1/indexterm
-#: article.translate.xml:35
+#: article.translate.xml:44
 msgid "<primary>printing</primary>"
 msgstr ""
 
 #. (itstool) path: sect1/indexterm
-#: article.translate.xml:36
+#: article.translate.xml:45
 msgid "<primary>CUPS</primary>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:38
+#: article.translate.xml:47
 msgid ""
 "<application>CUPS</application>, the Common UNIX Printing System, provides a "
 "portable printing layer for <trademark class=\"registered\">UNIX</trademark>-"
@@ -86,7 +91,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:44
+#: article.translate.xml:53
 msgid ""
 "<application>CUPS</application> uses the Internet Printing Protocol "
 "(<acronym>IPP</acronym>) as the basis for managing print jobs and queues. "
@@ -103,47 +108,47 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:57
+#: article.translate.xml:67
 msgid ""
 "The main site for <application>CUPS</application> is <uri xlink:href="
 "\"http://www.cups.org/\">http://www.cups.org/</uri>."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:61
+#: article.translate.xml:71
 msgid "Installing the CUPS Print Server"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:63
+#: article.translate.xml:73
 msgid ""
 "To install <application>CUPS</application> using a precompiled binary, issue "
 "the following command from a root terminal:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: article.translate.xml:66
+#: article.translate.xml:77
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install cups</userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:68
+#: article.translate.xml:79
 msgid ""
-"Other optional, but recommended, packages are <package>print/gutenprint-"
-"cups</package> and <package>print/hplip</package>, both of which add drivers "
-"and utilities for a variety of printers. Once installed, the "
-"<application>CUPS</application> configuration files can be found in the "
-"directory <filename>/usr/local/etc/cups</filename>."
+"Other optional, but recommended, packages are <package>print/gutenprint</"
+"package> and <package>print/hplip</package>, both of which add drivers and "
+"utilities for a variety of printers. Once installed, the <application>CUPS</"
+"application> configuration files can be found in the directory <filename>/"
+"usr/local/etc/cups</filename>."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:78
+#: article.translate.xml:89
 msgid "Configuring the CUPS Print Server"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:80
+#: article.translate.xml:91
 msgid ""
 "After installation, a few files must be edited in order to configure the "
 "<application>CUPS</application> server. First, create or modify, as the case "
@@ -154,7 +159,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:88
+#: article.translate.xml:98
 #, no-wrap
 msgid ""
 "[system=10]\n"
@@ -165,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:95
+#: article.translate.xml:105
 msgid ""
 "Note that <replaceable>X</replaceable>, <replaceable>Y</replaceable>, and "
 "<replaceable>Z</replaceable> should be replaced with the target USB device "
@@ -178,12 +183,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:106
+#: article.translate.xml:116
 msgid "Next, add two lines to <filename>/etc/rc.conf</filename> as follows:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:109
+#: article.translate.xml:119
 #, no-wrap
 msgid ""
 "cupsd_enable=\"YES\"\n"
@@ -191,14 +196,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:112
+#: article.translate.xml:122
 msgid ""
 "These two entries will start the <application>CUPS</application> print "
 "server on boot and invoke the local devfs rule created above, respectively."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:116
+#: article.translate.xml:126
 msgid ""
 "In order to enable <application>CUPS</application> printing under certain "
 "<trademark class=\"registered\">Microsoft</trademark> <trademark class="
@@ -208,13 +213,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:122
+#: article.translate.xml:132
 #, no-wrap
 msgid "application/octet-stream"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:124
+#: article.translate.xml:134
 msgid ""
 "Once these changes have been made, the <citerefentry><refentrytitle>devfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> and <application>CUPS</"
@@ -223,7 +228,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: article.translate.xml:129
+#: article.translate.xml:139
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/etc/rc.d/devfs restart</userinput>\n"
@@ -231,12 +236,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:134
+#: article.translate.xml:144
 msgid "Configuring Printers on the CUPS Print Server"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:136
+#: article.translate.xml:146
 msgid ""
 "After the <application>CUPS</application> system has been installed and "
 "configured, the administrator can begin configuring the local printers "
@@ -248,7 +253,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:144
+#: article.translate.xml:154
 msgid ""
 "The primary means for managing and administering the <application>CUPS</"
 "application> server is through the web-based interface, which can be found "
@@ -267,7 +272,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:162
+#: article.translate.xml:173
 msgid ""
 "Adding a printer is generally as easy as clicking <quote>Add Printer</quote> "
 "at the Administration screen of the <application>CUPS</application> web "
@@ -282,12 +287,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:176
+#: article.translate.xml:188
 msgid "Configuring CUPS Clients"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:178
+#: article.translate.xml:190
 msgid ""
 "Once the <application>CUPS</application> server has been configured and "
 "printers have been added and published to the network, the next step is to "
@@ -298,12 +303,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:187
+#: article.translate.xml:199
 msgid "<trademark class=\"registered\">UNIX</trademark> Clients"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:189
+#: article.translate.xml:201
 msgid ""
 "<application>CUPS</application> will also need to be installed on your "
 "<trademark class=\"registered\">UNIX</trademark> clients. Once "
@@ -324,19 +329,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: article.translate.xml:209
+#: article.translate.xml:221
 #, no-wrap
 msgid "ipp://<replaceable>server-name-or-ip</replaceable>/printers/<replaceable>printername</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: article.translate.xml:211 article.translate.xml:240
+#: article.translate.xml:223 article.translate.xml:253
 #, no-wrap
 msgid "http://<replaceable>server-name-or-ip</replaceable>:631/printers/<replaceable>printername</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:213
+#: article.translate.xml:225
 msgid ""
 "If the <application>CUPS</application> clients have difficulty finding other "
 "<application>CUPS</application> printers shared across the network, "
@@ -345,13 +350,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: article.translate.xml:220
+#: article.translate.xml:232
 #, no-wrap
 msgid "ServerName <replaceable>server-ip</replaceable>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:222
+#: article.translate.xml:234
 msgid ""
 "In this case, <replaceable>server-ip</replaceable> would be replaced by the "
 "local <acronym>IP</acronym> address of the <application>CUPS</application> "
@@ -359,12 +364,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:228
+#: article.translate.xml:240
 msgid "<trademark class=\"registered\">Windows</trademark> Clients"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:230
+#: article.translate.xml:242
 msgid ""
 "Versions of <trademark class=\"registered\">Windows</trademark> prior to XP "
 "did not have the capability to natively network with <acronym>IPP</acronym>-"
@@ -379,7 +384,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:242
+#: article.translate.xml:255
 msgid ""
 "If one has an older version of <trademark class=\"registered\">Windows</"
 "trademark> without native <acronym>IPP</acronym> printing support, then the "
@@ -389,12 +394,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:252
+#: article.translate.xml:265
 msgid "CUPS Troubleshooting"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:254
+#: article.translate.xml:267
 msgid ""
 "Difficulties with <application>CUPS</application> often lies in permissions. "
 "First, double check the <citerefentry><refentrytitle>devfs</"
@@ -409,14 +414,14 @@ msgid ""
 "cupsd.conf</filename> and edit the various configuration options and try "
 "different combinations of configuration options. One sample <filename>/usr/"
 "local/etc/cups/cupsd.conf</filename> to test is listed below. Please note "
-"that this sample <filename>cupsd.conf</filename> file sacrifices security "
-"for easier configuration; once the administrator successfully connects to "
-"the <application>CUPS</application> server and configures the clients, it is "
+"that this sample <filename>cupsd.conf</filename> sacrifices security for "
+"easier configuration; once the administrator successfully connects to the "
+"<application>CUPS</application> server and configures the clients, it is "
 "advisable to revisit this configuration file and begin locking down access."
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:274
+#: article.translate.xml:288
 #, no-wrap
 msgid ""
 "# Log general information in error_log - change \"info\" to \"debug\" for\n"

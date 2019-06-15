@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-17 16:32-0300\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,9 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:57
-msgid "$FreeBSD$"
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
+"2018-10-18 16:11:27Z gjb $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -680,14 +682,14 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:531 article.translate.xml:583
 #: article.translate.xml:708 article.translate.xml:787
-#: article.translate.xml:896 article.translate.xml:980
+#: article.translate.xml:896 article.translate.xml:993
 msgid "File to Edit"
 msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:532 article.translate.xml:584
 #: article.translate.xml:709 article.translate.xml:788
-#: article.translate.xml:897 article.translate.xml:981
+#: article.translate.xml:897 article.translate.xml:994
 msgid "What to Change"
 msgstr ""
 
@@ -1000,7 +1002,7 @@ msgid "Remove debugging options"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:758 article.translate.xml:1013
+#: article.translate.xml:758 article.translate.xml:1026
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</filename>"
 msgstr ""
@@ -1196,8 +1198,31 @@ msgstr ""
 msgid "Update <varname>TARGET_TRIPLE</varname>"
 msgstr ""
 
+#. (itstool) path: row/entry
+#: article.translate.xml:914
+msgid "<filename>lib/clang/llvm.build.mk</filename>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:915
+msgid "Update <varname>OS_VERSION</varname>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:919
+msgid "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:920
+msgid ""
+"Add a new <literal>.ds</literal> entry for the FreeBSD version, and update "
+"<varname>doc-default-operating-system</varname> (FreeBSD 11.x and earlier "
+"only)"
+msgstr ""
+
 #. (itstool) path: sect2/para
-#: article.translate.xml:916
+#: article.translate.xml:929
 msgid ""
 "In the <literal>doc</literal> repository, also update <filename>head/en_US."
 "ISO8859-1/htdocs/releases/<replaceable>12.0</replaceable>R/Makefile."
@@ -1208,12 +1233,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:926
+#: article.translate.xml:939
 msgid "FreeBSD <literal>BETA</literal> Builds"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:928
+#: article.translate.xml:941
 msgid ""
 "Following the code slush, the next phase of the release cycle is the code "
 "freeze. This is the point at which all commits to the stable branch require "
@@ -1225,7 +1250,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: article.translate.xml:937
+#: article.translate.xml:950
 #, no-wrap
 msgid ""
 "^/<literal>stable/<replaceable>12</replaceable>/</literal>\tre\n"
@@ -1233,7 +1258,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:941
+#: article.translate.xml:954
 msgid ""
 "There are two general exceptions to requiring commit approval during the "
 "release cycle. The first is any change that needs to be committed by the "
@@ -1243,7 +1268,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:949
+#: article.translate.xml:962
 msgid ""
 "Once the code freeze is in effect, the next build from the branch is labeled "
 "<literal>BETA1</literal>. This is done by updating the <varname>BRANCH</"
@@ -1252,7 +1277,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:956
+#: article.translate.xml:969
 msgid ""
 "Once this is done, the first set of <literal>BETA</literal> builds are "
 "started. Subsequent <literal>BETA</literal> builds do not require updates to "
@@ -1261,14 +1286,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:964
+#: article.translate.xml:977
 msgid ""
 "Creating the <literal>releng/<replaceable>12.0</replaceable>/</literal> "
 "Branch"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:966
+#: article.translate.xml:979
 msgid ""
 "When the first <literal>RC</literal> (Release Candidate) build is ready to "
 "begin, the <literal>releng/</literal> branch is created. This is a multi-"
@@ -1279,84 +1304,84 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:974
+#: article.translate.xml:987
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:987
+#: article.translate.xml:1000
 msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:988
+#: article.translate.xml:1001
 msgid ""
 "Change <literal>BETA<replaceable>X</replaceable></literal> to <literal>RC1</"
 "literal>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:994
+#: article.translate.xml:1007
 msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:995 article.translate.xml:1021
+#: article.translate.xml:1008 article.translate.xml:1034
 msgid "Update <varname>__FreeBSD_version</varname>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:999
+#: article.translate.xml:1012
 msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/etc/pkg/FreeBSD.conf</"
 "filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1000 article.translate.xml:1007
+#: article.translate.xml:1013 article.translate.xml:1020
 msgid ""
 "Replace <literal>latest</literal> with <literal>quarterly</literal> as the "
 "default package repository location"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1006
+#: article.translate.xml:1019
 msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/release/pkg_repos/release-"
 "dvd.conf</filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1014
+#: article.translate.xml:1027
 msgid ""
 "Update <literal>BETA<replaceable>X</replaceable></literal> with "
 "<literal>PRERELEASE</literal>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1020
+#: article.translate.xml:1033
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1025
+#: article.translate.xml:1038
 msgid "<filename>svnadmin/conf/approvers</filename>"
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:1026
+#: article.translate.xml:1039
 msgid ""
 "Add a new approvers line for the releng branch as was done for the stable "
 "branch"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1033
+#: article.translate.xml:1046
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
@@ -1365,7 +1390,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1037
+#: article.translate.xml:1050
 msgid ""
 "Now that two new <varname>__FreeBSD_version</varname> values exist, also "
 "update <filename>head/en_US.ISO8859-1/books/porters-handbook/versions/"
@@ -1373,7 +1398,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1042
+#: article.translate.xml:1055
 msgid ""
 "After the first <literal>RC</literal> build has completed and tested, the "
 "<literal>stable/</literal> branch can be <quote>thawed</quote> by removing "
@@ -1382,7 +1407,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1048
+#: article.translate.xml:1061
 msgid ""
 "Following the availability of the first <literal>RC</literal>, FreeBSD "
 "Bugmeister Team should be emailed to add the new FreeBSD <literal>-RELEASE</"
@@ -1391,36 +1416,36 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1063
+#: article.translate.xml:1076
 msgid "Building FreeBSD Installation Media"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1065
+#: article.translate.xml:1078
 msgid ""
 "This section describes the general procedures producing FreeBSD development "
 "snapshots and releases."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1069
+#: article.translate.xml:1082
 msgid "Release Build Scripts"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1071
+#: article.translate.xml:1084
 msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:1075
+#: article.translate.xml:1088
 msgid "The <filename>release.sh</filename> Script"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1077
+#: article.translate.xml:1090
 msgid ""
 "Prior to FreeBSD 9.0-RELEASE, <filename>src/release/Makefile</filename> was "
 "updated to support <citerefentry><refentrytitle>bsdinstall</"
@@ -1431,7 +1456,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1084
+#: article.translate.xml:1097
 msgid ""
 "Prior to FreeBSD 9.2-RELEASE, <filename>src/release/release.sh</filename> "
 "was introduced, which heavily based on <filename>src/release/generate-"
@@ -1443,20 +1468,20 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1094
+#: article.translate.xml:1107
 msgid ""
 "As a brief example of using <filename>src/release/release.sh</filename> to "
 "build a single release in <filename class=\"directory\">/scratch</filename>:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: article.translate.xml:1098
+#: article.translate.xml:1111
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1100
+#: article.translate.xml:1113
 msgid ""
 "As a brief example of using <filename>src/release/release.sh</filename> to "
 "build a single, cross-built release using a different target directory, "
@@ -1464,7 +1489,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: article.translate.xml:1105
+#: article.translate.xml:1118
 #, no-wrap
 msgid ""
 "# release.sh configuration for powerpc/powerpc64\n"
@@ -1475,18 +1500,18 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1111
+#: article.translate.xml:1124
 msgid "Then invoke <filename>src/release/release.sh</filename> as:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: article.translate.xml:1114
+#: article.translate.xml:1127
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c <replaceable>$HOME/release.conf</replaceable></userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1116
+#: article.translate.xml:1129
 msgid ""
 "See <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry> and <filename>src/release/release.conf.sample</"
@@ -1494,12 +1519,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:1122
+#: article.translate.xml:1135
 msgid "The <filename>thermite.sh</filename> Wrapper Script"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1125
+#: article.translate.xml:1138
 msgid ""
 "In order to make cross building the full set of architectures supported on a "
 "given branch faster, easier, and reduce human error factors, a wrapper "
@@ -1510,7 +1535,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1133
+#: article.translate.xml:1146
 msgid ""
 "The wrapper script is called <filename>thermite.sh</filename>, which is "
 "available in the FreeBSD Subversion repository at <literal>svn://svn.freebsd."
@@ -1520,14 +1545,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1141
+#: article.translate.xml:1154
 msgid ""
 "Using <filename>thermite.sh</filename> is covered in <xref linkend=\"releng-"
 "build-snapshot\"/> and <xref linkend=\"releng-build-release\"/>."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1143
+#: article.translate.xml:1156
 msgid ""
 "Each architecture and individual kernel have their own configuration file "
 "used by <filename>release.sh</filename>. Each branch has its own "
@@ -1537,7 +1562,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1150
+#: article.translate.xml:1163
 msgid ""
 "The per-build configuration file naming scheme is in the form of <filename>"
 "${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</filename>, where the "
@@ -1549,7 +1574,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1158
+#: article.translate.xml:1171
 msgid ""
 "Each branch also has its own <filename>builds-X.conf</filename> "
 "configuration, which is used by <filename>thermite.sh</filename>. The "
@@ -1561,24 +1586,24 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:1169
+#: article.translate.xml:1182
 msgid "There are two paths of file sourcing:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1173
+#: article.translate.xml:1186
 msgid ""
 "<filename>builds-<replaceable>12</replaceable>.conf</filename> -&gt; "
 "<filename>main.conf</filename>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1175
+#: article.translate.xml:1188
 msgid "This controls <filename>thermite.sh</filename> behavior"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1180
+#: article.translate.xml:1193
 msgid ""
 "<filename><replaceable>12</replaceable>-<replaceable>amd64</replaceable>-"
 "<replaceable>GENERIC</replaceable>-<replaceable>snap</replaceable>.conf</"
@@ -1587,7 +1612,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1184
+#: article.translate.xml:1197
 msgid ""
 "This controls <filename>release/release.sh</filename> behavior within the "
 "build <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</"
@@ -1595,7 +1620,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1190
+#: article.translate.xml:1203
 msgid ""
 "The <filename>builds-<replaceable>12</replaceable>.conf</filename>, "
 "<filename>defaults-<replaceable>12</replaceable>.conf</filename>, and "
@@ -1604,12 +1629,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1201
+#: article.translate.xml:1214
 msgid "Building FreeBSD Development Snapshots"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1203
+#: article.translate.xml:1216
 msgid ""
 "The official release build machines have a specific filesystem layout, which "
 "using <acronym>ZFS</acronym>, <filename>thermite.sh</filename> takes heavy "
@@ -1618,7 +1643,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1209
+#: article.translate.xml:1222
 msgid ""
 "The build scripts reside in <filename class=\"directory\">/releng/scripts-"
 "snapshot/scripts</filename> or <filename class=\"directory\">/releng/scripts-"
@@ -1628,7 +1653,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1216
+#: article.translate.xml:1229
 msgid ""
 "A separate dataset exists for the final build images, <filename class="
 "\"directory\">/snap/ftp</filename>. This directory contains both snapshots "
@@ -1638,7 +1663,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1223
+#: article.translate.xml:1236
 msgid ""
 "The <literal>EVERYTHINGISFINE</literal> variable name was chosen to avoid "
 "colliding with a variable that might be possibly set in the user "
@@ -1647,7 +1672,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1229
+#: article.translate.xml:1242
 msgid ""
 "As <filename>thermite.sh</filename> iterates through the master list of "
 "combinations and locates the per-build configuration file, a <acronym>ZFS</"
@@ -1661,14 +1686,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1241
+#: article.translate.xml:1254
 msgid ""
 "Assuming these filesystem paths, <filename>thermite.sh</filename> would be "
 "invoked as:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1244
+#: article.translate.xml:1257
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
@@ -1678,7 +1703,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1249
+#: article.translate.xml:1262
 msgid ""
 "Once the builds have completed, additional helper scripts are available to "
 "generate development snapshot emails which are sent to the <literal>freebsd-"
@@ -1686,7 +1711,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1254
+#: article.translate.xml:1267
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
@@ -1694,14 +1719,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1258
+#: article.translate.xml:1271
 msgid ""
 "The generated output should be double-checked for correctness, and the email "
 "itself should be PGP signed, in-line."
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1264
+#: article.translate.xml:1277
 msgid ""
 "These helper scripts only apply to development snapshot builds. "
 "Announcements during the release cycle (excluding the final release "
@@ -1711,12 +1736,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1273
+#: article.translate.xml:1286
 msgid "Building FreeBSD Releases"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1275
+#: article.translate.xml:1288
 msgid ""
 "Similar to building FreeBSD development snapshots, <filename>thermite.sh</"
 "filename> would be invoked the same way. The difference between development "
@@ -1728,7 +1753,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1283
+#: article.translate.xml:1296
 msgid ""
 "In addition, the <literal>BUILDTYPE</literal> and <literal>types</literal> "
 "must be changed from <literal>snap</literal> to <literal>release</literal> "
@@ -1737,7 +1762,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1291
+#: article.translate.xml:1304
 msgid ""
 "When building <literal>BETA</literal>, <literal>RC</literal>, and the final "
 "<literal>RELEASE</literal>, also statically set <literal>BUILDSVNREV</"
@@ -1755,7 +1780,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1307
+#: article.translate.xml:1320
 msgid ""
 "During the release cycle, a copy of <filename>CHECKSUM.SHA512</filename> and "
 "<filename>CHECKSUM.SHA256</filename> for each architecture are stored in the "
@@ -1767,7 +1792,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1318
+#: article.translate.xml:1331
 msgid ""
 "After building the final <literal>RELEASE</literal>, the <literal>releng/"
 "<replaceable>12.0</replaceable>/</literal> branch is tagged as "
@@ -1779,7 +1804,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1325
+#: article.translate.xml:1338
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
@@ -1787,36 +1812,36 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1337
+#: article.translate.xml:1350
 msgid "Publishing FreeBSD Installation Media to Project Mirrors"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1339
+#: article.translate.xml:1352
 msgid ""
 "This section describes the procedure to publish FreeBSD development "
 "snapshots and releases to the Project mirrors."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1343
+#: article.translate.xml:1356
 msgid "Staging FreeBSD Installation Media Images"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1345
+#: article.translate.xml:1358
 msgid "Staging FreeBSD snapshots and releases is a two part process:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1350
+#: article.translate.xml:1363
 msgid ""
 "Creating the directory structure to match the hierarchy on <systemitem>ftp-"
 "master</systemitem>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1353
+#: article.translate.xml:1366
 msgid ""
 "If <literal>EVERYTHINGISFINE</literal> is defined in the build configuration "
 "files, <filename>main.conf</filename> in the case of the build scripts "
@@ -1831,13 +1856,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/screen
-#: article.translate.xml:1362
+#: article.translate.xml:1375
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage</userinput>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1364
+#: article.translate.xml:1377
 msgid ""
 "After each architecture is built, <filename>thermite.sh</filename> will "
 "<application>rsync</application> the <filename class=\"directory\">"
@@ -1849,7 +1874,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1373
+#: article.translate.xml:1386
 msgid ""
 "Copying the files to a staging directory on <systemitem>ftp-master</"
 "systemitem> before moving the files into <filename class=\"directory\">pub/</"
@@ -1857,7 +1882,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1378
+#: article.translate.xml:1391
 msgid ""
 "Once all builds have finished, <filename class=\"directory\">/snap/ftp/"
 "snapshots</filename>, or <filename class=\"directory\">/snap/ftp/releases</"
@@ -1868,7 +1893,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1387
+#: article.translate.xml:1400
 msgid ""
 "On <systemitem>ftp-master</systemitem> in the FreeBSD Project "
 "infrastructure, this step requires <literal>root</literal> level access, as "
@@ -1876,12 +1901,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1397
+#: article.translate.xml:1410
 msgid "Publishing FreeBSD Installation Media"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1399
+#: article.translate.xml:1412
 msgid ""
 "Once the images are staged in <filename class=\"directory\">/archive/tmp/</"
 "filename>, they are ready to be made public by putting them in <filename "
@@ -1893,7 +1918,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1406
+#: article.translate.xml:1419
 msgid ""
 "In order for this to be effective, both <filename class=\"directory\">/"
 "archive/tmp</filename> and <filename class=\"directory\">/archive/pub</"
@@ -1901,7 +1926,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1410
+#: article.translate.xml:1423
 msgid ""
 "There is a caveat, however, where <application>rsync</application> must be "
 "used after <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</"
@@ -1913,19 +1938,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1417
+#: article.translate.xml:1430
 msgid ""
 "As with the staging steps, this requires <literal>root</literal> level "
 "access, as this step must be executed as the <literal>archive</literal> user."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1422
+#: article.translate.xml:1435
 msgid "As the <literal>archive</literal> user:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1424
+#: article.translate.xml:1437
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</replaceable></userinput>\n"
@@ -1934,29 +1959,29 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1428
+#: article.translate.xml:1441
 msgid ""
 "Replace <replaceable>snapshots</replaceable> with <replaceable>releases</"
 "replaceable> as appropriate."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1435
+#: article.translate.xml:1448
 msgid "Wrapping up the Release Cycle"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1437
+#: article.translate.xml:1450
 msgid "This section describes general post-release tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1440
+#: article.translate.xml:1453
 msgid "Post-Release Errata Notices"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1442
+#: article.translate.xml:1455
 msgid ""
 "As the release cycle approaches conclusion, it is common to have several "
 "<acronym>EN</acronym> (Errata Notice) candidates to address issues that were "
@@ -1967,19 +1992,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1451
+#: article.translate.xml:1464
 msgid ""
 "The actual process of issuing <acronym>EN</acronym>s is handled by the "
 "FreeBSD Security Team."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1457
+#: article.translate.xml:1470
 msgid "Handoff to the FreeBSD Security Team"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1459
+#: article.translate.xml:1472
 msgid ""
 "Roughly two weeks following the release, the Release Engineer updates "
 "<filename>svnadmin/conf/approvers</filename> changing the approver column "
