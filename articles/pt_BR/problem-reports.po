@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-15 06:32+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2019-06-16 05:22+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -87,13 +87,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:32 article.translate.xml:34
-#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 53150 "
 "2019-06-14 09:41:35Z linimon $"
 msgstr ""
-"$FreeBSD: head/pt_BR.ISO8859-1/articles/problem-reports/pt_BR.po 52680 2018-"
-"12-12 14:36:57Z ebrandi $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/problem-reports/article.xml 53150 "
+"2019-06-14 09:41:35Z linimon $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:37
@@ -594,7 +593,6 @@ msgstr "Dicas e Truques para Escrever um Bom Relatório de Problemas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:302
-#, fuzzy
 msgid ""
 "<emphasis>Do not leave the <quote>Summary</quote> line empty.</emphasis> The "
 "PRs go both onto a mailing list that goes all over the world (where the "
@@ -606,17 +604,16 @@ msgid ""
 ""
 msgstr ""
 "<emphasis>Não deixe a linha <quote>Summary</quote> vazia. </emphasis>Os PRs "
-"são enviados para listas de discussão no mundo todo (nas quais a "
-"<quote>Synopsis</quote> é usada para a linha de <literal>Subject:</"
-"literal>), além de serem armazenadas em um banco de dados. Qualquer pessoa "
-"que vier a navegar no banco de dados pelas sinopses, e encontrar um PR com a "
-"linha de assunto em branco, tende a pulá-lo. Lembre-se que os PRs permanecem "
-"na base de dados até que sejam fechados por alguém; os anônimos normalmente "
-"irão desaparecer em meio ao ruído."
+"são enviados para listas de discussão no mundo todo (onde o <quote>Summary</"
+"quote> é usada para a linha de <literal>Subject:</literal>), além de serem "
+"armazenadas em um banco de dados. Qualquer pessoa que vier a navegar no "
+"banco de dados pelas sinopses, e encontrar um PR com a linha de assunto em "
+"branco, tende a pulá-lo. Lembre-se que os PRs permanecem na base de dados "
+"até que sejam fechados por alguém; os anônimos normalmente irão desaparecer "
+"em meio ao ruído."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:316
-#, fuzzy
 msgid ""
 "<emphasis>Avoid using a weak <quote>Summary</quote> line.</emphasis> You "
 "should not assume that anyone reading your PR has any context for your "
@@ -628,35 +625,30 @@ msgid ""
 "literal>. (In the case of ports, it is especially helpful to have both the "
 "category and portname in the <quote>Summary</quote> line.)"
 msgstr ""
-"<emphasis>Evite usar uma <quote>Sinopse</quote> (Sinopse) fraca. </emphasis> "
+"<emphasis>Evite usar um <quote>Summary</quote> (Sumário) fraco. </emphasis> "
 "Você não deve presumir que alguém que esteja lendo seu PR conheça o contexto "
 "que motivou o seu envio, desta forma, quanto mais informação você fornecer, "
-"melhor. Por exemplo, a parte do sistema o problema se aplica? O problema "
-"ocorre durante a instalação ou durante a execução do sistema? Para ilustrar, "
-"em vez de usa <literal>Sinopse: o portupgrade está quebrado</literal>, veja "
-"o quanto mais informativo isso parece: <literal> Sinopse: port ports-mgmt/"
-"portupgrade gerando coredumps on -current</literal>. (No caso de um port, é "
-"especialmente útil ter tanto o nome da categoria quanto o nome do port na "
-"linha <quote>Sinopse</quote>.)"
+"melhor. Por exemplo, em qual parte do sistema o problema se aplica? O "
+"problema ocorre durante a instalação ou durante a execução do sistema? Para "
+"ilustrar, em vez de usar <literal>Summary: o portupgrade está quebrado</"
+"literal>, veja o quanto mais informativo isso parece: <literal> Summary: "
+"port ports-mgmt/portupgrade gerando coredumps no -current</literal>. (No "
+"caso de um port, é especialmente útil ter tanto o nome da categoria quanto o "
+"nome do port na linha <quote>Summary</quote>.)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:332
-#, fuzzy
 msgid ""
 "<emphasis>If you have a patch, say so.</emphasis> A PR with a patch included "
 "is much more likely to be looked at than one without. Please set the "
 "<literal>patch</literal> Keyword in Bugzilla."
 msgstr ""
 "<emphasis>Se você tem um patch, mencione-o.</emphasis> Um PR com um patch "
-"incluído é muito mais provável de ser analisado do que um sem. Se você está "
-"incluindo um, coloque a palavra <literal>[patch]</literal> (incluindo os "
-"colchetes) no início da linha de <quote>Sinopse</quote>. (Embora não seja "
-"obrigatório usar exatamente essa palavra, por convenção, essa é a que é "
-"usada.)"
+"incluído é muito mais provável de ser analisado do que um sem. Por favor, "
+"inclua a palavra-chave <literal>patch</literal> no Bugzilla."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:339
-#, fuzzy
 msgid ""
 "<emphasis>If you are a maintainer, say so.</emphasis> If you are maintaining "
 "a part of the source code (for instance, an existing port), you definitely "
@@ -664,14 +656,11 @@ msgid ""
 "update</literal>. This way any committer that handles your PR will not have "
 "to check."
 msgstr ""
-"<emphasis>Se você é um mantenedor, diga.</emphasis> Se você está mantendo "
-"uma parte do código fonte (por exemplo, um port), você pode considerar "
-"adicionar as palavras <literal>[atualização do mantenedor]</literal> "
-"(incluindo os colchetes) no início da sua linha de sinopse, e você "
-"definitivamente deve definir a <quote>Class</quote> (Classe) do seu PR para "
-"<literal>maintainer-update</literal>. Desta forma, qualquer committer que "
-"lide com seu PR não terá que verificar o Makefile do port, para certificar-"
-"se de que a atualização foi enviada pelo maintainer."
+"<emphasis>Se você é um mantenedor, informe.</emphasis> Se você está mantendo "
+"uma parte do código fonte (por exemplo, um port existente), você deve "
+"definir o campo <quote>Class</quote> do seu PR para <literal>maintainer-"
+"update</literal>. Desta forma, qualquer committer que lide com seu PR não "
+"terá que verificar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:349
@@ -968,7 +957,6 @@ msgstr "Anexando Patches ou Arquivos"
 
 #. (itstool) path: section/para
 #: article.translate.xml:541
-#, fuzzy
 msgid ""
 "When attaching a patch, be sure to use either <command>svn diff</command> or "
 "<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
@@ -981,16 +969,16 @@ msgid ""
 "appropriate or substantial testing has been done, the code will be merged/"
 "migrated to the FreeBSD-STABLE branch."
 msgstr ""
-"Ao anexar um patch, certifique-se de usar <option>-u</option> com "
+"Ao anexar um patch, certifique-se de usar <command>svn diff</command> ou "
 "<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> para criar ou unificar o diff e certificar-se de especificar "
-"os números de revisão exatos do SVN dos arquivos que você modificou para que "
-"os desenvolvedores que lerem seu relatório possam aplicá-los facilmente. "
-"Para problemas com o kernel ou com os utilitários de base, um patch para o "
-"FreeBSD-CURRENT (a branch HEAD do Subversion) é o preferido, já que todo "
-"código novo deve ser aplicado e testado lá primeiro. Após testes apropriados "
-"ou substanciais terem sido feitos, o código será mesclado/migrado para a "
-"branch FreeBSD-STABLE."
+"citerefentry> com o argumento <option>-u</option> para criar ou unificar o "
+"diff e certificar-se de especificar os números de revisão exatos do SVN dos "
+"arquivos que você modificou para que os desenvolvedores que lerem seu "
+"relatório possam aplicá-los facilmente. Para problemas com o kernel ou com "
+"os utilitários de base, um patch para o FreeBSD-CURRENT (a branch HEAD do "
+"Subversion) é o preferido, já que todo código novo deve ser aplicado e "
+"testado lá primeiro. Após testes apropriados ou substanciais terem sido "
+"feitos, o código será mesclado/migrado para a branch FreeBSD-STABLE."
 
 #. (itstool) path: section/para
 #: article.translate.xml:555
@@ -1270,7 +1258,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:728
-#, fuzzy
 msgid ""
 "If you are convinced that the problem will only occur under the processor "
 "architecture you are using, select one of the architecture-specific "
@@ -1282,10 +1269,10 @@ msgstr ""
 "Se estiver convencido de que o problema ocorrerá apenas sob a arquitetura do "
 "processador que você está usando, selecione uma das categorias específicas "
 "da arquitetura: geralmente <literal>i386</literal> para máquinas compatíveis "
-"com Intel 32 bits; <literal>amd64</literal> para máquinas AMD rodando em de "
-"64 bits (isto também inclui máquinas compatíveis com Intel rodando em modo "
-"EMT64); e menos comumente, as arquiteturas <literal>arm</literal>, "
-"<literal>ia64</literal>, <literal>powerpc</literal>."
+"com Intel 32 bits; <literal>amd64</literal> para máquinas AMD rodando em 64 "
+"bits (isto também inclui máquinas compatíveis com Intel rodando em modo "
+"EMT64); e menos comumente, as arquiteturas <literal>arm</literal> ou "
+"<literal>powerpc</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:739
