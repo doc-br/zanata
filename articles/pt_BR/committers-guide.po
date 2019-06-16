@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-15 06:31+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2019-06-16 10:12+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -123,6 +123,8 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 52898 "
 "2019-03-28 15:28:01Z mat $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 52898 "
+"2019-03-28 15:28:01Z mat $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:71
@@ -4623,6 +4625,8 @@ msgstr ""
 #: article.translate.xml:2313
 msgid "Using a Local MTA to Forward Emails to the FreeBSD.org SMTP Service"
 msgstr ""
+"Usando um MTA Local para Encaminhar Emails para o Serviço SMTP do FreeBSD."
+"org"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2316
@@ -4630,25 +4634,26 @@ msgid ""
 "It is also possible to use a local <acronym>MTA</acronym> to forward locally "
 "sent emails to the FreeBSD.org SMTP servers."
 msgstr ""
+"Também é possível usar um <acronym>MTA</acronym> local para encaminhar "
+"emails enviados localmente para os servidores SMTP do FreeBSD.org."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2321
-#, fuzzy
 msgid "Using <application>Postfix</application>"
-msgstr "Configurando um Mirror <application>svnsync</application>"
+msgstr "Usando o <application>Postfix</application>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2323
-#, fuzzy
 msgid ""
 "To tell a local Postfix instance that anything from "
 "<literal><replaceable>yourusername</replaceable>@FreeBSD.org</literal> "
 "should be forwarded to the FreeBSD.org servers, add this to your "
 "<filename>main.cf</filename>:"
 msgstr ""
-"Aceitará apenas mensagens de <literal><replaceable>yourusername</"
-"replaceable>@FreeBSD.org</literal>. Se você for autenticado como um usuário, "
-"não terá permissão para enviar e-mails como outro."
+"Para dizer a uma instância local do Postfix que qualquer email de "
+"<literal><replaceable>yourusername</replaceable>@FreeBSD.org</literal> deve "
+"ser encaminhado para os servidores do FreeBSD.org, adicione isto ao seu "
+"<filename>main.cf</filename>:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2328
@@ -4660,6 +4665,11 @@ msgid ""
 "smtp_sasl_password_maps = hash:/usr/local/etc/postfix/sasl_passwd\n"
 "smtp_use_tls = yes"
 msgstr ""
+"sender_dependent_relayhost_maps = hash:/usr/local/etc/postfix/relayhost_maps\n"
+"smtp_sasl_auth_enable = yes\n"
+"smtp_sasl_security_options = noanonymous\n"
+"smtp_sasl_password_maps = hash:/usr/local/etc/postfix/sasl_passwd\n"
+"smtp_use_tls = yes"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2334
@@ -4667,6 +4677,8 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/relayhost_maps</filename> with the "
 "following content:"
 msgstr ""
+"Crie <filename>/usr/local/etc/postfix/relayhost_maps</filename> com o "
+"seguinte conteúdo:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2338
@@ -4674,6 +4686,7 @@ msgstr ""
 msgid ""
 "<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
 msgstr ""
+"<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2340
@@ -4681,15 +4694,18 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/sasl_passwd</filename> with the "
 "following content:"
 msgstr ""
+"Crie <filename>/usr/local/etc/postfix/sasl_passwd</filename> com o seguinte "
+"conteúdo:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2344
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:"
 "<replaceable>yourpassword</replaceable>"
-msgstr "Host *.freebsd.org\n"
-"    User <replaceable>freebsd-login</replaceable>"
+msgstr ""
+"[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:"
+"<replaceable>yourpassword</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2346
@@ -4698,6 +4714,9 @@ msgid ""
 "from sending e-mails from your address. To achieve this, add this to your "
 "<filename>main.cf</filename>:"
 msgstr ""
+"Se o servidor de email for usado por outras pessoas, talvez você queira "
+"impedir que elas enviem emails do seu endereço. Para configurar isso, "
+"adicione estas entradas ao seu <filename>main.cf</filename>:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2351
@@ -4706,6 +4725,8 @@ msgid ""
 "smtpd_sender_login_maps = hash:/usr/local/etc/postfix/sender_login_maps\n"
 "smtpd_sender_restrictions = reject_known_sender_login_mismatch"
 msgstr ""
+"smtpd_sender_login_maps = hash:/usr/local/etc/postfix/sender_login_maps\n"
+"smtpd_sender_restrictions = reject_known_sender_login_mismatch"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2354
@@ -4713,16 +4734,18 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/sender_login_maps</filename> with "
 "the following content:"
 msgstr ""
+"Crie <filename>/usr/local/etc/postfix/sender_login_maps</filename> com o "
+"seguinte conteúdo:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2358
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<replaceable>yourusername</replaceable>@FreeBSD.org "
 "<replaceable>yourlocalusername</replaceable>"
 msgstr ""
-"MFH:  <replaceable>2014Q1 (runtime fix)</replaceable>\n"
-"MFH:  <replaceable>2014Q1 (browser blanket)</replaceable>"
+"<replaceable>yourusername</replaceable>@FreeBSD.org "
+"<replaceable>yourlocalusername</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2360
@@ -4731,6 +4754,9 @@ msgid ""
 "acronym> username used to connect to the local instance of "
 "<application>Postfix</application>."
 msgstr ""
+"Onde <replaceable>yourlocalusername</replaceable> é o usuário <acronym>SASL</"
+"acronym> utilizado para conectar na instância local do <application>Postfix</"
+"application>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2370
@@ -6194,7 +6220,6 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3131
-#, fuzzy
 msgid ""
 "Glen Barber <email>gjb@FreeBSD.org</email>, Konstantin Belousov "
 "<email>kib@FreeBSD.org</email>, Bryan Drewery <email>bdrewery@FreeBSD.org</"
@@ -6205,11 +6230,10 @@ msgid ""
 msgstr ""
 "Glen Barber <email>gjb@FreeBSD.org</email>, Konstantin Belousov "
 "<email>kib@FreeBSD.org</email>, Bryan Drewery <email>bdrewery@FreeBSD.org</"
-"email>, Marc Fonvieille <email>blackend@FreeBSD.org</email>, Rodney Grimes "
-"<email>rgrimes@FreeBSD.org</email>, Xin Li <email>delphij@FreeBSD.org</"
-"email>, Hiroki Sato <email>hrs@FreeBSD.org</email>, Gleb Smirnoff "
-"<email>glebius@FreeBSD.org</email>, Marius Strobl <email>marius@FreeBSD.org</"
-"email>"
+"email>, Marc Fonvieille <email>blackend@FreeBSD.org</email>, Xin Li "
+"<email>delphij@FreeBSD.org</email>, Hiroki Sato <email>hrs@FreeBSD.org</"
+"email>, Gleb Smirnoff <email>glebius@FreeBSD.org</email>, Marius Strobl "
+"<email>marius@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3134
@@ -8797,7 +8821,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4688
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</"
 "userinput>\n"
@@ -8896,8 +8920,8 @@ msgstr ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 "
-"2019-04-21 10:21:52Z ebrandi $\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+"52898 2019-03-28 15:28:01Z mat $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
