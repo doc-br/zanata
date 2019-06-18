@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-18 09:03+0000\n"
+"PO-Revision-Date: 2019-06-18 02:43+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1164,6 +1164,11 @@ msgid ""
 "files in <filename>/</filename> and (separately) <filename>/usr</filename> "
 "before I found better ways to find files."
 msgstr ""
+"lista los archivos en el directorio actual; he utilizado una variante del "
+"comando, <command>ls -AFR &gt; where.txt</command>, para obtener una lista "
+"de todos los archivos en el directorio <filename>/</filename> y <filename>/"
+"usr</filename> (por separado), hasta que encuentre una forma mejor de "
+"encontrar archivos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:688
@@ -1176,6 +1181,8 @@ msgid ""
 "to change user's password (or <systemitem class=\"username\">root</"
 "systemitem>'s password)"
 msgstr ""
+"para cambiar la contraseña del usuario (o la contraseña del usuario "
+"<systemitem class=\"username\">root</systemitem>)"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:696
@@ -1188,6 +1195,8 @@ msgid ""
 "manual page on the <trademark class=\"registered\">UNIX</trademark> "
 "filesystem"
 msgstr ""
+"muestra las páginas del manual para el sistema de archivos <trademark class="
+"\"registered\">UNIX</trademark> y su estructura jerárquica"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:704
@@ -1195,6 +1204,9 @@ msgid ""
 "Use <command>find</command> to locate <filename>filename</filename> in "
 "<filename>/usr</filename> or any of its subdirectories with"
 msgstr ""
+"Utilice el comando <command>find</command> para buscar <filename>filename</"
+"filename> en el directorio <filename>/usr</filename> o en cualquier de sus "
+"subdirectorios con:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:709
@@ -1215,6 +1227,12 @@ msgid ""
 "filename> instead of <filename>/usr</filename> it will look for the file(s) "
 "on all mounted filesystems, including the CDROM and the DOS partition."
 msgstr ""
+"Puede utilizar el carácter <literal>*</literal> como comodín en "
+"<parameter>\"<replaceable>filename</replaceable>\"</parameter> (debe estar "
+"entrecomillado). Si utiliza el comando <command>find</command> para buscar "
+"en el directorio <filename>/</filename> en lugar de <filename>/usr</"
+"filename>, buscará en todos los sistemas de archivos montados, incluido el "
+"CDROM y la partición DOS."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:720
@@ -1225,11 +1243,16 @@ msgid ""
 "a lot of <trademark class=\"registered\">UNIX</trademark> information on the "
 "Internet."
 msgstr ""
+"Un excelente libro que explica los comandos y utilidades de <trademark class="
+"\"registered\">UNIX</trademark> es <citetitle>Unix for the Impatient</"
+"citetitle> (2ª ed., Addison-Wesley, 1996) de Abrahams & Larson. También hay "
+"mucha información de <trademark class=\"registered\">UNIX</trademark> en "
+"Internet."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:727
 msgid "Next Steps"
-msgstr ""
+msgstr "Próximos pasos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:729
@@ -1249,6 +1272,22 @@ msgid ""
 "<literal>*</literal>s represent subdirectories of kinds of programs and "
 "program names respectively."
 msgstr ""
+"Ahora debería de tener las herramientas necesarias para moverse y editar "
+"archivos, de esta forma, podrá poner todo en funcionamiento. Hay una gran "
+"cantidad de información en el Handbook de FreeBSD (es muy probable que esté "
+"en su disco duro) y en el <link xlink:href=\"@@URL_RELPREFIX@@/index."
+"html\">sitio web de FreeBSD</link>. También hay una gran variedad de "
+"paquetes y ports en el CDROM y en el sitio web. El Handbook le brinda "
+"información sobre cómo usarlos (obtenga el paquete, si existe, con el "
+"comando <command>pkg add <replaceable>nombre-del-paquete</replaceable></"
+"command>, donde <replaceable>nombre-del-paquete</replaceable> es el nombre "
+"del archivo del paquete). El CDROM dispone de un listado con los paquetes y "
+"ports con unas breves descripciones en la ruta <filename>cdrom/packages/"
+"index</filename>, <filename>cdrom/packages/index.txt</filename> y "
+"<filename>cdrom/ports/index</filename>, con descripciones más completas en "
+"<filename>/cdrom/ports/*/*/pkg/DESCR</filename> donde los caracteres "
+"<literal>*</literal> representan los subdirectorios de los tipos de "
+"programas y nombre de los programas respectivamente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:746
@@ -1257,6 +1296,9 @@ msgid ""
 "command> and all) on installing ports from the CDROM, here is what usually "
 "works:"
 msgstr ""
+"Si encuentra el manual demasiado sofisticado (con el comando <command>lndir</"
+"command> y el resto) al instalar los ports desde el CDROM, esto es lo que "
+"normalmente funciona:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:750
@@ -1266,6 +1308,10 @@ msgid ""
 "local</filename> (a good place for software you add that should be available "
 "to all users) with:"
 msgstr ""
+"Localice el port que desea, por ejemplo, <command>kermit</command>. Habrá un "
+"directorio para él en el CDROM. Copie el subdirectorio a <filename>/usr/"
+"local</filename> (es un buen lugar para el software que instale y que deba "
+"estar disponible para todos los usuarios) con:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:757
@@ -1284,6 +1330,9 @@ msgid ""
 "that has all the files that the <command>kermit</command> subdirectory on "
 "the CDROM has."
 msgstr ""
+"Esto debería producir el subdirectorio <filename>/usr/local/kermit</"
+"filename> con todos los archivos que tenia el subdirectorio <command>kermit</"
+"command> en el CDROM."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:765
@@ -1295,6 +1344,13 @@ msgid ""
 "filename>; in recent versions you can skip this step, as FreeBSD will do it "
 "for you. In the case of <command>kermit</command>, there is no distfile."
 msgstr ""
+"A continuación, cree el directorio <filename>/usr/ports/distfiles</filename> "
+"si aún no existe usando el comando <command>mkdir</command>. Ahora busque en "
+"el directorio <filename>/cdrom/ports/distfiles</filename> un archivo que "
+"tenga el nombre del port que desea. Copie ese archivo a <filename>/usr/ports/"
+"distfiles</filename>; en las versiones más recientes, puede omitir este "
+"paso, FreeBSD lo hará por usted. En el caso de <command>kermit</command>, no "
+"existe el distfile."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:774
@@ -1302,6 +1358,9 @@ msgid ""
 "Then <command>cd</command> to the subdirectory of <filename>/usr/local/"
 "kermit</filename> that has the file <filename>Makefile</filename>. Type"
 msgstr ""
+"A continuación, utilice el comando <command>cd</command> para acceder al "
+"subdirectorio <filename>/usr/local/kermit</filename>, el cual contieneel "
+"archivo <filename>Makefile</filename>. Escriba:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:779
@@ -1328,7 +1387,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:800
 msgid "Your Working Environment"
-msgstr ""
+msgstr "Su entorno de trabajo"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:802
@@ -1364,7 +1423,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:826
 msgid "Here are the three steps for installing a new shell:"
-msgstr ""
+msgstr "Aquí tiene los 3 pasos necesarios para instalar una nueva shell:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:830
@@ -1380,6 +1439,10 @@ msgid ""
 "permanently, or type <command>tcsh</command> at the prompt to change your "
 "shell without logging in again."
 msgstr ""
+"Use el comando <command>chsh</command> para cambiar su shell a "
+"<command>tcsh</command> de forma permanente, o escriba <command>tcsh</"
+"command> en el prompt para cambiar su shell sin tener que iniciar sesión de "
+"nuevo."
 
 #. (itstool) path: note/para
 #: article.translate.xml:843
@@ -1453,7 +1516,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:896
 msgid "Other"
-msgstr ""
+msgstr "Otros"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:898
@@ -1482,7 +1545,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:919
 msgid "Comments Welcome"
-msgstr ""
+msgstr "Se aceptan sugerencias"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:921
@@ -1492,6 +1555,10 @@ msgid ""
 "helpful. My thanks to Eugene W. Stark, professor of computer science at SUNY-"
 "Stony Brook, and John Fieber for helpful comments."
 msgstr ""
+"Si utiliza esta guía, me interesaría saber qué partes no han quedado del "
+"todo claras y qué echa en falta y piensa que debería incluirse, y si fue "
+"útil para usted. Gracias a Eugene W. Stark, profesor de ciencias de la "
+"computación en SUNY-Stony Brook y a John Fieber por sus útiles comentarios."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:927
