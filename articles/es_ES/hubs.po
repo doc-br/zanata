@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-20 07:18+0000\n"
+"PO-Revision-Date: 2019-06-20 11:31+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -16,7 +16,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Sergio Carlavilla carlavilla@mailbox.org, 2019"
+msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
@@ -877,7 +877,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:614
 msgid "ftp-master.FreeBSD.org"
-msgstr ""
+msgstr "ftp-master.FreeBSD.org"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:616
@@ -902,18 +902,21 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:632
 msgid "Official Mirrors"
-msgstr ""
+msgstr "Replicas oficiales"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:634
 msgid "Official mirrors are mirrors that"
 msgstr ""
+"Las replicas oficiales, son replicas que cumplen los siguientes puntos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:638
 msgid ""
 "a) have a <systemitem>FreeBSD.org</systemitem> DNS entry (usually a CNAME)."
 msgstr ""
+"a) disponen de una entrada DNS <systemitem>FreeBSD.org</systemitem> "
+"(normalmente, un CNAME)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:643
@@ -921,6 +924,8 @@ msgid ""
 "b) are listed as an official mirror in the FreeBSD documentation (like "
 "handbook)."
 msgstr ""
+"b) son listados como una replica oficial en la documentación de FreeBSD "
+"(como el handbook)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:648
@@ -929,11 +934,15 @@ msgid ""
 "<emphasis>Tier-1</emphasis>-mirrors. However you probably will not find a "
 "<emphasis>Tier-1</emphasis>-mirror, that is not also official."
 msgstr ""
+"Hasta ahora, para distinguir las replicas oficiales. Las replicas oficiales "
+"no tienen porque ser necesariamente replicas-<emphasis>Tier-1</emphasis>. "
+"Sin embargo, es muy probable que no encuentre una replica-<emphasis>Tier-1</"
+"emphasis> que no sea oficial."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:655
 msgid "Special Requirements for Official (tier-1) Mirrors"
-msgstr ""
+msgstr "Requisitos especificos para las replicas oficiales (tier-1) "
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:658
@@ -943,21 +952,26 @@ msgid ""
 "<emphasis>official tier-1 mirrors</emphasis> are required to. All other "
 "official mirrors can consider this a big <emphasis>should</emphasis>."
 msgstr ""
+"No es tan sencillo establecer los requisitos para todas las replicas "
+"oficiales, ya que el proyecto es bastante tolerante en este punto. Es más "
+"sencillo decir qué se requiere de una <emphasis>replica oficial tier-1</"
+"emphasis>. El resto de replicas oficiales deberían de considerar esto como "
+"un gran <emphasis>debemos de cumplir</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:665
 msgid "Tier-1 mirrors are required to:"
-msgstr ""
+msgstr "Las replicas tier-1 están obligadas a:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:669
 msgid "carry the complete fileset"
-msgstr ""
+msgstr "disponer del conjunto de archivos completo"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:673
 msgid "allow access to other mirror sites"
-msgstr ""
+msgstr "permitir el acceso a otras replicas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:677
@@ -965,6 +979,8 @@ msgid ""
 "provide <application>FTP</application> and <application>rsync</application> "
 "access"
 msgstr ""
+"disponer de acceso <application>FTP</application> y <application>rsync</"
+"application>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:682
@@ -975,6 +991,11 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/eresources.html#ERESOURCES-MAIL\">this link</"
 "link> for details, how to subscribe."
 msgstr ""
+"Además, los administradores deben de estar suscritos a la <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\">lista de correo "
+"de las replicas de FreeBSD</link>. Consulte <link xlink:href=\"https://www."
+"FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/eresources.html#ERESOURCES-"
+"MAIL\">este enlace</link> para obtener detalles sobre cómo suscribirse."
 
 #. (itstool) path: important/para
 #: article.translate.xml:687
@@ -1000,17 +1021,17 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:705
 msgid "How to Become Official Then?"
-msgstr ""
+msgstr "¿Entonces, cómo convertirse en una replica oficial?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:761
 msgid "We are not accepting any new mirrors at this time."
-msgstr ""
+msgstr "No estamos aceptando nuevas replicas en este momento."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:766
 msgid "Some Statistics from Mirror Sites"
-msgstr ""
+msgstr "Algunas estadísticas de las replicas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:768
@@ -1018,11 +1039,13 @@ msgid ""
 "Here are links to the stat pages of your favorite mirrors (aka the only ones "
 "who feel like providing stats)."
 msgstr ""
+"Aquí dispone de enlaces a las páginas de estadísticas de sus replicas "
+"favoritas (también conocidas como las únicas que desean proporcionarlas)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:772
 msgid "FTP Site Statistics"
-msgstr ""
+msgstr "Estadísticas de los sitios FTP"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:776
@@ -1033,6 +1056,11 @@ msgid ""
 "html\">(FTP processes)</link> <link xlink:href=\"http://www.rhnet.is/status/"
 "ftp/http-notendur.html\">(HTTP processes)</link>"
 msgstr ""
+"ftp.is.FreeBSD.org - <email>hostmaster@is.FreeBSD.org</email> - <link xlink:"
+"href=\"http://www.rhnet.is/status/draupnir/draupnir.html\"> (Ancho de "
+"banda)</link> <link xlink:href=\"http://www.rhnet.is/status/ftp/ftp-notendur."
+"html\">(procesos FTP)</link> <link xlink:href=\"http://www.rhnet.is/status/"
+"ftp/http-notendur.html\">(procesos HTTP)</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:784
@@ -1042,3 +1070,7 @@ msgid ""
 "html\">(Bandwidth)</link> <link xlink:href=\"http://mirror.macomnet.net/mrtg/"
 "mirror.macomnet.net_proc.html\">(HTTP and FTP users)</link>"
 msgstr ""
+"ftp2.ru.FreeBSD.org - <email>mirror@macomnet.ru</email> - <link xlink:href="
+"\"http://mirror.macomnet.net/mrtg/mirror.macomnet.net_195.128.64.25."
+"html\">(Ancho de banda)</link> <link xlink:href=\"http://mirror.macomnet.net/"
+"mrtg/mirror.macomnet.net_proc.html\">(usuarios HTTP y FTP)</link>"
