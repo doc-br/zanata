@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-19 02:47+0000\n"
+"PO-Revision-Date: 2019-06-20 07:14+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -564,6 +564,9 @@ msgid ""
 "Here are some useful sources of help. <replaceable>Text</replaceable> stands "
 "for something of your choice that you type in—usually a command or filename."
 msgstr ""
+"Aquí tiene algunas fuentes útiles de ayuda. La palabra <replaceable>Text</"
+"replaceable> debe ser reemplazada por un texto de su elección—generalmente, "
+"un comando o un nombre de archivo."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:293
@@ -1562,6 +1565,11 @@ msgid ""
 "quotes. You can get the <filename>.tcshrc</filename> reread by typing "
 "<command>source .tcshrc</command>."
 msgstr ""
+"Debería de ir en el mismo lugar que la línea del prompt actual, si "
+"existiera, o debajo de \"if($?prompt) then\" si no existiera. Comente la "
+"línea antigua; siempre podrá volver a usar el método antiguo si lo prefiere. "
+"No olvide los espacios y las comillas. Puede forzar la relectura del archivo "
+"<filename>.tcshrc</filename> ejecutando <command>source .tcshrc</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:886
@@ -1572,6 +1580,12 @@ msgid ""
 "useful command if you log in from a remote location and cannot run a program "
 "because the terminal is not capable is <command>setenv TERM vt100</command>."
 msgstr ""
+"Puede obtener un listado de las otras variables de entorno que han sido "
+"configuradas ejecutando <command>env</command> en el prompt. El resultado "
+"mostrará su editor predeterminado, paginador y tipo de terminal, entre "
+"muchas otras. Un comando útil si inicia sesión desde una ubicación remota y "
+"no puede ejecutar un programa porque el terminal no es capaz de hacerlo es "
+"<command>setenv TERM vt100</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:896
