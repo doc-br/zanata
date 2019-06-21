@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-20 11:31+0000\n"
+"PO-Revision-Date: 2019-06-21 11:37+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -297,6 +297,11 @@ msgid ""
 "512MB RAM. This is probably the minimum you want for an <emphasis>official</"
 "emphasis> site."
 msgstr ""
+"Para un sitio con un número de visitas moderado que ofrezca "
+"<application>rsync</application>, debería de considerar una CPU actual con "
+"aproximadamente 800MHz - 1 GHz, y, al menos 512MB de RAM. Este es, "
+"probablemente, el mínimo que desea para un sitio <emphasis>oficial</"
+"emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:171
@@ -305,6 +310,9 @@ msgid ""
 "good start) and possibly more CPU, which could also mean that you need to go "
 "for a SMP system."
 msgstr ""
+"Si es un sitio con un número de visitas alto, definitivamente, necesita más "
+"RAM (2GB es un buen comienzo) y posiblemente más CPU, esto también significa "
+"la necesidad de ir hacia un sistema que disponga de SMP."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:175
@@ -314,6 +322,11 @@ msgid ""
 "controller that has a cache of its own can also speed up things since most "
 "of these services incur a large number of small modifications to the disk."
 msgstr ""
+"También debería de considerar un sistema de discos rápido. Las operaciones "
+"en el repositorio SVN requieren de un sistema de discos que sea rápido (se "
+"recomienda RAID). Un controlador SCSI que disponga de una caché propia "
+"también puede acelerar las cosas, ya que la  mayoría de estos servicios "
+"realizan una gran cantidad de pequeñas modificaciones en el disco."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:184
@@ -328,11 +341,16 @@ msgid ""
 "that server administrators may choose to offer. This section explains which "
 "services you can provide and how to go about implementing them."
 msgstr ""
+"Se require que cada replica tenga un conjunto de servicios centrales "
+"disponibles. Además de estos servicios que son requeridos, hay una serie de "
+"servicios opcionales que los administradores del servidor pueden escoger si "
+"ofrecerlos. Esta sección explica qué servicios puede proporcionar y cómo "
+"implementarlos."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:194
 msgid "FTP (required for FTP Fileset)"
-msgstr ""
+msgstr "FTP (requerido para el conjunto de archivos FTP)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:196
@@ -344,6 +362,13 @@ msgid ""
 "for the FreeBSD file space). Also the FreeBSD archive should be available "
 "under the path <filename>/pub/FreeBSD</filename>."
 msgstr ""
+"Este es uno de los servicios más básicos, y es requerido en cada réplica que "
+"ofrezca distribuciones FTP públicas. El acceso a FTP debe ser anónimo, y no "
+"se permite ningún control sobre las tasas de subida/descarga (de todas "
+"formas, es ridículo). La subida de archivos no es necesaria (y nunca "
+"<emphasis>debe</emphasis> permitirse en el área donde se guardan los "
+"archivos de FreeBSD). Además, los archivos de FreeBSD deben estar "
+"disponibles en la ruta <filename>/pub/FreeBSD</filename>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:205
@@ -351,6 +376,8 @@ msgid ""
 "There is a lot of software available which can be set up to allow anonymous "
 "FTP (in alphabetical order)."
 msgstr ""
+"Existe una gran cantidad de software disponible que se puede configurar para "
+"permitir FTP anónimo (en orden alfabético)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:210
@@ -359,6 +386,9 @@ msgid ""
 "sure to read <citerefentry><refentrytitle>ftpd</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<command>/usr/libexec/ftpd</command>: Se puede usar el propio ftpd de "
+"FreeBSD. Asegurese de leer <citerefentry><refentrytitle>ftpd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:215
@@ -366,6 +396,8 @@ msgid ""
 "<package>ftp/ncftpd</package>: A commercial package, free for educational "
 "use."
 msgstr ""
+"<package>ftp/ncftpd</package>: Un paquete comercial, gratis para uso "
+"educativo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:220
@@ -373,11 +405,13 @@ msgid ""
 "<package>ftp/oftpd</package>: An ftpd designed with security as a main focus."
 ""
 msgstr ""
+"<package>ftp/oftpd</package>: Un ftpd diseñado con la seguridad como "
+"principal objetivo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:225
 msgid "<package>ftp/proftpd</package>: A modular and very flexible ftpd."
-msgstr ""
+msgstr "<package>ftp/proftpd</package>: Un ftpd modular y muy flexible."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:230
@@ -385,16 +419,18 @@ msgid ""
 "<package>ftp/pure-ftpd</package>: Another ftpd developed with security in "
 "mind."
 msgstr ""
+"<package>ftp/pure-ftpd</package>: Otro ftpd desarrollado con la seguridad "
+"como principal objetivo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:235
 msgid "<package>ftp/twoftpd</package>: As above."
-msgstr ""
+msgstr "<package>ftp/twoftpd</package>: Lo mismo que el anterior."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:240
 msgid "<package>ftp/vsftpd</package>: The <quote>very secure</quote> ftpd."
-msgstr ""
+msgstr "<package>ftp/vsftpd</package>: Un ftpd <quote>muy seguro</quote>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:245
@@ -406,11 +442,18 @@ msgid ""
 "how many simultaneous connections are allowed, thus limiting how much "
 "network bandwidth and system resources are consumed."
 msgstr ""
+"Entre los FTPs más utilizados en FreeBSD se encuentran <application>ftpd</"
+"application>, <application>proftpd</application> y quizá "
+"<application>ncftpd</application>. El resto no tienen una gran base de "
+"usuarios entre las sitios réplica. Una cosa a considerar es que puede "
+"necesitar flexibilidad para limitar la cantidad de conexiones simultáneas "
+"que se permiten, lo que limita la cantidad de ancho de banda y los recursos "
+"del sistema que se consumen."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:256
 msgid "Rsync (optional for FTP Fileset)"
-msgstr ""
+msgstr "Rsync (opcional para el conjunto de archivos FTP)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:258
@@ -429,16 +472,32 @@ msgid ""
 "limits, and other restrictions may be applied. There is just one software "
 "package available:"
 msgstr ""
+"A menudo, se ofrece <application>Rsync</application> para acceder a los "
+"contenidos del área FTP de FreeBSD, de esta forma, otras réplicas pueden "
+"usar su sistema como su fuente. El protocolo es diferente de FTP es muchos "
+"aspectos. Es mucho más amigable con el ancho de banda, ya que solo se "
+"transfieren las diferencias entre los archivos en lugar del archivo completo."
+" <application>Rsync</application> requiere una cantidad significativa de "
+"memoria para cada instancia. El tamaño depende del tamaño del módulo que se "
+"vaya a sincronizar, en términos de cantidad de directorios y archivos. "
+"<application>Rsync</application> puede usar <command>rsh</command> y "
+"<command>ssh</command> (por defecto) como transporte, o usar su propio "
+"protocolo para el acceso independiente (este es el método preferido para los "
+"servidores de rsync públicos). Autenticación, límites de conexión y otras "
+"restricciones pueden ser aplicadas. Solo hay un paquete de software "
+"disponible:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:277
 msgid "<package>net/rsync</package>"
-msgstr ""
+msgstr "<package>net/rsync</package>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:283
 msgid "HTTP (required for Web Pages, Optional for FTP Fileset)"
 msgstr ""
+"HTTP (requerido para las páginas web, opcional para el conjunto de archivos "
+"FTP)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:286
@@ -448,6 +507,10 @@ msgid ""
 "server software is left up to the mirror administrator. Some of the most "
 "popular choices are:"
 msgstr ""
+"Si quiere ofrecer las páginas web de FreeBSD, necesitará instalar un "
+"servidor web. Opcionalmente, puede ofrecer el conjunto de archivos FTP a "
+"través de HTTP. La elección del software del servidor web se deja en manos "
+"del administrador de la réplica. Algunas de las opciones más populares son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:294
@@ -456,6 +519,9 @@ msgid ""
 "one of the most widely deployed web servers on the Internet. It is used "
 "extensively by the FreeBSD Project."
 msgstr ""
+"<package>www/apache24</package>: <application>Apache</application> continua "
+"siendo uno de los servidores web más usados en Internet. Es ampliamente "
+"utilizado por el proyecto FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:301
@@ -466,6 +532,11 @@ msgid ""
 "multiple connections. Although, it should provide considerably great "
 "performance for purely static content."
 msgstr ""
+"<package>www/boa</package>: <application>Boa</application> es un servidor "
+"HTTP single-task. A diferencia de los servidores web tradicionales, su "
+"proceso no se divide por cada conexión entrante, ni crea varias copias de si "
+"mismo para manejar múltiples conexiones. Aunque, debería de proporcionar un "
+"rendimiento considerablemente grande para contenido puramente estático."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:311
@@ -477,6 +548,7 @@ msgid ""
 "balancing. It also generates <application>Apache</application> compatible "
 "log files."
 msgstr ""
+"<package>www/cherokee</package>: <application>&gt;Cherokee</application>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:322
