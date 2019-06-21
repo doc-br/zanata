@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-21 02:21+0000\n"
+"PO-Revision-Date: 2019-06-21 06:12+0000\n"
 "Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
 "Language-Team: Norwegian Bokmål (Norway)\n"
 "Language: nb_NO\n"
@@ -603,9 +603,16 @@ msgid ""
 "\">10.4</link> is the latest release from the <emphasis>11-STABLE</emphasis> "
 "branch; it was released in October 2017."
 msgstr ""
+"Versjon <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/"
+"i386/12.0-RELEASE/\">12.0</link> er den siste utgivelsen fra <emphasis>12-"
+"STABLE</emphasis> grenen; 12.0 ble utgitt Desember 2018. Versjon <link xlink:"
+"href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/10.4-RELEASE/\">10.4</"
+"link> er den siste utgivelsen fra <emphasis>11-STABLE</emphasis>; 10.4 var "
+"utgitt Oktober 2017."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:408
+#, fuzzy
 msgid ""
 "Releases are made <link linkend=\"release-freq\">every few months</link>. "
 "While many people stay more up-to-date with the FreeBSD sources (see the "
@@ -613,6 +620,11 @@ msgid ""
 "linkend=\"stable\">FreeBSD-STABLE</link>) than that, doing so is more of a "
 "commitment, as the sources are a moving target."
 msgstr ""
+"Utgivelser kommer med <link linkend=\"release-freq\">noen få måneders</link> "
+"mellomrom. Selvom mange liker å være \"up-to-date\" med FreeBSD kilder (see "
+"spørsmål på <link linkend=\"current\">FreeBSD-CURRENT</link> og <link "
+"linkend=\"stable\">FreeBSD-STABLE</link>) så  *** doing so is more of a "
+"commitment, as the sources are a moving target. ***"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:415
@@ -622,11 +634,15 @@ msgid ""
 "Engineering page</link> and in <citerefentry><refentrytitle>release</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 msgstr ""
+"Mer informasjon om FreeBSD utgivelser kan sjekkes ut på <link xlink:href="
+"\"https://www.FreeBSD.org/releng/index.html#release-build\">Release "
+"Engineering page</link> og i <citerefentry><refentrytitle>release</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:423
 msgid "What is <emphasis>FreeBSD-CURRENT</emphasis>?"
-msgstr ""
+msgstr "Hva er <emphasis>FreeBSD-CURRENT</emphasis>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:427
@@ -641,6 +657,16 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index."
 "html\">Handbook</link> for details on running <emphasis>-CURRENT</emphasis>."
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"current-stable.html#current\">FreeBSD-CURRENT</link>  er den grenen som er "
+"kontinuerlig under utvikling innenfor operativ systemet. -CURRENT vil "
+"etterhvert som tiden går bli gitt ut som ny FreeBSD-stable gren. FreeBSD-"
+"CURRENT er mest for de som liker å utvikle og die-hard hobbyists. Sjekk ut "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"current-stable.html#current\">relevant section</link> i <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index."
+"html\">Handbook</link> for detaljer om å kjøre <emphasis>-CURRENT</emphasis>."
+""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:436
@@ -650,6 +676,11 @@ msgid ""
 "times. People that use FreeBSD-CURRENT are expected to be able to analyze, "
 "debug, and report problems."
 msgstr ""
+"Brukere som ikke er kjent med FreeBSD bør ikke bruke FreeBSD-CURRENT. Denne "
+"grenen av FreeBSD er stadig under utvikling og kan plutselig kræsje ved "
+"anledninger.\n"
+"Folk som bruker FreeBSD-CURRENT bør være kjent med analysering, debugging og "
+"vite hvordan man rapporter problemer.\n"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:442
@@ -659,11 +690,14 @@ msgid ""
 "emphasis> and <emphasis>-STABLE</emphasis> branches. The goals behind each "
 "snapshot release are:"
 msgstr ""
+"FreeBSD <link xlink:href=\"@@URL_RELPREFIX@@/snapshots/\">snapshot</link> "
+"utgivelser er laget utifra status fra <emphasis>-CURRENT</emphasis> og "
+"<emphasis>-STABLE</emphasis> grenene. Målet bak hver snapshot utgivelse er:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:450
 msgid "To test the latest version of the installation software."
-msgstr ""
+msgstr "Teste siste versjon av installerings programvare."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:455
@@ -673,6 +707,9 @@ msgid ""
 "follow it on a day-to-day basis an easy way of bootstrapping it onto their "
 "systems."
 msgstr ""
+"Gi folk mulighet til å kjøre <emphasis>-CURRENT</emphasis> eller <emphasis>-"
+"STABLE</emphasis> uten å ha tid el båndbredden til å følge med dag-til-dag "
+"hva som skjer. Som en enkel mulighet å prøve ut systemet."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:464
@@ -681,6 +718,9 @@ msgid ""
 "we break something really badly later. (Although Subversion normally "
 "prevents anything horrible like this happening.)"
 msgstr ""
+"Preservere et satt referanse poeng for koden som gjennomgås i tilfelle noe "
+"kræsjer/ryker senere. (Selvom Subversion normalt vanligvis skal sørge for at "
+"dette ikke skjer)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:471
@@ -688,6 +728,8 @@ msgid ""
 "To ensure that all new features and fixes in need of testing have the "
 "greatest possible number of potential testers."
 msgstr ""
+"Sørge for at alle nye funksjoner og oppdateringer har så mange som mulige "
+"testere av systemet."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:477
@@ -696,6 +738,10 @@ msgid ""
 "considered <quote>production quality</quote> for any purpose. If a stable "
 "and fully tested system is needed, stick to full releases."
 msgstr ""
+"Vi kan ikke garantere at <emphasis>-CURRENT</emphasis> snapshots kan ses på "
+"som <quote>produksjons klar</quote> for noe som helst bruk. Hvis ønsket er "
+"et stabilt og fullt testet system er ønskelig, hold deg til fulle utgivelser."
+""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:483
@@ -703,6 +749,8 @@ msgid ""
 "Snapshot releases are directly available from <link xlink:href="
 "\"@@URL_RELPREFIX@@/snapshots/\">snapshot</link>."
 msgstr ""
+"Snapshots utgivelser er direkte tilgjengelige fra: <link xlink:href="
+"\"@@URL_RELPREFIX@@/snapshots/\">snapshot</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:485
@@ -710,11 +758,13 @@ msgid ""
 "Official snapshots are generated on a regular basis for all actively "
 "developed branches."
 msgstr ""
+"Offisielle snapshots er generert på regular basis for alle aktive grener "
+"under utvikling."
 
 #. (itstool) path: question/para
 #: book.translate.xml:492
 msgid "What is the <emphasis>FreeBSD-STABLE</emphasis> concept?"
-msgstr ""
+msgstr "Hva er FreeBSD-STABLE konseptet?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:497
@@ -739,6 +789,27 @@ msgid ""
 "upcoming release schedule can be found on the <link xlink:href=\"https://www."
 "FreeBSD.org/releng\">Release Engineering Information</link> page."
 msgstr ""
+"Tilbake i sin tid når FreeBSD 2.0.5 ble utgitt, ble FreeBSD utviklings "
+"grenene delt i to.\n"
+"En gren ble navngitt <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
+"1/books/handbook/current-stable.html#stable\">-STABLE</link> og en annen "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"current-stable.html#current\">-CURRENT</link>. <emphasis>FreeBSD-STABLE</"
+"emphasis> er utviklings grenen som de større utgivelsene grener utifra.\n"
+"Endringer inn i denne grenen går over et lenger tidsperspektiv i et saktere "
+"tempo. Det blir også tatt høyde for at disse endringene først er testet i "
+"<emphasis>FreeBSD-CURRENT</emphasis>\n"
+"Uansett tid eller dato så kan FreeBSD-STABLE både være anvendelig eller ikke "
+"for generelt bruk ettersom det kan være feil/bugs og enkelte tilfeller som "
+"ikke ennå har blitt oppdaget i <emphasis>FreeBSD-CURRENT</emphasis>.\n"
+"Brukere som ikke har ressursene til å teste dette burde heller benytte seg "
+"av nyeste utgivelse av FeeeBSD. <emphasis>FreeBSD-CURRENT</emphasis> har "
+"vært komplett siden 2.0 var utgitt til 12.0-RELEASE og videre.\n"
+"For mer detaljert informasjon om grener sjekk ut: <quote><link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/releng/release-proc."
+"html#rel-branch\">FreeBSD Release Engineering: Creating the Release Branch</"
+"link></quote> , stats av grener og kommende utgivelser finnes på: Release "
+"Engineering Information siden."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:519
@@ -747,6 +818,9 @@ msgid ""
 "The latest release on the 12.0-STABLE branch is 12.0-RELEASE, which was "
 "released in December 2018."
 msgstr ""
+"12.0-STABLE er den aktive <emphasis>-STABLE</emphasis> grenen under "
+"utvikling. Den siste utgivelsen av 12.0-STABLE grenen er 12.0-RELEASE, som "
+"ble utgitt Desember 2018."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:525
@@ -756,11 +830,15 @@ msgid ""
 "See <link linkend=\"current\">What is FreeBSD-CURRENT?</link> for more "
 "information on this branch."
 msgstr ""
+"<emphasis>12-CURRENT</emphasis> grenen er den aktive <emphasis>-CURRENT</"
+"emphasis> grenen som jobbes opp mot neste generasjon av FreeBSD. Se hva "
+"<link linkend=\"current\">Hva er FreeBSD-CURRENT?</link> for mer inforasjon "
+"om denne grenen."
 
 #. (itstool) path: question/para
 #: book.translate.xml:535
 msgid "When are FreeBSD releases made?"
-msgstr ""
+msgstr "Når blir FreeBSD utgivelser laget?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:539
@@ -775,6 +853,15 @@ msgid ""
 "FreeBSD, even though waiting for all the latest goodies to reach <emphasis>-"
 "STABLE</emphasis> can be a little frustrating."
 msgstr ""
+"The Release Engineering Team <email>re@FreeBSD.org</email> gir ut en ny stor "
+"versjon av FreeBSD ca hver 18 måned og en ny mindre versjon ca hver 8 måned "
+"i gjennomsnitt.\n"
+"Utgivelses datoer er annonsert på forhånd i god tid slik at de som jobber "
+"med systemet vet når prosjektene deres trenger å være ferdige for testing.\n"
+"En testperiode foregår før hver utgivelse for å sørge for at nye "
+"funksjonaliteter ikke kommer i veien for stabiliteten i utgivelsen.\n"
+"Mange brukere synes dette er noe av det beste med FreeBSD selvom ventetiden "
+"for å få dette i <emphasis>-STABLE</emphasis> kan være litt frustrerende."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:551
@@ -784,6 +871,9 @@ msgid ""
 "FreeBSD.org/releng/index.html\">release engineering</link> pages on the "
 "FreeBSD Web site."
 msgstr ""
+"Mer informasjon om utgivelses prosessen (inkludert en plan om kommende "
+"utgivelse) kan sjekkes ut på <link xlink:href=\"https://www.FreeBSD.org/"
+"releng/index.html\">release engineering</link> siden på FreeBSD Web."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:556
@@ -791,11 +881,13 @@ msgid ""
 "For people who need or want a little more excitement, binary snapshots are "
 "made weekly as discussed above."
 msgstr ""
+"For folk som vil ha litt mer spenning i hverdagen så får man binære "
+"snapshots som gis ut ukentlig som nevnt ovenfor."
 
 #. (itstool) path: question/para
 #: book.translate.xml:564
 msgid "Who is responsible for FreeBSD?"
-msgstr ""
+msgstr "Hvem har ansvaret for FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:568
@@ -808,6 +900,15 @@ msgid ""
 "contributors/article.html#staff-committers\">committers</link> who are "
 "authorized to make changes directly to the FreeBSD source tree."
 msgstr ""
+"De store avgjørelsene innenfor FreeBSD prosjektet som hovedretning og hvor "
+"det ønskes at prosjektet tar veiene + hvem som kan legge til kode i source "
+"coden bestemmes \n"
+"av et <link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">core "
+"team</link> på 9 personer.\n"
+"Det er et mye større team på mer enn 350 <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributors/article."
+"html#staff-committers\">committers</link> som er autorisert til å gjøre "
+"endringer direkte i FreeBSD Source Tree."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:576
@@ -816,11 +917,14 @@ msgid ""
 "linkend=\"mailing\">mailing lists</link>, and there are no restrictions on "
 "who may take part in the discussion."
 msgstr ""
+"Uansett så er de fleste mindre-viktige endringer diskutert på forhånd via "
+"<link linkend=\"mailing\">mailing listsen</link> og det er ingen "
+"restriksjoner om hvem som kan delta i den diskusjonen.\n"
 
 #. (itstool) path: question/para
 #: book.translate.xml:585
 msgid "Where can I get FreeBSD?"
-msgstr ""
+msgstr "Hvor kan jeg få tak i FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:589
@@ -829,6 +933,8 @@ msgid ""
 "<link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/\">FreeBSD FTP site</"
 "link>:"
 msgstr ""
+"Alle betydelige utgivelser av FreeBSD er tilgjengelig anonymt via <link "
+"xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/\">FreeBSD FTP siden</link>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:595
@@ -837,6 +943,9 @@ msgid ""
 "in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/"
 "i386/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 msgstr ""
+"Den nyeste <emphasis>12-STABLE</emphasis> utgivelsen, 12.0-RELEASE kan "
+"finnes frem i <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
+"i386/i386/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:601
@@ -846,6 +955,10 @@ msgid ""
 "linkend=\"stable\">-STABLE</link> branch, these being of service purely to "
 "bleeding-edge testers and developers."
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/snapshots/\">Snapshot</link> utgivelser "
+"er gitt ut månedlig for <link linkend=\"current\">-CURRENT</link> og <link "
+"linkend=\"stable\">-STABLE</link> grenen, disse er mest for bleeding-edge "
+"testere og utviklere."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:608
@@ -854,6 +967,9 @@ msgid ""
 "in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/10."
 "4-RELEASE/\">10.4-RELEASE directory</link>."
 msgstr ""
+"Den nyeste <emphasis>11-STABLE</emphasis> utgivelsen, 10.4-RELEASE kan "
+"finnes frem i <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
+"i386/10.4-RELEASE/\">10.4-RELEASE directory</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:614
@@ -862,11 +978,14 @@ msgid ""
 "in <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "mirrors.html\">the Handbook</link>."
 msgstr ""
+"Informasjon om hvordan skaffe seg FreeBSD via CD,DVD eller andre media kan "
+"sjekkes ut i <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/mirrors.html\">Handbook</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:622
 msgid "How do I access the Problem Report database?"
-msgstr ""
+msgstr "Hvordan får jeg tilgang til Problem Rapporterings databasen?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:626
@@ -875,6 +994,9 @@ msgid ""
 "using our web-based PR <link xlink:href=\"https://bugs.FreeBSD.org/search/"
 "\">query</link> interface."
 msgstr ""
+"Forespørsler i Problem Rapporterings databasen av alle bruker endringer kan "
+"henvendes til den web-baserte PR <link xlink:href=\"https://bugs.FreeBSD.org/"
+"search/\">query</link> grensesnittet."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:630
@@ -883,6 +1005,9 @@ msgid ""
 "problem report submission interface</link> can be used to submit problem "
 "reports through a web browser."
 msgstr ""
+"Den <link xlink:href=\"@@URL_RELPREFIX@@/support/bugreports.html\">web-"
+"baserte problem rapporterings grensesnittet</link> kan brukes til å sende "
+"inn problemer via en web-browser."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:634
@@ -892,19 +1017,24 @@ msgid ""
 "html\">Writing FreeBSD Problem Reports</link>, an article on how to write "
 "good problem reports."
 msgstr ""
+"Før man sender inn problem rapport, les <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/articles/problem-reports/article.html\">Writing FreeBSD "
+"Problem Reports</link>, en artikkel om hvordan man bør skrive gode rapporter "
+"vedrørende problemer."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:643
 msgid "Documentation and Support"
-msgstr ""
+msgstr "Dokumentasjon og Support"
 
 #. (itstool) path: question/para
 #: book.translate.xml:648
 msgid "What good books are there about FreeBSD?"
-msgstr ""
+msgstr "Hvilke gode bøker anbefales rundt FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:652
+#, fuzzy
 msgid ""
 "The project produces a wide range of documentation, available online from "
 "this link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://www."
@@ -913,6 +1043,11 @@ msgid ""
 "html\">the bibliography in the Handbook</link> reference other recommended "
 "books."
 msgstr ""
+"FreeBSD prosjektet har stor variasjon av dokumentasjon tilgjengelig på nett "
+"via denne lenken: <uri xlink:href=\"https://www.FreeBSD.org/docs."
+"html\">https://www.FreeBSD.org/docs.html</uri> I tillegg finner man <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"bibliography.html\">referanser i Handbook</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:662
@@ -920,6 +1055,8 @@ msgid ""
 "Is the documentation available in other formats, such as plain text (ASCII), "
 "or <trademark class=\"registered\">PostScript</trademark>?"
 msgstr ""
+"Er dokumentasjonen tilgjengelig i andre format som klar tekst (ASCII) eller "
+"<trademark class=\"registered\">PostScript</trademark>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:667
@@ -928,6 +1065,9 @@ msgid ""
 "compression schemes on the FreeBSD FTP site, in the <link xlink:href=\"https:"
 "//download.freebsd.org/ftp/doc/\">/pub/FreeBSD/doc/</link> directory."
 msgstr ""
+"Ja. Dokumentasjonen finnes i flere forskjellige formater og kompresjons "
+"skjema på FreeBSD FTP siden, under <link xlink:href=\"https://download."
+"freebsd.org/ftp/doc/\">/pub/FreeBSD/doc/</link> katalogen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:672
@@ -935,6 +1075,8 @@ msgid ""
 "The documentation is categorized in a number of different ways. These "
 "include:"
 msgstr ""
+"Dokumentasjonen er kategorisert i flere forskjellige måter, disse inkluderer:"
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:677
@@ -942,6 +1084,8 @@ msgid ""
 "The document's name, such as <literal>faq</literal>, or <literal>handbook</"
 "literal>."
 msgstr ""
+"Dokumentets navn, slik som <literal>OSS(FAQ)</literal> eller "
+"<literal>handbook</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:683
@@ -950,211 +1094,213 @@ msgid ""
 "found under <filename>/usr/share/locale</filename> on a FreeBSD system. The "
 "current languages and encodings are as follows:"
 msgstr ""
+"Dokumentets språk og enkodingene. Disse er basert under de lokale navnene "
+"man finner i <filename>/usr/share/locale</filename> i et FreeBSD system. "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:693
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:695 book.translate.xml:845
 msgid "Meaning"
-msgstr ""
+msgstr "Beskrivelse"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:701
 msgid "<literal>en_US.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>en_US.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:703
 msgid "English (United States)"
-msgstr ""
+msgstr "Engelsk (United States)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:707
 msgid "<literal>bn_BD.ISO10646-1</literal>"
-msgstr ""
+msgstr "<literal>bn_BD.ISO10646-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:709
 msgid "Bengali or Bangla (Bangladesh)"
-msgstr ""
+msgstr "Bengalsk eller Bangla (Bangladesh)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:713
 msgid "<literal>da_DK.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>da_DK.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:715
 msgid "Danish (Denmark)"
-msgstr ""
+msgstr "Dansk (Denmark)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:719
 msgid "<literal>de_DE.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>de_DE.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:721
 msgid "German (Germany)"
-msgstr ""
+msgstr "Tysk (Germany)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:725
 msgid "<literal>el_GR.ISO8859-7</literal>"
-msgstr ""
+msgstr "<literal>el_GR.ISO8859-7</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:727
 msgid "Greek (Greece)"
-msgstr ""
+msgstr "Gresk (Greece)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:731
 msgid "<literal>es_ES.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>es_ES.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:733
 msgid "Spanish (Spain)"
-msgstr ""
+msgstr "Spansk (Spain)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:737
 msgid "<literal>fr_FR.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>fr_FR.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:739
 msgid "French (France)"
-msgstr ""
+msgstr "Fransk (France)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:743
 msgid "<literal>hu_HU.ISO8859-2</literal>"
-msgstr ""
+msgstr "<literal>hu_HU.ISO8859-2</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:745
 msgid "Hungarian (Hungary)"
-msgstr ""
+msgstr "Ungarn (Hungary)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:749
 msgid "<literal>it_IT.ISO8859-15</literal>"
-msgstr ""
+msgstr "<literal>it_IT.ISO8859-15</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:751
 msgid "Italian (Italy)"
-msgstr ""
+msgstr "Italiensk (Italy)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:755
 msgid "<literal>ja_JP.eucJP</literal>"
-msgstr ""
+msgstr "<literal>ja_JP.eucJP</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:757
 msgid "Japanese (Japan, EUC encoding)"
-msgstr ""
+msgstr "Japansk (Japan, EUC encoding)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:761
 msgid "<literal>ko_KR.UTF-8</literal>"
-msgstr ""
+msgstr "<literal>ko_KR.UTF-8</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:763
 msgid "Korean (Korea, UTF-8 encoding)"
-msgstr ""
+msgstr "Koreansk (Korea, UTF-8 encoding)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:767
 msgid "<literal>mn_MN.UTF-8</literal>"
-msgstr ""
+msgstr "<literal>mn_MN.UTF-8</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:769
 msgid "Mongolian (Mongolia, UTF-8 encoding)"
-msgstr ""
+msgstr "Mongolsk (Mongolia, UTF-8 encoding)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:774
 msgid "<literal>nl_NL.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>nl_NL.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:776
 msgid "Dutch (Netherlands)"
-msgstr ""
+msgstr "Nederlandsk (Netherlands)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:780
 msgid "<literal>pl_PL.ISO8859-2</literal>"
-msgstr ""
+msgstr "<literal>pl_PL.ISO8859-2</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:782
 msgid "Polish (Poland)"
-msgstr ""
+msgstr "Polsk (Poland)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:786
 msgid "<literal>pt_BR.ISO8859-1</literal>"
-msgstr ""
+msgstr "<literal>pt_BR.ISO8859-1</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:788
 msgid "Portuguese (Brazil)"
-msgstr ""
+msgstr "Portugisisk (Brazil)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:792
 msgid "<literal>ru_RU.KOI8-R</literal>"
-msgstr ""
+msgstr "<literal>ru_RU.KOI8-R</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:794
 msgid "Russian (Russia, KOI8-R encoding)"
-msgstr ""
+msgstr "Russisk (Russia, KOI8-R encoding)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:798
 msgid "<literal>tr_TR.ISO8859-9</literal>"
-msgstr ""
+msgstr "<literal>tr_TR.ISO8859-9</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:800
 msgid "Turkish (Turkey)"
-msgstr ""
+msgstr "Tyrkisk (Turkey)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:804
 msgid "<literal>zh_CN.UTF-8</literal>"
-msgstr ""
+msgstr "<literal>zh_CN.UTF-8</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:806
 msgid "Simplified Chinese (China, UTF-8 encoding)"
-msgstr ""
+msgstr "Forenklet Kinesisk (China, UTF-8 encoding)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:811
 msgid "<literal>zh_TW.UTF-8</literal>"
-msgstr ""
+msgstr "<literal>zh_TW.UTF-8</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:813
 msgid "Traditional Chinese (Taiwan, UTF-8 encoding)"
-msgstr ""
+msgstr "Tradisjonell Kinesisk (Taiwan, UTF-8 encoding)"
 
 #. (itstool) path: note/para
 #: book.translate.xml:821
 msgid "Some documents may not be available in all languages."
-msgstr ""
+msgstr "OBS! Noen dokumenteter er ikke tilgjengelig i alle språk."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:827
@@ -1167,71 +1313,81 @@ msgid ""
 "read the parts they are interested in, either on their monitor, or on paper "
 "after printing the documents. The currently available formats are:"
 msgstr ""
+"- Dokumentets format. Vi produserer dokumentene i forskjellige type format. "
+"Hvert format har sine fordeler og ulemper.\n"
+"Noen format er bedre egnet for å studeres rett på nett mens andre er ment "
+"for å være lettere å lese for øynene når det blir printet på papir.\n"
+"Det å ha dokumentasjon i disse formatene sikrer at leserne av dokumentene er "
+"i stand til å lese det de er intr i, enten om det er på pc skjerm eller på "
+"papir etter dokumentene er printet.\n"
+"\n"
+"Formatene som er tilgjengelig pr. dags dato er:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:843
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:851
 msgid "<literal>html-split</literal>"
-msgstr ""
+msgstr "<literal>html-split</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:853
 msgid "A collection of small, linked, HTML files."
-msgstr ""
+msgstr "En samling av små HTML filer med linker."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:858
 msgid "<literal>html</literal>"
-msgstr ""
+msgstr "<literal>html</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:860
 msgid "One large HTML file containing the entire document"
-msgstr ""
+msgstr "En stor HTML fil som inneholder hele dokumentet."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:865
 msgid "<literal>pdf</literal>"
-msgstr ""
+msgstr "<literal>pdf</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:867
 msgid "Adobe's Portable Document Format"
-msgstr ""
+msgstr "Adobe's Portable Dokument Format"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:871
 msgid "<literal>ps</literal>"
-msgstr ""
+msgstr "<literal>ps</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:873
 msgid "<trademark class=\"registered\">PostScript</trademark>"
-msgstr ""
+msgstr "<trademark class=\"registered\">PostScript</trademark>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:877
 msgid "<literal>rtf</literal>"
-msgstr ""
+msgstr "<literal>rtf</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:879
 msgid "<trademark class=\"registered\">Microsoft</trademark>'s Rich Text Format"
 msgstr ""
+"<trademark class=\"registered\">Microsoft</trademark>'s Klar Tekst Format"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:883
 msgid "<literal>txt</literal>"
-msgstr ""
+msgstr "<literal>txt</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:885
 msgid "Plain text"
-msgstr ""
+msgstr "Klar Tekst"
 
 #. (itstool) path: note/para
 #: book.translate.xml:892
@@ -1242,11 +1398,16 @@ msgid ""
 "keycap><keycap>End</keycap></keycombo>, <keycap>F9</keycap> after loading "
 "the document, to update the page numbers."
 msgstr ""
+"OBS: Side nummer er ikke automatisk oppdatert når Klar Tekst format blir "
+"lastet inn i Word. Trykk: <keycombo action=\"simul\"><keycap>Ctrl</"
+"keycap><keycap>A</keycap></keycombo>, <keycombo action="
+"\"simul\"><keycap>Ctrl</keycap><keycap>End</keycap></keycombo>, <keycap>F9</"
+"keycap> etter dokumentet er lastet inn for å oppdatere side nummer."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:901
 msgid "The compression and packaging scheme."
-msgstr ""
+msgstr "Kompresjon og pakkeskjematikk"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:905
@@ -1256,6 +1417,10 @@ msgid ""
 "manvolnum></citerefentry>. The resulting <filename>.tar</filename> is then "
 "compressed using the compression schemes detailed in the next point."
 msgstr ""
+"Ved format <literal>html-split</literal>, så er filene pakket sammen ved "
+"bruk av <citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. <filename>.tar</filename> filen blir deretter "
+"komprimert ved bruk kompresjons metoden beskrevet i neste avsnitt."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:914
@@ -1263,6 +1428,8 @@ msgid ""
 "All the other formats generate one file. For example, <filename>article.pdf</"
 "filename>, <filename>book.html</filename>, and so on."
 msgstr ""
+"Alle andre format genererer en enkelt fil. F.eks. <filename>artikkel.pdf</"
+"filename> , <filename>bok.html</filename> osv."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:919
@@ -1272,6 +1439,10 @@ msgid ""
 "<citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> can be used to uncompress these files."
 msgstr ""
+"Disse filene blir deretter komprimert ved bruk av enten <literal>zip</"
+"literal> eller <literal>bz2</literal> kompresjons metode. "
+"<citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> kan brukes for å pakke ut disse filene."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:925
@@ -1281,6 +1452,10 @@ msgid ""
 "called <filename>book.ps.bz2</filename> in the <filename>handbook/</"
 "filename> directory."
 msgstr ""
+"Så en <trademark class=\"registered\">PostScript</trademark> versjon av "
+"Håndboka, komprimert med <literal>bzip2</literal> will be lagret i et "
+"filnavn ala <filename>bok.ps.bz2</filename> i <filename>handbook/</filename> "
+"mappen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:935
@@ -1288,6 +1463,9 @@ msgid ""
 "After choosing the format and compression mechanism, download the compressed "
 "files, uncompress them, and then copy the appropriate documents into place."
 msgstr ""
+"Etter man har valgt ønsket format og komprimerings metode, last ned den "
+"komprimerte filen(e), pakk de ut og så kopier de valgte filene til sin plass."
+""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:940
@@ -1298,6 +1476,11 @@ msgid ""
 "<filename>doc/en_US.ISO8859-1/books/faq/book.html-split.tar.bz2</filename> "
 "To download and uncompress that file, type:"
 msgstr ""
+"F.eks. den splitta HTML versjonen av OSS(<acronym>FAQ</acronym>), komprimert "
+"med <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, kan bli funnet i <filename>doc/en_US.ISO8859-1/"
+"books/faq/book.html-split.tar.bz2</filename>. For å laste ned denne filen, "
+"skriv:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:946
@@ -1307,6 +1490,9 @@ msgid ""
 "en_US.ISO8859-1/books/faq/book.html-split.tar.bz2</userinput>\n"
 "<prompt>#</prompt> <userinput>tar xvf book.html-split.tar.bz2</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>fetch https://download.freebsd.org/ftp/doc/"
+"en_US.ISO8859-1/books/faq/book.html-split.tar.bz2</userinput>\n"
+"<prompt>#</prompt> <userinput>tar xvf book.html-split.tar.bz2</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:949
@@ -1317,6 +1503,11 @@ msgid ""
 "<filename>index.html</filename>, which will contain the table of contents, "
 "introductory material, and links to the other parts of the document."
 msgstr ""
+"Hvis filen er komprimert så vil <application>tar</application> automatisk "
+"gjenkjenne hvilket format dette er pakket i og vil pakke det ut på korrekt "
+"måte. Dette resulterer i en samling av <filename>.html</filename> filer. "
+"Hovedfilen kalles <filename>index.html</filename>, som vil inneholde Tittel, "
+"Innhold og resten av innholdet til dokumentet."
 
 #. (itstool) path: question/para
 #: book.translate.xml:962
@@ -1324,6 +1515,8 @@ msgid ""
 "Where do I find info on the FreeBSD mailing lists? What FreeBSD news groups "
 "are available?"
 msgstr ""
+"Hvor finner jeg info vedrørende FreeBSD mailing lists? Hvilke FreeBSD news "
+"groups eksisterer?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:967
@@ -1333,16 +1526,20 @@ msgid ""
 "link> and the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/eresources-news.html\">Handbook entry on newsgroups</link>."
 msgstr ""
+"Besøk: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/eresources.html#eresources-mail\">Handbook entry on mailing-lists</"
+"link> og <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/eresources-news.html\">Handbook entry on newsgroups</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:975
 msgid "Are there FreeBSD IRC (Internet Relay Chat) channels?"
-msgstr ""
+msgstr "Er det FreeBSD IRC (Internet Relay Chat) kanaler?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:980
 msgid "Yes, most major IRC networks host a FreeBSD chat channel:"
-msgstr ""
+msgstr "Ja, FreeBSD finnes på de største IRC serverne:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:985
@@ -1351,6 +1548,9 @@ msgid ""
 "efnet.org/index.php\">EFNet</link> is a channel dedicated to helping FreeBSD "
 "users."
 msgstr ""
+"Kanal <literal>#FreeBSDhelp</literal> på <link xlink:href=\"http://www.efnet."
+"org/index.php\">EFNet</link> er en kanal dedikert til å hjelpe FreeBSD "
+"brukere."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:990
@@ -1365,6 +1565,12 @@ msgid ""
 "native English speakers should try to ask the question in English first and "
 "then relocate to <literal>##freebsd-lang</literal> as appropriate."
 msgstr ""
+"Kanal <literal>#FreeBSD</literal> på <link xlink:href=\"http://freenode.net/"
+"\">Freenode</link> er en generell FreeBSD kanal med ofte mange brukere "
+"logget på. Det hender det sporer litt av i off-topic men prioritet blir gitt "
+"til FreeBSD brukere. Ikke Engelsk-talende/skrivende brukere burde først "
+"prøve å skrive spørsmålet de lurer på i Engelsk tekst først, før de bør "
+"prøve <literal>##freebsd-lang</literal>. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1006
@@ -1373,6 +1579,9 @@ msgid ""
 "\">DALNET</link> is available at <systemitem>irc.dal.net</systemitem> in the "
 "US and <systemitem>irc.eu.dal.net</systemitem> in Europe."
 msgstr ""
+"Kanal <literal>#FreeBSD</literal> på <link xlink:href=\"http://www.dal.net/"
+"\">DALNET</link> er tilgjengelig via <systemitem>irc.dal.net</systemitem> i "
+"USA og <systemitem>irc.eu.dal.net</systemitem> i Europa"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1013
@@ -1383,6 +1592,11 @@ msgid ""
 " Since it is a help channel, be prepared to read the documents you are "
 "referred to."
 msgstr ""
+"Kanal <literal>#FreeBSD</literal> på <link xlink:href=\"http://www.undernet."
+"org/\">UNDERNET</link> er tilgjengelig via <systemitem>us.undernet.org</"
+"systemitem> i USA og <systemitem>eu.undernet.org</systemitem> i Europa. "
+"Siden dette er en hjelpekanal så anbefales det å gjøre seg klar for å lese "
+"dokumentene de stiller opp med."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1022
@@ -1391,6 +1605,9 @@ msgid ""
 "org.ru/\">RUSNET</link> is a Russian language channel dedicated to helping "
 "FreeBSD users. This is also good place for non-technical discussions."
 msgstr ""
+"Kanal <literal>#FreeBSD</literal> på <link xlink:href=\"http://www.rusnet."
+"org.ru/\">RUSNET</link> er en Russisk talende kanal dedikert for FreeBSD "
+"brukere. Dette er også et fint sted for ikke-tekniske diskusjoner."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1029
@@ -1400,6 +1617,10 @@ msgid ""
 "channel dedicated to helping FreeBSD users. This is also good place for non-"
 "technical discussions."
 msgstr ""
+"Kanal <literal>#bsdchat</literal> på <link xlink:href=\"http://freenode.net/"
+"\">Freenode</link> er en tradisjonell Kinesisk (UTF-8 enkoding) språk kanal "
+"dedikert for å hjelpe FreeBSD brukere. Dette er også et fint sted for ikke-"
+"tekniske diskusjoner."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1037
@@ -1407,6 +1628,8 @@ msgid ""
 "The FreeBSD wiki has a <link xlink:href=\"https://wiki.freebsd.org/IRC/"
 "Channels\">good list</link> of IRC channels."
 msgstr ""
+"The FreeBSD wiki har ogsåp en <link xlink:href=\"https://wiki.freebsd.org/"
+"IRC/Channels\">fin liste</link> med IRC kanaler."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1040
@@ -1415,11 +1638,13 @@ msgid ""
 "Since their chat styles differ, try each to find one suited to your chat "
 "style."
 msgstr ""
+"Alle disse kanalene har ikke noe relasjon til hverandre, ettersom chat-"
+"stilen/holdninger varierer så anbefales det å finne en kanal som passer deg."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1049
 msgid "Are there any web based forums to discuss FreeBSD?"
-msgstr ""
+msgstr "Er det noen web baserte fora for å diskutere FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1052
@@ -1427,11 +1652,13 @@ msgid ""
 "The official FreeBSD forums are located at <link xlink:href=\"https://forums."
 "FreeBSD.org/\">https://forums.FreeBSD.org/</link>."
 msgstr ""
+"Det offisielle FreeBSD forumet er lokalisert på  <link xlink:href=\"https://"
+"forums.FreeBSD.org/\">https://forums.FreeBSD.org/</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1058
 msgid "Where can I get commercial FreeBSD training and support?"
-msgstr ""
+msgstr " Hvor kan jeg få kommersiell opplæring og support innenfor FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1063
@@ -1442,6 +1669,11 @@ msgid ""
 "href=\"http://www.ixsystems.com/support\">support</link>, in addition to "
 "FreeBSD development and tuning solutions."
 msgstr ""
+"<link xlink:href=\"http://www.ixsystems.com\">iXsystems, Inc.</link>. "
+"selskap underliggende <link xlink:href=\"http://www.freebsdmall.com/"
+"\">FreeBSD Mall</link> tilbyr kommersiell FreeBSD og TrueOS programvare "
+"<link xlink:href=\"http://www.ixsystems.com/support\">support</link>. De "
+"tilbyr i tillegg også utvikling og tilpasning av FreeBSD systemer."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1070
@@ -1450,6 +1682,9 @@ msgid ""
 "for DragonFly BSD, FreeBSD, NetBSD, and OpenBSD. Refer to <link xlink:href="
 "\"http://www.BSDCertification.org\">their site</link> for more information."
 msgstr ""
+"BSD Certification Group, Inc.  tilbyr system administrasjon sertifikasjoner "
+"for DragonFly BSD, FreeBSD, NetBSD og OpenBSD. Besøk <link xlink:href=\"http:"
+"//www.BSDCertification.org\">siden deres</link> for mer informasjon."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1075
@@ -1457,11 +1692,13 @@ msgid ""
 "Any other organizations providing training and support should contact the "
 "Project to be listed here."
 msgstr ""
+"Alle andre organisasjoner/bedrifter som tilbyr FreeBSD trening/utvikling og "
+"support burde ta kontakt med The FreeBSD project for å få bli nevnt her."
 
 #. (itstool) path: info/title
 #: book.translate.xml:1084
 msgid "Installation"
-msgstr ""
+msgstr "Installasjon"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:1092
@@ -1469,7 +1706,9 @@ msgstr ""
 msgid "\n"
 "\t    <email>nik@FreeBSD.org</email>\n"
 "\t  "
-msgstr ""
+msgstr "\n"
+"\t    <email>nik@FreeBSD.org</email>\n"
+"\t  "
 
 #. (itstool) path: info/author
 #: book.translate.xml:1086
@@ -1477,6 +1716,8 @@ msgid ""
 "<personname> <firstname>Nik</firstname> <surname>Clayton</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname> <firstname>Nik</firstname> <surname>Clayton</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1103
@@ -1485,6 +1726,9 @@ msgid ""
 "\"registered\">Intel</trademark> CPU, but I only see <literal>amd64</"
 "literal>."
 msgstr ""
+"Hvilken FreeBSD plattform bør jeg laste ned? Jeg har en 64 bit kompatibel "
+"<trademark class=\"registered\">Intel</trademark> CPU, men jeg ser kun "
+"<literal>amd64</literal>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1109
@@ -1494,11 +1738,16 @@ msgid ""
 "Older hardware should use i386. When installing on a non-x86-compatible "
 "architecture, select the platform which best matches the hardware."
 msgstr ""
+"amd64 er betegnelsen FreeBSD bruker for 64-bit kompatible x86 arkitekturer "
+"(også kjent som \"x86-64\" eller \"x64\"). De fleste moderne datamaskiner "
+"burde benytte seg av amd64. Eldre maskiner burde benytte seg av i386.\n"
+"Når man installerer på maskiner/enheter som har x86-kompatibel hardware "
+"arkitektur så benytt en av plattformene som passer best.\n"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1120
 msgid "Which file do I download to get FreeBSD?"
-msgstr ""
+msgstr "Hvilke fil må jeg laste ned for å få FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1124
@@ -1507,57 +1756,62 @@ msgid ""
 "FreeBSD</link> page, select <literal>[iso]</literal> next to the "
 "architecture that matches the hardware."
 msgstr ""
+"På siden <link xlink:href=\"https://www.freebsd.org/where.html\">Getting "
+"FreeBSD</link>, velg <literal>[iso]</literal> ved siden av arkitekturen som "
+"passer best for ditt system med tanke på maskinvare."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1128
 msgid "Any of the following can be used:"
-msgstr ""
+msgstr "Følgende kan benyttes:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1134
 msgid "file"
-msgstr ""
+msgstr "Fil"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1135
 msgid "description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1141
 msgid "<filename>disc1.iso</filename>"
-msgstr ""
+msgstr "<filename>disc1.iso</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1142
 msgid "Contains enough to install FreeBSD and a minimal set of packages."
 msgstr ""
+"Inneholder nok for å installere FreeBSD med et minimalt oppsett av inkludert "
+"pakker"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1147
 msgid "<filename>dvd1.iso</filename>"
-msgstr ""
+msgstr "<filename>dvd1.iso</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1148
 msgid ""
 "Similar to <filename>disc1.iso</filename> but with additional packages."
-msgstr ""
+msgstr "Lik <filename>disc1.iso</filename> men med ekstra pakker inkludert."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1153
 msgid "<filename>memstick.img</filename>"
-msgstr ""
+msgstr "<filename>memstick.img</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1154
 msgid "A bootable image sufficient for writing to a USB stick."
-msgstr ""
+msgstr "Et bootable image som er nok for å lage en USB brikke med boot."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1159
 msgid "<filename>bootonly.iso</filename>"
-msgstr ""
+msgstr "<filename>bootonly.iso</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1160
@@ -1565,6 +1819,8 @@ msgid ""
 "A minimal image that requires network access during installation to "
 "completely install FreeBSD."
 msgstr ""
+"Et minimalt boot image som krever nettverk/internett tilgang under "
+"installasjon."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1168
@@ -1574,11 +1830,15 @@ msgid ""
 "doc/en_US.ISO8859-1/books/handbook/bsdinstall.html\">Handbook entry on "
 "installing FreeBSD</link>."
 msgstr ""
+"Komplette instruksjoner for disse prosedyrene og litt mer informasjon "
+"vedrørende generelle installasjons problemer finner man under <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bsdinstall."
+"html\">Handbook entry on installing FreeBSD</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1177
 msgid "What do I do if the install image does not boot?"
-msgstr ""
+msgstr "Hva gjør jeg hvis ikke installerings imaget booter?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1182
@@ -1586,6 +1846,8 @@ msgid ""
 "This can be caused by not downloading the image in <emphasis>binary</"
 "emphasis> mode when using <acronym>FTP</acronym>."
 msgstr ""
+"Dette kan forekomme dersom imaget man laster ned ikke har blitt lastet ned i "
+"<emphasis>binary</emphasis> modus via <acronym>FTP</acronym>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1186
@@ -1597,6 +1859,11 @@ msgid ""
 "it is not <emphasis>exactly</emphasis> that on the server, then the download "
 "process is suspect."
 msgstr ""
+"Noen FTP klienter setter standard overføring i <emphasis>ascii</emphasis>-"
+"modus og prøver å endre noen bokstaver for å matche systemet til klienten "
+"som laster ned. Dette kan føre til at imaget man laster ned blir korrupt. "
+"Sjekk SHA-256 checksum til imaget som er lastet ned. Hvis det ikke er "
+"<emphasis>likt</emphasis> som på server så tyder det på at noe er suspekt."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1195
@@ -1605,11 +1872,14 @@ msgid ""
 "the FTP command prompt after getting connected to the server and before "
 "starting the download of the image."
 msgstr ""
+"Når man benytter seg av kommandolinjer i FTP klienten som brukes, skriv "
+"<emphasis>binary</emphasis> i FTP prompt etter man har koblet til server og "
+"gjør dette før man laster ned imaget man er ute etter."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1204
 msgid "Where are the instructions for installing FreeBSD?"
-msgstr ""
+msgstr "Hvor er instruksjonene for å installere FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1208
@@ -1618,11 +1888,14 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bsdinstall."
 "html\">Handbook entry on installing FreeBSD</link>."
 msgstr ""
+"Installasjons instruksene finnes i  <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"en_US.ISO8859-1/books/handbook/bsdinstall.html\">Handbook entry on "
+"installing FreeBSD</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1216
 msgid "What are the minimum requirements to run FreeBSD?"
-msgstr ""
+msgstr "Hva er minimumskravene for å installere FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1220
@@ -1630,11 +1903,14 @@ msgid ""
 "FreeBSD requires a 486 or better PC, 64 MB or more of RAM, and at least 1.1 "
 "GB of hard disk space."
 msgstr ""
+"FreeBSD krever en 486 eller bedre PC, 64 MB RAM eller mer, og minimum 1.1 GB "
+"ledig harddisk plass."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1228
 msgid "How can I make my own custom release or install disk?"
 msgstr ""
+"Hvordan kan jeg lage min egen skreddersydd versjon eller installerings disk?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1233
@@ -1644,6 +1920,9 @@ msgid ""
 "doc/en_US.ISO8859-1/articles/releng/article.html\">Release Engineering</"
 "link> article."
 msgstr ""
+"Skreddersydde versjoner kan lages via en skreddersydd versjon. Følg "
+"instruksjonene i artikkelen: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/articles/releng/article.html\">Release Engineering</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1242
@@ -1651,6 +1930,8 @@ msgid ""
 "Can <trademark class=\"registered\">Windows</trademark> co-exist with "
 "FreeBSD?"
 msgstr ""
+"Kan jeg kjøre <trademark class=\"registered\">Windows</trademark>  samtidig "
+"som jeg bruker FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1246
@@ -1661,12 +1942,20 @@ msgid ""
 "\"registered\">Windows</trademark> is installed afterwards, it will "
 "overwrite the boot manager. If that happens, see the next section."
 msgstr ""
+"Hvis <trademark class=\"registered\">Windows</trademark> blir installert "
+"først så er dette mulig. FreeBSD's boot manager vil da kunne veksle mellom å "
+"boote <trademark class=\"registered\">Windows</trademark> og FreeBSD. Hvis "
+"<trademark class=\"registered\">Windows</trademark> blir installert i "
+"etterkan så vil <trademark class=\"registered\">Windows</trademark> "
+"overskride boot manageren. Hvis det skjer så sjekk ut neste avsnitt."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1256
 msgid ""
 "Another operating system destroyed my Boot Manager. How do I get it back?"
 msgstr ""
+"Et annet operativ system ødela oppstarts booten min, hvordan får jeg "
+"gjenopprettet det tilbake slik det var?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1261
@@ -1676,12 +1965,16 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. For example, to "
 "restore the boot menu onto the disk <replaceable>ada0</replaceable>:"
 msgstr ""
+"Det kommer an på boot managern. FreeBSD boot manager menyen kan bli "
+"reinstallert ved å bruke <citerefentry><refentrytitle>boot0cfg</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. For eksempel, ved å "
+"gjenopprette boot menyen på disk <replaceable>ada0</replaceable>:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1266
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>boot0cfg -B ada0</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>boot0cfg -B ada0</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1268
@@ -1690,6 +1983,9 @@ msgid ""
 "<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Den ikke-interaktive MBR bootloaderen kan installeres ved å benytte seg av "
+"<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1271
@@ -1697,6 +1993,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr ada0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr ada0</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1273
@@ -1705,11 +2002,14 @@ msgid ""
 "<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"For mer komplekse situasjoner som inkluderer GPT disker, sjekk "
+"<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1280
 msgid "Do I need to install the source?"
-msgstr ""
+msgstr "Trenger jeg å installere kildekoden(source)?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1284
@@ -1720,11 +2020,17 @@ msgid ""
 "the port builds a kernel module or directly operates on kernel structures, "
 "the source must be installed."
 msgstr ""
+"Generelt sett, nei. Det er ingenting i standard base systemet som trenger "
+"kildekoden(source) for å fungere.\n"
+"Noen porter, som sysutils/lsof vil ikke la seg bygge med mindre "
+"kildekoden(source) er installert.\n"
+"Generelt sett så kan man si at dersom porten bygger en kernel modul eller "
+"opererer direkte mot kernel strukturen så trenger man kildekoden."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1295
 msgid "Do I need to build a kernel?"
-msgstr ""
+msgstr "Trenger jeg å bygge en kernel?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1299
@@ -1737,6 +2043,16 @@ msgid ""
 "very limited RAM, such as embedded systems, it may be worthwhile to build a "
 "smaller custom kernel containing just the required drivers."
 msgstr ""
+"Vanligvis ikke. Den medfølgende <literal>GENERIC</literal> kernelen "
+"inneholder alle drivere som en vanlig datamaskin trenger. \n"
+"<citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, FreeBSD binær oppgraderings verktøyet kan ikke "
+"oppdtatere skreddersydde kernels som igjen også er en grunn til at man bør "
+"holde seg til <literal>GENERIC</literal> kernel så ofte som det lar seg å "
+"gjøre.\n"
+"For datamaskiner med lite minne(RAM) som er et lite eller lukket system så "
+"kan det være verdt å ta en titt på å lage en skreddersydd kernel med kun de "
+"driverne som man trenger."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1312
@@ -1744,6 +2060,8 @@ msgid ""
 "Should I use DES, Blowfish, or MD5 passwords and how do I specify which form "
 "my users receive?"
 msgstr ""
+"Burde jeg bruke DES,Blowfish eller MD5 passord og hvordan konfiguerer jeg "
+"hva brukerne mine skal bruke?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1317
@@ -1759,11 +2077,23 @@ msgid ""
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page for more "
 "information about login capabilities."
 msgstr ""
+"FreeBSD bruker <emphasis>SHA512</emphasis> som standard. DES passord er "
+"fortsatt tilgjengelig for bakoverkompabilitet med operativsystem som bruker "
+"mindre sikre <literal>passwd_format</literal>. FreeBSD støtter også Blowfish "
+"og MD5 passord format.\n"
+"Hvilket passord format som benyttes for nye passord er kontrollert av "
+"<literal>passwd_format</literal> login kompabilitet i <filename>/etc/login."
+"conf</filename>, som benytter variabler som <literal>des</"
+"literal>,<literal>blf</literal> (hvis disse er tilgjengelige) eller "
+"<literal>md5</literal>.\n"
+"Se  <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> manual siden for mer informasjon om login "
+"muligheter."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1336
 msgid "What are the limits for FFS file systems?"
-msgstr ""
+msgstr "Hva er begrensningene for et FFS filsystem?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1340
@@ -1779,6 +2109,16 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>'able filesystem is "
 "~60 TB."
 msgstr ""
+"For FFS filsystemet så ligger begrensningene i størrelsen på minnet som "
+"kreves av <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> krever en bit per "
+"fragment som tilvarer standard fragment størrelse av 4 KB til 32 MB minne pr "
+"TB av disk.\n"
+"Dette betyr at arkitekturen begrenser userland prosesser til 2 GB (eksempel, "
+"<trademark>i386</trademark>), maksimum <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> filsystem er derfor ca."
+" 60TB."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1349
@@ -1788,6 +2128,10 @@ msgid ""
 "maximum filesystem size would be 2 ^ 64 (blocks) * 32 KB =&gt; 16 Exa * "
 "32 KB =&gt; 512 ZettaBytes."
 msgstr ""
+"Hvis det ikke hadde vært minnebegrensning på "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> systemet så ville max størrelse på systemet kunne vært  2 ^ 64 "
+"(blokker) * 32 KB => 16 Exa * 32 KB => 512 ZettaBytes."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1354
@@ -1798,6 +2142,12 @@ msgid ""
 "4096^2 + 32 KB * 4096^3. Increasing the block size to 64 KB will increase "
 "the max file size by a factor of 16."
 msgstr ""
+"Maksimum størrelsen på en enkelt FFS fil er ca 2 PB med standard blokk "
+"størrelse på 32 KB. Hver 32 KB blokk kan peke til 4096 blokker. \n"
+"Med trippel indirekte blokker så blir utregningen 32 KB * 12 + 32 KB * 4096 "
+"+ 32 KB * 4096^2 + 32 KB * 4096^3.\n"
+"Om vi øker blokk størrelsen til 64 KB så vil det øke max størrelsen på en "
+"enkelt fil med en faktor av 16."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1366
@@ -1805,6 +2155,8 @@ msgid ""
 "Why do I get an error message, <errorname>readin failed</errorname> after "
 "compiling and booting a new kernel?"
 msgstr ""
+"Hvorfor får jeg en feilmeldingsbeskjed, <errorname>readin failed</errorname> "
+"after compiling and booting a new kernel?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1372
@@ -1813,6 +2165,9 @@ msgid ""
 "<command>make buildworld</command> and <command>make buildkernel</command> "
 "to update the kernel."
 msgstr ""
+"Verden og kernel er ute av synk. Dette er ikke støttet. Husk å bruke  "
+"<command>make buildworld</command> og <command>make buildkernel</command> "
+"for å oppdatere kernelen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1377
@@ -1821,11 +2176,16 @@ msgid ""
 "pressing any key when the <literal>|</literal> shows up before loader is "
 "started."
 msgstr ""
+"Start opp systemet ved å spesifisere kernelen direkte til andre trinn ved å "
+"trykke hvilken som helst tast når <literal>|</literal> dukker opp før "
+"oppstarsveiviser er startet."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1386
 msgid "Is there a tool to perform post-installation configuration tasks?"
 msgstr ""
+"Er det noe verktøy for å installere konfigurasjon oppgaver etter en ny "
+"installasjon?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1391
@@ -1833,16 +2193,18 @@ msgid ""
 "Yes. <application>bsdconfig</application> provides a nice interface to "
 "configure FreeBSD post-installation."
 msgstr ""
+"Ja. <application>bsdconfig</application> tilbyr et fint brukergrensesnitt "
+"for å konfiguere FreeBSD systemet etter installasjon."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1399
 msgid "Hardware Compatibility"
-msgstr ""
+msgstr "Maskinvare Kompabilitet"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1402
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1407
@@ -1850,6 +2212,8 @@ msgid ""
 "I want to get a piece of hardware for my FreeBSD system. Which model/brand/"
 "type is best?"
 msgstr ""
+"Jeg ønsker å benytte en spesifikk type maskinvare for FreeBSD systemet mitt. "
+"Hvilken modell/merke/type er best?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1412
@@ -1863,6 +2227,16 @@ msgid ""
 "before asking about the latest and greatest hardware. Chances are a "
 "discussion about that type of hardware took place just last week."
 msgstr ""
+"Dette er ofet diskutert jevnlig i FreeBSD mailing listene ettersom "
+"maskinvare stadig er i utvikling.\n"
+"Les gjennom Hardware Notes for FreeBSD <link xlink:href=\"https://www."
+"FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> eller <link xlink:"
+"href=\"https://www.FreeBSD.org/releases/10.4R/hardware.html\">10.4</link> og "
+"søk i <link xlink:href=\"https://www.FreeBSD.org/search/"
+"#mailinglists\">archives</link> til mailing listene før du spør om det siste "
+"og beste av maskinvare.\n"
+"Det er ofte stor sjanse for å finne en akkurat slik diskusjon vedrørende "
+"maskinvare i en nylig liste."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1422
@@ -1873,6 +2247,11 @@ msgid ""
 "listinfo/freebsd-questions\">FreeBSD general questions mailing list</link>, "
 "or possibly a specific mailing list for a particular hardware type."
 msgstr ""
+"Før du kjøper en laptop, sjekk gjerne arkivene for  <link xlink:href=\"http:/"
+"/lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">FreeBSD laptop computer "
+"mailing list</link> og <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-questions\">FreeBSD general questions mailing list</link>,\n"
+"eller en spesifikk mailing liste for akkurat den type maskinvare."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1430
@@ -1880,6 +2259,8 @@ msgid ""
 "What are the limits for memory? Does FreeBSD support more than 4 GB of "
 "memory (RAM)? More than 16 GB? More than 48 GB?"
 msgstr ""
+"Hva er begrensningene for minne? Støtter FreeBSD mer enn 4 GB minne(RAM)? "
+"Mer enn 16 GB? Mer enn 48 GB?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1437
@@ -1892,6 +2273,15 @@ msgid ""
 "<trademark>i386</trademark> with PAE supports at most 64 GB memory. As of "
 "FreeBSD 10, AMD64 platforms support up to 4 TB of physical memory."
 msgstr ""
+"FreeBSD er et operatisystem som typisk støtter akkurat så mye minne(RAM) som "
+"platformen det kjøres på kan støtte.\n"
+"Husk bare at forskjellige plattformer har forskjellige typer form for "
+"begrensninger når det kommer til minne(RAM);\n"
+"for eksmepel <trademark>i386</trademark> uten <acronym>PAE</acronym> support "
+"støtter maksimum 4 GB minne (og ofte gjerne mindre enn dette pga PCI adresse "
+"plass) og\n"
+"<trademark>i386</trademark> med PAE support som regels 64 GB minne(RAM). Fra "
+"FreeBSD 10 så støtter AMD64 plattformen opp til 4 TB med fysisk minne(RAM)."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1452
@@ -1899,6 +2289,8 @@ msgid ""
 "Why does FreeBSD report less than 4 GB memory when installed on an "
 "<trademark>i386</trademark> machine?"
 msgstr ""
+"Hvorfor sier FreeBSD ifra at jeg har mindre enn 4 GB minne når jeg har "
+"installert på en <trademark>i386</trademark> maskin?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1457
@@ -1912,6 +2304,13 @@ msgid ""
 "significantly less than 4 GB. Usually, 3.2 GB to 3.7 GB is the maximum "
 "usable physical memory in this configuration."
 msgstr ""
+"Den totale adresse plassen på <trademark>i386</trademark> maskiner er 32-"
+"bit, dette betyr at ofte 4 GB minne er det som er maksimum tilgjengelig.\n"
+"Noe av denne minneplassen er reservert for maskinvare som f.eks. kontroll av "
+"PCI enheter, grafikkminne osv.\n"
+"Derfor er ofte totalminnet som er tilgjengelig vanligvis en god el midnre "
+"enn 4 GB. Vanligvis er det rundt 3.2 GB til 3.7 GB som er maksimum "
+"tilgjengelig kapasitet."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1469
@@ -1929,6 +2328,20 @@ msgid ""
 "manvolnum></citerefentry>) are not supported. This means all drivers must be "
 "compiled into the kernel."
 msgstr ""
+"For å få benyttet mer enn de 3.2 GB til 3.7 GB som er tilgjengelig (det "
+"betyr ofte opp til 4 GB men også mer enn 4B) så må man benytte seg av en "
+"tilpasning med navn <acronym>PAE</acronym>.\n"
+"<acronym>PAE</acronym> står for Physical Address Extension, dette er en måte "
+"for 32-bit x86 prosessorer til å benytte seg av mer enn 4 GB minne.\n"
+"Det tar i bruk minnet som vanligvis ellers ville blitt reservert av "
+"maskinvare enheter over 4 GB rekkevidden og bruker det som ekstra minne (se "
+"<citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>).\n"
+"Det å bruke PAE har noen ulemper; måten å få benyttet minne tilgangen er "
+"ofte litt tregere enn normalt (uten PAE) og innlastede moduler (se "
+"<citerefentry><refentrytitle>kld</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>) er ikke støttet. Dette betyr at alle drivere må bli kompilert "
+"rett inn i kernel."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1484
@@ -1942,12 +2355,21 @@ msgid ""
 "also usable with PAE. When creating a custom kernel configuration file, PAE "
 "can be enabled by adding the following line:"
 msgstr ""
+"Den mest vanlige metoden å benytte seg av PAE er å bygge en ny kernel med "
+"spesial klare-støttet kernel konfigurasjon fil som kalles <filename>PAE</"
+"filename>, som er allerede bygd inn i en safe kernel.\n"
+"Obs, noen av entitetene i denne kernel konfigurasjonen er for konservative "
+"og noen drivere drivere som er markert som ikke klare til å benyttes av PAE, "
+"ofte er klare alikevel. En tommelfingregel er at hvis driveren kan benyttes "
+"på 64-bit arkitektur (som AMD64) så er den også tilgjengelig som PAE. \n"
+"Når man lager en skreddersydd konfigurasjons fil så kan PAE aktiveres ved å "
+"legge til denne linjen med tekst:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1497
 #, no-wrap
 msgid "options       PAE"
-msgstr ""
+msgstr "options       PAE"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1499
@@ -1959,16 +2381,22 @@ msgid ""
 "this version of FreeBSD be used instead of the <trademark>i386</trademark> "
 "version if 4 GB or more memory is required."
 msgstr ""
+"PAE blir ikke brukt mye nå til dags ettersom det meste av ny x86 maskinvare "
+"også støtter det å kjøre i 64-bit modus, kjent som AMD64 eller <trademark "
+"class=\"registered\">Intel</trademark> 64.\n"
+"De har mye større minne space og trenger ikke sånne justeringer. FreeBSD "
+"støtter AMD64 og det er anbefalt at denne plattformen benyttes istedenfor "
+"<trademark>i386</trademark> dersom man trenger 4 GB minne eller mer."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1512
 msgid "Architectures and Processors"
-msgstr ""
+msgstr "Arkitektur og Prosessorer"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1517
 msgid "Does FreeBSD support architectures other than the x86?"
-msgstr ""
+msgstr "Støtter FreeBSD andre arkitekturer enn x86?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1522
@@ -1979,6 +2407,12 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-"
 "guide/archs.html\">Committer's Guide.</link>"
 msgstr ""
+"Ja. FreeBSD deler support inn i flere nivå. Nivå 1 arkitektur, som i386 "
+"eller amd64 har full spport. Nivå 2 og 3 har support så godt det lar seg "
+"gjøres.\n"
+"En full forklaring av nivå system er forklart i  <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/archs."
+"html\">Committer's Guide</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1529
@@ -1986,11 +2420,13 @@ msgid ""
 "A complete list of supported architectures can be found on the <link xlink:"
 "href=\"https://www.FreeBSD.org/platforms/\">platforms page.</link>"
 msgstr ""
+"En komplett liste av støttede arkitekturer kan sjekkes ut på <link xlink:"
+"href=\"https://www.FreeBSD.org/platforms/\">platforms page.</link>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1537
 msgid "Does FreeBSD support Symmetric Multiprocessing (SMP)?"
-msgstr ""
+msgstr "Støtter FreeBSD Symmetric Multiprocessing (SMP)?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1542
@@ -2001,6 +2437,11 @@ msgid ""
 "implementation uses fine-grained locking, and performance scales nearly "
 "linearly with number of CPUs."
 msgstr ""
+"FreeBSD støtter Symmetric Multiprocessing (SMP) på alle ikke-lukkede "
+"systemer (f.eks. i385,amd64 etc.). SMP er også støttet i ARM og MIPS kernel, "
+"riktignok støtter ikke alle prossesorer dette.\n"
+"FreeBSD sin SMP integrering støtter finkornet justering og presterer/"
+"skalerer nesten linjært med eks antall prosessorer."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1550
@@ -2008,6 +2449,8 @@ msgid ""
 "<citerefentry><refentrytitle>smp</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> has more details."
 msgstr ""
+"For mer detaljer, sjekk ut: <citerefentry><refentrytitle>smp</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1556
@@ -2015,6 +2458,8 @@ msgid ""
 "What is microcode? How do I install <trademark class=\"registered\">Intel</"
 "trademark> CPU microcode updates?"
 msgstr ""
+"Hva er microcode? Hvordan installerer jeg <trademark class="
+"\"registered\">Intel</trademark> CPU microcode oppdateringer?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1561
@@ -2023,32 +2468,36 @@ msgid ""
 "instructions. This allows for CPU bugs to be fixed without replacing the on "
 "board chip."
 msgstr ""
+"Microcode er en programmeringsmetode for å implementere maskinvare "
+"instruksjoner. Dette gjør at CPU feil kan bli fikset uten å bytte en chip i "
+"maskinvaren."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1566
 msgid "Install <package>sysutils/devcpu-data</package>, then add:"
 msgstr ""
+"Installer  <package>sysutils/devcpu-data</package>, deretter legg til:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1569
 #, no-wrap
 msgid "microcode_update_enable=\"YES\""
-msgstr ""
+msgstr "microcode_update_enable=\"YES\""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1571
 msgid "to <filename>/etc/rc.conf</filename>"
-msgstr ""
+msgstr "i filen: <filename>/etc/rc.conf</filename>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1578
 msgid "Hard Drives, Tape Drives, and CD and DVD Drives"
-msgstr ""
+msgstr "Harddisker, Tape og CD+DVD rom"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1583
 msgid "What kind of hard drives does FreeBSD support?"
-msgstr ""
+msgstr "Hva slags harddisker er støttet av FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1587
@@ -2059,11 +2508,18 @@ msgid ""
 " A few ESDI controllers that use proprietary interfaces may not work: stick "
 "to WD1002/3/6/7 interfaces and clones."
 msgstr ""
+"FreeBSD støtter EIDE, SATA, SCSI og SAS enheter (med kompatibel kontroller, "
+"se neste avsnitt), og alle disker som benytter seg av det originale "
+"<quote>Western Digital</quote> grensesnittet (MFM, RLL, ESDI og selvfølgelig "
+"IDE). \n"
+"Noen få ESDI kontrollere som bruker normalt grensesnitt er ikke sikkert lar "
+"seg benyttes. Det lønner seg å holde seg til WD1002/3/6/7 grensesnitt og "
+"kloner."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1599
 msgid "Which SCSI or SAS controllers are supported?"
-msgstr ""
+msgstr "Hvilke SCSI og SAS kontrollere er støttet?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1603
@@ -2073,21 +2529,26 @@ msgid ""
 "<link xlink:href=\"https://www.FreeBSD.org/releases/10.4R/hardware.html\">10."
 "4</link>."
 msgstr ""
+"Se den komplette listen i Hardware Notes for FreeBSD <link xlink:href="
+"\"https://www.FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> eller "
+"<link xlink:href=\"https://www.FreeBSD.org/releases/10.4R/hardware.html\">10."
+"4</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1611
+#, fuzzy
 msgid "What types of tape drives are supported?"
-msgstr ""
+msgstr "Hvilke tape drives er støttet?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1615
 msgid "FreeBSD supports all standard SCSI tape interfaces."
-msgstr ""
+msgstr "FreeBSD støtter alle standard SCSI tape grensesnitt"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1622
 msgid "Does FreeBSD support tape changers?"
-msgstr ""
+msgstr "Støtter FreeBSD TAPE byttere?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1626
@@ -2099,6 +2560,12 @@ msgid ""
 "found in <citerefentry><refentrytitle>chio</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"FreeBSD støtter SCSI byttere som benytter seg av "
+"<citerefentry><refentrytitle>ch</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> enheten og <citerefentry><refentrytitle>chio</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> kommando. Detaljene om "
+"hvordan kontrollere bytteren finnes i  <citerefentry><refentrytitle>chio</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1631
@@ -2108,11 +2575,16 @@ msgid ""
 "one point to another. In this case, keep track of which slot a tape is in "
 "and which slot the tape currently in the drive needs to go back to."
 msgstr ""
+"Mens <application>AMANDA</application> og noen andre produkter allerede "
+"forstår byttere så kan det være andre applikasjoner som kun vet hvordan man "
+"skifter en tape fra et sted til annet.\n"
+"I dette tilfelle, hold følge om hvilken plass TAPEn er i og hvilken plass "
+"TAPEn er nåværende er i og hvilken plass den trenger å gå tilbake til."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1643
 msgid "Which CD-ROM and CD-RW drives are supported by FreeBSD?"
-msgstr ""
+msgstr "Hvilke CD-ROM og CD-RW enheter er støttet av FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1648
@@ -2120,11 +2592,14 @@ msgid ""
 "Any SCSI drive connected to a supported controller is supported. Most ATAPI "
 "compatible IDE CD-ROMs are supported."
 msgstr ""
+"Hvilken som helst SCSI enhet som er koblet til en støttet kontroller er "
+"støttet i FreeBSD. De fleste ATAPI kompatible IDE CD-ROM er støttet."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1652
 msgid "FreeBSD supports any ATAPI-compatible IDE CD-R or CD-RW drive."
 msgstr ""
+"FreeBSD støtter hvilken som helst ATAPI-kompatibel IDE CD-R eller CD-RW rom."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1655
@@ -2133,16 +2608,19 @@ msgid ""
 "<package>sysutils/cdrtools</package> port or package, then use "
 "<command>cdrecord</command>."
 msgstr ""
+"FreeBSD støtter også hvilken som helst SCSI CD-R eller CD-RW rom. Installer "
+"<package>sysutils/cdrtools</package> port eller pakke, deretter bruk  "
+"<command>cdrecord</command>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1664
 msgid "Keyboards and Mice"
-msgstr ""
+msgstr "Tastatur og Mus"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1669
 msgid "Is it possible to use a mouse outside the X Window system?"
-msgstr ""
+msgstr "Er det mulig å benytte seg av mus utenfor X Window systemet?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1674
@@ -2162,6 +2640,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>moused -p /dev/xxxx -t yyyy</userinput>\n"
 "<prompt>#</prompt> <userinput>vidcontrol -m on</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>moused -p /dev/xxxx -t yyyy</userinput>\n"
+"<prompt>#</prompt> <userinput>vidcontrol -m on</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1683
@@ -2197,7 +2677,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1713
 msgid "How do I cut and paste text with a mouse in the text console?"
-msgstr ""
+msgstr "Hvordan kopierer jeg og limer inn text med mus i tekst konsollen?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1718
@@ -2223,6 +2703,7 @@ msgstr ""
 #: book.translate.xml:1736
 msgid "My mouse has a fancy wheel and buttons. Can I use them in FreeBSD?"
 msgstr ""
+"Musa jeg bruker har fancy hjul og knapper. Kan jeg bruke de i FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1741
@@ -2246,6 +2727,8 @@ msgid ""
 "How do I use my delete key in <command>sh</command> and <command>csh</"
 "command>?"
 msgstr ""
+"Hvordan bruker jeg delete knappen i <command>sh</command> og <command>csh</"
+"command>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1760
