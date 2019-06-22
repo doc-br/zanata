@@ -4,14 +4,14 @@ freebsd_instance:
 task:
   name: pt_BR
   env:
-    SVVNREV: 52615
+    SVVNREV: 53156
     DOCLANG: pt_BR.ISO8859-1
   setup_script:
     - pkg install -y docproj git
     - svnlite checkout -r $SVVNREV https://svn.freebsd.org/doc/head freebsd-doc > /dev/null
     - git clone https://github.com/doc-br/freebsd-doc-br.git freebsd-doc-br
-    - sh scripts/ci/copy_zanata_to_doc.sh ./ freebsd-doc-br/$DOCLANG
     - cp -aRfv freebsd-doc-br/$DOCLANG/* freebsd-doc/$DOCLANG/
+    - sh scripts/ci/copy_zanata_to_doc.sh ./ freebsd-doc/$DOCLANG
   translate_script:
     - sh scripts/ci/doc_translate.sh freebsd-doc/$DOCLANG
   build_script:
