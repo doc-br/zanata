@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-21 09:43+0000\n"
+"PO-Revision-Date: 2019-06-22 08:29+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1062,11 +1062,16 @@ msgid ""
 "<emphasis>official</emphasis> mirrors that are described in <xref linkend="
 "\"mirror-official\"/>."
 msgstr ""
+"En general, lo descrito en la <xref linkend=\"mirror-where-simple\"/> "
+"todavía es aplicable. Por supuesto, es posible que desee darle algo de "
+"importancia al hecho de que su upstream deba ser de un tier bajo. Hay "
+"algunas otras consideraciones sobre las replicas <emphasis>oficiales</"
+"emphasis> que se describen en la <xref linkend=\"mirror-official\"/>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:591
 msgid "I Want to Access the Master Sites!"
-msgstr ""
+msgstr "¡Quiero acceder a los sitios maestros!"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:593
@@ -1081,6 +1086,15 @@ msgid ""
 "lists.FreeBSD.org/mailman/listinfo/freebsd-hubs\">FreeBSD mirror sites "
 "mailing lists</link> first."
 msgstr ""
+"Si tiene buenas razones y requisitos previos, puede que desee y quiera "
+"obtener acceso a uno de los sitios maestros. El acceso a estos sitios, "
+"generalmente, está restringido y existen políticas especiales para el acceso."
+" Si ya es una replica <emphasis>oficial</emphasis>, esto seguramente le "
+"ayudará a obtener acceso. En cualquier otro caso, asegúrese de que su país "
+"realmente necesita otra replica. Si ya tiene tres o más, pregunte primero al "
+"<quote>administrador de la zona</quote> (<email>hostmaster@CC.FreeBSD.org</"
+"email>) o en <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-hubs\">las listas de correo de las replicasa de FreeBSD</link>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:604
@@ -1090,11 +1104,16 @@ msgid ""
 "master sites or a suitable Tier-1 site. If not, you can send email to "
 "<email>mirror-admin@FreeBSD.org</email> to request help with that."
 msgstr ""
+"Quienquiera que le haya ayudado a convertirse en una replica oficial, un "
+"<emphasis>oficial (official)</emphasis> debería de haberle ayudado a obtener "
+"acceso a un host upstream adecuado, ya sea uno de los sitios maestros o a un "
+"Tier-1 adecuado. De lo contrario, puede envair un correo electrónico "
+"solicitando ayuda a <email>mirror-admin@FreeBSD.org</email>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:611
 msgid "There is one master site for the FTP fileset."
-msgstr ""
+msgstr "Hay un sitio maestro para el conjunto de archivos FTP."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:614
@@ -1104,7 +1123,7 @@ msgstr "ftp-master.FreeBSD.org"
 #. (itstool) path: sect4/para
 #: article.translate.xml:616
 msgid "This is the master site for the FTP fileset."
-msgstr ""
+msgstr "Este es el sitio maestro para el conjunto de archivos FTP."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:618
@@ -1113,6 +1132,9 @@ msgid ""
 "application> access, in addition to FTP. Refer to <xref linkend=\"mirror-ftp-"
 "rsync\"/>."
 msgstr ""
+"<systemitem>ftp-master.FreeBSD.org</systemitem> proporciona acceso "
+"<application>rsync</application>, además de FTP. Consulte la <xref linkend="
+"\"mirror-ftp-rsync\"/>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:622
@@ -1120,6 +1142,9 @@ msgid ""
 "Mirrors are also encouraged to allow <application>rsync</application> access "
 "for the FTP contents, since they are <emphasis>Tier-1</emphasis>-mirrors."
 msgstr ""
+"También se recomienda que las replicas permitan el acceso "
+"<application>rsync</application> para los contenidos FTP, ya que son "
+"replicas <emphasis>Tier-1</emphasis>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:632
@@ -1229,6 +1254,12 @@ msgid ""
 "scheduled to come out, and thus giving you time to prepare for the big spike "
 "of traffic which follows it."
 msgstr ""
+"Es <emphasis>muy</emphasis> importante que el administrador de la replica, "
+"especialmente los administradores de replicas Tier-1, verifique el <link "
+"xlink:href=\"https://www.FreeBSD.org/releng/\">calendario de lanzamientos</"
+"link> para el próximo lanzamiento de FreeBSD. Esto es importante porque le "
+"dirá cuándo será el próximo lanzamiento, y así tendrá tiempo para prepararse "
+"para el gran pico de tráfico que vendrá."
 
 #. (itstool) path: important/para
 #: article.translate.xml:695
@@ -1239,6 +1270,11 @@ msgid ""
 "old data from Mirror1 and thus begins a downward spiral... Keep your mirrors "
 "up to date!"
 msgstr ""
+"También es importante que los administradores de las replicas intenten "
+"mantenerlas lo más actualizas posible (esto es crucial para las replicas "
+"Tier-1). Si el Mirror1 no se actualiza por un tiempo, las replicas de tiers "
+"menores comenzarán a replicar los datos antiguos del Mirror1 y, por lo "
+"tanto, comenzarán a caer en espiral... ¡Mantenga sus replicas actualizadas!"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:705
