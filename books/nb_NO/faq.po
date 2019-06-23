@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-22 06:27+0000\n"
+"PO-Revision-Date: 2019-06-23 06:38+0000\n"
 "Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
 "Language-Team: Norwegian Bokmål (Norway)\n"
 "Language: nb_NO\n"
@@ -2706,6 +2706,11 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and turn on the mouse "
 "pointer in the virtual console:"
 msgstr ""
+"Standard konsoll driveren, <citerefentry><refentrytitle>syscons</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>, tilbyr muligheten til "
+"å bruke muse peker i tekst konsoll for å klippe &amp; lime inn tekst. Kjør "
+"mus daemon <citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, og slå på muse pekeren i den virtuelle konsollen."
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1680
@@ -2728,6 +2733,13 @@ msgid ""
 "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> manual page for a list of supported protocol types."
 msgstr ""
+"Hvor <replaceable> xxxx </replaceable> er musenhetsnavnet og "
+"<replaceable>yyyy</replaceable> er en protokolltype for musen. Mus daemon "
+"kan automatisk bestemme protokoll typen til de fleste mus, unntatt gamle "
+"serielle mus. Angi <literal>auto</literal> protokollen for å påkalle "
+"automatisk deteksjon. Hvis automatisk deteksjon ikke fungerer, se "
+"<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>i manualen for en liste over støttede protokolltyper."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1693
@@ -2738,6 +2750,11 @@ msgid ""
 "console, add <literal>allscreens_flags=\"-m on\"</literal> to <filename>/etc/"
 "rc.conf</filename>."
 msgstr ""
+"For en PS/2 mus, legg til <literal>moused_enable=\"YES\"</literal> i "
+"<filename>/etc/rc.conf</filename> for å starte mus daemon ved oppstart. I "
+"tillegg for å bruke mus daemon i alle virtuelle terminaler istedenfor bare "
+"konsollen, legg til <literal>allscreens_flags=\"-m on\"</literal> i "
+"<filename>/etc/rc.conf</filename>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1702
@@ -2747,6 +2764,10 @@ msgid ""
 "<acronym>FAQ</acronym> <link linkend=\"x-and-moused\">Why does my mouse not "
 "work with X?</link> for more details on this issue."
 msgstr ""
+"Når mus daemon kjører, må tilgang til musen samordnes mellom mus daemon og "
+"andre programmer som X Windows. Se <acronym>OSS (FAQ)</acronym> <link "
+"linkend=\"x-and-moused\">Hvorfor fungerer ikke musen jeg bruker med X?</"
+"link> for mer informasjon om dette problemet."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1713
@@ -2763,6 +2784,13 @@ msgid ""
 "(middle button) to paste it at the text cursor. Pressing button 3 (right "
 "button) will <quote>extend</quote> the selected region of text."
 msgstr ""
+"Det er ikke mulig å fjerne data/tekst med musen i seg selv. Men det er mulig "
+"å klippe ut og lime inn. Når mus daemon kjører som beskrevet i <link linkend="
+"\"moused\">det forrige avsnittet</link>,  hold nede museknapp 1 (venstre "
+"knapp) og flytt musen for å markere en del av teksten du vil kopiere eller "
+"klippe ut. Deretter trykk museknapp 2 (midtre knapp) for å lime inn teksten "
+"hvor muse markøren holdes. Trykker man museknapp 3 (høyre knapp) så vil den "
+"markerte teksten bli<quote>utvidet</quote>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1727
@@ -2772,12 +2800,16 @@ msgid ""
 "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> manual page for details."
 msgstr ""
+"Hvis musen man bruker ikke har en midtre museknapp, så er det muligheter for "
+"å emulere eller gjøre om på hva de forskjellige knappene gjør via mus daemon."
+" Se <citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> i manualen for mer informasjon."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1736
 msgid "My mouse has a fancy wheel and buttons. Can I use them in FreeBSD?"
 msgstr ""
-"Musa jeg bruker har fancy hjul og knapper. Kan jeg bruke de i FreeBSD?"
+"Musa jeg bruker har flere fancy hjul og knapper. Kan jeg bruke de i FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1741
@@ -2787,6 +2819,11 @@ msgid ""
 "mouse device driver or the user program has specific support for the mouse, "
 "it will act just like a standard two, or three button mouse."
 msgstr ""
+"Dessverre så er svaret på dette, <quote>det kommer an på</quote>. De musene "
+"som ofte har flere knapper utenom de 3 vanlige trenger ofte en spesiell "
+"driver for å fungere. Med mindre musen man anvender eller en applikasjon har "
+"spesiell støtte for musen så vil kun de vanlige 3 knappene fungere. "
+"Mus1,mus2 og mus3."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1748
@@ -2794,6 +2831,8 @@ msgid ""
 "For the possible usage of wheels in the X Window environment, refer to <link "
 "linkend=\"x-and-wheel\">that section</link>."
 msgstr ""
+"For mulig bruk av hjul i X Window-miljøet, se <link linkend=\"x-and-"
+"wheel\">denne seksjonen</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1755
@@ -2813,6 +2852,11 @@ msgid ""
 "<citerefentry><refentrytitle>editrc</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"For <application>Bourne Shell</application>, legg til følgende linjer med "
+"tekst i <filename>~/.shrc</filename>. Se <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> og "
+"<citerefentry><refentrytitle>editrc</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1764
@@ -2821,6 +2865,8 @@ msgid ""
 "bind ^? ed-delete-next-char # for console\n"
 "bind ^[[3~ ed-delete-next-char # for xterm"
 msgstr ""
+"bind ^? ed-delete-next-char # for console\n"
+"bind ^[[3~ ed-delete-next-char # for xterm"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1767
@@ -2829,6 +2875,9 @@ msgid ""
 "<filename>~/.cshrc</filename>. See <citerefentry><refentrytitle>csh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"For <application>C Shell</application>, legg til følgende linjer med tekst i "
+"<filename>~/.cshrc</filename>. Se <citerefentry><refentrytitle>csh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1771
@@ -2837,6 +2886,8 @@ msgid ""
 "bindkey ^? delete-char # for console\n"
 "bindkey ^[[3~ delete-char # for xterm"
 msgstr ""
+"bindkey ^? delete-char # for console\n"
+"bindkey ^[[3~ delete-char # for xterm"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1774
@@ -2844,11 +2895,13 @@ msgid ""
 "For more information, see <link xlink:href=\"http://www.ibb.net/~anne/"
 "keyboard.html\">this page</link>."
 msgstr ""
+"For mer informasjon, se <link xlink:href=\"http://www.ibb.net/~anne/keyboard."
+"html\">denne siden</link>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1782
 msgid "Other Hardware"
-msgstr ""
+msgstr "Annen Maskinvare"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1787
@@ -2856,6 +2909,9 @@ msgid ""
 "Workarounds for no sound from my <citerefentry><refentrytitle>pcm</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> sound card?"
 msgstr ""
+"Andre løsninger dersom man ikke har noe lyd fra "
+"<citerefentry><refentrytitle>pcm</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> lydkort?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1792
@@ -2863,17 +2919,20 @@ msgid ""
 "Some sound cards set their output volume to 0 at every boot. Run the "
 "following command every time the machine boots:"
 msgstr ""
+"Noen lydkort setter utgangsvolum til 0 hver gang maskinen starter. Kjør "
+"følgende kommando hver gang maskinen starter:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1796
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mixer pcm 100 vol 100 cd 100</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mixer pcm 100 vol 100 cd 100</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1802
 msgid "Does FreeBSD support power management on my laptop?"
-msgstr ""
+msgstr "Støtter FreeBSD strømstyring på min bærbare datamaskin?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1807
@@ -2883,11 +2942,15 @@ msgid ""
 "<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry>."
 msgstr ""
+"FreeBSD støtter <acronym>ACPI</acronym> funksjonaliteter som finnes i "
+"moderne maskinvare. Mer informasjon finner man i "
+"<citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:1817
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Feilsøking"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1822
@@ -2895,6 +2958,8 @@ msgid ""
 "Why is FreeBSD finding the wrong amount of memory on <trademark>i386</"
 "trademark> hardware?"
 msgstr ""
+"Hvorfor finner FreeBSD feil minne mengde på <trademark>i386</trademark> "
+"maskinvare?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1827
@@ -2902,6 +2967,8 @@ msgid ""
 "The most likely reason is the difference between physical memory addresses "
 "and virtual addresses."
 msgstr ""
+"Den mest sannsynlige årsaken er forskjellen mellom fysiske minnesadresser og "
+"virtuelle adresser."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1830
@@ -2911,6 +2978,10 @@ msgid ""
 "to access PCI hardware. As a result real, physical memory cannot be accessed "
 "by that address space."
 msgstr ""
+"Konvensjonen for de fleste PC-maskinvare er å bruke minneområdet mellom 3,5 "
+"GB og 4 GB for et spesielt formål (vanligvis for PCI). Denne minne "
+"lokasjonen brukes til å få tilgang til PCI-maskinvare. Som et resultat kan "
+"fysisk minne ikke nås av minne lokasjonen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1836
@@ -2919,6 +2990,9 @@ msgid ""
 "dependent. Unfortunately, some hardware does nothing and the ability to use "
 "that last 500 MB of RAM is entirely lost."
 msgstr ""
+"Hva som skjer med minnet som skal vises på den plasseringen, er "
+"maskinvareavhengig. Dessverre gjør noe maskinvare ingenting og evnen til å "
+"bruke den siste 500 MB RAM er helt tapt."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1841
@@ -2927,6 +3001,9 @@ msgid ""
 "still be used. However, this can cause some confusion when watching the boot "
 "messages."
 msgstr ""
+"Heldigvis gjenkjenner de fleste maskinvare minnet til en høyere plassering "
+"slik at den fortsatt kan brukes. Dette kan imidlertid føre til forvirring "
+"når du ser oppstartsmeldingene."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1846
@@ -2936,6 +3013,10 @@ msgid ""
 "case, the solution is to build a PAE enabled kernel. See the entry on memory "
 "limits for more information."
 msgstr ""
+"På en 32-bits versjon av FreeBSD, vises minnet tapt, siden det blir remapped "
+"over 4 GB, som en 32-bits kjerne ikke kan få tilgang til. I dette tilfellet "
+"er løsningen å bygge en PAE-aktivert kjerne. Se oppføringen i minnegrenser "
+"for mer informasjon."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1852
@@ -2946,6 +3027,12 @@ msgid ""
 "system really has, due to the described remapping. This is normal and the "
 "available memory will be corrected as the boot process completes."
 msgstr ""
+"På en 64-bits versjon av FreeBSD, eller når du kjører en PAE-aktivert "
+"kjerne, vil FreeBSD på riktig måte oppdage og omforme minnet slik at det kan "
+"brukes. Under oppstart kan det imidlertid virke som om FreeBSD oppdager mer "
+"minne enn systemet egentlig har, på grunn av den beskrevne remapping. Dette "
+"er normalt og det tilgjengelige minnet blir korrigert ettersom "
+"oppstartsprosessen er fullført."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1864
@@ -2953,6 +3040,8 @@ msgid ""
 "Why do my programs occasionally die with <errorname>Signal 11</errorname> "
 "errors?"
 msgstr ""
+"Hvorfor hender det at noen programmer bare stopper å kjøre med "
+"<errorname>Signal 11</errorname> feilmeldinger?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1869
@@ -2962,11 +3051,14 @@ msgid ""
 "this is happening at seemingly random intervals, start investigating the "
 "cause."
 msgstr ""
+"Signal 11 feil oppstår når en prosess har forsøkt å få tilgang til minne som "
+"operativsystemet ikke har gitt det tilgang til. Hvis noe som dette skjer ved "
+"tilsynelatende tilfeldige intervaller, begynner du å undersøke årsaken."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1875
 msgid "These problems can usually be attributed to either:"
-msgstr ""
+msgstr "Disse problemene kan vanligvis tilskrives enten:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1880
@@ -2974,6 +3066,8 @@ msgid ""
 "If the problem is occurring only in a specific custom application, it is "
 "probably a bug in the code."
 msgstr ""
+"Hvis problemet kun skjer i et custom program så er det mest sannsynligvis en "
+"bug i koden til programmet."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1886
@@ -2983,6 +3077,10 @@ msgid ""
 "before us general <acronym>FAQ</acronym> readers get to use these bits of "
 "code (that is what -CURRENT is for)."
 msgstr ""
+"Hvis det er et problem med en del av Base FreeBSD-systemet, kan det også "
+"være buggy-kode, men oftere enn ikke så blir disse problemene funnet og løst "
+"lenge før oss generelle<acronym>OSS (FAQ)</acronym> brukere benytter noen av "
+"disse bits'ene av kode (det er det som er -CURRENT er for)."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1895
@@ -2990,6 +3088,8 @@ msgid ""
 "It is probably not a FreeBSD bug if the problem occurs compiling a program, "
 "but the activity that the compiler is carrying out changes each time."
 msgstr ""
+"Det er sannsynligvis ikke en FreeBSD-feil hvis problemet oppstår ved å lage "
+"et program, men aktiviteten som kompilatoren utfører, endres hver gang."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1901
@@ -3000,6 +3100,11 @@ msgid ""
 "source and try again. If the compile fails elsewhere, it is almost certainly "
 "due to hardware."
 msgstr ""
+"For eksempel, hvis <command>make buildworld</command> mislykker når du "
+"prøver å kompilere <filename>ls.c</filename> til <filename>ls.o</filename> "
+"og, når det kjøres igjen, svikter det ikke på det samme stedet, så er det en "
+"ødelagt build. Prøv å oppdatere kildekoden og prøv igjen. Hvis kompileringen "
+"mislykkes andre steder, er det nesten sikkert på grunn av maskinvare."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1909
@@ -3008,16 +3113,20 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to find the point in "
 "the program which is attempting to access a bogus address and fix it."
 msgstr ""
+"I det første tilfellet bruker du en debugger som "
+"<citerefentry><refentrytitle>gdb</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> for å finne punktet i programmet som forsøker å få tilgang til "
+"en falsk adresse og fikse det."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1914
 msgid "In the second case, verify which piece of hardware is at fault."
-msgstr ""
+msgstr "I andre tilfeller må du kontrollere hvilke maskinvare som er feil."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1917
 msgid "Common causes of this include:"
-msgstr ""
+msgstr "Vanlige årsaker til dette er:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1921
@@ -3025,6 +3134,8 @@ msgid ""
 "The hard disks might be overheating: Check that the fans are still working, "
 "as the disk and other hardware might be overheating."
 msgstr ""
+"Harddiskene kan være overopphetet: Sjekk at viftene fortsatt fungerer, da "
+"disken og annen maskinvare kan være overopphetet."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1927
@@ -3035,6 +3146,11 @@ msgid ""
 "at least while trying to solve this problem. If it is not, clock it back to "
 "the default settings.)"
 msgstr ""
+"Prosessoren kan være overopphetet: Dette kan være at prosessoren er "
+"overklokket eller at viften på CPU har tatt kvelden. I begge tilfeller, sørg "
+"for å sjekke maskinvaren skal kjøre på det som det er ment for å kjøres på. "
+"I hvertfall når du prøver å løse dette problemet, hvis det ikke er feilen, "
+"gå gjerne tilbake til forrige innstillinger med overklokking etc."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1935
@@ -3043,6 +3159,9 @@ msgid ""
 "system that needs replacing! Also the community is not sympathetic to "
 "problems on overclocked systems."
 msgstr ""
+"Når det gjelder overklokking, er det langt billigere å ha et tregere system "
+"enn et ødelagt system som må byttes ut! FreeBSD community er ikke sympatisk "
+"for problemer på overklokkede systemer."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1942
@@ -3052,6 +3171,10 @@ msgid ""
 "narrow the problem down to either the problematic DIMM/SIMM or perhaps even "
 "a combination."
 msgstr ""
+"Dodgy minne: Hvis flere minne SIMMS/DIMMS er installert, trekk dem ut og "
+"prøv å kjøre maskinen med hver SIMM eller DIMM individuelt for å begrense "
+"problemet til enten den problematiske DIMM/SIMM eller kanskje en kombinasjon."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1951
@@ -3063,6 +3186,13 @@ msgid ""
 "behavior. A possible idea is to set to BIOS defaults, after noting the "
 "current settings first."
 msgstr ""
+"Overoptimistiske hovedkortinnstillinger: BIOS-innstillingene, og noen "
+"hovedkort hoppere, gir muligheter til å angi forskjellige innstillinger. "
+"Standardinnstillingene er ofte tilstrekkelig, men noen ganger stilles "
+"ventetilstandene på RAM for lavt, eller alternativet <quote>RAM Speed: "
+"Turbo</quote> vil føre til merkelig oppførsel. En mulig ide er å stille inn "
+"til BIOS-standardinnstillinger, etter å ha først notert ned gjeldende "
+"innstillinger."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1963
@@ -3073,6 +3203,12 @@ msgid ""
 "supply, preferably one with a little more power. For instance, if the "
 "current power supply is rated at 250 Watts, try one rated at 300 Watts."
 msgstr ""
+"Uren eller utilstrekkelig strøm til hovedkortet. Fjern eventuelle ubrukte I/"
+"O-kort, harddisker eller CD-ROM-er, eller koble fra strømkabelen fra dem for "
+"å se om strømforsyningen kan klare en mindre belastning. Eller prøv en annen "
+"strømforsyning, helst en med litt mer strøm. For eksempel, hvis "
+"strømforsyningen er vurdert til 250 watt, prøv en som er vurdert til 300 "
+"watt eller mer."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1975
@@ -3083,6 +3219,11 @@ msgid ""
 "acronym> on this at <link xlink:href=\"http://www.bitwizard.nl/sig11/\">the "
 "SIG11 problem <acronym>FAQ</acronym></link>."
 msgstr ""
+"Les avsnittet på <link linkend=\"signal11\">Signal 11</link> for en videre "
+"forklaring på hvordan program for minnetesting eller maskinvare fortsatt kan "
+"slippe i gjennom ødelagt minne. Det er en utvidet <acronym>OSS (FAQ)</"
+"acronym> på dette her <link xlink:href=\"http://www.bitwizard.nl/sig11/"
+"\">the SIG11 problem<acronym>FAQ</acronym></link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1982
@@ -3091,6 +3232,9 @@ msgid ""
 "<link linkend=\"access-pr\">these instructions</link> to send a problem "
 "report."
 msgstr ""
+"Til slutt, hvis ingenting av dette har hjulpet deg så kan det være en bug i "
+"FreeBSD. Følg <link linkend=\"access-pr\">disse instruksene</link> for å "
+"sende inn en rapport på problemet."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1991
@@ -3099,6 +3243,9 @@ msgid ""
 "mode</errorname>, or <errorname>panic:</errorname>, and spits out a bunch of "
 "information. What should I do?"
 msgstr ""
+"Systemet mitt kræsjer med enten feilmelding <errorname>Fatal trap 12: page "
+"fault in kernel mode</errorname> eller <errorname>panic:</errorname> og "
+"viser meg en masse informasjon på skjermen. Hva gjør jeg?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1998
@@ -3110,6 +3257,12 @@ msgid ""
 "backtrace. This might sound difficult, but does not require any programming "
 "skills. Just follow the instructions."
 msgstr ""
+"FreeBSD-utviklerne er interessert i disse feilene, men trenger mer "
+"informasjon enn bare feilmeldingen. Kopier hele kræsjmeldingen. Deretter kan "
+"du se <acronym>OSS (FAQ)</acronym>-delen på <link linkend=\"kernel-panic-"
+"troubleshooting\">kernel panics</link>, bygge en feilsøkingskjerne, og få en "
+"backtrace. Dette kan høres vanskelig, men krever ingen programmeringsevner. "
+"Bare følg instruksjonene."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2011
@@ -3117,6 +3270,8 @@ msgid ""
 "What is the meaning of the error <errorname>maxproc limit exceeded by uid "
 "%i, please see tuning(7) and login.conf(5)</errorname>?"
 msgstr ""
+"Hva betyr feilmeldingen: <errorname>maxproc limit exceeded by uid %i, please "
+"see tuning(7) and login.conf(5)</errorname>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2017
