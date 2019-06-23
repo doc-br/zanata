@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-15 06:31+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2019-06-23 07:27+0000\n"
+"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -31,21 +31,22 @@ msgstr "CUPS no FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\n"
 "\t    <email>chess@chessgriffin.com</email>\n"
 "\t  "
-msgstr "<email>chess@chessgriffin.com</email>"
+msgstr "\n"
+"\t    <email>chess@chessgriffin.com</email>\n"
+"\t  "
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:8
-#, fuzzy
 msgid ""
 "<personname> <firstname>Chess</firstname> <surname>Griffin</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
-"<personname><firstname>Chess</firstname><surname>Griffin</surname></"
-"personname><affiliation> <_:address-1/> </affiliation>"
+"<personname> <firstname>Chess</firstname> <surname>Griffin</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
@@ -70,13 +71,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:31 article.translate.xml:33
-#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 52945 2019-04-19 14:"
 "54:27Z bcr $"
 msgstr ""
-"$FreeBSD: head/pt_BR.ISO8859-1/articles/cups/pt_BR.po 52214 2018-09-06 00:26:"
-"21Z ebrandi $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 52945 2019-04-19 14:"
+"54:27Z bcr $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:36
@@ -175,7 +175,6 @@ msgstr "<prompt>#</prompt> <userinput>pkg install cups</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
-#, fuzzy
 msgid ""
 "Other optional, but recommended, packages are <package>print/gutenprint</"
 "package> and <package>print/hplip</package>, both of which add drivers and "
@@ -183,8 +182,8 @@ msgid ""
 "application> configuration files can be found in the directory <filename>/"
 "usr/local/etc/cups</filename>."
 msgstr ""
-"Outros pacotes opcionais, mas recomendados, são o <package>print/gutenprint-"
-"cups</package> e o <package>print/hplip</package>, ambos adicionam drivers e "
+"Outros pacotes opcionais, mas recomendados, são o <package>print/gutenprint</"
+"package> e o <package>print/hplip</package>, ambos adicionam drivers e "
 "utilitários para uma variedade de impressoras. Uma vez instalados, os "
 "arquivos de configuração do <application>CUPS</application> podem ser "
 "encontrados no diretório <filename>/usr/local/etc/cups</filename>."
@@ -572,7 +571,6 @@ msgstr "Solução de problemas do CUPS"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:267
-#, fuzzy
 msgid ""
 "Difficulties with <application>CUPS</application> often lies in permissions. "
 "First, double check the <citerefentry><refentrytitle>devfs</"
@@ -594,7 +592,7 @@ msgid ""
 msgstr ""
 "A maior parte dos problemas que ocorrem com o <application>CUPS</"
 "application> estão geralmente associados a problemas de permissão. Primeiro, "
-"verifique novamente as permissões do <citerefentry><refentrytitle>devfs </"
+"verifique novamente as permissões do <citerefentry><refentrytitle>devfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> conforme descrito "
 "acima. Em seguida, verifique as permissões reais dos dispositivos criados no "
 "sistema de arquivos. Também é útil certificar-se de que seu usuário é membro "
