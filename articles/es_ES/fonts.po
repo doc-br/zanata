@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-27 09:10+0000\n"
+"PO-Revision-Date: 2019-06-27 02:23+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -554,6 +554,10 @@ msgid ""
 "the font file available and update the font name files. The "
 "<application>X11</application> font names look like:"
 msgstr ""
+"Ahora, pasar usar la fuente nueva con <application>X11</application>, debe "
+"hacer que el archivo de fuente esté disponible y actualizar el nombre de la "
+"fuente. Los nombres de las fuentes de <application>X11</application> son así:"
+""
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:344
@@ -574,16 +578,16 @@ msgid ""
 msgstr ""
 "-bitstream-charter-medium-r-normal-xxx-0-0-0-0-p-0-iso8859-1\n"
 "     |        |      |    |   |     |  | | | | | |    \\    \\\n"
-"     |        |      |    |   |     \\  \\ \\ \\ \\ \\ \\     +----+- "
-"character set\n"
-"     |        |      |    |   \\      \\  \\ \\ \\ \\ \\ +- average width\n"
-"     |        |      |    |    \\      \\  \\ \\ \\ \\ +- spacing\n"
-"     |        |      |    \\\t\\      \\  \\ \\ \\ +- vertical res.\n"
-"     |        |      |     \\\t \\\t\\  \\ \\ +- horizontal res.\n"
-"     |        |      |      \\\t  \\\t \\  \\ +- points\n"
-"     |        |      |       \\     \\\t  \\  +- pixels\n"
+"     |        |      |    |   |     \\  \\ \\ \\ \\ \\ \\     +----+- juego "
+"de caracteres\n"
+"     |        |      |    |   \\      \\  \\ \\ \\ \\ \\ +- ancho promedio\n"
+"     |        |      |    |    \\      \\  \\ \\ \\ \\ +- espaciado\n"
+"     |        |      |    \\\t\\      \\  \\ \\ \\ +- resolución vertical.\n"
+"     |        |      |     \\\t \\\t\\  \\ \\ +- resolución horizontal.\n"
+"     |        |      |      \\\t  \\\t \\  \\ +- puntos\n"
+"     |        |      |       \\     \\\t  \\  +- píxeles\n"
 "     |        |      |        \\     \\\t   \\\n"
-"  foundry  family  weight   slant  width  additional style"
+"  empresa familia  densidad  inclinación anchura estilo adicional"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:357
@@ -595,6 +599,12 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> on the font file. For "
 "example:"
 msgstr ""
+"Es necesario crear un nombre nuevo para cada fuente. Si tiene alguna "
+"información de la documentación que acompaña a la fuente, podría servir como "
+"base para crear el nombre. Si no hay información, entonces puede hacerse una "
+"idea utilizando el comando <citerefentry><refentrytitle>strings</"
+"refentrytitle> <manvolnum>1</manvolnum></citerefentry> en la fuente Por "
+"ejemplo:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:364
@@ -655,7 +665,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:391
 msgid "Using this information, a possible name might be:"
-msgstr ""
+msgstr "Usando esta información, un nombre podría ser:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:394
@@ -666,32 +676,33 @@ msgstr "-type1-Showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1"
 #. (itstool) path: sect1/para
 #: article.translate.xml:397
 msgid "The components of our name are:"
-msgstr ""
+msgstr "Los componentes de nuestro nombre son:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:401
 msgid "Foundry"
-msgstr ""
+msgstr "Empresa"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:404
 msgid "Lets just name all the new fonts <literal>type1</literal>."
 msgstr ""
+"Vamos a nombrar todas las fuentes  nuevas como <literal>type1</literal>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:410
 msgid "Family"
-msgstr ""
+msgstr "Familia"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:413
 msgid "The name of the font."
-msgstr ""
+msgstr "El nombre de la fuente."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:418
 msgid "Weight"
-msgstr ""
+msgstr "Densidad"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:421
@@ -701,11 +712,15 @@ msgid ""
 "manvolnum></citerefentry> output above, it appears that this font has a "
 "weight of <emphasis>medium</emphasis>."
 msgstr ""
+"Normal, negrita, media, seminegrita, etc. Por el resultado anterior del "
+"comando <citerefentry><refentrytitle>strings</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, parece que esta fuente tiene una densidad "
+"<emphasis>media</emphasis>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:429
 msgid "Slant"
-msgstr ""
+msgstr "Inclinación"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:432
@@ -715,11 +730,15 @@ msgid ""
 "<emphasis>ItalicAngle</emphasis> is zero, <emphasis>roman</emphasis> will be "
 "used."
 msgstr ""
+"<emphasis remap=\"bf\">r</emphasis>oman, <emphasis remap=\"bf\">c</"
+"emphasis>ursiva, <emphasis remap=\"bf\">o</emphasis>blicua, etc. Dado que "
+"<emphasis>ItalicAngle</emphasis> es cero, se utilizará <emphasis>roman</"
+"emphasis>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:439
 msgid "Width"
-msgstr ""
+msgstr "Anchura"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:442
@@ -727,11 +746,13 @@ msgid ""
 "Normal, wide, condensed, extended, etc. Until it can be examined, the "
 "assumption will be <emphasis>normal</emphasis>."
 msgstr ""
+"Normal, ancha, condensada, extendida, etc. Hasta que pueda ser examinada, "
+"suponemos que será <emphasis>normal</emphasis>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:449
 msgid "Additional style"
-msgstr ""
+msgstr "Estilo adicional"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:452
@@ -739,11 +760,13 @@ msgid ""
 "Usually omitted, but this will indicate that the font contains decorative "
 "capital letters."
 msgstr ""
+"Generalmente se omite, pero esto indicará que la fuente contiene mayúsculas "
+"decorativas."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:458
 msgid "Spacing"
-msgstr ""
+msgstr "Espaciado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:461
@@ -756,7 +779,7 @@ msgstr ""
 #: article.translate.xml:475
 #, no-wrap
 msgid "…-normal-r-normal-…-p-…"
-msgstr ""
+msgstr "…-normal-r-normal-…-p-…"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:468
