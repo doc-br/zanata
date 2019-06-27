@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-22 06:20+0000\n"
+"PO-Revision-Date: 2019-06-27 09:10+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -360,11 +360,21 @@ msgid ""
 "made any attempt at using other <filename>.fnt</filename> files other than "
 "those provided with FreeBSD."
 msgstr ""
+"La extensión <filename>.fnt</filename> se utiliza con bastante frecuencia. "
+"Sospecho que cada vez que alguien quería crear un archivo de fuente "
+"especializado para su aplicación, la mayoría de las veces elegían esta "
+"extensión. Por lo tanto, es probable que los archivos con esta extensión, no "
+"todos tengan el mismo formato; en concreto, los archivos <filename>.fnt</"
+"filename> utilizados por syscons en FreeBSD pueden no tener el mismo formado "
+"que un archivo <filename>.fnt</filename> que se encuentre en el entorno "
+"<trademark class=\"registered\">MS-DOS</trademark>/<trademark class="
+"\"registered\">Windows</trademark>. No he intentado utilizar otros archivos "
+"<filename>.fnt</filename> que no sean los suministrados con FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:265
 msgid "Setting a Virtual Console to 80x60 Line Mode"
-msgstr ""
+msgstr "Configuración de una consola virtual en modo de línea 80x60"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:267
@@ -373,13 +383,17 @@ msgid ""
 "filename> should contain the line (change the font name to an appropriate "
 "one for your locale):"
 msgstr ""
+"En primer lugar, se debe cargar una fuente 8x8. Para ello, el archivo "
+"<filename>/etc/rc.conf</filename> debe tener la línea (cambie el nombre de "
+"la fuente a una apropiada para su región):"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:273
 #, no-wrap
 msgid "font8x8=\"iso-8x8\"\t\t# font 8x8 from /usr/share/syscons/fonts/* (or NO)."
 msgstr ""
-"font8x8=\"iso-8x8\"\t\t# font 8x8 from /usr/share/syscons/fonts/* (or NO)."
+"font8x8=\"iso-8x8\"\t\t# fuente 8x8 de /usr/share/syscons/fonts/* (o NO para "
+"cargar la fuente por defecto)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:276
@@ -388,6 +402,8 @@ msgid ""
 "<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>:"
 msgstr ""
+"El comando para cambiar el modo es <citerefentry><refentrytitle>vidcontrol</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:280
@@ -406,6 +422,13 @@ msgid ""
 "manvolnum></citerefentry>) they will correctly determine the new screen "
 "dimensions."
 msgstr ""
+"Varios programas screen-oriented, como <citerefentry><refentrytitle>vi</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, deben ser capaces de "
+"determinar el tamaño actual de la pantalla. Esto se logra a través de una "
+"llamada de <command>ioctl</command> al controlador de la consola (como "
+"<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>), que determinará correctamente las nuevas "
+"dimensiones de la pantalla."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:289
@@ -414,6 +437,9 @@ msgid ""
 "scripts so it takes place when the system boots. To do this is add this line "
 "to <filename>/etc/rc.conf</filename>."
 msgstr ""
+"Para hacerlo más sencillo, puede incluir estos comandos en los scripts de "
+"inicio del sistema, para que se ejecuten cuando se inicie el sistema. Para "
+"hacerlo, agregue esta línea en el archivo <filename>/etc/rc.conf</filename>."
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:295
@@ -422,6 +448,8 @@ msgid ""
 "allscreens_flags=\"VGA_80x60\"\t# Set this vidcontrol mode for all virtual "
 "screens"
 msgstr ""
+"allscreens_flags=\"VGA_80x60\"\t# Establecer el modo vidcontrol para todas "
+"las pantallas virtuales"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:298
@@ -431,11 +459,15 @@ msgid ""
 "<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Referencias: <citerefentry><refentrytitle>rc.conf</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:302
 msgid "Using Type 1 Fonts with <application>X11</application>"
-msgstr ""
+msgstr "Usando fuentes Type 1 con <application>X11</application>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:305
@@ -447,6 +479,12 @@ msgid ""
 "its <application>X11</application> name by the contents of <filename>fonts."
 "dir</filename> in each directory."
 msgstr ""
+"<application>X11</application> puede utilizar tanto el formato  <filename>."
+"pfa</filename> como el formato <filename>.pfb</filename>. Las fuentes de "
+"<application>X11</application> se encuentran en varios subdirectorios por "
+"debajo de <filename>/usr/X11R6/lib/X11/fonts</filename>. Cada fuente es una "
+"referencia cruzada entre su nombre <application>X11</application> y el "
+"contenido del archivo <filename>fonts.dir</filename> en cada directorio."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:315
@@ -458,6 +496,12 @@ msgid ""
 "track of ones fonts without confusing them with the fonts that were "
 "originally provided. For example:"
 msgstr ""
+"Ya existe un directorio llamado <filename>Type1</filename>. La forma más "
+"directa de añadir una nueva fuente es ponerla en ese directorio. Una mejor "
+"forma sería colocar todas las fuentes nuevas en un directorio separado y "
+"utilizar un enlace simbólico a las fuentes adicionales. Esto permite "
+"identificar las fuentes sin confundir las que se suministraron originalmente."
+" Por ejemplo:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:324
@@ -483,6 +527,25 @@ msgid ""
 "<prompt>%</prompt> <userinput>echo showboat - InfoMagic CICA, Dec 1994, /"
 "fonts/atm/showboat &gt;&gt;INDEX</userinput>"
 msgstr ""
+"<lineannotation>Crear un directorio para contener los archivos de fuentes.</"
+"lineannotation>\n"
+"<prompt>%</prompt> <userinput>mkdir -p /usr/local/share/fonts/type1</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cd /usr/local/share/fonts/type1</userinput>\n"
+"\n"
+"<lineannotation>Coloque los archivos .pfa, .pfb y .afm aquí</lineannotation>\n"
+"<lineannotation>Se puede querer mantener los archivos readme, y otras "
+"documentaciones</lineannotation>\n"
+"<lineannotation>para las fuentes</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cp /cdrom/fonts/atm/showboat/showboat.pfb .</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>cp /cdrom/fonts/atm/showboat/showboat.afm .</"
+"userinput>\n"
+"\n"
+"<lineannotation>Mantenga un índice para la referencia cruzada de las "
+"fuentes</lineannotation>\n"
+"<prompt>%</prompt> <userinput>echo showboat - InfoMagic CICA, Dec 1994, /"
+"fonts/atm/showboat &gt;&gt;INDEX</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:338
@@ -509,6 +572,18 @@ msgid ""
 "     |        |      |        \\     \\\t   \\\n"
 "  foundry  family  weight   slant  width  additional style"
 msgstr ""
+"-bitstream-charter-medium-r-normal-xxx-0-0-0-0-p-0-iso8859-1\n"
+"     |        |      |    |   |     |  | | | | | |    \\    \\\n"
+"     |        |      |    |   |     \\  \\ \\ \\ \\ \\ \\     +----+- "
+"character set\n"
+"     |        |      |    |   \\      \\  \\ \\ \\ \\ \\ +- average width\n"
+"     |        |      |    |    \\      \\  \\ \\ \\ \\ +- spacing\n"
+"     |        |      |    \\\t\\      \\  \\ \\ \\ +- vertical res.\n"
+"     |        |      |     \\\t \\\t\\  \\ \\ +- horizontal res.\n"
+"     |        |      |      \\\t  \\\t \\  \\ +- points\n"
+"     |        |      |       \\     \\\t  \\  +- pixels\n"
+"     |        |      |        \\     \\\t   \\\n"
+"  foundry  family  weight   slant  width  additional style"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:357
@@ -551,6 +626,31 @@ msgid ""
 "/FontName /Showboat def\n"
 "--stdin--"
 msgstr ""
+"<prompt>%</prompt> <userinput>strings showboat.pfb | more</userinput>\n"
+"%!FontType1-1.0: Showboat 001.001\n"
+"%%CreationDate: 1/15/91 5:16:03 PM\n"
+"%%VMusage: 1024 45747\n"
+"% Generated by Fontographer 3.1\n"
+"% Showboat\n"
+" 1991 by David Rakowski.  Alle Rechte Vorbehalten.\n"
+"FontDirectory/Showboat known{/Showboat findfont dup/UniqueID known{dup\n"
+"/UniqueID get 4962377 eq exch/FontType get 1 eq and}{pop false}ifelse\n"
+"{save true}{false}ifelse}{false}ifelse\n"
+"12 dict begin\n"
+"/FontInfo 9 dict dup begin\n"
+" /version (001.001) readonly def\n"
+" /FullName (Showboat) readonly def\n"
+" /FamilyName (Showboat) readonly def\n"
+" /Weight (Medium) readonly def\n"
+" /ItalicAngle 0 def\n"
+" /isFixedPitch false def\n"
+" /UnderlinePosition -106 def\n"
+" /UnderlineThickness 16 def\n"
+" /Notice (Showboat\n"
+" 1991 by David Rakowski.  Alle Rechte Vorbehalten.) readonly def\n"
+"end readonly def\n"
+"/FontName /Showboat def\n"
+"--stdin--"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:391
@@ -561,7 +661,7 @@ msgstr ""
 #: article.translate.xml:394
 #, no-wrap
 msgid "-type1-Showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1"
-msgstr ""
+msgstr "-type1-Showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:397
