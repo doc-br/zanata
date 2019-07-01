@@ -7,6 +7,8 @@ task:
     SVVNREV: 53156
     DOCLANG: pt_BR.ISO8859-1
   setup_script:
+    - sed -i.bak -e 's,pkg+http://pkg.FreeBSD.org/\${ABI}/quarterly,pkg+http://pkg.FreeBSD.org/\${ABI}/latest,' /etc/pkg/FreeBSD.conf
+    - pkg upgrade -y
     - pkg install -y docproj git
     - svnlite checkout -r $SVVNREV https://svn.freebsd.org/doc/head freebsd-doc > /dev/null
     - git clone https://github.com/doc-br/freebsd-doc-br.git freebsd-doc-br
