@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-27 02:23+0000\n"
+"PO-Revision-Date: 2019-07-07 08:54+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -774,6 +774,8 @@ msgid ""
 "proportional or monospaced. <emphasis>Proportional</emphasis> is used since "
 "<emphasis>isFixedPitch</emphasis> is false."
 msgstr ""
+"proporcional o monoespaciado. La opción <emphasis>Proportional</emphasis> se "
+"usa cuando <emphasis>isFixedPitch</emphasis> es false."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:475
@@ -793,11 +795,19 @@ msgid ""
 "citerefentry> to examine it and adjust the name based on the appearance of "
 "the font."
 msgstr ""
+"Todos estos nombres son arbitrarios, pero uno debe tratar de ser compatible "
+"con las convenciones existentes. El nombre hace referencia a la fuente con "
+"posibles comodines del programa <application>X11</application>, por lo que "
+"el nombre elegido debe tener algún sentido. Simplemente puede comenzar a "
+"usar <_:informalexample-1/> como nombre, y luego usar <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xfontsel</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para examinarla y ajustar el nombre en función de la "
+"apariencia de la fuente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:483
 msgid "So, to complete our example:"
-msgstr ""
+msgstr "Con lo cual, para completar nuestro ejemplo:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:486
@@ -834,6 +844,36 @@ msgid ""
 "<lineannotation>Examine the new font</lineannotation>\n"
 "<prompt>%</prompt> <userinput>xfontsel -pattern -type1-*</userinput>"
 msgstr ""
+"<lineannotation>Haga que la fuente esté accesible para X11</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cd /usr/X11R6/lib/X11/fonts/Type1</userinput>\n"
+"<prompt>%</prompt> <userinput>ln -s /usr/local/share/fonts/type1/showboat."
+"pfb .</userinput>\n"
+"\n"
+"<lineannotation>Edite fonts.dir y fonts.scale, agregando la línea que "
+"describe la fuente\n"
+"e incrementando el número de fuentes que se encuentran en la primera línea.</"
+"lineannotation>\n"
+"<prompt>%</prompt> <userinput>ex fonts.dir\n"
+":1p\n"
+"25\n"
+":1c\n"
+"26\n"
+".\n"
+":$a\n"
+"showboat.pfb -type1-showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-"
+"1\n"
+".\n"
+":wq</userinput>\n"
+"\n"
+"<lineannotation>fonts.scale parece ser idéntico a fonts.dir…</"
+"lineannotation>\n"
+"<prompt>%</prompt> <userinput>cp fonts.dir fonts.scale</userinput>\n"
+"\n"
+"<lineannotation>Indique a X11 que las cosas han cambiado</lineannotation>\n"
+"<prompt>%</prompt> <userinput>xset fp rehash</userinput>\n"
+"\n"
+"<lineannotation>Examine la fuente nueva</lineannotation>\n"
+"<prompt>%</prompt> <userinput>xfontsel -pattern -type1-*</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:513
@@ -844,11 +884,16 @@ msgid ""
 "citerefentry>, <citetitle>The X Windows System in a Nutshell</citetitle>, "
 "<link xlink:href=\"http://www.ora.com/\">O'Reilly &amp; Associates</link>."
 msgstr ""
+"Referencias: <citerefentry vendor=\"xfree86\"><refentrytitle>xfontsel</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xset</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, <citetitle>The X Windows System in a Nutshell</citetitle>, "
+"<link xlink:href=\"http://www.ora.com/\">O'Reilly &amp; Associates</link>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:519
 msgid "Using Type 1 Fonts with Ghostscript"
-msgstr ""
+msgstr "Usando fuentes Type 1 con Ghostscript"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:521
@@ -861,6 +906,13 @@ msgid ""
 "the previous example, here is how to use it with <application>Ghostscript</"
 "application>:"
 msgstr ""
+"<application>Ghostscript</application> hace referencia a una fuente a travéz "
+"de su archivo <filename>Fontmap</filename>. Esto debe modificarse de manera "
+"similar al archivo <filename>fonts.dir</filename> de <application>X11</"
+"application>. <application>Ghostscript</application> puede usar los formatos "
+"<filename>.pfa</filename> y <filename>.pfb</filename>. Usando la fuente del "
+"ejemplo anterior, aquí hay una guía paso a paso sobre cómo usarla con "
+"<application>Ghostscript</application>:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:532
@@ -901,6 +953,40 @@ msgid ""
 "&gt;&gt;showpage, press &lt;return&gt; to continue&lt;&lt;\n"
 "GS&gt;<userinput>quit</userinput>"
 msgstr ""
+"<lineannotation>Coloque la fuente en el directorio de fuentes de "
+"Ghostscript</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cd /usr/local/share/ghostscript/fonts</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>ln -s /usr/local/share/fonts/type1/showboat."
+"pfb .</userinput>\n"
+"\n"
+"<lineannotation>Edite el archivo Fontmap para que Ghostscript esté al "
+"corriente de la fuente</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cd /usr/local/share/ghostscript/4.01</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>ex Fontmap\n"
+":$a\n"
+"/Showboat        (showboat.pfb) ; % From CICA /fonts/atm/showboat\n"
+".\n"
+":wq</userinput>\n"
+"\n"
+"<lineannotation>Use Ghostscript para examinar la fuente</lineannotation>\n"
+"<prompt>%</prompt> <userinput>gs prfont.ps</userinput>\n"
+"Aladdin Ghostscript 4.01 (1996-7-10)\n"
+"Copyright (C) 1996 Aladdin Enterprises, Menlo Park, CA.  All rights\n"
+"reserved.\n"
+"This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
+"Loading Times-Roman font from /usr/local/share/ghostscript/fonts/tir_____."
+"pfb...\n"
+" /1899520 581354 1300084 13826 0 done.\n"
+"GS&gt;<userinput>Showboat DoFont</userinput>\n"
+"Loading Showboat font from /usr/local/share/ghostscript/fonts/showboat.pfb..."
+"\n"
+" 1939688 565415 1300084 16901 0 done.\n"
+"&gt;&gt;showpage, press &lt;return&gt; to continue&lt;&lt;\n"
+"&gt;&gt;showpage, press &lt;return&gt; to continue&lt;&lt;\n"
+"&gt;&gt;showpage, press &lt;return&gt; to continue&lt;&lt;\n"
+"GS&gt;<userinput>quit</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:561
@@ -908,11 +994,13 @@ msgid ""
 "References: <filename>fonts.txt</filename> in the <application>Ghostscript 4."
 "01</application> distribution"
 msgstr ""
+"Referencias: consulte el archivo <filename>fonts.txt</filename> en la "
+"distribución  <application>4.01 de Ghostscript</application>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:566
 msgid "Using Type 1 Fonts with Groff"
-msgstr ""
+msgstr "Usando fuentes Type 1 con Groff"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:568
@@ -950,6 +1038,13 @@ msgid ""
 ".\n"
 ":wq</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cp /usr/src/gnu/usr.bin/groff/afmtodit/"
+"afmtodit.pl /tmp</userinput>\n"
+"<prompt>%</prompt> <userinput>ex /tmp/afmtodit.pl\n"
+":1c\n"
+"#!/usr/bin/perl -P-\n"
+".\n"
+":wq</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:598
@@ -1343,7 +1438,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:871
 msgid "Can TrueType Fonts be Used with Other Programs?"
-msgstr ""
+msgstr "¿Se pueden usar las fuentes TrueType con otros programas?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:873
@@ -1411,7 +1506,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:920
 msgid "Where Can Additional Fonts be Obtained?"
-msgstr ""
+msgstr "¿Dónde se pueden obtener fuentes adicionales?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:922
@@ -1420,16 +1515,19 @@ msgid ""
 "are share-ware. In addition many fonts are available in the <filename>x11-"
 "fonts/</filename> category in the ports collection"
 msgstr ""
+"Muchas fuentes están disponibles en Internet. Son totalmente gratuitas o "
+"shareware. Además, muchas fuentes están disponibles en la categoría de ports "
+"<filename>x11-fonts/</filename>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:929
 msgid "Additional Questions"
-msgstr ""
+msgstr "Preguntas adicionales"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:933
 msgid "What use are the <filename>.pfm</filename> files?"
-msgstr ""
+msgstr "¿Para qué sirven los archivos <filename>.pfm</filename>?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:937
@@ -1437,6 +1535,8 @@ msgid ""
 "Can one generate the <filename>.afm</filename> from a <filename>.pfa</"
 "filename> or <filename>.pfb</filename>?"
 msgstr ""
+"¿Se puede generar el archivo <filename>.afm</filename> desde un archivo "
+"<filename>.pfa</filename> o <filename>.pfb</filename>?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:943
@@ -1444,11 +1544,15 @@ msgid ""
 "How to generate the <application>groff</application> character mapping files "
 "for PostScript fonts with non-standard character names?"
 msgstr ""
+"¿Cómo generar los archivos de mapeo de caracteres <application>groff</"
+"application> para fuentes PostScript con nombres de caracteres no estándar?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:949
 msgid "Can xditview and devX?? devices be set up to access all the new fonts?"
 msgstr ""
+"¿Se pueden configurar los dispositivos xditview y devX para acceder a todas "
+"las fuentes nuevas?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:954
@@ -1457,3 +1561,5 @@ msgid ""
 "<application>Povray</application> and <application>Ghostscript</application>."
 ""
 msgstr ""
+"Sería bueno tener ejemplos del uso de fuentes TrueType con "
+"<application>Povray</application> y <application>Ghostscript</application>."
