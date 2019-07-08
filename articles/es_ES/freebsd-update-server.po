@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-07-07 02:44+0000\n"
+"PO-Revision-Date: 2019-07-08 08:31+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -109,6 +109,16 @@ msgid ""
 "providing a local mirror that will allow faster updates for a number of "
 "machines."
 msgstr ""
+"Este artículo describe cómo construir un <application>FreeBSD Update Server</"
+"application> propio. <link xlink:href=\"https://svnweb.freebsd.org/base/user/"
+"cperciva/freebsd-update-build/\">freebsd-update-server</link> está escrito "
+"por Colin Percival <email>cperciva@FreeBSD.org</email>, oficial de seguridad "
+"emérito de FreeBSD. Para los usuarios que piensan que es conveniente "
+"actualizar sus sistemas desde un servidor de actualizaciones oficial, crear "
+"su propio <application>FreeBSD Update Server</application> puede ayudar a "
+"ampliar la funcionalidad al admitir las versiones de FreeBSD modificadas "
+"manualmente o al proporcionar una réplica local que permita actualizaciones "
+"más rápidas para un número concreto de ordenadores."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:66
@@ -121,6 +131,8 @@ msgid ""
 "This article was subsequently printed at <link xlink:href=\"http://bsdmag."
 "org/magazine/1021-bsd-as-a-desktop\">BSD Magazine</link>."
 msgstr ""
+"Este artículo fue publicado posteriormente en <link xlink:href=\"http://"
+"bsdmag.org/magazine/1021-bsd-as-a-desktop\">BSD Magazine</link>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:73
@@ -140,6 +152,16 @@ msgid ""
 "article outlines the steps involved in creating an internal "
 "<application>FreeBSD Update Server</application>."
 msgstr ""
+"Los usuarios experimentados o administradores a menudo son responsables de "
+"múltiples máquinas o entornos. Entienden las complicadas demandas y los "
+"desafíos de mantener una infraestructura de este tipo. Ejecutar un "
+"<application>Servidor de actualizaciones de FreeBSD</application> facilita "
+"la implementación de parches de seguridad y software en las máquinas de "
+"pruebas seleccionadas antes de implementarlos en producción. Esto también "
+"significa que se pueden actualizar varios sistemas desde la red local en "
+"lugar de una conexión a Internet la cual sea potencialmente más lenta. Este "
+"artículo describe los pasos necesarios para crear un <application>servidor "
+"de actualizaciones de FreeBSD</application> propio."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:90
@@ -152,11 +174,13 @@ msgid ""
 "To build an internal <application>FreeBSD Update Server</application> some "
 "requirements should be met."
 msgstr ""
+"Para construir un <application>Servidor de actualizaciones de FreeBSD</"
+"application> propio se deben cumplir algunos requisitos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:98
 msgid "A running FreeBSD system."
-msgstr ""
+msgstr "Un sistema FreeBSD en ejecución."
 
 #. (itstool) path: note/para
 #: article.translate.xml:101
@@ -164,6 +188,9 @@ msgid ""
 "At a minimum, updates require building on a FreeBSD release greater than or "
 "equal to the target release version for distribution."
 msgstr ""
+"Como mínimo, las actualizaciones requieren que cree una versión de FreeBSD "
+"que sea mayor o igual a la versión de la versión de destino para la "
+"distribución."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
@@ -172,6 +199,9 @@ msgid ""
 "creation of updates for 7.1 and 7.2, but the exact space requirements may "
 "change from version to version."
 msgstr ""
+"Una cuenta de usuario con al menos 4 GB de espacio disponible. Esto "
+"permitirá la creación de actualizaciones para las versiones 7.1 y 7.2, los "
+"requisitos de espacio exactos pueden cambiar de una versión a otra."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:115
@@ -179,6 +209,9 @@ msgid ""
 "An <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> account on a remote machine to upload distributed updates."
 msgstr ""
+"Una cuenta con acceso <citerefentry><refentrytitle>ssh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> en una máquina remota "
+"para cargar las actualizaciones."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:120
@@ -189,6 +222,12 @@ msgid ""
 "consume a total amount of 4 GB, and the webserver space needed to distribute "
 "these updates is 2.6 GB."
 msgstr ""
+"Un servidor web, como <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
+"1/books/handbook/network-apache.html\">Apache</link>, con más de la mitad "
+"del espacio necesario para la compilación. Por ejemplo, las compilaciones de "
+"prueba para las versiones 7.1 y 7.2 utilizan una cantidad total de 4 GB, y "
+"el espacio del servidor web necesario para distribuir estas actualizaciones "
+"es de 2.6 GB."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:129
@@ -197,11 +236,14 @@ msgid ""
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Conocimientos básicos de shell scripting con la shell Bournel, "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
 msgid "Configuration: Installation &amp; Setup"
-msgstr ""
+msgstr "Configuración: Instalación  &amp; Configuración"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
@@ -211,6 +253,10 @@ msgid ""
 "installing <package>devel/subversion</package> and <package>security/"
 "ca_root_nss</package>, and execute:"
 msgstr ""
+"Descargue el software <link xlink:href=\"https://svnweb.freebsd.org/base/"
+"user/cperciva/freebsd-update-build/\"> freebsd-update-server</link> "
+"instalando <package>devel/subversion</package> y <package>security/"
+"ca_root_nss</package>, y ejecute:"
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:143
@@ -228,6 +274,8 @@ msgid ""
 "Update <filename>scripts/build.conf</filename> appropriately. It is sourced "
 "during all build operations."
 msgstr ""
+"Actualice el fichero <filename>scripts/build.conf</filename> apropiadamente. "
+"Se crea durante todas las operaciones de construcción (build)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:149
@@ -235,6 +283,8 @@ msgid ""
 "Here is the default <filename>build.conf</filename>, which should be "
 "modified to suit your environment."
 msgstr ""
+"Aquí está el archivo <filename>build.conf</filename> predeterminado, que "
+"debe ser modificado para adaptarse a su entorno."
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:153
@@ -264,11 +314,34 @@ msgid ""
 "# Directory into which files are uploaded\n"
 "MASTERDIR=update-master.freebsd.org<co xml:id=\"mstdir-id\"/>"
 msgstr ""
+"# Archivo de configuración principal para las actualizaciones de FreeBSD.\n"
+"# Los datos de configuración específicos de la versión están más abajo\n"
+"# en el árbol de scripts.\n"
+"\n"
+"# Localización de la cual bajar las releases\n"
+"export FTP=ftp://ftp2.freebsd.org/pub/FreeBSD/releases<co xml:id=\"ftp-id\"/"
+">\n"
+"\n"
+"# Plataforma del host\n"
+"export HOSTPLATFORM=`uname -m`\n"
+"\n"
+"# Host name a usar dentro de jails\n"
+"export BUILDHOSTNAME=${HOSTPLATFORM}-builder.daemonology.net<co xml:id="
+"\"buildhost-id\"/>\n"
+"\n"
+"# Localización de la clave SSH\n"
+"export SSHKEY=/root/.ssh/id_dsa<co xml:id=\"sshkey-id\"/>\n"
+"\n"
+"# Cuenta SSH en la cual se suben los archivos\n"
+"MASTERACCT=builder@wadham.daemonology.net<co xml:id=\"mstacct-id\"/>\n"
+"\n"
+"# Directorio en el cual se suben los archivos\n"
+"MASTERDIR=update-master.freebsd.org<co xml:id=\"mstdir-id\"/>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:176
 msgid "Parameters for consideration would be:"
-msgstr ""
+msgstr "Los parámetros a considerar son:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:180
@@ -280,6 +353,12 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility should work "
 "fine."
 msgstr ""
+"Esta es la ubicación desde donde se descargan las imágenes ISO (mediante la "
+"subrutina <function>fetchiso()</function> de <filename>scripts/build.subr</"
+"filename>). La ubicación configurada no se limita a URIs de FTP. Cualquier "
+"esquema URI compatible con la utilidad <citerefentry><refentrytitle>fetch</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> debería funcionar "
+"correctamente."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:187
@@ -289,6 +368,10 @@ msgid ""
 "and architecture-specific area at <filename>scripts/RELEASE/ARCHITECTURE/"
 "build.subr</filename> and applying local changes."
 msgstr ""
+"Las personalizaciones en <function>fetchiso()</function> se pueden instalar "
+"copiando el script predeterminado <filename>build.subr</filename> al área de "
+"releases y arquitectura específica en el directorio <filename>scripts/"
+"RELEASE/ARCHITECTURE/build.subr</filename>y aplicar los cambios locales."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:196
@@ -296,6 +379,8 @@ msgid ""
 "The name of the build host. This information will be displayed on updated "
 "systems when issuing:"
 msgstr ""
+"El nombre del host de compilación. Esta información se mostrará en los "
+"sistemas que estén actualizados cuando se ejecute el comando:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:199
@@ -312,6 +397,11 @@ msgid ""
 "be used as a fallback authentication method when <literal>SSHKEY</literal> "
 "is not defined."
 msgstr ""
+"La clave <application>SSH</application> para subir archivos al servidor de "
+"actualizaciones. Se puede crear un par de claves ejecutando el comando "
+"<command>ssh-keygen -t dsa</command>. Este parámetro es opcional; la "
+"autenticación por contraseña estándar se utilizará como método de "
+"autenticación de reserva cuando <literal>SSHKEY</literal> no esté definido."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:210
@@ -321,16 +411,21 @@ msgid ""
 "<application>SSH</application> and the appropriate steps for creating and "
 "using one."
 msgstr ""
+"La página del manual de <citerefentry><refentrytitle>ssh-keygen</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> contiene información "
+"más detallada sobre <application>SSH</application> y los pasos apropiados "
+"para crear y usar una clave."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:216
 msgid "Account for uploading files to the update server."
-msgstr ""
+msgstr "Cuenta para subir archivos al servidor de actualizaciones."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:220
 msgid "Directory on the update server where files are uploaded to."
 msgstr ""
+"Directorio en el servidor de actualización donde se subiran los archivos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:225
@@ -341,11 +436,16 @@ msgid ""
 "server for other architectures, the following steps outline the "
 "configuration changes needed for amd64:"
 msgstr ""
+"El archivo <filename>build.conf</filename> predeterminado incluido con el "
+"código fuente de <application>freebsd-update-server</application> es "
+"adecuado para compilar versiones i386 de FreeBSD. Como ejemplo de creación "
+"de un servidor de actualizaciones para otras arquitecturas, los siguientes "
+"pasos describen los cambios necesarios en la configuración para amd64:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:234
 msgid "Create a build environment for amd64:"
-msgstr ""
+msgstr "Cree un entorno de compilación para amd64:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:237
@@ -364,6 +464,10 @@ msgid ""
 "directory. The build configuration options for FreeBSD 7.2-RELEASE on amd64 "
 "should be similar to:"
 msgstr ""
+"Coloque el archivo <filename>build.conf</filename> en el directorio de "
+"compilación que acaba de crear. Las opciones de configuración de la "
+"compilación para FreeBSD 7.2-RELEASE en la arquitectura amd64 deberían de "
+"ser similares a:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:248
@@ -385,6 +489,21 @@ msgid ""
 "# EOL date\n"
 "export EOL=1275289200<co xml:id=\"eol-id\"/>"
 msgstr ""
+"# SHA256 hash de la imagen RELEASE de disc1.iso.\n"
+"export RELH="
+"1ea1f6f652d7c5f5eab7ef9f8edbed50cb664b08ed761850f95f48e86cc71ef5<co xml:id="
+"\"sha256-id\"/>\n"
+"\n"
+"# Componentes de world, source, y kernels\n"
+"export WORLDPARTS=\"base catpages dict doc games info manpages proflibs "
+"lib32\"\n"
+"export SOURCEPARTS=\"base bin contrib crypto etc games gnu include krb5  \\\n"
+"                lib libexec release rescue sbin secure share sys tools  \\\n"
+"                ubin usbin cddl\"\n"
+"export KERNELPARTS=\"generic\"\n"
+"\n"
+"# Fecha EOL\n"
+"export EOL=1275289200<co xml:id=\"eol-id\"/>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:264
@@ -394,6 +513,10 @@ msgid ""
 "within the respective <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
 "\">release announcement</link>."
 msgstr ""
+"La clave <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> utilizada para hacer el hash de la release "
+"deseada, se publica dentro del <link xlink:href=\"@@URL_RELPREFIX@@/releases/"
+"\">anuncio de la respetiva release.</link>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:270
@@ -405,6 +528,13 @@ msgid ""
 "the web site, using the <citerefentry><refentrytitle>date</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility, for example:"
 msgstr ""
+"Para generar el número \"End of Life\" para <filename>build.conf</filename>, "
+"consulte el \"Estimated EOL\" publicado en el <link xlink:href="
+"\"@@URL_RELPREFIX@@/security/security.html\">sitio web de seguridad de "
+"FreeBSD</link>. El valor de <literal>EOL</literal> se puede obtener de la "
+"fecha que figura en el sitio web, utilizando el comando "
+"<citerefentry><refentrytitle>date</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, por ejemplo:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:278
@@ -419,7 +549,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:286
 msgid "Building Update Code"
-msgstr ""
+msgstr "Compilando el código de actualización"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:288
@@ -429,6 +559,10 @@ msgid ""
 "used for approving builds. In this step, a passphrase will have to be "
 "supplied for the final creation of the signing key."
 msgstr ""
+"El primer paso es ejecutar <filename>scripts/make.sh</filename>. Esto creará "
+"algunos binarios, creará directorios y generará una clave RSA utilizada para "
+"aprobar las compilaciones. En este paso, se deberá proporcionar una "
+"contraseña para la creación de la clave de firma."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:294
@@ -484,11 +618,14 @@ msgid ""
 "Keep a note of the generated key fingerprint. This value is required in "
 "<filename>/etc/freebsd-update.conf</filename> for binary updates."
 msgstr ""
+"Guarde una copia de seguridad de la huella digital generada. Este valor es "
+"necesario en el archivo <filename>/etc/freebsd-update.conf</filename> para "
+"las actualizaciones binarias."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:320
 msgid "At this point, we are ready to stage a build."
-msgstr ""
+msgstr "En este punto, estamos listos para empezar el build."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:323
@@ -508,6 +645,8 @@ msgstr ""
 #: article.translate.xml:327
 msgid "What follows is a sample of an <emphasis>initial</emphasis> build run."
 msgstr ""
+"Lo que se muestra a continuación es un ejemplo de la ejecución "
+"<emphasis>inicial</emphasis> del build."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:330
@@ -740,7 +879,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:418
 msgid "Finally, the build completes."
-msgstr ""
+msgstr "Finalmente, el build termina."
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:420
@@ -779,6 +918,38 @@ msgid ""
 "# sh -e approve.sh amd64 7.2-RELEASE\n"
 "to sign the release."
 msgstr ""
+"Values of build stamps, excluding library archive headers:\n"
+"v1.2 (Aug 25 2009 00:40:36)\n"
+"v1.2 (Aug 25 2009 00:38:22)\n"
+"@(#)FreeBSD 7.2-RELEASE #0: Tue Aug 25 00:38:29 UTC 2009\n"
+"FreeBSD 7.2-RELEASE #0: Tue Aug 25 00:38:29 UTC 2009\n"
+"    root@server.myhost.com:/usr/obj/usr/src/sys/GENERIC\n"
+"7.2-RELEASE\n"
+"Mon Aug 24 23:55:25 UTC 2009\n"
+"Mon Aug 24 23:55:25 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"##### built by root@server.myhost.com on Tue Aug 25 00:16:15 UTC 2009\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"ntpq 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+" * Copyright (c) 1992-2009 The FreeBSD Project.\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"Mon Aug 24 23:55:40 UTC 2009\n"
+"Aug 25 2009\n"
+"ntpd 4.2.4p5-a Mon Aug 24 23:55:52 UTC 2009 (1)\n"
+"ntpdate 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+"ntpdc 4.2.4p5-a Mon Aug 24 23:55:53 UTC 2009 (1)\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Tue Aug 25 00:21:21 UTC 2009\n"
+"Mon Aug 24 23:46:47 UTC 2009\n"
+"\n"
+"FreeBSD/amd64 7.2-RELEASE initialization build complete.  Please\n"
+"review the list of build stamps printed above to confirm that\n"
+"they look sensible, then run\n"
+"# sh -e approve.sh amd64 7.2-RELEASE\n"
+"to sign the release."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:453
