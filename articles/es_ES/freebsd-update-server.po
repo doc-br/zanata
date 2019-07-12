@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-07-12 08:06+0000\n"
+"PO-Revision-Date: 2019-07-12 07:38+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -974,6 +974,11 @@ msgid ""
 "This will sign the release, and move components into a staging area suitable "
 "for uploading."
 msgstr ""
+"Aprobar el build si todo es correcto. Puede encontrar más información sobre "
+"cómo determinar si es correcto en el archivo <filename>USAGE</filename>. "
+"Ejecute <filename>scripts/approve.sh</filename>, como se indica. Esto "
+"firmará la release y moverá los componentes a un área de preparación "
+"adecuada para la subida."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:461
@@ -1020,6 +1025,8 @@ msgstr ""
 msgid ""
 "After the approval process is complete, the upload procedure may be started."
 msgstr ""
+"Una vez finalizado el proceso de aprobación, se puede iniciar el proceso de "
+"subida."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:476
@@ -1042,6 +1049,10 @@ msgid ""
 "changing to the public distributions directory for the target release and "
 "updating attributes of the <emphasis>uploaded</emphasis> file."
 msgstr ""
+"En caso de que se deban volver a subir las actualizaciones, esto se puede "
+"hacer cambiando al directorio de distribuciones públicas para la versión de "
+"destino y actualizando los atributos del archivo <emphasis>subido</emphasis>."
+""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:487
@@ -1067,6 +1078,12 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/network-apache.html\">Configuration of Apache "
 "servers</link> section in the Handbook."
 msgstr ""
+"Los archivos subidos deberán estar en el directorio raíz del servidor web "
+"para que las actualizaciones se distribuyan. La configuración exacta variará "
+"dependiendo del servidor web utilizado. Para el servidor web "
+"<application>Apache</application>, consulte la sección de <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/network-apache."
+"html\">configuración del servidor Apache</link> en el Handbook."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:523
@@ -1077,6 +1094,11 @@ msgid ""
 "ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html\">FreeBSD "
 "Update</link> section of the Handbook."
 msgstr ""
+"Actualice los archivos <literal>KeyPrint</literal> y <literal>ServerName</"
+"literal> en el archivo <filename>/etc/freebsd-update.conf</filename>, y "
+"realice las actualizaciones como se indica en la sección de <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/updating-upgrading-"
+"freebsdupdate.html\">actualización de FreeBSD</link> en el manual."
 
 #. (itstool) path: important/para
 #: article.translate.xml:539
@@ -1089,6 +1111,14 @@ msgid ""
 "updates will need to be built and uploaded to your distribution server for "
 "both versions."
 msgstr ""
+"Para que el <application>servidor de actualizaciones de FreeBSD</"
+"application> funcione correctamente, deben compilarse las actualizaciones "
+"tanto para la versión <emphasis>actual</emphasis> como para la "
+"<emphasis>versión a la que se desea actualizar</emphasis>. Esto es necesario "
+"para determinar las diferencias de archivos entre versiones. Por ejemplo, al "
+"actualizar un sistema FreeBSD de 7.1-RELEASE a 7.2-RELEASE, las "
+"actualizaciones deberán compilarse y subirse a su servidor de distribución "
+"para ambas versiones."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:550
@@ -1096,11 +1126,13 @@ msgid ""
 "For reference, the entire run of <link xlink:href=\"init."
 "txt\"><filename>init.sh</filename></link> is attached."
 msgstr ""
+"Como referencia, se adjunta toda la ejecución del script <link xlink:href="
+"\"init.txt\"><filename>init.sh</filename></link>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:555
 msgid "Building a Patch"
-msgstr ""
+msgstr "Compilar un parche"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:557
@@ -1110,26 +1142,34 @@ msgid ""
 "security/notices.html\">security notice</link> is announced, a patch update "
 "can be built."
 msgstr ""
+"Cada vez que se publica un <link xlink:href=\"@@URL_RELPREFIX@@/security/"
+"advisories.html\">security advisory</link> o un <link xlink:href="
+"\"@@URL_RELPREFIX@@/security/notices.html\">security notice</link>, se puede "
+"crear un parche de actualización."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:562
 msgid "For this example, 7.1-RELEASE will be used."
-msgstr ""
+msgstr "Para este ejemplo, se utilizará 7.1-RELEASE."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:564
 msgid "A couple of assumptions are made for a different release build:"
 msgstr ""
+"Para una versión de lanzamiento diferente, se da por hecho un par de "
+"suposiciones:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:569
 msgid "Setup the correct directory structure for the initial build."
 msgstr ""
+"Que ha configurado la estructura de directorios correcta para la compilación "
+"inicial."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:574
 msgid "Perform an initial build for 7.1-RELEASE."
-msgstr ""
+msgstr "Que ha realizado una compilación inicial para la versión 7.1-RELEASE."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:578
@@ -1137,6 +1177,8 @@ msgid ""
 "Create the patch directory of the respective release under <filename>/usr/"
 "local/freebsd-update-server/patches/</filename>."
 msgstr ""
+"Cree el directorio de parches para la versión correspondiente en <filename>/"
+"usr/local/freebsd-update-server/patches/</filename>."
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:582
@@ -1163,6 +1205,13 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/security-"
 "advisories.html\">FreeBSD Handbook</link>."
 msgstr ""
+"Como ejemplo, coja el parche para <citerefentry><refentrytitle>named</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Lea el advisory, y "
+"obtenta el archivo necesario de <link xlink:href=\"@@URL_RELPREFIX@@/"
+"security/advisories.html\">FreeBSD Security Advisories</link>. Puede "
+"encontrar más información sobre la interpretación del advisory en el <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/security-"
+"advisories.html\">Handbook de FreeBSD</link>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:592
@@ -1175,6 +1224,15 @@ msgid ""
 "chosen. For this build, let us follow the currently established practice of "
 "FreeBSD and call this <literal>p7</literal>. Rename the file:"
 msgstr ""
+"En el <link xlink:href=\"https://security.freebsd.org/advisories/FreeBSD-SA-"
+"09:12.bind.asc\">informe de seguridad</link>, este advisory se llama "
+"<literal>SA-09:12.bind</literal>. Después de descargar el archivo, es "
+"necesario cambiar el nombre del archivo a uno que indique el nivel adecuado "
+"del parche. Se sugiere mantener esto en consonancia con los niveles de los "
+"parches oficiales de FreeBSD, pero puede elegir libremente el nombre. Para "
+"esta compilación, sigamos la práctica establecida actualmente en FreeBSD y "
+"llamemosle <literal>p7</literal>. Renombre el archivo ejecutando el "
+"siguiente comando:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:602
@@ -1193,6 +1251,10 @@ msgid ""
 "place. When a patch build is run, it will run all patches contained in the "
 "patch directory."
 msgstr ""
+"Cuando se ejecuta la compilación del parche, se asume que los parches "
+"anteriores están en su sitio. Cuando se ejecute la compilación de los "
+"parches, se ejecutarán todos los parches que se encuentren en el directorio "
+"de parches."
 
 #. (itstool) path: note/para
 #: article.translate.xml:610
@@ -1200,6 +1262,8 @@ msgid ""
 "There can be custom patches added to any build. Use the number zero, or any "
 "other number."
 msgstr ""
+"Puede haber parches personalizados adjuntos a cualquier compilación. Usa el "
+"número cero, o cualquier otro número."
 
 #. (itstool) path: warning/para
 #: article.translate.xml:615
@@ -1208,6 +1272,9 @@ msgid ""
 "application> to take appropriate measures to verify the authenticity of "
 "every patch."
 msgstr ""
+"Es responsabilidad del administrador del <application>servidor de "
+"actualizaciones de FreeBSD</application> tomar las medidas adecuadas para "
+"verificar la autenticidad de cada parche."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:621
@@ -1216,6 +1283,10 @@ msgid ""
 "software checks first to see if a <filename>scripts/init.sh</filename> has "
 "been run on the respective release prior to running the diff build."
 msgstr ""
+"En este punto, el <emphasis>diff</emphasis> está listo para ser compilado. "
+"El software verifica primero si se ha ejecutado un <filename>scripts/init."
+"sh</filename> en la versión correspondiente antes de ejecutar la compilación."
+""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:627
