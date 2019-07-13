@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-07-13 08:25+0000\n"
+"PO-Revision-Date: 2019-07-13 09:40+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -130,13 +130,15 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:70
 msgid "After reading this article, you will know:"
-msgstr ""
+msgstr "Después de leer este artículo, sabrás:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:74
 msgid ""
 "How to reserve space for journaling during a new installation of FreeBSD."
 msgstr ""
+"Cómo reservar espacio para el journaling en una instalación nueva de FreeBSD."
+""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:79
@@ -144,6 +146,8 @@ msgid ""
 "How to load and enable the <literal>geom_journal</literal> module (or build "
 "support for it in your custom kernel)."
 msgstr ""
+"Cómo cargar y habilitar el módulo <literal>geom_journal</literal> (o añadir "
+"soporte en un kernel personalizado)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:84
@@ -155,17 +159,17 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:90
 msgid "How to implement journaling in new (empty) partitions."
-msgstr ""
+msgstr "Cómo implementar journaling en nuevas (vacías) particiones."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:94
 msgid "How to troubleshoot common problems associated with journaling."
-msgstr ""
+msgstr "Cómo resolver problemas asociados con el journaling."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:99
 msgid "Before reading this article, you should be able to:"
-msgstr ""
+msgstr "Antes de leer este artículo, debería poder:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:103
@@ -195,7 +199,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:124
 msgid "Understanding Journaling in FreeBSD"
-msgstr ""
+msgstr "Entendiendo el journaling en FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
@@ -206,6 +210,12 @@ msgid ""
 "block level. Though this means it can be applied to different file systems, "
 "for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
 msgstr ""
+"El journaling proporcionado por GEOM en FreeBSD 7.<replaceable>X</"
+"replaceable> no es específico del sistema de archivos (a diferencia del "
+"sistema de archivos ext3 en <trademark class=\"registered\">Linux</"
+"trademark>), se ejecuta a nivel de bloque. Aunque esto significa que se "
+"puede aplicar a diferentes sistemas de archivos, en FreeBSD 7.0-RELEASE, "
+"solo se puede usar en UFS2."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:132
@@ -217,6 +227,12 @@ msgid ""
 "usr</filename>. You will need however (see the following section) to reserve "
 "some free disk space."
 msgstr ""
+"Esta funcionalidad se proporciona al cargar el módulo <filename>geom_journal."
+"ko</filename> en el kernel (o añadirlo al compilar un kernel personalizado) "
+"y utilizando el comando <command>gjournal</command> para configurar los "
+"sistemas de archivos. En general, debería de añadir journal a los sistemas "
+"de archivos grandes, como <filename>/usr</filename>. Sin embargo, necesitará "
+"(consulte la siguiente sección) reservar algo de espacio libre en el disco."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:140
@@ -231,6 +247,16 @@ msgid ""
 "the <command>gjournal</command> command combines both providers to create "
 "the final journaled file system. For example:"
 msgstr ""
+"Cuando un sistema de archivos tiene journaling, se necesita algo de espacio "
+"en el disco para mantener el propio journaling. El espacio en disco que "
+"contiene los datos reales se conoce como <emphasis>data provider</emphasis>, "
+"mientras que el que contiene el journaling se conoce como <emphasis>journal "
+"provider</emphasis>. Los providers de data y journal deben estar en "
+"diferentes particiones cuando se hace journaling en una partición ya "
+"existente (que no esté vacía). Al hacer journaling en una partición nueva, "
+"tiene la opción de usar un solo provider para data y journal. En cualquier "
+"caso, el comando <command>gjournal</command> combina ambos providers para "
+"crear el sistema de archivos final, con el journaling. Por ejemplo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:153
@@ -238,6 +264,9 @@ msgid ""
 "You wish to journal your <filename>/usr</filename> file system, stored in "
 "<filename>/dev/ad0s1f</filename> (which already contains data)."
 msgstr ""
+"Si desea añadir journaling a su sistema de archivos <filename>/usr</"
+"filename>, almacenado en <filename>/dev/ad0s1f</filename> (que ya contiene "
+"datos)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:159
@@ -245,6 +274,8 @@ msgid ""
 "You reserved some free disk space in a partition in <filename>/dev/ad0s1g</"
 "filename>."
 msgstr ""
+"Ha reservado algo de espacio libre en la partición <filename>/dev/ad0s1g</"
+"filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:164
@@ -254,6 +285,11 @@ msgid ""
 "data provider, and <filename>/dev/ad0s1g</filename> is the journal provider. "
 "This new device is then used for all subsequent file operations."
 msgstr ""
+"Usando el comando <command>gjournal</command>, se crea un nuevo dispositivo "
+"<filename>/dev/ad0s1f.journal</filename> en el que <filename>/dev/ad0s1f</"
+"filename> es el data provider y <filename>/dev/ad0s1g</filename> es el "
+"journal provider. Este nuevo dispositivo se utiliza para todas las "
+"operaciones de ficheros posteriores."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
@@ -266,6 +302,14 @@ msgid ""
 "panic will occur if the journal space is exhausted before it has a chance to "
 "be committed."
 msgstr ""
+"La cantidad de espacio en disco que necesita reservar para el journal "
+"provider depende del uso del sistema de archivos y no del tamaño del data "
+"provider. Por ejemplo, un ordenador de oficina típico, con un journal "
+"provider de 1 GB para el sistema de archivos <filename>/usr</filename> será "
+"suficiente, mientras que un ordenador que haga un uso intensivo de E/S en el "
+"disco duro (por ejemplo, edición de video) podría necesitar más. Se "
+"producirá un kernel panic si el espacio del journal se agota antes de poder "
+"grabar los datos."
 
 #. (itstool) path: note/para
 #: article.translate.xml:182
@@ -278,6 +322,15 @@ msgid ""
 "create an approximately 3.3 GB journal provider. (Multiply your RAM size "
 "with 3.3 to obtain the size of the journal)."
 msgstr ""
+"Es muy poco probable que los tamaños de journaling sugeridos aquí causen "
+"problemas con el uso de un ordenador de escritorio típico (como la "
+"navegación web, el procesamiento de textos y la reproducción de archivos "
+"multimedia). Si con su trabajo se hace un uso intensivo del disco, use la "
+"siguiente regla para una máxima fiabilidad: el tamaño de la RAM debe "
+"ajustarse al 30% del espacio del journal provider. Por ejemplo, si su "
+"sistema tiene 1 GB de RAM, cree un journal provider de aproximadamente 3.3 "
+"GB. (Multiplique el tamaño total de su RAM por 3.3 para obtener el tamaño "
+"del journal)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:192
@@ -286,6 +339,9 @@ msgid ""
 "<citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Para obtener más información acerca del journaling, lea la página de manual "
+"de <citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:197
@@ -307,6 +363,14 @@ msgid ""
 "<filename>/usr</filename> is allocated the bulk of the disk space, since "
 "user data and a lot of packages are installed into its subdirectories."
 msgstr ""
+"Normalmente, un ordenador de escritorio típico tiene un disco duro donde se "
+"almacena el sistema operativo y los datos del usuario. Sin lugar a dudas, el "
+"esquema de partición predeterminado seleccionado por "
+"<application>sysinstall</application> es más o menos adecuado: un ordenador "
+"de escritorio no necesita una partición <filename>/var</filename> que tenga "
+"un gran tamaño, mientras que a <filename>/usr</filename> se le asigna la "
+"mayor parte del espacio en disco, ya que los datos del usuario y muchos "
+"paquetes están instalados en sus subdirectorios."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:210
@@ -318,6 +382,13 @@ msgid ""
 "filename> partition is the largest, it makes sense to shrink this partition "
 "slightly, to obtain the space required for journaling."
 msgstr ""
+"El particionado predeterminado (el que se obtiene al presionar la tecla "
+"<keycap>A</keycap> en el editor de particiones de FreeBSD, llamado "
+"<application>Disklabel</application>) no deja ningún espacio sin asignar. "
+"Cada partición en la que se active el journaling, requiere otra partición "
+"para el journal. Dado que la partición <filename>/usr</filename> es la más "
+"grande, tiene sentido reducir ligeramente esta partición para obtener el "
+"espacio necesario para el journaling."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:217
@@ -326,6 +397,9 @@ msgid ""
 "default partitions created by <application>Disklabel</application> during "
 "installation:"
 msgstr ""
+"En nuestro ejemplo, se utiliza un disco de 80 GB. La siguiente captura de "
+"pantalla muestra las particiones predeterminadas creadas por "
+"<application>Disklabel</application> durante la instalación:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -345,6 +419,10 @@ msgid ""
 "<filename>/usr</filename> partition and press <keycap>D</keycap> to delete "
 "it."
 msgstr ""
+"Si esto es más o menos lo que necesita, es muy fácil de hacerlo los ajusted "
+"para el journaling. Simplemente utilice las teclas de desplazamiento para "
+"mover la fila resaltada a la partición <filename>/usr</filename> y presione "
+"la tecla <keycap>D</keycap> para eliminarla."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:233
@@ -357,6 +435,14 @@ msgid ""
 "that appears, opt to create a file system, and type <filename>/usr</"
 "filename> as the mount point."
 msgstr ""
+"Ahora, mueva la fila resaltada al nombre del disco en la parte superior de "
+"la pantalla y presione la tecla <keycap>C</keycap> para crear una nueva "
+"partición para <filename>/usr</filename>. Esta nueva partición debe ser 1 GB "
+"más pequeña (si desea añadir journaling en <filename>/usr</filename> solo), "
+"o 2 GB (si desea añadir journaling tanto en <filename>/usr</filename> como "
+"en <filename>/var</filename>). Desde la ventana emergente, elija crear un "
+"sistema de archivos y escriba <filename>/usr</filename> como punto de "
+"montaje."
 
 #. (itstool) path: note/para
 #: article.translate.xml:243
@@ -367,6 +453,13 @@ msgid ""
 "will cause no harm. If the file system is lightly used (quite probable for a "
 "desktop) you may wish to allocate less disk space for its journal."
 msgstr ""
+"¿Debería añadir journaling a la partición <filename>/var</filename>? "
+"Normalmente, el journaling tiene sentido en particiones que sean bastante "
+"grandes. Puede decidir no añadir journaling a <filename>/var</filename>, "
+"hacerlo en un ordenador de escritorio no causará ningun daño. Si no se hace "
+"un uso intensivo del sistema de archivos (bastante probable para un "
+"ordenador de escritorio), es posible que desee asignar menos espacio en "
+"disco al journaling."
 
 #. (itstool) path: note/para
 #: article.translate.xml:250
@@ -374,6 +467,9 @@ msgid ""
 "In our example, we journal both <filename>/usr</filename> and <filename>/"
 "var</filename>. You may of course adjust the procedure to your own needs."
 msgstr ""
+"En nuestro ejemplo, añadimos journaling a las particiones <filename>/usr</"
+"filename> y <filename>/var</filename>. Por supuesto, puede ajustarlo a sus "
+"necesidades."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:255
@@ -387,6 +483,14 @@ msgid ""
 "emphasis>. These are not partitions that we are ever going to mount "
 "somewhere."
 msgstr ""
+"Para mantener las cosas lo más fácil posible, vamos a utilizar "
+"<application>sysinstall</application> para crear las particiones necesarias "
+"para el journaling. Sin embargo, durante la instalación, "
+"<application>sysinstall</application> insiste en pedir un punto de montaje "
+"para cada partición que cree. En este punto, no tiene ningún punto de "
+"montaje para las particiones que tendrán los journals, y en realidad, "
+"<emphasis>ni siquiera los necesita</emphasis>. Estas no son particiones que "
+"haya que montar."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:264
@@ -397,6 +501,12 @@ msgid ""
 "swap partitions as needed. After the first reboot, <filename>/etc/fstab</"
 "filename> will have to be edited, and the extra swap space entries removed."
 msgstr ""
+"Para evitar estos problemas con <application>sysinstall</application>, vamos "
+"a crear las particiones de journal como particiones swap. La partición swap "
+"no se monta nunca, y <application>sysinstall</application> no tiene "
+"problemas para crear tantas particiones swap como sea necesario. Después del "
+"primer reinicio, será necesario editar el archivo <filename>/etc/fstab</"
+"filename>, y eliminar las entradas swap."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:272
@@ -410,6 +520,15 @@ msgid ""
 "of <filename>/usr</filename> and <filename>/var</filename>. The final result "
 "is shown in the following screenshot:"
 msgstr ""
+"Para crear la partición swap, utilice las teclas de desplazamiento para "
+"mover la fila resaltada a la parte superior de la pantalla de "
+"<application>Disklabel</application> hasta que se resalte el nombre del "
+"disco. Luego presione la tecla <keycap>N</keycap>, introduzca el tamaño "
+"deseado (<replaceable>1024M</replaceable>) y seleccione <quote>swap space</"
+"quote> en el menú emergente. Repitalo para cada journal que quiera crear. En "
+"nuestro ejemplo, creamos dos particiones para proporcionar journal a "
+"<filename>/usr</filename> y <filename>/var</filename>. El resultado final se "
+"muestra en la siguiente captura de pantalla:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -430,6 +549,11 @@ msgid ""
 "mistakes that may damage your installation. The following table shows our "
 "notes for the sample configuration:"
 msgstr ""
+"Cuando haya terminado de crear las particiones, le sugerimos que anote los "
+"nombres de las particiones y los puntos de montaje para que pueda consultar "
+"facilmente esa información durante la fase de configuración. Esto ayudará a "
+"reducir los errores que puedan dañar su instalación. La siguiente tabla "
+"muestra nuestras notas para la configuración de ejemplo:"
 
 #. (itstool) path: table/title
 #: article.translate.xml:296
@@ -488,11 +612,14 @@ msgid ""
 "you postpone installation of third party software (packages) until you have "
 "completely setup journaling."
 msgstr ""
+"Continue con la instalación como lo haría normalmente. Sin embargo, le "
+"sugerimos que posponga la instalación de software (packages) de terceros "
+"hasta que haya configurado completamente el journaling."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:328
 msgid "Booting for the first time"
-msgstr ""
+msgstr "Arrancando por primera vez"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:330
@@ -503,12 +630,20 @@ msgid ""
 "the <quote>b</quote> suffix (i.e. ad0s1b in our example). Remove all other "
 "swap space entries and reboot so that FreeBSD will stop using them."
 msgstr ""
+"Su sistema se iniciará como lo haría normalmente, pero deberá editar el "
+"archivo <filename>/etc/fstab</filename> para eliminar las particiones swap "
+"que creó para los journals. Normalmente, la partición swap que usará es la "
+"que tiene el sufijo <quote>b</quote> (por ejemplo, ad0s1b en nuestro "
+"ejemplo). Elimine el reto de particiones swap y reinicie para que FreeBSD "
+"deje de utilizarlas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:337
 msgid ""
 "When the system comes up again, we will be ready to configure journaling."
 msgstr ""
+"Cuando el sistema vuelva a arrancar, entonces estaremos listos para "
+"configurar el journaling."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:343
