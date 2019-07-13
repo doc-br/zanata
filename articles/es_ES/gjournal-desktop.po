@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-07-12 10:40+0000\n"
+"PO-Revision-Date: 2019-07-13 08:25+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -290,12 +290,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:197
 msgid "Steps During the Installation of FreeBSD"
-msgstr ""
+msgstr "Pasos durante la instalación de FreeBSD"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:200
 msgid "Reserving Space for Journaling"
-msgstr ""
+msgstr "Reservando espacio para el journaling"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:202
@@ -335,7 +335,7 @@ msgstr ""
 #: article.translate.xml:223
 msgctxt "_"
 msgid "external ref='disklabel1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='disklabel1' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:227
@@ -419,7 +419,7 @@ msgstr ""
 #: article.translate.xml:285
 msgctxt "_"
 msgid "external ref='disklabel2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='disklabel2' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:289
@@ -434,52 +434,52 @@ msgstr ""
 #. (itstool) path: table/title
 #: article.translate.xml:296
 msgid "Partitions and Journals"
-msgstr ""
+msgstr "Particiones y journals"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:300
 msgid "Partition"
-msgstr ""
+msgstr "Partición"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:301
 msgid "Mount Point"
-msgstr ""
+msgstr "Punto de montaje"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:302
 msgid "Journal"
-msgstr ""
+msgstr "Journal"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:308
 msgid "ad0s1d"
-msgstr ""
+msgstr "ad0s1d"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:309
 msgid "/var"
-msgstr ""
+msgstr "/var"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:310
 msgid "ad0s1h"
-msgstr ""
+msgstr "ad0s1h"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:314
 msgid "ad0s1f"
-msgstr ""
+msgstr "ad0s1f"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:315
 msgid "/usr"
-msgstr ""
+msgstr "/usr"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:316
 msgid "ad0s1g"
-msgstr ""
+msgstr "ad0s1g"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:322
@@ -787,6 +787,7 @@ msgstr ""
 #: article.translate.xml:447
 msgid "After an unclean shutdown, the messages will vary slightly, i.e.:"
 msgstr ""
+"Después de un apagado forzoso, el mensaje variará ligeramente, por ejemplo:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:450
@@ -801,11 +802,15 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> used the information "
 "in the journal provider to return the file system to a consistent state."
 msgstr ""
+"Generalmente, esto significa que <citerefentry><refentrytitle>gjournal</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> usó la información del "
+"journal provider para devolver el sistema de archivos a un estado "
+"consistente."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:458
 msgid "Journaling Newly Created Partitions"
-msgstr ""
+msgstr "Añadiendo journaling a las nuevas particiones"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:460
@@ -817,6 +822,12 @@ msgid ""
 "<filename>/dev/ad1s1d</filename> was created. Creating the journal would be "
 "as simple as:"
 msgstr ""
+"Si bien el procedimiento anterior es necesario para las particiones con "
+"journaling que ya contengan datos, añadir journaling a una partición vacía "
+"es un poco más sencillo, ya que tanto los datos como el provider se pueden "
+"almacenar en la misma partición. Por ejemplo, supongamos que ha instalado un "
+"nuevo disco, y que ha creado una nueva partición, <filename>/dev/ad1s1d</"
+"filename>. Crear el journal sería tan simple como:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:467
@@ -833,12 +844,19 @@ msgid ""
 "Kilobytes, Megabytes or Gigabytes respectively. Note that <command>gjournal</"
 "command> will not allow you to create unsuitably small journal sizes."
 msgstr ""
+"Por defecto, el tamaño del journal es de 1GB. Puede ajustarlo utilizando la "
+"opción <option>-s</option>. El valor puede ser en bytes, o se puede añadir "
+"<literal>K</literal>, <literal>M</literal> o <literal>G</literal> para "
+"indicar Kilobytes, Megabytes o Gigabytes, respectivamente. Tenga en cuenta "
+"que <command>gjournal</command> no le permitirá crear un journal que sea "
+"pequeño e inadecuado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:476
 msgid ""
 "For example, to create a 2 GB journal, you could use the following command:"
 msgstr ""
+"Por ejemplo, para crear un journal de 2 GB, puede usar el siguiente comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:479
@@ -852,6 +870,8 @@ msgid ""
 "You can then create a file system on your new partition, and enable "
 "journaling using the <option>-J</option> option:"
 msgstr ""
+"Puede crear un sistema de archivos en su nueva partición y habilitar el "
+"journaling utilizando la opción <option>-J</option>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:484
