@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-07-13 09:40+0000\n"
+"PO-Revision-Date: 2019-07-14 08:00+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -90,6 +90,18 @@ msgid ""
 "journaling. This article explains how to implement UFS journaling on a "
 "typical desktop PC scenario."
 msgstr ""
+"Un sistema de archivos con journaling utiliza un log para registrar todas "
+"las transacciones que tienen lugar en el sistema de archivos y conserva su "
+"integridad en caso de un fallo del sistema o un corte de alimentación. "
+"Aunque existe la posibilidad de perder cambios que no hayan sido guardados "
+"en los archivos, el journaling elimina casi por completo la posibilidad de "
+"que el sistema de archivos se dañe debido a un cierre repentino. También "
+"minimiza el tiempo que lleva verificar el sistema de archivos después de un "
+"fallo. Aunque el sistema de archivos UFS empleado por FreeBSD no implementa "
+"el journaling en si mismo, la nueva clase journal del framework GEOM en "
+"FreeBSD 7.<replaceable>X</replaceable> se puede utilizar para proporcionar "
+"un journaling independiente del sistema de archivos. Este artículo explica "
+"cómo implementar el journaling UFS en un ordenador típico de escritorio."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:48
@@ -107,6 +119,16 @@ msgid ""
 "occasions, file system corruption reaches a point where user intervention is "
 "required and data may be lost."
 msgstr ""
+"Si bien es cierto que los servidores profesionales, generalmente, están bien "
+"protegidos contra las paradas imprevistas, un ordenador típico de escritorio "
+"está a merced de problemas con la energía, reinicios accidentales y otros "
+"incidentes relacionados con el usuario que pueden terminar en paradas "
+"abruptas del sistema. Las actualizaciones de software, generalmente, "
+"protegen el sistema de archivos de manera eficiente en tales casos, aunque "
+"en la mayoría de ocasiones se requiere una larga verificación en background. "
+"En raras ocasiones, la corrupción del sistema de archivos llega a un punto "
+"en el cual se requiere la intervención del usuario y podría producirse una "
+"perdida de datos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:59
@@ -116,6 +138,10 @@ msgid ""
 "checking, and ensuring that the file system is quickly restored to a "
 "consistent state."
 msgstr ""
+"La nueva función de journaling provista por GEOM puede ayudar en gran medida "
+"en esos escenarios, al eliminar, virtualmente, el tiempo requerido para la "
+"verificación del sistema de archivos, y garantizar que el sistema de "
+"archivos se restaure rápidamente a un estado consistente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:64
@@ -126,6 +152,11 @@ msgid ""
 "steps are simple enough and do not require overly complex interaction with "
 "the command line."
 msgstr ""
+"Este artículo describe un procedimiento para implementar UFS journaling en "
+"un escenario con un ordenador típico de escritorio (un solo disco duro "
+"utilizado para el sistema operativo y los datos). Debe seguirse durante una "
+"nueva instalación de FreeBSD. Los pasos son lo suficientemente simples y no "
+"requieren de un uso demasiado complejo de la línea de comandos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:70
@@ -155,6 +186,9 @@ msgid ""
 "How to convert your existing file systems to utilize journaling, and what "
 "options to use in <filename>/etc/fstab</filename> to mount them."
 msgstr ""
+"Cómo hacer que sus sistemas de archivos ya existentes utilicen journaling, y "
+"qué opciones usar en el archivo <filename>/etc/fstab</filename> para "
+"montarlos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:90
@@ -177,6 +211,8 @@ msgid ""
 "Understand basic <trademark class=\"registered\">UNIX</trademark> and "
 "FreeBSD concepts."
 msgstr ""
+"Comprender los conceptos básicos de <trademark class=\"registered\">UNIX</"
+"trademark> y FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:107
@@ -184,6 +220,8 @@ msgid ""
 "Be familiar with the installation procedure of FreeBSD and the "
 "<application>sysinstall</application> utility."
 msgstr ""
+"Estar familiarizado con el procedimiento de instalación de FreeBSD y la "
+"utilidad <application>sysinstall</application>."
 
 #. (itstool) path: warning/para
 #: article.translate.xml:113
@@ -195,6 +233,13 @@ msgid ""
 "Messing around with disks and partitions at a low level can lead to fatal "
 "mistakes and data loss."
 msgstr ""
+"El procedimiento descrito aquí está pensando en una nueva instalación en la "
+"que todavía no se han almacenado datos reales del usuario en el disco. "
+"Aunque puede modificar y ampliar ste procedimiento a sistemas que ya están "
+"en producción, antes de hacerlo, debe realizar una <emphasis>backup</"
+"emphasis> de todos los datos que sean importantes. Estar jugando con discos "
+"y particiones a bajo nivel puede provocar errores fatales y pérdida de datos."
+""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:124
