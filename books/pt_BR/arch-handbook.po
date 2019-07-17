@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-24 01:33+0000\n"
+"PO-Revision-Date: 2019-07-17 12:57+0000\n"
 "Last-Translator: kanazuchi <contato@kanazuchi.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -1566,7 +1566,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:971
-#, fuzzy
 msgid ""
 "<filename>boot1</filename> is the next step in the boot-loading sequence. It "
 "is the first of three boot stages. Note that we have been dealing "
@@ -1588,32 +1587,31 @@ msgid ""
 "filename> loads the first sector of the FreeBSD slice (512 bytes), it is "
 "actually loading <filename>boot1</filename> and transferring control to it."
 msgstr ""
-" <filename> boot1 </filename> � o pr�ximo passo na sequ�ncia de carregamento "
-"de inicializa��o. � o primeiro de tr�s est�gios de inicializa��o. Observe "
-"que estamos lidando exclusivamente com setores de disco. De fato, o "
+"<filename>boot1</filename> é o próximo passo na sequência de carregamento de "
+"inicialização. É o primeiro de três estágios de inicialização. Observe que "
+"estamos lidando exclusivamente com setores de disco. De fato, a "
 "<acronym>BIOS</acronym> carrega o primeiro setor absoluto, enquanto "
-"<filename> boot0 </filename> carrega o primeiro setor da fatia do FreeBSD. "
-"Ambas as cargas s�o para resolver <literal> 0x7c00 </literal> . Podemos "
+"<filename>boot0</filename> carrega o primeiro setor da fatia do FreeBSD. "
+"Ambas as carregamentos são para endereçar <literal>0x7c00</literal>. Podemos "
 "conceitualmente pensar nesses setores de disco como contendo os arquivos "
-"<filename> boot0 </filename> e <filename> boot1 </filename> , "
-"respectivamente, mas na realidade isso n�o � inteiramente verdade para "
-"<filename> boot1 </filename> . Estritamente falando, diferentemente "
-"<filename> boot0 </filename> , <filename> boot1 </filename> n�o faz parte "
-"dos blocos de inicializa��o <_: footnote-1 />. Em vez disso, um �nico "
-"arquivo completo, <filename> bota </filename> ( <filename> / boot / boot </"
-"filename> ), � o que finalmente � gravado em disco. Este arquivo � uma "
-"combina��o de <filename> boot1 </filename> , <filename> boot2 </filename> e "
-"a <literal> Extensor de Inicializa��o </literal> (ou <acronym>BTX</acronym> "
-"). Este arquivo �nico � maior em tamanho do que um �nico setor (maior que "
-"512 bytes). Felizmente, <filename> boot1 </filename> ocupa <emphasis> "
-"exatamente </emphasis> os primeiros 512 bytes deste arquivo �nico, ent�o "
-"quando <filename> boot0 </filename> carrega o primeiro setor da fatia do "
-"FreeBSD (512 bytes), ele est� realmente carregando <filename> boot1 </"
-"filename> e transferindo o controle para ele. "
+"<filename>boot0</filename> e <filename>boot1</filename>, respectivamente, "
+"mas na realidade isso não é inteiramente verdade para <filename>boot1</"
+"filename>. Estritamente falando, diferentemente de <filename>boot0</"
+"filename> , <filename>boot1</filename> não faz parte dos blocos de "
+"inicialização <_:footnote-1/>. Em vez disso, um único arquivo completo, "
+"<filename>boot</filename> (<filename>/boot/boot</filename>), é o que "
+"finalmente é gravado em disco. Este arquivo é uma combinação de "
+"<filename>boot1</filename> , <filename>boot2</filename> e o <literal>Boot "
+"Extender</literal> (ou <acronym>BTX</acronym>). Este arquivo único é maior "
+"em tamanho do que um único setor (maior que 512 bytes). Felizmente, "
+"<filename>boot1</filename> ocupa <emphasis>exatamente</emphasis> os "
+"primeiros 512 bytes deste arquivo único, então quando <filename>boot0</"
+"filename> carrega o primeiro setor da fatia do FreeBSD (512 bytes), ele está "
+"realmente carregando <filename>boot1</filename> e transferindo o controle "
+"para ele."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1005
-#, fuzzy
 msgid ""
 "The main task of <filename>boot1</filename> is to load the next boot stage. "
 "This next stage is somewhat more complex. It is composed of a server called "
@@ -1622,25 +1620,23 @@ msgid ""
 "<filename>loader</filename>, is also a client of the <acronym>BTX</acronym> "
 "server."
 msgstr ""
-"A principal tarefa de <filename> boot1 </filename> � carregar o pr�ximo "
-"est�gio de inicializa��o. Este pr�ximo est�gio � um pouco mais complexo. � "
-"composto por um servidor chamado <quote> Extensor de Inicializa��o </quote> "
-", ou <acronym>BTX</acronym> , e um cliente, chamado <filename> boot2 </"
-"filename> . Como veremos, o �ltimo est�gio de inicializa��o <filename> "
-"carregador </filename> � tamb�m um cliente do servidor <acronym>BTX</"
-"acronym> . "
+"A principal tarefa de <filename>boot1</filename> é carregar o próximo "
+"estágio de inicialização. Este próximo estágio é um pouco mais complexo. É "
+"composto por um servidor chamado <quote>Boot Extender</quote>, ou "
+"<acronym>BTX</acronym>, e um cliente, chamado <filename>boot2</filename> . "
+"Como veremos, o último estágio de inicialização <filename>loader</filename> "
+"é também um cliente do servidor <acronym>BTX</acronym>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1013
-#, fuzzy
 msgid ""
 "Let us now look in detail at what exactly is done by <filename>boot1</"
 "filename>, starting like we did for <filename>boot0</filename>, at its entry "
 "point:"
 msgstr ""
-"Vamos agora olhar em detalhes para o que exatamente � feito por <filename> "
-"boot1 </filename> , come�ando como fizemos para <filename> boot0 </filename> "
-", no seu ponto de entrada: "
+"Vamos agora olhar em detalhes para o que exatamente é feito por "
+"<filename>boot1</filename> , começando como fizemos para <filename>boot0</"
+"filename> , no seu ponto de entrada:"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1018 book.translate.xml:1029 book.translate.xml:1069
@@ -1659,14 +1655,13 @@ msgstr "start:\n"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1024
-#, fuzzy
 msgid ""
 "The entry point at <literal>start</literal> simply jumps past a special data "
 "area to the label <literal>main</literal>, which in turn looks like this:"
 msgstr ""
-"O ponto de entrada em <literal> come�ar </literal> simplesmente passa por "
-"uma �rea de dados especial para o r�tulo <literal> a Principal </literal> , "
-"que por sua vez se parece com isso: "
+"O ponto de entrada em <literal>start</literal> simplesmente passa por uma "
+"área de dados especial para o rótulo <literal>main</literal>, que por sua "
+"vez se parece com isso:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1031
@@ -1700,7 +1695,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1045
-#, fuzzy
 msgid ""
 "Just like <filename>boot0</filename>, this code relocates <filename>boot1</"
 "filename>, this time to memory address <literal>0x700</literal>. However, "
@@ -1709,16 +1703,15 @@ msgid ""
 "effectively where it was loaded in the first place. The reason for this "
 "relocation will be discussed shortly."
 msgstr ""
-"Assim como <filename> boot0 </filename> , este c�digo realoca <filename> "
-"boot1 </filename> , desta vez para endere�o de mem�ria <literal> 0x700 </"
-"literal> . No entanto, ao contr�rio <filename> boot0 </filename> , n�o salta "
-"para l�. <filename> boot1 </filename> est� ligado para executar no endere�o "
-"<literal> 0x7c00 </literal> , efetivamente onde foi carregado em primeiro "
-"lugar. A raz�o para essa realoca��o ser� discutida em breve. "
+"Assim como <filename>boot0</filename> , este código realoca <filename>boot1</"
+"filename>, desta vez para o endereço de memória <literal>0x700</literal> . "
+"No entanto, ao contrário de <filename>boot0</filename> , não salta para lá. "
+"<filename>boot1</filename> é lincado para executar no endereço "
+"<literal>0x7c00</literal> , efetivamente onde foi carregado em primeiro "
+"lugar. A razão para essa realocação será discutida em breve."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1058
-#, fuzzy
 msgid ""
 "Actually we did pass a pointer to the slice entry in register <literal>%si</"
 "literal>. However, <filename>boot1</filename> does not assume that it was "
@@ -1726,15 +1719,14 @@ msgid ""
 "acronym> loaded it, and did not pass this information), so it assumes "
 "nothing."
 msgstr ""
-"Na verdade n�s passamos um ponteiro para a entrada da fatia no registro "
-"<literal> %si </literal> . Contudo, <filename> boot1 </filename> n�o assume "
-"que foi carregado por <filename> boot0 </filename> (talvez algum outro "
-"<acronym>MBR tenha</acronym> carregado e n�o tenha passado essa informa��o), "
-"por isso n�o assume nada. "
+"Na verdade nós passamos um ponteiro para a entrada da fatia no registro "
+"<literal>%si</literal>. Contudo, <filename>boot1</filename> não assume que "
+"foi carregado por <filename>boot0</filename> (talvez algum outro "
+"<acronym>MBR</acronym> tenha carregado e não tenha passado essa informação), "
+"por isso não assume nada."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1054
-#, fuzzy
 msgid ""
 "Next comes a loop that looks for the FreeBSD slice. Although "
 "<filename>boot0</filename> loaded <filename>boot1</filename> from the "
@@ -1742,12 +1734,12 @@ msgid ""
 "so <filename>boot1</filename> must rescan the partition table to find where "
 "the FreeBSD slice starts. Therefore it rereads the <acronym>MBR</acronym>:"
 msgstr ""
-"Em seguida vem um loop que procura a fatia do FreeBSD. Embora <filename> "
-"boot0 </filename> carregado <filename> boot1 </filename> do slice do "
-"FreeBSD, nenhuma informa��o foi passada para ele sobre isso <_: footnote-1 /"
-">, ent�o <filename> boot1 </filename> deve varrer novamente a tabela de "
-"parti��es para encontrar onde o slice do FreeBSD � iniciado. Por isso, rel� "
-"o <acronym>MBR</acronym> : "
+"Em seguida vem um loop que procura a fatia do FreeBSD. Embora "
+"<filename>boot0</filename> carregue <filename>boot1</filename> da fatia do "
+"FreeBSD, nenhuma informação foi passada para ele sobre isso <_:footnote-1/>, "
+"então <filename>boot1</filename> deve varrer novamente a tabela de partições "
+"para encontrar onde a fatia do FreeBSD iniciou. Por isso, releia o "
+"<acronym>MBR</acronym>: "
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1071
@@ -1815,7 +1807,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1103
-#, fuzzy
 msgid ""
 "In particular, the <acronym>LBA</acronym> for this fake partition is "
 "hardcoded to zero. This is used as an argument to the <acronym>BIOS</"
@@ -1823,17 +1814,16 @@ msgid ""
 "CHS addressing could be used. In this case, the fake partition holds "
 "cylinder 0, head 0 and sector 1, which is equivalent to absolute sector one."
 msgstr ""
-"Em particular, o <acronym>LBA</acronym> para essa parti��o falsa � "
-"codificado para zero. Isso � usado como um argumento para o <acronym>BIOS</"
-"acronym> para ler o setor absoluto do disco r�gido. Alternativamente, o "
-"endere�amento CHS pode ser usado. Nesse caso, a parti��o falsa mant�m "
-"cilindro 0, cabe�a 0 e setor 1, o que equivale ao setor absoluto um. "
+"Em particular, o <acronym>LBA</acronym> para essa partição falsa é "
+"codificado para zero. Isso é usado como um argumento para a <acronym>BIOS</"
+"acronym> para ler o setor absoluto do disco rigido. Alternativamente, o "
+"endereçamento CHS pode ser usado. Nesse caso, a partição falsa mantém "
+"cilindro 0, cabeça 0 e setor 1, o que equivale ao setor absoluto um."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1110
-#, fuzzy
 msgid "Let us now proceed to take a look at <literal>nread</literal>:"
-msgstr "Vamos agora dar uma olhada <literal> nread </literal> : "
+msgstr "Vamos agora dar uma olhada em <literal>nread</literal>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1116
@@ -1857,13 +1847,11 @@ msgstr ""
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1128
-#, fuzzy
 msgid "In the context of 16-bit real mode, a word is 2 bytes."
-msgstr "No contexto do modo real de 16 bits, uma palavra � de 2 bytes."
+msgstr "No contexto do modo real de 16 bits, uma palavra é de 2 bytes."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1125
-#, fuzzy
 msgid ""
 "Recall that <literal>%si</literal> points to the fake partition. The word <_:"
 "footnote-1/> at offset <literal>0x8</literal> is copied to register "
@@ -1878,31 +1866,29 @@ msgid ""
 "server, also uses <literal>xread.1</literal>. This mechanism will be "
 "discussed in the next section."
 msgstr ""
-"Lembre-se que <literal> %si </literal> aponta para a parti��o falsa. A "
-"palavra <_: footnote-1 /> no deslocamento <literal> 0x8 </literal> � copiado "
-"para registrar <literal> %machado </literal> e palavra no deslocamento "
-"<literal> 0xa </literal> para <literal> % cx </literal> . Eles s�o "
-"interpretados pelo <acronym>BIOS</acronym> como o valor inferior de 4 bytes "
-"que indica o LBA a ser lido (os quatro bytes superiores s�o considerados "
-"como zero). registo <literal> % bx </literal> mant�m o endere�o de mem�ria "
-"onde o <acronym>MBR</acronym> ser� carregado. A instru��o empurrando "
-"<literal> % cs </literal> na pilha � muito interessante. Neste contexto, n�o "
-"realiza nada. No entanto, como veremos em breve, <filename> boot2 </"
-"filename> , em conjunto com o servidor <acronym>BTX</acronym> , tamb�m usa "
-"<literal> xread.1 </literal> . Esse mecanismo ser� discutido na pr�xima "
-"se��o. "
+"Lembre-se que <literal>%si</literal> aponta para a partição falsa. A palavra "
+"<_:footnote-1/> no offset <literal>0x8</literal> é copiada para o "
+"registrador <literal>%ax</literal> e palavra no offset <literal>0xa</"
+"literal> para <literal>%cx</literal> . Eles são interpretados pela "
+"<acronym>BIOS</acronym> como o valor inferior de 4 bytes que indica o LBA a "
+"ser lido (os quatro bytes superiores são considerados como zero). "
+"Registrador <literal>%bx</literal> mantém o endereço de memória onde o "
+"<acronym>MBR</acronym> será carregado. A instrução pushing <literal>%cs</"
+"literal> na pilha é muito interessante. Neste contexto, não realiza nada. No "
+"entanto, como veremos em breve, <filename>boot2</filename> , em conjunto com "
+"o servidor <acronym>BTX</acronym> , também usa <literal>xread.1</literal> . "
+"Esse mecanismo será discutido na próxima seção."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1144
-#, fuzzy
 msgid ""
 "The code at <literal>xread.1</literal> further calls the <literal>read</"
 "literal> function, which actually calls the <acronym>BIOS</acronym> asking "
 "for the disk sector:"
 msgstr ""
-"O c�digo em <literal> xread.1 </literal> ainda chama o <literal> ler </"
-"literal> fun��o, que realmente chama o <acronym>BIOS</acronym> pedindo o "
-"setor de disco: "
+"O código em <literal>xread.1</literal> ainda chama a função <literal>read</"
+"literal>, que realmente chama a <acronym>BIOS</acronym> pedindo o setor de "
+"disco:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1151
@@ -1940,25 +1926,23 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1167
-#, fuzzy
 msgid ""
 "Note the long return instruction at the end of this block. This instruction "
 "pops out the <literal>%cs</literal> register pushed by <literal>nread</"
 "literal>, and returns. Finally, <literal>nread</literal> also returns."
 msgstr ""
-"Observe a instru��o de retorno longo no final deste bloco. Esta instru��o "
-"mostra a <literal> % cs </literal> registrar empurrado por <literal> nread </"
-"literal> e retorna. Finalmente, <literal> nread </literal> tamb�m retorna. "
+"Observe a instrução de retorno longa no final deste bloco. Esta instrução "
+"mostra o registrador <literal>%cs</literal> pego por <literal>nread</"
+"literal> e retorna. Finalmente, <literal>nread</literal> também retorna."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1172
-#, fuzzy
 msgid ""
 "With the <acronym>MBR</acronym> loaded to memory, the actual loop for "
 "searching the FreeBSD slice begins:"
 msgstr ""
-"Com o <acronym>MBR</acronym> carregado na mem�ria, o loop real para procurar "
-"a fatia do FreeBSD come�a:"
+"Com o <acronym>MBR</acronym> carregado na memória, o loop real para procurar "
+"a fatia do FreeBSD começa:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1178
@@ -2002,7 +1986,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1197
-#, fuzzy
 msgid ""
 "If a FreeBSD slice is identified, execution continues at <literal>main.5</"
 "literal>. Note that when a FreeBSD slice is found <literal>%si</literal> "
@@ -2010,12 +1993,12 @@ msgid ""
 "literal> holds the partition number. We assume that a FreeBSD slice is "
 "found, so we continue execution at <literal>main.5</literal>:"
 msgstr ""
-"Se uma fatia do FreeBSD for identificada, a execu��o continua em <literal> "
-"main.5 </literal> . Note que quando uma fatia do FreeBSD � encontrada "
-"<literal> %si </literal> aponta para a entrada apropriada na tabela de "
-"parti��es e <literal> % dh </literal> mant�m o n�mero da parti��o. N�s "
-"assumimos que uma fatia do FreeBSD � encontrada, ent�o continuamos a "
-"execu��o em <literal> main.5 </literal> : "
+"Se uma fatia do FreeBSD for identificada, a execução continua em "
+"<literal>main.5</literal> . Note que quando uma fatia do FreeBSD é "
+"encontrada <literal>%si</literal> aponta para a entrada apropriada na tabela "
+"de partições e <literal>%dh</literal> mantém o número da partição. Nós "
+"assumimos que uma fatia do FreeBSD é encontrada, então continuamos a "
+"execução em <literal>main.5</literal>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1207
@@ -2049,7 +2032,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1221
-#, fuzzy
 msgid ""
 "Recall that at this point, register <literal>%si</literal> points to the "
 "FreeBSD slice entry in the <acronym>MBR</acronym> partition table, so a call "
@@ -2062,17 +2044,16 @@ msgid ""
 "but <filename>/boot/boot</filename>. Let us look at the size of these files "
 "in the filesystem:"
 msgstr ""
-"Lembre-se que neste momento, registre <literal> %si </literal> aponta para a "
-"entrada de fatia do FreeBSD na <acronym>tabela de</acronym> parti��o "
-"<acronym>MBR</acronym> , ent�o uma chamada para <literal> nread </literal> "
-"efetivamente ler� setores no in�cio desta parti��o. O argumento passou no "
-"registro <literal> % dh </literal> conta <literal> nread </literal> para ler "
-"16 setores de disco. Lembre-se que os primeiros 512 bytes, ou o primeiro "
-"setor da fatia do FreeBSD, coincide com o <filename> boot1 </filename> "
-"programa. Lembre-se tamb�m que o arquivo gravado no in�cio da fatia do "
-"FreeBSD n�o � <filename> / boot / boot1 </filename> , mas <filename> / boot /"
-" boot </filename> . Vamos ver o tamanho desses arquivos no sistema de "
-"arquivos: "
+"Lembre-se que neste momento, o registrador <literal>%si</literal> aponta "
+"para a entrada da fatia do FreeBSD na tabela de partição <acronym>MBR</"
+"acronym> , então uma chamada para <literal>nread</literal> efetivamente lerá "
+"setores no início desta partição. O argumento passou no registrador "
+"<literal>%dh</literal> diz ao <literal>nread</literal> para ler 16 setores "
+"de disco. Lembre-se que os primeiros 512 bytes, ou o primeiro setor da fatia "
+"do FreeBSD, coincide com o programa <filename>boot1</filename>. Lembre-se "
+"também que o arquivo gravado no início da fatia do FreeBSD não é <filename>/"
+"boot/boot1</filename> , mas <filename>/boot/boot</filename> . Vamos ver o "
+"tamanho desses arquivos no sistema de arquivos:"
 
 #. (itstool) path: sect1/screen
 #. (itstool) id: book.translate.xml#boot-boot1-filesize
@@ -2091,7 +2072,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1239
-#, fuzzy
 msgid ""
 "Both <filename>boot0</filename> and <filename>boot1</filename> are 512 bytes "
 "each, so they fit <emphasis>exactly</emphasis> in one disk sector. "
@@ -2108,32 +2088,29 @@ msgid ""
 "filename> into a single <filename>boot</filename> is merely <command>cat "
 "boot1 boot2 &gt; boot</command>."
 msgstr ""
-"Ambos <filename> boot0 </filename> e <filename> boot1 </filename> s�o 512 "
-"bytes cada, ent�o eles se encaixam <emphasis> exatamente </emphasis> em um "
-"setor de disco. <filename> boot2 </filename> � muito maior, mantendo tanto o "
-"servidor <acronym>BTX</acronym> quanto o <filename> boot2 </filename> "
-"cliente. Finalmente, um arquivo chamado simplesmente <filename> bota </"
-"filename> � 512 bytes maior que <filename> boot2 </filename> . Este arquivo "
-"� uma concatena��o de <filename> boot1 </filename> e <filename> boot2 </"
-"filename> . Como j� foi dito, <filename> boot0 </filename> � o arquivo "
-"gravado no primeiro setor de disco absoluto (o <acronym>MBR</acronym> ) e "
-"<filename> bota </filename> � o arquivo escrito no primeiro setor da fatia "
-"do FreeBSD; <filename> boot1 </filename> e <filename> boot2 </filename> "
-"estamos <emphasis> n�o </emphasis> escrito em disco. O comando usado para "
-"concatenar <filename> boot1 </filename> e <filename> boot2 </filename> em um "
-"�nico <filename> bota </filename> � meramente <command> gato boot1 boot2&gt; "
-"boot </command> "
+"Ambos <filename>boot0</filename> e <filename>boot1</filename> são 512 bytes "
+"cada, então eles se encaixam <emphasis>exatamente</emphasis> em um setor de "
+"disco. <filename>boot2</filename> é muito maior, mantendo tanto o servidor "
+"<acronym>BTX</acronym> quanto o cliente <filename>boot2</filename>. "
+"Finalmente, um arquivo chamado simplesmente de <filename>boot</filename> é "
+"512 bytes maior que <filename>boot2</filename> . Este arquivo é uma "
+"concatenação de <filename>boot1</filename> e <filename>boot2</filename> . "
+"Como já foi dito, <filename>boot0</filename> é o arquivo gravado no primeiro "
+"setor de disco absoluto (o <acronym>MBR</acronym>) e <filename>boot</"
+"filename> é o arquivo escrito no primeiro setor da fatia do FreeBSD; "
+"<filename>boot1</filename> e <filename>boot2</filename> <emphasis>não</"
+"emphasis> são escritos em disco. O comando usado para concatenar "
+"<filename>boot1</filename> e <filename>boot2</filename> em um único "
+"<filename>boot</filename> é meramente <command>cat boot1 boot2&gt; boot</"
+"command>."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1266
-#, fuzzy
 msgid "512*16=8192 bytes, exactly the size of <filename>boot</filename>"
-msgstr ""
-"512 * 16 = 8192 bytes, exatamente o tamanho de <filename> bota </filename> "
+msgstr "512*16=8192 bytes, exatamente o tamanho de <filename>boot</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1258
-#, fuzzy
 msgid ""
 "So <filename>boot1</filename> occupies exactly the first 512 bytes of "
 "<filename>boot</filename> and, because <filename>boot</filename> is written "
@@ -2144,33 +2121,30 @@ msgid ""
 "about how <filename>boot</filename> is formed from <filename>boot1</"
 "filename> and <filename>boot2</filename> in the next section."
 msgstr ""
-"Assim <filename> boot1 </filename> ocupa exatamente os primeiros 512 bytes "
-"de <filename> bota </filename> e porque <filename> bota </filename> � "
-"escrito para o primeiro setor da fatia do FreeBSD, <filename> boot1 </"
-"filename> cabe exatamente neste primeiro setor. Porque <literal> nread </"
-"literal> l� os primeiros 16 setores da fatia do FreeBSD, l� efetivamente "
-"toda a <filename> bota </filename> arquivo<_: nota de rodap�-1 />. Vamos ver "
-"mais detalhes sobre como <filename> bota </filename> � formado a partir de "
-"<filename> boot1 </filename> e <filename> boot2 </filename> na pr�xima se��o."
-" "
+"Assim <filename>boot1</filename> ocupa exatamente os primeiros 512 bytes de "
+"<filename>boot</filename> e porque <filename>boot</filename> é escrito para "
+"o primeiro setor da fatia do FreeBSD, <filename>boot1</filename> cabe "
+"exatamente neste primeiro setor. Porque <literal>nread</literal> lê os "
+"primeiros 16 setores da fatia do FreeBSD, lê efetivamente toda o arquivo "
+"<filename>boot</filename> <_:footnote-1/>. Vamos ver mais detalhes sobre "
+"como <filename>boot</filename> é formado a partir de <filename>boot1</"
+"filename> e <filename>boot2</filename> na próxima seção."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1282
-#, fuzzy
 msgid ""
 "Historically known as <quote>disklabel</quote>. If you ever wondered where "
 "FreeBSD stored this information, it is in this region. See "
 "<citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
-"Historicamente conhecido como <quote> disklabel </quote> . Se voc� j� se "
-"perguntou onde o FreeBSD armazenou esta informa��o, est� nesta regi�o. Vejo "
-"<citerefentry><refentrytitle> bsdlabel </refentrytitle><manvolnum> 8 </"
-"manvolnum></citerefentry> "
+"Historicamente conhecido como <quote>disklabel</quote> . Se você já se "
+"perguntou onde o FreeBSD armazenou esta informação, está nesta região. Veja "
+"<citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1272
-#, fuzzy
 msgid ""
 "Recall that <literal>nread</literal> uses memory address <literal>0x8c00</"
 "literal> as the transfer buffer to hold the sectors read. This address is "
@@ -2180,18 +2154,17 @@ msgid ""
 "<literal>0x8e00</literal>-<literal>0x8fff</literal>) is used to store the "
 "<emphasis>bsdlabel</emphasis> <_:footnote-1/>."
 msgstr ""
-"Lembre-se que <literal> nread </literal> usa endere�o de mem�ria <literal> "
-"0x8c00 </literal> como o buffer de transfer�ncia para manter os setores "
-"lidos. Este endere�o � convenientemente escolhido. De fato, porque "
-"<filename> boot1 </filename> pertence aos primeiros 512 bytes, acaba na "
-"faixa de endere�os <literal> 0x8c00 </literal> - <literal> 0x8dff </literal> "
-". Os 512 bytes seguintes (intervalo <literal> 0x8e00 </literal> - <literal> "
-"0x8fff </literal> ) � usado para armazenar <emphasis> bsdlabel </emphasis> "
-"<_: nota de rodap�-1 />. "
+"Lembre-se que <literal>nread</literal> usa endereço de memória "
+"<literal>0x8c00</literal> como o buffer de transferência para manter os "
+"setores lidos. Este endereço é convenientemente escolhido. De fato, porque "
+"<filename>boot1</filename> pertence aos primeiros 512 bytes, acaba na faixa "
+"de endereços <literal>0x8c00</literal>-<literal>0x8dff</literal> . Os 512 "
+"bytes seguintes (intervalo <literal>0x8e00</literal>-<literal>0x8fff</"
+"literal>) é usado para armazenar <emphasis>bsdlabel</emphasis> <_:footnote-1/"
+">."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1286
-#, fuzzy
 msgid ""
 "Starting at address <literal>0x9000</literal> is the beginning of the "
 "<acronym>BTX</acronym> server, and immediately following is the "
@@ -2206,40 +2179,38 @@ msgid ""
 "execute in a segment starting at <literal>0xa000</literal>. We explore this "
 "in detail in the following section."
 msgstr ""
-"Come�ando no endere�o <literal> 0x9000 </literal> � o come�o do servidor "
-"<acronym>BTX</acronym> , e imediatamente a seguir � <filename> boot2 </"
-"filename> cliente. O servidor <acronym>BTX</acronym> atua como um kernel e � "
-"executado no modo protegido no n�vel mais privilegiado. Em contraste, os "
-"clientes <acronym>BTX</acronym> ( <filename> boot2 </filename> , por "
-"exemplo), executar no modo de usu�rio. Vamos ver como isso � feito na "
-"pr�xima se��o. O c�digo ap�s a chamada para <literal> nread </literal> "
-"localiza o come�o de <filename> boot2 </filename> no buffer de mem�ria e "
-"copia para o endere�o de mem�ria <literal> 0xc000 </literal> . Isso ocorre "
-"porque o servidor <acronym>BTX</acronym> organiza <filename> boot2 </"
-"filename> para executar em um segmento a partir de <literal> 0xa000 </"
-"literal> . N�s exploramos isso em detalhes na se��o seguinte. "
+"Começando no endereço <literal>0x9000</literal> é o começo do servidor "
+"<acronym>BTX</acronym> , e imediatamente a seguir é o cliente "
+"<filename>boot2</filename>. O servidor <acronym>BTX</acronym> atua como um "
+"kernel e é executado no modo protegido no nível mais privilegiado. Em "
+"contraste, os clientes <acronym>BTX</acronym> (<filename>boot2</filename> , "
+"por exemplo), executam no modo de usuário. Vamos ver como isso é feito na "
+"próxima seção. O código após a chamada para <literal>nread</literal> "
+"localiza o começo de <filename>boot2</filename> no buffer de memória e copia "
+"para o endereço de memória <literal>0xc000</literal>. Isso ocorre porque o "
+"servidor <acronym>BTX</acronym> organiza <filename>boot2</filename> para "
+"executar em um segmento a partir de <literal>0xa000</literal> . Nés "
+"exploramos isso em detalhes na seção seguinte."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1305
-#, fuzzy
 msgid ""
 "This is necessary for legacy reasons. Interested readers should see <link "
 "xlink:href=\"http://en.wikipedia.org/wiki/A20_line\"/>."
 msgstr ""
-"Isso � necess�rio por raz�es de legado. Os leitores interessados ​​devem ver "
+"Isso é necessário por razões de legado. Os leitores interessados ​​devem ver "
 "<link xlink:href=\"http://en.wikipedia.org/wiki/A20_line\"/> "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1302
-#, fuzzy
 msgid ""
 "The last code block of <filename>boot1</filename> enables access to memory "
 "above 1MB <_:footnote-1/> and concludes with a jump to the starting point of "
 "the <acronym>BTX</acronym> server:"
 msgstr ""
-"O �ltimo bloco de c�digo de <filename> boot1 </filename> permite o acesso � "
-"mem�ria acima de 1MB <_: footnote-1 /> e conclui com um salto para o ponto "
-"de partida do servidor <acronym>BTX</acronym> : "
+"O último bloco de código de <filename>boot1</filename> permite o acesso à "
+"memória acima de 1MB <_:footnote-1/> e conclui com um salto para o ponto de "
+"partida do servidor <acronym>BTX</acronym>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1313
@@ -2289,9 +2260,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1335
-#, fuzzy
 msgid "Note that right before the jump, interrupts are enabled."
-msgstr "Note que logo antes do salto, as interrup��es est�o habilitadas."
+msgstr "Note que logo antes do salto, as interrupções estão habilitadas."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1340
@@ -2833,9 +2803,8 @@ msgstr ""
 #: book.translate.xml:1630 book.translate.xml:1661 book.translate.xml:1690
 #: book.translate.xml:1731 book.translate.xml:1759 book.translate.xml:1830
 #: book.translate.xml:1855 book.translate.xml:1904
-#, fuzzy
 msgid "<filename>sys/boot/i386/btx/btx/btx.S</filename>"
-msgstr " <filename> sys / boot / i386 / btx / btx / btx.S </filename> "
+msgstr "<filename>sys/boot/i386/btx/btx/btx.S</filename>"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1632
@@ -3852,9 +3821,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2133
-#, fuzzy
 msgid "<function>recover_bootinfo</function>"
-msgstr " <function> recover_bootinfo </function> "
+msgstr "<function>recover_bootinfo</function>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2134
@@ -4286,9 +4254,8 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2335
-#, fuzzy
 msgid "<primary>Interrupt Descriptor Table (IDT)</primary>"
-msgstr " <primary> Tabela de descritores de interrup��o (IDT) </primary> "
+msgstr "<primary>Interrupt Descriptor Table (IDT)</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2337
@@ -4372,9 +4339,8 @@ msgstr "Console e DDB s�o inicializados:"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2368
-#, fuzzy
 msgid "<primary>DDB</primary>"
-msgstr " <primary> DDB </primary> "
+msgstr "<primary>DDB</primary>"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2370
@@ -4488,9 +4454,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2417
-#, fuzzy
 msgid "<function>mi_startup()</function>"
-msgstr " <function> mi_startup () </function> "
+msgstr "<function>mi_startup()</function>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2419
@@ -4540,9 +4505,8 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2436
-#, fuzzy
 msgid "<primary>sysinit objects</primary>"
-msgstr " <primary> objetos sysinit </primary> "
+msgstr "<primary>sysinit objects</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2437
@@ -4990,9 +4954,8 @@ msgstr "Notas de Bloqueio"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2637
-#, fuzzy
 msgid "<primary>SMP Next Generation Project</primary>"
-msgstr " <primary> Projeto SMP Next Generation </primary> "
+msgstr "<primary>SMP Next Generation Project</primary>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2638
@@ -5006,33 +4969,28 @@ msgstr ""
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2641
-#, fuzzy
 msgid "<primary>locking</primary>"
-msgstr " <primary> bloqueio </primary> "
+msgstr "<primary>locking</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2642
-#, fuzzy
 msgid "<primary>multi-processing</primary>"
-msgstr " <primary> multiprocessamento </primary> "
+msgstr "<primary>multi-processing</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2643
-#, fuzzy
 msgid "<primary>mutexes</primary>"
-msgstr " <primary> mutexes </primary> "
+msgstr "<primary>mutexes</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2644
-#, fuzzy
 msgid "<primary>lockmgr</primary>"
-msgstr " <primary> lockmgr </primary> "
+msgstr "<primary>lockmgr</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2645
-#, fuzzy
 msgid "<primary>atomic operations</primary>"
-msgstr " <primary> opera��es at�micas </primary> "
+msgstr "<primary>atomic operations</primary>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2646
@@ -5055,7 +5013,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2654
-#, fuzzy
 msgid "Mutexes"
 msgstr "Mutexes"
 
@@ -5112,9 +5069,8 @@ msgstr "O nome do <type> struct mtx </type> vari�vel na fonte do kernel. "
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:2679 book.translate.xml:2759
-#, fuzzy
 msgid "Logical Name"
-msgstr "Nome l�gico"
+msgstr "Nome Lógico"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2681
@@ -5131,7 +5087,6 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:2689 book.translate.xml:2760
-#, fuzzy
 msgid "Type"
 msgstr "Tipo"
 
@@ -5152,9 +5107,8 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:2698 book.translate.xml:2851
-#, fuzzy
 msgid "<constant>MTX_DEF</constant>"
-msgstr " <constant> MTX_DEF </constant> "
+msgstr "<constant>MTX_DEF</constant>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2700
@@ -5164,9 +5118,8 @@ msgstr "Um mutex do sono"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2705
-#, fuzzy
 msgid "<constant>MTX_SPIN</constant>"
-msgstr " <constant> MTX_SPIN </constant> "
+msgstr "<constant>MTX_SPIN</constant>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2707
@@ -5176,9 +5129,8 @@ msgstr "Um mutex spin"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2712
-#, fuzzy
 msgid "<constant>MTX_RECURSE</constant>"
-msgstr " <constant> MTX_RECURSE </constant> "
+msgstr "<constant>MTX_RECURSE</constant>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2714
@@ -5228,29 +5180,23 @@ msgstr "Lista Mutex"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2743
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>sched_lock</secondary>"
-msgstr " <primary> fechaduras </primary><secondary> sched_lock </secondary> "
+msgstr "<primary>locks</primary> <secondary>sched_lock</secondary>"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2746
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>vm86pcb_lock</secondary>"
-msgstr ""
-" <primary> fechaduras </primary><secondary> vm86pcb_lock </secondary> "
+msgstr "<primary>locks</primary> <secondary>vm86pcb_lock</secondary>"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2749
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>Giant</secondary>"
-msgstr " <primary> fechaduras </primary><secondary> Gigante </secondary> "
+msgstr "<primary>locks</primary> <secondary>Giant</secondary>"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2752
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>callout_lock</secondary>"
-msgstr ""
-" <primary> fechaduras </primary><secondary> callout_lock </secondary> "
+msgstr "<primary>locks</primary> <secondary>callout_lock</secondary>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2769
@@ -5266,10 +5212,8 @@ msgstr " <quote> bloqueio de programa��o </quote> "
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2771 book.translate.xml:2878
-#, fuzzy
 msgid "<constant>MTX_SPIN</constant> | <constant>MTX_RECURSE</constant>"
-msgstr ""
-" <constant> MTX_SPIN </constant> | <constant> MTX_RECURSE </constant> "
+msgstr "<constant>MTX_SPIN</constant> | <constant>MTX_RECURSE</constant>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2775
@@ -5378,7 +5322,6 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2825
-#, fuzzy
 msgid ""
 "<function>setrunqueue</function>, <function>remrunqueue</function>, "
 "<function>mi_switch</function>, <function>chooseproc</function>, "
@@ -5390,19 +5333,18 @@ msgid ""
 "<function>astoff</function>, <function>astpending</function>, "
 "<function>calcru</function>, <function>proc_compare</function>"
 msgstr ""
-" <function> setrunqueue </function> , <function> remrunqueue </function> , "
-"<function> mi_switch </function> , <function> chooseproc </function> , "
-"<function> schedclock </function> , <function> resetpriority </function> , "
-"<function> updatepri </function> , <function> maybe_resched </function> , "
-"<function> cpu_switch </function> , <function> cpu_throw </function> , "
-"<function> need_resched </function> , <function> resched_wanted </function> "
-", <function> clear_resched </function> , <function> aston </function> , "
-"<function> astoff </function> , <function> aspendendo </function> , "
-"<function> calcru </function> , <function> proc_compare </function> "
+"<function>setrunqueue</function>, <function>remrunqueue</function>, "
+"<function>mi_switch</function>, <function>chooseproc</function>, "
+"<function>schedclock</function>, <function>resetpriority</function>, "
+"<function>updatepri</function>, <function>maybe_resched</function>, "
+"<function>cpu_switch</function>, <function>cpu_throw</function>, "
+"<function>need_resched</function>, <function>resched_wanted</function>, "
+"<function>clear_resched</function>, <function>aston</function>, "
+"<function>astoff</function>, <function>astpending</function>, "
+"<function>calcru</function>, <function>proc_compare</function>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2849
-#, fuzzy
 msgid "vm86pcb_lock"
 msgstr "vm86pcb_lock"
 
@@ -5506,11 +5448,8 @@ msgstr ""
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2905
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>shared exclusive</secondary>"
-msgstr ""
-" <primary> fechaduras </primary><secondary> exclusivo compartilhado </"
-"secondary> "
+msgstr "<primary>locks</primary> <secondary>shared exclusive</secondary>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:2909
@@ -5520,27 +5459,21 @@ msgstr "Lista de bloqueio exclusiva compartilhada"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2910
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>allproc_lock</secondary>"
-msgstr ""
-" <primary> fechaduras </primary><secondary> allproc_lock </secondary> "
+msgstr "<primary>locks</primary> <secondary>allproc_lock</secondary>"
 
 #. (itstool) path: table/indexterm
 #: book.translate.xml:2912
-#, fuzzy
 msgid "<primary>locks</primary> <secondary>proctree_lock</secondary>"
-msgstr ""
-" <primary> fechaduras </primary><secondary> proctree_lock </secondary> "
+msgstr "<primary>locks</primary> <secondary>proctree_lock</secondary>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2924
-#, fuzzy
 msgid "<varname>allproc_lock</varname>"
-msgstr " <varname> allproc_lock </varname> "
+msgstr "<varname>allproc_lock</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2925
-#, fuzzy
 msgid ""
 "<varname>allproc</varname> <varname>zombproc</varname> <varname>pidhashtbl</"
 "varname> <varname remap=\"structname\">proc</varname>.<varname remap="
@@ -5548,17 +5481,16 @@ msgid ""
 "varname>.<varname remap=\"structfield\">p_hash</varname> <varname>nextpid</"
 "varname>"
 msgstr ""
-" <varname> allproc </varname><varname> zombproc </varname><varname> "
-"pidhashtbl </varname><varname remap=\"structname\"> proc </varname> . "
-"<varname remap=\"structfield\"> p_list </varname><varname remap="
-"\"structname\"> proc </varname> . <varname remap=\"structfield\"> p_hash </"
-"varname><varname> nextpid </varname> "
+"<varname>allproc</varname> <varname>zombproc</varname> <varname>pidhashtbl</"
+"varname> <varname remap=\"structname\">proc</varname>.<varname remap="
+"\"structfield\">p_list</varname> <varname remap=\"structname\">proc</"
+"varname>.<varname remap=\"structfield\">p_hash</varname> <varname>nextpid</"
+"varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2935
-#, fuzzy
 msgid "<varname>proctree_lock</varname>"
-msgstr " <varname> proctree_lock </varname> "
+msgstr "<varname>proctree_lock</varname>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2936
@@ -5580,9 +5512,8 @@ msgstr "Vari�veis ​​Atomicamente Protegidas"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2949
-#, fuzzy
 msgid "<primary>atomically protected variables</primary>"
-msgstr " <primary> vari�veis ​​atomicamente protegidas </primary> "
+msgstr "<primary>atomically protected variables</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2951
@@ -5614,27 +5545,23 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:2974
-#, fuzzy
 msgid "Kernel Objects"
-msgstr "Kernel Objects"
+msgstr "Objetos do Kernel"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2976
-#, fuzzy
 msgid "<primary>Kernel Objects</primary>"
 msgstr "<primary>Kernel Objects</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2977
-#, fuzzy
 msgid "<primary>Object-Oriented</primary>"
-msgstr " <primary> Orientado a Objeto </primary> "
+msgstr "<primary>Object-Oriented</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:2978
-#, fuzzy
 msgid "<primary>binary compatibility</primary>"
-msgstr " <primary> compatibilidade bin�ria </primary> "
+msgstr "<primary>binary compatibility</primary>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:2979
@@ -5654,37 +5581,31 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2987 book.translate.xml:4094
-#, fuzzy
 msgid "Terminology"
 msgstr "Terminologia"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2989
-#, fuzzy
 msgid "<primary>object</primary>"
-msgstr " <primary> objeto </primary> "
+msgstr "<primary>object</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2990
-#, fuzzy
 msgid "<primary>method</primary>"
-msgstr " <primary> m�todo </primary> "
+msgstr "<primary>method</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2991
-#, fuzzy
 msgid "<primary>class</primary>"
-msgstr " <primary> classe </primary> "
+msgstr "<primary>class</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2992
-#, fuzzy
 msgid "<primary>interface</primary>"
-msgstr " <primary> interface </primary> "
+msgstr "<primary>interface</primary>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2996
-#, fuzzy
 msgid "Object"
 msgstr "Objeto"
 
@@ -5696,9 +5617,8 @@ msgstr "Um conjunto de dados - estrutura de dados - aloca��o de dados."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3002
-#, fuzzy
 msgid "Method"
-msgstr "M�todo"
+msgstr "Método"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3004
@@ -5926,7 +5846,6 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:3113 book.translate.xml:3122 book.translate.xml:3130
 #: book.translate.xml:3143 book.translate.xml:3159 book.translate.xml:3196
-#, fuzzy
 msgid "For example:"
 msgstr "Por exemplo:"
 
@@ -6061,7 +5980,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3174
-#, fuzzy
 msgid "Other complete examples:"
 msgstr "Outros exemplos completos:"
 
@@ -6075,16 +5993,13 @@ msgstr "src/sys/kern/bus_if.m\n"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3182
-#, fuzzy
 msgid "Creating a Class"
 msgstr "Criando uma classe"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3184
-#, fuzzy
 msgid "<primary>Kernel Objects</primary> <secondary>class</secondary>"
-msgstr ""
-" <primary> Objetos do Kernel </primary><secondary> classe </secondary> "
+msgstr "<primary>Kernel Objects</primary> <secondary>class</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3187
@@ -6145,16 +6060,13 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3216
-#, fuzzy
 msgid "Creating an Object"
 msgstr "Criando um Objeto"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3218
-#, fuzzy
 msgid "<primary>Kernel Objects</primary> <secondary>object</secondary>"
-msgstr ""
-" <primary> Objetos do Kernel </primary><secondary> objeto </secondary> "
+msgstr "<primary>Kernel Objects</primary> <secondary>object</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3221
@@ -6185,7 +6097,6 @@ msgstr "Para integrar o Kobj no objeto voc� deve usar a macro KOBJ_FIELDS."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3234
-#, fuzzy
 msgid "For example"
 msgstr "Por exemplo"
 
@@ -6205,9 +6116,8 @@ msgstr "struct foo_data {\n"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3244
-#, fuzzy
 msgid "Calling Methods"
-msgstr "M�todos de Chamada"
+msgstr "Métodos de Chamada"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3246
@@ -6243,7 +6153,6 @@ msgstr "[return value = ] FOO_BAR(object [, other parameters]);"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3261
-#, fuzzy
 msgid "Cleaning Up"
 msgstr "Limpando"
 
@@ -6263,56 +6172,52 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:3280
-#, fuzzy
 msgid "The Jail Subsystem"
-msgstr "O Subsistema da Cadeia"
+msgstr "O Subsistema da Jail"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:3288
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\n"
 "\t  <email>evms@cs.bu.edu</email>\n"
 "\t"
-msgstr "<email>evms@cs.bu.edu</email>"
+msgstr "\n"
+"\t  <email>evms@cs.bu.edu</email>\n"
+"\t"
 
 #. (itstool) path: info/author
 #: book.translate.xml:3282
-#, fuzzy
 msgid ""
 "<personname> <firstname>Evan</firstname> <surname>Sarmiento</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
-" <personname><firstname> Evan </firstname><surname> Sarmiento </surname></"
-"personname><affiliation> <_: endere�o-1 /> </affiliation> "
+"<personname> <firstname>Evan</firstname> <surname>Sarmiento</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:3293
-#, fuzzy
 msgid ""
 "<year>2001</year> <holder role=\"mailto:evms@cs.bu.edu\">Evan Sarmiento</"
 "holder>"
 msgstr ""
-" <year> 2001 </year><holder role=\"mailto:evms@cs.bu.edu\"> Evan Sarmiento </"
-"holder> "
+"<year>2001</year> <holder role=\"mailto:evms@cs.bu.edu\">Evan Sarmiento</"
+"holder>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:3299
-#, fuzzy
 msgid "<primary>security</primary>"
-msgstr " <primary> seguran�a </primary> "
+msgstr "<primary>security</primary>"
 
 #. (itstool) path: chapter/indexterm
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3300 book.translate.xml:15439
-#, fuzzy
 msgid "<primary>Jail</primary>"
-msgstr " <primary> Cadeia </primary> "
+msgstr "<primary>Jail</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:3301
-#, fuzzy
 msgid "<primary>root</primary>"
-msgstr " <primary> raiz </primary> "
+msgstr "<primary>root</primary>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:3303
@@ -6376,7 +6281,6 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3331
-#, fuzzy
 msgid "Architecture"
 msgstr "Arquitetura"
 
@@ -6408,10 +6312,8 @@ msgstr "C�digo da Terra de Usu�rio"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3343
-#, fuzzy
 msgid "<primary>Jail</primary> <secondary>Userland Program</secondary>"
-msgstr ""
-" <primary> Cadeia </primary><secondary> Programa Userland </secondary> "
+msgstr "<primary>Jail</primary> <secondary>Userland Program</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3346
@@ -6431,7 +6333,6 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3354
-#, fuzzy
 msgid "Data Structures"
 msgstr "Estruturas de dados"
 
@@ -6639,16 +6540,13 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3441
-#, fuzzy
 msgid "Kernel Space"
-msgstr "Espa�o do Kernel"
+msgstr "Espaço do Kernel"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3443
-#, fuzzy
 msgid "<primary>Jail</primary> <secondary>Kernel Architecture</secondary>"
-msgstr ""
-" <primary> Cadeia </primary><secondary> Arquitetura do Kernel </secondary> "
+msgstr "<primary>Jail</primary> <secondary>Kernel Architecture</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3446
@@ -6666,15 +6564,13 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3452
-#, fuzzy
 msgid "Sysctls"
-msgstr "Sysctl"
+msgstr "Sysctls"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3454
-#, fuzzy
 msgid "<primary>sysctl</primary>"
-msgstr " <primary> sysctl </primary> "
+msgstr "<primary>sysctl</primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3456
@@ -6687,7 +6583,7 @@ msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3459
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>/usr/src/sys/kern/kern_jail.c:</filename>\n"
 "int     jail_set_hostname_allowed = 1;\n"
@@ -6727,7 +6623,6 @@ msgid ""
 "    \"Processes in jail can mount/unmount jail-friendly file systems\");"
 msgstr ""
 "<filename>/usr/src/sys/kern/kern_jail.c:</filename>\n"
-"\n"
 "int     jail_set_hostname_allowed = 1;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, set_hostname_allowed, CTLFLAG_RW,\n"
 "    &amp;jail_set_hostname_allowed, 0,\n"
@@ -6874,12 +6769,12 @@ msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3540
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>/usr/src/sys/kern/kern_jail.c:</filename>\n"
 "error = copyin(uap-&gt;jail, &amp;j, sizeof(j));"
 msgstr ""
-"<filename>/usr/src/sys/kern/kern_jail.c: </filename>\n"
+"<filename>/usr/src/sys/kern/kern_jail.c:</filename>\n"
 "error = copyin(uap-&gt;jail, &amp;j, sizeof(j));"
 
 #. (itstool) path: sect3/para
