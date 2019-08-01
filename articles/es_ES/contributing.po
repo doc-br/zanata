@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-01 07:58+0000\n"
+"PO-Revision-Date: 2019-08-01 11:42+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1126,6 +1126,17 @@ msgid ""
 "PRs that fix build errors or update ports are the best ways to establish one."
 ""
 msgstr ""
+"Puede solicitar el mantenimiento de cualquier port que esté sin "
+"mantenimiento cuando lo desee. Simplemente configure el parámetro "
+"<varname>MAINTAINER</varname> con su propia dirección de correo electrónico "
+"y envíe un PR (informe de problemas) con el cambio. Si el port tiene errores "
+"de compilación o necesita actualizarse, es posible que desee aprovechar la "
+"oportunidad para incluir cualquier otro cambio que se requiera en ese mismo "
+"PR. Esto acelerará el proceso, ya que muchos committers no están dispuestos "
+"a asignar la responsabilidad del mantenimiento del port a alguien que no "
+"tenga un historial de trabajo con FreeBSD. La mejor forma de crear un "
+"historial de trabajo es enviando PRs corrigiendo errores de compilación o "
+"actualizando ports."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:558
@@ -1135,11 +1146,15 @@ msgid ""
 "the changes, and finally close the PR. Sometimes this process can take a "
 "little while (committers are volunteers, too :)."
 msgstr ""
+"Envíe su PR a la categoría <literal>ports</literal> y utilice la clase "
+"<literal>change-request</literal>. Un committer revisará su PR, commiteara "
+"los cambios y finalmente cerrará el PR. En algunas ocasiones, este proceso "
+"puede llevar cierto tiempo (los committers también son voluntarios :)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:567
 msgid "The challenge for port maintainers"
-msgstr ""
+msgstr "El desafío para los maintainers de un port"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:569
@@ -1147,11 +1162,13 @@ msgid ""
 "This section will give you an idea of why ports need to be maintained and "
 "outline the responsibilities of a port maintainer."
 msgstr ""
+"Esta sección le dará una idea de por qué los ports deben mantenerse y "
+"describirá las responsabilidades de un maintainer de port."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:574
 msgid "Why ports require maintenance"
-msgstr ""
+msgstr "Por qué los ports requieren mantenimiento"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:576
@@ -1161,6 +1178,11 @@ msgid ""
 "Maintainers are the people who dedicate some of their time to meeting these "
 "goals."
 msgstr ""
+"Crear un port es una tarea que se realiza una vez. Pero asegurar que un port "
+"esté siempre actualizado y continúe compilandose y ejecutándose "
+"correctamente requiere de un esfuerzo de mantenimiento continuo. Los "
+"Maintainers son las personas que dedican parte de su tiempo a cumplir estos "
+"objetivos."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:581
@@ -1170,16 +1192,20 @@ msgid ""
 "challenge is to keep individual ports working within the Ports Collection "
 "framework as it evolves."
 msgstr ""
+"La razón principal por la que los ports necesitan mantenimiento es para "
+"disponer del último y mejor software de terceros a la comunidad de FreeBSD. "
+"Un desafío adicional es mantener los ports para que continuen funcionando "
+"dentro del framework de la colección de ports a medida que este evoluciona."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:587
 msgid "As a maintainer, you will need to manage the following challenges:"
-msgstr ""
+msgstr "Como mantenedor, deberá enfrentarse a los siguientes desafíos:"
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:593
 msgid "New software versions and updates."
-msgstr ""
+msgstr "Nuevas versiones y actualizaciones de software."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:595
@@ -1192,7 +1218,7 @@ msgstr ""
 #. (itstool) path: formalpara/title
 #: article.translate.xml:604
 msgid "Changes to dependencies."
-msgstr ""
+msgstr "Cambios en las dependencias."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:606
