@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-01 11:42+0000\n"
+"PO-Revision-Date: 2019-08-02 08:18+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1214,6 +1214,9 @@ msgid ""
 "the time, and these need to be incorporated into the Ports Collection in "
 "order to provide up-to-date software."
 msgstr ""
+"Las nuevas versiones y actualizaciones de software están disponibles todo el "
+"tiempo para las aplicaciones que ya han sido portadas, y deben incorporarse "
+"a la colección de ports para proporcionar un software actualizado."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:604
@@ -1226,11 +1229,13 @@ msgid ""
 "If significant changes are made to the dependencies of your port, it may "
 "need to be updated so that it will continue to work correctly."
 msgstr ""
+"Si se realizan cambios significativos en las dependencias de su port, es "
+"posible que deba actualizarlas para que continúe funcionando correctamente."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:614
 msgid "Changes affecting dependent ports."
-msgstr ""
+msgstr "Cambios que afectan a los ports que dependen de los suyos."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:616
@@ -1238,11 +1243,13 @@ msgid ""
 "If other ports depend on a port that you maintain, changes to your port may "
 "require coordination with other maintainers."
 msgstr ""
+"Si otros ports depende de un port que mantiene, los cambios en su port "
+"pueden requerir que se coordine con otros maintainers."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:624
 msgid "Interaction with other users, maintainers and developers."
-msgstr ""
+msgstr "Interacción con otros usuarios, maintainers y desarrolladores."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:627
@@ -1252,11 +1259,15 @@ msgid ""
 "you should provide is a point of coordination for FreeBSD-specific issues "
 "regarding your ports."
 msgstr ""
+"Parte de ser maintainer es asumir el rol de proporcionar soporte. No "
+"esperamos que de soporte a nivel general (pero aceptaremos gustosos si "
+"decide hacerlo). Lo que debe proporcionar es un punto de apoyo para los "
+"problemas específicos de FreeBSD que estén relacionados con sus ports."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:637
 msgid "Bug hunting."
-msgstr ""
+msgstr "Caza de bugs."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:639
@@ -1266,11 +1277,15 @@ msgid ""
 "testing a port to identify problems before they make their way into the "
 "Ports Collection is even better."
 msgstr ""
+"Un port puede verse afectado por errores específicos de FreeBSD. Deberá "
+"investigar, encontrar y corregir estos errores cuando sean reportados. Es "
+"mucho mejor probar meticulosamente un port para identificar todos sus "
+"potenciales problemas antes de añadirlo a la colección de ports."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:649
 msgid "Changes to ports infrastructure and policy."
-msgstr ""
+msgstr "Cambios en la infraestructura y política de ports."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:651
@@ -1280,11 +1295,15 @@ msgid ""
 "should be aware of these changes in case your ports are affected and require "
 "updating."
 msgstr ""
+"Ocasionalmente, los sistemas que se utilizan para compilar los ports y "
+"paquetes se actualizan o se hace una nueva recomendación que afecta a la "
+"infraestructura. Debe tener en cuenta estos cambios en caso de que sus ports "
+"se vean afectados y requieran de una actualización."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:661
 msgid "Changes to the base system."
-msgstr ""
+msgstr "Cambios en el sistema base."
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:663
@@ -1293,22 +1312,27 @@ msgid ""
 "kernel or even policy changes can cause flow-on change requirements to ports."
 ""
 msgstr ""
+"FreeBSD está en constante desarrollo. Los cambios en el software, en las "
+"bibliotecas, en el kernel o incluso los cambios en las políticas pueden dar "
+"lugar a la necesidad de cambios en los ports."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:672
 msgid "Maintainer responsibilities"
-msgstr ""
+msgstr "Responsabilidades del maintainer"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:675
 msgid "Keep your ports up to date"
-msgstr ""
+msgstr "Mantenga sus ports actualizados"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:677
 msgid ""
 "This section outlines the process to follow to keep your ports up to date."
 msgstr ""
+"Esta sección describe el proceso a seguir para mantener sus ports "
+"actualizados."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:680
@@ -1317,11 +1341,14 @@ msgid ""
 "the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-"
 "handbook\"> Porter's Handbook</link>."
 msgstr ""
+"Esto es un resumen. Dispone de más información sobre la actualización de un "
+"port en el <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/"
+"porters-handbook\">Handbook del Porter</link>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:687
 msgid "Watch for updates"
-msgstr ""
+msgstr "Esté atento a las actualizaciones"
 
 #. (itstool) path: step/para
 #: article.translate.xml:689
@@ -1332,6 +1359,13 @@ msgid ""
 "updated. If you are busy with other things or for any reason just cannot "
 "update it at the moment, ask if they will help you by submitting an update."
 msgstr ""
+"Monitorice el upstream del desarrollo en busca de nuevas versiones, "
+"actualizaciones y correcciones de seguridad. Las listas de correo de "
+"anuncios o las páginas web de noticias son útiles para este propósito. En "
+"ocasiones, los usuarios se pondrán en contacto con usted para preguntarle "
+"cuándo se actualizará su port. Si está ocupado con otras cosas o simplemente "
+"no puede actualizarlo por alguna razón, pregunta al usuario si puede "
+"ayudarlo enviandole una actualización."
 
 #. (itstool) path: step/para
 #: article.translate.xml:698
@@ -1341,11 +1375,16 @@ msgid ""
 "is available. More information about that system (including how to stop "
 "future emails) will be provided in the message."
 msgstr ""
+"También puede recibir un correo electrónico automatizado de <literal>FreeBSD "
+"Ports Version Check</literal> informándole que ya hay una nueva versión "
+"disponible del distfile de su port. En el mensaje se incluirá más "
+"información (incluido el cómo dejar de recibir los correos electrónicos en "
+"el futuro)."
 
 #. (itstool) path: step/title
 #: article.translate.xml:707
 msgid "Incorporate changes"
-msgstr ""
+msgstr "Incorporar cambios"
 
 #. (itstool) path: step/para
 #: article.translate.xml:709
@@ -1354,16 +1393,19 @@ msgid ""
 "to be able to generate a patch between the original port and your updated "
 "port."
 msgstr ""
+"Cuando estén disponibles, incorpore los cambios en el port. Debería poder "
+"generar un parche con las diferencias entre el port original y el port "
+"actualizado."
 
 #. (itstool) path: step/title
 #: article.translate.xml:715
 msgid "Review and test"
-msgstr ""
+msgstr "Revisar y probar"
 
 #. (itstool) path: step/para
 #: article.translate.xml:717
 msgid "Thoroughly review and test your changes:"
-msgstr ""
+msgstr "Revise y pruebe a fondo sus cambios:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:721
@@ -1372,6 +1414,9 @@ msgid ""
 "you can. It is common for a port to work on one branch or platform and fail "
 "on another."
 msgstr ""
+"Compile, instale y pruebe su port en tantas plataformas y arquitecturas como "
+"pueda. Es común que un port funcione en una rama o plataforma y falle en "
+"otra."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:728
@@ -1381,6 +1426,10 @@ msgid ""
 "application>. See <link linkend=\"resources\">resources</link> for more "
 "information."
 msgstr ""
+"Asegúrese de que las dependencias de su port estén completas. La forma "
+"recomendada de hacerlo es instalando su propio <application>tinderbox</"
+"application> de ports. Tiene más información en la sección de <link linkend="
+"\"resources\">recursos</link>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:736
@@ -1388,6 +1437,9 @@ msgid ""
 "Check that the packing list is up to date. This involves adding in any new "
 "files and directories and removing unused entries."
 msgstr ""
+"Compruebe que la lista de componentes del paquete esté actualizada. Esto "
+"implica añadir nuevos archivos y directorios, así como eliminar entradas no "
+"utilizadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:742
@@ -1397,6 +1449,11 @@ msgid ""
 "citerefentry> as a guide. See <link linkend=\"resources\">resources</link> "
 "for important information about using <application>portlint</application>."
 msgstr ""
+"Compruebe su port utilizando <citerefentry vendor="
+"\"ports\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> como guía. Consulte los <link linkend=\"resources\">recursos</"
+"link> para obtener información importante sobre el uso de "
+"<application>portlint</application>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:749
@@ -1411,11 +1468,20 @@ msgid ""
 "\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Considere si los cambios en su port pueden causar que otros ports se rompan. "
+"Si es así, coordine los cambios con los maintainers de esos ports. Esto "
+"cobra especial importancia si su actualización cambia la versión de la "
+"libreria compartida; en este caso, como mínimo, los ports que dependan del "
+"suyo deberán aumentar de versión su <varname>PORTREVISION</varname> para que "
+"puedan actualizarse de forma automática con herramientas como "
+"<application>portmaster</application> o <citerefentry vendor="
+"\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: step/title
 #: article.translate.xml:765 article.translate.xml:915
 msgid "Submit changes"
-msgstr ""
+msgstr "Enviar los cambios"
 
 #. (itstool) path: step/para
 #: article.translate.xml:767
@@ -1426,6 +1492,12 @@ msgid ""
 "1/articles/problem-reports\">Writing FreeBSD Problem Reports</link> for "
 "information on how to write a really good PR."
 msgstr ""
+"Envíe su actualización enviando un PR con una explicación de los cambios y "
+"un parque que contenga las diferencias entre el port original y el "
+"actualizado. Consulte el artículo <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
+"es_ES.ISO8859-1/articles/problem-reports\">Cómo enviar informes de problemas "
+"de FreeBSD</link> para obtener más información sobre como escribir un PR "
+"correctamente."
 
 #. (itstool) path: note/para
 #: article.translate.xml:775
@@ -1439,11 +1511,20 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/port-"
 "upgrading.html\">Upgrading</link> has more information."
 msgstr ""
+"No envíe un archivo <citerefentry><refentrytitle>shar</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> de todo el port; en su "
+"lugar, utilice el comando <citerefentry><refentrytitle>diff</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> <literal>-ruN</literal."
+" De esta forma, los committers pueden ver más fácilmente de forma exacta qué "
+"cambios se están están realizando. Consulte la sección de <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/porters-handbook/port-"
+"upgrading.html\">actualización</link> del Handbook del Porter para más "
+"información."
 
 #. (itstool) path: step/title
 #: article.translate.xml:785
 msgid "Wait"
-msgstr ""
+msgstr "Esperar"
 
 #. (itstool) path: step/para
 #: article.translate.xml:787
@@ -1451,11 +1532,13 @@ msgid ""
 "At some stage a committer will deal with your PR. It may take minutes, or it "
 "may take weeks — so please be patient."
 msgstr ""
+"En algún momento, un committer se encargará de su PR. Esto puede llevar "
+"minutos o semanas — así que tenga paciencia."
 
 #. (itstool) path: step/title
 #: article.translate.xml:793
 msgid "Give feedback"
-msgstr ""
+msgstr "De feedback"
 
 #. (itstool) path: step/para
 #: article.translate.xml:795
@@ -1465,11 +1548,15 @@ msgid ""
 "faster, and is better for maintaining a thread of conversation when trying "
 "to resolve any problems."
 msgstr ""
+"Si un committer encuentra un problema con sus cambios, lo más probable es "
+"que se los devuelva. Una respuesta rápida ayudará a que se haga más rápido "
+"el commit. Es muy importante mantener abierto el canal de comunicación para "
+"acelerar la resolución de cualquier problema."
 
 #. (itstool) path: step/title
 #: article.translate.xml:803
 msgid "And Finally"
-msgstr ""
+msgstr "Y finalmente"
 
 #. (itstool) path: step/para
 #: article.translate.xml:805
@@ -1477,11 +1564,13 @@ msgid ""
 "Your changes will be committed and your port will have been updated. The PR "
 "will then be closed by the committer. That's it!"
 msgstr ""
+"Se hará el commit con sus cambios y el port habrá sido actualizado. Después "
+"se cerrará el PR. ¡Eso es todo!"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:813
 msgid "Ensure your ports continue to build correctly"
-msgstr ""
+msgstr "Asegúrese de que sus ports continuan compilando correctamente."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:815
@@ -1489,6 +1578,8 @@ msgid ""
 "This section is about discovering and fixing problems that stop your ports "
 "from building correctly."
 msgstr ""
+"Esta sección trata sobre descubrir y solucionar problemas que impiden que "
+"sus ports se compilen correctamente."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:818
@@ -1498,6 +1589,10 @@ msgid ""
 "running the latest release of each stable branch (since the ABIs are not "
 "supposed to change) but if you can run the branch, that is even better."
 msgstr ""
+"El proyecto FreeBSD solo garantiza que la colección de ports funcione en la "
+"rama <literal>-STABLE</literal>. En teoría, debería poder ejecutar la última "
+"versión en cada una de las ramas estables(ya que se espera que la ABI no "
+"cambie)."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:826
