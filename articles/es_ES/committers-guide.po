@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-04 09:02+0000\n"
+"PO-Revision-Date: 2019-08-04 09:51+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -128,7 +128,7 @@ msgid ""
 "committers are strongly encouraged to review it from time to time."
 msgstr ""
 "Este documento proporciona información para la comunidad de committers de "
-"FreeBSD. Todos los nuevos committers deben leer este documento antes de "
+"FreeBSD. Todos los committers nuevos deben leer este documento antes de "
 "empezar, y se recomienda encarecidamente a los committers actuales que lo "
 "revisen de vez en cuando."
 
@@ -144,9 +144,9 @@ msgstr ""
 "Casi todos los desarrolladores de FreeBSD tienen derechos sobre uno o más "
 "repositorios. Sin embargo, algunos desarrolladores no los tienen, y parte de "
 "la información aquí se aplica también a ellos. (Por ejemplo, algunas "
-"personas sólo tienen derecho para trabajar con la base de datos de Informes "
-"de Problemas). Por favor, vea <xref linkend=\"non-committers\"/> para más "
-"información"
+"personas solo tienen derecho para trabajar con la base de datos de informes "
+"de problemas). Por favor, vea <xref linkend=\"non-committers\"/> para más "
+"información."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:83
@@ -155,18 +155,18 @@ msgid ""
 "who want to learn more about how the project works."
 msgstr ""
 "Este documento también puede ser de interés para los miembros de la "
-"comunidad FreeBSD que quieran saber más sobre el funcionamiento del proyecto."
-""
+"comunidad de FreeBSD que quieran saber más sobre el funcionamiento del "
+"proyecto."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:90
 msgid "Administrative Details"
-msgstr "Detalles Administrativos"
+msgstr "Detalles administrativos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:98
 msgid "<emphasis>Login Methods</emphasis>"
-msgstr "<emphasis>Métodos de Acceso</emphasis>"
+msgstr "<emphasis>Métodos de acceso</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:99
@@ -175,12 +175,12 @@ msgid ""
 "citerefentry>, protocol 2 only"
 msgstr ""
 "<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>, solo protocolo 2"
+"citerefentry>, solo el protocolo 2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:103
 msgid "<emphasis>Main Shell Host</emphasis>"
-msgstr "<emphasis>Host Principal de la Shell </emphasis>"
+msgstr "<emphasis>Servidor shell principal</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:104
@@ -190,7 +190,7 @@ msgstr "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>"
 #. (itstool) path: row/entry
 #: article.translate.xml:108
 msgid "<emphasis>SMTP Host</emphasis>"
-msgstr "<emphasis>SMTP Host</emphasis>"
+msgstr "<emphasis>Host SMTP</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:109
@@ -199,12 +199,12 @@ msgid ""
 "587</literal> (see also <xref linkend=\"smtp-setup\"/>)."
 msgstr ""
 "<literal><systemitem class=\"fqdomainname\">smtp.FreeBSD.org</systemitem>:"
-"587</literal> (see also <xref linkend=\"smtp-setup\"/>)."
+"587</literal> (vea también <xref linkend=\"smtp-setup\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:114
 msgid "<emphasis><literal>src/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>src/</literal> Raíz de Subversion</emphasis>"
+msgstr "<emphasis><literal>src/</literal>Raíz de subversion</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:116
@@ -214,13 +214,13 @@ msgid ""
 "getting-started-base-layout\"/>)."
 msgstr ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/base</filename> (ver también <xref linkend=\"svn-"
+"org</systemitem><filename>/base</filename> (vea también <xref linkend=\"svn-"
 "getting-started-base-layout\"/>)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:121
 msgid "<emphasis><literal>doc/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>doc/</literal> Raíz de Subversion</emphasis>"
+msgstr "<emphasis><literal>doc/</literal> Raíz de subversion</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:123
@@ -236,7 +236,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:128
 msgid "<emphasis><literal>ports/</literal> Subversion Root</emphasis>"
-msgstr "<emphasis><literal>ports/</literal> Raíz de Subversion</emphasis>"
+msgstr "<emphasis><literal>ports/</literal> Raíz de subversion</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:131
@@ -246,13 +246,13 @@ msgid ""
 "getting-started-ports-layout\"/>)."
 msgstr ""
 "<literal>svn+ssh://</literal><systemitem class=\"fqdomainname\">repo.FreeBSD."
-"org</systemitem><filename>/ports</filename> (ver también <xref linkend=\"svn-"
+"org</systemitem><filename>/ports</filename> (vea también <xref linkend=\"svn-"
 "getting-started-ports-layout\"/>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:136
 msgid "<emphasis>Internal Mailing Lists</emphasis>"
-msgstr "<emphasis>Listas de Correo Interno</emphasis>"
+msgstr "<emphasis>Listas de correo interno</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:137
@@ -266,21 +266,19 @@ msgid ""
 "replaceable>-committers-archive</filename> on the <systemitem class="
 "\"fqdomainname\">FreeBSD.org</systemitem> cluster.)"
 msgstr ""
-"desarrolladores (técnicamente denominados todos los desarrolladores), doc-"
-"desarrolladores, doc-committers, ports-desarrolladores, ports-committers, "
-"src-desarrolladores, src-committers. (Cada repositorio de cada proyecto "
-"tiene sus propios desarrolladores and listas de correo de commiters. Los "
-"Archivos históricos de estas listas se pueden encontrar en los archivos "
-"<filename>/local/mail/<replaceable>nombre-del-repositorio</replaceable>-"
-"archivo.de-desarrolladores</filename> y <filename>/local/mail/"
-"<replaceable>nombre-del-repositorio</replaceable>-archivo de committers</"
-"filename> en <systemitem class=\"fqdomainname\">FreeBSD.org</systemitem> "
-"cluster.)"
+"developers (technically called all-developers), doc-developers, doc-"
+"committers, ports-developers, ports-committers, src-developers, src-"
+"committers. (Each project repository has its own -developers and -committers "
+"mailing lists. Archives for these lists can be found in the files <filename>/"
+"local/mail/<replaceable>repository-name</replaceable>-developers-archive</"
+"filename> and <filename>/local/mail/<replaceable>repository-name</"
+"replaceable>-committers-archive</filename> on the <systemitem class="
+"\"fqdomainname\">FreeBSD.org</systemitem> cluster.)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:152
 msgid "<emphasis>Core Team monthly reports</emphasis>"
-msgstr "<emphasis>Informes Mensuales del Equipo Principal</emphasis>"
+msgstr "<emphasis>Informes mensuales del Core Team</emphasis>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:154
