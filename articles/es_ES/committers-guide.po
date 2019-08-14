@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-14 09:18+0000\n"
+"PO-Revision-Date: 2019-08-14 09:55+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1117,7 +1117,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:586
 msgid "<literal>RELENG_*</literal> Branches and General Layout"
-msgstr "Ramas <literal>RELENG_*</literal> y esquema general"
+msgstr "Ramas <literal>RELENG_*</literal> y estructura general"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:589
@@ -1211,7 +1211,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:646
 msgid "FreeBSD Documentation Project Branches and Layout"
-msgstr "Ramas y esquema del proyecto de documentación de FreeBSD"
+msgstr "Ramas y estructura del proyecto de documentación de FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:649
@@ -1228,9 +1228,9 @@ msgid ""
 "In general, most FreeBSD Documentation Project work will be done within the "
 "<filename>head/</filename> branch of the documentation source tree."
 msgstr ""
-"En general, la mayor parte del trabajo del Proyecto de Documentación de "
-"FreeBSD se realizará en la rama <filename>head/</filename> del árbol de "
-"fuentes de la documentación."
+"En general, la mayor parte del trabajo del proyecto de documentación de "
+"FreeBSD se realiza en la rama <filename>head/</filename> del repositorio de "
+"documentación."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:657
@@ -1239,7 +1239,7 @@ msgid ""
 "each in a separate directory in the <filename>head/</filename> branch."
 msgstr ""
 "La documentación de FreeBSD está escrita y/o traducida a varios idiomas, "
-"cada uno en un directorio separado en la rama <filename>head/</filename>."
+"cada uno separado en un directorio en la rama <filename>head/</filename>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:662
@@ -1247,9 +1247,9 @@ msgid ""
 "Each translation set contains several subdirectories for the various parts "
 "of the FreeBSD Documentation Project. A few noteworthy directories are:"
 msgstr ""
-"Cada paquete de traducción contiene varios subdirectorios para las distintas "
-"partes del Proyecto de Documentación de FreeBSD. Algunos directorios dignos "
-"de mención son:"
+"Cada conjunto de traducciones contiene varios subdirectorios para las "
+"distintas partes del proyecto de documentación de FreeBSD. Algunos de los "
+"directorios más importantes son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:668
@@ -1258,7 +1258,7 @@ msgid ""
 "written by various FreeBSD contributors."
 msgstr ""
 "<emphasis>/articles/</emphasis> contiene el código fuente de los artículos "
-"escritos por varios contribuyentes de FreeBSD."
+"escritos por varios colaboradores de FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:674
@@ -1267,7 +1267,7 @@ msgid ""
 "books, such as the FreeBSD Handbook."
 msgstr ""
 "<emphasis>/books/</emphasis> contiene el código fuente de los diferentes "
-"libros, como el Manual de FreeBSD."
+"libros, como el Handbook de FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:680
@@ -1281,7 +1281,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:687
 msgid "FreeBSD Ports Tree Branches and Layout"
-msgstr "Ramas y estructura del árbol de Ports de FreeBSD"
+msgstr "Ramas y estructura del árbol de ports de FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:689
@@ -1290,7 +1290,7 @@ msgid ""
 "emphasis> refers to the repository root of the ports tree."
 msgstr ""
 "En <literal>svn+ssh://repo.freebsd.org/ports</literal>, <emphasis>ports</"
-"emphasis> se refiere a la raíz del repositorio del árbol de puertos."
+"emphasis> hace referencia a la raíz del repositorio de ports."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:693
@@ -1299,10 +1299,9 @@ msgid ""
 "filename> branch of the ports tree which is the actual ports tree used to "
 "install software. Some other key locations are:"
 msgstr ""
-"En general, la mayor parte del trabajo con los puertos de FreeBSD se realiza "
-"en la rama <filename>head/</filename> del árbol de puertos, que es el árbol "
-"de puertos que se utiliza para instalar el software. Otros lugares clave son:"
-""
+"En general, la mayor parte del trabajo en la colección de ports de FreeBSD "
+"se realizará en la rama <filename>head/</filename>, que es el árbol de ports "
+"que se utiliza para instalar software. Algunas otras ubicaciones clave son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:700
@@ -1311,10 +1310,10 @@ msgid ""
 "corresponds to <literal>RELENG_<replaceable>n_n_n</replaceable></literal> is "
 "used to merge back security updates in preparation for a release."
 msgstr ""
-"<emphasis>/branches/RELENG_<replaceable>n_n_n</replaceable></emphasis> el "
-"cual corresponde a <literal>RELENG_<replaceable>n_n_n</replaceable></"
-"literal> se usa para incoporar las actualizaciones de seguridad que se "
-"preparan para la publicación."
+"<emphasis>/branches/RELENG_<replaceable>n_n_n</replaceable></emphasis> la "
+"cual hace referencia a <literal>RELENG_<replaceable>n_n_n</replaceable></"
+"literal> se utilizan para hacer el merge de actualizaciones de seguridad "
+"para su posterior release."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:708
@@ -1323,9 +1322,9 @@ msgid ""
 "corresponds to <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> "
 "represents a release tag of the ports tree."
 msgstr ""
-"<emphasis>/tags/RELEASE_<replaceable>n_n_n_n</replaceable></emphasis> que "
-"corresponde a <literal>RELEASE_<replaceable>n_n_n</replaceable></literal> "
-"representa una etiqueta de publicación de versión del árbol de puertos."
+"<emphasis>/tags/RELEASE_<replaceable>n_n_n</replaceable></emphasis> la cual "
+"hace referencia a <literal>RELEASE_<replaceable>n_n_n</replaceable></"
+"literal> representa un tag en el repositorio de ports."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:715
@@ -1334,7 +1333,7 @@ msgid ""
 "represents the end of life tag of a specific FreeBSD branch."
 msgstr ""
 "<emphasis>/tags/RELEASE_<replaceable>n</replaceable>_EOL</emphasis> "
-"representa la etiqueta de fin de vida de una rama específica de FreeBSD."
+"representa de end of life tag de una rama especifica de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:724
@@ -1361,14 +1360,14 @@ msgid ""
 "<acronym>SVN</acronym> has built in help documentation. It can be accessed "
 "by typing:"
 msgstr ""
-"<acronym>SVN</acronym> ha incorporado documentación de ayuda. Se puede "
-"acceder tecleando:"
+"<acronym>SVN</acronym> tiene ayuda incorporada. Puede acceder a ella "
+"ejecutando el comando:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:735
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn help</userinput>"
-msgstr "<prompt>%</prompt> <userinput>ayuda de svn</userinput>"
+msgstr "<prompt>%</prompt> <userinput>svn help</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:737
@@ -1376,18 +1375,19 @@ msgid ""
 "Additional information can be found in the <link xlink:href=\"http://svnbook."
 "red-bean.com/\">Subversion Book</link>."
 msgstr ""
-"Additional information can be found in the <link xlink:href=\"http://svnbook."
-"red-bean.com/\">Subversion Book</link>."
+"Puede encontrar información adicional en <link xlink:href=\"http://svnbook."
+"red-bean.com/\">el libro de Subversion</link>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:743
 msgid "Checkout"
-msgstr "Comprobación"
+msgstr "Checkout"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:745
 msgid "As seen earlier, to check out the FreeBSD head branch:"
-msgstr "Como se ha visto antes, para comprobar la rama head de FreeBSD:"
+msgstr ""
+"Como se ha visto antes, para hacer un checkout de la rama head de FreeBSD:"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:750
