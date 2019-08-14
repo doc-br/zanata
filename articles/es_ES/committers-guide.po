@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-12 10:55+0000\n"
+"PO-Revision-Date: 2019-08-14 09:18+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -967,7 +967,7 @@ msgid ""
 "There are a few ways to obtain a working copy of the tree from Subversion. "
 "This section will explain them."
 msgstr ""
-"Existen varias maneras de obtener una copia del árbol del código fuente de "
+"Existen varias formas de obtener una copia del árbol del código fuente de "
 "Subversion. Esta sección las explicará."
 
 #. (itstool) path: sect3/title
@@ -997,7 +997,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:529
 msgid "For the <literal>doc</literal> tree, use:"
-msgstr "Para el árbol <literal>doc</literal>, utilice:"
+msgstr "Para el repositorio <literal>doc</literal>, use el comando:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:531
@@ -1012,7 +1012,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:533
 msgid "For the <literal>ports</literal> tree, use:"
-msgstr "Para el árbol <literal>ports</literal>, utilice:"
+msgstr "Para el repositorio <literal>ports</literal>, use el comando:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:535
@@ -1033,12 +1033,12 @@ msgid ""
 "<literal>ports</literal> tree. Ports related Subversion operations are "
 "listed in <xref linkend=\"ports\"/>."
 msgstr ""
-"Aunque el resto de los ejemplos de este documento están escritos con el "
-"flujo de trabajo de trabajar con el árbol <literal>src</literal> en mente, "
-"los conceptos subyacentes son los mismos para trabajar con el árbol "
-"<literal>doc</literal> y el <literal>ports</literal>. Las operaciones de "
-"Subversion relacionadas con los puertos se listan en <xref linkend=\"ports\"/"
-">"
+"Aunque los ejemplos que se mostrarán en el resto del documento están "
+"escritos teniendo en mente el flujo de trabajo haciendo uso del repositorio "
+"<literal>src</literal>, los conceptos son los mismos para trabajar con los "
+"repositorios de <literal>doc</literal> y <literal>ports</literal>. Las "
+"acciones de Subversion relacionadas con los ports se enumeran en <xref "
+"linkend=\"ports\"/>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:548
@@ -1049,12 +1049,11 @@ msgid ""
 "that command causes the working copy, in this case, to be named <quote>head</"
 "quote>, but that can be renamed safely."
 msgstr ""
-"El comando anterior comprobará un árbol de fuentes <literal>CURRENT</"
-"literal> como <filename><replaceable>/usr/src/</replaceable></filename>, que "
-"puede ser cualquier directorio de destino en el sistema de archivos local. "
-"Omitir el argumento final de ese comando hace que la copia de trabajo, en "
-"este caso, se llame <quote>head</quote>, pero se puede renombrar de forma "
-"segura."
+"El comando anterior realizará un check out de <literal>CURRENT</literal> en "
+"el directorio <filename><replaceable>/usr/src/</replaceable></filename>, el "
+"cual puede ser cualquier directorio en el sistema de archivos local. Omitir "
+"el argumento final del comando hará que el directorio, en este caso, se "
+"denomine <quote>head</quote>, pero se puede renombrar sin ningún problema."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:556
@@ -1065,11 +1064,11 @@ msgid ""
 "the repository, and <literal>head</literal> is the subdirectory within the "
 "repository."
 msgstr ""
-"<literal>svn+ssh</literal> significa el protocolo <acronym>SVN</acronym> "
-"canalizado sobre <acronym>SSH</acronym>. El nombre del servidor es "
-"<literal>repo.freebsd.org</literal>, <literal>base</literal> es la ruta al "
-"repositorio, y <literal>head</literal> es el subdirectorio dentro del "
-"repositorio."
+"<literal>svn+ssh</literal> significa que el protocolo <acronym>SVN</acronym> "
+"se ejecutará mediante un tunel sobre <acronym>SSH</acronym>. El nombre del "
+"servidor es <literal>repo.freebsd.org</literal>, <literal>base</literal>es "
+"la ruta al repositorio y <literal>head</literal> es el subdirectorio dentro "
+"del repositorio."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:563
@@ -1079,11 +1078,11 @@ msgid ""
 "<literal>svn+ssh://jarjar@repo.freebsd.org/base/head</literal>), or add an "
 "entry to <filename>~/.ssh/config</filename> in the form:"
 msgstr ""
-"Si su nombre de inicio de sesión de FreeBSD es diferente del nombre de "
-"inicio de sesión usado en la máquina local, inclúyalo en la <acronym> URL </"
-"acronym> (por ejemplo <literal> svn + ssh: //jarjar@repo.freebsd.org/ base / "
-"head </literal>), o agregue una entrada a <filename> ~ / .ssh / config </"
-"filename> en el formulario:"
+"Si su nombre de login en FreeBSD es diferente al nombre utilizado para "
+"iniciar sesión en su ordenador local, inclúyalo en la <acronym>URL</acronym> "
+"(por ejemplo <literal>svn+ssh://jarjar@repo.freebsd.org/base/head</"
+"literal>), o agregue una entrada en el archivo <filename>~/.ssh/config</"
+"filename> con el siguiente formato:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:570
@@ -1099,8 +1098,8 @@ msgid ""
 "This is the simplest method, but it is hard to tell just yet how much load "
 "it will place on the repository."
 msgstr ""
-"Este es el método más simple, pero es difícil decir todavía cuánta carga "
-"pondrá en el repositorio."
+"Este es el método más simple, pero es difícil saber qué carga generará en el "
+"repositorio."
 
 #. (itstool) path: note/para
 #: article.translate.xml:577
@@ -1110,15 +1109,15 @@ msgid ""
 "copy. This, however, means that Subversion working copies are very large in "
 "size."
 msgstr ""
-"El <command>svn diff</command> no requiere acceso al servidor ya que "
-"<acronym>SVN</acronym> almacena una copia de referencia de cada fichero en "
-"la copia de trabajo. Esto, sin embargo, significa que las copias de trabajo "
-"de Subversion son muy grandes en tamaño."
+"El comando <command>svn diff</command> no requiere acceso al servidor, ya "
+"que <acronym>SVN</acronym> almacena una copia de referencia de cada archivos "
+"en la copia de trabajo local. Sin embargo, esto significa que las copias de "
+"trabajo locales de Subversion tienen un tamaño muy grande."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:586
 msgid "<literal>RELENG_*</literal> Branches and General Layout"
-msgstr "<literal>RELENG_*</literal> Ramas y Esquema General"
+msgstr "Ramas <literal>RELENG_*</literal> y esquema general"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:589
@@ -1129,10 +1128,11 @@ msgid ""
 "their own change number sequences, access controls and commit mail."
 msgstr ""
 "En <literal>svn+ssh://repo.freebsd.org/base</literal>, <emphasis>base</"
-"emphasis> se refiere al árbol de fuentes. De forma similar, <emphasis>ports</"
-"emphasis> se refiere al árbol de puertos, y así sucesivamente. Estos son "
-"repositorios separados con sus propias secuencias de números de cambio, "
-"controles de acceso y  correo de confirmación."
+"emphasis> hace referencia al árbol del código fuente. Del mismo modo, ports "
+"hace referencia al árbol del código fuente de los <emphasis>ports</"
+"emphasis>, y así sucesivamente. Estos repositorios están separados, cada uno "
+"con sus propias secuencias númericas de cambios, controles de acceso y "
+"correo electrónico de confirmación."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:596
@@ -1151,7 +1151,7 @@ msgid ""
 "<emphasis>/head/</emphasis> which corresponds to <literal>HEAD</literal>, "
 "also known as <literal>-CURRENT</literal>."
 msgstr ""
-"<emphasis>/head/</emphasis> que corresponde a <literal>HEAD</literal>, "
+"<emphasis>/head/</emphasis> hace referencia a <literal>HEAD</literal>, "
 "también conocido como <literal>-CURRENT</literal>."
 
 #. (itstool) path: listitem/para
@@ -1160,7 +1160,7 @@ msgid ""
 "<emphasis>/stable/<replaceable>n</replaceable></emphasis> which corresponds "
 "to <literal>RELENG_<replaceable>n</replaceable></literal>."
 msgstr ""
-"<emphasis>/estable/<replaceable>n</replaceable></emphasis> que corresponde a "
+"<emphasis>/stable/<replaceable>n</replaceable></emphasis> hace referencia a "
 "<literal>RELENG_<replaceable>n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
@@ -1169,7 +1169,7 @@ msgid ""
 "<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> which "
 "corresponds to <literal>RELENG_<replaceable>n_n</replaceable></literal>."
 msgstr ""
-"<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> que corresponde "
+"<emphasis>/releng/<replaceable>n.n</replaceable></emphasis> hace referencia "
 "a <literal>RELENG_<replaceable>n_n</replaceable></literal>."
 
 #. (itstool) path: listitem/para
@@ -1179,8 +1179,8 @@ msgid ""
 "corresponds to <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
 "literal>."
 msgstr ""
-"<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis> que "
-"corresponde a <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
+"<emphasis>/release/<replaceable>n.n.n</replaceable></emphasis> hace "
+"referencia a <literal>RELENG_<replaceable>n_n_n</replaceable>_RELEASE</"
 "literal>."
 
 #. (itstool) path: listitem/para
@@ -1191,10 +1191,11 @@ msgid ""
 "This contrasts with the <emphasis>stable</emphasis>, <emphasis>releng</"
 "emphasis> and <emphasis>release</emphasis> directories."
 msgstr ""
-"<emphasis>/vendor*</emphasis> es la  área de trabajo de importación de la "
-"rama de vendor. Este directorio en sí no contiene ramas, pero sí sus "
-"subdirectorios. Esto contrasta con los directorios <emphasis>stable</"
-"emphasis>,  <emphasis>releng</emphasis> and <emphasis>release</emphasis>."
+"<emphasis>/vendor*</emphasis> es la rama de trabajo en al cual importar "
+"software de otros proyectos. El directorio en si no contiene ramas, sin "
+"embargo, sus subdirectorios sí. Esto contrasta con los directorios "
+"<emphasis>stable</emphasis>, <emphasis>releng</emphasis> y "
+"<emphasis>release</emphasis>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
@@ -1203,14 +1204,14 @@ msgid ""
 "branch work area. As above, the <emphasis>/user</emphasis> directory does "
 "not contain branches itself."
 msgstr ""
-"<emphasis>/proyects</emphasis> y <emphasis>/us</emphasis> presentan un área "
-"de trabajo de rama. Como en el caso anterior, el directorio <emphasis>/user</"
+"<emphasis>/projects</emphasis> y <emphasis>/user</emphasis> cuentan con un "
+"área de trabajo en ramas. Como antes, el directorio <emphasis>/user</"
 "emphasis> no contiene ramas en sí."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:646
 msgid "FreeBSD Documentation Project Branches and Layout"
-msgstr "Esquema y Ramas del Proyecto de Documentación de FreeBSD"
+msgstr "Ramas y esquema del proyecto de documentación de FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:649
@@ -1219,7 +1220,7 @@ msgid ""
 "emphasis> refers to the repository root of the source tree."
 msgstr ""
 "En <literal>svn+ssh://repo.freebsd.org/doc</literal>, <emphasis>doc</"
-"emphasis> se refiere a la raíz del repositorio del árbol fuente."
+"emphasis> hace referencia a la raíz del repositorio."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:653
