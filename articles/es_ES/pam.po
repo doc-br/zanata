@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-14 10:42+0000\n"
+"PO-Revision-Date: 2019-08-16 09:18+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1289,6 +1289,10 @@ msgid ""
 "file contains all the PAM policies for your system. Each line of the file "
 "describes one step in a chain, as shown below:"
 msgstr ""
+"El archivo de configuración tradicional de PAM es <filename>/etc/pam.conf</"
+"filename>.  Este archivo contiene todas las configuraciones de PAM para su "
+"sistema. Cada línea del archivo describe un paso es un chain, como se "
+"muestra a continuación:"
 
 #. (itstool) path: section/programlisting
 #: article.translate.xml:775
@@ -1303,6 +1307,10 @@ msgid ""
 "name, and module arguments. Any additional fields are interpreted as "
 "additional module arguments."
 msgstr ""
+"Los campos son, en orden de aparición: nombre del servicio, nombre del "
+"facility, flag de control, nombre del módulo y argumentos del módulo. "
+"Cualquier campo adicional se interpreta como un argumento adicional del "
+"módulo."
 
 #. (itstool) path: section/para
 #: article.translate.xml:782
@@ -1321,7 +1329,7 @@ msgstr ""
 #. (itstool) id: article.translate.xml#pam-config-pam.d.title
 #: article.translate.xml:794
 msgid "The <filename>/etc/pam.d</filename>"
-msgstr ""
+msgstr "El archivo <filename>/etc/pam.d</filename>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:797
@@ -1346,7 +1354,7 @@ msgstr ""
 #: article.translate.xml:810
 #, no-wrap
 msgid "auth    required        pam_nologin.so  no_warn"
-msgstr ""
+msgstr "auth    required        pam_nologin.so  no_warn"
 
 #. (itstool) path: section/para
 #: article.translate.xml:812
@@ -1364,6 +1372,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /etc/pam.d</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s su sudo</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /etc/pam.d</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s su sudo</userinput>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:822
@@ -1498,27 +1508,27 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:916
 msgid "<literal>PAM_SUCCESS</literal>"
-msgstr ""
+msgstr "<literal>PAM_SUCCESS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:917
 msgid "<literal>PAM_IGNORE</literal>"
-msgstr ""
+msgstr "<literal>PAM_IGNORE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:918
 msgid "<literal>other</literal>"
-msgstr ""
+msgstr "<literal>other</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:923
 msgid "binding"
-msgstr ""
+msgstr "binding"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:924 article.translate.xml:945
 msgid "if (!fail) break;"
-msgstr ""
+msgstr "if (!fail) break;"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:925 article.translate.xml:931
@@ -1527,37 +1537,37 @@ msgstr ""
 #: article.translate.xml:947 article.translate.xml:952
 #: article.translate.xml:953 article.translate.xml:954
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:926 article.translate.xml:933
 msgid "fail = true;"
-msgstr ""
+msgstr "fail = true;"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:930
 msgid "required"
-msgstr ""
+msgstr "required"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:937
 msgid "requisite"
-msgstr ""
+msgstr "requisite"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:940
 msgid "fail = true; break;"
-msgstr ""
+msgstr "fail = true; break;"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:944
 msgid "sufficient"
-msgstr ""
+msgstr "sufficient"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:951
 msgid "optional"
-msgstr ""
+msgstr "optional"
 
 #. (itstool) path: section/para
 #: article.translate.xml:960
@@ -1602,7 +1612,7 @@ msgstr ""
 #. (itstool) id: article.translate.xml#pam-freebsd-modules.title
 #: article.translate.xml:987
 msgid "FreeBSD PAM Modules"
-msgstr ""
+msgstr "Módulos PAM de FreeBSD"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-deny.title
@@ -1611,6 +1621,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:993
@@ -1621,6 +1633,12 @@ msgid ""
 "useful for quickly disabling a service (add it to the top of every chain), "
 "or for terminating chains of <literal>sufficient</literal> modules."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_deny</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> es uno de los módulos más simples de los módulos "
+"que hay disponibles; responde a cualquier solicitud con "
+"<literal>PAM_AUTH_ERR</literal>. Es útil para deshabilitar rápidamente un "
+"servicio (añadalo al principio de cada chain) o para terminar chains de "
+"módulos <literal>sufficient</literal>."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-echo.title
@@ -1629,6 +1647,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1004
@@ -1640,6 +1660,12 @@ msgid ""
 "<quote>Unauthorized access will be prosecuted</quote> before starting the "
 "authentication procedure."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_echo</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> simplemente pasa sus argumentos a la función de "
+"conversación como un mensaje <literal>PAM_TEXT_INFO</literal>. Se utiliza "
+"principalmente para la depuración, pero también puede servir para mostrar "
+"mensajes como <quote>Unauthorized access will be prosecuted</quote> antes de "
+"comenzar el procedimiento de autenticación."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-exec.title
@@ -1648,6 +1674,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1015
@@ -1658,6 +1686,11 @@ msgid ""
 "as command-line arguments. One possible application is to use it to run a "
 "program at login time which mounts the user's home directory."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_exec</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> coge su primer argumento del nombre del programa a "
+"ejecutar, y el resto de argumentos se pasan a ese programa como argumentos "
+"de línea de comandos. Un posible uso sería para ejecutar un programa que al "
+"iniciar la sesión monte el directorio home del usuario."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ftpusers.title
@@ -1666,6 +1699,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1025
@@ -1673,6 +1708,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_ftpusers</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_ftpusers</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-group.title
@@ -1681,6 +1718,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_group</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1031
@@ -1694,6 +1733,15 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, but has many other "
 "uses, such as excluding certain groups of users from a particular service."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_group</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> acepta o rechaza a los "
+"applicants en función de su pertenencia a un grupo de archivos en particular "
+"(normalmente <literal>wheel</literal> para <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>). Su principal "
+"objetivo es mantener el comportamiento tradicional de BSD "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, pero tiene muchos otros usos, como la exclusión de ciertos "
+"grupos de usuarios de un servicio en particular."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-guest.title
@@ -1702,6 +1750,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1042
@@ -1714,6 +1764,15 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> module can easily be "
 "used to implement anonymous FTP logins."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_guest</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> permite el inicio de "
+"sesión de invitados utilizando nombres de inicio de sesión fijos. Se pueden "
+"introducir varios requisitos en la contraseña, pero el comportamiento "
+"predeterminado es permitir cualquier contraseña siempre que el nombre de "
+"inicio de sesión sea el de una cuenta de invitado. El módulo "
+"<citerefentry><refentrytitle>pam_guest</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> se puede utilizar fácilmente para implementar "
+"inicios de sesión en FTP anónimos."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-krb5.title
@@ -1722,6 +1781,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1053
@@ -1729,6 +1790,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_krb5</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ksu.title
@@ -1737,6 +1800,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1059
@@ -1744,6 +1809,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_ksu</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-lastlog.title
@@ -1752,6 +1819,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1065
@@ -1759,6 +1828,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_lastlog</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_lastlog</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-login-access.title
@@ -1767,6 +1838,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_login_access</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1071
@@ -1777,6 +1850,12 @@ msgid ""
 "restrictions specified in the <citerefentry><refentrytitle>login.access</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> table."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_login_access</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> proporciona una "
+"implementación de la primitive de administración de cuentas que aplica las "
+"restricciones en el inicio de sesión especificadas en la tabla "
+"<citerefentry><refentrytitle>login.access</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-nologin.title
@@ -1785,6 +1864,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_nologin</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1080
@@ -1796,6 +1877,13 @@ msgid ""
 "manvolnum></citerefentry> when less than five minutes remain until the "
 "scheduled shutdown time."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_nologin</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> rechaza los inicios de "
+"sesión que no sean del usuario root cuando existe el archivo <filename>/var/"
+"run/nologin</filename>. Generalmente, este archivo se crea mediante el uso "
+"del comando <citerefentry><refentrytitle>shutdown</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> cuando quedan menos de "
+"cinco minutos hasta el tiempo de apagado programado."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opie.title
@@ -1804,6 +1892,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1089
@@ -1821,6 +1911,18 @@ msgid ""
 "citerefentry> never reuses a challenge that has been correctly answered, it "
 "is not vulnerable to replay attacks."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> implementa el método de autenticación "
+"<citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>. El sistema <citerefentry><refentrytitle>opie</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> es un mecanismo de "
+"desafío-respuesta en el que la respuesta a cada desafío es una función "
+"directa del desafio y una contraseña, por lo que la respuesta puede ser "
+"calculada <quote>just in time</quote> por cualquier persona que posea la "
+"contraseña, eliminando la necesidad de listados de contraseñas. Además, dado "
+"que <citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> nunca reutiliza un desafío que ya ha sido "
+"respondido correctamente, no es vulnerable a los ataques por repetición."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-opieaccess.title
@@ -1829,6 +1931,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1103
@@ -1863,6 +1967,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1121
