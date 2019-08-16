@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-16 09:18+0000\n"
+"PO-Revision-Date: 2019-08-16 07:58+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1948,6 +1948,18 @@ msgid ""
 "citerefentry> is allowed to use alternate methods. This is most often used "
 "to prohibit the use of password authentication from untrusted hosts."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_opieaccess</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> es un módulo "
+"complementario para <citerefentry><refentrytitle>pam_opie</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Su propósito es hacer "
+"cumplir las restricciones codificadas en "
+"<citerefentry><refentrytitle>opieaccess</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>, que regulan las condiciones bajo las cuales un "
+"usuario que normalmente se autenticaría usando "
+"<citerefentry><refentrytitle>opie</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> puede usar métodos alternativos. Esto se utiliza a menudo para "
+"prohibir el uso de autenticación por contraseña de host de los cuales no se "
+"tiene confianza."
 
 #. (itstool) path: section/para
 #: article.translate.xml:1111
@@ -1959,6 +1971,13 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and before any other "
 "modules, in the <literal>auth</literal> chain."
 msgstr ""
+"Para que sea efectivo, el módulo "
+"<citerefentry><refentrytitle>pam_opieaccess</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> debe aparecer como <literal>requisite</literal> "
+"inmediatamente después de una entrada <literal>sufficient</literal> para "
+"<citerefentry><refentrytitle>pam_opie</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, y antes que cualquier otro módulo, en el chain "
+"<literal>auth</literal>."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-passwdqc.title
@@ -1976,6 +1995,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_passwdqc</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-permit.title
@@ -1984,6 +2005,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_permit</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1127
@@ -1994,6 +2017,11 @@ msgid ""
 "as a placeholder for services where one or more chains would otherwise be "
 "empty."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_permit</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> es uno de los módulos "
+"más simples de los que hay disponibles; responde a cualquier solicitud con "
+"<literal>PAM_SUCCESS</literal>. Es útil para marcar la posición en los "
+"servicios donde una o más chains estarían vacías."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-radius.title
@@ -2002,6 +2030,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1137
@@ -2009,6 +2039,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_radius</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_radius</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-rhosts.title
@@ -2017,6 +2049,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1143
@@ -2024,6 +2058,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_rhosts</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_rhosts</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-rootok.title
@@ -2032,6 +2068,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_rootok</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1149
@@ -2045,6 +2083,15 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, to which the "
 "<literal>root</literal> should have automatic access."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_rootok</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> informa de éxito si, y "
+"solo si, si el identificador del usuario real en el proceso que lo llama (se "
+"supone que lo ejecuta el applicant) es 0. Esto es útil para servicios no "
+"contectados en red, como <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> o "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, a los que <literal>root</literal> debe tener acceso "
+"automático."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-securetty.title
@@ -2053,6 +2100,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1160
@@ -2060,6 +2109,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_securetty</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_securetty</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-self.title
@@ -2068,6 +2119,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1166
@@ -2079,6 +2132,12 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, where the identity of "
 "the applicant can be easily verified."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_self</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> informa de éxito si y solo si, los nombres del "
+"applicant coinciden con los de la cuenta de destino. Es más útil para "
+"servicios no conectados en red como <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, donde la identidad "
+"del solicitante se puede verificar fácilmente."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-ssh.title
@@ -2087,6 +2146,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1176
@@ -2103,6 +2164,18 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> or another PAM-aware X login manager) or at the console."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_ssh</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> proporciona servicios de autenticación y sesión. "
+"El servicio de autenticación permit a los usuarios que tienen claves "
+"secretas SSH protegidas con contraseña en su directorio <filename>~/.ssh</"
+"filename> para autenticarse escribiendo su contraseña. El servicio de sesión "
+"inicia <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> y lo precarga con las claves que se descifraron en "
+"la fase de autenticación. Esta característica es particularmente útil para "
+"inicios de sesión locales, ya sea en X (usando <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> u otro administrador de inicio de sesión en el entorno X "
+"compatible con PAM) o en la consola."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-tacplus.title
@@ -2111,6 +2184,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1191
@@ -2118,6 +2193,8 @@ msgid ""
 "The <citerefentry><refentrytitle>pam_tacplus</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> module"
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_tacplus</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-modules-unix.title
@@ -2126,6 +2203,8 @@ msgid ""
 "<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: section/para
 #: article.translate.xml:1197
@@ -2141,6 +2220,17 @@ msgid ""
 "as the great majority of admins will want to maintain historical behavior "
 "for at least some services."
 msgstr ""
+"El módulo <citerefentry><refentrytitle>pam_unix</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> implementa la autenticación con contraseña "
+"tradicional <trademark class=\"registered\">UNIX</trademark>, usando "
+"<citerefentry><refentrytitle>getpwnam</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> para obtener la contraseña de la cuenta de destino "
+"y compararla con la proporciona por el applicant. También proporciona "
+"servicios de administración de cuentas (cumplimiento con los tiempos de "
+"expiración de cuentas y contraseñas) y servicios de cambio de contraseñas. "
+"Este es probablemente el módulo más útil, ya que la gran mayoría de los "
+"administradores querrán mantener el comportamiento de siempre en al menos "
+"algunos servicios."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-appl-prog.title
