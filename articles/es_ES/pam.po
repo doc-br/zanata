@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-16 07:58+0000\n"
+"PO-Revision-Date: 2019-08-17 08:18+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1324,6 +1324,15 @@ msgid ""
 "configuration groups configuration lines by service. Either way is fine; "
 "either way makes equal sense."
 msgstr ""
+"Se contruye un chain separado para cada par service/facility, por lo tanto, "
+"si bien el orden en que aparecen las líneas para el mismo service y facility "
+"es significativo, el orden en que se enumeran los services y facilities no "
+"lo es. Los ejemplos en el documento PAM original agruparon las líneas de "
+"configuración por facility, y el <filename>pam.conf</filename> que hay por "
+"defecto en <trademark>Solaris</trademark> todavía lo hace, pero la "
+"configuración por defecto de FreeBSD agrupa las líneas de configuración por "
+"service. De todas formas está bien; de cualquier forma, tiene el mismo "
+"sentido."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-pam.d.title
@@ -1339,6 +1348,10 @@ msgid ""
 "in a separate file bearing the name of the service it applies to. These "
 "files are stored in <filename>/etc/pam.d/</filename>."
 msgstr ""
+"OpenPAM y Linux-PAM soportan un mecanismo de configuración alternativo, que "
+"es el mecanismo preferido en FreeBSD. En este esquema, cada policy está "
+"contenida en un archivo separado con el nombre del service al que se aplica. "
+"Estos archivos se almacenan en <filename>/etc/pam.d/</filename>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:803
@@ -1349,6 +1362,11 @@ msgid ""
 "previous section, one would have the following line in <filename>/etc/pam.d/"
 "login</filename>:"
 msgstr ""
+"Estos archivos de policy por servicio tienen solo cuatro campos en lugar de "
+"los cinco de <filename>pam.conf</filename>: el campo del nombre del service "
+"se omite, Por lo tanto, en lugar de la línea de ejemplo <filename>pam.conf</"
+"filename> de la sección anterior, debería tener la siguiente línea en "
+"<filename>/etc/pam.d/login</filename>:"
 
 #. (itstool) path: section/programlisting
 #: article.translate.xml:810
@@ -1364,6 +1382,10 @@ msgid ""
 "file. For instance, to use the same policy for the <literal>su</literal> and "
 "<literal>sudo</literal> services, one could do as follows:"
 msgstr ""
+"Como resultado de esta sintaxis simplificada, es posible utilizar la misma "
+"policy para múltiples services vinculando cada nombre de service al mismo "
+"archivo de policy. Por ejemplo, para utilizar la misma policy para "
+"<literal>su</literal> y <literal>sudo</literal>, puede hacer lo siguiente:"
 
 #. (itstool) path: section/screen
 #: article.translate.xml:819
@@ -1382,6 +1404,9 @@ msgid ""
 "than specified in the policy file, so the same file can be used for multiple "
 "differently-named services."
 msgstr ""
+"Esto funciona porque el nombre del service se determina a partir del nombre "
+"del archivo en lugar de especificarse en el archivo de policy, por lo que el "
+"mismo archivo se puede usar para múltiples services con nombres diferentes."
 
 #. (itstool) path: section/para
 #: article.translate.xml:827
@@ -1390,12 +1415,15 @@ msgid ""
 "d</filename> mechanism also makes it very easy to install additional "
 "policies for third-party software packages."
 msgstr ""
+"Como la policy de cada service se almacena en un archivo separado, el "
+"mecanismo <filename>pam.d</filename> también facilita la instalación de "
+"policies adicionales para paquetes de software de terceros."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-file-order.title
 #: article.translate.xml:834
 msgid "The Policy Search Order"
-msgstr ""
+msgstr "El orden de búsqueda del policy"
 
 #. (itstool) path: section/para
 #: article.translate.xml:837
@@ -1403,6 +1431,9 @@ msgid ""
 "As we have seen above, PAM policies can be found in a number of places. What "
 "happens if policies for the same service exist in multiple places?"
 msgstr ""
+"Como hemos visto anteriormente, las policies de PAM se pueden encontrar en "
+"varios sitios. ¿Qué sucede si existen policies para el mismo service en "
+"varios sitios?"
 
 #. (itstool) path: section/para
 #: article.translate.xml:841
@@ -1410,12 +1441,14 @@ msgid ""
 "It is essential to understand that PAM's configuration system is centered on "
 "chains."
 msgstr ""
+"Es esencial comprender que el sistema de configuración de PAM se centra en "
+"los chains."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-config-breakdown.title
 #: article.translate.xml:848
 msgid "Breakdown of a Configuration Line"
-msgstr ""
+msgstr "Desglose de una línea de configuración"
 
 #. (itstool) path: section/para
 #: article.translate.xml:851
@@ -1425,6 +1458,10 @@ msgid ""
 "the facility name, the control flag, the module name, and zero or more "
 "module arguments."
 msgstr ""
+"Como se explica en la <xref linkend=\"pam-config-file\"/>, cada línea en el "
+"archivo <filename>/etc/pam.conf</filename> consta de cuatro o más campos: el "
+"nombre del service, el nombre de la facility, el flag de control, el nombre "
+"del módulo y cero o más argumentos del módulo."
 
 #. (itstool) path: section/para
 #: article.translate.xml:857
@@ -1434,6 +1471,10 @@ msgid ""
 "individual application's documentation to determine what service name it "
 "uses."
 msgstr ""
+"El nombre del service suele ser (aunque no siempre) el nombre de la "
+"aplicación a la que se aplica la declaración. Si no está seguro, consulte la "
+"documentación de la aplicación para determinar qué nombre de service utiliza."
+""
 
 #. (itstool) path: section/para
 #: article.translate.xml:862
@@ -1443,6 +1484,10 @@ msgid ""
 "policy file, and omitted from the actual configuration lines, which then "
 "start with the facility name."
 msgstr ""
+"Tenga en cuenta que si usa <filename>/etc/pam.d/</filename> en lugar de "
+"<filename>/etc/pam.conf</filename>, el nombre del service se especifica "
+"mediante el nombre del archivo de policy y se omite de las líneas de "
+"configuración actuales, que luego empiezan con el nombre de la facility."
 
 #. (itstool) path: section/para
 #: article.translate.xml:868
@@ -1450,6 +1495,8 @@ msgid ""
 "The facility is one of the four facility keywords described in <xref linkend="
 "\"pam-facilities-primitives\"/>."
 msgstr ""
+"La facility es una de las cuatro palabras clave descritas en <xref linkend="
+"\"pam-facilities-primitives\"/>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:871
@@ -1463,12 +1510,21 @@ msgid ""
 "<trademark>Solaris</trademark> and OpenPAM do it.) Unsurprisingly, OpenPAM "
 "does not support this syntax."
 msgstr ""
+"Del mismo modo, el flag de control es una de las cuatro palabras clave "
+"descritas en la <xref linkend=\"pam-chains-policies\"/>, la cual describe "
+"cómo interpretar el código de retorno del módulo. Linux-PAM admite una "
+"sintaxis alternativa que le permite especificar la acción a asociar con cada "
+"posible código de retorno, pero esto debe ser evitado, ya no  es estándar y "
+"está estrechamente relacionado con la forma en la que Linux-PAM realiza el "
+"dispacher de las llamadas del service (que difiere mucho de como lo hacen "
+"<trademark>Solaris</trademark> y OpenPAM). Como era de esperar, OpenPAM no "
+"admite esta sintaxis."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-policies.title
 #: article.translate.xml:883
 msgid "Policies"
-msgstr ""
+msgstr "Policies"
 
 #. (itstool) path: section/para
 #: article.translate.xml:885
@@ -1476,6 +1532,8 @@ msgid ""
 "To configure PAM correctly, it is essential to understand how policies are "
 "interpreted."
 msgstr ""
+"Para configurar PAM correctamente, es esencial comprender cómo se "
+"interpretan las policies."
 
 #. (itstool) path: section/para
 #: article.translate.xml:888
@@ -1487,6 +1545,12 @@ msgid ""
 "corresponding chains from the policy for the <literal>other</literal> "
 "service are substituted."
 msgstr ""
+"Cuando una aplicación llama a <citerefentry><refentrytitle>pam_start</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry>, la biblioteca PAM "
+"carga el policy para el service especificado y construye cuatro chains (uno "
+"para cada policy). Si una o más de estas chains están vacías, se reemplazan "
+"las chains de la policy correspondiente para el service <literal>other</"
+"literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:895
@@ -1499,11 +1563,19 @@ msgid ""
 "function are used to determine what happens next. With a few exceptions, "
 "which we discuss below, the following table applies:"
 msgstr ""
+"Cuando la aplicación llama más tarde a una de los seis primitives de PAM, la "
+"biblioteca PAM recupera el chain para la facility correspondiente y llama a "
+"la función apropiada del service en cada módulo del listado en el chain, en "
+"el orden en el que fueron listados en la configuración. Después de cada "
+"llamada a una función del service, el tipo de módulo y el código de error "
+"devuelto por la función del service se utilizan para determinar qué sucede a "
+"continuación. Con algunas excepciones, que se analizaran a continuación, se "
+"aplica la siguiente tabla:"
 
 #. (itstool) path: table/title
 #: article.translate.xml:906
 msgid "PAM Chain Execution Summary"
-msgstr ""
+msgstr "Resumen de la ejecución del chain en PAM"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:916
@@ -1518,7 +1590,7 @@ msgstr "<literal>PAM_IGNORE</literal>"
 #. (itstool) path: row/entry
 #: article.translate.xml:918
 msgid "<literal>other</literal>"
-msgstr "<literal>other</literal>"
+msgstr "<literal>Otros</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:923
@@ -1577,6 +1649,10 @@ msgid ""
 "returned by the first module that failed. Otherwise, it returns "
 "<literal>PAM_SUCCESS</literal>."
 msgstr ""
+"Si <varname>fail</varname> es true al final de un chain, o cuando se alcanza "
+"un <quote>break</quote>, el dispatcher devuelve el código de error devuelto "
+"el primer módulo que falló. De lo contrario, devuelve <literal>PAM_SUCCESS</"
+"literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:966
@@ -1587,6 +1663,10 @@ msgid ""
 "<literal>PAM_NEW_AUTHTOK_REQD</literal>, the dispatcher will return "
 "<literal>PAM_NEW_AUTHTOK_REQD</literal>."
 msgstr ""
+"La primera excepción es que el código de error "
+"<literal>PAM_NEW_AUTHTOK_REQD</literal> se trata como un éxito, si ningún "
+"módulo falla y al menos un módulo devuelve <literal>PAM_NEW_AUTHTOK_REQD</"
+"literal>, el dispatcher devolverá <literal>PAM_NEW_AUTHTOK_REQD</literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:973
@@ -1596,6 +1676,10 @@ msgid ""
 "<literal>binding</literal> and <literal>sufficient</literal> modules as if "
 "they were <literal>required</literal>."
 msgstr ""
+"La segunda excepción es que <citerefentry><refentrytitle>pam_setcred</"
+"refentrytitle><manvolnum>3</manvolnum></citerefentry> trata los módulos "
+"<literal>binding</literal> y <literal>sufficient</literal> como si fueran "
+"<literal>required</literal>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:977
@@ -1607,6 +1691,12 @@ msgid ""
 "it treats <literal>binding</literal> and <literal>sufficient</literal> "
 "modules as if they were <literal>required</literal>."
 msgstr ""
+"La tercera y última excepción es que "
+"<citerefentry><refentrytitle>pam_chauthtok</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> ejecuta la chain completa dos veces (una para "
+"verificaciones preliminares y otra para establecer la contraseña), y en la "
+"fase preliminar, trata los módulos <literal>binding</literal> y "
+"<literal>sufficient</literal> como si fueran <literal>required</literal>."
 
 #. (itstool) path: section/title
 #. (itstool) id: article.translate.xml#pam-freebsd-modules.title
