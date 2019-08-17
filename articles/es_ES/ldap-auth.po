@@ -1,0 +1,1688 @@
+# Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-08-17 08:39+0000\n"
+"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
+
+#. (itstool) path: info/title
+#: article.translate.xml:5
+msgid "LDAP Authentication"
+msgstr "Autenticación LDAP"
+
+#. (itstool) path: affiliation/address
+#: article.translate.xml:14
+#, no-wrap
+msgid "\n"
+"\t    <email>kurin@causa-sui.net</email>\n"
+"\t  "
+msgstr "\n"
+"\t    <email>kurin@causa-sui.net</email>\n"
+"\t  "
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:8
+msgid ""
+"<personname> <firstname>Toby</firstname> <surname>Burress</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
+msgstr ""
+"<personname> <firstname>Toby</firstname> <surname>Burress</surname> </"
+"personname> <affiliation> <_:address-1/> </affiliation>"
+
+#. (itstool) path: info/copyright
+#: article.translate.xml:21
+msgid ""
+"<year>2007</year> <year>2008</year> <holder>The FreeBSD Documentation "
+"Project</holder>"
+msgstr ""
+"<year>2007</year> <year>2008</year> <holder>The FreeBSD Documentation "
+"Project</holder>"
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:28
+msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:30
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
+msgstr ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
+
+#. (itstool) path: info/pubdate
+#. (itstool) path: info/releaseinfo
+#: article.translate.xml:38 article.translate.xml:40
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 2015-07-"
+"25 16:21:53Z bcr $"
+msgstr "$FreeBSD$"
+
+#. (itstool) path: abstract/para
+#: article.translate.xml:43
+msgid ""
+"This document is intended as a guide for the configuration of an LDAP server "
+"(principally an <application>OpenLDAP</application> server) for "
+"authentication on FreeBSD. This is useful for situations where many servers "
+"need the same user accounts, for example as a replacement for "
+"<application>NIS</application>."
+msgstr ""
+"Este documento pretende ser una guía para la configuración de un servidor "
+"LDAP (principalmente un servidor <application>OpenLDAP</application>) para "
+"la autenticación en FreeBSD. Esto es útil para situaciones en las que muchos "
+"servidores necesitan las mismas cuentas de usuario, por ejemplo, como "
+"reemplazo de <application>NIS</application>."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:53
+msgid "Preface"
+msgstr "Prólogo"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:55
+msgid ""
+"This document is intended to give the reader enough of an understanding of "
+"LDAP to configure an LDAP server. This document will attempt to provide an "
+"explanation of <package>net/nss_ldap</package> and <package>security/"
+"pam_ldap</package> for use with client machines services for use with the "
+"LDAP server."
+msgstr ""
+"Este documento está destinado a proporcionar al lector una comprensión "
+"suficiente de LDAP para configurar un servidor LDAP. Este documento "
+"intentará proporcionar una explicación de <package>net/nss_ldap</package> y "
+"<package>security/pam_ldap</package> para usarlos con los servicios de la "
+"máquina del cliente para su uso con el servidor LDAP."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:62
+msgid ""
+"When finished, the reader should be able to configure and deploy a FreeBSD "
+"server that can host an LDAP directory, and to configure and deploy a "
+"FreeBSD server which can authenticate against an LDAP directory."
+msgstr ""
+"Cuando termine, el lector debería poder configurar e implementar un servidor "
+"FreeBSD que pueda alojar un directorio LDAP, y configurar e implementar un "
+"servidor FreeBSD que pueda autenticarse en un directorio LDAP."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:67
+msgid ""
+"This article is not intended to be an exhaustive account of the security, "
+"robustness, or best practice considerations for configuring LDAP or the "
+"other services discussed herein. While the author takes care to do "
+"everything correctly, they do not address security issues beyond a general "
+"scope. This article should be considered to lay the theoretical groundwork "
+"only, and any actual implementation should be accompanied by careful "
+"requirement analysis."
+msgstr ""
+"Este artículo no pretende ser una explicación exhaustiva de las "
+"consideraciones de seguridad, robustez o mejores prácticas para configurar "
+"LDAP u otros de los servicios que se explicaran aquí. Aunque el autor tiene "
+"cuidado de hacer todo correctamente, no aborda los problemas de seguridad "
+"más allá del alcance general. Este artículo debe tenerse en cuenta para "
+"sentar las bases teóricas únicamente, y cualquier implementación real debe "
+"ir acompañado de un análisis cuidadoso de los requisitos."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:78
+msgid "Configuring LDAP"
+msgstr "Configurando LDAP"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:80
+msgid ""
+"LDAP stands for <quote>Lightweight Directory Access Protocol</quote> and is "
+"a subset of the X.500 Directory Access Protocol. Its most recent "
+"specifications are in <link xlink:href=\"http://www.ietf.org/rfc/rfc4510."
+"txt\">RFC4510</link> and friends. Essentially it is a database that expects "
+"to be read from more often than it is written to."
+msgstr ""
+"LDAP significa <quote>Lightweight Directory Access Protocol (Protocolo "
+"Ligero/Simplificado de Acceso a Directorios)</quote> y es un subconjunto del "
+"protocolo de acceso a directorios X.500. Sus últimas especificaciones están "
+"en <link xlink:href=\"http://www.ietf.org/rfc/rfc4510.txt\">RFC4510</link> y "
+"amigos. En esencia, es una base de datos que espera ser leída con más "
+"frecuencia de la que se escribe."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:86
+msgid ""
+"The LDAP server <link xlink:href=\"http://www.openldap.org/\">OpenLDAP</"
+"link> will be used in the examples in this document; while the principles "
+"here should be generally applicable to many different servers, most of the "
+"concrete administration is <application>OpenLDAP</application>-specific. "
+"There are several server versions in ports, for example <package>net/"
+"openldap24-server</package>. Client servers will need the corresponding "
+"<package>net/openldap24-client</package> libraries."
+msgstr ""
+"En los ejemplos de este documento se utilizará el servidor LDAP <link xlink:"
+"href=\"http://www.openldap.org/\">OpenLDAP</link>; aunque los procedimientos "
+"deberían ser aplicables a los diferentes servidores, la mayor parte de la "
+"administración es específica de <application>OpenLDAP</application>. Hay "
+"varias versiones del servidor en la colección de ports, por ejemplo, "
+"<package>net/openldap24-server</package>. Los clientes necesitarán las "
+"librerias necesarias del paquete <package>net/openldap24-client</package>."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:96
+msgid ""
+"There are (basically) two areas of the LDAP service which need configuration."
+" The first is setting up a server to receive connections properly, and the "
+"second is adding entries to the server's directory so that FreeBSD tools "
+"know how to interact with it."
+msgstr ""
+"Hay (básicamente) dos áreas del servicio LDAP que necesitan configuración. "
+"El primero es configurar un servidor para recibir conexiones correctamente, "
+"y el segundo es añadir entradas al directorio del servidor para que las "
+"herramientas de FreeBSD sepan como interactuar con él."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:103
+msgid "Setting Up the Server for Connections"
+msgstr "Configurar el servidor para las conexiones"
+
+#. (itstool) path: note/para
+#: article.translate.xml:106
+msgid ""
+"This section is specific to <application>OpenLDAP</application>. If you are "
+"using another server, you will need to consult that server's documentation."
+msgstr ""
+"Esta sección es específica de <application>OpenLDAP</application>. Si está "
+"utilizando otro servidor, deberá consultar la documentación de ese servidor."
+
+#. (itstool) path: sect3/title
+#. (itstool) path: example/title
+#: article.translate.xml:113 article.translate.xml:119
+msgid "Installing <application>OpenLDAP</application>"
+msgstr "Instalar <application>OpenLDAP</application>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:115
+msgid "First, install <application>OpenLDAP</application>:"
+msgstr "Primero, instale <application>OpenLDAP</application>:"
+
+#. (itstool) path: example/screen
+#: article.translate.xml:122
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</"
+"userinput>\n"
+"<prompt>#</prompt> make install clean"
+msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/net/openldap24-server</"
+"userinput>\n"
+"<prompt>#</prompt> make install clean"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:126
+msgid ""
+"This installs the <command>slapd</command> and <command>slurpd</command> "
+"binaries, along with the required <application>OpenLDAP</application> "
+"libraries."
+msgstr ""
+"Esto instala los binarios <command>slapd</command> y <command>slurpd</"
+"command>, junto con las librerias requeridas por <application>OpenLDAP</"
+"application>."
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:132
+msgid "Configuring <application>OpenLDAP</application>"
+msgstr "Configurar <application>OpenLDAP</application>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:134
+msgid "Next we must configure <application>OpenLDAP</application>."
+msgstr ""
+"A continuación, debemos configurar <application>OpenLDAP</application>."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:137
+msgid ""
+"You will want to require encryption in your connections to the LDAP server; "
+"otherwise your users' passwords will be transferred in plain text, which is "
+"considered insecure. The tools we will be using support two very similar "
+"kinds of encryption, SSL and TLS."
+msgstr ""
+"Es necesario que haga obligatorio el uso de cifrado en sus conexiones al "
+"servidor LDAP; de lo contrario, las contraseñas de sus usuarios se "
+"transferirán en texto plano, lo que se considera inseguro. Las herramientas "
+"que utilizaremos admiten dos tipos muy similares de encriptación, SSL y TLS."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:143
+msgid ""
+"TLS stands for <quote>Transportation Layer Security</quote>. Services that "
+"employ TLS tend to connect on the <emphasis>same</emphasis> ports as the "
+"same services without TLS; thus an SMTP server which supports TLS will "
+"listen for connections on port 25, and an LDAP server will listen on 389."
+msgstr ""
+"TLS significa <quote>Transportation Layer Security (seguridad de la capa de "
+"transporte)</quote>. Los servicios que emplean TLS tienden a conectarse en "
+"los <emphasis>mismos</emphasis> puertos que los mismos servicios sin TLS; "
+"por lo tanto, un servidor SMTP que admita TLS escuchará las conexiones en el "
+"puerto 25 y un servidor LDAP escuchará en el puerto 389."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:150
+msgid ""
+"SSL stands for <quote>Secure Sockets Layer</quote>, and services that "
+"implement SSL do <emphasis>not</emphasis> listen on the same ports as their "
+"non-SSL counterparts. Thus SMTPS listens on port 465 (not 25), HTTPS listens "
+"on 443, and LDAPS on 636."
+msgstr ""
+"SSL significa <quote>Secure Sockets Layer (capa de puertos seguros)</quote>, "
+"y los servicios que implementan SSL <emphasis>no</emphasis> escuchan en los "
+"mismos puertos que sus equivalentes que no son SSL. Por lo tanto, SMTPS "
+"escucha en el puerto 465 (y no 25), HTTPS escucha en el puerto 443 y LDAPS "
+"en el 636."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:156
+msgid ""
+"The reason SSL uses a different port than TLS is because a TLS connection "
+"begins as plain text, and switches to encrypted traffic after the "
+"<literal>STARTTLS</literal> directive. SSL connections are encrypted from "
+"the beginning. Other than that there are no substantial differences between "
+"the two."
+msgstr ""
+"La razón por la que SSL utiliza un puerto diferente a TLS es porque una "
+"conexión TLS empieza como texto plano y cambia al tráfico cifrado después de "
+"la directiva <literal>STARTTLS</literal>. Las conexiones SSL se cifran desde "
+"el principio. Aparte de eso, no hay diferencias sustanciales entre ambos."
+
+#. (itstool) path: note/para
+#: article.translate.xml:164
+msgid ""
+"We will adjust <application>OpenLDAP</application> to use TLS, as SSL is "
+"considered deprecated."
+msgstr ""
+"Configuraremos <application>OpenLDAP</application> para que utilice TLS, ya "
+"que SSL está obsoleto."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:168
+msgid ""
+"Once <application>OpenLDAP</application> is installed via ports, the "
+"following configuration parameters in <filename>/usr/local/etc/openldap/"
+"slapd.conf</filename> will enable TLS:"
+msgstr ""
+"Una vez que <application>OpenLDAP</application> se ha instalado a través de "
+"la colección de ports, los siguientes parámetros de configuración en el "
+"archivo <filename>/usr/local/etc/openldap/slapd.conf</filename> habilitarán "
+"TLS:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:173
+#, no-wrap
+msgid ""
+"security ssf=128\n"
+"\n"
+"TLSCertificateFile /path/to/your/cert.crt\n"
+"TLSCertificateKeyFile /path/to/your/cert.key\n"
+"TLSCACertificateFile /path/to/your/cacert.crt"
+msgstr ""
+"security ssf=128\n"
+"\n"
+"TLSCertificateFile /path/to/your/cert.crt\n"
+"TLSCertificateKeyFile /path/to/your/cert.key\n"
+"TLSCACertificateFile /path/to/your/cacert.crt"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:180
+msgid ""
+"Here, <literal>ssf=128</literal> tells <application>OpenLDAP</application> "
+"to require 128-bit encryption for all connections, both search and update. "
+"This parameter may be configured based on the security needs of your site, "
+"but rarely you need to weaken it, as most LDAP client libraries support "
+"strong encryption."
+msgstr ""
+"Aquí, <literal>ssf=128</literal> le dice a <application>OpenLDAP</"
+"application> que es obligatorio el uso de un cifrado de 128 bits para todas "
+"las conexiones, tanto de búsqueda como de actualización. Este parámetro "
+"puede configurarse en función de las necesidades de seguridad de su sitio, "
+"rara vez necesitará hacer la encriptación más débil, ya que la mayoría de "
+"las librerias de clientes LDAP admiten un cifrado seguro."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:187
+msgid ""
+"The <filename>cert.crt</filename>, <filename>cert.key</filename>, and "
+"<filename>cacert.crt</filename> files are necessary for clients to "
+"authenticate <emphasis>you</emphasis> as the valid LDAP server. If you "
+"simply want a server that runs, you can create a self-signed certificate "
+"with OpenSSL:"
+msgstr ""
+"Los archivos <filename>cert.crt</filename>, <filename>cert.key</filename>, y "
+"<filename>cacert.crt</filename> son necesarios para que los clientes le "
+"identifiquen a <emphasis>usted</emphasis> como el servidor LDAP válido. Si "
+"simplemente desea un servidor que se esté ejecutando, puede crear un "
+"certificado autofirmado con OpenSSL:"
+
+#. (itstool) path: example/title
+#: article.translate.xml:196
+msgid "Generating an RSA Key"
+msgstr "Generar una clave RSA"
+
+#. (itstool) path: example/screen
+#: article.translate.xml:198
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>openssl genrsa -out cert.key 1024</userinput>\n"
+"Generating RSA private key, 1024 bit long modulus\n"
+"....................++++++\n"
+"...++++++\n"
+"e is 65537 (0x10001)\n"
+"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</"
+"userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>openssl genrsa -out cert.key 1024</userinput>\n"
+"Generating RSA private key, 1024 bit long modulus\n"
+"....................++++++\n"
+"...++++++\n"
+"e is 65537 (0x10001)\n"
+"<prompt>%</prompt> <userinput>openssl req -new -key cert.key -out cert.csr</"
+"userinput>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:206
+msgid ""
+"At this point you should be prompted for some values. You may enter whatever "
+"values you like; however, it is important the <quote>Common Name</quote> "
+"value be the fully qualified domain name of the <application>OpenLDAP</"
+"application> server. In our case, and the examples here, the server is "
+"<replaceable>server.example.org</replaceable>. Incorrectly setting this "
+"value will cause clients to fail when making connections. This can the cause "
+"of great frustration, so ensure that you follow these steps closely."
+msgstr ""
+"En este punto, se le solicitarán algunos valores. Puede introducir los "
+"valores que desee; sin embargo, es important que el valor <quote>Common "
+"Name</quote> sea el nombre de dominio completo del servidor "
+"<application>OpenLDAP</application>. En nuestro caso, y en los ejemplos del "
+"artículo, el servidor es <replaceable>server.example.org</replaceable>. Una "
+"incorrecta configuración de este valor hará que los clientes fallen al hacer "
+"la conexión. Esto puede causar una gran frustración, así que asegúrese de "
+"seguir estos pasos cuidadosamente."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:217
+msgid "Finally, the certificate signing request needs to be signed:"
+msgstr "Finalmente, el certificado debe firmarse:"
+
+#. (itstool) path: example/title
+#: article.translate.xml:221
+msgid "Self-signing the Certificate"
+msgstr "Autofirmar el certificado"
+
+#. (itstool) path: example/screen
+#: article.translate.xml:223
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -"
+"signkey cert.key -out cert.crt</userinput>\n"
+"Signature ok\n"
+"subject=/C=AU/ST=Some-State/O=Internet Widgits Pty Ltd\n"
+"Getting Private key"
+msgstr ""
+"<prompt>%</prompt> <userinput>openssl x509 -req -in cert.csr -days 365 -"
+"signkey cert.key -out cert.crt</userinput>\n"
+"Signature ok\n"
+"subject=/C=AU/ST=Some-State/O=Internet Widgits Pty Ltd\n"
+"Getting Private key"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:229
+msgid ""
+"This will create a self-signed certificate that can be used for the "
+"directives in <filename>slapd.conf</filename>, where <filename>cert.crt</"
+"filename> and <filename>cacert.crt</filename> are the same file. If you are "
+"going to use many <application>OpenLDAP</application> servers (for "
+"replication via <literal>slurpd</literal>) you will want to see <xref "
+"linkend=\"ssl-ca\"/> to generate a CA key and use it to sign individual "
+"server certificates."
+msgstr ""
+"Esto creará un certificado autofirmado que puede ser usado en la "
+"configuración en el archivo <filename>slapd.conf</filename>, donde "
+"<filename>cert.crt</filename> y <filename>cacert.crt</filename> son el mismo "
+"archivo. Si piensa utilizar muchos servidores <application>OpenLDAP</"
+"application> (replicandolos a través de <literal>slurpd</literal>), querrá "
+"ver el <xref linkend=\"ssl-ca\"/> para generar una clave de CA y usarla para "
+"firmar certificados de servidor individuales."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:239
+msgid ""
+"Once this is done, put the following in <filename>/etc/rc.conf</filename>:"
+msgstr ""
+"Una vez hecho esto, ponga la siguiente línea  en el archivo <filename>/etc/"
+"rc.conf</filename>:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:242
+#, no-wrap
+msgid "slapd_enable=\"YES\""
+msgstr "slapd_enable=\"YES\""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:244
+msgid ""
+"Then run <userinput>/usr/local/etc/rc.d/slapd start</userinput>. This should "
+"start <application>OpenLDAP</application>. Confirm that it is listening on "
+"389 with"
+msgstr ""
+"Después ejecute <userinput>/usr/local/etc/rc.d/slapd start</userinput>. Esto "
+"debería iniciar <application>OpenLDAP</application>. Confirme que está "
+"escuchando en el puerto 389 con el comando"
+
+#. (itstool) path: sect3/screen
+#: article.translate.xml:249
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>sockstat -4 -p 389</userinput>\n"
+"ldap     slapd      3261  7  tcp4   *:389                 *:*"
+msgstr ""
+"<prompt>%</prompt> <userinput>sockstat -4 -p 389</userinput>\n"
+"ldap     slapd      3261  7  tcp4   *:389                 *:*"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:254
+msgid "Configuring the Client"
+msgstr "Configurar el cliente"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:256
+msgid ""
+"Install the <package>net/openldap24-client</package> port for the "
+"<application>OpenLDAP</application> libraries. The client machines will "
+"always have <application>OpenLDAP</application> libraries since that is all "
+"<package>security/pam_ldap</package> and <package>net/nss_ldap</package> "
+"support, at least for the moment."
+msgstr ""
+"Instale el port <package>net/openldap24-client</package> para las librerias "
+"<application>OpenLDAP</application>. Los ordenadores cliente siempre tendrán "
+"las librerias <application>OpenLDAP</application>, ya que todo es compatible "
+"con <package>security/pam_ldap</package> y <package>net/nss_ldap</package> "
+"support, al menos por el momento."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:264
+msgid ""
+"The configuration file for the <application>OpenLDAP</application> libraries "
+"is <filename>/usr/local/etc/openldap/ldap.conf</filename>. Edit this file to "
+"contain the following values:"
+msgstr ""
+"El archivo de configuración para las librerias <application>OpenLDAP</"
+"application> es <filename>/usr/local/etc/openldap/ldap.conf</filename>. "
+"Edite este archivo para añadirle los siguientes valores:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:269
+#, no-wrap
+msgid ""
+"base dc=example,dc=org\n"
+"uri ldap://server.example.org/\n"
+"ssl start_tls\n"
+"tls_cacert /path/to/your/cacert.crt"
+msgstr ""
+"base dc=example,dc=org\n"
+"uri ldap://server.example.org/\n"
+"ssl start_tls\n"
+"tls_cacert /path/to/your/cacert.crt"
+
+#. (itstool) path: note/para
+#: article.translate.xml:275
+msgid ""
+"It is important that your clients have access to <filename>cacert.crt</"
+"filename>, otherwise they will not be able to connect."
+msgstr ""
+"Es importante que sus clientes tengan acceso a <filename>cacert.crt</"
+"filename>, de lo contrario no podrán conectarse."
+
+#. (itstool) path: note/para
+#: article.translate.xml:281
+msgid ""
+"There are two files called <filename>ldap.conf</filename>. The first is this "
+"file, which is for the <application>OpenLDAP</application> libraries and "
+"defines how to talk to the server. The second is <filename>/usr/local/etc/"
+"ldap.conf</filename>, and is for <application>pam_ldap</application>."
+msgstr ""
+"Hay dos archivos llamaados <filename>ldap.conf</filename>. El primero es "
+"este archivo, que es para las librerias <application>OpenLDAP</application> "
+"y define cómo hablar con el servidor. El segundo es <filename>/usr/local/etc/"
+"ldap.conf</filename> y es para <application>pam_ldap</application>."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:289
+msgid ""
+"At this point you should be able to run <userinput>ldapsearch -Z</userinput> "
+"on the client machine; <option>-Z</option> means <quote>use TLS</quote>. If "
+"you encounter an error, then something is configured wrong; most likely it "
+"is your certificates. Use <citerefentry><refentrytitle>openssl</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>'s <command>s_client</"
+"command> and <command>s_server</command> to ensure you have them configured "
+"and signed properly."
+msgstr ""
+"En este punto, debería poder ejecutar el comando <userinput>ldapsearch -Z</"
+"userinput> en el ordenador cliente; <option>-Z</option> significa <quote>use "
+"TLS</quote>. Si se produce un error, entonces algo está mal configurado; lo "
+"más probable que sean sus certificados. Utilice los comandos "
+"<command>s_client</command> y <command>s_server</command> de "
+"<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> para asegurarse de tenerlos configurados y "
+"firmados correctamente."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:301
+msgid "Entries in the Database"
+msgstr "Entradas en la base de datos"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:303
+msgid ""
+"Authentication against an LDAP directory is generally accomplished by "
+"attempting to bind to the directory as the connecting user. This is done by "
+"establishing a <quote>simple</quote> bind on the directory with the user "
+"name supplied. If there is an entry with the <literal>uid</literal> equal to "
+"the user name and that entry's <literal>userPassword</literal> attribute "
+"matches the password supplied, then the bind is successful."
+msgstr ""
+"La autenticación en un directorio LDAP se logra generalmente al intentar "
+"vincularse al directorio como el usuario que se conecta. Esto se realiza "
+"mediante el establecimiento de un enlace <quote>simple</quote> en el "
+"directorio con el nombre de usuario proporcionado. Si hay uan entrada con el "
+"<literal>uid</literal> igual al nombre de usuario y el atributo "
+"<literal>userPassword</literal> de la entrada coincide con la contraseña "
+"proporcionada, el enlace tiene éxito."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:312
+msgid ""
+"The first thing we have to do is figure out is where in the directory our "
+"users will live."
+msgstr ""
+"Lo primero que tenemos que hacer es averiguar en qué parte del directorio "
+"estarán nuestros usuarios."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:315
+msgid ""
+"The base entry for our database is <literal>dc=example,dc=org</literal>. The "
+"default location for users that most clients seem to expect is something "
+"like <literal>ou=people,<replaceable>base</replaceable></literal>, so that "
+"is what will be used here. However keep in mind that this is configurable."
+msgstr ""
+"La entrada base para nuestra base de datos es <literal>dc=example,dc=org</"
+"literal>. La ubicación predeterminada para los usuarios que la mayoría de "
+"los clientes parecen esperar es algo así como <literal>ou="
+"people,<replaceable>base</replaceable></literal>, así que eso es lo que se "
+"usará aquí. Sin embargo, tenga en cuenta que esto es configurable."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:322
+msgid ""
+"So the ldif entry for the <literal>people</literal> organizational unit will "
+"look like:"
+msgstr ""
+"Por lo tanto, la entrada ldif para la unidad organizativa de "
+"<literal>people</literal> será similar a:"
+
+#. (itstool) path: sect2/programlisting
+#: article.translate.xml:325
+#, no-wrap
+msgid ""
+"dn: ou=people,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: organizationalUnit\n"
+"ou: people"
+msgstr ""
+"dn: ou=people,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: organizationalUnit\n"
+"ou: people"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:330
+msgid "All users will be created as subentries of this organizational unit."
+msgstr ""
+"Todos los usuarios se crearán como subentradas de esta unidad organizativa."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:333
+msgid ""
+"Some thought might be given to the object class your users will belong to. "
+"Most tools by default will use <literal>people</literal>, which is fine if "
+"you simply want to provide entries against which to authenticate. However, "
+"if you are going to store user information in the LDAP database as well, you "
+"will probably want to use <literal>inetOrgPerson</literal>, which has many "
+"useful attributes. In either case, the relevant schemas need to be loaded in "
+"<filename>slapd.conf</filename>."
+msgstr ""
+"Se podría pensar en la clase de objeto a la que pertenecerán sus usuarios. "
+"Por defecto, la mayoría de las herramientas utilizarán <literal>people</"
+"literal>, lo cual está bien si simplemente desea proporcionar entradas para "
+"la autenticación. Sin embargo, si también va a almacenar información de "
+"usuario en la base de datos LDAP, probablemente quiera usar "
+"<literal>inetOrgPerson</literal>, el cual dispone de muchos atributos útiles."
+" En cualquier caso, los esquemas relevantes deben introducirse en el archivo "
+"<filename>slapd.conf</filename>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:343
+msgid ""
+"For this example we will use the <literal>person</literal> object class. If "
+"you are using <literal>inetOrgPerson</literal>, the steps are basically "
+"identical, except that the <literal>sn</literal> attribute is required."
+msgstr ""
+"Para este ejemplo, utilizaremos el objeto <literal>person</literal>. Si está "
+"utilizando <literal>inetOrgPerson</literal>, los pasos son, básicamente, "
+"idénticos, excepto que es necesario el atributo <literal>sn</literal>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:349
+msgid "To add a user <literal>testuser</literal>, the ldif would be:"
+msgstr "Para añadir el usuario <literal>testuser</literal>, el ldif sería:"
+
+#. (itstool) path: sect2/programlisting
+#: article.translate.xml:352
+#, no-wrap
+msgid ""
+"dn: uid=tuser,ou=people,dc=example,dc=org\n"
+"objectClass: person\n"
+"objectClass: posixAccount\n"
+"objectClass: shadowAccount\n"
+"objectClass: top\n"
+"uidNumber: 10000\n"
+"gidNumber: 10000\n"
+"homeDirectory: /home/tuser\n"
+"loginShell: /bin/csh\n"
+"uid: tuser\n"
+"cn: tuser"
+msgstr ""
+"dn: uid=tuser,ou=people,dc=example,dc=org\n"
+"objectClass: person\n"
+"objectClass: posixAccount\n"
+"objectClass: shadowAccount\n"
+"objectClass: top\n"
+"uidNumber: 10000\n"
+"gidNumber: 10000\n"
+"homeDirectory: /home/tuser\n"
+"loginShell: /bin/csh\n"
+"uid: tuser\n"
+"cn: tuser"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:364
+msgid ""
+"I start my LDAP users' UIDs at 10000 to avoid collisions with system "
+"accounts; you can configure whatever number you wish here, as long as it is "
+"less than 65536."
+msgstr ""
+"Yo empiezo los UIDs de mis usuarios de LDAP en el 10000 para evitar "
+"conflictos con las cuentas del sistema; puede establecer el número que desee "
+"aquí, siempre que sea inferior a 65536."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:368
+msgid ""
+"We also need group entries. They are as configurable as user entries, but we "
+"will use the defaults below:"
+msgstr ""
+"También necesitamos entradas grupales. Son tan configurables como las "
+"entradas de usuario, pero usaremos los valores predeterminados que se "
+"muestran a continuación:"
+
+#. (itstool) path: sect2/programlisting
+#: article.translate.xml:371
+#, no-wrap
+msgid ""
+"dn: ou=groups,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: organizationalUnit\n"
+"ou: groups\n"
+"\n"
+"dn: cn=tuser,ou=groups,dc=example,dc=org\n"
+"objectClass: posixGroup\n"
+"objectClass: top\n"
+"gidNumber: 10000\n"
+"cn: tuser"
+msgstr ""
+"dn: ou=groups,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: organizationalUnit\n"
+"ou: groups\n"
+"\n"
+"dn: cn=tuser,ou=groups,dc=example,dc=org\n"
+"objectClass: posixGroup\n"
+"objectClass: top\n"
+"gidNumber: 10000\n"
+"cn: tuser"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:382
+msgid ""
+"To enter these into your database, you can use <command>slapadd</command> or "
+"<command>ldapadd</command> on a file containing these entries. "
+"Alternatively, you can use <package>sysutils/ldapvi</package>."
+msgstr ""
+"Para insertarlos en su base de datos, puede usar <command>slapadd</command> "
+"o <command>ldapadd</command> en un archivo que contenga estas entradas. De "
+"forma alternativa, puede utilizar <package>sysutils/ldapvi</package>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:387
+msgid ""
+"The <command>ldapsearch</command> utility on the client machine should now "
+"return these entries. If it does, your database is properly configured to be "
+"used as an LDAP authentication server."
+msgstr ""
+"La utilidad <command>ldapsearch</command> en el ordenador del cliente "
+"debería devolver estas entradas. Si es así, la base de datos está "
+"configurada correctamente para ser utilizada como un servidor de "
+"autenticación LDAP."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:395
+msgid "Client Configuration"
+msgstr "Configurar el cliente"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:397
+msgid ""
+"The client should already have <application>OpenLDAP</application> libraries "
+"from <xref linkend=\"ldap-connect-client\"/>, but if you are installing "
+"several client machines you will need to install <package>net/openldap24-"
+"client</package> on each of them."
+msgstr ""
+"El cliente ya debería tener las librerias <application>OpenLDAP</"
+"application> de la <xref linkend=\"ldap-connect-client\"/>, pero si está "
+"realizando la instalación en varios ordenadores, necesitará instalar "
+"<package>net/openldap24-client</package> en cada una de ellos."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:402
+msgid ""
+"FreeBSD requires two ports to be installed to authenticate against an LDAP "
+"server, <package>security/pam_ldap</package> and <package>net/nss_ldap</"
+"package>."
+msgstr ""
+"FreeBSD requiere de la instalación de dos ports para autenticarse en un "
+"servidor LDAP, <package>security/pam_ldap</package> y <package>net/nss_ldap</"
+"package>."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:407
+msgid "Authentication"
+msgstr "Autenticación"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:409
+msgid ""
+"<package>security/pam_ldap</package> is configured via <filename>/usr/local/"
+"etc/ldap.conf</filename>."
+msgstr ""
+"<package>security/pam_ldap</package> se configura a través del archivo "
+"<filename>/usr/local/etc/ldap.conf</filename>."
+
+#. (itstool) path: note/para
+#: article.translate.xml:413
+msgid ""
+"This is a <emphasis>different file</emphasis> than the "
+"<application>OpenLDAP</application> library functions' configuration file, "
+"<filename>/usr/local/etc/openldap/ldap.conf</filename>; however, it takes "
+"many of the same options; in fact it is a superset of that file. For the "
+"rest of this section, references to <filename>ldap.conf</filename> will mean "
+"<filename>/usr/local/etc/ldap.conf</filename>."
+msgstr ""
+"Este es un <emphasis>archivo diferente</emphasis> al archivo de "
+"configuración de las funciones de la libreria <application>OpenLDAP</"
+"application>, <filename>/usr/local/etc/openldap/ldap.conf</filename>; sin "
+"embargo, utiliza muchas de las mismas opciones; en realidad, es un "
+"superconjunto de este archivo. Para el resto de esta sección, las "
+"referencias a <filename>ldap.conf</filename> significarán <filename>/usr/"
+"local/etc/ldap.conf</filename>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:423
+msgid ""
+"Thus, we will want to copy all of our original configuration parameters from "
+"<filename>openldap/ldap.conf</filename> to the new <filename>ldap.conf</"
+"filename>. Once this is done, we want to tell <package>security/pam_ldap</"
+"package> what to look for on the directory server."
+msgstr ""
+"Por lo tanto, queremos copiar todos nuestros parámetros de configuración "
+"originales de <filename>openldap/ldap.conf</filename> al nuevo "
+"<filename>ldap.conf</filename>. Una vez hecho esto, le indicaremos a "
+"<package>security/pam_ldap</package> qué buscar en el servidor de directorio."
+""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:430
+msgid ""
+"We are identifying our users with the <literal>uid</literal> attribute. To "
+"configure this (though it is the default), set the "
+"<literal>pam_login_attribute</literal> directive in <filename>ldap.conf</"
+"filename>:"
+msgstr ""
+"Estamos identificando a nuestros usuarios con el atributo <literal>uid</"
+"literal>. Para configurar esto (aunque es el predeterminado), configure la "
+"directiva <literal>pam_login_attribute</literal> en <filename>ldap.conf</"
+"filename>:"
+
+#. (itstool) path: example/title
+#: article.translate.xml:437
+msgid "Setting <literal>pam_login_attribute</literal>"
+msgstr "Establecer <literal>pam_login_attribute</literal>"
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:439
+#, no-wrap
+msgid "pam_login_attribute uid"
+msgstr "pam_login_attribute uid"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:442
+msgid ""
+"With this set, <package>security/pam_ldap</package> will search the entire "
+"LDAP directory under <literal>base</literal> for the value <literal>uid="
+"<replaceable>username</replaceable></literal>. If it finds one and only one "
+"entry, it will attempt to bind as that user with the password it was given. "
+"If it binds correctly, then it will allow access. Otherwise it will fail."
+msgstr ""
+"Con esta configuración, <package>security/pam_ldap</package> buscará en el "
+"directorio LDAP completo en la  <literal>base</literal> el valor "
+"<literal>uid=<replaceable>username</replaceable></literal>. Si encuentra una "
+"y solo una entrada, intentará vincularse como ese usuario con la contraseña "
+"que se le proporcionó. Si se vincula correctamente, permitirá el acceso. De "
+"lo contrario, fallará."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:451
+msgid ""
+"Users whose shell is not in <filename>/etc/shells</filename> will not be "
+"able to log in. This is particularly important when <application>Bash</"
+"application> is set as the user shell on the LDAP server. <application>Bash</"
+"application> is not included with a default installation of FreeBSD. When "
+"installed from a package or port, it is located at <filename>/usr/local/bin/"
+"bash</filename>. Verify that the path to the shell on the server is set "
+"correctly:"
+msgstr ""
+
+#. (itstool) path: sect2/screen
+#: article.translate.xml:461
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>getent passwd <replaceable>username</"
+"replaceable></userinput>"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:463
+msgid ""
+"There are two choices when the output shows <literal>/bin/bash</literal> in "
+"the last column. The first is to change the user's entry on the LDAP server "
+"to <filename>/usr/local/bin/bash</filename>. The second option is to create "
+"a symlink on the LDAP client computer so <application>Bash</application> is "
+"found at the correct location:"
+msgstr ""
+
+#. (itstool) path: sect2/screen
+#: article.translate.xml:471
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</"
+"userinput>"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:473
+msgid ""
+"Make sure that <filename>/etc/shells</filename> contains entries for both "
+"<literal>/usr/local/bin/bash</literal> and <literal>/bin/bash</literal>. The "
+"user will then be able to log in to the system with <application>Bash</"
+"application> as their shell."
+msgstr ""
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:480
+msgid "PAM"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:482
+msgid ""
+"PAM, which stands for <quote>Pluggable Authentication Modules</quote>, is "
+"the method by which FreeBSD authenticates most of its sessions. To tell "
+"FreeBSD we wish to use an LDAP server, we will have to add a line to the "
+"appropriate PAM file."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:488
+msgid ""
+"Most of the time the appropriate PAM file is <filename>/etc/pam.d/sshd</"
+"filename>, if you want to use <application>SSH</application> (remember to "
+"set the relevant options in <filename>/etc/ssh/sshd_config</filename>, "
+"otherwise <application>SSH</application> will not use PAM)."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:495
+msgid "To use PAM for authentication, add the line"
+msgstr ""
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:497
+#, no-wrap
+msgid "auth  sufficient  /usr/local/lib/pam_ldap.so  no_warn"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:499
+msgid ""
+"Exactly where this line shows up in the file and which options appear in the "
+"fourth column determine the exact behavior of the authentication mechanism; "
+"see <citerefentry><refentrytitle>pam.d</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:504
+msgid ""
+"With this configuration you should be able to authenticate a user against an "
+"LDAP directory. <application>PAM</application> will perform a bind with your "
+"credentials, and if successful will tell <application>SSH</application> to "
+"allow access."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:510
+msgid ""
+"However it is not a good idea to allow <emphasis>every</emphasis> user in "
+"the directory into <emphasis>every</emphasis> client machine. With the "
+"current configuration, all that a user needs to log into a machine is an "
+"LDAP entry. Fortunately there are a few ways to restrict user access."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:517
+msgid ""
+"<filename>ldap.conf</filename> supports a <literal>pam_groupdn</literal> "
+"directive; every account that connects to this machine needs to be a member "
+"of the group specified here. For example, if you have"
+msgstr ""
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:522
+#, no-wrap
+msgid "pam_groupdn cn=servername,ou=accessgroups,dc=example,dc=org"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:524
+msgid ""
+"in <filename>ldap.conf</filename>, then only members of that group will be "
+"able to log in. There are a few things to bear in mind, however."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:528
+msgid ""
+"Members of this group are specified in one or more <literal>memberUid</"
+"literal> attributes, and each attribute must have the full distinguished "
+"name of the member. So <literal>memberUid: someuser</literal> will not work; "
+"it must be:"
+msgstr ""
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:534
+#, no-wrap
+msgid "memberUid: uid=someuser,ou=people,dc=example,dc=org"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:536
+msgid ""
+"Additionally, this directive is not checked in PAM during authentication, it "
+"is checked during account management, so you will need a second line in your "
+"PAM files under <literal>account</literal>. This will require, in turn, "
+"<emphasis>every</emphasis> user to be listed in the group, which is not "
+"necessarily what we want. To avoid blocking users that are not in LDAP, you "
+"should enable the <literal>ignore_unknown_user</literal> attribute. Finally, "
+"you should set the <literal>ignore_authinfo_unavail</literal> option so that "
+"you are not locked out of every computer when the LDAP server is unavailable."
+""
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:549
+msgid ""
+"Your <filename>pam.d/sshd</filename> might then end up looking like this:"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:553
+msgid "Sample <filename>pam.d/sshd</filename>"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:555
+#, no-wrap
+msgid ""
+"auth            required        pam_nologin.so          no_warn\n"
+"auth            sufficient      pam_opie.so             no_warn "
+"no_fake_prompts\n"
+"auth            requisite       pam_opieaccess.so       no_warn allow_local\n"
+"auth            sufficient      /usr/local/lib/pam_ldap.so      no_warn\n"
+"auth            required        pam_unix.so             no_warn "
+"try_first_pass\n"
+"\n"
+"account         required        pam_login_access.so\n"
+"account         required        /usr/local/lib/pam_ldap.so      no_warn "
+"ignore_authinfo_unavail ignore_unknown_user"
+msgstr ""
+
+#. (itstool) path: note/para
+#: article.translate.xml:566
+msgid ""
+"Since we are adding these lines specifically to <filename>pam.d/sshd</"
+"filename>, this will only have an effect on <application>SSH</application> "
+"sessions. LDAP users will be unable to log in at the console. To change this "
+"behavior, examine the other files in <filename>/etc/pam.d</filename> and "
+"modify them accordingly."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:578
+msgid "Name Service Switch"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:580
+msgid ""
+"<application>NSS</application> is the service that maps attributes to names. "
+"So, for example, if a file is owned by user <literal>1001</literal>, an "
+"application will query <application>NSS</application> for the name of "
+"<literal>1001</literal>, and it might get <literal>bob</literal> or "
+"<literal>ted</literal> or whatever the user's name is."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:588
+msgid ""
+"Now that our user information is kept in LDAP, we need to tell "
+"<application>NSS</application> to look there when queried."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:592
+msgid ""
+"The <package>net/nss_ldap</package> port does this. It uses the same "
+"configuration file as <package>security/pam_ldap</package>, and should not "
+"need any extra parameters once it is installed. Instead, what is left is "
+"simply to edit <filename>/etc/nsswitch.conf</filename> to take advantage of "
+"the directory. Simply replace the following lines:"
+msgstr ""
+
+#. (itstool) path: sect2/programlisting
+#: article.translate.xml:600
+#, no-wrap
+msgid "group: compat\n"
+"passwd: compat"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:603
+msgid "with"
+msgstr ""
+
+#. (itstool) path: sect2/programlisting
+#: article.translate.xml:605
+#, no-wrap
+msgid "group: files ldap\n"
+"passwd: files ldap"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:608
+msgid "This will allow you to map usernames to UIDs and UIDs to usernames."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:611
+msgid "Congratulations! You should now have working LDAP authentication."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:616
+msgid "Caveats"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:618
+msgid ""
+"Unfortunately, as of the time this was written FreeBSD did not support "
+"changing user passwords with <citerefentry><refentrytitle>passwd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Because of this, most "
+"administrators are left to implement a solution themselves. I provide some "
+"examples here. Note that if you write your own password change script, there "
+"are some security issues you should be made aware of; see <xref linkend="
+"\"security-passwd\"/>"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:626
+msgid "Shell Script for Changing Passwords"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:628
+#, no-wrap
+msgid ""
+"#!/bin/sh\n"
+"\n"
+"stty -echo\n"
+"read -p \"Old Password: \" oldp; echo\n"
+"read -p \"New Password: \" np1; echo\n"
+"read -p \"Retype New Password: \" np2; echo\n"
+"stty echo\n"
+"\n"
+"if [ \"$np1\" != \"$np2\" ]; then\n"
+"  echo \"Passwords do not match.\"\n"
+"  exit 1\n"
+"fi\n"
+"\n"
+"ldappasswd -D uid=\"$USER\",ou=people,dc=example,dc=org \\\n"
+"  -w \"$oldp\" \\\n"
+"  -a \"$oldp\" \\\n"
+"  -s \"$np1\""
+msgstr ""
+
+#. (itstool) path: caution/para
+#: article.translate.xml:648
+msgid ""
+"This script does hardly any error checking, but more important it is very "
+"cavalier about how it stores your passwords. If you do anything like this, "
+"at least adjust the <literal>security.bsd.see_other_uids</literal> sysctl "
+"value:"
+msgstr ""
+
+#. (itstool) path: caution/screen
+#: article.translate.xml:654
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
+"userinput>"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:657
+msgid ""
+"A more flexible (and probably more secure) approach can be used by writing a "
+"custom program, or even a web interface. The following is part of a "
+"<application>Ruby</application> library that can change LDAP passwords. It "
+"sees use both on the command line, and on the web."
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:664
+msgid "Ruby Script for Changing Passwords"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:666
+#, no-wrap
+msgid ""
+"require 'ldap'\n"
+"require 'base64'\n"
+"require 'digest'\n"
+"require 'password' # ruby-password\n"
+"\n"
+"ldap_server = \"ldap.example.org\"\n"
+"luser = \"uid=#{ENV['USER']},ou=people,dc=example,dc=org\"\n"
+"\n"
+"# get the new password, check it, and create a salted hash from it\n"
+"def get_password\n"
+"  pwd1 = Password.get(\"New Password: \")\n"
+"  pwd2 = Password.get(\"Retype New Password: \")\n"
+"\n"
+"  raise if pwd1 != pwd2\n"
+"  pwd1.check # check password strength\n"
+"\n"
+"  salt = rand.to_s.gsub(/0\\./, '')\n"
+"  pass = pwd1.to_s\n"
+"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1."
+"digest(\"#{pass}#{salt}\")+salt).chomp!\n"
+"  return hash\n"
+"end\n"
+"\n"
+"oldp = Password.get(\"Old Password: \")\n"
+"newp = get_password\n"
+"\n"
+"# We'll just replace it.  That we can bind proves that we either know\n"
+"# the old password or are an admin.\n"
+"\n"
+"replace = LDAP::Mod.new(LDAP::LDAP_MOD_REPLACE | LDAP::LDAP_MOD_BVALUES,\n"
+"                        \"userPassword\",\n"
+"                        [newp])\n"
+"\n"
+"conn = LDAP::SSLConn.new(ldap_server, 389, true)\n"
+"conn.set_option(LDAP::LDAP_OPT_PROTOCOL_VERSION, 3)\n"
+"conn.bind(luser, oldp)\n"
+"conn.modify(luser, [replace])"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:704
+msgid ""
+"Although not guaranteed to be free of security holes (the password is kept "
+"in memory, for example) this is cleaner and more flexible than a simple "
+"<command>sh</command> script."
+msgstr ""
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:712
+msgid "Security Considerations"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:714
+msgid ""
+"Now that your machines (and possibly other services) are authenticating "
+"against your LDAP server, this server needs to be protected at least as well "
+"as <filename>/etc/master.passwd</filename> would be on a regular server, and "
+"possibly even more so since a broken or cracked LDAP server would break "
+"every client service."
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:721
+msgid ""
+"Remember, this section is not exhaustive. You should continually review your "
+"configuration and procedures for improvements."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:726
+msgid "Setting Attributes Read-only"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:728
+msgid ""
+"Several attributes in LDAP should be read-only. If left writable by the "
+"user, for example, a user could change his <literal>uidNumber</literal> "
+"attribute to <literal>0</literal> and get <systemitem class="
+"\"username\">root</systemitem> access!"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:734
+msgid ""
+"To begin with, the <literal>userPassword</literal> attribute should not be "
+"world-readable. By default, anyone who can connect to the LDAP server can "
+"read this attribute. To disable this, put the following in <filename>slapd."
+"conf</filename>:"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:741
+msgid "Hide Passwords"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:743
+#, no-wrap
+msgid ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
+"\n"
+"access to *\n"
+"  by self write\n"
+"  by * read"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:754
+msgid ""
+"This will disallow reading of the <literal>userPassword</literal> attribute, "
+"while still allowing users to change their own passwords."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:758
+msgid ""
+"Additionally, you'll want to keep users from changing some of their own "
+"attributes. By default, users can change any attribute (except for those "
+"which the LDAP schemas themselves deny changes), such as <literal>uidNumber</"
+"literal>. To close this hole, modify the above to"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:765
+msgid "Read-only Attributes"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:767
+#, no-wrap
+msgid ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
+"\n"
+"access to attrs=homeDirectory,uidNumber,gidNumber\n"
+"  by * read\n"
+"\n"
+"access to *\n"
+"  by self write\n"
+"  by * read"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:781
+msgid "This will stop users from being able to masquerade as other users."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:786
+msgid "<systemitem class=\"username\">root</systemitem> Account Definition"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:789
+msgid ""
+"Often the <systemitem class=\"username\">root</systemitem> or manager "
+"account for the LDAP service will be defined in the configuration file. "
+"<application>OpenLDAP</application> supports this, for example, and it "
+"works, but it can lead to trouble if <filename>slapd.conf</filename> is "
+"compromised. It may be better to use this only to bootstrap yourself into "
+"LDAP, and then define a <systemitem class=\"username\">root</systemitem> "
+"account there."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:797
+msgid ""
+"Even better is to define accounts that have limited permissions, and omit a "
+"<systemitem class=\"username\">root</systemitem> account entirely. For "
+"example, users that can add or remove user accounts are added to one group, "
+"but they cannot themselves change the membership of this group. Such a "
+"security policy would help mitigate the effects of a leaked password."
+msgstr ""
+
+#. (itstool) path: sect3/title
+#. (itstool) path: example/title
+#: article.translate.xml:805 article.translate.xml:813
+msgid "Creating a Management Group"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:807
+msgid ""
+"Say you want your IT department to be able to change home directories for "
+"users, but you do not want all of them to be able to add or remove users. "
+"The way to do this is to add a group for these admins:"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:815
+#, no-wrap
+msgid ""
+"dn: cn=homemanagement,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: posixGroup\n"
+"cn: homemanagement\n"
+"gidNumber: 121 # required for posixGroup\n"
+"memberUid: uid=tuser,ou=people,dc=example,dc=org\n"
+"memberUid: uid=user2,ou=people,dc=example,dc=org"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:824
+msgid ""
+"And then change the permissions attributes in <filename>slapd.conf</"
+"filename>:"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:828
+msgid "ACLs for a Home Directory Management Group"
+msgstr ""
+
+#. (itstool) path: example/programlisting
+#: article.translate.xml:830
+#, no-wrap
+msgid ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attr=homeDirectory\n"
+"  by dn=\"cn=homemanagement,dc=example,dc=org\"\n"
+"  dnattr=memberUid write"
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:836
+msgid ""
+"Now <systemitem class=\"username\">tuser</systemitem> and <systemitem class="
+"\"username\">user2</systemitem> can change other users' home directories."
+msgstr ""
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:840
+msgid ""
+"In this example we have given a subset of administrative power to certain "
+"users without giving them power in other domains. The idea is that soon no "
+"single user account has the power of a <systemitem class=\"username\">root</"
+"systemitem> account, but every power root had is had by at least one user. "
+"The <systemitem class=\"username\">root</systemitem> account then becomes "
+"unnecessary and can be removed."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:850
+msgid "Password Storage"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:852
+msgid ""
+"By default <application>OpenLDAP</application> will store the value of the "
+"<literal>userPassword</literal> attribute as it stores any other data: in "
+"the clear. Most of the time it is base 64 encoded, which provides enough "
+"protection to keep an honest administrator from knowing your password, but "
+"little else."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:859
+msgid ""
+"It is a good idea, then, to store passwords in a more secure format, such as "
+"SSHA (salted SHA). This is done by whatever program you use to change users' "
+"passwords."
+msgstr ""
+
+#. (itstool) path: appendix/title
+#: article.translate.xml:866
+msgid "Useful Aids"
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:868
+msgid ""
+"There are a few other programs that might be useful, particularly if you "
+"have many users and do not want to configure everything manually."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:872
+msgid ""
+"<package>security/pam_mkhomedir</package> is a PAM module that always "
+"succeeds; its purpose is to create home directories for users which do not "
+"have them. If you have dozens of client servers and hundreds of users, it is "
+"much easier to use this and set up skeleton directories than to prepare "
+"every home directory."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:879
+msgid ""
+"<package>sysutils/cpu</package> is a <citerefentry><refentrytitle>pw</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>-like utility that can "
+"be used to manage users in the LDAP directory. You can call it directly, or "
+"wrap scripts around it. It can handle both TLS (with the <option>-x</option> "
+"flag) and SSL (directly)."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:885
+msgid ""
+"<package>sysutils/ldapvi</package> is a great utility for editing LDAP "
+"values in an LDIF-like syntax. The directory (or subsection of the "
+"directory) is presented in the editor chosen by the <envar>EDITOR</envar> "
+"environment variable. This makes it easy to enable large-scale changes in "
+"the directory without having to write a custom tool."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:892
+msgid ""
+"<package>security/openssh-portable</package> has the ability to contact an "
+"LDAP server to verify <application>SSH</application> keys. This is extremely "
+"nice if you have many servers and do not want to copy your public keys "
+"across all of them."
+msgstr ""
+
+#. (itstool) path: appendix/title
+#: article.translate.xml:900
+msgid "<application>OpenSSL</application> Certificates for LDAP"
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:903
+msgid ""
+"If you are hosting two or more LDAP servers, you will probably not want to "
+"use self-signed certificates, since each client will have to be configured "
+"to work with each certificate. While this is possible, it is not nearly as "
+"simple as creating your own certificate authority, and signing your servers' "
+"certificates with that."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:910
+msgid ""
+"The steps here are presented as they are with very little attempt at "
+"explaining what is going on—further explanation can be found in "
+"<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> and its friends."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:914
+msgid ""
+"To create a certificate authority, we simply need a self-signed certificate "
+"and key. The steps for this again are"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:919
+msgid "Creating a Certificate"
+msgstr ""
+
+#. (itstool) path: example/screen
+#: article.translate.xml:921
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>openssl genrsa -out root.key 1024</userinput>\n"
+"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -"
+"signkey root.key -out root.crt</userinput>"
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:926
+msgid ""
+"These will be your root CA key and certificate. You will probably want to "
+"encrypt the key and store it in a cool, dry place; anyone with access to it "
+"can masquerade as one of your LDAP servers."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:931
+msgid ""
+"Next, using the first two steps above create a key <filename>ldap-server-one."
+"key</filename> and certificate signing request <filename>ldap-server-one."
+"csr</filename>. Once you sign the signing request with <filename>root.key</"
+"filename>, you will be able to use <filename>ldap-server-one.*</filename> on "
+"your LDAP servers."
+msgstr ""
+
+#. (itstool) path: note/para
+#: article.translate.xml:939
+msgid ""
+"Do not forget to use the fully qualified domain name for the <quote>common "
+"name</quote> attribute when generating the certificate signing request; "
+"otherwise clients will reject a connection with you, and it can be very "
+"tricky to diagnose."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:946
+msgid ""
+"To sign the key, use <option>-CA</option> and <option>-CAkey</option> "
+"instead of <option>-signkey</option>:"
+msgstr ""
+
+#. (itstool) path: example/title
+#: article.translate.xml:951
+msgid "Signing as a Certificate Authority"
+msgstr ""
+
+#. (itstool) path: example/screen
+#: article.translate.xml:953
+#, no-wrap
+msgid ""
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 \\\n"
+"-in ldap-server-one.csr -CA root.crt -CAkey root.key \\\n"
+"-out ldap-server-one.crt</userinput>"
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:958
+msgid ""
+"The resulting file will be the certificate that you can use on your LDAP "
+"servers."
+msgstr ""
+
+#. (itstool) path: appendix/para
+#: article.translate.xml:961
+msgid ""
+"Finally, for clients to trust all your servers, distribute <filename>root."
+"crt</filename> (the <emphasis>certificate</emphasis>, not the key!) to each "
+"client, and specify it in the <literal>TLSCACertificateFile</literal> "
+"directive in <filename>ldap.conf</filename>."
+msgstr ""
