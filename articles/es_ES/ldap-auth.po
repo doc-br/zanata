@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-17 08:39+0000\n"
+"PO-Revision-Date: 2019-08-18 08:42+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -926,6 +926,13 @@ msgid ""
 "bash</filename>. Verify that the path to the shell on the server is set "
 "correctly:"
 msgstr ""
+"Los usuarios cuyo shell no esté en <filename>/etc/shells</filename> no "
+"podrán iniciar sesión. Esto es muy importante cuando se configura "
+"<application>Bash</application> como la shell de usuario en el servidor LDAP."
+" <application>Bash</application> no está incluido en la instalación estándar "
+"de FreeBSD. Cuando se instala desde un paquete o port, se encuentra en el "
+"directorio <filename>/usr/local/bin/bash</filename>. Compruebe que la ruta a "
+"la shell en el servidor esté configurada correctamente:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:461
@@ -934,6 +941,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>getent passwd <replaceable>username</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>getent passwd <replaceable>username</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:463
@@ -944,6 +953,11 @@ msgid ""
 "a symlink on the LDAP client computer so <application>Bash</application> is "
 "found at the correct location:"
 msgstr ""
+"Hay dos opciones cuando la salida muestra <literal>/bin/bash</literal> en la "
+"última columna. La primera es cambiar la entrada del usuario en el servidor "
+"LDAP a <filename>/usr/local/bin/bash</filename>. La segunda opción es crear "
+"un enlace simbólico en el cliente LDAP para que <application>Bash</"
+"application> se encuentre en la ubicación correcta:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:471
@@ -952,6 +966,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ln -s /usr/local/bin/bash /bin/bash</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:473
@@ -961,11 +977,15 @@ msgid ""
 "user will then be able to log in to the system with <application>Bash</"
 "application> as their shell."
 msgstr ""
+"Asegúrese de que <filename>/etc/shells</filename> contenga entradas para "
+"<literal>/usr/local/bin/bash</literal> y <literal>/bin/bash</literal>. El "
+"usuario podrá iniciar sesión en el sistema con <application>Bash</"
+"application> como su shell."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:480
 msgid "PAM"
-msgstr ""
+msgstr "PAM"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:482
@@ -975,6 +995,10 @@ msgid ""
 "FreeBSD we wish to use an LDAP server, we will have to add a line to the "
 "appropriate PAM file."
 msgstr ""
+"PAM, que significa <quote>Pluggable Authentication Modules</quote>, es el "
+"método por el cual FreeBSD autentica la mayoría de sus sesiones. Para "
+"decirle a FreeBSD que queremos usar un servidor LDAP, tenedremos que añadir "
+"una línea al archivo PAM apropiado."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:488
@@ -984,17 +1008,21 @@ msgid ""
 "set the relevant options in <filename>/etc/ssh/sshd_config</filename>, "
 "otherwise <application>SSH</application> will not use PAM)."
 msgstr ""
+"La mayoría de las veces el archivo PAM apropiado es <filename>/etc/pam.d/"
+"sshd</filename>, si desea usar <application>SSH</application> (recuerde "
+"configurar las opciones importantes en <filename>/etc/ssh/sshd_config</"
+"filename>, de lo contrario, <application>SSH</application> no usará PAM)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:495
 msgid "To use PAM for authentication, add the line"
-msgstr ""
+msgstr "Para usar PAM para la autenticación, añada la línea"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:497
 #, no-wrap
 msgid "auth  sufficient  /usr/local/lib/pam_ldap.so  no_warn"
-msgstr ""
+msgstr "auth  sufficient  /usr/local/lib/pam_ldap.so  no_warn"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:499
@@ -1004,6 +1032,10 @@ msgid ""
 "see <citerefentry><refentrytitle>pam.d</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>"
 msgstr ""
+"El sitio donde aparezca esta línea en el archivo y qué opciones tenga en la "
+"cuarta columna determina el comportamiento exacto del mecanismo de "
+"autenticación, vea <citerefentry><refentrytitle>pam.d</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:504
@@ -1013,6 +1045,10 @@ msgid ""
 "credentials, and if successful will tell <application>SSH</application> to "
 "allow access."
 msgstr ""
+"Con esta configuración, debería poder autenticar a un usuario en un "
+"directorio LDAP. <application>PAM</application> realizará un enlace con sus "
+"credenciales y, si tiene éxito, le indicará a <application>SSH</application> "
+"que permita el acceso."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:510
@@ -1022,6 +1058,11 @@ msgid ""
 "current configuration, all that a user needs to log into a machine is an "
 "LDAP entry. Fortunately there are a few ways to restrict user access."
 msgstr ""
+"Sin embargo, no es buena idea permitir que <emphasis>cada</emphasis> usuario "
+"del directorio pueda acceder a <emphasis>todos</emphasis> los ordenadores "
+"clientes. Con la configuración actual, todo lo que necesita un usuario para "
+"iniciar sesión en una máquina es una entrada LDAP. Afortunadamente, hay "
+"alfunas formas de restringir el acceso de los usuarios."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:517
@@ -1030,12 +1071,15 @@ msgid ""
 "directive; every account that connects to this machine needs to be a member "
 "of the group specified here. For example, if you have"
 msgstr ""
+"<filename>ldap.conf</filename> admite la directiva <literal>pam_groupdn</"
+"literal>; cada cuenta que se conecta a este ordenador debe ser miembro del "
+"grupo especificado aquí. Por ejemplo, si tiene"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:522
 #, no-wrap
 msgid "pam_groupdn cn=servername,ou=accessgroups,dc=example,dc=org"
-msgstr ""
+msgstr "pam_groupdn cn=servername,ou=accessgroups,dc=example,dc=org"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:524
@@ -1043,6 +1087,8 @@ msgid ""
 "in <filename>ldap.conf</filename>, then only members of that group will be "
 "able to log in. There are a few things to bear in mind, however."
 msgstr ""
+"en <filename>ldap.conf</filename>, solo los miembros de este grupo podrán "
+"iniciar sesión. Sin embargo. hay algunas cosas a tener en cuenta."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:528
@@ -1052,12 +1098,16 @@ msgid ""
 "name of the member. So <literal>memberUid: someuser</literal> will not work; "
 "it must be:"
 msgstr ""
+"Los miembros de este grupo se especifican en uno o más atributos "
+"<literal>memberUid</literal>, y cada atributo debe tener el nombre completo "
+"del miembro. Entonces <literal>memberUid: someuser</literal> no funcionará; "
+"debería ser:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:534
 #, no-wrap
 msgid "memberUid: uid=someuser,ou=people,dc=example,dc=org"
-msgstr ""
+msgstr "memberUid: uid=someuser,ou=people,dc=example,dc=org"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:536
@@ -1072,17 +1122,29 @@ msgid ""
 "you are not locked out of every computer when the LDAP server is unavailable."
 ""
 msgstr ""
+"Además, esta directiva no se verifica en PAM durante la autenticación, se "
+"verifica durante la administración de la cuenta, por lo que necesitará "
+"añadir más configuraciones en sus archivos de PAM en la sección de "
+"<literal>account</literal>. Esto, a su vez, requerirá que <emphasis>cada</"
+"emphasis> usuario se incluya en el grupo, lo cual no es necesariamente lo "
+"que queremos. Para evitar bloquear usuarios que no están en LDAP, debe "
+"habilitar el atributo <literal>ignore_unknown_user</literal>. Finalmente, "
+"debe configurar la opción <literal>ignore_authinfo_unavail</literal> para "
+"que el usuario no quede bloqueado en todos los ordenadores cuando el "
+"servidor LDAP no esté disponible."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:549
 msgid ""
 "Your <filename>pam.d/sshd</filename> might then end up looking like this:"
 msgstr ""
+"Su archivo <filename>pam.d/sshd</filename> debería quedar de la siguiente "
+"forma:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:553
 msgid "Sample <filename>pam.d/sshd</filename>"
-msgstr ""
+msgstr "Ejemplo de <filename>pam.d/sshd</filename>"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:555
@@ -1100,6 +1162,17 @@ msgid ""
 "account         required        /usr/local/lib/pam_ldap.so      no_warn "
 "ignore_authinfo_unavail ignore_unknown_user"
 msgstr ""
+"auth            required        pam_nologin.so          no_warn\n"
+"auth            sufficient      pam_opie.so             no_warn "
+"no_fake_prompts\n"
+"auth            requisite       pam_opieaccess.so       no_warn allow_local\n"
+"auth            sufficient      /usr/local/lib/pam_ldap.so      no_warn\n"
+"auth            required        pam_unix.so             no_warn "
+"try_first_pass\n"
+"\n"
+"account         required        pam_login_access.so\n"
+"account         required        /usr/local/lib/pam_ldap.so      no_warn "
+"ignore_authinfo_unavail ignore_unknown_user"
 
 #. (itstool) path: note/para
 #: article.translate.xml:566
@@ -1110,11 +1183,16 @@ msgid ""
 "behavior, examine the other files in <filename>/etc/pam.d</filename> and "
 "modify them accordingly."
 msgstr ""
+"Como estamos añadiendo estas líneas específicamente a <filename>pam.d/sshd</"
+"filename>, esto solo tendrá efecto en las sesiones <application>SSH</"
+"application>. Los usuarios de LDAP no podrán iniciar sesión por consola. "
+"Para cambiar este comportamiento, examine los otros archivos en <filename>/"
+"etc/pam.d</filename> y modifíquelos como corresponda."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:578
 msgid "Name Service Switch"
-msgstr ""
+msgstr "Name Service Switch"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:580
@@ -1125,6 +1203,12 @@ msgid ""
 "<literal>1001</literal>, and it might get <literal>bob</literal> or "
 "<literal>ted</literal> or whatever the user's name is."
 msgstr ""
+"<application>NSS</application> es el servicio que asigna atributos a nombres."
+" Entonces, por ejemplo, si un archivo es propiedad del usuario "
+"<literal>1001</literal>, una aplicación le consultará a <application>NSS</"
+"application> por el nombre de <literal>1001</literal>, y podría obtener "
+"<literal>bob</literal> o <literal>ted</literal> o cual sea el nombre del "
+"usuario."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:588
@@ -1132,6 +1216,9 @@ msgid ""
 "Now that our user information is kept in LDAP, we need to tell "
 "<application>NSS</application> to look there when queried."
 msgstr ""
+"Ahora que nuestra información de usuario se mantiene en LDAP, debemos "
+"decirle a <application>NSS</application> que busque allí cuando se le "
+"consulte."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:592
@@ -1142,40 +1229,51 @@ msgid ""
 "simply to edit <filename>/etc/nsswitch.conf</filename> to take advantage of "
 "the directory. Simply replace the following lines:"
 msgstr ""
+"El port <package>net/nss_ldap</package> hace esto. Utiliza el mismo archivo "
+"de configuración que <package>security/pam_ldap</package>, y no debería "
+"necesitar ningún parámetro adicional después de su instalación. En cambio, "
+"solo quedaría editar el archivo <filename>/etc/nsswitch.conf</filename> para "
+"aprovechar el directorio. Simplemente cambie las siguientes líneas:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:600
 #, no-wrap
 msgid "group: compat\n"
 "passwd: compat"
-msgstr ""
+msgstr "group: compat\n"
+"passwd: compat"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:603
 msgid "with"
-msgstr ""
+msgstr "por"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:605
 #, no-wrap
 msgid "group: files ldap\n"
 "passwd: files ldap"
-msgstr ""
+msgstr "group: files ldap\n"
+"passwd: files ldap"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:608
 msgid "This will allow you to map usernames to UIDs and UIDs to usernames."
 msgstr ""
+"Esto le permitirá asignar nombres de usuario a UIDs y UIDs a nombres de "
+"usuario."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:611
 msgid "Congratulations! You should now have working LDAP authentication."
 msgstr ""
+"¡Felicidades! Ahora debería tener la autenticación de LDAP en funcionamiento."
+""
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:616
 msgid "Caveats"
-msgstr ""
+msgstr "Advertencias"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:618
@@ -1216,6 +1314,23 @@ msgid ""
 "  -a \"$oldp\" \\\n"
 "  -s \"$np1\""
 msgstr ""
+"#!/bin/sh\n"
+"\n"
+"stty -echo\n"
+"read -p \"Old Password: \" oldp; echo\n"
+"read -p \"New Password: \" np1; echo\n"
+"read -p \"Retype New Password: \" np2; echo\n"
+"stty echo\n"
+"\n"
+"if [ \"$np1\" != \"$np2\" ]; then\n"
+"  echo \"Passwords do not match.\"\n"
+"  exit 1\n"
+"fi\n"
+"\n"
+"ldappasswd -D uid=\"$USER\",ou=people,dc=example,dc=org \\\n"
+"  -w \"$oldp\" \\\n"
+"  -a \"$oldp\" \\\n"
+"  -s \"$np1\""
 
 #. (itstool) path: caution/para
 #: article.translate.xml:648
@@ -1233,6 +1348,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl security.bsd.see_other_uids=0</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:657
@@ -1290,6 +1407,43 @@ msgid ""
 "conn.bind(luser, oldp)\n"
 "conn.modify(luser, [replace])"
 msgstr ""
+"require 'ldap'\n"
+"require 'base64'\n"
+"require 'digest'\n"
+"require 'password' # ruby-password\n"
+"\n"
+"ldap_server = \"ldap.example.org\"\n"
+"luser = \"uid=#{ENV['USER']},ou=people,dc=example,dc=org\"\n"
+"\n"
+"# get the new password, check it, and create a salted hash from it\n"
+"def get_password\n"
+"  pwd1 = Password.get(\"New Password: \")\n"
+"  pwd2 = Password.get(\"Retype New Password: \")\n"
+"\n"
+"  raise if pwd1 != pwd2\n"
+"  pwd1.check # check password strength\n"
+"\n"
+"  salt = rand.to_s.gsub(/0\\./, '')\n"
+"  pass = pwd1.to_s\n"
+"  hash = \"{SSHA}\"+Base64.encode64(Digest::SHA1."
+"digest(\"#{pass}#{salt}\")+salt).chomp!\n"
+"  return hash\n"
+"end\n"
+"\n"
+"oldp = Password.get(\"Old Password: \")\n"
+"newp = get_password\n"
+"\n"
+"# We'll just replace it.  That we can bind proves that we either know\n"
+"# the old password or are an admin.\n"
+"\n"
+"replace = LDAP::Mod.new(LDAP::LDAP_MOD_REPLACE | LDAP::LDAP_MOD_BVALUES,\n"
+"                        \"userPassword\",\n"
+"                        [newp])\n"
+"\n"
+"conn = LDAP::SSLConn.new(ldap_server, 389, true)\n"
+"conn.set_option(LDAP::LDAP_OPT_PROTOCOL_VERSION, 3)\n"
+"conn.bind(luser, oldp)\n"
+"conn.modify(luser, [replace])"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:704
