@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-18 08:42+0000\n"
+"PO-Revision-Date: 2019-08-18 03:55+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1286,11 +1286,18 @@ msgid ""
 "are some security issues you should be made aware of; see <xref linkend="
 "\"security-passwd\"/>"
 msgstr ""
+"Desafortunadamente, al momento de escribir esto, FreeBSD no soporta el "
+"cambio de contraseñas de usuario con <citerefentry><refentrytitle>passwd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Por lo tanto, la "
+"mayoría de los administradores deben implementar una solución ellos mismos. "
+"Proporciono algunos ejemplos aquí. Tenga en cuenta que si escribe su propio "
+"script para cambiar la contraseña, debe tener en cuenta algunos problemas de "
+"seguridad; consulte la <xref linkend=\"security-passwd\"/>"
 
 #. (itstool) path: example/title
 #: article.translate.xml:626
 msgid "Shell Script for Changing Passwords"
-msgstr ""
+msgstr "Shell Script para cambiar contraseñas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:628
@@ -1340,6 +1347,10 @@ msgid ""
 "at least adjust the <literal>security.bsd.see_other_uids</literal> sysctl "
 "value:"
 msgstr ""
+"Este script apenas verifica errores, pero, lo más importante, es el poco "
+"cuidado con el que almacena sus contraseñas. Si hace algo como esto, "
+"establezca al menos el calor de <literal>security.bsd.see_other_uids</"
+"literal>:"
 
 #. (itstool) path: caution/screen
 #: article.translate.xml:654
@@ -1359,11 +1370,16 @@ msgid ""
 "<application>Ruby</application> library that can change LDAP passwords. It "
 "sees use both on the command line, and on the web."
 msgstr ""
+"Se puede utilizar un enfoque más flexible (y probablemente más seguro) "
+"escribiendo un programa personalizado o incluso una interfaz web. Lo "
+"siguiente es parte de una libreria de <application>Ruby</application> que "
+"puede cambiar las contraseñas LDAP. Se puede usar tanto por línea de "
+"comandos y en la web."
 
 #. (itstool) path: example/title
 #: article.translate.xml:664
 msgid "Ruby Script for Changing Passwords"
-msgstr ""
+msgstr "Script en Ruby para cambiar las contraseñas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:666
@@ -1452,11 +1468,14 @@ msgid ""
 "in memory, for example) this is cleaner and more flexible than a simple "
 "<command>sh</command> script."
 msgstr ""
+"Aunque no se garantiza que esté a salvo de agujeros de seguridad (la "
+"contraseña se guarda en memoria, por ejemplo), esto es más limpio y más "
+"flexible que un simple script <command>sh</command>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:712
 msgid "Security Considerations"
-msgstr ""
+msgstr "Consideraciones de seguridad"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:714
@@ -1467,6 +1486,11 @@ msgid ""
 "possibly even more so since a broken or cracked LDAP server would break "
 "every client service."
 msgstr ""
+"Ahora que sus ordenadores (y posiblemente otros servicios) se están "
+"autenticando contra su servidor LDAP, este servidor debe estar protegido, "
+"así como <filename>/etc/master.passwd</filename> estaría en un servidor "
+"normal, y posiblemente aún más desde un servidor LDAP corrupto rompería "
+"todos los servicios del cliente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:721
@@ -1474,11 +1498,13 @@ msgid ""
 "Remember, this section is not exhaustive. You should continually review your "
 "configuration and procedures for improvements."
 msgstr ""
+"Recuerde, esta sección no es exhaustiva. Debe revisar continuamente su "
+"configuración y procedimientos de mejora."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:726
 msgid "Setting Attributes Read-only"
-msgstr ""
+msgstr "Establecer atributos de solo lectura"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:728
@@ -1488,6 +1514,10 @@ msgid ""
 "attribute to <literal>0</literal> and get <systemitem class="
 "\"username\">root</systemitem> access!"
 msgstr ""
+"Hay varios atributos en LDAP que deben ser de solo lectura. Si el usuario "
+"pudiera tener acceso de escritura, por ejemplo, ¡un usuario podría cambiar "
+"su atributo <literal>uidNumber</literal> a <literal>0</literal> y obtener "
+"permisos de <systemitem class=\"username\">root</systemitem>!"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:734
@@ -1497,11 +1527,15 @@ msgid ""
 "read this attribute. To disable this, put the following in <filename>slapd."
 "conf</filename>:"
 msgstr ""
+"Para empezar, el atributo <literal>userPassword</literal> no debe ser "
+"legible por todo el mundo. Por defecto, cualquiera que pueda conectarse al "
+"servidor LDAP puede leer este atributo. Para deshabilitar esto, coloque la "
+"siguiente configuración en el archivo <filename>slapd.conf</filename>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:741
 msgid "Hide Passwords"
-msgstr ""
+msgstr "Ocultar contraseñas"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:743
@@ -1517,6 +1551,15 @@ msgid ""
 "  by self write\n"
 "  by * read"
 msgstr ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
+"\n"
+"access to *\n"
+"  by self write\n"
+"  by * read"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:754
@@ -1524,6 +1567,9 @@ msgid ""
 "This will disallow reading of the <literal>userPassword</literal> attribute, "
 "while still allowing users to change their own passwords."
 msgstr ""
+"Esto deshabilitará la posibilidad de leer el atributo <literal>userPassword</"
+"literal> y al mismo tiempo permitirá a los usuarios cambiar sus propias "
+"contraseñas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:758
@@ -1533,11 +1579,16 @@ msgid ""
 "which the LDAP schemas themselves deny changes), such as <literal>uidNumber</"
 "literal>. To close this hole, modify the above to"
 msgstr ""
+"Además, querrá evitar que los usuarios cambien algunos de sus propios "
+"atributos. De forma predeterminada, los usuarios pueden cambiar cualquier "
+"atributo (excepto aquellos en los que los esquemas LDAP mismos niegan "
+"cambios), como <literal>uidNumber</literal>. Para cerrar este agujero, "
+"modifique lo anterior a"
 
 #. (itstool) path: example/title
 #: article.translate.xml:765
 msgid "Read-only Attributes"
-msgstr ""
+msgstr "Atributos de solo lectura"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:767
@@ -1556,16 +1607,30 @@ msgid ""
 "  by self write\n"
 "  by * read"
 msgstr ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attrs=userPassword\n"
+"  by self write\n"
+"  by anonymous auth\n"
+"  by * none\n"
+"\n"
+"access to attrs=homeDirectory,uidNumber,gidNumber\n"
+"  by * read\n"
+"\n"
+"access to *\n"
+"  by self write\n"
+"  by * read"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:781
 msgid "This will stop users from being able to masquerade as other users."
 msgstr ""
+"Esto evitará que los usuarios puedan hacerse pasar por otros usuarios."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:786
 msgid "<systemitem class=\"username\">root</systemitem> Account Definition"
 msgstr ""
+"Definición de la cuenta <systemitem class=\"username\">root</systemitem>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:789
@@ -1578,6 +1643,12 @@ msgid ""
 "LDAP, and then define a <systemitem class=\"username\">root</systemitem> "
 "account there."
 msgstr ""
+"A menudo, la cuenta de administrador o <systemitem class=\"username\">root</"
+"systemitem> para el servicio LDAP se definirá en el archivo de configuración."
+" <application>OpenLDAP</application> soporta esto, por ejemplo, y funciona, "
+"pero puede generar problemas si <filename>slapd.conf</filename> se ve "
+"comprometido. Puede ser mejor usar esto solo para iniciarse en LDAP y luego "
+"definir una cuenta <systemitem class=\"username\">root</systemitem> ahí."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:797
@@ -1588,12 +1659,18 @@ msgid ""
 "but they cannot themselves change the membership of this group. Such a "
 "security policy would help mitigate the effects of a leaked password."
 msgstr ""
+"Lo mejor es definir cuentas con permisos limitados y omitir por completo una "
+"cuenta <systemitem class=\"username\">root</systemitem>. Por ejemplo, los "
+"usuarios que puedan añadir o eliminar cuentas de usuario se añadiran a un "
+"grupo, pero ellos mismos no pueden cambiar la pertenencia de este grupo. "
+"Dicha política de seguridad ayudará a mitigar los efectos de una contraseña "
+"filtrada."
 
 #. (itstool) path: sect3/title
 #. (itstool) path: example/title
 #: article.translate.xml:805 article.translate.xml:813
 msgid "Creating a Management Group"
-msgstr ""
+msgstr "Crear un grupo de mantenimiendo"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:807
@@ -1602,6 +1679,10 @@ msgid ""
 "users, but you do not want all of them to be able to add or remove users. "
 "The way to do this is to add a group for these admins:"
 msgstr ""
+"Supongamos que desea que su departamento de TI pueda cambiar los directorios "
+"home de los usuarios, pero no quiere que todos puedan añadir o eliminar "
+"usuarios. La forma de hacerlo es agregar un grupo para estos administradores:"
+""
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:815
@@ -1615,6 +1696,13 @@ msgid ""
 "memberUid: uid=tuser,ou=people,dc=example,dc=org\n"
 "memberUid: uid=user2,ou=people,dc=example,dc=org"
 msgstr ""
+"dn: cn=homemanagement,dc=example,dc=org\n"
+"objectClass: top\n"
+"objectClass: posixGroup\n"
+"cn: homemanagement\n"
+"gidNumber: 121 # required for posixGroup\n"
+"memberUid: uid=tuser,ou=people,dc=example,dc=org\n"
+"memberUid: uid=user2,ou=people,dc=example,dc=org"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:824
@@ -1622,6 +1710,8 @@ msgid ""
 "And then change the permissions attributes in <filename>slapd.conf</"
 "filename>:"
 msgstr ""
+"Y luego cambie los atributos de los permisos en <filename>slapd.conf</"
+"filename>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:828
@@ -1637,6 +1727,10 @@ msgid ""
 "  by dn=\"cn=homemanagement,dc=example,dc=org\"\n"
 "  dnattr=memberUid write"
 msgstr ""
+"access to dn.subtree=\"ou=people,dc=example,dc=org\"\n"
+"  attr=homeDirectory\n"
+"  by dn=\"cn=homemanagement,dc=example,dc=org\"\n"
+"  dnattr=memberUid write"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:836
@@ -1644,6 +1738,9 @@ msgid ""
 "Now <systemitem class=\"username\">tuser</systemitem> and <systemitem class="
 "\"username\">user2</systemitem> can change other users' home directories."
 msgstr ""
+"Ahora <systemitem class=\"username\">tuser</systemitem> y <systemitem class="
+"\"username\">user2</systemitem> pueden cambiar los directorios home de otros "
+"usuarios."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:840
@@ -1655,11 +1752,17 @@ msgid ""
 "The <systemitem class=\"username\">root</systemitem> account then becomes "
 "unnecessary and can be removed."
 msgstr ""
+"En este ejemplo, hemos otorgado un subconjunto de poderes administrativos a "
+"ciertos usuarios sin darles poder en otros dominios. La idea es que ninguna "
+"cuenta de usuario individual tenga el poder de una cuenta <systemitem class="
+"\"username\">root</systemitem>, pero cada usuario root tiene al menos un "
+"usuario. La cuenta <systemitem class=\"username\">root</systemitem> es "
+"innecesaria y puede eliminarse."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:850
 msgid "Password Storage"
-msgstr ""
+msgstr "Almacenamiento de contraseña"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:852
@@ -1670,6 +1773,11 @@ msgid ""
 "protection to keep an honest administrator from knowing your password, but "
 "little else."
 msgstr ""
+"Por defecto, <application>OpenLDAP</application> almacenará el valor del "
+"<literal>userPassword</literal> de la misma forma que almacena cualquier "
+"otro dato: en texto plano. La mayoría de las veces, está codificado en base "
+"64, lo que proporciona protección suficiente para evitar que un "
+"administrador honesto sepa su contraseña, pero poco más."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:859
@@ -1678,11 +1786,14 @@ msgid ""
 "SSHA (salted SHA). This is done by whatever program you use to change users' "
 "passwords."
 msgstr ""
+"Por lo tanto, es buena idea almacenar las contraseñas en un formato más "
+"seguro, como SSHA (salted SHA). Esto lo hace cualquier programa que use para "
+"cambiar las contraseñas de los usuarios."
 
 #. (itstool) path: appendix/title
 #: article.translate.xml:866
 msgid "Useful Aids"
-msgstr ""
+msgstr "Consideraciones útiles"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:868
@@ -1690,6 +1801,8 @@ msgid ""
 "There are a few other programs that might be useful, particularly if you "
 "have many users and do not want to configure everything manually."
 msgstr ""
+"Hay otros programas que pueden ser útiles, especialmente si tiene muchos "
+"usuarios y no desea configurarlo todo manualmente."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:872
@@ -1700,6 +1813,11 @@ msgid ""
 "much easier to use this and set up skeleton directories than to prepare "
 "every home directory."
 msgstr ""
+"<package>security/pam_mkhomedir</package> es un módulo de PAM que siempre "
+"funciona; su propósito es crear directorios home para los usuarios que no "
+"los tienen. Si tiene docenas de servidores cliente y cientos de usuarios, es "
+"mucho más facil usarlo y configurar un directorio mínimo para cada "
+"directorio home."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:879
@@ -1710,6 +1828,12 @@ msgid ""
 "wrap scripts around it. It can handle both TLS (with the <option>-x</option> "
 "flag) and SSL (directly)."
 msgstr ""
+"<package>sysutils/cpu</package> es una utilidad similar a "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, que se puede utilizar para administrar usuarios en el "
+"directorio LDAP. Puede llamarlo directamente o ajustar los scripts para que "
+"lo utilicen. Puede manejar tanto TLS (con el flag <option>-x</option>) como "
+"SSL (directamente)."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:885
@@ -1720,6 +1844,11 @@ msgid ""
 "environment variable. This makes it easy to enable large-scale changes in "
 "the directory without having to write a custom tool."
 msgstr ""
+"<package>sysutils/ldapvi</package> es una utilidad de gran ayuda para editar "
+"valores LDAP en una sintaxis similar a LDIF. El directorio (o subsección del "
+"directorio) se presenta en el editor elegido por la variable de entorno "
+"<envar>EDITOR</envar>. Esto facilita la realización de cambios de directorio "
+"a gran escala sin escribir una herramienta personalizada."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:892
@@ -1729,11 +1858,15 @@ msgid ""
 "nice if you have many servers and do not want to copy your public keys "
 "across all of them."
 msgstr ""
+"<package>security/openssh-portable</package> tiene la capacidad de contactar "
+"a un servidor LDAP para verificar las claves <application>SSH</application>. "
+"Esto es extremadamente útil si tiene muchos servidores y no desea copiar sus "
+"claves públicas en todos."
 
 #. (itstool) path: appendix/title
 #: article.translate.xml:900
 msgid "<application>OpenSSL</application> Certificates for LDAP"
-msgstr ""
+msgstr "Certificados <application>OpenSSL</application> para LDAP"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:903
@@ -1744,6 +1877,11 @@ msgid ""
 "simple as creating your own certificate authority, and signing your servers' "
 "certificates with that."
 msgstr ""
+"Si aloja dos o más servidores LDAP, probablemente no quiera utilizar "
+"certificados autofirmados, ya que cada cliente deberá estar configurado para "
+"funcionar con cada certificado. Si bien esto es posible, no es tan simple "
+"como crear su propia autoridad de certificación y firmar los certificados de "
+"sus servidores con ella."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:910
@@ -1753,6 +1891,10 @@ msgid ""
 "<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> and its friends."
 msgstr ""
+"Las instrucciones aquí se presentan tal como son, con muy pocas intenciones "
+"de explicar lo que está sucediendo—puede encontrar más explicaciones en "
+"<citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> y aplicaciones similares."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:914
@@ -1760,11 +1902,13 @@ msgid ""
 "To create a certificate authority, we simply need a self-signed certificate "
 "and key. The steps for this again are"
 msgstr ""
+"Para crear una autoridad de certificación, simplemente necesitamos un "
+"certificado autofirmado y una clave. De nuevo, las instrucciones son"
 
 #. (itstool) path: example/title
 #: article.translate.xml:919
 msgid "Creating a Certificate"
-msgstr ""
+msgstr "Crear un certificado"
 
 #. (itstool) path: example/screen
 #: article.translate.xml:921
@@ -1776,6 +1920,11 @@ msgid ""
 "<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -"
 "signkey root.key -out root.crt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>openssl genrsa -out root.key 1024</userinput>\n"
+"<prompt>%</prompt> <userinput>openssl req -new -key root.key -out root.csr</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 -in root.csr -"
+"signkey root.key -out root.crt</userinput>"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:926
@@ -1810,11 +1959,13 @@ msgid ""
 "To sign the key, use <option>-CA</option> and <option>-CAkey</option> "
 "instead of <option>-signkey</option>:"
 msgstr ""
+"Para firmar la clave, utilice <option>-CA</option> y <option>-CAkey</option> "
+"en lugar de <option>-signkey</option>:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:951
 msgid "Signing as a Certificate Authority"
-msgstr ""
+msgstr "Firmar como autoridad de certificación"
 
 #. (itstool) path: example/screen
 #: article.translate.xml:953
@@ -1824,6 +1975,9 @@ msgid ""
 "-in ldap-server-one.csr -CA root.crt -CAkey root.key \\\n"
 "-out ldap-server-one.crt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>openssl x509 -req -days 1024 \\\n"
+"-in ldap-server-one.csr -CA root.crt -CAkey root.key \\\n"
+"-out ldap-server-one.crt</userinput>"
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:958
@@ -1831,6 +1985,8 @@ msgid ""
 "The resulting file will be the certificate that you can use on your LDAP "
 "servers."
 msgstr ""
+"El archivo resultante será el certificado que pueda utilizar en sus "
+"servidores LDAP."
 
 #. (itstool) path: appendix/para
 #: article.translate.xml:961
