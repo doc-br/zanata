@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-27 07:13+0000\n"
+"PO-Revision-Date: 2019-08-28 08:14+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -551,6 +551,12 @@ msgid ""
 "request blanket approvals from the start of the code slush until the start "
 "of the <literal>RC</literal> builds."
 msgstr ""
+"Cuando se hacen tales solicitudes, es importante asegurarse de que se "
+"discutan los plazos (incluso si se estiman). Para las aprobaciones "
+"generales, el período de tiempo para la aprobación general debe quedar claro."
+" Por ejemplo, un desarrollador de FreeBSD puede solicitar una aprobación "
+"general desde el principio del slush del código hasta el inicio de la "
+"compilación de la <literal>RC</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:366
@@ -564,6 +570,15 @@ msgid ""
 "Engineering Team members until the final <literal>RC</literal> to update the "
 "release notes and other release-related documentation."
 msgstr ""
+"Para realizar un seguimiento de las aprobaciones generales, el equipo de "
+"ingeniería de lanzamientos de FreeBSD utiliza un repositorio interno para "
+"mantener un registro de las solicitudes, que define el área sobre la cual se "
+"ha otorgado la aprobación general, el autor/es, en qué momento expira la "
+"aprobación general y la razón por la que se otorgó la aprobación. Un ejemplo "
+"es otorgar una aprobación general a <filename class=\"directory\">release/"
+"doc/</filename> a todos los miembros del equipo de ingeniería de "
+"lanzamientos de FreeBSD hasta la <literal>RC</literal> final para actualizar "
+"las notas de la versión y otra documentación relacionada con la versión."
 
 #. (itstool) path: note/para
 #: article.translate.xml:377
@@ -573,6 +588,11 @@ msgid ""
 "builds during the release cycle, which the Release Engineer specifies the "
 "cutoff period with an email to the FreeBSD developers."
 msgstr ""
+"El equipo de ingeniería de lanzamientos de FreeBSD también utiliza este "
+"repositorio para rastrear las solicitudes de aprobación pendientes que se "
+"reciben justo antes de empezar el ciclo de compilaciones del lanzamiento, "
+"que el ingeniero de lanzamientos especifica el período límite con un correo "
+"electrónico a los desarrolladores de FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:384
@@ -581,6 +601,9 @@ msgid ""
 "the set of code has on FreeBSD as a whole, such requests may be approved or "
 "denied by the FreeBSD Release Engineering Team."
 msgstr ""
+"Dependiendo del conjunto de código en cuestión, y el impacto general que el "
+"conjunto de código tiene en FreeBSD en su conjunto, el equipo de ingeniería "
+"de lanzamientos de FreeBSD puede aprobar o denegar dichas solicitudes."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:388
@@ -591,6 +614,11 @@ msgid ""
 "feasible, especially if such dramatic changes do not exist in another branch."
 ""
 msgstr ""
+"Lo mismo se aplica al trabajo que haya en progreso. Por ejemplo, en el caso "
+"del desarrollo de un nuevo driver, el cual está aislado del resto del árbol "
+"del código fuente, podría tener una extensión de tiempo. Sin embargo, en el "
+"caso de un nuevo scheduler, puede no ser viable, en especial si los cambios "
+"no están en otra rama."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:395
@@ -600,6 +628,10 @@ msgid ""
 "<replaceable>12.0</replaceable>R/schedule.xml</filename>. This file is "
 "continuously updated as the release cycle progresses."
 msgstr ""
+"El programa también se añade a la web del proyecto, en el repositorio "
+"<literal>doc/</literal>, en <filename>head/en_US.ISO8859-1/htdocs/releases/"
+"<replaceable>12.0</replaceable>R/schedule.xml</filename>. Este archivo se "
+"actualiza continuamente a medida que avanza el ciclo del lanzamiento."
 
 #. (itstool) path: note/para
 #: article.translate.xml:402
@@ -607,6 +639,8 @@ msgid ""
 "In most cases, the <filename>schedule.xml</filename> can be copied from a "
 "prior release and updated accordingly."
 msgstr ""
+"En la mayoría de los casos, se puede copiar el archivo <filename>schedule."
+"xml</filename> de una versión anterior y actualizarse."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:406
@@ -617,6 +651,11 @@ msgid ""
 "various subpages, as well as enabling the link to the schedule on the "
 "Project website index page."
 msgstr ""
+"Además de añadir el archivo <filename>schedule.xml</filename> a la web, "
+"también se actualizarán los archivos <filename>head/share/xml/navibar.ent</"
+"filename> y <filename>head/share/xml/release.ent</filename> para añadir el "
+"enlace a la programación en varias subpáginas, así como habilitar el enlace "
+"a la programación en la página index de la web del proyecto."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:413
@@ -624,6 +663,8 @@ msgid ""
 "The schedule is also linked from <filename>head/en_US.ISO8859-1/htdocs/"
 "releng/index.xml</filename>."
 msgstr ""
+"También se enlaza a la programación desde el archivo <filename>head/en_US."
+"ISO8859-1/htdocs/releng/index.xml</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:416
@@ -632,6 +673,9 @@ msgid ""
 "the FreeBSD Release Engineering Team sends a reminder email to the FreeBSD "
 "Developers."
 msgstr ""
+"Aproximadamente un mes antes del <quote>code slush</quote>, el equipo de "
+"ingeniería de lanzamientos de FreeBSD envía un correo electrónico de "
+"recordatorio a los desarrolladores de FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:420
@@ -641,6 +685,11 @@ msgid ""
 "htdocs/releases/<replaceable>12.0</replaceable>R/schedule.xml</filename>. "
 "replacing <literal>IGNORE</literal> with <literal>INCLUDE</literal>."
 msgstr ""
+"Una vez que las primeras compilaciones del ciclo de lanzamientos estén "
+"disponibles, actualice la entidad <literal>beta.local.where</literal> en el "
+"archivo <filename>head/en_US.ISO8859-1/htdocs/releases/<replaceable>12.0</"
+"replaceable>R/schedule.xml</filename> reemplazando <literal>IGNORE</literal> "
+"con <literal>INCLUDE</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:427
@@ -648,11 +697,13 @@ msgid ""
 "If two parallel release cycles are happening at once, the <literal>beta2."
 "local.where</literal> entity may be used instead."
 msgstr ""
+"Si se producen dos ciclos de liberación paralelos, se puede utilizar en su "
+"lugar la entidad <literal>beta2.local.where</literal>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:440
 msgid "Release Engineering Terminology"
-msgstr ""
+msgstr "Terminología de la ingeniería de lanzamientos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
@@ -660,11 +711,13 @@ msgid ""
 "This section describes some of the terminology used throughout the rest of "
 "this document."
 msgstr ""
+"Esta sección describe parte de la terminología utilizada en el resto de este "
+"documento."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:446
 msgid "The Code Slush"
-msgstr ""
+msgstr "El code slush"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:448
@@ -673,16 +726,20 @@ msgid ""
 "Release Engineering Team requests that bugs in the existing code base take "
 "priority over new features."
 msgstr ""
+"Aunque el code slush no es una congelación obligatoria del árbol del código "
+"fuente, el equipo de ingeniería de lanzamientos de FreeBSD solicita que los "
+"errores existentes en el código base tengan prioridad sobre la "
+"implementación de nuevas características."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:452
 msgid "The code slush does not enforce commit approvals to the branch."
-msgstr ""
+msgstr "El code slush no impone aprobaciones en los commits a la rama."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:457
 msgid "The Code Freeze"
-msgstr ""
+msgstr "La congelación del código"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:459
@@ -690,6 +747,9 @@ msgid ""
 "The code freeze marks the point in time where all commits to the branch "
 "require explicit approval from the FreeBSD Release Engineering Team."
 msgstr ""
+"La congelación del código marca el momento en el que todos los commits a la "
+"rama requieren de la aprobación explícita del equipo de ingeniería de "
+"lanzamientos de FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:462
@@ -699,6 +759,11 @@ msgid ""
 "committed to the tree. One of these hooks will evaluate if committing to a "
 "particular branch requires specific approval."
 msgstr ""
+"El repositorio de <application>Subversion</application> de FreeBSD tiene "
+"varios hooks para realizar comprobaciones de integridad antes de que se haga "
+"cualquier commit al árbol del código fuente. Uno de esos hooks evaluará si "
+"realizar el commit a una rama en particular requiere de aprobación "
+"específica."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:468
@@ -709,6 +774,11 @@ msgid ""
 "to the branch must include an <quote>Approved by:</quote> line in the commit "
 "message."
 msgstr ""
+"Para hacer que se cumpla las aprobaciones de los commits, el equipo de "
+"ingeniería de lanzamientos de FreeBSD actualiza el archivo <filename>base/"
+"svnadmin/conf/approvers</filename>, y realiza el commit del cambio en el "
+"repositorio. Una vez hecho esto, cualquier cambio en la rama debe incluir la "
+"línea <quote>Approved by:</quote> en el mensaje del commit."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:475
@@ -717,6 +787,9 @@ msgid ""
 "<filename>base/svnadmin/conf/approvers</filename>, otherwise the commit will "
 "be rejected by the repository hooks."
 msgstr ""
+"La línea <quote>Approved by:</quote> debe coincidir con la segunda columna "
+"del archivo <filename>base/svnadmin/conf/approvers</filename>, de lo "
+"contrario, el commit será rechazado por los hooks del repositorio."
 
 #. (itstool) path: note/para
 #: article.translate.xml:481
