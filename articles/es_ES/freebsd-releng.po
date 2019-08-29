@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-28 08:14+0000\n"
+"PO-Revision-Date: 2019-08-29 06:59+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -798,11 +798,14 @@ msgid ""
 "xlink:href=\"https://wiki.freebsd.org/Releng/"
 "ChangeRequestGuidelines\">Change Request Guidelines</link>."
 msgstr ""
+"Durante la congelación del código, se recomienda a los committers de FreeBSD "
+"que sigan el <link xlink:href=\"https://wiki.freebsd.org/Releng/"
+"ChangeRequestGuidelines\">Change Request Guidelines</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:488
 msgid "The <acronym>KBI</acronym>/<acronym>KPI</acronym> Freeze"
-msgstr ""
+msgstr "La congelación de <acronym>KBI</acronym>/<acronym>KPI</acronym>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:491
@@ -814,6 +817,12 @@ msgid ""
 "certain way, otherwise the <acronym>KBI</acronym>/<acronym>KPI</acronym> "
 "stability on the branch is broken."
 msgstr ""
+"La estabilidad de <acronym>KBI</acronym>/<acronym>KPI</acronym> implica que "
+"llamar a una función a través de dos versiones de software diferentes den el "
+"mismo resultado. Quien llama, ya sea un proceso, un subproceso o una "
+"función, espera que la función se comporte de cierta forma, de lo contrario, "
+"la estabilidad de <acronym>KBI</acronym>/<acronym>KPI</acronym> en la rama "
+"se ve afectada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:510
@@ -821,6 +830,8 @@ msgid ""
 "This section describes the changes to the website that should occur as the "
 "release cycle progresses."
 msgstr ""
+"Esta sección describe los cambios que deberían de ocurrir en la web a medida "
+"que avanza el ciclo de lanzamiento."
 
 #. (itstool) path: note/para
 #: article.translate.xml:514
@@ -829,11 +840,14 @@ msgid ""
 "<literal>head/</literal> branch of the <literal>doc</literal> repository in "
 "<application>Subversion</application>."
 msgstr ""
+"Los archivos especificados en esta sección son relativos a la rama "
+"<literal>head/</literal> del repositorio <literal>doc</literal> en "
+"<application>Subversion</application>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:521
 msgid "Website Changes Before the Release Cycle Begins"
-msgstr ""
+msgstr "Cambios en la web antes de que empiece el ciclo de lanzamiento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:523
@@ -841,27 +855,30 @@ msgid ""
 "When the release cycle schedule is available, these files need to be updated "
 "to enable various different functionalities on the FreeBSD Project website:"
 msgstr ""
+"Cuando el programa del ciclo de lanzamientos está disponible, estos archivos "
+"deben actualizarse para habilitar varias funcionalidades diferentes en la "
+"web del proyecto FreeBSD:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:531 article.translate.xml:583
 #: article.translate.xml:708 article.translate.xml:787
 #: article.translate.xml:896 article.translate.xml:993
 msgid "File to Edit"
-msgstr ""
+msgstr "Archivo a editar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:532 article.translate.xml:584
 #: article.translate.xml:709 article.translate.xml:788
 #: article.translate.xml:897 article.translate.xml:994
 msgid "What to Change"
-msgstr ""
+msgstr "Qué cambiar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:538 article.translate.xml:545
 #: article.translate.xml:552 article.translate.xml:559
 #: article.translate.xml:597
 msgid "<filename>share/xml/release.ent</filename>"
-msgstr ""
+msgstr "<filename>share/xml/release.ent</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:539
@@ -869,6 +886,8 @@ msgid ""
 "Change <literal>beta.upcoming</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
+"Cambie <literal>beta.upcoming</literal> de <literal>IGNORE</literal> a "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:546
@@ -876,6 +895,8 @@ msgid ""
 "Change <literal>% beta.upcoming</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
+"Cambie <literal>% beta.upcoming</literal> de <literal>IGNORE</literal> a "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:553
@@ -883,6 +904,8 @@ msgid ""
 "Change <literal>beta.testing</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
+"Cambie <literal>beta.testing</literal> de <literal>IGNORE</literal> a "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:560
@@ -890,12 +913,16 @@ msgid ""
 "Change <literal>% beta.testing</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
+"Cambie <literal>% beta.testing</literal> de <literal>IGNORE</literal> a "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:570
 msgid ""
 "Website Changes During <literal>BETA</literal> or <literal>RC</literal>"
 msgstr ""
+"Cambios en la web durante la fase <literal>BETA</literal> o <literal>RC</"
+"literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:573
@@ -905,12 +932,18 @@ msgid ""
 "on the download page. All files are relative to <filename class="
 "\"directory\">head/</filename> in the <literal>doc</literal> repository:"
 msgstr ""
+"Al realizar la transición de la fase <literal>PRERELEASE</literal> a "
+"<literal>BETA</literal>, entos archivos deben actualizarse para habilitar el "
+"bloque \"Help Test\" en la página de descarga. Todos los archivos son "
+"relativos a <filename class=\"directory\">head/</filename> en el repositorio "
+"<literal>doc</literal>:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:590
 msgid ""
 "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgstr ""
+"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:591
@@ -918,6 +951,8 @@ msgid ""
 "Change <literal>% beta.local.where</literal> <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
+"Cambie <literal>% beta.local.where</literal> <literal>IGNORE</literal> a "
+"<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:598
@@ -925,16 +960,18 @@ msgid ""
 "Update <literal>% betarel.vers</literal> to <literal>BETA<replaceable>1</"
 "replaceable></literal>"
 msgstr ""
+"Actualice <literal>% betarel.vers</literal> a <literal>BETA<replaceable>1</"
+"replaceable></literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:603
 msgid "<filename>share/xml/news.xml</filename>"
-msgstr ""
+msgstr "<filename>share/xml/news.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:604
 msgid "Add an entry announcing the <literal>BETA</literal>"
-msgstr ""
+msgstr "Añada una entrada anunciando la <literal>BETA</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:611
@@ -943,6 +980,10 @@ msgid ""
 "is created, the various release-related documents need to be generated and "
 "manually added to the <literal>doc/</literal> repository."
 msgstr ""
+"Una vez que ha creado la rama <literal>releng/<replaceable>12.0</"
+"replaceable>/</literal>, los diversos documentos relacionados con la versión "
+"deben generarse y añadirse manualmente al repositorio <literal>doc/</"
+"literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:615
@@ -956,6 +997,15 @@ msgid ""
 "Y</replaceable>R/</filename>, where <replaceable>X.Y</replaceable> "
 "represents the major and minor version number of the release."
 msgstr ""
+"Dentro de <filename class=\"directory\">release/doc</filename>, ejecute el "
+"comando <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> para generar las páginas <filename>errata.html</"
+"filename>, <filename>hardware.html</filename>, <filename>readme.html</"
+"filename> y <filename>relnotes.html</filename>, los cuales, luego se "
+"añadiran a <filename class=\"directory\">doc/head/en_US.ISO8859-1/htdocs/"
+"releases/<replaceable>X.Y</replaceable>R/</filename>, donde <replaceable>X."
+"Y</replaceable> representa la versión principal y la versión menor del "
+"lanzamiento."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:625
@@ -964,6 +1014,9 @@ msgid ""
 "on the newly-added files before the pre-commit hooks will allow them to be "
 "added to the repository."
 msgstr ""
+"<literal>fbsd:nokeywords</literal> debe tener el valor <literal>on</literal> "
+"en los archivos recién añadidos antes de que los pre-commit hooks permitan "
+"añadirlos al repositorio."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:632
@@ -971,6 +1024,8 @@ msgid ""
 "Ports Changes During <literal>BETA</literal>, <literal>RC</literal>, and the "
 "Final <literal>RELEASE</literal>"
 msgstr ""
+"Cambios en los ports durante las fases <literal>BETA</literal>, <literal>RC</"
+"literal> y la <literal>RELEASE</literal> final"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:636
