@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-29 06:59+0000\n"
+"PO-Revision-Date: 2019-08-31 07:37+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1040,11 +1040,20 @@ msgid ""
 "to safely use these distribution sets by providing a mechanism through which "
 "the checksums can be verified."
 msgstr ""
+"Durante el ciclo de lanzamientos, para cada compilación, los archivos "
+"<literal>MANIFEST</literal> que contienen el <literal>SHA256</literal> de "
+"varios distribution sets, como <literal>base.txz</literal>, <literal>kernel."
+"txz</literal>, etc..., se añaden al port <package>misc/freebsd-release-"
+"manifests</package>. Esto permite que otras utilidades que no sean "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, como <package>ports-mgmt/poudriere</package>, "
+"utilicen de manera segura estos distribution sets, al proporcionar un "
+"mecanismo a través del cual se pueden verificar los checksums."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:656
 msgid "Release from <literal>head/</literal>"
-msgstr ""
+msgstr "Lanzamientos desde la rama <literal>head/</literal>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:659
@@ -1052,11 +1061,14 @@ msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from the <literal>head/</literal> branch."
 msgstr ""
+"Esta sección describe los procedimientos generales del ciclo de lanzamientos "
+"de FreeBSD desde la rama <literal>head/</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:663
 msgid "FreeBSD <quote><literal>ALPHA</literal></quote> Builds"
 msgstr ""
+"Compilaciones de la fase <quote><literal>ALPHA</literal></quote> de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:665
@@ -1066,6 +1078,11 @@ msgid ""
 "<literal>BETA</literal> and <literal>RC</literal> builds, <literal>ALPHA</"
 "literal> builds are not included in the FreeBSD Release schedule."
 msgstr ""
+"Empezando con el ciclo de FreeBSD 10.0-RELEASE, se introdujo la noción de la "
+"fase <quote><literal>ALPHA</literal></quote> en las compilaciones. A "
+"diferencia de las fases <literal>BETA</literal> y <literal>RC</literal>, la "
+"fase <literal>ALPHA</literal> no está incluida en el cronograma de "
+"lanzamientos de FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:671
@@ -1074,6 +1091,9 @@ msgid ""
 "FreeBSD-provided builds before the creation of the <literal>stable/</"
 "literal> branch."
 msgstr ""
+"La idea detrás de la fase <literal>ALPHA</literal> es proporcionar "
+"compilaciones de FreeBSD de forma regular antes de la creación de la rama "
+"<literal>stable/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:675
@@ -1081,6 +1101,8 @@ msgid ""
 "FreeBSD <literal>ALPHA</literal> snapshots should be built approximately "
 "once a week."
 msgstr ""
+"Las snapshots de la fase <literal>ALPHA</literal> de FreeBSD deben "
+"compilarse aproximadamente una vez a la semana."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:678
@@ -1091,6 +1113,12 @@ msgid ""
 "<literal>ALPHA</literal> builds, increment each "
 "<literal>ALPHA<replaceable>N</replaceable></literal> value by one."
 msgstr ""
+"Para la primera compilación de la fase <literal>ALPHA</literal>, el valor de "
+"<varname>BRANCH</varname> en el archivo <filename>sys/conf/newvers.sh</"
+"filename> debe cambiarse de <literal>CURRENT</literal> a <literal>ALPHA1</"
+"literal>. Para posteriores compilaciones de la fase <literal>ALPHA</"
+"literal>, incremente el valor de <literal>ALPHA<replaceable>N</replaceable></"
+"literal> en uno."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:686
@@ -1098,12 +1126,15 @@ msgid ""
 "See <xref linkend=\"releng-building\"/> for information on building the "
 "<literal>ALPHA</literal> images."
 msgstr ""
+"Consulte la <xref linkend=\"releng-building\"/> para obtener información "
+"sobre cómo crear las imágenes de la fase <literal>ALPHA</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:691
 msgid ""
 "Creating the <literal>stable/<replaceable>12</replaceable>/</literal> Branch"
 msgstr ""
+"Crear la rama <literal>stable/<replaceable>12</replaceable>/</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:693
@@ -1114,6 +1145,12 @@ msgid ""
 "repository root. To create the new <literal>stable/<replaceable>12</"
 "replaceable>/</literal> branch in Subversion:"
 msgstr ""
+"Al crear la rama <literal>stable/</literal>, se requieren varios cambios, "
+"tanto en la nueva rama <literal>stable/</literal> como en la rama "
+"<literal>head/</literal>. Los archivos que se indican aquí son relativos a "
+"la raíz del repositorio. Para crear la nueva rama <literal>stable/"
+"<replaceable>12</replaceable>/</literal> en Subversion, ejecute el siguiente "
+"comando:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:699
@@ -1122,6 +1159,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</"
 "replaceable>/</literal></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp ^/head <literal>stable/<replaceable>12</"
+"replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:701
@@ -1129,11 +1168,13 @@ msgid ""
 "Once the <literal>stable/<replaceable>12</replaceable>/</literal> branch has "
 "been committed, make the following edits:"
 msgstr ""
+"Una vez que se ha creado la rama <literal>stable/<replaceable>12</"
+"replaceable>/</literal>, realice los siguientes cambios:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:715
 msgid "<filename>stable/<replaceable>12</replaceable>/UPDATING</filename>"
-msgstr ""
+msgstr "<filename>stable/<replaceable>12</replaceable>/UPDATING</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:716
@@ -1141,6 +1182,8 @@ msgid ""
 "Update the FreeBSD version, and remove the notice about <literal>WITNESS</"
 "literal>"
 msgstr ""
+"Actualice la versión de FreeBSD y elimine el aviso sobre <literal>WITNESS</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:721
@@ -1148,6 +1191,8 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/contrib/jemalloc/include/"
 "jemalloc/jemalloc_FreeBSD.h</filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/contrib/jemalloc/include/"
+"jemalloc/jemalloc_FreeBSD.h</filename>"
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:722
@@ -1155,7 +1200,9 @@ msgstr ""
 msgid "#ifndef MALLOC_PRODUCTION\n"
 "#define MALLOC_PRODUCTION\n"
 "#endif"
-msgstr ""
+msgstr "#ifndef MALLOC_PRODUCTION\n"
+"#define MALLOC_PRODUCTION\n"
+"#endif"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:728
@@ -1163,11 +1210,13 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/lib/clang/llvm.build.mk</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/lib/clang/llvm.build.mk</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:729
 msgid "Uncomment <literal>-DNDEBUG</literal>"
-msgstr ""
+msgstr "Descomente <literal>-DNDEBUG</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:733
@@ -1175,17 +1224,20 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC*</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:734 article.translate.xml:739
 msgid "Remove debugging support"
-msgstr ""
+msgstr "Eliminar el soporte de debug"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:738
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/*/conf/MINIMAL</filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/MINIMAL</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:743
@@ -1193,11 +1245,13 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/release/release.conf.sample</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/release/release.conf.sample</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:744
 msgid "Update <varname>SRCBRANCH</varname>"
-msgstr ""
+msgstr "Actualizar <varname>SRCBRANCH</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:748
@@ -1205,11 +1259,13 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC-NODEBUG</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/*/conf/GENERIC-NODEBUG</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:749
 msgid "Remove these kernel configurations"
-msgstr ""
+msgstr "Eliminar estas configuraciones del kernel"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:753
@@ -1217,11 +1273,13 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/arm/conf/std.arm*</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/arm/conf/std.arm*</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:754
 msgid "Remove debugging options"
-msgstr ""
+msgstr "Eliminar las opciones de debug"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:758 article.translate.xml:1026
@@ -1229,6 +1287,8 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/conf/newvers.sh</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:759
@@ -1236,12 +1296,15 @@ msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>BETA1</"
 "literal>"
 msgstr ""
+"Actualice el valor de <varname>BRANCH</varname> para reflejar la fase de "
+"<literal>BETA1</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:764
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/libexec/rc/rc.conf</filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/libexec/rc/rc.conf</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:765
@@ -1251,17 +1314,23 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for those that want it "
 "enabled by default)"
 msgstr ""
+"Establezca <literal>dumpdev</literal> de <literal>AUTO</literal> a "
+"<literal>NO</literal> (es configurable a través de "
+"<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> para aquellos que lo deseen habilitado por "
+"defecto)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:772
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/release/Makefile</filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/release/Makefile</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:773
 msgid "Remove the <literal>debug.witness.trace</literal> entries"
-msgstr ""
+msgstr "Elimine las entradas <literal>debug.witness.trace</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:780
@@ -1269,21 +1338,23 @@ msgid ""
 "Then in the <literal>head/</literal> branch, which will now become a new "
 "major version:"
 msgstr ""
+"Después, en la rama <literal>head/</literal>, la cual ahora pasará a ser una "
+"nueva versión principal:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:794
 msgid "<filename>head/UPDATING</filename>"
-msgstr ""
+msgstr "<filename>head/UPDATING</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:795
 msgid "Update the FreeBSD version"
-msgstr ""
+msgstr "Actualice la versión de FreeBSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:799
 msgid "<filename>head/sys/conf/newvers.sh</filename>"
-msgstr ""
+msgstr "<filename>head/sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:800
@@ -1291,11 +1362,13 @@ msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>CURRENT</"
 "literal>, and increment <literal>REVISION</literal>"
 msgstr ""
+"Actualice el valor de <varname>BRANCH</varname> para reflejar "
+"<literal>CURRENT</literal>, e incremente <literal>REVISION</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:806
 msgid "<filename>head/Makefile.inc1</filename>"
-msgstr ""
+msgstr "<filename>head/Makefile.inc1</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:807
@@ -1303,82 +1376,85 @@ msgid ""
 "Update <literal>TARGET_TRIPLE</literal> and <literal>MACHINE_TRIPLE</"
 "literal>"
 msgstr ""
+"Actualice <literal>TARGET_TRIPLE</literal> y <literal>MACHINE_TRIPLE</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:812
 msgid "<filename>head/sys/sys/param.h</filename>"
-msgstr ""
+msgstr "<filename>head/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:813
 msgid "Update <literal>__FreeBSD_version</literal>"
-msgstr ""
+msgstr "Actualice <literal>__FreeBSD_version</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:817
 msgid "<filename>head/gnu/usr.bin/cc/cc_tools/freebsd-native.h</filename>"
-msgstr ""
+msgstr "<filename>head/gnu/usr.bin/cc/cc_tools/freebsd-native.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:818
 msgid ""
 "Update <literal>FBSD_MAJOR</literal> and <literal>FBSD_CC_VER</literal>"
 msgstr ""
+"Actualice <literal>FBSD_MAJOR</literal> y <literal>FBSD_CC_VER</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:823
 msgid "<filename>head/contrib/gcc/config.gcc</filename>"
-msgstr ""
+msgstr "<filename>head/contrib/gcc/config.gcc</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:824
 msgid "Append the <literal>freebsd&lt;version&gt;.h</literal> section"
-msgstr ""
+msgstr "Incluya el header <literal>freebsd&lt;version&gt;.h</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:830
 msgid "<filename>head/lib/clang/llvm.build.mk</filename>"
-msgstr ""
+msgstr "<filename>head/lib/clang/llvm.build.mk</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:831
 msgid "Update the value of <literal>OS_VERSION</literal>"
-msgstr ""
+msgstr "Actualice el valor de <literal>OS_VERSION</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:850
 msgid "<filename>head/lib/clang/freebsd_cc_version.h</filename>"
-msgstr ""
+msgstr "<filename>head/lib/clang/freebsd_cc_version.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:851
 msgid "Update <literal>FREEBSD_CC_VERSION</literal>"
-msgstr ""
+msgstr "Actualice <literal>FREEBSD_CC_VERSION</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:856
 msgid "<filename>head/lib/clang/include/lld/Common/Version.inc</filename>"
-msgstr ""
+msgstr "<filename>head/lib/clang/include/lld/Common/Version.inc</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:857
 msgid "Update <literal>LLD_REVISION_STRING</literal>"
-msgstr ""
+msgstr "Actualice <literal>LLD_REVISION_STRING</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:862
 msgid "<filename>head/Makefile.libcompat</filename>"
-msgstr ""
+msgstr "<filename>head/Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:863
 msgid "Update <literal>LILB32CPUFLAGS</literal>"
-msgstr ""
+msgstr "Actualice <literal>LILB32CPUFLAGS</literal>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:878
 msgid "Release from <literal>stable/</literal>"
-msgstr ""
+msgstr "Lanzamientos desde la rama <literal>stable/</literal>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:880
@@ -1386,11 +1462,13 @@ msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from an extablished <literal>stable/</literal> branch."
 msgstr ""
+"Esta sección describe los procedimientos generales del ciclo de lanzamientos "
+"de FreeBSD desde la rama <literal>stable/</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:884
 msgid "FreeBSD <literal>stable</literal> Branch Code Slush"
-msgstr ""
+msgstr "Code Slush de la rama <literal>stable</literal> de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:886
@@ -1400,11 +1478,15 @@ msgid ""
 "in progress. These files are all relative to the top-most level of the "
 "stable branch:"
 msgstr ""
+"En preparación para la congelación del código en la rama <literal>stable</"
+"literal>, varios archivos deben ser actulizados para indicar que el ciclo de "
+"lanzamientos está oficialmente en progreso. Todos estos archivos son "
+"relativos al nivel más alto de la rama stable."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:903
 msgid "<filename>sys/conf/newvers.sh</filename>"
-msgstr ""
+msgstr "<filename>sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:904
@@ -1412,31 +1494,33 @@ msgid ""
 "Update the <varname>BRANCH</varname> value to reflect <literal>PRERELEASE</"
 "literal>"
 msgstr ""
+"Actualice el valor de <varname>BRANCH</varname> a <literal>PRERELEASE</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:909
 msgid "<filename>Makefile.inc1</filename>"
-msgstr ""
+msgstr "<filename>Makefile.inc1</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:910
 msgid "Update <varname>TARGET_TRIPLE</varname>"
-msgstr ""
+msgstr "Actualice <varname>TARGET_TRIPLE</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:914
 msgid "<filename>lib/clang/llvm.build.mk</filename>"
-msgstr ""
+msgstr "<filename>lib/clang/llvm.build.mk</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:915
 msgid "Update <varname>OS_VERSION</varname>"
-msgstr ""
+msgstr "Actualice <varname>OS_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:919
 msgid "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
-msgstr ""
+msgstr "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:920
@@ -1445,6 +1529,9 @@ msgid ""
 "<varname>doc-default-operating-system</varname> (FreeBSD 11.x and earlier "
 "only)"
 msgstr ""
+"Añada una nueva entrada <literal>.ds</literal> para la versión de FreeBSD y "
+"actualice <varname>doc-default-operating-system</varname> (solo para FreeBSD "
+"11.x y versiones anteriores)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:929
@@ -1456,11 +1543,17 @@ msgid ""
 "<literal>RC<replaceable>X</replaceable></literal>, or <literal>RELEASE</"
 "literal>, respectively."
 msgstr ""
+"En el repositorio de <literal>doc</literal>, actualice también el archivo "
+"<filename>head/en_US.ISO8859-1/htdocs/releases/<replaceable>12.0</"
+"replaceable>R/Makefile.hardware</filename>, cambiando el valor de "
+"<varname>_BRANCH</varname> a <literal>BETA<replaceable>X</replaceable></"
+"literal>, <literal>RC<replaceable>X</replaceable></literal>, o "
+"<literal>RELEASE</literal>, respectivamente."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:939
 msgid "FreeBSD <literal>BETA</literal> Builds"
-msgstr ""
+msgstr "Compilaciones de la fase <literal>BETA</literal> de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:941
@@ -1473,6 +1566,14 @@ msgid ""
 "expression matching the <literal>stable/<replaceable>12</replaceable>/</"
 "literal> branch for the release:"
 msgstr ""
+"Después del code slush, la siguiente fase del ciclo de lanzamientos es la "
+"congelación del código. Este es el punto en el que todos los commits a la "
+"rama stable requieren la aprobación explícita del equipo de ingeniería de "
+"lanzamientos de FreeBSD. Esto se aplica mediante pre-commit hooks en el "
+"repositorio de Subversion, editando <filename>base/svnadmin/conf/approvers</"
+"filename> para incluir una expresión regular que coincida con la rama "
+"<literal>stable/<replaceable>12</replaceable>/</literal> para el lanzamiento:"
+""
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:950
@@ -1481,6 +1582,8 @@ msgid ""
 "^/<literal>stable/<replaceable>12</replaceable>/</literal>\tre\n"
 "^/<literal>releng/<replaceable>12.0</replaceable>/</literal>\tre"
 msgstr ""
+"^/<literal>stable/<replaceable>12</replaceable>/</literal>\tre\n"
+"^/<literal>releng/<replaceable>12.0</replaceable>/</literal>\tre"
 
 #. (itstool) path: note/para
 #: article.translate.xml:954
@@ -1491,6 +1594,11 @@ msgid ""
 "release cycle, the other is security fixes that may occur during the release "
 "cycle."
 msgstr ""
+"Hay dos excepciones, las cuales no requieren la aprobación del commit. La "
+"primera es cualquier cambio que deba realizar el ingeniero de lanzamientos "
+"para continuar con el flujo de trabajo diario del ciclo de lanzamientos, y "
+"el segundo, son las correcciones de errores de seguridad que puedan ocurrir "
+"durante el ciclo de lanzamientos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:962
@@ -1500,6 +1608,10 @@ msgid ""
 "varname> value in <filename>sys/conf/newvers.sh</filename> from "
 "<literal>PRERELEASE</literal> to <literal>BETA1</literal>."
 msgstr ""
+"Cuando la congelación del código es efectiva, la próxima compilación de la "
+"rama se etiqueta como <literal>BETA1</literal>. Esto se realiza actualizando "
+"el valor de <varname>BRANCH</varname> en <filename>sys/conf/newvers.sh</"
+"filename> de <literal>PRERELEASE</literal> a <literal>BETA1</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:969
@@ -1509,6 +1621,11 @@ msgid ""
 "any files other than <filename>sys/conf/newvers.sh</filename>, incrementing "
 "the <literal>BETA</literal> build number."
 msgstr ""
+"Una vez hecho esto, se inicia el primer conjunto de compilaciones de la fase "
+"<literal>BETA</literal>. Las compilaciones de la fase <literal>BETA</"
+"literal> posteriores no requieren de la actualización de ningún archivo que "
+"no sea <filename>sys/conf/newvers.sh</filename>, en el cual habrá que "
+"aumentar el número de compilación de la fase <literal>BETA</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:977
@@ -1516,6 +1633,7 @@ msgid ""
 "Creating the <literal>releng/<replaceable>12.0</replaceable>/</literal> "
 "Branch"
 msgstr ""
+"Crear la rama <literal>releng/<replaceable>12.0</replaceable>/</literal>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:979
@@ -1536,6 +1654,9 @@ msgid ""
 "replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</"
 "literal></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp ^/<literal>stable/<replaceable>12</"
+"replaceable>/</literal> <literal>releng/<replaceable>12.0</replaceable>/</"
+"literal></userinput>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1000
@@ -1543,6 +1664,8 @@ msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/sys/conf/newvers.sh</"
 "filename>"
 msgstr ""
+"<filename>releng/<replaceable>12.0</replaceable>/sys/conf/newvers.sh</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1001
@@ -1550,12 +1673,15 @@ msgid ""
 "Change <literal>BETA<replaceable>X</replaceable></literal> to <literal>RC1</"
 "literal>"
 msgstr ""
+"Cambio <literal>BETA<replaceable>X</replaceable></literal> a <literal>RC1</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1007
 msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
+"<filename>releng/<replaceable>12.0</replaceable>/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1008 article.translate.xml:1034
@@ -1568,6 +1694,8 @@ msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/etc/pkg/FreeBSD.conf</"
 "filename>"
 msgstr ""
+"<filename>releng/<replaceable>12.0</replaceable>/etc/pkg/FreeBSD.conf</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1013 article.translate.xml:1020
@@ -1582,6 +1710,8 @@ msgid ""
 "<filename>releng/<replaceable>12.0</replaceable>/release/pkg_repos/release-"
 "dvd.conf</filename>"
 msgstr ""
+"<filename>releng/<replaceable>12.0</replaceable>/release/pkg_repos/release-"
+"dvd.conf</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1027
@@ -1595,11 +1725,12 @@ msgstr ""
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/sys/sys/param.h</filename>"
 msgstr ""
+"<filename>stable/<replaceable>12</replaceable>/sys/sys/param.h</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1038
 msgid "<filename>svnadmin/conf/approvers</filename>"
-msgstr ""
+msgstr "<filename>svnadmin/conf/approvers</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1039
@@ -1619,6 +1750,12 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</"
 "replaceable>/</literal></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/"
+"<replaceable>12.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</"
+"replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</"
+"replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1050
