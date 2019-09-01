@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-31 08:28+0000\n"
+"PO-Revision-Date: 2019-09-01 09:12+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -18,7 +18,7 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Equipo de traducción de FreeBSD al Español\n"
+"Juan F. Rodriguez jrh@it.uc3m.es, 2007\n"
 "Sergio Carlavilla carlavilla@mailbox.org, 2019"
 
 #. (itstool) path: info/title
@@ -602,6 +602,14 @@ msgid ""
 "closed by someone; an anonymous one will usually just disappear in the noise."
 ""
 msgstr ""
+"<emphasis>No deje el campo <quote>Summary</quote> vacío.</emphasis> Los PRs "
+"se envían a una lista de correo global (donde se utiliza el campo "
+"<quote>Summary</quote> para la línea <literal>Subject:</literal>), y se "
+"almacenan en una base de datos. Cualquiera que haga una busqueda por el "
+"campo synopsis (sinopsis) en la base de datos y encuentre un PR con la línea "
+"del subject (asunto) en blanco tiende a omitirlo. Recuerde que los PR "
+"permanecen en esta base de datos hasta que alguien los cierra; un PR que no "
+"esté debidamente cumplimentado pasará desaparcibido."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:316
@@ -616,6 +624,17 @@ msgid ""
 "literal>. (In the case of ports, it is especially helpful to have both the "
 "category and portname in the <quote>Summary</quote> line.)"
 msgstr ""
+"<emphasis>Rellene el campo <quote>Summary</quote> correctamente, no use "
+"descripciones vagas.</emphasis> No asuma que aquella persona que lea su PR "
+"entienda el contexto que motivó su envío, por lo tanto, cuanta más "
+"información proporcione, mejor. Por ejemplo, ¿en qué parte del sistema se "
+"produce el problema) ¿El problema sucede solo durante la instalación o "
+"durante la ejecución del sistema? Por ejemplo, en lugar de, <literal>Summary:"
+" portupgrade is broken</literal>, compruebe la cantidad de información de "
+"este otro ejemplo: <literal>Summary: port ports-mgmt/portupgrade coredumps "
+"on -current</literal>. (En el caso de los ports, es especialmente útil tener "
+"el nombre de la categoría y el nombre del port en el campo <quote>Summary</"
+"quote>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:332
@@ -624,6 +643,9 @@ msgid ""
 "is much more likely to be looked at than one without. Please set the "
 "<literal>patch</literal> Keyword in Bugzilla."
 msgstr ""
+"<emphasis>Si tiene un patch, dígalo.</emphasis> Es más probable que se "
+"analice un PR con un parche incluido que uno sin él. Incluya la palabra "
+"clave <literal>patch</literal> en Bugzilla."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:339
@@ -634,6 +656,11 @@ msgid ""
 "update</literal>. This way any committer that handles your PR will not have "
 "to check."
 msgstr ""
+"<emphasis>Si es un maintainer, dígalo</emphasis>. Si mantiene una parte del "
+"código fuente (por ejemplo, un port que ya exista), debe establecer el campo "
+"<quote>Class</quote> de su PR a <literal>maintainer-update</literal>. De "
+"esta forma, cualquier committer que se ocupe de su PR no tendrá que "
+"verificarlo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:349
@@ -757,7 +784,7 @@ msgid ""
 "problem is not listed there (someone is guaranteed to ask)"
 msgstr ""
 "el hecho de que haya leído <filename>src/UPDATING</filename> y que su "
-"problema no este listado (seguro que alguien le preguntará sobre este punto)"
+"problema no esté listado (seguro que alguien le preguntará sobre este punto)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:432
@@ -943,6 +970,17 @@ msgid ""
 "appropriate or substantial testing has been done, the code will be merged/"
 "migrated to the FreeBSD-STABLE branch."
 msgstr ""
+"Al adjuntar un patch, asegúrese de usar  <command>svn diff</command> o "
+"<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> con el argumento <option>-u</option> para crear un diff "
+"unificado, y asegúrese de especificar el número de revisión SVN del "
+"repositorio contra el que modificó los archivos, para que los "
+"desarrolladores que lean su informe puedan aplicarlos fácilmente. Para "
+"problema relacionados con el kernel o utilidades del sistema base, se "
+"prefiere un patch contra FreeBSD-CURRENT (la rama HEAD de Subversion), ya "
+"que todo el código nuevo debe aplicarse y probarse allí primero. Después de "
+"que se hayan realiazdo las pruebas adecuadas o importantes, se hará el merge/"
+"migración a la rama FreeBSD-STABLE."
 
 #. (itstool) path: section/para
 #: article.translate.xml:555
@@ -966,7 +1004,7 @@ msgid ""
 "entire patch will be useless."
 msgstr ""
 "No envíe parches como archivos adjuntos usando <command>Content-Transfer-"
-"Encoding: quoted-printable</command>. Esto escapará el caracter (character "
+"Encoding: quoted-printable</command>. Esto escapará el carácter (character "
 "escaping) y todo el parche será inútil."
 
 #. (itstool) path: section/para
@@ -1043,10 +1081,12 @@ msgid ""
 "problem reports with obscure synopses tend to get ignored."
 msgstr ""
 "<emphasis>Synopsis:</emphasis> Rellene este campo con una descripción corta "
-"y precisa del problema. La sinopsis se utiliza como subject del correo "
-"electrónico del informe de problemas, y también se utiliza en los listados y "
-"resúmenes de informes de la base de datos; informes de problemas con vagas "
-"sinopsis tienden a ser completamente ignorados."
+"y precisa del problema. El campo debe ser rellenado en inglés, pues es el "
+"idioma de comunicación en el proyecto FreeBSD. La sinopsis se utiliza como "
+"subject del correo electrónico del informe de problemas, y también se "
+"utiliza en los listados y resúmenes de informes de la base de datos; "
+"informes de problemas con vagas sinopsis tienden a ser completamente "
+"ignorados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:614
@@ -1060,11 +1100,13 @@ msgid ""
 "that."
 msgstr ""
 "<emphasis>Severity:</emphasis> Escoga una de las opciones, <literal>Affects "
-"only me</literal>, <literal>Affects some people</literal> o <literal>Affects "
-"many people</literal>. No sea exagerado; absténgase de etiquetar su problema "
-"<literal>Affects many people</literal> a menos que realmente lo haga. Los "
-"desarrolladores de FreeBSD no trabajarán en su problema más rápido si infla "
-"su importancia, ya que muchas otras personas han hecho exactamente lo mismo."
+"only me (Solo me afecta a mi)</literal>, <literal>Affects some people "
+"(Afecta a algunas personas)</literal> o <literal>Affects many people (Afecta "
+"a muchas personas)</literal>. No sea exagerado; absténgase de etiquetar su "
+"problema <literal>Affects many people (Afecta a muchas personas)</literal> a "
+"menos que realmente lo haga. Los desarrolladores de FreeBSD no trabajarán en "
+"su problema más rápido si infla su importancia, ya que muchas otras personas "
+"han hecho exactamente lo mismo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:627
@@ -1231,6 +1273,13 @@ msgid ""
 "mode (this also includes Intel-compatible machines running in EMT64 mode); "
 "and less commonly <literal>arm</literal> or <literal>powerpc</literal>."
 msgstr ""
+"Si está convencido de que el problema solo ocurrirá con la arquitectura del "
+"procesador que está utilizando, seleccione una de las categories específicas "
+"de la arquitectura: normalmente, <literal>i386</literal> para ordenadores "
+"compatibles con Intel en modo 32 bits; <literal>amd64</literal> para "
+"máquinas AMD que se ejecutan en modo 64 bits (esto también incluye "
+"ordenadores compatibles con Intel que se ejecutan en modo EMT64); y las "
+"menos comunes, <literal>arm</literal> o <literal>powerpc</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:739
@@ -1355,9 +1404,9 @@ msgstr ""
 "que se asignó a su informe de problemas y una URL que puede usar para "
 "verificar su estado. Con un poco de suerte, alguien se interesará en su "
 "problema e intentará solucionarlo o, según sea el caso, explicará por qué no "
-"es un problema. Se le notificará automáticamente cualquier cambio de estado "
-"y recibirá copias de los comentarios o parches que alguien pueda adjuntar al "
-"registro de auditoría de su informe de problemas."
+"es un problema. Se le notificará automáticamente de cualquier cambio de "
+"estado y recibirá copias de los comentarios o parches que alguien pueda "
+"adjuntar al registro de auditoría de su informe de problemas."
 
 #. (itstool) path: section/para
 #: article.translate.xml:822
@@ -1404,7 +1453,7 @@ msgstr ""
 "suceder cuando hay una acumulación de informes de problemas o durante la "
 "temporada de vacaciones. Cuando un informe de problemas no ha recibido "
 "atención después de varias semanas, vale la pena encontrar a un committer "
-"que este interesado en trabajar en él."
+"que esté interesado en trabajar en él."
 
 #. (itstool) path: section/para
 #: article.translate.xml:844
