@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-08-31 07:37+0000\n"
+"PO-Revision-Date: 2019-09-08 11:00+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -1645,6 +1645,13 @@ msgid ""
 "for example. The paths listed below are relative to the repository root. The "
 "order of commits and what to change are:"
 msgstr ""
+"Cuando la primera compilación de la fase <literal>RC</literal> (Release "
+"Candidate) está lista para empezar, se crea la rama <literal>releng/</"
+"literal>. Este proceso tiene varios pasos, que deben realizarse en un orden "
+"específico, para evitar problemas como duplicidades con los valores de "
+"<varname>__FreeBSD_version</varname>, por ejemplo. Las rutas que se enumeran "
+"a continuación son relativasa la raíz del repositorio. El orden de los "
+"commits y qué hay que modificar es:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:987
@@ -1673,7 +1680,7 @@ msgid ""
 "Change <literal>BETA<replaceable>X</replaceable></literal> to <literal>RC1</"
 "literal>"
 msgstr ""
-"Cambio <literal>BETA<replaceable>X</replaceable></literal> a <literal>RC1</"
+"Cambie <literal>BETA<replaceable>X</replaceable></literal> a <literal>RC1</"
 "literal>"
 
 #. (itstool) path: row/entry
@@ -1686,7 +1693,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1008 article.translate.xml:1034
 msgid "Update <varname>__FreeBSD_version</varname>"
-msgstr ""
+msgstr "Actualice <varname>__FreeBSD_version</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1012
@@ -1703,6 +1710,8 @@ msgid ""
 "Replace <literal>latest</literal> with <literal>quarterly</literal> as the "
 "default package repository location"
 msgstr ""
+"Reemplace <literal>latest</literal> por <literal>quarterly</literal> como la "
+"ubicación predeterminada del repositorio de paquetes"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1019
@@ -1719,6 +1728,8 @@ msgid ""
 "Update <literal>BETA<replaceable>X</replaceable></literal> with "
 "<literal>PRERELEASE</literal>"
 msgstr ""
+"Actualice <literal>BETA<replaceable>X</replaceable></literal> por "
+"<literal>PRERELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1033
@@ -1738,6 +1749,8 @@ msgid ""
 "Add a new approvers line for the releng branch as was done for the stable "
 "branch"
 msgstr ""
+"Añada una nueva línea de approvers para la rama releng de la misma forma que "
+"se hizo para la rama estable"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1046
