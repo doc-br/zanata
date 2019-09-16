@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-09-11 03:30+0000\n"
+"PO-Revision-Date: 2019-09-16 08:04+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -77445,27 +77445,30 @@ msgid ""
 "the protocol type, source or destination host address, and source or "
 "destination port."
 msgstr ""
+"防火墙的存在， 使得过滤出入系统的数据流成为可能。 防火墙可以使用一组或多组 “<quote>规则（rules）</quote>”， "
+"来检查出入您的网络连接的数据包， 并决定允许或阻止它们通过。 这些规则通常可以检查数据包的某个或某些特征， 这些特征包括， 但不必限于协议类型、 "
+"来源或目的主机地址， 以及来源或目的端口。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:57392
 msgid ""
 "Firewalls can enhance the security of a host or a network. They can be used "
 "to do one or more of the following:"
-msgstr ""
+msgstr "防火墙可以大幅度地改善主机或网络的安全。 它可以用来完成下面的任务："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57397
 msgid ""
 "Protect and insulate the applications, services, and machines of an internal "
 "network from unwanted traffic from the public Internet."
-msgstr ""
+msgstr "保护和隔离应用程序、 服务程序， 以及您内部网络上的机器， 不受那些来自公共的 Internet 网络上您所不希望的数据流量的干扰。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57403
 msgid ""
 "Limit or disable access from hosts of the internal network to services of "
 "the public Internet."
-msgstr ""
+msgstr "限制或禁止从内部网访问公共的 Internet 上的服务。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57408
@@ -77476,6 +77479,8 @@ msgid ""
 "<acronym>IP</acronym> address or a shared pool of automatically assigned "
 "public addresses."
 msgstr ""
+"支持网络地址转换 (<acronym>NAT</acronym>)， 它使得您的内部网络能够使用私有的 <acronym>IP</acronym> "
+"地址， 并分享一条通往公共的 Internet 的连接 (使用一个 <acronym>IP</acronym> 地址， 或者一组公网地址)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:57417
@@ -77505,28 +77510,29 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:57440
 msgid "How to define packet filtering rules."
-msgstr ""
+msgstr "如何正确地定义包过滤规则。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57444
 msgid "The differences between the firewalls built into FreeBSD."
-msgstr ""
+msgstr "FreeBSD 中内建的几种防火墙之间的差异。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57449
 msgid "How to use and configure the <application>PF</application> firewall."
-msgstr ""
+msgstr "如何使用和配置 OpenBSD 的 <application>PF</application> 防火墙。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57454
 msgid "How to use and configure the <application>IPFW</application> firewall."
-msgstr ""
+msgstr "如何使用和配置 <application>IPFW</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57459
+#, fuzzy
 msgid ""
 "How to use and configure the <application>IPFILTER</application> firewall."
-msgstr ""
+msgstr "如何使用和配置 <application>IPFILTER</application>。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:57473
@@ -77542,7 +77548,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:57485
 msgid "Firewall Concepts"
-msgstr ""
+msgstr "防火墙的概念"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:57487
