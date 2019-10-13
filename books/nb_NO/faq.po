@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-06-23 06:38+0000\n"
+"PO-Revision-Date: 2019-10-13 07:40+0000\n"
 "Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
 "Language-Team: Norwegian Bokmål (Norway)\n"
 "Language: nb_NO\n"
@@ -16,7 +16,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Lars Skogstad  <n3c@n3c.no>  2019"
 
 #. (itstool) path: info/title
 #: book.translate.xml:19
@@ -94,7 +94,6 @@ msgstr ""
 
 #. (itstool) path: important/para
 #: book.translate.xml:79
-#, fuzzy
 msgid ""
 "THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS "
 "IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
@@ -108,17 +107,17 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
-"THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS "
-"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
-"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT "
-"BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
-"CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF "
-"SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS "
-"INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN "
-"CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) "
-"ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
-"THE POSSIBILITY OF SUCH DAMAGE."
+"DENNE DOKUMENTASJONEN LEVERES AV FREEBSD-DOKUMENTASJONSPROSJEKTET \"SOM ER\" "
+"OG EVENTUELLT UTTRYKKTE ELLER IMPLISTE GARANTIER, INKLUDERT, MEN IKKE "
+"BEGRENSET TIL DE IMPLISJONTE GARANTIER FOR SALGBARHET OG EGNETHET FOR ET "
+"SÆRLIG FORMÅL ER FORBEVISET. IKKE ANSVARLIG SKAL FREEBSD-"
+"DOKUMENTASJONSPROJEKTET ANSVARLES FOR NOEN DIREKTE, INDIREKTE, HENDELIGE, "
+"SPESIELLE, EXEMPLERALE ELLER KONSEKVENSIELLE SKADER (INKLUDERT, MEN IKKE "
+"BEGRENSET TIL, ANSKAFFELSE AV GODER ELLER TJENESTER; TAP ELLER BRUK AV DATA, "
+"FORRETNING AV FORRETNINGSINSTRUKSJONER) HVIS SIKKERHET OG PÅ NOEN TEORI OM "
+"ANSVAR, HVIS I KONTRAKT, STRENGT ANSVARLIGHET, ELLER SKADE (INKLUDERT "
+"NEGLIGENS ELLER ANNEN) OPPSTÅR PÅ NOEN MÅTE UTE AV BRUK AV DENNE "
+"DOKUMENTASJONEN, SELV OM FORVISNING AV UTSLAGET."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:96
@@ -688,7 +687,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:408
-#, fuzzy
 msgid ""
 "Releases are made <link linkend=\"release-freq\">every few months</link>. "
 "While many people stay more up-to-date with the FreeBSD sources (see the "
@@ -699,8 +697,8 @@ msgstr ""
 "Utgivelser kommer med <link linkend=\"release-freq\">noen få måneders</link> "
 "mellomrom. Selvom mange liker å være \"up-to-date\" med FreeBSD kilder (see "
 "spørsmål på <link linkend=\"current\">FreeBSD-CURRENT</link> og <link "
-"linkend=\"stable\">FreeBSD-STABLE</link>) så  *** doing so is more of a "
-"commitment, as the sources are a moving target. ***"
+"linkend=\"stable\">FreeBSD-STABLE</link>) så  det å gjøre dette er mer en "
+"slags plikt ettersom kilder stadig beveger seg videre."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:415
@@ -3285,6 +3283,14 @@ msgid ""
 "increase these other system limits in addition to the maximum number of "
 "processes."
 msgstr ""
+"FreeBSD kenerlen vil kun tillate et visst antall prosesser til å kjøre "
+"samtidig. Nummeret er basert på <varname>kern.maxusers</varname> "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> variabelen. <varname>kern.maxusers</varname> påvirker også "
+"flere andre forskjeller begrensninger i kernelen som; nettverk buffer. Hvis "
+"maskinen i bruk har mye prosesser kjørende så anbefales det å øke "
+"<varname>kern.maxusers</varname>. Dette vil også øke de andre begrensningene "
+" i forhold til visst antall prosesser."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2027
@@ -3295,6 +3301,11 @@ msgid ""
 "Handbook. While that section refers to open files, the same limits apply to "
 "processes."
 msgstr ""
+"For å justere verdien på <varname>kern.maxusers</varname> sjekk <link xlink:"
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/configtuning-"
+"kernel-limits.html#kern-maxfiles\">File/Process Limits</link> seksjonen av "
+"FreeBSD håndboken. Mens den seksjonen refererer til åpne filer så gjelder de "
+"samme begrensningene for prosesser."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2033
@@ -3311,11 +3322,23 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, must always be "
 "running."
 msgstr ""
+"Hvis maskinen kjører en lett load i systemet men veldig mange prosesser, "
+"juster <varname>kern.maxproc</varname> trim med å konfiguere <filename>/boot/"
+"loader.conf</filename>. Justeringene vil ikke bli endret før systemet blir "
+"startet på nytt. For mer informasjon vedrørende \"tuning tunables\" sjekk "
+"<citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>. Hvis disse prosessene blir kjørt av kun en enkelt "
+"bruker, juster <varname>kern.maxprocperuid</varname> til å være en mindre "
+"enn den nye <varname>kern.maxproc</varname> variabelen. Det må minst være en "
+"mindre på grunn av system programmet, <citerefentry><refentrytitle>init</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, som alltid må kjøres."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2050
 msgid "Why do full screen applications on remote machines misbehave?"
 msgstr ""
+"Hvorfor oppfører fullskjerms applikasjoner seg feil eller annerledes på "
+"fjernstyrte maskiner?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2055
@@ -3325,6 +3348,9 @@ msgid ""
 "Alternatively the kernel may have the wrong values for the width and height "
 "of the terminal."
 msgstr ""
+"Den fjernstyrte maskinen kan ha andre innstillinger i terminalen til noe "
+"annet enn <literal>xterm</literal> som er påkrevet av FreeBSD konsollen. "
+"Alternativt kan kernelen ha feil verdier for bredde og høyde i terminalen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2061
@@ -3333,6 +3359,9 @@ msgid ""
 "<literal>xterm</literal>. If the remote machine does not support that try "
 "<literal>vt100</literal>."
 msgstr ""
+"Sjekk verdien til <envar>TERM</envar> variabelen at denne er satt til "
+"<literal>xterm</literal>. Hvis den fjernstyrte maskinen ikke har støtte for "
+"dette prøv <literal>vt100</literal>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2066
@@ -3342,6 +3371,10 @@ msgid ""
 "<command>stty rows <replaceable>RR</replaceable> cols <replaceable>CC</"
 "replaceable></command>."
 msgstr ""
+"Kjør <command>stty -a</command> for å sjekke hva kernelen tror terminal "
+"størrelsen er. Hvis de er feil så kan det endres ved å skrive <command>stty "
+"rows <replaceable>RR</replaceable> cols <replaceable>CC</replaceable></"
+"command>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2072
@@ -3350,6 +3383,9 @@ msgid ""
 "installed, then running <command>resize</command> will query the terminal "
 "for the correct dimensions and set them."
 msgstr ""
+"Alternativt, hvis klient maskinen har <package>x11/xterm</package> "
+"installert så vil det å kjøre <command>resize</command> spørre terminalen "
+"etter riktig dimensjoner deretter sette riktig innstillinger."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2081
@@ -3357,6 +3393,8 @@ msgid ""
 "Why does it take so long to connect to my computer via <command>ssh</"
 "command> or <command>telnet</command>?"
 msgstr ""
+"Hvorfor tar det så lang tid å koble til maskinen min via <command>ssh</"
+"command> eller <command>telnet</command>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2087
@@ -3366,6 +3404,10 @@ msgid ""
 "in <citerefentry><refentrytitle>telnet</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>'s case, when a login prompt appears)."
 msgstr ""
+"Symptomet: Det er lang forsinkelse mellom tiden TCP tilkolbingen blir "
+"etablert til tiden klient programvaren spør etter et passord. (eller i "
+"<citerefentry><refentrytitle>telnet</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>'s tilfelle, når en login forespørsel dukker opp)."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2093
@@ -3376,6 +3418,11 @@ msgid ""
 "<application>SSH</application> servers that come with FreeBSD, do this to "
 "store the hostname in a log file for future reference by the administrator."
 msgstr ""
+"Problemet:  Mer sannsynlig enn ikke så er forsinkelsen på grunn av at server "
+"programvaren prøver å finne klientens IP adresse og løse inn til vertshost. "
+"Mange servere, inkludert <application>Telnet</application> og "
+"<application>SSH</application> som kommer med FreeBSD lagrer denne "
+"informasjonen i en logg fil for  tilgang senere for administratoren."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2101
@@ -3384,6 +3431,9 @@ msgid ""
 "any server, the problem is with the client. If the problem only occurs when "
 "someone connects to the server computer, the problem is with the server."
 msgstr ""
+"Kuren: Hvis problemet alltid skjer når klienten prøver å koble opp mot "
+"serveren, så ligger problemet hos klienten. Hvis problemet kun oppstår når "
+"noen kobler opp mot server, så ligger problemet i serveren."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2107
@@ -3392,6 +3442,10 @@ msgid ""
 "server can resolve it. If this is on a local network, consider it a server "
 "problem and keep reading. If this is on the Internet, contact your ISP."
 msgstr ""
+"Hvis problemet er hos klienten, så er den eneste kuren å fikse så DNS "
+"serveren kan finne den. Hvis dette er i et lokalt nettverk, vurder det som "
+"et server problem og les videre. Hvis dette er på internett, kontakt "
+"internett leverandør."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2113
@@ -3406,6 +3460,15 @@ msgid ""
 "such as <systemitem>www.yahoo.com</systemitem>. If it does not work, that is "
 "the problem."
 msgstr ""
+"Hvis problemet ligger hos serveren i et lokalt nettverk, konfiguer serveren "
+"til å finne \"address-to-hostname\" forespørsler for \"local address range\"."
+" Se <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> og <citerefentry><refentrytitle>named</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> for mer informasjon. "
+"Hvis dette er på internett så kan problemet være at den lokale serveren sin "
+"resolver ikke fungerer som den skal. For å sjekke dette, prøv å sjekk en "
+"annen vert som <systemitem>www.yahoo.com</systemitem>. Hvis ikke dette "
+"fungerer så er det problemet."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2124
@@ -3419,6 +3482,15 @@ msgid ""
 "conf</filename> or set <literal>UseDNS</literal> to <literal>no</literal> in "
 "<filename>sshd_config</filename> as a temporary workaround."
 msgstr ""
+"Etter en helt fersk ny installasjon av FreeBSD så er det også mulig at "
+"domene og navn server informasjon mangler i <filename>/etc/resolv.conf</"
+"filename>. Dette vil ofte lage en forsinkelse i <application>SSH</"
+"application> ettersom muligheten<literal>UseDNS</literal> er satt til "
+"<literal>yes</literal> som default i <filename>/etc/ssh/sshd_config</"
+"filename>. Hvis dette skapet et problem, enten fyll inn manglende "
+"informasjon i <filename>/etc/resolv.conf</filename> eller juster "
+"<literal>UseDNS</literal> til <literal>no</literal> i <filename>sshd_config</"
+"filename> som en midlertidlig løsning."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2142
@@ -3427,6 +3499,9 @@ msgid ""
 "<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>?"
 msgstr ""
+"Hvorfor vises <errorname>file: table is full</errorname> gjentagende ganger "
+"i <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2147
@@ -3439,11 +3514,18 @@ msgid ""
 "kernel-limits.html\">Tuning Kernel Limits</link> section of the Handbook for "
 "a discussion and solution."
 msgstr ""
+"Denne feilmeldingen indikerer at tilgjengelige fil beskrivelser har blitt "
+"full i systemet. Henvis til: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/configtuning-kernel-limits.html#kern-"
+"maxfiles\">kern.maxfiles</link> seksjonen av <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/configtuning-kernel-"
+"limits.html\">Tuning Kernel Limits</link> seksjonen av FreeBSD håndboken for "
+"en diskusjon og finne en løsning."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2158
 msgid "Why does the clock on my computer keep incorrect time?"
-msgstr ""
+msgstr "Hvorfor viser klokken i datamaskinen feil tid?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2163
@@ -3451,6 +3533,8 @@ msgid ""
 "The computer has two or more clocks, and FreeBSD has chosen to use the wrong "
 "one."
 msgstr ""
+"Datamskinen har to eller fler klokker og FreeBSD har valgt å bruke feil "
+"klokke."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2166
@@ -3460,6 +3544,10 @@ msgid ""
 "<literal>Timecounter</literal>. The one with the highest quality value that "
 "FreeBSD chose."
 msgstr ""
+"Kjør <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, og sjekk for linjer som inneholder "
+"<literal>Timecounter</literal>. Den med høyest kvalitet/verdi blir benyttet "
+"av FreeBSD."
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2170
@@ -3471,6 +3559,11 @@ msgid ""
 "Timecounter \"TSC\" frequency 2998570050 Hz quality 800\n"
 "Timecounters tick every 1.000 msec"
 msgstr ""
+"<prompt>#</prompt> <userinput>dmesg | grep Timecounter</userinput>\n"
+"Timecounter \"i8254\" frequency 1193182 Hz quality 0\n"
+"Timecounter \"ACPI-fast\" frequency 3579545 Hz quality 1000\n"
+"Timecounter \"TSC\" frequency 2998570050 Hz quality 800\n"
+"Timecounters tick every 1.000 msec"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2176
@@ -3479,6 +3572,9 @@ msgid ""
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Bekreft dette med å sjekke <varname>kern.timecounter.hardware</varname> "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2180
@@ -3487,6 +3583,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>sysctl kern.timecounter.hardware</userinput>\n"
 "kern.timecounter.hardware: ACPI-fast"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl kern.timecounter.hardware</userinput>\n"
+"kern.timecounter.hardware: ACPI-fast"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2183
@@ -3697,12 +3795,12 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:2334
 msgid "User Applications"
-msgstr ""
+msgstr "Bruker Applikasjoner"
 
 #. (itstool) path: question/para
 #: book.translate.xml:2339
 msgid "Where are all the user applications?"
-msgstr ""
+msgstr "Hvor er alle bruker applikasjonene?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2343
@@ -3714,6 +3812,12 @@ msgid ""
 "listinfo/freebsd-announce\">FreeBSD announcements mailing list</link> for "
 "periodic updates on new entries."
 msgstr ""
+"Vis til <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">the ports "
+"page</link> for info om programvare pakker portet til FreeBSD. Port listen "
+"ligger godt over 24,000 og vokser daglig, så kom ofte gjerne tilbake og/"
+"eller abonner til <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-announce\">FreeBSD announcements mailing list</link> for "
+"periodiske oppdateringer på nye oppføringer."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2350
@@ -3723,6 +3827,10 @@ msgid ""
 "snapshot of the ports tree at the time of release in also included in the "
 "<filename>ports/</filename> directory."
 msgstr ""
+"De fleste portene bør fungere på alle støttede FreeBSD versjoner. De som "
+"spesifikt ikke er støttet har gjerne et notis rundt dette. Hver gang en "
+"FreeBSD utgivelse kommer så blir det også laget et snapshop av port treet "
+"som også inkluderes i <filename>ports/</filename> katalogen."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2356
@@ -3731,16 +3839,20 @@ msgid ""
 "ports. Use <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry> to control the installation of packages."
 msgstr ""
+"FreeBSD støtter komprimerte binære pakker for lett tilgjengelighet ved "
+"instalasjon og avinstallering av porter. Bruk "
+"<citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>7</manvolnum></"
+"citerefentry> for alt vedrørende installasjon av pakker."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2364
 msgid "How do I download the Ports tree? Should I be using Subversion?"
-msgstr ""
+msgstr "Hvordan laster jeg ned Port treeet? Bør jeg bruke Subversion?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2369
 msgid "Any of the methods listed here work:"
-msgstr ""
+msgstr "Hvilken som helst av metodene listet nedenfor fungerer:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2373
@@ -3750,6 +3862,10 @@ msgid ""
 "html\">Using the Ports Collection</link> for instructions on how to use this "
 "tool."
 msgstr ""
+"Bruk portsnap i de fleste tilfeller. Henvis til <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using."
+"html\">Using the Ports Collection</link> for instruksjoner hvordan man skal "
+"bruke dette verktøyet."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2378
@@ -3758,11 +3874,14 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/svn."
 "html\">Using Subversion</link> for details."
 msgstr ""
+"Bruk Suversion hvis skreddersydde tilpasninger/patches til port treet er "
+"nødvendig. Henvis til <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-"
+"1/books/handbook/svn.html\">Using Subversion</link> for mer detaljer."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2388
 msgid "Does FreeBSD support <trademark>Java</trademark>?"
-msgstr ""
+msgstr "Støtter FreeBSD <trademark>Java</trademark>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2392
@@ -3770,6 +3889,8 @@ msgid ""
 "Yes. Refer to <link xlink:href=\"@@URL_RELPREFIX@@/java/index.html\">https://"
 "www.FreeBSD.org/java/</link> for more information."
 msgstr ""
+"Ja. Henvis til <link xlink:href=\"@@URL_RELPREFIX@@/java/index.html\">https:/"
+"/www.FreeBSD.org/java/</link> for mer informasjon."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2399
@@ -3777,6 +3898,8 @@ msgid ""
 "Why can I not build this port on my 11.<replaceable>X</replaceable> -, or 12."
 "<replaceable>X</replaceable> -STABLE machine?"
 msgstr ""
+"Hvorfor kan jeg ikke bygge denne porten på min 11.<replaceable>X</"
+"replaceable> -, or 12.<replaceable>X</replaceable> -STABLE maskin?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2405
@@ -3792,6 +3915,16 @@ msgid ""
 "Collection is supposed to work for both the <emphasis>-CURRENT</emphasis> "
 "and <emphasis>-STABLE</emphasis> branches."
 msgstr ""
+"Hvis den installerte FreeBSD versjonen henger etter <emphasis>-CURRENT</"
+"emphasis> eller <emphasis>-STABLE</emphasis>, oppdater Port Kolleksjonen ved "
+"å følge instruksjonene i <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/ports-using.html\">Using the Ports Collection</"
+"link>.Hvis systemet er up-to-date så kan noen ha gjort en endring til porten "
+"som påvirker <emphasis>-CURRENT</emphasis> men som ødela porten for "
+"<emphasis>-STABLE</emphasis>.<link xlink:href=\"https://bugs.FreeBSD.org/"
+"submit/\">Submit</link> en bug report, ettersom Port Kolleksjonen skal "
+"fungere for både <emphasis>-CURRENT</emphasis> og <emphasis>-STABLE</"
+"emphasis> bransjene."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2422
@@ -3799,6 +3932,8 @@ msgid ""
 "I just tried to build <filename>INDEX</filename> using <command>make index</"
 "command>, and it failed. Why?"
 msgstr ""
+"Jeg prøvde akkurat å bygge <filename>INDEX</filename> ved å bruke "
+"<command>make index</command>,og det fungerte ikke. Hvorfor?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2427
@@ -3807,6 +3942,9 @@ msgid ""
 "building <filename>INDEX</filename> from an up-to-date copy of the Ports "
 "Collection are high-visibility and are thus almost always fixed immediately."
 msgstr ""
+"Først, sørg for at Port Kolleksjonen er nylig oppdatert. Feil som påvirker "
+"bygging av <filename>INDEX</filename> fra en up-to-date kopi av Port "
+"Kolleksjonen er høyt synlig og blir derfor alltid fikset fortløpende."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2433
@@ -3818,11 +3956,18 @@ msgid ""
 "reporting it to <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-ports\">FreeBSD ports mailing list</link>."
 msgstr ""
+"Det er sjeldne tilfeller hvor <filename>INDEX</filename> ikke vil bygges pga "
+"noen spesielle tilfeller som involverer <varname>OPTIONS_SET</varname> satt  "
+"i <filename>make.conf</filename>. Hvis du mistenker at det er tilfellet så "
+"prøv å lag <filename>INDEX</filename> med disse variablene slått av før det "
+"rapporteres til <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-ports\">FreeBSD ports mailing list</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2445
 msgid "I updated the sources, now how do I update my installed ports?"
 msgstr ""
+"Jeg oppdaterte kildekoden, hvordan oppdaterer jeg de installerte portene?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2450
@@ -3833,6 +3978,12 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using."
 "html\">Upgrading Ports</link> section in the FreeBSD Handbook."
 msgstr ""
+"FreeBSD inkluderer ikke et port oppdaterings verktøy men det har noen "
+"verktøy for å gjøre oppgraderings prosessen noenlunde enklere. Ekstra "
+"verktøy er tilgjengelig for å gjøre port håndtering lettere og er beskrevet "
+"her under <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/ports-using.html\">Upgrading Ports</link> seksjonen i FreeBSD "
+"håndboken."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2460
@@ -3840,6 +3991,8 @@ msgid ""
 "Do I need to recompile every port each time I perform a major version "
 "update?"
 msgstr ""
+"Trenger jeg å rekompilere hver eneste port hver gang jeg kjører en stor "
+"versjons oppdatering?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2465
@@ -3848,6 +4001,9 @@ msgid ""
 "release, things will randomly crash and fail to work once other ports are "
 "installed or updated."
 msgstr ""
+"Ja!  Mens et nylig oppdatert system vil kjøre programvare kompilert under en "
+"eldre utgivelse, så kan ting tilfeldig kræsje og slutte å fungere etter at "
+"andre porter er installert eller oppdatert."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2470
@@ -3857,6 +4013,10 @@ msgid ""
 "linked against the older versions may fail to start or, in other cases, fail "
 "to function properly."
 msgstr ""
+"Når systemet er oppgradert så vil delte biblotek, kjørbare moduler og andre "
+"deler av systemet bli erstatett av nyere versjoner. Applikasjoner lenket til "
+"eldre versjoner kan ha problemer med å starte eller i andre tilfeller slutte "
+"å fungere slik de skal."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2476
@@ -3865,6 +4025,9 @@ msgid ""
 "ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html#freebsdupdate-"
 "upgrade\">the section on upgrades</link> in the FreeBSD Handbook."
 msgstr ""
+"For mer informasjon, se <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html#freebsdupdate-"
+"upgrade\">the section on upgrades</link> i FreeBSD Håndboken."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2483
@@ -3872,6 +4035,8 @@ msgid ""
 "Do I need to recompile every port each time I perform a minor version "
 "update?"
 msgstr ""
+"Trenger jeg å rekompilere hver port hver gang jeg kjører en mindre versjon "
+"oppdatering?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2488
@@ -3881,6 +4046,10 @@ msgid ""
 "exceptions will be documented in the Release Notes, and advice given there "
 "should be followed."
 msgstr ""
+"Generelt sett, nei. FreeBSD utviklere gjør alt de kan for å garantere at "
+"binær kompabilitet skal fungere i alle utgivelser med samme major versjon "
+"nummer. Hvilke som helst unntak vil bli dokumentert i Release Notes og "
+"anbefalinger der bør følges så godt det kan."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2498
@@ -3888,6 +4057,8 @@ msgid ""
 "Why is <command>/bin/sh</command> so minimal? Why does FreeBSD not use "
 "<command>bash</command> or another shell?"
 msgstr ""
+"Hvorfor er <command>/bin/sh</command> så minimal? Hvorfor bruker ikke "
+"FreeBSD <command>bash</command> eller andre shell?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2504
@@ -4115,7 +4286,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:2667
 msgid "There are a number of possible causes for this problem:"
-msgstr ""
+msgstr "Det er en rekke mulige årsaker til dette problemet:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2672
