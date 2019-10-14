@@ -1,0 +1,999 @@
+# Lars Skogstad <n3c@n3c.no>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-06-15 11:35-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-10-14 06:38+0000\n"
+"Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
+"Language-Team: Norwegian Bokmål (Norway)\n"
+"Language: nb_NO\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Lars Skogstad - n3c@n3c.no"
+
+#. (itstool) path: info/title
+#. (itstool) path: sect1/title
+#: article.translate.xml:4 article.translate.xml:40
+msgid "Introduction to NanoBSD"
+msgstr "Introduksjon til NanoBSD"
+
+#. (itstool) path: authorgroup/author
+#: article.translate.xml:7
+msgid ""
+"<personname><firstname>Daniel</firstname><surname>Gerzo</surname></"
+"personname>"
+msgstr ""
+"<personname><firstname>Daniel</firstname><surname>Gerzo</surname></"
+"personname>"
+
+#. (itstool) path: info/copyright
+#: article.translate.xml:10
+msgid "<year>2006</year> <holder>The FreeBSD Documentation Project</holder>"
+msgstr "<year>2006</year> <holder>The FreeBSD Documentation Project</holder>"
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:16
+msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD er et registrert varemerke til the FreeBSD Foundation."
+
+#. (itstool) path: legalnotice/para
+#: article.translate.xml:18
+msgid ""
+"Many of the designations used by manufacturers and sellers to distinguish "
+"their products are claimed as trademarks. Where those designations appear in "
+"this document, and the FreeBSD Project was aware of the trademark claim, the "
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
+"quote> symbol."
+msgstr ""
+"Mange av betegnelsene som brukes av produsenter og selgere for å skille "
+"produktene deres, hevdes som varemerker. Der de betegnelsene vises i dette "
+"dokumentet, og FreeBSD Project var klar over varemerkekravet, har "
+"betegnelsene blitt fulgt av <quote>™</quote> or the <quote>®</quote> "
+"symbolet."
+
+#. (itstool) path: info/pubdate
+#. (itstool) path: info/releaseinfo
+#: article.translate.xml:26 article.translate.xml:28
+msgid ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/nanobsd/article.xml 52722 2018-12-24 "
+"19:45:39Z crees $"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/nanobsd/article.xml 52722 2018-12-24 "
+"19:45:39Z crees $"
+
+#. (itstool) path: abstract/para
+#: article.translate.xml:31
+msgid ""
+"This document provides information about the <application>NanoBSD</"
+"application> tools, which can be used to create FreeBSD system images for "
+"embedded applications, suitable for use on a Compact Flash card (or other "
+"mass storage medium)."
+msgstr ""
+"Dette dokumentet inneholder informasjon om <application>NanoBSD</"
+"application>-verktøyene, som kan brukes til å lage FreeBSD-systembilder for "
+"innebygde applikasjoner, egnet for bruk på et Compact Flash-kort (eller "
+"annet masselagringsmedium)."
+
+#. (itstool) path: sect1/indexterm
+#: article.translate.xml:42
+msgid "<primary>NanoBSD</primary>"
+msgstr "<primary>NanoBSD</primary>"
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:44
+msgid ""
+"<application>NanoBSD</application> is a tool currently developed by Poul-"
+"Henning Kamp <email>phk@FreeBSD.org</email>. It creates a FreeBSD system "
+"image for embedded applications, suitable for use on a Compact Flash card "
+"(or other mass storage medium)."
+msgstr ""
+"<application>NanoBSD</application> er et verktøy som for øyeblikket er "
+"utviklet av Poul-Henning Kamp <email>phk@FreeBSD.org</email>. Det skaper et "
+"FreeBSD-systembilde for innebygde applikasjoner, egnet for bruk på et "
+"Compact Flash-kort (eller annet masselagringsmedium)."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:49
+msgid ""
+"It can be used to build specialized install images, designed for easy "
+"installation and maintenance of systems commonly called <quote>computer "
+"appliances</quote>. Computer appliances have their hardware and software "
+"bundled in the product, which means all applications are pre-installed. The "
+"appliance is plugged into an existing network and can begin working (almost) "
+"immediately."
+msgstr ""
+"Den kan brukes til å lage spesialiserte installasjonsbilder, designet for "
+"enkel installasjon og vedlikehold av systemer som ofte kalles "
+"<quote>datamaskinapparater</quote>. Datamaskiner er utstyrt med maskinvaren "
+"og programvaren i produktet, noe som betyr at alle applikasjoner er "
+"forhåndsinstallert. Apparatet er koblet til et eksisterende nettverk og kan "
+"begynne å fungere (nesten) umiddelbart."
+
+#. (itstool) path: sect1/para
+#: article.translate.xml:57
+msgid "The features of <application>NanoBSD</application> include:"
+msgstr "Funksjonene til <application>NanoBSD</application> inkluderer:"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:62
+msgid ""
+"Ports and packages work as in FreeBSD — Every single application can be "
+"installed and used in a <application>NanoBSD</application> image, the same "
+"way as in FreeBSD."
+msgstr ""
+"Porter og pakker fungerer som i FreeBSD - Hvert enkelt program kan "
+"installeres og brukes i et <application>NanoBSD</application>-bilde, på "
+"samme måte som i FreeBSD."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:69
+msgid ""
+"No missing functionality — If it is possible to do something with FreeBSD, "
+"it is possible to do the same thing with <application>NanoBSD</application>, "
+"unless the specific feature or features were explicitly removed from the "
+"<application>NanoBSD</application> image when it was created."
+msgstr ""
+"ngen manglende funksjonalitet - Hvis det er mulig å gjøre noe med FreeBSD, "
+"er det mulig å gjøre det samme med <application>NanoBSD</application>, med "
+"mindre den spesifikke funksjonen eller funksjonene eksplisitt ble fjernet "
+"fra <application>NanoBSD</application> bilde da det ble opprettet."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:78
+msgid ""
+"Everything is read-only at run-time — It is safe to pull the power-plug. "
+"There is no necessity to run <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> after a non-graceful "
+"shutdown of the system."
+msgstr ""
+"Alt er skrivebeskyttet under kjøretid - Det er trygt å trekke i støpselet. "
+"Det er ingen nødvendighet å kjøre <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> etter en ikke-grasiøs "
+"avslutning av systemet."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:85
+msgid ""
+"Easy to build and customize — Making use of just one shell script and one "
+"configuration file it is possible to build reduced and customized images "
+"satisfying any arbitrary set of requirements."
+msgstr ""
+"Lett å bygge og tilpasse - Ved å bruke bare ett skallskript og en "
+"konfigurasjonsfil er det mulig å lage reduserte og tilpassede bilder som "
+"tilfredsstiller ethvert vilkårlig sett med krav."
+
+#. (itstool) path: sect1/title
+#: article.translate.xml:94
+msgid "NanoBSD Howto"
+msgstr "NanoBSD Howto"
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:97
+msgid "The Design of NanoBSD"
+msgstr "Designet til NanoBSD"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:99
+msgid ""
+"Once the image is present on the medium, it is possible to boot "
+"<application>NanoBSD</application>. The mass storage medium is divided into "
+"three parts by default:"
+msgstr ""
+"Når bildet er tilstede på mediet, er det mulig å starte "
+"<application>NanoBSD</application>. Masselagringsmediet er delt inn i tre "
+"deler som standard:"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:105
+msgid ""
+"Two image partitions: <literal>code#1</literal> and <literal>code#2</"
+"literal>."
+msgstr ""
+"To bilde partisjoner: <literal>code#1</literal> og <literal>code#2</literal>."
+""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:110
+msgid ""
+"The configuration file partition, which can be mounted under the <filename>/"
+"cfg</filename> directory at run time."
+msgstr ""
+"Konfigurasjonsfilpartisjonen, som kan monteres under katalogen <filename>/"
+"cfg</filename> på kjøretid."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:116
+msgid "These partitions are normally mounted read-only."
+msgstr "Disse partisjonene er normalt montert skrivebeskyttet."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:118
+msgid ""
+"The <filename>/etc</filename> and <filename>/var</filename> directories are "
+"<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> (malloc) disks."
+msgstr ""
+"<filename>/etc</filename> og <filename>/var</filename> katalogene "
+"er<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> (malloc) disk."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:122
+msgid ""
+"The configuration file partition persists under the <filename>/cfg</"
+"filename> directory. It contains files for <filename>/etc</filename> "
+"directory and is briefly mounted read-only right after the system boot, "
+"therefore it is required to copy modified files from <filename>/etc</"
+"filename> back to the <filename>/cfg</filename> directory if changes are "
+"expected to persist after the system restarts."
+msgstr ""
+"Konfigurasjonsfilpartisjonen vedvarer under katalogen <filename>/cfg</"
+"filename>. Den inneholder filer for <filename>/etc</filename> katalogen og "
+"er kortmontert skrivebeskyttet rett etter systemstart, derfor er det påkrevd "
+"å kopiere endrede filer fra <filename>/etc</filename> tilbake til <filename>/"
+"cfg</filename> katalog hvis endringer forventes å vedvare etter at systemet "
+"starter på nytt."
+
+#. (itstool) path: example/title
+#: article.translate.xml:132
+msgid "Making Persistent Changes to <filename>/etc/resolv.conf</filename>"
+msgstr "Foreta vedvarende endringer til <filename>/etc/resolv.conf</filename>"
+
+#. (itstool) path: example/screen
+#: article.translate.xml:135
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>vi /etc/resolv.conf</userinput>\n"
+"[...]\n"
+"<prompt>#</prompt> <userinput>mount /cfg</userinput>\n"
+"<prompt>#</prompt> <userinput>cp /etc/resolv.conf /cfg</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /cfg</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>vi /etc/resolv.conf</userinput>\n"
+"[...]\n"
+"<prompt>#</prompt> <userinput>mount /cfg</userinput>\n"
+"<prompt>#</prompt> <userinput>cp /etc/resolv.conf /cfg</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /cfg</userinput>"
+
+#. (itstool) path: note/para
+#: article.translate.xml:143
+msgid ""
+"The partition containing <filename>/cfg</filename> should be mounted only at "
+"boot time and while overriding the configuration files."
+msgstr ""
+"Partisjonen som inneholder <filename>/cfg</filename> skal bare monteres ved "
+"starttid og samtidig overstyre konfigurasjonsfilene."
+
+#. (itstool) path: note/para
+#: article.translate.xml:148
+msgid ""
+"Keeping <filename>/cfg</filename> mounted at all times is not a good idea, "
+"especially if the <application>NanoBSD</application> system runs off a mass "
+"storage medium that may be adversely affected by a large number of writes to "
+"the partition (like when the filesystem syncer flushes data to the system "
+"disks)."
+msgstr ""
+"Å holde <filename>/cfg</filename> montert til enhver tid er ikke en god idé, "
+"spesielt hvis <application>NanoBSD</application>-systemet kjører av et "
+"masselagringsmedium som kan påvirkes negativt av et stort antall skriver til "
+"partisjonen (som når filsystemssynkronen skyller data til systemets disker)."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:158
+msgid "Building a NanoBSD Image"
+msgstr "Bygge et NanoBSD avbildning"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:160
+msgid ""
+"A <application>NanoBSD</application> image is built using a simple "
+"<filename>nanobsd.sh</filename> shell script, which can be found in the "
+"<filename><replaceable>/usr</replaceable>/src/tools/tools/nanobsd</filename> "
+"directory. This script creates an image, which can be copied on the storage "
+"medium using the <citerefentry><refentrytitle>dd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> utility."
+msgstr ""
+"Et <application>NanoBSD</application>-bilde er bygget ved hjelp av et enkelt "
+"<filename>nanobsd.sh</filename> shell-skript, som du finner i "
+"<filename><replaceable>/usr</replaceable>/src/tools/tools/nanobsd</filename> "
+"katalogen. Dette skriptet lager et bilde som kan kopieres på lagringsmediet "
+"ved å bruke verktøyet <citerefentry><refentrytitle>dd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:167
+msgid ""
+"The necessary commands to build a <application>NanoBSD</application> image "
+"are:"
+msgstr ""
+"De nødvendige kommandoene for å lage et <application>NanoBSD</application>-"
+"bilde er:"
+
+#. (itstool) path: sect2/screen
+#: article.translate.xml:170
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
+"<co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
+"sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
+"id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
+"userinput> <co xml:id=\"nbsd-dd\"/>"
+msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
+"<co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
+"sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
+"id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
+"userinput> <co xml:id=\"nbsd-dd\"/>"
+
+#. (itstool) path: callout/para
+#: article.translate.xml:177
+msgid ""
+"Change the current directory to the base directory of the "
+"<application>NanoBSD</application> build script."
+msgstr ""
+"Endre den gjeldende katalogen til basekatalogen til <application>NanoBSD</"
+"application> bygge script.."
+
+#. (itstool) path: callout/para
+#: article.translate.xml:183
+msgid "Start the build process."
+msgstr "Start byggeprosessen"
+
+#. (itstool) path: callout/para
+#: article.translate.xml:187
+msgid ""
+"Change the current directory to the place where the built images are located."
+""
+msgstr ""
+"Endre gjeldende katalog til stedet der de innebygde bildene befinner seg."
+
+#. (itstool) path: callout/para
+#: article.translate.xml:192
+msgid "Install <application>NanoBSD</application> onto the storage medium."
+msgstr "Installer <application>NanoBSD</application> på lagrings mediumet."
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:199
+msgid "Customizing a NanoBSD Image"
+msgstr "Tilpasse en NanoBSD avbildning"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:201
+msgid ""
+"This is probably the most important and most interesting feature of "
+"<application>NanoBSD</application>. This is also where you will be spending "
+"most of the time when developing with <application>NanoBSD</application>."
+msgstr ""
+"Dette er sannsynligvis den viktigste og mest interessante egenskapen til "
+"<application>NanoBSD</application>. Det er også her du vil tilbringe "
+"mesteparten av tiden når du utvikler med <application>NanoBSD</application>."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:206
+msgid ""
+"Invocation of the following command will force the <filename>nanobsd.sh</"
+"filename> to read its configuration from <filename>myconf.nano</filename> "
+"located in the current directory:"
+msgstr ""
+"Påkalling av følgende kommando vil tvinge <filename>nanobsd.sh</filename> "
+"til å lese konfigurasjonen fra <filename>myconf.nano</filename> som ligger i "
+"den gjeldende katalogen:"
+
+#. (itstool) path: sect2/screen
+#: article.translate.xml:211
+#, no-wrap
+msgid "<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:213
+msgid "Customization is done in two ways:"
+msgstr "Tilpasning gjøres på to måter:"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:217
+msgid "Configuration options"
+msgstr "Konfigurasjonsalternativer"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:221
+msgid "Custom functions"
+msgstr "Tilpassede funksjoner"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:226
+msgid "Configuration Options"
+msgstr "Konfigurasjonsalternativer"
+
+#. (itstool) path: para/buildtarget
+#: article.translate.xml:230 article.translate.xml:262
+#: article.translate.xml:274
+msgid "buildworld"
+msgstr "buildworld"
+
+#. (itstool) path: para/buildtarget
+#: article.translate.xml:231 article.translate.xml:268
+#: article.translate.xml:275
+msgid "installworld"
+msgstr "installworld"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:228
+msgid ""
+"With configuration settings, it is possible to configure options passed to "
+"both the <_:buildtarget-1/> and <_:buildtarget-2/> stages of the "
+"<application>NanoBSD</application> build process, as well as internal "
+"options passed to the main build process of <application>NanoBSD</"
+"application>. Through these options it is possible to cut the system down, "
+"so it will fit on as little as 64MB. You can use the configuration options "
+"to trim down FreeBSD even more, until it will consists of just the kernel "
+"and two or three files in the userland."
+msgstr ""
+"Med konfigurasjonsinnstillinger er det mulig å konfigurere alternativer som "
+"sendes til <_:buildtarget-1/> og <_:buildtarget-2/> stadiene i "
+"<application>NanoBSD</application> build prosessen, så vel som interne "
+"alternativer gått til hovedbyggingsprosessen for <application>NanoBSD</"
+"application>. Gjennom disse alternativene er det mulig å kutte systemet ned, "
+"så det får plass til så lite som 64MB. Du kan bruke "
+"konfigurasjonsalternativene til å trimme ned FreeBSD enda mer, til den vil "
+"bestå av bare kjernen og to eller tre filer i brukerlandet."
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:240
+msgid ""
+"The configuration file consists of configuration options, which override the "
+"default values. The most important directives are:"
+msgstr ""
+"Konfigurasjonsfilen består av konfigurasjonsalternativer, som overstyrer "
+"standardverdiene. De viktigste direktivene er:"
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:246
+msgid ""
+"<literal>NANO_NAME</literal> — Name of build (used to construct the workdir "
+"names)."
+msgstr ""
+"<literal>NANO_NAME</literal> — Navn på bygget (brukes for å opprette arbeids "
+"katalog navn)."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:251
+msgid ""
+"<literal>NANO_SRC</literal> — Path to the source tree used to build the "
+"image."
+msgstr ""
+"<literal>NANO_SRC</literal> — Sti til kildetreet som ble brukt til å bygge "
+"bildet."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:256
+msgid ""
+"<literal>NANO_KERNEL</literal> — Name of kernel configuration file used to "
+"build kernel."
+msgstr ""
+"<literal>NANO_KERNEL</literal> — Navn på kjernekonfigurasjonsfil som ble "
+"brukt til å bygge kjernen."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:261
+msgid ""
+"<literal>CONF_BUILD</literal> — Options passed to the <_:buildtarget-1/> "
+"stage of the build."
+msgstr ""
+"<literal>CONF_BUILD</literal> — Alternativer som er gitt til <_:buildtarget-"
+"1/> stadiet av bygget."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:267
+msgid ""
+"<literal>CONF_INSTALL</literal> — Options passed to the <_:buildtarget-1/> "
+"stage of the build."
+msgstr ""
+"<literal>CONF_INSTALL</literal> — Alternativer som er gitt til <_:"
+"buildtarget-1/> stadiet av bygget."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:273
+msgid ""
+"<literal>CONF_WORLD</literal> — Options passed to both the <_:buildtarget-1/"
+"> and the <_:buildtarget-2/> stage of the build."
+msgstr ""
+"<literal>CONF_WORLD</literal> — Alternativene som ble gitt til både <_:"
+"buildtarget-1/> og det <_:buildtarget-2/> stadiet av builden."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:280
+msgid ""
+"<literal>FlashDevice</literal> — Defines what type of media to use. Check "
+"<filename>FlashDevice.sub</filename> for more details."
+msgstr ""
+"<literal>FlashDevice</literal> — Definerer hvilken type media du vil bruke. "
+"Sjekk <filename>FlashDevice.sub</filename> for mer informasjon."
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:289
+msgid "Custom Functions"
+msgstr "Tilpassede funksjoner"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:291
+msgid ""
+"It is possible to fine-tune <application>NanoBSD</application> using shell "
+"functions in the configuration file. The following example illustrates the "
+"basic model of custom functions:"
+msgstr ""
+"Det er mulig å finjustere <application>NanoBSD</application> ved bruk av "
+"shell-funksjoner i konfigurasjonsfilen. Følgende eksempel illustrerer "
+"grunnleggende modell for tilpassede funksjoner:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:296
+#, no-wrap
+msgid ""
+"cust_foo () (\n"
+"\techo \"bar=baz\" &gt; \\\n"
+"\t\t${NANO_WORLDDIR}/etc/foo\n"
+")\n"
+"customize_cmd cust_foo"
+msgstr ""
+"cust_foo () (\n"
+"\techo \"bar=baz\" &gt; \\\n"
+"\t\t${NANO_WORLDDIR}/etc/foo\n"
+")\n"
+"customize_cmd cust_foo"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:302
+msgid ""
+"A more useful example of a customization function is the following, which "
+"changes the default size of the <filename>/etc</filename> directory from 5MB "
+"to 30MB:"
+msgstr ""
+"Et mer nyttig eksempel på en tilpasningsfunksjon er følgende, som endrer "
+"standardstørrelse på <filename>/etc</filename> katalogen fra 5MB til 30MB:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:306
+#, no-wrap
+msgid ""
+"cust_etc_size () (\n"
+"\tcd ${NANO_WORLDDIR}/conf\n"
+"\techo 30000 &gt; default/etc/md_size\n"
+")\n"
+"customize_cmd cust_etc_size"
+msgstr ""
+"cust_etc_size () (\n"
+"\tcd ${NANO_WORLDDIR}/conf\n"
+"\techo 30000 &gt; default/etc/md_size\n"
+")\n"
+"customize_cmd cust_etc_size"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:312
+msgid ""
+"There are a few default pre-defined customization functions ready for use:"
+msgstr ""
+"Det er noen få forhåndsdefinerte tilpasningsfunksjoner som er klare til bruk:"
+""
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:317
+msgid ""
+"<literal>cust_comconsole</literal> — Disables "
+"<citerefentry><refentrytitle>getty</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> on the VGA devices (the <filename>/dev/ttyv*</filename> device "
+"nodes) and enables the use of the COM1 serial port as the system console."
+msgstr ""
+"<literal>cust_comconsole</literal> — Deaktiverer "
+"<citerefentry><refentrytitle>getty</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> på VGA enheter (<filename>/dev/ttyv*</filename> enhetsnoder) "
+"og muliggjør bruk av seriell COM1-port som systemkonsoll."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:325
+msgid ""
+"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class="
+"\"username\">root</systemitem> to login via "
+"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
+msgstr ""
+"<literal>cust_allow_ssh_root</literal> — Tillater <systemitem class="
+"\"username\">root</systemitem> til å logge inn via "
+"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
+
+#. (itstool) path: listitem/para
+#: article.translate.xml:331
+msgid ""
+"<literal>cust_install_files</literal> — Installs files from the "
+"<filename>nanobsd/Files</filename> directory, which contains some useful "
+"scripts for system administration."
+msgstr ""
+"<literal>cust_install_files</literal> — Installerer filer fra  "
+"<filename>nanobsd/Files</filename> katalogen, som inneholder noen nyttige "
+"skript for systemadministrasjon."
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:341
+msgid "Adding Packages"
+msgstr "Legge til pakker"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:343
+msgid ""
+"Packages can be added to a <application>NanoBSD</application> image using a "
+"custom function. The following function will install all the packages "
+"located in <filename>/usr/src/tools/tools/nanobsd/packages</filename>:"
+msgstr ""
+"Pakker kan legges til et <application>NanoBSD</application>-bilde ved hjelp "
+"av en tilpasset funksjon. Følgende funksjon vil installere alle pakkene som "
+"ligger i <filename>/usr/src/tools/tools/nanobsd/packages</filename>:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:349
+#, no-wrap
+msgid ""
+"install_packages () (\n"
+"mkdir -p ${NANO_WORLDDIR}/packages\n"
+"cp /usr/src/tools/tools/nanobsd/packages/* ${NANO_WORLDDIR}/packages\n"
+"cp $(which pkg-static) ${NANO_WORLDDIR}/\n"
+"chroot ${NANO_WORLDDIR} sh -c 'cd packages; /pkg-static add *;cd ..;'\n"
+"rm -rf ${NANO_WORLDDIR}/packages ${NANO_WORLDDIR}/pkg-static\n"
+")\n"
+"customize_cmd install_packages"
+msgstr ""
+"install_packages () (\n"
+"mkdir -p ${NANO_WORLDDIR}/packages\n"
+"cp /usr/src/tools/tools/nanobsd/packages/* ${NANO_WORLDDIR}/packages\n"
+"cp $(which pkg-static) ${NANO_WORLDDIR}/\n"
+"chroot ${NANO_WORLDDIR} sh -c 'cd packages; /pkg-static add *;cd ..;'\n"
+"rm -rf ${NANO_WORLDDIR}/packages ${NANO_WORLDDIR}/pkg-static\n"
+")\n"
+"customize_cmd install_packages"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:360
+msgid "Configuration File Example"
+msgstr "Eksempel på konfigurasjonsfil"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:362
+msgid ""
+"A complete example of a configuration file for building a custom "
+"<application>NanoBSD</application> image can be:"
+msgstr ""
+"Et komplett eksempel på en konfigurasjonsfil for å lage et tilpasset "
+"<application>NanoBSD</application>-bilde kan være:"
+
+#. (itstool) path: sect3/programlisting
+#: article.translate.xml:366
+#, no-wrap
+msgid ""
+"NANO_NAME=custom\n"
+"NANO_SRC=/usr/src\n"
+"NANO_KERNEL=MYKERNEL\n"
+"NANO_IMAGES=2\n"
+"\n"
+"CONF_BUILD='\n"
+"WITHOUT_KLDLOAD=YES\n"
+"WITHOUT_NETGRAPH=YES\n"
+"WITHOUT_PAM=YES\n"
+"'\n"
+"\n"
+"CONF_INSTALL='\n"
+"WITHOUT_ACPI=YES\n"
+"WITHOUT_BLUETOOTH=YES\n"
+"WITHOUT_FORTRAN=YES\n"
+"WITHOUT_HTML=YES\n"
+"WITHOUT_LPR=YES\n"
+"WITHOUT_MAN=YES\n"
+"WITHOUT_SENDMAIL=YES\n"
+"WITHOUT_SHAREDOCS=YES\n"
+"WITHOUT_EXAMPLES=YES\n"
+"WITHOUT_INSTALLLIB=YES\n"
+"WITHOUT_CALENDAR=YES\n"
+"WITHOUT_MISC=YES\n"
+"WITHOUT_SHARE=YES\n"
+"'\n"
+"\n"
+"CONF_WORLD='\n"
+"WITHOUT_BIND=YES\n"
+"WITHOUT_MODULES=YES\n"
+"WITHOUT_KERBEROS=YES\n"
+"WITHOUT_GAMES=YES\n"
+"WITHOUT_RESCUE=YES\n"
+"WITHOUT_LOCALES=YES\n"
+"WITHOUT_SYSCONS=YES\n"
+"WITHOUT_INFO=YES\n"
+"'\n"
+"\n"
+"FlashDevice SanDisk 1G\n"
+"\n"
+"cust_nobeastie() (\n"
+"\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
+"conf\n"
+")\n"
+"\n"
+"customize_cmd cust_comconsole\n"
+"customize_cmd cust_install_files\n"
+"customize_cmd cust_allow_ssh_root\n"
+"customize_cmd cust_nobeastie"
+msgstr ""
+"NANO_NAME=custom\n"
+"NANO_SRC=/usr/src\n"
+"NANO_KERNEL=MYKERNEL\n"
+"NANO_IMAGES=2\n"
+"\n"
+"CONF_BUILD='\n"
+"WITHOUT_KLDLOAD=YES\n"
+"WITHOUT_NETGRAPH=YES\n"
+"WITHOUT_PAM=YES\n"
+"'\n"
+"\n"
+"CONF_INSTALL='\n"
+"WITHOUT_ACPI=YES\n"
+"WITHOUT_BLUETOOTH=YES\n"
+"WITHOUT_FORTRAN=YES\n"
+"WITHOUT_HTML=YES\n"
+"WITHOUT_LPR=YES\n"
+"WITHOUT_MAN=YES\n"
+"WITHOUT_SENDMAIL=YES\n"
+"WITHOUT_SHAREDOCS=YES\n"
+"WITHOUT_EXAMPLES=YES\n"
+"WITHOUT_INSTALLLIB=YES\n"
+"WITHOUT_CALENDAR=YES\n"
+"WITHOUT_MISC=YES\n"
+"WITHOUT_SHARE=YES\n"
+"'\n"
+"\n"
+"CONF_WORLD='\n"
+"WITHOUT_BIND=YES\n"
+"WITHOUT_MODULES=YES\n"
+"WITHOUT_KERBEROS=YES\n"
+"WITHOUT_GAMES=YES\n"
+"WITHOUT_RESCUE=YES\n"
+"WITHOUT_LOCALES=YES\n"
+"WITHOUT_SYSCONS=YES\n"
+"WITHOUT_INFO=YES\n"
+"'\n"
+"\n"
+"FlashDevice SanDisk 1G\n"
+"\n"
+"cust_nobeastie() (\n"
+"\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
+"conf\n"
+")\n"
+"\n"
+"customize_cmd cust_comconsole\n"
+"customize_cmd cust_install_files\n"
+"customize_cmd cust_allow_ssh_root\n"
+"customize_cmd cust_nobeastie"
+
+#. (itstool) path: sect2/title
+#: article.translate.xml:419
+msgid "Updating NanoBSD"
+msgstr "Oppdatere NanoBSD"
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:421
+msgid ""
+"The update process of <application>NanoBSD</application> is relatively "
+"simple:"
+msgstr ""
+"Oppdateringsprosessen av <application>NanoBSD</application> er relativt "
+"simpelt:"
+
+#. (itstool) path: step/para
+#: article.translate.xml:426
+msgid "Build a new <application>NanoBSD</application> image, as usual."
+msgstr "Bygg et nytt <application>NanoBSD</application>-bilde, som vanlig."
+
+#. (itstool) path: step/para
+#: article.translate.xml:431
+msgid ""
+"Upload the new image into an unused partition of a running "
+"<application>NanoBSD</application> appliance."
+msgstr ""
+"Last opp det nye bildet til en ubrukt partisjon av et kjørende "
+"<application>NanoBSD</application>-apparat."
+
+#. (itstool) path: step/para
+#: article.translate.xml:435
+msgid ""
+"The most important difference of this step from the initial "
+"<application>NanoBSD</application> installation is that now instead of using "
+"<filename>_.disk.full</filename> (which contains an image of the entire "
+"disk), the <filename>_.disk.image</filename> image is installed (which "
+"contains an image of a single system partition)."
+msgstr ""
+"Den viktigste forskjellen på dette trinnet fra den første "
+"<application>NanoBSD</application>-installasjonen er at nå i stedet for å "
+"bruke <filename>_.disk.full</filename> (som inneholder et bilde av hele "
+"disken), <filename>_.disk.image</filename> bilde er installert (som "
+"inneholder et bilde av en enkel systempartisjon)."
+
+#. (itstool) path: step/para
+#: article.translate.xml:445
+msgid "Reboot, and start the system from the newly installed partition."
+msgstr ""
+"Start på nytt, og start systemet fra den nylig installerte partisjonen."
+
+#. (itstool) path: step/para
+#: article.translate.xml:450
+msgid "If all goes well, the upgrade is finished."
+msgstr "Hvis alt går bra, er oppgraderingen ferdig."
+
+#. (itstool) path: step/para
+#: article.translate.xml:454
+msgid ""
+"If anything goes wrong, reboot back into the previous partition (which "
+"contains the old, working image), to restore system functionality as fast as "
+"possible. Fix any problems of the new build, and repeat the process."
+msgstr ""
+"Hvis noe går galt, start du på nytt inn i den forrige partisjonen (som "
+"inneholder det gamle, fungerende bildet), for å gjenopprette "
+"systemfunksjonaliteten så raskt som mulig. Løs eventuelle problemer med "
+"nybygget, og gjenta prosessen."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:461
+msgid ""
+"To install new image onto the running <application>NanoBSD</application> "
+"system, it is possible to use either the <filename>updatep1</filename> or "
+"<filename>updatep2</filename> script located in the <filename>/root</"
+"filename> directory, depending from which partition is running the current "
+"system."
+msgstr ""
+"For å installere nytt bilde på det kjørende <application>NanoBSD</"
+"application>-systemet, er det mulig å bruke <filename>updatep1</filename> "
+"eller <filename>updatep2</filename>-skriptet som ligger i <filename>/root</"
+"filename> katalogen, avhengig av hvilken partisjon som kjører det gjeldende "
+"systemet."
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:468
+msgid ""
+"According to which services are available on host serving new "
+"<application>NanoBSD</application> image and what type of transfer is "
+"preferred, it is possible to examine one of these three ways:"
+msgstr ""
+"I henhold til hvilke tjenester som er tilgjengelige på verten som serverer "
+"nytt <application>NanoBSD</application>-bilde og hvilken type overføring som "
+"er foretrukket, er det mulig å undersøke en av disse tre måtene:"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:474
+msgid ""
+"Using <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+msgstr ""
+"Bruke <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:476
+msgid "If the transfer speed is in first place, use this example:"
+msgstr ""
+"Hvis overføringshastigheten er i utgangspunktet, bruk dette eksemplet:"
+
+#. (itstool) path: sect3/screen
+#: article.translate.xml:479
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>ftp myhost\n"
+"get _.disk.image \"| sh updatep1\"</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>ftp myhost\n"
+"get _.disk.image \"| sh updatep1\"</userinput>"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:484
+msgid ""
+"Using <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+msgstr ""
+"Bruke <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:486
+msgid "If a secure transfer is preferred, consider using this example:"
+msgstr ""
+"Hvis du foretrekker en sikker overføring, kan du vurdere å bruke dette "
+"eksemplet:"
+
+#. (itstool) path: sect3/screen
+#: article.translate.xml:489
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
+"updatep1</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
+"updatep1</userinput>"
+
+#. (itstool) path: sect3/title
+#: article.translate.xml:493
+msgid ""
+"Using <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+msgstr ""
+"Bruke <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
+
+#. (itstool) path: sect3/para
+#: article.translate.xml:495
+msgid ""
+"Try this example if the remote host is not running neither "
+"<citerefentry><refentrytitle>ftpd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> or <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> service:"
+msgstr ""
+"Prøv dette eksemplet hvis den eksterne verten ikke kjører "
+"<citerefentry><refentrytitle>ftpd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> eller <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> tjeneste:"
+
+#. (itstool) path: step/para
+#: article.translate.xml:500
+msgid ""
+"At first, open a TCP listener on host serving the image and make it send the "
+"image to client:"
+msgstr ""
+"Først åpner du en TCP-lytter på verten som serverer bildet og får det til å "
+"sende bildet til klienten:"
+
+#. (itstool) path: step/screen
+#: article.translate.xml:503
+#, no-wrap
+msgid ""
+"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
+"&lt; _.disk.image</userinput>"
+msgstr ""
+"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
+"&lt; _.disk.image</userinput>"
+
+#. (itstool) path: note/para
+#: article.translate.xml:506
+msgid ""
+"Make sure that the used port is not blocked to receive incoming connections "
+"from <application>NanoBSD</application> host by firewall."
+msgstr ""
+"Forsikre deg om at den brukte porten ikke er blokkert for å motta "
+"innkommende tilkoblinger fra <application>NanoBSD</application> vert med "
+"brannmur."
+
+#. (itstool) path: step/para
+#: article.translate.xml:514
+msgid ""
+"Connect to the host serving new image and execute <filename>updatep1</"
+"filename> script:"
+msgstr ""
+"Koble til verten som serverer nytt bilde og kjør <filename>updatep1</"
+"filename> skript:"
+
+#. (itstool) path: step/screen
+#: article.translate.xml:517
+#, no-wrap
+msgid ""
+"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
+"updatep1</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
+"updatep1</userinput>"
