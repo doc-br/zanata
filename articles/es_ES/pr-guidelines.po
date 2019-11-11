@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-09-01 11:16+0000\n"
+"PO-Revision-Date: 2019-11-11 08:23+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -96,9 +96,9 @@ msgid ""
 "quality, the correct use of the software is essential to the forward "
 "progress of the Project."
 msgstr ""
-"Bugzilla es un sistema de gestión de errores utilizado por el proyecto "
-"FreeBSD. Un seguimiento preciso de los defectos de software pendientes es "
-"importante para la calidad de FreeBSD, el uso correcto del software es "
+"Bugzilla es un sistema de gestión de errores que utiliza el proyecto FreeBSD."
+" El seguimiento preciso de los defectos de software pendientes es importante "
+"para la calidad de FreeBSD. Del mismo modo, el uso correcto del software es "
 "esencial para el progreso del proyecto."
 
 #. (itstool) path: section/para
@@ -110,11 +110,11 @@ msgid ""
 "management such as presenting followup, handling close requests, and so "
 "forth."
 msgstr ""
-"El acceso a Bugzilla está disponible para toda la comunidad de FreeBSD. Con "
-"el fin de mantener la coherencia dentro de la base de datos y proporcionar "
-"una experiencia de usuario consistente, se han establecido pautas que cubren "
-"aspectos comunes de la gestión de errores, como la presentación del "
-"seguimiento, el manejo de las solicitudes de cierre, etc."
+"El acceso a Bugzilla está abierto a toda la comunidad de FreeBSD. Se han "
+"establecido ciertas pautas para cubrir aspectos comunes de la gestión de "
+"errores como la presentación del seguimiento, la gestión de solicitudes de "
+"cierre, etc con el fin de mantener la coherencia dentro de la base de datos "
+"y proporcionar una experiencia de usuario consistente."
 
 #. (itstool) path: section/title
 #: article.translate.xml:58
@@ -138,9 +138,9 @@ msgid ""
 "reporter to obtain the needed information. At this point the bug is set to "
 "the <literal>Open</literal> state."
 msgstr ""
-"Jane Random BugBuster confirma que el error reportado tiene la suficiente "
+"Jane Random BugBuster confirma que el error reportado contiene la suficiente "
 "información para ser reproducido. Si no, se interactuará repetidamente con "
-"el usuario para obtener la información necesaria. En este punto, el error se "
+"el usuario hasta obtener la información necesaria. En este punto el error se "
 "establece en el estado <literal>Open</literal>."
 
 #. (itstool) path: listitem/para
@@ -174,8 +174,8 @@ msgid ""
 "then sets the PRs state to <literal>Patch Ready</literal>."
 msgstr ""
 "Joe está toda la noche trabajando y elabora un parche que cree que soluciona "
-"el problema, y lo envía en un follow-up, pidiéndole al usuario que lo ha "
-"enviado que lo pruebe. A continuación, fija el estado del PR en "
+"el problema y lo envía en un follow-up, pidiéndole al usuario que lo ha "
+"reportado que lo pruebe. A continuación fija el estado del PR en "
 "<literal>Patch Ready</literal>."
 
 #. (itstool) path: listitem/para
@@ -189,14 +189,13 @@ msgid ""
 "patch) and, if appropriate, start an MFC countdown. The bug is set to the "
 "<literal>Needs MFC</literal> state."
 msgstr ""
-"Un par de iteraciones más tarde, tanto Joe como el usuario que lo ha creado "
-"están satisfechos con el parche, y Joe realiza el commit a <literal>-"
-"CURRENT</literal> (o directamente a <literal>-STABLE</literal> si el "
-"problema no existe en <literal>-CURRENT</literal>), asegurándose de hacer "
-"referencia al informe de problemas en su log del commit (y dando el crédito "
-"al usuario si envió todo o parte del parche) y, si corresponde, iniciará una "
-"cuenta atrás de MFC. El error se fija en el estado <literal>Needs MFC</"
-"literal>."
+"Un par de interaciones más tarde tanto Joe como el usuario que lo ha creado "
+"están satisfechos con el parche y Joe realiza el commit a <literal>-CURRENT</"
+"literal> (o directamente a <literal>-STABLE</literal> si el problema no "
+"existe en <literal>-CURRENT</literal>), asegurándose de hacer referencia al "
+"informe de problemas en su log del commit (y dando el crédito al usuario si "
+"envió todo o parte del parche) y, si corresponde, iniciará una cuenta atrás "
+"de MFC. El error se fija en el estado <literal>Needs MFC</literal>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:108
@@ -204,8 +203,8 @@ msgid ""
 "If the patch does not need MFCing, Joe then closes the PR as <literal>Issue "
 "Resolved</literal>."
 msgstr ""
-"Si el parche no necesita pasar por un MFC, Joe entonces cierra el PR con el "
-"estado <literal>Issue Resolved</literal>."
+"Si el parche no necesita pasar por un MFC Joe cierra el PR con el estado "
+"<literal>Issue Resolved</literal>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:115
@@ -217,11 +216,11 @@ msgid ""
 "within cannot be solved, or has occurred again, it is necessary to re-open "
 "the PR."
 msgstr ""
-"Muchos PRs son enviados con muy poca información sobre el problema, y "
-"algunos son muy complejos de resolver, o simplemente arañan la superficie de "
-"un problema mayor; en estos casos, es muy importante obtener toda la "
+"Muchos PRs se envían con muy poca información sobre el problema y algunos "
+"son muy complejos de resolver, o simplemente arañan la superficie de un "
+"problema mayor; en estos casos es muy importante conseguir toda la "
 "información necesaria para resolver el problema. Si el problema no se puede "
-"resolver, o si ha ocurrido nuevamente, es necesario volver a abrir el PR."
+"resolver o si el problema se repite, es necesario volver a abrir el PR."
 
 #. (itstool) path: section/title
 #: article.translate.xml:126
@@ -234,14 +233,13 @@ msgid ""
 "It is important to update the state of a PR when certain actions are taken. "
 "The state should accurately reflect the current state of work on the PR."
 msgstr ""
-"Es importante actualizar el estado de un PR cuando se toman ciertas acciones."
-" El estado debe reflejar con precisión la situación actual del trabajo en el "
-"PR."
+"Es importante actualizar el estado de un PR cuando se llevan a cabo ciertas "
+"acciones."
 
 #. (itstool) path: example/title
 #: article.translate.xml:133
 msgid "A small example on when to change PR state"
-msgstr "Un pequeño ejemplo de cuándo cambiar el estado de un PR."
+msgstr "Un ejemplo simple de cuándo cambiar el estado de un PR."
 
 #. (itstool) path: example/para
 #: article.translate.xml:135
@@ -252,10 +250,11 @@ msgid ""
 "evaluate the fix in their context and respond indicating whether the defect "
 "has indeed been remedied."
 msgstr ""
-"Cuando un PR haya sido tratado y el desarrollador/es se sienta cómodo con la "
-"solución, enviará un follow-up al PR y cambiará su estado a <quote>feedback</"
-"quote>. En este punto, el usuario que lo ha creado debe evaluar la solución "
-"en su contexto y responder indicando si el defecto ha sido solucionado."
+"Cuando un PR se haya gestionado y el/los desarrollador/es estén satisfechos "
+"con la solución se envia un follow-up al PR y su estado cambiará a "
+"<quote>feedback</quote>. En este punto el usuario que lo ha creado debe "
+"evaluar la solución en su contexto y responder indicando si el defecto ha "
+"sido solucionado."
 
 #. (itstool) path: section/para
 #: article.translate.xml:143
@@ -271,7 +270,8 @@ msgstr "open"
 #: article.translate.xml:150
 msgid ""
 "Initial state; the problem has been pointed out and it needs reviewing."
-msgstr "Estado inicial; el problema ha sido indicado y necesita ser revisado."
+msgstr ""
+"Estado inicial: el problema ha sido reportado y necesita ser revisado."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:156
@@ -281,7 +281,7 @@ msgstr "analyzed"
 #. (itstool) path: glossdef/para
 #: article.translate.xml:158
 msgid "The problem has been reviewed and a solution is being sought."
-msgstr "El problema ha sido revisado y se está buscando una solución."
+msgstr "El problema consta como revisado y se está buscando una solución."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:164
@@ -294,9 +294,9 @@ msgid ""
 "Further work requires additional information from the originator or the "
 "community; possibly information regarding the proposed solution."
 msgstr ""
-"Si hay que realizar trabajo adicional, esto requiere información adicional "
-"del usuario o de la comunidad; posiblemente información sobre la solución "
-"propuesta."
+"Hay que realizar trabajos adicionales que requieren más información del "
+"usuario o de la comunidad; es posible que haga falta también más información "
+"sobre la solución propuesta."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:173
@@ -309,7 +309,7 @@ msgid ""
 "A patch has been committed, but something (MFC, or maybe confirmation from "
 "originator) is still pending."
 msgstr ""
-"Se ha realizado un commit con el parche, pero aún hay algo pendiente (MFC, o "
+"Se ha realizado un commit con el parche, pero aún hay algo pendiente (MFC o "
 "tal vez confirmación del usuario que lo creó)."
 
 #. (itstool) path: glossentry/glossterm
@@ -328,11 +328,11 @@ msgid ""
 "which no one currently has time for."
 msgstr ""
 "No se está trabajando en el problema debido a la falta de información o "
-"recursos. Este es un candidato excelente para alguien que está buscando un "
-"proyecto. Si el problema no se puede resolver, se cerrará, en lugar de "
+"recursos. Este es un candidato excelente para alguien que esté buscando un "
+"proyecto. Si el problema no se puede resolver se cerrará en lugar de "
 "suspenderse. El proyecto de documentación utiliza <quote>suspended</quote> "
 "para los elementos de la <quote>wish-list</quote> que implican una cantidad "
-"significativa de trabajo para el cual nadie tiene tiempo actualmente."
+"significativa de trabajo para el cual nadie dispone de tiempo."
 
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:195
@@ -346,7 +346,7 @@ msgid ""
 "documented, and tested, or when fixing the problem is abandoned."
 msgstr ""
 "Un informe de problemas se cierra cuando se han integrado, documentado y "
-"probado los cambios, o cuando se abandona la solución del problema."
+"probado los cambios o cuando se abandona la solución del problema."
 
 #. (itstool) path: note/para
 #: article.translate.xml:205
@@ -376,8 +376,8 @@ msgstr ""
 "Al tratar con informes de problemas, ya sea como desarrollador que tiene "
 "acceso directo a la base de datos de informes de problemas o como "
 "colaborador que navega por la base de datos y envía follow-ups con parches, "
-"comentarios, sugerencias o solicitudes de cambio, encontrará varios tipos "
-"diferentes de PRs."
+"comentarios, sugerencias o solicitudes de cambio, va a encontrarse usted con "
+"distintos tipos de PRs."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:222
@@ -432,11 +432,11 @@ msgid ""
 "corresponds to a specific FreeBSD mailing list. Here is the current list, "
 "with the most common ones listed first:"
 msgstr ""
-"Cuando los PRs llegan, inicialmente se asignan a un responsable genérico "
+"Cuando los PRs llegan  se asignan en primer lugar a un responsable genérico "
 "(placeholder). Estos siempre tienen el prefijo <literal>freebsd-</literal>. "
-"El valor exacto para este patrón depende de la categoría; en la mayoría de "
-"los casos, corresponde a una lista de correo específica de FreeBSD. Aquí "
-"está la lista actual, con las más comunes primero:"
+"El valor exacto para este patrón depende de la categoría. En la mayoría de "
+"los casos corresponde a una lista de correo específica de FreeBSD. Esta es "
+"una lista actualizada con los más comunes en primer lugar: "
 
 #. (itstool) path: table/title
 #: article.translate.xml:253
@@ -653,10 +653,10 @@ msgid ""
 "There are several types of assignees: specialized mailing lists; mail "
 "aliases (used for certain limited-interest items); and individuals."
 msgstr ""
-"Algunos PRs pueden ser reasignados lejos de estos responsables genéricos por "
-"cualquier persona. Hay varios tipos de responsables: listas de correo "
-"especializadas; alias de correo (utilizados para ciertos artículos de "
-"interés limitado); y los individuos."
+"Cualquiera puede reasignar estos PR de sus responsables genéricos a otra "
+"persona en grupo. Hay varios tipos de responsables: listas de correo "
+"especializadas, alias de correo (utilizados para asuntos muy específicos) de "
+"interés limitado) e individuos."
 
 #. (itstool) path: section/para
 #: article.translate.xml:356
@@ -666,10 +666,10 @@ msgid ""
 "<literal>foo</literal>); this will avoid duplicate emails sent to the "
 "mailing list."
 msgstr ""
-"Para los responsables que son listas de correo, utilice la designación larga "
-"al realizar la asignación (por ejemplo, <literal>freebsd-foo</literal> en "
-"lugar de <literal>foo</literal>); esto evitará los mensajes de correo "
-"electrónico duplicados enviados a la lista de correo."
+"Para los responsables que son listas de correo utilice la designación larga "
+"al realizar la asignación: por ejemplo, <literal>freebsd-foo</literal> en "
+"lugar de <literal>foo</literal>. Así evitará los correos electrónicos "
+"duplicados enviados a las listas de distribución."
 
 #. (itstool) path: note/para
 #: article.translate.xml:362
@@ -681,15 +681,15 @@ msgid ""
 msgstr ""
 "Como la lista de personas que se han ofrecido voluntarias para ser los "
 "responsables predeterminados para ciertos tipos de PRs cambia con bastante "
-"frecuencia, es mucho más adecuada la <link xlink:href=\"https://wiki.freebsd."
-"org/AssigningPRs\">wiki de FreeBSD</link>."
+"frecuencia es mucho más adecuado recurrir a la <link xlink:href=\"https://"
+"wiki.freebsd.org/AssigningPRs\">wiki de FreeBSD</link>."
 
 #. (itstool) path: section/para
 #: article.translate.xml:368
 msgid "Here is a sample list of such entities; it is probably not complete."
 msgstr ""
-"Aquí hay un listado de ejemplo de dichas entidades; probablemente no esté "
-"completo."
+"A continuación hay un listado con ejemplos de dichas entidades. Es probable "
+"que el listado no sea exhaustivo."
 
 #. (itstool) path: table/title
 #: article.translate.xml:372
@@ -1085,7 +1085,7 @@ msgstr "alias"
 #. (itstool) path: row/entry
 #: article.translate.xml:571
 msgid "port which is maintained by apache@FreeBSD.org"
-msgstr "port que es mantenido por apache@FreeBSD.org"
+msgstr "port mantenido por apache@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:573
@@ -1095,7 +1095,7 @@ msgstr "apache"
 #. (itstool) path: row/entry
 #: article.translate.xml:578
 msgid "port which is maintained by autotools@FreeBSD.org"
-msgstr "port que es mantenido por autotools@FreeBSD.org"
+msgstr "port mantenido por autotools@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:580
@@ -1105,7 +1105,7 @@ msgstr "autotools"
 #. (itstool) path: row/entry
 #: article.translate.xml:585
 msgid "port which is maintained by doceng@FreeBSD.org"
-msgstr "port que es mantenido por doceng@FreeBSD.org"
+msgstr "port mantenido por doceng@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:587
@@ -1115,7 +1115,7 @@ msgstr "doceng"
 #. (itstool) path: row/entry
 #: article.translate.xml:592
 msgid "port which is maintained by eclipse@FreeBSD.org"
-msgstr "port que es mantenido por eclipse@FreeBSD.org"
+msgstr "port mantenido por eclipse@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:594
@@ -1125,7 +1125,7 @@ msgstr "freebsd-eclipse"
 #. (itstool) path: row/entry
 #: article.translate.xml:599
 msgid "port which is maintained by gecko@FreeBSD.org"
-msgstr "port que es mantenido por gecko@FreeBSD.org"
+msgstr "port mantenido por gecko@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:601
@@ -1135,7 +1135,7 @@ msgstr "gecko"
 #. (itstool) path: row/entry
 #: article.translate.xml:606
 msgid "port which is maintained by gnome@FreeBSD.org"
-msgstr "port que es mantenido por gnome@FreeBSD.org"
+msgstr "port mantenido por gnome@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:608
@@ -1145,7 +1145,7 @@ msgstr "gnome"
 #. (itstool) path: row/entry
 #: article.translate.xml:613
 msgid "port which is maintained by hamradio@FreeBSD.org"
-msgstr "port que es mantenido por hamradio@FreeBSD.org"
+msgstr "port mantenido por hamradio@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:615
@@ -1155,7 +1155,7 @@ msgstr "hamradio"
 #. (itstool) path: row/entry
 #: article.translate.xml:620
 msgid "port which is maintained by haskell@FreeBSD.org"
-msgstr "port que es mantenido por haskell@FreeBSD.org"
+msgstr "port mantenido por haskell@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:622
@@ -1165,12 +1165,12 @@ msgstr "haskell"
 #. (itstool) path: row/entry
 #: article.translate.xml:627
 msgid "port which is maintained by java@FreeBSD.org"
-msgstr "port que es mantenido por java@FreeBSD.org"
+msgstr "port mantenido por java@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:634
 msgid "port which is maintained by kde@FreeBSD.org"
-msgstr "port que es mantenido por kde@FreeBSD.org"
+msgstr "port mantenido por kde@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:636
@@ -1180,7 +1180,7 @@ msgstr "kde"
 #. (itstool) path: row/entry
 #: article.translate.xml:641
 msgid "port which is maintained by mono@FreeBSD.org"
-msgstr "port que es mantenido por mono@FreeBSD.org"
+msgstr "port mantenido por mono@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:643
@@ -1190,7 +1190,7 @@ msgstr "mono"
 #. (itstool) path: row/entry
 #: article.translate.xml:648
 msgid "port which is maintained by office@FreeBSD.org"
-msgstr "port que es mantenido por office@FreeBSD.org"
+msgstr "port mantenido por office@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:651
@@ -1200,7 +1200,7 @@ msgstr "freebsd-office"
 #. (itstool) path: row/entry
 #: article.translate.xml:656
 msgid "port which is maintained by perl@FreeBSD.org"
-msgstr "port que es mantenido por perl@FreeBSD.org"
+msgstr "port mantenido por perl@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:658
@@ -1210,7 +1210,7 @@ msgstr "perl"
 #. (itstool) path: row/entry
 #: article.translate.xml:663
 msgid "port which is maintained by python@FreeBSD.org"
-msgstr "port que es mantenido por python@FreeBSD.org"
+msgstr "port mantenido por python@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:665
@@ -1220,7 +1220,7 @@ msgstr "freebsd-python"
 #. (itstool) path: row/entry
 #: article.translate.xml:670
 msgid "port which is maintained by ruby@FreeBSD.org"
-msgstr "port que es mantenido por ruby@FreeBSD.org"
+msgstr "port mantenido por ruby@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:672
@@ -1230,7 +1230,7 @@ msgstr "freebsd-ruby"
 #. (itstool) path: row/entry
 #: article.translate.xml:677
 msgid "port which is maintained by secteam@FreeBSD.org"
-msgstr "port que es mantenido por secteam@FreeBSD.org"
+msgstr "port mantenido por secteam@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:679
@@ -1240,7 +1240,7 @@ msgstr "secteam"
 #. (itstool) path: row/entry
 #: article.translate.xml:684
 msgid "port which is maintained by vbox@FreeBSD.org"
-msgstr "port que es mantenido por vbox@FreeBSD.org"
+msgstr "port mantenido por vbox@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:686
@@ -1250,7 +1250,7 @@ msgstr "vbox"
 #. (itstool) path: row/entry
 #: article.translate.xml:691
 msgid "port which is maintained by x11@FreeBSD.org"
-msgstr "port que es mantenido por x11@FreeBSD.org"
+msgstr "port mantenido por x11@FreeBSD.org"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:693
@@ -1442,9 +1442,9 @@ msgid ""
 "newer versions. If the originator does not reply within a month, close the "
 "PR with the notation <quote>Feedback timeout</quote>."
 msgstr ""
-"En otros casos, solicite al usuario que confirme si el problema persiste en "
-"las versiones más nuevas. Si el usuario no responde en un mes, cierre el PR "
-"con la anotación <quote>Feedback timeout</quote>."
+"En cualquier otro caso solicite al usuario que confirme si el problema "
+"persiste en las versiones más recientes. Si el usuario no responde en un mes "
+"cierre el PR con la anotación <quote>Feedback timeout</quote>."
 
 #. (itstool) path: section/title
 #: article.translate.xml:826
@@ -1460,11 +1460,11 @@ msgid ""
 "the submitter in a comment why this is not really a PR and where the message "
 "should be posted."
 msgstr ""
-"Los desarrolladores que se encuentren con PRs que parecen haber sido "
-"publicados en <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
-"freebsd-bugs\">freebsd-bugs</link> o alguna otra lista, deberían cerrar el "
-"PR, informando al usuario en un comentario indicando por qué el problema "
-"reportado no es realmente un PR y dónde debe publicarse el mensaje."
+"Los desarrolladores que encuentren PRs que han aparecido ya en <link xlink:"
+"href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">freebsd-"
+"bugs</link> o alguna otra lista deberían cerrar el PR informando al usuario "
+"en un comentario por qué el problema reportado no es realmente un PR y dónde "
+"debe publicarse el mensaje."
 
 #. (itstool) path: section/para
 #: article.translate.xml:833
@@ -1474,9 +1474,8 @@ msgid ""
 "listed on the web-site. This means that spammers found them."
 msgstr ""
 "Las direcciones de correo electrónico que utiliza Bugzilla para recibir los "
-"PR se han publicado como parte de la documentación de FreeBSD, se han "
-"anunciado y se enumeran en el sitio web. Esto significa que los spammers las "
-"encontraron."
+"PR se publican en la documentación de FreeBSD y se anuncian y publican en el "
+"sitio web. Esto significa que los spammers ya las tienen."
 
 #. (itstool) path: section/para
 #: article.translate.xml:838
@@ -1516,7 +1515,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: article.translate.xml:863
 msgid "Further Reading"
-msgstr "Otras lecturas"
+msgstr "Lecturas adicionales"
 
 #. (itstool) path: section/para
 #: article.translate.xml:865
