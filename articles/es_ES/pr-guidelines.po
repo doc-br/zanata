@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-11-11 08:23+0000\n"
+"PO-Revision-Date: 2019-11-12 02:52+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -638,13 +638,13 @@ msgid ""
 "that it might be generic to all of FreeBSD, and thus be more appropriate for "
 "<literal>kern</literal>. The converse is also true, of course.)"
 msgstr ""
-"No se sorprenda al descubrir que el usuario responsable del PR lo ha "
-"asignado a la categoría incorrecta. Si usted arregla la categoría, no se "
-"olvide de corregir también la asignación. (En particular, nuestros usuarios "
-"parecen tener dificultades para entender que aunque su problema ocurra en un "
-"sistema i386, podría ser genérico de todo FreeBSD y, por lo tanto, ser más "
-"adecuado para <literal>kern</literal>. Lo contrario también es cierto, por "
-"supuesto.)"
+"Es bastante habitual que el usuario responsable del PR lo asigne a la "
+"categoría incorrecta. Si usted corrige la categoría recuerde por favor que "
+"hay que corregir también la asignación. Nuestros usuarios parecen tener "
+"dificultades en particular con el hecho de que aunque su problema ocurra en "
+"un sistema i386 podría afectar a todas las plataformas de FreeBSD y por lo "
+"tanto ser más adecuado para <literal>kern</literal>. Lo contrario también "
+"sucede, por supuesto."
 
 #. (itstool) path: section/para
 #: article.translate.xml:351
@@ -1265,10 +1265,10 @@ msgid ""
 "committer, so you cannot simply go by the email address alone.)"
 msgstr ""
 "Los PRs relacionados con los ports que tienen un maintainer que es a la vez "
-"un committer de ports pueden ser reasignados por cualquiera (pero tenga en "
-"cuenta que no todo committer de FreeBSD es necesariamente un committer de "
-"ports, por lo que no puede guiarse únicamente por la dirección de correo "
-"electrónico)."
+"un committer de ports pueden ser reasignados por cualquiera, pero es "
+"importante recordar que no todos los committers de FreeBSD tienen un commit "
+"bit de ports, por lo que no puede guiarse únicamente por la dirección de "
+"correo electrónico."
 
 #. (itstool) path: section/para
 #: article.translate.xml:706
@@ -1279,11 +1279,11 @@ msgid ""
 "particular problem because everyone assumes that the assignee is already "
 "working on it."
 msgstr ""
-"Para otros PRs, por favor, no los reasigne a otros individuos (otros que no "
-"sean usted), a menos que esté seguro de que el responsable realmente quiere "
-"mantenerse al tanto del PR. Esto ayudará a evitar situaciones en las que "
-"nadie se dedica a solucionar un problema en particular porque todos asumen "
-"que el responsable ya está trabajando en ello."
+"En el caso de otros PRs  por favor no los reasigne a otros individuos (que "
+"no sean usted) a menos que esté seguro de que el responsable realmente "
+"quiere estar al tanto del PR. Esto ayudará a evitar situaciones en las que "
+"nadie se dedica a solucionar un problema en particular porque todo el mundo "
+"implicado asume que el responsable ya está en ello."
 
 #. (itstool) path: table/title
 #: article.translate.xml:714
@@ -1317,7 +1317,8 @@ msgstr "doc"
 #. (itstool) path: section/title
 #: article.translate.xml:746
 msgid "Assigned PRs"
-msgstr "PRs asignados"
+msgstr "\n"
+"PRs asignados"
 
 #. (itstool) path: section/para
 #: article.translate.xml:748
@@ -1327,8 +1328,9 @@ msgid ""
 "particular person for further work."
 msgstr ""
 "Si un PR tiene el campo <literal>responsible</literal> establecido con el "
-"nombre de usuario de un desarrollador de FreeBSD, significa que el PR se ha "
-"entregado a esa persona en particular para un trabajo adicional."
+"nombre de usuario de un desarrollador de FreeBSD significa que el PR se ha "
+"entregado a esa persona en particular para que desarrolle sobre él trabajo "
+"adicional."
 
 #. (itstool) path: section/para
 #: article.translate.xml:753
@@ -1339,11 +1341,11 @@ msgid ""
 "assignee does not respond within two weeks, unassign the PR and do as you "
 "please."
 msgstr ""
-"Los PRs asignados no deben ser tocados por nadie más que el responsable o el "
-"bugmeister. Si tiene comentarios, envíe un follow-up. Sí, por algún motivo, "
-"cree que el PR debe cambiar de estado o ser reasignado, envíe un mensaje al "
-"responsable. Si el responsable no responde en dos semanas, anule la "
-"asignación del PR y haga lo que quiera."
+"Los PRs asignados no deben ser modificados por nadie más que el responsable "
+"o el bugmeister. Si tiene algún comentario que hacer al respecto envíe un "
+"follow-up. Si por algún motivo cree que el PR debe cambiar de estado o "
+"reasignarse envíe un mensaje al responsable. Si el responsable no responde "
+"en dos semanas anule la asignación del PR y haga lo que estime conveniente."
 
 #. (itstool) path: section/title
 #: article.translate.xml:762
@@ -1360,12 +1362,12 @@ msgid ""
 "a followup, including references to the others; then close the other PRs "
 "(which are now completely superseded)."
 msgstr ""
-"Si encuentra más de un PR que describe el mismo problema, elija el que "
-"contiene la mayor cantidad de información útil y cierre los demás, indicando "
+"Si encuentra más de un PR que describe el mismo problema elija el que "
+"contiene la mayor cantidad de información útil y cierre los demás indicando "
 "claramente el número de PR sustituidos. Si varios PRs contienen información "
-"útil que no está repetida, envíe toda la información restante en un follow-"
-"up, incluidas las referencias a los demás; luego cierre los otros PRs (que "
-"ya han sido completamente reemplazados)."
+"útil que no está repetida envíe toda la información restante en un follow-"
+"up, incluidas las referencias a los demás. Cierre después los otros PRs una "
+"vez hayan sido completamente reemplazados."
 
 #. (itstool) path: section/title
 #: article.translate.xml:774
@@ -1379,7 +1381,7 @@ msgid ""
 " Apply the following procedure to deal with stale PRs:"
 msgstr ""
 "Un PR se considera obsoleto si no ha sido modificado en más de seis meses. "
-"Realice el siguiente procedimiento para tratar los PRs obsoletos:"
+"Siga el siguiente procedimiento para gestionar PRs obsoletos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:782
@@ -1389,11 +1391,11 @@ msgid ""
 "submit a followup detailing your findings and try to find someone to assign "
 "it to. Set the state to <quote>analyzed</quote> if appropriate."
 msgstr ""
-"Si el PR contiene suficientes detalles, intente reproducir el problema en "
-"<literal>-CURRENT</literal> y en <literal>-STABLE</literal>. Si tiene éxito, "
-"envíe un follow-up detallando sus descubrimientos e intente encontrar a "
-"alguien a quien asignárselo. Establezca el estado en <quote>analyzed</quote> "
-"si corresponde."
+"Si el PR contiene suficientes detalles intente reproducir el problema en "
+"<literal>-CURRENT</literal> y en <literal>-STABLE</literal>. Si logra "
+"reproducir el problema envíe un follow-up detallando sus hallazgos e intente "
+"encontrar a alguien a quien asignárselo. Establezca el estado en "
+"<quote>analyzed</quote> si ese es el caso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
@@ -1404,8 +1406,8 @@ msgid ""
 "error</quote> or <quote>Configuration error</quote>."
 msgstr ""
 "Si el PR describe un problema que sabe que es el resultado de un error de "
-"uso (configuración incorrecta o de otro tipo), envíe un follow-up que "
-"explique qué hizo mal el usuario, luego cierre el PR con el motivo "
+"uso (configuración incorrecta o de otro tipo) envíe un follow-up que "
+"explique qué hizo mal el usuario. Más tarde cierre el PR con el motivo "
 "<quote>User error</quote> o <quote>Configuration error</quote>."
 
 #. (itstool) path: listitem/para
@@ -1416,8 +1418,8 @@ msgid ""
 "message stating when it was fixed in each branch."
 msgstr ""
 "Si el PR describe un error que sabe que ha sido corregido tanto en <literal>-"
-"CURRENT</literal> como en <literal>-STABLE</literal>, ciérrelo con un "
-"mensaje que indique cuándo se solucionó en cada rama."
+"CURRENT</literal> como en <literal>-STABLE</literal> ciérrelo con un mensaje "
+"que indique cuándo se solucionó en cada rama."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:807
@@ -1428,12 +1430,12 @@ msgid ""
 "someone else (maybe yourself?) to do it. Set the state to <quote>patched</"
 "quote> and assign it to whomever will do the MFC."
 msgstr ""
-"Si el PR describe un error que sabe que ha sido corregido en <literal>-"
-"CURRENT</literal>, pero no en <literal>-STABLE</literal>, intente averiguar "
-"cuándo la persona que lo corrigió está planeando el MFC, o intente encontrar "
-"a alguien más (¿quizás usted mismo?) para hacerlo. Establezca el estado en "
-"<quote>patched</quote> y asígnelo a quien quiera que se haya encargado de "
-"hacer el MFC."
+"Si el PR trata de un error que sabe que ha sido corregido en <literal>-"
+"CURRENT</literal> pero no en <literal>-STABLE</literal> intente averiguar "
+"cuándo espera la persona que lo corrigió ejecutar el MFC, o intente "
+"encontrar a alguien más (quizás usted mismo) que pueda hacerlo. Establezca "
+"el estado en <quote>patched</quote> y asígnelo a quien quiera que se haya "
+"encargado de hacer el MFC."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:817
